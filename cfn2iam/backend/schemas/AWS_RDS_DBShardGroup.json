@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rds:AddTagsToResource",
+        "rds:CreateDBShardGroup",
+        "rds:DescribeDBClusters",
+        "rds:DescribeDBShardGroups",
+        "rds:ListTagsForResource"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "delete": {
+      "permissions": [
+        "rds:DeleteDBShardGroup",
+        "rds:DescribeDBClusters",
+        "rds:DescribeDbShardGroups"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "list": {
+      "permissions": [
+        "rds:DescribeDBShardGroups",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rds:DescribeDBShardGroups",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rds:AddTagsToResource",
+        "rds:DescribeDBShardGroups",
+        "rds:DescribeDBClusters",
+        "rds:RemoveTagsFromResource",
+        "rds:ModifyDBShardGroup",
+        "rds:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::RDS::DBShardGroup"
+}

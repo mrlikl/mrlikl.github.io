@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "gameliftstreams:CreateStreamGroup",
+        "gameliftstreams:UpdateStreamGroup",
+        "gameliftstreams:GetStreamGroup",
+        "gameliftstreams:TagResource",
+        "gameliftstreams:ListTagsForResource",
+        "gameliftstreams:AssociateApplications"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "gameliftstreams:DeleteStreamGroup",
+        "gameliftstreams:GetStreamGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "gameliftstreams:ListStreamGroups",
+        "gameliftstreams:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "gameliftstreams:GetStreamGroup",
+        "gameliftstreams:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "gameliftstreams:UpdateStreamGroup",
+        "gameliftstreams:GetStreamGroup",
+        "gameliftstreams:AddStreamGroupLocations",
+        "gameliftstreams:RemoveStreamGroupLocations",
+        "gameliftstreams:TagResource",
+        "gameliftstreams:UntagResource",
+        "gameliftstreams:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::GameLiftStreams::StreamGroup"
+}

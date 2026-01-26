@@ -1,0 +1,57 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "connect:CreateEmailAddress",
+        "connect:AssociateEmailAddressAlias",
+        "connect:TagResource",
+        "connect:ListIntegrationAssociations",
+        "ses:GetEmailIdentity",
+        "ses:DescribeReceiptRule",
+        "ses:UpdateReceiptRule",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "connect:DeleteEmailAddress",
+        "connect:DisassociateEmailAddressAlias",
+        "connect:UntagResource",
+        "iam:PassRole",
+        "ses:DescribeReceiptRule",
+        "ses:UpdateReceiptRule"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "InstanceArn": {
+            "$ref": "resource-schema.json#/properties/InstanceArn"
+          }
+        },
+        "required": [
+          "InstanceArn"
+        ]
+      },
+      "permissions": [
+        "connect:DescribeEmailAddress",
+        "connect:SearchEmailAddresses"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "connect:DescribeEmailAddress"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "connect:UpdateEmailAddressMetadata",
+        "connect:AssociateEmailAddressAlias",
+        "connect:DisassociateEmailAddressAlias",
+        "connect:TagResource",
+        "connect:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Connect::EmailAddress"
+}

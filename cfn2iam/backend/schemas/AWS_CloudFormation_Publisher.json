@@ -1,0 +1,26 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudformation:RegisterPublisher",
+        "cloudformation:DescribePublisher",
+        "codestar-connections:GetConnection",
+        "codestar-connections:UseConnection"
+      ]
+    },
+    "delete": {
+      "permissions": []
+    },
+    "list": {
+      "permissions": [
+        "cloudformation:DescribePublisher"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudformation:DescribePublisher"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFormation::Publisher"
+}

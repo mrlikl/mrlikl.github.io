@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "servicecatalog:AssociatePrincipalWithPortfolio",
+        "servicecatalog:ListPrincipalsForPortfolio",
+        "iam:GetUser",
+        "iam:GetRole",
+        "iam:GetGroup"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "servicecatalog:DisassociatePrincipalFromPortfolio",
+        "servicecatalog:ListPrincipalsForPortfolio",
+        "iam:GetUser",
+        "iam:GetRole",
+        "iam:GetGroup"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "PortfolioId": {
+            "$ref": "resource-schema.json#/properties/PortfolioId"
+          }
+        },
+        "required": [
+          "PortfolioId"
+        ]
+      },
+      "permissions": [
+        "servicecatalog:ListPrincipalsForPortfolio"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "servicecatalog:ListPrincipalsForPortfolio"
+      ]
+    }
+  },
+  "typeName": "AWS::ServiceCatalog::PortfolioPrincipalAssociation"
+}

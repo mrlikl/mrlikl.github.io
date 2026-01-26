@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "medialive:CreateEventBridgeRuleTemplateGroup",
+        "medialive:GetEventBridgeRuleTemplateGroup",
+        "medialive:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "medialive:DeleteEventBridgeRuleTemplateGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "medialive:ListEventBridgeRuleTemplateGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "medialive:GetEventBridgeRuleTemplateGroup"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "medialive:UpdateEventBridgeRuleTemplateGroup",
+        "medialive:GetEventBridgeRuleTemplateGroup",
+        "medialive:CreateTags",
+        "medialive:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaLive::EventBridgeRuleTemplateGroup"
+}

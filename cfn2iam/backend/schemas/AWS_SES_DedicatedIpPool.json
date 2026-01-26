@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:CreateDedicatedIpPool",
+        "ses:GetDedicatedIpPool",
+        "ses:GetDedicatedIps",
+        "ses:TagResource",
+        "ses:UntagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:DeleteDedicatedIpPool"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListDedicatedIpPools"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:GetDedicatedIpPool",
+        "ses:GetDedicatedIps",
+        "ses:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:PutDedicatedIpPoolScalingAttributes",
+        "ses:GetDedicatedIpPool",
+        "ses:TagResource",
+        "ses:UntagResource",
+        "ses:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::DedicatedIpPool"
+}

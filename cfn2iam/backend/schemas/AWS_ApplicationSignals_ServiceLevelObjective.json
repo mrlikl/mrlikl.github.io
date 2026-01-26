@@ -1,0 +1,51 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "application-signals:CreateServiceLevelObjective",
+        "cloudwatch:GetMetricData",
+        "application-signals:TagResource",
+        "application-signals:GetServiceLevelObjective",
+        "application-signals:ListTagsForResource",
+        "iam:GetRole",
+        "iam:CreateServiceLinkedRole",
+        "application-signals:ListServiceLevelObjectiveExclusionWindows",
+        "application-signals:BatchUpdateExclusionWindows"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "application-signals:DeleteServiceLevelObjective",
+        "application-signals:UntagResource",
+        "application-signals:GetServiceLevelObjective"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "application-signals:ListServiceLevelObjectives",
+        "application-signals:ListTagsForResource",
+        "application-signals:ListServiceLevelObjectiveExclusionWindows"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "application-signals:GetServiceLevelObjective",
+        "application-signals:ListTagsForResource",
+        "application-signals:ListServiceLevelObjectiveExclusionWindows"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "application-signals:UpdateServiceLevelObjective",
+        "cloudwatch:GetMetricData",
+        "application-signals:TagResource",
+        "application-signals:UntagResource",
+        "application-signals:GetServiceLevelObjective",
+        "application-signals:ListTagsForResource",
+        "application-signals:ListServiceLevelObjectiveExclusionWindows",
+        "application-signals:BatchUpdateExclusionWindows"
+      ]
+    }
+  },
+  "typeName": "AWS::ApplicationSignals::ServiceLevelObjective"
+}

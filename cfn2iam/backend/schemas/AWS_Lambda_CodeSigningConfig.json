@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lambda:CreateCodeSigningConfig",
+        "lambda:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lambda:DeleteCodeSigningConfig"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "lambda:ListCodeSigningConfigs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lambda:GetCodeSigningConfig",
+        "lambda:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lambda:UpdateCodeSigningConfig",
+        "lambda:TagResource",
+        "lambda:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Lambda::CodeSigningConfig"
+}

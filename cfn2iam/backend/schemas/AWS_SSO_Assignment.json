@@ -1,0 +1,70 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sso:CreateAccountAssignment",
+        "sso:DescribeAccountAssignmentCreationStatus",
+        "sso:ListAccountAssignments",
+        "iam:GetSAMLProvider",
+        "iam:CreateSAMLProvider",
+        "iam:AttachRolePolicy",
+        "iam:PutRolePolicy",
+        "iam:CreateRole",
+        "iam:ListRolePolicies"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sso:ListAccountAssignments",
+        "sso:DeleteAccountAssignment",
+        "sso:DescribeAccountAssignmentDeletionStatus",
+        "iam:GetSAMLProvider",
+        "iam:ListRolePolicies"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "InstanceArn": {
+            "$ref": "resource-schema.json#/properties/InstanceArn"
+          },
+          "PermissionSetArn": {
+            "$ref": "resource-schema.json#/properties/PermissionSetArn"
+          },
+          "PrincipalId": {
+            "$ref": "resource-schema.json#/properties/PrincipalId"
+          },
+          "PrincipalType": {
+            "$ref": "resource-schema.json#/properties/PrincipalType"
+          },
+          "TargetId": {
+            "$ref": "resource-schema.json#/properties/TargetId"
+          },
+          "TargetType": {
+            "$ref": "resource-schema.json#/properties/TargetType"
+          }
+        },
+        "required": [
+          "InstanceArn",
+          "PermissionSetArn",
+          "PrincipalId",
+          "PrincipalType",
+          "TargetId",
+          "TargetType"
+        ]
+      },
+      "permissions": [
+        "sso:ListAccountAssignments",
+        "iam:ListRolePolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sso:ListAccountAssignments",
+        "iam:GetSAMLProvider",
+        "iam:ListRolePolicies"
+      ]
+    }
+  },
+  "typeName": "AWS::SSO::Assignment"
+}

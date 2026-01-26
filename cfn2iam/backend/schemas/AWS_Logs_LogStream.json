@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "logs:CreateLogStream",
+        "logs:DescribeLogStreams"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "logs:DeleteLogStream"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "LogGroupName": {
+            "$ref": "resource-schema.json#/properties/LogGroupName"
+          }
+        },
+        "required": [
+          "LogGroupName"
+        ]
+      },
+      "permissions": [
+        "logs:DescribeLogStreams"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "logs:DescribeLogStreams"
+      ]
+    }
+  },
+  "typeName": "AWS::Logs::LogStream"
+}

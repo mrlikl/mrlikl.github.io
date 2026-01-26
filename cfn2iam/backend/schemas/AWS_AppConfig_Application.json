@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appconfig:CreateApplication",
+        "appconfig:GetApplication",
+        "appconfig:ListTagsForResource",
+        "appconfig:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appconfig:GetApplication",
+        "appconfig:DeleteApplication"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "appconfig:ListApplications"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appconfig:GetApplication",
+        "appconfig:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appconfig:UpdateApplication",
+        "appconfig:TagResource",
+        "appconfig:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::AppConfig::Application"
+}

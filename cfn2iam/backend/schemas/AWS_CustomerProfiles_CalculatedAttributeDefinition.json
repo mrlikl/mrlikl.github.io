@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "profile:CreateCalculatedAttributeDefinition",
+        "profile:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "profile:DeleteCalculatedAttributeDefinition"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainName": {
+            "$ref": "resource-schema.json#/properties/DomainName"
+          }
+        },
+        "required": [
+          "DomainName"
+        ]
+      },
+      "permissions": [
+        "profile:ListCalculatedAttributeDefinitions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "profile:GetCalculatedAttributeDefinition"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "profile:GetCalculatedAttributeDefinition",
+        "profile:UpdateCalculatedAttributeDefinition",
+        "profile:UntagResource",
+        "profile:TagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CustomerProfiles::CalculatedAttributeDefinition"
+}

@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ecr:CreateRepositoryCreationTemplate",
+        "ecr:PutLifecyclePolicy",
+        "ecr:SetRepositoryPolicy",
+        "ecr:CreateRepository",
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ecr:DeleteRepositoryCreationTemplate"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ecr:DescribeRepositoryCreationTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ecr:DescribeRepositoryCreationTemplates"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ecr:DescribeRepositoryCreationTemplates",
+        "ecr:UpdateRepositoryCreationTemplate",
+        "ecr:PutLifecyclePolicy",
+        "ecr:SetRepositoryPolicy",
+        "ecr:CreateRepository",
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::ECR::RepositoryCreationTemplate"
+}

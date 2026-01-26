@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "apptest:CreateTestCase",
+        "apptest:GetTestCase",
+        "apptest:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "apptest:GetTestCase",
+        "apptest:ListTagsForResource",
+        "apptest:DeleteTestCase"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "apptest:ListTestCases"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "apptest:GetTestCase",
+        "apptest:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "apptest:UpdateTestCase",
+        "apptest:GetTestCase",
+        "apptest:TagResource",
+        "apptest:UnTagResource",
+        "apptest:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::AppTest::TestCase"
+}

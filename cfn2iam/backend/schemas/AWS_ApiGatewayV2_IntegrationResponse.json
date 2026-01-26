@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "apigateway:POST"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "apigateway:GET",
+        "apigateway:DELETE"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "apigateway:GET"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "apigateway:GET"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "apigateway:PATCH",
+        "apigateway:PUT",
+        "apigateway:GET"
+      ]
+    }
+  },
+  "typeName": "AWS::ApiGatewayV2::IntegrationResponse"
+}

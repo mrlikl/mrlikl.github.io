@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "servicecatalog:DescribePortfolioShares",
+        "servicecatalog:CreatePortfolioShare"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "servicecatalog:DescribePortfolioShares",
+        "servicecatalog:DeletePortfolioShare"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "PortfolioId": {
+            "$ref": "resource-schema.json#/properties/PortfolioId"
+          }
+        },
+        "required": [
+          "PortfolioId"
+        ]
+      },
+      "permissions": [
+        "servicecatalog:DescribePortfolioShares"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "servicecatalog:DescribePortfolioShares"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "servicecatalog:DescribePortfolioShares",
+        "servicecatalog:UpdatePortfolioShare"
+      ]
+    }
+  },
+  "typeName": "AWS::ServiceCatalog::PortfolioShare"
+}

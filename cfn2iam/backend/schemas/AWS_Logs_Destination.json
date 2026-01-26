@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "logs:PutDestination",
+        "logs:PutDestinationPolicy",
+        "logs:DescribeDestinations",
+        "logs:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "logs:DeleteDestination"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "logs:DescribeDestinations",
+        "logs:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "logs:DescribeDestinations",
+        "logs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "logs:PutDestination",
+        "logs:PutDestinationPolicy",
+        "logs:DescribeDestinations",
+        "logs:TagResource",
+        "logs:UntagResource",
+        "logs:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::Logs::Destination"
+}

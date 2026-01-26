@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:TagResource",
+        "ses:ListTagsForResource",
+        "ses:GetAddressList",
+        "ses:CreateAddressList"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:GetAddressList",
+        "ses:DeleteAddressList"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListAddressLists"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:ListTagsForResource",
+        "ses:GetAddressList"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:TagResource",
+        "ses:UntagResource",
+        "ses:ListTagsForResource",
+        "ses:GetAddressList"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::MailManagerAddressList"
+}

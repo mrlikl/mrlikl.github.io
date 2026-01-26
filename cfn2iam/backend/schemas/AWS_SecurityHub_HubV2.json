@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "securityhub:EnableSecurityHubV2",
+        "securityhub:DescribeSecurityHubV2",
+        "securityhub:TagResource",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "securityhub:DescribeSecurityHubV2",
+        "securityhub:DisableSecurityHubV2"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "securityhub:DescribeSecurityHubV2",
+        "securityhub:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "securityhub:DescribeSecurityHubV2",
+        "securityhub:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "securityhub:DescribeSecurityHubV2",
+        "securityhub:TagResource",
+        "securityhub:UntagResource",
+        "securityhub:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SecurityHub::HubV2"
+}

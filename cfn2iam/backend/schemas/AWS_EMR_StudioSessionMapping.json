@@ -1,0 +1,80 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticmapreduce:CreateStudioSessionMapping",
+        "sso-directory:SearchUsers",
+        "sso-directory:SearchGroups",
+        "sso-directory:DescribeUser",
+        "sso-directory:DescribeGroup",
+        "sso:GetManagedApplicationInstance",
+        "sso:ListDirectoryAssociations",
+        "sso:GetProfile",
+        "sso:ListProfiles",
+        "sso:AssociateProfile",
+        "sso:CreateApplication",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:PutApplicationGrant",
+        "sso:PutApplicationAccessScope",
+        "sso:PutApplicationAssignmentConfiguration",
+        "sso:DescribeApplication",
+        "sso:DeleteApplication",
+        "sso:DeleteApplicationAuthenticationMethod",
+        "sso:DeleteApplicationAccessScope",
+        "sso:DeleteApplicationGrant",
+        "sso:ListInstances",
+        "sso-directory:CreateUser",
+        "sso-directory:CreateGroup",
+        "sso:CreateApplicationAssignment",
+        "sso:DescribeInstance",
+        "sso:DeleteApplicationAssignment",
+        "sso:ListApplicationAssignments"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "elasticmapreduce:GetStudioSessionMapping",
+        "elasticmapreduce:DeleteStudioSessionMapping",
+        "sso-directory:SearchUsers",
+        "sso-directory:SearchGroups",
+        "sso-directory:DescribeUser",
+        "sso-directory:DescribeGroup",
+        "sso:GetManagedApplicationInstance",
+        "sso:DescribeInstance",
+        "sso:ListDirectoryAssociations",
+        "sso:GetProfile",
+        "sso:ListProfiles",
+        "sso:DisassociateProfile"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "elasticmapreduce:ListStudioSessionMappings"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticmapreduce:GetStudioSessionMapping",
+        "sso-directory:SearchUsers",
+        "sso-directory:SearchGroups",
+        "sso-directory:DescribeUser",
+        "sso-directory:DescribeGroup",
+        "sso:GetManagedApplicationInstance",
+        "sso:DescribeInstance"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "elasticmapreduce:GetStudioSessionMapping",
+        "elasticmapreduce:UpdateStudioSessionMapping",
+        "sso-directory:SearchUsers",
+        "sso-directory:SearchGroups",
+        "sso-directory:DescribeUser",
+        "sso-directory:DescribeGroup",
+        "sso:GetManagedApplicationInstance",
+        "sso:DescribeInstance"
+      ]
+    }
+  },
+  "typeName": "AWS::EMR::StudioSessionMapping"
+}

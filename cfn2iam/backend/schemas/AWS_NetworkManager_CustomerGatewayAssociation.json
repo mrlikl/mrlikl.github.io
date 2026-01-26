@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "networkmanager:GetCustomerGatewayAssociations",
+        "networkmanager:AssociateCustomerGateway"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "networkmanager:DisassociateCustomerGateway"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "GlobalNetworkId": {
+            "$ref": "resource-schema.json#/properties/GlobalNetworkId"
+          }
+        },
+        "required": [
+          "GlobalNetworkId"
+        ]
+      },
+      "permissions": [
+        "networkmanager:GetCustomerGatewayAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "networkmanager:GetCustomerGatewayAssociations"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkManager::CustomerGatewayAssociation"
+}

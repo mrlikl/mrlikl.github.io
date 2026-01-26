@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cognito-idp:CreateUserPool",
+        "iam:PassRole",
+        "cognito-idp:SetUserPoolMfaConfig",
+        "cognito-idp:DescribeUserPool",
+        "kms:CreateGrant",
+        "iam:CreateServiceLinkedRole",
+        "cognito-idp:TagResource"
+      ],
+      "timeoutInMinutes": 2
+    },
+    "delete": {
+      "permissions": [
+        "cognito-idp:DeleteUserPool"
+      ],
+      "timeoutInMinutes": 2
+    },
+    "list": {
+      "permissions": [
+        "cognito-idp:ListUserPools"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cognito-idp:DescribeUserPool",
+        "cognito-idp:GetUserPoolMfaConfig"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cognito-idp:UpdateUserPool",
+        "cognito-idp:ListTagsForResource",
+        "cognito-idp:UntagResource",
+        "cognito-idp:TagResource",
+        "cognito-idp:SetUserPoolMfaConfig",
+        "cognito-idp:AddCustomAttributes",
+        "cognito-idp:DescribeUserPool",
+        "cognito-idp:GetUserPoolMfaConfig",
+        "iam:PassRole"
+      ],
+      "timeoutInMinutes": 2
+    }
+  },
+  "typeName": "AWS::Cognito::UserPool"
+}

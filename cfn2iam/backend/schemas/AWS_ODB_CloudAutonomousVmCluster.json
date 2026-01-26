@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:DescribeAvailabilityZones",
+        "iam:CreateServiceLinkedRole",
+        "odb:CreateCloudAutonomousVmCluster",
+        "odb:GetCloudAutonomousVmCluster",
+        "odb:ListCloudAutonomousVmClusters",
+        "odb:ListTagsForResource",
+        "odb:TagResource",
+        "sts:GetCallerIdentity"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "delete": {
+      "permissions": [
+        "odb:DeleteCloudAutonomousVmCluster",
+        "odb:GetCloudAutonomousVmCluster",
+        "odb:ListCloudAutonomousVmClusters",
+        "odb:ListTagsForResource",
+        "sts:GetCallerIdentity"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "list": {
+      "permissions": [
+        "odb:ListCloudAutonomousVmClusters",
+        "odb:ListTagsForResource",
+        "sts:GetCallerIdentity"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "odb:GetCloudAutonomousVmCluster",
+        "odb:ListTagsForResource",
+        "sts:GetCallerIdentity"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "odb:TagResource",
+        "odb:UntagResource",
+        "odb:GetCloudAutonomousVmCluster",
+        "odb:ListCloudAutonomousVmClusters",
+        "odb:ListTagsForResource",
+        "sts:GetCallerIdentity"
+      ]
+    }
+  },
+  "typeName": "AWS::ODB::CloudAutonomousVmCluster"
+}

@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:CreateConfigurationSetEventDestination",
+        "ses:GetConfigurationSetEventDestinations",
+        "ses:DescribeConfigurationSet"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:DeleteConfigurationSetEventDestination"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ConfigurationSetName": {
+            "$ref": "resource-schema.json#/properties/ConfigurationSetName"
+          }
+        },
+        "required": [
+          "ConfigurationSetName"
+        ]
+      },
+      "permissions": [
+        "ses:GetConfigurationSetEventDestinations",
+        "ses:DescribeConfigurationSet"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:GetConfigurationSetEventDestinations",
+        "ses:DescribeConfigurationSet"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:UpdateConfigurationSetEventDestination",
+        "ses:GetConfigurationSetEventDestinations"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::ConfigurationSetEventDestination"
+}

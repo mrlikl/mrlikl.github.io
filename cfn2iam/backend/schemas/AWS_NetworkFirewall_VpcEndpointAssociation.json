@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "network-firewall:CreateVpcEndpointAssociation",
+        "network-firewall:DescribeVpcEndpointAssociation",
+        "network-firewall:ListFirewalls",
+        "network-firewall:TagResource",
+        "ec2:CreateVpcEndpoint",
+        "ec2:DescribeVpcEndpoints",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "network-firewall:DeleteVpcEndpointAssociation",
+        "network-firewall:DescribeVpcEndpointAssociation",
+        "network-firewall:UntagResource",
+        "ec2:DeleteVpcEndpoints",
+        "ec2:DescribeRouteTables"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "network-firewall:ListVpcEndpointAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "network-firewall:DescribeVpcEndpointAssociation",
+        "network-firewall:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "network-firewall:DescribeVpcEndpointAssociation",
+        "network-firewall:TagResource",
+        "network-firewall:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkFirewall::VpcEndpointAssociation"
+}

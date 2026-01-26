@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ivschat:CreateRoom",
+        "ivschat:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ivschat:DeleteRoom",
+        "ivschat:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ivschat:ListRooms",
+        "ivschat:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ivschat:GetRoom",
+        "ivschat:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ivschat:UpdateRoom",
+        "ivschat:TagResource",
+        "ivschat:UntagResource",
+        "ivschat:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IVSChat::Room"
+}

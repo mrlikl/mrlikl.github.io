@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "databrew:CreateProfileJob",
+        "databrew:CreateRecipeJob",
+        "databrew:DescribeJob",
+        "databrew:TagResource",
+        "databrew:UntagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "databrew:DeleteJob"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "databrew:ListJobs",
+        "databrew:ListTagsForResource",
+        "iam:ListRoles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "databrew:DescribeJob",
+        "iam:ListRoles"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "databrew:UpdateProfileJob",
+        "databrew:UpdateRecipeJob",
+        "databrew:TagResource",
+        "databrew:UntagResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::DataBrew::Job"
+}

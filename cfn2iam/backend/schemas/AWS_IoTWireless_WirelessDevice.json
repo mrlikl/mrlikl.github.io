@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iotwireless:CreateWirelessDevice",
+        "iotwireless:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotwireless:DeleteWirelessDevice",
+        "iotwireless:DisassociateWirelessDeviceFromThing"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iotwireless:ListWirelessDevices",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotwireless:GetWirelessDevice",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iotwireless:UpdateWirelessDevice",
+        "iotwireless:GetWirelessDevice",
+        "iotwireless:AssociateWirelessDeviceWithThing",
+        "iotwireless:TagResource",
+        "iotwireless:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTWireless::WirelessDevice"
+}

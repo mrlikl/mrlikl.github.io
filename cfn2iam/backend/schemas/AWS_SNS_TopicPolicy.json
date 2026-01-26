@@ -1,0 +1,20 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sns:SetTopicAttributes"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sns:SetTopicAttributes"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sns:SetTopicAttributes"
+      ]
+    }
+  },
+  "typeName": "AWS::SNS::TopicPolicy"
+}

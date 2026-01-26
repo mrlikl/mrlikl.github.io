@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "events:DescribeEventBus",
+        "events:PutPermission"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "events:DescribeEventBus",
+        "events:RemovePermission"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "EventBusName": {
+            "$ref": "resource-schema.json#/properties/EventBusName"
+          }
+        }
+      },
+      "permissions": [
+        "events:DescribeEventBus"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "events:DescribeEventBus"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "events:DescribeEventBus",
+        "events:PutPermission"
+      ]
+    }
+  },
+  "typeName": "AWS::Events::EventBusPolicy"
+}

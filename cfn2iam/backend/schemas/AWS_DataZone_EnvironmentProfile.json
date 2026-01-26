@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "datazone:CreateEnvironmentProfile",
+        "datazone:GetEnvironmentProfile"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "datazone:DeleteEnvironmentProfile",
+        "datazone:GetEnvironmentProfile"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainIdentifier": {
+            "$ref": "resource-schema.json#/properties/DomainIdentifier"
+          }
+        },
+        "required": [
+          "DomainIdentifier"
+        ]
+      },
+      "permissions": [
+        "datazone:ListEnvironmentProfiles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "datazone:GetEnvironmentProfile"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "datazone:UpdateEnvironmentProfile",
+        "datazone:GetEnvironmentProfile"
+      ]
+    }
+  },
+  "typeName": "AWS::DataZone::EnvironmentProfile"
+}

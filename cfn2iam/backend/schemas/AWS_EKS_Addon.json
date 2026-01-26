@@ -1,0 +1,56 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "eks:CreateAddon",
+        "eks:DescribeAddon",
+        "eks:TagResource",
+        "iam:PassRole",
+        "iam:GetRole",
+        "eks:CreatePodIdentityAssociation"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "eks:DeleteAddon",
+        "eks:DescribeAddon",
+        "eks:DeletePodIdentityAssociation"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ClusterName": {
+            "$ref": "resource-schema.json#/properties/ClusterName"
+          }
+        },
+        "required": [
+          "ClusterName"
+        ]
+      },
+      "permissions": [
+        "eks:ListAddons"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "eks:DescribeAddon"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:PassRole",
+        "iam:GetRole",
+        "eks:UpdateAddon",
+        "eks:DescribeAddon",
+        "eks:DescribeUpdate",
+        "eks:TagResource",
+        "eks:UntagResource",
+        "eks:CreatePodIdentityAssociation",
+        "eks:DeletePodIdentityAssociation",
+        "eks:UpdatePodIdentityAssociation"
+      ]
+    }
+  },
+  "typeName": "AWS::EKS::Addon"
+}

@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lex:CreateBotAlias",
+        "lex:DescribeBot",
+        "lex:DescribeBotAlias",
+        "lex:TagResource",
+        "lex:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lex:DeleteBotAlias"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "lex:ListBotAliases",
+        "lex:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lex:DescribeBotAlias",
+        "lex:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lex:UpdateBotAlias",
+        "lex:DescribeBotAlias",
+        "lex:ListTagsForResource",
+        "lex:TagResource",
+        "lex:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Lex::BotAlias"
+}

@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "arc-region-switch:CreatePlan",
+        "arc-region-switch:GetPlan",
+        "arc-region-switch:ListRoute53HealthChecks",
+        "arc-region-switch:ListTagsForResource",
+        "arc-region-switch:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "arc-region-switch:DeletePlan",
+        "arc-region-switch:GetPlan"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "arc-region-switch:ListPlans"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "arc-region-switch:GetPlan",
+        "arc-region-switch:ListRoute53HealthChecks",
+        "arc-region-switch:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "arc-region-switch:GetPlan",
+        "arc-region-switch:ListRoute53HealthChecks",
+        "arc-region-switch:ListTagsForResource",
+        "arc-region-switch:TagResource",
+        "arc-region-switch:UntagResource",
+        "arc-region-switch:UpdatePlan",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::ARCRegionSwitch::Plan"
+}

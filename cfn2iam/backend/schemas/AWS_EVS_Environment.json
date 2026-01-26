@@ -1,0 +1,70 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "evs:CreateEnvironment",
+        "evs:GetEnvironment",
+        "evs:TagResource",
+        "evs:ListTagsForResource",
+        "iam:CreateServiceLinkedRole",
+        "support:DescribeServices",
+        "support:DescribeSupportLevel",
+        "servicequotas:GetServiceQuota",
+        "servicequotas:ListServiceQuotas",
+        "ec2:CreateNetworkInterface",
+        "ec2:AllocateHosts",
+        "ec2:ModifyNetworkInterfaceAttribute",
+        "ec2:DeleteNetworkInterface",
+        "ec2:RunInstances",
+        "ec2:CreatePlacementGroup",
+        "ec2:CreateSubnet",
+        "ec2:CreateTags",
+        "secretsmanager:GetRandomPassword",
+        "secretsmanager:CreateSecret",
+        "secretsmanager:GetSecretValue",
+        "secretsmanager:BatchGetSecretValue",
+        "secretsmanager:TagResource",
+        "kms:ListKeysForService",
+        "kms:DescribeKey",
+        "secretsmanager:UpdateSecret",
+        "ec2:DeleteVolume",
+        "ec2:DetachVolume"
+      ],
+      "timeoutInMinutes": 720
+    },
+    "delete": {
+      "permissions": [
+        "evs:DeleteEnvironment",
+        "evs:GetEnvironment",
+        "evs:UntagResource",
+        "ec2:TerminateInstances",
+        "ec2:ReleaseHosts",
+        "ec2:DescribeHosts",
+        "ec2:DeleteSubnet",
+        "ec2:DetachNetworkInterface",
+        "ec2:DeletePlacementGroup",
+        "secretsmanager:DeleteSecret"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "evs:ListEnvironments"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "evs:GetEnvironment",
+        "evs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "evs:TagResource",
+        "evs:UntagResource",
+        "evs:ListTagsForResource",
+        "evs:GetEnvironment"
+      ]
+    }
+  },
+  "typeName": "AWS::EVS::Environment"
+}

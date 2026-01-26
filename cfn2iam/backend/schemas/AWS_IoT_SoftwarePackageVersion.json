@@ -1,0 +1,58 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:CreatePackageVersion",
+        "iot:GetPackageVersion",
+        "iot:ListTagsForResource",
+        "iot:TagResource",
+        "iot:GetIndexingConfiguration",
+        "s3:GetObjectVersion",
+        "iot:AssociateSbomWithPackageVersion"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:DeletePackageVersion",
+        "iot:UpdatePackageVersion",
+        "iot:GetPackageVersion",
+        "iot:GetIndexingConfiguration"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "PackageName": {
+            "$ref": "resource-schema.json#/properties/PackageName"
+          }
+        },
+        "required": [
+          "PackageName"
+        ]
+      },
+      "permissions": [
+        "iot:ListPackageVersions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:GetPackageVersion",
+        "iot:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iot:UpdatePackageVersion",
+        "iot:GetPackageVersion",
+        "iot:ListTagsForResource",
+        "iot:TagResource",
+        "iot:UntagResource",
+        "iot:GetIndexingConfiguration",
+        "s3:GetObjectVersion",
+        "iot:AssociateSbomWithPackageVersion",
+        "iot:DisassociateSbomFromPackageVersion"
+      ]
+    }
+  },
+  "typeName": "AWS::IoT::SoftwarePackageVersion"
+}

@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "transfer:CreateConnector",
+        "transfer:DescribeConnector",
+        "transfer:TagResource",
+        "iam:PassRole",
+        "vpc-lattice:CreateServiceNetworkResourceAssociation",
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:AssociateViaAWSService"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "transfer:DeleteConnector"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "transfer:ListConnectors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "transfer:DescribeConnector"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "transfer:UpdateConnector",
+        "transfer:DescribeConnector",
+        "transfer:UnTagResource",
+        "transfer:TagResource",
+        "iam:PassRole",
+        "vpc-lattice:CreateServiceNetworkResourceAssociation",
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:AssociateViaAWSService"
+      ]
+    }
+  },
+  "typeName": "AWS::Transfer::Connector"
+}

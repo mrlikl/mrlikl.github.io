@@ -1,0 +1,30 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "logs:CreateLogAnomalyDetector"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "logs:DeleteLogAnomalyDetector"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "logs:ListLogAnomalyDetectors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "logs:GetLogAnomalyDetector"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "logs:UpdateLogAnomalyDetector"
+      ]
+    }
+  },
+  "typeName": "AWS::Logs::LogAnomalyDetector"
+}

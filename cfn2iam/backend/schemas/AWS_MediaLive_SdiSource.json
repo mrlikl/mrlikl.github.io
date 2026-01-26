@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "medialive:CreateSdiSource",
+        "medialive:CreateTags",
+        "medialive:DescribeSdiSource",
+        "medialive:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "medialive:DeleteSdiSource",
+        "medialive:DescribeSdiSource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "medialive:ListSdiSources"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "medialive:DescribeSdiSource",
+        "medialive:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "medialive:UpdateSdiSource",
+        "medialive:DescribeSdiSource",
+        "medialive:CreateTags",
+        "medialive:DeleteTags",
+        "medialive:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaLive::SdiSource"
+}

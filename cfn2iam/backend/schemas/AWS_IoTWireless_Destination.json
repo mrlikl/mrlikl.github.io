@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PassRole",
+        "iotwireless:CreateDestination",
+        "iotwireless:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotwireless:DeleteDestination"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iotwireless:ListDestinations",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotwireless:GetDestination",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:PassRole",
+        "iotwireless:GetDestination",
+        "iotwireless:UpdateDestination",
+        "iotwireless:UntagResource",
+        "iotwireless:TagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTWireless::Destination"
+}

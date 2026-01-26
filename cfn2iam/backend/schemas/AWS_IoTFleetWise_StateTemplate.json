@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iotfleetwise:GetStateTemplate",
+        "iotfleetwise:CreateStateTemplate",
+        "iotfleetwise:ListTagsForResource",
+        "iotfleetwise:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotfleetwise:DeleteStateTemplate",
+        "iotfleetwise:GetStateTemplate"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iotfleetwise:ListStateTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotfleetwise:GetStateTemplate",
+        "iotfleetwise:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iotfleetwise:UpdateStateTemplate",
+        "iotfleetwise:GetStateTemplate",
+        "iotfleetwise:ListTagsForResource",
+        "iotfleetwise:TagResource",
+        "iotfleetwise:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTFleetWise::StateTemplate"
+}

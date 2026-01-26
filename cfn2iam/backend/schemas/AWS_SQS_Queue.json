@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sqs:CreateQueue",
+        "sqs:GetQueueUrl",
+        "sqs:GetQueueAttributes",
+        "sqs:ListQueueTags",
+        "sqs:TagQueue"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sqs:DeleteQueue",
+        "sqs:GetQueueAttributes"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sqs:ListQueues"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sqs:GetQueueAttributes",
+        "sqs:ListQueueTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sqs:SetQueueAttributes",
+        "sqs:GetQueueAttributes",
+        "sqs:ListQueueTags",
+        "sqs:TagQueue",
+        "sqs:UntagQueue"
+      ]
+    }
+  },
+  "typeName": "AWS::SQS::Queue"
+}

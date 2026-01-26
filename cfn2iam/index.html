@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9M3S5VZ6C5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-9M3S5VZ6C5");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CFN2IAM - CloudFormation IAM Policy Generator</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header-content">
+        <h1>
+          ⚡ CFN2IAM
+          <span class="header-description"
+            >- Generate minimal IAM policies for AWS CloudFormation & SAM
+            templates</span
+          >
+        </h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="disclaimer">
+        <p>
+          <strong>⚠️ Disclaimer:</strong> This tool generates policies based on
+          CloudFormation resource schemas which are not available for all
+          resource types. Generated policies may include broader permissions
+          than needed and require manual review before production use.
+        </p>
+      </div>
+
+      <!-- Quick Resource Lookup -->
+      <div class="quick-lookup-card">
+        <h3>🔍 Quick Resource Lookup</h3>
+        <div class="resource-input-group">
+          <div class="input-group">
+            <label for="singleResourceType">Resource Type</label>
+            <input
+              type="text"
+              id="singleResourceType"
+              placeholder="e.g., AWS::S3::Bucket or AWS::Serverless::Function"
+            />
+          </div>
+          <button id="lookupBtn" class="btn btn-accent">
+            🔍 Lookup Permissions
+          </button>
+        </div>
+        <div
+          id="singleResourceResult"
+          class="single-resource-result"
+          style="display: none"
+        ></div>
+      </div>
+
+      <div class="main-grid">
+        <div class="card">
+          <h3>📄 CloudFormation / SAM Template</h3>
+
+          <div class="file-upload" id="fileUpload">
+            <button
+              class="btn btn-primary"
+              onclick="document.getElementById('fileInput').click()"
+            >
+              📂 Choose File
+            </button>
+            <span class="upload-text">
+              or Drag & drop your CloudFormation or SAM template (supports
+              .json, .yaml, .yml or .template) here
+            </span>
+            <input
+              type="file"
+              id="fileInput"
+              accept=".json,.yaml,.yml,.template"
+              style="display: none"
+            />
+          </div>
+
+          <textarea
+            id="templateInput"
+            class="textarea"
+            placeholder="Or paste your CloudFormation/SAM template (JSON or YAML) here..."
+          ></textarea>
+
+          <div class="controls">
+            <div class="control-row">
+              <button id="generateBtn" class="btn btn-primary flex-grow">
+                ⚡ Generate Policy
+              </button>
+              <div class="checkbox-group flex-grow justify-center">
+                <input type="checkbox" id="allowDelete" />
+                <label for="allowDelete">Allow delete permissions</label>
+              </div>
+            </div>
+            <div class="control-row">
+              <button id="loadExampleBtn" class="btn btn-secondary flex-grow">
+                📋 Load Example
+              </button>
+              <button
+                id="loadSamExampleBtn"
+                class="btn btn-secondary flex-grow"
+              >
+                🚀 Load SAM Example
+              </button>
+            </div>
+            <div class="control-row">
+              <button id="clearBtn" class="btn btn-secondary full-width">
+                🗑️ Clear
+              </button>
+            </div>
+          </div>
+
+          <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Analyzing CloudFormation/SAM template...</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>📋 Generated IAM Policy</h3>
+
+          <div class="output-tabs">
+            <div class="tab active" data-tab="policy">Policy</div>
+            <div class="tab" data-tab="resources">Resources</div>
+          </div>
+
+          <div id="policy-content" class="output-content active">
+            <div id="policyOutput">
+              <div
+                style="
+                  padding: 2rem;
+                  text-align: center;
+                  color: var(--text-secondary);
+                "
+              >
+                Click "Generate Policy" to see results...
+              </div>
+            </div>
+          </div>
+
+          <div id="resources-content" class="output-content">
+            <div id="resourcesOutput">No resources analyzed yet...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- External Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+
+    <!-- Application Scripts -->
+    <script src="app.js"></script>
+
+    <footer class="footer">
+      <p>
+        vibe coded with
+        <a href="https://claude.ai" target="_blank">Claude</a>,
+        <a href="https://github.com/aws/amazon-q-developer-cli" target="_blank"
+          >Q</a
+        >
+        and
+        <a href="https://github.com/google-gemini/gemini-cli" target="_blank"
+          >Gemini</a
+        >
+
+        ⚡ by <a href="https://github.com/mrlikl" target="_blank">mrlikl</a>
+      </p>
+    </footer>
+  </body>
+</html>

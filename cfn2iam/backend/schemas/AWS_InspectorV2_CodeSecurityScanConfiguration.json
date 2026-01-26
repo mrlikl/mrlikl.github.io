@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "inspector2:CreateCodeSecurityScanConfiguration",
+        "inspector2:GetCodeSecurityScanConfiguration",
+        "inspector2:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "inspector2:DeleteCodeSecurityScanConfiguration",
+        "inspector2:GetCodeSecurityScanConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "inspector2:ListCodeSecurityScanConfigurations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "inspector2:GetCodeSecurityScanConfiguration",
+        "inspector2:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "inspector2:UpdateCodeSecurityScanConfiguration",
+        "inspector2:GetCodeSecurityScanConfiguration",
+        "inspector2:TagResource",
+        "inspector2:UntagResource",
+        "inspector2:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::InspectorV2::CodeSecurityScanConfiguration"
+}

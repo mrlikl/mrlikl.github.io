@@ -1,0 +1,61 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "datazone:CreateDomain",
+        "datazone:UpdateDomain",
+        "datazone:GetDomain",
+        "datazone:TagResource",
+        "sso:CreateManagedApplicationInstance",
+        "sso:DeleteManagedApplicationInstance",
+        "sso:PutApplicationAssignmentConfiguration",
+        "sso:ListInstances",
+        "sso:PutApplicationAccessScope",
+        "sso:PutApplicationGrant",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:PutApplicationAccessScope",
+        "sso:CreateApplication",
+        "sso:DeleteApplication",
+        "sso:CreateApplicationAssignment",
+        "sso:DeleteApplicationAssignment",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "datazone:DeleteDomain",
+        "datazone:GetDomain",
+        "sso:DeleteManagedApplicationInstance",
+        "sso:PutApplicationAssignmentConfiguration",
+        "sso:DeleteApplication",
+        "sso:DeleteApplicationAssignment",
+        "sso:ListInstances"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "datazone:ListDomains"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "datazone:GetDomain"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "datazone:UpdateDomain",
+        "datazone:GetDomain",
+        "datazone:TagResource",
+        "datazone:UntagResource",
+        "sso:CreateManagedApplicationInstance",
+        "sso:DeleteManagedApplicationInstance",
+        "sso:PutApplicationAssignmentConfiguration",
+        "sso:ListInstances",
+        "sso:PutApplicationAccessScope",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::DataZone::Domain"
+}

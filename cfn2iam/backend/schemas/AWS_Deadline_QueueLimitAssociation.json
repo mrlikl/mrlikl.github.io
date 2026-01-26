@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "deadline:CreateQueueLimitAssociation",
+        "deadline:GetQueueLimitAssociation",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "deadline:DeleteQueueLimitAssociation",
+        "deadline:GetQueueLimitAssociation",
+        "deadline:UpdateQueueLimitAssociation",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "FarmId": {
+            "$ref": "resource-schema.json#/properties/FarmId"
+          }
+        },
+        "required": [
+          "FarmId"
+        ]
+      },
+      "permissions": [
+        "deadline:ListQueueLimitAssociations",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "deadline:GetQueueLimitAssociation",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    }
+  },
+  "typeName": "AWS::Deadline::QueueLimitAssociation"
+}

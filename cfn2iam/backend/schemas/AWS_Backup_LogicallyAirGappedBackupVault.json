@@ -1,0 +1,55 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "backup:TagResource",
+        "backup:AssociateBackupVaultMpaApprovalTeam",
+        "backup:CreateLogicallyAirGappedBackupVault",
+        "backup:PutBackupVaultAccessPolicy",
+        "backup:PutBackupVaultNotifications",
+        "backup-storage:Mount",
+        "backup-storage:MountCapsule",
+        "backup:DescribeBackupVault",
+        "mpa:GetApprovalTeam",
+        "kms:DescribeKey",
+        "kms:CreateGrant"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "backup:DeleteBackupVault"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "backup:ListBackupVaults"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "backup:DescribeBackupVault",
+        "backup:GetBackupVaultNotifications",
+        "backup:GetBackupVaultAccessPolicy",
+        "backup:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "backup:AssociateBackupVaultMpaApprovalTeam",
+        "backup:DescribeBackupVault",
+        "backup:DeleteBackupVaultAccessPolicy",
+        "backup:DeleteBackupVaultNotifications",
+        "backup:DeleteBackupVaultLockConfiguration",
+        "backup:GetBackupVaultAccessPolicy",
+        "backup:ListTags",
+        "backup:TagResource",
+        "backup:UntagResource",
+        "backup:PutBackupVaultAccessPolicy",
+        "backup:PutBackupVaultNotifications",
+        "backup:PutBackupVaultLockConfiguration",
+        "mpa:GetApprovalTeam"
+      ]
+    }
+  },
+  "typeName": "AWS::Backup::LogicallyAirGappedBackupVault"
+}

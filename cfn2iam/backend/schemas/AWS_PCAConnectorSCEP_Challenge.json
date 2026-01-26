@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "pca-connector-scep:CreateChallenge",
+        "pca-connector-scep:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "pca-connector-scep:GetChallengeMetadata",
+        "pca-connector-scep:DeleteChallenge",
+        "pca-connector-scep:UntagResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ConnectorArn": {
+            "$ref": "resource-schema.json#/properties/ConnectorArn"
+          }
+        },
+        "required": [
+          "ConnectorArn"
+        ]
+      },
+      "permissions": [
+        "pca-connector-scep:ListChallengeMetadata"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "pca-connector-scep:ListTagsForResource",
+        "pca-connector-scep:GetChallengeMetadata"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "pca-connector-scep:ListTagsForResource",
+        "pca-connector-scep:TagResource",
+        "pca-connector-scep:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::PCAConnectorSCEP::Challenge"
+}

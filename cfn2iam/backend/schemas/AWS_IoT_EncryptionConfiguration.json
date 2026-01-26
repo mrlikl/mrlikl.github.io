@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:UpdateEncryptionConfiguration",
+        "iot:DescribeEncryptionConfiguration",
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:UpdateEncryptionConfiguration",
+        "iot:DescribeEncryptionConfiguration",
+        "kms:Decrypt"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iot:DescribeEncryptionConfiguration"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:DescribeEncryptionConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iot:UpdateEncryptionConfiguration",
+        "iot:DescribeEncryptionConfiguration",
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::IoT::EncryptionConfiguration"
+}

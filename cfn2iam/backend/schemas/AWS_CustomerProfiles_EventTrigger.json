@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "profile:CreateEventTrigger",
+        "profile:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "profile:DeleteEventTrigger"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainName": {
+            "$ref": "resource-schema.json#/properties/DomainName"
+          }
+        },
+        "required": [
+          "DomainName"
+        ]
+      },
+      "permissions": [
+        "profile:ListEventTriggers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "profile:GetEventTrigger"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "profile:GetEventTrigger",
+        "profile:UpdateEventTrigger",
+        "profile:UntagResource",
+        "profile:TagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CustomerProfiles::EventTrigger"
+}

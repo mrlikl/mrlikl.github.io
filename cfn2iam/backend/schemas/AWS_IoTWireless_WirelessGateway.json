@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iotwireless:CreateWirelessGateway",
+        "iotwireless:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotwireless:DeleteWirelessGateway",
+        "iotwireless:DisassociateWirelessGatewayFromThing"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iotwireless:ListWirelessGateways",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotwireless:GetWirelessGateway",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iotwireless:GetWirelessGateway",
+        "iotwireless:UpdateWirelessGateway",
+        "iotwireless:AssociateWirelessGatewayWithThing",
+        "iotwireless:TagResource",
+        "iotwireless:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTWireless::WirelessGateway"
+}

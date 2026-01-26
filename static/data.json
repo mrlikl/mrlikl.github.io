@@ -1,0 +1,153 @@
+{
+  "profile": {
+    "name": "Murali Krishnan",
+    "description": "I like to get my hands on anything and everything. I'm passionate about reverse engineering and automating things that makes sense to be automated and I travel at times.",
+    "image": "static/profile.jpg",
+    "contact": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/gosolo/",
+        "icon": "fab fa-linkedin"
+      },
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/mrlikl",
+        "icon": "fab fa-github"
+      },
+      {
+        "platform": "Credly",
+        "url": "https://www.credly.com/users/mrlikrsh",
+        "icon": "fas fa-certificate"
+      },
+      {
+        "platform": "YouTube",
+        "url": "https://youtube.com/@mrlikrsh",
+        "icon": "fab fa-youtube"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "spotter",
+      "description": "Production-grade ARM64 spot instance scheduler for EKS worker nodes. The goal is to achieve 70-80% cost savings as compared to on-demand instances.",
+      "tags": ["CloudFormation", "Lambda", "EKS", "EC2-Spot"],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/mrlikl/spotter",
+          "icon": "fab fa-github"
+        },
+        {
+          "label": "PyPI",
+          "url": "https://pypi.org/project/spotter-cli/",
+          "icon": "fas fa-cube"
+        }
+      ]
+    },
+    {
+      "title": "cfn2iam",
+      "description": "Tool to generate minimal IAM policy to deploy a CloudFormation stack from its template. This policy can be used to create the service role that can be used for the stack.",
+      "tags": ["Python", "Boto3", "CloudFormation"],
+      "links": [
+        {
+          "label": "Live Tool",
+          "url": "/cfn2iam",
+          "icon": "fas fa-external-link-alt"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/mrlikl/cfn2iam",
+          "icon": "fab fa-github"
+        }
+      ]
+    },
+    {
+      "title": "aws ec2 prices",
+      "description": "A static website that displays current AWS EC2 Linux On-Demand prices across multiple AWS regions. Automatically updated weekly using Github Actions.",
+      "tags": ["Python", "GitHub Actions", "EC2"],
+      "links": [
+        {
+          "label": "Live Dashboard",
+          "url": "/ec2prices",
+          "icon": "fas fa-external-link-alt"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/mrlikl/mrlikl.github.io",
+          "icon": "fab fa-github"
+        }
+      ]
+    },
+    {
+      "title": "cfn-cur",
+      "description": "Tool to generate CLI commands to recover CloudFormation stacks stuck in UPDATE_ROLLBACK_FAILED state [Selected part of an internal hackathon while at AWS].",
+      "tags": ["Python", "CloudFormation", "Boto3"],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/mrlikl/continue-update-rollback",
+          "icon": "fab fa-github"
+        },
+        {
+          "label": "PyPI",
+          "url": "https://pypi.org/project/cfn-cur/",
+          "icon": "fas fa-cube"
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "title": "Making API calls during CDK deployments",
+      "description": "Guide on making API Calls during stack deployments using the interface AwsSdkCall with best practices and behind-the-scenes",
+      "url": "https://repost.aws/knowledge-center/cdk-sdk-calls-awssdkcall"
+    },
+    {
+      "title": "Troubleshooting EC2 Windows errors in CloudFormation",
+      "description": "Detailed troubleshooting guide for resolving CloudFormation signal failures on Windows EC2 instances during stack deployments",
+      "url": "https://repost.aws/knowledge-center/cfn-windows-failed-signal-error"
+    },
+    {
+      "title": "CloudFormation stuck stack recovery",
+      "description": "Guide on identifying resources to skip during continue-update-rollback operations in failed CloudFormation stacks.",
+      "url": "https://repost.aws/knowledge-center/cloudformation-identify-skip-resources"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Solutions Architect – Professional",
+      "image": "https://images.credly.com/size/340x340/images/2d84e428-9078-49b6-a804-13c15383d0de/image.png",
+      "url": "https://www.credly.com/badges/7bcbd611-9adc-4412-bbcd-f10ac5ebbb6f/public_url"
+    },
+    {
+      "name": "AWS Certified DevOps Engineer – Professional",
+      "image": "https://images.credly.com/images/bd31ef42-d460-493e-8503-39592aaf0458/image.png",
+      "url": "https://www.credly.com/badges/77a7e731-10e5-42ad-b667-b963d2498e3c/public_url"
+    },
+    {
+      "name": "CloudFormation Subject Matter Expert",
+      "image": "https://images.credly.com/images/1c465543-7926-48ef-8dd8-d88ca0a9debb/image.png",
+      "url": "https://www.credly.com/badges/d93b77ab-220c-4048-8eba-fb6c56fca884/public_url"
+    },
+    {
+      "name": "AWS Certified AI Practitioner",
+      "image": "https://images.credly.com/size/340x340/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png",
+      "url": "https://www.credly.com/badges/9a7d2898-fb0a-4af2-92d6-fa8cbc1dac08"
+    },
+    {
+      "name": "AWS Certified Solutions Architect – Associate",
+      "image": "https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png",
+      "url": "https://www.credly.com/badges/fae723d0-d151-4fb9-9c4b-a02c7eaa8ecd/public_url"
+    },
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "image": "https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
+      "url": "https://www.credly.com/badges/44cc653d-c033-40dd-9e8e-e907f8547b68/public_url"
+    },
+    {
+      "name": "CKA: Certified Kubernetes Administrator",
+      "image": "https://images.credly.com/size/340x340/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png",
+      "url": "https://www.credly.com/badges/70903ffb-615b-4154-b3a1-f9572c0012c8/public_url"
+    }
+  ]
+}

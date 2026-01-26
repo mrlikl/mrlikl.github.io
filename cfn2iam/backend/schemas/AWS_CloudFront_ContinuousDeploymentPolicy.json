@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudfront:CreateContinuousDeploymentPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudfront:DeleteContinuousDeploymentPolicy",
+        "cloudfront:GetContinuousDeploymentPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudfront:ListContinuousDeploymentPolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudfront:GetContinuousDeploymentPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudfront:UpdateContinuousDeploymentPolicy",
+        "cloudfront:GetContinuousDeploymentPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFront::ContinuousDeploymentPolicy"
+}

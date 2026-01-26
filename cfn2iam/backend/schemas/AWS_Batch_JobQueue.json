@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "Batch:CreateJobQueue",
+        "Batch:TagResource",
+        "Batch:DescribeJobQueues"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "Batch:UpdateJobQueue",
+        "Batch:DescribeJobQueues",
+        "Batch:DeleteJobQueue"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "Batch:DescribeJobQueues"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "Batch:DescribeJobQueues"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "Batch:DescribeJobQueues",
+        "Batch:UpdateJobQueue",
+        "Batch:TagResource",
+        "Batch:UnTagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Batch::JobQueue"
+}

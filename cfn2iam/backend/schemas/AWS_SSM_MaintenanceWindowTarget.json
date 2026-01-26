@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ssm:DescribeMaintenanceWindowTargets",
+        "ssm:RegisterTargetWithMaintenanceWindow"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ssm:DescribeMaintenanceWindowTargets",
+        "ssm:DeregisterTargetFromMaintenanceWindow"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "WindowId": {
+            "$ref": "resource-schema.json#/properties/WindowId"
+          }
+        },
+        "required": [
+          "WindowId"
+        ]
+      },
+      "permissions": [
+        "ssm:DescribeMaintenanceWindowTargets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ssm:DescribeMaintenanceWindowTargets"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ssm:UpdateMaintenanceWindowTarget"
+      ]
+    }
+  },
+  "typeName": "AWS::SSM::MaintenanceWindowTarget"
+}

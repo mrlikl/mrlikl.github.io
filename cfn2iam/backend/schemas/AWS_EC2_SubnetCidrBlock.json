@@ -1,0 +1,27 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:AssociateSubnetCidrBlock",
+        "ec2:DescribeSubnets"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DisassociateSubnetCidrBlock",
+        "ec2:DescribeSubnets"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeSubnets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeSubnets"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::SubnetCidrBlock"
+}

@@ -1,0 +1,29 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:CreateServiceLinkedRole",
+        "iam:GetRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iam:DeleteServiceLinkedRole",
+        "iam:GetServiceLinkedRoleDeletionStatus",
+        "iam:GetRole"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iam:GetRole"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:UpdateRole",
+        "iam:GetRole"
+      ]
+    }
+  },
+  "typeName": "AWS::IAM::ServiceLinkedRole"
+}

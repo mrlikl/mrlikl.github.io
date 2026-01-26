@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "fms:PutNotificationChannel",
+        "iam:PassRole",
+        "fms:GetNotificationChannel"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "fms:GetNotificationChannel",
+        "fms:DeleteNotificationChannel"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "fms:GetNotificationChannel"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "fms:GetNotificationChannel"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "fms:PutNotificationChannel",
+        "iam:PassRole",
+        "fms:GetNotificationChannel"
+      ]
+    }
+  },
+  "typeName": "AWS::FMS::NotificationChannel"
+}

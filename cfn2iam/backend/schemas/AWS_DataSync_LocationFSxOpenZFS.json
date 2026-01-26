@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "datasync:CreateLocationFsxOpenZfs",
+        "datasync:DescribeLocationFsxOpenZfs",
+        "datasync:ListTagsForResource",
+        "datasync:TagResource",
+        "fsx:DescribeFileSystems",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "datasync:DeleteLocation"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "datasync:ListLocations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "datasync:DescribeLocationFsxOpenZfs",
+        "datasync:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "datasync:DescribeLocationFsxOpenZfs",
+        "datasync:UpdateLocationFsxOpenZfs",
+        "datasync:ListTagsForResource",
+        "datasync:TagResource",
+        "datasync:UntagResource",
+        "fsx:DescribeFileSystems",
+        "ec2:DescribeNetworkInterfaces"
+      ]
+    }
+  },
+  "typeName": "AWS::DataSync::LocationFSxOpenZFS"
+}

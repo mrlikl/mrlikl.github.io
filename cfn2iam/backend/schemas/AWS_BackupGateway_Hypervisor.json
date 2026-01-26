@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "backup-gateway:ListTagsForResource",
+        "backup-gateway:ImportHypervisorConfiguration",
+        "backup-gateway:GetHypervisor",
+        "backup-gateway:ListHypervisors",
+        "backup-gateway:TagResource",
+        "kms:CreateGrant",
+        "kms:Encrypt",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "backup-gateway:DeleteHypervisor",
+        "backup-gateway:GetHypervisor",
+        "backup-gateway:ListHypervisors"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "backup-gateway:ListHypervisors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "backup-gateway:GetHypervisor",
+        "backup-gateway:ListHypervisors",
+        "backup-gateway:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "backup-gateway:UpdateHypervisor",
+        "backup-gateway:GetHypervisor",
+        "backup-gateway:ListHypervisors",
+        "backup-gateway:ImportHypervisorConfiguration",
+        "backup-gateway:DeleteHypervisor",
+        "backup-gateway:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::BackupGateway::Hypervisor"
+}

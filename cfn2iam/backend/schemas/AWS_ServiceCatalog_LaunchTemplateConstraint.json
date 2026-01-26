@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "servicecatalog:CreateConstraint",
+        "servicecatalog:DescribeConstraint"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "servicecatalog:DeleteConstraint"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "PortfolioId": {
+            "$ref": "resource-schema.json#/properties/PortfolioId"
+          }
+        },
+        "required": [
+          "PortfolioId"
+        ]
+      },
+      "permissions": [
+        "servicecatalog:ListConstraintsForPortfolio"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "servicecatalog:DescribeConstraint"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "servicecatalog:UpdateConstraint",
+        "servicecatalog:DescribeConstraint"
+      ]
+    }
+  },
+  "typeName": "AWS::ServiceCatalog::LaunchTemplateConstraint"
+}

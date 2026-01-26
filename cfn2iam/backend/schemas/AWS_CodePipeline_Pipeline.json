@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:GetRole",
+        "iam:PassRole",
+        "codepipeline:GetPipeline",
+        "codepipeline:CreatePipeline",
+        "codepipeline:DisableStageTransition",
+        "codepipeline:GetPipelineState",
+        "codepipeline:TagResource",
+        "codestar-connections:PassConnection"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "codepipeline:GetPipeline",
+        "codepipeline:DeletePipeline"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "codepipeline:ListPipelines"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "codepipeline:GetPipeline",
+        "codepipeline:ListTagsForResource",
+        "codepipeline:GetPipelineState"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:GetRole",
+        "iam:PassRole",
+        "codepipeline:EnableStageTransition",
+        "codepipeline:StartPipelineExecution",
+        "codepipeline:GetPipeline",
+        "codepipeline:UpdatePipeline",
+        "codepipeline:GetPipelineState",
+        "codepipeline:DisableStageTransition",
+        "codepipeline:TagResource",
+        "codepipeline:UntagResource",
+        "codestar-connections:PassConnection"
+      ]
+    }
+  },
+  "typeName": "AWS::CodePipeline::Pipeline"
+}

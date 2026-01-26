@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock:CreateFlowAlias",
+        "bedrock:GetFlowAlias",
+        "bedrock:TagResource",
+        "bedrock:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock:DeleteFlowAlias"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "FlowArn": {
+            "$ref": "resource-schema.json#/properties/FlowArn"
+          }
+        },
+        "required": [
+          "FlowArn"
+        ]
+      },
+      "permissions": [
+        "bedrock:ListFlowAliases"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:GetFlowAlias",
+        "bedrock:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock:UpdateFlowAlias",
+        "bedrock:GetFlowAlias",
+        "bedrock:TagResource",
+        "bedrock:UntagResource",
+        "bedrock:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::FlowAlias"
+}

@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "networkmanager:CreateDirectConnectGatewayAttachment",
+        "networkmanager:GetDirectConnectGatewayAttachment",
+        "networkmanager:TagResource",
+        "ec2:DescribeRegions",
+        "iam:CreateServiceLinkedRole"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "delete": {
+      "permissions": [
+        "networkmanager:DeleteAttachment",
+        "networkmanager:GetDirectConnectGatewayAttachment",
+        "networkmanager:UntagResource",
+        "ec2:DescribeRegions"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "list": {
+      "permissions": [
+        "networkmanager:ListAttachments"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "networkmanager:GetDirectConnectGatewayAttachment"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "networkmanager:UpdateDirectConnectGatewayAttachment",
+        "networkmanager:GetDirectConnectGatewayAttachment",
+        "networkmanager:ListTagsForResource",
+        "networkmanager:TagResource",
+        "networkmanager:UntagResource",
+        "ec2:DescribeRegions"
+      ],
+      "timeoutInMinutes": 60
+    }
+  },
+  "typeName": "AWS::NetworkManager::DirectConnectGatewayAttachment"
+}

@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "kinesisvideo:DescribeStream",
+        "kinesisvideo:CreateStream",
+        "kinesisvideo:TagStream"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "kinesisvideo:DescribeStream",
+        "kinesisvideo:DeleteStream"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "kinesisvideo:ListStreams"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "kinesisvideo:DescribeStream",
+        "kinesisvideo:ListTagsForStream",
+        "kinesisvideo:DescribeStreamStorageConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "kinesisvideo:DescribeStream",
+        "kinesisvideo:UpdateStream",
+        "kinesisvideo:UpdateDataRetention",
+        "kinesisvideo:TagStream",
+        "kinesisvideo:UntagStream",
+        "kinesisvideo:ListTagsForStream"
+      ]
+    }
+  },
+  "typeName": "AWS::KinesisVideo::Stream"
+}

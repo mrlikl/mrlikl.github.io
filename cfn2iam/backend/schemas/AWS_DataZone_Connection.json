@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "datazone:CreateConnection",
+        "datazone:GetConnection",
+        "datazone:DeleteConnection",
+        "datazone:ListEnvironments"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "datazone:DeleteConnection",
+        "datazone:GetConnection"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainIdentifier": {
+            "$ref": "resource-schema.json#/properties/DomainIdentifier"
+          },
+          "ProjectIdentifier": {
+            "$ref": "resource-schema.json#/properties/ProjectId"
+          }
+        },
+        "required": [
+          "DomainIdentifier"
+        ]
+      },
+      "permissions": [
+        "datazone:ListConnections"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "datazone:GetConnection"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "datazone:UpdateConnection",
+        "datazone:GetConnection",
+        "datazone:DeleteConnection"
+      ]
+    }
+  },
+  "typeName": "AWS::DataZone::Connection"
+}

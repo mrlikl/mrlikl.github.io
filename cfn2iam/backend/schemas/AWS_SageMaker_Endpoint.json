@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateEndpoint",
+        "sagemaker:DescribeEndpoint",
+        "sagemaker:AddTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteEndpoint",
+        "sagemaker:DescribeEndpoint"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeEndpoint",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateEndpoint",
+        "sagemaker:DescribeEndpoint",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::Endpoint"
+}

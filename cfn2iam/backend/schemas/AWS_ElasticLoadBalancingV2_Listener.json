@@ -1,0 +1,64 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticloadbalancing:CreateListener",
+        "elasticloadbalancing:DescribeListeners",
+        "cognito-idp:DescribeUserPoolClient",
+        "elasticloadbalancing:ModifyListenerAttributes"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "elasticloadbalancing:DeleteListener",
+        "elasticloadbalancing:DescribeListeners"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "oneOf": [
+          {
+            "required": [
+              "LoadBalancerArn"
+            ]
+          },
+          {
+            "required": [
+              "ListenerArns"
+            ]
+          }
+        ],
+        "properties": {
+          "ListenerArns": {
+            "items": {
+              "$ref": "resource-schema.json#/properties/ListenerArn"
+            },
+            "type": "array",
+            "uniqueItems": false
+          },
+          "LoadBalancerArn": {
+            "$ref": "resource-schema.json#/properties/LoadBalancerArn"
+          }
+        }
+      },
+      "permissions": [
+        "elasticloadbalancing:DescribeListeners"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticloadbalancing:DescribeListeners",
+        "elasticloadbalancing:DescribeListenerAttributes"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "elasticloadbalancing:ModifyListener",
+        "elasticloadbalancing:DescribeListeners",
+        "cognito-idp:DescribeUserPoolClient",
+        "elasticloadbalancing:ModifyListenerAttributes"
+      ]
+    }
+  },
+  "typeName": "AWS::ElasticLoadBalancingV2::Listener"
+}

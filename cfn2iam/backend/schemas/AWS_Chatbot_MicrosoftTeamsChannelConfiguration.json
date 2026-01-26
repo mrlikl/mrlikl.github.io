@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "chatbot:CreateMicrosoftTeamsChannelConfiguration",
+        "chatbot:TagResource",
+        "chatbot:AssociateToConfiguration",
+        "chatbot:ListAssociations",
+        "iam:PassRole",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "chatbot:GetMicrosoftTeamsChannelConfiguration",
+        "chatbot:DeleteMicrosoftTeamsChannelConfiguration",
+        "chatbot:DisassociateFromConfiguration",
+        "chatbot:ListAssociations"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "chatbot:ListMicrosoftTeamsChannelConfigurations",
+        "chatbot:ListAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "chatbot:GetMicrosoftTeamsChannelConfiguration",
+        "chatbot:ListAssociations"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "chatbot:UpdateMicrosoftTeamsChannelConfiguration",
+        "chatbot:TagResource",
+        "chatbot:UntagResource",
+        "chatbot:ListTagsForResource",
+        "chatbot:AssociateToConfiguration",
+        "chatbot:DisassociateFromConfiguration",
+        "chatbot:ListAssociations",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::Chatbot::MicrosoftTeamsChannelConfiguration"
+}

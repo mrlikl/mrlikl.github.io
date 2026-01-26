@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cognito-idp:CreateUserPoolDomain",
+        "cognito-idp:DescribeUserPoolDomain",
+        "cloudfront:updateDistribution"
+      ],
+      "timeoutInMinutes": 20
+    },
+    "delete": {
+      "permissions": [
+        "cognito-idp:DeleteUserPoolDomain",
+        "cognito-idp:DescribeUserPoolDomain"
+      ],
+      "timeoutInMinutes": 25
+    },
+    "read": {
+      "permissions": [
+        "cognito-idp:DescribeUserPoolDomain"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cognito-idp:UpdateUserPoolDomain",
+        "cognito-idp:DescribeUserPoolDomain",
+        "cloudfront:updateDistribution"
+      ],
+      "timeoutInMinutes": 20
+    }
+  },
+  "typeName": "AWS::Cognito::UserPoolDomain"
+}

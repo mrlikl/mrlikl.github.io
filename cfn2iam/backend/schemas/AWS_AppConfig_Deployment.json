@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appconfig:StartDeployment",
+        "appconfig:GetDeployment",
+        "appconfig:TagResource",
+        "appconfig:ListTagsForResource",
+        "kms:GenerateDataKey"
+      ],
+      "timeoutInMinutes": 1445
+    },
+    "delete": {
+      "permissions": [
+        "appconfig:StopDeployment"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ApplicationId": {
+            "$ref": "resource-schema.json#/properties/ApplicationId"
+          },
+          "EnvironmentId": {
+            "$ref": "resource-schema.json#/properties/EnvironmentId"
+          }
+        },
+        "required": [
+          "ApplicationId",
+          "EnvironmentId"
+        ]
+      },
+      "permissions": [
+        "appconfig:ListDeployments"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appconfig:GetDeployment",
+        "appconfig:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::AppConfig::Deployment"
+}

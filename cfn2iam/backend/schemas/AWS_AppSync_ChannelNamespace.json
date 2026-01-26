@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appsync:CreateChannelNamespace",
+        "appsync:TagResource",
+        "appsync:GetChannelNamespace",
+        "s3:GetObject"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appsync:DeleteChannelNamespace",
+        "appsync:UntagResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ApiId": {
+            "$ref": "resource-schema.json#/properties/ApiId"
+          }
+        },
+        "required": [
+          "ApiId"
+        ]
+      },
+      "permissions": [
+        "appsync:ListChannelNamespaces"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appsync:GetChannelNamespace",
+        "appsync:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appsync:UpdateChannelNamespace",
+        "appsync:TagResource",
+        "appsync:UntagResource",
+        "appsync:GetChannelNamespace",
+        "s3:GetObject"
+      ]
+    }
+  },
+  "typeName": "AWS::AppSync::ChannelNamespace"
+}

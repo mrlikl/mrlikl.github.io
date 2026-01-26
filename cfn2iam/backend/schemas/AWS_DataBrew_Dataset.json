@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "databrew:CreateDataset",
+        "databrew:DescribeDataset",
+        "databrew:TagResource",
+        "databrew:UntagResource",
+        "glue:GetConnection",
+        "glue:GetTable",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "databrew:DeleteDataset"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "databrew:ListDatasets",
+        "databrew:ListTagsForResource",
+        "iam:ListRoles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "databrew:DescribeDataset",
+        "iam:ListRoles"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "databrew:UpdateDataset",
+        "databrew:TagResource",
+        "databrew:UntagResource",
+        "glue:GetConnection",
+        "glue:GetTable"
+      ]
+    }
+  },
+  "typeName": "AWS::DataBrew::Dataset"
+}

@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "apigateway:POST",
+        "apigateway:GET"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "apigateway:DELETE"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainNameArn": {
+            "$ref": "resource-schema.json#/properties/DomainNameArn"
+          }
+        },
+        "required": [
+          "DomainNameArn"
+        ]
+      },
+      "permissions": [
+        "apigateway:GET"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "apigateway:GET"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "apigateway:GET",
+        "apigateway:DELETE",
+        "apigateway:PATCH"
+      ]
+    }
+  },
+  "typeName": "AWS::ApiGateway::BasePathMappingV2"
+}

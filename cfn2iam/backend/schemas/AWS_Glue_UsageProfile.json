@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateUsageProfile",
+        "glue:GetUsageProfile",
+        "glue:GetTags",
+        "glue:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:DeleteUsageProfile",
+        "glue:GetUsageProfile"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:ListUsageProfiles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetUsageProfile",
+        "glue:GetTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:UpdateUsageProfile",
+        "glue:GetUsageProfile",
+        "glue:TagResource",
+        "glue:UntagResource",
+        "glue:GetTags"
+      ]
+    }
+  },
+  "typeName": "AWS::Glue::UsageProfile"
+}

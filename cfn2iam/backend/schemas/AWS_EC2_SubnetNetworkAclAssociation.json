@@ -1,0 +1,27 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:DescribeNetworkAcls",
+        "ec2:ReplaceNetworkAclAssociation"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DescribeNetworkAcls",
+        "ec2:ReplaceNetworkAclAssociation"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeNetworkAcls"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeNetworkAcls"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::SubnetNetworkAclAssociation"
+}

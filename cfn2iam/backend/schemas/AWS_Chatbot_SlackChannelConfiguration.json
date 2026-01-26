@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "chatbot:CreateSlackChannelConfiguration",
+        "chatbot:TagResource",
+        "chatbot:AssociateToConfiguration",
+        "chatbot:ListAssociations",
+        "iam:PassRole",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "chatbot:DeleteSlackChannelConfiguration",
+        "chatbot:DisassociateFromConfiguration",
+        "chatbot:ListAssociations"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "chatbot:DescribeSlackChannelConfigurations",
+        "chatbot:ListAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "chatbot:DescribeSlackChannelConfigurations",
+        "chatbot:ListAssociations"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "chatbot:UpdateSlackChannelConfiguration",
+        "chatbot:TagResource",
+        "chatbot:UntagResource",
+        "chatbot:ListTagsForResource",
+        "chatbot:AssociateToConfiguration",
+        "chatbot:DisassociateFromConfiguration",
+        "chatbot:ListAssociations",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::Chatbot::SlackChannelConfiguration"
+}

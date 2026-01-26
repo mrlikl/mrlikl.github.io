@@ -1,0 +1,36 @@
+name: Update CloudFormation Schemas
+
+on:
+  schedule:
+    - cron: "0 1 * * 0" # Weekly on Sunday at 1 AM UTC
+  workflow_dispatch:
+
+jobs:
+  update-schemas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Update schemas
+        run: python3 process_schemas.py
+        working-directory: ./cfn2iam/backend
+
+      - name: Get current date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "cfn schemas updated"
+          title: "🤖 CFN Schema update - ${{ steps.date.outputs.date }}"
+          body: "This PR contains updated CloudFormation Schemas."
+          branch: schema-update-${{ github.run_number }}
+          assignees: mrlikl
+          add-paths: |
+            cfn2iam/backend/schemas/

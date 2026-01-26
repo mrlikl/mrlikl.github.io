@@ -1,0 +1,61 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock:CreateFlow",
+        "bedrock:GetFlow",
+        "bedrock:PrepareFlow",
+        "iam:PassRole",
+        "s3:GetObject",
+        "s3:GetObjectVersion",
+        "bedrock:TagResource",
+        "bedrock:ListTagsForResource",
+        "kms:GenerateDataKey",
+        "kms:Decrypt",
+        "bedrock:CreateGuardrail",
+        "bedrock:CreateGuardrailVersion",
+        "bedrock:GetGuardrail"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock:DeleteFlow",
+        "bedrock:GetFlow",
+        "bedrock:DeleteGuardrail",
+        "bedrock:GetGuardrail"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock:ListFlows",
+        "bedrock:ListGuardrails"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:GetFlow",
+        "bedrock:ListTagsForResource",
+        "kms:Decrypt",
+        "bedrock:GetGuardrail"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock:UpdateFlow",
+        "bedrock:GetFlow",
+        "bedrock:PrepareFlow",
+        "iam:PassRole",
+        "s3:GetObject",
+        "s3:GetObjectVersion",
+        "bedrock:TagResource",
+        "bedrock:UntagResource",
+        "bedrock:ListTagsForResource",
+        "kms:GenerateDataKey",
+        "kms:Decrypt",
+        "bedrock:UpdateGuardrail",
+        "bedrock:GetGuardrail"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::Flow"
+}

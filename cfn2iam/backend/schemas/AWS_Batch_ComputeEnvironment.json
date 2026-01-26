@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "Batch:CreateComputeEnvironment",
+        "Batch:TagResource",
+        "Batch:DescribeComputeEnvironments",
+        "iam:CreateServiceLinkedRole",
+        "Iam:PassRole",
+        "Eks:DescribeCluster",
+        "ec2:DescribeLaunchTemplateVersions"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "Batch:DeleteComputeEnvironment",
+        "Batch:DescribeComputeEnvironments",
+        "Batch:UpdateComputeEnvironment",
+        "Iam:PassRole",
+        "Eks:DescribeCluster",
+        "ec2:DescribeLaunchTemplateVersions"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "Batch:DescribeComputeEnvironments"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "Batch:DescribeComputeEnvironments"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "Batch:UpdateComputeEnvironment",
+        "Batch:DescribeComputeEnvironments",
+        "Batch:TagResource",
+        "Batch:UnTagResource",
+        "Iam:PassRole",
+        "Eks:DescribeCluster",
+        "ec2:DescribeLaunchTemplateVersions"
+      ]
+    }
+  },
+  "typeName": "AWS::Batch::ComputeEnvironment"
+}

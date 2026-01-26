@@ -1,0 +1,30 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "connect:AssociateApprovedOrigin",
+        "connect:ListApprovedOrigins"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "connect:DisassociateApprovedOrigin",
+        "connect:ListApprovedOrigins"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "connect:ListApprovedOrigins"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "connect:ListApprovedOrigins"
+      ]
+    },
+    "update": {
+      "permissions": []
+    }
+  },
+  "typeName": "AWS::Connect::ApprovedOrigin"
+}

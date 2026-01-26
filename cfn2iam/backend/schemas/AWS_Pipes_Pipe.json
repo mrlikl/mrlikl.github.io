@@ -1,0 +1,76 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "pipes:CreatePipe",
+        "pipes:DescribePipe",
+        "pipes:TagResource",
+        "iam:PassRole",
+        "logs:PutResourcePolicy",
+        "logs:DescribeResourcePolicies",
+        "logs:DescribeLogGroups",
+        "iam:CreateServiceLinkedRole",
+        "logs:CreateLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries",
+        "s3:PutBucketPolicy",
+        "s3:GetBucketPolicy",
+        "firehose:TagDeliveryStream",
+        "kms:DescribeKey",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "pipes:DeletePipe",
+        "pipes:DescribePipe",
+        "pipes:UntagResource",
+        "logs:CreateLogDelivery",
+        "logs:UpdateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries",
+        "kms:DescribeKey",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "pipes:ListPipes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "pipes:DescribePipe",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "pipes:UpdatePipe",
+        "pipes:TagResource",
+        "pipes:UntagResource",
+        "pipes:DescribePipe",
+        "iam:PassRole",
+        "logs:PutResourcePolicy",
+        "logs:DescribeResourcePolicies",
+        "logs:DescribeLogGroups",
+        "iam:CreateServiceLinkedRole",
+        "logs:CreateLogDelivery",
+        "logs:UpdateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries",
+        "s3:PutBucketPolicy",
+        "s3:GetBucketPolicy",
+        "firehose:TagDeliveryStream",
+        "kms:DescribeKey",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    }
+  },
+  "typeName": "AWS::Pipes::Pipe"
+}

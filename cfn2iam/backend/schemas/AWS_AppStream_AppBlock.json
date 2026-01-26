@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appstream:CreateAppBlock",
+        "appstream:TagResource",
+        "s3:GetObject",
+        "s3:ListBucket",
+        "s3:GetBucketOwnershipControls"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appstream:DeleteAppBlock",
+        "appstream:DescribeAppBlocks"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appstream:DescribeAppBlocks",
+        "appstream:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appstream:DescribeAppBlocks",
+        "appstream:TagResource",
+        "appstream:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::AppStream::AppBlock"
+}

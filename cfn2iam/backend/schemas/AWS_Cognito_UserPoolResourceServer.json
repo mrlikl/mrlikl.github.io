@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cognito-idp:CreateResourceServer"
+      ],
+      "timeoutInMinutes": 2
+    },
+    "delete": {
+      "permissions": [
+        "cognito-idp:DeleteResourceServer"
+      ],
+      "timeoutInMinutes": 2
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "UserPoolId": {
+            "$ref": "resource-schema.json#/properties/UserPoolId"
+          }
+        },
+        "required": [
+          "UserPoolId"
+        ]
+      },
+      "permissions": [
+        "cognito-idp:ListResourceServers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cognito-idp:DescribeResourceServer"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cognito-idp:UpdateResourceServer"
+      ],
+      "timeoutInMinutes": 2
+    }
+  },
+  "typeName": "AWS::Cognito::UserPoolResourceServer"
+}

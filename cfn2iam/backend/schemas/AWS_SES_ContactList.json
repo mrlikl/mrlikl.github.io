@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:CreateContactList",
+        "ses:UntagResource",
+        "ses:TagResource",
+        "ses:GetContactList"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:DeleteContactList",
+        "ses:GetContactList"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListContactLists"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:GetContactList",
+        "ses:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:UpdateContactList",
+        "ses:UntagResource",
+        "ses:TagResource",
+        "ses:GetContactList"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::ContactList"
+}

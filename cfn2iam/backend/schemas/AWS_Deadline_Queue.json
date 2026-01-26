@@ -1,0 +1,62 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "deadline:CreateQueue",
+        "deadline:GetQueue",
+        "iam:PassRole",
+        "identitystore:ListGroupMembershipsForMember",
+        "logs:CreateLogGroup",
+        "s3:ListBucket",
+        "deadline:TagResource",
+        "deadline:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "deadline:DeleteQueue",
+        "deadline:GetQueue",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "FarmId": {
+            "$ref": "resource-schema.json#/properties/FarmId"
+          }
+        },
+        "required": [
+          "FarmId"
+        ]
+      },
+      "permissions": [
+        "deadline:ListQueues",
+        "identitystore:DescribeGroup",
+        "identitystore:DescribeUser",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "deadline:GetQueue",
+        "identitystore:ListGroupMembershipsForMember",
+        "deadline:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "deadline:UpdateQueue",
+        "deadline:GetQueue",
+        "iam:PassRole",
+        "identitystore:ListGroupMembershipsForMember",
+        "logs:CreateLogGroup",
+        "s3:ListBucket",
+        "deadline:TagResource",
+        "deadline:UntagResource",
+        "deadline:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Deadline::Queue"
+}

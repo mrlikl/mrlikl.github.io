@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iotwireless:CreateMulticastGroup",
+        "iotwireless:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotwireless:DeleteMulticastGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iotwireless:ListMulticastGroups",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotwireless:GetMulticastGroup",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iotwireless:UpdateMulticastGroup",
+        "iotwireless:GetMulticastGroup",
+        "iotwireless:TagResource",
+        "iotwireless:UntagResource",
+        "iotwireless:AssociateWirelessDeviceWithMulticastGroup",
+        "iotwireless:DisassociateWirelessDeviceFromMulticastGroup"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTWireless::MulticastGroup"
+}

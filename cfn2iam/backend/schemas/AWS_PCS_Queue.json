@@ -1,0 +1,61 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateNetworkInterface",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:GetSecurityGroupsForVpc",
+        "iam:CreateServiceLinkedRole",
+        "secretsmanager:CreateSecret",
+        "secretsmanager:TagResource",
+        "pcs:CreateQueue",
+        "pcs:GetQueue",
+        "pcs:ListTagsForResource",
+        "pcs:TagResource"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "delete": {
+      "permissions": [
+        "pcs:DeleteQueue",
+        "pcs:GetQueue"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ClusterId": {
+            "$ref": "resource-schema.json#/properties/ClusterId"
+          }
+        },
+        "required": [
+          "ClusterId"
+        ]
+      },
+      "permissions": [
+        "pcs:ListClusters",
+        "pcs:ListQueues"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "pcs:GetQueue",
+        "pcs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "pcs:GetQueue",
+        "pcs:UpdateQueue",
+        "pcs:ListTagsForResource",
+        "pcs:TagResource",
+        "pcs:UntagResource"
+      ],
+      "timeoutInMinutes": 60
+    }
+  },
+  "typeName": "AWS::PCS::Queue"
+}

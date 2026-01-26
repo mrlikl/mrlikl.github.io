@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aoss:CreateCollection",
+        "aoss:BatchGetCollection",
+        "aoss:AddCollectionToCollectionGroup",
+        "iam:CreateServiceLinkedRole",
+        "kms:CreateGrant",
+        "kms:DescribeKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "aoss:DeleteCollection",
+        "aoss:BatchGetCollection"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "aoss:ListCollections"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aoss:BatchGetCollection"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aoss:UpdateCollection",
+        "aoss:BatchGetCollection"
+      ]
+    }
+  },
+  "typeName": "AWS::OpenSearchServerless::Collection"
+}

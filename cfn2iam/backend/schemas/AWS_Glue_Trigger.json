@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateTrigger",
+        "glue:GetTrigger",
+        "glue:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:DeleteTrigger",
+        "glue:GetTrigger"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:ListTriggers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetTrigger",
+        "glue:GetTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:UpdateTrigger",
+        "glue:UntagResource",
+        "glue:TagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Glue::Trigger"
+}

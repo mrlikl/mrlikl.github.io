@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cognito-idp:SetRiskConfiguration",
+        "cognito-idp:DescribeRiskConfiguration",
+        "iam:PassRole"
+      ],
+      "timeoutInMinutes": 2
+    },
+    "delete": {
+      "permissions": [
+        "cognito-idp:SetRiskConfiguration",
+        "cognito-idp:DescribeRiskConfiguration"
+      ],
+      "timeoutInMinutes": 2
+    },
+    "read": {
+      "permissions": [
+        "cognito-idp:DescribeRiskConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cognito-idp:SetRiskConfiguration",
+        "cognito-idp:DescribeRiskConfiguration",
+        "iam:PassRole"
+      ],
+      "timeoutInMinutes": 2
+    }
+  },
+  "typeName": "AWS::Cognito::UserPoolRiskConfigurationAttachment"
+}

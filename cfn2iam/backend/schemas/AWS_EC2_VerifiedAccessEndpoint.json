@@ -1,0 +1,101 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateVerifiedAccessEndpoint",
+        "ec2:DescribeVerifiedAccessEndpoints",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeAccountAttributes",
+        "ec2:CreateTags",
+        "ec2:DescribeTags",
+        "ec2:DescribeVpcs",
+        "ec2:GetVerifiedAccessEndpointPolicy",
+        "elasticloadbalancing:DescribeLoadBalancers",
+        "elasticloadbalancing:DescribeListeners",
+        "elasticloadbalancing:DescribeListenerCertificates",
+        "iam:CreateServiceLinkedRole",
+        "acm:DescribeCertificate",
+        "sso:PutApplicationAccessScope",
+        "sso:GetSharedSsoConfiguration",
+        "sso:CreateManagedApplicationInstance",
+        "sso:DeleteManagedApplicationInstance",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:RetireGrant",
+        "kms:CreateGrant",
+        "kms:Decrypt",
+        "rds:DescribeDbInstances",
+        "rds:DescribeDbProxies",
+        "rds:DescribeDbClusters",
+        "ec2:DescribeAvailabilityZones",
+        "ec2:DescribeVpcEndpointServiceConfigurations"
+      ],
+      "timeoutInMinutes": 600
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DescribeVerifiedAccessEndpoints",
+        "ec2:DeleteVerifiedAccessEndpoint",
+        "ec2:GetVerifiedAccessEndpointPolicy",
+        "ec2:DescribeTags",
+        "ec2:DeleteTags",
+        "sso:DeleteManagedApplicationInstance",
+        "kms:DescribeKey",
+        "kms:RetireGrant",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeVerifiedAccessEndpoints",
+        "ec2:GetVerifiedAccessEndpointPolicy",
+        "ec2:DescribeTags",
+        "kms:DescribeKey",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeVerifiedAccessEndpoints",
+        "ec2:GetVerifiedAccessEndpointPolicy",
+        "ec2:DescribeTags",
+        "kms:DescribeKey",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:ModifyVerifiedAccessEndpoint",
+        "ec2:ModifyVerifiedAccessEndpointPolicy",
+        "ec2:DescribeVerifiedAccessEndpoints",
+        "ec2:GetVerifiedAccessEndpointPolicy",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeTags",
+        "ec2:DeleteTags",
+        "ec2:CreateTags",
+        "elasticloadbalancing:DescribeLoadBalancers",
+        "elasticloadbalancing:DescribeListeners",
+        "elasticloadbalancing:DescribeListenerCertificates",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:RetireGrant",
+        "kms:CreateGrant",
+        "kms:Decrypt",
+        "rds:DescribeDbInstances",
+        "rds:DescribeDbProxies",
+        "rds:DescribeDbClusters"
+      ],
+      "timeoutInMinutes": 60
+    }
+  },
+  "typeName": "AWS::EC2::VerifiedAccessEndpoint"
+}

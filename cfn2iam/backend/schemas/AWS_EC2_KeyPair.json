@@ -1,0 +1,30 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateKeyPair",
+        "ec2:ImportKeyPair",
+        "ec2:CreateTags",
+        "ssm:PutParameter"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DeleteKeyPair",
+        "ssm:DeleteParameter",
+        "ec2:DescribeKeyPairs"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeKeyPairs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeKeyPairs"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::KeyPair"
+}

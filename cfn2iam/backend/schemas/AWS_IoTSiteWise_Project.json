@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iotsitewise:CreateProject",
+        "iotsitewise:DescribeProject",
+        "iotsitewise:ListProjectAssets",
+        "iotsitewise:ListTagsForResource",
+        "iotsitewise:TagResource",
+        "iotsitewise:BatchAssociateProjectAssets"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotsitewise:DescribeProject",
+        "iotsitewise:DeleteProject"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iotsitewise:ListPortals",
+        "iotsitewise:ListProjects",
+        "iotsitewise:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotsitewise:DescribeProject",
+        "iotsitewise:ListTagsForResource",
+        "iotsitewise:ListProjectAssets"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iotsitewise:DescribeProject",
+        "iotsitewise:UpdateProject",
+        "iotsitewise:BatchAssociateProjectAssets",
+        "iotsitewise:BatchDisAssociateProjectAssets",
+        "iotsitewise:ListProjectAssets",
+        "iotsitewise:TagResource",
+        "iotsitewise:UntagResource",
+        "iotsitewise:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTSiteWise::Project"
+}

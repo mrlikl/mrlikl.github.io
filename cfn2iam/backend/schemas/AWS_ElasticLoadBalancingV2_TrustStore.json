@@ -1,0 +1,62 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticloadbalancing:CreateTrustStore",
+        "elasticloadbalancing:DescribeTrustStores",
+        "elasticloadbalancing:AddTags",
+        "s3:GetObject",
+        "s3:GetObjectVersion"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "elasticloadbalancing:DescribeTrustStores",
+        "elasticloadbalancing:DeleteTrustStore"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "Names": {
+            "insertionOrder": false,
+            "items": {
+              "$ref": "resource-schema.json#/properties/Name"
+            },
+            "type": "array",
+            "uniqueItems": false
+          },
+          "TrustStoreArns": {
+            "insertionOrder": false,
+            "items": {
+              "$ref": "resource-schema.json#/properties/TrustStoreArn"
+            },
+            "type": "array",
+            "uniqueItems": false
+          }
+        }
+      },
+      "permissions": [
+        "elasticloadbalancing:DescribeTrustStores",
+        "s3:GetObject",
+        "s3:GetObjectVersion"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticloadbalancing:DescribeTrustStores",
+        "elasticloadbalancing:DescribeTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "elasticloadbalancing:ModifyTrustStore",
+        "elasticloadbalancing:AddTags",
+        "elasticloadbalancing:RemoveTags",
+        "s3:GetObject",
+        "s3:GetObjectVersion"
+      ]
+    }
+  },
+  "typeName": "AWS::ElasticLoadBalancingV2::TrustStore"
+}

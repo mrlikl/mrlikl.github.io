@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ivs:ImportPublicKey",
+        "ivs:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ivs:DeletePublicKey",
+        "ivs:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ivs:ListPublicKeys",
+        "ivs:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ivs:GetPublicKey"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ivs:GetPublicKey",
+        "ivs:ListTagsForResource",
+        "ivs:UntagResource",
+        "ivs:TagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IVS::PublicKey"
+}

@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "autoscaling:PutLifecycleHook",
+        "autoscaling:DescribeLifecycleHooks",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "autoscaling:DeleteLifecycleHook",
+        "autoscaling:DescribeLifecycleHooks"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "autoscaling:DescribeLifecycleHooks"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "autoscaling:DescribeLifecycleHooks"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "autoscaling:PutLifecycleHook",
+        "autoscaling:DescribeLifecycleHooks",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::AutoScaling::LifecycleHook"
+}

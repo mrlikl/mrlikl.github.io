@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:TagResource",
+        "ses:ListTagsForResource",
+        "ses:GetRuleSet",
+        "ses:CreateRuleSet"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:GetRuleSet",
+        "ses:DeleteRuleSet"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListRuleSets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:ListTagsForResource",
+        "ses:GetRuleSet"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:TagResource",
+        "ses:UntagResource",
+        "ses:ListTagsForResource",
+        "ses:GetRuleSet",
+        "ses:UpdateRuleSet"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::MailManagerRuleSet"
+}

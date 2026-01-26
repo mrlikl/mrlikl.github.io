@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "securityhub:CreateAggregatorV2",
+        "securityhub:GetAggregatorV2",
+        "securityhub:TagResource",
+        "securityhub:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "securityhub:DeleteAggregatorV2"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "securityhub:ListAggregatorsV2",
+        "securityhub:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "securityhub:GetAggregatorV2",
+        "securityhub:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "securityhub:UpdateAggregatorV2",
+        "securityhub:GetAggregatorV2",
+        "securityhub:TagResource",
+        "securityhub:UntagResource",
+        "securityhub:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SecurityHub::AggregatorV2"
+}

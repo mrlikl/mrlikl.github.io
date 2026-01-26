@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:AddTags",
+        "sagemaker:ListTags",
+        "sagemaker:CreateInferenceComponent",
+        "sagemaker:DescribeInferenceComponent"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DescribeInferenceComponent",
+        "sagemaker:DeleteInferenceComponent",
+        "sagemaker:DeleteTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListInferenceComponents",
+        "sagemaker:DescribeInferenceComponent",
+        "sagemaker:ListTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeInferenceComponent",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateInferenceComponent",
+        "sagemaker:UpdateInferenceComponentRuntimeConfig",
+        "sagemaker:DescribeInferenceComponent",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags",
+        "sagemaker:DeleteTags"
+      ],
+      "timeoutInMinutes": 490
+    }
+  },
+  "typeName": "AWS::SageMaker::InferenceComponent"
+}

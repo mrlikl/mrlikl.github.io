@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "databrew:CreateSchedule",
+        "databrew:DescribeSchedule",
+        "databrew:TagResource",
+        "databrew:UntagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "databrew:DeleteSchedule"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "databrew:ListSchedules",
+        "databrew:ListTagsForResource",
+        "iam:ListRoles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "databrew:DescribeSchedule",
+        "iam:ListRoles"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "databrew:UpdateSchedule",
+        "databrew:TagResource",
+        "databrew:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::DataBrew::Schedule"
+}

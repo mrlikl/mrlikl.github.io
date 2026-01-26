@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:GetTransitGatewayRouteTablePropagations",
+        "ec2:EnableTransitGatewayRouteTablePropagation"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:GetTransitGatewayRouteTablePropagations",
+        "ec2:DisableTransitGatewayRouteTablePropagation"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "TransitGatewayRouteTableId": {
+            "$ref": "resource-schema.json#/properties/TransitGatewayRouteTableId"
+          }
+        },
+        "required": [
+          "TransitGatewayRouteTableId"
+        ]
+      },
+      "permissions": [
+        "ec2:GetTransitGatewayRouteTablePropagations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:GetTransitGatewayRouteTablePropagations"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::TransitGatewayRouteTablePropagation"
+}

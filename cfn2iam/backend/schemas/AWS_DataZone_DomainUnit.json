@@ -1,0 +1,53 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "datazone:CreateDomainUnit",
+        "datazone:GetDomainUnit"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "datazone:DeleteDomainUnit",
+        "datazone:GetDomainUnit"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainIdentifier": {
+            "description": "The ID of the domain where you want to create a domain unit.",
+            "pattern": "^dzd[-_][a-zA-Z0-9_-]{1,36}$",
+            "type": "string"
+          },
+          "ParentDomainUnitIdentifier": {
+            "description": "The ID of the parent domain unit.",
+            "maxLength": 256,
+            "minLength": 1,
+            "pattern": "^[a-z0-9_-]+$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "DomainIdentifier",
+          "ParentDomainUnitIdentifier"
+        ]
+      },
+      "permissions": [
+        "datazone:ListDomainUnitsForParent"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "datazone:GetDomainUnit"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "datazone:UpdateDomainUnit",
+        "datazone:GetDomainUnit"
+      ]
+    }
+  },
+  "typeName": "AWS::DataZone::DomainUnit"
+}

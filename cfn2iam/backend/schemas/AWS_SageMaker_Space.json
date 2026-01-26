@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateSpace",
+        "sagemaker:DescribeSpace",
+        "sagemaker:ListTags",
+        "sagemaker:AddTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteSpace",
+        "sagemaker:DescribeSpace",
+        "sagemaker:DeleteTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListSpaces",
+        "sagemaker:ListTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeSpace",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateSpace",
+        "sagemaker:DescribeSpace",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::Space"
+}

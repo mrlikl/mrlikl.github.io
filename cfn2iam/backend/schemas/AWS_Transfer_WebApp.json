@@ -1,0 +1,63 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "transfer:CreateWebApp",
+        "transfer:DescribeWebApp",
+        "transfer:DescribeWebAppCustomization",
+        "transfer:TagResource",
+        "transfer:UpdateWebAppCustomization",
+        "iam:PassRole",
+        "sso:CreateApplication",
+        "sso:DescribeApplication",
+        "sso:ListApplications",
+        "sso:PutApplicationGrant",
+        "sso:GetApplicationGrant",
+        "sso:ListApplicationGrants",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:GetApplicationAuthenticationMethod",
+        "sso:ListApplicationAuthenticationMethods",
+        "sso:PutApplicationAccessScope",
+        "sso:GetApplicationAccessScope",
+        "sso:ListApplicationAccessScopes"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "transfer:DeleteWebApp",
+        "sso:DescribeApplication",
+        "sso:DeleteApplication"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "transfer:ListWebApps"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "transfer:DescribeWebApp",
+        "transfer:DescribeWebAppCustomization"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "transfer:DescribeWebApp",
+        "transfer:DescribeWebAppCustomization",
+        "transfer:UpdateWebApp",
+        "transfer:UpdateWebAppCustomization",
+        "transfer:DeleteWebAppCustomization",
+        "transfer:UnTagResource",
+        "transfer:TagResource",
+        "iam:PassRole",
+        "sso:PutApplicationGrant",
+        "sso:GetApplicationGrant",
+        "sso:ListApplicationGrants",
+        "sso:UpdateApplication",
+        "sso:DescribeApplication",
+        "sso:ListApplications"
+      ]
+    }
+  },
+  "typeName": "AWS::Transfer::WebApp"
+}

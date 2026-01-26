@@ -1,0 +1,29 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53resolver:AssociateResolverRule",
+        "route53resolver:GetResolverRuleAssociation",
+        "ec2:DescribeVpcs"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53resolver:DisassociateResolverRule",
+        "route53resolver:GetResolverRuleAssociation"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "route53resolver:ListResolverRuleAssociations",
+        "ec2:DescribeVpcs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53resolver:GetResolverRuleAssociation"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53Resolver::ResolverRuleAssociation"
+}

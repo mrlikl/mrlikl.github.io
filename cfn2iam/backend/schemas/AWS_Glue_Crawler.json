@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateCrawler",
+        "glue:GetCrawler",
+        "glue:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:DeleteCrawler",
+        "glue:GetCrawler",
+        "glue:StopCrawler",
+        "iam:PassRole"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:ListCrawlers",
+        "iam:PassRole"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetCrawler",
+        "glue:GetTags",
+        "iam:PassRole"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:UpdateCrawler",
+        "glue:UntagResource",
+        "glue:TagResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::Glue::Crawler"
+}

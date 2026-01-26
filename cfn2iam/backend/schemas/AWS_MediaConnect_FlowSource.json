@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediaconnect:CreateFlow",
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:AddFlowSources",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:ListFlows",
+        "mediaconnect:RemoveFlowSource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:ListFlows"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:ListFlows"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:UpdateFlowSource"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaConnect::FlowSource"
+}

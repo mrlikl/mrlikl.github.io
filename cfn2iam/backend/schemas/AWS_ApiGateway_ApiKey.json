@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "apigateway:POST",
+        "apigateway:GET",
+        "apigateway:PUT"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "apigateway:DELETE",
+        "apigateway:GET"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "apigateway:GET"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "apigateway:GET"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "apigateway:GET",
+        "apigateway:PATCH",
+        "apigateway:PUT",
+        "apigateway:DELETE"
+      ]
+    }
+  },
+  "typeName": "AWS::ApiGateway::ApiKey"
+}

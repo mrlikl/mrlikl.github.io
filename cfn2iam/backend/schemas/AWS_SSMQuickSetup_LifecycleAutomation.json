@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ssm:CreateAssociation",
+        "ssm:DescribeAssociation",
+        "ssm:DescribeAssociationExecutions",
+        "ssm:DescribeAssociationExecutionTargets",
+        "ssm:GetAutomationExecution",
+        "ssm:AddTagsToResource",
+        "ssm:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ssm:DeleteAssociation",
+        "ssm:UpdateAssociation",
+        "ssm:DescribeAssociation",
+        "ssm:DescribeAssociationExecutions",
+        "ssm:DescribeAssociationExecutionTargets",
+        "ssm:GetAutomationExecution",
+        "iam:PassRole"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ssm:ListAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ssm:DescribeAssociation",
+        "ssm:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ssm:DescribeAssociation",
+        "ssm:UpdateAssociation",
+        "ssm:DescribeAssociationExecutions",
+        "ssm:DescribeAssociationExecutionTargets",
+        "ssm:GetAutomationExecution",
+        "ssm:AddTagsToResource",
+        "ssm:RemoveTagsFromResource",
+        "ssm:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::SSMQuickSetup::LifecycleAutomation"
+}

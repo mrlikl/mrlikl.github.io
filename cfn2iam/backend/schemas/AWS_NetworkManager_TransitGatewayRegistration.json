@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "networkmanager:RegisterTransitGateway",
+        "networkmanager:GetTransitGatewayRegistrations",
+        "ec2:DescribeRegions"
+      ],
+      "timeoutInMinutes": 30
+    },
+    "delete": {
+      "permissions": [
+        "networkmanager:DeregisterTransitGateway",
+        "networkmanager:GetTransitGatewayRegistrations"
+      ],
+      "timeoutInMinutes": 30
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "GlobalNetworkId": {
+            "$ref": "resource-schema.json#/properties/GlobalNetworkId"
+          }
+        },
+        "required": [
+          "GlobalNetworkId"
+        ]
+      },
+      "permissions": [
+        "networkmanager:GetTransitGatewayRegistrations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "networkmanager:GetTransitGatewayRegistrations"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkManager::TransitGatewayRegistration"
+}

@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "redshift:CreateIntegration",
+        "redshift:DescribeIntegrations",
+        "redshift:CreateTags",
+        "redshift:DescribeTags",
+        "redshift:DescribeClusters",
+        "redshift:CreateInboundIntegration",
+        "redshift-serverless:ListNamespaces",
+        "kms:CreateGrant",
+        "kms:DescribeKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "redshift:DeleteTags",
+        "redshift:DeleteIntegration",
+        "redshift:DescribeIntegrations"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "redshift:DescribeTags",
+        "redshift:DescribeIntegrations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "redshift:DescribeIntegrations",
+        "redshift:DescribeTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "redshift:DescribeIntegrations",
+        "redshift:ModifyIntegration",
+        "redshift:CreateTags",
+        "redshift:DeleteTags",
+        "redshift:DescribeClusters",
+        "redshift:DescribeTags",
+        "redshift-serverless:ListNamespaces"
+      ]
+    }
+  },
+  "typeName": "AWS::Redshift::Integration"
+}

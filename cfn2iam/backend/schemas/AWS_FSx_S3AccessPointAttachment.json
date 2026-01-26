@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "fsx:CreateAndAttachS3AccessPoint",
+        "fsx:DescribeS3AccessPointAttachments",
+        "s3:CreateAccessPoint",
+        "s3:GetAccessPoint",
+        "s3:PutAccessPointPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "fsx:DescribeS3AccessPointAttachments",
+        "fsx:DetachAndDeleteS3AccessPoint",
+        "s3:DeleteAccessPoint",
+        "s3:GetAccessPoint"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "fsx:DescribeS3AccessPointAttachments",
+        "s3:GetAccessPoint"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "fsx:DescribeS3AccessPointAttachments",
+        "s3:GetAccessPoint"
+      ]
+    }
+  },
+  "typeName": "AWS::FSx::S3AccessPointAttachment"
+}

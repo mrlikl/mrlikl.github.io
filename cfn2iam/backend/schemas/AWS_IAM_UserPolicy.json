@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PutUserPolicy",
+        "iam:GetUserPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iam:DeleteUserPolicy",
+        "iam:GetUserPolicy"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iam:GetUserPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:PutUserPolicy",
+        "iam:GetUserPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::IAM::UserPolicy"
+}

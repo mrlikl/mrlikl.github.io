@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "apigateway:POST",
+        "apigateway:GET"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "apigateway:DELETE",
+        "apigateway:GET"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "UsagePlanId": {
+            "$ref": "resource-schema.json#/properties/UsagePlanId"
+          }
+        },
+        "required": [
+          "UsagePlanId"
+        ]
+      },
+      "permissions": [
+        "apigateway:GET"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "apigateway:GET"
+      ]
+    }
+  },
+  "typeName": "AWS::ApiGateway::UsagePlanKey"
+}

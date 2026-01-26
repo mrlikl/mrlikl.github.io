@@ -1,0 +1,54 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "profile:CreateDomain",
+        "profile:TagResource",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "kms:GetKeyPolicy",
+        "kms:PutKeyPolicy",
+        "kms:ListGrants"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "profile:DeleteDomain",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "kms:GetKeyPolicy",
+        "kms:PutKeyPolicy",
+        "kms:ListGrants"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "profile:ListDomains"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "profile:GetDomain",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "kms:GetKeyPolicy",
+        "kms:PutKeyPolicy",
+        "kms:ListGrants"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "profile:GetDomain",
+        "profile:UpdateDomain",
+        "profile:UntagResource",
+        "profile:TagResource",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "kms:GetKeyPolicy",
+        "kms:PutKeyPolicy",
+        "kms:ListGrants"
+      ]
+    }
+  },
+  "typeName": "AWS::CustomerProfiles::Domain"
+}

@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "identitystore:CreateGroupMembership",
+        "identitystore:DescribeGroupMembership"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "identitystore:DeleteGroupMembership",
+        "identitystore:DescribeGroupMembership"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "GroupId": {
+            "$ref": "resource-schema.json#/properties/GroupId"
+          },
+          "IdentityStoreId": {
+            "$ref": "resource-schema.json#/properties/IdentityStoreId"
+          }
+        },
+        "required": [
+          "IdentityStoreId",
+          "GroupId"
+        ]
+      },
+      "permissions": [
+        "identitystore:ListGroupMemberships"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "identitystore:DescribeGroupMembership"
+      ]
+    }
+  },
+  "typeName": "AWS::IdentityStore::GroupMembership"
+}

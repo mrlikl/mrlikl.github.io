@@ -1,0 +1,73 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "profile:CreateSegmentDefinition",
+        "profile:TagResource",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "kms:GetKeyPolicy",
+        "kms:PutKeyPolicy",
+        "kms:ListGrants",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "profile:DeleteSegmentDefinition",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "kms:GetKeyPolicy",
+        "kms:PutKeyPolicy",
+        "kms:ListGrants",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainName": {
+            "$ref": "resource-schema.json#/properties/DomainName"
+          }
+        },
+        "required": [
+          "DomainName"
+        ]
+      },
+      "permissions": [
+        "profile:ListSegmentDefinitions",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "kms:GetKeyPolicy",
+        "kms:PutKeyPolicy",
+        "kms:ListGrants",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "profile:GetSegmentDefinition",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "kms:GetKeyPolicy",
+        "kms:PutKeyPolicy",
+        "kms:ListGrants",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "profile:GetSegmentDefinition",
+        "profile:UntagResource",
+        "profile:TagResource",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "kms:GetKeyPolicy",
+        "kms:PutKeyPolicy",
+        "kms:ListGrants",
+        "kms:GenerateDataKey"
+      ]
+    }
+  },
+  "typeName": "AWS::CustomerProfiles::SegmentDefinition"
+}

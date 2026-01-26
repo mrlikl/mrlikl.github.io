@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PassRole",
+        "iot:CreateCommand",
+        "iot:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:GetCommand",
+        "iot:UpdateCommand",
+        "iot:DeleteCommand"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iot:ListCommands"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:GetCommand",
+        "iot:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:PassRole",
+        "iot:UpdateCommand",
+        "iot:GetCommand",
+        "iot:TagResource",
+        "iot:UntagResource",
+        "iot:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoT::Command"
+}

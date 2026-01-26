@@ -1,0 +1,26 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "codedeploy:CreateDeploymentConfig"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "codedeploy:GetDeploymentConfig",
+        "codedeploy:DeleteDeploymentConfig"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "codedeploy:ListDeploymentConfigs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "codedeploy:GetDeploymentConfig"
+      ]
+    }
+  },
+  "typeName": "AWS::CodeDeploy::DeploymentConfig"
+}

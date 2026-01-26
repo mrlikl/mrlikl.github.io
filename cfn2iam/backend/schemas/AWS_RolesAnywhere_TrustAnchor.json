@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:CreateServiceLinkedRole",
+        "rolesanywhere:CreateTrustAnchor",
+        "rolesanywhere:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rolesanywhere:DeleteTrustAnchor"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rolesanywhere:ListTrustAnchors",
+        "rolesanywhere:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rolesanywhere:GetTrustAnchor",
+        "rolesanywhere:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "acm-pca:GetCertificateAuthorityCertificate",
+        "rolesanywhere:ListTagsForResource",
+        "rolesanywhere:TagResource",
+        "rolesanywhere:UntagResource",
+        "rolesanywhere:EnableTrustAnchor",
+        "rolesanywhere:DisableTrustAnchor",
+        "rolesanywhere:UpdateTrustAnchor",
+        "rolesanywhere:GetTrustAnchor",
+        "rolesanywhere:PutNotificationSettings",
+        "rolesanywhere:ResetNotificationSettings"
+      ]
+    }
+  },
+  "typeName": "AWS::RolesAnywhere::TrustAnchor"
+}

@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "states:CreateActivity",
+        "states:DescribeActivity",
+        "states:TagResource",
+        "kms:DescribeKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "states:DescribeActivity",
+        "states:DeleteActivity"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "states:ListActivities"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "states:DescribeActivity",
+        "states:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "states:ListTagsForResource",
+        "states:TagResource",
+        "states:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::StepFunctions::Activity"
+}

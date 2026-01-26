@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "verifiedpermissions:CreatePolicyStore",
+        "verifiedpermissions:TagResource",
+        "verifiedpermissions:GetPolicyStore",
+        "verifiedpermissions:PutSchema"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "verifiedpermissions:DeletePolicyStore",
+        "verifiedpermissions:GetPolicyStore"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "verifiedpermissions:ListPolicyStores",
+        "verifiedpermissions:GetPolicyStore",
+        "verifiedpermissions:GetSchema"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "verifiedpermissions:GetPolicyStore",
+        "verifiedpermissions:ListTagsForResource",
+        "verifiedpermissions:GetSchema"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "verifiedpermissions:UpdatePolicyStore",
+        "verifiedpermissions:GetPolicyStore",
+        "verifiedpermissions:TagResource",
+        "verifiedpermissions:UntagResource",
+        "verifiedpermissions:GetSchema",
+        "verifiedpermissions:PutSchema"
+      ]
+    }
+  },
+  "typeName": "AWS::VerifiedPermissions::PolicyStore"
+}

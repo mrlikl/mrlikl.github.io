@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "dms:CreateReplicationConfig",
+        "dms:AddTagsToResource",
+        "dms:ListTagsForResource",
+        "iam:CreateServiceLinkedRole",
+        "iam:AttachRolePolicy",
+        "iam:PutRolePolicy",
+        "iam:UpdateRoleDescription"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "dms:DescribeReplicationConfigs",
+        "dms:DeleteReplicationConfig",
+        "dms:ListTagsForResource",
+        "iam:DeleteServiceLinkedRole",
+        "iam:GetServiceLinkedRoleDeletionStatus"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "dms:DescribeReplicationConfigs",
+        "dms:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dms:DescribeReplicationConfigs",
+        "dms:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "dms:ModifyReplicationConfig",
+        "dms:AddTagsToResource",
+        "dms:RemoveTagsFromResource",
+        "dms:ListTagsForResource",
+        "iam:CreateServiceLinkedRole",
+        "iam:AttachRolePolicy",
+        "iam:PutRolePolicy",
+        "iam:UpdateRoleDescription"
+      ]
+    }
+  },
+  "typeName": "AWS::DMS::ReplicationConfig"
+}

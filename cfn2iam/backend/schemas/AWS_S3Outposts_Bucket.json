@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3-outposts:CreateBucket",
+        "s3-outposts:PutBucketTagging",
+        "s3-outposts:PutLifecycleConfiguration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3-outposts:DeleteBucket"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "OutpostId": {
+            "$ref": "resource-schema.json#/properties/OutpostId"
+          }
+        },
+        "required": [
+          "OutpostId"
+        ]
+      },
+      "permissions": [
+        "s3-outposts:ListRegionalBuckets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3-outposts:GetBucket",
+        "s3-outposts:GetBucketTagging",
+        "s3-outposts:GetLifecycleConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3-outposts:PutBucketTagging",
+        "s3-outposts:DeleteBucketTagging",
+        "s3-outposts:PutLifecycleConfiguration"
+      ]
+    }
+  },
+  "typeName": "AWS::S3Outposts::Bucket"
+}

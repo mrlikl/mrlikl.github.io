@@ -1,0 +1,29 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "apigateway:PATCH",
+        "iam:GetRole",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "apigateway:PATCH"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "apigateway:GET"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "apigateway:PATCH",
+        "iam:GetRole",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::ApiGateway::Account"
+}

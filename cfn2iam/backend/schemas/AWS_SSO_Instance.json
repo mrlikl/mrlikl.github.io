@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sso:CreateInstance",
+        "sso:DescribeInstance",
+        "sso:TagResource",
+        "iam:CreateServiceLinkedRole",
+        "sso:TagInstance",
+        "sso:ListTagsForResource",
+        "identitystore:CreateIdentityStore"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sso:DeleteInstance",
+        "identitystore:DeleteIdentityStore"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sso:ListInstances"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sso:DescribeInstance",
+        "sso:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sso:UpdateInstance",
+        "sso:TagResource",
+        "sso:UntagResource",
+        "sso:ListTagsForResource",
+        "sso:TagInstance",
+        "sso:DescribeInstance"
+      ]
+    }
+  },
+  "typeName": "AWS::SSO::Instance"
+}

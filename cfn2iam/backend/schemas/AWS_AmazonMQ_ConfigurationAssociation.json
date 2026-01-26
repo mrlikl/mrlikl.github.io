@@ -1,0 +1,24 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mq:DescribeBroker",
+        "mq:UpdateBroker",
+        "mq:RebootBroker"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mq:UpdateBroker",
+        "mq:RebootBroker"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mq:UpdateBroker",
+        "mq:RebootBroker"
+      ]
+    }
+  },
+  "typeName": "AWS::AmazonMQ::ConfigurationAssociation"
+}

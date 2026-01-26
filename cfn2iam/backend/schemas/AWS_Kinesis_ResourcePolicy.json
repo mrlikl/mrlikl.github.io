@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "kinesis:GetResourcePolicy",
+        "kinesis:PutResourcePolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "kinesis:DeleteResourcePolicy",
+        "kinesis:GetResourcePolicy"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "kinesis:GetResourcePolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "kinesis:PutResourcePolicy",
+        "kinesis:GetResourcePolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::Kinesis::ResourcePolicy"
+}

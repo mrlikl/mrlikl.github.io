@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "vpc-lattice:GetResourcePolicy",
+        "vpc-lattice:PutResourcePolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "vpc-lattice:GetResourcePolicy",
+        "vpc-lattice:DeleteResourcePolicy"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "vpc-lattice:GetResourcePolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "vpc-lattice:GetResourcePolicy",
+        "vpc-lattice:PutResourcePolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::VpcLattice::ResourcePolicy"
+}

@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PassRole",
+        "logs:PutPipelineRule",
+        "observabilityadmin:CreateTelemetryPipeline",
+        "observabilityadmin:GetTelemetryPipeline",
+        "observabilityadmin:ListTagsForResource",
+        "observabilityadmin:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "logs:DeletePipelineRule",
+        "observabilityadmin:DeleteTelemetryPipeline",
+        "observabilityadmin:GetTelemetryPipeline"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "observabilityadmin:ListTagsForResource",
+        "observabilityadmin:ListTelemetryPipelines"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "observabilityadmin:GetTelemetryPipeline",
+        "observabilityadmin:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:PassRole",
+        "logs:DeletePipelineRule",
+        "logs:PutPipelineRule",
+        "observabilityadmin:GetTelemetryPipeline",
+        "observabilityadmin:ListTagsForResource",
+        "observabilityadmin:TagResource",
+        "observabilityadmin:UntagResource",
+        "observabilityadmin:UpdateTelemetryPipeline"
+      ]
+    }
+  },
+  "typeName": "AWS::ObservabilityAdmin::TelemetryPipelines"
+}

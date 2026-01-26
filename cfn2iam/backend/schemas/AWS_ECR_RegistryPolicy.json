@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ecr:GetRegistryPolicy",
+        "ecr:PutRegistryPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ecr:DeleteRegistryPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ecr:GetRegistryPolicy"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ecr:GetRegistryPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ecr:GetRegistryPolicy",
+        "ecr:PutRegistryPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::ECR::RegistryPolicy"
+}

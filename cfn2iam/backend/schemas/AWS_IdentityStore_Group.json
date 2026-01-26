@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "identitystore:CreateGroup",
+        "identitystore:DescribeGroup"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "identitystore:DescribeGroup",
+        "identitystore:DeleteGroup"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "IdentityStoreId": {
+            "$ref": "resource-schema.json#/properties/IdentityStoreId"
+          }
+        },
+        "required": [
+          "IdentityStoreId"
+        ]
+      },
+      "permissions": [
+        "identitystore:ListGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "identitystore:DescribeGroup"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "identitystore:DescribeGroup",
+        "identitystore:UpdateGroup"
+      ]
+    }
+  },
+  "typeName": "AWS::IdentityStore::Group"
+}

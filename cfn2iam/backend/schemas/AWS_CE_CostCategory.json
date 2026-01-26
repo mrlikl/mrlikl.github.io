@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ce:CreateCostCategoryDefinition",
+        "ce:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ce:DeleteCostCategoryDefinition"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ce:ListCostCategoryDefinitions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ce:DescribeCostCategoryDefinition",
+        "ce:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ce:UpdateCostCategoryDefinition",
+        "ce:TagResource",
+        "ce:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CE::CostCategory"
+}

@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "timestream:CreateScheduledQuery",
+        "timestream:DescribeEndpoints",
+        "timestream:TagResource",
+        "iam:PassRole",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "timestream:DeleteScheduledQuery",
+        "timestream:DescribeScheduledQuery",
+        "timestream:DescribeEndpoints"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "timestream:ListScheduledQueries",
+        "timestream:DescribeEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "timestream:DescribeScheduledQuery",
+        "timestream:ListTagsForResource",
+        "timestream:DescribeEndpoints",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "timestream:UpdateScheduledQuery",
+        "timestream:TagResource",
+        "timestream:UntagResource",
+        "timestream:DescribeEndpoints"
+      ]
+    }
+  },
+  "typeName": "AWS::Timestream::ScheduledQuery"
+}

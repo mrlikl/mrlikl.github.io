@@ -1,0 +1,54 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "workspaces-web:CreateSessionLogger",
+        "workspaces-web:GetSessionLogger",
+        "workspaces-web:ListSessionLoggers",
+        "workspaces-web:ListTagsForResource",
+        "workspaces-web:TagResource",
+        "s3:PutObject",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ReEncryptTo",
+        "kms:ReEncryptFrom"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "workspaces-web:GetSessionLogger",
+        "workspaces-web:DeleteSessionLogger",
+        "kms:Decrypt"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "workspaces-web:ListSessionLoggers",
+        "kms:Decrypt"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "workspaces-web:GetSessionLogger",
+        "workspaces-web:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "workspaces-web:UpdateSessionLogger",
+        "workspaces-web:GetSessionLogger",
+        "workspaces-web:ListSessionLoggers",
+        "workspaces-web:TagResource",
+        "workspaces-web:UntagResource",
+        "workspaces-web:ListTagsForResource",
+        "s3:PutObject",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::WorkSpacesWeb::SessionLogger"
+}

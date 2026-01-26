@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:GetRole",
+        "iam:PassRole",
+        "glue:CreateJob",
+        "glue:GetJob",
+        "glue:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:DeleteJob",
+        "glue:GetJob",
+        "glue:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:ListJobs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetJob",
+        "glue:GetTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:GetRole",
+        "iam:PassRole",
+        "glue:UpdateJob",
+        "glue:UntagResource",
+        "glue:TagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Glue::Job"
+}

@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appsync:CreateGraphqlApi",
+        "appsync:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appsync:DeleteGraphqlApi"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "appsync:ListGraphqlApis"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appsync:GetGraphqlApi",
+        "appsync:GetGraphqlApiEnvironmentVariables",
+        "appsync:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appsync:GetGraphqlApi",
+        "appsync:UpdateGraphqlApi",
+        "appsync:TagResource",
+        "appsync:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::AppSync::GraphQLApi"
+}

@@ -1,0 +1,68 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:DescribeAccountAttributes",
+        "ec2:DescribeAvailabilityZones",
+        "ec2:DescribeInternetGateways",
+        "iam:GetRole",
+        "iam:ListRoles",
+        "iam:PassRole",
+        "rds:AddTagsToResource",
+        "rds:CreateDBInstance",
+        "rds:DescribeDBInstances",
+        "rds:DescribeEvents",
+        "rds:ListTagsForResource",
+        "rds:ModifyDBInstance",
+        "rds:RebootDBInstance",
+        "iam:CreateServiceLinkedRole"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "delete": {
+      "permissions": [
+        "rds:AddTagsToResource",
+        "rds:CreateDBSnapshot",
+        "rds:DeleteDBInstance",
+        "rds:DescribeDBInstances"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "list": {
+      "permissions": [
+        "rds:DescribeDBInstances",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeAccountAttributes",
+        "ec2:DescribeAvailabilityZones",
+        "ec2:DescribeInternetGateways",
+        "rds:DescribeDBInstances",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:DescribeAccountAttributes",
+        "ec2:DescribeAvailabilityZones",
+        "ec2:DescribeInternetGateways",
+        "iam:GetRole",
+        "iam:ListRoles",
+        "iam:PassRole",
+        "rds:AddTagsToResource",
+        "rds:DescribeDBClusters",
+        "rds:DescribeDBInstances",
+        "rds:DescribeDBParameterGroups",
+        "rds:DescribeEvents",
+        "rds:ListTagsForResource",
+        "rds:ModifyDBInstance",
+        "rds:RebootDBInstance",
+        "rds:RemoveTagsFromResource"
+      ],
+      "timeoutInMinutes": 2160
+    }
+  },
+  "typeName": "AWS::Neptune::DBInstance"
+}

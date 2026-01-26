@@ -1,0 +1,4 @@
+{
+  "handlers": {},
+  "typeName": "AWS::EC2::ClientVpnRoute"
+}

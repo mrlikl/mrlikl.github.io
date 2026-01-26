@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ce:CreateAnomalySubscription",
+        "ce:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ce:DeleteAnomalySubscription"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ce:GetAnomalySubscriptions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ce:GetAnomalySubscriptions",
+        "ce:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ce:UpdateAnomalySubscription"
+      ]
+    }
+  },
+  "typeName": "AWS::CE::AnomalySubscription"
+}

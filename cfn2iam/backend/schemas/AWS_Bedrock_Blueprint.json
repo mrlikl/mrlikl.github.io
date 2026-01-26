@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock:CreateBlueprint",
+        "bedrock:GetBlueprint",
+        "bedrock:TagResource",
+        "bedrock:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock:DeleteBlueprint",
+        "bedrock:GetBlueprint",
+        "kms:DescribeKey",
+        "kms:Decrypt"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock:ListBlueprints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:GetBlueprint",
+        "bedrock:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock:UpdateBlueprint",
+        "bedrock:GetBlueprint",
+        "bedrock:TagResource",
+        "bedrock:UntagResource",
+        "bedrock:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::Blueprint"
+}

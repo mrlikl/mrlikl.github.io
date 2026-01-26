@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lightsail:CreateInstanceSnapshot",
+        "lightsail:GetInstanceSnapshot",
+        "lightsail:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lightsail:GetInstanceSnapshot",
+        "lightsail:DeleteInstanceSnapshot"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "lightsail:GetInstanceSnapshots"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lightsail:GetInstanceSnapshot"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lightsail:GetInstanceSnapshot",
+        "lightsail:TagResource",
+        "lightsail:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Lightsail::InstanceSnapshot"
+}

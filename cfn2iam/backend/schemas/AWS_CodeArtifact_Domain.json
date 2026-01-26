@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "codeartifact:CreateDomain",
+        "codeartifact:DescribeDomain",
+        "codeartifact:PutDomainPermissionsPolicy",
+        "codeartifact:GetDomainPermissionsPolicy",
+        "codeartifact:TagResource",
+        "codeartifact:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "codeartifact:DeleteDomain",
+        "codeartifact:DescribeDomain"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "codeartifact:ListDomains"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "codeartifact:DescribeDomain",
+        "codeartifact:GetDomainPermissionsPolicy",
+        "codeartifact:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "codeartifact:DescribeDomain",
+        "codeartifact:PutDomainPermissionsPolicy",
+        "codeartifact:DeleteDomainPermissionsPolicy",
+        "codeartifact:GetDomainPermissionsPolicy",
+        "codeartifact:TagResource",
+        "codeartifact:UntagResource",
+        "codeartifact:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CodeArtifact::Domain"
+}

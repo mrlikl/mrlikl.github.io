@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3:CreateAccessGrantsLocation",
+        "iam:PassRole",
+        "s3:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3:DeleteAccessGrantsLocation"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "s3:ListAccessGrantsLocations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3:GetAccessGrantsLocation",
+        "s3:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3:UpdateAccessGrantsLocation",
+        "s3:TagResource",
+        "s3:UntagResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::S3::AccessGrantsLocation"
+}

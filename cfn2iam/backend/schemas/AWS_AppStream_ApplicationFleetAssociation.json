@@ -1,0 +1,22 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appstream:AssociateApplicationFleet",
+        "appstream:DescribeApplicationFleetAssociations"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appstream:DisassociateApplicationFleet",
+        "appstream:DescribeApplicationFleetAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appstream:DescribeApplicationFleetAssociations"
+      ]
+    }
+  },
+  "typeName": "AWS::AppStream::ApplicationFleetAssociation"
+}

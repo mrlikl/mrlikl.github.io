@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sso:CreateApplication",
+        "sso:DescribeApplication",
+        "sso:TagResource",
+        "sso:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sso:DeleteApplication"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "InstanceArn": {
+            "$ref": "resource-schema.json#/properties/InstanceArn"
+          }
+        },
+        "required": [
+          "InstanceArn"
+        ]
+      },
+      "permissions": [
+        "sso:ListApplications",
+        "sso:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sso:DescribeApplication",
+        "sso:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sso:UpdateApplication",
+        "sso:TagResource",
+        "sso:UntagResource",
+        "sso:ListTagsForResource",
+        "sso:DescribeApplication"
+      ]
+    }
+  },
+  "typeName": "AWS::SSO::Application"
+}

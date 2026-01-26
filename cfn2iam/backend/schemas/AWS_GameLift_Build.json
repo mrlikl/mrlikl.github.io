@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "gamelift:DescribeBuild",
+        "gamelift:CreateBuild",
+        "gamelift:ListTagsForResource",
+        "gamelift:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "gamelift:DescribeBuild",
+        "gamelift:DeleteBuild"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "gamelift:ListBuilds"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "gamelift:DescribeBuild",
+        "gamelift:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "gamelift:UpdateBuild",
+        "gamelift:DescribeBuild",
+        "gamelift:TagResource",
+        "gamelift:UntagResource",
+        "gamelift:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::GameLift::Build"
+}

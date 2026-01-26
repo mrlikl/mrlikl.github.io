@@ -1,0 +1,30 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediapackagev2:GetOriginEndpointPolicy",
+        "mediapackagev2:PutOriginEndpointPolicy",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediapackagev2:GetOriginEndpointPolicy",
+        "mediapackagev2:DeleteOriginEndpointPolicy"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediapackagev2:GetOriginEndpointPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediapackagev2:GetOriginEndpointPolicy",
+        "mediapackagev2:PutOriginEndpointPolicy",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaPackageV2::OriginEndpointPolicy"
+}

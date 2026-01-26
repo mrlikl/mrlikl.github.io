@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "logs:PutMetricFilter",
+        "logs:DescribeMetricFilters"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "logs:DeleteMetricFilter"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "logs:DescribeMetricFilters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "logs:DescribeMetricFilters"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "logs:PutMetricFilter",
+        "logs:DescribeMetricFilters"
+      ]
+    }
+  },
+  "typeName": "AWS::Logs::MetricFilter"
+}

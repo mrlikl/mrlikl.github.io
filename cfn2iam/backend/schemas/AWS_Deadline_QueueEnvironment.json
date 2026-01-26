@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "deadline:CreateQueueEnvironment",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "deadline:DeleteQueueEnvironment",
+        "deadline:GetQueueEnvironment",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "FarmId": {
+            "$ref": "resource-schema.json#/properties/FarmId"
+          },
+          "QueueId": {
+            "$ref": "resource-schema.json#/properties/QueueId"
+          }
+        },
+        "required": [
+          "FarmId",
+          "QueueId"
+        ]
+      },
+      "permissions": [
+        "deadline:ListQueueEnvironments",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "deadline:GetQueueEnvironment",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "deadline:UpdateQueueEnvironment",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    }
+  },
+  "typeName": "AWS::Deadline::QueueEnvironment"
+}

@@ -1,0 +1,53 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cleanrooms:CreatePrivacyBudgetTemplate",
+        "cleanrooms:ListTagsForResource",
+        "cleanrooms:TagResource",
+        "cleanrooms:GetPrivacyBudgetTemplate",
+        "cleanrooms:ListPrivacyBudgetTemplates"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cleanrooms:DeletePrivacyBudgetTemplate",
+        "cleanrooms:GetPrivacyBudgetTemplate",
+        "cleanrooms:ListPrivacyBudgetTemplates",
+        "cleanrooms:ListTagsForResource",
+        "cleanrooms:UntagResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "MembershipIdentifier": {
+            "$ref": "resource-schema.json#/properties/MembershipIdentifier"
+          }
+        },
+        "required": [
+          "MembershipIdentifier"
+        ]
+      },
+      "permissions": [
+        "cleanrooms:ListPrivacyBudgetTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cleanrooms:GetPrivacyBudgetTemplate",
+        "cleanrooms:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cleanrooms:UpdatePrivacyBudgetTemplate",
+        "cleanrooms:GetPrivacyBudgetTemplate",
+        "cleanrooms:ListTagsForResource",
+        "cleanrooms:TagResource",
+        "cleanrooms:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CleanRooms::PrivacyBudgetTemplate"
+}

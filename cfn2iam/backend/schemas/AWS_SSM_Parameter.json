@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ssm:PutParameter",
+        "ssm:AddTagsToResource",
+        "ssm:GetParameters"
+      ],
+      "timeoutInMinutes": 5
+    },
+    "delete": {
+      "permissions": [
+        "ssm:DeleteParameter"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ssm:DescribeParameters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ssm:GetParameters",
+        "ssm:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ssm:PutParameter",
+        "ssm:AddTagsToResource",
+        "ssm:RemoveTagsFromResource",
+        "ssm:GetParameters"
+      ],
+      "timeoutInMinutes": 5
+    }
+  },
+  "typeName": "AWS::SSM::Parameter"
+}

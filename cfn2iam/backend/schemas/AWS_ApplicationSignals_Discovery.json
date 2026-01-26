@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "application-signals:StartDiscovery",
+        "application-signals:ListServices",
+        "iam:CreateServiceLinkedRole",
+        "cloudtrail:CreateServiceLinkedChannel"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "application-signals:ListServices"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "application-signals:ListServices"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "application-signals:ListServices"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "application-signals:ListServices"
+      ]
+    }
+  },
+  "typeName": "AWS::ApplicationSignals::Discovery"
+}

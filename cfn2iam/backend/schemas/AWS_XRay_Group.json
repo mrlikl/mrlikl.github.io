@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "xray:CreateGroup",
+        "xray:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "xray:DeleteGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "xray:GetGroups",
+        "xray:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "xray:GetGroup",
+        "xray:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "xray:UpdateGroup",
+        "xray:TagResource",
+        "xray:UntagResource",
+        "xray:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::XRay::Group"
+}

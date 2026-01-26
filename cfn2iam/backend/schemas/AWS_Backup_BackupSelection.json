@@ -1,0 +1,30 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "backup:CreateBackupSelection",
+        "iam:GetRole",
+        "iam:PassRole",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "backup:GetBackupSelection",
+        "backup:DeleteBackupSelection"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "backup:ListBackupSelections",
+        "backup:ListBackupPlans"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "backup:GetBackupSelection"
+      ]
+    }
+  },
+  "typeName": "AWS::Backup::BackupSelection"
+}

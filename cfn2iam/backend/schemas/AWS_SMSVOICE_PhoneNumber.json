@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sms-voice:DescribePhoneNumbers",
+        "sms-voice:RequestPhoneNumber",
+        "sms-voice:UpdatePhoneNumber",
+        "sms-voice:DescribeKeywords",
+        "sms-voice:PutKeyword",
+        "sms-voice:TagResource",
+        "sms-voice:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sms-voice:ReleasePhoneNumber",
+        "sms-voice:DescribePhoneNumbers"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sms-voice:DescribePhoneNumbers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sms-voice:DescribePhoneNumbers",
+        "sms-voice:DescribeKeywords",
+        "sms-voice:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sms-voice:DescribePhoneNumbers",
+        "sms-voice:UpdatePhoneNumber",
+        "sms-voice:DescribeKeywords",
+        "sms-voice:DeleteKeyword",
+        "sms-voice:PutKeyword",
+        "sms-voice:UntagResource",
+        "sms-voice:TagResource",
+        "sms-voice:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::SMSVOICE::PhoneNumber"
+}

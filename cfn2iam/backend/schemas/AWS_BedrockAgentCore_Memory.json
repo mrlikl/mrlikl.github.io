@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreateMemory",
+        "bedrock-agentcore:GetMemory",
+        "iam:PassRole",
+        "kms:DescribeKey",
+        "kms:CreateGrant",
+        "kms:Decrypt",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ReEncryptTo",
+        "kms:ReEncryptFrom",
+        "kms:GenerateDataKey",
+        "bedrock-agentcore:TagResource"
+      ],
+      "timeoutInMinutes": 45
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeleteMemory",
+        "bedrock-agentcore:GetMemory"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListMemories"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetMemory",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:UpdateMemory",
+        "bedrock-agentcore:GetMemory",
+        "iam:PassRole",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:UntagResource",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::Memory"
+}

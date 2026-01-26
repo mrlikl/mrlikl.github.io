@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "organizations:PutResourcePolicy",
+        "organizations:DescribeResourcePolicy",
+        "organizations:ListTagsForResource",
+        "organizations:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "organizations:DeleteResourcePolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "organizations:DescribeResourcePolicy"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "organizations:DescribeResourcePolicy",
+        "organizations:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "organizations:DescribeResourcePolicy",
+        "organizations:PutResourcePolicy",
+        "organizations:ListTagsForResource",
+        "organizations:TagResource",
+        "organizations:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Organizations::ResourcePolicy"
+}

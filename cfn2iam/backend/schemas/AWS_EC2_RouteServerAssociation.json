@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:AssociateRouteServer",
+        "ec2:GetRouteServerAssociations"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:GetRouteServerAssociations",
+        "ec2:DisassociateRouteServer"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeRouteServers",
+        "ec2:GetRouteServerAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:GetRouteServerAssociations"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::RouteServerAssociation"
+}

@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wisdom:CreateMessageTemplateVersion",
+        "wisdom:ListMessageTemplateVersions"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wisdom:DeleteMessageTemplate"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "MessageTemplateArn": {
+            "$ref": "resource-schema.json#/properties/MessageTemplateArn"
+          }
+        },
+        "required": [
+          "MessageTemplateArn"
+        ]
+      },
+      "permissions": [
+        "wisdom:ListMessageTemplateVersions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wisdom:GetMessageTemplate"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wisdom:CreateMessageTemplateVersion"
+      ]
+    }
+  },
+  "typeName": "AWS::Wisdom::MessageTemplateVersion"
+}

@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rekognition:CreateCollection",
+        "rekognition:DescribeCollection",
+        "rekognition:ListTagsForResource",
+        "rekognition:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rekognition:DeleteCollection"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rekognition:ListCollections"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rekognition:DescribeCollection",
+        "rekognition:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rekognition:TagResource",
+        "rekognition:UntagResource",
+        "rekognition:DescribeCollection",
+        "rekognition:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Rekognition::Collection"
+}

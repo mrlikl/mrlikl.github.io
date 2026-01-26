@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appconfig:CreateExtensionAssociation",
+        "appconfig:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appconfig:DeleteExtensionAssociation",
+        "appconfig:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "appconfig:ListExtensionAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appconfig:GetExtensionAssociation",
+        "appconfig:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appconfig:UpdateExtensionAssociation",
+        "appconfig:TagResource",
+        "appconfig:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::AppConfig::ExtensionAssociation"
+}

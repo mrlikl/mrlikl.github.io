@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "xray:PutResourcePolicy",
+        "xray:ListResourcePolicies"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "xray:DeleteResourcePolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "xray:ListResourcePolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "xray:ListResourcePolicies"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "xray:PutResourcePolicy",
+        "xray:ListResourcePolicies"
+      ]
+    }
+  },
+  "typeName": "AWS::XRay::ResourcePolicy"
+}

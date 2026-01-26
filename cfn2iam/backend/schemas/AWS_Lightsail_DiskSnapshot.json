@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lightsail:CreateDiskSnapshot",
+        "lightsail:GetDiskSnapshot",
+        "lightsail:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lightsail:DeleteDiskSnapshot",
+        "lightsail:GetDiskSnapshot"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "lightsail:GetDiskSnapshots"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lightsail:GetDiskSnapshot"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lightsail:GetDiskSnapshot",
+        "lightsail:TagResource",
+        "lightsail:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Lightsail::DiskSnapshot"
+}

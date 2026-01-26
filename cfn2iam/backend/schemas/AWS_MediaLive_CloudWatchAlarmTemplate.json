@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "medialive:CreateCloudWatchAlarmTemplate",
+        "medialive:GetCloudWatchAlarmTemplate",
+        "medialive:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "medialive:DeleteCloudWatchAlarmTemplate"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "medialive:ListCloudWatchAlarmTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "medialive:GetCloudWatchAlarmTemplate"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "medialive:UpdateCloudWatchAlarmTemplate",
+        "medialive:GetCloudWatchAlarmTemplate",
+        "medialive:CreateTags",
+        "medialive:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaLive::CloudWatchAlarmTemplate"
+}

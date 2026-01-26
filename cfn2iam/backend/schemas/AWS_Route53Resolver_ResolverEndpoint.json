@@ -1,0 +1,61 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53resolver:CreateResolverEndpoint",
+        "route53resolver:GetResolverEndpoint",
+        "route53resolver:ListResolverEndpointIpAddresses",
+        "route53resolver:ListTagsForResource",
+        "route53resolver:TagResource",
+        "route53resolver:UntagResource",
+        "ec2:CreateNetworkInterface",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeVpcs"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53resolver:DeleteResolverEndpoint",
+        "route53resolver:GetResolverEndpoint",
+        "ec2:DeleteNetworkInterface",
+        "ec2:DescribeNetworkInterfaces"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "route53resolver:ListResolverEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53resolver:GetResolverEndpoint",
+        "route53resolver:ListResolverEndpointIpAddresses",
+        "route53resolver:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "route53resolver:AssociateResolverEndpointIpAddress",
+        "route53resolver:DisassociateResolverEndpointIpAddress",
+        "route53resolver:GetResolverEndpoint",
+        "route53resolver:ListResolverEndpointIpAddresses",
+        "route53resolver:ListTagsForResource",
+        "route53resolver:TagResource",
+        "route53resolver:UntagResource",
+        "route53resolver:UpdateResolverEndpoint",
+        "ec2:AssignIpv6Addresses",
+        "ec2:CreateNetworkInterface",
+        "ec2:DeleteNetworkInterface",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs",
+        "ec2:ModifyNetworkInterfaceAttribute",
+        "ec2:UnassignIpv6Addresses"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53Resolver::ResolverEndpoint"
+}

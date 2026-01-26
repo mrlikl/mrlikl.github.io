@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:CreateTenant",
+        "ses:GetTenant",
+        "ses:CreateTenantResourceAssociation",
+        "ses:ListTenantResources",
+        "ses:UntagResource",
+        "ses:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:GetTenant",
+        "ses:DeleteTenant"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListTenants"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:GetTenant",
+        "ses:ListTenantResources"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:GetTenant",
+        "ses:CreateTenantResourceAssociation",
+        "ses:DeleteTenantResourceAssociation",
+        "ses:ListTenantResources",
+        "ses:TagResource",
+        "ses:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::Tenant"
+}

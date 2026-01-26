@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "acm-pca:ImportCertificateAuthorityCertificate",
+        "acm-pca:UpdateCertificateAuthority"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "acm-pca:UpdateCertificateAuthority"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "acm-pca:GetCertificateAuthorityCertificate",
+        "acm-pca:DescribeCertificateAuthority"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "acm-pca:ImportCertificateAuthorityCertificate",
+        "acm-pca:UpdateCertificateAuthority"
+      ]
+    }
+  },
+  "typeName": "AWS::ACMPCA::CertificateAuthorityActivation"
+}

@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "omics:CreateWorkflow",
+        "omics:GetWorkflow",
+        "omics:TagResource",
+        "s3:PutObject",
+        "s3:GetObject",
+        "s3:GetObjectAttributes",
+        "s3:HeadObject",
+        "s3:GetEncryptionConfiguration",
+        "kms:Decrypt",
+        "kms:GenerateDataKey",
+        "kms:GenerateDataKeyPair",
+        "kms:GenerateDataKeyPairWithoutPlaintext",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "codeconnections:UseConnection",
+        "codeconnections:GetConnection",
+        "codeconnections:GetHost"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "omics:DeleteWorkflow",
+        "omics:GetWorkflow"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "omics:ListWorkflows"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "omics:GetWorkflow"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "omics:UpdateWorkflow",
+        "omics:GetWorkflow",
+        "omics:TagResource",
+        "omics:ListTagsForResource",
+        "omics:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Omics::Workflow"
+}

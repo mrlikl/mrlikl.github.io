@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rds:CreateIntegration",
+        "rds:DescribeIntegrations",
+        "rds:AddTagsToResource",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "redshift:CreateInboundIntegration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rds:DeleteIntegration",
+        "rds:DescribeIntegrations"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rds:DescribeIntegrations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rds:DescribeIntegrations"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rds:DescribeIntegrations",
+        "rds:AddTagsToResource",
+        "rds:RemoveTagsFromResource",
+        "rds:ModifyIntegration"
+      ]
+    }
+  },
+  "typeName": "AWS::RDS::Integration"
+}

@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PassRole",
+        "transfer:CreateUser",
+        "transfer:DescribeUser",
+        "transfer:ImportSshPublicKey",
+        "transfer:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "transfer:DeleteUser"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ServerId": {
+            "$ref": "resource-schema.json#/properties/ServerId"
+          }
+        },
+        "required": [
+          "ServerId"
+        ]
+      },
+      "permissions": [
+        "transfer:ListUsers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "transfer:DescribeUser"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:PassRole",
+        "transfer:DeleteSshPublicKey",
+        "transfer:DescribeUser",
+        "transfer:ImportSshPublicKey",
+        "transfer:TagResource",
+        "transfer:UnTagResource",
+        "transfer:UpdateUser"
+      ]
+    }
+  },
+  "typeName": "AWS::Transfer::User"
+}

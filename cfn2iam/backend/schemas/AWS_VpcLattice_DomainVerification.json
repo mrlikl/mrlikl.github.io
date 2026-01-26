@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "vpc-lattice:StartDomainVerification",
+        "vpc-lattice:GetDomainVerification",
+        "vpc-lattice:TagResource",
+        "vpc-lattice:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "vpc-lattice:DeleteDomainVerification",
+        "vpc-lattice:GetDomainVerification",
+        "vpc-lattice:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "vpc-lattice:ListDomainVerifications"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "vpc-lattice:GetDomainVerification",
+        "vpc-lattice:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "vpc-lattice:StartDomainVerification",
+        "vpc-lattice:GetDomainVerification",
+        "vpc-lattice:TagResource",
+        "vpc-lattice:UntagResource",
+        "vpc-lattice:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::VpcLattice::DomainVerification"
+}

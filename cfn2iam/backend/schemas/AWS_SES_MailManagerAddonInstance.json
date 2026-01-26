@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:TagResource",
+        "ses:ListTagsForResource",
+        "ses:GetAddonInstance",
+        "ses:CreateAddonInstance"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:GetAddonInstance",
+        "ses:DeleteAddonInstance"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListAddonInstances"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:ListTagsForResource",
+        "ses:GetAddonInstance"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:TagResource",
+        "ses:UntagResource",
+        "ses:ListTagsForResource",
+        "ses:GetAddonInstance"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::MailManagerAddonInstance"
+}

@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PassRole",
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:AddFlowVpcInterfaces"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:RemoveFlowVpcInterface"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediaconnect:DescribeFlow"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediaconnect:DescribeFlow"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:AddFlowVpcInterfaces",
+        "mediaconnect:RemoveFlowVpcInterface"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaConnect::FlowVpcInterface"
+}

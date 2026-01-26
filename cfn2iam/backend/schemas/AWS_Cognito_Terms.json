@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cognito-idp:CreateTerms"
+      ],
+      "timeoutInMinutes": 2
+    },
+    "delete": {
+      "permissions": [
+        "cognito-idp:DeleteTerms"
+      ],
+      "timeoutInMinutes": 2
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "UserPoolId": {
+            "$ref": "resource-schema.json#/properties/UserPoolId"
+          }
+        },
+        "required": [
+          "UserPoolId"
+        ]
+      },
+      "permissions": [
+        "cognito-idp:ListTerms"
+      ],
+      "timeoutInMinutes": 2
+    },
+    "read": {
+      "permissions": [
+        "cognito-idp:DescribeTerms"
+      ],
+      "timeoutInMinutes": 2
+    },
+    "update": {
+      "permissions": [
+        "cognito-idp:UpdateTerms"
+      ],
+      "timeoutInMinutes": 2
+    }
+  },
+  "typeName": "AWS::Cognito::Terms"
+}

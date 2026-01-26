@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "observabilityadmin:CreateCentralizationRuleForOrganization",
+        "observabilityadmin:GetCentralizationRuleForOrganization",
+        "observabilityadmin:ListTagsForResource",
+        "observabilityadmin:TagResource"
+      ],
+      "timeoutInMinutes": 90
+    },
+    "delete": {
+      "permissions": [
+        "observabilityadmin:DeleteCentralizationRuleForOrganization"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "observabilityadmin:ListCentralizationRulesForOrganization"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "observabilityadmin:GetCentralizationRuleForOrganization",
+        "observabilityadmin:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "observabilityadmin:UpdateCentralizationRuleForOrganization",
+        "observabilityadmin:GetCentralizationRuleForOrganization",
+        "observabilityadmin:ListTagsForResource",
+        "observabilityadmin:TagResource",
+        "observabilityadmin:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::ObservabilityAdmin::OrganizationCentralizationRule"
+}

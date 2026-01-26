@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "servicecatalog:AssociateTagOptionWithResource",
+        "servicecatalog:ListResourcesForTagOption"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "servicecatalog:DisassociateTagOptionFromResource",
+        "servicecatalog:ListResourcesForTagOption"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "TagOptionId": {
+            "$ref": "resource-schema.json#/properties/TagOptionId"
+          }
+        },
+        "required": [
+          "TagOptionId"
+        ]
+      },
+      "permissions": [
+        "servicecatalog:ListResourcesForTagOption"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "servicecatalog:ListResourcesForTagOption"
+      ]
+    }
+  },
+  "typeName": "AWS::ServiceCatalog::TagOptionAssociation"
+}

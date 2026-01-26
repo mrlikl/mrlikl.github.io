@@ -1,0 +1,31 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "servicecatalog:CreateTagOption"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "servicecatalog:DeleteTagOption"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "servicecatalog:ListTagOptions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "servicecatalog:DescribeTagOption"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "servicecatalog:UpdateTagOption",
+        "servicecatalog:DescribeTagOption"
+      ]
+    }
+  },
+  "typeName": "AWS::ServiceCatalog::TagOption"
+}

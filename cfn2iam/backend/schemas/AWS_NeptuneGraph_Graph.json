@@ -1,0 +1,66 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PassRole",
+        "neptune-graph:CreateGraph",
+        "neptune-graph:GetGraph",
+        "neptune-graph:ListTagsForResource",
+        "neptune-graph:TagResource",
+        "kms:DescribeKey",
+        "kms:CreateGrant",
+        "kms:Decrypt",
+        "iam:CreateServiceLinkedRole"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "delete": {
+      "permissions": [
+        "neptune-graph:DeleteGraph",
+        "neptune-graph:GetGraph",
+        "neptune-graph:ListTagsForResource",
+        "neptune-graph:UntagResource",
+        "kms:DescribeKey",
+        "kms:CreateGrant",
+        "kms:Decrypt"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "list": {
+      "permissions": [
+        "neptune-graph:GetGraph",
+        "neptune-graph:ListGraphs",
+        "neptune-graph:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:CreateGrant",
+        "kms:Decrypt"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "read": {
+      "permissions": [
+        "neptune-graph:GetGraph",
+        "neptune-graph:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:CreateGrant",
+        "kms:Decrypt"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "update": {
+      "permissions": [
+        "iam:PassRole",
+        "neptune-graph:GetGraph",
+        "neptune-graph:ListTagsForResource",
+        "neptune-graph:TagResource",
+        "neptune-graph:UntagResource",
+        "neptune-graph:UpdateGraph",
+        "kms:DescribeKey",
+        "kms:CreateGrant",
+        "kms:Decrypt"
+      ],
+      "timeoutInMinutes": 2160
+    }
+  },
+  "typeName": "AWS::NeptuneGraph::Graph"
+}

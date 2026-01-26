@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock:CreateAutomatedReasoningPolicyVersion",
+        "bedrock:GetAutomatedReasoningPolicy",
+        "bedrock:ExportAutomatedReasoningPolicyVersion",
+        "bedrock:TagResource",
+        "bedrock:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock:DeleteAutomatedReasoningPolicy",
+        "bedrock:GetAutomatedReasoningPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock:ListAutomatedReasoningPolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:GetAutomatedReasoningPolicy",
+        "bedrock:ExportAutomatedReasoningPolicyVersion",
+        "bedrock:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::AutomatedReasoningPolicyVersion"
+}

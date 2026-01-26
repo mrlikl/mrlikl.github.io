@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "dms:CreateInstanceProfile",
+        "dms:ListInstanceProfiles",
+        "dms:DescribeInstanceProfiles",
+        "dms:AddTagsToResource",
+        "dms:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "dms:DeleteInstanceProfile"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "dms:ListInstanceProfiles",
+        "dms:DescribeInstanceProfiles",
+        "dms:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dms:ListInstanceProfiles",
+        "dms:DescribeInstanceProfiles",
+        "dms:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "dms:UpdateInstanceProfile",
+        "dms:ModifyInstanceProfile",
+        "dms:AddTagsToResource",
+        "dms:RemoveTagsFromResource",
+        "dms:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::DMS::InstanceProfile"
+}

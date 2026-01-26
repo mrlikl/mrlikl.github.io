@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateIntegrationResourceProperty",
+        "glue:GetIntegrationResourceProperty",
+        "iam:PassRole",
+        "glue:TagResource",
+        "glue:GetConnections",
+        "glue:GetConnection"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:UntagResource",
+        "glue:DeleteIntegrationResourceProperty",
+        "glue:UpdateIntegrationResourceProperty"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:ListIntegrationResourceProperties"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetIntegrationResourceProperty",
+        "glue:GetTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:UpdateIntegrationResourceProperty",
+        "glue:GetIntegrationResourceProperty",
+        "glue:TagResource",
+        "glue:UntagResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::Glue::IntegrationResourceProperty"
+}

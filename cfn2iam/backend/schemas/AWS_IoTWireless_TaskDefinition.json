@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iotwireless:CreateWirelessGatewayTaskDefinition",
+        "iotwireless:TagResource",
+        "iam:GetRole",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotwireless:DeleteWirelessGatewayTaskDefinition"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "TaskDefinitionType": {
+            "$ref": "#/properties/TaskDefinitionType"
+          }
+        }
+      },
+      "permissions": [
+        "iotwireless:ListWirelessGatewayTaskDefinitions",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotwireless:GetWirelessGatewayTaskDefinition",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iotwireless:GetWirelessGatewayTaskDefinition",
+        "iotwireless:TagResource",
+        "iotwireless:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTWireless::TaskDefinition"
+}

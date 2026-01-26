@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateVpcEndpointServiceConfiguration",
+        "ec2:ModifyVpcEndpointServicePayerResponsibility",
+        "cloudwatch:ListManagedInsightRules",
+        "cloudwatch:DeleteInsightRules",
+        "cloudwatch:PutManagedInsightRules",
+        "ec2:DescribeVpcEndpointServiceConfigurations",
+        "vpce:AllowMultiRegion",
+        "ec2:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DeleteVpcEndpointServiceConfigurations",
+        "ec2:DescribeVpcEndpointServiceConfigurations",
+        "cloudwatch:ListManagedInsightRules",
+        "cloudwatch:DeleteInsightRules",
+        "ec2:DeleteTags",
+        "vpce:AllowMultiRegion"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeVpcEndpointServiceConfigurations",
+        "cloudwatch:ListManagedInsightRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeVpcEndpointServiceConfigurations",
+        "cloudwatch:ListManagedInsightRules"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:ModifyVpcEndpointServiceConfiguration",
+        "ec2:DescribeVpcEndpointServiceConfigurations",
+        "ec2:ModifyVpcEndpointServicePayerResponsibility",
+        "cloudwatch:ListManagedInsightRules",
+        "cloudwatch:DeleteInsightRules",
+        "cloudwatch:PutManagedInsightRules",
+        "ec2:CreateTags",
+        "ec2:DeleteTags",
+        "vpce:AllowMultiRegion"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::VPCEndpointService"
+}

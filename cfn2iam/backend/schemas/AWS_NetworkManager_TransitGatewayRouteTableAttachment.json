@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "networkmanager:CreateTransitGatewayRouteTableAttachment",
+        "networkmanager:GetTransitGatewayRouteTableAttachment",
+        "networkmanager:TagResource",
+        "iam:CreateServiceLinkedRole",
+        "ec2:DescribeRegions"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "networkmanager:GetTransitGatewayRouteTableAttachment",
+        "networkmanager:DeleteAttachment",
+        "ec2:DescribeRegions"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "networkmanager:ListAttachments"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "networkmanager:GetTransitGatewayRouteTableAttachment"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "networkmanager:GetTransitGatewayRouteTableAttachment",
+        "networkmanager:ListTagsForResource",
+        "networkmanager:TagResource",
+        "networkmanager:UntagResource",
+        "ec2:DescribeRegions"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkManager::TransitGatewayRouteTableAttachment"
+}

@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:DescribeTransitGatewayVpcAttachments",
+        "ec2:CreateTransitGatewayVpcAttachment",
+        "ec2:CreateTags",
+        "ec2:DescribeTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DescribeTransitGatewayVpcAttachments",
+        "ec2:DeleteTransitGatewayVpcAttachment",
+        "ec2:DeleteTags",
+        "ec2:DescribeTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeTransitGatewayVpcAttachments",
+        "ec2:DescribeTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeTransitGatewayVpcAttachments",
+        "ec2:DescribeTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:DescribeTransitGatewayVpcAttachments",
+        "ec2:DescribeTags",
+        "ec2:CreateTransitGatewayVpcAttachment",
+        "ec2:CreateTags",
+        "ec2:DeleteTransitGatewayVpcAttachment",
+        "ec2:DeleteTags",
+        "ec2:ModifyTransitGatewayVpcAttachment"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::TransitGatewayAttachment"
+}

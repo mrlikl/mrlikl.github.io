@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rolesanywhere:ImportCrl",
+        "rolesanywhere:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rolesanywhere:DeleteCrl"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rolesanywhere:ListCrls",
+        "rolesanywhere:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rolesanywhere:GetCrl",
+        "rolesanywhere:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rolesanywhere:EnableCrl",
+        "rolesanywhere:DisableCrl",
+        "rolesanywhere:UpdateCrl",
+        "rolesanywhere:TagResource",
+        "rolesanywhere:UntagResource",
+        "rolesanywhere:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::RolesAnywhere::CRL"
+}

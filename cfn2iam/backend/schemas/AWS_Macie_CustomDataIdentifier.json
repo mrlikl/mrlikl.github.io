@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "macie2:CreateCustomDataIdentifier",
+        "macie2:GetCustomDataIdentifier",
+        "macie2:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "macie2:DeleteCustomDataIdentifier"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "macie2:ListCustomDataIdentifiers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "macie2:GetCustomDataIdentifier"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "macie2:TagResource",
+        "macie2:UntagResource",
+        "macie2:GetCustomDataIdentifier"
+      ]
+    }
+  },
+  "typeName": "AWS::Macie::CustomDataIdentifier"
+}

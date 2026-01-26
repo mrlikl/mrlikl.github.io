@@ -1,0 +1,87 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:DescribeVpcAttribute",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeAddresses",
+        "ec2:DescribeInternetGateways",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeAccountAttributes",
+        "ec2:DescribeAvailabilityZones",
+        "redshift-serverless:CreateNamespace",
+        "redshift-serverless:CreateWorkgroup",
+        "redshift-serverless:GetWorkgroup",
+        "redshift-serverless:GetNamespace",
+        "redshift-serverless:ListTagsForResource",
+        "redshift-serverless:TagResource",
+        "redshift-serverless:RestoreFromSnapshot",
+        "redshift-serverless:RestoreFromRecoveryPoint"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DescribeVpcAttribute",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeAddresses",
+        "ec2:DescribeInternetGateways",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeAccountAttributes",
+        "ec2:DescribeAvailabilityZones",
+        "redshift-serverless:GetWorkgroup",
+        "redshift-serverless:GetNamespace",
+        "redshift-serverless:DeleteWorkgroup",
+        "redshift-serverless:ListTagsForResource",
+        "redshift-serverless:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeVpcAttribute",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeAddresses",
+        "ec2:DescribeInternetGateways",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeAccountAttributes",
+        "ec2:DescribeAvailabilityZones",
+        "redshift-serverless:ListWorkgroups",
+        "redshift-serverless:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeVpcAttribute",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeAddresses",
+        "ec2:DescribeInternetGateways",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeAccountAttributes",
+        "ec2:DescribeAvailabilityZones",
+        "redshift-serverless:GetWorkgroup",
+        "redshift-serverless:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:DescribeVpcAttribute",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeAddresses",
+        "ec2:DescribeInternetGateways",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeAccountAttributes",
+        "ec2:DescribeAvailabilityZones",
+        "redshift-serverless:ListTagsForResource",
+        "redshift-serverless:TagResource",
+        "redshift-serverless:UntagResource",
+        "redshift-serverless:GetWorkgroup",
+        "redshift-serverless:UpdateWorkgroup",
+        "redshift-serverless:ListTagsForResource",
+        "redshift-serverless:TagResource",
+        "redshift-serverless:UntagResource",
+        "redshift-serverless:RestoreFromSnapshot",
+        "redshift-serverless:RestoreFromRecoveryPoint"
+      ]
+    }
+  },
+  "typeName": "AWS::RedshiftServerless::Workgroup"
+}

@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wisdom:CreateAIGuardrail",
+        "wisdom:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wisdom:DeleteAIGuardrail"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AssistantId": {
+            "$ref": "resource-schema.json#/properties/AssistantId"
+          }
+        },
+        "required": [
+          "AssistantId"
+        ]
+      },
+      "permissions": [
+        "wisdom:ListAIGuardrails"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wisdom:GetAIGuardrail"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wisdom:UpdateAIGuardrail"
+      ]
+    }
+  },
+  "typeName": "AWS::Wisdom::AIGuardrail"
+}

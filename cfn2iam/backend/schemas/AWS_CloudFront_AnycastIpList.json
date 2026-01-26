@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudfront:CreateAnycastIpList",
+        "cloudfront:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudfront:DeleteAnycastIpList",
+        "cloudfront:GetAnycastIpList"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudfront:ListAnycastIpLists"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudfront:GetAnycastIpList",
+        "cloudfront:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudfront:UpdateAnycastIpList",
+        "cloudfront:GetAnycastIpList",
+        "cloudfront:ListTagsForResource",
+        "cloudfront:TagResource",
+        "cloudfront:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFront::AnycastIpList"
+}

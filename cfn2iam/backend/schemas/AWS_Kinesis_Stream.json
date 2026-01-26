@@ -1,0 +1,61 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "kinesis:EnableEnhancedMonitoring",
+        "kinesis:DescribeStreamSummary",
+        "kinesis:CreateStream",
+        "kinesis:IncreaseStreamRetentionPeriod",
+        "kinesis:StartStreamEncryption",
+        "kinesis:AddTagsToStream",
+        "kinesis:ListTagsForStream",
+        "kinesis:ListTagsForResource",
+        "kinesis:UpdateMaxRecordSize",
+        "kinesis:UpdateStreamWarmThroughput"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "kinesis:DescribeStreamSummary",
+        "kinesis:DeleteStream",
+        "kinesis:RemoveTagsFromStream",
+        "kinesis:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "kinesis:ListStreams"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "kinesis:DescribeStreamSummary",
+        "kinesis:ListTagsForStream",
+        "kinesis:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "kinesis:EnableEnhancedMonitoring",
+        "kinesis:DisableEnhancedMonitoring",
+        "kinesis:DescribeStreamSummary",
+        "kinesis:UpdateShardCount",
+        "kinesis:UpdateStreamMode",
+        "kinesis:IncreaseStreamRetentionPeriod",
+        "kinesis:DecreaseStreamRetentionPeriod",
+        "kinesis:StartStreamEncryption",
+        "kinesis:StopStreamEncryption",
+        "kinesis:AddTagsToStream",
+        "kinesis:TagResource",
+        "kinesis:RemoveTagsFromStream",
+        "kinesis:UntagResource",
+        "kinesis:ListTagsForStream",
+        "kinesis:ListTagsForResource",
+        "kinesis:UpdateMaxRecordSize",
+        "kinesis:UpdateStreamWarmThroughput"
+      ],
+      "timeoutInMinutes": 240
+    }
+  },
+  "typeName": "AWS::Kinesis::Stream"
+}

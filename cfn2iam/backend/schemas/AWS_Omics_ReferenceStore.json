@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "omics:CreateReferenceStore",
+        "omics:TagResource",
+        "kms:DescribeKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "omics:DeleteReferenceStore"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "omics:ListReferenceStores"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "omics:GetReferenceStore",
+        "omics:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Omics::ReferenceStore"
+}

@@ -1,0 +1,24 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cognito-idp:AdminAddUserToGroup",
+        "cognito-idp:AdminListGroupsForUser"
+      ],
+      "timeoutInMinutes": 2
+    },
+    "delete": {
+      "permissions": [
+        "cognito-idp:AdminRemoveUserFromGroup",
+        "cognito-idp:AdminListGroupsForUser"
+      ],
+      "timeoutInMinutes": 2
+    },
+    "read": {
+      "permissions": [
+        "cognito-idp:AdminListGroupsForUser"
+      ]
+    }
+  },
+  "typeName": "AWS::Cognito::UserPoolUserToGroupAttachment"
+}

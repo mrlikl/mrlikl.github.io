@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock:CreatePrompt",
+        "bedrock:GetPrompt",
+        "s3:GetObject",
+        "s3:GetObjectVersion",
+        "bedrock:TagResource",
+        "bedrock:ListTagsForResource",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock:DeletePrompt",
+        "bedrock:GetPrompt"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock:ListPrompts"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:GetPrompt",
+        "bedrock:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock:UpdatePrompt",
+        "bedrock:GetPrompt",
+        "s3:GetObject",
+        "s3:GetObjectVersion",
+        "bedrock:TagResource",
+        "bedrock:UntagResource",
+        "bedrock:ListTagsForResource",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::Prompt"
+}

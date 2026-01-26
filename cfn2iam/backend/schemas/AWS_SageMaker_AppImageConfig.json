@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateAppImageConfig",
+        "sagemaker:DescribeAppImageConfig",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteAppImageConfig",
+        "sagemaker:DescribeAppImageConfig",
+        "sagemaker:DeleteTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListAppImageConfigs",
+        "sagemaker:ListTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeAppImageConfig",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateAppImageConfig",
+        "sagemaker:DescribeAppImageConfig",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::AppImageConfig"
+}

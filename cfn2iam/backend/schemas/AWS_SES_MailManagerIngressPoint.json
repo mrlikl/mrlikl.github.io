@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:TagResource",
+        "ses:ListTagsForResource",
+        "ses:GetIngressPoint",
+        "ses:CreateIngressPoint",
+        "iam:CreateServiceLinkedRole",
+        "ec2:DescribeVpcEndpoints"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:GetIngressPoint",
+        "ses:DeleteIngressPoint"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListIngressPoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:ListTagsForResource",
+        "ses:GetIngressPoint"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:TagResource",
+        "ses:UntagResource",
+        "ses:ListTagsForResource",
+        "ses:GetIngressPoint",
+        "ses:UpdateIngressPoint"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::MailManagerIngressPoint"
+}

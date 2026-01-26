@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudwatch:PutDashboard",
+        "cloudwatch:GetDashboard"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudwatch:DeleteDashboards",
+        "cloudwatch:GetDashboard"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudwatch:ListDashboards"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudwatch:GetDashboard"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudwatch:PutDashboard"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudWatch::Dashboard"
+}

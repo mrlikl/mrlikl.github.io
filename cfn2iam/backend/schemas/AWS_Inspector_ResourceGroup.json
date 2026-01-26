@@ -1,0 +1,20 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "inspector:CreateResourceGroup"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "inspector:CreateResourceGroup"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "inspector:CreateResourceGroup"
+      ]
+    }
+  },
+  "typeName": "AWS::Inspector::ResourceGroup"
+}

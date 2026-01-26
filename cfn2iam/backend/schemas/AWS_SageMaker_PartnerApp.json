@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreatePartnerApp",
+        "sagemaker:DescribePartnerApp",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags",
+        "iam:PassRole",
+        "kms:CreateGrant",
+        "kms:DescribeKey"
+      ],
+      "timeoutInMinutes": 180
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeletePartnerApp",
+        "sagemaker:DescribePartnerApp",
+        "sagemaker:DeleteTags"
+      ],
+      "timeoutInMinutes": 240
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListPartnerApps",
+        "sagemaker:DescribePartnerApp",
+        "sagemaker:ListTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribePartnerApp",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdatePartnerApp",
+        "sagemaker:DescribePartnerApp",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags",
+        "sagemaker:DeleteTags",
+        "kms:DescribeKey"
+      ],
+      "timeoutInMinutes": 180
+    }
+  },
+  "typeName": "AWS::SageMaker::PartnerApp"
+}

@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:EnableRouteServerPropagation",
+        "ec2:GetRouteServerPropagations"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:GetRouteServerPropagations",
+        "ec2:DisableRouteServerPropagation"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeRouteServers",
+        "ec2:GetRouteServerPropagations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:GetRouteServerPropagations"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::RouteServerPropagation"
+}

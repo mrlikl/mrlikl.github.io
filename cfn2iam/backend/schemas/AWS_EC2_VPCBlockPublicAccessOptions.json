@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:DescribeVpcBlockPublicAccessOptions",
+        "ec2:ModifyVpcBlockPublicAccessOptions"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DescribeVpcBlockPublicAccessOptions",
+        "ec2:ModifyVpcBlockPublicAccessOptions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeVpcBlockPublicAccessOptions"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:DescribeVpcBlockPublicAccessOptions",
+        "ec2:ModifyVpcBlockPublicAccessOptions"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::VPCBlockPublicAccessOptions"
+}

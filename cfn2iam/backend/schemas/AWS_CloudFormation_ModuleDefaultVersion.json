@@ -1,0 +1,24 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudformation:DescribeType",
+        "cloudformation:SetTypeDefaultVersion"
+      ]
+    },
+    "delete": {
+      "permissions": []
+    },
+    "list": {
+      "permissions": [
+        "cloudformation:ListTypes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudformation:DescribeType"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFormation::ModuleDefaultVersion"
+}

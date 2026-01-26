@@ -1,0 +1,74 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "gamelift:CreateFleet",
+        "gamelift:CreateFleetLocations",
+        "gamelift:DescribeFleetAttributes",
+        "gamelift:DescribeFleetLocationAttributes",
+        "gamelift:UpdateFleetCapacity",
+        "gamelift:DescribeFleetLocationCapacity",
+        "gamelift:DescribeFleetCapacity",
+        "gamelift:DescribeFleetPortSettings",
+        "gamelift:DescribeRuntimeConfiguration",
+        "gamelift:PutScalingPolicy",
+        "gamelift:DescribeScalingPolicies",
+        "gamelift:ListTagsForResource",
+        "gamelift:UpdateFleetCapacity",
+        "gamelift:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "gamelift:DeleteFleet",
+        "gamelift:DescribeFleetLocationCapacity",
+        "gamelift:DescribeFleetAttributes",
+        "gamelift:DescribeFleetCapacity",
+        "gamelift:DescribeFleetLocationCapacity",
+        "gamelift:UpdateFleetCapacity",
+        "gamelift:DescribeScalingPolicies",
+        "gamelift:DeleteScalingPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "gamelift:ListFleets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "gamelift:DescribeFleetAttributes",
+        "gamelift:DescribeFleetLocationAttributes",
+        "gamelift:DescribeFleetLocationCapacity",
+        "gamelift:DescribeFleetCapacity",
+        "gamelift:DescribeFleetPortSettings",
+        "gamelift:DescribeRuntimeConfiguration",
+        "gamelift:DescribeScalingPolicies",
+        "gamelift:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "gamelift:UpdateFleetAttributes",
+        "gamelift:CreateFleetLocations",
+        "gamelift:DeleteFleetLocations",
+        "gamelift:UpdateFleetCapacity",
+        "gamelift:UpdateFleetPortSettings",
+        "gamelift:UpdateRuntimeConfiguration",
+        "gamelift:DescribeFleetLocationCapacity",
+        "gamelift:DescribeFleetPortSettings",
+        "gamelift:DescribeFleetLocationAttributes",
+        "gamelift:PutScalingPolicy",
+        "gamelift:DescribeScalingPolicies",
+        "gamelift:DeleteScalingPolicy",
+        "gamelift:DescribeFleetAttributes",
+        "gamelift:DescribeFleetCapacity",
+        "gamelift:DescribeRuntimeConfiguration",
+        "gamelift:TagResource",
+        "gamelift:UntagResource",
+        "gamelift:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::GameLift::Fleet"
+}

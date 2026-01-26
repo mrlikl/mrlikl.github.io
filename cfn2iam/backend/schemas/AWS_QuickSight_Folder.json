@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "quicksight:CreateFolder",
+        "quicksight:DescribeFolder",
+        "quicksight:UpdateFolderPermissions",
+        "quicksight:DescribeFolderPermissions",
+        "quicksight:TagResource",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "quicksight:DeleteFolder"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "quicksight:ListFolders"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "quicksight:DescribeFolder",
+        "quicksight:DescribeFolderPermissions",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "quicksight:DescribeFolder",
+        "quicksight:UpdateFolder",
+        "quicksight:DescribeFolderPermissions",
+        "quicksight:UpdateFolderPermissions",
+        "quicksight:ListTagsForResource",
+        "quicksight:TagResource",
+        "quicksight:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::QuickSight::Folder"
+}

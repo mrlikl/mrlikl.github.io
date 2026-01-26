@@ -1,0 +1,31 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "application-signals:PutGroupingConfiguration",
+        "application-signals:ListGroupingAttributeDefinitions"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "application-signals:DeleteGroupingConfiguration",
+        "application-signals:ListGroupingAttributeDefinitions"
+      ]
+    },
+    "list": {
+      "permissions": []
+    },
+    "read": {
+      "permissions": [
+        "application-signals:ListGroupingAttributeDefinitions"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "application-signals:PutGroupingConfiguration",
+        "application-signals:ListGroupingAttributeDefinitions"
+      ]
+    }
+  },
+  "typeName": "AWS::ApplicationSignals::GroupingConfiguration"
+}

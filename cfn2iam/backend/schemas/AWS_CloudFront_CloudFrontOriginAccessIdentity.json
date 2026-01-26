@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudfront:CreateCloudFrontOriginAccessIdentity"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudfront:DeleteCloudFrontOriginAccessIdentity",
+        "cloudfront:GetCloudFrontOriginAccessIdentity"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudfront:ListCloudFrontOriginAccessIdentities"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudfront:GetCloudFrontOriginAccessIdentity"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudfront:UpdateCloudFrontOriginAccessIdentity",
+        "cloudfront:GetCloudFrontOriginAccessIdentity"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFront::CloudFrontOriginAccessIdentity"
+}

@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediatailor:PutPlaybackConfiguration",
+        "mediatailor:ConfigureLogsForPlaybackConfiguration",
+        "iam:CreateServiceLinkedRole",
+        "mediatailor:UntagResource",
+        "mediatailor:TagResource",
+        "mediatailor:GetPlaybackConfiguration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediatailor:DeletePlaybackConfiguration",
+        "mediatailor:GetPlaybackConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediatailor:ListPlaybackConfigurations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediatailor:GetPlaybackConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediatailor:PutPlaybackConfiguration",
+        "mediatailor:ConfigureLogsForPlaybackConfiguration",
+        "iam:CreateServiceLinkedRole",
+        "mediatailor:UntagResource",
+        "mediatailor:TagResource",
+        "mediatailor:GetPlaybackConfiguration"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaTailor::PlaybackConfiguration"
+}

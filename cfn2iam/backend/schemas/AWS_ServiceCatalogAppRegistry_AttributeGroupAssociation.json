@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "servicecatalog:AssociateAttributeGroup"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "servicecatalog:DisassociateAttributeGroup"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ApplicationArn": {
+            "$ref": "resource-schema.json#/properties/ApplicationArn"
+          }
+        },
+        "required": [
+          "ApplicationArn"
+        ]
+      },
+      "permissions": [
+        "servicecatalog:ListAttributeGroupsForApplication"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "servicecatalog:ListAttributeGroupsForApplication"
+      ]
+    }
+  },
+  "typeName": "AWS::ServiceCatalogAppRegistry::AttributeGroupAssociation"
+}

@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock:CreatePromptRouter",
+        "bedrock:GetPromptRouter",
+        "bedrock:TagResource",
+        "bedrock:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock:DeletePromptRouter",
+        "bedrock:GetPromptRouter"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock:ListPromptRouters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:GetPromptRouter",
+        "bedrock:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock:GetPromptRouter",
+        "bedrock:ListTagsForResource",
+        "bedrock:TagResource",
+        "bedrock:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::IntelligentPromptRouter"
+}

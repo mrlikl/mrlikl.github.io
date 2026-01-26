@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "guardduty:CreateDetector",
+        "guardduty:GetDetector",
+        "guardduty:TagResource",
+        "iam:CreateServiceLinkedRole",
+        "iam:GetRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "guardduty:ListDetectors",
+        "guardduty:DeleteDetector",
+        "guardduty:GetDetector"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "guardduty:ListDetectors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "guardduty:GetDetector",
+        "guardduty:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "guardduty:UpdateDetector",
+        "guardduty:GetDetector",
+        "guardduty:ListDetectors",
+        "iam:CreateServiceLinkedRole",
+        "iam:GetRole",
+        "guardduty:TagResource",
+        "guardduty:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::GuardDuty::Detector"
+}

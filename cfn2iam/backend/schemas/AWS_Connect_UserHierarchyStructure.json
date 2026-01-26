@@ -1,0 +1,25 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "connect:UpdateUserHierarchyStructure"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "connect:UpdateUserHierarchyStructure"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "connect:DescribeUserHierarchyStructure"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "connect:UpdateUserHierarchyStructure"
+      ]
+    }
+  },
+  "typeName": "AWS::Connect::UserHierarchyStructure"
+}

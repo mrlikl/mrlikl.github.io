@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cleanrooms-ml:CreateTrainingDataset",
+        "cleanrooms-ml:GetTrainingDataset",
+        "cleanrooms-ml:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cleanrooms-ml:DeleteTrainingDataset"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cleanrooms-ml:ListTrainingDatasets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cleanrooms-ml:GetTrainingDataset"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cleanrooms-ml:TagResource",
+        "cleanrooms-ml:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CleanRoomsML::TrainingDataset"
+}

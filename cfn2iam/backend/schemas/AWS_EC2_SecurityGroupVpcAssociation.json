@@ -1,0 +1,27 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:AssociateSecurityGroupVpc",
+        "ec2:DescribeSecurityGroupVpcAssociations"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DisassociateSecurityGroupVpc",
+        "ec2:DescribeSecurityGroupVpcAssociations"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeSecurityGroupVpcAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeSecurityGroupVpcAssociations"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::SecurityGroupVpcAssociation"
+}

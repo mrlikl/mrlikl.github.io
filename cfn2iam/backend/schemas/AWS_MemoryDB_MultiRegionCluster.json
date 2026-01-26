@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "memorydb:CreateMultiRegionCluster",
+        "memorydb:DescribeMultiRegionClusters",
+        "memorydb:TagResource",
+        "memorydb:ListTags",
+        "iam:CreateServiceLinkedRole"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "delete": {
+      "permissions": [
+        "memorydb:DeleteMultiRegionCluster",
+        "memorydb:DescribeMultiRegionClusters"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "memorydb:DescribeMultiRegionClusters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "memorydb:DescribeMultiRegionClusters",
+        "memorydb:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "memorydb:UpdateMultiRegionCluster",
+        "memorydb:DescribeMultiRegionClusters",
+        "memorydb:ListTags",
+        "memorydb:TagResource",
+        "memorydb:UntagResource"
+      ],
+      "timeoutInMinutes": 2160
+    }
+  },
+  "typeName": "AWS::MemoryDB::MultiRegionCluster"
+}

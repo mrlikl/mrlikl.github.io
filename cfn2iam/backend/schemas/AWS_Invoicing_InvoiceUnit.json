@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "invoicing:CreateInvoiceUnit",
+        "invoicing:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "invoicing:DeleteInvoiceUnit"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "invoicing:ListInvoiceUnits"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "invoicing:GetInvoiceUnit",
+        "invoicing:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "invoicing:UpdateInvoiceUnit",
+        "invoicing:UntagResource",
+        "invoicing:TagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Invoicing::InvoiceUnit"
+}

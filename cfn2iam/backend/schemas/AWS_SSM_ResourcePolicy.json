@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ssm:PutResourcePolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ssm:GetResourcePolicies",
+        "ssm:DeleteResourcePolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ssm:GetResourcePolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ssm:GetResourcePolicies"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ssm:GetResourcePolicies",
+        "ssm:PutResourcePolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::SSM::ResourcePolicy"
+}

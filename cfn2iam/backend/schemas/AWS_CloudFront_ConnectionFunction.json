@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudfront:CreateConnectionFunction",
+        "cloudfront:DescribeConnectionFunction",
+        "cloudfront:PublishConnectionFunction",
+        "cloudfront:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudfront:DeleteConnectionFunction",
+        "cloudfront:DescribeConnectionFunction"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudfront:ListConnectionFunctions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudfront:DescribeConnectionFunction",
+        "cloudfront:GetConnectionFunction",
+        "cloudfront:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudfront:UpdateConnectionFunction",
+        "cloudfront:DescribeConnectionFunction",
+        "cloudfront:PublishConnectionFunction",
+        "cloudfront:TagResource",
+        "cloudfront:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFront::ConnectionFunction"
+}

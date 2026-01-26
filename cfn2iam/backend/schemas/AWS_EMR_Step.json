@@ -1,0 +1,16 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "emr:AddJobFlowSteps"
+      ]
+    },
+    "delete": {
+      "permissions": []
+    },
+    "read": {
+      "permissions": []
+    }
+  },
+  "typeName": "AWS::EMR::Step"
+}

@@ -1,0 +1,112 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "eks:CreateCapability",
+        "eks:DescribeCapability",
+        "eks:TagResource",
+        "eks:CreateAccessEntry",
+        "eks:DeleteAccessEntry",
+        "eks:DescribeAccessEntry",
+        "eks:UpdateAccessEntry",
+        "eks:AssociateAccessPolicy",
+        "eks:DisassociateAccessPolicy",
+        "eks:ListAssociatedAccessPolicies",
+        "iam:PassRole",
+        "iam:GetRole",
+        "sso:CreateApplication",
+        "sso:DeleteApplication",
+        "sso:DeleteApplicationAccessScope",
+        "sso:DeleteApplicationAuthenticationMethod",
+        "sso:DeleteApplicationGrant",
+        "sso:PutApplicationAccessScope",
+        "sso:PutApplicationGrant",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:PutApplicationAssignmentConfiguration",
+        "sso:CreateApplicationAssignment",
+        "sso:DescribeInstance",
+        "sso:DescribeRegisteredRegions",
+        "sso:ListApplicationAssignments",
+        "sso:DeleteApplicationAssignment",
+        "identitystore:ListGroups",
+        "identitystore:ListUsers",
+        "identitystore:DescribeGroup"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "eks:DeleteCapability",
+        "eks:DescribeCapability",
+        "eks:DeleteAccessEntry",
+        "eks:DescribeAccessEntry",
+        "eks:DisassociateAccessPolicy",
+        "eks:ListAssociatedAccessPolicies",
+        "eks:UntagResource",
+        "sso:DeleteApplication",
+        "sso:DeleteApplicationAccessScope",
+        "sso:DeleteApplicationAuthenticationMethod",
+        "sso:DeleteApplicationGrant",
+        "sso:DescribeInstance",
+        "sso:DescribeRegisteredRegions",
+        "sso:ListApplicationAssignments",
+        "sso:DeleteApplicationAssignment"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ClusterName": {
+            "$ref": "resource-schema.json#/properties/ClusterName"
+          }
+        },
+        "required": [
+          "ClusterName"
+        ]
+      },
+      "permissions": [
+        "eks:ListCapabilities"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "eks:DescribeCapability"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "eks:DescribeCapability",
+        "eks:UpdateCapability",
+        "eks:DescribeUpdate",
+        "eks:TagResource",
+        "eks:UntagResource",
+        "iam:PassRole",
+        "iam:GetRole",
+        "eks:CreateAccessEntry",
+        "eks:DeleteAccessEntry",
+        "eks:DescribeAccessEntry",
+        "eks:UpdateAccessEntry",
+        "eks:AssociateAccessPolicy",
+        "eks:DisassociateAccessPolicy",
+        "eks:ListAssociatedAccessPolicies",
+        "sso:CreateApplication",
+        "sso:DeleteApplication",
+        "sso:DeleteApplicationAccessScope",
+        "sso:DeleteApplicationAuthenticationMethod",
+        "sso:DeleteApplicationGrant",
+        "sso:PutApplicationAccessScope",
+        "sso:PutApplicationGrant",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:PutApplicationAssignmentConfiguration",
+        "sso:CreateApplicationAssignment",
+        "sso:DescribeInstance",
+        "sso:DescribeRegisteredRegions",
+        "sso:ListApplicationAssignments",
+        "sso:DeleteApplicationAssignment",
+        "identitystore:ListGroups",
+        "identitystore:ListUsers",
+        "identitystore:DescribeGroup"
+      ]
+    }
+  },
+  "typeName": "AWS::EKS::Capability"
+}

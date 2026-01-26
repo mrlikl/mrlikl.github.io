@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ram:CreateResourceShare",
+        "ram:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ram:DeleteResourceShare",
+        "ram:GetResourceShares"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ram:GetResourceShares"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ram:GetResourceShares"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ram:GetPermission",
+        "ram:GetResourceShares",
+        "ram:GetResourceShareAssociations",
+        "ram:ListResourceSharePermissions",
+        "ram:UpdateResourceShare",
+        "ram:AssociateResourceSharePermission",
+        "ram:AssociateResourceShare",
+        "ram:DisassociateResourceShare",
+        "ram:UntagResource",
+        "ram:TagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::RAM::ResourceShare"
+}

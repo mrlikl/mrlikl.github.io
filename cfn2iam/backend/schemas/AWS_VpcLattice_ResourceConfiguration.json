@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:DescribeSubnets",
+        "vpc-lattice:CreateResourceConfiguration",
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:TagResource",
+        "vpc-lattice:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "vpc-lattice:DeleteResourceConfiguration",
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "vpc-lattice:ListResourceConfigurations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:DescribeSubnets",
+        "vpc-lattice:TagResource",
+        "vpc-lattice:UntagResource",
+        "vpc-lattice:ListTagsForResource",
+        "vpc-lattice:UpdateResourceConfiguration",
+        "vpc-lattice:GetResourceConfiguration"
+      ]
+    }
+  },
+  "typeName": "AWS::VpcLattice::ResourceConfiguration"
+}

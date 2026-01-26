@@ -1,0 +1,56 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wisdom:CreateMessageTemplate",
+        "wisdom:GetMessageTemplate",
+        "wisdom:TagResource",
+        "connect:SearchRoutingProfiles",
+        "connect:DescribeRoutingProfile",
+        "wisdom:CreateMessageTemplateAttachment",
+        "wisdom:DeleteMessageTemplateAttachment"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wisdom:DeleteMessageTemplate",
+        "wisdom:UntagResource",
+        "wisdom:DeleteMessageTemplateAttachment"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "KnowledgeBaseArn": {
+            "$ref": "resource-schema.json#/properties/KnowledgeBaseArn"
+          }
+        },
+        "required": [
+          "KnowledgeBaseArn"
+        ]
+      },
+      "permissions": [
+        "wisdom:ListMessageTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wisdom:GetMessageTemplate"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wisdom:UpdateMessageTemplate",
+        "wisdom:UpdateMessageTemplateMetadata",
+        "wisdom:GetMessageTemplate",
+        "wisdom:TagResource",
+        "wisdom:UntagResource",
+        "connect:SearchRoutingProfiles",
+        "connect:DescribeRoutingProfile",
+        "wisdom:CreateMessageTemplateAttachment",
+        "wisdom:DeleteMessageTemplateAttachment"
+      ]
+    }
+  },
+  "typeName": "AWS::Wisdom::MessageTemplate"
+}

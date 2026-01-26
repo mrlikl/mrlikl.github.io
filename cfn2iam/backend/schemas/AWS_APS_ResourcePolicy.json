@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aps:PutResourcePolicy",
+        "aps:DescribeResourcePolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "aps:DeleteResourcePolicy",
+        "aps:DescribeResourcePolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "aps:DescribeResourcePolicy",
+        "aps:ListWorkspaces"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aps:DescribeResourcePolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aps:PutResourcePolicy",
+        "aps:DescribeResourcePolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::APS::ResourcePolicy"
+}

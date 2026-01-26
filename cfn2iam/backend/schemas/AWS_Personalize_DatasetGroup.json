@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "personalize:CreateDatasetGroup",
+        "personalize:DescribeDatasetGroup",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "personalize:DescribeDatasetGroup",
+        "personalize:DeleteDatasetGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "personalize:ListDatasetGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "personalize:DescribeDatasetGroup"
+      ]
+    }
+  },
+  "typeName": "AWS::Personalize::DatasetGroup"
+}

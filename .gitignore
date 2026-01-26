@@ -1,0 +1,11 @@
+ec2prices/source/dev
+ec2prices/source/master
+ec2prices/source/results
+ec2prices/source/index.html
+ec2prices/source/region_index.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.DS_Store

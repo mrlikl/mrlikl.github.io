@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "codestar-connections:CreateSyncConfiguration",
+        "codestar-connections:PassRepository",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "codestar-connections:DeleteSyncConfiguration",
+        "codestar-connections:GetSyncConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "codestar-connections:ListSyncConfigurations",
+        "codestar-connections:ListRepositoryLinks"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "codestar-connections:GetSyncConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "codestar-connections:UpdateSyncConfiguration",
+        "codestar-connections:PassRepository",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::CodeStarConnections::SyncConfiguration"
+}

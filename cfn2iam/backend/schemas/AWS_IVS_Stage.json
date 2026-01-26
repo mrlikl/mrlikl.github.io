@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ivs:CreateStage",
+        "ivs:GetStage",
+        "ivs:TagResource",
+        "ivs:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ivs:DeleteStage",
+        "ivs:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ivs:ListStages",
+        "ivs:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ivs:GetStage",
+        "ivs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ivs:GetStage",
+        "ivs:UpdateStage",
+        "ivs:TagResource",
+        "ivs:UntagResource",
+        "ivs:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IVS::Stage"
+}

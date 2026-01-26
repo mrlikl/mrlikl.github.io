@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "states:CreateStateMachineAlias",
+        "states:DescribeStateMachineAlias"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "states:DescribeStateMachineAlias",
+        "states:DeleteStateMachineAlias"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "RoutingConfiguration": {
+            "$ref": "resource-schema.json#/properties/RoutingConfiguration"
+          }
+        },
+        "required": [
+          "RoutingConfiguration"
+        ]
+      },
+      "permissions": [
+        "states:ListStateMachineAliases"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "states:DescribeStateMachineAlias"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudwatch:DescribeAlarms",
+        "states:UpdateStateMachineAlias",
+        "states:DescribeStateMachineAlias"
+      ],
+      "timeoutInMinutes": 2160
+    }
+  },
+  "typeName": "AWS::StepFunctions::StateMachineAlias"
+}

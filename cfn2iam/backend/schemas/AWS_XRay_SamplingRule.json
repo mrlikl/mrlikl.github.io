@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "xray:CreateSamplingRule",
+        "xray:TagResource",
+        "xray:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "xray:DeleteSamplingRule"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "xray:GetSamplingRules",
+        "xray:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "xray:GetSamplingRules",
+        "xray:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "xray:UpdateSamplingRule",
+        "xray:TagResource",
+        "xray:UntagResource",
+        "xray:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::XRay::SamplingRule"
+}

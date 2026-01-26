@@ -1,0 +1,4 @@
+{
+  "handlers": {},
+  "typeName": "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource"
+}

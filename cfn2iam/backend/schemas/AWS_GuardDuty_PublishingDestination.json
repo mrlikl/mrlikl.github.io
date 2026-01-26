@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "guardduty:CreatePublishingDestination",
+        "guardduty:TagResource",
+        "guardduty:DescribePublishingDestination",
+        "guardduty:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "guardduty:DeletePublishingDestination",
+        "guardduty:DescribePublishingDestination"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DetectorId": {
+            "type": "string"
+          }
+        }
+      },
+      "permissions": [
+        "guardduty:ListPublishingDestinations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "guardduty:DescribePublishingDestination",
+        "guardduty:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "guardduty:UpdatePublishingDestination",
+        "guardduty:TagResource",
+        "guardduty:UntagResource",
+        "guardduty:ListTagsForResource",
+        "guardduty:DescribePublishingDestination"
+      ]
+    }
+  },
+  "typeName": "AWS::GuardDuty::PublishingDestination"
+}

@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "datasync:CreateLocationFsxWindows",
+        "datasync:DescribeLocationFsxWindows",
+        "datasync:ListTagsForResource",
+        "datasync:TagResource",
+        "fsx:DescribeFileSystems",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "datasync:DeleteLocation"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "datasync:ListLocations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "datasync:DescribeLocationFsxWindows",
+        "datasync:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "datasync:DescribeLocationFsxWindows",
+        "datasync:UpdateLocationFsxWindows",
+        "datasync:ListTagsForResource",
+        "datasync:TagResource",
+        "datasync:UntagResource",
+        "fsx:DescribeFileSystems",
+        "ec2:DescribeNetworkInterfaces"
+      ]
+    }
+  },
+  "typeName": "AWS::DataSync::LocationFSxWindows"
+}

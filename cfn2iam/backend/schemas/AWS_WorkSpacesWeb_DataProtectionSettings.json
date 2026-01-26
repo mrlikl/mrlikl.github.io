@@ -1,0 +1,60 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "workspaces-web:CreateDataProtectionSettings",
+        "workspaces-web:GetDataProtectionSettings",
+        "workspaces-web:ListDataProtectionSettings",
+        "workspaces-web:ListTagsForResource",
+        "workspaces-web:TagResource",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ReEncryptTo",
+        "kms:ReEncryptFrom"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "workspaces-web:GetDataProtectionSettings",
+        "workspaces-web:ListDataProtectionSettings",
+        "workspaces-web:DeleteDataProtectionSettings",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "workspaces-web:ListDataProtectionSettings",
+        "kms:Decrypt",
+        "kms:DescribeKey"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "workspaces-web:GetDataProtectionSettings",
+        "workspaces-web:ListDataProtectionSettings",
+        "workspaces-web:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "workspaces-web:UpdateDataProtectionSettings",
+        "workspaces-web:GetDataProtectionSettings",
+        "workspaces-web:ListDataProtectionSettings",
+        "workspaces-web:TagResource",
+        "workspaces-web:UntagResource",
+        "workspaces-web:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::WorkSpacesWeb::DataProtectionSettings"
+}

@@ -1,0 +1,29 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:CreateJobTemplate",
+        "iam:PassRole",
+        "s3:GetObject",
+        "iot:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:DeleteJobTemplate"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iot:ListJobTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:DescribeJobTemplate",
+        "iot:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoT::JobTemplate"
+}

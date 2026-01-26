@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediaconnect:GetRouterNetworkInterface",
+        "mediaconnect:ListRouterNetworkInterfaces",
+        "iam:CreateServiceLinkedRole",
+        "mediaconnect:CreateRouterNetworkInterface",
+        "mediaconnect:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediaconnect:GetRouterNetworkInterface",
+        "mediaconnect:ListRouterNetworkInterfaces",
+        "mediaconnect:DeleteRouterNetworkInterface"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediaconnect:ListRouterNetworkInterfaces"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediaconnect:GetRouterNetworkInterface"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediaconnect:ListTagsForResource",
+        "mediaconnect:TagResource",
+        "mediaconnect:UntagResource",
+        "mediaconnect:GetRouterNetworkInterface",
+        "iam:CreateServiceLinkedRole",
+        "mediaconnect:UpdateRouterNetworkInterface"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaConnect::RouterNetworkInterface"
+}

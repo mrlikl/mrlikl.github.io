@@ -1,0 +1,30 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "forecast:CreateDatasetGroup"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "forecast:DeleteDatasetGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "forecast:ListDatasetGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "forecast:DescribeDatasetGroup"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "forecast:UpdateDatasetGroup"
+      ]
+    }
+  },
+  "typeName": "AWS::Forecast::DatasetGroup"
+}

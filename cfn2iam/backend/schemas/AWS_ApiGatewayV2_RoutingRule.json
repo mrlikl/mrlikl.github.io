@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "apigateway:CreateRoutingRule"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "apigateway:DeleteRoutingRule"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainNameArn": {
+            "$ref": "resource-schema.json#/properties/DomainNameArn"
+          }
+        },
+        "required": [
+          "DomainNameArn"
+        ]
+      },
+      "permissions": [
+        "apigateway:ListRoutingRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "apigateway:GetRoutingRule"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "apigateway:UpdateRoutingRule"
+      ]
+    }
+  },
+  "typeName": "AWS::ApiGatewayV2::RoutingRule"
+}

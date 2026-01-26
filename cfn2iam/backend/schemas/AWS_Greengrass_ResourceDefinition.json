@@ -1,0 +1,4 @@
+{
+  "handlers": {},
+  "typeName": "AWS::Greengrass::ResourceDefinition"
+}

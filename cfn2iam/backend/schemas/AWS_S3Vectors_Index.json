@@ -1,0 +1,57 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3vectors:GetIndex",
+        "s3vectors:CreateIndex",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3vectors:GetIndex",
+        "s3vectors:DeleteIndex",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "oneOf": [
+          {
+            "required": [
+              "VectorBucketName"
+            ]
+          },
+          {
+            "required": [
+              "VectorBucketArn"
+            ]
+          }
+        ],
+        "properties": {
+          "VectorBucketArn": {
+            "$ref": "resource-schema.json#/properties/VectorBucketArn"
+          },
+          "VectorBucketName": {
+            "$ref": "resource-schema.json#/properties/VectorBucketName"
+          }
+        }
+      },
+      "permissions": [
+        "s3vectors:ListIndexes",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3vectors:GetIndex",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::S3Vectors::Index"
+}

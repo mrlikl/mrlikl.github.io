@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock:CreateDataAutomationProject",
+        "bedrock:GetDataAutomationProject",
+        "bedrock:TagResource",
+        "bedrock:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock:DeleteDataAutomationProject",
+        "bedrock:GetDataAutomationProject",
+        "kms:DescribeKey",
+        "kms:Decrypt"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock:ListDataAutomationProjects"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:GetDataAutomationProject",
+        "bedrock:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock:UpdateDataAutomationProject",
+        "bedrock:GetDataAutomationProject",
+        "bedrock:TagResource",
+        "bedrock:UntagResource",
+        "bedrock:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::DataAutomationProject"
+}

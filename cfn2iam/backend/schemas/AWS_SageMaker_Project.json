@@ -1,0 +1,51 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:AddTags",
+        "sagemaker:CreateProject",
+        "sagemaker:DescribeProject",
+        "sagemaker:ListTags",
+        "servicecatalog:DescribeProduct",
+        "servicecatalog:DescribeProvisioningArtifact",
+        "servicecatalog:ProvisionProduct",
+        "servicecatalog:DescribeProvisionedProduct",
+        "servicecatalog:TerminateProvisionedProduct",
+        "cloudformation:DescribeStacks",
+        "cloudformation:CreateStack",
+        "iam:PassRole",
+        "s3:GetObject"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteProject",
+        "sagemaker:DescribeProject",
+        "servicecatalog:TerminateProvisionedProduct",
+        "servicecatalog:DescribeRecord",
+        "cloudformation:DescribeStacks",
+        "cloudformation:DeleteStack"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListProjects"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeProject",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:DescribeProject",
+        "sagemaker:ListTags",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::Project"
+}

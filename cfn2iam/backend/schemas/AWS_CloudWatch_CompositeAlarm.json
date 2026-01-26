@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudwatch:DescribeAlarms",
+        "cloudwatch:PutCompositeAlarm",
+        "cloudwatch:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudwatch:DescribeAlarms",
+        "cloudwatch:DeleteAlarms"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudwatch:DescribeAlarms"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudwatch:DescribeAlarms",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudwatch:DescribeAlarms",
+        "cloudwatch:PutCompositeAlarm",
+        "cloudwatch:TagResource",
+        "cloudwatch:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudWatch::CompositeAlarm"
+}

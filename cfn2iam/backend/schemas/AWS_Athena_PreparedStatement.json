@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "athena:CreatePreparedStatement",
+        "athena:GetPreparedStatement"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "athena:DeletePreparedStatement",
+        "athena:GetPreparedStatement"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "WorkGroup": {
+            "$ref": "resource-schema.json#/properties/WorkGroup"
+          }
+        },
+        "required": [
+          "WorkGroup"
+        ]
+      },
+      "permissions": [
+        "athena:ListPreparedStatements"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "athena:GetPreparedStatement"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "athena:UpdatePreparedStatement"
+      ]
+    }
+  },
+  "typeName": "AWS::Athena::PreparedStatement"
+}

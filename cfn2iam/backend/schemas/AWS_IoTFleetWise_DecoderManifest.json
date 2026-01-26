@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iotfleetwise:CreateDecoderManifest",
+        "iotfleetwise:GetDecoderManifest",
+        "iotfleetwise:UpdateDecoderManifest",
+        "iotfleetwise:ListDecoderManifestSignals",
+        "iotfleetwise:ListDecoderManifestNetworkInterfaces",
+        "iotfleetwise:ListTagsForResource",
+        "iotfleetwise:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotfleetwise:DeleteDecoderManifest",
+        "iotfleetwise:GetDecoderManifest"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iotfleetwise:ListDecoderManifests"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotfleetwise:GetDecoderManifest",
+        "iotfleetwise:ListDecoderManifestSignals",
+        "iotfleetwise:ListDecoderManifestNetworkInterfaces",
+        "iotfleetwise:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iotfleetwise:UpdateDecoderManifest",
+        "iotfleetwise:GetDecoderManifest",
+        "iotfleetwise:ListDecoderManifestSignals",
+        "iotfleetwise:ListDecoderManifestNetworkInterfaces",
+        "iotfleetwise:ListTagsForResource",
+        "iotfleetwise:TagResource",
+        "iotfleetwise:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTFleetWise::DecoderManifest"
+}

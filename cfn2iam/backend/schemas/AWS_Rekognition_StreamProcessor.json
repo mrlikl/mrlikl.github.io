@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rekognition:CreateStreamProcessor",
+        "iam:PassRole",
+        "rekognition:DescribeStreamProcessor",
+        "rekognition:ListTagsForResource",
+        "rekognition:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rekognition:DeleteStreamProcessor"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rekognition:ListStreamProcessors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rekognition:DescribeStreamProcessor",
+        "rekognition:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rekognition:TagResource",
+        "rekognition:UntagResource",
+        "rekognition:ListTagsForResource",
+        "rekognition:DescribeStreamProcessor"
+      ]
+    }
+  },
+  "typeName": "AWS::Rekognition::StreamProcessor"
+}

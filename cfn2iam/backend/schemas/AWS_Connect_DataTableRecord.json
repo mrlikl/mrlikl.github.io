@@ -1,0 +1,54 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "connect:ListDataTableAttributes",
+        "connect:BatchCreateDataTableValue"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "connect:ListDataTableAttributes",
+        "connect:ListDataTableValues",
+        "connect:BatchDeleteDataTableValue"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DataTableArn": {
+            "$ref": "resource-schema.json#/properties/DataTableArn"
+          },
+          "InstanceArn": {
+            "$ref": "resource-schema.json#/properties/InstanceArn"
+          }
+        },
+        "required": [
+          "InstanceArn",
+          "DataTableArn"
+        ]
+      },
+      "permissions": [
+        "connect:ListDataTableAttributes",
+        "connect:ListDataTablePrimaryValues"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "connect:ListDataTableAttributes",
+        "connect:ListDataTableValues"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "connect:UpdateDataTablePrimaryValues",
+        "connect:BatchCreateDataTableValue",
+        "connect:BatchDeleteDataTableValue",
+        "connect:BatchUpdateDataTableValue",
+        "connect:ListDataTableAttributes",
+        "connect:ListDataTableValues"
+      ]
+    }
+  },
+  "typeName": "AWS::Connect::DataTableRecord"
+}

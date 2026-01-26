@@ -1,0 +1,31 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateModelBiasJobDefinition",
+        "sagemaker:DescribeModelBiasJobDefinition",
+        "iam:PassRole",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteModelBiasJobDefinition"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListModelBiasJobDefinitions",
+        "sagemaker:ListTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeModelBiasJobDefinition",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::ModelBiasJobDefinition"
+}

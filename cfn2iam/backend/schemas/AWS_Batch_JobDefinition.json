@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "Batch:RegisterJobDefinition",
+        "Batch:TagResource",
+        "Batch:DescribeJobDefinitions",
+        "Iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "Batch:DescribeJobDefinitions",
+        "Batch:DeregisterJobDefinition",
+        "Iam:PassRole"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "Batch:DescribeJobDefinitions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "Batch:DescribeJobDefinitions"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "Batch:DescribeJobDefinitions",
+        "Batch:RegisterJobDefinition",
+        "Batch:DeregisterJobDefinition",
+        "Batch:TagResource",
+        "Batch:UntagResource",
+        "Iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::Batch::JobDefinition"
+}

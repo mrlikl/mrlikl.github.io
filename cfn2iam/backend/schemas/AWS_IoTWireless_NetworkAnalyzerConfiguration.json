@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iotwireless:CreateNetworkAnalyzerConfiguration",
+        "iotwireless:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotwireless:DeleteNetworkAnalyzerConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iotwireless:ListNetworkAnalyzerConfigurations",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotwireless:GetNetworkAnalyzerConfiguration",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iotwireless:UpdateNetworkAnalyzerConfiguration",
+        "iotwireless:GetNetworkAnalyzerConfiguration",
+        "iotwireless:TagResource",
+        "iotwireless:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTWireless::NetworkAnalyzerConfiguration"
+}

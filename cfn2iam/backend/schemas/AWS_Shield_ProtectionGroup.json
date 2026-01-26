@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "shield:CreateProtectionGroup",
+        "shield:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "shield:DeleteProtectionGroup",
+        "shield:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "shield:ListProtectionGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "shield:DescribeProtectionGroup",
+        "shield:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "shield:UpdateProtectionGroup",
+        "shield:ListTagsForResource",
+        "shield:TagResource",
+        "shield:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Shield::ProtectionGroup"
+}

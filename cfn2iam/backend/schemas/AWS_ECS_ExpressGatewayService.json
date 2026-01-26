@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ecs:CreateExpressGatewayService",
+        "ecs:CreateCluster",
+        "ecs:DescribeExpressGatewayService",
+        "ecs:DescribeServiceDeployments",
+        "ecs:ListServiceDeployments",
+        "ecs:RegisterTaskDefinition",
+        "ecs:TagResource",
+        "iam:PassRole"
+      ],
+      "timeoutInMinutes": 180
+    },
+    "delete": {
+      "permissions": [
+        "ecs:DeleteExpressGatewayService",
+        "ecs:DescribeExpressGatewayService",
+        "ecs:DescribeServices"
+      ],
+      "timeoutInMinutes": 30
+    },
+    "read": {
+      "permissions": [
+        "ecs:DescribeExpressGatewayService",
+        "ecs:DescribeServiceRevisions"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ecs:UpdateExpressGatewayService",
+        "ecs:DescribeExpressGatewayService",
+        "ecs:DescribeServiceDeployments",
+        "ecs:ListServiceDeployments",
+        "ecs:RegisterTaskDefinition",
+        "iam:PassRole"
+      ],
+      "timeoutInMinutes": 180
+    }
+  },
+  "typeName": "AWS::ECS::ExpressGatewayService"
+}

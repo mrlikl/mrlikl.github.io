@@ -1,0 +1,58 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreateAgentRuntime",
+        "bedrock-agentcore:CreateAgentRuntimeEndpoint",
+        "bedrock-agentcore:GetAgentRuntime",
+        "bedrock-agentcore:GetAgentRuntimeEndpoint",
+        "bedrock-agentcore:CreateWorkloadIdentity",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:ListTagsForResource",
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
+        "s3:GetObject",
+        "s3:GetObjectVersion",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeleteAgentRuntime",
+        "bedrock-agentcore:DeleteAgentRuntimeEndpoint",
+        "bedrock-agentcore:GetAgentRuntime",
+        "bedrock-agentcore:GetAgentRuntimeEndpoint"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListAgentRuntimes",
+        "bedrock-agentcore:ListAgentRuntimeEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetAgentRuntime",
+        "bedrock-agentcore:GetAgentRuntimeEndpoint",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:UpdateAgentRuntime",
+        "bedrock-agentcore:UpdateAgentRuntimeEndpoint",
+        "bedrock-agentcore:GetAgentRuntime",
+        "bedrock-agentcore:GetAgentRuntimeEndpoint",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:UntagResource",
+        "bedrock-agentcore:ListTagsForResource",
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
+        "s3:GetObject",
+        "s3:GetObjectVersion",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::Runtime"
+}

@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
+        "ssm:GetMaintenanceWindowTask",
+        "ssm:RegisterTaskWithMaintenanceWindow"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ssm:DeregisterTaskFromMaintenanceWindow",
+        "ssm:GetMaintenanceWindowTask"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "WindowId": {
+            "$ref": "resource-schema.json#/properties/WindowId"
+          }
+        },
+        "required": [
+          "WindowId"
+        ]
+      },
+      "permissions": [
+        "ssm:DescribeMaintenanceWindowTasks"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ssm:GetMaintenanceWindowTask"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
+        "ssm:UpdateMaintenanceWindowTask"
+      ]
+    }
+  },
+  "typeName": "AWS::SSM::MaintenanceWindowTask"
+}

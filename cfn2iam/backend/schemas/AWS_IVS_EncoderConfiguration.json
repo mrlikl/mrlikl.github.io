@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ivs:CreateEncoderConfiguration",
+        "ivs:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ivs:DeleteEncoderConfiguration",
+        "ivs:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ivs:ListEncoderConfigurations",
+        "ivs:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ivs:GetEncoderConfiguration",
+        "ivs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ivs:GetEncoderConfiguration",
+        "ivs:ListTagsForResource",
+        "ivs:UntagResource",
+        "ivs:TagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IVS::EncoderConfiguration"
+}

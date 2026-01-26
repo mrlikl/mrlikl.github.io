@@ -1,0 +1,79 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aps:CreateWorkspace",
+        "aps:DescribeWorkspace",
+        "aps:TagResource",
+        "aps:CreateAlertManagerDefinition",
+        "aps:DescribeAlertManagerDefinition",
+        "aps:CreateLoggingConfiguration",
+        "aps:CreateQueryLoggingConfiguration",
+        "aps:DescribeWorkspaceConfiguration",
+        "aps:UpdateWorkspaceConfiguration",
+        "logs:CreateLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:PutResourcePolicy",
+        "kms:CreateGrant",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "aps:DeleteWorkspace",
+        "aps:DescribeWorkspace",
+        "aps:DeleteAlertManagerDefinition",
+        "aps:DeleteLoggingConfiguration",
+        "aps:DeleteQueryLoggingConfiguration",
+        "logs:DeleteLogDelivery"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "aps:ListWorkspaces",
+        "aps:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aps:DescribeWorkspace",
+        "aps:ListTagsForResource",
+        "aps:DescribeAlertManagerDefinition",
+        "aps:DescribeLoggingConfiguration",
+        "aps:DescribeQueryLoggingConfiguration",
+        "aps:DescribeWorkspaceConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aps:UpdateWorkspaceAlias",
+        "aps:DescribeWorkspace",
+        "aps:TagResource",
+        "aps:UntagResource",
+        "aps:ListTagsForResource",
+        "aps:CreateAlertManagerDefinition",
+        "aps:PutAlertManagerDefinition",
+        "aps:DeleteAlertManagerDefinition",
+        "aps:CreateLoggingConfiguration",
+        "aps:DescribeLoggingConfiguration",
+        "aps:UpdateLoggingConfiguration",
+        "aps:DeleteLoggingConfiguration",
+        "aps:DescribeWorkspaceConfiguration",
+        "aps:UpdateWorkspaceConfiguration",
+        "aps:CreateQueryLoggingConfiguration",
+        "aps:UpdateQueryLoggingConfiguration",
+        "aps:DeleteQueryLoggingConfiguration",
+        "aps:DescribeQueryLoggingConfiguration",
+        "logs:CreateLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:UpdateLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:DeleteLogDelivery",
+        "logs:PutResourcePolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::APS::Workspace"
+}

@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rds:AddTagsToResource",
+        "rds:CreateDBClusterParameterGroup",
+        "rds:DescribeDBClusterParameterGroups",
+        "rds:DescribeDBClusterParameters",
+        "rds:DescribeEngineDefaultClusterParameters",
+        "rds:ListTagsForResource",
+        "rds:ModifyDBClusterParameterGroup",
+        "iam:CreateServiceLinkedRole"
+      ],
+      "timeoutInMinutes": 180
+    },
+    "delete": {
+      "permissions": [
+        "rds:DeleteDBClusterParameterGroup",
+        "rds:ListTagsForResource",
+        "rds:RemoveTagsFromResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rds:DescribeDBClusterParameterGroups",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rds:DescribeDBClusterParameterGroups",
+        "rds:ListTagsForResource",
+        "rds:DescribeDBClusterParameters"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rds:AddTagsToResource",
+        "rds:DescribeDBClusterParameterGroups",
+        "rds:DescribeDBClusterParameters",
+        "rds:DescribeDBClusters",
+        "rds:DescribeEngineDefaultClusterParameters",
+        "rds:ListTagsForResource",
+        "rds:ModifyDBClusterParameterGroup",
+        "rds:RemoveTagsFromResource",
+        "rds:ResetDBClusterParameterGroup"
+      ],
+      "timeoutInMinutes": 180
+    }
+  },
+  "typeName": "AWS::Neptune::DBClusterParameterGroup"
+}

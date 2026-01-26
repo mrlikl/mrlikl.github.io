@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock:CreateInferenceProfile",
+        "bedrock:GetInferenceProfile",
+        "bedrock:TagResource",
+        "bedrock:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock:DeleteInferenceProfile",
+        "bedrock:GetInferenceProfile"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "Type": {
+            "$ref": "resource-schema.json#/properties/Type"
+          }
+        }
+      },
+      "permissions": [
+        "bedrock:ListInferenceProfiles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:GetInferenceProfile",
+        "bedrock:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock:GetInferenceProfile",
+        "bedrock:ListTagsForResource",
+        "bedrock:TagResource",
+        "bedrock:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::ApplicationInferenceProfile"
+}

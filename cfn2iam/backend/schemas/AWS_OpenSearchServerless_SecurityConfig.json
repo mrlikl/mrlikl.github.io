@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aoss:CreateSecurityConfig",
+        "sso:CreateApplication",
+        "sso:ListApplications",
+        "sso:DeleteApplication",
+        "sso:PutApplicationAssignmentConfiguration",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:PutApplicationGrant"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "aoss:DeleteSecurityConfig",
+        "sso:ListApplicationAssignments",
+        "sso:DeleteApplicationAssignment",
+        "sso:DeleteApplication"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "Type": {
+            "$ref": "resource-schema.json#/properties/Type"
+          }
+        },
+        "required": [
+          "Type"
+        ]
+      },
+      "permissions": [
+        "aoss:ListSecurityConfigs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aoss:GetSecurityConfig"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aoss:GetSecurityConfig",
+        "aoss:UpdateSecurityConfig"
+      ]
+    }
+  },
+  "typeName": "AWS::OpenSearchServerless::SecurityConfig"
+}

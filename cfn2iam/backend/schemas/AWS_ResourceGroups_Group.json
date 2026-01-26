@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "resource-groups:CreateGroup",
+        "resource-groups:Tag",
+        "cloudformation:DescribeStacks",
+        "cloudformation:ListStackResources",
+        "resource-groups:ListGroupResources",
+        "resource-groups:GroupResources"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "resource-groups:DeleteGroup",
+        "resource-groups:UnGroupResources"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "resource-groups:ListGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "resource-groups:GetGroup",
+        "resource-groups:GetGroupQuery",
+        "resource-groups:GetTags",
+        "resource-groups:GetGroupConfiguration",
+        "resource-groups:ListGroupResources"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "resource-groups:UpdateGroup",
+        "resource-groups:GetTags",
+        "resource-groups:GetGroupQuery",
+        "resource-groups:UpdateGroupQuery",
+        "resource-groups:Tag",
+        "resource-groups:Untag",
+        "resource-groups:PutGroupConfiguration",
+        "resource-groups:GetGroupConfiguration",
+        "resource-groups:ListGroupResources",
+        "resource-groups:GroupResources",
+        "resource-groups:UnGroupResources"
+      ]
+    }
+  },
+  "typeName": "AWS::ResourceGroups::Group"
+}

@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "deadline:CreateLimit",
+        "deadline:GetLimit",
+        "kms:Encrypt",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "deadline:DeleteLimit",
+        "deadline:GetLimit",
+        "kms:Decrypt",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "FarmId": {
+            "$ref": "resource-schema.json#/properties/FarmId"
+          }
+        },
+        "required": [
+          "FarmId"
+        ]
+      },
+      "permissions": [
+        "deadline:ListLimits",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "deadline:GetLimit",
+        "kms:Decrypt",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "deadline:UpdateLimit",
+        "deadline:GetLimit",
+        "kms:Encrypt",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    }
+  },
+  "typeName": "AWS::Deadline::Limit"
+}

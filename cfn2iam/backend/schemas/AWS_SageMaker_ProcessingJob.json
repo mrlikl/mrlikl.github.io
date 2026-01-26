@@ -1,0 +1,54 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateNetworkInterface",
+        "ec2:CreateNetworkInterfacePermission",
+        "ec2:DeleteNetworkInterface",
+        "ec2:DeleteNetworkInterfacePermission",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeDhcpOptions",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "kms:CreateGrant",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "sagemaker:CreateProcessingJob",
+        "sagemaker:DescribeProcessingJob",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DeleteNetworkInterface",
+        "ec2:DeleteNetworkInterfacePermission",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "sagemaker:StopProcessingJob",
+        "sagemaker:DeleteProcessingJob",
+        "sagemaker:DescribeProcessingJob",
+        "sagemaker:ListTags",
+        "sagemaker:DeleteTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListProcessingJobs",
+        "sagemaker:DescribeProcessingJob",
+        "sagemaker:ListTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeProcessingJob",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::ProcessingJob"
+}

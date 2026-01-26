@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock:CreateFlowVersion",
+        "bedrock:GetFlowVersion",
+        "kms:GenerateDataKey",
+        "kms:Decrypt",
+        "bedrock:CreateGuardrail",
+        "bedrock:CreateGuardrailVersion",
+        "bedrock:GetGuardrail"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock:DeleteFlowVersion",
+        "bedrock:GetFlowVersion",
+        "bedrock:DeleteGuardrail",
+        "bedrock:GetGuardrail"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "FlowArn": {
+            "$ref": "resource-schema.json#/properties/FlowArn"
+          }
+        },
+        "required": [
+          "FlowArn"
+        ]
+      },
+      "permissions": [
+        "bedrock:ListFlowVersions",
+        "bedrock:ListGuardrails"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:GetFlowVersion",
+        "kms:Decrypt",
+        "bedrock:GetGuardrail"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "noservice:NoAction"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::FlowVersion"
+}

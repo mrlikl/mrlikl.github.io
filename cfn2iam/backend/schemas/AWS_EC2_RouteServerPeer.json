@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateRouteServerPeer",
+        "ec2:CreateTags",
+        "ec2:DescribeRouteServerPeers",
+        "ec2:AuthorizeSecurityGroupIngress"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DescribeTags",
+        "ec2:DescribeRouteServerPeers",
+        "ec2:DeleteRouteServerPeer",
+        "ec2:DeleteTags",
+        "ec2:RevokeSecurityGroupIngress"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeTags",
+        "ec2:DescribeRouteServerPeers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeRouteServerPeers",
+        "ec2:DescribeTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:CreateTags",
+        "ec2:DeleteTags",
+        "ec2:DescribeRouteServerPeers",
+        "ec2:DescribeTags",
+        "ec2:ModifyRouteServerPeer"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::RouteServerPeer"
+}

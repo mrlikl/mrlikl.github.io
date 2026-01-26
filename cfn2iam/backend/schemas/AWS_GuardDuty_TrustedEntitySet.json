@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "guardduty:CreateTrustedEntitySet",
+        "guardduty:GetTrustedEntitySet",
+        "guardduty:TagResource",
+        "s3:GetObject"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "guardduty:ListDetectors",
+        "guardduty:ListTrustedEntitySets",
+        "guardduty:DeleteTrustedEntitySet",
+        "guardduty:GetTrustedEntitySet"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DetectorId": {
+            "type": "string"
+          }
+        }
+      },
+      "permissions": [
+        "guardduty:ListTrustedEntitySets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "guardduty:GetTrustedEntitySet"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "guardduty:UpdateTrustedEntitySet",
+        "guardduty:GetTrustedEntitySet",
+        "guardduty:ListTrustedEntitySets",
+        "guardduty:TagResource",
+        "guardduty:UntagResource",
+        "s3:GetObject"
+      ]
+    }
+  },
+  "typeName": "AWS::GuardDuty::TrustedEntitySet"
+}

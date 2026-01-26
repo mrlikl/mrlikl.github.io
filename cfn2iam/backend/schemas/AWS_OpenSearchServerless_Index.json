@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aoss:APIAccessAll"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "aoss:APIAccessAll"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "CollectionEndpoint": {
+            "$ref": "resource-schema.json#/properties/CollectionEndpoint"
+          }
+        },
+        "required": [
+          "CollectionEndpoint"
+        ]
+      },
+      "permissions": [
+        "aoss:APIAccessAll"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aoss:APIAccessAll"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aoss:APIAccessAll"
+      ]
+    }
+  },
+  "typeName": "AWS::OpenSearchServerless::Index"
+}

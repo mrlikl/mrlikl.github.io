@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "backup:CreateFramework",
+        "backup:DescribeFramework",
+        "backup:ListTags",
+        "backup:TagResource",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "backup:DeleteFramework",
+        "backup:DescribeFramework"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "backup:ListFrameworks"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "backup:DescribeFramework",
+        "backup:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "backup:DescribeFramework",
+        "backup:UpdateFramework",
+        "backup:ListTags",
+        "backup:TagResource",
+        "backup:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Backup::Framework"
+}

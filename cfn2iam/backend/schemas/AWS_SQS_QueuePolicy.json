@@ -1,0 +1,20 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sqs:SetQueueAttributes"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sqs:SetQueueAttributes"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sqs:SetQueueAttributes"
+      ]
+    }
+  },
+  "typeName": "AWS::SQS::QueuePolicy"
+}

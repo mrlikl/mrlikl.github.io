@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:CreateAuthorizer",
+        "iot:DescribeAuthorizer",
+        "iot:TagResource",
+        "iot:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:UpdateAuthorizer",
+        "iot:DeleteAuthorizer",
+        "iot:DescribeAuthorizer",
+        "kms:Decrypt"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iot:ListAuthorizers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:DescribeAuthorizer",
+        "iot:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iot:UpdateAuthorizer",
+        "iot:DescribeAuthorizer",
+        "iot:TagResource",
+        "iot:UntagResource",
+        "iot:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::IoT::Authorizer"
+}

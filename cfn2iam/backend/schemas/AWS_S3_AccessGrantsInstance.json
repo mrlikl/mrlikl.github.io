@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3:CreateAccessGrantsInstance",
+        "s3:AssociateAccessGrantsIdentityCenter",
+        "s3:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3:GetAccessGrantsInstance",
+        "s3:DeleteAccessGrantsInstance",
+        "s3:DissociateAccessGrantsIdentityCenter"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "s3:ListAccessGrantsInstances"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3:GetAccessGrantsInstance",
+        "s3:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3:TagResource",
+        "s3:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::S3::AccessGrantsInstance"
+}

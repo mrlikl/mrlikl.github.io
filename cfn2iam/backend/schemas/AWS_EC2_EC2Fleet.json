@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateFleet",
+        "ec2:DescribeFleets",
+        "ec2:CreateTags",
+        "ec2:RunInstances",
+        "iam:PassRole",
+        "ec2:DescribeCapacityReservations"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DescribeFleets",
+        "ec2:DeleteFleets",
+        "ec2:TerminateInstances"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "Type": {
+            "$ref": "resource-schema.json#/properties/Type"
+          }
+        }
+      },
+      "permissions": [
+        "ec2:DescribeFleets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeFleets"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:ModifyFleet",
+        "ec2:DescribeFleets"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::EC2Fleet"
+}

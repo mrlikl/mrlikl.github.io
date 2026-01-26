@@ -1,0 +1,29 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "workspaces-instances:CreateVolume",
+        "ec2:CreateVolume",
+        "ec2:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "workspaces-instances:DeleteVolume",
+        "ec2:DescribeVolumes",
+        "ec2:DeleteVolume"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeVolumes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeVolumes"
+      ]
+    }
+  },
+  "typeName": "AWS::WorkspacesInstances::Volume"
+}

@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PassRole",
+        "mediaconnect:AddFlowOutputs"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:ListFlows",
+        "mediaconnect:RemoveFlowOutput"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:ListFlows"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:ListFlows"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:UpdateFlowOutput"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaConnect::FlowOutput"
+}

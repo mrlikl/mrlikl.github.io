@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rds:CreateDBSubnetGroup",
+        "rds:DescribeDBSubnetGroups",
+        "rds:ListTagsForResource",
+        "rds:AddTagsToResource",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rds:DeleteDBSubnetGroup",
+        "rds:DescribeDBSubnetGroups",
+        "rds:ListTagsForResource",
+        "rds:RemoveTagsFromResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rds:DescribeDBSubnetGroups",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rds:DescribeDBSubnetGroups",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rds:ModifyDBSubnetGroup",
+        "rds:DescribeDBSubnetGroups",
+        "rds:AddTagsToResource",
+        "rds:RemoveTagsFromResource",
+        "rds:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Neptune::DBSubnetGroup"
+}

@@ -1,0 +1,55 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "codeartifact:CreatePackageGroup",
+        "codeartifact:DescribePackageGroup",
+        "codeartifact:UpdatePackageGroup",
+        "codeartifact:UpdatePackageGroupOriginConfiguration",
+        "codeartifact:ListAllowedRepositoriesForGroup",
+        "codeartifact:ListTagsForResource",
+        "codeartifact:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "codeartifact:DeletePackageGroup",
+        "codeartifact:DescribePackageGroup"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainName": {
+            "$ref": "resource-schema.json#/properties/DomainName"
+          }
+        },
+        "required": [
+          "DomainName"
+        ]
+      },
+      "permissions": [
+        "codeartifact:ListPackageGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "codeartifact:DescribePackageGroup",
+        "codeartifact:ListAllowedRepositoriesForGroup",
+        "codeartifact:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "codeartifact:UpdatePackageGroup",
+        "codeartifact:UpdatePackageGroupOriginConfiguration",
+        "codeartifact:DescribePackageGroup",
+        "codeartifact:ListAllowedRepositoriesForGroup",
+        "codeartifact:ListTagsForResource",
+        "codeartifact:TagResource",
+        "codeartifact:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CodeArtifact::PackageGroup"
+}

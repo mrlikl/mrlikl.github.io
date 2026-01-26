@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wisdom:CreateAssistantAssociation",
+        "wisdom:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wisdom:DeleteAssistantAssociation"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AssistantId": {
+            "$ref": "resource-schema.json#/properties/AssistantId"
+          }
+        },
+        "required": [
+          "AssistantId"
+        ]
+      },
+      "permissions": [
+        "wisdom:ListAssistantAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wisdom:GetAssistantAssociation"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wisdom:GetAssistantAssociation"
+      ]
+    }
+  },
+  "typeName": "AWS::Wisdom::AssistantAssociation"
+}

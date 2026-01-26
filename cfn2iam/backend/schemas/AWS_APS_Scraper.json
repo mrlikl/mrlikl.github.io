@@ -1,0 +1,100 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aps:CreateScraper",
+        "aps:UpdateScraperLoggingConfiguration",
+        "aps:DescribeScraper",
+        "aps:DescribeWorkspace",
+        "aps:TagResource",
+        "eks:CreateAccessEntry",
+        "eks:AssociateAccessPolicy",
+        "eks:DescribeCluster",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:CreateNetworkInterface",
+        "ec2:DeleteNetworkInterface",
+        "ec2:AttachNetworkInterface",
+        "ec2:DetachNetworkInterface",
+        "ec2:ModifyNetworkInterfaceAttribute",
+        "ec2:DescribeVpcs",
+        "kafka:DescribeCluster",
+        "kafka:DescribeClusterV2",
+        "kafka:GetBootstrapBrokers",
+        "kafka:ListClusters",
+        "kafka:ListNodes",
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
+        "logs:CreateLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:PutResourcePolicy",
+        "logs:DescribeLogGroups"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "aps:DeleteScraper",
+        "aps:DescribeScraper",
+        "aps:DescribeWorkspace",
+        "aps:DeleteScraperLoggingConfiguration",
+        "eks:AssociateAccessPolicy",
+        "eks:DescribeCluster",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DeleteNetworkInterface",
+        "ec2:DetachNetworkInterface",
+        "ec2:DescribeVpcs",
+        "kafka:DescribeCluster",
+        "iam:DeleteServiceLinkedRole",
+        "logs:DeleteLogDelivery"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "aps:ListScrapers",
+        "aps:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aps:DescribeScraper",
+        "aps:DescribeScraperLoggingConfiguration",
+        "aps:ListTagsForResource",
+        "ec2:DescribeNetworkInterfaces"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aps:CreateScraper",
+        "aps:DescribeScraper",
+        "aps:UpdateScraper",
+        "aps:DescribeWorkspace",
+        "aps:DescribeScraperLoggingConfiguration",
+        "aps:DeleteScraperLoggingConfiguration",
+        "aps:UpdateScraperLoggingConfiguration",
+        "aps:TagResource",
+        "aps:UntagResource",
+        "aps:ListTagsForResource",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:ModifyNetworkInterfaceAttribute",
+        "ec2:DescribeVpcs",
+        "kafka:DescribeCluster",
+        "kafka:DescribeClusterV2",
+        "kafka:GetBootstrapBrokers",
+        "iam:PassRole",
+        "logs:CreateLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:UpdateLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:PutResourcePolicy",
+        "logs:DescribeLogGroups"
+      ]
+    }
+  },
+  "typeName": "AWS::APS::Scraper"
+}

@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ivs:CreateStorageConfiguration",
+        "ivs:GetStorageConfiguration",
+        "ivs:TagResource",
+        "s3:GetBucketLocation",
+        "s3:GetBucketPolicy",
+        "s3:PutBucketPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ivs:DeleteStorageConfiguration",
+        "ivs:UntagResource",
+        "s3:GetBucketPolicy",
+        "s3:DeleteBucketPolicy",
+        "s3:PutBucketPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ivs:ListStorageConfigurations",
+        "s3:GetBucketLocation",
+        "ivs:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ivs:GetStorageConfiguration",
+        "ivs:ListTagsForResource",
+        "s3:GetBucketLocation"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ivs:GetStorageConfiguration",
+        "ivs:TagResource",
+        "ivs:UntagResource",
+        "ivs:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IVS::StorageConfiguration"
+}

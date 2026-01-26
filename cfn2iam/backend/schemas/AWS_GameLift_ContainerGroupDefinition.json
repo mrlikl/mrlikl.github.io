@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "gamelift:CreateContainerGroupDefinition",
+        "gamelift:DescribeContainerGroupDefinition",
+        "gamelift:ListTagsForResource",
+        "gamelift:TagResource",
+        "ecr:BatchCheckLayerAvailability",
+        "ecr:BatchGetImage",
+        "ecr:GetDownloadUrlForLayer",
+        "ecr:DescribeImages",
+        "ecr:GetAuthorizationToken"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "gamelift:DeleteContainerGroupDefinition"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "gamelift:ListContainerGroupDefinitions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "gamelift:DescribeContainerGroupDefinition",
+        "gamelift:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "gamelift:DescribeContainerGroupDefinition",
+        "gamelift:UpdateContainerGroupDefinition",
+        "gamelift:ListTagsForResource",
+        "gamelift:TagResource",
+        "gamelift:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::GameLift::ContainerGroupDefinition"
+}

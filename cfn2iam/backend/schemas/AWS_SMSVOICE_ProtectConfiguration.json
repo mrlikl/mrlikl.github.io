@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sms-voice:CreateProtectConfiguration",
+        "sms-voice:UpdateProtectConfigurationCountryRuleSet",
+        "sms-voice:DescribeProtectConfigurations",
+        "sms-voice:GetProtectConfigurationCountryRuleSet",
+        "sms-voice:TagResource",
+        "sms-voice:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sms-voice:DeleteProtectConfiguration",
+        "sms-voice:DescribeProtectConfigurations"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sms-voice:DescribeProtectConfigurations",
+        "sms-voice:GetProtectConfigurationCountryRuleSet"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sms-voice:DescribeProtectConfigurations",
+        "sms-voice:GetProtectConfigurationCountryRuleSet",
+        "sms-voice:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sms-voice:DescribeProtectConfigurations",
+        "sms-voice:GetProtectConfigurationCountryRuleSet",
+        "sms-voice:UpdateProtectConfiguration",
+        "sms-voice:UpdateProtectConfigurationCountryRuleSet",
+        "sms-voice:UntagResource",
+        "sms-voice:TagResource",
+        "sms-voice:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SMSVOICE::ProtectConfiguration"
+}

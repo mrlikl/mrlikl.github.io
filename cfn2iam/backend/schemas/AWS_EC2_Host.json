@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:AllocateHosts",
+        "ec2:DescribeHosts",
+        "ec2:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:ReleaseHosts",
+        "ec2:DescribeHosts"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeHosts"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeHosts"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:ModifyHosts",
+        "ec2:DescribeHosts",
+        "ec2:DeleteTags",
+        "ec2:CreateTags"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::Host"
+}

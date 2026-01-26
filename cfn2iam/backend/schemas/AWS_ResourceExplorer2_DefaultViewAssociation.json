@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "resource-explorer-2:GetDefaultView",
+        "resource-explorer-2:AssociateDefaultView"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "resource-explorer-2:GetDefaultView",
+        "resource-explorer-2:DisassociateDefaultView"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "resource-explorer-2:GetDefaultView"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "resource-explorer-2:GetDefaultView",
+        "resource-explorer-2:AssociateDefaultView"
+      ]
+    }
+  },
+  "typeName": "AWS::ResourceExplorer2::DefaultViewAssociation"
+}

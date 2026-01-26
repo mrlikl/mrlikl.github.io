@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wisdom:CreateQuickResponse",
+        "wisdom:GetQuickResponse",
+        "wisdom:TagResource",
+        "connect:SearchRoutingProfiles",
+        "connect:DescribeRoutingProfile"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wisdom:DeleteQuickResponse",
+        "wisdom:UntagResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "KnowledgeBaseArn": {
+            "$ref": "resource-schema.json#/properties/KnowledgeBaseArn"
+          }
+        },
+        "required": [
+          "KnowledgeBaseArn"
+        ]
+      },
+      "permissions": [
+        "wisdom:ListQuickResponses"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wisdom:GetQuickResponse"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wisdom:UpdateQuickResponse",
+        "wisdom:GetQuickResponse",
+        "wisdom:TagResource",
+        "wisdom:UntagResource",
+        "connect:SearchRoutingProfiles",
+        "connect:DescribeRoutingProfile"
+      ]
+    }
+  },
+  "typeName": "AWS::Wisdom::QuickResponse"
+}

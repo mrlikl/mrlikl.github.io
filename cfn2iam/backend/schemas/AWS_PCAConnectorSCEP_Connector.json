@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "acm-pca:DescribeCertificateAuthority",
+        "acm-pca:GetCertificate",
+        "acm-pca:GetCertificateAuthorityCertificate",
+        "acm-pca:IssueCertificate",
+        "pca-connector-scep:GetConnector",
+        "pca-connector-scep:CreateConnector",
+        "pca-connector-scep:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "acm-pca:DescribeCertificateAuthority",
+        "acm-pca:GetCertificate",
+        "acm-pca:GetCertificateAuthorityCertificate",
+        "acm-pca:IssueCertificate",
+        "pca-connector-scep:GetConnector",
+        "pca-connector-scep:DeleteConnector",
+        "pca-connector-scep:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "pca-connector-scep:ListConnectors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "pca-connector-scep:ListTagsForResource",
+        "pca-connector-scep:GetConnector"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "pca-connector-scep:ListTagsForResource",
+        "pca-connector-scep:TagResource",
+        "pca-connector-scep:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::PCAConnectorSCEP::Connector"
+}

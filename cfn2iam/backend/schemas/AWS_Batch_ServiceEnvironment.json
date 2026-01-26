@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "Batch:CreateServiceEnvironment",
+        "Batch:TagResource",
+        "Batch:DescribeServiceEnvironments",
+        "Iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "Batch:DeleteServiceEnvironment",
+        "Batch:DescribeServiceEnvironments",
+        "Batch:UpdateServiceEnvironment"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "Batch:DescribeServiceEnvironments"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "Batch:DescribeServiceEnvironments"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "Batch:UpdateServiceEnvironment",
+        "Batch:DescribeServiceEnvironments",
+        "Batch:TagResource",
+        "Batch:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Batch::ServiceEnvironment"
+}

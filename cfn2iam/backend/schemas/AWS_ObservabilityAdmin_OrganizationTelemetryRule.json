@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "observabilityadmin:CreateTelemetryRuleForOrganization",
+        "observabilityadmin:GetTelemetryRuleForOrganization",
+        "observabilityadmin:TagResource",
+        "observabilityadmin:ListTagsForResource",
+        "observabilityadmin:GetTelemetryEvaluationStatusForOrganization",
+        "organizations:ListDelegatedAdministrators",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "observabilityadmin:DeleteTelemetryRuleForOrganization",
+        "observabilityadmin:GetTelemetryEvaluationStatusForOrganization",
+        "organizations:ListDelegatedAdministrators"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "observabilityadmin:ListTelemetryRulesForOrganization",
+        "observabilityadmin:GetTelemetryEvaluationStatusForOrganization",
+        "organizations:ListDelegatedAdministrators"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "observabilityadmin:GetTelemetryRuleForOrganization",
+        "observabilityadmin:ListTagsForResource",
+        "observabilityadmin:GetTelemetryEvaluationStatusForOrganization",
+        "organizations:ListDelegatedAdministrators"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "observabilityadmin:UpdateTelemetryRuleForOrganization",
+        "observabilityadmin:GetTelemetryRuleForOrganization",
+        "observabilityadmin:TagResource",
+        "observabilityadmin:UntagResource",
+        "observabilityadmin:ListTagsForResource",
+        "observabilityadmin:GetTelemetryEvaluationStatusForOrganization",
+        "organizations:ListDelegatedAdministrators"
+      ]
+    }
+  },
+  "typeName": "AWS::ObservabilityAdmin::OrganizationTelemetryRule"
+}

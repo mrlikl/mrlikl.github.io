@@ -1,0 +1,20 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudfront:CreateMonitoringSubscription"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudfront:DeleteMonitoringSubscription"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudfront:GetMonitoringSubscription"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFront::MonitoringSubscription"
+}

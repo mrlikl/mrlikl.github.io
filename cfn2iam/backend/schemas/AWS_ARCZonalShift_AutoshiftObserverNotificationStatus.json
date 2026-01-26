@@ -1,0 +1,26 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "arc-zonal-shift:UpdateAutoshiftObserverNotificationStatus"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "arc-zonal-shift:UpdateAutoshiftObserverNotificationStatus",
+        "arc-zonal-shift:GetAutoshiftObserverNotificationStatus"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "arc-zonal-shift:GetAutoshiftObserverNotificationStatus"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "arc-zonal-shift:GetAutoshiftObserverNotificationStatus"
+      ]
+    }
+  },
+  "typeName": "AWS::ARCZonalShift::AutoshiftObserverNotificationStatus"
+}

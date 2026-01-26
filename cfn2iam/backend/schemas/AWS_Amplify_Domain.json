@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "amplify:GetDomainAssociation",
+        "amplify:CreateDomainAssociation",
+        "route53:ListHostedZones",
+        "route53:ChangeResourceRecordSets",
+        "iam:PassRole",
+        "amplify:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "amplify:GetDomainAssociation",
+        "amplify:DeleteDomainAssociation",
+        "route53:ListHostedZones",
+        "iam:PassRole"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "amplify:ListDomainAssociations",
+        "iam:PassRole",
+        "amplify:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "amplify:GetDomainAssociation",
+        "route53:ListHostedZones",
+        "iam:PassRole",
+        "amplify:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "amplify:GetDomainAssociation",
+        "amplify:UpdateDomainAssociation",
+        "route53:ListHostedZones",
+        "route53:ChangeResourceRecordSets",
+        "iam:PassRole",
+        "amplify:ListTagsForResource",
+        "amplify:TagResource",
+        "amplify:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Amplify::Domain"
+}

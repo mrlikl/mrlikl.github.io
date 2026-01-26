@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreateWorkloadIdentity",
+        "bedrock-agentcore:GetWorkloadIdentity",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeleteWorkloadIdentity"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListWorkloadIdentities"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetWorkloadIdentity",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:UpdateWorkloadIdentity",
+        "bedrock-agentcore:GetWorkloadIdentity",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:UntagResource",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::WorkloadIdentity"
+}

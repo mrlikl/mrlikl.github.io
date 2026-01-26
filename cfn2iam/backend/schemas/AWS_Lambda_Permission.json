@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lambda:AddPermission"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lambda:RemovePermission"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "FunctionName": {
+            "description": "The name of the Lambda function, version, or alias.",
+            "maxLength": 140,
+            "minLength": 1,
+            "pattern": "^(arn:(aws[a-zA-Z-]*)?:lambda:)?((eusc-)?[a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\\d{1}:)?(\\d{12}:)?(function:)?([a-zA-Z0-9-_]+)(:(\\$LATEST|[a-zA-Z0-9-_]+))?$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "FunctionName"
+        ]
+      },
+      "permissions": [
+        "lambda:GetPolicy"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lambda:GetPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::Lambda::Permission"
+}

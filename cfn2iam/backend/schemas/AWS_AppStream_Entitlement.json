@@ -1,0 +1,25 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appstream:CreateEntitlement"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appstream:DeleteEntitlement"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appstream:DescribeEntitlements"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appstream:UpdateEntitlement"
+      ]
+    }
+  },
+  "typeName": "AWS::AppStream::Entitlement"
+}

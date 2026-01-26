@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ivs:CreateIngestConfiguration",
+        "ivs:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ivs:DeleteIngestConfiguration",
+        "ivs:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ivs:ListIngestConfigurations",
+        "ivs:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ivs:GetIngestConfiguration",
+        "ivs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ivs:GetIngestConfiguration",
+        "ivs:UpdateIngestConfiguration",
+        "ivs:TagResource",
+        "ivs:UntagResource",
+        "ivs:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IVS::IngestConfiguration"
+}

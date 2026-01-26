@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "verifiedpermissions:CreatePolicyTemplate",
+        "verifiedpermissions:GetPolicyTemplate"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "verifiedpermissions:DeletePolicyTemplate",
+        "verifiedpermissions:GetPolicyTemplate"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "PolicyStoreId": {
+            "$ref": "resource-schema.json#/properties/PolicyStoreId"
+          }
+        },
+        "required": [
+          "PolicyStoreId"
+        ]
+      },
+      "permissions": [
+        "verifiedpermissions:ListPolicyTemplates",
+        "verifiedpermissions:GetPolicyTemplate"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "verifiedpermissions:GetPolicyTemplate"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "verifiedpermissions:UpdatePolicyTemplate",
+        "verifiedpermissions:GetPolicyTemplate"
+      ]
+    }
+  },
+  "typeName": "AWS::VerifiedPermissions::PolicyTemplate"
+}

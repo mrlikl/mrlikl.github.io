@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudformation:ActivateType",
+        "cloudformation:DescribeType",
+        "cloudformation:ListTypes",
+        "cloudformation:SetTypeConfiguration",
+        "cloudformation:BatchDescribeTypeConfigurations",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudformation:BatchDescribeTypeConfigurations",
+        "cloudformation:DescribeType",
+        "cloudformation:DeactivateType",
+        "cloudformation:SetTypeConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudformation:ListTypes",
+        "cloudformation:DescribeType",
+        "cloudformation:BatchDescribeTypeConfigurations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudformation:DescribeType",
+        "cloudformation:BatchDescribeTypeConfigurations"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudformation:BatchDescribeTypeConfigurations",
+        "cloudformation:DescribeType",
+        "cloudformation:SetTypeConfiguration",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFormation::GuardHook"
+}

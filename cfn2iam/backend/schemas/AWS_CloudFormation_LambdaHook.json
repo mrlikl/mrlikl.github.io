@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudformation:ListTypes",
+        "cloudformation:ActivateType",
+        "cloudformation:BatchDescribeTypeConfigurations",
+        "cloudformation:DescribeType",
+        "cloudformation:SetTypeConfiguration",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudformation:BatchDescribeTypeConfigurations",
+        "cloudformation:DeactivateType",
+        "cloudformation:DescribeType",
+        "cloudformation:SetTypeConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudformation:ListTypes",
+        "cloudformation:BatchDescribeTypeConfigurations",
+        "cloudformation:DescribeType"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudformation:BatchDescribeTypeConfigurations",
+        "cloudformation:DescribeType"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudformation:BatchDescribeTypeConfigurations",
+        "cloudformation:DescribeType",
+        "cloudformation:SetTypeConfiguration",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFormation::LambdaHook"
+}

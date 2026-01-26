@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateGlueIdentityCenterConfiguration",
+        "glue:GetGlueIdentityCenterConfiguration",
+        "sso:CreateApplication",
+        "sso:ListInstances",
+        "sso:ListApplications",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:PutApplicationGrant",
+        "sso:PutApplicationAccessScope",
+        "sso:PutApplicationAssignmentConfiguration",
+        "sso:PutApplicationSessionConfiguration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:DeleteGlueIdentityCenterConfiguration",
+        "glue:GetGlueIdentityCenterConfiguration",
+        "sso:DeleteApplication"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetGlueIdentityCenterConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:UpdateGlueIdentityCenterConfiguration",
+        "glue:GetGlueIdentityCenterConfiguration",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:PutApplicationGrant",
+        "sso:PutApplicationAccessScope",
+        "sso:PutApplicationAssignmentConfiguration",
+        "sso:DeleteApplicationAccessScope",
+        "sso:PutApplicationSessionConfiguration"
+      ]
+    }
+  },
+  "typeName": "AWS::Glue::IdentityCenterConfiguration"
+}

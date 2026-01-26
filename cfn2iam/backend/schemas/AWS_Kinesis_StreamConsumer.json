@@ -1,0 +1,30 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "kinesis:RegisterStreamConsumer",
+        "kinesis:DescribeStreamConsumer",
+        "kinesis:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "kinesis:DeregisterStreamConsumer",
+        "kinesis:DescribeStreamConsumer",
+        "kinesis:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "kinesis:ListStreamConsumers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "kinesis:DescribeStreamConsumer",
+        "kinesis:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Kinesis::StreamConsumer"
+}

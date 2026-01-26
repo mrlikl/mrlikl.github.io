@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wisdom:CreateAIAgent",
+        "wisdom:TagResource",
+        "connect:ListIntegrationAssociations"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wisdom:DeleteAIAgent"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AssistantId": {
+            "$ref": "resource-schema.json#/properties/AssistantId"
+          }
+        },
+        "required": [
+          "AssistantId"
+        ]
+      },
+      "permissions": [
+        "wisdom:ListAIAgents"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wisdom:GetAIAgent"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wisdom:UpdateAIAgent"
+      ]
+    }
+  },
+  "typeName": "AWS::Wisdom::AIAgent"
+}

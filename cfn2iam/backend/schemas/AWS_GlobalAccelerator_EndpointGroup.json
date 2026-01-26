@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "globalaccelerator:CreateEndpointGroup",
+        "globalaccelerator:DescribeEndpointGroup",
+        "globalaccelerator:DescribeAccelerator",
+        "globalaccelerator:DescribeListener",
+        "globalaccelerator:ListAccelerators",
+        "globalaccelerator:ListListeners"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "globalaccelerator:DeleteEndpointGroup",
+        "globalaccelerator:DescribeEndpointGroup",
+        "globalaccelerator:DescribeAccelerator"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "globalaccelerator:ListEndpointGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "globalaccelerator:DescribeEndpointGroup"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "globalaccelerator:UpdateEndpointGroup",
+        "globalaccelerator:DescribeEndpointGroup",
+        "globalaccelerator:DescribeListener",
+        "globalaccelerator:DescribeAccelerator"
+      ]
+    }
+  },
+  "typeName": "AWS::GlobalAccelerator::EndpointGroup"
+}

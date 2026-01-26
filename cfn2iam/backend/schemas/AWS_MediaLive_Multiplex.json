@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "medialive:CreateMultiplex",
+        "medialive:DescribeMultiplex",
+        "medialive:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "medialive:DeleteMultiplex",
+        "medialive:DescribeMultiplex"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "medialive:ListMultiplexes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "medialive:DescribeMultiplex"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "medialive:UpdateMultiplex",
+        "medialive:DescribeMultiplex",
+        "medialive:CreateTags",
+        "medialive:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaLive::Multiplex"
+}

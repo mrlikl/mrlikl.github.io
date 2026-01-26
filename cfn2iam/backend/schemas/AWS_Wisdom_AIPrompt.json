@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wisdom:CreateAIPrompt",
+        "wisdom:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wisdom:DeleteAIPrompt"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AssistantId": {
+            "$ref": "resource-schema.json#/properties/AssistantId"
+          }
+        },
+        "required": [
+          "AssistantId"
+        ]
+      },
+      "permissions": [
+        "wisdom:ListAIPrompts"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wisdom:GetAIPrompt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wisdom:UpdateAIPrompt"
+      ]
+    }
+  },
+  "typeName": "AWS::Wisdom::AIPrompt"
+}

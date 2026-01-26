@@ -1,0 +1,11 @@
+[
+  "AWS_Serverless_Api.json",
+  "AWS_Serverless_Application.json",
+  "AWS_Serverless_Connector.json",
+  "AWS_Serverless_Function.json",
+  "AWS_Serverless_GraphQLApi.json",
+  "AWS_Serverless_HttpApi.json",
+  "AWS_Serverless_LayerVersion.json",
+  "AWS_Serverless_SimpleTable.json",
+  "AWS_Serverless_StateMachine.json"
+]

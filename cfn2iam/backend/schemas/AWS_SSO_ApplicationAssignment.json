@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sso:CreateApplicationAssignment",
+        "sso:DescribeApplicationAssignment"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sso:DeleteApplicationAssignment"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ApplicationArn": {
+            "$ref": "resource-schema.json#/properties/ApplicationArn"
+          }
+        }
+      },
+      "permissions": [
+        "sso:ListApplicationAssignments"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sso:DescribeApplicationAssignment"
+      ]
+    }
+  },
+  "typeName": "AWS::SSO::ApplicationAssignment"
+}

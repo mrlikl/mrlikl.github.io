@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateRegistry",
+        "glue:GetRegistry",
+        "glue:GetTags",
+        "glue:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:GetRegistry",
+        "glue:DeleteRegistry"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:ListRegistries"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetRegistry",
+        "glue:GetTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:UpdateRegistry",
+        "glue:GetRegistry",
+        "glue:TagResource",
+        "glue:UntagResource",
+        "glue:GetTags"
+      ]
+    }
+  },
+  "typeName": "AWS::Glue::Registry"
+}

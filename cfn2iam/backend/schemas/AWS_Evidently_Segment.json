@@ -1,0 +1,31 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "evidently:CreateSegment",
+        "evidently:GetSegment",
+        "evidently:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "evidently:DeleteSegment",
+        "evidently:GetSegment",
+        "evidently:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "evidently:ListSegment",
+        "evidently:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "evidently:GetSegment",
+        "evidently:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Evidently::Segment"
+}

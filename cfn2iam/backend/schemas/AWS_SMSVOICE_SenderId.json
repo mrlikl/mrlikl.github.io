@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sms-voice:RequestSenderId",
+        "sms-voice:DescribeSenderIds",
+        "sms-voice:UpdateSenderId",
+        "sms-voice:TagResource",
+        "sms-voice:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sms-voice:ReleaseSenderId",
+        "sms-voice:DescribeSenderIds"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sms-voice:DescribeSenderIds"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sms-voice:DescribeSenderIds",
+        "sms-voice:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sms-voice:DescribeSenderIds",
+        "sms-voice:UpdateSenderId",
+        "sms-voice:UntagResource",
+        "sms-voice:TagResource",
+        "sms-voice:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SMSVOICE::SenderId"
+}

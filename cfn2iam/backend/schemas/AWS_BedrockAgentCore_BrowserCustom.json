@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreateBrowser",
+        "bedrock-agentcore:GetBrowser",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:ListTagsForResource",
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:GetBrowser",
+        "bedrock-agentcore:DeleteBrowser"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListBrowsers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetBrowser",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:GetBrowser",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:UntagResource",
+        "bedrock-agentcore:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::BrowserCustom"
+}

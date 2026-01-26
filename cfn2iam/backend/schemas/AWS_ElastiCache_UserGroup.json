@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticache:CreateUserGroup",
+        "elasticache:DescribeUserGroups",
+        "elasticache:ListTagsForResource",
+        "elasticache:AddTagsToResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "elasticache:ModifyReplicationGroup",
+        "elasticache:DeleteUserGroup",
+        "elasticache:DescribeUserGroups",
+        "elasticache:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "elasticache:DescribeUserGroups",
+        "elasticache:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticache:DescribeUserGroups",
+        "elasticache:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "elasticache:ModifyUserGroup",
+        "elasticache:DescribeUserGroups",
+        "elasticache:ListTagsForResource",
+        "elasticache:AddTagsToResource",
+        "elasticache:RemoveTagsFromResource"
+      ]
+    }
+  },
+  "typeName": "AWS::ElastiCache::UserGroup"
+}

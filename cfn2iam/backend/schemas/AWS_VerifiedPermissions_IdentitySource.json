@@ -1,0 +1,54 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "verifiedpermissions:CreateIdentitySource",
+        "verifiedpermissions:GetIdentitySource",
+        "cognito-idp:DescribeUserPool",
+        "cognito-idp:ListUserPoolClients"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "verifiedpermissions:DeleteIdentitySource",
+        "verifiedpermissions:GetIdentitySource",
+        "cognito-idp:DescribeUserPool",
+        "cognito-idp:ListUserPoolClients"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "PolicyStoreId": {
+            "$ref": "resource-schema.json#/properties/PolicyStoreId"
+          }
+        },
+        "required": [
+          "PolicyStoreId"
+        ]
+      },
+      "permissions": [
+        "verifiedpermissions:ListIdentitySources",
+        "verifiedpermissions:GetIdentitySource",
+        "cognito-idp:DescribeUserPool",
+        "cognito-idp:ListUserPoolClients"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "verifiedpermissions:GetIdentitySource",
+        "cognito-idp:DescribeUserPool",
+        "cognito-idp:ListUserPoolClients"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "verifiedpermissions:UpdateIdentitySource",
+        "verifiedpermissions:GetIdentitySource",
+        "cognito-idp:DescribeUserPool",
+        "cognito-idp:ListUserPoolClients"
+      ]
+    }
+  },
+  "typeName": "AWS::VerifiedPermissions::IdentitySource"
+}

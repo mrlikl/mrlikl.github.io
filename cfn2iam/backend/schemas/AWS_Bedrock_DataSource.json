@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock:CreateDataSource",
+        "bedrock:GetDataSource",
+        "bedrock:GetKnowledgeBase",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock:GetDataSource",
+        "bedrock:DeleteDataSource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "KnowledgeBaseId": {
+            "$ref": "resource-schema.json#/properties/KnowledgeBaseId"
+          }
+        },
+        "required": [
+          "KnowledgeBaseId"
+        ]
+      },
+      "permissions": [
+        "bedrock:ListDataSources"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:GetDataSource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock:GetDataSource",
+        "bedrock:UpdateDataSource",
+        "kms:GenerateDataKey"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::DataSource"
+}

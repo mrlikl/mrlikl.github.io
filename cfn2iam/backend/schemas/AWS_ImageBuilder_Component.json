@@ -1,0 +1,55 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:CreateServiceLinkedRole",
+        "iam:GetRole",
+        "kms:GenerateDataKey",
+        "kms:GenerateDataKeyPair",
+        "kms:GenerateDataKeyPairWithoutPlaintext",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "s3:GetObject",
+        "s3:HeadBucket",
+        "s3:GetBucketLocation",
+        "imagebuilder:TagResource",
+        "imagebuilder:GetComponent",
+        "imagebuilder:CreateComponent"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "imagebuilder:GetComponent",
+        "imagebuilder:UntagResource",
+        "imagebuilder:DeleteComponent"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "Arn": {
+            "$ref": "resource-schema.json#/properties/Arn"
+          }
+        }
+      },
+      "permissions": [
+        "imagebuilder:ListComponents",
+        "imagebuilder:ListComponentBuildVersions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "imagebuilder:GetComponent",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "imagebuilder:TagResource",
+        "imagebuilder:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::ImageBuilder::Component"
+}

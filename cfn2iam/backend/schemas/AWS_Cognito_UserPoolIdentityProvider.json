@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cognito-idp:CreateIdentityProvider",
+        "cognito-idp:DescribeIdentityProvider"
+      ],
+      "timeoutInMinutes": 2
+    },
+    "delete": {
+      "permissions": [
+        "cognito-idp:DeleteIdentityProvider",
+        "cognito-idp:DescribeIdentityProvider"
+      ],
+      "timeoutInMinutes": 2
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "UserPoolId": {
+            "$ref": "resource-schema.json#/properties/UserPoolId"
+          }
+        },
+        "required": [
+          "UserPoolId"
+        ]
+      },
+      "permissions": [
+        "cognito-idp:ListIdentityProviders"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cognito-idp:DescribeIdentityProvider"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cognito-idp:UpdateIdentityProvider",
+        "cognito-idp:DescribeIdentityProvider"
+      ],
+      "timeoutInMinutes": 2
+    }
+  },
+  "typeName": "AWS::Cognito::UserPoolIdentityProvider"
+}

@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wisdom:CreateAIAgentVersion"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wisdom:DeleteAIAgentVersion"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AIAgentId": {
+            "$ref": "resource-schema.json#/properties/AIAgentId"
+          },
+          "AssistantId": {
+            "$ref": "resource-schema.json#/properties/AssistantId"
+          }
+        },
+        "required": [
+          "AssistantId",
+          "AIAgentId"
+        ]
+      },
+      "permissions": [
+        "wisdom:ListAIAgentVersions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wisdom:GetAIAgent",
+        "wisdom:GetAIAgentVersion"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wisdom:GetAIAgent",
+        "wisdom:GetAIAgentVersion"
+      ]
+    }
+  },
+  "typeName": "AWS::Wisdom::AIAgentVersion"
+}

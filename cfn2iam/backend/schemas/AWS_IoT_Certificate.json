@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:CreateCertificateFromCsr",
+        "iot:RegisterCertificate",
+        "iot:RegisterCertificateWithoutCA",
+        "iot:DescribeCertificate",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:DeleteCertificate",
+        "iot:UpdateCertificate",
+        "iot:DescribeCertificate",
+        "kms:Decrypt"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iot:ListCertificates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:DescribeCertificate",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iot:UpdateCertificate",
+        "iot:DescribeCertificate",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::IoT::Certificate"
+}

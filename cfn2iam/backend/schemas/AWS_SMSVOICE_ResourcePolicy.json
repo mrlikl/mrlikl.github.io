@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sms-voice:PutResourcePolicy",
+        "sms-voice:GetResourcePolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sms-voice:GetResourcePolicy",
+        "sms-voice:DeleteResourcePolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sms-voice:DescribePhoneNumbers",
+        "sms-voice:DescribeSenderIds",
+        "sms-voice:DescribePools",
+        "sms-voice:DescribeOptOutLists"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sms-voice:GetResourcePolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sms-voice:DeleteResourcePolicy",
+        "sms-voice:PutResourcePolicy",
+        "sms-voice:GetResourcePolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::SMSVOICE::ResourcePolicy"
+}

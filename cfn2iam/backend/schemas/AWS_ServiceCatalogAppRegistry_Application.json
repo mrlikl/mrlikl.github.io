@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "servicecatalog:CreateApplication",
+        "servicecatalog:TagResource",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "servicecatalog:DeleteApplication"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "servicecatalog:ListApplications"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "servicecatalog:GetApplication"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "servicecatalog:GetApplication",
+        "servicecatalog:ListTagsForResource",
+        "servicecatalog:TagResource",
+        "servicecatalog:UntagResource",
+        "servicecatalog:UpdateApplication",
+        "iam:CreateServiceLinkedRole"
+      ]
+    }
+  },
+  "typeName": "AWS::ServiceCatalogAppRegistry::Application"
+}

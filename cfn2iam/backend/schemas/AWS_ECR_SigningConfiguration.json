@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ecr:PutSigningConfiguration",
+        "ecr:GetSigningConfiguration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ecr:DeleteSigningConfiguration",
+        "ecr:GetSigningConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ecr:GetSigningConfiguration"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ecr:GetSigningConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ecr:PutSigningConfiguration",
+        "ecr:GetSigningConfiguration"
+      ]
+    }
+  },
+  "typeName": "AWS::ECR::SigningConfiguration"
+}

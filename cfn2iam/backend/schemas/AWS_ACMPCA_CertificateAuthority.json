@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "acm-pca:CreateCertificateAuthority",
+        "acm-pca:DescribeCertificateAuthority",
+        "acm-pca:GetCertificateAuthorityCsr",
+        "acm-pca:TagCertificateAuthority"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "acm-pca:DeleteCertificateAuthority",
+        "acm-pca:DescribeCertificateAuthority"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "acm-pca:DescribeCertificateAuthority",
+        "acm-pca:GetCertificateAuthorityCsr",
+        "acm-pca:ListCertificateAuthorities",
+        "acm-pca:ListTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "acm-pca:DescribeCertificateAuthority",
+        "acm-pca:GetCertificateAuthorityCsr",
+        "acm-pca:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "acm-pca:TagCertificateAuthority",
+        "acm-pca:UntagCertificateAuthority",
+        "acm-pca:UpdateCertificateAuthority"
+      ]
+    }
+  },
+  "typeName": "AWS::ACMPCA::CertificateAuthority"
+}

@@ -1,0 +1,62 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "gamelift:CreateContainerFleet",
+        "gamelift:DescribeContainerFleet",
+        "gamelift:DescribeFleetDeployment",
+        "gamelift:DescribeFleetLocationAttributes",
+        "gamelift:DescribeFleetLocationCapacity",
+        "gamelift:DescribeScalingPolicies",
+        "gamelift:ListTagsForResource",
+        "gamelift:PutScalingPolicy",
+        "gamelift:StopFleetActions",
+        "gamelift:TagResource",
+        "gamelift:UpdateFleetCapacity",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "gamelift:DeleteContainerFleet",
+        "gamelift:DescribeContainerFleet"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "gamelift:ListContainerFleets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "gamelift:DescribeContainerFleet",
+        "gamelift:DescribeFleetLocationAttributes",
+        "gamelift:DescribeFleetLocationCapacity",
+        "gamelift:DescribeScalingPolicies",
+        "gamelift:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "gamelift:CreateFleetLocations",
+        "gamelift:DeleteFleetLocations",
+        "gamelift:DeleteScalingPolicy",
+        "gamelift:DescribeContainerFleet",
+        "gamelift:DescribeFleetDeployment",
+        "gamelift:DescribeFleetLocationAttributes",
+        "gamelift:DescribeFleetLocationCapacity",
+        "gamelift:DescribeScalingPolicies",
+        "gamelift:ListTagsForResource",
+        "gamelift:PutScalingPolicy",
+        "gamelift:StartFleetActions",
+        "gamelift:StopFleetActions",
+        "gamelift:TagResource",
+        "gamelift:UntagResource",
+        "gamelift:UpdateContainerFleet",
+        "gamelift:UpdateFleetCapacity",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::GameLift::ContainerFleet"
+}

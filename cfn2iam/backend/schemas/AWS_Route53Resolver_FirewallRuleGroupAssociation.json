@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53resolver:AssociateFirewallRuleGroup",
+        "route53resolver:GetFirewallRuleGroupAssociation",
+        "route53resolver:TagResource",
+        "route53resolver:ListTagsForResource",
+        "ec2:DescribeVpcs"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53resolver:DisassociateFirewallRuleGroup",
+        "route53resolver:GetFirewallRuleGroupAssociation",
+        "route53resolver:UntagResource",
+        "route53resolver:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "route53resolver:ListFirewallRuleGroupAssociations",
+        "route53resolver:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53resolver:GetFirewallRuleGroupAssociation",
+        "route53resolver:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "route53resolver:UpdateFirewallRuleGroupAssociation",
+        "route53resolver:GetFirewallRuleGroupAssociation",
+        "route53resolver:TagResource",
+        "route53resolver:UntagResource",
+        "route53resolver:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53Resolver::FirewallRuleGroupAssociation"
+}

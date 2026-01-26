@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PassRole",
+        "s3:GetObject",
+        "sagemaker:CreatePipeline",
+        "sagemaker:DescribePipeline",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeletePipeline"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListPipelines"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribePipeline",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:PassRole",
+        "s3:GetObject",
+        "sagemaker:UpdatePipeline",
+        "sagemaker:DescribePipeline",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::Pipeline"
+}

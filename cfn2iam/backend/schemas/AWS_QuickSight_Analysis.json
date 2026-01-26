@@ -1,0 +1,66 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "quicksight:DescribeAnalysis",
+        "quicksight:DescribeAnalysisPermissions",
+        "quicksight:CreateAnalysis",
+        "quicksight:DescribeTemplate",
+        "quicksight:DescribeTheme",
+        "quicksight:PassDataSet",
+        "quicksight:TagResource",
+        "quicksight:UntagResource",
+        "quicksight:ListTagsForResource",
+        "quicksight:CreateFolderMembership",
+        "quicksight:DeleteFolderMembership",
+        "quicksight:ListFoldersForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "quicksight:DescribeAnalysis",
+        "quicksight:DeleteAnalysis"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AwsAccountId": {
+            "$ref": "resource-schema.json#/properties/AwsAccountId"
+          }
+        },
+        "required": [
+          "AwsAccountId"
+        ]
+      },
+      "permissions": [
+        "quicksight:ListAnalyses"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "quicksight:DescribeAnalysis",
+        "quicksight:DescribeAnalysisPermissions",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "quicksight:DescribeAnalysis",
+        "quicksight:DescribeAnalysisPermissions",
+        "quicksight:UpdateAnalysis",
+        "quicksight:UpdateAnalysisPermissions",
+        "quicksight:CreateFolderMembership",
+        "quicksight:DeleteFolderMembership",
+        "quicksight:ListFoldersForResource",
+        "quicksight:DescribeTemplate",
+        "quicksight:DescribeTheme",
+        "quicksight:PassDataSet",
+        "quicksight:TagResource",
+        "quicksight:UntagResource",
+        "quicksight:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::QuickSight::Analysis"
+}

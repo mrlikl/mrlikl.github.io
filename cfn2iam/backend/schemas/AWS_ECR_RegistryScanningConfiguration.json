@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ecr:PutRegistryScanningConfiguration",
+        "ecr:GetRegistryScanningConfiguration",
+        "inspector2:Enable",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ecr:PutRegistryScanningConfiguration",
+        "ecr:GetRegistryScanningConfiguration",
+        "inspector2:ListAccountPermissions",
+        "inspector2:Disable"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ecr:GetRegistryScanningConfiguration"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ecr:GetRegistryScanningConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ecr:PutRegistryScanningConfiguration",
+        "ecr:GetRegistryScanningConfiguration",
+        "inspector2:Enable",
+        "inspector2:Disable",
+        "inspector2:ListAccountPermissions",
+        "iam:CreateServiceLinkedRole"
+      ]
+    }
+  },
+  "typeName": "AWS::ECR::RegistryScanningConfiguration"
+}

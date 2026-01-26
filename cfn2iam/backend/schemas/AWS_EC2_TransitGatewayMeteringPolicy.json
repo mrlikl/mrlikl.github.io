@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:DescribeTransitGatewayMeteringPolicies",
+        "ec2:CreateTransitGatewayMeteringPolicy",
+        "ec2:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DescribeTransitGatewayMeteringPolicies",
+        "ec2:DeleteTransitGatewayMeteringPolicy",
+        "ec2:DeleteTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeTransitGatewayMeteringPolicies",
+        "ec2:DescribeTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeTransitGatewayMeteringPolicies",
+        "ec2:DescribeTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:DescribeTransitGatewayMeteringPolicies",
+        "ec2:ModifyTransitGatewayMeteringPolicy",
+        "ec2:CreateTags",
+        "ec2:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::TransitGatewayMeteringPolicy"
+}

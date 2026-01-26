@@ -1,0 +1,27 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "workspaces:CreateConnectionAlias",
+        "workspaces:CreateTags",
+        "workspaces:DescribeConnectionAliases",
+        "workspaces:DescribeTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "workspaces:DeleteConnectionAlias",
+        "workspaces:DeleteTags",
+        "workspaces:DescribeTags",
+        "workspaces:DescribeConnectionAliases"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "workspaces:DescribeConnectionAliases",
+        "workspaces:DescribeTags"
+      ]
+    }
+  },
+  "typeName": "AWS::WorkSpaces::ConnectionAlias"
+}

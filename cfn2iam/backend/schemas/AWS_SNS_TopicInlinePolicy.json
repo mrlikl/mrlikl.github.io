@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sns:SetTopicAttributes",
+        "sns:GetTopicAttributes"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sns:SetTopicAttributes",
+        "sns:GetTopicAttributes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sns:GetTopicAttributes"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sns:SetTopicAttributes",
+        "sns:GetTopicAttributes"
+      ]
+    }
+  },
+  "typeName": "AWS::SNS::TopicInlinePolicy"
+}

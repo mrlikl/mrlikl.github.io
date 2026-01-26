@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "servicecatalog:AssociateProductWithPortfolio",
+        "servicecatalog:ListPortfoliosForProduct"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "servicecatalog:DisassociateProductFromPortfolio",
+        "servicecatalog:ListPortfoliosForProduct"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ProductId": {
+            "$ref": "resource-schema.json#/properties/ProductId"
+          }
+        },
+        "required": [
+          "ProductId"
+        ]
+      },
+      "permissions": [
+        "servicecatalog:ListPortfoliosForProduct"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "servicecatalog:ListPortfoliosForProduct"
+      ]
+    }
+  },
+  "typeName": "AWS::ServiceCatalog::PortfolioProductAssociation"
+}

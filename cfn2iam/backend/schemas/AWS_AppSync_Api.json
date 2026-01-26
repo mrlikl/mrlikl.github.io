@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appsync:CreateApi",
+        "appsync:TagResource",
+        "appsync:GetApi",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appsync:DeleteApi",
+        "appsync:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "appsync:ListApis"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appsync:GetApi",
+        "appsync:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appsync:UpdateApi",
+        "appsync:TagResource",
+        "appsync:UntagResource",
+        "appsync:GetApi",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::AppSync::Api"
+}

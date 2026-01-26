@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:CreateConfigurationSet",
+        "ses:UntagResource",
+        "ses:TagResource",
+        "ses:DescribeConfigurationSet",
+        "ses:GetConfigurationSet"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:DeleteConfigurationSet"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListConfigurationSets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:GetConfigurationSet",
+        "ses:DescribeConfigurationSet"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:PutConfigurationSetTrackingOptions",
+        "ses:PutConfigurationSetDeliveryOptions",
+        "ses:PutConfigurationSetReputationOptions",
+        "ses:PutConfigurationSetSendingOptions",
+        "ses:PutConfigurationSetSuppressionOptions",
+        "ses:PutConfigurationSetVdmOptions",
+        "ses:DescribeConfigurationSet",
+        "ses:UntagResource",
+        "ses:TagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::ConfigurationSet"
+}

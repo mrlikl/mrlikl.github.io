@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:CreateCertificateProvider",
+        "iot:DescribeCertificateProvider",
+        "iot:TagResource",
+        "iot:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:DeleteCertificateProvider",
+        "iot:DescribeCertificateProvider",
+        "kms:Decrypt"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iot:ListCertificateProviders"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:DescribeCertificateProvider",
+        "iot:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iot:UpdateCertificateProvider",
+        "iot:DescribeCertificateProvider",
+        "iot:TagResource",
+        "iot:UntagResource",
+        "iot:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::IoT::CertificateProvider"
+}

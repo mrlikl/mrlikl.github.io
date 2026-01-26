@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ce:CreateAnomalyMonitor",
+        "ce:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ce:DeleteAnomalyMonitor"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ce:GetAnomalyMonitors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ce:GetAnomalyMonitors",
+        "ce:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ce:UpdateAnomalyMonitor"
+      ]
+    }
+  },
+  "typeName": "AWS::CE::AnomalyMonitor"
+}

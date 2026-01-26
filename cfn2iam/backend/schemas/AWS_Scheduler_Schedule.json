@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "scheduler:CreateSchedule",
+        "scheduler:GetSchedule",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "scheduler:DeleteSchedule",
+        "scheduler:GetSchedule"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "scheduler:ListSchedules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "scheduler:GetSchedule"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "scheduler:UpdateSchedule",
+        "scheduler:GetSchedule",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::Scheduler::Schedule"
+}

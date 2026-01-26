@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "omics:CreateRunGroup",
+        "omics:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "omics:DeleteRunGroup",
+        "omics:GetRunGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "omics:ListRunGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "omics:GetRunGroup"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "omics:UpdateRunGroup",
+        "omics:TagResource",
+        "omics:GetRunGroup",
+        "omics:ListTagsForResource",
+        "omics:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Omics::RunGroup"
+}

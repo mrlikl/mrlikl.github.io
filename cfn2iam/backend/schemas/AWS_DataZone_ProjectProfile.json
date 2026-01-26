@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "datazone:CreateProjectProfile",
+        "datazone:GetProjectProfile",
+        "datazone:ListEnvironmentBlueprints",
+        "ssm:GetParameter"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "datazone:DeleteProjectProfile",
+        "datazone:GetProjectProfile"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "datazone:ListProjectProfiles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "datazone:GetProjectProfile",
+        "ssm:GetParameter"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "datazone:UpdateProjectProfile",
+        "datazone:GetProjectProfile",
+        "ssm:GetParameter"
+      ]
+    }
+  },
+  "typeName": "AWS::DataZone::ProjectProfile"
+}

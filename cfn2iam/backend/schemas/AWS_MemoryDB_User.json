@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "memorydb:CreateUser",
+        "memorydb:DescribeUsers",
+        "memorydb:TagResource",
+        "memorydb:ListTags",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "memorydb:DeleteUser",
+        "memorydb:DescribeUsers"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "memorydb:DescribeUsers",
+        "memorydb:ListTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "memorydb:DescribeUsers",
+        "memorydb:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "memorydb:UpdateUser",
+        "memorydb:DescribeUsers",
+        "memorydb:ListTags",
+        "memorydb:TagResource",
+        "memorydb:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::MemoryDB::User"
+}

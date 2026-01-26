@@ -1,0 +1,73 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "profile:GetIntegration",
+        "profile:PutIntegration",
+        "appflow:CreateFlow",
+        "app-integrations:CreateEventIntegrationAssociation",
+        "app-integrations:GetEventIntegration",
+        "connect:DescribeInstance",
+        "ds:DescribeDirectories",
+        "events:ListTargetsByRule",
+        "events:PutRule",
+        "events:PutTargets",
+        "events:PutEvents",
+        "profile:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "profile:DeleteIntegration",
+        "appflow:DeleteFlow",
+        "app-integrations:ListEventIntegrationAssociations",
+        "app-integrations:DeleteEventIntegrationAssociation",
+        "events:RemoveTargets",
+        "events:ListTargetsByRule",
+        "events:DeleteRule"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainName": {
+            "$ref": "resource-schema.json#/properties/DomainName"
+          }
+        },
+        "required": [
+          "DomainName"
+        ]
+      },
+      "permissions": [
+        "profile:ListIntegrations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "profile:GetIntegration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "profile:PutIntegration",
+        "profile:GetIntegration",
+        "appflow:CreateFlow",
+        "app-integrations:GetEventIntegration",
+        "app-integrations:CreateEventIntegrationAssociation",
+        "app-integrations:ListEventIntegrationAssociations",
+        "app-integrations:DeleteEventIntegrationAssociation",
+        "events:ListTargetsByRule",
+        "events:RemoveTargets",
+        "events:DeleteRule",
+        "events:PutRule",
+        "events:PutTargets",
+        "events:PutEvents",
+        "profile:UntagResource",
+        "profile:TagResource",
+        "connect:DescribeInstance",
+        "ds:DescribeDirectories"
+      ]
+    }
+  },
+  "typeName": "AWS::CustomerProfiles::Integration"
+}

@@ -1,0 +1,51 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "connect:CreateWorkspace",
+        "connect:UpdateWorkspaceVisibility",
+        "connect:ImportWorkspaceMedia",
+        "connect:CreateWorkspacePage",
+        "connect:AssociateWorkspace",
+        "connect:TagResource",
+        "connect:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "connect:DeleteWorkspace"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "connect:ListWorkspaces"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "connect:DescribeWorkspace",
+        "connect:ListTagsForResource",
+        "connect:ListWorkspaceMedia",
+        "connect:ListWorkspacePages",
+        "connect:SearchWorkspaceAssociations"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "connect:UpdateWorkspaceTheme",
+        "connect:UpdateWorkspaceVisibility",
+        "connect:UpdateWorkspaceMetadata",
+        "connect:ImportWorkspaceMedia",
+        "connect:DeleteWorkspaceMedia",
+        "connect:CreateWorkspacePage",
+        "connect:UpdateWorkspacePage",
+        "connect:DeleteWorkspacePage",
+        "connect:AssociateWorkspace",
+        "connect:DisassociateWorkspace",
+        "connect:TagResource",
+        "connect:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Connect::Workspace"
+}

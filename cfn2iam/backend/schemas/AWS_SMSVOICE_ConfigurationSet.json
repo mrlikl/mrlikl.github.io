@@ -1,0 +1,54 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sms-voice:CreateConfigurationSet",
+        "sms-voice:DescribeConfigurationSets",
+        "sms-voice:SetDefaultSenderId",
+        "sms-voice:SetDefaultMessageFeedbackEnabled",
+        "sms-voice:AssociateProtectConfiguration",
+        "sms-voice:CreateEventDestination",
+        "sms-voice:UpdateEventDestination",
+        "sms-voice:TagResource",
+        "sms-voice:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sms-voice:DescribeConfigurationSets",
+        "sms-voice:DeleteConfigurationSet"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sms-voice:DescribeConfigurationSets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sms-voice:DescribeConfigurationSets",
+        "sms-voice:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sms-voice:DescribeConfigurationSets",
+        "sms-voice:CreateEventDestination",
+        "sms-voice:UpdateEventDestination",
+        "sms-voice:DeleteEventDestination",
+        "sms-voice:DeleteDefaultSenderId",
+        "sms-voice:SetDefaultSenderId",
+        "sms-voice:DeleteDefaultMessageFeedbackEnabled",
+        "sms-voice:SetDefaultMessageFeedbackEnabled",
+        "sms-voice:DisassociateProtectConfiguration",
+        "sms-voice:AssociateProtectConfiguration",
+        "sms-voice:UntagResource",
+        "sms-voice:TagResource",
+        "sms-voice:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::SMSVOICE::ConfigurationSet"
+}

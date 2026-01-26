@@ -1,0 +1,88 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "synthetics:CreateCanary",
+        "synthetics:StartCanary",
+        "synthetics:GetCanary",
+        "synthetics:TagResource",
+        "s3:CreateBucket",
+        "s3:GetObject",
+        "s3:GetObjectVersion",
+        "s3:PutBucketEncryption",
+        "s3:PutEncryptionConfiguration",
+        "s3:GetBucketLocation",
+        "lambda:CreateFunction",
+        "lambda:AddPermission",
+        "lambda:PublishVersion",
+        "lambda:UpdateFunctionCode",
+        "lambda:UpdateFunctionConfiguration",
+        "lambda:GetFunctionConfiguration",
+        "lambda:GetLayerVersionByArn",
+        "lambda:GetLayerVersion",
+        "lambda:PublishLayerVersion",
+        "lambda:TagResource",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "synthetics:DeleteCanary",
+        "synthetics:GetCanary",
+        "lambda:DeleteFunction",
+        "lambda:DeleteLayerVersion"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "synthetics:DescribeCanaries"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "synthetics:GetCanary",
+        "synthetics:DescribeCanaries",
+        "synthetics:ListTagsForResource",
+        "iam:ListRoles",
+        "s3:ListAllMyBuckets",
+        "s3:GetBucketLocation"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "synthetics:UpdateCanary",
+        "synthetics:StartCanary",
+        "synthetics:StartCanaryDryRun",
+        "synthetics:StopCanary",
+        "synthetics:GetCanary",
+        "synthetics:GetCanaryRuns",
+        "synthetics:TagResource",
+        "synthetics:UntagResource",
+        "s3:GetObject",
+        "s3:GetObjectVersion",
+        "s3:PutBucketEncryption",
+        "s3:PutEncryptionConfiguration",
+        "s3:GetBucketLocation",
+        "lambda:AddPermission",
+        "lambda:PublishVersion",
+        "lambda:UpdateFunctionCode",
+        "lambda:UpdateFunctionConfiguration",
+        "lambda:GetFunctionConfiguration",
+        "lambda:GetLayerVersionByArn",
+        "lambda:GetLayerVersion",
+        "lambda:PublishLayerVersion",
+        "lambda:ListTags",
+        "lambda:TagResource",
+        "lambda:UntagResource",
+        "iam:PassRole",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups"
+      ]
+    }
+  },
+  "typeName": "AWS::Synthetics::Canary"
+}

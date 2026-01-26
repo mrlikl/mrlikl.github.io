@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "workspaces-instances:CreateWorkspaceInstance",
+        "workspaces-instances:GetWorkspaceInstance",
+        "workspaces-instances:TagResource",
+        "ec2:RunInstances",
+        "ec2:DescribeInstances",
+        "ec2:DescribeInstanceStatus",
+        "ec2:CreateTags",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "workspaces-instances:DeleteWorkspaceInstance",
+        "workspaces-instances:GetWorkspaceInstance",
+        "ec2:TerminateInstances",
+        "ec2:DescribeInstances",
+        "ec2:DescribeInstanceStatus"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "workspaces-instances:ListWorkspaceInstances"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "workspaces-instances:GetWorkspaceInstance",
+        "workspaces-instances:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "workspaces-instances:TagResource",
+        "workspaces-instances:UntagResource",
+        "workspaces-instances:ListTagsForResource",
+        "workspaces-instances:GetWorkspaceInstance"
+      ]
+    }
+  },
+  "typeName": "AWS::WorkspacesInstances::WorkspaceInstance"
+}

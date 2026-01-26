@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PassRole",
+        "iam:GetRole",
+        "iam:GetInstanceProfile",
+        "iam:CreateServiceLinkedRole",
+        "sns:Publish",
+        "imagebuilder:TagResource",
+        "imagebuilder:GetInfrastructureConfiguration",
+        "imagebuilder:CreateInfrastructureConfiguration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "imagebuilder:UntagResource",
+        "imagebuilder:GetInfrastructureConfiguration",
+        "imagebuilder:DeleteInfrastructureConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "imagebuilder:ListInfrastructureConfigurations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "imagebuilder:GetInfrastructureConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:PassRole",
+        "sns:Publish",
+        "imagebuilder:GetInfrastructureConfiguration",
+        "imagebuilder:UpdateInfrastructureConfiguration",
+        "imagebuilder:TagResource",
+        "imagebuilder:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::ImageBuilder::InfrastructureConfiguration"
+}

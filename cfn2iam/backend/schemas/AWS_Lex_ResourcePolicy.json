@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lex:CreateResourcePolicy",
+        "lex:DescribeResourcePolicy",
+        "lex:CreateResourcePolicyStatement"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lex:DeleteResourcePolicy",
+        "lex:DescribeResourcePolicy",
+        "lex:DeleteResourcePolicyStatement"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "lex:DescribeResourcePolicy"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lex:DescribeResourcePolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lex:CreateResourcePolicy",
+        "lex:UpdateResourcePolicy",
+        "lex:DescribeResourcePolicy",
+        "lex:DeleteResourcePolicy",
+        "lex:CreateResourcePolicyStatement",
+        "lex:DeleteResourcePolicyStatement"
+      ]
+    }
+  },
+  "typeName": "AWS::Lex::ResourcePolicy"
+}

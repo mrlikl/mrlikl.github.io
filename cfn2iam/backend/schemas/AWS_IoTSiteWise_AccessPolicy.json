@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iotsitewise:CreateAccessPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotsitewise:DescribeAccessPolicy",
+        "iotsitewise:DeleteAccessPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iotsitewise:ListAccessPolicies",
+        "iotsitewise:ListProjects",
+        "iotsitewise:ListPortals"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotsitewise:DescribeAccessPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iotsitewise:DescribeAccessPolicy",
+        "iotsitewise:UpdateAccessPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTSiteWise::AccessPolicy"
+}

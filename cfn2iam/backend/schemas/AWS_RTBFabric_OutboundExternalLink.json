@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rtbfabric:CreateOutboundExternalLink",
+        "rtbfabric:GetOutboundExternalLink",
+        "rtbfabric:TagResource",
+        "rtbfabric:ListTagsForResource",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rtbfabric:DeleteOutboundExternalLink",
+        "rtbfabric:GetOutboundExternalLink"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "GatewayId": {
+            "pattern": "^rtb-gw-[a-z0-9-]{1,25}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "GatewayId"
+        ]
+      },
+      "permissions": [
+        "rtbfabric:ListLinks"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rtbfabric:GetOutboundExternalLink",
+        "rtbfabric:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rtbfabric:GetOutboundExternalLink",
+        "rtbfabric:TagResource",
+        "rtbfabric:UntagResource",
+        "rtbfabric:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::RTBFabric::OutboundExternalLink"
+}

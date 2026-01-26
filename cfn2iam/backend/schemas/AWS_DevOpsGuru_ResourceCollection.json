@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "devops-guru:UpdateResourceCollection",
+        "devops-guru:GetResourceCollection"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "devops-guru:UpdateResourceCollection",
+        "devops-guru:GetResourceCollection"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "devops-guru:GetResourceCollection"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "devops-guru:GetResourceCollection"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "devops-guru:UpdateResourceCollection",
+        "devops-guru:GetResourceCollection"
+      ]
+    }
+  },
+  "typeName": "AWS::DevOpsGuru::ResourceCollection"
+}

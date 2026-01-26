@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediaconnect:GetRouterInput",
+        "mediaconnect:ListRouterInputs",
+        "ec2:CreateNetworkInterface",
+        "iam:PassRole",
+        "mediaconnect:AssociateRouterNetworkInterface",
+        "mediaconnect:CreateRouterInput",
+        "mediaconnect:TagResource",
+        "mediaconnect:UpdateFlowOutput"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediaconnect:GetRouterInput",
+        "mediaconnect:UpdateRouterInput",
+        "mediaconnect:UpdateFlowOutput",
+        "mediaconnect:ListRouterInputs",
+        "mediaconnect:DeleteRouterInput"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediaconnect:ListRouterInputs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediaconnect:GetRouterInput"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediaconnect:ListTagsForResource",
+        "mediaconnect:TagResource",
+        "mediaconnect:UntagResource",
+        "mediaconnect:GetRouterInput",
+        "ec2:CreateNetworkInterface",
+        "iam:PassRole",
+        "mediaconnect:AssociateRouterNetworkInterface",
+        "mediaconnect:UpdateFlowOutput",
+        "mediaconnect:UpdateRouterInput"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaConnect::RouterInput"
+}

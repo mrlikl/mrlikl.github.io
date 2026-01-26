@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appsync:CreateDomainName",
+        "appsync:GetDomainName",
+        "acm:DescribeCertificate",
+        "cloudfront:UpdateDistribution",
+        "appsync:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appsync:GetDomainName",
+        "appsync:DeleteDomainName",
+        "appsync:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "appsync:ListDomainNames"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appsync:GetDomainName"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appsync:UpdateDomainName",
+        "appsync:TagResource",
+        "appsync:UntagResource",
+        "appsync:GetDomainName"
+      ]
+    }
+  },
+  "typeName": "AWS::AppSync::DomainName"
+}

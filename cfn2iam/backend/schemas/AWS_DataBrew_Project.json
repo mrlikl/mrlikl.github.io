@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "databrew:CreateProject",
+        "databrew:DescribeProject",
+        "databrew:TagResource",
+        "databrew:UntagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "databrew:DeleteProject"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "databrew:ListProjects",
+        "databrew:ListTagsForResource",
+        "iam:ListRoles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "databrew:DescribeProject",
+        "iam:ListRoles"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "databrew:UpdateProject",
+        "databrew:TagResource",
+        "databrew:UntagResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::DataBrew::Project"
+}

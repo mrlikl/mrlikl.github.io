@@ -1,0 +1,4 @@
+{
+  "handlers": {},
+  "typeName": "AWS::Cloud9::EnvironmentEC2"
+}

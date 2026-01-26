@@ -1,0 +1,53 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "connect:CreateHoursOfOperation",
+        "connect:TagResource",
+        "connect:CreateHoursOfOperationOverride"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "connect:DeleteHoursOfOperation",
+        "connect:UntagResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "InstanceArn": {
+            "$ref": "resource-schema.json#/properties/InstanceArn"
+          }
+        },
+        "required": [
+          "InstanceArn"
+        ]
+      },
+      "permissions": [
+        "connect:ListHoursOfOperations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "connect:DescribeHoursOfOperation",
+        "connect:ListHoursOfOperationOverrides",
+        "connect:ListChildHoursOfOperations"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "connect:UpdateHoursOfOperation",
+        "connect:CreateHoursOfOperationOverride",
+        "connect:UpdateHoursOfOperationOverride",
+        "connect:DeleteHoursOfOperationOverride",
+        "connect:ListHoursOfOperationOverrides",
+        "connect:TagResource",
+        "connect:UntagResource",
+        "connect:AssociateHoursOfOperations",
+        "connect:DisassociateHoursOfOperations"
+      ]
+    }
+  },
+  "typeName": "AWS::Connect::HoursOfOperation"
+}

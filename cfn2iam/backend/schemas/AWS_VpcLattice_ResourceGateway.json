@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "vpc-lattice:CreateResourceGateway",
+        "vpc-lattice:GetResourceGateway",
+        "vpc-lattice:TagResource",
+        "vpc-lattice:ListTagsForResource",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "vpc-lattice:DeleteResourceGateway",
+        "vpc-lattice:GetResourceGateway",
+        "vpc-lattice:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "vpc-lattice:ListResourceGateways"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "vpc-lattice:GetResourceGateway",
+        "vpc-lattice:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "vpc-lattice:UpdateResourceGateway",
+        "vpc-lattice:GetResourceGateway",
+        "vpc-lattice:TagResource",
+        "vpc-lattice:UntagResource",
+        "vpc-lattice:ListTagsForResource",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups"
+      ]
+    }
+  },
+  "typeName": "AWS::VpcLattice::ResourceGateway"
+}

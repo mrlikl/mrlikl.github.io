@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "organizations:CreateOrganizationalUnit",
+        "organizations:DescribeOrganizationalUnit",
+        "organizations:ListParents",
+        "organizations:ListOrganizationalUnitsForParent",
+        "organizations:ListTagsForResource",
+        "organizations:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "organizations:DeleteOrganizationalUnit"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ParentId": {
+            "$ref": "resource-schema.json#/properties/ParentId"
+          }
+        },
+        "required": [
+          "ParentId"
+        ]
+      },
+      "permissions": [
+        "organizations:ListOrganizationalUnitsForParent"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "organizations:DescribeOrganizationalUnit",
+        "organizations:ListParents",
+        "organizations:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "organizations:DescribeOrganizationalUnit",
+        "organizations:ListParents",
+        "organizations:ListTagsForResource",
+        "organizations:TagResource",
+        "organizations:UntagResource",
+        "organizations:UpdateOrganizationalUnit"
+      ]
+    }
+  },
+  "typeName": "AWS::Organizations::OrganizationalUnit"
+}

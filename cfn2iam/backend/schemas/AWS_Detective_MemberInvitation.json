@@ -1,0 +1,30 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "detective:CreateMembers",
+        "detective:GetMembers"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "detective:DeleteMembers"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "detective:ListGraphs",
+        "detective:ListMembers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "detective:GetMembers"
+      ]
+    },
+    "update": {
+      "permissions": []
+    }
+  },
+  "typeName": "AWS::Detective::MemberInvitation"
+}

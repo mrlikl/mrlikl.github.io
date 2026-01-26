@@ -1,0 +1,27 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "datazone:AddPolicyGrant",
+        "datazone:ListPolicyGrants"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "datazone:RemovePolicyGrant",
+        "datazone:ListPolicyGrants"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "datazone:ListPolicyGrants"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "datazone:ListPolicyGrants"
+      ]
+    }
+  },
+  "typeName": "AWS::DataZone::PolicyGrant"
+}

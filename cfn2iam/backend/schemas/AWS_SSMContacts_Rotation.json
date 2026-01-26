@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ssm-contacts:CreateRotation",
+        "ssm-contacts:GetRotation",
+        "ssm-contacts:TagResource",
+        "ssm-contacts:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ssm-contacts:DeleteRotation",
+        "ssm-contacts:GetRotation",
+        "ssm-contacts:ListTagsForResource",
+        "ssm-contacts:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ssm-contacts:ListRotations",
+        "ssm-contacts:GetRotation",
+        "ssm-contacts:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ssm-contacts:GetRotation",
+        "ssm-contacts:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ssm-contacts:UpdateRotation",
+        "ssm-contacts:GetRotation",
+        "ssm-contacts:TagResource",
+        "ssm-contacts:ListTagsForResource",
+        "ssm-contacts:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SSMContacts::Rotation"
+}

@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateModelPackageGroup",
+        "sagemaker:DescribeModelPackageGroup",
+        "sagemaker:GetModelPackageGroupPolicy",
+        "sagemaker:PutModelPackageGroupPolicy",
+        "sagemaker:ListTags",
+        "sagemaker:AddTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteModelPackageGroup",
+        "sagemaker:DescribeModelPackageGroup",
+        "sagemaker:GetModelPackageGroupPolicy",
+        "sagemaker:DeleteModelPackageGroupPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListModelPackageGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeModelPackageGroup",
+        "sagemaker:GetModelPackageGroupPolicy",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:DescribeModelPackageGroup",
+        "sagemaker:GetModelPackageGroupPolicy",
+        "sagemaker:DeleteModelPackageGroupPolicy",
+        "sagemaker:PutModelPackageGroupPolicy",
+        "sagemaker:ListTags",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::ModelPackageGroup"
+}

@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:CreateScheduledAudit",
+        "iot:DescribeScheduledAudit",
+        "iot:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:DescribeScheduledAudit",
+        "iot:DeleteScheduledAudit"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iot:ListScheduledAudits"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:DescribeScheduledAudit",
+        "iot:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iot:UpdateScheduledAudit",
+        "iot:ListTagsForResource",
+        "iot:UntagResource",
+        "iot:TagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoT::ScheduledAudit"
+}

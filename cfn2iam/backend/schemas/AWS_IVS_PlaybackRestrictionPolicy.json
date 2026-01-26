@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ivs:CreatePlaybackRestrictionPolicy",
+        "ivs:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ivs:DeletePlaybackRestrictionPolicy",
+        "ivs:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ivs:ListPlaybackRestrictionPolicies",
+        "ivs:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ivs:GetPlaybackRestrictionPolicy",
+        "ivs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ivs:GetPlaybackRestrictionPolicy",
+        "ivs:UpdatePlaybackRestrictionPolicy",
+        "ivs:ListTagsForResource",
+        "ivs:UntagResource",
+        "ivs:TagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IVS::PlaybackRestrictionPolicy"
+}

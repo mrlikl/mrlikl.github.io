@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "entityresolution:CreateIdMappingWorkflow",
+        "entityresolution:GetIdMappingWorkflow",
+        "entityresolution:TagResource",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "entityresolution:DeleteIdMappingWorkflow",
+        "entityresolution:GetIdMappingWorkflow",
+        "entityresolution:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "entityresolution:ListIdMappingWorkflows"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "entityresolution:GetIdMappingWorkflow",
+        "entityresolution:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "entityresolution:GetIdMappingWorkflow",
+        "entityresolution:UpdateIdMappingWorkflow",
+        "entityresolution:ListTagsForResource",
+        "entityresolution:TagResource",
+        "entityresolution:UntagResource",
+        "iam:PassRole",
+        "kms:CreateGrant",
+        "kms:DescribeKey"
+      ]
+    }
+  },
+  "typeName": "AWS::EntityResolution::IdMappingWorkflow"
+}

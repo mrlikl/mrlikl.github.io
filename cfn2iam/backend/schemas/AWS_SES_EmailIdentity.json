@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:CreateEmailIdentity",
+        "ses:PutEmailIdentityMailFromAttributes",
+        "ses:PutEmailIdentityFeedbackAttributes",
+        "ses:PutEmailIdentityDkimAttributes",
+        "ses:GetEmailIdentity",
+        "ses:TagResource",
+        "ses:UntagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:DeleteEmailIdentity"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListEmailIdentities"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:GetEmailIdentity"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:PutEmailIdentityMailFromAttributes",
+        "ses:PutEmailIdentityFeedbackAttributes",
+        "ses:PutEmailIdentityConfigurationSetAttributes",
+        "ses:PutEmailIdentityDkimSigningAttributes",
+        "ses:PutEmailIdentityDkimAttributes",
+        "ses:GetEmailIdentity",
+        "ses:TagResource",
+        "ses:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::EmailIdentity"
+}

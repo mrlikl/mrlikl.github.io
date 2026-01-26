@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "inspector2:CreateFilter",
+        "inspector2:ListFilters",
+        "inspector2:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "inspector2:DeleteFilter",
+        "inspector2:ListFilters"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "inspector2:ListFilters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "inspector2:ListFilters",
+        "inspector2:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "inspector2:ListFilters",
+        "inspector2:UpdateFilter",
+        "inspector2:TagResource",
+        "inspector2:UntagResource",
+        "inspector2:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::InspectorV2::Filter"
+}

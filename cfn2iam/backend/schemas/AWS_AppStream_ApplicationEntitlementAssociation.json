@@ -1,0 +1,22 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appstream:AssociateApplicationToEntitlement",
+        "appstream:ListEntitledApplications"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appstream:DisassociateApplicationFromEntitlement",
+        "appstream:ListEntitledApplications"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appstream:ListEntitledApplications"
+      ]
+    }
+  },
+  "typeName": "AWS::AppStream::ApplicationEntitlementAssociation"
+}

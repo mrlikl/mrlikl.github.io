@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "supportapp:RegisterSlackWorkspaceForOrganization",
+        "supportapp:ListSlackWorkspaceConfigurations"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "supportapp:ListSlackWorkspaceConfigurations",
+        "supportapp:DeleteSlackWorkspaceConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "supportapp:ListSlackWorkspaceConfigurations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "supportapp:ListSlackWorkspaceConfigurations"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "supportapp:RegisterSlackWorkspaceForOrganization",
+        "supportapp:ListSlackWorkspaceConfigurations"
+      ]
+    }
+  },
+  "typeName": "AWS::SupportApp::SlackWorkspaceConfiguration"
+}

@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "networkmanager:CreateSite",
+        "networkmanager:GetSites",
+        "networkmanager:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "networkmanager:GetSites",
+        "networkmanager:DeleteSite"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "GlobalNetworkId": {
+            "$ref": "resource-schema.json#/properties/GlobalNetworkId"
+          }
+        },
+        "required": [
+          "GlobalNetworkId"
+        ]
+      },
+      "permissions": [
+        "networkmanager:GetSites"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "networkmanager:GetSites"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "networkmanager:GetSites",
+        "networkmanager:ListTagsForResource",
+        "networkmanager:TagResource",
+        "networkmanager:UntagResource",
+        "networkmanager:UpdateSite"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkManager::Site"
+}

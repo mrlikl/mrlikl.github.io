@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cognito-identity:CreateIdentityPool",
+        "cognito-sync:SetIdentityPoolConfiguration",
+        "cognito-sync:SetCognitoEvents",
+        "cognito-identity:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cognito-identity:DeleteIdentityPool"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cognito-identity:ListIdentityPools"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cognito-identity:DescribeIdentityPool"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cognito-identity:UpdateIdentityPool",
+        "cognito-identity:DescribeIdentityPool",
+        "cognito-sync:SetIdentityPoolConfiguration",
+        "cognito-sync:SetCognitoEvents",
+        "cognito-identity:TagResource",
+        "cognito-identity:UntagResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::Cognito::IdentityPool"
+}

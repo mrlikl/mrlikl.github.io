@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "observabilityadmin:CreateTelemetryRule",
+        "observabilityadmin:GetTelemetryRule",
+        "observabilityadmin:TagResource",
+        "observabilityadmin:ListTagsForResource",
+        "observabilityadmin:GetTelemetryEvaluationStatus",
+        "iam:CreateServiceLinkedRole",
+        "xray:GetTraceSegmentDestination"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "observabilityadmin:DeleteTelemetryRule",
+        "observabilityadmin:GetTelemetryEvaluationStatus"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "observabilityadmin:ListTelemetryRules",
+        "observabilityadmin:GetTelemetryEvaluationStatus"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "observabilityadmin:GetTelemetryRule",
+        "observabilityadmin:ListTagsForResource",
+        "observabilityadmin:GetTelemetryEvaluationStatus"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "observabilityadmin:UpdateTelemetryRule",
+        "observabilityadmin:GetTelemetryRule",
+        "observabilityadmin:TagResource",
+        "observabilityadmin:UntagResource",
+        "observabilityadmin:ListTagsForResource",
+        "observabilityadmin:GetTelemetryEvaluationStatus",
+        "xray:GetTraceSegmentDestination"
+      ]
+    }
+  },
+  "typeName": "AWS::ObservabilityAdmin::TelemetryRule"
+}

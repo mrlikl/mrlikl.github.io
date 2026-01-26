@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iotevents:CreateInput",
+        "iotevents:TagResource",
+        "iotevents:DescribeInput",
+        "iotevents:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotevents:DeleteInput",
+        "iotevents:DescribeInput"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iotevents:ListInputs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotevents:DescribeInput",
+        "iotevents:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iotevents:UpdateInput",
+        "iotevents:DescribeInput",
+        "iotevents:ListTagsForResource",
+        "iotevents:UntagResource",
+        "iotevents:TagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTEvents::Input"
+}

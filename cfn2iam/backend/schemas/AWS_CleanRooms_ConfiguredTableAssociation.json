@@ -1,0 +1,66 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cleanrooms:CreateConfiguredTableAssociation",
+        "iam:PassRole",
+        "cleanrooms:ListTagsForResource",
+        "cleanrooms:TagResource",
+        "cleanrooms:GetConfiguredTableAssociation",
+        "cleanrooms:ListConfiguredTableAssociations",
+        "cleanrooms:DeleteConfiguredTableAssociation",
+        "cleanrooms:DeleteConfiguredTableAssociationAnalysisRule",
+        "cleanrooms:CreateConfiguredTableAssociationAnalysisRule",
+        "cleanrooms:GetConfiguredTableAssociationAnalysisRule"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cleanrooms:DeleteConfiguredTableAssociation",
+        "cleanrooms:GetConfiguredTableAssociation",
+        "cleanrooms:ListConfiguredTableAssociations",
+        "cleanrooms:ListTagsForResource",
+        "cleanrooms:UntagResource",
+        "cleanrooms:DeleteConfiguredTableAssociationAnalysisRule",
+        "cleanrooms:GetConfiguredTableAssociationAnalysisRule"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "MembershipIdentifier": {
+            "$ref": "resource-schema.json#/properties/MembershipIdentifier"
+          }
+        },
+        "required": [
+          "MembershipIdentifier"
+        ]
+      },
+      "permissions": [
+        "cleanrooms:ListConfiguredTableAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cleanrooms:GetConfiguredTableAssociation",
+        "cleanrooms:ListTagsForResource",
+        "cleanrooms:GetConfiguredTableAssociationAnalysisRule"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cleanrooms:UpdateConfiguredTableAssociation",
+        "cleanrooms:GetConfiguredTableAssociation",
+        "iam:PassRole",
+        "cleanrooms:ListTagsForResource",
+        "cleanrooms:TagResource",
+        "cleanrooms:UntagResource",
+        "cleanrooms:DeleteConfiguredTableAssociationAnalysisRule",
+        "cleanrooms:CreateConfiguredTableAssociationAnalysisRule",
+        "cleanrooms:GetConfiguredTableAssociationAnalysisRule",
+        "cleanrooms:UpdateConfiguredTableAssociationAnalysisRule"
+      ]
+    }
+  },
+  "typeName": "AWS::CleanRooms::ConfiguredTableAssociation"
+}

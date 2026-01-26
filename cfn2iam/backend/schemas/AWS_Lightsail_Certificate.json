@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lightsail:CreateCertificate",
+        "lightsail:GetCertificates",
+        "lightsail:TagResource",
+        "lightsail:UntagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lightsail:DeleteCertificate",
+        "lightsail:GetCertificates"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "lightsail:GetCertificates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lightsail:GetCertificates"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lightsail:GetCertificates",
+        "lightsail:TagResource",
+        "lightsail:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Lightsail::Certificate"
+}

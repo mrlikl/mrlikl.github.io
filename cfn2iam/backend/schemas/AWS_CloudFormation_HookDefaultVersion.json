@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudformation:SetTypeDefaultVersion"
+      ]
+    },
+    "delete": {
+      "permissions": []
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "TypeName": {
+            "$ref": "resource-schema.json#/properties/TypeName"
+          }
+        }
+      },
+      "permissions": [
+        "cloudformation:ListTypes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudformation:DescribeType"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudformation:SetTypeDefaultVersion"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFormation::HookDefaultVersion"
+}

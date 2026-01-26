@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "fis:CreateExperimentTemplate",
+        "fis:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "fis:DeleteExperimentTemplate"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "fis:ListExperimentTemplates",
+        "fis:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "fis:GetExperimentTemplate",
+        "fis:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "fis:UpdateExperimentTemplate",
+        "fis:TagResource",
+        "fis:UntagResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::FIS::ExperimentTemplate"
+}

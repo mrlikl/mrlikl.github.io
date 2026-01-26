@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudfront:CreateConnectionGroup",
+        "cloudfront:GetConnectionGroup",
+        "cloudfront:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudfront:DeleteConnectionGroup",
+        "cloudfront:GetConnectionGroup",
+        "cloudfront:UpdateConnectionGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudfront:ListConnectionGroups",
+        "cloudfront:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudfront:GetConnectionGroup",
+        "cloudfront:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudfront:GetConnectionGroup",
+        "cloudfront:UpdateConnectionGroup",
+        "cloudfront:ListTagsForResource",
+        "cloudfront:TagResource",
+        "cloudfront:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFront::ConnectionGroup"
+}

@@ -1,0 +1,57 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "osis:CreatePipeline",
+        "osis:GetPipeline",
+        "osis:TagResource",
+        "osis:ListTagsForResource",
+        "osis:GetResourcePolicy",
+        "osis:PutResourcePolicy",
+        "iam:PassRole",
+        "iam:CreateServiceLinkedRole",
+        "logs:CreateLogDelivery",
+        "kms:DescribeKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "osis:DeletePipeline",
+        "osis:GetPipeline",
+        "logs:GetLogDelivery",
+        "logs:DeleteLogDelivery",
+        "logs:ListLogDeliveries"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "osis:ListPipelines"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "osis:GetPipeline",
+        "osis:ListTagsForResource",
+        "osis:GetResourcePolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "osis:UpdatePipeline",
+        "osis:GetPipeline",
+        "osis:ListTagsForResource",
+        "osis:TagResource",
+        "osis:UntagResource",
+        "osis:GetResourcePolicy",
+        "osis:PutResourcePolicy",
+        "osis:DeleteResourcePolicy",
+        "iam:PassRole",
+        "logs:GetLogDelivery",
+        "logs:UpdateLogDelivery",
+        "logs:ListLogDeliveries",
+        "kms:DescribeKey"
+      ]
+    }
+  },
+  "typeName": "AWS::OSIS::Pipeline"
+}

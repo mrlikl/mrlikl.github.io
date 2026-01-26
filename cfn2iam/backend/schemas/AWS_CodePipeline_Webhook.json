@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "codepipeline:ListWebhooks",
+        "codepipeline:RegisterWebhookWithThirdParty",
+        "codepipeline:PutWebhook"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "codepipeline:ListWebhooks",
+        "codepipeline:DeleteWebhook",
+        "codepipeline:DeregisterWebhookWithThirdParty"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "codepipeline:ListWebhooks"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "codepipeline:ListWebhooks"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "codepipeline:ListWebhooks",
+        "codepipeline:RegisterWebhookWithThirdParty",
+        "codepipeline:PutWebhook",
+        "codepipeline:DeregisterWebhookWithThirdParty"
+      ]
+    }
+  },
+  "typeName": "AWS::CodePipeline::Webhook"
+}

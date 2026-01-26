@@ -1,0 +1,71 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "deadline:CreateFleet",
+        "deadline:GetFleet",
+        "iam:PassRole",
+        "identitystore:ListGroupMembershipsForMember",
+        "logs:CreateLogGroup",
+        "deadline:TagResource",
+        "deadline:ListTagsForResource",
+        "vpc-lattice:GetResourceGateway",
+        "vpc-lattice:GetResourceConfiguration",
+        "ec2:CreateVpcEndpoint",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeVpcs"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "deadline:DeleteFleet",
+        "deadline:GetFleet",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "FarmId": {
+            "$ref": "resource-schema.json#/properties/FarmId"
+          }
+        },
+        "required": [
+          "FarmId"
+        ]
+      },
+      "permissions": [
+        "deadline:ListFleets",
+        "identitystore:DescribeGroup",
+        "identitystore:DescribeUser",
+        "identitystore:ListGroupMembershipsForMember"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "deadline:GetFleet",
+        "identitystore:ListGroupMembershipsForMember",
+        "deadline:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "deadline:UpdateFleet",
+        "deadline:GetFleet",
+        "iam:PassRole",
+        "identitystore:ListGroupMembershipsForMember",
+        "deadline:TagResource",
+        "deadline:UntagResource",
+        "deadline:ListTagsForResource",
+        "vpc-lattice:GetResourceGateway",
+        "vpc-lattice:GetResourceConfiguration",
+        "ec2:CreateVpcEndpoint",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeVpcs"
+      ]
+    }
+  },
+  "typeName": "AWS::Deadline::Fleet"
+}

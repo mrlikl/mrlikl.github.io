@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "autoscaling:CreateOrUpdateTags",
+        "ecs:CreateCapacityProvider",
+        "ecs:DescribeCapacityProviders",
+        "ecs:TagResource",
+        "ecs:PutClusterCapacityProviders",
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ecs:DescribeCapacityProviders",
+        "ecs:DeleteCapacityProvider",
+        "ecs:PutClusterCapacityProviders"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ecs:DescribeCapacityProviders"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ecs:DescribeCapacityProviders"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ecs:UpdateCapacityProvider",
+        "ecs:DescribeCapacityProviders",
+        "ecs:ListTagsForResource",
+        "ecs:PutClusterCapacityProviders",
+        "ecs:TagResource",
+        "ecs:UntagResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::ECS::CapacityProvider"
+}

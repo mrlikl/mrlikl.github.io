@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cases:CreateCaseRule",
+        "cases:BatchGetCaseRule",
+        "cases:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cases:DeleteCaseRule",
+        "cases:UntagResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainId": {
+            "$ref": "resource-schema.json#/properties/DomainId"
+          }
+        },
+        "required": [
+          "DomainId"
+        ]
+      },
+      "permissions": [
+        "cases:ListCaseRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cases:BatchGetCaseRule"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cases:UpdateCaseRule",
+        "cases:BatchGetCaseRule",
+        "cases:TagResource",
+        "cases:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Cases::CaseRule"
+}

@@ -1,0 +1,31 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateModelExplainabilityJobDefinition",
+        "sagemaker:DescribeModelExplainabilityJobDefinition",
+        "iam:PassRole",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteModelExplainabilityJobDefinition"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListModelExplainabilityJobDefinitions",
+        "sagemaker:ListTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeModelExplainabilityJobDefinition",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::ModelExplainabilityJobDefinition"
+}

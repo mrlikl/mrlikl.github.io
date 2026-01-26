@@ -1,0 +1,27 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "personalize:CreateSolution",
+        "personalize:DescribeSolution"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "personalize:DeleteSolution",
+        "personalize:DescribeSolution"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "personalize:ListSolutions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "personalize:DescribeSolution"
+      ]
+    }
+  },
+  "typeName": "AWS::Personalize::Solution"
+}

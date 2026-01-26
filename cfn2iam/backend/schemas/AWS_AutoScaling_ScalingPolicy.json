@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "autoscaling:DescribePolicies",
+        "autoscaling:PutScalingPolicy",
+        "cloudwatch:GetMetricData"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "autoscaling:DeletePolicy",
+        "autoscaling:DescribePolicies"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "autoscaling:DescribePolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "autoscaling:DescribePolicies"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "autoscaling:DescribePolicies",
+        "autoscaling:PutScalingPolicy",
+        "cloudwatch:GetMetricData"
+      ]
+    }
+  },
+  "typeName": "AWS::AutoScaling::ScalingPolicy"
+}

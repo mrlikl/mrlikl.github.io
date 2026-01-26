@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:CreatePolicy",
+        "iot:GetPolicy",
+        "iot:TagResource",
+        "iot:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:DeletePolicy",
+        "iot:GetPolicy",
+        "iot:ListPolicyVersions",
+        "iot:DeletePolicyVersion",
+        "kms:Decrypt"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iot:ListPolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:GetPolicy",
+        "iot:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iot:GetPolicy",
+        "iot:ListPolicyVersions",
+        "iot:CreatePolicyVersion",
+        "iot:DeletePolicyVersion",
+        "iot:SetDefaultPolicyVersion",
+        "iot:TagResource",
+        "iot:UntagResource",
+        "iot:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::IoT::Policy"
+}

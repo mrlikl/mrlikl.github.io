@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cases:GetTemplate",
+        "cases:CreateTemplate",
+        "cases:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cases:DeleteTemplate",
+        "cases:UntagResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainId": {
+            "$ref": "resource-schema.json#/properties/DomainId"
+          }
+        },
+        "required": [
+          "DomainId"
+        ]
+      },
+      "permissions": [
+        "cases:ListTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cases:GetTemplate"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cases:GetTemplate",
+        "cases:UpdateTemplate",
+        "cases:TagResource",
+        "cases:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Cases::Template"
+}

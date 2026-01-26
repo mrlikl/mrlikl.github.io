@@ -1,0 +1,70 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "connect-campaigns:CreateCampaign",
+        "connect-campaigns:DescribeCampaign",
+        "connect-campaigns:TagResource",
+        "connect:DescribeContactFlow",
+        "connect:DescribeEmailAddress",
+        "connect:DescribeInstance",
+        "connect:DescribePhoneNumber",
+        "connect:DescribeQueue",
+        "profile:GetSegmentDefinition",
+        "wisdom:GetMessageTemplate"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "connect-campaigns:DeleteCampaign",
+        "connect-campaigns:DeleteCampaignChannelSubtypeConfig",
+        "connect-campaigns:DeleteCampaignCommunicationLimits",
+        "connect-campaigns:DeleteCampaignCommunicationTime"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ConnectInstanceId": {
+            "$ref": "resource-schema.json#/properties/ConnectInstanceId"
+          }
+        },
+        "required": [
+          "ConnectInstanceId"
+        ]
+      },
+      "permissions": [
+        "connect-campaigns:ListCampaigns"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "connect-campaigns:DescribeCampaign"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "connect-campaigns:DeleteCampaignChannelSubtypeConfig",
+        "connect-campaigns:DeleteCampaignCommunicationLimits",
+        "connect-campaigns:DeleteCampaignCommunicationTime",
+        "connect-campaigns:UpdateCampaignChannelSubtypeConfig",
+        "connect-campaigns:UpdateCampaignCommunicationLimits",
+        "connect-campaigns:UpdateCampaignCommunicationTime",
+        "connect-campaigns:UpdateCampaignName",
+        "connect-campaigns:UpdateCampaignFlowAssociation",
+        "connect-campaigns:UpdateCampaignSchedule",
+        "connect-campaigns:UpdateCampaignSource",
+        "connect-campaigns:TagResource",
+        "connect-campaigns:UntagResource",
+        "connect-campaigns:DescribeCampaign",
+        "connect:DescribeContactFlow",
+        "connect:DescribeEmailAddress",
+        "connect:DescribePhoneNumber",
+        "connect:DescribeQueue",
+        "profile:GetSegmentDefinition",
+        "wisdom:GetMessageTemplate"
+      ]
+    }
+  },
+  "typeName": "AWS::ConnectCampaignsV2::Campaign"
+}

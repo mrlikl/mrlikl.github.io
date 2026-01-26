@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "es:CreateApplication",
+        "es:GetApplication",
+        "es:AddTags",
+        "es:ListTags",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "es:GetApplication",
+        "es:DeleteApplication"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "es:ListApplications"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "es:GetApplication",
+        "es:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "es:UpdateApplication",
+        "es:GetApplication",
+        "es:AddTags",
+        "es:RemoveTags",
+        "es:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::OpenSearchService::Application"
+}

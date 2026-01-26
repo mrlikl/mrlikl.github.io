@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "config:PutConfigRule",
+        "config:DescribeConfigRules"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "config:DeleteConfigRule",
+        "config:DescribeConfigRules"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "config:DescribeConfigRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "config:DescribeConfigRules",
+        "config:DescribeComplianceByConfigRule"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "config:PutConfigRule",
+        "config:DescribeConfigRules"
+      ]
+    }
+  },
+  "typeName": "AWS::Config::ConfigRule"
+}

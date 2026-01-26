@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "emrwal:CreateWorkspace",
+        "emrwal:TagResource",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "emrwal:DeleteWorkspace"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "emrwal:ListWorkspaces"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "emrwal:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "emrwal:TagResource",
+        "emrwal:UntagResource",
+        "emrwal:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::EMR::WALWorkspace"
+}

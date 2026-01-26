@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticmapreduce:CreateStudio",
+        "elasticmapreduce:DescribeStudio",
+        "elasticmapreduce:AddTags",
+        "sso:CreateManagedApplicationInstance",
+        "sso:DeleteManagedApplicationInstance",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "elasticmapreduce:DeleteStudio",
+        "elasticmapreduce:DescribeStudio",
+        "sso:DeleteManagedApplicationInstance"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "elasticmapreduce:ListStudios"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticmapreduce:DescribeStudio",
+        "sso:GetManagedApplicationInstance"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "elasticmapreduce:UpdateStudio",
+        "elasticmapreduce:DescribeStudio",
+        "elasticmapreduce:AddTags",
+        "elasticmapreduce:RemoveTags"
+      ]
+    }
+  },
+  "typeName": "AWS::EMR::Studio"
+}

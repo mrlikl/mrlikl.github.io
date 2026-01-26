@@ -1,0 +1,58 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "odb:CreateCloudExadataInfrastructure",
+        "ec2:DescribeAvailabilityZones",
+        "iam:CreateServiceLinkedRole",
+        "odb:ListCloudExadataInfrastructures",
+        "odb:GetCloudExadataInfrastructure",
+        "odb:ListDbServers",
+        "odb:TagResource",
+        "sts:GetCallerIdentity",
+        "odb:ListTagsForResource"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "delete": {
+      "permissions": [
+        "odb:DeleteCloudExadataInfrastructure",
+        "odb:ListCloudExadataInfrastructures",
+        "odb:GetCloudExadataInfrastructure",
+        "odb:ListDbServers",
+        "sts:GetCallerIdentity",
+        "odb:ListTagsForResource"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "list": {
+      "permissions": [
+        "odb:ListCloudExadataInfrastructures",
+        "sts:GetCallerIdentity",
+        "odb:ListTagsForResource",
+        "odb:ListDbServers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "odb:GetCloudExadataInfrastructure",
+        "odb:ListDbServers",
+        "sts:GetCallerIdentity",
+        "odb:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "odb:UpdateCloudExadataInfrastructure",
+        "odb:TagResource",
+        "odb:UntagResource",
+        "odb:ListCloudExadataInfrastructures",
+        "odb:GetCloudExadataInfrastructure",
+        "odb:ListDbServers",
+        "sts:GetCallerIdentity",
+        "odb:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::ODB::CloudExadataInfrastructure"
+}

@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "emr-containers:CreateVirtualCluster",
+        "emr-containers:TagResource",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "emr-containers:DeleteVirtualCluster",
+        "emr-containers:DescribeVirtualCluster"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "emr-containers:ListVirtualClusters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "emr-containers:DescribeVirtualCluster"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "emr-containers:DescribeVirtualCluster",
+        "emr-containers:ListTagsForResource",
+        "emr-containers:TagResource",
+        "emr-containers:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::EMRContainers::VirtualCluster"
+}

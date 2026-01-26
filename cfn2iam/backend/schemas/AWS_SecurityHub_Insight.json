@@ -1,0 +1,31 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "securityhub:CreateInsight"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "securityhub:GetInsights",
+        "securityhub:DeleteInsight"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "securityhub:GetInsights"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "securityhub:GetInsights"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "securityhub:UpdateInsight"
+      ]
+    }
+  },
+  "typeName": "AWS::SecurityHub::Insight"
+}

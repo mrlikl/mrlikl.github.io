@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudfront:CreateKeyGroup"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudfront:DeleteKeyGroup",
+        "cloudfront:GetKeyGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudfront:ListKeyGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudfront:GetKeyGroup"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudfront:UpdateKeyGroup",
+        "cloudfront:GetKeyGroup"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFront::KeyGroup"
+}

@@ -1,0 +1,62 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:CreateServiceLinkedRole",
+        "odb:CreateCloudVmCluster",
+        "odb:TagResource",
+        "odb:GetCloudVmCluster",
+        "odb:ListCloudVmClusters",
+        "odb:ListTagsForResource",
+        "sts:GetCallerIdentity",
+        "ec2:DescribeAvailabilityZones",
+        "odb:ListDbNodes",
+        "odb:GetDbNode",
+        "odb:CreateDbNode"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "delete": {
+      "permissions": [
+        "odb:DeleteCloudVmCluster",
+        "odb:GetCloudVmCluster",
+        "odb:ListCloudVmClusters",
+        "odb:ListTagsForResource",
+        "sts:GetCallerIdentity",
+        "odb:DeleteDbNode"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "list": {
+      "permissions": [
+        "odb:ListCloudVmClusters",
+        "odb:ListTagsForResource",
+        "odb:ListDbNodes",
+        "odb:GetDbNode",
+        "sts:GetCallerIdentity"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "odb:GetCloudVmCluster",
+        "odb:ListTagsForResource",
+        "odb:ListDbNodes",
+        "odb:GetDbNode",
+        "sts:GetCallerIdentity"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "odb:TagResource",
+        "odb:UntagResource",
+        "odb:GetCloudVmCluster",
+        "odb:ListCloudVmClusters",
+        "odb:ListTagsForResource",
+        "odb:ListDbNodes",
+        "odb:GetDbNode",
+        "sts:GetCallerIdentity"
+      ]
+    }
+  },
+  "typeName": "AWS::ODB::CloudVmCluster"
+}

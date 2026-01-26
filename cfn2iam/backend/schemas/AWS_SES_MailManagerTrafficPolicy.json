@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:TagResource",
+        "ses:ListTagsForResource",
+        "ses:GetTrafficPolicy",
+        "ses:CreateTrafficPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:GetTrafficPolicy",
+        "ses:DeleteTrafficPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListTrafficPolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:ListTagsForResource",
+        "ses:GetTrafficPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:TagResource",
+        "ses:UntagResource",
+        "ses:ListTagsForResource",
+        "ses:GetTrafficPolicy",
+        "ses:UpdateTrafficPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::MailManagerTrafficPolicy"
+}

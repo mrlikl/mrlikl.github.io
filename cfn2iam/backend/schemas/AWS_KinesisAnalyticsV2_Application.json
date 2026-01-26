@@ -1,0 +1,55 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PassRole",
+        "kinesisanalytics:CreateApplication",
+        "kinesisanalytics:DescribeApplication",
+        "kinesisanalytics:ListTagsForResource",
+        "kinesisanalytics:UpdateApplicationMaintenanceConfiguration",
+        "kinesisanalytics:TagResource",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:GenerateDataKeyWithoutPlaintext"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "kinesisanalytics:DescribeApplication",
+        "kinesisanalytics:DeleteApplication"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "kinesisanalytics:ListApplications"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "kinesisanalytics:DescribeApplication",
+        "kinesisanalytics:ListTagsForResource",
+        "kms:DescribeKey"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:PassRole",
+        "kinesisanalytics:UpdateApplication",
+        "kinesisanalytics:DescribeApplication",
+        "kinesisanalytics:TagResource",
+        "kinesisanalytics:UntagResource",
+        "kinesisanalytics:AddApplicationVpcConfiguration",
+        "kinesisanalytics:DeleteApplicationVpcConfiguration",
+        "kinesisanalytics:UpdateApplicationMaintenanceConfiguration",
+        "kinesisanalytics:ListTagsForResource",
+        "kms:CreateGrant",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:GenerateDataKeyWithoutPlaintext"
+      ]
+    }
+  },
+  "typeName": "AWS::KinesisAnalyticsV2::Application"
+}

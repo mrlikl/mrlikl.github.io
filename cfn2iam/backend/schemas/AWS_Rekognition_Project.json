@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rekognition:CreateProject",
+        "rekognition:TagResource",
+        "rekognition:ListTagsForResource"
+      ],
+      "timeoutInMinutes": 15
+    },
+    "delete": {
+      "permissions": [
+        "rekognition:DescribeProjects",
+        "rekognition:DeleteProject"
+      ],
+      "timeoutInMinutes": 15
+    },
+    "list": {
+      "permissions": [
+        "rekognition:DescribeProjects"
+      ],
+      "timeoutInMinutes": 15
+    },
+    "read": {
+      "permissions": [
+        "rekognition:DescribeProjects",
+        "rekognition:ListTagsForResource"
+      ],
+      "timeoutInMinutes": 15
+    },
+    "update": {
+      "permissions": [
+        "rekognition:DescribeProjects",
+        "rekognition:TagResource",
+        "rekognition:UntagResource",
+        "rekognition:ListTagsForResource"
+      ],
+      "timeoutInMinutes": 15
+    }
+  },
+  "typeName": "AWS::Rekognition::Project"
+}

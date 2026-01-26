@@ -1,0 +1,69 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "quicksight:DescribeDataSet",
+        "quicksight:DescribeDataSetPermissions",
+        "quicksight:DescribeIngestion",
+        "quicksight:ListIngestions",
+        "quicksight:CreateDataSet",
+        "quicksight:PassDataSource",
+        "quicksight:PassDataSet",
+        "quicksight:TagResource",
+        "quicksight:ListTagsForResource",
+        "quicksight:DescribeDataSetRefreshProperties",
+        "quicksight:PutDataSetRefreshProperties",
+        "quicksight:CreateFolderMembership",
+        "quicksight:DeleteFolderMembership",
+        "quicksight:ListFoldersForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "quicksight:DescribeDataSet",
+        "quicksight:DeleteDataSet",
+        "quicksight:ListTagsForResource",
+        "quicksight:DescribeIngestion",
+        "quicksight:DeleteDataSetRefreshProperties",
+        "quicksight:DescribeDataSetRefreshProperties"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "quicksight:DescribeDataSet",
+        "quicksight:ListDataSets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "quicksight:DescribeDataSet",
+        "quicksight:DescribeDataSetPermissions",
+        "quicksight:ListTagsForResource",
+        "quicksight:DescribeDataSetRefreshProperties"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "quicksight:DescribeDataSet",
+        "quicksight:DescribeDataSetPermissions",
+        "quicksight:PassDataSource",
+        "quicksight:UpdateDataSet",
+        "quicksight:UpdateDataSetPermissions",
+        "quicksight:PassDataSet",
+        "quicksight:DescribeIngestion",
+        "quicksight:ListIngestions",
+        "quicksight:CancelIngestion",
+        "quicksight:CreateFolderMembership",
+        "quicksight:DeleteFolderMembership",
+        "quicksight:ListFoldersForResource",
+        "quicksight:TagResource",
+        "quicksight:UntagResource",
+        "quicksight:ListTagsForResource",
+        "quicksight:PutDataSetRefreshProperties",
+        "quicksight:DescribeDataSetRefreshProperties",
+        "quicksight:DeleteDataSetRefreshProperties"
+      ]
+    }
+  },
+  "typeName": "AWS::QuickSight::DataSet"
+}

@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rds:CreateGlobalCluster",
+        "rds:DescribeGlobalClusters",
+        "rds:DescribeDBClusters",
+        "rds:AddTagsToResource",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rds:DeleteGlobalCluster",
+        "rds:DescribeGlobalClusters",
+        "rds:RemoveFromGlobalCluster",
+        "rds:DescribeDBClusters"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rds:DescribeGlobalClusters",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rds:DescribeGlobalClusters",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rds:ModifyGlobalCluster",
+        "rds:DescribeGlobalClusters",
+        "rds:AddTagsToResource",
+        "rds:ListTagsForResource",
+        "rds:RemoveTagsFromResource"
+      ]
+    }
+  },
+  "typeName": "AWS::DocDB::GlobalCluster"
+}

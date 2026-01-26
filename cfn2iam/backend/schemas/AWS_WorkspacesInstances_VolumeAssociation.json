@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:DescribeVolumes",
+        "ec2:AttachVolume",
+        "workspaces-instances:GetWorkspaceInstance",
+        "workspaces-instances:AssociateVolume"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DescribeVolumes",
+        "ec2:DetachVolume",
+        "workspaces-instances:GetWorkspaceInstance",
+        "workspaces-instances:DisassociateVolume"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeVolumes",
+        "workspaces-instances:ListWorkspaceInstances"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeVolumes",
+        "workspaces-instances:GetWorkspaceInstance"
+      ]
+    }
+  },
+  "typeName": "AWS::WorkspacesInstances::VolumeAssociation"
+}

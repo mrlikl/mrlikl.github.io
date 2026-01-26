@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PutRolePolicy",
+        "iam:GetRolePolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iam:DeleteRolePolicy",
+        "iam:GetRolePolicy"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iam:GetRolePolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:PutRolePolicy",
+        "iam:GetRolePolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::IAM::RolePolicy"
+}

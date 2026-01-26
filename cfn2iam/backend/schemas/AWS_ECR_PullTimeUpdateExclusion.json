@@ -1,0 +1,26 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ecr:RegisterPullTimeUpdateExclusion",
+        "ecr:ListPullTimeUpdateExclusions"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ecr:DeregisterPullTimeUpdateExclusion"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ecr:ListPullTimeUpdateExclusions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ecr:ListPullTimeUpdateExclusions"
+      ]
+    }
+  },
+  "typeName": "AWS::ECR::PullTimeUpdateExclusion"
+}

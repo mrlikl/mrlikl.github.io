@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iotwireless:CreateDeviceProfile",
+        "iotwireless:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotwireless:DeleteDeviceProfile"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iotwireless:ListDeviceProfiles",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotwireless:GetDeviceProfile",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iotwireless:GetDeviceProfile",
+        "iotwireless:TagResource",
+        "iotwireless:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTWireless::DeviceProfile"
+}

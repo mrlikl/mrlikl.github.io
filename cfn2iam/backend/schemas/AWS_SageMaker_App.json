@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateApp",
+        "sagemaker:DescribeApp",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteApp",
+        "sagemaker:DescribeApp",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListApps",
+        "sagemaker:ListTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeApp",
+        "sagemaker:DescribeApp",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:DescribeApp",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::App"
+}

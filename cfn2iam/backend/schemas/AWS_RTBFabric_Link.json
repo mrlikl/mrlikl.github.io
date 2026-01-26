@@ -1,0 +1,51 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rtbfabric:CreateLink",
+        "rtbfabric:GetLink",
+        "rtbfabric:TagResource",
+        "rtbfabric:ListTagsForResource",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rtbfabric:DeleteLink",
+        "rtbfabric:GetLink"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "GatewayId": {
+            "pattern": "^rtb-gw-[a-z0-9-]{1,25}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "GatewayId"
+        ]
+      },
+      "permissions": [
+        "rtbfabric:ListLinks"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rtbfabric:GetLink",
+        "rtbfabric:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rtbfabric:UpdateLink",
+        "rtbfabric:GetLink",
+        "rtbfabric:TagResource",
+        "rtbfabric:UntagResource",
+        "rtbfabric:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::RTBFabric::Link"
+}

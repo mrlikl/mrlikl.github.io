@@ -1,0 +1,30 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:CreateServiceLinkedRole",
+        "apprunner:CreateVpcConnector",
+        "apprunner:DescribeVpcConnector",
+        "apprunner:TagResource",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "apprunner:DeleteVpcConnector"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "apprunner:ListVpcConnectors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "apprunner:DescribeVpcConnector"
+      ]
+    }
+  },
+  "typeName": "AWS::AppRunner::VpcConnector"
+}

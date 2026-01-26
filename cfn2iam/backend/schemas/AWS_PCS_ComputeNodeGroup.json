@@ -1,0 +1,95 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:DescribeImages",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeLaunchTemplates",
+        "ec2:DescribeLaunchTemplateVersions",
+        "ec2:DescribeInstanceTypes",
+        "ec2:DescribeInstanceTypeOfferings",
+        "ec2:RunInstances",
+        "ec2:CreateFleet",
+        "ec2:CreateTags",
+        "iam:PassRole",
+        "iam:GetInstanceProfile",
+        "pcs:CreateComputeNodeGroup",
+        "pcs:GetComputeNodeGroup",
+        "pcs:ListTagsForResource",
+        "pcs:TagResource"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DescribeImages",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeLaunchTemplates",
+        "ec2:DescribeLaunchTemplateVersions",
+        "ec2:DescribeInstanceTypes",
+        "ec2:DescribeInstanceTypeOfferings",
+        "ec2:TerminateInstances",
+        "ec2:CreateFleet",
+        "ec2:CreateTags",
+        "iam:PassRole",
+        "iam:GetInstanceProfile",
+        "pcs:GetComputeNodeGroup",
+        "pcs:DeleteComputeNodeGroup",
+        "pcs:ListTagsForResource",
+        "pcs:TagResource",
+        "pcs:UntagResource"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ClusterId": {
+            "$ref": "resource-schema.json#/properties/ClusterId"
+          }
+        },
+        "required": [
+          "ClusterId"
+        ]
+      },
+      "permissions": [
+        "pcs:ListClusters",
+        "pcs:ListComputeNodeGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "pcs:GetComputeNodeGroup",
+        "pcs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:DescribeImages",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeLaunchTemplates",
+        "ec2:DescribeLaunchTemplateVersions",
+        "ec2:DescribeInstanceTypes",
+        "ec2:DescribeInstanceTypeOfferings",
+        "ec2:RunInstances",
+        "ec2:CreateFleet",
+        "ec2:CreateTags",
+        "iam:PassRole",
+        "iam:GetInstanceProfile",
+        "pcs:GetComputeNodeGroup",
+        "pcs:UpdateComputeNodeGroup",
+        "pcs:ListTagsForResource",
+        "pcs:TagResource",
+        "pcs:UntagResource"
+      ],
+      "timeoutInMinutes": 60
+    }
+  },
+  "typeName": "AWS::PCS::ComputeNodeGroup"
+}

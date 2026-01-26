@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ecs:CreateService",
+        "ecs:DescribeServiceDeployments",
+        "ecs:DescribeServices",
+        "ecs:ListServiceDeployments",
+        "iam:PassRole",
+        "ecs:TagResource"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "delete": {
+      "permissions": [
+        "ecs:DeleteService",
+        "ecs:DescribeServices"
+      ],
+      "timeoutInMinutes": 30
+    },
+    "list": {
+      "permissions": [
+        "ecs:DescribeServices",
+        "ecs:ListClusters",
+        "ecs:ListServices"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ecs:DescribeServices"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ecs:DescribeServiceDeployments",
+        "ecs:DescribeServices",
+        "ecs:ListServiceDeployments",
+        "ecs:ListTagsForResource",
+        "ecs:StopServiceDeployment",
+        "ecs:TagResource",
+        "ecs:UntagResource",
+        "ecs:UpdateService"
+      ],
+      "timeoutInMinutes": 2160
+    }
+  },
+  "typeName": "AWS::ECS::Service"
+}

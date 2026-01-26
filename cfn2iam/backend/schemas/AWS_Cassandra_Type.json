@@ -1,0 +1,27 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cassandra:Create",
+        "cassandra:Select"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cassandra:Drop",
+        "cassandra:Select"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cassandra:Select"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cassandra:Select"
+      ]
+    }
+  },
+  "typeName": "AWS::Cassandra::Type"
+}

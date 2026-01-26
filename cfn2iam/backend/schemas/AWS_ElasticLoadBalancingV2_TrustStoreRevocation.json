@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticloadbalancing:AddTrustStoreRevocations",
+        "elasticloadbalancing:DescribeTrustStoreRevocations",
+        "s3:GetObject",
+        "s3:GetObjectVersion"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "elasticloadbalancing:DescribeTrustStoreRevocations",
+        "elasticloadbalancing:RemoveTrustStoreRevocations"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "RevocationIds": {
+            "insertionOrder": false,
+            "items": {
+              "$ref": "resource-schema.json#/properties/RevocationId"
+            },
+            "type": "array",
+            "uniqueItems": false
+          },
+          "TrustStoreArn": {
+            "$ref": "resource-schema.json#/properties/TrustStoreArn"
+          }
+        },
+        "required": [
+          "TrustStoreArn"
+        ]
+      },
+      "permissions": [
+        "elasticloadbalancing:DescribeTrustStoreRevocations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticloadbalancing:DescribeTrustStoreRevocations"
+      ]
+    }
+  },
+  "typeName": "AWS::ElasticLoadBalancingV2::TrustStoreRevocation"
+}

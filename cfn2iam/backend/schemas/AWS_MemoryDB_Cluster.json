@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "kms:DescribeKey",
+        "kms:CreateGrant",
+        "memorydb:CreateCluster",
+        "memorydb:DescribeClusters",
+        "memorydb:TagResource",
+        "memorydb:ListTags",
+        "iam:CreateServiceLinkedRole"
+      ],
+      "timeoutInMinutes": 720
+    },
+    "delete": {
+      "permissions": [
+        "memorydb:DeleteCluster",
+        "memorydb:DescribeClusters"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "memorydb:DescribeClusters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "memorydb:DescribeClusters",
+        "memorydb:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "memorydb:UpdateCluster",
+        "memorydb:DescribeClusters",
+        "memorydb:ListTags",
+        "memorydb:TagResource",
+        "memorydb:UntagResource"
+      ],
+      "timeoutInMinutes": 2160
+    }
+  },
+  "typeName": "AWS::MemoryDB::Cluster"
+}

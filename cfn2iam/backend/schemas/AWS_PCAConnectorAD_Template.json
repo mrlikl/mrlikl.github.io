@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "pca-connector-ad:CreateTemplate",
+        "pca-connector-ad:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "pca-connector-ad:GetTemplate",
+        "pca-connector-ad:DeleteTemplate",
+        "pca-connector-ad:UntagResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ConnectorArn": {
+            "$ref": "resource-schema.json#/properties/ConnectorArn"
+          }
+        },
+        "required": [
+          "ConnectorArn"
+        ]
+      },
+      "permissions": [
+        "pca-connector-ad:ListTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "pca-connector-ad:GetTemplate",
+        "pca-connector-ad:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "pca-connector-ad:ListTagsForResource",
+        "pca-connector-ad:TagResource",
+        "pca-connector-ad:UntagResource",
+        "pca-connector-ad:UpdateTemplate"
+      ]
+    }
+  },
+  "typeName": "AWS::PCAConnectorAD::Template"
+}

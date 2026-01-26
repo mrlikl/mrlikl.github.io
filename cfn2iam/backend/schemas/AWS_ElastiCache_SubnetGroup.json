@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticache:CreateCacheSubnetGroup",
+        "elasticache:AddTagsToResource",
+        "elasticache:DescribeCacheSubnetGroups",
+        "elasticache:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "elasticache:DeleteCacheSubnetGroup",
+        "elasticache:DescribeCacheSubnetGroups",
+        "elasticache:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "elasticache:DescribeCacheSubnetGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticache:DescribeCacheSubnetGroups",
+        "elasticache:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "elasticache:ModifyCacheSubnetGroup",
+        "elasticache:DescribeCacheSubnetGroups",
+        "elasticache:AddTagsToResource",
+        "elasticache:RemoveTagsFromResource"
+      ]
+    }
+  },
+  "typeName": "AWS::ElastiCache::SubnetGroup"
+}

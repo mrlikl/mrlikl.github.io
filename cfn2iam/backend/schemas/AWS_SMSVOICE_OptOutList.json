@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sms-voice:CreateOptOutList",
+        "sms-voice:DescribeOptOutLists",
+        "sms-voice:TagResource",
+        "sms-voice:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sms-voice:DeleteOptOutList",
+        "sms-voice:DescribeOptOutLists"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sms-voice:DescribeOptOutLists"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sms-voice:DescribeOptOutLists",
+        "sms-voice:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sms-voice:DescribeOptOutLists",
+        "sms-voice:UntagResource",
+        "sms-voice:TagResource",
+        "sms-voice:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SMSVOICE::OptOutList"
+}

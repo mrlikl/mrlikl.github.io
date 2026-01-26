@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mrlikl.github.io</title>
+
+    <!-- Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9M3S5VZ6C5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-9M3S5VZ6C5");
+    </script>
+
+    <!-- Resources -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪄</text></svg>"
+    />
+
+    <!-- Fonts: Inter (Sans), Playfair Display (Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="static/style.css" />
+    <script src="static/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navigation -->
+      <nav class="nav-bar">
+        <div class="nav-links">
+          <a class="nav-link active" data-target="home">Overview</a>
+          <a class="nav-link" data-target="work">Stuffs</a>
+        </div>
+      </nav>
+
+      <!-- View: Home -->
+      <main id="home" class="view-section active">
+        <div class="hero">
+          <h1 class="hero-title">
+            <span class="hero-serif">Hey, I'm Murali</span>
+          </h1>
+          <p class="hero-desc">
+            I like to get my hands on anything and everything. I'm passionate
+            about reverse engineering and automating things that makes sense to
+            be automated. I travel at times and thrive on adventure.
+          </p>
+          <div class="social-bar">
+            <!-- Injected via JS -->
+          </div>
+          <div id="certs-grid" class="cert-grid">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+      </main>
+
+      <!-- View: Work -->
+      <main id="work" class="view-section">
+        <div class="section-header">
+          <h2 class="section-title">Featured stuffs</h2>
+        </div>
+        <div id="projects-grid" class="clean-grid">
+          <!-- Injected via JS -->
+        </div>
+
+        <div class="section-header">
+          <h2 class="section-title">Tech articles</h2>
+        </div>
+        <div id="articles-grid" class="clean-grid">
+          <!-- Injected via JS -->
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:GetRole",
+        "iam:PassRole",
+        "sns:Subscribe"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sns:Unsubscribe",
+        "sns:GetSubscriptionAttributes"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sns:ListSubscriptions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sns:GetSubscriptionAttributes"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:GetRole",
+        "iam:PassRole",
+        "sns:SetSubscriptionAttributes"
+      ]
+    }
+  },
+  "typeName": "AWS::SNS::Subscription"
+}

@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "kms:CreateGrant",
+        "ssm-guiconnect:UpdateConnectionRecordingPreferences",
+        "ssm-guiconnect:GetConnectionRecordingPreferences"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ssm-guiconnect:GetConnectionRecordingPreferences",
+        "ssm-guiconnect:DeleteConnectionRecordingPreferences"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ssm-guiconnect:GetConnectionRecordingPreferences"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ssm-guiconnect:GetConnectionRecordingPreferences"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "kms:CreateGrant",
+        "ssm-guiconnect:UpdateConnectionRecordingPreferences",
+        "ssm-guiconnect:GetConnectionRecordingPreferences",
+        "ssm-guiconnect:DeleteConnectionRecordingPreferences"
+      ]
+    }
+  },
+  "typeName": "AWS::SSMGuiConnect::Preferences"
+}

@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "quicksight:CreateDataSource",
+        "quicksight:DescribeDataSource",
+        "quicksight:DescribeDataSourcePermissions",
+        "quicksight:TagResource",
+        "quicksight:ListTagsForResource",
+        "quicksight:CreateFolderMembership",
+        "quicksight:DeleteFolderMembership",
+        "quicksight:ListFoldersForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "quicksight:DescribeDataSource",
+        "quicksight:DescribeDataSourcePermissions",
+        "quicksight:DeleteDataSource",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "quicksight:DescribeDataSource",
+        "quicksight:ListDataSources"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "quicksight:DescribeDataSource",
+        "quicksight:DescribeDataSourcePermissions",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "quicksight:DescribeDataSource",
+        "quicksight:DescribeDataSourcePermissions",
+        "quicksight:UpdateDataSource",
+        "quicksight:UpdateDataSourcePermissions",
+        "quicksight:CreateFolderMembership",
+        "quicksight:DeleteFolderMembership",
+        "quicksight:ListFoldersForResource",
+        "quicksight:TagResource",
+        "quicksight:UntagResource",
+        "quicksight:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::QuickSight::DataSource"
+}

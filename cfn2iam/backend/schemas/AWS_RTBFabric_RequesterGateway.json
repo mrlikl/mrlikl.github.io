@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rtbfabric:CreateRequesterGateway",
+        "rtbfabric:GetRequesterGateway",
+        "rtbfabric:TagResource",
+        "rtbfabric:ListTagsForResource",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rtbfabric:DeleteRequesterGateway",
+        "rtbfabric:GetRequesterGateway"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rtbfabric:ListRequesterGateways"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rtbfabric:GetRequesterGateway",
+        "rtbfabric:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rtbfabric:GetRequesterGateway",
+        "rtbfabric:UpdateRequesterGateway",
+        "rtbfabric:TagResource",
+        "rtbfabric:UntagResource",
+        "rtbfabric:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::RTBFabric::RequesterGateway"
+}

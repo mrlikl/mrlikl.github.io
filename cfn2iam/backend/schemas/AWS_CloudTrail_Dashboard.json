@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "CloudTrail:CreateDashboard",
+        "CloudTrail:AddTags",
+        "CloudTrail:StartQuery",
+        "CloudTrail:StartDashboardRefresh"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "CloudTrail:DeleteDashboard",
+        "CloudTrail:UpdateDashboard"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "CloudTrail:ListDashboards",
+        "CloudTrail:GetDashboard",
+        "CloudTrail:ListTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "CloudTrail:GetDashboard",
+        "CloudTrail:ListDashboards",
+        "CloudTrail:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "CloudTrail:UpdateDashboard",
+        "CloudTrail:AddTags",
+        "CloudTrail:RemoveTags",
+        "CloudTrail:StartQuery",
+        "CloudTrail:StartDashboardRefresh"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudTrail::Dashboard"
+}

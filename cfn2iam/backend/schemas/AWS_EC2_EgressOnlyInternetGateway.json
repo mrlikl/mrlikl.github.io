@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateEgressOnlyInternetGateway",
+        "ec2:CreateTags",
+        "ec2:DescribeEgressOnlyInternetGateways"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DeleteEgressOnlyInternetGateway",
+        "ec2:DescribeEgressOnlyInternetGateways",
+        "ec2:DescribeVpcs",
+        "ec2:DeleteTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeEgressOnlyInternetGateways"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeEgressOnlyInternetGateways",
+        "ec2:DescribeTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:DeleteTags",
+        "ec2:CreateTags",
+        "ec2:DescribeEgressOnlyInternetGateways"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::EgressOnlyInternetGateway"
+}

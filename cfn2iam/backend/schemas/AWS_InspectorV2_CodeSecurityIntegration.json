@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "inspector2:CreateCodeSecurityIntegration",
+        "inspector2:GetCodeSecurityIntegration",
+        "inspector2:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "inspector2:DeleteCodeSecurityIntegration",
+        "inspector2:GetCodeSecurityIntegration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "inspector2:ListCodeSecurityIntegrations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "inspector2:GetCodeSecurityIntegration",
+        "inspector2:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "inspector2:UpdateCodeSecurityIntegration",
+        "inspector2:GetCodeSecurityIntegration",
+        "inspector2:ListTagsForResource",
+        "inspector2:TagResource",
+        "inspector2:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::InspectorV2::CodeSecurityIntegration"
+}

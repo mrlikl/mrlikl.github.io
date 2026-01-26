@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "medialive:CreateChannelPlacementGroup",
+        "medialive:DescribeChannelPlacementGroup",
+        "medialive:CreateTags",
+        "medialive:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "medialive:DeleteChannelPlacementGroup",
+        "medialive:DescribeChannelPlacementGroup"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ClusterId": {
+            "$ref": "resource-schema.json#/properties/ClusterId"
+          }
+        },
+        "required": [
+          "ClusterId"
+        ]
+      },
+      "permissions": [
+        "medialive:ListChannelPlacementGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "medialive:DescribeChannelPlacementGroup",
+        "medialive:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "medialive:UpdateChannelPlacementGroup",
+        "medialive:DescribeChannelPlacementGroup",
+        "medialive:CreateTags",
+        "medialive:DeleteTags",
+        "medialive:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaLive::ChannelPlacementGroup"
+}

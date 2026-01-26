@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:DescribeSecurityGroupRules",
+        "ec2:AuthorizeSecurityGroupIngress"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DescribeSecurityGroupRules",
+        "ec2:RevokeSecurityGroupIngress"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeSecurityGroupRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSecurityGroupRules"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:UpdateSecurityGroupRuleDescriptionsIngress"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::SecurityGroupIngress"
+}

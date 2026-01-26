@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "connect:CreateRule",
+        "cases:GetTemplate",
+        "cases:ListFields",
+        "cases:ListFieldOptions"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "connect:DeleteRule",
+        "connect:UntagResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "connect:DescribeRule"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "connect:UpdateRule",
+        "cases:GetTemplate",
+        "cases:ListFields",
+        "cases:ListFieldOptions",
+        "connect:TagResource",
+        "connect:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Connect::Rule"
+}

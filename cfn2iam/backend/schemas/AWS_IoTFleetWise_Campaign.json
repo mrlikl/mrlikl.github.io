@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iotfleetwise:CreateCampaign",
+        "iotfleetwise:GetCampaign",
+        "iotfleetwise:ListTagsForResource",
+        "iotfleetwise:TagResource",
+        "iam:PassRole",
+        "timestream:DescribeEndpoints",
+        "timestream:DescribeTable"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotfleetwise:DeleteCampaign",
+        "iotfleetwise:GetCampaign"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iotfleetwise:ListCampaigns",
+        "iotfleetwise:GetCampaign"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotfleetwise:GetCampaign",
+        "iotfleetwise:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iotfleetwise:GetCampaign",
+        "iotfleetwise:ListTagsForResource",
+        "iotfleetwise:UpdateCampaign",
+        "iotfleetwise:TagResource",
+        "iotfleetwise:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTFleetWise::Campaign"
+}

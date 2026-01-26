@@ -1,0 +1,29 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:CreateServiceLinkedRole",
+        "mediaconnect:CreateGateway",
+        "mediaconnect:DescribeGateway"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iam:CreateServiceLinkedRole",
+        "mediaconnect:DescribeGateway",
+        "mediaconnect:DeleteGateway"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediaconnect:ListGateways"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediaconnect:DescribeGateway"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaConnect::Gateway"
+}

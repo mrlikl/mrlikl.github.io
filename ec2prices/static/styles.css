@@ -1,0 +1,48 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.min-price {
+  background-color: #d4edda;
+  color: #155724;
+  font-weight: bold;
+}
+
+.disclaimer {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.disclaimer a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.disclaimer a:hover {
+  text-decoration: underline;
+}
+
+.last-updated {
+  background-color: #e7f3ff;
+  border: 1px solid #b3d9ff;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 20px;
+  font-size: 0.85em;
+  color: #0066cc;
+  text-align: center;
+}

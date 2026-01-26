@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sso:CreateInstanceAccessControlAttributeConfiguration",
+        "sso:UpdateApplicationProfileForAWSAccountInstance",
+        "sso:DescribeInstanceAccessControlAttributeConfiguration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sso:DeleteInstanceAccessControlAttributeConfiguration",
+        "sso:DescribeInstanceAccessControlAttributeConfiguration"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "InstanceArn": {
+            "$ref": "resource-schema.json#/properties/InstanceArn"
+          }
+        },
+        "required": [
+          "InstanceArn"
+        ]
+      },
+      "permissions": [
+        "sso:DescribeInstanceAccessControlAttributeConfiguration"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sso:DescribeInstanceAccessControlAttributeConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sso:UpdateInstanceAccessControlAttributeConfiguration",
+        "sso:DescribeInstanceAccessControlAttributeConfiguration"
+      ]
+    }
+  },
+  "typeName": "AWS::SSO::InstanceAccessControlAttributeConfiguration"
+}

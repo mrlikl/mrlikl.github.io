@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "logs:PutTransformer",
+        "logs:GetTransformer"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "logs:DeleteTransformer"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "logs:DescribeLogGroups",
+        "logs:GetTransformer"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "logs:GetTransformer"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "logs:GetTransformer",
+        "logs:PutTransformer"
+      ]
+    }
+  },
+  "typeName": "AWS::Logs::Transformer"
+}

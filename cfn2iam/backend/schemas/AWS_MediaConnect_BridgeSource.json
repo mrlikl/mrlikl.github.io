@@ -1,0 +1,27 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediaconnect:AddBridgeSources",
+        "mediaconnect:DescribeBridge"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediaconnect:RemoveBridgeSource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediaconnect:DescribeBridge"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediaconnect:DescribeBridge",
+        "mediaconnect:UpdateBridgeSource"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaConnect::BridgeSource"
+}

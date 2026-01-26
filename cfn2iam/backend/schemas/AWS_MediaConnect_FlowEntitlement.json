@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PassRole",
+        "mediaconnect:GrantFlowEntitlements"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:ListFlows",
+        "mediaconnect:RevokeFlowEntitlement"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:ListFlows"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:ListFlows"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:UpdateFlowEntitlement"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaConnect::FlowEntitlement"
+}

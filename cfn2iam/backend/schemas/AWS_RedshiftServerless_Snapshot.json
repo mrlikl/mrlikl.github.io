@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "redshift-serverless:CreateSnapshot",
+        "redshift-serverless:GetSnapshot",
+        "redshift-serverless:ListTagsForResource",
+        "redshift-serverless:TagResource",
+        "redshift-serverless:GetNamespace"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "redshift-serverless:DeleteSnapshot",
+        "redshift-serverless:GetSnapshot",
+        "redshift-serverless:ListTagsForResource",
+        "redshift-serverless:UntagResource",
+        "redshift-serverless:GetNamespace"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "redshift-serverless:ListSnapshots",
+        "redshift-serverless:GetSnapshot",
+        "redshift-serverless:ListTagsForResource",
+        "redshift-serverless:GetNamespace"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "redshift-serverless:GetSnapshot",
+        "redshift-serverless:ListTagsForResource",
+        "redshift-serverless:GetNamespace"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "redshift-serverless:UpdateSnapshot",
+        "redshift-serverless:GetSnapshot",
+        "redshift-serverless:ListTagsForResource",
+        "redshift-serverless:TagResource",
+        "redshift-serverless:UntagResource",
+        "redshift-serverless:GetNamespace"
+      ]
+    }
+  },
+  "typeName": "AWS::RedshiftServerless::Snapshot"
+}

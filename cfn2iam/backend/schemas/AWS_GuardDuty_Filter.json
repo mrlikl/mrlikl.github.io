@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "guardduty:CreateFilter",
+        "guardduty:GetFilter",
+        "guardduty:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "guardduty:ListDetectors",
+        "guardduty:ListFilters",
+        "guardduty:GetFilter",
+        "guardduty:DeleteFilter"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DetectorId": {
+            "type": "string"
+          }
+        }
+      },
+      "permissions": [
+        "guardduty:ListFilters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "guardduty:GetFilter",
+        "guardduty:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "guardduty:UpdateFilter",
+        "guardduty:GetFilter",
+        "guardduty:ListFilters",
+        "guardduty:TagResource",
+        "guardduty:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::GuardDuty::Filter"
+}

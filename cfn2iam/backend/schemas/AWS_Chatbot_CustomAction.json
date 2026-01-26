@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "chatbot:CreateCustomAction",
+        "chatbot:GetCustomAction",
+        "chatbot:TagResource",
+        "chatbot:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "chatbot:DeleteCustomAction"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "chatbot:ListCustomActions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "chatbot:GetCustomAction",
+        "chatbot:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "chatbot:UpdateCustomAction",
+        "chatbot:GetCustomAction",
+        "chatbot:TagResource",
+        "chatbot:UntagResource",
+        "chatbot:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Chatbot::CustomAction"
+}

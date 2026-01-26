@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ivs:ImportPlaybackKeyPair",
+        "ivs:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ivs:DeletePlaybackKeyPair",
+        "ivs:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ivs:ListPlaybackKeyPairs",
+        "ivs:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ivs:GetPlaybackKeyPair"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ivs:GetPlaybackKeyPair",
+        "ivs:ListTagsForResource",
+        "ivs:UntagResource",
+        "ivs:TagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IVS::PlaybackKeyPair"
+}

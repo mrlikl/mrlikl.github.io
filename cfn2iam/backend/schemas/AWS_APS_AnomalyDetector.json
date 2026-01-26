@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aps:CreateAnomalyDetector",
+        "aps:DescribeAnomalyDetector",
+        "aps:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "aps:DeleteAnomalyDetector",
+        "aps:DescribeAnomalyDetector"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "Arn": {
+            "$ref": "resource-schema.json#/properties/Workspace"
+          }
+        },
+        "required": [
+          "Arn"
+        ]
+      },
+      "permissions": [
+        "aps:ListAnomalyDetectors",
+        "aps:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aps:DescribeAnomalyDetector",
+        "aps:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aps:PutAnomalyDetector",
+        "aps:DescribeAnomalyDetector",
+        "aps:TagResource",
+        "aps:UntagResource",
+        "aps:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::APS::AnomalyDetector"
+}

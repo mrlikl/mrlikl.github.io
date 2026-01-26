@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "observabilityadmin:CreateS3TableIntegration",
+        "observabilityadmin:GetS3TableIntegration",
+        "observabilityadmin:ListTagsForResource",
+        "observabilityadmin:TagResource",
+        "s3tables:CreateTableBucket",
+        "s3tables:PutTableBucketEncryption",
+        "s3tables:PutTableBucketPolicy",
+        "kms:DescribeKey",
+        "iam:PassRole",
+        "logs:AssociateSourceToS3TableIntegration",
+        "logs:ListSourcesForS3TableIntegration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "observabilityadmin:DeleteS3TableIntegration",
+        "observabilityadmin:GetS3TableIntegration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "observabilityadmin:ListS3TableIntegrations",
+        "logs:ListSourcesForS3TableIntegration"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "observabilityadmin:GetS3TableIntegration",
+        "observabilityadmin:ListTagsForResource",
+        "logs:ListSourcesForS3TableIntegration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "observabilityadmin:GetS3TableIntegration",
+        "observabilityadmin:ListTagsForResource",
+        "observabilityadmin:TagResource",
+        "observabilityadmin:UntagResource",
+        "logs:AssociateSourceToS3TableIntegration",
+        "logs:DisassociateSourceFromS3TableIntegration",
+        "logs:ListSourcesForS3TableIntegration"
+      ]
+    }
+  },
+  "typeName": "AWS::ObservabilityAdmin::S3TableIntegration"
+}

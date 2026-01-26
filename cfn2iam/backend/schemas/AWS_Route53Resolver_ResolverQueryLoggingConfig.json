@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "resolverquerylogging:CreateConfig",
+        "resolverquerylogging:GetConfig",
+        "route53resolver:CreateResolverQueryLogConfig",
+        "route53resolver:GetResolverQueryLogConfig",
+        "logs:CreateLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:UpdateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:PutResourcePolicy",
+        "logs:DescribeResourcePolicies",
+        "logs:DescribeLogGroups",
+        "iam:CreateServiceLinkedRole",
+        "route53resolver:ListTagsForResource",
+        "route53resolver:TagResource",
+        "route53resolver:ListResolverQueryLogConfigs"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "resolverquerylogging:DeleteConfig",
+        "resolverquerylogging:ListConfig",
+        "route53resolver:DeleteResolverQueryLogConfig",
+        "route53resolver:ListResolverQueryLogConfigs",
+        "route53resolver:UntagResource",
+        "route53resolver:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "resolverquerylogging:ListConfig",
+        "route53resolver:ListResolverQueryLogConfigs",
+        "route53resolver:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "resolverquerylogging:GetConfig",
+        "route53resolver:GetResolverQueryLogConfig",
+        "route53resolver:ListTagsForResource",
+        "route53resolver:ListResolverQueryLogConfigs"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53Resolver::ResolverQueryLoggingConfig"
+}

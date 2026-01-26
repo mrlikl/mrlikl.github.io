@@ -1,0 +1,53 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreateAgentRuntimeEndpoint",
+        "bedrock-agentcore:GetAgentRuntime",
+        "bedrock-agentcore:GetAgentRuntimeEndpoint",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeleteAgentRuntimeEndpoint",
+        "bedrock-agentcore:GetAgentRuntime",
+        "bedrock-agentcore:GetAgentRuntimeEndpoint"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AgentRuntimeId": {
+            "$ref": "resource-schema.json#/properties/AgentRuntimeId"
+          }
+        },
+        "required": [
+          "AgentRuntimeId"
+        ]
+      },
+      "permissions": [
+        "bedrock-agentcore:ListAgentRuntimeEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetAgentRuntime",
+        "bedrock-agentcore:GetAgentRuntimeEndpoint",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:UpdateAgentRuntimeEndpoint",
+        "bedrock-agentcore:GetAgentRuntime",
+        "bedrock-agentcore:GetAgentRuntimeEndpoint",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:UntagResource",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::RuntimeEndpoint"
+}

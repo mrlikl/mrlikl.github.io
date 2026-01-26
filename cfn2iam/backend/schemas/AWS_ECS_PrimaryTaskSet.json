@@ -1,0 +1,23 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ecs:DescribeTaskSets",
+        "ecs:UpdateServicePrimaryTaskSet"
+      ]
+    },
+    "delete": {
+      "permissions": []
+    },
+    "read": {
+      "permissions": []
+    },
+    "update": {
+      "permissions": [
+        "ecs:DescribeTaskSets",
+        "ecs:UpdateServicePrimaryTaskSet"
+      ]
+    }
+  },
+  "typeName": "AWS::ECS::PrimaryTaskSet"
+}

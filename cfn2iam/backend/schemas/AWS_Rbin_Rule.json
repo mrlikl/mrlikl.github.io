@@ -1,0 +1,66 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rbin:CreateRule",
+        "rbin:GetRule",
+        "rbin:LockRule",
+        "rbin:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rbin:GetRule",
+        "rbin:DeleteRule",
+        "iam:PassRole"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ExcludeResourceTags": {
+            "$ref": "resource-schema.json#/properties/ExcludeResourceTags"
+          },
+          "LockState": {
+            "$ref": "resource-schema.json#/properties/LockState"
+          },
+          "ResourceTags": {
+            "$ref": "resource-schema.json#/properties/ResourceTags"
+          },
+          "ResourceType": {
+            "$ref": "resource-schema.json#/properties/ResourceType"
+          }
+        },
+        "required": [
+          "ResourceType"
+        ]
+      },
+      "permissions": [
+        "rbin:ListRules",
+        "rbin:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rbin:GetRule",
+        "rbin:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rbin:GetRule",
+        "rbin:UpdateRule",
+        "rbin:LockRule",
+        "rbin:UnlockRule",
+        "rbin:TagResource",
+        "rbin:UntagResource",
+        "rbin:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::Rbin::Rule"
+}

@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3vectors:GetVectorBucketPolicy",
+        "s3vectors:PutVectorBucketPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3vectors:GetVectorBucketPolicy",
+        "s3vectors:DeleteVectorBucketPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "s3vectors:GetVectorBucketPolicy",
+        "s3vectors:ListVectorBuckets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3vectors:GetVectorBucketPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3vectors:GetVectorBucketPolicy",
+        "s3vectors:PutVectorBucketPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::S3Vectors::VectorBucketPolicy"
+}

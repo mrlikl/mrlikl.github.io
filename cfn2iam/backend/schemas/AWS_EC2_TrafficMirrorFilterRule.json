@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateTrafficMirrorFilterRule",
+        "ec2:CreateTags",
+        "ec2:DescribeTrafficMirrorFilterRules"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DeleteTrafficMirrorFilterRule"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeTrafficMirrorFilterRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeTrafficMirrorFilterRules"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:ModifyTrafficMirrorFilterRule",
+        "ec2:CreateTags",
+        "ec2:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::TrafficMirrorFilterRule"
+}

@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lakeformation:CreateLFTag",
+        "lakeformation:GetLFTag"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lakeformation:DeleteLFTag"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "lakeformation:ListLFTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lakeformation:GetLFTag"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lakeformation:UpdateLFTag",
+        "lakeformation:GetLFTag"
+      ]
+    }
+  },
+  "typeName": "AWS::LakeFormation::Tag"
+}

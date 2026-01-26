@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:GetTransitGatewayMeteringPolicyEntries",
+        "ec2:CreateTransitGatewayMeteringPolicyEntry"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:GetTransitGatewayMeteringPolicyEntries",
+        "ec2:DeleteTransitGatewayMeteringPolicyEntry"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "TransitGatewayMeteringPolicyId": {
+            "$ref": "resource-schema.json#/properties/TransitGatewayMeteringPolicyId"
+          }
+        },
+        "required": [
+          "TransitGatewayMeteringPolicyId"
+        ]
+      },
+      "permissions": [
+        "ec2:GetTransitGatewayMeteringPolicyEntries"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:GetTransitGatewayMeteringPolicyEntries"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::TransitGatewayMeteringPolicyEntry"
+}

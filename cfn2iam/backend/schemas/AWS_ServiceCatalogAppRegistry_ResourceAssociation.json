@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "servicecatalog:AssociateResource",
+        "cloudformation:DescribeStacks"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "servicecatalog:DisassociateResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ApplicationArn": {
+            "$ref": "resource-schema.json#/properties/ApplicationArn"
+          }
+        },
+        "required": [
+          "ApplicationArn"
+        ]
+      },
+      "permissions": [
+        "servicecatalog:ListAssociatedResources"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "servicecatalog:ListAssociatedResources"
+      ]
+    }
+  },
+  "typeName": "AWS::ServiceCatalogAppRegistry::ResourceAssociation"
+}

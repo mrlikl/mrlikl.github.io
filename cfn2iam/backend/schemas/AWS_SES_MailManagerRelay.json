@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:TagResource",
+        "ses:ListTagsForResource",
+        "ses:GetRelay",
+        "ses:CreateRelay"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:GetRelay",
+        "ses:DeleteRelay"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListRelays"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:ListTagsForResource",
+        "ses:GetRelay"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:TagResource",
+        "ses:UntagResource",
+        "ses:ListTagsForResource",
+        "ses:GetRelay",
+        "ses:UpdateRelay"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::MailManagerRelay"
+}

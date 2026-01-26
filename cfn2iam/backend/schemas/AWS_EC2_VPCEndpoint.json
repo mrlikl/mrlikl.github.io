@@ -1,0 +1,67 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateVpcEndpoint",
+        "ec2:DescribeVpcEndpoints",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "vpc-lattice:CreateServiceNetworkVpcEndpointAssociation",
+        "vpc-lattice:DescribeServiceNetworkVpcEndpointAssociation",
+        "ec2:CreateTags",
+        "ec2:DeleteTags",
+        "vpce:AllowMultiRegion",
+        "ec2:DescribeVpcs"
+      ],
+      "timeoutInMinutes": 210
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DeleteVpcEndpoints",
+        "ec2:DescribeVpcEndpoints",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "vpc-lattice:DescribeServiceNetworkVpcEndpointAssociation",
+        "ec2:CreateTags",
+        "ec2:DeleteTags",
+        "vpce:AllowMultiRegion",
+        "ec2:DescribeVpcs"
+      ],
+      "timeoutInMinutes": 210
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeVpcEndpoints",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "vpc-lattice:DescribeServiceNetworkVpcEndpointAssociation",
+        "ec2:DescribeVpcs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeVpcEndpoints",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "vpc-lattice:DescribeServiceNetworkVpcEndpointAssociation",
+        "ec2:DescribeVpcs"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:ModifyVpcEndpoint",
+        "ec2:DescribeVpcEndpoints",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "vpc-lattice:CreateServiceNetworkVpcEndpointAssociation",
+        "vpc-lattice:DescribeServiceNetworkVpcEndpointAssociation",
+        "ec2:CreateTags",
+        "ec2:DeleteTags",
+        "vpce:AllowMultiRegion",
+        "ec2:DescribeVpcs"
+      ],
+      "timeoutInMinutes": 210
+    }
+  },
+  "typeName": "AWS::EC2::VPCEndpoint"
+}

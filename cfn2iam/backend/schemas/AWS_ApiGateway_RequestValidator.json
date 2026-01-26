@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "apigateway:POST",
+        "apigateway:GET"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "apigateway:DELETE"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "RestApiId": {
+            "$ref": "resource-schema.json#/properties/RestApiId"
+          }
+        },
+        "required": [
+          "RestApiId"
+        ]
+      },
+      "permissions": [
+        "apigateway:GET"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "apigateway:GET"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "apigateway:PATCH",
+        "apigateway:GET"
+      ]
+    }
+  },
+  "typeName": "AWS::ApiGateway::RequestValidator"
+}

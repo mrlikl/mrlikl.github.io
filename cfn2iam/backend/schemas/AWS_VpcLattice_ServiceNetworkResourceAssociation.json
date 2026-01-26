@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "vpc-lattice:CreateServiceNetworkResourceAssociation",
+        "vpc-lattice:GetServiceNetworkResourceAssociation",
+        "vpc-lattice:TagResource",
+        "vpc-lattice:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "vpc-lattice:DeleteServiceNetworkResourceAssociation",
+        "vpc-lattice:GetServiceNetworkResourceAssociation",
+        "vpc-lattice:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "vpc-lattice:ListServiceNetworkResourceAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "vpc-lattice:GetServiceNetworkResourceAssociation",
+        "vpc-lattice:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "vpc-lattice:TagResource",
+        "vpc-lattice:UntagResource",
+        "vpc-lattice:GetServiceNetworkResourceAssociation",
+        "vpc-lattice:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::VpcLattice::ServiceNetworkResourceAssociation"
+}

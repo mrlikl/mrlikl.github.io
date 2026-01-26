@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreateCodeInterpreter",
+        "bedrock-agentcore:GetCodeInterpreter",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:ListTagsForResource",
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:GetCodeInterpreter",
+        "bedrock-agentcore:DeleteCodeInterpreter"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListCodeInterpreters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetCodeInterpreter",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:GetCodeInterpreter",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:UntagResource",
+        "bedrock-agentcore:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::CodeInterpreterCustom"
+}

@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticloadbalancing:CreateLoadBalancer",
+        "elasticloadbalancing:DescribeLoadBalancers",
+        "elasticloadbalancing:ModifyLoadBalancerAttributes",
+        "elasticloadbalancing:AddTags",
+        "elasticloadbalancing:SetSecurityGroups",
+        "ec2:DescribeIpamPools"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "delete": {
+      "permissions": [
+        "elasticloadbalancing:DescribeLoadBalancers",
+        "elasticloadbalancing:DeleteLoadBalancer"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "elasticloadbalancing:DescribeLoadBalancers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticloadbalancing:DescribeLoadBalancers",
+        "elasticloadbalancing:DescribeLoadBalancerAttributes",
+        "elasticloadbalancing:DescribeCapacityReservation",
+        "elasticloadbalancing:DescribeTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "elasticloadbalancing:ModifyLoadBalancerAttributes",
+        "elasticloadbalancing:ModifyCapacityReservation",
+        "elasticloadbalancing:SetSubnets",
+        "elasticloadbalancing:SetIpAddressType",
+        "elasticloadbalancing:ModifyIpPools",
+        "elasticloadbalancing:SetSecurityGroups",
+        "elasticloadbalancing:AddTags",
+        "elasticloadbalancing:RemoveTags"
+      ],
+      "timeoutInMinutes": 2160
+    }
+  },
+  "typeName": "AWS::ElasticLoadBalancingV2::LoadBalancer"
+}

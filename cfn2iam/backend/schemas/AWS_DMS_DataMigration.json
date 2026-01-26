@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "dms:CreateDataMigration",
+        "dms:DescribeDataMigrations",
+        "dms:AddTagsToResource",
+        "dms:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "dms:DeleteDataMigration",
+        "dms:RemoveTagsFromResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "dms:DescribeDataMigrations",
+        "dms:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dms:DescribeDataMigrations",
+        "dms:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "dms:ModifyDataMigration",
+        "dms:AddTagsToResource",
+        "dms:RemoveTagsFromResource",
+        "dms:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::DMS::DataMigration"
+}

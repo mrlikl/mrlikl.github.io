@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3tables:GetTableBucket",
+        "s3tables:GetTableBucketPolicy",
+        "s3tables:PutTableBucketPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3tables:GetTableBucketPolicy",
+        "s3tables:DeleteTableBucketPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "s3tables:GetTableBucketPolicy",
+        "s3tables:ListTableBuckets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3tables:GetTableBucketPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3tables:GetTableBucketPolicy",
+        "s3tables:PutTableBucketPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::S3Tables::TableBucketPolicy"
+}

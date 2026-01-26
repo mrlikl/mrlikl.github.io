@@ -1,0 +1,31 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3vectors:GetVectorBucket",
+        "s3vectors:CreateVectorBucket",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3vectors:GetVectorBucket",
+        "s3vectors:DeleteVectorBucket",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "s3vectors:ListVectorBuckets",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3vectors:GetVectorBucket",
+        "kms:GenerateDataKey"
+      ]
+    }
+  },
+  "typeName": "AWS::S3Vectors::VectorBucket"
+}

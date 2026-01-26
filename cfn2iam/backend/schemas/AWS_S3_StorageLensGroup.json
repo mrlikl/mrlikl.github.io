@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3:CreateStorageLensGroup",
+        "s3:GetStorageLensGroup",
+        "s3:TagResource",
+        "s3:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3:DeleteStorageLensGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "s3:ListStorageLensGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3:GetStorageLensGroup",
+        "s3:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3:GetStorageLensGroup",
+        "s3:UpdateStorageLensGroup",
+        "s3:TagResource",
+        "s3:UntagResource",
+        "s3:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::S3::StorageLensGroup"
+}

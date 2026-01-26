@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ssm:CreateDocument",
+        "ssm:GetDocument",
+        "ssm:AddTagsToResource",
+        "ssm:ListTagsForResource",
+        "s3:GetObject",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ssm:DeleteDocument",
+        "ssm:GetDocument"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ssm:ListDocuments"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ssm:DescribeDocument",
+        "ssm:GetDocument",
+        "ssm:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ssm:UpdateDocument",
+        "s3:GetObject",
+        "ssm:AddTagsToResource",
+        "ssm:RemoveTagsFromResource",
+        "ssm:ListTagsForResource",
+        "iam:PassRole",
+        "ssm:UpdateDocumentDefaultVersion",
+        "ssm:DescribeDocument"
+      ]
+    }
+  },
+  "typeName": "AWS::SSM::Document"
+}

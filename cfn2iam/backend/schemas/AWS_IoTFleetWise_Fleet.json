@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iotfleetwise:GetFleet",
+        "iotfleetwise:CreateFleet",
+        "iotfleetwise:ListTagsForResource",
+        "iotfleetwise:ListVehiclesInFleet",
+        "iotfleetwise:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotfleetwise:GetFleet",
+        "iotfleetwise:DeleteFleet"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iotfleetwise:ListFleets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotfleetwise:GetFleet",
+        "iotfleetwise:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iotfleetwise:GetFleet",
+        "iotfleetwise:UpdateFleet",
+        "iotfleetwise:ListTagsForResource",
+        "iotfleetwise:TagResource",
+        "iotfleetwise:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTFleetWise::Fleet"
+}

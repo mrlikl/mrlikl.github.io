@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "apigateway:POST"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "apigateway:DELETE"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "apigateway:GET"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "apigateway:GET"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "apigateway:PATCH",
+        "apigateway:GET",
+        "apigateway:PUT"
+      ]
+    }
+  },
+  "typeName": "AWS::ApiGatewayV2::ApiMapping"
+}

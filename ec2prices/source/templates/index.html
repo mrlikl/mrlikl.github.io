@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9M3S5VZ6C5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-9M3S5VZ6C5");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWS EC2 Linux On-Demand Pricing Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.1.5/css/dataTables.dataTables.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>AWS EC2 Linux On-Demand Pricing</h1>
+    <div class="disclaimer">
+      <b>Disclaimer: </b>This pricing list is for informational purposes only.
+      Prices are fetched using AWS Price List API and may not be latest
+      depending on the sync. Read more at
+      <a
+        href="https://aws.amazon.com/blogs/aws/new-aws-price-list-api/"
+        target="_blank"
+        >https://aws.amazon.com/blogs/aws/new-aws-price-list-api/</a
+      >
+    </div>
+    <div class="last-updated"><b>Last Updated: </b>{{ last_updated }}</div>
+    <table id="pricing-table" class="display" style="width: 100%">
+      <thead>
+        <tr>
+          <th>Instance Type</th>
+          {% for region in regions %}
+          <th>{{ region }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in instance_type_data %}
+        <tr>
+          <td>{{ item.instance_type }}</td>
+          {% for price in item.prices %}
+          <td>{{ price }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.5/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/rowgroup/1.3.0/js/dataTables.rowGroup.js"></script>
+    <script>
+      $(document).ready(function () {
+        var table = $("#pricing-table").DataTable({
+          searching: true,
+          drawCallback: function (settings) {
+            highlightMinPrices(this.api());
+          },
+          lengthMenu: [
+            [10, 25, 50, 100, -1],
+            [10, 25, 50, 100, "All"],
+          ],
+          pageLength: 25,
+        });
+
+        function highlightMinPrices(api) {
+          api.$("td").removeClass("min-price green");
+          api.rows().every(function () {
+            var row = this.node();
+            var $row = $(row);
+            var prices = $row.find("td").slice(1);
+            var minPrice = Infinity;
+            var minIndex = -1;
+            prices.each(function (index) {
+              var priceText = $(this).text();
+              var price = parseFloat(priceText.replace(/[^0-9.-]+/g, ""));
+              if (!isNaN(price)) {
+                if (price < minPrice) {
+                  minPrice = price;
+                  minIndex = index;
+                }
+              }
+            });
+            prices.each(function () {
+              var priceText = $(this).text();
+              var price = parseFloat(priceText.replace(/[^0-9.-]+/g, ""));
+              if (price === minPrice) {
+                $(this).addClass("min-price");
+              }
+            });
+            var firstColumnPrice = parseFloat(
+              prices
+                .eq(0)
+                .text()
+                .replace(/[^0-9.-]+/g, "")
+            );
+            if (firstColumnPrice === minPrice) {
+              prices.eq(0).addClass("green");
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

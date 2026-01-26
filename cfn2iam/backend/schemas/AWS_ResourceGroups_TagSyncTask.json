@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "resource-groups:StartTagSyncTask",
+        "resource-groups:CreateGroup",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "resource-groups:CancelTagSyncTask",
+        "resource-groups:DeleteGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "resource-groups:ListTagSyncTasks"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "resource-groups:GetTagSyncTask"
+      ]
+    }
+  },
+  "typeName": "AWS::ResourceGroups::TagSyncTask"
+}

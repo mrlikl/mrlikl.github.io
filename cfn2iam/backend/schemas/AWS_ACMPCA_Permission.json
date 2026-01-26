@@ -1,0 +1,21 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "acm-pca:CreatePermission",
+        "acm-pca:ListPermissions"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "acm-pca:DeletePermission"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "acm-pca:ListPermissions"
+      ]
+    }
+  },
+  "typeName": "AWS::ACMPCA::Permission"
+}

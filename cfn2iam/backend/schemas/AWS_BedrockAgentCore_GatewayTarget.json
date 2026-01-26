@@ -1,0 +1,54 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "apigateway:GET",
+        "bedrock-agentcore:CreateGatewayTarget",
+        "bedrock-agentcore:GetGatewayTarget",
+        "bedrock-agentcore:GetResourceOauth2Token",
+        "bedrock-agentcore:GetWorkloadAccessToken",
+        "bedrock-agentcore:SynchronizeGatewayTargets",
+        "kms:Decrypt",
+        "kms:GenerateDataKey",
+        "kms:ListGrants",
+        "s3:GetObject",
+        "secretsmanager:GetSecretValue"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeleteGatewayTarget",
+        "bedrock-agentcore:GetGatewayTarget",
+        "kms:Decrypt",
+        "kms:GenerateDataKey",
+        "kms:ListGrants"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListGatewayTargets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetGatewayTarget"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "apigateway:GET",
+        "bedrock-agentcore:GetGatewayTarget",
+        "bedrock-agentcore:GetResourceOauth2Token",
+        "bedrock-agentcore:GetWorkloadAccessToken",
+        "bedrock-agentcore:SynchronizeGatewayTargets",
+        "bedrock-agentcore:UpdateGatewayTarget",
+        "kms:Decrypt",
+        "kms:GenerateDataKey",
+        "kms:ListGrants",
+        "s3:GetObject",
+        "secretsmanager:GetSecretValue"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::GatewayTarget"
+}

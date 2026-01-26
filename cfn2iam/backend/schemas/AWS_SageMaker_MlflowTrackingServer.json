@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateMlflowTrackingServer",
+        "sagemaker:DescribeMlflowTrackingServer",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags",
+        "iam:PassRole"
+      ],
+      "timeoutInMinutes": 95
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteMlflowTrackingServer",
+        "sagemaker:DescribeMlflowTrackingServer"
+      ],
+      "timeoutInMinutes": 95
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListMlflowTrackingServers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeMlflowTrackingServer",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateMlflowTrackingServer",
+        "sagemaker:DescribeMlflowTrackingServer",
+        "sagemaker:ListTags",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "iam:PassRole"
+      ],
+      "timeoutInMinutes": 65
+    }
+  },
+  "typeName": "AWS::SageMaker::MlflowTrackingServer"
+}

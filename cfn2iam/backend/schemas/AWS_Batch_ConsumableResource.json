@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "Batch:CreateConsumableResource",
+        "Batch:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "Batch:DescribeConsumableResource",
+        "Batch:DeleteConsumableResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "Batch:ListConsumableResources"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "Batch:DescribeConsumableResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "Batch:UpdateConsumableResource",
+        "Batch:TagResource",
+        "Batch:UnTagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Batch::ConsumableResource"
+}

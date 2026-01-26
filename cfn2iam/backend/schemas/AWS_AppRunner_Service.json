@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "apprunner:CreateService",
+        "apprunner:TagResource",
+        "iam:PassRole",
+        "iam:CreateServiceLinkedRole",
+        "logs:CreateLogGroup",
+        "logs:PutRetentionPolicy",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents",
+        "logs:DescribeLogStreams",
+        "events:PutRule",
+        "events:PutTargets"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "apprunner:DeleteService"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "apprunner:ListServices",
+        "iam:PassRole"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "apprunner:DescribeService"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "apprunner:UpdateService",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::AppRunner::Service"
+}

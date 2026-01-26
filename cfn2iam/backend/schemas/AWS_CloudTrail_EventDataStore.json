@@ -1,0 +1,80 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "CloudTrail:CreateEventDataStore",
+        "CloudTrail:AddTags",
+        "CloudTrail:PutInsightSelectors",
+        "CloudTrail:EnableFederation",
+        "CloudTrail:GetEventDataStore",
+        "CloudTrail:PutEventConfiguration",
+        "iam:PassRole",
+        "iam:GetRole",
+        "iam:CreateServiceLinkedRole",
+        "organizations:DescribeOrganization",
+        "organizations:ListAWSServiceAccessForOrganization",
+        "kms:GenerateDataKey",
+        "kms:Decrypt",
+        "glue:CreateDatabase",
+        "glue:CreateTable",
+        "glue:PassConnection",
+        "lakeformation:RegisterResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "CloudTrail:DeleteEventDataStore",
+        "CloudTrail:GetEventDataStore",
+        "CloudTrail:DisableFederation",
+        "glue:DeleteTable",
+        "lakeformation:DeregisterResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "CloudTrail:ListEventDataStores",
+        "CloudTrail:GetEventDataStore",
+        "CloudTrail:GetInsightSelectors",
+        "CloudTrail:ListTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "CloudTrail:GetEventDataStore",
+        "CloudTrail:ListEventDataStores",
+        "CloudTrail:GetInsightSelectors",
+        "CloudTrail:GetEventConfiguration",
+        "CloudTrail:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "CloudTrail:UpdateEventDataStore",
+        "CloudTrail:RestoreEventDataStore",
+        "CloudTrail:AddTags",
+        "CloudTrail:RemoveTags",
+        "CloudTrail:StartEventDataStoreIngestion",
+        "CloudTrail:StopEventDataStoreIngestion",
+        "CloudTrail:GetEventDataStore",
+        "CloudTrail:PutInsightSelectors",
+        "CloudTrail:GetInsightSelectors",
+        "CloudTrail:EnableFederation",
+        "CloudTrail:DisableFederation",
+        "CloudTrail:PutEventConfiguration",
+        "iam:PassRole",
+        "iam:GetRole",
+        "iam:CreateServiceLinkedRole",
+        "organizations:DescribeOrganization",
+        "organizations:ListAWSServiceAccessForOrganization",
+        "glue:CreateDatabase",
+        "glue:CreateTable",
+        "glue:PassConnection",
+        "lakeformation:RegisterResource",
+        "glue:DeleteTable",
+        "lakeformation:DeregisterResource",
+        "kms:DescribeKey"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudTrail::EventDataStore"
+}

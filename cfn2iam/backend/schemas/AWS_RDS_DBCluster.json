@@ -1,0 +1,71 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
+        "rds:AddRoleToDBCluster",
+        "rds:AddTagsToResource",
+        "rds:CreateDBCluster",
+        "rds:CreateDBInstance",
+        "rds:DescribeDBClusters",
+        "rds:DescribeDBClusterAutomatedBackups",
+        "rds:DescribeDBClusterSnapshots",
+        "rds:DescribeDBSnapshots",
+        "rds:DescribeEvents",
+        "rds:EnableHttpEndpoint",
+        "rds:ModifyDBCluster",
+        "rds:RestoreDBClusterFromSnapshot",
+        "rds:RestoreDBClusterToPointInTime",
+        "rds:DescribeDBClusterSnapshots",
+        "secretsmanager:CreateSecret",
+        "secretsmanager:TagResource"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "delete": {
+      "permissions": [
+        "rds:AddTagsToResource",
+        "rds:CreateDBClusterSnapshot",
+        "rds:DeleteDBCluster",
+        "rds:DeleteDBInstance",
+        "rds:DescribeDBClusters",
+        "rds:DescribeGlobalClusters",
+        "rds:RemoveFromGlobalCluster"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rds:DescribeDBClusters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rds:DescribeDBClusters"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:DescribeSecurityGroups",
+        "iam:PassRole",
+        "rds:AddRoleToDBCluster",
+        "rds:AddTagsToResource",
+        "rds:DescribeDBClusters",
+        "rds:DescribeDBSubnetGroups",
+        "rds:DescribeEvents",
+        "rds:DescribeGlobalClusters",
+        "rds:DisableHttpEndpoint",
+        "rds:EnableHttpEndpoint",
+        "rds:ModifyDBCluster",
+        "rds:ModifyDBInstance",
+        "rds:RemoveFromGlobalCluster",
+        "rds:RemoveRoleFromDBCluster",
+        "rds:RemoveTagsFromResource",
+        "secretsmanager:CreateSecret",
+        "secretsmanager:TagResource"
+      ],
+      "timeoutInMinutes": 2160
+    }
+  },
+  "typeName": "AWS::RDS::DBCluster"
+}

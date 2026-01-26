@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticbeanstalk:CreateApplicationVersion",
+        "elasticbeanstalk:DescribeApplicationVersions",
+        "s3:GetObject",
+        "s3:PutObject"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "elasticbeanstalk:DeleteApplicationVersion",
+        "elasticbeanstalk:DescribeApplicationVersions"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "elasticbeanstalk:DescribeApplicationVersions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticbeanstalk:DescribeApplicationVersions"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "elasticbeanstalk:UpdateApplicationVersion",
+        "elasticbeanstalk:DescribeApplicationVersions"
+      ]
+    }
+  },
+  "typeName": "AWS::ElasticBeanstalk::ApplicationVersion"
+}

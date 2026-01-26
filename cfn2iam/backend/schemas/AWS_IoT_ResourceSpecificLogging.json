@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:ListV2LoggingLevels",
+        "iot:SetV2LoggingLevel"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:ListV2LoggingLevels",
+        "iot:DeleteV2LoggingLevel"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iot:ListV2LoggingLevels"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:ListV2LoggingLevels"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iot:ListV2LoggingLevels",
+        "iot:SetV2LoggingLevel"
+      ]
+    }
+  },
+  "typeName": "AWS::IoT::ResourceSpecificLogging"
+}

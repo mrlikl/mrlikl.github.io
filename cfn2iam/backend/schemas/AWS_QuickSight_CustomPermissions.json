@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "quicksight:CreateCustomPermissions",
+        "quicksight:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "quicksight:DeleteCustomPermissions"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "quicksight:ListCustomPermissions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "quicksight:DescribeCustomPermissions",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "quicksight:UpdateCustomPermissions",
+        "quicksight:TagResource",
+        "quicksight:UntagResource",
+        "quicksight:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::QuickSight::CustomPermissions"
+}

@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cases:CreateLayout",
+        "cases:GetLayout",
+        "cases:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cases:DeleteLayout",
+        "cases:UntagResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainId": {
+            "$ref": "resource-schema.json#/properties/DomainId"
+          }
+        },
+        "required": [
+          "DomainId"
+        ]
+      },
+      "permissions": [
+        "cases:ListLayouts"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cases:GetLayout"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cases:UpdateLayout",
+        "cases:TagResource",
+        "cases:UntagResource",
+        "cases:GetLayout"
+      ]
+    }
+  },
+  "typeName": "AWS::Cases::Layout"
+}

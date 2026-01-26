@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreatePlacementGroup",
+        "ec2:DescribePlacementGroups",
+        "ec2:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DeletePlacementGroup",
+        "ec2:DescribePlacementGroups"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribePlacementGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribePlacementGroups"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::PlacementGroup"
+}

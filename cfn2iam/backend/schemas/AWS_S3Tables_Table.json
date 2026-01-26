@@ -1,0 +1,68 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3tables:CreateTable",
+        "s3tables:PutTableData",
+        "s3tables:GetTable",
+        "s3tables:PutTableMaintenanceConfiguration",
+        "s3tables:GetTableMaintenanceConfiguration",
+        "s3tables:PutTableStorageClass",
+        "s3tables:GetTableStorageClass",
+        "s3tables:TagResource",
+        "s3tables:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3tables:GetTable",
+        "s3tables:DeleteTable"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "Namespace": {
+            "description": "The namespace that the table belongs to.",
+            "type": "string"
+          },
+          "TableBucketARN": {
+            "description": "The Amazon Resource Name (ARN) of the specified table bucket.",
+            "examples": [
+              "arn:aws:s3tables:us-west-2:123456789012:bucket/mytablebucket"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "TableBucketARN"
+        ]
+      },
+      "permissions": [
+        "s3tables:ListTables",
+        "s3tables:ListTableBuckets",
+        "s3tables:ListNamespaces"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3tables:GetTable",
+        "s3tables:GetTableMaintenanceConfiguration",
+        "s3tables:GetTableStorageClass",
+        "s3tables:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3tables:GetTable",
+        "s3tables:RenameTable",
+        "s3tables:PutTableMaintenanceConfiguration",
+        "s3tables:GetTableMaintenanceConfiguration",
+        "s3tables:TagResource",
+        "s3tables:UntagResource",
+        "s3tables:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::S3Tables::Table"
+}

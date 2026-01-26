@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cases:CreateDomain",
+        "cases:GetDomain",
+        "cases:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cases:DeleteDomain",
+        "cases:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cases:ListDomains"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cases:GetDomain"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cases:TagResource",
+        "cases:UntagResource",
+        "cases:GetDomain"
+      ]
+    }
+  },
+  "typeName": "AWS::Cases::Domain"
+}

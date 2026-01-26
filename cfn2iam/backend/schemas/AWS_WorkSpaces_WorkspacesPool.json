@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "workspaces:CreateWorkspacesPool",
+        "workspaces:DescribeWorkspacesPools",
+        "workspaces:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "workspaces:DescribeWorkspacesPools",
+        "workspaces:TerminateWorkspacesPool",
+        "workspaces:DeleteTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "workspaces:DescribeWorkspacesPools",
+        "workspaces:DescribeTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "workspaces:DescribeWorkspacesPools",
+        "workspaces:DescribeTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "workspaces:UpdateWorkspacesPool",
+        "workspaces:CreateTags",
+        "workspaces:DeleteTags",
+        "workspaces:DescribeWorkspacesPools",
+        "workspaces:DescribeTags"
+      ]
+    }
+  },
+  "typeName": "AWS::WorkSpaces::WorkspacesPool"
+}

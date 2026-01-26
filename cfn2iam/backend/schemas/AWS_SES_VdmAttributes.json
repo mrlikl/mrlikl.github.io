@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:PutAccountVdmAttributes",
+        "ses:GetAccount"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:PutAccountVdmAttributes",
+        "ses:GetAccount"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:GetAccount"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:PutAccountVdmAttributes",
+        "ses:GetAccount"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::VdmAttributes"
+}

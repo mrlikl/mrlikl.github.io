@@ -1,0 +1,81 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "m2:CreateDeployment",
+        "m2:ListDeployments",
+        "m2:GetDeployment",
+        "iam:PassRole",
+        "ec2:DescribeNetworkInterfaces",
+        "elasticloadbalancing:CreateListener",
+        "elasticloadbalancing:CreateLoadBalancer",
+        "elasticloadbalancing:CreateTargetGroup",
+        "elasticloadbalancing:AddTags",
+        "elasticloadbalancing:RegisterTargets",
+        "logs:DescribeResourcePolicies",
+        "logs:DescribeLogGroups",
+        "logs:CreateLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:UpdateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:CreateLogGroup",
+        "logs:PutResourcePolicy"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "delete": {
+      "permissions": [
+        "elasticloadbalancing:DeleteListener",
+        "elasticloadbalancing:DeleteTargetGroup",
+        "elasticloadbalancing:DeregisterTargets",
+        "elasticloadbalancing:DeleteLoadBalancer",
+        "logs:DeleteLogDelivery",
+        "m2:ListDeployments",
+        "m2:GetDeployment",
+        "m2:DeleteApplicationFromEnvironment"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ApplicationId": {
+            "$ref": "resource-schema.json#/properties/ApplicationId"
+          }
+        },
+        "required": [
+          "ApplicationId"
+        ]
+      },
+      "permissions": [
+        "m2:ListDeployments"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "m2:ListDeployments",
+        "m2:GetDeployment"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "m2:CreateDeployment",
+        "m2:ListDeployments",
+        "m2:GetDeployment",
+        "elasticloadbalancing:CreateListener",
+        "elasticloadbalancing:CreateLoadBalancer",
+        "elasticloadbalancing:CreateTargetGroup",
+        "elasticloadbalancing:DeleteListener",
+        "elasticloadbalancing:DeleteTargetGroup",
+        "elasticloadbalancing:DeregisterTargets",
+        "elasticloadbalancing:DeleteLoadBalancer",
+        "elasticloadbalancing:AddTags",
+        "elasticloadbalancing:RegisterTargets",
+        "ec2:DescribeNetworkInterfaces"
+      ],
+      "timeoutInMinutes": 60
+    }
+  },
+  "typeName": "AWS::M2::Deployment"
+}

@@ -1,0 +1,31 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateDataQualityJobDefinition",
+        "sagemaker:DescribeDataQualityJobDefinition",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteDataQualityJobDefinition"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListDataQualityJobDefinitions",
+        "sagemaker:ListTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeDataQualityJobDefinition",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::DataQualityJobDefinition"
+}

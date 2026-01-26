@@ -1,0 +1,25 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "athena:CreateNamedQuery"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "athena:DeleteNamedQuery"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "athena:ListNamedQueries"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "athena:GetNamedQuery"
+      ]
+    }
+  },
+  "typeName": "AWS::Athena::NamedQuery"
+}

@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3:GetObject",
+        "appstream:CreateApplication",
+        "appstream:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appstream:DeleteApplication",
+        "appstream:DescribeApplications"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appstream:DescribeApplications",
+        "appstream:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appstream:UpdateApplication",
+        "appstream:DescribeApplications",
+        "appstream:TagResource",
+        "appstream:UntagResource",
+        "s3:GetObject"
+      ]
+    }
+  },
+  "typeName": "AWS::AppStream::Application"
+}

@@ -1,0 +1,61 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3tables:CreateTableBucket",
+        "s3tables:PutTableBucketMaintenanceConfiguration",
+        "s3tables:PutTableBucketMetricsConfiguration",
+        "s3tables:PutTableBucketEncryption",
+        "s3tables:PutTableBucketStorageClass",
+        "s3tables:GetTableBucket",
+        "s3tables:GetTableBucketMaintenanceConfiguration",
+        "s3tables:GetTableBucketMetricsConfiguration",
+        "s3tables:GetTableBucketEncryption",
+        "s3tables:GetTableBucketStorageClass",
+        "kms:DescribeKey",
+        "s3tables:TagResource",
+        "s3tables:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3tables:DeleteTableBucket"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "s3tables:ListTableBuckets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3tables:GetTableBucket",
+        "s3tables:GetTableBucketMaintenanceConfiguration",
+        "s3tables:GetTableBucketMetricsConfiguration",
+        "s3tables:GetTableBucketEncryption",
+        "s3tables:GetTableBucketStorageClass",
+        "s3tables:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3tables:DeleteTableBucketMetricsConfiguration",
+        "s3tables:PutTableBucketMaintenanceConfiguration",
+        "s3tables:PutTableBucketMetricsConfiguration",
+        "s3tables:PutTableBucketEncryption",
+        "s3tables:PutTableBucketStorageClass",
+        "s3tables:GetTableBucketMaintenanceConfiguration",
+        "s3tables:GetTableBucketMetricsConfiguration",
+        "s3tables:GetTableBucketEncryption",
+        "s3tables:GetTableBucketStorageClass",
+        "s3tables:DeleteTableBucketEncryption",
+        "s3tables:GetTableBucket",
+        "kms:DescribeKey",
+        "s3tables:TagResource",
+        "s3tables:UntagResource",
+        "s3tables:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::S3Tables::TableBucket"
+}

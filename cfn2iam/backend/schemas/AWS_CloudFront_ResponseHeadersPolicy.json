@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudfront:CreateResponseHeadersPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudfront:DeleteResponseHeadersPolicy",
+        "cloudfront:GetResponseHeadersPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudfront:ListResponseHeadersPolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudfront:GetResponseHeadersPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudfront:UpdateResponseHeadersPolicy",
+        "cloudfront:GetResponseHeadersPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFront::ResponseHeadersPolicy"
+}

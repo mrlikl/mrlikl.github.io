@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "events:CreateConnection",
+        "events:DescribeConnection",
+        "secretsmanager:CreateSecret",
+        "secretsmanager:GetSecretValue",
+        "secretsmanager:PutSecretValue",
+        "iam:CreateServiceLinkedRole",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "events:DeleteConnection",
+        "events:DescribeConnection"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "events:ListConnections"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "events:DescribeConnection",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "events:UpdateConnection",
+        "events:DescribeConnection",
+        "secretsmanager:CreateSecret",
+        "secretsmanager:UpdateSecret",
+        "secretsmanager:GetSecretValue",
+        "secretsmanager:PutSecretValue",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:Encrypt",
+        "kms:GenerateDataKey"
+      ]
+    }
+  },
+  "typeName": "AWS::Events::Connection"
+}

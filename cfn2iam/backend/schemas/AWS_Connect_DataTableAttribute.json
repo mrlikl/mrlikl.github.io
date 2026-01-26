@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "connect:CreateDataTableAttribute"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "connect:DeleteDataTableAttribute",
+        "connect:ListDataTableAttributes"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DataTableArn": {
+            "$ref": "resource-schema.json#/properties/DataTableArn"
+          },
+          "InstanceArn": {
+            "$ref": "resource-schema.json#/properties/InstanceArn"
+          }
+        },
+        "required": [
+          "InstanceArn",
+          "DataTableArn"
+        ]
+      },
+      "permissions": [
+        "connect:ListDataTableAttributes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "connect:ListDataTableAttributes"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "connect:UpdateDataTableAttribute"
+      ]
+    }
+  },
+  "typeName": "AWS::Connect::DataTableAttribute"
+}

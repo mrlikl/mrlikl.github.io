@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mq:CreateConfiguration",
+        "mq:CreateTags",
+        "mq:UpdateConfiguration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mq:DeleteConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mq:ListConfigurations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mq:DescribeConfiguration",
+        "mq:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mq:DescribeConfiguration",
+        "mq:UpdateConfiguration",
+        "mq:CreateTags",
+        "mq:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::AmazonMQ::Configuration"
+}

@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediaconnect:CreateFlow",
+        "mediaconnect:AddFlowMediaStreams",
+        "mediaconnect:AddFlowSources",
+        "mediaconnect:AddFlowVpcInterfaces",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:DeleteFlow",
+        "mediaconnect:RemoveFlowMediaStream",
+        "mediaconnect:RemoveFlowOutput",
+        "mediaconnect:RemoveFlowSource",
+        "mediaconnect:RemoveFlowVpcInterface",
+        "mediaconnect:RevokeFlowEntitlement"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediaconnect:ListFlows"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediaconnect:DescribeFlow"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:UpdateFlow",
+        "mediaconnect:UpdateFlowSource",
+        "mediaconnect:UpdateFlowMediaStream",
+        "mediaconnect:AddFlowMediaStreams",
+        "mediaconnect:RemoveFlowMediaStream",
+        "mediaconnect:AddFlowVpcInterfaces",
+        "mediaconnect:RemoveFlowVpcInterface"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaConnect::Flow"
+}

@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticache:CreateCacheParameterGroup",
+        "elasticache:DescribeCacheParameterGroups",
+        "elasticache:AddTagsToResource",
+        "elasticache:ModifyCacheParameterGroup",
+        "iam:CreateServiceLinkedRole",
+        "iam:PutRolePolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "elasticache:DescribeCacheParameterGroups",
+        "elasticache:DeleteCacheParameterGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "elasticache:DescribeCacheParameterGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticache:DescribeCacheParameterGroups",
+        "elasticache:DescribeCacheParameters",
+        "elasticache:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "elasticache:ModifyCacheParameterGroup",
+        "elasticache:DescribeCacheParameterGroups",
+        "elasticache:DescribeCacheParameters",
+        "elasticache:DescribeEngineDefaultParameters",
+        "elasticache:AddTagsToResource",
+        "elasticache:RemoveTagsFromResource"
+      ]
+    }
+  },
+  "typeName": "AWS::ElastiCache::ParameterGroup"
+}

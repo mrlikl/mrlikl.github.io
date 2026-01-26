@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "guardduty:CreateThreatEntitySet",
+        "guardduty:GetThreatEntitySet",
+        "guardduty:TagResource",
+        "s3:GetObject"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "guardduty:ListDetectors",
+        "guardduty:ListThreatEntitySets",
+        "guardduty:DeleteThreatEntitySet",
+        "guardduty:GetThreatEntitySet"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DetectorId": {
+            "type": "string"
+          }
+        }
+      },
+      "permissions": [
+        "guardduty:ListThreatEntitySets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "guardduty:GetThreatEntitySet"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "guardduty:UpdateThreatEntitySet",
+        "guardduty:GetThreatEntitySet",
+        "guardduty:ListThreatEntitySets",
+        "guardduty:TagResource",
+        "guardduty:UntagResource",
+        "s3:GetObject"
+      ]
+    }
+  },
+  "typeName": "AWS::GuardDuty::ThreatEntitySet"
+}

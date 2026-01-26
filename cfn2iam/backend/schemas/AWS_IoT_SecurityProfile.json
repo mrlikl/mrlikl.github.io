@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:CreateSecurityProfile",
+        "iot:AttachSecurityProfile",
+        "iot:DescribeSecurityProfile",
+        "iot:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:DescribeSecurityProfile",
+        "iot:DeleteSecurityProfile"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iot:ListSecurityProfiles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:DescribeSecurityProfile",
+        "iot:ListTagsForResource",
+        "iot:ListTargetsForSecurityProfile"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iot:UpdateSecurityProfile",
+        "iot:ListTargetsForSecurityProfile",
+        "iot:AttachSecurityProfile",
+        "iot:DetachSecurityProfile",
+        "iot:ListTagsForResource",
+        "iot:UntagResource",
+        "iot:TagResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::IoT::SecurityProfile"
+}

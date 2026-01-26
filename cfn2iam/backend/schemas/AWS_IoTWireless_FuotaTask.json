@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iotwireless:CreateFuotaTask",
+        "iotwireless:TagResource",
+        "iam:GetRole",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotwireless:DeleteFuotaTask"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iotwireless:ListFuotaTasks",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotwireless:GetFuotaTask",
+        "iotwireless:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:PassRole",
+        "iotwireless:UpdateFuotaTask",
+        "iotwireless:GetFuotaTask",
+        "iotwireless:TagResource",
+        "iotwireless:UntagResource",
+        "iotwireless:AssociateMulticastGroupWithFuotaTask",
+        "iotwireless:DisassociateMulticastGroupFromFuotaTask",
+        "iotwireless:AssociateWirelessDeviceWithFuotaTask",
+        "iotwireless:DisassociateWirelessDeviceFromFuotaTask"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTWireless::FuotaTask"
+}

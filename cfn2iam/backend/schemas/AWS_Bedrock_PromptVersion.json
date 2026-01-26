@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock:CreatePromptVersion",
+        "bedrock:GetPrompt",
+        "bedrock:TagResource",
+        "bedrock:ListTagsForResource",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock:DeletePrompt",
+        "bedrock:GetPrompt"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "PromptArn": {
+            "$ref": "resource-schema.json#/properties/PromptArn"
+          }
+        },
+        "required": [
+          "PromptArn"
+        ]
+      },
+      "permissions": [
+        "bedrock:ListPrompts"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:GetPrompt",
+        "bedrock:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::PromptVersion"
+}

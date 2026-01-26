@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "networkmanager:ListCoreNetworkPrefixListAssociations",
+        "networkmanager:CreateCoreNetworkPrefixListAssociation",
+        "networkmanager:GetCoreNetwork"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "networkmanager:ListCoreNetworkPrefixListAssociations",
+        "networkmanager:DeleteCoreNetworkPrefixListAssociation",
+        "networkmanager:GetCoreNetwork"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "CoreNetworkId": {
+            "$ref": "resource-schema.json#/properties/CoreNetworkId"
+          }
+        },
+        "required": [
+          "CoreNetworkId"
+        ]
+      },
+      "permissions": [
+        "networkmanager:ListCoreNetworkPrefixListAssociations",
+        "networkmanager:GetCoreNetwork"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "networkmanager:ListCoreNetworkPrefixListAssociations",
+        "networkmanager:GetCoreNetwork"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkManager::CoreNetworkPrefixListAssociation"
+}

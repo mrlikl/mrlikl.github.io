@@ -1,0 +1,27 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "apigateway:POST",
+        "apigateway:GET"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "apigateway:DELETE",
+        "apigateway:GET"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "apigateway:GET"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "apigateway:GET"
+      ]
+    }
+  },
+  "typeName": "AWS::ApiGateway::DomainNameAccessAssociation"
+}

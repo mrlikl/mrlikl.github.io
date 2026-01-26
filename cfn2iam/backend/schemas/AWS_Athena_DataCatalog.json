@@ -1,0 +1,79 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "athena:CreateDataCatalog",
+        "athena:GetDataCatalog",
+        "athena:TagResource",
+        "s3:ListBucket",
+        "glue:TagResource",
+        "glue:CreateConnection",
+        "glue:DeleteConnection",
+        "glue:UpdateConnection",
+        "serverlessrepo:CreateCloudFormationTemplate",
+        "serverlessrepo:GetCloudFormationTemplate",
+        "cloudformation:CreateStack",
+        "cloudformation:DeleteStack",
+        "cloudformation:DescribeStacks",
+        "cloudformation:CreateChangeSet",
+        "iam:AttachRolePolicy",
+        "iam:DetachRolePolicy",
+        "iam:DeleteRolePolicy",
+        "iam:PutRolePolicy",
+        "iam:CreateRole",
+        "iam:TagRole",
+        "iam:DeleteRole",
+        "iam:GetRole",
+        "iam:GetRolePolicy",
+        "iam:PassRole",
+        "lambda:DeleteFunction",
+        "lambda:CreateFunction",
+        "lambda:TagResource",
+        "lambda:GetFunction",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs",
+        "secretsmanager:ListSecrets",
+        "glue:GetConnection",
+        "ecr:BatchGetImage",
+        "ecr:GetDownloadUrlForLayer"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "athena:DeleteDataCatalog",
+        "athena:GetDataCatalog",
+        "glue:GetConnection",
+        "glue:UpdateConnection",
+        "cloudformation:DeleteStack",
+        "cloudformation:DescribeStacks",
+        "lambda:DeleteFunction",
+        "iam:DeleteRole",
+        "iam:DeleteRolePolicy",
+        "iam:DetachRolePolicy",
+        "s3:ListBucket"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "athena:ListDataCatalogs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "athena:GetDataCatalog",
+        "athena:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "athena:UpdateDataCatalog",
+        "athena:TagResource",
+        "athena:GetDataCatalog",
+        "athena:UntagResource",
+        "athena:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Athena::DataCatalog"
+}

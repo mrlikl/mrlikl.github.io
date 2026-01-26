@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediapackage-vod:CreatePackagingGroup",
+        "mediapackage-vod:DescribePackagingGroup",
+        "mediapackage-vod:TagResource",
+        "mediapackage-vod:ConfigureLogs",
+        "iam:PassRole",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediapackage-vod:DescribePackagingGroup",
+        "mediapackage-vod:DeletePackagingGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediapackage-vod:ListPackagingGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediapackage-vod:DescribePackagingGroup"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediapackage-vod:DescribePackagingGroup",
+        "mediapackage-vod:UpdatePackagingGroup",
+        "mediapackage-vod:ConfigureLogs",
+        "mediapackage-vod:TagResource",
+        "iam:PassRole",
+        "iam:CreateServiceLinkedRole"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaPackage::PackagingGroup"
+}

@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "omics:CreateSequenceStore",
+        "omics:GetSequenceStore",
+        "omics:GetS3AccessPolicy",
+        "omics:PutS3AccessPolicy",
+        "omics:ListTagsForResource",
+        "omics:TagResource",
+        "kms:DescribeKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "omics:DeleteSequenceStore"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "omics:ListSequenceStores"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "omics:GetS3AccessPolicy",
+        "omics:GetSequenceStore",
+        "omics:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "omics:UpdateSequenceStore",
+        "omics:GetSequenceStore",
+        "omics:TagResource",
+        "omics:UntagResource",
+        "omics:ListTagsForResource",
+        "omics:GetS3AccessPolicy",
+        "omics:DeleteS3AccessPolicy",
+        "omics:PutS3AccessPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::Omics::SequenceStore"
+}

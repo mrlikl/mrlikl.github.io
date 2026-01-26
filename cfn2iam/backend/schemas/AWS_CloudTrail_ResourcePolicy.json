@@ -1,0 +1,27 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "CloudTrail:PutResourcePolicy",
+        "CloudTrail:GetResourcePolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "CloudTrail:DeleteResourcePolicy"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "CloudTrail:GetResourcePolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "CloudTrail:PutResourcePolicy",
+        "CloudTrail:GetResourcePolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudTrail::ResourcePolicy"
+}

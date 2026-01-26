@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appconfig:CreateDeploymentStrategy",
+        "appconfig:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appconfig:DeleteDeploymentStrategy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "appconfig:ListDeploymentStrategies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appconfig:GetDeploymentStrategy",
+        "appconfig:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appconfig:UpdateDeploymentStrategy",
+        "appconfig:TagResource",
+        "appconfig:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::AppConfig::DeploymentStrategy"
+}

@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "databrew:CreateRecipe",
+        "databrew:DescribeRecipe",
+        "databrew:TagResource",
+        "databrew:UntagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "databrew:DeleteRecipeVersion"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "databrew:ListRecipes",
+        "iam:ListRoles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "databrew:DescribeRecipe",
+        "databrew:ListTagsForResource",
+        "iam:ListRoles"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "databrew:UpdateRecipe",
+        "databrew:TagResource",
+        "databrew:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::DataBrew::Recipe"
+}

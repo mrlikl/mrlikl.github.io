@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "datazone:CreateEnvironmentAction",
+        "datazone:GetEnvironmentAction",
+        "datazone:DeleteEnvironmentAction"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "datazone:DeleteEnvironmentAction",
+        "datazone:GetEnvironmentAction"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainIdentifier": {
+            "$ref": "resource-schema.json#/properties/DomainIdentifier"
+          },
+          "EnvironmentIdentifier": {
+            "$ref": "resource-schema.json#/properties/EnvironmentIdentifier"
+          }
+        },
+        "required": [
+          "DomainIdentifier",
+          "EnvironmentIdentifier"
+        ]
+      },
+      "permissions": [
+        "datazone:ListEnvironmentActions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "datazone:GetEnvironmentAction"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "datazone:UpdateEnvironmentAction",
+        "datazone:GetEnvironmentAction",
+        "datazone:DeleteEnvironmentAction"
+      ]
+    }
+  },
+  "typeName": "AWS::DataZone::EnvironmentActions"
+}

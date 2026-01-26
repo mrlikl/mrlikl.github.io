@@ -1,0 +1,58 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "datazone:AddEntityOwner",
+        "datazone:ListEntityOwners",
+        "datazone:GetGroupProfile",
+        "datazone:GetUserProfile",
+        "iam:GetRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "datazone:RemoveEntityOwner",
+        "datazone:GetUserProfile",
+        "iam:GetRole"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainIdentifier": {
+            "description": "The ID of the domain in which you want to add the entity owner.",
+            "pattern": "^dzd[-_][a-zA-Z0-9_-]{1,36}$",
+            "type": "string"
+          },
+          "EntityIdentifier": {
+            "description": "The ID of the entity to which you want to add an owner.",
+            "type": "string"
+          },
+          "EntityType": {
+            "description": "The type of an entity.",
+            "enum": [
+              "DOMAIN_UNIT"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "DomainIdentifier",
+          "EntityType",
+          "EntityIdentifier"
+        ]
+      },
+      "permissions": [
+        "datazone:ListEntityOwners",
+        "iam:GetRole"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "datazone:ListEntityOwners",
+        "iam:GetRole"
+      ]
+    }
+  },
+  "typeName": "AWS::DataZone::Owner"
+}

@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appsync:CreateDataSource",
+        "appsync:GetDataSource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appsync:DeleteDataSource",
+        "appsync:GetDataSource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ApiId": {
+            "$ref": "resource-schema.json#/properties/ApiId"
+          }
+        },
+        "required": [
+          "ApiId"
+        ]
+      },
+      "permissions": [
+        "appsync:ListDataSources"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appsync:GetDataSource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appsync:UpdateDataSource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::AppSync::DataSource"
+}

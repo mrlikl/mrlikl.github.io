@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "servicecatalog:CreateConstraint",
+        "servicecatalog:DescribeConstraint",
+        "sns:GetTopicAttributes"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "servicecatalog:DeleteConstraint"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "PortfolioId": {
+            "$ref": "resource-schema.json#/properties/PortfolioId"
+          }
+        },
+        "required": [
+          "PortfolioId"
+        ]
+      },
+      "permissions": [
+        "servicecatalog:ListConstraintsForPortfolio"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "servicecatalog:DescribeConstraint"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "servicecatalog:UpdateConstraint",
+        "servicecatalog:DescribeConstraint",
+        "sns:GetTopicAttributes"
+      ]
+    }
+  },
+  "typeName": "AWS::ServiceCatalog::LaunchNotificationConstraint"
+}

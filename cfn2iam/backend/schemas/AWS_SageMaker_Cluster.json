@@ -1,0 +1,77 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateCluster",
+        "sagemaker:DescribeCluster",
+        "sagemaker:UpdateClusterSoftware",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags",
+        "sagemaker:BatchAddClusterNodes",
+        "sagemaker:BatchDeleteClusterNodes",
+        "eks:DescribeAccessEntry",
+        "eks:DescribeCluster",
+        "eks:CreateAccessEntry",
+        "eks:DeleteAccessEntry",
+        "eks:AssociateAccessPolicy",
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
+        "kms:DescribeKey",
+        "kms:CreateGrant",
+        "ec2:DescribeImages",
+        "ec2:DescribeSnapshots",
+        "ec2:ModifyImageAttribute",
+        "ec2:ModifySnapshotAttribute"
+      ],
+      "timeoutInMinutes": 720
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteCluster",
+        "sagemaker:DescribeCluster",
+        "eks:DescribeAccessEntry",
+        "eks:DeleteAccessEntry"
+      ],
+      "timeoutInMinutes": 720
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListClusters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeCluster",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateCluster",
+        "sagemaker:UpdateClusterSoftware",
+        "sagemaker:DescribeCluster",
+        "sagemaker:ListTags",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:BatchAddClusterNodes",
+        "sagemaker:BatchDeleteClusterNodes",
+        "eks:DescribeAccessEntry",
+        "eks:DescribeCluster",
+        "eks:CreateAccessEntry",
+        "eks:DeleteAccessEntry",
+        "eks:AssociateAccessPolicy",
+        "iam:PassRole",
+        "kms:DescribeKey",
+        "kms:CreateGrant",
+        "sagemaker:BatchAddClusterNodes",
+        "sagemaker:BatchDeleteClusterNodes",
+        "ec2:DescribeImages",
+        "ec2:DescribeSnapshots",
+        "ec2:ModifyImageAttribute",
+        "ec2:ModifySnapshotAttribute"
+      ],
+      "timeoutInMinutes": 720
+    }
+  },
+  "typeName": "AWS::SageMaker::Cluster"
+}

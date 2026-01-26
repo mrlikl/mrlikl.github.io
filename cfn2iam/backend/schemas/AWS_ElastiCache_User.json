@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticache:CreateUser",
+        "elasticache:DescribeUsers",
+        "elasticache:ListTagsForResource",
+        "elasticache:AddTagsToResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "elasticache:DeleteUser",
+        "elasticache:DescribeUsers"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "elasticache:DescribeUsers",
+        "elasticache:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticache:DescribeUsers",
+        "elasticache:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "elasticache:ModifyUser",
+        "elasticache:DescribeUsers",
+        "elasticache:ListTagsForResource",
+        "elasticache:AddTagsToResource",
+        "elasticache:RemoveTagsFromResource"
+      ]
+    }
+  },
+  "typeName": "AWS::ElastiCache::User"
+}

@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:TagResource",
+        "ses:CreateMultiRegionEndpoint",
+        "ses:GetMultiRegionEndpoint",
+        "ses:ListTagsForResource",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:DeleteMultiRegionEndpoint",
+        "ses:GetMultiRegionEndpoint"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListMultiRegionEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:GetMultiRegionEndpoint",
+        "ses:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:GetMultiRegionEndpoint",
+        "ses:TagResource",
+        "ses:ListTagsForResource",
+        "ses:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::MultiRegionEndpoint"
+}

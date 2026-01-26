@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:TagResource",
+        "ses:ListTagsForResource",
+        "ses:GetArchive",
+        "ses:CreateArchive",
+        "iam:CreateServiceLinkedRole",
+        "kms:DescribeKey",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:GetArchive",
+        "ses:DeleteArchive"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListArchives"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:ListTagsForResource",
+        "ses:GetArchive"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:TagResource",
+        "ses:UntagResource",
+        "ses:ListTagsForResource",
+        "ses:GetArchive",
+        "ses:UpdateArchive"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::MailManagerArchive"
+}

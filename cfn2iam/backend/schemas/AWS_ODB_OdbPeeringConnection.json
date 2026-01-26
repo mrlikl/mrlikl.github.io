@@ -1,0 +1,53 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "odb:CreateOdbPeeringConnection",
+        "odb:TagResource",
+        "iam:CreateServiceLinkedRole",
+        "ec2:DescribeVpcs",
+        "ec2:CreateOdbNetworkPeering",
+        "ec2:ModifyOdbNetworkPeering",
+        "odb:GetOdbPeeringConnection",
+        "odb:ListTagsForResource",
+        "sts:GetCallerIdentity"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "odb:DeleteOdbPeeringConnection",
+        "ec2:DescribeVpcs",
+        "ec2:DeleteOdbNetworkPeering",
+        "odb:GetOdbPeeringConnection",
+        "odb:UntagResource",
+        "odb:ListTagsForResource",
+        "sts:GetCallerIdentity"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "odb:ListOdbPeeringConnections",
+        "odb:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "odb:GetOdbPeeringConnection",
+        "odb:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "odb:UpdateOdbPeeringConnection",
+        "odb:GetOdbPeeringConnection",
+        "odb:TagResource",
+        "odb:UntagResource",
+        "odb:ListTagsForResource",
+        "ec2:DescribeVpcs",
+        "ec2:ModifyOdbNetworkPeering",
+        "sts:GetCallerIdentity"
+      ]
+    }
+  },
+  "typeName": "AWS::ODB::OdbPeeringConnection"
+}

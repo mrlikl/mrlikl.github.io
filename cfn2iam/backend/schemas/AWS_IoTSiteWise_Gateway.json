@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iotsitewise:CreateGateway",
+        "iotsitewise:DescribeGateway",
+        "iotsitewise:DescribeGatewayCapabilityConfiguration",
+        "iotsitewise:UpdateGatewayCapabilityConfiguration",
+        "iam:PassRole",
+        "iam:GetRole",
+        "iotsitewise:ListTagsForResource",
+        "iotsitewise:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iotsitewise:DescribeGateway",
+        "iotsitewise:DescribeGatewayCapabilityConfiguration",
+        "iotsitewise:DeleteGateway"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iotsitewise:ListGateways",
+        "iotsitewise:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iotsitewise:DescribeGateway",
+        "iotsitewise:DescribeGatewayCapabilityConfiguration",
+        "iotsitewise:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iotsitewise:UpdateGateway",
+        "iotsitewise:UpdateGatewayCapabilityConfiguration",
+        "iotsitewise:TagResource",
+        "iotsitewise:UntagResource",
+        "iotsitewise:DescribeGateway",
+        "iotsitewise:DescribeGatewayCapabilityConfiguration",
+        "iotsitewise:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTSiteWise::Gateway"
+}

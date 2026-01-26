@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cases:CreateField",
+        "cases:BatchGetField",
+        "cases:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cases:DeleteField",
+        "cases:UntagResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainId": {
+            "$ref": "resource-schema.json#/properties/DomainId"
+          }
+        },
+        "required": [
+          "DomainId"
+        ]
+      },
+      "permissions": [
+        "cases:ListFields"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cases:BatchGetField"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cases:UpdateField",
+        "cases:TagResource",
+        "cases:UntagResource",
+        "cases:BatchGetField"
+      ]
+    }
+  },
+  "typeName": "AWS::Cases::Field"
+}

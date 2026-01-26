@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudfront:CreateKeyValueStore",
+        "cloudfront:DescribeKeyValueStore",
+        "cloudfront:TagResource",
+        "s3:GetObject",
+        "s3:HeadObject",
+        "s3:GetBucketLocation"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudfront:DeleteKeyValueStore",
+        "cloudfront:DescribeKeyValueStore"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudfront:ListKeyValueStores"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudfront:DescribeKeyValueStore",
+        "cloudfront:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudfront:UpdateKeyValueStore",
+        "cloudfront:DescribeKeyValueStore",
+        "cloudfront:TagResource",
+        "cloudfront:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFront::KeyValueStore"
+}

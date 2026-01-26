@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "gamelift:CreateAlias",
+        "gamelift:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "gamelift:DeleteAlias"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "gamelift:ListAliases"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "gamelift:DescribeAlias",
+        "gamelift:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "gamelift:UpdateAlias",
+        "gamelift:DescribeAlias",
+        "gamelift:ListTagsForResource",
+        "gamelift:TagResource",
+        "gamelift:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::GameLift::Alias"
+}

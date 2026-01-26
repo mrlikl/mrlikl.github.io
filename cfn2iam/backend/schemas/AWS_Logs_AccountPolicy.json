@@ -1,0 +1,78 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "logs:PutAccountPolicy",
+        "logs:PutIndexPolicy",
+        "logs:PutDataProtectionPolicy",
+        "logs:DescribeAccountPolicies",
+        "logs:CreateLogDelivery",
+        "s3:REST.PUT.OBJECT",
+        "firehose:TagDeliveryStream",
+        "logs:PutSubscriptionFilter",
+        "logs:DeleteSubscriptionFilter",
+        "logs:PutTransformer",
+        "logs:PutMetricExtractionPolicy",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "logs:DeleteAccountPolicy",
+        "logs:DeleteIndexPolicy",
+        "logs:DeleteDataProtectionPolicy",
+        "logs:DescribeAccountPolicies",
+        "logs:DeleteSubscriptionFilter",
+        "logs:DeleteTransformer",
+        "logs:DeleteMetricExtractionPolicy",
+        "iam:PassRole"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "PolicyType": {
+            "$ref": "resource-schema.json#/properties/PolicyType"
+          }
+        },
+        "required": [
+          "PolicyType"
+        ]
+      },
+      "permissions": [
+        "logs:DescribeAccountPolicies",
+        "logs:GetTransformer",
+        "logs:GetMetricExtractionPolicy"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "logs:DescribeAccountPolicies",
+        "logs:GetTransformer",
+        "logs:GetMetricExtractionPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "logs:PutAccountPolicy",
+        "logs:PutIndexPolicy",
+        "logs:PutDataProtectionPolicy",
+        "logs:DescribeAccountPolicies",
+        "logs:DeleteAccountPolicy",
+        "logs:DeleteIndexPolicy",
+        "logs:DeleteDataProtectionPolicy",
+        "logs:CreateLogDelivery",
+        "logs:PutSubscriptionFilter",
+        "logs:DeleteSubscriptionFilter",
+        "logs:PutTransformer",
+        "logs:DeleteTransformer",
+        "logs:PutMetricExtractionPolicy",
+        "logs:DeleteMetricExtractionPolicy",
+        "s3:REST.PUT.OBJECT",
+        "firehose:TagDeliveryStream",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::Logs::AccountPolicy"
+}

@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateIntegration",
+        "glue:DescribeIntegrations",
+        "glue:TagResource",
+        "glue:GetTags",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "glue:CreateInboundIntegration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:UntagResource",
+        "glue:DeleteIntegration",
+        "glue:DescribeIntegrations"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:DescribeIntegrations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:DescribeIntegrations",
+        "glue:GetTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:DescribeIntegrations",
+        "glue:ModifyIntegration",
+        "glue:TagResource",
+        "glue:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Glue::Integration"
+}

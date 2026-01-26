@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lightsail:PutAlarm",
+        "lightsail:GetAlarms"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lightsail:DeleteAlarm",
+        "lightsail:GetAlarms"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "lightsail:GetAlarms"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lightsail:GetAlarms"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lightsail:PutAlarm",
+        "lightsail:GetAlarms"
+      ]
+    }
+  },
+  "typeName": "AWS::Lightsail::Alarm"
+}
