@@ -2,12 +2,16 @@
   "handlers": {
     "create": {
       "permissions": [
-        "license-manager:CreateGrant"
+        "license-manager:CreateGrant",
+        "license-manager:CreateGrantVersion",
+        "license-manager:GetGrant",
+        "license-manager:TagResource"
       ]
     },
     "delete": {
       "permissions": [
-        "license-manager:DeleteGrant"
+        "license-manager:DeleteGrant",
+        "license-manager:GetGrant"
       ]
     },
     "list": {
@@ -17,12 +21,16 @@
     },
     "read": {
       "permissions": [
-        "license-manager:GetGrant"
+        "license-manager:GetGrant",
+        "license-manager:ListTagsForResource"
       ]
     },
     "update": {
       "permissions": [
-        "license-manager:CreateGrantVersion"
+        "license-manager:CreateGrantVersion",
+        "license-manager:GetGrant",
+        "license-manager:TagResource",
+        "license-manager:UntagResource"
       ]
     }
   },

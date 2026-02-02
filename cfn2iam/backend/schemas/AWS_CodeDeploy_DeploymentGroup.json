@@ -1,4 +1,66 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "codedeploy:CreateDeploymentGroup",
+        "codedeploy:CreateDeployment",
+        "codedeploy:GetDeployment",
+        "codedeploy:GetDeploymentConfig",
+        "codedeploy:GetApplicationRevision",
+        "codedeploy:ListDeployments",
+        "codedeploy:RegisterApplicationRevision",
+        "codedeploy:RegisterOnPremisesInstance",
+        "codedeploy:TagResource",
+        "codedeploy:UntagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "codedeploy:DeleteDeploymentGroup",
+        "codedeploy:GetDeploymentGroup"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ApplicationName": {
+            "description": "The name of the CodeDeploy application this deployment group is associated with.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "ApplicationName"
+        ]
+      },
+      "permissions": [
+        "codedeploy:ListDeploymentGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "codedeploy:GetDeploymentGroup",
+        "codedeploy:ListTagsForResource",
+        "codedeploy:ListDeployments",
+        "codedeploy:GetDeployment"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "codedeploy:UpdateDeploymentGroup",
+        "codedeploy:TagResource",
+        "codedeploy:UntagResource",
+        "codedeploy:GetDeployment",
+        "codedeploy:CreateDeployment",
+        "codedeploy:GetDeploymentConfig",
+        "codedeploy:GetApplicationRevision",
+        "codedeploy:StopDeployment",
+        "codedeploy:ListDeployments",
+        "codedeploy:RegisterApplicationRevision",
+        "codedeploy:RegisterOnPremisesInstance",
+        "iam:PassRole"
+      ]
+    }
+  },
   "typeName": "AWS::CodeDeploy::DeploymentGroup"
 }

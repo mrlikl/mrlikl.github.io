@@ -45,7 +45,8 @@
         "connect:UntagResource",
         "connect:AssociateUserProficiencies",
         "connect:DisassociateUserProficiencies",
-        "connect:UpdateUserProficiencies"
+        "connect:UpdateUserProficiencies",
+        "connect:UpdateUserConfig"
       ]
     }
   },

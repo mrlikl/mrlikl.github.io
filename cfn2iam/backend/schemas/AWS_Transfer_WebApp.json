@@ -19,14 +19,18 @@
         "sso:ListApplicationAuthenticationMethods",
         "sso:PutApplicationAccessScope",
         "sso:GetApplicationAccessScope",
-        "sso:ListApplicationAccessScopes"
+        "sso:ListApplicationAccessScopes",
+        "ec2:CreateVpcEndpoint",
+        "ec2:DescribeVpcEndpoints"
       ]
     },
     "delete": {
       "permissions": [
         "transfer:DeleteWebApp",
         "sso:DescribeApplication",
-        "sso:DeleteApplication"
+        "sso:DeleteApplication",
+        "ec2:DescribeVpcEndpoints",
+        "ec2:DeleteVpcEndpoints"
       ]
     },
     "list": {
@@ -55,7 +59,8 @@
         "sso:ListApplicationGrants",
         "sso:UpdateApplication",
         "sso:DescribeApplication",
-        "sso:ListApplications"
+        "sso:ListApplications",
+        "ec2:ModifyVpcEndpoint"
       ]
     }
   },

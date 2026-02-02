@@ -33,6 +33,7 @@
         "ses:PutConfigurationSetSendingOptions",
         "ses:PutConfigurationSetSuppressionOptions",
         "ses:PutConfigurationSetVdmOptions",
+        "ses:PutConfigurationSetArchivingOptions",
         "ses:DescribeConfigurationSet",
         "ses:UntagResource",
         "ses:TagResource"

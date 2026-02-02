@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-17T16:26:32.685329Z",
+  "lastUpdated": "2026-02-02T03:22:19.482946Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -1293,7 +1293,7 @@
     },
     {
       "filename": "AWS_CodeDeploy_DeploymentGroup.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::CodeDeploy::DeploymentGroup"
     },
     {
@@ -2790,6 +2790,16 @@
       "filename": "AWS_EKS_PodIdentityAssociation.json",
       "hasHandlers": true,
       "typeName": "AWS::EKS::PodIdentityAssociation"
+    },
+    {
+      "filename": "AWS_EMRContainers_Endpoint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EMRContainers::Endpoint"
+    },
+    {
+      "filename": "AWS_EMRContainers_SecurityConfiguration.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EMRContainers::SecurityConfiguration"
     },
     {
       "filename": "AWS_EMRContainers_VirtualCluster.json",
@@ -4312,6 +4322,11 @@
       "typeName": "AWS::Lightsail::Database"
     },
     {
+      "filename": "AWS_Lightsail_DatabaseSnapshot.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Lightsail::DatabaseSnapshot"
+    },
+    {
       "filename": "AWS_Lightsail_Disk.json",
       "hasHandlers": true,
       "typeName": "AWS::Lightsail::Disk"
@@ -4505,6 +4520,11 @@
       "filename": "AWS_MSK_VpcConnection.json",
       "hasHandlers": true,
       "typeName": "AWS::MSK::VpcConnection"
+    },
+    {
+      "filename": "AWS_MWAAServerless_Workflow.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MWAAServerless::Workflow"
     },
     {
       "filename": "AWS_MWAA_Environment.json",
@@ -6573,7 +6593,7 @@
     },
     {
       "filename": "AWS_ServiceCatalog_LaunchRoleConstraint.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ServiceCatalog::LaunchRoleConstraint"
     },
     {
@@ -7187,5 +7207,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1437
+  "totalSchemas": 1441
 }
