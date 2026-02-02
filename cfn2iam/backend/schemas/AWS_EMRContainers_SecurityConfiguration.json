@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "emr-containers:CreateSecurityConfiguration",
+        "emr-containers:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "emr-containers:DeleteSecurityConfiguration",
+        "emr-containers:DescribeSecurityConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "emr-containers:ListSecurityConfigurations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "emr-containers:DescribeSecurityConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "emr-containers:DescribeSecurityConfiguration",
+        "emr-containers:ListTagsForResource",
+        "emr-containers:TagResource",
+        "emr-containers:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::EMRContainers::SecurityConfiguration"
+}

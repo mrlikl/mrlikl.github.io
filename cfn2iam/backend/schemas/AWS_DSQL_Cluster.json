@@ -30,9 +30,7 @@
     "list": {
       "permissions": [
         "dsql:ListClusters",
-        "dsql:ListTagsForResource",
-        "tag:GetTagKeys",
-        "tag:GetTagValues"
+        "dsql:ListTagsForResource"
       ]
     },
     "read": {
@@ -40,9 +38,7 @@
         "dsql:GetCluster",
         "dsql:GetClusterPolicy",
         "dsql:GetVpcEndpointServiceName",
-        "dsql:ListTagsForResource",
-        "tag:GetTagKeys",
-        "tag:GetTagValues"
+        "dsql:ListTagsForResource"
       ]
     },
     "update": {

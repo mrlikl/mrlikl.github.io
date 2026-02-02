@@ -5,7 +5,8 @@
         "ses:CreateEmailTemplate",
         "ses:GetEmailTemplate",
         "ses:CreateTemplate",
-        "ses:GetTemplate"
+        "ses:GetTemplate",
+        "ses:TagResource"
       ]
     },
     "delete": {
@@ -23,7 +24,8 @@
     "read": {
       "permissions": [
         "ses:GetEmailTemplate",
-        "ses:GetTemplate"
+        "ses:GetTemplate",
+        "ses:ListTagsForResource"
       ]
     },
     "update": {
@@ -31,7 +33,9 @@
         "ses:GetEmailTemplate",
         "ses:UpdateEmailTemplate",
         "ses:GetTemplate",
-        "ses:UpdateTemplate"
+        "ses:UpdateTemplate",
+        "ses:TagResource",
+        "ses:UntagResource"
       ]
     }
   },

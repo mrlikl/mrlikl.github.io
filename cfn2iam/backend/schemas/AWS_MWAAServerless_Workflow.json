@@ -1,0 +1,56 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3:GetObject",
+        "s3:GetObjectVersion",
+        "logs:CreateLogGroup",
+        "logs:DescribeLogGroups",
+        "iam:GetRole",
+        "iam:PassRole",
+        "airflow-serverless:CreateWorkflow",
+        "airflow-serverless:GetWorkflow",
+        "airflow-serverless:TagResource",
+        "iam:CreateServiceLinkedRole",
+        "kms:CreateGrant",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "airflow-serverless:GetWorkflow",
+        "airflow-serverless:DeleteWorkflow",
+        "airflow-serverless:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "airflow-serverless:ListWorkflows",
+        "airflow-serverless:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "airflow-serverless:GetWorkflow",
+        "airflow-serverless:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3:GetObject",
+        "s3:GetObjectVersion",
+        "logs:CreateLogGroup",
+        "logs:DescribeLogGroups",
+        "iam:GetRole",
+        "iam:PassRole",
+        "airflow-serverless:UpdateWorkflow",
+        "airflow-serverless:TagResource",
+        "airflow-serverless:UntagResource",
+        "kms:CreateGrant",
+        "kms:GenerateDataKey"
+      ]
+    }
+  },
+  "typeName": "AWS::MWAAServerless::Workflow"
+}

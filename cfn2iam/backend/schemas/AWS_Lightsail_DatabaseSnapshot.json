@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lightsail:CreateRelationalDatabaseSnapshot",
+        "lightsail:GetRelationalDatabaseSnapshot",
+        "lightsail:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lightsail:DeleteRelationalDatabaseSnapshot",
+        "lightsail:GetRelationalDatabaseSnapshot"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "lightsail:GetRelationalDatabaseSnapshots"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lightsail:GetRelationalDatabaseSnapshot"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lightsail:GetRelationalDatabaseSnapshot",
+        "lightsail:TagResource",
+        "lightsail:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Lightsail::DatabaseSnapshot"
+}

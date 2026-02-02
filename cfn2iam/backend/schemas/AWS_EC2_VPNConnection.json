@@ -26,6 +26,9 @@
     "update": {
       "permissions": [
         "ec2:DescribeVpnConnections",
+        "ec2:ModifyVpnConnection",
+        "ec2:ModifyVpnConnectionOptions",
+        "ec2:ModifyVpnTunnelOptions",
         "ec2:CreateTags",
         "ec2:DeleteTags"
       ]
