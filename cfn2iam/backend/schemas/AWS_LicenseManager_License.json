@@ -5,13 +5,15 @@
         "license-manager:CreateLicense",
         "license-manager:GetLicense",
         "license-manager:TagResource",
+        "license-manager:ListTagsForResource",
         "kms:CreateGrant"
       ]
     },
     "delete": {
       "permissions": [
         "license-manager:DeleteLicense",
-        "license-manager:GetLicense"
+        "license-manager:GetLicense",
+        "license-manager:ListTagsForResource"
       ]
     },
     "list": {
@@ -30,7 +32,8 @@
         "license-manager:CreateLicenseVersion",
         "license-manager:GetLicense",
         "license-manager:TagResource",
-        "license-manager:UntagResource"
+        "license-manager:UntagResource",
+        "license-manager:ListTagsForResource"
       ]
     }
   },
