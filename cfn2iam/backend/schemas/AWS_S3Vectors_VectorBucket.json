@@ -4,6 +4,7 @@
       "permissions": [
         "s3vectors:GetVectorBucket",
         "s3vectors:CreateVectorBucket",
+        "s3vectors:TagResource",
         "kms:GenerateDataKey"
       ]
     },
@@ -20,7 +21,16 @@
     },
     "read": {
       "permissions": [
-        "s3vectors:GetVectorBucket"
+        "s3vectors:GetVectorBucket",
+        "s3vectors:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3vectors:GetVectorBucket",
+        "s3vectors:TagResource",
+        "s3vectors:UntagResource",
+        "s3vectors:ListTagsForResource"
       ]
     }
   },

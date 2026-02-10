@@ -4,6 +4,7 @@
       "permissions": [
         "s3vectors:GetIndex",
         "s3vectors:CreateIndex",
+        "s3vectors:TagResource",
         "kms:GenerateDataKey",
         "kms:Decrypt"
       ]
@@ -43,7 +44,16 @@
     },
     "read": {
       "permissions": [
-        "s3vectors:GetIndex"
+        "s3vectors:GetIndex",
+        "s3vectors:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3vectors:GetIndex",
+        "s3vectors:TagResource",
+        "s3vectors:UntagResource",
+        "s3vectors:ListTagsForResource"
       ]
     }
   },
