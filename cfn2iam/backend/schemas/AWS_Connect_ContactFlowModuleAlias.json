@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "connect:CreateContactFlowModuleAlias",
+        "connect:DescribeContactFlowModuleAlias"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "connect:DeleteContactFlowModuleAlias"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ContactFlowModuleId": {
+            "$ref": "resource-schema.json#/properties/ContactFlowModuleId"
+          }
+        },
+        "required": [
+          "ContactFlowModuleId"
+        ]
+      },
+      "permissions": [
+        "connect:ListContactFlowModuleAliases"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "connect:DescribeContactFlowModuleAlias"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "connect:UpdateContactFlowModuleAlias",
+        "connect:DescribeContactFlowModuleAlias"
+      ]
+    }
+  },
+  "typeName": "AWS::Connect::ContactFlowModuleAlias"
+}

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-08T03:55:01.945617Z",
+  "lastUpdated": "2026-02-15T03:43:15.524204Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -1212,6 +1212,11 @@
       "typeName": "AWS::CloudWatch::Alarm"
     },
     {
+      "filename": "AWS_CloudWatch_AlarmMuteRule.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudWatch::AlarmMuteRule"
+    },
+    {
       "filename": "AWS_CloudWatch_AnomalyDetector.json",
       "hasHandlers": false,
       "typeName": "AWS::CloudWatch::AnomalyDetector"
@@ -1517,6 +1522,16 @@
       "typeName": "AWS::Connect::ContactFlowModule"
     },
     {
+      "filename": "AWS_Connect_ContactFlowModuleAlias.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Connect::ContactFlowModuleAlias"
+    },
+    {
+      "filename": "AWS_Connect_ContactFlowModuleVersion.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Connect::ContactFlowModuleVersion"
+    },
+    {
       "filename": "AWS_Connect_ContactFlowVersion.json",
       "hasHandlers": true,
       "typeName": "AWS::Connect::ContactFlowVersion"
@@ -1565,6 +1580,11 @@
       "filename": "AWS_Connect_IntegrationAssociation.json",
       "hasHandlers": true,
       "typeName": "AWS::Connect::IntegrationAssociation"
+    },
+    {
+      "filename": "AWS_Connect_Notification.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Connect::Notification"
     },
     {
       "filename": "AWS_Connect_PhoneNumber.json",
@@ -2215,6 +2235,11 @@
       "filename": "AWS_EC2_IPAMPoolCidr.json",
       "hasHandlers": true,
       "typeName": "AWS::EC2::IPAMPoolCidr"
+    },
+    {
+      "filename": "AWS_EC2_IPAMPrefixListResolver.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::IPAMPrefixListResolver"
     },
     {
       "filename": "AWS_EC2_IPAMResourceDiscovery.json",
@@ -2873,7 +2898,7 @@
     },
     {
       "filename": "AWS_ElastiCache_ReplicationGroup.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ElastiCache::ReplicationGroup"
     },
     {
@@ -4457,6 +4482,11 @@
       "typeName": "AWS::Logs::ResourcePolicy"
     },
     {
+      "filename": "AWS_Logs_ScheduledQuery.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Logs::ScheduledQuery"
+    },
+    {
       "filename": "AWS_Logs_SubscriptionFilter.json",
       "hasHandlers": true,
       "typeName": "AWS::Logs::SubscriptionFilter"
@@ -4515,6 +4545,11 @@
       "filename": "AWS_MSK_ServerlessCluster.json",
       "hasHandlers": true,
       "typeName": "AWS::MSK::ServerlessCluster"
+    },
+    {
+      "filename": "AWS_MSK_Topic.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MSK::Topic"
     },
     {
       "filename": "AWS_MSK_VpcConnection.json",
@@ -5982,6 +6017,11 @@
       "typeName": "AWS::SES::ContactList"
     },
     {
+      "filename": "AWS_SES_CustomVerificationEmailTemplate.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SES::CustomVerificationEmailTemplate"
+    },
+    {
       "filename": "AWS_SES_DedicatedIpPool.json",
       "hasHandlers": true,
       "typeName": "AWS::SES::DedicatedIpPool"
@@ -6673,7 +6713,7 @@
     },
     {
       "filename": "AWS_ServiceDiscovery_Service.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ServiceDiscovery::Service"
     },
     {
@@ -7158,7 +7198,7 @@
     },
     {
       "filename": "AWS_WorkSpaces_Workspace.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::WorkSpaces::Workspace"
     },
     {
@@ -7207,5 +7247,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1441
+  "totalSchemas": 1449
 }

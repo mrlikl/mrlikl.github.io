@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudwatch:PutAlarmMuteRule",
+        "cloudwatch:GetAlarmMuteRule",
+        "cloudwatch:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudwatch:GetAlarmMuteRule",
+        "cloudwatch:DeleteAlarmMuteRule"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudwatch:ListAlarmMuteRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudwatch:GetAlarmMuteRule",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudwatch:GetAlarmMuteRule",
+        "cloudwatch:PutAlarmMuteRule",
+        "cloudwatch:TagResource",
+        "cloudwatch:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudWatch::AlarmMuteRule"
+}

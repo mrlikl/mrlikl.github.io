@@ -5,7 +5,13 @@
         "verifiedpermissions:CreatePolicyStore",
         "verifiedpermissions:TagResource",
         "verifiedpermissions:GetPolicyStore",
-        "verifiedpermissions:PutSchema"
+        "verifiedpermissions:PutSchema",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:Encrypt",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo"
       ]
     },
     "delete": {
@@ -35,7 +41,8 @@
         "verifiedpermissions:TagResource",
         "verifiedpermissions:UntagResource",
         "verifiedpermissions:GetSchema",
-        "verifiedpermissions:PutSchema"
+        "verifiedpermissions:PutSchema",
+        "kms:Decrypt"
       ]
     }
   },
