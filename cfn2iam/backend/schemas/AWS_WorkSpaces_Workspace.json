@@ -1,4 +1,44 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "workspaces:DescribeWorkspaces",
+        "workspaces:CreateWorkspaces",
+        "workspaces:CreateTags",
+        "kms:CreateGrant",
+        "kms:DescribeKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "workspaces:DescribeWorkspaces",
+        "workspaces:TerminateWorkspaces"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "workspaces:DescribeWorkspaces",
+        "workspaces:DescribeTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "workspaces:DescribeWorkspaces",
+        "workspaces:DescribeTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "workspaces:DescribeWorkspaces",
+        "workspaces:DescribeWorkspaceBundles",
+        "workspaces:ModifyWorkspaceProperties",
+        "workspaces:DescribeTags",
+        "workspaces:CreateTags",
+        "workspaces:DeleteTags",
+        "kms:CreateGrant",
+        "kms:DescribeKey"
+      ]
+    }
+  },
   "typeName": "AWS::WorkSpaces::Workspace"
 }

@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:CreateCustomVerificationEmailTemplate",
+        "ses:GetCustomVerificationEmailTemplate",
+        "ses:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:DeleteCustomVerificationEmailTemplate",
+        "ses:GetCustomVerificationEmailTemplate"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListCustomVerificationEmailTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:GetCustomVerificationEmailTemplate"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:UpdateCustomVerificationEmailTemplate",
+        "ses:GetCustomVerificationEmailTemplate",
+        "ses:TagResource",
+        "ses:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::CustomVerificationEmailTemplate"
+}

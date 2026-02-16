@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "kafka-cluster:Connect",
+        "kafka-cluster:DescribeTopic",
+        "kafka-cluster:DescribeTopicDynamicConfiguration",
+        "kafka-cluster:CreateTopic"
+      ],
+      "timeoutInMinutes": 5
+    },
+    "delete": {
+      "permissions": [
+        "kafka-cluster:Connect",
+        "kafka-cluster:DescribeTopic",
+        "kafka-cluster:DescribeTopicDynamicConfiguration",
+        "kafka-cluster:DeleteTopic"
+      ],
+      "timeoutInMinutes": 5
+    },
+    "list": {
+      "permissions": [
+        "kafka-cluster:Connect",
+        "kafka-cluster:DescribeTopic"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "kafka-cluster:Connect",
+        "kafka-cluster:DescribeTopic",
+        "kafka-cluster:DescribeTopicDynamicConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "kafka-cluster:Connect",
+        "kafka-cluster:DescribeTopic",
+        "kafka-cluster:AlterTopic",
+        "kafka-cluster:AlterTopicDynamicConfiguration"
+      ],
+      "timeoutInMinutes": 5
+    }
+  },
+  "typeName": "AWS::MSK::Topic"
+}

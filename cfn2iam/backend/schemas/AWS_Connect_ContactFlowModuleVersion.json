@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "connect:CreateContactFlowModuleVersion",
+        "connect:DescribeContactFlowModule"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "connect:DeleteContactFlowModuleVersion"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ContactFlowModuleId": {
+            "$ref": "resource-schema.json#/properties/ContactFlowModuleId"
+          }
+        },
+        "required": [
+          "ContactFlowModuleId"
+        ]
+      },
+      "permissions": [
+        "connect:ListContactFlowModuleVersions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "connect:DescribeContactFlowModule"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "connect:DescribeContactFlowModule"
+      ]
+    }
+  },
+  "typeName": "AWS::Connect::ContactFlowModuleVersion"
+}

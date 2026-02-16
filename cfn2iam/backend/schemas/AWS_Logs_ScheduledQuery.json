@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "logs:CreateScheduledQuery",
+        "logs:GetScheduledQuery",
+        "logs:StartQuery",
+        "logs:TagResource",
+        "iam:PassRole",
+        "logs:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "logs:DeleteScheduledQuery",
+        "logs:GetScheduledQuery",
+        "logs:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "logs:ListScheduledQueries"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "logs:GetScheduledQuery",
+        "logs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "logs:UpdateScheduledQuery",
+        "logs:GetScheduledQuery",
+        "logs:ListTagsForResource",
+        "logs:TagResource",
+        "logs:UntagResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::Logs::ScheduledQuery"
+}
