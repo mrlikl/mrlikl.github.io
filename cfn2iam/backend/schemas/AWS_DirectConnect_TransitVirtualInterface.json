@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "directconnect:CreateTransitVirtualInterface",
+        "directconnect:ConfirmTransitVirtualInterface",
+        "directconnect:DescribeVirtualInterfaces",
+        "directconnect:CreateBGPPeer",
+        "directconnect:TagResource",
+        "sts:AssumeRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "directconnect:DeleteVirtualInterface",
+        "directconnect:DescribeVirtualInterfaces"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "directconnect:DescribeVirtualInterfaces"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "directconnect:DescribeVirtualInterfaces"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "directconnect:UpdateVirtualInterfaceAttributes",
+        "directconnect:AssociateVirtualInterface",
+        "directconnect:DescribeVirtualInterfaces",
+        "directconnect:CreateBGPPeer",
+        "directconnect:DeleteBGPPeer",
+        "directconnect:TagResource",
+        "directconnect:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::DirectConnect::TransitVirtualInterface"
+}

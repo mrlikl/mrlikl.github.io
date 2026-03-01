@@ -20,6 +20,7 @@
       "permissions": [
         "bedrock-agentcore:DeleteAgentRuntime",
         "bedrock-agentcore:DeleteAgentRuntimeEndpoint",
+        "bedrock-agentcore:DeleteWorkloadIdentity",
         "bedrock-agentcore:GetAgentRuntime",
         "bedrock-agentcore:GetAgentRuntimeEndpoint"
       ]

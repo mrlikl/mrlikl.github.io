@@ -1,0 +1,66 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3:ListBucket",
+        "s3:GetBucketPolicy",
+        "timestream-influxdb:CreateDbInstance",
+        "timestream-influxdb:GetDbCluster",
+        "timestream-influxdb:GetDbParameterGroup",
+        "timestream-influxdb:ListDbClusters",
+        "timestream-influxdb:CreateDbCluster",
+        "timestream-influxdb:TagResource",
+        "timestream-influxdb:ListTagsForResource",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeSecurityGroups",
+        "ec2:CreateNetworkInterface",
+        "ec2:DescribeRouteTables",
+        "ec2:DescribeVpcEndpoints",
+        "iam:CreateServiceLinkedRole"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "delete": {
+      "permissions": [
+        "timestream-influxdb:DeleteDbInstance",
+        "timestream-influxdb:GetDbCluster",
+        "timestream-influxdb:ListDbClusters",
+        "timestream-influxdb:DeleteDbCluster"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "list": {
+      "permissions": [
+        "timestream-influxdb:ListDbClusters"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "read": {
+      "permissions": [
+        "timestream-influxdb:GetDbCluster",
+        "timestream-influxdb:ListTagsForResource"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "update": {
+      "permissions": [
+        "s3:ListBucket",
+        "s3:GetBucketPolicy",
+        "timestream-influxdb:UpdateDbInstance",
+        "timestream-influxdb:GetDbCluster",
+        "timestream-influxdb:ListDbClusters",
+        "timestream-influxdb:UpdateDbCluster",
+        "timestream-influxdb:TagResource",
+        "timestream-influxdb:UntagResource",
+        "timestream-influxdb:ListTagsForResource",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcEndpoints",
+        "ec2:DescribeVpcs"
+      ],
+      "timeoutInMinutes": 2160
+    }
+  },
+  "typeName": "AWS::Timestream::InfluxDBCluster"
+}

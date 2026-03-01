@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aoss:CreateCollectionGroup",
+        "aoss:BatchGetCollectionGroup",
+        "aoss:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "aoss:DeleteCollectionGroup",
+        "aoss:BatchGetCollectionGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "aoss:ListCollectionGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aoss:BatchGetCollectionGroup",
+        "aoss:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aoss:UpdateCollectionGroup",
+        "aoss:BatchGetCollectionGroup",
+        "aoss:TagResource",
+        "aoss:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::OpenSearchServerless::CollectionGroup"
+}

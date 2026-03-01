@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aco-automation:CreateAutomationRule",
+        "aco-automation:GetAutomationRule",
+        "aco-automation:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "aco-automation:DeleteAutomationRule",
+        "aco-automation:GetAutomationRule"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "aco-automation:ListAutomationRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aco-automation:GetAutomationRule"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aco-automation:UpdateAutomationRule",
+        "aco-automation:GetAutomationRule",
+        "aco-automation:TagResource",
+        "aco-automation:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::ComputeOptimizer::AutomationRule"
+}

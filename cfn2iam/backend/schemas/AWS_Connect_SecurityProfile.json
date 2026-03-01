@@ -31,6 +31,7 @@
       "permissions": [
         "connect:DescribeSecurityProfile",
         "connect:ListSecurityProfileApplications",
+        "connect:ListSecurityProfileFlowModules",
         "connect:ListSecurityProfilePermissions"
       ]
     },

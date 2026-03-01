@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreateOnlineEvaluationConfig",
+        "bedrock-agentcore:GetOnlineEvaluationConfig",
+        "bedrock-agentcore:TagResource",
+        "iam:PassRole",
+        "logs:DescribeLogGroups",
+        "logs:DescribeIndexPolicies",
+        "logs:PutIndexPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeleteOnlineEvaluationConfig",
+        "bedrock-agentcore:GetOnlineEvaluationConfig"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListOnlineEvaluationConfigs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetOnlineEvaluationConfig",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:UpdateOnlineEvaluationConfig",
+        "bedrock-agentcore:GetOnlineEvaluationConfig",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:UntagResource",
+        "iam:PassRole",
+        "logs:DescribeLogGroups",
+        "logs:DescribeIndexPolicies",
+        "logs:PutIndexPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::OnlineEvaluationConfig"
+}
