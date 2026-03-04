@@ -8,6 +8,8 @@
         "ec2:DescribeVpcs",
         "ec2:CreateOdbNetworkPeering",
         "ec2:ModifyOdbNetworkPeering",
+        "ec2:CreateRoute",
+        "ec2:DescribeRouteTables",
         "odb:GetOdbPeeringConnection",
         "odb:ListTagsForResource",
         "sts:GetCallerIdentity"
@@ -18,6 +20,8 @@
         "odb:DeleteOdbPeeringConnection",
         "ec2:DescribeVpcs",
         "ec2:DeleteOdbNetworkPeering",
+        "ec2:DeleteRoute",
+        "ec2:DescribeRouteTables",
         "odb:GetOdbPeeringConnection",
         "odb:UntagResource",
         "odb:ListTagsForResource",

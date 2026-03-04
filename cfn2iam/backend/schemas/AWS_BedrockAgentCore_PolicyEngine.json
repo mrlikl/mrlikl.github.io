@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreatePolicyEngine",
+        "bedrock-agentcore:GetPolicyEngine",
+        "bedrock-agentcore:TagResource",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:CreateGrant",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeletePolicyEngine",
+        "bedrock-agentcore:GetPolicyEngine",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListPolicyEngines",
+        "kms:Decrypt"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetPolicyEngine",
+        "bedrock-agentcore:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:UpdatePolicyEngine",
+        "bedrock-agentcore:GetPolicyEngine",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:UntagResource",
+        "bedrock-agentcore:ListTagsForResource",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::PolicyEngine"
+}

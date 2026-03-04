@@ -10,12 +10,21 @@
         "fsx:DescribeFileSystems",
         "ec2:DescribeNetworkInterfaces",
         "ec2:DescribeSubnets",
-        "ec2:DescribeSecurityGroups"
+        "ec2:DescribeSecurityGroups",
+        "secretsmanager:CreateSecret",
+        "secretsmanager:PutSecretValue",
+        "secretsmanager:DeleteSecret",
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
       ]
     },
     "delete": {
       "permissions": [
-        "datasync:DeleteLocation"
+        "datasync:DeleteLocation",
+        "secretsmanager:DeleteSecret"
       ]
     },
     "list": {
@@ -38,7 +47,16 @@
         "datasync:UntagResource",
         "fsx:DescribeFileSystems",
         "fsx:DescribeStorageVirtualMachines",
-        "ec2:DescribeNetworkInterfaces"
+        "ec2:DescribeNetworkInterfaces",
+        "secretsmanager:UpdateSecret",
+        "secretsmanager:DeleteSecret",
+        "secretsmanager:PutSecretValue",
+        "secretsmanager:CreateSecret",
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
       ]
     }
   },

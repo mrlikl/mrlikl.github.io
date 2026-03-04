@@ -3,6 +3,7 @@
     "create": {
       "permissions": [
         "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
         "odb:CreateCloudVmCluster",
         "odb:TagResource",
         "odb:GetCloudVmCluster",
@@ -12,7 +13,8 @@
         "ec2:DescribeAvailabilityZones",
         "odb:ListDbNodes",
         "odb:GetDbNode",
-        "odb:CreateDbNode"
+        "odb:CreateDbNode",
+        "odb:AssociateIamRoleToResource"
       ],
       "timeoutInMinutes": 2160
     },
@@ -47,6 +49,7 @@
     },
     "update": {
       "permissions": [
+        "iam:PassRole",
         "odb:TagResource",
         "odb:UntagResource",
         "odb:GetCloudVmCluster",
@@ -54,7 +57,9 @@
         "odb:ListTagsForResource",
         "odb:ListDbNodes",
         "odb:GetDbNode",
-        "sts:GetCallerIdentity"
+        "sts:GetCallerIdentity",
+        "odb:AssociateIamRoleToResource",
+        "odb:DisassociateIamRoleFromResource"
       ]
     }
   },
