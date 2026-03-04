@@ -1,4 +1,35 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ssm:CreateMaintenanceWindow",
+        "ssm:AddTagsToResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ssm:DeleteMaintenanceWindow",
+        "ssm:GetMaintenanceWindow"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ssm:DescribeMaintenanceWindows"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ssm:GetMaintenanceWindow",
+        "ssm:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ssm:UpdateMaintenanceWindow",
+        "ssm:AddTagsToResource",
+        "ssm:RemoveTagsFromResource"
+      ]
+    }
+  },
   "typeName": "AWS::SSM::MaintenanceWindow"
 }

@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "directconnect:ConfirmPrivateVirtualInterface",
+        "directconnect:CreateBGPPeer",
+        "directconnect:CreatePrivateVirtualInterface",
+        "directconnect:DescribeVirtualInterfaces",
+        "directconnect:TagResource",
+        "sts:AssumeRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "directconnect:DeleteVirtualInterface",
+        "directconnect:DescribeVirtualInterfaces"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "directconnect:DescribeVirtualInterfaces"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "directconnect:DescribeVirtualInterfaces"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "directconnect:AssociateVirtualInterface",
+        "directconnect:CreateBGPPeer",
+        "directconnect:DeleteBGPPeer",
+        "directconnect:DescribeVirtualInterfaces",
+        "directconnect:TagResource",
+        "directconnect:UntagResource",
+        "directconnect:UpdateVirtualInterfaceAttributes"
+      ]
+    }
+  },
+  "typeName": "AWS::DirectConnect::PrivateVirtualInterface"
+}

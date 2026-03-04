@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-22T03:37:41.735616Z",
+  "lastUpdated": "2026-03-01T03:42:35.587326Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -737,9 +737,19 @@
       "typeName": "AWS::BedrockAgentCore::BrowserCustom"
     },
     {
+      "filename": "AWS_BedrockAgentCore_BrowserProfile.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::BrowserProfile"
+    },
+    {
       "filename": "AWS_BedrockAgentCore_CodeInterpreterCustom.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::CodeInterpreterCustom"
+    },
+    {
+      "filename": "AWS_BedrockAgentCore_Evaluator.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::Evaluator"
     },
     {
       "filename": "AWS_BedrockAgentCore_Gateway.json",
@@ -755,6 +765,11 @@
       "filename": "AWS_BedrockAgentCore_Memory.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::Memory"
+    },
+    {
+      "filename": "AWS_BedrockAgentCore_OnlineEvaluationConfig.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::OnlineEvaluationConfig"
     },
     {
       "filename": "AWS_BedrockAgentCore_Runtime.json",
@@ -1447,6 +1462,11 @@
       "typeName": "AWS::Comprehend::Flywheel"
     },
     {
+      "filename": "AWS_ComputeOptimizer_AutomationRule.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ComputeOptimizer::AutomationRule"
+    },
+    {
       "filename": "AWS_Config_AggregationAuthorization.json",
       "hasHandlers": true,
       "typeName": "AWS::Config::AggregationAuthorization"
@@ -2075,6 +2095,41 @@
       "filename": "AWS_DevOpsGuru_ResourceCollection.json",
       "hasHandlers": true,
       "typeName": "AWS::DevOpsGuru::ResourceCollection"
+    },
+    {
+      "filename": "AWS_DirectConnect_Connection.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DirectConnect::Connection"
+    },
+    {
+      "filename": "AWS_DirectConnect_DirectConnectGateway.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DirectConnect::DirectConnectGateway"
+    },
+    {
+      "filename": "AWS_DirectConnect_DirectConnectGatewayAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DirectConnect::DirectConnectGatewayAssociation"
+    },
+    {
+      "filename": "AWS_DirectConnect_Lag.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DirectConnect::Lag"
+    },
+    {
+      "filename": "AWS_DirectConnect_PrivateVirtualInterface.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DirectConnect::PrivateVirtualInterface"
+    },
+    {
+      "filename": "AWS_DirectConnect_PublicVirtualInterface.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DirectConnect::PublicVirtualInterface"
+    },
+    {
+      "filename": "AWS_DirectConnect_TransitVirtualInterface.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DirectConnect::TransitVirtualInterface"
     },
     {
       "filename": "AWS_DirectoryService_MicrosoftAD.json",
@@ -2903,7 +2958,7 @@
     },
     {
       "filename": "AWS_ElastiCache_ReplicationGroup.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::ElastiCache::ReplicationGroup"
     },
     {
@@ -6243,7 +6298,7 @@
     },
     {
       "filename": "AWS_SSM_MaintenanceWindow.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::SSM::MaintenanceWindow"
     },
     {
@@ -6653,7 +6708,7 @@
     },
     {
       "filename": "AWS_ServiceCatalog_Portfolio.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ServiceCatalog::Portfolio"
     },
     {
@@ -7262,5 +7317,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1452
+  "totalSchemas": 1463
 }

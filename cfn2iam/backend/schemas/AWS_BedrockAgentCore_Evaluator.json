@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreateEvaluator",
+        "bedrock-agentcore:GetEvaluator",
+        "bedrock-agentcore:TagResource",
+        "bedrock:InvokeModel"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeleteEvaluator",
+        "bedrock-agentcore:GetEvaluator"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListEvaluators"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetEvaluator",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:UpdateEvaluator",
+        "bedrock-agentcore:GetEvaluator",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:UntagResource",
+        "bedrock-agentcore:ListTagsForResource",
+        "bedrock:InvokeModel"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::Evaluator"
+}

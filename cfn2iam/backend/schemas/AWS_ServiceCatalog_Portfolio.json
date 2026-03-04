@@ -1,4 +1,39 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "servicecatalog:CreatePortfolio",
+        "servicecatalog:DescribePortfolio",
+        "servicecatalog:TagResource",
+        "servicecatalog:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "servicecatalog:DeletePortfolio",
+        "servicecatalog:DescribePortfolio"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "servicecatalog:ListPortfolios"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "servicecatalog:DescribePortfolio",
+        "servicecatalog:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "servicecatalog:UpdatePortfolio",
+        "servicecatalog:DescribePortfolio",
+        "servicecatalog:TagResource",
+        "servicecatalog:UntagResource",
+        "servicecatalog:ListTagsForResource"
+      ]
+    }
+  },
   "typeName": "AWS::ServiceCatalog::Portfolio"
 }

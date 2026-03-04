@@ -1,0 +1,58 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "directconnect:CreateDirectConnectGatewayAssociationProposal",
+        "directconnect:CreateDirectConnectGatewayAssociation",
+        "directconnect:DescribeDirectConnectGatewayAssociations",
+        "sts:AssumeRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "directconnect:DeleteDirectConnectGatewayAssociation",
+        "directconnect:DescribeDirectConnectGatewayAssociations"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "oneOf": [
+          {
+            "required": [
+              "AssociatedGatewayId"
+            ]
+          },
+          {
+            "required": [
+              "DirectConnectGatewayId"
+            ]
+          }
+        ],
+        "properties": {
+          "AssociatedGatewayId": {
+            "$ref": "resource-schema.json#/properties/AssociatedGatewayId"
+          },
+          "DirectConnectGatewayId": {
+            "$ref": "resource-schema.json#/properties/DirectConnectGatewayId"
+          }
+        }
+      },
+      "permissions": [
+        "directconnect:DescribeDirectConnectGatewayAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "directconnect:DescribeDirectConnectGatewayAssociations"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "directconnect:DescribeDirectConnectGatewayAssociations",
+        "directconnect:UpdateDirectConnectGatewayAssociation",
+        "sts:AssumeRole"
+      ]
+    }
+  },
+  "typeName": "AWS::DirectConnect::DirectConnectGatewayAssociation"
+}

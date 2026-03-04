@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "directconnect:DescribeConnections",
+        "directconnect:CreateConnection",
+        "directconnect:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "directconnect:DescribeConnections",
+        "directconnect:DeleteConnection"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "directconnect:DescribeConnections"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "directconnect:DescribeConnections"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "directconnect:AssociateConnectionWithLag",
+        "directconnect:DisassociateConnectionFromLag",
+        "directconnect:DescribeConnections",
+        "directconnect:TagResource",
+        "directconnect:UntagResource",
+        "directconnect:UpdateConnection"
+      ]
+    }
+  },
+  "typeName": "AWS::DirectConnect::Connection"
+}

@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreateBrowserProfile",
+        "bedrock-agentcore:GetBrowserProfile",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:GetBrowserProfile",
+        "bedrock-agentcore:DeleteBrowserProfile"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListBrowserProfiles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetBrowserProfile",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:GetBrowserProfile",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:UntagResource",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::BrowserProfile"
+}
