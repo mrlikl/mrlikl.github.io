@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-15T03:43:15.524204Z",
+  "lastUpdated": "2026-02-22T03:37:41.735616Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -585,6 +585,11 @@
       "filename": "AWS_ApplicationSignals_ServiceLevelObjective.json",
       "hasHandlers": true,
       "typeName": "AWS::ApplicationSignals::ServiceLevelObjective"
+    },
+    {
+      "filename": "AWS_Athena_CapacityReservation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Athena::CapacityReservation"
     },
     {
       "filename": "AWS_Athena_DataCatalog.json",
@@ -5122,6 +5127,11 @@
       "typeName": "AWS::OpenSearchServerless::Collection"
     },
     {
+      "filename": "AWS_OpenSearchServerless_CollectionGroup.json",
+      "hasHandlers": true,
+      "typeName": "AWS::OpenSearchServerless::CollectionGroup"
+    },
+    {
       "filename": "AWS_OpenSearchServerless_Index.json",
       "hasHandlers": true,
       "typeName": "AWS::OpenSearchServerless::Index"
@@ -6713,7 +6723,7 @@
     },
     {
       "filename": "AWS_ServiceDiscovery_Service.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::ServiceDiscovery::Service"
     },
     {
@@ -6805,6 +6815,11 @@
       "filename": "AWS_Timestream_Database.json",
       "hasHandlers": true,
       "typeName": "AWS::Timestream::Database"
+    },
+    {
+      "filename": "AWS_Timestream_InfluxDBCluster.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Timestream::InfluxDBCluster"
     },
     {
       "filename": "AWS_Timestream_InfluxDBInstance.json",
@@ -7247,5 +7262,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1449
+  "totalSchemas": 1452
 }
