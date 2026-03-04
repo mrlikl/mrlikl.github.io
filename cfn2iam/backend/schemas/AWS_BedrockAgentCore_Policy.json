@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreatePolicy",
+        "bedrock-agentcore:GetPolicy",
+        "bedrock-agentcore:ManageAdminPolicy",
+        "bedrock-agentcore:ManageResourceScopedPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeletePolicy",
+        "bedrock-agentcore:ManageAdminPolicy",
+        "bedrock-agentcore:ManageResourceScopedPolicy",
+        "bedrock-agentcore:GetPolicy"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "PolicyEngineId": {
+            "maxLength": 59,
+            "minLength": 12,
+            "pattern": "^[A-Za-z][A-Za-z0-9_]*-[a-z0-9_]{10}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "PolicyEngineId"
+        ]
+      },
+      "permissions": [
+        "bedrock-agentcore:ListPolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:UpdatePolicy",
+        "bedrock-agentcore:GetPolicy",
+        "bedrock-agentcore:ManageAdminPolicy",
+        "bedrock-agentcore:ManageResourceScopedPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::Policy"
+}
