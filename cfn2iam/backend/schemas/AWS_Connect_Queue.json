@@ -3,13 +3,16 @@
     "create": {
       "permissions": [
         "connect:CreateQueue",
-        "connect:TagResource"
+        "connect:TagResource",
+        "connect:AssociateQueueEmailAddresses"
       ]
     },
     "delete": {
       "permissions": [
         "connect:DeleteQueue",
-        "connect:UntagResource"
+        "connect:UntagResource",
+        "connect:ListQueueEmailAddresses",
+        "connect:DisassociateQueueEmailAddresses"
       ]
     },
     "list": {
@@ -31,7 +34,8 @@
     "read": {
       "permissions": [
         "connect:DescribeQueue",
-        "connect:ListQueueQuickConnects"
+        "connect:ListQueueQuickConnects",
+        "connect:ListQueueEmailAddresses"
       ]
     },
     "update": {
@@ -44,6 +48,8 @@
         "connect:UpdateQueueStatus",
         "connect:AssociateQueueQuickConnects",
         "connect:DisassociateQueueQuickConnects",
+        "connect:AssociateQueueEmailAddresses",
+        "connect:DisassociateQueueEmailAddresses",
         "connect:TagResource",
         "connect:UntagResource"
       ]
