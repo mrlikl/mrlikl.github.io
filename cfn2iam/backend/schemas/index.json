@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-04T06:10:53.188052Z",
+  "lastUpdated": "2026-03-08T03:31:46.306132Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -2968,7 +2968,7 @@
     },
     {
       "filename": "AWS_ElastiCache_ReplicationGroup.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::ElastiCache::ReplicationGroup"
     },
     {
@@ -6753,7 +6753,7 @@
     },
     {
       "filename": "AWS_ServiceCatalog_StackSetConstraint.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ServiceCatalog::StackSetConstraint"
     },
     {

@@ -38,7 +38,10 @@
       "permissions": [
         "connect:UpdatePrompt",
         "connect:TagResource",
-        "connect:UntagResource"
+        "connect:UntagResource",
+        "s3:GetObject",
+        "s3:GetObjectAcl",
+        "kms:Decrypt"
       ]
     }
   },
