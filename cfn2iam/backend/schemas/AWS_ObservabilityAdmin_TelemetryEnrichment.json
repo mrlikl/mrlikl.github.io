@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "observabilityadmin:StartTelemetryEnrichment",
+        "observabilityadmin:GetTelemetryEnrichmentStatus",
+        "iam:CreateServiceLinkedRole",
+        "resource-explorer-2:CreateManagedView",
+        "resource-explorer-2:CreateStreamingAccessForService",
+        "resource-explorer-2:CreateIndex",
+        "resource-explorer-2:DeleteStreamingAccessForService"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "observabilityadmin:StopTelemetryEnrichment",
+        "observabilityadmin:GetTelemetryEnrichmentStatus",
+        "resource-explorer-2:CreateManagedView",
+        "resource-explorer-2:CreateStreamingAccessForService",
+        "resource-explorer-2:CreateIndex",
+        "resource-explorer-2:DeleteStreamingAccessForService"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "observabilityadmin:GetTelemetryEnrichmentStatus"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "observabilityadmin:GetTelemetryEnrichmentStatus"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "observabilityadmin:StartTelemetryEnrichment",
+        "observabilityadmin:GetTelemetryEnrichmentStatus",
+        "iam:CreateServiceLinkedRole",
+        "resource-explorer-2:CreateManagedView",
+        "resource-explorer-2:CreateStreamingAccessForService",
+        "resource-explorer-2:CreateIndex",
+        "resource-explorer-2:DeleteStreamingAccessForService"
+      ]
+    }
+  },
+  "typeName": "AWS::ObservabilityAdmin::TelemetryEnrichment"
+}

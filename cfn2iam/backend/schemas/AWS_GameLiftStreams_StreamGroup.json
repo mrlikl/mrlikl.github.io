@@ -7,7 +7,8 @@
         "gameliftstreams:GetStreamGroup",
         "gameliftstreams:TagResource",
         "gameliftstreams:ListTagsForResource",
-        "gameliftstreams:AssociateApplications"
+        "gameliftstreams:AssociateApplications",
+        "ec2:DescribeVpcs"
       ]
     },
     "delete": {
@@ -36,7 +37,8 @@
         "gameliftstreams:RemoveStreamGroupLocations",
         "gameliftstreams:TagResource",
         "gameliftstreams:UntagResource",
-        "gameliftstreams:ListTagsForResource"
+        "gameliftstreams:ListTagsForResource",
+        "ec2:DescribeVpcs"
       ]
     }
   },

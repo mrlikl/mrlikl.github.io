@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53globalresolver:CreateFirewallDomainList",
+        "route53globalresolver:GetFirewallDomainList",
+        "route53globalresolver:ImportFirewallDomains",
+        "route53globalresolver:UpdateFirewallDomains",
+        "route53globalresolver:TagResource",
+        "s3:GetObject"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53globalresolver:DeleteFirewallDomainList",
+        "route53globalresolver:GetFirewallDomainList"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "route53globalresolver:ListFirewallDomainLists"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53globalresolver:GetFirewallDomainList",
+        "route53globalresolver:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "route53globalresolver:GetFirewallDomainList",
+        "route53globalresolver:ImportFirewallDomains",
+        "route53globalresolver:UpdateFirewallDomains",
+        "route53globalresolver:TagResource",
+        "route53globalresolver:UntagResource",
+        "route53globalresolver:ListTagsForResource",
+        "s3:GetObject"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53GlobalResolver::FirewallDomainList"
+}

@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cleanrooms-ml:CreateConfiguredModelAlgorithmAssociation",
+        "cleanrooms-ml:GetConfiguredModelAlgorithmAssociation",
+        "cleanrooms-ml:TagResource",
+        "cleanrooms:GetMembership",
+        "cleanrooms:PassMembership",
+        "cleanrooms:ListMembers",
+        "cleanrooms:GetCollaboration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cleanrooms-ml:DeleteConfiguredModelAlgorithmAssociation",
+        "cleanrooms:GetMembership",
+        "cleanrooms:PassMembership"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cleanrooms-ml:ListConfiguredModelAlgorithmAssociations",
+        "cleanrooms:GetMembership",
+        "cleanrooms:PassMembership"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cleanrooms-ml:GetConfiguredModelAlgorithmAssociation",
+        "cleanrooms:GetMembership",
+        "cleanrooms:PassMembership"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cleanrooms-ml:TagResource",
+        "cleanrooms-ml:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CleanRoomsML::ConfiguredModelAlgorithmAssociation"
+}

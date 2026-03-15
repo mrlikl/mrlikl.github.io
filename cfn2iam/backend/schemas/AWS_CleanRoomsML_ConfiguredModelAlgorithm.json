@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cleanrooms-ml:CreateConfiguredModelAlgorithm",
+        "cleanrooms-ml:GetConfiguredModelAlgorithm",
+        "cleanrooms-ml:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cleanrooms-ml:DeleteConfiguredModelAlgorithm"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cleanrooms-ml:ListConfiguredModelAlgorithms"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cleanrooms-ml:GetConfiguredModelAlgorithm"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cleanrooms-ml:TagResource",
+        "cleanrooms-ml:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CleanRoomsML::ConfiguredModelAlgorithm"
+}

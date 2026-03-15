@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53globalresolver:CreateGlobalResolver",
+        "route53globalresolver:GetGlobalResolver",
+        "route53globalresolver:UntagResource",
+        "route53globalresolver:ListTagsForResource",
+        "route53globalresolver:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53globalresolver:DeleteGlobalResolver",
+        "route53globalresolver:GetGlobalResolver"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "route53globalresolver:ListGlobalResolvers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53globalresolver:GetGlobalResolver",
+        "route53globalresolver:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "route53globalresolver:UpdateGlobalResolver",
+        "route53globalresolver:GetGlobalResolver",
+        "route53globalresolver:TagResource",
+        "route53globalresolver:UntagResource",
+        "route53globalresolver:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53GlobalResolver::GlobalResolver"
+}
