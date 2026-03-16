@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53globalresolver:CreateFirewallRule",
+        "route53globalresolver:GetFirewallRule"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53globalresolver:DeleteFirewallRule",
+        "route53globalresolver:GetFirewallRule"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DnsViewId": {
+            "$ref": "resource-schema.json#/properties/DnsViewId"
+          }
+        },
+        "required": [
+          "DnsViewId"
+        ]
+      },
+      "permissions": [
+        "route53globalresolver:ListFirewallRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53globalresolver:GetFirewallRule"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "route53globalresolver:UpdateFirewallRule",
+        "route53globalresolver:GetFirewallRule"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53GlobalResolver::FirewallRule"
+}

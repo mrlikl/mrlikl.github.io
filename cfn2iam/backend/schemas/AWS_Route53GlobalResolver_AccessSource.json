@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53globalresolver:CreateAccessSource",
+        "route53globalresolver:GetAccessSource",
+        "route53globalresolver:TagResource",
+        "route53globalresolver:UntagResource",
+        "route53globalresolver:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53globalresolver:DeleteAccessSource",
+        "route53globalresolver:GetAccessSource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DnsViewId": {
+            "$ref": "resource-schema.json#/properties/DnsViewId"
+          }
+        },
+        "required": [
+          "DnsViewId"
+        ]
+      },
+      "permissions": [
+        "route53globalresolver:ListAccessSources"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53globalresolver:GetAccessSource",
+        "route53globalresolver:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "route53globalresolver:UpdateAccessSource",
+        "route53globalresolver:GetAccessSource",
+        "route53globalresolver:TagResource",
+        "route53globalresolver:UntagResource",
+        "route53globalresolver:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53GlobalResolver::AccessSource"
+}

@@ -1,4 +1,50 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "servicediscovery:CreateService",
+        "servicediscovery:TagResource",
+        "servicediscovery:UntagResource",
+        "servicediscovery:ListTagsForResource",
+        "servicediscovery:GetService",
+        "servicediscovery:ListServices",
+        "servicediscovery:UpdateServiceAttributes",
+        "servicediscovery:GetServiceAttributes"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "servicediscovery:DeleteService",
+        "servicediscovery:GetService"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "servicediscovery:ListServices",
+        "servicediscovery:GetServiceAttributes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "servicediscovery:GetService",
+        "servicediscovery:ListTagsForResource",
+        "servicediscovery:GetServiceAttributes"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "servicediscovery:UpdateService",
+        "servicediscovery:TagResource",
+        "servicediscovery:UntagResource",
+        "servicediscovery:GetService",
+        "servicediscovery:GetOperation",
+        "servicediscovery:ListTagsForResource",
+        "servicediscovery:GetNamespace",
+        "servicediscovery:DeleteServiceAttributes",
+        "servicediscovery:UpdateServiceAttributes",
+        "servicediscovery:GetServiceAttributes"
+      ]
+    }
+  },
   "typeName": "AWS::ServiceDiscovery::Service"
 }

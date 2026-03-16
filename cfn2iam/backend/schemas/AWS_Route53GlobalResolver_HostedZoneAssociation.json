@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53globalresolver:AssociateHostedZone",
+        "route53globalresolver:GetHostedZoneAssociation",
+        "route53:GetHostedZone"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53globalresolver:DisassociateHostedZone",
+        "route53globalresolver:GetHostedZoneAssociation",
+        "route53:GetHostedZone"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ResourceArn": {
+            "$ref": "resource-schema.json#/properties/ResourceArn"
+          }
+        },
+        "required": [
+          "ResourceArn"
+        ]
+      },
+      "permissions": [
+        "route53globalresolver:ListHostedZoneAssociations",
+        "route53:GetHostedZone"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53globalresolver:GetHostedZoneAssociation",
+        "route53:GetHostedZone"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "route53globalresolver:UpdateHostedZoneAssociation",
+        "route53globalresolver:GetHostedZoneAssociation",
+        "route53:GetHostedZone"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53GlobalResolver::HostedZoneAssociation"
+}

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-08T03:31:46.306132Z",
+  "lastUpdated": "2026-03-15T03:51:44.135089Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -970,6 +970,16 @@
       "filename": "AWS_Chatbot_SlackChannelConfiguration.json",
       "hasHandlers": true,
       "typeName": "AWS::Chatbot::SlackChannelConfiguration"
+    },
+    {
+      "filename": "AWS_CleanRoomsML_ConfiguredModelAlgorithm.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CleanRoomsML::ConfiguredModelAlgorithm"
+    },
+    {
+      "filename": "AWS_CleanRoomsML_ConfiguredModelAlgorithmAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CleanRoomsML::ConfiguredModelAlgorithmAssociation"
     },
     {
       "filename": "AWS_CleanRoomsML_TrainingDataset.json",
@@ -2968,7 +2978,7 @@
     },
     {
       "filename": "AWS_ElastiCache_ReplicationGroup.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ElastiCache::ReplicationGroup"
     },
     {
@@ -5137,6 +5147,11 @@
       "typeName": "AWS::ObservabilityAdmin::S3TableIntegration"
     },
     {
+      "filename": "AWS_ObservabilityAdmin_TelemetryEnrichment.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ObservabilityAdmin::TelemetryEnrichment"
+    },
+    {
       "filename": "AWS_ObservabilityAdmin_TelemetryPipelines.json",
       "hasHandlers": true,
       "typeName": "AWS::ObservabilityAdmin::TelemetryPipelines"
@@ -5845,6 +5860,41 @@
       "filename": "AWS_RolesAnywhere_TrustAnchor.json",
       "hasHandlers": true,
       "typeName": "AWS::RolesAnywhere::TrustAnchor"
+    },
+    {
+      "filename": "AWS_Route53GlobalResolver_AccessSource.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Route53GlobalResolver::AccessSource"
+    },
+    {
+      "filename": "AWS_Route53GlobalResolver_AccessToken.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Route53GlobalResolver::AccessToken"
+    },
+    {
+      "filename": "AWS_Route53GlobalResolver_DnsView.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Route53GlobalResolver::DnsView"
+    },
+    {
+      "filename": "AWS_Route53GlobalResolver_FirewallDomainList.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Route53GlobalResolver::FirewallDomainList"
+    },
+    {
+      "filename": "AWS_Route53GlobalResolver_FirewallRule.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Route53GlobalResolver::FirewallRule"
+    },
+    {
+      "filename": "AWS_Route53GlobalResolver_GlobalResolver.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Route53GlobalResolver::GlobalResolver"
+    },
+    {
+      "filename": "AWS_Route53GlobalResolver_HostedZoneAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Route53GlobalResolver::HostedZoneAssociation"
     },
     {
       "filename": "AWS_Route53Profiles_Profile.json",
@@ -6788,7 +6838,7 @@
     },
     {
       "filename": "AWS_ServiceDiscovery_Service.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ServiceDiscovery::Service"
     },
     {
@@ -7327,5 +7377,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1465
+  "totalSchemas": 1475
 }

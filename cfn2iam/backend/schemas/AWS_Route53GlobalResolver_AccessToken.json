@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53globalresolver:CreateAccessToken",
+        "route53globalresolver:GetAccessToken",
+        "route53globalresolver:TagResource",
+        "route53globalresolver:UntagResource",
+        "route53globalresolver:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53globalresolver:DeleteAccessToken",
+        "route53globalresolver:GetAccessToken"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DnsViewId": {
+            "$ref": "resource-schema.json#/properties/DnsViewId"
+          }
+        },
+        "required": [
+          "DnsViewId"
+        ]
+      },
+      "permissions": [
+        "route53globalresolver:ListAccessTokens"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53globalresolver:GetAccessToken",
+        "route53globalresolver:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "route53globalresolver:UpdateAccessToken",
+        "route53globalresolver:GetAccessToken",
+        "route53globalresolver:TagResource",
+        "route53globalresolver:UntagResource",
+        "route53globalresolver:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53GlobalResolver::AccessToken"
+}

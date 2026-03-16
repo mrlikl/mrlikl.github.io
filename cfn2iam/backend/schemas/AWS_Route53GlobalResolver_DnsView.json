@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53globalresolver:CreateDNSView",
+        "route53globalresolver:GetDNSView",
+        "route53globalresolver:TagResource",
+        "route53globalresolver:UntagResource",
+        "route53globalresolver:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53globalresolver:DeleteDNSView",
+        "route53globalresolver:GetDNSView"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "GlobalResolverId": {
+            "$ref": "resource-schema.json#/properties/GlobalResolverId"
+          }
+        },
+        "required": [
+          "GlobalResolverId"
+        ]
+      },
+      "permissions": [
+        "route53globalresolver:ListDNSViews"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53globalresolver:GetDNSView",
+        "route53globalresolver:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "route53globalresolver:UpdateDNSView",
+        "route53globalresolver:GetDNSView",
+        "route53globalresolver:TagResource",
+        "route53globalresolver:UntagResource",
+        "route53globalresolver:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53GlobalResolver::DnsView"
+}
