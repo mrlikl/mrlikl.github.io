@@ -23,13 +23,15 @@
         "kms:CreateGrant",
         "kms:DescribeKey",
         "s3:GetObject"
-      ]
+      ],
+      "timeoutInMinutes": 300
     },
     "delete": {
       "permissions": [
         "elasticache:DeleteReplicationGroup",
         "elasticache:DescribeReplicationGroups"
-      ]
+      ],
+      "timeoutInMinutes": 300
     },
     "list": {
       "permissions": [
@@ -70,7 +72,8 @@
         "kms:CreateGrant",
         "kms:DescribeKey",
         "iam:CreateServiceLinkedRole"
-      ]
+      ],
+      "timeoutInMinutes": 1440
     }
   },
   "typeName": "AWS::ElastiCache::ReplicationGroup"

@@ -6,6 +6,9 @@
         "mediaconnect:AddFlowMediaStreams",
         "mediaconnect:AddFlowSources",
         "mediaconnect:AddFlowVpcInterfaces",
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:TagResource",
+        "mediaconnect:ListTagsForResource",
         "iam:PassRole"
       ]
     },
@@ -27,7 +30,8 @@
     },
     "read": {
       "permissions": [
-        "mediaconnect:DescribeFlow"
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:ListTagsForResource"
       ]
     },
     "update": {
@@ -39,7 +43,10 @@
         "mediaconnect:AddFlowMediaStreams",
         "mediaconnect:RemoveFlowMediaStream",
         "mediaconnect:AddFlowVpcInterfaces",
-        "mediaconnect:RemoveFlowVpcInterface"
+        "mediaconnect:RemoveFlowVpcInterface",
+        "mediaconnect:TagResource",
+        "mediaconnect:UntagResource",
+        "mediaconnect:ListTagsForResource"
       ]
     }
   },

@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateIpamPrefixListResolverTarget",
+        "ec2:DescribeIpamPrefixListResolverTargets",
+        "ec2:DescribeManagedPrefixLists",
+        "ec2:GetManagedPrefixListEntries",
+        "ec2:ModifyManagedPrefixList",
+        "ec2:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DeleteIpamPrefixListResolverTarget",
+        "ec2:DescribeIpamPrefixListResolverTargets",
+        "ec2:DeleteTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeIpamPrefixListResolverTargets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeIpamPrefixListResolverTargets"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:ModifyIpamPrefixListResolverTarget",
+        "ec2:DescribeIpamPrefixListResolverTargets",
+        "ec2:CreateTags",
+        "ec2:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::IPAMPrefixListResolverTarget"
+}

@@ -3,7 +3,10 @@
     "create": {
       "permissions": [
         "iam:PassRole",
-        "mediaconnect:GrantFlowEntitlements"
+        "mediaconnect:GrantFlowEntitlements",
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:TagResource",
+        "mediaconnect:ListTagsForResource"
       ]
     },
     "delete": {
@@ -14,6 +17,16 @@
       ]
     },
     "list": {
+      "handlerSchema": {
+        "properties": {
+          "FlowArn": {
+            "$ref": "resource-schema.json#/properties/FlowArn"
+          }
+        },
+        "required": [
+          "FlowArn"
+        ]
+      },
       "permissions": [
         "mediaconnect:DescribeFlow",
         "mediaconnect:ListFlows"
@@ -22,13 +35,18 @@
     "read": {
       "permissions": [
         "mediaconnect:DescribeFlow",
-        "mediaconnect:ListFlows"
+        "mediaconnect:ListFlows",
+        "mediaconnect:ListTagsForResource"
       ]
     },
     "update": {
       "permissions": [
+        "iam:PassRole",
         "mediaconnect:DescribeFlow",
-        "mediaconnect:UpdateFlowEntitlement"
+        "mediaconnect:UpdateFlowEntitlement",
+        "mediaconnect:TagResource",
+        "mediaconnect:UntagResource",
+        "mediaconnect:ListTagsForResource"
       ]
     }
   },
