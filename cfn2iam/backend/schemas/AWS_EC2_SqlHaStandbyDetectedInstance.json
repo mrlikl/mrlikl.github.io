@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:CreateServiceLinkedRole",
+        "ec2:CreateTags",
+        "ec2:DeleteTags",
+        "secretsmanager:DescribeSecret",
+        "secretsmanager:TagResource",
+        "secretsmanager:UntagResource",
+        "ec2:EnableInstanceSqlHaStandbyDetections",
+        "ec2:DescribeInstanceSqlHaStates"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:CreateTags",
+        "ec2:DeleteTags",
+        "secretsmanager:TagResource",
+        "secretsmanager:UntagResource",
+        "ec2:DisableInstanceSqlHaStandbyDetections",
+        "ec2:DescribeInstanceSqlHaStates"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeInstanceSqlHaStates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeInstanceSqlHaStates"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:CreateServiceLinkedRole",
+        "ec2:CreateTags",
+        "ec2:DeleteTags",
+        "secretsmanager:DescribeSecret",
+        "secretsmanager:TagResource",
+        "secretsmanager:UntagResource",
+        "ec2:EnableInstanceSqlHaStandbyDetections",
+        "ec2:DescribeInstanceSqlHaStates"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::SqlHaStandbyDetectedInstance"
+}

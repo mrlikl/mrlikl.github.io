@@ -1,4 +1,37 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appstream:CreateStack",
+        "appstream:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appstream:DeleteStack"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "appstream:DescribeStacks",
+        "appstream:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appstream:DescribeStacks",
+        "appstream:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appstream:UpdateStack",
+        "appstream:DescribeStacks",
+        "appstream:ListTagsForResource",
+        "appstream:TagResource",
+        "appstream:UntagResource"
+      ]
+    }
+  },
   "typeName": "AWS::AppStream::Stack"
 }

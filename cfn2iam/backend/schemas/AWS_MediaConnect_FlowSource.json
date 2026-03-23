@@ -5,6 +5,8 @@
         "mediaconnect:CreateFlow",
         "mediaconnect:DescribeFlow",
         "mediaconnect:AddFlowSources",
+        "mediaconnect:TagResource",
+        "mediaconnect:ListTagsForResource",
         "iam:PassRole"
       ]
     },
@@ -16,6 +18,16 @@
       ]
     },
     "list": {
+      "handlerSchema": {
+        "properties": {
+          "FlowArn": {
+            "$ref": "resource-schema.json#/properties/FlowArn"
+          }
+        },
+        "required": [
+          "FlowArn"
+        ]
+      },
       "permissions": [
         "mediaconnect:DescribeFlow",
         "mediaconnect:ListFlows"
@@ -24,13 +36,18 @@
     "read": {
       "permissions": [
         "mediaconnect:DescribeFlow",
-        "mediaconnect:ListFlows"
+        "mediaconnect:ListFlows",
+        "mediaconnect:ListTagsForResource"
       ]
     },
     "update": {
       "permissions": [
         "mediaconnect:DescribeFlow",
-        "mediaconnect:UpdateFlowSource"
+        "mediaconnect:UpdateFlowSource",
+        "mediaconnect:TagResource",
+        "mediaconnect:UntagResource",
+        "mediaconnect:ListTagsForResource",
+        "iam:PassRole"
       ]
     }
   },

@@ -1,4 +1,68 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticmapreduce:RunJobFlow",
+        "elasticmapreduce:ListInstanceFleets",
+        "elasticmapreduce:DescribeCluster",
+        "elasticmapreduce:ListInstanceGroups",
+        "elasticmapreduce:AddTags",
+        "iam:PassRole",
+        "iam:CreateServiceLinkedRole"
+      ],
+      "timeoutInMinutes": 1570
+    },
+    "delete": {
+      "permissions": [
+        "elasticmapreduce:DescribeCluster",
+        "elasticmapreduce:TerminateJobFlows",
+        "iam:PassRole"
+      ],
+      "timeoutInMinutes": 70
+    },
+    "list": {
+      "permissions": [
+        "elasticmapreduce:ListClusters",
+        "iam:PassRole"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticmapreduce:ListInstanceFleets",
+        "elasticmapreduce:DescribeCluster",
+        "elasticmapreduce:ListInstanceGroups",
+        "elasticmapreduce:GetAutoTerminationPolicy",
+        "elasticmapreduce:ListSteps",
+        "elasticmapreduce:ListBootstrapActions",
+        "elasticmapreduce:GetManagedScalingPolicy",
+        "iam:PassRole"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "elasticmapreduce:RemoveTags",
+        "elasticmapreduce:AddTags",
+        "elasticmapreduce:ListInstanceFleets",
+        "elasticmapreduce:DescribeCluster",
+        "elasticmapreduce:ModifyInstanceFleet",
+        "elasticmapreduce:ListInstanceGroups",
+        "elasticmapreduce:RemoveAutoScalingPolicy",
+        "elasticmapreduce:PutAutoScalingPolicy",
+        "elasticmapreduce:ModifyInstanceGroups",
+        "elasticmapreduce:SetTerminationProtection",
+        "elasticmapreduce:SetUnhealthyNodeReplacement",
+        "elasticmapreduce:ModifyCluster",
+        "elasticmapreduce:RemoveManagedScalingPolicy",
+        "elasticmapreduce:PutManagedScalingPolicy",
+        "elasticmapreduce:GetManagedScalingPolicy",
+        "elasticmapreduce:RemoveAutoTerminationPolicy",
+        "elasticmapreduce:PutAutoTerminationPolicy",
+        "elasticmapreduce:GetAutoTerminationPolicy",
+        "elasticmapreduce:SetVisibleToAllUsers",
+        "iam:PassRole"
+      ],
+      "timeoutInMinutes": 140
+    }
+  },
   "typeName": "AWS::EMR::Cluster"
 }

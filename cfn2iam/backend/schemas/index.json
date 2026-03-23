@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T03:51:44.135089Z",
+  "lastUpdated": "2026-03-22T03:40:37.277833Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -473,7 +473,7 @@
     },
     {
       "filename": "AWS_AppStream_Stack.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::AppStream::Stack"
     },
     {
@@ -720,6 +720,11 @@
       "filename": "AWS_Batch_JobQueue.json",
       "hasHandlers": true,
       "typeName": "AWS::Batch::JobQueue"
+    },
+    {
+      "filename": "AWS_Batch_QuotaShare.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Batch::QuotaShare"
     },
     {
       "filename": "AWS_Batch_SchedulingPolicy.json",
@@ -2322,6 +2327,11 @@
       "typeName": "AWS::EC2::IPAMPrefixListResolver"
     },
     {
+      "filename": "AWS_EC2_IPAMPrefixListResolverTarget.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::IPAMPrefixListResolverTarget"
+    },
+    {
       "filename": "AWS_EC2_IPAMResourceDiscovery.json",
       "hasHandlers": true,
       "typeName": "AWS::EC2::IPAMResourceDiscovery"
@@ -2525,6 +2535,11 @@
       "filename": "AWS_EC2_SpotFleet.json",
       "hasHandlers": true,
       "typeName": "AWS::EC2::SpotFleet"
+    },
+    {
+      "filename": "AWS_EC2_SqlHaStandbyDetectedInstance.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::SqlHaStandbyDetectedInstance"
     },
     {
       "filename": "AWS_EC2_Subnet.json",
@@ -2918,7 +2933,7 @@
     },
     {
       "filename": "AWS_EMR_Cluster.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::EMR::Cluster"
     },
     {
@@ -3330,6 +3345,11 @@
       "filename": "AWS_GlobalAccelerator_Listener.json",
       "hasHandlers": true,
       "typeName": "AWS::GlobalAccelerator::Listener"
+    },
+    {
+      "filename": "AWS_Glue_Catalog.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Glue::Catalog"
     },
     {
       "filename": "AWS_Glue_Classifier.json",
@@ -7377,5 +7397,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1475
+  "totalSchemas": 1479
 }

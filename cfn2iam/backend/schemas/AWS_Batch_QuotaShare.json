@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "Batch:CreateQuotaShare",
+        "Batch:TagResource",
+        "Batch:DescribeQuotaShare"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "Batch:UpdateQuotaShare",
+        "Batch:DescribeQuotaShare",
+        "Batch:DeleteQuotaShare"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "JobQueue": {
+            "$ref": "resource-schema.json#/properties/JobQueue"
+          }
+        }
+      },
+      "permissions": [
+        "Batch:ListQuotaShares"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "Batch:DescribeQuotaShare"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "Batch:DescribeQuotaShare",
+        "Batch:UpdateQuotaShare",
+        "Batch:TagResource",
+        "Batch:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Batch::QuotaShare"
+}
