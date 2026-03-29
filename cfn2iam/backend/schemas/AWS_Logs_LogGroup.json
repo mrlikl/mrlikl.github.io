@@ -14,7 +14,8 @@
         "logs:PutResourcePolicy",
         "logs:DescribeResourcePolicies",
         "logs:PutIndexPolicy",
-        "logs:DescribeIndexPolicies"
+        "logs:DescribeIndexPolicies",
+        "logs:PutBearerTokenAuthentication"
       ]
     },
     "delete": {
@@ -67,7 +68,8 @@
         "logs:PutResourcePolicy",
         "logs:DescribeResourcePolicies",
         "logs:DeleteResourcePolicy",
-        "logs:PutLogGroupDeletionProtection"
+        "logs:PutLogGroupDeletionProtection",
+        "logs:PutBearerTokenAuthentication"
       ]
     }
   },

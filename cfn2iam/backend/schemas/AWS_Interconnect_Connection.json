@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "interconnect:CreateConnection",
+        "interconnect:AcceptConnectionProposal",
+        "interconnect:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "interconnect:GetConnection",
+        "interconnect:DeleteConnection"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "interconnect:ListConnections"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "interconnect:GetConnection",
+        "interconnect:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "interconnect:UpdateConnection",
+        "interconnect:GetConnection",
+        "interconnect:TagResource",
+        "interconnect:UntagResource",
+        "interconnect:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Interconnect::Connection"
+}

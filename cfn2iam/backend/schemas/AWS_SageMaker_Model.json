@@ -1,4 +1,34 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PassRole",
+        "sagemaker:AddTags",
+        "sagemaker:CreateModel"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteModel"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListModels"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeModel",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags"
+      ]
+    }
+  },
   "typeName": "AWS::SageMaker::Model"
 }

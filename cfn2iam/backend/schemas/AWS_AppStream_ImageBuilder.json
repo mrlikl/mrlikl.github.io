@@ -9,18 +9,18 @@
         "appstream:DescribeImageBuilders",
         "appstream:StartImageBuilder",
         "appstream:StopImageBuilder",
+        "appstream:TagResource",
         "iam:CreateServiceLinkedRole",
         "iam:DeleteServiceLinkedRole",
-        "iam:GetServiceLinkedRoleDeletionStatus"
+        "iam:GetServiceLinkedRoleDeletionStatus",
+        "iam:PassRole"
       ]
     },
     "delete": {
       "permissions": [
-        "appstream:CreateImageBuilder",
-        "appstream:CreateImageBuilderStreamingURL",
-        "appstream:CreateStreamingURL",
         "appstream:DeleteImageBuilder",
         "appstream:DescribeImageBuilders",
+        "appstream:ListTagsForResource",
         "appstream:StartImageBuilder",
         "appstream:StopImageBuilder",
         "iam:CreateServiceLinkedRole",
@@ -30,13 +30,8 @@
     },
     "list": {
       "permissions": [
-        "appstream:CreateImageBuilder",
-        "appstream:CreateImageBuilderStreamingURL",
-        "appstream:CreateStreamingURL",
-        "appstream:DeleteImageBuilder",
         "appstream:DescribeImageBuilders",
-        "appstream:StartImageBuilder",
-        "appstream:StopImageBuilder",
+        "appstream:ListTagsForResource",
         "iam:CreateServiceLinkedRole",
         "iam:DeleteServiceLinkedRole",
         "iam:GetServiceLinkedRoleDeletionStatus"
@@ -44,13 +39,9 @@
     },
     "read": {
       "permissions": [
-        "appstream:CreateImageBuilder",
         "appstream:CreateImageBuilderStreamingURL",
-        "appstream:CreateStreamingURL",
-        "appstream:DeleteImageBuilder",
         "appstream:DescribeImageBuilders",
-        "appstream:StartImageBuilder",
-        "appstream:StopImageBuilder",
+        "appstream:ListTagsForResource",
         "iam:CreateServiceLinkedRole",
         "iam:DeleteServiceLinkedRole",
         "iam:GetServiceLinkedRoleDeletionStatus"
