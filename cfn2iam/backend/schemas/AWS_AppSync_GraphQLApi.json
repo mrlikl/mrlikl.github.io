@@ -3,7 +3,9 @@
     "create": {
       "permissions": [
         "appsync:CreateGraphqlApi",
-        "appsync:TagResource"
+        "appsync:TagResource",
+        "iam:PassRole",
+        "appsync:PutGraphqlApiEnvironmentVariables"
       ]
     },
     "delete": {
@@ -28,7 +30,10 @@
         "appsync:GetGraphqlApi",
         "appsync:UpdateGraphqlApi",
         "appsync:TagResource",
-        "appsync:UntagResource"
+        "appsync:UntagResource",
+        "iam:PassRole",
+        "appsync:GetGraphqlApiEnvironmentVariables",
+        "appsync:PutGraphqlApiEnvironmentVariables"
       ]
     }
   },

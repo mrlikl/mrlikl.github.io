@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-22T03:40:37.277833Z",
+  "lastUpdated": "2026-03-29T03:56:00.970237Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -1767,6 +1767,11 @@
       "typeName": "AWS::CustomerProfiles::ObjectType"
     },
     {
+      "filename": "AWS_CustomerProfiles_Recommender.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CustomerProfiles::Recommender"
+    },
+    {
       "filename": "AWS_CustomerProfiles_SegmentDefinition.json",
       "hasHandlers": true,
       "typeName": "AWS::CustomerProfiles::SegmentDefinition"
@@ -2933,7 +2938,7 @@
     },
     {
       "filename": "AWS_EMR_Cluster.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::EMR::Cluster"
     },
     {
@@ -3865,6 +3870,11 @@
       "filename": "AWS_Inspector_ResourceGroup.json",
       "hasHandlers": true,
       "typeName": "AWS::Inspector::ResourceGroup"
+    },
+    {
+      "filename": "AWS_Interconnect_Connection.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Interconnect::Connection"
     },
     {
       "filename": "AWS_InternetMonitor_Monitor.json",
@@ -5185,6 +5195,11 @@
       "filename": "AWS_Omics_AnnotationStore.json",
       "hasHandlers": true,
       "typeName": "AWS::Omics::AnnotationStore"
+    },
+    {
+      "filename": "AWS_Omics_Configuration.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Omics::Configuration"
     },
     {
       "filename": "AWS_Omics_ReferenceStore.json",
@@ -6523,7 +6538,7 @@
     },
     {
       "filename": "AWS_SageMaker_Model.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::SageMaker::Model"
     },
     {
@@ -6858,7 +6873,7 @@
     },
     {
       "filename": "AWS_ServiceDiscovery_Service.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::ServiceDiscovery::Service"
     },
     {
@@ -7397,5 +7412,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1479
+  "totalSchemas": 1482
 }

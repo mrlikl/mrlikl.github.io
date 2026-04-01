@@ -19,7 +19,8 @@
         "kms:GenerateDataKeyWithoutPlaintext",
         "codeconnections:UseConnection",
         "codeconnections:GetConnection",
-        "codeconnections:GetHost"
+        "codeconnections:GetHost",
+        "codeconnections:PassConnection"
       ]
     },
     "delete": {

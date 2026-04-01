@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "omics:CreateConfiguration",
+        "omics:GetConfiguration",
+        "omics:TagResource",
+        "iam:CreateServiceLinkedRole",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "omics:DeleteConfiguration",
+        "omics:GetConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "omics:ListConfigurations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "omics:GetConfiguration",
+        "omics:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Omics::Configuration"
+}

@@ -1,0 +1,54 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "profile:CreateRecommender",
+        "profile:GetRecommender",
+        "profile:TagResource",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "profile:DeleteRecommender",
+        "profile:GetRecommender"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainName": {
+            "$ref": "resource-schema.json#/properties/DomainName"
+          }
+        },
+        "required": [
+          "DomainName"
+        ]
+      },
+      "permissions": [
+        "profile:ListRecommenders",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "profile:GetRecommender",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "profile:GetRecommender",
+        "profile:UpdateRecommender",
+        "profile:UntagResource",
+        "profile:TagResource",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::CustomerProfiles::Recommender"
+}
