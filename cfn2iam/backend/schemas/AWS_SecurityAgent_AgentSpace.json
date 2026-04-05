@@ -1,0 +1,54 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "securityagent:CreateAgentSpace",
+        "securityagent:BatchGetAgentSpaces",
+        "securityagent:TagResource",
+        "securityagent:ListTagsForResource",
+        "securityagent:UpdateIntegratedResources",
+        "securityagent:ListIntegratedResources",
+        "iam:PassRole",
+        "kms:DescribeKey",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:Decrypt",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "securityagent:DeleteAgentSpace",
+        "securityagent:BatchGetAgentSpaces",
+        "kms:Decrypt"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "securityagent:ListAgentSpaces"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "securityagent:BatchGetAgentSpaces",
+        "securityagent:ListTagsForResource",
+        "kms:Decrypt",
+        "securityagent:ListIntegratedResources"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "securityagent:UpdateAgentSpace",
+        "securityagent:BatchGetAgentSpaces",
+        "securityagent:TagResource",
+        "securityagent:UntagResource",
+        "securityagent:ListTagsForResource",
+        "securityagent:UpdateIntegratedResources",
+        "securityagent:ListIntegratedResources",
+        "iam:PassRole",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::SecurityAgent::AgentSpace"
+}

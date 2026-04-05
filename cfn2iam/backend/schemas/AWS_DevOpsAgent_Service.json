@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aidevops:RegisterService",
+        "aidevops:GetService",
+        "aidevops:TagResource",
+        "aidevops:ListTagsForResource",
+        "iam:CreateServiceLinkedRole",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:Encrypt",
+        "kms:GenerateDataKey",
+        "kms:GenerateDataKeyPair",
+        "kms:GenerateDataKeyPairWithoutPlaintext",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "aidevops:DeregisterService",
+        "aidevops:GetService"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "aidevops:ListServices"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aidevops:GetService",
+        "aidevops:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aidevops:GetService",
+        "aidevops:TagResource",
+        "aidevops:UntagResource",
+        "aidevops:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::DevOpsAgent::Service"
+}

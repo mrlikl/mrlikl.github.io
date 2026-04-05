@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ecs:CreateDaemon",
+        "ecs:DescribeDaemon",
+        "ecs:DescribeDaemonDeployments",
+        "ecs:ListDaemonDeployments",
+        "ecs:ListTagsForResource",
+        "ecs:TagResource",
+        "iam:PassRole"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "delete": {
+      "permissions": [
+        "ecs:DeleteDaemon",
+        "ecs:DescribeDaemon"
+      ],
+      "timeoutInMinutes": 30
+    },
+    "list": {
+      "permissions": [
+        "ecs:DescribeDaemon",
+        "ecs:ListDaemons"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ecs:DescribeDaemon",
+        "ecs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ecs:UpdateDaemon",
+        "ecs:DescribeDaemon",
+        "ecs:DescribeDaemonDeployments",
+        "ecs:ListDaemonDeployments",
+        "ecs:TagResource",
+        "ecs:UntagResource",
+        "ecs:ListTagsForResource",
+        "iam:PassRole"
+      ],
+      "timeoutInMinutes": 2160
+    }
+  },
+  "typeName": "AWS::ECS::Daemon"
+}

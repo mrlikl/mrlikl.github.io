@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "securityagent:CreateApplication",
+        "securityagent:GetApplication",
+        "securityagent:TagResource",
+        "securityagent:ListTagsForResource",
+        "iam:PassRole",
+        "sso:DescribeInstance",
+        "sso:CreateApplication",
+        "sso:PutApplicationGrant",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:PutApplicationAccessScope",
+        "kms:DescribeKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "securityagent:GetApplication",
+        "securityagent:DeleteApplication",
+        "sso:DeleteApplication"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "securityagent:ListApplications"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "securityagent:GetApplication",
+        "securityagent:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "securityagent:UpdateApplication",
+        "securityagent:GetApplication",
+        "securityagent:TagResource",
+        "securityagent:ListTagsForResource",
+        "securityagent:UntagResource",
+        "iam:PassRole",
+        "kms:DescribeKey"
+      ]
+    }
+  },
+  "typeName": "AWS::SecurityAgent::Application"
+}

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-29T03:56:00.970237Z",
+  "lastUpdated": "2026-04-05T03:55:19.131974Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -178,7 +178,7 @@
     },
     {
       "filename": "AWS_ApiGatewayV2_Stage.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ApiGatewayV2::Stage"
     },
     {
@@ -737,6 +737,11 @@
       "typeName": "AWS::Batch::ServiceEnvironment"
     },
     {
+      "filename": "AWS_BedrockAgentCore_ApiKeyCredentialProvider.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::ApiKeyCredentialProvider"
+    },
+    {
       "filename": "AWS_BedrockAgentCore_BrowserCustom.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::BrowserCustom"
@@ -770,6 +775,11 @@
       "filename": "AWS_BedrockAgentCore_Memory.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::Memory"
+    },
+    {
+      "filename": "AWS_BedrockAgentCore_OAuth2CredentialProvider.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::OAuth2CredentialProvider"
     },
     {
       "filename": "AWS_BedrockAgentCore_OnlineEvaluationConfig.json",
@@ -830,6 +840,11 @@
       "filename": "AWS_Bedrock_Blueprint.json",
       "hasHandlers": true,
       "typeName": "AWS::Bedrock::Blueprint"
+    },
+    {
+      "filename": "AWS_Bedrock_DataAutomationLibrary.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Bedrock::DataAutomationLibrary"
     },
     {
       "filename": "AWS_Bedrock_DataAutomationProject.json",
@@ -2112,6 +2127,21 @@
       "typeName": "AWS::Detective::OrganizationAdmin"
     },
     {
+      "filename": "AWS_DevOpsAgent_AgentSpace.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DevOpsAgent::AgentSpace"
+    },
+    {
+      "filename": "AWS_DevOpsAgent_Association.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DevOpsAgent::Association"
+    },
+    {
+      "filename": "AWS_DevOpsAgent_Service.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DevOpsAgent::Service"
+    },
+    {
       "filename": "AWS_DevOpsGuru_LogAnomalyDetectionIntegration.json",
       "hasHandlers": true,
       "typeName": "AWS::DevOpsGuru::LogAnomalyDetectionIntegration"
@@ -2837,6 +2867,16 @@
       "typeName": "AWS::ECS::ClusterCapacityProviderAssociations"
     },
     {
+      "filename": "AWS_ECS_Daemon.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ECS::Daemon"
+    },
+    {
+      "filename": "AWS_ECS_DaemonTaskDefinition.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ECS::DaemonTaskDefinition"
+    },
+    {
       "filename": "AWS_ECS_ExpressGatewayService.json",
       "hasHandlers": true,
       "typeName": "AWS::ECS::ExpressGatewayService"
@@ -3088,7 +3128,7 @@
     },
     {
       "filename": "AWS_ElasticLoadBalancing_LoadBalancer.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ElasticLoadBalancing::LoadBalancer"
     },
     {
@@ -6657,6 +6697,26 @@
       "typeName": "AWS::SecretsManager::SecretTargetAttachment"
     },
     {
+      "filename": "AWS_SecurityAgent_AgentSpace.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SecurityAgent::AgentSpace"
+    },
+    {
+      "filename": "AWS_SecurityAgent_Application.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SecurityAgent::Application"
+    },
+    {
+      "filename": "AWS_SecurityAgent_Pentest.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SecurityAgent::Pentest"
+    },
+    {
+      "filename": "AWS_SecurityAgent_TargetDomain.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SecurityAgent::TargetDomain"
+    },
+    {
       "filename": "AWS_SecurityHub_AggregatorV2.json",
       "hasHandlers": true,
       "typeName": "AWS::SecurityHub::AggregatorV2"
@@ -7412,5 +7472,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1482
+  "totalSchemas": 1494
 }
