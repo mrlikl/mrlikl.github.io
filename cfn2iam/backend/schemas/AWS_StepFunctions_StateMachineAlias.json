@@ -15,12 +15,12 @@
     "list": {
       "handlerSchema": {
         "properties": {
-          "RoutingConfiguration": {
-            "$ref": "resource-schema.json#/properties/RoutingConfiguration"
+          "StateMachineArn": {
+            "$ref": "resource-schema.json#/properties/StateMachineArn"
           }
         },
         "required": [
-          "RoutingConfiguration"
+          "StateMachineArn"
         ]
       },
       "permissions": [

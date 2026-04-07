@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "securityagent:CreateTargetDomain",
+        "securityagent:BatchGetTargetDomains",
+        "securityagent:TagResource",
+        "securityagent:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "securityagent:DeleteTargetDomain",
+        "securityagent:BatchGetTargetDomains"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "securityagent:ListTargetDomains"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "securityagent:BatchGetTargetDomains",
+        "securityagent:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "securityagent:UpdateTargetDomain",
+        "securityagent:BatchGetTargetDomains",
+        "securityagent:TagResource",
+        "securityagent:UntagResource",
+        "securityagent:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SecurityAgent::TargetDomain"
+}

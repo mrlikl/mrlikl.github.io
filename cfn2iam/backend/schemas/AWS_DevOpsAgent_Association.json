@@ -1,0 +1,53 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aidevops:AssociateService",
+        "aidevops:GetAgentSpace",
+        "aidevops:ListAssociations",
+        "aidevops:GetAssociation",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "aidevops:DisassociateService",
+        "aidevops:GetAgentSpace",
+        "aidevops:GetAssociation"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AgentSpaceId": {
+            "$ref": "resource-schema.json#/properties/AgentSpaceId"
+          }
+        },
+        "required": [
+          "AgentSpaceId"
+        ]
+      },
+      "permissions": [
+        "aidevops:ListAssociations",
+        "aidevops:GetAgentSpace"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aidevops:GetAssociation",
+        "aidevops:ListAssociations",
+        "aidevops:GetAgentSpace"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aidevops:UpdateAssociation",
+        "aidevops:ListAssociations",
+        "aidevops:GetAgentSpace",
+        "aidevops:GetAssociation",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::DevOpsAgent::Association"
+}

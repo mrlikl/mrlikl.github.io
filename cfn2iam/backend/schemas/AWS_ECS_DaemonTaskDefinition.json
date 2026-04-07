@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ecs:RegisterDaemonTaskDefinition",
+        "ecs:DescribeDaemonTaskDefinition",
+        "ecs:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ecs:DeleteDaemonTaskDefinition",
+        "ecs:DescribeDaemonTaskDefinition",
+        "iam:PassRole"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ecs:ListDaemonTaskDefinitions",
+        "ecs:DescribeDaemonTaskDefinition"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ecs:DescribeDaemonTaskDefinition",
+        "ecs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ecs:TagResource",
+        "ecs:UntagResource",
+        "ecs:ListTagsForResource",
+        "ecs:DescribeDaemonTaskDefinition",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::ECS::DaemonTaskDefinition"
+}

@@ -47,6 +47,7 @@
     "read": {
       "permissions": [
         "profile:GetSegmentDefinition",
+        "profile:ListTagsForResource",
         "kms:CreateGrant",
         "kms:DescribeKey",
         "kms:GetKeyPolicy",
@@ -58,6 +59,7 @@
     "update": {
       "permissions": [
         "profile:GetSegmentDefinition",
+        "profile:ListTagsForResource",
         "profile:UntagResource",
         "profile:TagResource",
         "kms:CreateGrant",

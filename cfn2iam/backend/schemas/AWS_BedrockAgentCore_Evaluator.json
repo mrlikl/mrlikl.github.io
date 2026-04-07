@@ -5,7 +5,9 @@
         "bedrock-agentcore:CreateEvaluator",
         "bedrock-agentcore:GetEvaluator",
         "bedrock-agentcore:TagResource",
-        "bedrock:InvokeModel"
+        "bedrock:InvokeModel",
+        "lambda:GetFunction",
+        "lambda:InvokeFunction"
       ]
     },
     "delete": {
@@ -32,7 +34,9 @@
         "bedrock-agentcore:TagResource",
         "bedrock-agentcore:UntagResource",
         "bedrock-agentcore:ListTagsForResource",
-        "bedrock:InvokeModel"
+        "bedrock:InvokeModel",
+        "lambda:GetFunction",
+        "lambda:InvokeFunction"
       ]
     }
   },
