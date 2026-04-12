@@ -19,7 +19,8 @@
         "connect-campaigns:DeleteCampaign",
         "connect-campaigns:DeleteCampaignChannelSubtypeConfig",
         "connect-campaigns:DeleteCampaignCommunicationLimits",
-        "connect-campaigns:DeleteCampaignCommunicationTime"
+        "connect-campaigns:DeleteCampaignCommunicationTime",
+        "connect-campaigns:DeleteCampaignEntryLimits"
       ]
     },
     "list": {
@@ -47,9 +48,11 @@
         "connect-campaigns:DeleteCampaignChannelSubtypeConfig",
         "connect-campaigns:DeleteCampaignCommunicationLimits",
         "connect-campaigns:DeleteCampaignCommunicationTime",
+        "connect-campaigns:DeleteCampaignEntryLimits",
         "connect-campaigns:UpdateCampaignChannelSubtypeConfig",
         "connect-campaigns:UpdateCampaignCommunicationLimits",
         "connect-campaigns:UpdateCampaignCommunicationTime",
+        "connect-campaigns:UpdateCampaignEntryLimits",
         "connect-campaigns:UpdateCampaignName",
         "connect-campaigns:UpdateCampaignFlowAssociation",
         "connect-campaigns:UpdateCampaignSchedule",

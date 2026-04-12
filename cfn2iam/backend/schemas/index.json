@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-05T03:55:19.131974Z",
+  "lastUpdated": "2026-04-12T04:12:18.496909Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -178,7 +178,7 @@
     },
     {
       "filename": "AWS_ApiGatewayV2_Stage.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::ApiGatewayV2::Stage"
     },
     {
@@ -737,6 +737,11 @@
       "typeName": "AWS::Batch::ServiceEnvironment"
     },
     {
+      "filename": "AWS_BcmPricingCalculator_BillScenario.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BcmPricingCalculator::BillScenario"
+    },
+    {
       "filename": "AWS_BedrockAgentCore_ApiKeyCredentialProvider.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::ApiKeyCredentialProvider"
@@ -857,6 +862,11 @@
       "typeName": "AWS::Bedrock::DataSource"
     },
     {
+      "filename": "AWS_Bedrock_EnforcedGuardrailConfiguration.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Bedrock::EnforcedGuardrailConfiguration"
+    },
+    {
       "filename": "AWS_Bedrock_Flow.json",
       "hasHandlers": true,
       "typeName": "AWS::Bedrock::Flow"
@@ -900,6 +910,11 @@
       "filename": "AWS_Bedrock_PromptVersion.json",
       "hasHandlers": true,
       "typeName": "AWS::Bedrock::PromptVersion"
+    },
+    {
+      "filename": "AWS_Bedrock_ResourcePolicy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Bedrock::ResourcePolicy"
     },
     {
       "filename": "AWS_Budgets_Budget.json",
@@ -3128,7 +3143,7 @@
     },
     {
       "filename": "AWS_ElasticLoadBalancing_LoadBalancer.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::ElasticLoadBalancing::LoadBalancer"
     },
     {
@@ -6077,6 +6092,26 @@
       "typeName": "AWS::Route53::RecordSetGroup"
     },
     {
+      "filename": "AWS_S3Files_AccessPoint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::S3Files::AccessPoint"
+    },
+    {
+      "filename": "AWS_S3Files_FileSystem.json",
+      "hasHandlers": true,
+      "typeName": "AWS::S3Files::FileSystem"
+    },
+    {
+      "filename": "AWS_S3Files_FileSystemPolicy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::S3Files::FileSystemPolicy"
+    },
+    {
+      "filename": "AWS_S3Files_MountTarget.json",
+      "hasHandlers": true,
+      "typeName": "AWS::S3Files::MountTarget"
+    },
+    {
       "filename": "AWS_S3ObjectLambda_AccessPoint.json",
       "hasHandlers": true,
       "typeName": "AWS::S3ObjectLambda::AccessPoint"
@@ -7472,5 +7507,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1494
+  "totalSchemas": 1501
 }

@@ -1,0 +1,66 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3files:CreateFileSystem",
+        "s3files:GetFileSystem",
+        "s3files:PutSynchronizationConfiguration",
+        "s3files:GetSynchronizationConfiguration",
+        "s3files:TagResource",
+        "kms:DescribeKey",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:CreateGrant",
+        "iam:PassRole",
+        "s3:PutBucketNotification",
+        "s3:GetBucketNotification",
+        "events:PutTargets",
+        "events:PutRule",
+        "events:ListTargetsByRule",
+        "events:ListRules",
+        "events:DescribeRule"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3files:DeleteFileSystem",
+        "s3files:GetFileSystem",
+        "events:DescribeRule",
+        "events:DeleteRule",
+        "events:ListTargetsByRule",
+        "events:PutRule",
+        "events:RemoveTargets"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "Bucket": {
+            "$ref": "resource-schema.json#/properties/Bucket"
+          }
+        }
+      },
+      "permissions": [
+        "s3files:ListFileSystems",
+        "s3files:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3files:GetFileSystem",
+        "s3files:GetSynchronizationConfiguration",
+        "s3files:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3files:GetFileSystem",
+        "s3files:GetSynchronizationConfiguration",
+        "s3files:PutSynchronizationConfiguration",
+        "s3files:TagResource",
+        "s3files:UntagResource",
+        "s3files:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::S3Files::FileSystem"
+}
