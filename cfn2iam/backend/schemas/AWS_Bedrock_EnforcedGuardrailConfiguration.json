@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock:PutEnforcedGuardrailConfiguration",
+        "bedrock:ListEnforcedGuardrailsConfiguration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock:DeleteEnforcedGuardrailConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock:ListEnforcedGuardrailsConfiguration"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:ListEnforcedGuardrailsConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock:PutEnforcedGuardrailConfiguration",
+        "bedrock:ListEnforcedGuardrailsConfiguration"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::EnforcedGuardrailConfiguration"
+}

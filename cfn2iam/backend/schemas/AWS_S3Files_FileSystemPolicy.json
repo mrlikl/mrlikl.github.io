@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3files:GetFileSystemPolicy",
+        "s3files:PutFileSystemPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3files:GetFileSystemPolicy",
+        "s3files:DeleteFileSystemPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "s3files:GetFileSystemPolicy",
+        "s3files:ListFileSystems"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3files:GetFileSystemPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3files:GetFileSystemPolicy",
+        "s3files:PutFileSystemPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::S3Files::FileSystemPolicy"
+}

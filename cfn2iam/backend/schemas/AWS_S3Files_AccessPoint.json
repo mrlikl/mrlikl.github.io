@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3files:CreateAccessPoint",
+        "s3files:TagResource",
+        "s3files:GetAccessPoint"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3files:DeleteAccessPoint",
+        "s3files:GetAccessPoint"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "FileSystemId": {
+            "$ref": "resource-schema.json#/properties/FileSystemId"
+          }
+        },
+        "required": [
+          "FileSystemId"
+        ]
+      },
+      "permissions": [
+        "s3files:ListAccessPoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3files:GetAccessPoint",
+        "s3files:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3files:GetAccessPoint",
+        "s3files:ListTagsForResource",
+        "s3files:TagResource",
+        "s3files:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::S3Files::AccessPoint"
+}

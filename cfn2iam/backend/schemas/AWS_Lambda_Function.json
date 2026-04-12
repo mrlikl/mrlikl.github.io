@@ -12,6 +12,7 @@
         "ec2:DescribeSubnets",
         "ec2:DescribeVpcs",
         "elasticfilesystem:DescribeMountTargets",
+        "s3files:ListMountTargets",
         "kms:CreateGrant",
         "kms:Decrypt",
         "kms:Encrypt",
@@ -43,6 +44,7 @@
     "read": {
       "permissions": [
         "lambda:GetFunction",
+        "kms:Decrypt",
         "lambda:GetFunctionCodeSigningConfig",
         "lambda:GetFunctionRecursionConfig",
         "lambda:GetRuntimeManagementConfig",
@@ -65,6 +67,7 @@
         "ec2:DescribeSubnets",
         "ec2:DescribeVpcs",
         "elasticfilesystem:DescribeMountTargets",
+        "s3files:ListMountTargets",
         "kms:CreateGrant",
         "kms:Decrypt",
         "kms:GenerateDataKey",

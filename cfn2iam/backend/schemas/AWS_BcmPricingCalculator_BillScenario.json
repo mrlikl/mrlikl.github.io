@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bcm-pricing-calculator:CreateBillScenario",
+        "bcm-pricing-calculator:UpdateBillScenario",
+        "bcm-pricing-calculator:GetBillScenario",
+        "bcm-pricing-calculator:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bcm-pricing-calculator:DeleteBillScenario",
+        "bcm-pricing-calculator:GetBillScenario"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bcm-pricing-calculator:ListBillScenarios"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bcm-pricing-calculator:GetBillScenario",
+        "bcm-pricing-calculator:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bcm-pricing-calculator:UpdateBillScenario",
+        "bcm-pricing-calculator:GetBillScenario",
+        "bcm-pricing-calculator:TagResource",
+        "bcm-pricing-calculator:UntagResource",
+        "bcm-pricing-calculator:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::BcmPricingCalculator::BillScenario"
+}

@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock:PutResourcePolicy",
+        "bedrock:GetResourcePolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock:DeleteResourcePolicy",
+        "bedrock:GetResourcePolicy"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:GetResourcePolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock:PutResourcePolicy",
+        "bedrock:GetResourcePolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::ResourcePolicy"
+}

@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3files:CreateMountTarget",
+        "s3files:GetMountTarget",
+        "s3files:ListMountTargets",
+        "ec2:DescribeSubnets",
+        "ec2:CreateNetworkInterface"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3files:GetMountTarget",
+        "s3files:DeleteMountTarget",
+        "ec2:DeleteNetworkInterface"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "FileSystemId": {
+            "$ref": "resource-schema.json#/properties/FileSystemId"
+          }
+        },
+        "required": [
+          "FileSystemId"
+        ]
+      },
+      "permissions": [
+        "s3files:ListMountTargets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3files:GetMountTarget"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3files:GetMountTarget",
+        "s3files:UpdateMountTarget",
+        "ec2:ModifyNetworkInterfaceAttribute"
+      ]
+    }
+  },
+  "typeName": "AWS::S3Files::MountTarget"
+}
