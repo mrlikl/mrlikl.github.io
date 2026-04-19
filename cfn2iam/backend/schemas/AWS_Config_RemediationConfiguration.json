@@ -1,4 +1,35 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "config:DescribeRemediationConfigurations",
+        "config:PutRemediationConfigurations",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "config:DeleteRemediationConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "config:DescribeRemediationConfigurations",
+        "config:DescribeConfigRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "config:DescribeRemediationConfigurations"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "config:PutRemediationConfigurations",
+        "config:DescribeRemediationConfigurations",
+        "iam:PassRole"
+      ]
+    }
+  },
   "typeName": "AWS::Config::RemediationConfiguration"
 }

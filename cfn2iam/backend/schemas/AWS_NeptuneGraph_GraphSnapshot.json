@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "neptune-graph:CreateGraphSnapshot",
+        "neptune-graph:GetGraphSnapshot",
+        "neptune-graph:TagResource",
+        "neptune-graph:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "neptune-graph:DeleteGraphSnapshot",
+        "neptune-graph:GetGraphSnapshot"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "neptune-graph:ListGraphSnapshots"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "neptune-graph:GetGraphSnapshot",
+        "neptune-graph:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "neptune-graph:GetGraphSnapshot",
+        "neptune-graph:TagResource",
+        "neptune-graph:UntagResource",
+        "neptune-graph:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::NeptuneGraph::GraphSnapshot"
+}
