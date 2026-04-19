@@ -4,7 +4,8 @@
       "permissions": [
         "globalaccelerator:DescribeCrossAccountAttachment",
         "globalaccelerator:CreateCrossAccountAttachment",
-        "globalaccelerator:TagResource"
+        "globalaccelerator:TagResource",
+        "globalaccelerator:ListTagsForResource"
       ]
     },
     "delete": {
@@ -20,7 +21,8 @@
     },
     "read": {
       "permissions": [
-        "globalaccelerator:DescribeCrossAccountAttachment"
+        "globalaccelerator:DescribeCrossAccountAttachment",
+        "globalaccelerator:ListTagsForResource"
       ]
     },
     "update": {
@@ -28,7 +30,8 @@
         "globalaccelerator:UpdateCrossAccountAttachment",
         "globalaccelerator:DescribeCrossAccountAttachment",
         "globalaccelerator:TagResource",
-        "globalaccelerator:UntagResource"
+        "globalaccelerator:UntagResource",
+        "globalaccelerator:ListTagsForResource"
       ]
     }
   },

@@ -4,7 +4,10 @@
       "permissions": [
         "globalaccelerator:CreateAccelerator",
         "globalaccelerator:DescribeAccelerator",
-        "globalaccelerator:TagResource"
+        "globalaccelerator:DescribeAcceleratorAttributes",
+        "globalaccelerator:UpdateAcceleratorAttributes",
+        "globalaccelerator:TagResource",
+        "globalaccelerator:ListTagsForResource"
       ]
     },
     "delete": {
@@ -21,15 +24,20 @@
     },
     "read": {
       "permissions": [
-        "globalaccelerator:DescribeAccelerator"
+        "globalaccelerator:DescribeAccelerator",
+        "globalaccelerator:DescribeAcceleratorAttributes",
+        "globalaccelerator:ListTagsForResource"
       ]
     },
     "update": {
       "permissions": [
         "globalaccelerator:UpdateAccelerator",
+        "globalaccelerator:UpdateAcceleratorAttributes",
+        "globalaccelerator:DescribeAcceleratorAttributes",
         "globalaccelerator:TagResource",
         "globalaccelerator:UntagResource",
-        "globalaccelerator:DescribeAccelerator"
+        "globalaccelerator:DescribeAccelerator",
+        "globalaccelerator:ListTagsForResource"
       ]
     }
   },

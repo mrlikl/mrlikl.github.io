@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-12T04:12:18.496909Z",
+  "lastUpdated": "2026-04-19T04:15:59.899209Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -1563,7 +1563,7 @@
     },
     {
       "filename": "AWS_Config_RemediationConfiguration.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Config::RemediationConfiguration"
     },
     {
@@ -5027,6 +5027,11 @@
       "typeName": "AWS::NeptuneGraph::Graph"
     },
     {
+      "filename": "AWS_NeptuneGraph_GraphSnapshot.json",
+      "hasHandlers": true,
+      "typeName": "AWS::NeptuneGraph::GraphSnapshot"
+    },
+    {
       "filename": "AWS_NeptuneGraph_PrivateGraphEndpoint.json",
       "hasHandlers": true,
       "typeName": "AWS::NeptuneGraph::PrivateGraphEndpoint"
@@ -5937,6 +5942,36 @@
       "typeName": "AWS::ResourceGroups::TagSyncTask"
     },
     {
+      "filename": "AWS_RoboMaker_Fleet.json",
+      "hasHandlers": true,
+      "typeName": "AWS::RoboMaker::Fleet"
+    },
+    {
+      "filename": "AWS_RoboMaker_Robot.json",
+      "hasHandlers": true,
+      "typeName": "AWS::RoboMaker::Robot"
+    },
+    {
+      "filename": "AWS_RoboMaker_RobotApplication.json",
+      "hasHandlers": true,
+      "typeName": "AWS::RoboMaker::RobotApplication"
+    },
+    {
+      "filename": "AWS_RoboMaker_RobotApplicationVersion.json",
+      "hasHandlers": true,
+      "typeName": "AWS::RoboMaker::RobotApplicationVersion"
+    },
+    {
+      "filename": "AWS_RoboMaker_SimulationApplication.json",
+      "hasHandlers": true,
+      "typeName": "AWS::RoboMaker::SimulationApplication"
+    },
+    {
+      "filename": "AWS_RoboMaker_SimulationApplicationVersion.json",
+      "hasHandlers": true,
+      "typeName": "AWS::RoboMaker::SimulationApplicationVersion"
+    },
+    {
       "filename": "AWS_RolesAnywhere_CRL.json",
       "hasHandlers": true,
       "typeName": "AWS::RolesAnywhere::CRL"
@@ -6090,6 +6125,16 @@
       "filename": "AWS_Route53_RecordSetGroup.json",
       "hasHandlers": false,
       "typeName": "AWS::Route53::RecordSetGroup"
+    },
+    {
+      "filename": "AWS_S3Express_BucketPolicy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::S3Express::BucketPolicy"
+    },
+    {
+      "filename": "AWS_S3Express_DirectoryBucket.json",
+      "hasHandlers": true,
+      "typeName": "AWS::S3Express::DirectoryBucket"
     },
     {
       "filename": "AWS_S3Files_AccessPoint.json",
@@ -7507,5 +7552,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1501
+  "totalSchemas": 1510
 }

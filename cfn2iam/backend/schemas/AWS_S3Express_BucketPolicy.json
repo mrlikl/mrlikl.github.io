@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3express:GetBucketPolicy",
+        "s3express:PutBucketPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3express:GetBucketPolicy",
+        "s3express:DeleteBucketPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "s3express:GetBucketPolicy",
+        "s3express:ListAllMyDirectoryBuckets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3express:GetBucketPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3express:GetBucketPolicy",
+        "s3express:PutBucketPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::S3Express::BucketPolicy"
+}

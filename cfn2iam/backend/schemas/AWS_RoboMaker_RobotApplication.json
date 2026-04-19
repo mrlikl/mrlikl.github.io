@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "robomaker:CreateRobotApplication",
+        "robomaker:TagResource",
+        "robomaker:UntagResource",
+        "ecr:BatchGetImage",
+        "ecr:GetAuthorizationToken",
+        "ecr:BatchCheckLayerAvailability",
+        "ecr-public:GetAuthorizationToken",
+        "sts:GetServiceBearerToken"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "robomaker:DescribeRobotApplication",
+        "robomaker:DeleteRobotApplication"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "robomaker:ListRobotApplications"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "robomaker:DescribeRobotApplication"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "robomaker:TagResource",
+        "robomaker:UntagResource",
+        "robomaker:UpdateRobotApplication",
+        "ecr:BatchGetImage",
+        "ecr:GetAuthorizationToken",
+        "ecr:BatchCheckLayerAvailability",
+        "ecr-public:GetAuthorizationToken"
+      ]
+    }
+  },
+  "typeName": "AWS::RoboMaker::RobotApplication"
+}
