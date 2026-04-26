@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "s3express:CreateAccessPoint",
+        "s3express:PutAccessPointPolicy",
+        "s3express:GetAccessPoint",
+        "s3express:PutAccessPointScope",
+        "s3express:GetAccessPointScope",
+        "s3express:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "s3express:DeleteAccessPointPolicy",
+        "s3express:DeleteAccessPoint",
+        "s3express:DeleteAccessPointScope"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "s3express:ListAccessPointsForDirectoryBuckets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "s3express:GetAccessPoint",
+        "s3express:GetAccessPointPolicy",
+        "s3express:GetAccessPointScope",
+        "s3express:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "s3express:PutAccessPointPolicy",
+        "s3express:DeleteAccessPointPolicy",
+        "s3express:PutAccessPointScope",
+        "s3express:DeleteAccessPointScope",
+        "s3express:TagResource",
+        "s3express:UntagResource",
+        "s3express:GetAccessPoint",
+        "s3express:GetAccessPointPolicy",
+        "s3express:GetAccessPointScope",
+        "s3express:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::S3Express::AccessPoint"
+}

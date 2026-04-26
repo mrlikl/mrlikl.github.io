@@ -7,6 +7,7 @@
         "aidevops:TagResource",
         "aidevops:ListTagsForResource",
         "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
         "kms:Decrypt",
         "kms:DescribeKey",
         "kms:Encrypt",

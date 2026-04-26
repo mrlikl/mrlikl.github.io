@@ -9,7 +9,8 @@
         "mediaconnect:AssociateRouterNetworkInterface",
         "mediaconnect:CreateRouterInput",
         "mediaconnect:TagResource",
-        "mediaconnect:UpdateFlowOutput"
+        "mediaconnect:UpdateFlowOutput",
+        "medialive:UpdateChannel"
       ]
     },
     "delete": {
@@ -17,6 +18,7 @@
         "mediaconnect:GetRouterInput",
         "mediaconnect:UpdateRouterInput",
         "mediaconnect:UpdateFlowOutput",
+        "medialive:UpdateChannel",
         "mediaconnect:ListRouterInputs",
         "mediaconnect:DeleteRouterInput"
       ]
@@ -41,7 +43,8 @@
         "iam:PassRole",
         "mediaconnect:AssociateRouterNetworkInterface",
         "mediaconnect:UpdateFlowOutput",
-        "mediaconnect:UpdateRouterInput"
+        "mediaconnect:UpdateRouterInput",
+        "medialive:UpdateChannel"
       ]
     }
   },
