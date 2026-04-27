@@ -13,24 +13,39 @@
         "kms:CreateGrant",
         "kms:Decrypt",
         "kms:DescribeKey",
-        "kms:GenerateDataKeyWithoutPlainText"
+        "kms:GenerateDataKeyWithoutPlainText",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
       ]
     },
     "delete": {
       "permissions": [
         "sagemaker:DeleteApp",
         "sagemaker:DeleteDomain",
-        "sagemaker:DescribeDomain"
+        "sagemaker:DescribeDomain",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags",
+        "efs:DescribeMountTargets",
+        "efs:DeleteMountTarget",
+        "efs:DeleteFileSystem"
       ]
     },
     "list": {
       "permissions": [
-        "sagemaker:ListDomains"
+        "sagemaker:ListDomains",
+        "sagemaker:ListTags"
       ]
     },
     "read": {
       "permissions": [
-        "sagemaker:DescribeDomain"
+        "sagemaker:DescribeDomain",
+        "sagemaker:DescribeApp",
+        "sagemaker:DescribeUserProfile",
+        "sagemaker:DescribeImage",
+        "sagemaker:DescribeImageVersion",
+        "sagemaker:ListTags"
       ]
     },
     "update": {
@@ -40,7 +55,10 @@
         "sagemaker:DescribeDomain",
         "sagemaker:DescribeImage",
         "sagemaker:DescribeImageVersion",
-        "iam:PassRole"
+        "iam:PassRole",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
       ]
     }
   },

@@ -4,7 +4,8 @@
       "permissions": [
         "cloudfront:CreateFunction",
         "cloudfront:PublishFunction",
-        "cloudfront:DescribeFunction"
+        "cloudfront:DescribeFunction",
+        "cloudfront:TagResource"
       ]
     },
     "delete": {
@@ -21,14 +22,17 @@
     "read": {
       "permissions": [
         "cloudfront:DescribeFunction",
-        "cloudfront:GetFunction"
+        "cloudfront:GetFunction",
+        "cloudfront:ListTagsForResource"
       ]
     },
     "update": {
       "permissions": [
         "cloudfront:UpdateFunction",
         "cloudfront:PublishFunction",
-        "cloudfront:DescribeFunction"
+        "cloudfront:DescribeFunction",
+        "cloudfront:TagResource",
+        "cloudfront:UntagResource"
       ]
     }
   },

@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aidevops:CreatePrivateConnection",
+        "aidevops:DescribePrivateConnection",
+        "aidevops:TagResource",
+        "aidevops:ListTagsForResource",
+        "ec2:DescribeVpcs",
+        "iam:CreateServiceLinkedRole",
+        "vpc-lattice:AssociateViaService",
+        "vpc-lattice:AssociateViaAWSService",
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:CreateServiceNetworkResourceAssociation"
+      ],
+      "timeoutInMinutes": 15
+    },
+    "delete": {
+      "permissions": [
+        "aidevops:DeletePrivateConnection",
+        "aidevops:DescribePrivateConnection"
+      ],
+      "timeoutInMinutes": 15
+    },
+    "list": {
+      "permissions": [
+        "aidevops:ListPrivateConnections"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aidevops:DescribePrivateConnection",
+        "aidevops:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aidevops:UpdatePrivateConnectionCertificate",
+        "aidevops:DescribePrivateConnection",
+        "aidevops:TagResource",
+        "aidevops:UntagResource",
+        "aidevops:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::DevOpsAgent::PrivateConnection"
+}

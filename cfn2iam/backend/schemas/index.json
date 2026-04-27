@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-19T04:15:59.899209Z",
+  "lastUpdated": "2026-04-26T04:24:24.610685Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -2150,6 +2150,11 @@
       "filename": "AWS_DevOpsAgent_Association.json",
       "hasHandlers": true,
       "typeName": "AWS::DevOpsAgent::Association"
+    },
+    {
+      "filename": "AWS_DevOpsAgent_PrivateConnection.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DevOpsAgent::PrivateConnection"
     },
     {
       "filename": "AWS_DevOpsAgent_Service.json",
@@ -6127,6 +6132,11 @@
       "typeName": "AWS::Route53::RecordSetGroup"
     },
     {
+      "filename": "AWS_S3Express_AccessPoint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::S3Express::AccessPoint"
+    },
+    {
       "filename": "AWS_S3Express_BucketPolicy.json",
       "hasHandlers": true,
       "typeName": "AWS::S3Express::BucketPolicy"
@@ -7552,5 +7562,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1510
+  "totalSchemas": 1512
 }
