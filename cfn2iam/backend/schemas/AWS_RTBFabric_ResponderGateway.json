@@ -29,6 +29,7 @@
     "update": {
       "permissions": [
         "rtbfabric:GetResponderGateway",
+        "rtbfabric:UpdateResponderGateway",
         "rtbfabric:TagResource",
         "rtbfabric:UntagResource",
         "rtbfabric:ListTagsForResource"

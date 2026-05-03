@@ -1,4 +1,69 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticache:DescribeCacheClusters",
+        "elasticache:CreateCacheCluster",
+        "elasticache:AddTagsToResource",
+        "elasticache:DeleteCacheCluster",
+        "s3:GetObject",
+        "logs:CreateLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:UpdateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "logs:PutResourcePolicy",
+        "logs:DescribeResourcePolicies",
+        "logs:DescribeLogGroups",
+        "logs:CreateLogStream",
+        "firehose:TagDeliveryStream",
+        "iam:CreateServiceLinkedRole"
+      ],
+      "timeoutInMinutes": 240
+    },
+    "delete": {
+      "permissions": [
+        "elasticache:DescribeCacheClusters",
+        "elasticache:DeleteCacheCluster",
+        "elasticache:CreateSnapshot"
+      ],
+      "timeoutInMinutes": 240
+    },
+    "list": {
+      "permissions": [
+        "elasticache:DescribeCacheClusters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticache:ListTagsForResource",
+        "elasticache:DescribeCacheClusters",
+        "logs:GetLogDelivery",
+        "logs:DescribeLogGroups"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "elasticache:DescribeCacheClusters",
+        "elasticache:ModifyCacheCluster",
+        "elasticache:AddTagsToResource",
+        "elasticache:RemoveTagsFromResource",
+        "elasticache:RebootCacheCluster",
+        "logs:CreateLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:UpdateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "logs:PutResourcePolicy",
+        "logs:DescribeResourcePolicies",
+        "logs:DescribeLogGroups",
+        "logs:CreateLogStream",
+        "s3:GetObject",
+        "firehose:TagDeliveryStream",
+        "iam:CreateServiceLinkedRole"
+      ],
+      "timeoutInMinutes": 240
+    }
+  },
   "typeName": "AWS::ElastiCache::CacheCluster"
 }
