@@ -16,6 +16,11 @@
         "workspaces:DescribeConnectionAliases"
       ]
     },
+    "list": {
+      "permissions": [
+        "workspaces:DescribeConnectionAliases"
+      ]
+    },
     "read": {
       "permissions": [
         "workspaces:DescribeConnectionAliases",

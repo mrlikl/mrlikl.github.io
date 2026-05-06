@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-26T04:24:24.610685Z",
+  "lastUpdated": "2026-05-03T04:42:10.458859Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -1005,6 +1005,11 @@
       "filename": "AWS_Chatbot_SlackChannelConfiguration.json",
       "hasHandlers": true,
       "typeName": "AWS::Chatbot::SlackChannelConfiguration"
+    },
+    {
+      "filename": "AWS_Chime_AppInstance.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Chime::AppInstance"
     },
     {
       "filename": "AWS_CleanRoomsML_ConfiguredModelAlgorithm.json",
@@ -3043,7 +3048,7 @@
     },
     {
       "filename": "AWS_ElastiCache_CacheCluster.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ElastiCache::CacheCluster"
     },
     {
@@ -7562,5 +7567,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1512
+  "totalSchemas": 1513
 }
