@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-03T04:42:10.458859Z",
+  "lastUpdated": "2026-05-10T04:47:42.092912Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -1010,6 +1010,11 @@
       "filename": "AWS_Chime_AppInstance.json",
       "hasHandlers": true,
       "typeName": "AWS::Chime::AppInstance"
+    },
+    {
+      "filename": "AWS_Chime_AppInstanceBot.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Chime::AppInstanceBot"
     },
     {
       "filename": "AWS_CleanRoomsML_ConfiguredModelAlgorithm.json",
@@ -7567,5 +7572,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1513
+  "totalSchemas": 1514
 }

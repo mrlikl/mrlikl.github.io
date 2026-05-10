@@ -8,7 +8,8 @@
         "sso:ListProfiles",
         "sso:GetProfile",
         "sso:AssociateProfile",
-        "sso:DisassociateProfile"
+        "sso:DisassociateProfile",
+        "iam:GetRole"
       ]
     },
     "delete": {
@@ -27,6 +28,9 @@
         "properties": {
           "DomainIdentifier": {
             "$ref": "resource-schema.json#/properties/DomainIdentifier"
+          },
+          "GroupType": {
+            "$ref": "resource-schema.json#/properties/GroupType"
           }
         },
         "required": [
@@ -39,7 +43,8 @@
     },
     "read": {
       "permissions": [
-        "datazone:GetGroupProfile"
+        "datazone:GetGroupProfile",
+        "iam:GetRole"
       ]
     },
     "update": {

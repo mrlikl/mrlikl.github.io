@@ -3,7 +3,8 @@
     "create": {
       "permissions": [
         "datazone:CreateProject",
-        "datazone:GetProject"
+        "datazone:GetProject",
+        "iam:PassRole"
       ]
     },
     "delete": {

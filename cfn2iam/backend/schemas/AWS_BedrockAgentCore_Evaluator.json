@@ -7,7 +7,10 @@
         "bedrock-agentcore:TagResource",
         "bedrock:InvokeModel",
         "lambda:GetFunction",
-        "lambda:InvokeFunction"
+        "lambda:InvokeFunction",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
       ]
     },
     "delete": {
@@ -24,7 +27,8 @@
     "read": {
       "permissions": [
         "bedrock-agentcore:GetEvaluator",
-        "bedrock-agentcore:ListTagsForResource"
+        "bedrock-agentcore:ListTagsForResource",
+        "kms:Decrypt"
       ]
     },
     "update": {
@@ -36,7 +40,10 @@
         "bedrock-agentcore:ListTagsForResource",
         "bedrock:InvokeModel",
         "lambda:GetFunction",
-        "lambda:InvokeFunction"
+        "lambda:InvokeFunction",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
       ]
     }
   },
