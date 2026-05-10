@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "chime:CreateAppInstanceBot",
+        "chime:DescribeAppInstanceBot",
+        "chime:TagResource",
+        "chime:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "chime:DeleteAppInstanceBot",
+        "chime:DescribeAppInstanceBot"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "chime:ListAppInstanceBots"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "chime:DescribeAppInstanceBot",
+        "chime:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "chime:UpdateAppInstanceBot",
+        "chime:DescribeAppInstanceBot",
+        "chime:TagResource",
+        "chime:UntagResource",
+        "chime:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Chime::AppInstanceBot"
+}

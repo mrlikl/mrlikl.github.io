@@ -29,7 +29,8 @@
     "read": {
       "permissions": [
         "cloudfront:GetDistribution",
-        "cloudfront:GetDistributionConfig"
+        "cloudfront:GetDistributionConfig",
+        "cloudfront:ListTagsForResource"
       ]
     },
     "update": {
