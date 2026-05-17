@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListBrowsers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetBrowser"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::Browser"
+}

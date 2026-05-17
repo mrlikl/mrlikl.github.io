@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-10T04:47:42.092912Z",
+  "lastUpdated": "2026-05-17T04:54:32.304636Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -745,6 +745,11 @@
       "filename": "AWS_BedrockAgentCore_ApiKeyCredentialProvider.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::ApiKeyCredentialProvider"
+    },
+    {
+      "filename": "AWS_BedrockAgentCore_Browser.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::Browser"
     },
     {
       "filename": "AWS_BedrockAgentCore_BrowserCustom.json",
@@ -7572,5 +7577,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1514
+  "totalSchemas": 1515
 }

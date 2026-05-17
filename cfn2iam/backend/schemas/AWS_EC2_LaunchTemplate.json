@@ -25,7 +25,9 @@
     },
     "update": {
       "permissions": [
-        "ec2:CreateLaunchTemplateVersion"
+        "ec2:CreateLaunchTemplateVersion",
+        "ec2:CreateTags",
+        "ec2:DeleteTags"
       ]
     }
   },
