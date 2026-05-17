@@ -49,6 +49,8 @@
       "permissions": [
         "elasticache:ModifyReplicationGroup",
         "elasticache:ModifyReplicationGroupShardConfiguration",
+        "elasticache:IncreaseReplicaCount",
+        "elasticache:DecreaseReplicaCount",
         "elasticache:DescribeReplicationGroups",
         "elasticache:ListTagsForResource",
         "elasticache:AddTagsToResource",

@@ -27,7 +27,7 @@
       "permissions": [
         "Batch:UpdateSchedulingPolicy",
         "Batch:TagResource",
-        "Batch:UnTagResource"
+        "Batch:UntagResource"
       ]
     }
   },

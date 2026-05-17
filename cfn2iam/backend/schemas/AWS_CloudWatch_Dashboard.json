@@ -3,7 +3,8 @@
     "create": {
       "permissions": [
         "cloudwatch:PutDashboard",
-        "cloudwatch:GetDashboard"
+        "cloudwatch:GetDashboard",
+        "cloudwatch:TagResource"
       ]
     },
     "delete": {
@@ -19,12 +20,16 @@
     },
     "read": {
       "permissions": [
-        "cloudwatch:GetDashboard"
+        "cloudwatch:GetDashboard",
+        "cloudwatch:ListTagsForResource"
       ]
     },
     "update": {
       "permissions": [
-        "cloudwatch:PutDashboard"
+        "cloudwatch:PutDashboard",
+        "cloudwatch:TagResource",
+        "cloudwatch:UntagResource",
+        "cloudwatch:ListTagsForResource"
       ]
     }
   },

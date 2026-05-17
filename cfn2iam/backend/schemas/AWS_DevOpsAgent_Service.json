@@ -38,6 +38,7 @@
     },
     "update": {
       "permissions": [
+        "aidevops:UpdateService",
         "aidevops:GetService",
         "aidevops:TagResource",
         "aidevops:UntagResource",
