@@ -1,0 +1,51 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aws-external-anthropic:CreateWorkspace",
+        "aws-external-anthropic:GetWorkspace",
+        "aws-external-anthropic:ListTagsForResource",
+        "aws-external-anthropic:TagResource",
+        "sts:GetWebIdentityToken",
+        "sts:TagGetWebIdentityToken"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "aws-external-anthropic:ArchiveWorkspace",
+        "aws-external-anthropic:GetWorkspace",
+        "aws-external-anthropic:ListTagsForResource",
+        "sts:GetWebIdentityToken",
+        "sts:TagGetWebIdentityToken"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "aws-external-anthropic:ListWorkspaces",
+        "aws-external-anthropic:ListTagsForResource",
+        "sts:GetWebIdentityToken",
+        "sts:TagGetWebIdentityToken"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aws-external-anthropic:GetWorkspace",
+        "aws-external-anthropic:ListTagsForResource",
+        "sts:GetWebIdentityToken",
+        "sts:TagGetWebIdentityToken"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aws-external-anthropic:UpdateWorkspace",
+        "aws-external-anthropic:GetWorkspace",
+        "aws-external-anthropic:ListTagsForResource",
+        "aws-external-anthropic:TagResource",
+        "aws-external-anthropic:UntagResource",
+        "sts:GetWebIdentityToken",
+        "sts:TagGetWebIdentityToken"
+      ]
+    }
+  },
+  "typeName": "AWS::AWSExternalAnthropic::Workspace"
+}

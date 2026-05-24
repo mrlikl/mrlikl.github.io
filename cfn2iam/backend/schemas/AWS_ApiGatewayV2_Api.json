@@ -32,6 +32,7 @@
         "apigateway:GET",
         "apigateway:PUT",
         "apigateway:POST",
+        "apigateway:DELETE",
         "s3:getObject"
       ]
     }

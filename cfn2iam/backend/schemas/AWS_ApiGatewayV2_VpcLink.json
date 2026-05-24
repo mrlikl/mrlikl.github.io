@@ -38,7 +38,9 @@
     "update": {
       "permissions": [
         "apigateway:PATCH",
+        "apigateway:POST",
         "apigateway:GET",
+        "apigateway:DELETE",
         "apigateway:TagResource",
         "apigateway:unTagResource",
         "iam:CreateServiceLinkedRole",
