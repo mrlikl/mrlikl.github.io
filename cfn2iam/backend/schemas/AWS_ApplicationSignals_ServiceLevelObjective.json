@@ -10,7 +10,9 @@
         "iam:GetRole",
         "iam:CreateServiceLinkedRole",
         "application-signals:ListServiceLevelObjectiveExclusionWindows",
-        "application-signals:BatchUpdateExclusionWindows"
+        "application-signals:BatchUpdateExclusionWindows",
+        "rum:GetAppMonitor",
+        "rum:BatchGetRumMetricDefinitions"
       ]
     },
     "delete": {
@@ -43,7 +45,9 @@
         "application-signals:GetServiceLevelObjective",
         "application-signals:ListTagsForResource",
         "application-signals:ListServiceLevelObjectiveExclusionWindows",
-        "application-signals:BatchUpdateExclusionWindows"
+        "application-signals:BatchUpdateExclusionWindows",
+        "rum:GetAppMonitor",
+        "rum:BatchGetRumMetricDefinitions"
       ]
     }
   },
