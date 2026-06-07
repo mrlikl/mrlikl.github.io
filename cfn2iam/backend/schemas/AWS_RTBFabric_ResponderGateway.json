@@ -4,32 +4,50 @@
       "permissions": [
         "rtbfabric:CreateResponderGateway",
         "rtbfabric:GetResponderGateway",
+        "rtbfabric:AssociateCertificate",
+        "rtbfabric:GetCertificateAssociation",
+        "rtbfabric:ListCertificateAssociations",
         "rtbfabric:TagResource",
         "rtbfabric:ListTagsForResource",
-        "iam:CreateServiceLinkedRole"
+        "iam:CreateServiceLinkedRole",
+        "acm:CreateCertificateRelation",
+        "quickbeam:CreateCertificateRelation",
+        "quickbeam-admin:CreateCertificateRelation",
+        "acm:DescribeCertificate"
       ]
     },
     "delete": {
       "permissions": [
         "rtbfabric:DeleteResponderGateway",
-        "rtbfabric:GetResponderGateway"
+        "rtbfabric:GetResponderGateway",
+        "rtbfabric:DisassociateCertificate",
+        "rtbfabric:ListCertificateAssociations",
+        "rtbfabric:GetCertificateAssociation",
+        "acm:RemoveCertificateRelation",
+        "quickbeam:RemoveCertificateRelation",
+        "quickbeam-admin:RemoveCertificateRelation"
       ]
     },
     "list": {
       "permissions": [
-        "rtbfabric:ListResponderGateways"
+        "rtbfabric:ListResponderGateways",
+        "rtbfabric:ListCertificateAssociations"
       ]
     },
     "read": {
       "permissions": [
         "rtbfabric:GetResponderGateway",
-        "rtbfabric:ListTagsForResource"
+        "rtbfabric:GetCertificateAssociation",
+        "rtbfabric:ListCertificateAssociations",
+        "rtbfabric:ListTagsForResource",
+        "acm:DescribeCertificate"
       ]
     },
     "update": {
       "permissions": [
         "rtbfabric:GetResponderGateway",
         "rtbfabric:UpdateResponderGateway",
+        "rtbfabric:ListCertificateAssociations",
         "rtbfabric:TagResource",
         "rtbfabric:UntagResource",
         "rtbfabric:ListTagsForResource"

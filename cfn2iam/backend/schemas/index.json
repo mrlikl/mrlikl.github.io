@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-17T04:54:32.304636Z",
+  "lastUpdated": "2026-06-07T05:25:25.576922Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -65,6 +65,11 @@
       "filename": "AWS_ARCZonalShift_ZonalAutoshiftConfiguration.json",
       "hasHandlers": true,
       "typeName": "AWS::ARCZonalShift::ZonalAutoshiftConfiguration"
+    },
+    {
+      "filename": "AWS_AWSExternalAnthropic_Workspace.json",
+      "hasHandlers": true,
+      "typeName": "AWS::AWSExternalAnthropic::Workspace"
     },
     {
       "filename": "AWS_AccessAnalyzer_Analyzer.json",
@@ -483,12 +488,12 @@
     },
     {
       "filename": "AWS_AppStream_StackUserAssociation.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::AppStream::StackUserAssociation"
     },
     {
       "filename": "AWS_AppStream_User.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::AppStream::User"
     },
     {
@@ -767,6 +772,11 @@
       "typeName": "AWS::BedrockAgentCore::CodeInterpreterCustom"
     },
     {
+      "filename": "AWS_BedrockAgentCore_Dataset.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::Dataset"
+    },
+    {
       "filename": "AWS_BedrockAgentCore_Evaluator.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::Evaluator"
@@ -780,6 +790,11 @@
       "filename": "AWS_BedrockAgentCore_GatewayTarget.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::GatewayTarget"
+    },
+    {
+      "filename": "AWS_BedrockAgentCore_Harness.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::Harness"
     },
     {
       "filename": "AWS_BedrockAgentCore_Memory.json",
@@ -797,6 +812,21 @@
       "typeName": "AWS::BedrockAgentCore::OnlineEvaluationConfig"
     },
     {
+      "filename": "AWS_BedrockAgentCore_PaymentConnector.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::PaymentConnector"
+    },
+    {
+      "filename": "AWS_BedrockAgentCore_PaymentCredentialProvider.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::PaymentCredentialProvider"
+    },
+    {
+      "filename": "AWS_BedrockAgentCore_PaymentManager.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::PaymentManager"
+    },
+    {
       "filename": "AWS_BedrockAgentCore_Policy.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::Policy"
@@ -805,6 +835,11 @@
       "filename": "AWS_BedrockAgentCore_PolicyEngine.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::PolicyEngine"
+    },
+    {
+      "filename": "AWS_BedrockAgentCore_ResourcePolicy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::ResourcePolicy"
     },
     {
       "filename": "AWS_BedrockAgentCore_Runtime.json",
@@ -1327,9 +1362,19 @@
       "typeName": "AWS::CloudWatch::InsightRule"
     },
     {
+      "filename": "AWS_CloudWatch_LogAlarm.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudWatch::LogAlarm"
+    },
+    {
       "filename": "AWS_CloudWatch_MetricStream.json",
       "hasHandlers": true,
       "typeName": "AWS::CloudWatch::MetricStream"
+    },
+    {
+      "filename": "AWS_CloudWatch_OTelEnrichment.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudWatch::OTelEnrichment"
     },
     {
       "filename": "AWS_CodeArtifact_Domain.json",
@@ -5327,6 +5372,11 @@
       "typeName": "AWS::OpenSearchServerless::CollectionGroup"
     },
     {
+      "filename": "AWS_OpenSearchServerless_CollectionIndex.json",
+      "hasHandlers": true,
+      "typeName": "AWS::OpenSearchServerless::CollectionIndex"
+    },
+    {
       "filename": "AWS_OpenSearchServerless_Index.json",
       "hasHandlers": true,
       "typeName": "AWS::OpenSearchServerless::Index"
@@ -5802,6 +5852,11 @@
       "typeName": "AWS::RTBFabric::Link"
     },
     {
+      "filename": "AWS_RTBFabric_LinkRoutingRule.json",
+      "hasHandlers": true,
+      "typeName": "AWS::RTBFabric::LinkRoutingRule"
+    },
+    {
       "filename": "AWS_RTBFabric_OutboundExternalLink.json",
       "hasHandlers": true,
       "typeName": "AWS::RTBFabric::OutboundExternalLink"
@@ -5925,6 +5980,31 @@
       "filename": "AWS_Rekognition_StreamProcessor.json",
       "hasHandlers": true,
       "typeName": "AWS::Rekognition::StreamProcessor"
+    },
+    {
+      "filename": "AWS_ResilienceHubV2_Policy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ResilienceHubV2::Policy"
+    },
+    {
+      "filename": "AWS_ResilienceHubV2_Service.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ResilienceHubV2::Service"
+    },
+    {
+      "filename": "AWS_ResilienceHubV2_ServiceFunction.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ResilienceHubV2::ServiceFunction"
+    },
+    {
+      "filename": "AWS_ResilienceHubV2_System.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ResilienceHubV2::System"
+    },
+    {
+      "filename": "AWS_ResilienceHubV2_UserJourney.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ResilienceHubV2::UserJourney"
     },
     {
       "filename": "AWS_ResilienceHub_App.json",
@@ -6938,7 +7018,7 @@
     },
     {
       "filename": "AWS_ServiceCatalog_AcceptedPortfolioShare.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ServiceCatalog::AcceptedPortfolioShare"
     },
     {
@@ -7205,6 +7285,11 @@
       "filename": "AWS_VerifiedPermissions_PolicyStore.json",
       "hasHandlers": true,
       "typeName": "AWS::VerifiedPermissions::PolicyStore"
+    },
+    {
+      "filename": "AWS_VerifiedPermissions_PolicyStoreAlias.json",
+      "hasHandlers": true,
+      "typeName": "AWS::VerifiedPermissions::PolicyStoreAlias"
     },
     {
       "filename": "AWS_VerifiedPermissions_PolicyTemplate.json",
@@ -7577,5 +7662,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1515
+  "totalSchemas": 1532
 }

@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreateDataset",
+        "bedrock-agentcore:GetDataset",
+        "bedrock-agentcore:TagResource",
+        "kms:DescribeKey",
+        "kms:Decrypt",
+        "kms:GenerateDataKey",
+        "s3:GetObject",
+        "s3:GetBucketLocation"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeleteDataset",
+        "bedrock-agentcore:GetDataset",
+        "kms:Decrypt",
+        "kms:DescribeKey"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListDatasets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetDataset",
+        "bedrock-agentcore:ListTagsForResource",
+        "kms:Decrypt",
+        "kms:DescribeKey"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:UpdateDataset",
+        "bedrock-agentcore:GetDataset",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:UntagResource",
+        "bedrock-agentcore:ListTagsForResource",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::Dataset"
+}

@@ -7,12 +7,28 @@
         "bedrock-agentcore:GetGatewayTarget",
         "bedrock-agentcore:GetResourceOauth2Token",
         "bedrock-agentcore:GetWorkloadAccessToken",
+        "bedrock-agentcore:GetWorkloadAccessTokenForUserId",
         "bedrock-agentcore:SynchronizeGatewayTargets",
         "kms:Decrypt",
         "kms:GenerateDataKey",
         "kms:ListGrants",
         "s3:GetObject",
-        "secretsmanager:GetSecretValue"
+        "secretsmanager:GetSecretValue",
+        "iam:CreateServiceLinkedRole",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:CreateNetworkInterface",
+        "vpc-lattice:AssociateViaAWSService",
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:CreateResourceConfiguration",
+        "vpc-lattice:CreateResourceGateway",
+        "vpc-lattice:DeleteResourceConfiguration",
+        "vpc-lattice:DeleteResourceGateway",
+        "vpc-lattice:GetServiceNetworkResourceAssociation",
+        "vpc-lattice:CreateServiceNetworkResourceAssociation",
+        "vpc-lattice:DeleteServiceNetworkResourceAssociation",
+        "vpc-lattice:ListServiceNetworkResourceAssociations"
       ]
     },
     "delete": {
@@ -21,7 +37,10 @@
         "bedrock-agentcore:GetGatewayTarget",
         "kms:Decrypt",
         "kms:GenerateDataKey",
-        "kms:ListGrants"
+        "kms:ListGrants",
+        "vpc-lattice:DeleteResourceConfiguration",
+        "vpc-lattice:DeleteResourceGateway",
+        "vpc-lattice:DeleteServiceNetworkResourceAssociation"
       ]
     },
     "list": {
@@ -40,13 +59,29 @@
         "bedrock-agentcore:GetGatewayTarget",
         "bedrock-agentcore:GetResourceOauth2Token",
         "bedrock-agentcore:GetWorkloadAccessToken",
+        "bedrock-agentcore:GetWorkloadAccessTokenForUserId",
         "bedrock-agentcore:SynchronizeGatewayTargets",
         "bedrock-agentcore:UpdateGatewayTarget",
         "kms:Decrypt",
         "kms:GenerateDataKey",
         "kms:ListGrants",
         "s3:GetObject",
-        "secretsmanager:GetSecretValue"
+        "secretsmanager:GetSecretValue",
+        "iam:CreateServiceLinkedRole",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:CreateNetworkInterface",
+        "vpc-lattice:AssociateViaAWSService",
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:CreateResourceConfiguration",
+        "vpc-lattice:CreateResourceGateway",
+        "vpc-lattice:DeleteResourceConfiguration",
+        "vpc-lattice:DeleteResourceGateway",
+        "vpc-lattice:GetServiceNetworkResourceAssociation",
+        "vpc-lattice:CreateServiceNetworkResourceAssociation",
+        "vpc-lattice:DeleteServiceNetworkResourceAssociation",
+        "vpc-lattice:ListServiceNetworkResourceAssociations"
       ]
     }
   },

@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aoss:CreateIndex",
+        "aoss:GetIndex",
+        "aoss:APIAccessAll"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "aoss:DeleteIndex",
+        "aoss:GetIndex",
+        "aoss:APIAccessAll"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aoss:GetIndex",
+        "aoss:APIAccessAll"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aoss:UpdateIndex",
+        "aoss:GetIndex",
+        "aoss:APIAccessAll"
+      ]
+    }
+  },
+  "typeName": "AWS::OpenSearchServerless::CollectionIndex"
+}

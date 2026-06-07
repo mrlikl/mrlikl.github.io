@@ -5,13 +5,30 @@
         "connect:CreateRule",
         "cases:GetTemplate",
         "cases:ListFields",
-        "cases:ListFieldOptions"
+        "cases:ListFieldOptions",
+        "connect:TagResource",
+        "connect:DeleteRule"
       ]
     },
     "delete": {
       "permissions": [
         "connect:DeleteRule",
         "connect:UntagResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "InstanceArn": {
+            "$ref": "resource-schema.json#/properties/InstanceArn"
+          }
+        },
+        "required": [
+          "InstanceArn"
+        ]
+      },
+      "permissions": [
+        "connect:ListRules"
       ]
     },
     "read": {

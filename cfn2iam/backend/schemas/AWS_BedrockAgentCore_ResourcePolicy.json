@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:PutResourcePolicy",
+        "bedrock-agentcore:GetResourcePolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeleteResourcePolicy",
+        "bedrock-agentcore:GetResourcePolicy"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ResourceArn": {
+            "maxLength": 1011,
+            "minLength": 20,
+            "type": "string"
+          }
+        },
+        "required": [
+          "ResourceArn"
+        ]
+      },
+      "permissions": [
+        "bedrock-agentcore:GetResourcePolicy"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetResourcePolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:PutResourcePolicy",
+        "bedrock-agentcore:GetResourcePolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::ResourcePolicy"
+}

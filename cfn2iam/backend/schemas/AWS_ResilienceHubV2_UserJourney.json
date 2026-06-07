@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "resiliencehub:CreateUserJourney",
+        "resiliencehub:GetUserJourney"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "resiliencehub:DeleteUserJourney"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "SystemIdentifier": {
+            "description": "The system identifier to list user journeys for.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "SystemIdentifier"
+        ]
+      },
+      "permissions": [
+        "resiliencehub:ListUserJourneys"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "resiliencehub:GetUserJourney"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "resiliencehub:UpdateUserJourney",
+        "resiliencehub:GetUserJourney"
+      ]
+    }
+  },
+  "typeName": "AWS::ResilienceHubV2::UserJourney"
+}

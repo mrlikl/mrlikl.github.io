@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreatePaymentConnector",
+        "bedrock-agentcore:GetPaymentConnector"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeletePaymentConnector",
+        "bedrock-agentcore:GetPaymentConnector"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "PaymentManagerId": {
+            "pattern": "^([0-9a-z][-]?){1,100}-[0-9a-z]{10}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "PaymentManagerId"
+        ]
+      },
+      "permissions": [
+        "bedrock-agentcore:ListPaymentConnectors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetPaymentConnector"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:UpdatePaymentConnector",
+        "bedrock-agentcore:GetPaymentConnector"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::PaymentConnector"
+}

@@ -1,4 +1,33 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appstream:CreateUser",
+        "appstream:DescribeUsers"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appstream:DeleteUser"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AuthenticationType": {
+            "$ref": "resource-schema.json#/properties/AuthenticationType"
+          }
+        }
+      },
+      "permissions": [
+        "appstream:DescribeUsers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appstream:DescribeUsers"
+      ]
+    }
+  },
   "typeName": "AWS::AppStream::User"
 }

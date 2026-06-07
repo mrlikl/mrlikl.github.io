@@ -12,6 +12,7 @@
     "delete": {
       "permissions": [
         "rds:DeleteEventSubscription",
+        "rds:DescribeEventSubscriptions",
         "rds:RemoveTagsFromResource"
       ]
     },

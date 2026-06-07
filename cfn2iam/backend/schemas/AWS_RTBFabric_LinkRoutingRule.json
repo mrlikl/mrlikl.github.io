@@ -1,0 +1,55 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rtbfabric:CreateLinkRoutingRule",
+        "rtbfabric:GetLinkRoutingRule",
+        "rtbfabric:TagResource",
+        "rtbfabric:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rtbfabric:DeleteLinkRoutingRule",
+        "rtbfabric:GetLinkRoutingRule"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "GatewayId": {
+            "pattern": "^rtb-gw-[a-z0-9-]{1,25}$",
+            "type": "string"
+          },
+          "LinkId": {
+            "pattern": "^link-[a-z0-9-]{1,25}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "GatewayId",
+          "LinkId"
+        ]
+      },
+      "permissions": [
+        "rtbfabric:ListLinkRoutingRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rtbfabric:GetLinkRoutingRule",
+        "rtbfabric:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rtbfabric:UpdateLinkRoutingRule",
+        "rtbfabric:GetLinkRoutingRule",
+        "rtbfabric:TagResource",
+        "rtbfabric:UntagResource",
+        "rtbfabric:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::RTBFabric::LinkRoutingRule"
+}

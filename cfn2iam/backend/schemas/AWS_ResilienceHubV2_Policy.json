@@ -1,0 +1,59 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "resiliencehub:CreatePolicy",
+        "resiliencehub:GetPolicy",
+        "resiliencehub:TagResource",
+        "resiliencehub:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt",
+        "kms:Encrypt",
+        "kms:CreateGrant",
+        "kms:RetireGrant"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "resiliencehub:DeletePolicy",
+        "resiliencehub:GetPolicy",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:RetireGrant",
+        "kms:GenerateDataKey",
+        "kms:Encrypt",
+        "kms:CreateGrant"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "resiliencehub:ListPolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "resiliencehub:GetPolicy",
+        "resiliencehub:ListTagsForResource",
+        "kms:Decrypt",
+        "kms:DescribeKey"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "resiliencehub:UpdatePolicy",
+        "resiliencehub:GetPolicy",
+        "resiliencehub:TagResource",
+        "resiliencehub:UntagResource",
+        "resiliencehub:ListTagsForResource",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Encrypt",
+        "kms:CreateGrant",
+        "kms:RetireGrant"
+      ]
+    }
+  },
+  "typeName": "AWS::ResilienceHubV2::Policy"
+}
