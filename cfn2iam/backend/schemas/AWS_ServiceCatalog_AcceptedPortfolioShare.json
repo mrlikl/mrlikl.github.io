@@ -1,4 +1,27 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "servicecatalog:AcceptPortfolioShare",
+        "servicecatalog:ListAcceptedPortfolioShares"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "servicecatalog:RejectPortfolioShare",
+        "servicecatalog:ListAcceptedPortfolioShares"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "servicecatalog:ListAcceptedPortfolioShares"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "servicecatalog:ListAcceptedPortfolioShares"
+      ]
+    }
+  },
   "typeName": "AWS::ServiceCatalog::AcceptedPortfolioShare"
 }

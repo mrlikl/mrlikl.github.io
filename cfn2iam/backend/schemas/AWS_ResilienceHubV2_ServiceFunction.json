@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "resiliencehub:CreateServiceFunction",
+        "resiliencehub:ListServiceFunctions"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "resiliencehub:DeleteServiceFunction"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ServiceArn": {
+            "description": "The service ARN to list service functions for.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "ServiceArn"
+        ]
+      },
+      "permissions": [
+        "resiliencehub:ListServiceFunctions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "resiliencehub:ListServiceFunctions"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "resiliencehub:UpdateServiceFunction",
+        "resiliencehub:ListServiceFunctions"
+      ]
+    }
+  },
+  "typeName": "AWS::ResilienceHubV2::ServiceFunction"
+}

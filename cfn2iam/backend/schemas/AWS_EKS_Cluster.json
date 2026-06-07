@@ -48,7 +48,7 @@
         "eks:TagResource",
         "eks:UntagResource"
       ],
-      "timeoutInMinutes": 180
+      "timeoutInMinutes": 2160
     }
   },
   "typeName": "AWS::EKS::Cluster"

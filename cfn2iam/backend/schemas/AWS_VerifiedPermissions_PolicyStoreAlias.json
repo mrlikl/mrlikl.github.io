@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "verifiedpermissions:CreatePolicyStoreAlias",
+        "verifiedpermissions:GetPolicyStoreAlias"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "verifiedpermissions:DeletePolicyStoreAlias",
+        "verifiedpermissions:GetPolicyStoreAlias"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "verifiedpermissions:ListPolicyStoreAliases",
+        "verifiedpermissions:GetPolicyStoreAlias"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "verifiedpermissions:GetPolicyStoreAlias"
+      ]
+    }
+  },
+  "typeName": "AWS::VerifiedPermissions::PolicyStoreAlias"
+}

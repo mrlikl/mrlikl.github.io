@@ -7,14 +7,22 @@
         "globalaccelerator:DescribeAcceleratorAttributes",
         "globalaccelerator:UpdateAcceleratorAttributes",
         "globalaccelerator:TagResource",
-        "globalaccelerator:ListTagsForResource"
+        "globalaccelerator:ListTagsForResource",
+        "logs:CreateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "s3:GetBucketPolicy",
+        "s3:PutBucketPolicy"
       ]
     },
     "delete": {
       "permissions": [
         "globalaccelerator:UpdateAccelerator",
         "globalaccelerator:DeleteAccelerator",
-        "globalaccelerator:DescribeAccelerator"
+        "globalaccelerator:DescribeAccelerator",
+        "logs:CreateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "s3:GetBucketPolicy",
+        "s3:PutBucketPolicy"
       ]
     },
     "list": {
@@ -37,7 +45,11 @@
         "globalaccelerator:TagResource",
         "globalaccelerator:UntagResource",
         "globalaccelerator:DescribeAccelerator",
-        "globalaccelerator:ListTagsForResource"
+        "globalaccelerator:ListTagsForResource",
+        "logs:CreateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "s3:GetBucketPolicy",
+        "s3:PutBucketPolicy"
       ]
     }
   },

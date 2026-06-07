@@ -9,13 +9,17 @@
         "cases:GetDomain",
         "wisdom:GetAssistant",
         "wisdom:GetKnowledgeBase",
+        "wisdom:GetQuickResponse",
+        "wisdom:GetMessageTemplate",
         "wisdom:TagResource",
         "voiceid:DescribeDomain",
         "events:PutTargets",
+        "ses:GetIdentityVerificationAttributes",
         "events:PutRule",
         "connect:AssociateBot",
         "connect:AssociateLambdaFunction",
         "connect:CreateIntegrationAssociation",
+        "connect:TagResource",
         "connect:ListBots",
         "connect:ListLambdaFunctions",
         "connect:ListIntegrationAssociations",
@@ -71,18 +75,25 @@
       "permissions": [
         "connect:ListBots",
         "connect:ListLambdaFunctions",
-        "connect:ListIntegrationAssociations"
+        "connect:ListIntegrationAssociations",
+        "connect:ListTagsForResource"
       ]
     },
     "read": {
       "permissions": [
         "connect:ListBots",
         "connect:ListLambdaFunctions",
-        "connect:ListIntegrationAssociations"
+        "connect:ListIntegrationAssociations",
+        "connect:ListTagsForResource"
       ]
     },
     "update": {
-      "permissions": []
+      "permissions": [
+        "connect:TagResource",
+        "connect:UntagResource",
+        "connect:ListTagsForResource",
+        "connect:ListIntegrationAssociations"
+      ]
     }
   },
   "typeName": "AWS::Connect::IntegrationAssociation"

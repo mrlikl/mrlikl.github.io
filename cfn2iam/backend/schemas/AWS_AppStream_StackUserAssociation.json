@@ -1,4 +1,53 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appstream:DescribeUserStackAssociations",
+        "appstream:BatchAssociateUserStack"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appstream:DescribeUserStackAssociations",
+        "appstream:BatchDisassociateUserStack"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "anyOf": [
+          {
+            "required": [
+              "StackName"
+            ]
+          },
+          {
+            "required": [
+              "UserName",
+              "AuthenticationType"
+            ]
+          }
+        ],
+        "properties": {
+          "AuthenticationType": {
+            "$ref": "resource-schema.json#/properties/AuthenticationType"
+          },
+          "StackName": {
+            "$ref": "resource-schema.json#/properties/StackName"
+          },
+          "UserName": {
+            "$ref": "resource-schema.json#/properties/UserName"
+          }
+        }
+      },
+      "permissions": [
+        "appstream:DescribeUserStackAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appstream:DescribeUserStackAssociations"
+      ]
+    }
+  },
   "typeName": "AWS::AppStream::StackUserAssociation"
 }

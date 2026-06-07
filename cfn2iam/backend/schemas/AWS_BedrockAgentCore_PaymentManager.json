@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreatePaymentManager",
+        "bedrock-agentcore:GetPaymentManager",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:CreateWorkloadIdentity",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeletePaymentManager",
+        "bedrock-agentcore:GetPaymentManager"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListPaymentManagers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetPaymentManager",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:UpdatePaymentManager",
+        "bedrock-agentcore:GetPaymentManager",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:UntagResource",
+        "bedrock-agentcore:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::PaymentManager"
+}

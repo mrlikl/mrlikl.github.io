@@ -1,0 +1,82 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "resiliencehub:CreateService",
+        "resiliencehub:GetService",
+        "resiliencehub:CreateInputSource",
+        "resiliencehub:ListInputSources",
+        "resiliencehub:CreateAssertion",
+        "resiliencehub:ListAssertions",
+        "resiliencehub:TagResource",
+        "resiliencehub:ListTagsForResource",
+        "iam:PassRole",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt",
+        "kms:Encrypt",
+        "kms:CreateGrant",
+        "kms:RetireGrant"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "resiliencehub:DeleteService",
+        "resiliencehub:GetService",
+        "resiliencehub:DeleteInputSource",
+        "resiliencehub:ListInputSources",
+        "resiliencehub:DeleteAssertion",
+        "resiliencehub:ListAssertions",
+        "kms:DescribeKey",
+        "kms:Decrypt",
+        "kms:RetireGrant",
+        "kms:GenerateDataKey",
+        "kms:Encrypt",
+        "kms:CreateGrant"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "resiliencehub:ListServices"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "resiliencehub:GetService",
+        "resiliencehub:ListInputSources",
+        "resiliencehub:ListAssertions",
+        "resiliencehub:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:Decrypt",
+        "kms:GenerateDataKey",
+        "kms:Encrypt",
+        "kms:CreateGrant",
+        "kms:RetireGrant"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "resiliencehub:GetService",
+        "resiliencehub:UpdateService",
+        "resiliencehub:CreateInputSource",
+        "resiliencehub:DeleteInputSource",
+        "resiliencehub:ListInputSources",
+        "resiliencehub:CreateAssertion",
+        "resiliencehub:UpdateAssertion",
+        "resiliencehub:DeleteAssertion",
+        "resiliencehub:ListAssertions",
+        "resiliencehub:TagResource",
+        "resiliencehub:UntagResource",
+        "resiliencehub:ListTagsForResource",
+        "iam:PassRole",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt",
+        "kms:Encrypt",
+        "kms:CreateGrant",
+        "kms:RetireGrant"
+      ]
+    }
+  },
+  "typeName": "AWS::ResilienceHubV2::Service"
+}

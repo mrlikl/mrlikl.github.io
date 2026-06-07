@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudwatch:StartOTelEnrichment",
+        "cloudwatch:GetOTelEnrichment"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudwatch:StopOTelEnrichment",
+        "cloudwatch:GetOTelEnrichment"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudwatch:GetOTelEnrichment"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudwatch:GetOTelEnrichment"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudwatch:StartOTelEnrichment",
+        "cloudwatch:GetOTelEnrichment"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudWatch::OTelEnrichment"
+}
