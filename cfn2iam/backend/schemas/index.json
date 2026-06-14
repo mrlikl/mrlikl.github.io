@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-07T05:25:25.576922Z",
+  "lastUpdated": "2026-06-14T05:53:40.529373Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -183,7 +183,7 @@
     },
     {
       "filename": "AWS_ApiGatewayV2_Stage.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ApiGatewayV2::Stage"
     },
     {
@@ -483,7 +483,7 @@
     },
     {
       "filename": "AWS_AppStream_StackFleetAssociation.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::AppStream::StackFleetAssociation"
     },
     {
@@ -657,6 +657,11 @@
       "typeName": "AWS::AutoScaling::WarmPool"
     },
     {
+      "filename": "AWS_BCM_Dashboard.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BCM::Dashboard"
+    },
+    {
       "filename": "AWS_BackupGateway_Hypervisor.json",
       "hasHandlers": true,
       "typeName": "AWS::BackupGateway::Hypervisor"
@@ -770,6 +775,11 @@
       "filename": "AWS_BedrockAgentCore_CodeInterpreterCustom.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::CodeInterpreterCustom"
+    },
+    {
+      "filename": "AWS_BedrockAgentCore_ConfigurationBundle.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::ConfigurationBundle"
     },
     {
       "filename": "AWS_BedrockAgentCore_Dataset.json",
@@ -3208,7 +3218,7 @@
     },
     {
       "filename": "AWS_ElasticLoadBalancing_LoadBalancer.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ElasticLoadBalancing::LoadBalancer"
     },
     {
@@ -6757,6 +6767,11 @@
       "typeName": "AWS::SageMaker::InferenceExperiment"
     },
     {
+      "filename": "AWS_SageMaker_MlflowApp.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::MlflowApp"
+    },
+    {
       "filename": "AWS_SageMaker_MlflowTrackingServer.json",
       "hasHandlers": true,
       "typeName": "AWS::SageMaker::MlflowTrackingServer"
@@ -7662,5 +7677,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1532
+  "totalSchemas": 1535
 }

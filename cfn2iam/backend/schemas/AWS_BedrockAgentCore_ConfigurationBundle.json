@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreateConfigurationBundle",
+        "bedrock-agentcore:GetConfigurationBundle",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeleteConfigurationBundle",
+        "bedrock-agentcore:GetConfigurationBundle"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListConfigurationBundles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetConfigurationBundle",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:UpdateConfigurationBundle",
+        "bedrock-agentcore:GetConfigurationBundle",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:UntagResource",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::ConfigurationBundle"
+}
