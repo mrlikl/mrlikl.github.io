@@ -101,6 +101,7 @@
         "s3:CreateBucketMetadataTableConfiguration",
         "s3:UpdateBucketMetadataJournalTableConfiguration",
         "s3:UpdateBucketMetadataInventoryTableConfiguration",
+        "s3:UpdateBucketMetadataAnnotationTableConfiguration",
         "s3tables:CreateNamespace",
         "s3tables:CreateTable",
         "s3tables:CreateTableBucket",

@@ -32,6 +32,8 @@
         "ecs:UpdateExpressGatewayService",
         "ecs:DescribeExpressGatewayService",
         "ecs:DescribeServiceDeployments",
+        "ecs:DescribeServiceRevisions",
+        "ecs:DescribeServices",
         "ecs:ListServiceDeployments",
         "ecs:RegisterTaskDefinition",
         "iam:PassRole"

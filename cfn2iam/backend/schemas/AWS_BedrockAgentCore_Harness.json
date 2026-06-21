@@ -15,6 +15,7 @@
         "bedrock-agentcore:TagResource",
         "bedrock-agentcore:UpdateAgentRuntime",
         "bedrock-agentcore:UpdateAgentRuntimeEndpoint",
+        "iam:CreateServiceLinkedRole",
         "iam:PassRole"
       ]
     },
@@ -62,6 +63,7 @@
         "bedrock-agentcore:UpdateAgentRuntime",
         "bedrock-agentcore:UpdateAgentRuntimeEndpoint",
         "bedrock-agentcore:UpdateHarness",
+        "iam:CreateServiceLinkedRole",
         "iam:PassRole"
       ]
     }

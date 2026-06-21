@@ -3,6 +3,8 @@
     "create": {
       "permissions": [
         "connect:CreateTaskTemplate",
+        "connect:DeleteTaskTemplate",
+        "connect:ListTaskTemplates",
         "connect:TagResource"
       ]
     },

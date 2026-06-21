@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rds:CreateGlobalCluster",
+        "rds:DescribeDBClusters",
+        "rds:DescribeGlobalClusters",
+        "rds:AddTagsToResource",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rds:DescribeGlobalClusters",
+        "rds:DeleteGlobalCluster",
+        "rds:RemoveFromGlobalCluster",
+        "rds:DescribeDBClusters"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rds:DescribeGlobalClusters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rds:DescribeGlobalClusters",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rds:ModifyGlobalCluster",
+        "rds:DescribeGlobalClusters",
+        "rds:AddTagsToResource",
+        "rds:RemoveTagsFromResource",
+        "rds:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Neptune::GlobalCluster"
+}

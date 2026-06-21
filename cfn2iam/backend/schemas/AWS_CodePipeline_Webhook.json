@@ -4,14 +4,16 @@
       "permissions": [
         "codepipeline:ListWebhooks",
         "codepipeline:RegisterWebhookWithThirdParty",
-        "codepipeline:PutWebhook"
+        "codepipeline:PutWebhook",
+        "codepipeline:TagResource"
       ]
     },
     "delete": {
       "permissions": [
         "codepipeline:ListWebhooks",
         "codepipeline:DeleteWebhook",
-        "codepipeline:DeregisterWebhookWithThirdParty"
+        "codepipeline:DeregisterWebhookWithThirdParty",
+        "codepipeline:UntagResource"
       ]
     },
     "list": {
@@ -29,7 +31,9 @@
         "codepipeline:ListWebhooks",
         "codepipeline:RegisterWebhookWithThirdParty",
         "codepipeline:PutWebhook",
-        "codepipeline:DeregisterWebhookWithThirdParty"
+        "codepipeline:DeregisterWebhookWithThirdParty",
+        "codepipeline:TagResource",
+        "codepipeline:UntagResource"
       ]
     }
   },
