@@ -7,7 +7,9 @@
         "iam:CreateServiceLinkedRole",
         "ssm:CreateAssociation",
         "ssm:DescribeAssociation",
-        "ssm:GetCalendarState"
+        "ssm:GetCalendarState",
+        "ssm:AddTagsToResource",
+        "ssm:ListTagsForResource"
       ]
     },
     "delete": {
@@ -23,6 +25,7 @@
     "read": {
       "permissions": [
         "ssm:DescribeAssociation",
+        "ssm:ListTagsForResource",
         "resource-groups:GetGroupQuery",
         "resource-groups:ListGroups",
         "resource-groups:ListGroupResources"
@@ -32,7 +35,10 @@
       "permissions": [
         "iam:PassRole",
         "ssm:UpdateAssociation",
-        "ssm:GetCalendarState"
+        "ssm:GetCalendarState",
+        "ssm:AddTagsToResource",
+        "ssm:RemoveTagsFromResource",
+        "ssm:ListTagsForResource"
       ]
     }
   },

@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateMlflowApp",
+        "sagemaker:DescribeMlflowApp",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteMlflowApp",
+        "sagemaker:DescribeMlflowApp"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListMlflowApps"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeMlflowApp",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateMlflowApp",
+        "sagemaker:DescribeMlflowApp",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::MlflowApp"
+}

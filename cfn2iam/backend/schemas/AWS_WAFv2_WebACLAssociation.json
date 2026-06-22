@@ -28,7 +28,10 @@
         "elasticloadbalancing:GetLoadBalancerWebACL",
         "appsync:AssociateWebACL",
         "appsync:DisassociateWebACL",
-        "appsync:GetWebACLForResource"
+        "appsync:GetWebACLForResource",
+        "bedrock-agentcore:GatewayAssociateWebACL",
+        "bedrock-agentcore:GatewayDisassociateWebACL",
+        "bedrock-agentcore:GatewayGetWebACLForResource"
       ]
     },
     "delete": {
@@ -58,7 +61,10 @@
         "elasticloadbalancing:GetLoadBalancerWebACL",
         "appsync:AssociateWebACL",
         "appsync:DisassociateWebACL",
-        "appsync:GetWebACLForResource"
+        "appsync:GetWebACLForResource",
+        "bedrock-agentcore:GatewayAssociateWebACL",
+        "bedrock-agentcore:GatewayDisassociateWebACL",
+        "bedrock-agentcore:GatewayGetWebACLForResource"
       ]
     },
     "read": {
@@ -86,7 +92,10 @@
         "elasticloadbalancing:GetLoadBalancerWebACL",
         "appsync:AssociateWebACL",
         "appsync:DisassociateWebACL",
-        "appsync:GetWebACLForResource"
+        "appsync:GetWebACLForResource",
+        "bedrock-agentcore:GatewayAssociateWebACL",
+        "bedrock-agentcore:GatewayDisassociateWebACL",
+        "bedrock-agentcore:GatewayGetWebACLForResource"
       ]
     },
     "update": {
@@ -113,7 +122,10 @@
         "elasticloadbalancing:GetLoadBalancerWebACL",
         "appsync:AssociateWebACL",
         "appsync:DisassociateWebACL",
-        "appsync:GetWebACLForResource"
+        "appsync:GetWebACLForResource",
+        "bedrock-agentcore:GatewayAssociateWebACL",
+        "bedrock-agentcore:GatewayDisassociateWebACL",
+        "bedrock-agentcore:GatewayGetWebACLForResource"
       ]
     }
   },

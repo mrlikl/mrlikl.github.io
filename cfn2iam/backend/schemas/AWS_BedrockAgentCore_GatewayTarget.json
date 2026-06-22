@@ -4,6 +4,7 @@
       "permissions": [
         "apigateway:GET",
         "bedrock-agentcore:CreateGatewayTarget",
+        "bedrock-agentcore:GetAgentRuntime",
         "bedrock-agentcore:GetGatewayTarget",
         "bedrock-agentcore:GetResourceOauth2Token",
         "bedrock-agentcore:GetWorkloadAccessToken",
@@ -56,6 +57,7 @@
     "update": {
       "permissions": [
         "apigateway:GET",
+        "bedrock-agentcore:GetAgentRuntime",
         "bedrock-agentcore:GetGatewayTarget",
         "bedrock-agentcore:GetResourceOauth2Token",
         "bedrock-agentcore:GetWorkloadAccessToken",

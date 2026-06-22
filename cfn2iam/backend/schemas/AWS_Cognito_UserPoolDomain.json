@@ -4,27 +4,55 @@
       "permissions": [
         "cognito-idp:CreateUserPoolDomain",
         "cognito-idp:DescribeUserPoolDomain",
-        "cloudfront:updateDistribution"
+        "cloudfront:updateDistribution",
+        "kms:CreateGrant",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:Encrypt",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo"
       ],
       "timeoutInMinutes": 20
     },
     "delete": {
       "permissions": [
         "cognito-idp:DeleteUserPoolDomain",
-        "cognito-idp:DescribeUserPoolDomain"
+        "cognito-idp:DescribeUserPoolDomain",
+        "kms:CreateGrant",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:Encrypt",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo"
       ],
       "timeoutInMinutes": 25
     },
     "read": {
       "permissions": [
-        "cognito-idp:DescribeUserPoolDomain"
+        "cognito-idp:DescribeUserPoolDomain",
+        "kms:CreateGrant",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:Encrypt",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo"
       ]
     },
     "update": {
       "permissions": [
         "cognito-idp:UpdateUserPoolDomain",
         "cognito-idp:DescribeUserPoolDomain",
-        "cloudfront:updateDistribution"
+        "cloudfront:updateDistribution",
+        "kms:CreateGrant",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:Encrypt",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo"
       ],
       "timeoutInMinutes": 20
     }

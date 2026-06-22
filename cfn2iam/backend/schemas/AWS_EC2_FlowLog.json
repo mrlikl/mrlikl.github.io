@@ -2,9 +2,12 @@
   "handlers": {
     "create": {
       "permissions": [
+        "autoscaling:DescribeTags",
         "ec2:CreateFlowLogs",
         "ec2:DescribeFlowLogs",
+        "ec2:DescribeTags",
         "ec2:CreateTags",
+        "iam:CreateServiceLinkedRole",
         "iam:PassRole",
         "logs:CreateLogDelivery",
         "s3:GetBucketPolicy",

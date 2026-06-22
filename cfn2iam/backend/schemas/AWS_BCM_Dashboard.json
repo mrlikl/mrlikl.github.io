@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bcm-dashboards:CreateDashboard",
+        "bcm-dashboards:TagResource",
+        "ce:GetCostAndUsage",
+        "ce:GetSavingsPlansCoverage",
+        "ce:GetSavingsPlansUtilization",
+        "ce:GetReservationCoverage",
+        "ce:GetReservationUtilization"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bcm-dashboards:DeleteDashboard",
+        "bcm-dashboards:GetDashboard"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bcm-dashboards:ListDashboards"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bcm-dashboards:GetDashboard",
+        "bcm-dashboards:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bcm-dashboards:UpdateDashboard",
+        "bcm-dashboards:TagResource",
+        "bcm-dashboards:UntagResource",
+        "ce:GetCostAndUsage",
+        "ce:GetSavingsPlansCoverage",
+        "ce:GetSavingsPlansUtilization",
+        "ce:GetReservationCoverage",
+        "ce:GetReservationUtilization"
+      ]
+    }
+  },
+  "typeName": "AWS::BCM::Dashboard"
+}
