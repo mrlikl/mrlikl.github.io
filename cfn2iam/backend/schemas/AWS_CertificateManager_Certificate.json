@@ -1,42 +1,4 @@
 {
-  "handlers": {
-    "create": {
-      "permissions": [
-        "acm:RequestCertificate",
-        "acm:DescribeCertificate",
-        "route53:ChangeResourceRecordSets",
-        "acm:AddTagsToCertificate",
-        "acm-pca:IssueCertificate",
-        "acm-pca:GetCertificate"
-      ],
-      "timeoutInMinutes": 2160
-    },
-    "delete": {
-      "permissions": [
-        "acm:DeleteCertificate",
-        "acm:DescribeCertificate",
-        "acm:RemoveTagsFromCertificate"
-      ],
-      "timeoutInMinutes": 120
-    },
-    "list": {
-      "permissions": [
-        "acm:ListCertificates"
-      ]
-    },
-    "read": {
-      "permissions": [
-        "acm:DescribeCertificate",
-        "acm:ListTagsForCertificate"
-      ]
-    },
-    "update": {
-      "permissions": [
-        "acm:UpdateCertificateOptions",
-        "acm:AddTagsToCertificate",
-        "acm:RemoveTagsFromCertificate"
-      ]
-    }
-  },
+  "handlers": {},
   "typeName": "AWS::CertificateManager::Certificate"
 }

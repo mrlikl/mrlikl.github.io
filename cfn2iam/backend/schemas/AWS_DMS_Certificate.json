@@ -1,4 +1,25 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "dms:ImportCertificate"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "dms:DeleteCertificate"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "dms:DescribeCertificates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dms:DescribeCertificates"
+      ]
+    }
+  },
   "typeName": "AWS::DMS::Certificate"
 }

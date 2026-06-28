@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateHub",
+        "sagemaker:DescribeHub",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteHub",
+        "sagemaker:DescribeHub"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListHubs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeHub",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateHub",
+        "sagemaker:DescribeHub",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::Hub"
+}

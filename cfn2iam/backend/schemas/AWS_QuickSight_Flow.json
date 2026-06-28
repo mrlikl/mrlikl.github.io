@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "quicksight:CreateFlow",
+        "quicksight:DescribeFlow"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "quicksight:DescribeFlow",
+        "quicksight:DeleteFlow"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "quicksight:ListFlows"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "quicksight:DescribeFlow",
+        "quicksight:GetFlowPermissions"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "quicksight:UpdateFlow",
+        "quicksight:UpdateFlowPermissions",
+        "quicksight:DescribeFlow"
+      ]
+    }
+  },
+  "typeName": "AWS::QuickSight::Flow"
+}

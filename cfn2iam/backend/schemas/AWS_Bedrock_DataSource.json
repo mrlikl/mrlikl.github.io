@@ -5,7 +5,8 @@
         "bedrock:CreateDataSource",
         "bedrock:GetDataSource",
         "bedrock:GetKnowledgeBase",
-        "kms:GenerateDataKey"
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
       ]
     },
     "delete": {
@@ -38,7 +39,8 @@
       "permissions": [
         "bedrock:GetDataSource",
         "bedrock:UpdateDataSource",
-        "kms:GenerateDataKey"
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
       ]
     }
   },

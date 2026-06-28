@@ -1,4 +1,40 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudwatch:PutInsightRule",
+        "cloudwatch:DescribeInsightRules",
+        "cloudwatch:TagResource"
+      ],
+      "timeoutInMinutes": 20
+    },
+    "delete": {
+      "permissions": [
+        "cloudwatch:DeleteInsightRules",
+        "cloudwatch:DescribeInsightRules"
+      ],
+      "timeoutInMinutes": 20
+    },
+    "list": {
+      "permissions": [
+        "cloudwatch:DescribeInsightRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudwatch:DescribeInsightRules",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudwatch:PutInsightRule",
+        "cloudwatch:DescribeInsightRules",
+        "cloudwatch:TagResource",
+        "cloudwatch:UntagResource"
+      ],
+      "timeoutInMinutes": 20
+    }
+  },
   "typeName": "AWS::CloudWatch::InsightRule"
 }
