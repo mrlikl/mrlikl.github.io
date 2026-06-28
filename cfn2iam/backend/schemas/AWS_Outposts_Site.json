@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "outposts:CreateSite",
+        "outposts:GetSite",
+        "outposts:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "outposts:DeleteSite"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "outposts:ListSites"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "outposts:GetSite",
+        "outposts:GetSiteAddress"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "outposts:UpdateSite",
+        "outposts:GetSite",
+        "outposts:UpdateSiteRackPhysicalProperties",
+        "outposts:TagResource",
+        "outposts:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Outposts::Site"
+}

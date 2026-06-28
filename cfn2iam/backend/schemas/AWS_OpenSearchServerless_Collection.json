@@ -5,6 +5,7 @@
         "aoss:CreateCollection",
         "aoss:BatchGetCollection",
         "aoss:AddCollectionToCollectionGroup",
+        "aoss:TagResource",
         "iam:CreateServiceLinkedRole",
         "kms:CreateGrant",
         "kms:DescribeKey"
@@ -23,7 +24,8 @@
     },
     "read": {
       "permissions": [
-        "aoss:BatchGetCollection"
+        "aoss:BatchGetCollection",
+        "aoss:ListTagsForResource"
       ]
     },
     "update": {

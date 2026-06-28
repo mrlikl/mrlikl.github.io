@@ -1,4 +1,30 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:GetDataCatalogEncryptionSettings",
+        "glue:PutDataCatalogEncryptionSettings",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:GetDataCatalogEncryptionSettings",
+        "glue:PutDataCatalogEncryptionSettings"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetDataCatalogEncryptionSettings"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:GetDataCatalogEncryptionSettings",
+        "glue:PutDataCatalogEncryptionSettings",
+        "iam:PassRole"
+      ]
+    }
+  },
   "typeName": "AWS::Glue::DataCatalogEncryptionSettings"
 }

@@ -7,7 +7,13 @@
         "bedrock:TagResource",
         "bedrock:ListTagsForResource",
         "bedrock:AssociateThirdPartyKnowledgeBase",
-        "iam:PassRole"
+        "iam:PassRole",
+        "kms:CreateGrant",
+        "kms:RetireGrant",
+        "kms:GenerateDataKey",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:Encrypt",
+        "kms:Decrypt"
       ]
     },
     "delete": {
@@ -36,7 +42,13 @@
         "bedrock:UntagResource",
         "bedrock:ListTagsForResource",
         "bedrock:AssociateThirdPartyKnowledgeBase",
-        "iam:PassRole"
+        "iam:PassRole",
+        "kms:CreateGrant",
+        "kms:RetireGrant",
+        "kms:GenerateDataKey",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:Encrypt",
+        "kms:Decrypt"
       ]
     }
   },

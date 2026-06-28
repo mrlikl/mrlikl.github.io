@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateAlgorithm",
+        "sagemaker:DescribeAlgorithm",
+        "sagemaker:AddTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteAlgorithm",
+        "sagemaker:DescribeAlgorithm"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListAlgorithms"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeAlgorithm",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:DescribeAlgorithm",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::Algorithm"
+}

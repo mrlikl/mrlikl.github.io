@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T06:07:04.067353Z",
+  "lastUpdated": "2026-06-28T05:19:48.119756Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -862,6 +862,11 @@
       "typeName": "AWS::BedrockAgentCore::RuntimeEndpoint"
     },
     {
+      "filename": "AWS_BedrockAgentCore_TokenVault.json",
+      "hasHandlers": false,
+      "typeName": "AWS::BedrockAgentCore::TokenVault"
+    },
+    {
       "filename": "AWS_BedrockAgentCore_WorkloadIdentity.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::WorkloadIdentity"
@@ -1038,7 +1043,7 @@
     },
     {
       "filename": "AWS_CertificateManager_Certificate.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::CertificateManager::Certificate"
     },
     {
@@ -1065,6 +1070,11 @@
       "filename": "AWS_Chime_AppInstanceBot.json",
       "hasHandlers": true,
       "typeName": "AWS::Chime::AppInstanceBot"
+    },
+    {
+      "filename": "AWS_Chime_AppInstanceUser.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Chime::AppInstanceUser"
     },
     {
       "filename": "AWS_CleanRoomsML_ConfiguredModelAlgorithm.json",
@@ -1368,7 +1378,7 @@
     },
     {
       "filename": "AWS_CloudWatch_InsightRule.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::CloudWatch::InsightRule"
     },
     {
@@ -1400,6 +1410,16 @@
       "filename": "AWS_CodeArtifact_Repository.json",
       "hasHandlers": true,
       "typeName": "AWS::CodeArtifact::Repository"
+    },
+    {
+      "filename": "AWS_CodeBuild_Build.json",
+      "hasHandlers": false,
+      "typeName": "AWS::CodeBuild::Build"
+    },
+    {
+      "filename": "AWS_CodeBuild_BuildBatch.json",
+      "hasHandlers": false,
+      "typeName": "AWS::CodeBuild::BuildBatch"
     },
     {
       "filename": "AWS_CodeBuild_Fleet.json",
@@ -1822,6 +1842,16 @@
       "typeName": "AWS::Connect::Workspace"
     },
     {
+      "filename": "AWS_ControlCatalog_CommonControl.json",
+      "hasHandlers": false,
+      "typeName": "AWS::ControlCatalog::CommonControl"
+    },
+    {
+      "filename": "AWS_ControlCatalog_Control.json",
+      "hasHandlers": false,
+      "typeName": "AWS::ControlCatalog::Control"
+    },
+    {
       "filename": "AWS_ControlTower_EnabledBaseline.json",
       "hasHandlers": true,
       "typeName": "AWS::ControlTower::EnabledBaseline"
@@ -1898,7 +1928,7 @@
     },
     {
       "filename": "AWS_DMS_Certificate.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::DMS::Certificate"
     },
     {
@@ -1985,6 +2015,11 @@
       "filename": "AWS_DataBrew_Schedule.json",
       "hasHandlers": true,
       "typeName": "AWS::DataBrew::Schedule"
+    },
+    {
+      "filename": "AWS_DataExchange_EntitledDataSets.json",
+      "hasHandlers": false,
+      "typeName": "AWS::DataExchange::EntitledDataSets"
     },
     {
       "filename": "AWS_DataPipeline_Pipeline.json",
@@ -2330,6 +2365,11 @@
       "filename": "AWS_DynamoDB_GlobalTable.json",
       "hasHandlers": true,
       "typeName": "AWS::DynamoDB::GlobalTable"
+    },
+    {
+      "filename": "AWS_DynamoDB_Stream.json",
+      "hasHandlers": false,
+      "typeName": "AWS::DynamoDB::Stream"
     },
     {
       "filename": "AWS_DynamoDB_Table.json",
@@ -3508,7 +3548,7 @@
     },
     {
       "filename": "AWS_Glue_DataCatalogEncryptionSettings.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::DataCatalogEncryptionSettings"
     },
     {
@@ -3580,6 +3620,11 @@
       "filename": "AWS_Glue_SecurityConfiguration.json",
       "hasHandlers": false,
       "typeName": "AWS::Glue::SecurityConfiguration"
+    },
+    {
+      "filename": "AWS_Glue_Session.json",
+      "hasHandlers": false,
+      "typeName": "AWS::Glue::Session"
     },
     {
       "filename": "AWS_Glue_Table.json",
@@ -4250,6 +4295,11 @@
       "filename": "AWS_IoT_FleetMetric.json",
       "hasHandlers": true,
       "typeName": "AWS::IoT::FleetMetric"
+    },
+    {
+      "filename": "AWS_IoT_Index.json",
+      "hasHandlers": false,
+      "typeName": "AWS::IoT::Index"
     },
     {
       "filename": "AWS_IoT_JobTemplate.json",
@@ -4972,6 +5022,11 @@
       "typeName": "AWS::MediaLive::Network"
     },
     {
+      "filename": "AWS_MediaLive_Node.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MediaLive::Node"
+    },
+    {
       "filename": "AWS_MediaLive_SdiSource.json",
       "hasHandlers": true,
       "typeName": "AWS::MediaLive::SdiSource"
@@ -5487,6 +5542,11 @@
       "typeName": "AWS::Organizations::ResourcePolicy"
     },
     {
+      "filename": "AWS_Outposts_Site.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Outposts::Site"
+    },
+    {
       "filename": "AWS_PCAConnectorAD_Connector.json",
       "hasHandlers": true,
       "typeName": "AWS::PCAConnectorAD::Connector"
@@ -5545,6 +5605,11 @@
       "filename": "AWS_PaymentCryptography_Key.json",
       "hasHandlers": true,
       "typeName": "AWS::PaymentCryptography::Key"
+    },
+    {
+      "filename": "AWS_Personalize_DataDeletionJob.json",
+      "hasHandlers": false,
+      "typeName": "AWS::Personalize::DataDeletionJob"
     },
     {
       "filename": "AWS_Personalize_Dataset.json",
@@ -5717,6 +5782,16 @@
       "typeName": "AWS::QuickSight::Analysis"
     },
     {
+      "filename": "AWS_QuickSight_AssetBundleExportJob.json",
+      "hasHandlers": false,
+      "typeName": "AWS::QuickSight::AssetBundleExportJob"
+    },
+    {
+      "filename": "AWS_QuickSight_AssetBundleImportJob.json",
+      "hasHandlers": false,
+      "typeName": "AWS::QuickSight::AssetBundleImportJob"
+    },
+    {
       "filename": "AWS_QuickSight_CustomPermissions.json",
       "hasHandlers": true,
       "typeName": "AWS::QuickSight::CustomPermissions"
@@ -5735,6 +5810,11 @@
       "filename": "AWS_QuickSight_DataSource.json",
       "hasHandlers": true,
       "typeName": "AWS::QuickSight::DataSource"
+    },
+    {
+      "filename": "AWS_QuickSight_Flow.json",
+      "hasHandlers": true,
+      "typeName": "AWS::QuickSight::Flow"
     },
     {
       "filename": "AWS_QuickSight_Folder.json",
@@ -5855,6 +5935,11 @@
       "filename": "AWS_RDS_OptionGroup.json",
       "hasHandlers": true,
       "typeName": "AWS::RDS::OptionGroup"
+    },
+    {
+      "filename": "AWS_RDS_ReservedDBInstance.json",
+      "hasHandlers": false,
+      "typeName": "AWS::RDS::ReservedDBInstance"
     },
     {
       "filename": "AWS_RTBFabric_InboundExternalLink.json",
@@ -6150,6 +6235,11 @@
       "filename": "AWS_Route53Profiles_ProfileResourceAssociation.json",
       "hasHandlers": true,
       "typeName": "AWS::Route53Profiles::ProfileResourceAssociation"
+    },
+    {
+      "filename": "AWS_Route53Resolver_FirewallConfig.json",
+      "hasHandlers": false,
+      "typeName": "AWS::Route53Resolver::FirewallConfig"
     },
     {
       "filename": "AWS_Route53Resolver_FirewallDomainList.json",
@@ -6697,6 +6787,11 @@
       "typeName": "AWS::SSO::PermissionSet"
     },
     {
+      "filename": "AWS_SageMaker_Algorithm.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::Algorithm"
+    },
+    {
       "filename": "AWS_SageMaker_App.json",
       "hasHandlers": true,
       "typeName": "AWS::SageMaker::App"
@@ -6752,6 +6847,11 @@
       "typeName": "AWS::SageMaker::FeatureGroup"
     },
     {
+      "filename": "AWS_SageMaker_Hub.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::Hub"
+    },
+    {
       "filename": "AWS_SageMaker_Image.json",
       "hasHandlers": true,
       "typeName": "AWS::SageMaker::Image"
@@ -6795,6 +6895,11 @@
       "filename": "AWS_SageMaker_ModelCard.json",
       "hasHandlers": true,
       "typeName": "AWS::SageMaker::ModelCard"
+    },
+    {
+      "filename": "AWS_SageMaker_ModelCardExportJob.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::ModelCardExportJob"
     },
     {
       "filename": "AWS_SageMaker_ModelExplainabilityJobDefinition.json",
@@ -7682,5 +7787,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1536
+  "totalSchemas": 1557
 }

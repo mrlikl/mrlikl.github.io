@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "chime:CreateAppInstanceUser",
+        "chime:PutAppInstanceUserExpirationSettings",
+        "chime:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "chime:DescribeAppInstanceUser",
+        "chime:DeleteAppInstanceUser"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AppInstanceArn": {
+            "$ref": "resource-schema.json#/properties/AppInstanceArn"
+          }
+        },
+        "required": [
+          "AppInstanceArn"
+        ]
+      },
+      "permissions": [
+        "chime:ListAppInstanceUsers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "chime:DescribeAppInstanceUser",
+        "chime:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "chime:UpdateAppInstanceUser",
+        "chime:PutAppInstanceUserExpirationSettings",
+        "chime:TagResource",
+        "chime:UntagResource",
+        "chime:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Chime::AppInstanceUser"
+}
