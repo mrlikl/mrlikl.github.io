@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "acm:CreateAcmeExternalAccountBinding",
+        "acm:DescribeAcmeExternalAccountBinding",
+        "acm:TagResource",
+        "acm:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "acm:DeleteAcmeExternalAccountBinding",
+        "acm:DescribeAcmeExternalAccountBinding"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AcmeEndpointArn": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "AcmeEndpointArn"
+        ]
+      },
+      "permissions": [
+        "acm:ListAcmeExternalAccountBindings"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "acm:DescribeAcmeExternalAccountBinding",
+        "acm:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "acm:DescribeAcmeExternalAccountBinding",
+        "acm:TagResource",
+        "acm:UntagResource",
+        "acm:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CertificateManager::AcmeExternalAccountBinding"
+}

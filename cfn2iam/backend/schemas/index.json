@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-28T05:19:48.119756Z",
+  "lastUpdated": "2026-07-05T04:59:59.402065Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -1042,6 +1042,21 @@
       "typeName": "AWS::CertificateManager::Account"
     },
     {
+      "filename": "AWS_CertificateManager_AcmeDomainValidation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CertificateManager::AcmeDomainValidation"
+    },
+    {
+      "filename": "AWS_CertificateManager_AcmeEndpoint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CertificateManager::AcmeEndpoint"
+    },
+    {
+      "filename": "AWS_CertificateManager_AcmeExternalAccountBinding.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CertificateManager::AcmeExternalAccountBinding"
+    },
+    {
       "filename": "AWS_CertificateManager_Certificate.json",
       "hasHandlers": false,
       "typeName": "AWS::CertificateManager::Certificate"
@@ -1572,6 +1587,16 @@
       "typeName": "AWS::Cognito::UserPoolIdentityProvider"
     },
     {
+      "filename": "AWS_Cognito_UserPoolRegionalConfigurationAttachment.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Cognito::UserPoolRegionalConfigurationAttachment"
+    },
+    {
+      "filename": "AWS_Cognito_UserPoolReplica.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Cognito::UserPoolReplica"
+    },
+    {
       "filename": "AWS_Cognito_UserPoolResourceServer.json",
       "hasHandlers": true,
       "typeName": "AWS::Cognito::UserPoolResourceServer"
@@ -1635,6 +1660,11 @@
       "filename": "AWS_Config_ConformancePack.json",
       "hasHandlers": true,
       "typeName": "AWS::Config::ConformancePack"
+    },
+    {
+      "filename": "AWS_Config_Connector.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Config::Connector"
     },
     {
       "filename": "AWS_Config_DeliveryChannel.json",
@@ -1807,6 +1837,11 @@
       "typeName": "AWS::Connect::TaskTemplate"
     },
     {
+      "filename": "AWS_Connect_TestCase.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Connect::TestCase"
+    },
+    {
       "filename": "AWS_Connect_TrafficDistributionGroup.json",
       "hasHandlers": true,
       "typeName": "AWS::Connect::TrafficDistributionGroup"
@@ -1875,6 +1910,11 @@
       "filename": "AWS_CustomerProfiles_Domain.json",
       "hasHandlers": true,
       "typeName": "AWS::CustomerProfiles::Domain"
+    },
+    {
+      "filename": "AWS_CustomerProfiles_DomainObjectType.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CustomerProfiles::DomainObjectType"
     },
     {
       "filename": "AWS_CustomerProfiles_EventStream.json",
@@ -5822,6 +5862,11 @@
       "typeName": "AWS::QuickSight::Folder"
     },
     {
+      "filename": "AWS_QuickSight_OAuthClientApplication.json",
+      "hasHandlers": true,
+      "typeName": "AWS::QuickSight::OAuthClientApplication"
+    },
+    {
       "filename": "AWS_QuickSight_RefreshSchedule.json",
       "hasHandlers": true,
       "typeName": "AWS::QuickSight::RefreshSchedule"
@@ -7787,5 +7832,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1557
+  "totalSchemas": 1566
 }

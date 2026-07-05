@@ -2,17 +2,19 @@
   "handlers": {
     "create": {
       "permissions": [
-        "profile:CreateRecommender",
-        "profile:GetRecommender",
+        "profile:GetDomain",
+        "profile:GetDomainObjectType",
+        "profile:PutDomainObjectType",
         "profile:TagResource",
         "kms:GenerateDataKey",
-        "kms:Decrypt"
+        "kms:Decrypt",
+        "kms:CreateGrant",
+        "kms:DescribeKey"
       ]
     },
     "delete": {
       "permissions": [
-        "profile:DeleteRecommender",
-        "profile:GetRecommender"
+        "profile:DeleteDomainObjectType"
       ]
     },
     "list": {
@@ -27,14 +29,14 @@
         ]
       },
       "permissions": [
-        "profile:ListRecommenders",
+        "profile:ListDomainObjectTypes",
         "kms:GenerateDataKey",
         "kms:Decrypt"
       ]
     },
     "read": {
       "permissions": [
-        "profile:GetRecommender",
+        "profile:GetDomainObjectType",
         "profile:ListTagsForResource",
         "kms:GenerateDataKey",
         "kms:Decrypt"
@@ -42,14 +44,15 @@
     },
     "update": {
       "permissions": [
-        "profile:GetRecommender",
-        "profile:UpdateRecommender",
+        "profile:GetDomainObjectType",
+        "profile:PutDomainObjectType",
         "profile:UntagResource",
         "profile:TagResource",
+        "profile:ListTagsForResource",
         "kms:GenerateDataKey",
         "kms:Decrypt"
       ]
     }
   },
-  "typeName": "AWS::CustomerProfiles::Recommender"
+  "typeName": "AWS::CustomerProfiles::DomainObjectType"
 }
