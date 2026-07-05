@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "quicksight:CreateOAuthClientApplication",
+        "quicksight:DescribeOAuthClientApplication",
+        "quicksight:TagResource",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "quicksight:DeleteOAuthClientApplication",
+        "quicksight:DescribeOAuthClientApplication"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "quicksight:ListOAuthClientApplications"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "quicksight:DescribeOAuthClientApplication",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "quicksight:UpdateOAuthClientApplication",
+        "quicksight:DescribeOAuthClientApplication",
+        "quicksight:TagResource",
+        "quicksight:UntagResource",
+        "quicksight:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::QuickSight::OAuthClientApplication"
+}

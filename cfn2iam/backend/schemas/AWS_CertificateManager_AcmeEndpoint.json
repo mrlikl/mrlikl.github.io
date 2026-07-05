@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "acm:CreateAcmeEndpoint",
+        "acm:DescribeAcmeEndpoint",
+        "acm:TagResource",
+        "acm:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "acm:DeleteAcmeEndpoint",
+        "acm:DescribeAcmeEndpoint"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "acm:ListAcmeEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "acm:DescribeAcmeEndpoint",
+        "acm:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "acm:UpdateAcmeEndpoint",
+        "acm:DescribeAcmeEndpoint",
+        "acm:TagResource",
+        "acm:UntagResource",
+        "acm:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CertificateManager::AcmeEndpoint"
+}

@@ -1,0 +1,58 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "acm:CreateAcmeDomainValidation",
+        "acm:DescribeAcmeDomainValidation",
+        "acm:TagResource",
+        "acm:ListTagsForResource",
+        "route53:ChangeResourceRecordSets",
+        "route53:GetHostedZone",
+        "route53:GetChange"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "acm:DeleteAcmeDomainValidation",
+        "acm:DescribeAcmeDomainValidation",
+        "route53:ChangeResourceRecordSets",
+        "route53:GetHostedZone",
+        "route53:GetChange"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AcmeEndpointArn": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "AcmeEndpointArn"
+        ]
+      },
+      "permissions": [
+        "acm:ListAcmeDomainValidations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "acm:DescribeAcmeDomainValidation",
+        "acm:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "acm:UpdateAcmeDomainValidation",
+        "acm:DescribeAcmeDomainValidation",
+        "acm:TagResource",
+        "acm:UntagResource",
+        "acm:ListTagsForResource",
+        "route53:ChangeResourceRecordSets",
+        "route53:GetHostedZone",
+        "route53:GetChange"
+      ]
+    }
+  },
+  "typeName": "AWS::CertificateManager::AcmeDomainValidation"
+}

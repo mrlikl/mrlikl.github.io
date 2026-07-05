@@ -21,7 +21,8 @@
     },
     "read": {
       "permissions": [
-        "cognito-identity:DescribeIdentityPool"
+        "cognito-identity:DescribeIdentityPool",
+        "cognito-identity:ListTagsForResource"
       ]
     },
     "update": {

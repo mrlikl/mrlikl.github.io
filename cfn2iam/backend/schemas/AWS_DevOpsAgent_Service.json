@@ -42,7 +42,8 @@
         "aidevops:GetService",
         "aidevops:TagResource",
         "aidevops:UntagResource",
-        "aidevops:ListTagsForResource"
+        "aidevops:ListTagsForResource",
+        "iam:PassRole"
       ]
     }
   },

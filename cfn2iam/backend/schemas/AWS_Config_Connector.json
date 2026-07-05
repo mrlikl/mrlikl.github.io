@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "config:PutConnector",
+        "config:GetConnector",
+        "config:TagResource",
+        "config:ListTagsForResource",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "config:DeleteConnector"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "config:ListConnectors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "config:GetConnector",
+        "config:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "config:GetConnector",
+        "config:TagResource",
+        "config:UntagResource",
+        "config:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Config::Connector"
+}

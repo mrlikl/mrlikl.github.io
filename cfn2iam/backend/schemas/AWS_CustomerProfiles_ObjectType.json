@@ -34,6 +34,7 @@
     "read": {
       "permissions": [
         "profile:GetProfileObjectType",
+        "profile:ListTagsForResource",
         "kms:GenerateDataKey",
         "kms:Decrypt"
       ]
@@ -44,6 +45,7 @@
         "profile:PutProfileObjectType",
         "profile:UntagResource",
         "profile:TagResource",
+        "profile:ListTagsForResource",
         "kms:GenerateDataKey",
         "kms:Decrypt"
       ]
