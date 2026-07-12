@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "connect:AssociateAnalyticsDataSet",
+        "connect:ListAnalyticsDataAssociations"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "connect:DisassociateAnalyticsDataSet",
+        "connect:ListAnalyticsDataAssociations"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "InstanceId": {
+            "$ref": "resource-schema.json#/properties/InstanceId"
+          }
+        },
+        "required": [
+          "InstanceId"
+        ]
+      },
+      "permissions": [
+        "connect:ListAnalyticsDataAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "connect:ListAnalyticsDataAssociations"
+      ]
+    }
+  },
+  "typeName": "AWS::Connect::DataLakeAssociation"
+}

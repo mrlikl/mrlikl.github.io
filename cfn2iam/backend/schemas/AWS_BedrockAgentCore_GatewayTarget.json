@@ -29,7 +29,9 @@
         "vpc-lattice:GetServiceNetworkResourceAssociation",
         "vpc-lattice:CreateServiceNetworkResourceAssociation",
         "vpc-lattice:DeleteServiceNetworkResourceAssociation",
-        "vpc-lattice:ListServiceNetworkResourceAssociations"
+        "vpc-lattice:ListServiceNetworkResourceAssociations",
+        "bedrock-mantle:ListModels",
+        "bedrock-mantle:GetModel"
       ]
     },
     "delete": {
@@ -83,7 +85,9 @@
         "vpc-lattice:GetServiceNetworkResourceAssociation",
         "vpc-lattice:CreateServiceNetworkResourceAssociation",
         "vpc-lattice:DeleteServiceNetworkResourceAssociation",
-        "vpc-lattice:ListServiceNetworkResourceAssociations"
+        "vpc-lattice:ListServiceNetworkResourceAssociations",
+        "bedrock-mantle:ListModels",
+        "bedrock-mantle:GetModel"
       ]
     }
   },

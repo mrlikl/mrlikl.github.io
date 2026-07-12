@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "securityhub:CreateConnector",
+        "securityhub:GetConnector",
+        "securityhub:TagResource",
+        "securityhub:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "securityhub:GetConnector",
+        "securityhub:DeleteConnector"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "securityhub:ListConnectors",
+        "securityhub:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "securityhub:GetConnector",
+        "securityhub:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "securityhub:UpdateConnector",
+        "securityhub:GetConnector",
+        "securityhub:TagResource",
+        "securityhub:UntagResource",
+        "securityhub:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SecurityHub::Connector"
+}

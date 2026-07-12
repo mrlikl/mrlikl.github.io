@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-05T04:59:59.402065Z",
+  "lastUpdated": "2026-07-12T04:26:46.177557Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -1737,6 +1737,11 @@
       "typeName": "AWS::Connect::ContactFlowVersion"
     },
     {
+      "filename": "AWS_Connect_DataLakeAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Connect::DataLakeAssociation"
+    },
+    {
       "filename": "AWS_Connect_DataTable.json",
       "hasHandlers": true,
       "typeName": "AWS::Connect::DataTable"
@@ -2842,6 +2847,16 @@
       "typeName": "AWS::EC2::TransitGatewayPeeringAttachment"
     },
     {
+      "filename": "AWS_EC2_TransitGatewayPolicyTable.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::TransitGatewayPolicyTable"
+    },
+    {
+      "filename": "AWS_EC2_TransitGatewayPolicyTableAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::TransitGatewayPolicyTableAssociation"
+    },
+    {
       "filename": "AWS_EC2_TransitGatewayRoute.json",
       "hasHandlers": true,
       "typeName": "AWS::EC2::TransitGatewayRoute"
@@ -3158,7 +3173,7 @@
     },
     {
       "filename": "AWS_EMR_InstanceGroupConfig.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::EMR::InstanceGroupConfig"
     },
     {
@@ -7067,6 +7082,11 @@
       "typeName": "AWS::SecurityAgent::Pentest"
     },
     {
+      "filename": "AWS_SecurityAgent_SecurityRequirementPack.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SecurityAgent::SecurityRequirementPack"
+    },
+    {
       "filename": "AWS_SecurityAgent_TargetDomain.json",
       "hasHandlers": true,
       "typeName": "AWS::SecurityAgent::TargetDomain"
@@ -7090,6 +7110,11 @@
       "filename": "AWS_SecurityHub_ConfigurationPolicy.json",
       "hasHandlers": true,
       "typeName": "AWS::SecurityHub::ConfigurationPolicy"
+    },
+    {
+      "filename": "AWS_SecurityHub_Connector.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SecurityHub::Connector"
     },
     {
       "filename": "AWS_SecurityHub_ConnectorV2.json",
@@ -7193,7 +7218,7 @@
     },
     {
       "filename": "AWS_ServiceCatalog_CloudFormationProduct.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ServiceCatalog::CloudFormationProduct"
     },
     {
@@ -7832,5 +7857,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1566
+  "totalSchemas": 1571
 }
