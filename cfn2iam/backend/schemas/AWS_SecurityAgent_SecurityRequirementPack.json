@@ -1,0 +1,60 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "securityagent:CreateSecurityRequirementPack",
+        "securityagent:GetSecurityRequirementPack",
+        "securityagent:BatchCreateSecurityRequirements",
+        "securityagent:BatchGetSecurityRequirements",
+        "securityagent:ListSecurityRequirements",
+        "securityagent:TagResource",
+        "securityagent:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:Encrypt",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:Decrypt",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "securityagent:GetSecurityRequirementPack",
+        "securityagent:ListSecurityRequirements",
+        "securityagent:BatchDeleteSecurityRequirements",
+        "kms:Decrypt",
+        "securityagent:DeleteSecurityRequirementPack"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "securityagent:ListSecurityRequirementPacks"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "securityagent:GetSecurityRequirementPack",
+        "securityagent:ListSecurityRequirements",
+        "securityagent:BatchGetSecurityRequirements",
+        "securityagent:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "securityagent:UpdateSecurityRequirementPack",
+        "securityagent:GetSecurityRequirementPack",
+        "securityagent:BatchCreateSecurityRequirements",
+        "securityagent:BatchGetSecurityRequirements",
+        "securityagent:BatchUpdateSecurityRequirements",
+        "securityagent:BatchDeleteSecurityRequirements",
+        "securityagent:ListSecurityRequirements",
+        "securityagent:TagResource",
+        "securityagent:UntagResource",
+        "securityagent:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::SecurityAgent::SecurityRequirementPack"
+}

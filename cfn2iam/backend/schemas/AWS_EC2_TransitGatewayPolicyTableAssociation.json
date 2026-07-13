@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:GetTransitGatewayPolicyTableAssociations",
+        "ec2:AssociateTransitGatewayPolicyTable"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:GetTransitGatewayPolicyTableAssociations",
+        "ec2:DisassociateTransitGatewayPolicyTable"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "TransitGatewayPolicyTableId": {
+            "$ref": "resource-schema.json#/properties/TransitGatewayPolicyTableId"
+          }
+        },
+        "required": [
+          "TransitGatewayPolicyTableId"
+        ]
+      },
+      "permissions": [
+        "ec2:GetTransitGatewayPolicyTableAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:GetTransitGatewayPolicyTableAssociations"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::TransitGatewayPolicyTableAssociation"
+}
