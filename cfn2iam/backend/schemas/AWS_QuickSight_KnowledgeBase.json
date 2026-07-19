@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "quicksight:CreateKnowledgeBase",
+        "quicksight:DescribeDataSource",
+        "quicksight:DescribeKnowledgeBase",
+        "quicksight:DescribeKnowledgeBasePermissions",
+        "quicksight:TagResource",
+        "quicksight:ListTagsForResource",
+        "quicksight:PassDataSource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "quicksight:DescribeKnowledgeBase",
+        "quicksight:DeleteKnowledgeBase"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "quicksight:ListKnowledgeBases"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "quicksight:DescribeKnowledgeBase",
+        "quicksight:DescribeKnowledgeBasePermissions",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "quicksight:UpdateKnowledgeBase",
+        "quicksight:UpdateKnowledgeBasePermissions",
+        "quicksight:DescribeKnowledgeBase",
+        "quicksight:DescribeKnowledgeBasePermissions",
+        "quicksight:TagResource",
+        "quicksight:UntagResource",
+        "quicksight:ListTagsForResource",
+        "quicksight:PassDataSource"
+      ]
+    }
+  },
+  "typeName": "AWS::QuickSight::KnowledgeBase"
+}

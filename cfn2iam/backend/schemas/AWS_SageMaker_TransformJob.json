@@ -1,0 +1,16 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "sagemaker:ListTransformJobs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeTransformJob",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::TransformJob"
+}

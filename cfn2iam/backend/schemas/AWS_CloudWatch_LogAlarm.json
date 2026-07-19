@@ -9,6 +9,8 @@
         "logs:CreateScheduledQuery",
         "logs:UpdateScheduledQuery",
         "logs:DeleteScheduledQuery",
+        "logs:ListTagsForResource",
+        "logs:TagResource",
         "iam:PassRole"
       ]
     },
@@ -29,7 +31,8 @@
     "read": {
       "permissions": [
         "cloudwatch:DescribeAlarms",
-        "cloudwatch:ListTagsForResource"
+        "cloudwatch:ListTagsForResource",
+        "logs:ListTagsForResource"
       ]
     },
     "update": {
@@ -42,6 +45,9 @@
         "logs:CreateScheduledQuery",
         "logs:UpdateScheduledQuery",
         "logs:DeleteScheduledQuery",
+        "logs:ListTagsForResource",
+        "logs:TagResource",
+        "logs:UntagResource",
         "iam:PassRole"
       ]
     }

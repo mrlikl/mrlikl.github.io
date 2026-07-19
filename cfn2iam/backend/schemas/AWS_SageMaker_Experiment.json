@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateExperiment",
+        "sagemaker:DescribeExperiment",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteExperiment",
+        "sagemaker:DescribeExperiment",
+        "sagemaker:ListTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListExperiments"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeExperiment",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateExperiment",
+        "sagemaker:DescribeExperiment",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::Experiment"
+}

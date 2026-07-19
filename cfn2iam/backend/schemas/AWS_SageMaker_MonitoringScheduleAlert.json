@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "MonitoringScheduleName": {
+            "maxLength": 63,
+            "minLength": 1,
+            "pattern": "^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "MonitoringScheduleName"
+        ]
+      },
+      "permissions": [
+        "sagemaker:ListMonitoringAlerts"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:ListMonitoringAlerts"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::MonitoringScheduleAlert"
+}

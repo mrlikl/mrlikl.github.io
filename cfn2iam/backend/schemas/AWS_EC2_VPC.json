@@ -2,11 +2,12 @@
   "handlers": {
     "create": {
       "permissions": [
+        "ec2:CreateTags",
         "ec2:CreateVpc",
-        "ec2:DescribeVpcs",
+        "ec2:CreateVpcEncryptionControl",
         "ec2:DescribeVpcAttribute",
-        "ec2:ModifyVpcAttribute",
-        "ec2:CreateTags"
+        "ec2:DescribeVpcs",
+        "ec2:ModifyVpcAttribute"
       ]
     },
     "delete": {
@@ -17,15 +18,17 @@
     },
     "list": {
       "permissions": [
+        "ec2:DescribeVpcEncryptionControls",
         "ec2:DescribeVpcs"
       ]
     },
     "read": {
       "permissions": [
-        "ec2:DescribeVpcs",
-        "ec2:DescribeSecurityGroups",
         "ec2:DescribeNetworkAcls",
-        "ec2:DescribeVpcAttribute"
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeVpcAttribute",
+        "ec2:DescribeVpcEncryptionControls",
+        "ec2:DescribeVpcs"
       ]
     },
     "update": {

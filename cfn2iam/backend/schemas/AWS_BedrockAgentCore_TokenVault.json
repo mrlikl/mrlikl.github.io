@@ -1,4 +1,15 @@
 {
-  "handlers": {},
+  "handlers": {
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:GetTokenVault"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetTokenVault"
+      ]
+    }
+  },
   "typeName": "AWS::BedrockAgentCore::TokenVault"
 }

@@ -1,0 +1,16 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "bedrock:ListModelInvocationJobs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:GetModelInvocationJob",
+        "bedrock:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::ModelInvocationJob"
+}

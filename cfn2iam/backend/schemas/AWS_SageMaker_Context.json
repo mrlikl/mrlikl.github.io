@@ -1,0 +1,55 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateContext",
+        "sagemaker:DescribeContext",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteContext",
+        "sagemaker:DescribeContext",
+        "sagemaker:ListTags"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "Source": {
+            "additionalProperties": false,
+            "properties": {
+              "SourceUri": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        }
+      },
+      "permissions": [
+        "sagemaker:ListContexts"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeContext",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateContext",
+        "sagemaker:DescribeContext",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::Context"
+}

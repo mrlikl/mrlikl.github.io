@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateTrialComponent",
+        "sagemaker:DescribeTrialComponent",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteTrialComponent",
+        "sagemaker:DescribeTrialComponent",
+        "sagemaker:ListTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListTrialComponents"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeTrialComponent",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateTrialComponent",
+        "sagemaker:DescribeTrialComponent",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::TrialComponent"
+}
