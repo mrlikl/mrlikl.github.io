@@ -1,0 +1,78 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cleanrooms:CreateIntermediateTable",
+        "cleanrooms:GetIntermediateTable",
+        "cleanrooms:ListIntermediateTables",
+        "cleanrooms:PopulateIntermediateTable",
+        "cleanrooms:CreateIntermediateTableAnalysisRule",
+        "cleanrooms:GetIntermediateTableAnalysisRule",
+        "cleanrooms:GetCollaborationAnalysisTemplate",
+        "cleanrooms:ListTagsForResource",
+        "cleanrooms:TagResource",
+        "cleanrooms:GetMembership",
+        "cleanrooms:GetCollaboration",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cleanrooms:DeleteIntermediateTable",
+        "cleanrooms:GetIntermediateTable",
+        "cleanrooms:ListIntermediateTables",
+        "cleanrooms:DeleteIntermediateTableAnalysisRule",
+        "cleanrooms:GetIntermediateTableAnalysisRule",
+        "cleanrooms:GetMembership",
+        "cleanrooms:ListTagsForResource",
+        "cleanrooms:UntagResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "MembershipIdentifier": {
+            "$ref": "resource-schema.json#/properties/MembershipIdentifier"
+          }
+        },
+        "required": [
+          "MembershipIdentifier"
+        ]
+      },
+      "permissions": [
+        "cleanrooms:ListIntermediateTables",
+        "cleanrooms:GetMembership",
+        "cleanrooms:GetCollaboration"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cleanrooms:GetIntermediateTable",
+        "cleanrooms:GetIntermediateTableAnalysisRule",
+        "cleanrooms:ListTagsForResource",
+        "cleanrooms:GetMembership",
+        "cleanrooms:GetCollaboration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cleanrooms:UpdateIntermediateTable",
+        "cleanrooms:GetIntermediateTable",
+        "cleanrooms:CreateIntermediateTableAnalysisRule",
+        "cleanrooms:UpdateIntermediateTableAnalysisRule",
+        "cleanrooms:GetIntermediateTableAnalysisRule",
+        "cleanrooms:DeleteIntermediateTableAnalysisRule",
+        "cleanrooms:GetMembership",
+        "cleanrooms:ListTagsForResource",
+        "cleanrooms:TagResource",
+        "cleanrooms:UntagResource",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::CleanRooms::IntermediateTable"
+}

@@ -5,6 +5,7 @@
         "elasticloadbalancing:CreateListener",
         "elasticloadbalancing:DescribeListeners",
         "cognito-idp:DescribeUserPoolClient",
+        "elasticloadbalancing:AddTags",
         "elasticloadbalancing:ModifyListenerAttributes"
       ]
     },
@@ -48,7 +49,8 @@
     "read": {
       "permissions": [
         "elasticloadbalancing:DescribeListeners",
-        "elasticloadbalancing:DescribeListenerAttributes"
+        "elasticloadbalancing:DescribeListenerAttributes",
+        "elasticloadbalancing:DescribeTags"
       ]
     },
     "update": {
@@ -56,6 +58,9 @@
         "elasticloadbalancing:ModifyListener",
         "elasticloadbalancing:DescribeListeners",
         "cognito-idp:DescribeUserPoolClient",
+        "elasticloadbalancing:AddTags",
+        "elasticloadbalancing:RemoveTags",
+        "elasticloadbalancing:DescribeTags",
         "elasticloadbalancing:ModifyListenerAttributes",
         "elasticloadbalancing:DescribeListenerAttributes"
       ]

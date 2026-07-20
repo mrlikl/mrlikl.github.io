@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-12T04:26:46.177557Z",
+  "lastUpdated": "2026-07-19T04:23:02.918455Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -772,6 +772,11 @@
       "typeName": "AWS::BedrockAgentCore::BrowserProfile"
     },
     {
+      "filename": "AWS_BedrockAgentCore_CodeInterpreter.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::CodeInterpreter"
+    },
+    {
       "filename": "AWS_BedrockAgentCore_CodeInterpreterCustom.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::CodeInterpreterCustom"
@@ -863,7 +868,7 @@
     },
     {
       "filename": "AWS_BedrockAgentCore_TokenVault.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::TokenVault"
     },
     {
@@ -955,6 +960,16 @@
       "filename": "AWS_Bedrock_KnowledgeBase.json",
       "hasHandlers": true,
       "typeName": "AWS::Bedrock::KnowledgeBase"
+    },
+    {
+      "filename": "AWS_Bedrock_KnowledgeBasePolicy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Bedrock::KnowledgeBasePolicy"
+    },
+    {
+      "filename": "AWS_Bedrock_ModelInvocationJob.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Bedrock::ModelInvocationJob"
     },
     {
       "filename": "AWS_Bedrock_Prompt.json",
@@ -1135,6 +1150,11 @@
       "filename": "AWS_CleanRooms_IdNamespaceAssociation.json",
       "hasHandlers": true,
       "typeName": "AWS::CleanRooms::IdNamespaceAssociation"
+    },
+    {
+      "filename": "AWS_CleanRooms_IntermediateTable.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CleanRooms::IntermediateTable"
     },
     {
       "filename": "AWS_CleanRooms_Membership.json",
@@ -3173,7 +3193,7 @@
     },
     {
       "filename": "AWS_EMR_InstanceGroupConfig.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::EMR::InstanceGroupConfig"
     },
     {
@@ -5877,6 +5897,11 @@
       "typeName": "AWS::QuickSight::Folder"
     },
     {
+      "filename": "AWS_QuickSight_KnowledgeBase.json",
+      "hasHandlers": true,
+      "typeName": "AWS::QuickSight::KnowledgeBase"
+    },
+    {
       "filename": "AWS_QuickSight_OAuthClientApplication.json",
       "hasHandlers": true,
       "typeName": "AWS::QuickSight::OAuthClientApplication"
@@ -6847,6 +6872,11 @@
       "typeName": "AWS::SSO::PermissionSet"
     },
     {
+      "filename": "AWS_SageMaker_Action.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::Action"
+    },
+    {
       "filename": "AWS_SageMaker_Algorithm.json",
       "hasHandlers": true,
       "typeName": "AWS::SageMaker::Algorithm"
@@ -6870,6 +6900,11 @@
       "filename": "AWS_SageMaker_CodeRepository.json",
       "hasHandlers": false,
       "typeName": "AWS::SageMaker::CodeRepository"
+    },
+    {
+      "filename": "AWS_SageMaker_Context.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::Context"
     },
     {
       "filename": "AWS_SageMaker_DataQualityJobDefinition.json",
@@ -6900,6 +6935,16 @@
       "filename": "AWS_SageMaker_EndpointConfig.json",
       "hasHandlers": false,
       "typeName": "AWS::SageMaker::EndpointConfig"
+    },
+    {
+      "filename": "AWS_SageMaker_Experiment.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::Experiment"
+    },
+    {
+      "filename": "AWS_SageMaker_ExperimentTrialComponent.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::ExperimentTrialComponent"
     },
     {
       "filename": "AWS_SageMaker_FeatureGroup.json",
@@ -6987,6 +7032,11 @@
       "typeName": "AWS::SageMaker::MonitoringSchedule"
     },
     {
+      "filename": "AWS_SageMaker_MonitoringScheduleAlert.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::MonitoringScheduleAlert"
+    },
+    {
       "filename": "AWS_SageMaker_NotebookInstance.json",
       "hasHandlers": false,
       "typeName": "AWS::SageMaker::NotebookInstance"
@@ -7025,6 +7075,16 @@
       "filename": "AWS_SageMaker_StudioLifecycleConfig.json",
       "hasHandlers": true,
       "typeName": "AWS::SageMaker::StudioLifecycleConfig"
+    },
+    {
+      "filename": "AWS_SageMaker_TransformJob.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::TransformJob"
+    },
+    {
+      "filename": "AWS_SageMaker_TrialComponent.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::TrialComponent"
     },
     {
       "filename": "AWS_SageMaker_UserProfile.json",
@@ -7313,7 +7373,7 @@
     },
     {
       "filename": "AWS_ServiceDiscovery_Service.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ServiceDiscovery::Service"
     },
     {
@@ -7857,5 +7917,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1571
+  "totalSchemas": 1583
 }

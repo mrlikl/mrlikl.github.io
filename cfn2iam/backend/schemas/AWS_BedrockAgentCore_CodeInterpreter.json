@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListCodeInterpreters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetCodeInterpreter"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::CodeInterpreter"
+}

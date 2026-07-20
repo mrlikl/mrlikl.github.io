@@ -5,6 +5,8 @@
         "config:PutConformancePack",
         "config:DescribeConformancePackStatus",
         "config:DescribeConformancePacks",
+        "config:TagResource",
+        "config:ListTagsForResource",
         "s3:GetObject",
         "s3:GetBucketAcl",
         "iam:CreateServiceLinkedRole",
@@ -14,7 +16,8 @@
     "delete": {
       "permissions": [
         "config:DeleteConformancePack",
-        "config:DescribeConformancePackStatus"
+        "config:DescribeConformancePackStatus",
+        "config:UntagResource"
       ]
     },
     "list": {
@@ -24,13 +27,18 @@
     },
     "read": {
       "permissions": [
-        "config:DescribeConformancePacks"
+        "config:DescribeConformancePacks",
+        "config:ListTagsForResource"
       ]
     },
     "update": {
       "permissions": [
         "config:PutConformancePack",
         "config:DescribeConformancePackStatus",
+        "config:DescribeConformancePacks",
+        "config:TagResource",
+        "config:UntagResource",
+        "config:ListTagsForResource",
         "s3:GetObject",
         "s3:GetBucketAcl",
         "iam:CreateServiceLinkedRole",
