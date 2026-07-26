@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "mediapackage:ListHarvestJobs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediapackage:DescribeHarvestJob"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaPackage::HarvestJob"
+}

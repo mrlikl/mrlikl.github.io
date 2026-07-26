@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudformation:CreateGeneratedTemplate",
+        "cloudformation:DescribeGeneratedTemplate"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudformation:DeleteGeneratedTemplate",
+        "cloudformation:DescribeGeneratedTemplate"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudformation:ListGeneratedTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudformation:DescribeGeneratedTemplate"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudformation:UpdateGeneratedTemplate",
+        "cloudformation:DescribeGeneratedTemplate"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFormation::GeneratedTemplate"
+}

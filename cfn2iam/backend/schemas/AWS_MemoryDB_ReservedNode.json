@@ -1,0 +1,16 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "memorydb:DescribeReservedNodes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "memorydb:DescribeReservedNodes",
+        "memorydb:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::MemoryDB::ReservedNode"
+}

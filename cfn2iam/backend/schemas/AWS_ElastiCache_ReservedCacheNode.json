@@ -1,0 +1,16 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "elasticache:DescribeReservedCacheNodes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticache:DescribeReservedCacheNodes",
+        "elasticache:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::ElastiCache::ReservedCacheNode"
+}

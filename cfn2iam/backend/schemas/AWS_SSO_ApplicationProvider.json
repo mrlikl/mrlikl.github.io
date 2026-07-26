@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "sso:ListApplicationProviders"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sso:DescribeApplicationProvider"
+      ]
+    }
+  },
+  "typeName": "AWS::SSO::ApplicationProvider"
+}

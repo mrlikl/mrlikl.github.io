@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "networkflowmonitor:CreateMonitor",
+        "networkflowmonitor:GetMonitor",
+        "networkflowmonitor:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "networkflowmonitor:DeleteMonitor",
+        "networkflowmonitor:GetMonitor"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "networkflowmonitor:ListMonitors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "networkflowmonitor:GetMonitor",
+        "networkflowmonitor:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "networkflowmonitor:UpdateMonitor",
+        "networkflowmonitor:GetMonitor",
+        "networkflowmonitor:TagResource",
+        "networkflowmonitor:UntagResource",
+        "networkflowmonitor:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkFlowMonitor::Monitor"
+}

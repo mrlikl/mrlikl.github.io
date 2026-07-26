@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "cloudformation:ListResourceScans"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudformation:DescribeResourceScan"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFormation::ResourceScan"
+}

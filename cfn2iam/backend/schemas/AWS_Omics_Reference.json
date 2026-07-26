@@ -1,0 +1,29 @@
+{
+  "handlers": {
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ReferenceStoreId": {
+            "maxLength": 36,
+            "minLength": 10,
+            "pattern": "^[0-9]+$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "ReferenceStoreId"
+        ]
+      },
+      "permissions": [
+        "omics:ListReferences"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "omics:GetReferenceMetadata",
+        "omics:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Omics::Reference"
+}

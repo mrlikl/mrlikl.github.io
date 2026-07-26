@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "fis:GetSafetyLever"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "fis:GetSafetyLever"
+      ]
+    }
+  },
+  "typeName": "AWS::FIS::SafetyLever"
+}

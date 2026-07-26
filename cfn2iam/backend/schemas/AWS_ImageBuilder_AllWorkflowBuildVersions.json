@@ -1,0 +1,27 @@
+{
+  "handlers": {
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "WorkflowVersionArn": {
+            "pattern": "^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):workflow/(build|test|distribution)/[a-z0-9-_]+/[0-9]+\\.[0-9]+\\.[0-9]+$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "WorkflowVersionArn"
+        ]
+      },
+      "permissions": [
+        "imagebuilder:ListWorkflowBuildVersions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "imagebuilder:GetWorkflow",
+        "imagebuilder:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::ImageBuilder::AllWorkflowBuildVersions"
+}

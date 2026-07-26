@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "memorydb:DescribeMultiRegionParameterGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "memorydb:DescribeMultiRegionParameterGroups"
+      ]
+    }
+  },
+  "typeName": "AWS::MemoryDB::MultiRegionParameterGroup"
+}

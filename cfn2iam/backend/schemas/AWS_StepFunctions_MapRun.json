@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ExecutionArn": {
+            "description": "The ARN of the execution for which Map Runs must be listed.",
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "ExecutionArn"
+        ]
+      },
+      "permissions": [
+        "states:ListMapRuns"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "states:DescribeMapRun"
+      ]
+    }
+  },
+  "typeName": "AWS::StepFunctions::MapRun"
+}

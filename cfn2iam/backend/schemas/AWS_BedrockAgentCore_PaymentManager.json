@@ -12,7 +12,8 @@
     "delete": {
       "permissions": [
         "bedrock-agentcore:DeletePaymentManager",
-        "bedrock-agentcore:GetPaymentManager"
+        "bedrock-agentcore:GetPaymentManager",
+        "bedrock-agentcore:DeleteWorkloadIdentity"
       ]
     },
     "list": {

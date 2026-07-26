@@ -1,0 +1,16 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "transcribe:ListMedicalTranscriptionJobs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "transcribe:GetMedicalTranscriptionJob",
+        "transcribe:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Transcribe::MedicalTranscriptionJob"
+}

@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "storagegateway:CreateTapePool",
+        "storagegateway:AddTagsToResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "storagegateway:DeleteTapePool",
+        "storagegateway:ListTapePools"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "storagegateway:ListTapePools"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "storagegateway:ListTapePools",
+        "storagegateway:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "storagegateway:ListTapePools",
+        "storagegateway:AddTagsToResource",
+        "storagegateway:RemoveTagsFromResource",
+        "storagegateway:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::StorageGateway::TapePool"
+}

@@ -1,0 +1,26 @@
+{
+  "handlers": {
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ImageBuildVersionArn": {
+            "pattern": "^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):image/[a-z0-9-_]+/[0-9]+\\.[0-9]+\\.[0-9]+/[0-9]+$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "ImageBuildVersionArn"
+        ]
+      },
+      "permissions": [
+        "imagebuilder:ListWorkflowExecutions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "imagebuilder:GetWorkflowExecution"
+      ]
+    }
+  },
+  "typeName": "AWS::ImageBuilder::WorkflowExecution"
+}

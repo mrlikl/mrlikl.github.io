@@ -13,7 +13,16 @@
         "iam:PassRole",
         "s3:GetObject",
         "s3:GetObjectVersion",
-        "kms:Decrypt"
+        "kms:Decrypt",
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:CreateServiceNetworkResourceAssociation",
+        "vpc-lattice:GetServiceNetworkResourceAssociation",
+        "vpc-lattice:ListServiceNetworkResourceAssociations",
+        "vpc-lattice:AssociateViaAWSService",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:CreateNetworkInterface"
       ]
     },
     "delete": {
@@ -51,7 +60,16 @@
         "iam:PassRole",
         "s3:GetObject",
         "s3:GetObjectVersion",
-        "kms:Decrypt"
+        "kms:Decrypt",
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:CreateServiceNetworkResourceAssociation",
+        "vpc-lattice:GetServiceNetworkResourceAssociation",
+        "vpc-lattice:ListServiceNetworkResourceAssociations",
+        "vpc-lattice:AssociateViaAWSService",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:CreateNetworkInterface"
       ]
     }
   },

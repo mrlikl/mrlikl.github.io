@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wellarchitected:ImportLens",
+        "wellarchitected:CreateLensVersion",
+        "wellarchitected:GetLens",
+        "wellarchitected:TagResource",
+        "wellarchitected:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wellarchitected:DeleteLens",
+        "wellarchitected:GetLens"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "wellarchitected:ListLenses"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wellarchitected:GetLens",
+        "wellarchitected:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wellarchitected:GetLens",
+        "wellarchitected:TagResource",
+        "wellarchitected:UntagResource",
+        "wellarchitected:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::WellArchitected::Lens"
+}

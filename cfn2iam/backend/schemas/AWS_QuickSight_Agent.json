@@ -1,0 +1,54 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "quicksight:CreateAgent",
+        "quicksight:DescribeAgent",
+        "quicksight:TagResource",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "quicksight:DeleteAgent",
+        "quicksight:DescribeAgent",
+        "quicksight:ListTagsForResource",
+        "quicksight:UntagResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AwsAccountId": {
+            "$ref": "resource-schema.json#/properties/AwsAccountId"
+          }
+        },
+        "required": [
+          "AwsAccountId"
+        ]
+      },
+      "permissions": [
+        "quicksight:ListAgents"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "quicksight:DescribeAgent",
+        "quicksight:DescribeAgentPermissions",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "quicksight:UpdateAgent",
+        "quicksight:DescribeAgent",
+        "quicksight:DescribeAgentPermissions",
+        "quicksight:UpdateAgentPermissions",
+        "quicksight:TagResource",
+        "quicksight:UntagResource",
+        "quicksight:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::QuickSight::Agent"
+}

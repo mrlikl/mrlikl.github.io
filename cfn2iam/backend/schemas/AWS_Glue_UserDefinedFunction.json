@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateUserDefinedFunction",
+        "glue:GetUserDefinedFunction"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:DeleteUserDefinedFunction",
+        "glue:GetUserDefinedFunction"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DatabaseName": {
+            "maxLength": 255,
+            "minLength": 1,
+            "pattern": "^[\\u0020-\\uD7FF\\uE000-\\uFFFD\\uD800\\uDC00-\\uDBFF\\uDFFF\\t]*$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "DatabaseName"
+        ]
+      },
+      "permissions": [
+        "glue:GetUserDefinedFunctions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetUserDefinedFunction"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:UpdateUserDefinedFunction",
+        "glue:GetUserDefinedFunction"
+      ]
+    }
+  },
+  "typeName": "AWS::Glue::UserDefinedFunction"
+}

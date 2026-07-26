@@ -1,4 +1,33 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rds:CreateEventSubscription"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rds:DeleteEventSubscription"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rds:DescribeEventSubscriptions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rds:DescribeEventSubscriptions"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rds:ModifyEventSubscription",
+        "rds:DescribeEventSubscriptions",
+        "rds:AddSourceIdentifierToSubscription",
+        "rds:RemoveSourceIdentifierFromSubscription"
+      ]
+    }
+  },
   "typeName": "AWS::DocDB::EventSubscription"
 }

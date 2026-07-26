@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainName": {
+            "maxLength": 50,
+            "minLength": 2,
+            "pattern": "^[a-z][a-z0-9\\-]{0,48}[a-z0-9]$",
+            "type": "string"
+          },
+          "Repository": {
+            "maxLength": 100,
+            "minLength": 2,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._\\-]{1,99}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "DomainName",
+          "Repository"
+        ]
+      },
+      "permissions": [
+        "codeartifact:ListPackages"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "codeartifact:DescribePackage"
+      ]
+    }
+  },
+  "typeName": "AWS::CodeArtifact::Package"
+}

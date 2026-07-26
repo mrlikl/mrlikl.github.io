@@ -1,0 +1,16 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "thinclient:ListSoftwareSets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "thinclient:GetSoftwareSet",
+        "thinclient:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::ThinClient::SoftwareSet"
+}

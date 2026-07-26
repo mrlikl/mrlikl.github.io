@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-19T04:23:02.918455Z",
+  "lastUpdated": "2026-07-26T04:28:50.569946Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -592,6 +592,11 @@
       "typeName": "AWS::ApplicationSignals::ServiceLevelObjective"
     },
     {
+      "filename": "AWS_Artifact_Report.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Artifact::Report"
+    },
+    {
       "filename": "AWS_Athena_CapacityReservation.json",
       "hasHandlers": true,
       "typeName": "AWS::Athena::CapacityReservation"
@@ -610,6 +615,11 @@
       "filename": "AWS_Athena_PreparedStatement.json",
       "hasHandlers": true,
       "typeName": "AWS::Athena::PreparedStatement"
+    },
+    {
+      "filename": "AWS_Athena_Session.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Athena::Session"
     },
     {
       "filename": "AWS_Athena_WorkGroup.json",
@@ -657,6 +667,11 @@
       "typeName": "AWS::AutoScaling::WarmPool"
     },
     {
+      "filename": "AWS_BCMDataExports_Table.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BCMDataExports::Table"
+    },
+    {
       "filename": "AWS_BCM_Dashboard.json",
       "hasHandlers": true,
       "typeName": "AWS::BCM::Dashboard"
@@ -665,6 +680,11 @@
       "filename": "AWS_BackupGateway_Hypervisor.json",
       "hasHandlers": true,
       "typeName": "AWS::BackupGateway::Hypervisor"
+    },
+    {
+      "filename": "AWS_BackupSearch_SearchJob.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BackupSearch::SearchJob"
     },
     {
       "filename": "AWS_Backup_BackupPlan.json",
@@ -685,6 +705,11 @@
       "filename": "AWS_Backup_Framework.json",
       "hasHandlers": true,
       "typeName": "AWS::Backup::Framework"
+    },
+    {
+      "filename": "AWS_Backup_LegalHold.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Backup::LegalHold"
     },
     {
       "filename": "AWS_Backup_LogicallyAirGappedBackupVault.json",
@@ -1073,7 +1098,7 @@
     },
     {
       "filename": "AWS_CertificateManager_Certificate.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::CertificateManager::Certificate"
     },
     {
@@ -1177,6 +1202,11 @@
       "typeName": "AWS::CloudFormation::CustomResource"
     },
     {
+      "filename": "AWS_CloudFormation_GeneratedTemplate.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudFormation::GeneratedTemplate"
+    },
+    {
       "filename": "AWS_CloudFormation_GuardHook.json",
       "hasHandlers": true,
       "typeName": "AWS::CloudFormation::GuardHook"
@@ -1230,6 +1260,11 @@
       "filename": "AWS_CloudFormation_ResourceDefaultVersion.json",
       "hasHandlers": true,
       "typeName": "AWS::CloudFormation::ResourceDefaultVersion"
+    },
+    {
+      "filename": "AWS_CloudFormation_ResourceScan.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudFormation::ResourceScan"
     },
     {
       "filename": "AWS_CloudFormation_ResourceVersion.json",
@@ -1437,6 +1472,11 @@
       "typeName": "AWS::CodeArtifact::Domain"
     },
     {
+      "filename": "AWS_CodeArtifact_Package.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CodeArtifact::Package"
+    },
+    {
       "filename": "AWS_CodeArtifact_PackageGroup.json",
       "hasHandlers": true,
       "typeName": "AWS::CodeArtifact::PackageGroup"
@@ -1470,6 +1510,11 @@
       "filename": "AWS_CodeBuild_ReportGroup.json",
       "hasHandlers": false,
       "typeName": "AWS::CodeBuild::ReportGroup"
+    },
+    {
+      "filename": "AWS_CodeBuild_Sandbox.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CodeBuild::Sandbox"
     },
     {
       "filename": "AWS_CodeBuild_SourceCredential.json",
@@ -1550,6 +1595,11 @@
       "filename": "AWS_CodeStar_GitHubRepository.json",
       "hasHandlers": false,
       "typeName": "AWS::CodeStar::GitHubRepository"
+    },
+    {
+      "filename": "AWS_CognitoSync_Dataset.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CognitoSync::Dataset"
     },
     {
       "filename": "AWS_Cognito_IdentityPool.json",
@@ -1910,6 +1960,11 @@
       "filename": "AWS_ControlCatalog_Control.json",
       "hasHandlers": false,
       "typeName": "AWS::ControlCatalog::Control"
+    },
+    {
+      "filename": "AWS_ControlCatalog_Objective.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ControlCatalog::Objective"
     },
     {
       "filename": "AWS_ControlTower_EnabledBaseline.json",
@@ -2418,13 +2473,18 @@
     },
     {
       "filename": "AWS_DocDB_EventSubscription.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::DocDB::EventSubscription"
     },
     {
       "filename": "AWS_DocDB_GlobalCluster.json",
       "hasHandlers": true,
       "typeName": "AWS::DocDB::GlobalCluster"
+    },
+    {
+      "filename": "AWS_DynamoDB_Export.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DynamoDB::Export"
     },
     {
       "filename": "AWS_DynamoDB_GlobalTable.json",
@@ -3197,6 +3257,11 @@
       "typeName": "AWS::EMR::InstanceGroupConfig"
     },
     {
+      "filename": "AWS_EMR_NotebookExecution.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EMR::NotebookExecution"
+    },
+    {
       "filename": "AWS_EMR_SecurityConfiguration.json",
       "hasHandlers": true,
       "typeName": "AWS::EMR::SecurityConfiguration"
@@ -3245,6 +3310,11 @@
       "filename": "AWS_ElastiCache_ReplicationGroup.json",
       "hasHandlers": true,
       "typeName": "AWS::ElastiCache::ReplicationGroup"
+    },
+    {
+      "filename": "AWS_ElastiCache_ReservedCacheNode.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ElastiCache::ReservedCacheNode"
     },
     {
       "filename": "AWS_ElastiCache_SecurityGroup.json",
@@ -3417,6 +3487,11 @@
       "typeName": "AWS::Events::EventBusPolicy"
     },
     {
+      "filename": "AWS_Events_Replay.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Events::Replay"
+    },
+    {
       "filename": "AWS_Events_Rule.json",
       "hasHandlers": true,
       "typeName": "AWS::Events::Rule"
@@ -3450,6 +3525,11 @@
       "filename": "AWS_FIS_ExperimentTemplate.json",
       "hasHandlers": true,
       "typeName": "AWS::FIS::ExperimentTemplate"
+    },
+    {
+      "filename": "AWS_FIS_SafetyLever.json",
+      "hasHandlers": true,
+      "typeName": "AWS::FIS::SafetyLever"
     },
     {
       "filename": "AWS_FIS_TargetAccountConfiguration.json",
@@ -3597,6 +3677,11 @@
       "typeName": "AWS::GlobalAccelerator::Listener"
     },
     {
+      "filename": "AWS_Glue_Blueprint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Glue::Blueprint"
+    },
+    {
       "filename": "AWS_Glue_Catalog.json",
       "hasHandlers": true,
       "typeName": "AWS::Glue::Catalog"
@@ -3722,6 +3807,11 @@
       "typeName": "AWS::Glue::UsageProfile"
     },
     {
+      "filename": "AWS_Glue_UserDefinedFunction.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Glue::UserDefinedFunction"
+    },
+    {
       "filename": "AWS_Glue_Workflow.json",
       "hasHandlers": false,
       "typeName": "AWS::Glue::Workflow"
@@ -3732,9 +3822,19 @@
       "typeName": "AWS::Grafana::Workspace"
     },
     {
+      "filename": "AWS_GreengrassV2_Component.json",
+      "hasHandlers": true,
+      "typeName": "AWS::GreengrassV2::Component"
+    },
+    {
       "filename": "AWS_GreengrassV2_ComponentVersion.json",
       "hasHandlers": true,
       "typeName": "AWS::GreengrassV2::ComponentVersion"
+    },
+    {
+      "filename": "AWS_GreengrassV2_CoreDevice.json",
+      "hasHandlers": true,
+      "typeName": "AWS::GreengrassV2::CoreDevice"
     },
     {
       "filename": "AWS_GreengrassV2_Deployment.json",
@@ -4032,6 +4132,11 @@
       "typeName": "AWS::IVS::StreamKey"
     },
     {
+      "filename": "AWS_IdentityStore_AllGroupMemberships.json",
+      "hasHandlers": true,
+      "typeName": "AWS::IdentityStore::AllGroupMemberships"
+    },
+    {
       "filename": "AWS_IdentityStore_Group.json",
       "hasHandlers": true,
       "typeName": "AWS::IdentityStore::Group"
@@ -4040,6 +4145,16 @@
       "filename": "AWS_IdentityStore_GroupMembership.json",
       "hasHandlers": true,
       "typeName": "AWS::IdentityStore::GroupMembership"
+    },
+    {
+      "filename": "AWS_ImageBuilder_AllImageBuildVersions.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ImageBuilder::AllImageBuildVersions"
+    },
+    {
+      "filename": "AWS_ImageBuilder_AllWorkflowBuildVersions.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ImageBuilder::AllWorkflowBuildVersions"
     },
     {
       "filename": "AWS_ImageBuilder_Component.json",
@@ -4085,6 +4200,16 @@
       "filename": "AWS_ImageBuilder_Workflow.json",
       "hasHandlers": true,
       "typeName": "AWS::ImageBuilder::Workflow"
+    },
+    {
+      "filename": "AWS_ImageBuilder_WorkflowExecution.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ImageBuilder::WorkflowExecution"
+    },
+    {
+      "filename": "AWS_ImageBuilder_WorkflowStepExecution.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ImageBuilder::WorkflowStepExecution"
     },
     {
       "filename": "AWS_InspectorV2_CisScanConfiguration.json",
@@ -4637,6 +4762,11 @@
       "typeName": "AWS::Lambda::LayerVersionPermission"
     },
     {
+      "filename": "AWS_Lambda_NetworkConnector.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Lambda::NetworkConnector"
+    },
+    {
       "filename": "AWS_Lambda_Permission.json",
       "hasHandlers": true,
       "typeName": "AWS::Lambda::Permission"
@@ -5102,6 +5232,11 @@
       "typeName": "AWS::MediaLive::Node"
     },
     {
+      "filename": "AWS_MediaLive_Offering.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MediaLive::Offering"
+    },
+    {
       "filename": "AWS_MediaLive_SdiSource.json",
       "hasHandlers": true,
       "typeName": "AWS::MediaLive::SdiSource"
@@ -5145,6 +5280,11 @@
       "filename": "AWS_MediaPackage_Channel.json",
       "hasHandlers": true,
       "typeName": "AWS::MediaPackage::Channel"
+    },
+    {
+      "filename": "AWS_MediaPackage_HarvestJob.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MediaPackage::HarvestJob"
     },
     {
       "filename": "AWS_MediaPackage_OriginEndpoint.json",
@@ -5212,9 +5352,19 @@
       "typeName": "AWS::MemoryDB::MultiRegionCluster"
     },
     {
+      "filename": "AWS_MemoryDB_MultiRegionParameterGroup.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MemoryDB::MultiRegionParameterGroup"
+    },
+    {
       "filename": "AWS_MemoryDB_ParameterGroup.json",
       "hasHandlers": true,
       "typeName": "AWS::MemoryDB::ParameterGroup"
+    },
+    {
+      "filename": "AWS_MemoryDB_ReservedNode.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MemoryDB::ReservedNode"
     },
     {
       "filename": "AWS_MemoryDB_SubnetGroup.json",
@@ -5305,6 +5455,11 @@
       "filename": "AWS_NetworkFirewall_VpcEndpointAssociation.json",
       "hasHandlers": true,
       "typeName": "AWS::NetworkFirewall::VpcEndpointAssociation"
+    },
+    {
+      "filename": "AWS_NetworkFlowMonitor_Monitor.json",
+      "hasHandlers": true,
+      "typeName": "AWS::NetworkFlowMonitor::Monitor"
     },
     {
       "filename": "AWS_NetworkManager_ConnectAttachment.json",
@@ -5422,6 +5577,11 @@
       "typeName": "AWS::OSIS::Pipeline"
     },
     {
+      "filename": "AWS_OSIS_PipelineBlueprint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::OSIS::PipelineBlueprint"
+    },
+    {
       "filename": "AWS_Oam_Link.json",
       "hasHandlers": true,
       "typeName": "AWS::Oam::Link"
@@ -5470,6 +5630,11 @@
       "filename": "AWS_Omics_Configuration.json",
       "hasHandlers": true,
       "typeName": "AWS::Omics::Configuration"
+    },
+    {
+      "filename": "AWS_Omics_Reference.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Omics::Reference"
     },
     {
       "filename": "AWS_Omics_ReferenceStore.json",
@@ -5697,6 +5862,11 @@
       "typeName": "AWS::Personalize::DatasetGroup"
     },
     {
+      "filename": "AWS_Personalize_Recipe.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Personalize::Recipe"
+    },
+    {
       "filename": "AWS_Personalize_Schema.json",
       "hasHandlers": true,
       "typeName": "AWS::Personalize::Schema"
@@ -5850,6 +6020,11 @@
       "filename": "AWS_QLDB_Stream.json",
       "hasHandlers": true,
       "typeName": "AWS::QLDB::Stream"
+    },
+    {
+      "filename": "AWS_QuickSight_Agent.json",
+      "hasHandlers": true,
+      "typeName": "AWS::QuickSight::Agent"
     },
     {
       "filename": "AWS_QuickSight_Analysis.json",
@@ -6070,6 +6245,11 @@
       "filename": "AWS_RedshiftServerless_Namespace.json",
       "hasHandlers": true,
       "typeName": "AWS::RedshiftServerless::Namespace"
+    },
+    {
+      "filename": "AWS_RedshiftServerless_RecoveryPoint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::RedshiftServerless::RecoveryPoint"
     },
     {
       "filename": "AWS_RedshiftServerless_Snapshot.json",
@@ -6707,6 +6887,11 @@
       "typeName": "AWS::SMSVOICE::ProtectConfiguration"
     },
     {
+      "filename": "AWS_SMSVOICE_Registration.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SMSVOICE::Registration"
+    },
+    {
       "filename": "AWS_SMSVOICE_ResourcePolicy.json",
       "hasHandlers": true,
       "typeName": "AWS::SMSVOICE::ResourcePolicy"
@@ -6822,6 +7007,11 @@
       "typeName": "AWS::SSM::MaintenanceWindowTask"
     },
     {
+      "filename": "AWS_SSM_OpsItem.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SSM::OpsItem"
+    },
+    {
       "filename": "AWS_SSM_Parameter.json",
       "hasHandlers": true,
       "typeName": "AWS::SSM::Parameter"
@@ -6842,6 +7032,11 @@
       "typeName": "AWS::SSM::ResourcePolicy"
     },
     {
+      "filename": "AWS_SSM_Session.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SSM::Session"
+    },
+    {
       "filename": "AWS_SSO_Application.json",
       "hasHandlers": true,
       "typeName": "AWS::SSO::Application"
@@ -6850,6 +7045,11 @@
       "filename": "AWS_SSO_ApplicationAssignment.json",
       "hasHandlers": true,
       "typeName": "AWS::SSO::ApplicationAssignment"
+    },
+    {
+      "filename": "AWS_SSO_ApplicationProvider.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SSO::ApplicationProvider"
     },
     {
       "filename": "AWS_SSO_Assignment.json",
@@ -7402,6 +7602,11 @@
       "typeName": "AWS::Signer::ProfilePermission"
     },
     {
+      "filename": "AWS_Signer_SigningJob.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Signer::SigningJob"
+    },
+    {
       "filename": "AWS_Signer_SigningProfile.json",
       "hasHandlers": true,
       "typeName": "AWS::Signer::SigningProfile"
@@ -7412,9 +7617,19 @@
       "typeName": "AWS::SimSpaceWeaver::Simulation"
     },
     {
+      "filename": "AWS_States_Execution.json",
+      "hasHandlers": true,
+      "typeName": "AWS::States::Execution"
+    },
+    {
       "filename": "AWS_StepFunctions_Activity.json",
       "hasHandlers": true,
       "typeName": "AWS::StepFunctions::Activity"
+    },
+    {
+      "filename": "AWS_StepFunctions_MapRun.json",
+      "hasHandlers": true,
+      "typeName": "AWS::StepFunctions::MapRun"
     },
     {
       "filename": "AWS_StepFunctions_StateMachine.json",
@@ -7430,6 +7645,11 @@
       "filename": "AWS_StepFunctions_StateMachineVersion.json",
       "hasHandlers": true,
       "typeName": "AWS::StepFunctions::StateMachineVersion"
+    },
+    {
+      "filename": "AWS_StorageGateway_TapePool.json",
+      "hasHandlers": true,
+      "typeName": "AWS::StorageGateway::TapePool"
     },
     {
       "filename": "AWS_SupportApp_AccountAlias.json",
@@ -7462,6 +7682,11 @@
       "typeName": "AWS::SystemsManagerSAP::Application"
     },
     {
+      "filename": "AWS_ThinClient_SoftwareSet.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ThinClient::SoftwareSet"
+    },
+    {
       "filename": "AWS_Timestream_Database.json",
       "hasHandlers": true,
       "typeName": "AWS::Timestream::Database"
@@ -7485,6 +7710,16 @@
       "filename": "AWS_Timestream_Table.json",
       "hasHandlers": true,
       "typeName": "AWS::Timestream::Table"
+    },
+    {
+      "filename": "AWS_Transcribe_MedicalTranscriptionJob.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Transcribe::MedicalTranscriptionJob"
+    },
+    {
+      "filename": "AWS_Transcribe_VocabularyFilter.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Transcribe::VocabularyFilter"
     },
     {
       "filename": "AWS_Transfer_Agreement.json",
@@ -7747,6 +7982,21 @@
       "typeName": "AWS::WAFv2::WebACLAssociation"
     },
     {
+      "filename": "AWS_WellArchitected_Lens.json",
+      "hasHandlers": true,
+      "typeName": "AWS::WellArchitected::Lens"
+    },
+    {
+      "filename": "AWS_WellArchitected_Profile.json",
+      "hasHandlers": true,
+      "typeName": "AWS::WellArchitected::Profile"
+    },
+    {
+      "filename": "AWS_WellArchitected_ReviewTemplate.json",
+      "hasHandlers": true,
+      "typeName": "AWS::WellArchitected::ReviewTemplate"
+    },
+    {
       "filename": "AWS_Wisdom_AIAgent.json",
       "hasHandlers": true,
       "typeName": "AWS::Wisdom::AIAgent"
@@ -7872,6 +8122,11 @@
       "typeName": "AWS::WorkSpaces::Workspace"
     },
     {
+      "filename": "AWS_WorkSpaces_WorkspaceIpGroup.json",
+      "hasHandlers": true,
+      "typeName": "AWS::WorkSpaces::WorkspaceIpGroup"
+    },
+    {
       "filename": "AWS_WorkSpaces_WorkspacesPool.json",
       "hasHandlers": true,
       "typeName": "AWS::WorkSpaces::WorkspacesPool"
@@ -7917,5 +8172,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1583
+  "totalSchemas": 1634
 }

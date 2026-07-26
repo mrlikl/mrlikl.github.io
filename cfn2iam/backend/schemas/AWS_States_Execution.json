@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "StateMachineArn": {
+            "description": "The ARN of the state machine whose executions to list.",
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "StateMachineArn"
+        ]
+      },
+      "permissions": [
+        "states:ListExecutions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "states:DescribeExecution"
+      ]
+    }
+  },
+  "typeName": "AWS::States::Execution"
+}

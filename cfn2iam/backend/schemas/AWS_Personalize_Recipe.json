@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "personalize:ListRecipes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "personalize:DescribeRecipe"
+      ]
+    }
+  },
+  "typeName": "AWS::Personalize::Recipe"
+}

@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "transcribe:CreateVocabularyFilter",
+        "transcribe:GetVocabularyFilter",
+        "transcribe:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "transcribe:DeleteVocabularyFilter",
+        "transcribe:GetVocabularyFilter"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "transcribe:ListVocabularyFilters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "transcribe:GetVocabularyFilter",
+        "transcribe:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "transcribe:UpdateVocabularyFilter",
+        "transcribe:GetVocabularyFilter",
+        "transcribe:TagResource",
+        "transcribe:UntagResource",
+        "transcribe:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::Transcribe::VocabularyFilter"
+}

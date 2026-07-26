@@ -1,0 +1,27 @@
+{
+  "handlers": {
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ImageVersionArn": {
+            "pattern": "^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):image/[a-z0-9-_]+/[0-9]+\\.[0-9]+\\.[0-9]+$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "ImageVersionArn"
+        ]
+      },
+      "permissions": [
+        "imagebuilder:ListImageBuildVersions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "imagebuilder:GetImage",
+        "imagebuilder:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::ImageBuilder::AllImageBuildVersions"
+}

@@ -1,0 +1,26 @@
+{
+  "handlers": {
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "WorkGroup": {
+            "pattern": "^[a-zA-Z0-9._-]{1,128}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "WorkGroup"
+        ]
+      },
+      "permissions": [
+        "athena:ListSessions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "athena:GetSession"
+      ]
+    }
+  },
+  "typeName": "AWS::Athena::Session"
+}

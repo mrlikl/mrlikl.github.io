@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "workspaces:CreateIpGroup",
+        "workspaces:DescribeIpGroups",
+        "workspaces:CreateTags",
+        "workspaces:DescribeTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "workspaces:DeleteIpGroup",
+        "workspaces:DescribeIpGroups"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "workspaces:DescribeIpGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "workspaces:DescribeIpGroups",
+        "workspaces:DescribeTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "workspaces:UpdateRulesOfIpGroup",
+        "workspaces:AuthorizeIpRules",
+        "workspaces:RevokeIpRules",
+        "workspaces:DescribeIpGroups",
+        "workspaces:CreateTags",
+        "workspaces:DeleteTags",
+        "workspaces:DescribeTags"
+      ]
+    }
+  },
+  "typeName": "AWS::WorkSpaces::WorkspaceIpGroup"
+}
