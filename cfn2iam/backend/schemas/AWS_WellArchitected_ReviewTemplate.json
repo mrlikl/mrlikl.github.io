@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wellarchitected:CreateReviewTemplate",
+        "wellarchitected:GetReviewTemplate",
+        "wellarchitected:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wellarchitected:DeleteReviewTemplate",
+        "wellarchitected:GetReviewTemplate"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "wellarchitected:ListReviewTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wellarchitected:GetReviewTemplate"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wellarchitected:UpdateReviewTemplate",
+        "wellarchitected:GetReviewTemplate",
+        "wellarchitected:TagResource",
+        "wellarchitected:UntagResource",
+        "wellarchitected:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::WellArchitected::ReviewTemplate"
+}

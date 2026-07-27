@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "backup:CreateLegalHold",
+        "backup:GetLegalHold",
+        "backup:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "backup:CancelLegalHold",
+        "backup:GetLegalHold"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "backup:ListLegalHolds"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "backup:GetLegalHold",
+        "backup:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "backup:GetLegalHold",
+        "backup:TagResource",
+        "backup:UntagResource",
+        "backup:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::Backup::LegalHold"
+}

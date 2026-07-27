@@ -1,0 +1,16 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "greengrass:ListCoreDevices"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "greengrass:GetCoreDevice",
+        "greengrass:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::GreengrassV2::CoreDevice"
+}

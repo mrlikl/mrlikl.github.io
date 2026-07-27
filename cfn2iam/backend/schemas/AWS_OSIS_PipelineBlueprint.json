@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "osis:ListPipelineBlueprints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "osis:GetPipelineBlueprint"
+      ]
+    }
+  },
+  "typeName": "AWS::OSIS::PipelineBlueprint"
+}

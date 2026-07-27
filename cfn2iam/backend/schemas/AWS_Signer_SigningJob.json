@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "signer:ListSigningJobs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "signer:DescribeSigningJob"
+      ]
+    }
+  },
+  "typeName": "AWS::Signer::SigningJob"
+}

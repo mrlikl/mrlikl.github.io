@@ -6,6 +6,8 @@
         "config:DescribeOrganizationConformancePackStatuses",
         "config:GetOrganizationConformancePackDetailedStatus",
         "config:DescribeOrganizationConformancePacks",
+        "config:TagResource",
+        "config:ListTagsForResource",
         "s3:GetObject",
         "s3:GetBucketAcl",
         "iam:CreateServiceLinkedRole",
@@ -20,6 +22,7 @@
         "config:DeleteOrganizationConformancePack",
         "config:DescribeOrganizationConformancePackStatuses",
         "config:GetOrganizationConformancePackDetailedStatus",
+        "config:UntagResource",
         "organizations:ListDelegatedAdministrators"
       ],
       "timeoutInMinutes": 706
@@ -31,7 +34,8 @@
     },
     "read": {
       "permissions": [
-        "config:DescribeOrganizationConformancePacks"
+        "config:DescribeOrganizationConformancePacks",
+        "config:ListTagsForResource"
       ]
     },
     "update": {
@@ -39,6 +43,10 @@
         "config:PutOrganizationConformancePack",
         "config:DescribeOrganizationConformancePackStatuses",
         "config:GetOrganizationConformancePackDetailedStatus",
+        "config:DescribeOrganizationConformancePacks",
+        "config:TagResource",
+        "config:UntagResource",
+        "config:ListTagsForResource",
         "s3:GetObject",
         "s3:GetBucketAcl",
         "iam:CreateServiceLinkedRole",

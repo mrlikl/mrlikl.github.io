@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "elasticmapreduce:ListNotebookExecutions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticmapreduce:DescribeNotebookExecution"
+      ]
+    }
+  },
+  "typeName": "AWS::EMR::NotebookExecution"
+}

@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "medialive:ListOfferings"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "medialive:DescribeOffering"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaLive::Offering"
+}

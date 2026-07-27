@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sms-voice:CreateRegistration",
+        "sms-voice:DescribeRegistrations",
+        "sms-voice:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sms-voice:DeleteRegistration",
+        "sms-voice:DescribeRegistrations"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sms-voice:DescribeRegistrations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sms-voice:DescribeRegistrations",
+        "sms-voice:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sms-voice:DescribeRegistrations",
+        "sms-voice:TagResource",
+        "sms-voice:UntagResource",
+        "sms-voice:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SMSVOICE::Registration"
+}

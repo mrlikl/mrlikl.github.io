@@ -1,0 +1,16 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "backup-search:ListSearchJobs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "backup-search:GetSearchJob",
+        "backup-search:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::BackupSearch::SearchJob"
+}

@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "dynamodb:ListExports"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dynamodb:DescribeExport"
+      ]
+    }
+  },
+  "typeName": "AWS::DynamoDB::Export"
+}

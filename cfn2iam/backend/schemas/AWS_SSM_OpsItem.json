@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ssm:CreateOpsItem",
+        "ssm:GetOpsItem",
+        "ssm:DescribeOpsItems",
+        "ssm:AddTagsToResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ssm:GetOpsItem",
+        "ssm:ListTagsForResource",
+        "ssm:DeleteOpsItem"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ssm:DescribeOpsItems"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ssm:GetOpsItem",
+        "ssm:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ssm:UpdateOpsItem",
+        "ssm:GetOpsItem",
+        "ssm:AddTagsToResource",
+        "ssm:RemoveTagsFromResource",
+        "ssm:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SSM::OpsItem"
+}

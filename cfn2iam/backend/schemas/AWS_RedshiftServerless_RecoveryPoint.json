@@ -1,0 +1,26 @@
+{
+  "handlers": {
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "NamespaceName": {
+            "maxLength": 64,
+            "minLength": 3,
+            "pattern": "^[a-z0-9-]+$",
+            "type": "string"
+          }
+        }
+      },
+      "permissions": [
+        "redshift-serverless:ListRecoveryPoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "redshift-serverless:GetRecoveryPoint",
+        "redshift-serverless:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::RedshiftServerless::RecoveryPoint"
+}

@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "ssm:DescribeSessions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ssm:DescribeSessions"
+      ]
+    }
+  },
+  "typeName": "AWS::SSM::Session"
+}

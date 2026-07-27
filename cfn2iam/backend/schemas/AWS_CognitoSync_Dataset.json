@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "IdentityId": {
+            "maxLength": 55,
+            "minLength": 1,
+            "pattern": "^[\\w-]+:[0-9a-f-]+$",
+            "type": "string"
+          },
+          "IdentityPoolId": {
+            "maxLength": 55,
+            "minLength": 1,
+            "pattern": "^[\\w-]+:[0-9a-f-]+$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "IdentityPoolId",
+          "IdentityId"
+        ]
+      },
+      "permissions": [
+        "cognito-sync:ListDatasets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cognito-sync:DescribeDataset"
+      ]
+    }
+  },
+  "typeName": "AWS::CognitoSync::Dataset"
+}

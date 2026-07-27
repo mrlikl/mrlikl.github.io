@@ -1,0 +1,60 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lambda:CreateNetworkConnector",
+        "lambda:GetNetworkConnector",
+        "lambda:TagResource",
+        "iam:PassRole",
+        "iam:CreateServiceLinkedRole",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lambda:DeleteNetworkConnector",
+        "lambda:GetNetworkConnector"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "State": {
+            "description": "The current state of the network connector.",
+            "enum": [
+              "PENDING",
+              "ACTIVE",
+              "INACTIVE",
+              "FAILED",
+              "DELETING",
+              "DELETE_FAILED"
+            ],
+            "type": "string"
+          }
+        }
+      },
+      "permissions": [
+        "lambda:ListNetworkConnectors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lambda:GetNetworkConnector",
+        "lambda:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lambda:UpdateNetworkConnector",
+        "lambda:GetNetworkConnector",
+        "lambda:TagResource",
+        "lambda:UntagResource",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::Lambda::NetworkConnector"
+}

@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "artifact:ListReports"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "artifact:GetReportMetadata"
+      ]
+    }
+  },
+  "typeName": "AWS::Artifact::Report"
+}

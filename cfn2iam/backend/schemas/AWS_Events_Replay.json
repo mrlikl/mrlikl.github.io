@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "events:ListReplays"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "events:DescribeReplay"
+      ]
+    }
+  },
+  "typeName": "AWS::Events::Replay"
+}

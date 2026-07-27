@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "controlcatalog:ListObjectives"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "controlcatalog:ListObjectives"
+      ]
+    }
+  },
+  "typeName": "AWS::ControlCatalog::Objective"
+}

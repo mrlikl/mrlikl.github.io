@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "bcm-data-exports:ListTables"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bcm-data-exports:GetTable"
+      ]
+    }
+  },
+  "typeName": "AWS::BCMDataExports::Table"
+}

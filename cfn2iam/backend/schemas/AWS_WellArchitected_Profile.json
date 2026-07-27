@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wellarchitected:CreateProfile",
+        "wellarchitected:GetProfile",
+        "wellarchitected:TagResource",
+        "wellarchitected:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wellarchitected:DeleteProfile",
+        "wellarchitected:GetProfile"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "wellarchitected:ListProfiles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wellarchitected:GetProfile",
+        "wellarchitected:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wellarchitected:UpdateProfile",
+        "wellarchitected:GetProfile",
+        "wellarchitected:TagResource",
+        "wellarchitected:UntagResource",
+        "wellarchitected:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::WellArchitected::Profile"
+}

@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateBlueprint",
+        "glue:GetBlueprint",
+        "glue:TagResource",
+        "glue:GetTags",
+        "s3:GetObject"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:DeleteBlueprint",
+        "glue:GetBlueprint"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:ListBlueprints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetBlueprint",
+        "glue:GetTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:UpdateBlueprint",
+        "glue:GetBlueprint",
+        "glue:TagResource",
+        "glue:UntagResource",
+        "glue:GetTags",
+        "s3:GetObject"
+      ]
+    }
+  },
+  "typeName": "AWS::Glue::Blueprint"
+}

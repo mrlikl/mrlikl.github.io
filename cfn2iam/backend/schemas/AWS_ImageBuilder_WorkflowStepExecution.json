@@ -1,0 +1,26 @@
+{
+  "handlers": {
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "WorkflowExecutionId": {
+            "pattern": "^wf-[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "WorkflowExecutionId"
+        ]
+      },
+      "permissions": [
+        "imagebuilder:ListWorkflowStepExecutions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "imagebuilder:GetWorkflowStepExecution"
+      ]
+    }
+  },
+  "typeName": "AWS::ImageBuilder::WorkflowStepExecution"
+}

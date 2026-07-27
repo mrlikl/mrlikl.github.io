@@ -1,0 +1,16 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "greengrass:ListComponents"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "greengrass:ListComponentVersions",
+        "greengrass:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::GreengrassV2::Component"
+}

@@ -1,0 +1,15 @@
+{
+  "handlers": {
+    "list": {
+      "permissions": [
+        "codebuild:ListSandboxes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "codebuild:BatchGetSandboxes"
+      ]
+    }
+  },
+  "typeName": "AWS::CodeBuild::Sandbox"
+}
