@@ -9,7 +9,8 @@
     "delete": {
       "permissions": [
         "storagegateway:DeleteTapePool",
-        "storagegateway:ListTapePools"
+        "storagegateway:ListTapePools",
+        "storagegateway:ListTagsForResource"
       ]
     },
     "list": {

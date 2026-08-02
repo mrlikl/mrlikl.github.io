@@ -7,6 +7,8 @@
         "grafana:DescribeWorkspaceAuthentication",
         "grafana:DescribeWorkspaceConfiguration",
         "grafana:UpdateWorkspaceAuthentication",
+        "grafana:ListTagsForResource",
+        "grafana:TagResource",
         "sso:DescribeRegisteredRegions",
         "sso:CreateManagedApplicationInstance",
         "organizations:DescribeOrganization",
@@ -16,6 +18,8 @@
         "ec2:DescribeSecurityGroups",
         "ec2:DescribeSubnets",
         "ec2:DescribeVpcs",
+        "ec2:DescribeDhcpOptions",
+        "ec2:DescribeNetworkInterfaces",
         "iam:CreateServiceLinkedRole",
         "sso:ListApplicationInstances",
         "sso:GetApplicationInstance"
@@ -35,14 +39,16 @@
       "permissions": [
         "grafana:ListWorkspaces",
         "grafana:DescribeWorkspaceAuthentication",
-        "grafana:DescribeWorkspaceConfiguration"
+        "grafana:DescribeWorkspaceConfiguration",
+        "grafana:ListTagsForResource"
       ]
     },
     "read": {
       "permissions": [
         "grafana:DescribeWorkspace",
         "grafana:DescribeWorkspaceAuthentication",
-        "grafana:DescribeWorkspaceConfiguration"
+        "grafana:DescribeWorkspaceConfiguration",
+        "grafana:ListTagsForResource"
       ]
     },
     "update": {
@@ -53,6 +59,9 @@
         "grafana:UpdateWorkspace",
         "grafana:UpdateWorkspaceAuthentication",
         "grafana:UpdateWorkspaceConfiguration",
+        "grafana:TagResource",
+        "grafana:UntagResource",
+        "grafana:ListTagsForResource",
         "sso:DescribeRegisteredRegions",
         "sso:CreateManagedApplicationInstance",
         "ec2:GetManagedPrefixListEntries",
@@ -60,6 +69,8 @@
         "ec2:DescribeSecurityGroups",
         "ec2:DescribeSubnets",
         "ec2:DescribeVpcs",
+        "ec2:DescribeDhcpOptions",
+        "ec2:DescribeNetworkInterfaces",
         "iam:CreateServiceLinkedRole",
         "sso:ListApplicationInstances",
         "sso:GetApplicationInstance"

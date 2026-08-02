@@ -1,0 +1,62 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "quicksight:CreateSpace",
+        "quicksight:DescribeSpace",
+        "quicksight:UpdateSpaceResources",
+        "quicksight:UpdateSpacePermissions",
+        "quicksight:ListSpaceResources",
+        "quicksight:DescribeSpacePermissions",
+        "quicksight:TagResource",
+        "quicksight:UntagResource",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "quicksight:DeleteSpace",
+        "quicksight:DescribeSpace",
+        "quicksight:ListTagsForResource",
+        "quicksight:UntagResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AwsAccountId": {
+            "$ref": "resource-schema.json#/properties/AwsAccountId"
+          }
+        },
+        "required": [
+          "AwsAccountId"
+        ]
+      },
+      "permissions": [
+        "quicksight:ListSpaces"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "quicksight:DescribeSpace",
+        "quicksight:DescribeSpacePermissions",
+        "quicksight:ListSpaceResources",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "quicksight:UpdateSpace",
+        "quicksight:DescribeSpace",
+        "quicksight:UpdateSpaceResources",
+        "quicksight:ListSpaceResources",
+        "quicksight:UpdateSpacePermissions",
+        "quicksight:DescribeSpacePermissions",
+        "quicksight:TagResource",
+        "quicksight:UntagResource",
+        "quicksight:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::QuickSight::Space"
+}

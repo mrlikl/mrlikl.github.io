@@ -12,7 +12,8 @@
     "delete": {
       "permissions": [
         "sagemaker:DeleteMlflowApp",
-        "sagemaker:DescribeMlflowApp"
+        "sagemaker:DescribeMlflowApp",
+        "sagemaker:ListTags"
       ]
     },
     "list": {

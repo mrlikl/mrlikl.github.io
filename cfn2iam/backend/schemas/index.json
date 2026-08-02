@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-26T04:28:50.569946Z",
+  "lastUpdated": "2026-08-02T04:24:59.528418Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -835,6 +835,11 @@
       "filename": "AWS_BedrockAgentCore_Harness.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::Harness"
+    },
+    {
+      "filename": "AWS_BedrockAgentCore_HarnessEndpoint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::HarnessEndpoint"
     },
     {
       "filename": "AWS_BedrockAgentCore_Memory.json",
@@ -2063,7 +2068,7 @@
     },
     {
       "filename": "AWS_DMS_Endpoint.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::DMS::Endpoint"
     },
     {
@@ -2935,6 +2940,11 @@
       "filename": "AWS_EC2_TransitGatewayPolicyTableAssociation.json",
       "hasHandlers": true,
       "typeName": "AWS::EC2::TransitGatewayPolicyTableAssociation"
+    },
+    {
+      "filename": "AWS_EC2_TransitGatewayPolicyTableEntry.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::TransitGatewayPolicyTableEntry"
     },
     {
       "filename": "AWS_EC2_TransitGatewayRoute.json",
@@ -5017,6 +5027,11 @@
       "typeName": "AWS::MSK::BatchScramSecret"
     },
     {
+      "filename": "AWS_MSK_Channel.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MSK::Channel"
+    },
+    {
       "filename": "AWS_MSK_Cluster.json",
       "hasHandlers": true,
       "typeName": "AWS::MSK::Cluster"
@@ -5158,7 +5173,7 @@
     },
     {
       "filename": "AWS_MediaConvert_Preset.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::MediaConvert::Preset"
     },
     {
@@ -6085,6 +6100,11 @@
       "filename": "AWS_QuickSight_RefreshSchedule.json",
       "hasHandlers": true,
       "typeName": "AWS::QuickSight::RefreshSchedule"
+    },
+    {
+      "filename": "AWS_QuickSight_Space.json",
+      "hasHandlers": true,
+      "typeName": "AWS::QuickSight::Space"
     },
     {
       "filename": "AWS_QuickSight_Template.json",
@@ -7030,6 +7050,11 @@
       "filename": "AWS_SSM_ResourcePolicy.json",
       "hasHandlers": true,
       "typeName": "AWS::SSM::ResourcePolicy"
+    },
+    {
+      "filename": "AWS_SSM_ServiceSetting.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SSM::ServiceSetting"
     },
     {
       "filename": "AWS_SSM_Session.json",
@@ -8172,5 +8197,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1634
+  "totalSchemas": 1639
 }

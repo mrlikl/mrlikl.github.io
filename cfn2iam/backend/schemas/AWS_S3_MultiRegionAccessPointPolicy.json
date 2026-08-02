@@ -3,13 +3,16 @@
     "create": {
       "permissions": [
         "s3:PutMultiRegionAccessPointPolicy",
-        "s3:DescribeMultiRegionAccessPointOperation"
+        "s3:DescribeMultiRegionAccessPointOperation",
+        "s3:GetMultiRegionAccessPointPolicy",
+        "s3:GetMultiRegionAccessPointPolicyStatus"
       ]
     },
     "delete": {
       "permissions": [
-        "s3:GetMultiRegionAccessPointPolicy",
-        "s3:GetMultiRegionAccessPoint"
+        "s3:GetMultiRegionAccessPoint",
+        "s3:PutMultiRegionAccessPointPolicy",
+        "s3:DescribeMultiRegionAccessPointOperation"
       ]
     },
     "list": {
@@ -24,7 +27,9 @@
     "update": {
       "permissions": [
         "s3:PutMultiRegionAccessPointPolicy",
-        "s3:DescribeMultiRegionAccessPointOperation"
+        "s3:DescribeMultiRegionAccessPointOperation",
+        "s3:GetMultiRegionAccessPointPolicy",
+        "s3:GetMultiRegionAccessPointPolicyStatus"
       ]
     }
   },

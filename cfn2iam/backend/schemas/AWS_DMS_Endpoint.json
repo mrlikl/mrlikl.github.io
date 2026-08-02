@@ -1,4 +1,73 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "dms:AddTagsToResource",
+        "dms:CreateEndpoint",
+        "dms:DescribeEndpoints",
+        "dms:ListTagsForResource",
+        "iam:GetRole",
+        "iam:PassRole",
+        "kms:CreateGrant",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:Encrypt",
+        "kms:GenerateDataKey",
+        "kms:GenerateDataKeyPair",
+        "kms:GenerateDataKeyPairWithoutPlaintext",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ListGrants",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo",
+        "rds:DescribeDBClusters",
+        "redshift:DescribeClusters",
+        "redshift:ModifyClusterIamRoles",
+        "secretsmanager:DescribeSecret"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "dms:DeleteEndpoint",
+        "dms:DescribeEndpoints"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "dms:DescribeEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dms:DescribeEndpoints",
+        "dms:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "dms:AddTagsToResource",
+        "dms:DescribeEndpoints",
+        "dms:ListTagsForResource",
+        "dms:ModifyEndpoint",
+        "dms:RemoveTagsFromResource",
+        "iam:GetRole",
+        "iam:PassRole",
+        "kms:CreateGrant",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:Encrypt",
+        "kms:GenerateDataKey",
+        "kms:GenerateDataKeyPair",
+        "kms:GenerateDataKeyPairWithoutPlaintext",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ListGrants",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo",
+        "rds:DescribeDBClusters",
+        "redshift:DescribeClusters",
+        "redshift:ModifyClusterIamRoles",
+        "secretsmanager:DescribeSecret"
+      ]
+    }
+  },
   "typeName": "AWS::DMS::Endpoint"
 }
