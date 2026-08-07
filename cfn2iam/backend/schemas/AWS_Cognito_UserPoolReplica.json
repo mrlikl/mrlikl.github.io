@@ -20,6 +20,7 @@
     "delete": {
       "permissions": [
         "cognito-idp:DeleteUserPoolReplica",
+        "cognito-idp:DescribeUserPool",
         "cognito-idp:ListUserPoolReplicas",
         "iam:PassRole",
         "kms:CreateGrant",

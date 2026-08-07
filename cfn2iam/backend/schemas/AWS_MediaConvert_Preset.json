@@ -1,4 +1,38 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediaconvert:GetPreset",
+        "mediaconvert:CreatePreset",
+        "mediaconvert:TagResource",
+        "mediaconvert:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediaconvert:GetPreset",
+        "mediaconvert:DeletePreset"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediaconvert:ListPresets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediaconvert:GetPreset",
+        "mediaconvert:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediaconvert:UpdatePreset",
+        "mediaconvert:ListTagsForResource",
+        "mediaconvert:TagResource",
+        "mediaconvert:UntagResource"
+      ]
+    }
+  },
   "typeName": "AWS::MediaConvert::Preset"
 }

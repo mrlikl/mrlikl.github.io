@@ -1,0 +1,81 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "kafka:CreateChannel",
+        "kafka:DescribeChannel",
+        "kafka:TagResource",
+        "dynamodb:DescribeTable",
+        "dynamodb:PutItem",
+        "dynamodb:TagResource",
+        "stepfunctions:DescribeStateMachine",
+        "stepfunctions:StartExecution",
+        "stepfunctions:TagResource",
+        "iam:PassRole",
+        "kms:DescribeKey",
+        "glue:CreateTable",
+        "glue:GetTable",
+        "glue:GetDatabase",
+        "s3:GetBucketLocation",
+        "s3:GetBucketPolicy",
+        "s3:PutBucketPolicy",
+        "s3:ListBucket",
+        "s3:PutObject",
+        "s3:GetObject",
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents",
+        "logs:DescribeLogGroups",
+        "logs:CreateLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:UpdateLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:PutResourcePolicy",
+        "logs:DescribeResourcePolicies",
+        "firehose:DescribeDeliveryStream",
+        "firehose:PutRecord",
+        "firehose:PutRecordBatch",
+        "firehose:TagDeliveryStream",
+        "iam:CreateServiceLinkedRole",
+        "iam:GetRole",
+        "iam:AttachRolePolicy",
+        "iam:PutRolePolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "kafka:DeleteChannel",
+        "kafka:DescribeChannel",
+        "dynamodb:DescribeTable",
+        "stepfunctions:DescribeStateMachine",
+        "stepfunctions:StopExecution",
+        "logs:ListLogDeliveries",
+        "logs:DeleteLogDelivery",
+        "kms:DescribeKey"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "kafka:ListChannels",
+        "kms:DescribeKey"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "kafka:DescribeChannel",
+        "kafka:ListTagsForResource",
+        "kms:DescribeKey"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "kafka:UpdateChannel",
+        "kafka:DescribeChannel",
+        "kafka:TagResource",
+        "kafka:UntagResource",
+        "kms:DescribeKey"
+      ]
+    }
+  },
+  "typeName": "AWS::MSK::Channel"
+}

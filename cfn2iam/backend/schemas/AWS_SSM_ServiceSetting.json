@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ssm:UpdateServiceSetting",
+        "ssm:GetServiceSetting"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ssm:ResetServiceSetting",
+        "ssm:GetServiceSetting"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "SettingId": {
+            "maxLength": 1000,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "SettingId"
+        ]
+      },
+      "permissions": [
+        "ssm:GetServiceSetting"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ssm:GetServiceSetting"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ssm:UpdateServiceSetting",
+        "ssm:GetServiceSetting"
+      ]
+    }
+  },
+  "typeName": "AWS::SSM::ServiceSetting"
+}
