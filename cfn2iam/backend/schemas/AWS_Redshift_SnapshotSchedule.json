@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "redshift:CreateSnapshotSchedule",
+        "redshift:DescribeSnapshotSchedules",
+        "redshift:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "redshift:DeleteSnapshotSchedule",
+        "redshift:DescribeSnapshotSchedules"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "redshift:DescribeSnapshotSchedules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "redshift:DescribeSnapshotSchedules"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "redshift:ModifySnapshotSchedule",
+        "redshift:DescribeSnapshotSchedules",
+        "redshift:CreateTags",
+        "redshift:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::Redshift::SnapshotSchedule"
+}

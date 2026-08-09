@@ -1,4 +1,43 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "dms:CreateEventSubscription",
+        "dms:DescribeEventSubscriptions",
+        "dms:AddTagsToResource",
+        "dms:ListTagsForResource",
+        "sns:Publish",
+        "sns:GetTopicAttributes"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "dms:DeleteEventSubscription",
+        "dms:DescribeEventSubscriptions"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "dms:DescribeEventSubscriptions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dms:DescribeEventSubscriptions",
+        "dms:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "dms:ModifyEventSubscription",
+        "dms:DescribeEventSubscriptions",
+        "dms:AddTagsToResource",
+        "dms:RemoveTagsFromResource",
+        "dms:ListTagsForResource",
+        "sns:Publish",
+        "sns:GetTopicAttributes"
+      ]
+    }
+  },
   "typeName": "AWS::DMS::EventSubscription"
 }

@@ -1,4 +1,40 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateDataQualityRuleset",
+        "glue:GetDataQualityRuleset",
+        "glue:GetTable",
+        "glue:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:DeleteDataQualityRuleset",
+        "glue:GetDataQualityRuleset"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:ListDataQualityRulesets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetDataQualityRuleset",
+        "glue:GetTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:UpdateDataQualityRuleset",
+        "glue:GetDataQualityRuleset",
+        "glue:GetTable",
+        "glue:TagResource",
+        "glue:UntagResource",
+        "glue:GetTags"
+      ]
+    }
+  },
   "typeName": "AWS::Glue::DataQualityRuleset"
 }

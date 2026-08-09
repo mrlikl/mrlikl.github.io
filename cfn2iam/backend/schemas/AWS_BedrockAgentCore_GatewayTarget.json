@@ -10,28 +10,28 @@
         "bedrock-agentcore:GetWorkloadAccessToken",
         "bedrock-agentcore:GetWorkloadAccessTokenForUserId",
         "bedrock-agentcore:SynchronizeGatewayTargets",
+        "bedrock-mantle:GetModel",
+        "bedrock-mantle:ListModels",
+        "ec2:CreateNetworkInterface",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs",
+        "iam:CreateServiceLinkedRole",
         "kms:Decrypt",
         "kms:GenerateDataKey",
         "kms:ListGrants",
         "s3:GetObject",
         "secretsmanager:GetSecretValue",
-        "iam:CreateServiceLinkedRole",
-        "ec2:DescribeVpcs",
-        "ec2:DescribeSubnets",
-        "ec2:DescribeSecurityGroups",
-        "ec2:CreateNetworkInterface",
         "vpc-lattice:AssociateViaAWSService",
-        "vpc-lattice:GetResourceConfiguration",
         "vpc-lattice:CreateResourceConfiguration",
         "vpc-lattice:CreateResourceGateway",
+        "vpc-lattice:CreateServiceNetworkResourceAssociation",
         "vpc-lattice:DeleteResourceConfiguration",
         "vpc-lattice:DeleteResourceGateway",
-        "vpc-lattice:GetServiceNetworkResourceAssociation",
-        "vpc-lattice:CreateServiceNetworkResourceAssociation",
         "vpc-lattice:DeleteServiceNetworkResourceAssociation",
-        "vpc-lattice:ListServiceNetworkResourceAssociations",
-        "bedrock-mantle:ListModels",
-        "bedrock-mantle:GetModel"
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:GetServiceNetworkResourceAssociation",
+        "vpc-lattice:ListServiceNetworkResourceAssociations"
       ]
     },
     "delete": {
@@ -47,6 +47,16 @@
       ]
     },
     "list": {
+      "handlerSchema": {
+        "properties": {
+          "GatewayIdentifier": {
+            "$ref": "resource-schema.json#/properties/GatewayIdentifier"
+          }
+        },
+        "required": [
+          "GatewayIdentifier"
+        ]
+      },
       "permissions": [
         "bedrock-agentcore:ListGatewayTargets"
       ]
@@ -66,28 +76,28 @@
         "bedrock-agentcore:GetWorkloadAccessTokenForUserId",
         "bedrock-agentcore:SynchronizeGatewayTargets",
         "bedrock-agentcore:UpdateGatewayTarget",
+        "bedrock-mantle:GetModel",
+        "bedrock-mantle:ListModels",
+        "ec2:CreateNetworkInterface",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs",
+        "iam:CreateServiceLinkedRole",
         "kms:Decrypt",
         "kms:GenerateDataKey",
         "kms:ListGrants",
         "s3:GetObject",
         "secretsmanager:GetSecretValue",
-        "iam:CreateServiceLinkedRole",
-        "ec2:DescribeVpcs",
-        "ec2:DescribeSubnets",
-        "ec2:DescribeSecurityGroups",
-        "ec2:CreateNetworkInterface",
         "vpc-lattice:AssociateViaAWSService",
-        "vpc-lattice:GetResourceConfiguration",
         "vpc-lattice:CreateResourceConfiguration",
         "vpc-lattice:CreateResourceGateway",
+        "vpc-lattice:CreateServiceNetworkResourceAssociation",
         "vpc-lattice:DeleteResourceConfiguration",
         "vpc-lattice:DeleteResourceGateway",
-        "vpc-lattice:GetServiceNetworkResourceAssociation",
-        "vpc-lattice:CreateServiceNetworkResourceAssociation",
         "vpc-lattice:DeleteServiceNetworkResourceAssociation",
-        "vpc-lattice:ListServiceNetworkResourceAssociations",
-        "bedrock-mantle:ListModels",
-        "bedrock-mantle:GetModel"
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:GetServiceNetworkResourceAssociation",
+        "vpc-lattice:ListServiceNetworkResourceAssociations"
       ]
     }
   },

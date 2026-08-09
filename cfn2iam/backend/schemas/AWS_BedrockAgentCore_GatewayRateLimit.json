@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreateGatewayRateLimit",
+        "bedrock-agentcore:GetGatewayRateLimit"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeleteGatewayRateLimit",
+        "bedrock-agentcore:GetGatewayRateLimit"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "GatewayIdentifier": {
+            "$ref": "resource-schema.json#/properties/GatewayIdentifier"
+          }
+        },
+        "required": [
+          "GatewayIdentifier"
+        ]
+      },
+      "permissions": [
+        "bedrock-agentcore:ListGatewayRateLimits"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetGatewayRateLimit"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:GetGatewayRateLimit",
+        "bedrock-agentcore:UpdateGatewayRateLimit"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::GatewayRateLimit"
+}

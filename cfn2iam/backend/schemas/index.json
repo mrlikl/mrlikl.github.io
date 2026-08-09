@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-02T04:24:59.528418Z",
+  "lastUpdated": "2026-08-09T03:03:14.694945Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -327,6 +327,11 @@
       "typeName": "AWS::AppConfig::Environment"
     },
     {
+      "filename": "AWS_AppConfig_ExperimentDefinition.json",
+      "hasHandlers": true,
+      "typeName": "AWS::AppConfig::ExperimentDefinition"
+    },
+    {
       "filename": "AWS_AppConfig_Extension.json",
       "hasHandlers": true,
       "typeName": "AWS::AppConfig::Extension"
@@ -483,7 +488,7 @@
     },
     {
       "filename": "AWS_AppStream_StackFleetAssociation.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::AppStream::StackFleetAssociation"
     },
     {
@@ -825,6 +830,16 @@
       "filename": "AWS_BedrockAgentCore_Gateway.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::Gateway"
+    },
+    {
+      "filename": "AWS_BedrockAgentCore_GatewayRateLimit.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::GatewayRateLimit"
+    },
+    {
+      "filename": "AWS_BedrockAgentCore_GatewayRule.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::GatewayRule"
     },
     {
       "filename": "AWS_BedrockAgentCore_GatewayTarget.json",
@@ -1743,7 +1758,7 @@
     },
     {
       "filename": "AWS_Config_DeliveryChannel.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Config::DeliveryChannel"
     },
     {
@@ -2073,7 +2088,7 @@
     },
     {
       "filename": "AWS_DMS_EventSubscription.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::DMS::EventSubscription"
     },
     {
@@ -3698,7 +3713,7 @@
     },
     {
       "filename": "AWS_Glue_Classifier.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::Classifier"
     },
     {
@@ -3713,7 +3728,7 @@
     },
     {
       "filename": "AWS_Glue_CustomEntityType.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::CustomEntityType"
     },
     {
@@ -3723,7 +3738,7 @@
     },
     {
       "filename": "AWS_Glue_DataQualityRuleset.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::DataQualityRuleset"
     },
     {
@@ -3788,7 +3803,7 @@
     },
     {
       "filename": "AWS_Glue_SecurityConfiguration.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::SecurityConfiguration"
     },
     {
@@ -3803,7 +3818,7 @@
     },
     {
       "filename": "AWS_Glue_TableOptimizer.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::TableOptimizer"
     },
     {
@@ -3823,7 +3838,7 @@
     },
     {
       "filename": "AWS_Glue_Workflow.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::Workflow"
     },
     {
@@ -4827,6 +4842,11 @@
       "typeName": "AWS::LicenseManager::License"
     },
     {
+      "filename": "AWS_LicenseManager_LicenseAssetRuleSet.json",
+      "hasHandlers": true,
+      "typeName": "AWS::LicenseManager::LicenseAssetRuleSet"
+    },
+    {
       "filename": "AWS_Lightsail_Alarm.json",
       "hasHandlers": true,
       "typeName": "AWS::Lightsail::Alarm"
@@ -5330,6 +5350,11 @@
       "filename": "AWS_MediaTailor_ChannelPolicy.json",
       "hasHandlers": true,
       "typeName": "AWS::MediaTailor::ChannelPolicy"
+    },
+    {
+      "filename": "AWS_MediaTailor_Function.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MediaTailor::Function"
     },
     {
       "filename": "AWS_MediaTailor_LiveSource.json",
@@ -6122,6 +6147,11 @@
       "typeName": "AWS::QuickSight::Topic"
     },
     {
+      "filename": "AWS_QuickSight_TopicV2.json",
+      "hasHandlers": true,
+      "typeName": "AWS::QuickSight::TopicV2"
+    },
+    {
       "filename": "AWS_QuickSight_VPCConnection.json",
       "hasHandlers": true,
       "typeName": "AWS::QuickSight::VPCConnection"
@@ -6330,6 +6360,11 @@
       "filename": "AWS_Redshift_ScheduledAction.json",
       "hasHandlers": true,
       "typeName": "AWS::Redshift::ScheduledAction"
+    },
+    {
+      "filename": "AWS_Redshift_SnapshotSchedule.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Redshift::SnapshotSchedule"
     },
     {
       "filename": "AWS_RefactorSpaces_Application.json",
@@ -7007,6 +7042,11 @@
       "typeName": "AWS::SSM::Association"
     },
     {
+      "filename": "AWS_SSM_CloudConnector.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SSM::CloudConnector"
+    },
+    {
       "filename": "AWS_SSM_Document.json",
       "hasHandlers": true,
       "typeName": "AWS::SSM::Document"
@@ -7115,6 +7155,11 @@
       "filename": "AWS_SageMaker_AppImageConfig.json",
       "hasHandlers": true,
       "typeName": "AWS::SageMaker::AppImageConfig"
+    },
+    {
+      "filename": "AWS_SageMaker_Artifact.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::Artifact"
     },
     {
       "filename": "AWS_SageMaker_Cluster.json",
@@ -8197,5 +8242,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1639
+  "totalSchemas": 1648
 }

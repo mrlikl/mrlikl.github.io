@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ssm:CreateCloudConnector",
+        "ssm:GetCloudConnector",
+        "ssm:AddTagsToResource",
+        "ssm:ListTagsForResource",
+        "iam:PassRole",
+        "config:PutThirdPartyServiceLinkedConfigurationRecorder",
+        "config:GetConnector"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ssm:DeleteCloudConnector",
+        "ssm:GetCloudConnector",
+        "ssm:ListAssociations",
+        "config:PutThirdPartyServiceLinkedConfigurationRecorder",
+        "config:DeleteServiceLinkedConfigurationRecorder",
+        "config:GetConnector"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ssm:ListCloudConnectors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ssm:GetCloudConnector",
+        "ssm:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ssm:UpdateCloudConnector",
+        "ssm:GetCloudConnector",
+        "ssm:AddTagsToResource",
+        "ssm:RemoveTagsFromResource",
+        "ssm:ListTagsForResource",
+        "config:PutThirdPartyServiceLinkedConfigurationRecorder",
+        "config:GetConnector"
+      ]
+    }
+  },
+  "typeName": "AWS::SSM::CloudConnector"
+}

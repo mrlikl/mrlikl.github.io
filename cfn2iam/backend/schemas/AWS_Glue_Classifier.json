@@ -1,4 +1,32 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateClassifier",
+        "glue:GetClassifier"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:DeleteClassifier"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:GetClassifiers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetClassifier"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:UpdateClassifier",
+        "glue:GetClassifier"
+      ]
+    }
+  },
   "typeName": "AWS::Glue::Classifier"
 }

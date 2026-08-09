@@ -36,6 +36,7 @@
       "permissions": [
         "controltower:DisableBaseline",
         "controltower:GetBaselineOperation",
+        "controltower:ListTagsForResource",
         "organizations:CreateOrganizationalUnit",
         "organizations:CreateOrganization",
         "organizations:UpdatePolicy",
@@ -100,6 +101,7 @@
         "servicecatalog:DeleteProvisioningArtifact",
         "controltower:TagResource",
         "controltower:UntagResource",
+        "controltower:ListTagsForResource",
         "controltower:GetEnabledBaseline"
       ]
     }

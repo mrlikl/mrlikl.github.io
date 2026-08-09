@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appconfig:CreateExperimentDefinition",
+        "appconfig:GetExperimentDefinition",
+        "appconfig:TagResource",
+        "appconfig:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appconfig:DeleteExperimentDefinition",
+        "appconfig:GetExperimentDefinition"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ApplicationIdentifier": {
+            "$ref": "resource-schema.json#/properties/ApplicationIdentifier"
+          }
+        },
+        "required": [
+          "ApplicationIdentifier"
+        ]
+      },
+      "permissions": [
+        "appconfig:ListExperimentDefinitions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appconfig:GetExperimentDefinition",
+        "appconfig:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appconfig:UpdateExperimentDefinition",
+        "appconfig:GetExperimentDefinition",
+        "appconfig:TagResource",
+        "appconfig:UntagResource",
+        "appconfig:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::AppConfig::ExperimentDefinition"
+}

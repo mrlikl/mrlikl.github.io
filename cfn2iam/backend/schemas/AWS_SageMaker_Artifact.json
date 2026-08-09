@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateArtifact",
+        "sagemaker:DescribeArtifact",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteArtifact",
+        "sagemaker:DescribeArtifact",
+        "sagemaker:ListTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListArtifacts"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeArtifact",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateArtifact",
+        "sagemaker:DescribeArtifact",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::Artifact"
+}
