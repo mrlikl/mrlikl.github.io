@@ -1,4 +1,45 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateMLTransform",
+        "glue:GetMLTransform",
+        "glue:TagResource",
+        "glue:GetTable",
+        "glue:GetDatabase",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:DeleteMLTransform",
+        "glue:GetMLTransform"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:ListMLTransforms",
+        "glue:GetMLTransforms"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetMLTransform",
+        "glue:GetTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:UpdateMLTransform",
+        "glue:GetMLTransform",
+        "glue:TagResource",
+        "glue:UntagResource",
+        "glue:GetTags",
+        "glue:GetTable",
+        "glue:GetDatabase",
+        "iam:PassRole"
+      ]
+    }
+  },
   "typeName": "AWS::Glue::MLTransform"
 }

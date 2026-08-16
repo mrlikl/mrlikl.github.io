@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:CreateJob",
+        "iot:DescribeJob",
+        "iot:TagResource",
+        "iot:ListTagsForResource",
+        "iot:GetPackageVersion",
+        "iam:PassRole",
+        "s3:GetObject"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:DeleteJob",
+        "iot:DescribeJob"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iot:ListJobs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:DescribeJob",
+        "iot:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iot:UpdateJob",
+        "iot:DescribeJob",
+        "iot:TagResource",
+        "iot:UntagResource",
+        "iot:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::IoT::Job"
+}

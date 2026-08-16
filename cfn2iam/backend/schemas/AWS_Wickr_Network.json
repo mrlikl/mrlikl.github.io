@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wickr:CreateNetwork",
+        "wickr:GetNetwork"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wickr:DeleteNetwork",
+        "wickr:GetNetwork"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "wickr:ListNetworks"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wickr:GetNetwork"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wickr:UpdateNetwork",
+        "wickr:GetNetwork"
+      ]
+    }
+  },
+  "typeName": "AWS::Wickr::Network"
+}

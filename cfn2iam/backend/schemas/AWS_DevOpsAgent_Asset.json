@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aidevops:CreateAsset",
+        "aidevops:GetAsset",
+        "aidevops:CreateAssetFile",
+        "aidevops:DeleteAssetFile",
+        "aidevops:DeleteAsset"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "aidevops:DeleteAsset",
+        "aidevops:GetAsset"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AgentSpaceId": {
+            "$ref": "resource-schema.json#/properties/AgentSpaceId"
+          }
+        },
+        "required": [
+          "AgentSpaceId"
+        ]
+      },
+      "permissions": [
+        "aidevops:ListAssets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aidevops:GetAsset"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aidevops:GetAsset",
+        "aidevops:GetAssetContent",
+        "aidevops:GetAssetFile",
+        "aidevops:UpdateAsset",
+        "aidevops:CreateAssetFile",
+        "aidevops:UpdateAssetFile",
+        "aidevops:DeleteAssetFile",
+        "aidevops:ListAssetFiles"
+      ]
+    }
+  },
+  "typeName": "AWS::DevOpsAgent::Asset"
+}

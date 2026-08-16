@@ -8,7 +8,8 @@
         "observabilityadmin:ListTagsForResource",
         "observabilityadmin:GetTelemetryEvaluationStatusForOrganization",
         "organizations:ListDelegatedAdministrators",
-        "iam:CreateServiceLinkedRole"
+        "iam:CreateServiceLinkedRole",
+        "kms:DescribeKey"
       ]
     },
     "delete": {
@@ -41,7 +42,8 @@
         "observabilityadmin:UntagResource",
         "observabilityadmin:ListTagsForResource",
         "observabilityadmin:GetTelemetryEvaluationStatusForOrganization",
-        "organizations:ListDelegatedAdministrators"
+        "organizations:ListDelegatedAdministrators",
+        "kms:DescribeKey"
       ]
     }
   },

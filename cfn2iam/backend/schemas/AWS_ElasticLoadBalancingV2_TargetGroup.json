@@ -7,7 +7,8 @@
         "elasticloadbalancing:RegisterTargets",
         "elasticloadbalancing:ModifyTargetGroupAttributes",
         "elasticloadbalancing:DescribeTargetHealth",
-        "elasticloadbalancing:AddTags"
+        "elasticloadbalancing:AddTags",
+        "ec2:DescribeVpcs"
       ]
     },
     "delete": {
@@ -38,7 +39,8 @@
         "elasticloadbalancing:DescribeTargetHealth",
         "elasticloadbalancing:DeregisterTargets",
         "elasticloadbalancing:AddTags",
-        "elasticloadbalancing:RemoveTags"
+        "elasticloadbalancing:RemoveTags",
+        "ec2:DescribeVpcs"
       ]
     }
   },

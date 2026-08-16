@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "es:AddDataSource",
+        "es:GetDataSource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "es:DeleteDataSource",
+        "es:GetDataSource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainName": {
+            "description": "The name of the OpenSearch Service domain.",
+            "maxLength": 28,
+            "minLength": 3,
+            "pattern": "^[a-z][a-z0-9\\-]+$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "DomainName"
+        ]
+      },
+      "permissions": [
+        "es:ListDataSources"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "es:GetDataSource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "es:UpdateDataSource",
+        "es:GetDataSource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::OpenSearch::DataSource"
+}

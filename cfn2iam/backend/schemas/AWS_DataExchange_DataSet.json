@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "dataexchange:CreateDataSet",
+        "dataexchange:GetDataSet",
+        "dataexchange:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "dataexchange:DeleteDataSet",
+        "dataexchange:GetDataSet"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "dataexchange:ListDataSets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dataexchange:GetDataSet",
+        "dataexchange:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "dataexchange:UpdateDataSet",
+        "dataexchange:GetDataSet",
+        "dataexchange:TagResource",
+        "dataexchange:UntagResource",
+        "dataexchange:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::DataExchange::DataSet"
+}

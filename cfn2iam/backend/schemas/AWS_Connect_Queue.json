@@ -3,8 +3,12 @@
     "create": {
       "permissions": [
         "connect:CreateQueue",
+        "connect:DescribeQueue",
         "connect:TagResource",
-        "connect:AssociateQueueEmailAddresses"
+        "connect:AssociateQueueQuickConnects",
+        "connect:AssociateQueueEmailAddresses",
+        "connect:CreateQueueAgentGroup",
+        "connect:ListQueueAgentGroups"
       ]
     },
     "delete": {
@@ -35,11 +39,13 @@
       "permissions": [
         "connect:DescribeQueue",
         "connect:ListQueueQuickConnects",
-        "connect:ListQueueEmailAddresses"
+        "connect:ListQueueEmailAddresses",
+        "connect:ListQueueAgentGroups"
       ]
     },
     "update": {
       "permissions": [
+        "connect:DescribeQueue",
         "connect:UpdateQueueHoursOfOperation",
         "connect:UpdateQueueMaxContacts",
         "connect:UpdateQueueName",
@@ -51,7 +57,11 @@
         "connect:AssociateQueueEmailAddresses",
         "connect:DisassociateQueueEmailAddresses",
         "connect:TagResource",
-        "connect:UntagResource"
+        "connect:UntagResource",
+        "connect:CreateQueueAgentGroup",
+        "connect:UpdateQueueAgentGroup",
+        "connect:DeleteQueueAgentGroup",
+        "connect:ListQueueAgentGroups"
       ]
     }
   },

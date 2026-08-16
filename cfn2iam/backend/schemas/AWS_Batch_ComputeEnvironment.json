@@ -8,7 +8,8 @@
         "iam:CreateServiceLinkedRole",
         "Iam:PassRole",
         "Eks:DescribeCluster",
-        "ec2:DescribeLaunchTemplateVersions"
+        "ec2:DescribeLaunchTemplateVersions",
+        "Batch:SetCapacityTags"
       ]
     },
     "delete": {
@@ -39,7 +40,8 @@
         "Batch:UnTagResource",
         "Iam:PassRole",
         "Eks:DescribeCluster",
-        "ec2:DescribeLaunchTemplateVersions"
+        "ec2:DescribeLaunchTemplateVersions",
+        "Batch:SetCapacityTags"
       ]
     }
   },

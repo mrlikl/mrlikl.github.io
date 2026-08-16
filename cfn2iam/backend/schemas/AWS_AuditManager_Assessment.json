@@ -23,7 +23,8 @@
     },
     "read": {
       "permissions": [
-        "auditmanager:GetAssessment"
+        "auditmanager:GetAssessment",
+        "auditmanager:ListTagsForResource"
       ]
     },
     "update": {
@@ -31,7 +32,10 @@
         "auditmanager:UpdateAssessment",
         "auditmanager:UpdateAssessmentStatus",
         "auditmanager:BatchCreateDelegationByAssessment",
-        "auditmanager:BatchDeleteDelegationByAssessment"
+        "auditmanager:BatchDeleteDelegationByAssessment",
+        "auditmanager:TagResource",
+        "auditmanager:UntagResource",
+        "auditmanager:ListTagsForResource"
       ]
     }
   },

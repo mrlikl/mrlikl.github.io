@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "quicksight:CreateDlpSetting",
+        "quicksight:DescribeDlpSetting",
+        "quicksight:TagResource",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "quicksight:DeleteDlpSetting",
+        "quicksight:DescribeDlpSetting"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "quicksight:ListDlpSettings"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "quicksight:DescribeDlpSetting",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "quicksight:UpdateDlpSetting",
+        "quicksight:DescribeDlpSetting",
+        "quicksight:TagResource",
+        "quicksight:UntagResource",
+        "quicksight:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::QuickSight::DLPSetting"
+}

@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "logs:PutStorageTierPolicy",
+        "logs:GetStorageTierPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "logs:PutStorageTierPolicy",
+        "logs:GetStorageTierPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "logs:GetStorageTierPolicy"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "logs:GetStorageTierPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "logs:PutStorageTierPolicy",
+        "logs:GetStorageTierPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::Logs::StorageTierPolicy"
+}

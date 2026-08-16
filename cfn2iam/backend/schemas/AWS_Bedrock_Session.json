@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock:CreateSession",
+        "bedrock:GetSession",
+        "bedrock:TagResource",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock:DeleteSession",
+        "bedrock:EndSession",
+        "bedrock:GetSession",
+        "kms:Decrypt",
+        "kms:DescribeKey"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock:ListSessions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:GetSession",
+        "bedrock:ListTagsForResource",
+        "kms:Decrypt",
+        "kms:DescribeKey"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock:UpdateSession",
+        "bedrock:GetSession",
+        "bedrock:TagResource",
+        "bedrock:UntagResource",
+        "bedrock:ListTagsForResource",
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "kms:GenerateDataKey",
+        "kms:DescribeKey"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::Session"
+}

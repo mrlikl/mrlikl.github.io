@@ -1,4 +1,39 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:GetWorkflow",
+        "glue:CreateWorkflow",
+        "glue:TagResource",
+        "glue:GetTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:GetWorkflow",
+        "glue:DeleteWorkflow"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:ListWorkflows"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetWorkflow",
+        "glue:GetTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:GetWorkflow",
+        "glue:UpdateWorkflow",
+        "glue:TagResource",
+        "glue:UntagResource",
+        "glue:GetTags"
+      ]
+    }
+  },
   "typeName": "AWS::Glue::Workflow"
 }

@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "quicksight:CreateTopic",
+        "quicksight:PassDataSet",
+        "quicksight:CreateFolderMembership",
+        "quicksight:ListFoldersForResource",
+        "quicksight:TagResource",
+        "quicksight:UpdateTopicPermissions"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "quicksight:DeleteTopic"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "quicksight:ListTopics"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "quicksight:DescribeTopic",
+        "quicksight:DescribeTopicPermissions",
+        "quicksight:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "quicksight:UpdateTopic",
+        "quicksight:PassDataSet",
+        "quicksight:CreateFolderMembership",
+        "quicksight:DeleteFolderMembership",
+        "quicksight:ListFoldersForResource",
+        "quicksight:DescribeTopicPermissions",
+        "quicksight:UpdateTopicPermissions"
+      ]
+    }
+  },
+  "typeName": "AWS::QuickSight::TopicV2"
+}

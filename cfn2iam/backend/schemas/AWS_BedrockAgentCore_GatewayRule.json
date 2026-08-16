@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreateGatewayRule",
+        "bedrock-agentcore:GetGatewayRule"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeleteGatewayRule",
+        "bedrock-agentcore:GetGatewayRule"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "GatewayIdentifier": {
+            "$ref": "resource-schema.json#/properties/GatewayIdentifier"
+          }
+        },
+        "required": [
+          "GatewayIdentifier"
+        ]
+      },
+      "permissions": [
+        "bedrock-agentcore:ListGatewayRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetGatewayRule"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:UpdateGatewayRule",
+        "bedrock-agentcore:GetGatewayRule"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::GatewayRule"
+}

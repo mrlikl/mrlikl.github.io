@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "securityagent:AddArtifact",
+        "securityagent:GetArtifact"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "securityagent:DeleteArtifact",
+        "securityagent:GetArtifact"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AgentSpaceId": {
+            "description": "The unique identifier of the agent space.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "AgentSpaceId"
+        ]
+      },
+      "permissions": [
+        "securityagent:ListArtifacts"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "securityagent:GetArtifact"
+      ]
+    }
+  },
+  "typeName": "AWS::SecurityAgent::Artifact"
+}

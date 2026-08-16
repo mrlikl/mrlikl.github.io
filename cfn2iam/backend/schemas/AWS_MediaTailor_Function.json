@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediatailor:PutFunction",
+        "mediatailor:GetFunction",
+        "mediatailor:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediatailor:DeleteFunction",
+        "mediatailor:GetFunction"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediatailor:ListFunctions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediatailor:GetFunction"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediatailor:PutFunction",
+        "mediatailor:GetFunction",
+        "mediatailor:TagResource",
+        "mediatailor:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaTailor::Function"
+}

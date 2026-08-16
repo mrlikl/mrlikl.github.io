@@ -1,4 +1,64 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateTableOptimizer",
+        "glue:PassConnection",
+        "glue:GetConnection",
+        "glue:GetTable",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:DeleteTableOptimizer",
+        "glue:GetTable",
+        "iam:PassRole"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "CatalogId": {
+            "$ref": "resource-schema.json#/properties/CatalogId"
+          },
+          "DatabaseName": {
+            "$ref": "resource-schema.json#/properties/DatabaseName"
+          },
+          "TableName": {
+            "$ref": "resource-schema.json#/properties/TableName"
+          },
+          "Type": {
+            "$ref": "resource-schema.json#/properties/Type"
+          }
+        },
+        "required": [
+          "CatalogId",
+          "DatabaseName",
+          "TableName",
+          "Type"
+        ]
+      },
+      "permissions": [
+        "glue:BatchGetTableOptimizer",
+        "glue:GetTable"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetTableOptimizer",
+        "glue:GetTable"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:UpdateTableOptimizer",
+        "glue:GetTable",
+        "glue:PassConnection",
+        "glue:GetConnection",
+        "iam:PassRole"
+      ]
+    }
+  },
   "typeName": "AWS::Glue::TableOptimizer"
 }

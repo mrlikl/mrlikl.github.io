@@ -1,4 +1,35 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rds:CreateDBSubnetGroup",
+        "rds:AddTagsToResource",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rds:DeleteDBSubnetGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rds:DescribeDBSubnetGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rds:DescribeDBSubnetGroups",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rds:ModifyDBSubnetGroup",
+        "rds:AddTagsToResource",
+        "rds:RemoveTagsFromResource"
+      ]
+    }
+  },
   "typeName": "AWS::DocDB::DBSubnetGroup"
 }

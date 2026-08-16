@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "access-analyzer:CreateArchiveRule",
+        "access-analyzer:GetArchiveRule"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "access-analyzer:DeleteArchiveRule",
+        "access-analyzer:GetArchiveRule"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AnalyzerName": {
+            "maxLength": 255,
+            "minLength": 1,
+            "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "AnalyzerName"
+        ]
+      },
+      "permissions": [
+        "access-analyzer:ListArchiveRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "access-analyzer:GetArchiveRule"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "access-analyzer:UpdateArchiveRule",
+        "access-analyzer:GetArchiveRule"
+      ]
+    }
+  },
+  "typeName": "AWS::AccessAnalyzer::ArchiveRule"
+}

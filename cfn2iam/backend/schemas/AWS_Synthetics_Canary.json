@@ -3,6 +3,7 @@
     "create": {
       "permissions": [
         "synthetics:CreateCanary",
+        "synthetics:ReplicateCanary",
         "synthetics:StartCanary",
         "synthetics:GetCanary",
         "synthetics:TagResource",
@@ -25,15 +26,24 @@
         "ec2:DescribeVpcs",
         "ec2:DescribeSubnets",
         "ec2:DescribeSecurityGroups",
-        "iam:PassRole"
+        "iam:PassRole",
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:CreateGrant"
       ]
     },
     "delete": {
       "permissions": [
         "synthetics:DeleteCanary",
+        "synthetics:UpdateCanary",
+        "synthetics:ReplicateCanary",
         "synthetics:GetCanary",
         "lambda:DeleteFunction",
-        "lambda:DeleteLayerVersion"
+        "lambda:DeleteLayerVersion",
+        "lambda:GetFunctionConfiguration"
       ]
     },
     "list": {
@@ -48,12 +58,15 @@
         "synthetics:ListTagsForResource",
         "iam:ListRoles",
         "s3:ListAllMyBuckets",
-        "s3:GetBucketLocation"
+        "s3:GetBucketLocation",
+        "kms:Decrypt",
+        "kms:DescribeKey"
       ]
     },
     "update": {
       "permissions": [
         "synthetics:UpdateCanary",
+        "synthetics:ReplicateCanary",
         "synthetics:StartCanary",
         "synthetics:StartCanaryDryRun",
         "synthetics:StopCanary",
@@ -67,6 +80,7 @@
         "s3:PutEncryptionConfiguration",
         "s3:GetBucketLocation",
         "lambda:AddPermission",
+        "lambda:CreateFunction",
         "lambda:PublishVersion",
         "lambda:UpdateFunctionCode",
         "lambda:UpdateFunctionConfiguration",
@@ -80,7 +94,13 @@
         "iam:PassRole",
         "ec2:DescribeVpcs",
         "ec2:DescribeSubnets",
-        "ec2:DescribeSecurityGroups"
+        "ec2:DescribeSecurityGroups",
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:CreateGrant"
       ]
     }
   },

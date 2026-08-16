@@ -1,0 +1,62 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateWorkforce",
+        "sagemaker:DescribeWorkforce",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags",
+        "cognito-idp:DescribeUserPool",
+        "cognito-idp:DescribeUserPoolClient",
+        "cognito-idp:DescribeUserPoolDomain",
+        "cognito-idp:ListGroups",
+        "cognito-idp:ListUsers",
+        "cognito-idp:UpdateUserPool",
+        "cognito-idp:UpdateUserPoolClient",
+        "ec2:CreateVpcEndpoint",
+        "ec2:DescribeVpcEndpoints",
+        "ec2:DeleteVpcEndpoints",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteWorkforce",
+        "sagemaker:DescribeWorkforce",
+        "sagemaker:ListTags",
+        "ec2:DeleteVpcEndpoints",
+        "ec2:DescribeVpcEndpoints"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListWorkforces"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeWorkforce",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateWorkforce",
+        "sagemaker:DescribeWorkforce",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags",
+        "ec2:CreateVpcEndpoint",
+        "ec2:DescribeVpcEndpoints",
+        "ec2:DeleteVpcEndpoints",
+        "ec2:ModifyVpcEndpoint",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::Workforce"
+}

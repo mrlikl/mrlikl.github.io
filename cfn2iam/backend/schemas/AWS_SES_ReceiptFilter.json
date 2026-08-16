@@ -1,4 +1,26 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:CreateReceiptFilter"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:DeleteReceiptFilter",
+        "ses:ListReceiptFilters"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListReceiptFilters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:ListReceiptFilters"
+      ]
+    }
+  },
   "typeName": "AWS::SES::ReceiptFilter"
 }

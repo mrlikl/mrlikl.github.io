@@ -1,4 +1,47 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "servicediscovery:CreatePrivateDnsNamespace",
+        "servicediscovery:TagResource",
+        "servicediscovery:GetOperation",
+        "servicediscovery:GetNamespace",
+        "servicediscovery:ListTagsForResource",
+        "route53:CreateHostedZone",
+        "route53:GetHostedZone",
+        "route53:ListHostedZonesByName",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeRegions"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "servicediscovery:DeleteNamespace",
+        "servicediscovery:GetOperation"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "servicediscovery:ListNamespaces"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "servicediscovery:GetNamespace",
+        "servicediscovery:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "servicediscovery:UpdatePrivateDnsNamespace",
+        "servicediscovery:UntagResource",
+        "servicediscovery:TagResource",
+        "servicediscovery:GetOperation",
+        "servicediscovery:GetNamespace",
+        "servicediscovery:ListTagsForResource",
+        "route53:ChangeResourceRecordSets"
+      ]
+    }
+  },
   "typeName": "AWS::ServiceDiscovery::PrivateDnsNamespace"
 }

@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "uxc:UpdateAccountCustomizations",
+        "uxc:GetAccountCustomizations"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "uxc:UpdateAccountCustomizations",
+        "uxc:GetAccountCustomizations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "uxc:GetAccountCustomizations"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "uxc:UpdateAccountCustomizations",
+        "uxc:GetAccountCustomizations"
+      ]
+    }
+  },
+  "typeName": "AWS::UXC::AccountCustomization"
+}

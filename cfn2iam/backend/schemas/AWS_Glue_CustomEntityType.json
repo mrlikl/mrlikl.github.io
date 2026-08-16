@@ -1,4 +1,36 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateCustomEntityType",
+        "glue:GetCustomEntityType",
+        "glue:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:DeleteCustomEntityType",
+        "glue:GetCustomEntityType"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:ListCustomEntityTypes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetCustomEntityType"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:DeleteCustomEntityType",
+        "glue:CreateCustomEntityType",
+        "glue:GetCustomEntityType",
+        "glue:TagResource"
+      ]
+    }
+  },
   "typeName": "AWS::Glue::CustomEntityType"
 }

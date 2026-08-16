@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lambda:TagResource",
+        "lambda:TagResource20170331v2",
+        "lambda:GetMicrovmImage",
+        "lambda:CreateMicrovmImage",
+        "lambda:PassNetworkConnector",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lambda:GetMicrovmImage",
+        "lambda:DeleteMicrovmImage"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "lambda:ListMicrovmImages"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lambda:GetMicrovmImage",
+        "lambda:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lambda:TagResource",
+        "lambda:TagResource20170331v2",
+        "lambda:GetMicrovmImage",
+        "lambda:UpdateMicrovmImage",
+        "lambda:UntagResource",
+        "lambda:UntagResource20170331v2",
+        "lambda:PassNetworkConnector",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::Lambda::MicrovmImage"
+}

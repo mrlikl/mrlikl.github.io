@@ -5,6 +5,7 @@
         "s3:ListBucket",
         "s3:GetBucketPolicy",
         "timestream-influxdb:CreateDbInstance",
+        "timestream-influxdb:CreateDbParameterGroup",
         "timestream-influxdb:GetDbCluster",
         "timestream-influxdb:GetDbParameterGroup",
         "timestream-influxdb:ListDbClusters",
