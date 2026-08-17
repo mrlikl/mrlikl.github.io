@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "transfer:ImportHostKey",
+        "transfer:DescribeHostKey",
+        "transfer:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "transfer:DeleteHostKey",
+        "transfer:DescribeHostKey",
+        "transfer:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ServerId": {
+            "maxLength": 19,
+            "minLength": 19,
+            "pattern": "^s-([0-9a-f]{17})$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "ServerId"
+        ]
+      },
+      "permissions": [
+        "transfer:ListHostKeys"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "transfer:DescribeHostKey",
+        "transfer:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "transfer:UpdateHostKey",
+        "transfer:DescribeHostKey",
+        "transfer:TagResource",
+        "transfer:UntagResource",
+        "transfer:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Transfer::HostKey"
+}

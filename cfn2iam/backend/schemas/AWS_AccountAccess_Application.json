@@ -1,0 +1,55 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "account-access:CreateApplication",
+        "account-access:GetApplication",
+        "account-access:TagResource",
+        "account-access:ListTagsForResource",
+        "iam:CreateServiceLinkedRole",
+        "kms:Decrypt",
+        "organizations:DescribeOrganization",
+        "organizations:ListAWSServiceAccessForOrganization",
+        "sso:CreateApplication",
+        "sso:DescribeApplication",
+        "sso:DescribeInstance",
+        "sso:DescribeRegion",
+        "sso:PutApplicationAccessScope",
+        "sso:PutApplicationAssignmentConfiguration",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:PutApplicationGrant"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "account-access:DeleteApplication",
+        "account-access:GetApplication",
+        "account-access:ListTagsForResource",
+        "kms:Decrypt",
+        "sso:DeleteApplication",
+        "sso:DescribeApplication",
+        "sso:DescribeInstance"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "account-access:ListApplications"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "account-access:GetApplication",
+        "account-access:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "account-access:GetApplication",
+        "account-access:TagResource",
+        "account-access:UntagResource",
+        "account-access:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::AccountAccess::Application"
+}

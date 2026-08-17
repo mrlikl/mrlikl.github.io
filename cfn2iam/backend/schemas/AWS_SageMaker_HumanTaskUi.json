@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateHumanTaskUi",
+        "sagemaker:DescribeHumanTaskUi",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteHumanTaskUi",
+        "sagemaker:DescribeHumanTaskUi",
+        "sagemaker:ListTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListHumanTaskUis"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeHumanTaskUi",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:DescribeHumanTaskUi",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::HumanTaskUi"
+}

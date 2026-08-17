@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticache:CreateServerlessCacheSnapshot",
+        "elasticache:DescribeServerlessCacheSnapshots",
+        "elasticache:AddTagsToResource",
+        "elasticache:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:CreateGrant"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "elasticache:DeleteServerlessCacheSnapshot",
+        "elasticache:DescribeServerlessCacheSnapshots"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "elasticache:DescribeServerlessCacheSnapshots"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticache:DescribeServerlessCacheSnapshots",
+        "elasticache:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "elasticache:AddTagsToResource",
+        "elasticache:RemoveTagsFromResource",
+        "elasticache:ListTagsForResource",
+        "elasticache:DescribeServerlessCacheSnapshots"
+      ]
+    }
+  },
+  "typeName": "AWS::ElastiCache::ServerlessCacheSnapshot"
+}

@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudhsm:CreateCluster",
+        "cloudhsm:DescribeClusters",
+        "cloudhsm:TagResource",
+        "cloudhsm:ListTags",
+        "ec2:CreateSecurityGroup",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:RevokeSecurityGroupEgress",
+        "ec2:CreateNetworkInterface",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSecurityGroups",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudhsm:DeleteCluster",
+        "cloudhsm:DescribeClusters",
+        "ec2:DeleteSecurityGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudhsm:DescribeClusters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudhsm:DescribeClusters",
+        "cloudhsm:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudhsm:ModifyCluster",
+        "cloudhsm:DescribeClusters",
+        "cloudhsm:TagResource",
+        "cloudhsm:UntagResource",
+        "cloudhsm:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudHSM::Cluster"
+}

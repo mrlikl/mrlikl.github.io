@@ -1,4 +1,42 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rds:CreateDBClusterParameterGroup",
+        "rds:ModifyDBClusterParameterGroup",
+        "rds:AddTagsToResource",
+        "rds:DescribeDBClusterParameterGroups",
+        "rds:DescribeDBClusterParameters",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rds:DeleteDBClusterParameterGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rds:DescribeDBClusterParameterGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rds:DescribeDBClusterParameterGroups",
+        "rds:DescribeDBClusterParameters",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rds:ModifyDBClusterParameterGroup",
+        "rds:AddTagsToResource",
+        "rds:RemoveTagsFromResource",
+        "rds:DescribeDBClusterParameterGroups",
+        "rds:DescribeDBClusterParameters",
+        "rds:ListTagsForResource"
+      ]
+    }
+  },
   "typeName": "AWS::DocDB::DBClusterParameterGroup"
 }

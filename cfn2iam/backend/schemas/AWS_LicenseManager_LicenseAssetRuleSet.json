@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "license-manager:CreateLicenseAssetRuleset",
+        "license-manager:GetLicenseAssetRuleset",
+        "license-manager:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "license-manager:DeleteLicenseAssetRuleset"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "license-manager:ListLicenseAssetRulesets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "license-manager:GetLicenseAssetRuleset",
+        "license-manager:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "license-manager:UpdateLicenseAssetRuleset",
+        "license-manager:GetLicenseAssetRuleset",
+        "license-manager:TagResource",
+        "license-manager:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::LicenseManager::LicenseAssetRuleSet"
+}

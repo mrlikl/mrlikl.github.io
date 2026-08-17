@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "account-access:CreateEntitlement",
+        "account-access:GetEntitlement",
+        "account-access:ListEntitlements"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "account-access:DeleteEntitlement",
+        "account-access:GetEntitlement"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ApplicationArn": {
+            "$ref": "resource-schema.json#/properties/ApplicationArn"
+          }
+        },
+        "required": [
+          "ApplicationArn"
+        ]
+      },
+      "permissions": [
+        "account-access:ListEntitlements"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "account-access:GetEntitlement"
+      ]
+    }
+  },
+  "typeName": "AWS::AccountAccess::Entitlement"
+}

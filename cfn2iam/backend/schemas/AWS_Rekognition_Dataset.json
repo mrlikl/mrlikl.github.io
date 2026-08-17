@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rekognition:CreateDataset",
+        "rekognition:DescribeDataset",
+        "rekognition:TagResource",
+        "rekognition:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rekognition:DeleteDataset",
+        "rekognition:DescribeDataset",
+        "rekognition:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ProjectArn": {
+            "maxLength": 2048,
+            "minLength": 20,
+            "pattern": "^(^arn:[a-z\\d-]+:rekognition:[a-z\\d-]+:\\d{12}:project\\/[a-zA-Z0-9_.\\-]{1,255}\\/[0-9]+$)$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "ProjectArn"
+        ]
+      },
+      "permissions": [
+        "rekognition:DescribeProjects"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rekognition:DescribeDataset",
+        "rekognition:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rekognition:TagResource",
+        "rekognition:UntagResource",
+        "rekognition:ListTagsForResource",
+        "rekognition:DescribeDataset"
+      ]
+    }
+  },
+  "typeName": "AWS::Rekognition::Dataset"
+}

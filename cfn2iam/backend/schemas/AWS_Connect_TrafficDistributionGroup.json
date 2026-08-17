@@ -26,6 +26,7 @@
     },
     "update": {
       "permissions": [
+        "connect:DescribeTrafficDistributionGroup",
         "connect:TagResource",
         "connect:UntagResource"
       ]

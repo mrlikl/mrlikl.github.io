@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreateCapacityProvider",
+        "bedrock-agentcore:GetCapacityProvider",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:ListTagsForResource",
+        "iam:PassRole",
+        "iam:GetInstanceProfile",
+        "iam:CreateServiceLinkedRole",
+        "kms:DescribeKey",
+        "ec2:DescribeSnapshots"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeleteCapacityProvider",
+        "bedrock-agentcore:GetCapacityProvider",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListCapacityProviders"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetCapacityProvider",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:UpdateCapacityProvider",
+        "bedrock-agentcore:GetCapacityProvider",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:UntagResource",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::CapacityProvider"
+}

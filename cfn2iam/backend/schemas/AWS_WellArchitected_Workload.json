@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wellarchitected:CreateWorkload",
+        "wellarchitected:GetWorkload",
+        "wellarchitected:TagResource",
+        "wellarchitected:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wellarchitected:DeleteWorkload",
+        "wellarchitected:GetWorkload",
+        "wellarchitected:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "wellarchitected:ListWorkloads"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wellarchitected:GetWorkload",
+        "wellarchitected:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wellarchitected:UpdateWorkload",
+        "wellarchitected:GetWorkload",
+        "wellarchitected:TagResource",
+        "wellarchitected:UntagResource",
+        "wellarchitected:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::WellArchitected::Workload"
+}

@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "serverlessrepo:CreateApplication",
+        "serverlessrepo:GetApplication",
+        "serverlessrepo:ListApplications"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "serverlessrepo:DeleteApplication",
+        "serverlessrepo:ListApplications"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "serverlessrepo:ListApplications"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "serverlessrepo:GetApplication"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "serverlessrepo:UpdateApplication"
+      ]
+    }
+  },
+  "typeName": "AWS::ServerlessRepo::Application"
+}

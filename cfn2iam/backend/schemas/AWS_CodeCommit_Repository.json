@@ -1,4 +1,44 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "codecommit:CreateRepository",
+        "codecommit:PutRepositoryTriggers",
+        "codecommit:CreateCommit",
+        "codecommit:TagResource",
+        "s3:GetObject",
+        "s3:GetObjectVersion"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "codecommit:ListRepositories",
+        "codecommit:DeleteRepository"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "codecommit:ListRepositories"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "codecommit:ListRepositories",
+        "codecommit:GetRepository",
+        "codecommit:GetRepositoryTriggers",
+        "codecommit:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "codecommit:UpdateRepositoryName",
+        "codecommit:UpdateRepositoryDescription",
+        "codecommit:UpdateRepositoryEncryptionKey",
+        "codecommit:PutRepositoryTriggers",
+        "codecommit:TagResource",
+        "codecommit:UntagResource"
+      ]
+    }
+  },
   "typeName": "AWS::CodeCommit::Repository"
 }

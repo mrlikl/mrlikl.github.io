@@ -1,4 +1,47 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PassRole",
+        "ses:CreateReceiptRule",
+        "ses:DescribeReceiptRule"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:DeleteReceiptRule",
+        "ses:DescribeReceiptRule"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "RuleSetName": {
+            "$ref": "resource-schema.json#/properties/RuleSetName"
+          }
+        },
+        "required": [
+          "RuleSetName"
+        ]
+      },
+      "permissions": [
+        "ses:DescribeReceiptRuleSet"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:DescribeReceiptRule"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iam:PassRole",
+        "ses:SetReceiptRulePosition",
+        "ses:DescribeReceiptRuleSet",
+        "ses:ReorderReceiptRuleSet",
+        "ses:UpdateReceiptRule"
+      ]
+    }
+  },
   "typeName": "AWS::SES::ReceiptRule"
 }

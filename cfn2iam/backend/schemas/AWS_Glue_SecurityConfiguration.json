@@ -1,4 +1,26 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateSecurityConfiguration",
+        "glue:GetSecurityConfiguration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:DeleteSecurityConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:GetSecurityConfigurations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetSecurityConfiguration"
+      ]
+    }
+  },
   "typeName": "AWS::Glue::SecurityConfiguration"
 }

@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "aidevops:CreateTrigger",
+        "aidevops:GetTrigger"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "aidevops:DeleteTrigger",
+        "aidevops:GetTrigger"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AgentSpaceId": {
+            "$ref": "resource-schema.json#/properties/AgentSpaceId"
+          }
+        },
+        "required": [
+          "AgentSpaceId"
+        ]
+      },
+      "permissions": [
+        "aidevops:ListTriggers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "aidevops:GetTrigger"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "aidevops:UpdateTrigger",
+        "aidevops:GetTrigger"
+      ]
+    }
+  },
+  "typeName": "AWS::DevOpsAgent::Trigger"
+}

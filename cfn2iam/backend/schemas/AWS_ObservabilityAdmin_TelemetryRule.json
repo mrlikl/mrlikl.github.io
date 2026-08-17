@@ -8,7 +8,8 @@
         "observabilityadmin:ListTagsForResource",
         "observabilityadmin:GetTelemetryEvaluationStatus",
         "iam:CreateServiceLinkedRole",
-        "xray:GetTraceSegmentDestination"
+        "xray:GetTraceSegmentDestination",
+        "kms:DescribeKey"
       ]
     },
     "delete": {
@@ -38,7 +39,8 @@
         "observabilityadmin:UntagResource",
         "observabilityadmin:ListTagsForResource",
         "observabilityadmin:GetTelemetryEvaluationStatus",
-        "xray:GetTraceSegmentDestination"
+        "xray:GetTraceSegmentDestination",
+        "kms:DescribeKey"
       ]
     }
   },

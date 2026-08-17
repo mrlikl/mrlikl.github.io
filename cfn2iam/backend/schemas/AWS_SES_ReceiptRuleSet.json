@@ -1,4 +1,26 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:CreateReceiptRuleSet"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:DescribeReceiptRuleSet",
+        "ses:DeleteReceiptRuleSet"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ses:ListReceiptRuleSets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:DescribeReceiptRuleSet"
+      ]
+    }
+  },
   "typeName": "AWS::SES::ReceiptRuleSet"
 }

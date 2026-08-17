@@ -1,4 +1,34 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "dms:CreateReplicationSubnetGroup",
+        "dms:AddTagsToResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "dms:DeleteReplicationSubnetGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "dms:DescribeReplicationSubnetGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dms:DescribeReplicationSubnetGroups",
+        "dms:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "dms:ModifyReplicationSubnetGroup",
+        "dms:AddTagsToResource",
+        "dms:RemoveTagsFromResource"
+      ]
+    }
+  },
   "typeName": "AWS::DMS::ReplicationSubnetGroup"
 }

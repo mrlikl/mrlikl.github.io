@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "apigateway:CreatePortalProduct",
+        "apigateway:TagResource",
+        "apigateway:POST"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "apigateway:GetPortalProduct",
+        "apigateway:DeletePortalProduct",
+        "apigateway:GET"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "apigateway:ListPortalProducts",
+        "apigateway:GET"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "apigateway:GetPortalProduct",
+        "apigateway:GetTags",
+        "apigateway:GET"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "apigateway:UpdatePortalProduct",
+        "apigateway:GetPortalProduct",
+        "apigateway:TagResource",
+        "apigateway:UntagResource",
+        "apigateway:GetTags",
+        "apigateway:GET",
+        "apigateway:POST",
+        "apigateway:PATCH",
+        "apigateway:DELETE"
+      ]
+    }
+  },
+  "typeName": "AWS::ApiGatewayV2::PortalProduct"
+}

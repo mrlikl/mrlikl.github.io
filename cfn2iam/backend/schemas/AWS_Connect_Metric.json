@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "connect:CreateMetric",
+        "connect:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "connect:DeleteMetric",
+        "connect:UntagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "connect:ListMetrics"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "connect:DescribeMetric"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "connect:UpdateMetricMetadata",
+        "connect:UpdateMetricContent",
+        "connect:TagResource",
+        "connect:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Connect::Metric"
+}

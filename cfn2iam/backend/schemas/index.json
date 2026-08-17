@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-02T04:24:59.528418Z",
+  "lastUpdated": "2026-08-16T02:21:50.843982Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -77,6 +77,21 @@
       "typeName": "AWS::AccessAnalyzer::Analyzer"
     },
     {
+      "filename": "AWS_AccessAnalyzer_ArchiveRule.json",
+      "hasHandlers": true,
+      "typeName": "AWS::AccessAnalyzer::ArchiveRule"
+    },
+    {
+      "filename": "AWS_AccountAccess_Application.json",
+      "hasHandlers": true,
+      "typeName": "AWS::AccountAccess::Application"
+    },
+    {
+      "filename": "AWS_AccountAccess_Entitlement.json",
+      "hasHandlers": true,
+      "typeName": "AWS::AccountAccess::Entitlement"
+    },
+    {
       "filename": "AWS_AmazonMQ_Broker.json",
       "hasHandlers": true,
       "typeName": "AWS::AmazonMQ::Broker"
@@ -128,7 +143,7 @@
     },
     {
       "filename": "AWS_ApiGatewayV2_ApiGatewayManagedOverrides.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ApiGatewayV2::ApiGatewayManagedOverrides"
     },
     {
@@ -165,6 +180,11 @@
       "filename": "AWS_ApiGatewayV2_Model.json",
       "hasHandlers": true,
       "typeName": "AWS::ApiGatewayV2::Model"
+    },
+    {
+      "filename": "AWS_ApiGatewayV2_PortalProduct.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ApiGatewayV2::PortalProduct"
     },
     {
       "filename": "AWS_ApiGatewayV2_Route.json",
@@ -327,6 +347,11 @@
       "typeName": "AWS::AppConfig::Environment"
     },
     {
+      "filename": "AWS_AppConfig_ExperimentDefinition.json",
+      "hasHandlers": true,
+      "typeName": "AWS::AppConfig::ExperimentDefinition"
+    },
+    {
       "filename": "AWS_AppConfig_Extension.json",
       "hasHandlers": true,
       "typeName": "AWS::AppConfig::Extension"
@@ -483,7 +508,7 @@
     },
     {
       "filename": "AWS_AppStream_StackFleetAssociation.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::AppStream::StackFleetAssociation"
     },
     {
@@ -797,6 +822,11 @@
       "typeName": "AWS::BedrockAgentCore::BrowserProfile"
     },
     {
+      "filename": "AWS_BedrockAgentCore_CapacityProvider.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::CapacityProvider"
+    },
+    {
       "filename": "AWS_BedrockAgentCore_CodeInterpreter.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::CodeInterpreter"
@@ -825,6 +855,16 @@
       "filename": "AWS_BedrockAgentCore_Gateway.json",
       "hasHandlers": true,
       "typeName": "AWS::BedrockAgentCore::Gateway"
+    },
+    {
+      "filename": "AWS_BedrockAgentCore_GatewayRateLimit.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::GatewayRateLimit"
+    },
+    {
+      "filename": "AWS_BedrockAgentCore_GatewayRule.json",
+      "hasHandlers": true,
+      "typeName": "AWS::BedrockAgentCore::GatewayRule"
     },
     {
       "filename": "AWS_BedrockAgentCore_GatewayTarget.json",
@@ -1015,6 +1055,11 @@
       "filename": "AWS_Bedrock_ResourcePolicy.json",
       "hasHandlers": true,
       "typeName": "AWS::Bedrock::ResourcePolicy"
+    },
+    {
+      "filename": "AWS_Bedrock_Session.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Bedrock::Session"
     },
     {
       "filename": "AWS_Budgets_Budget.json",
@@ -1402,6 +1447,11 @@
       "typeName": "AWS::CloudFront::VpcOrigin"
     },
     {
+      "filename": "AWS_CloudHSM_Cluster.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudHSM::Cluster"
+    },
+    {
       "filename": "AWS_CloudTrail_Channel.json",
       "hasHandlers": true,
       "typeName": "AWS::CloudTrail::Channel"
@@ -1528,7 +1578,7 @@
     },
     {
       "filename": "AWS_CodeCommit_Repository.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::CodeCommit::Repository"
     },
     {
@@ -1743,7 +1793,7 @@
     },
     {
       "filename": "AWS_Config_DeliveryChannel.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Config::DeliveryChannel"
     },
     {
@@ -1860,6 +1910,11 @@
       "filename": "AWS_Connect_IntegrationAssociation.json",
       "hasHandlers": true,
       "typeName": "AWS::Connect::IntegrationAssociation"
+    },
+    {
+      "filename": "AWS_Connect_Metric.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Connect::Metric"
     },
     {
       "filename": "AWS_Connect_Notification.json",
@@ -2073,7 +2128,7 @@
     },
     {
       "filename": "AWS_DMS_EventSubscription.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::DMS::EventSubscription"
     },
     {
@@ -2098,7 +2153,7 @@
     },
     {
       "filename": "AWS_DMS_ReplicationSubnetGroup.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::DMS::ReplicationSubnetGroup"
     },
     {
@@ -2140,6 +2195,11 @@
       "filename": "AWS_DataBrew_Schedule.json",
       "hasHandlers": true,
       "typeName": "AWS::DataBrew::Schedule"
+    },
+    {
+      "filename": "AWS_DataExchange_DataSet.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DataExchange::DataSet"
     },
     {
       "filename": "AWS_DataExchange_EntitledDataSets.json",
@@ -2377,6 +2437,11 @@
       "typeName": "AWS::DevOpsAgent::AgentSpace"
     },
     {
+      "filename": "AWS_DevOpsAgent_Asset.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DevOpsAgent::Asset"
+    },
+    {
       "filename": "AWS_DevOpsAgent_Association.json",
       "hasHandlers": true,
       "typeName": "AWS::DevOpsAgent::Association"
@@ -2390,6 +2455,11 @@
       "filename": "AWS_DevOpsAgent_Service.json",
       "hasHandlers": true,
       "typeName": "AWS::DevOpsAgent::Service"
+    },
+    {
+      "filename": "AWS_DevOpsAgent_Trigger.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DevOpsAgent::Trigger"
     },
     {
       "filename": "AWS_DevOpsGuru_LogAnomalyDetectionIntegration.json",
@@ -2463,7 +2533,7 @@
     },
     {
       "filename": "AWS_DocDB_DBClusterParameterGroup.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::DocDB::DBClusterParameterGroup"
     },
     {
@@ -2473,7 +2543,7 @@
     },
     {
       "filename": "AWS_DocDB_DBSubnetGroup.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::DocDB::DBSubnetGroup"
     },
     {
@@ -3342,6 +3412,11 @@
       "typeName": "AWS::ElastiCache::ServerlessCache"
     },
     {
+      "filename": "AWS_ElastiCache_ServerlessCacheSnapshot.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ElastiCache::ServerlessCacheSnapshot"
+    },
+    {
       "filename": "AWS_ElastiCache_SubnetGroup.json",
       "hasHandlers": true,
       "typeName": "AWS::ElastiCache::SubnetGroup"
@@ -3698,12 +3773,12 @@
     },
     {
       "filename": "AWS_Glue_Classifier.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::Classifier"
     },
     {
       "filename": "AWS_Glue_Connection.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::Connection"
     },
     {
@@ -3713,7 +3788,7 @@
     },
     {
       "filename": "AWS_Glue_CustomEntityType.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::CustomEntityType"
     },
     {
@@ -3723,7 +3798,7 @@
     },
     {
       "filename": "AWS_Glue_DataQualityRuleset.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::DataQualityRuleset"
     },
     {
@@ -3758,7 +3833,7 @@
     },
     {
       "filename": "AWS_Glue_MLTransform.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::MLTransform"
     },
     {
@@ -3788,7 +3863,7 @@
     },
     {
       "filename": "AWS_Glue_SecurityConfiguration.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::SecurityConfiguration"
     },
     {
@@ -3803,7 +3878,7 @@
     },
     {
       "filename": "AWS_Glue_TableOptimizer.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::TableOptimizer"
     },
     {
@@ -3823,7 +3898,7 @@
     },
     {
       "filename": "AWS_Glue_Workflow.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::Workflow"
     },
     {
@@ -4237,6 +4312,11 @@
       "typeName": "AWS::InspectorV2::CodeSecurityScanConfiguration"
     },
     {
+      "filename": "AWS_InspectorV2_Connector.json",
+      "hasHandlers": true,
+      "typeName": "AWS::InspectorV2::Connector"
+    },
+    {
       "filename": "AWS_InspectorV2_Filter.json",
       "hasHandlers": true,
       "typeName": "AWS::InspectorV2::Filter"
@@ -4512,6 +4592,11 @@
       "typeName": "AWS::IoT::Index"
     },
     {
+      "filename": "AWS_IoT_Job.json",
+      "hasHandlers": true,
+      "typeName": "AWS::IoT::Job"
+    },
+    {
       "filename": "AWS_IoT_JobTemplate.json",
       "hasHandlers": true,
       "typeName": "AWS::IoT::JobTemplate"
@@ -4772,6 +4857,11 @@
       "typeName": "AWS::Lambda::LayerVersionPermission"
     },
     {
+      "filename": "AWS_Lambda_MicrovmImage.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Lambda::MicrovmImage"
+    },
+    {
       "filename": "AWS_Lambda_NetworkConnector.json",
       "hasHandlers": true,
       "typeName": "AWS::Lambda::NetworkConnector"
@@ -4825,6 +4915,11 @@
       "filename": "AWS_LicenseManager_License.json",
       "hasHandlers": true,
       "typeName": "AWS::LicenseManager::License"
+    },
+    {
+      "filename": "AWS_LicenseManager_LicenseAssetRuleSet.json",
+      "hasHandlers": true,
+      "typeName": "AWS::LicenseManager::LicenseAssetRuleSet"
     },
     {
       "filename": "AWS_Lightsail_Alarm.json",
@@ -4990,6 +5085,11 @@
       "filename": "AWS_Logs_ScheduledQuery.json",
       "hasHandlers": true,
       "typeName": "AWS::Logs::ScheduledQuery"
+    },
+    {
+      "filename": "AWS_Logs_StorageTierPolicy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Logs::StorageTierPolicy"
     },
     {
       "filename": "AWS_Logs_SubscriptionFilter.json",
@@ -5330,6 +5430,11 @@
       "filename": "AWS_MediaTailor_ChannelPolicy.json",
       "hasHandlers": true,
       "typeName": "AWS::MediaTailor::ChannelPolicy"
+    },
+    {
+      "filename": "AWS_MediaTailor_Function.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MediaTailor::Function"
     },
     {
       "filename": "AWS_MediaTailor_LiveSource.json",
@@ -5737,6 +5842,11 @@
       "typeName": "AWS::OpenSearchService::Domain"
     },
     {
+      "filename": "AWS_OpenSearch_DataSource.json",
+      "hasHandlers": true,
+      "typeName": "AWS::OpenSearch::DataSource"
+    },
+    {
       "filename": "AWS_OpsWorks_App.json",
       "hasHandlers": false,
       "typeName": "AWS::OpsWorks::App"
@@ -5875,6 +5985,11 @@
       "filename": "AWS_Personalize_DatasetGroup.json",
       "hasHandlers": true,
       "typeName": "AWS::Personalize::DatasetGroup"
+    },
+    {
+      "filename": "AWS_Personalize_EventTracker.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Personalize::EventTracker"
     },
     {
       "filename": "AWS_Personalize_Recipe.json",
@@ -6062,6 +6177,11 @@
       "typeName": "AWS::QuickSight::CustomPermissions"
     },
     {
+      "filename": "AWS_QuickSight_DLPSetting.json",
+      "hasHandlers": true,
+      "typeName": "AWS::QuickSight::DLPSetting"
+    },
+    {
       "filename": "AWS_QuickSight_Dashboard.json",
       "hasHandlers": true,
       "typeName": "AWS::QuickSight::Dashboard"
@@ -6120,6 +6240,11 @@
       "filename": "AWS_QuickSight_Topic.json",
       "hasHandlers": true,
       "typeName": "AWS::QuickSight::Topic"
+    },
+    {
+      "filename": "AWS_QuickSight_TopicV2.json",
+      "hasHandlers": true,
+      "typeName": "AWS::QuickSight::TopicV2"
     },
     {
       "filename": "AWS_QuickSight_VPCConnection.json",
@@ -6332,6 +6457,11 @@
       "typeName": "AWS::Redshift::ScheduledAction"
     },
     {
+      "filename": "AWS_Redshift_SnapshotSchedule.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Redshift::SnapshotSchedule"
+    },
+    {
       "filename": "AWS_RefactorSpaces_Application.json",
       "hasHandlers": true,
       "typeName": "AWS::RefactorSpaces::Application"
@@ -6355,6 +6485,11 @@
       "filename": "AWS_Rekognition_Collection.json",
       "hasHandlers": true,
       "typeName": "AWS::Rekognition::Collection"
+    },
+    {
+      "filename": "AWS_Rekognition_Dataset.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Rekognition::Dataset"
     },
     {
       "filename": "AWS_Rekognition_Project.json",
@@ -6853,17 +6988,17 @@
     },
     {
       "filename": "AWS_SES_ReceiptFilter.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::SES::ReceiptFilter"
     },
     {
       "filename": "AWS_SES_ReceiptRule.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::SES::ReceiptRule"
     },
     {
       "filename": "AWS_SES_ReceiptRuleSet.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::SES::ReceiptRuleSet"
     },
     {
@@ -7007,6 +7142,11 @@
       "typeName": "AWS::SSM::Association"
     },
     {
+      "filename": "AWS_SSM_CloudConnector.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SSM::CloudConnector"
+    },
+    {
       "filename": "AWS_SSM_Document.json",
       "hasHandlers": true,
       "typeName": "AWS::SSM::Document"
@@ -7117,6 +7257,11 @@
       "typeName": "AWS::SageMaker::AppImageConfig"
     },
     {
+      "filename": "AWS_SageMaker_Artifact.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::Artifact"
+    },
+    {
       "filename": "AWS_SageMaker_Cluster.json",
       "hasHandlers": true,
       "typeName": "AWS::SageMaker::Cluster"
@@ -7168,7 +7313,7 @@
     },
     {
       "filename": "AWS_SageMaker_ExperimentTrialComponent.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::SageMaker::ExperimentTrialComponent"
     },
     {
@@ -7180,6 +7325,11 @@
       "filename": "AWS_SageMaker_Hub.json",
       "hasHandlers": true,
       "typeName": "AWS::SageMaker::Hub"
+    },
+    {
+      "filename": "AWS_SageMaker_HumanTaskUi.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::HumanTaskUi"
     },
     {
       "filename": "AWS_SageMaker_Image.json",
@@ -7317,6 +7467,11 @@
       "typeName": "AWS::SageMaker::UserProfile"
     },
     {
+      "filename": "AWS_SageMaker_Workforce.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::Workforce"
+    },
+    {
       "filename": "AWS_SageMaker_Workteam.json",
       "hasHandlers": false,
       "typeName": "AWS::SageMaker::Workteam"
@@ -7360,6 +7515,11 @@
       "filename": "AWS_SecurityAgent_Application.json",
       "hasHandlers": true,
       "typeName": "AWS::SecurityAgent::Application"
+    },
+    {
+      "filename": "AWS_SecurityAgent_Artifact.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SecurityAgent::Artifact"
     },
     {
       "filename": "AWS_SecurityAgent_Pentest.json",
@@ -7477,6 +7637,11 @@
       "typeName": "AWS::SecurityLake::SubscriberNotification"
     },
     {
+      "filename": "AWS_ServerlessRepo_Application.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ServerlessRepo::Application"
+    },
+    {
       "filename": "AWS_ServiceCatalogAppRegistry_Application.json",
       "hasHandlers": true,
       "typeName": "AWS::ServiceCatalogAppRegistry::Application"
@@ -7588,12 +7753,12 @@
     },
     {
       "filename": "AWS_ServiceDiscovery_PrivateDnsNamespace.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ServiceDiscovery::PrivateDnsNamespace"
     },
     {
       "filename": "AWS_ServiceDiscovery_PublicDnsNamespace.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ServiceDiscovery::PublicDnsNamespace"
     },
     {
@@ -7762,6 +7927,11 @@
       "typeName": "AWS::Transfer::Connector"
     },
     {
+      "filename": "AWS_Transfer_HostKey.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Transfer::HostKey"
+    },
+    {
       "filename": "AWS_Transfer_Profile.json",
       "hasHandlers": true,
       "typeName": "AWS::Transfer::Profile"
@@ -7785,6 +7955,11 @@
       "filename": "AWS_Transfer_Workflow.json",
       "hasHandlers": true,
       "typeName": "AWS::Transfer::Workflow"
+    },
+    {
+      "filename": "AWS_UXC_AccountCustomization.json",
+      "hasHandlers": true,
+      "typeName": "AWS::UXC::AccountCustomization"
     },
     {
       "filename": "AWS_VerifiedPermissions_IdentitySource.json",
@@ -8022,6 +8197,16 @@
       "typeName": "AWS::WellArchitected::ReviewTemplate"
     },
     {
+      "filename": "AWS_WellArchitected_Workload.json",
+      "hasHandlers": true,
+      "typeName": "AWS::WellArchitected::Workload"
+    },
+    {
+      "filename": "AWS_Wickr_Network.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Wickr::Network"
+    },
+    {
       "filename": "AWS_Wisdom_AIAgent.json",
       "hasHandlers": true,
       "typeName": "AWS::Wisdom::AIAgent"
@@ -8197,5 +8382,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1639
+  "totalSchemas": 1676
 }
