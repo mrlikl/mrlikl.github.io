@@ -1,48 +1,4 @@
 {
-  "handlers": {
-    "create": {
-      "permissions": [
-        "glue:GetConnection",
-        "glue:CreateConnection",
-        "glue:TagResource",
-        "glue:GetTags"
-      ]
-    },
-    "delete": {
-      "permissions": [
-        "glue:DeleteConnection"
-      ]
-    },
-    "list": {
-      "handlerSchema": {
-        "properties": {
-          "CatalogId": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "CatalogId"
-        ]
-      },
-      "permissions": [
-        "glue:GetConnections"
-      ]
-    },
-    "read": {
-      "permissions": [
-        "glue:GetConnection",
-        "glue:GetTags"
-      ]
-    },
-    "update": {
-      "permissions": [
-        "glue:GetConnection",
-        "glue:UpdateConnection",
-        "glue:GetTags",
-        "glue:TagResource",
-        "glue:UntagResource"
-      ]
-    }
-  },
+  "handlers": {},
   "typeName": "AWS::Glue::Connection"
 }

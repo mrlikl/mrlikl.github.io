@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "dataexchange:CreateEventAction",
+        "dataexchange:GetEventAction",
+        "dataexchange:TagResource",
+        "kms:CreateGrant"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "dataexchange:DeleteEventAction",
+        "dataexchange:GetEventAction",
+        "kms:RevokeGrant"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "dataexchange:ListEventActions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dataexchange:GetEventAction",
+        "dataexchange:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "dataexchange:UpdateEventAction",
+        "dataexchange:GetEventAction",
+        "dataexchange:TagResource",
+        "dataexchange:UntagResource",
+        "dataexchange:ListTagsForResource",
+        "kms:CreateGrant"
+      ]
+    }
+  },
+  "typeName": "AWS::DataExchange::EventAction"
+}

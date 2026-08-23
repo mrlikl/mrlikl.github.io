@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "textract:CreateAdapter",
+        "textract:GetAdapter",
+        "textract:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "textract:DeleteAdapter",
+        "textract:GetAdapter"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "textract:ListAdapters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "textract:GetAdapter"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "textract:UpdateAdapter",
+        "textract:GetAdapter",
+        "textract:TagResource",
+        "textract:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Textract::Adapter"
+}

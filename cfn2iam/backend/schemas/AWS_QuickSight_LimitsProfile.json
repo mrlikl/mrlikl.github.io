@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "quicksight:CreateLimitsProfile",
+        "quicksight:DescribeLimitsProfile"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "quicksight:DeleteLimitsProfile",
+        "quicksight:DescribeLimitsProfile"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "quicksight:ListLimitsProfiles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "quicksight:DescribeLimitsProfile"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "quicksight:UpdateLimitsProfile",
+        "quicksight:DescribeLimitsProfile"
+      ]
+    }
+  },
+  "typeName": "AWS::QuickSight::LimitsProfile"
+}

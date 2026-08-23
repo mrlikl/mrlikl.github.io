@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mgn:CreateNetworkMigrationDefinition",
+        "mgn:GetNetworkMigrationDefinition",
+        "mgn:InitializeService",
+        "mgn:TagResource",
+        "iam:CreateServiceLinkedRole",
+        "s3:GetObject",
+        "s3:GetObjectAttributes",
+        "s3:GetBucketLocation",
+        "s3:ListBucket",
+        "s3:PutObject"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mgn:DeleteNetworkMigrationDefinition",
+        "mgn:GetNetworkMigrationDefinition"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mgn:ListNetworkMigrationDefinitions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mgn:GetNetworkMigrationDefinition"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mgn:UpdateNetworkMigrationDefinition",
+        "mgn:GetNetworkMigrationDefinition",
+        "mgn:TagResource",
+        "mgn:UntagResource",
+        "mgn:ListTagsForResource",
+        "s3:GetObject",
+        "s3:GetObjectAttributes",
+        "s3:GetBucketLocation",
+        "s3:ListBucket",
+        "s3:PutObject"
+      ]
+    }
+  },
+  "typeName": "AWS::MGN::NetworkMigrationDefinition"
+}

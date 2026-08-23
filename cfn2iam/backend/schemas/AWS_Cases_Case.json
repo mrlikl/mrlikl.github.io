@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cases:CreateCase",
+        "cases:GetCase",
+        "cases:TagResource",
+        "cases:GetDomain",
+        "profile:SearchProfiles"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cases:DeleteCase"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainId": {
+            "description": "The unique identifier of the Cases domain.",
+            "maxLength": 500,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "DomainId"
+        ]
+      },
+      "permissions": [
+        "cases:SearchCases"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cases:GetCase",
+        "cases:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cases:UpdateCase",
+        "cases:GetCase",
+        "cases:TagResource",
+        "cases:UntagResource",
+        "cases:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Cases::Case"
+}

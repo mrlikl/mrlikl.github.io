@@ -1,0 +1,55 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "deadline:CreateWorker",
+        "deadline:GetWorker",
+        "deadline:TagResource",
+        "deadline:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "deadline:DeleteWorker",
+        "deadline:GetWorker",
+        "deadline:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "FarmId": {
+            "pattern": "^farm-[0-9a-f]{32}$",
+            "type": "string"
+          },
+          "FleetId": {
+            "pattern": "^fleet-[0-9a-f]{32}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "FarmId",
+          "FleetId"
+        ]
+      },
+      "permissions": [
+        "deadline:ListWorkers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "deadline:GetWorker",
+        "deadline:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "deadline:GetWorker",
+        "deadline:TagResource",
+        "deadline:UntagResource",
+        "deadline:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Deadline::Worker"
+}

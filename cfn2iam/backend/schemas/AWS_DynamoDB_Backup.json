@@ -1,0 +1,27 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "dynamodb:CreateBackup",
+        "dynamodb:DescribeBackup"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "dynamodb:DeleteBackup",
+        "dynamodb:DescribeBackup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "dynamodb:ListBackups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dynamodb:DescribeBackup"
+      ]
+    }
+  },
+  "typeName": "AWS::DynamoDB::Backup"
+}

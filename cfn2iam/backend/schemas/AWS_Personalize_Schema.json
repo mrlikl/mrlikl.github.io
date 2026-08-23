@@ -3,7 +3,9 @@
     "create": {
       "permissions": [
         "personalize:CreateSchema",
-        "personalize:DescribeSchema"
+        "personalize:DescribeSchema",
+        "personalize:TagResource",
+        "personalize:ListTagsForResource"
       ]
     },
     "delete": {
@@ -19,7 +21,8 @@
     },
     "read": {
       "permissions": [
-        "personalize:DescribeSchema"
+        "personalize:DescribeSchema",
+        "personalize:ListTagsForResource"
       ]
     }
   },

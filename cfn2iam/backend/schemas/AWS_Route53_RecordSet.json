@@ -1,4 +1,68 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53:ListHostedZones",
+        "route53:GetChange",
+        "route53:ChangeResourceRecordSets",
+        "route53:ListResourceRecordSets",
+        "route53:GetHostedZone"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53:ListHostedZones",
+        "route53:GetChange",
+        "route53:ChangeResourceRecordSets",
+        "route53:ListResourceRecordSets",
+        "route53:GetHostedZone"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "oneOf": [
+          {
+            "required": [
+              "HostedZoneId"
+            ]
+          },
+          {
+            "required": [
+              "HostedZoneName"
+            ]
+          }
+        ],
+        "properties": {
+          "HostedZoneId": {
+            "$ref": "resource-schema.json#/properties/HostedZoneId"
+          },
+          "HostedZoneName": {
+            "$ref": "resource-schema.json#/properties/HostedZoneName"
+          }
+        }
+      },
+      "permissions": [
+        "route53:ListHostedZones",
+        "route53:ListResourceRecordSets",
+        "route53:GetHostedZone"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53:ListHostedZones",
+        "route53:ListResourceRecordSets",
+        "route53:GetHostedZone"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "route53:ListHostedZones",
+        "route53:GetChange",
+        "route53:ChangeResourceRecordSets",
+        "route53:ListResourceRecordSets",
+        "route53:GetHostedZone"
+      ]
+    }
+  },
   "typeName": "AWS::Route53::RecordSet"
 }

@@ -1,4 +1,36 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "dax:CreateParameterGroup",
+        "dax:UpdateParameterGroup",
+        "dax:DescribeParameterGroups",
+        "dax:DescribeParameters"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "dax:DeleteParameterGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "dax:DescribeParameterGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dax:DescribeParameterGroups",
+        "dax:DescribeParameters"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "dax:UpdateParameterGroup",
+        "dax:DescribeParameterGroups",
+        "dax:DescribeParameters"
+      ]
+    }
+  },
   "typeName": "AWS::DAX::ParameterGroup"
 }

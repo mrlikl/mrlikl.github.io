@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:CreateStream",
+        "iot:DescribeStream",
+        "iot:TagResource",
+        "iot:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:DeleteStream"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iot:ListStreams"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:DescribeStream",
+        "iot:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iot:UpdateStream",
+        "iot:DescribeStream",
+        "iot:TagResource",
+        "iot:UntagResource",
+        "iot:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::IoT::Stream"
+}

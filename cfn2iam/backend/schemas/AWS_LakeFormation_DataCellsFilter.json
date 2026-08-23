@@ -3,12 +3,14 @@
     "create": {
       "permissions": [
         "lakeformation:CreateDataCellsFilter",
+        "lakeformation:ListDataCellsFilter",
         "glue:GetTable"
       ]
     },
     "delete": {
       "permissions": [
-        "lakeformation:DeleteDataCellsFilter"
+        "lakeformation:DeleteDataCellsFilter",
+        "lakeformation:ListDataCellsFilter"
       ]
     },
     "list": {
