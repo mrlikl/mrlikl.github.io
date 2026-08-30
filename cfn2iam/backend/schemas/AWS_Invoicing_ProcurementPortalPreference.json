@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "invoicing:CreateProcurementPortalPreference",
+        "invoicing:GetProcurementPortalPreference",
+        "invoicing:TagResource",
+        "invoicing:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "invoicing:DeleteProcurementPortalPreference",
+        "invoicing:GetProcurementPortalPreference",
+        "invoicing:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "invoicing:ListProcurementPortalPreferences"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "invoicing:GetProcurementPortalPreference",
+        "invoicing:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "invoicing:PutProcurementPortalPreference",
+        "invoicing:GetProcurementPortalPreference",
+        "invoicing:TagResource",
+        "invoicing:UntagResource",
+        "invoicing:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Invoicing::ProcurementPortalPreference"
+}

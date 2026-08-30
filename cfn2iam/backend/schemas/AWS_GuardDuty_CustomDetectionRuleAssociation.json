@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "guardduty:CreateCustomDetectionRuleAssociation",
+        "guardduty:GetCustomDetectionRuleAssociation",
+        "guardduty:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "guardduty:DeleteCustomDetectionRuleAssociation",
+        "guardduty:GetCustomDetectionRuleAssociation"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "guardduty:ListCustomDetectionRuleAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "guardduty:GetCustomDetectionRuleAssociation"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "guardduty:UpdateCustomDetectionRuleAssociation",
+        "guardduty:GetCustomDetectionRuleAssociation",
+        "guardduty:TagResource",
+        "guardduty:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::GuardDuty::CustomDetectionRuleAssociation"
+}

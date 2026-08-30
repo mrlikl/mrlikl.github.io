@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "quicksight:CreateApprovalPolicy",
+        "quicksight:DescribeApprovalPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "quicksight:DeleteApprovalPolicy",
+        "quicksight:DescribeApprovalPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "quicksight:ListApprovalPolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "quicksight:DescribeApprovalPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "quicksight:UpdateApprovalPolicy",
+        "quicksight:DescribeApprovalPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::QuickSight::ApprovalPolicy"
+}

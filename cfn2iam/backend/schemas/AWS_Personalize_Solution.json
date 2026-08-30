@@ -3,7 +3,9 @@
     "create": {
       "permissions": [
         "personalize:CreateSolution",
-        "personalize:DescribeSolution"
+        "personalize:DescribeSolution",
+        "personalize:ListTagsForResource",
+        "personalize:TagResource"
       ]
     },
     "delete": {
@@ -19,7 +21,8 @@
     },
     "read": {
       "permissions": [
-        "personalize:DescribeSolution"
+        "personalize:DescribeSolution",
+        "personalize:ListTagsForResource"
       ]
     }
   },

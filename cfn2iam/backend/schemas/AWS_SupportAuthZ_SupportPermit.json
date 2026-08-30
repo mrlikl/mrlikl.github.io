@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "supportauthz:CreateSupportPermit",
+        "supportauthz:GetSupportPermit",
+        "supportauthz:RegisterKey",
+        "supportauthz:TagResource",
+        "supportauthz:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:CreateGrant"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "supportauthz:DeleteSupportPermit",
+        "supportauthz:GetSupportPermit",
+        "supportauthz:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "supportauthz:ListSupportPermits"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "supportauthz:GetSupportPermit",
+        "supportauthz:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "supportauthz:GetSupportPermit",
+        "supportauthz:TagResource",
+        "supportauthz:UntagResource",
+        "supportauthz:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SupportAuthZ::SupportPermit"
+}

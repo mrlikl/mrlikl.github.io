@@ -16,6 +16,23 @@
         "glue:GetDatabase"
       ]
     },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "Resource": {
+            "$ref": "resource-schema.json#/properties/Resource"
+          }
+        },
+        "required": [
+          "Resource"
+        ]
+      },
+      "permissions": [
+        "lakeformation:ListPermissions",
+        "glue:GetTable",
+        "glue:GetDatabase"
+      ]
+    },
     "read": {
       "permissions": [
         "lakeformation:ListPermissions",

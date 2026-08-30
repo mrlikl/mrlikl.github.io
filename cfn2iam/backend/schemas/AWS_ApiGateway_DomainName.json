@@ -27,7 +27,8 @@
       "permissions": [
         "apigateway:GET",
         "apigateway:PUT",
-        "apigateway:PATCH"
+        "apigateway:PATCH",
+        "apigateway:DELETE"
       ]
     }
   },

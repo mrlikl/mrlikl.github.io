@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "omics:CreateRunCache",
+        "omics:GetRunCache",
+        "omics:TagResource",
+        "s3:GetBucketLocation",
+        "s3:ListBucket",
+        "s3:PutObject",
+        "s3:GetObject"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "omics:DeleteRunCache",
+        "omics:GetRunCache"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "omics:ListRunCaches"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "omics:GetRunCache"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "omics:UpdateRunCache",
+        "omics:GetRunCache",
+        "omics:TagResource",
+        "omics:UntagResource",
+        "omics:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Omics::RunCache"
+}

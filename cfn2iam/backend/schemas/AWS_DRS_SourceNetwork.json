@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "drs:CreateSourceNetwork",
+        "drs:DescribeSourceNetworks",
+        "drs:TagResource",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeInstances"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "drs:DeleteSourceNetwork",
+        "drs:DescribeSourceNetworks",
+        "drs:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "drs:DescribeSourceNetworks"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "drs:DescribeSourceNetworks",
+        "drs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "drs:DescribeSourceNetworks",
+        "drs:TagResource",
+        "drs:UntagResource",
+        "drs:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::DRS::SourceNetwork"
+}

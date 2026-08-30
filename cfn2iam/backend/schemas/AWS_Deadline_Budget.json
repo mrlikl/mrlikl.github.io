@@ -1,0 +1,51 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "deadline:CreateBudget",
+        "deadline:GetBudget",
+        "deadline:TagResource",
+        "deadline:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "deadline:DeleteBudget",
+        "deadline:GetBudget",
+        "deadline:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "FarmId": {
+            "pattern": "^farm-[0-9a-f]{32}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "FarmId"
+        ]
+      },
+      "permissions": [
+        "deadline:ListBudgets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "deadline:GetBudget",
+        "deadline:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "deadline:UpdateBudget",
+        "deadline:GetBudget",
+        "deadline:TagResource",
+        "deadline:UntagResource",
+        "deadline:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Deadline::Budget"
+}

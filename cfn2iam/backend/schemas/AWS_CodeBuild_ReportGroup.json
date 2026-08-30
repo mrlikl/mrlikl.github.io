@@ -1,4 +1,31 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "codebuild:CreateReportGroup"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "codebuild:BatchGetReportGroups",
+        "codebuild:DeleteReportGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "codebuild:ListReportGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "codebuild:BatchGetReportGroups"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "codebuild:UpdateReportGroup"
+      ]
+    }
+  },
   "typeName": "AWS::CodeBuild::ReportGroup"
 }

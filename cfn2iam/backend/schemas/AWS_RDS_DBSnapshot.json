@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rds:CreateDBSnapshot",
+        "rds:DescribeDBSnapshots",
+        "rds:DescribeDBInstances",
+        "rds:AddTagsToResource",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rds:DeleteDBSnapshot",
+        "rds:DescribeDBSnapshots",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rds:DescribeDBSnapshots"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rds:DescribeDBSnapshots",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rds:DescribeDBSnapshots",
+        "rds:AddTagsToResource",
+        "rds:RemoveTagsFromResource",
+        "rds:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::RDS::DBSnapshot"
+}

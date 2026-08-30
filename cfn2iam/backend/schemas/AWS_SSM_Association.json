@@ -35,6 +35,7 @@
       "permissions": [
         "iam:PassRole",
         "ssm:UpdateAssociation",
+        "ssm:DescribeAssociation",
         "ssm:GetCalendarState",
         "ssm:AddTagsToResource",
         "ssm:RemoveTagsFromResource",

@@ -1,4 +1,38 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "servicediscovery:CreateHttpNamespace",
+        "servicediscovery:TagResource",
+        "servicediscovery:GetNamespace",
+        "servicediscovery:GetOperation"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "servicediscovery:DeleteNamespace",
+        "servicediscovery:GetOperation"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "servicediscovery:ListNamespaces"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "servicediscovery:GetNamespace",
+        "servicediscovery:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "servicediscovery:UpdateHttpNamespace",
+        "servicediscovery:TagResource",
+        "servicediscovery:UntagResource",
+        "servicediscovery:GetOperation"
+      ]
+    }
+  },
   "typeName": "AWS::ServiceDiscovery::HttpNamespace"
 }

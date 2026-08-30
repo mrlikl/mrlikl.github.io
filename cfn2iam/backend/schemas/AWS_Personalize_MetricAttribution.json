@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "personalize:CreateMetricAttribution",
+        "personalize:DescribeMetricAttribution",
+        "iam:PassRole",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "personalize:DeleteMetricAttribution",
+        "personalize:DescribeMetricAttribution"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "personalize:ListMetricAttributions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "personalize:DescribeMetricAttribution",
+        "personalize:ListMetricAttributionMetrics"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "personalize:UpdateMetricAttribution",
+        "personalize:DescribeMetricAttribution",
+        "iam:PassRole",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::Personalize::MetricAttribution"
+}

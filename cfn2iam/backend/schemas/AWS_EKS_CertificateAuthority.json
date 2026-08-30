@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "eks:CreateCertificateAuthority",
+        "eks:DescribeCertificateAuthority",
+        "eks:ListCertificateAuthorities",
+        "eks:DescribeUpdate"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "eks:DeleteCertificateAuthority",
+        "eks:DescribeCertificateAuthority",
+        "eks:ListCertificateAuthorities",
+        "eks:DescribeUpdate"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ClusterName": {
+            "$ref": "resource-schema.json#/properties/ClusterName"
+          }
+        },
+        "required": [
+          "ClusterName"
+        ]
+      },
+      "permissions": [
+        "eks:ListCertificateAuthorities"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "eks:DescribeCertificateAuthority"
+      ]
+    }
+  },
+  "typeName": "AWS::EKS::CertificateAuthority"
+}

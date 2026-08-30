@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-16T02:21:50.843982Z",
+  "lastUpdated": "2026-08-30T06:21:10.712798Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -135,6 +135,11 @@
       "filename": "AWS_Amplify_Domain.json",
       "hasHandlers": true,
       "typeName": "AWS::Amplify::Domain"
+    },
+    {
+      "filename": "AWS_Amplify_Webhook.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Amplify::Webhook"
     },
     {
       "filename": "AWS_ApiGatewayV2_Api.json",
@@ -580,6 +585,11 @@
       "filename": "AWS_AppSync_SourceApiAssociation.json",
       "hasHandlers": true,
       "typeName": "AWS::AppSync::SourceApiAssociation"
+    },
+    {
+      "filename": "AWS_AppSync_Type.json",
+      "hasHandlers": true,
+      "typeName": "AWS::AppSync::Type"
     },
     {
       "filename": "AWS_AppTest_TestCase.json",
@@ -1087,6 +1097,11 @@
       "typeName": "AWS::CE::CostCategory"
     },
     {
+      "filename": "AWS_Cases_Case.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Cases::Case"
+    },
+    {
       "filename": "AWS_Cases_CaseRule.json",
       "hasHandlers": true,
       "typeName": "AWS::Cases::CaseRule"
@@ -1182,6 +1197,11 @@
       "typeName": "AWS::Chime::AppInstanceUser"
     },
     {
+      "filename": "AWS_Chime_ChannelFlow.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Chime::ChannelFlow"
+    },
+    {
       "filename": "AWS_CleanRoomsML_ConfiguredModelAlgorithm.json",
       "hasHandlers": true,
       "typeName": "AWS::CleanRoomsML::ConfiguredModelAlgorithm"
@@ -1245,6 +1265,11 @@
       "filename": "AWS_Cloud9_EnvironmentEC2.json",
       "hasHandlers": false,
       "typeName": "AWS::Cloud9::EnvironmentEC2"
+    },
+    {
+      "filename": "AWS_CloudFormation_ChangeSet.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudFormation::ChangeSet"
     },
     {
       "filename": "AWS_CloudFormation_CustomResource.json",
@@ -1563,7 +1588,7 @@
     },
     {
       "filename": "AWS_CodeBuild_ReportGroup.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::CodeBuild::ReportGroup"
     },
     {
@@ -1573,7 +1598,7 @@
     },
     {
       "filename": "AWS_CodeBuild_SourceCredential.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::CodeBuild::SourceCredential"
     },
     {
@@ -1585,6 +1610,11 @@
       "filename": "AWS_CodeConnections_Connection.json",
       "hasHandlers": true,
       "typeName": "AWS::CodeConnections::Connection"
+    },
+    {
+      "filename": "AWS_CodeConnections_Host.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CodeConnections::Host"
     },
     {
       "filename": "AWS_CodeDeploy_Application.json",
@@ -1793,7 +1823,7 @@
     },
     {
       "filename": "AWS_Config_DeliveryChannel.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::Config::DeliveryChannel"
     },
     {
@@ -2093,7 +2123,7 @@
     },
     {
       "filename": "AWS_DAX_ParameterGroup.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::DAX::ParameterGroup"
     },
     {
@@ -2158,8 +2188,13 @@
     },
     {
       "filename": "AWS_DMS_ReplicationTask.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::DMS::ReplicationTask"
+    },
+    {
+      "filename": "AWS_DRS_SourceNetwork.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DRS::SourceNetwork"
     },
     {
       "filename": "AWS_DSQL_Cluster.json",
@@ -2205,6 +2240,11 @@
       "filename": "AWS_DataExchange_EntitledDataSets.json",
       "hasHandlers": false,
       "typeName": "AWS::DataExchange::EntitledDataSets"
+    },
+    {
+      "filename": "AWS_DataExchange_EventAction.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DataExchange::EventAction"
     },
     {
       "filename": "AWS_DataPipeline_Pipeline.json",
@@ -2362,6 +2402,11 @@
       "typeName": "AWS::DataZone::UserProfile"
     },
     {
+      "filename": "AWS_Deadline_Budget.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Deadline::Budget"
+    },
+    {
       "filename": "AWS_Deadline_Farm.json",
       "hasHandlers": true,
       "typeName": "AWS::Deadline::Farm"
@@ -2415,6 +2460,11 @@
       "filename": "AWS_Deadline_StorageProfile.json",
       "hasHandlers": true,
       "typeName": "AWS::Deadline::StorageProfile"
+    },
+    {
+      "filename": "AWS_Deadline_Worker.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Deadline::Worker"
     },
     {
       "filename": "AWS_Detective_Graph.json",
@@ -2557,6 +2607,11 @@
       "typeName": "AWS::DocDB::GlobalCluster"
     },
     {
+      "filename": "AWS_DynamoDB_Backup.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DynamoDB::Backup"
+    },
+    {
       "filename": "AWS_DynamoDB_Export.json",
       "hasHandlers": true,
       "typeName": "AWS::DynamoDB::Export"
@@ -2657,6 +2712,11 @@
       "typeName": "AWS::EC2::FlowLog"
     },
     {
+      "filename": "AWS_EC2_FpgaImage.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::FpgaImage"
+    },
+    {
       "filename": "AWS_EC2_GatewayRouteTableAssociation.json",
       "hasHandlers": true,
       "typeName": "AWS::EC2::GatewayRouteTableAssociation"
@@ -2730,6 +2790,11 @@
       "filename": "AWS_EC2_IpPoolRouteTableAssociation.json",
       "hasHandlers": true,
       "typeName": "AWS::EC2::IpPoolRouteTableAssociation"
+    },
+    {
+      "filename": "AWS_EC2_IpamExternalResourceVerificationToken.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::IpamExternalResourceVerificationToken"
     },
     {
       "filename": "AWS_EC2_KeyPair.json",
@@ -3275,6 +3340,11 @@
       "filename": "AWS_EKS_Capability.json",
       "hasHandlers": true,
       "typeName": "AWS::EKS::Capability"
+    },
+    {
+      "filename": "AWS_EKS_CertificateAuthority.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EKS::CertificateAuthority"
     },
     {
       "filename": "AWS_EKS_Cluster.json",
@@ -3868,7 +3938,7 @@
     },
     {
       "filename": "AWS_Glue_Session.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::Session"
     },
     {
@@ -4025,6 +4095,11 @@
       "filename": "AWS_GroundStation_MissionProfile.json",
       "hasHandlers": true,
       "typeName": "AWS::GroundStation::MissionProfile"
+    },
+    {
+      "filename": "AWS_GuardDuty_CustomDetectionRuleAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::GuardDuty::CustomDetectionRuleAssociation"
     },
     {
       "filename": "AWS_GuardDuty_Detector.json",
@@ -4352,6 +4427,11 @@
       "typeName": "AWS::Invoicing::InvoiceUnit"
     },
     {
+      "filename": "AWS_Invoicing_ProcurementPortalPreference.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Invoicing::ProcurementPortalPreference"
+    },
+    {
       "filename": "AWS_IoTAnalytics_Channel.json",
       "hasHandlers": true,
       "typeName": "AWS::IoTAnalytics::Channel"
@@ -4420,6 +4500,11 @@
       "filename": "AWS_IoTFleetWise_Vehicle.json",
       "hasHandlers": true,
       "typeName": "AWS::IoTFleetWise::Vehicle"
+    },
+    {
+      "filename": "AWS_IoTSecureTunneling_Tunnel.json",
+      "hasHandlers": true,
+      "typeName": "AWS::IoTSecureTunneling::Tunnel"
     },
     {
       "filename": "AWS_IoTSiteWise_AccessPolicy.json",
@@ -4657,6 +4742,11 @@
       "typeName": "AWS::IoT::SoftwarePackageVersion"
     },
     {
+      "filename": "AWS_IoT_Stream.json",
+      "hasHandlers": true,
+      "typeName": "AWS::IoT::Stream"
+    },
+    {
       "filename": "AWS_IoT_Thing.json",
       "hasHandlers": true,
       "typeName": "AWS::IoT::Thing"
@@ -4872,6 +4962,11 @@
       "typeName": "AWS::Lambda::Permission"
     },
     {
+      "filename": "AWS_Lambda_ResourcePolicy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Lambda::ResourcePolicy"
+    },
+    {
       "filename": "AWS_Lambda_Url.json",
       "hasHandlers": true,
       "typeName": "AWS::Lambda::Url"
@@ -4935,6 +5030,11 @@
       "filename": "AWS_Lightsail_Certificate.json",
       "hasHandlers": true,
       "typeName": "AWS::Lightsail::Certificate"
+    },
+    {
+      "filename": "AWS_Lightsail_ContactMethod.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Lightsail::ContactMethod"
     },
     {
       "filename": "AWS_Lightsail_Container.json",
@@ -5120,6 +5220,11 @@
       "filename": "AWS_M2_Environment.json",
       "hasHandlers": true,
       "typeName": "AWS::M2::Environment"
+    },
+    {
+      "filename": "AWS_MGN_NetworkMigrationDefinition.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MGN::NetworkMigrationDefinition"
     },
     {
       "filename": "AWS_MSK_BatchScramSecret.json",
@@ -5447,6 +5552,11 @@
       "typeName": "AWS::MediaTailor::PlaybackConfiguration"
     },
     {
+      "filename": "AWS_MediaTailor_PrefetchSchedule.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MediaTailor::PrefetchSchedule"
+    },
+    {
       "filename": "AWS_MediaTailor_SourceLocation.json",
       "hasHandlers": true,
       "typeName": "AWS::MediaTailor::SourceLocation"
@@ -5762,6 +5872,11 @@
       "typeName": "AWS::Omics::ReferenceStore"
     },
     {
+      "filename": "AWS_Omics_RunCache.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Omics::RunCache"
+    },
+    {
       "filename": "AWS_Omics_RunGroup.json",
       "hasHandlers": true,
       "typeName": "AWS::Omics::RunGroup"
@@ -5992,6 +6107,11 @@
       "typeName": "AWS::Personalize::EventTracker"
     },
     {
+      "filename": "AWS_Personalize_MetricAttribution.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Personalize::MetricAttribution"
+    },
+    {
       "filename": "AWS_Personalize_Recipe.json",
       "hasHandlers": true,
       "typeName": "AWS::Personalize::Recipe"
@@ -6162,6 +6282,11 @@
       "typeName": "AWS::QuickSight::Analysis"
     },
     {
+      "filename": "AWS_QuickSight_ApprovalPolicy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::QuickSight::ApprovalPolicy"
+    },
+    {
       "filename": "AWS_QuickSight_AssetBundleExportJob.json",
       "hasHandlers": false,
       "typeName": "AWS::QuickSight::AssetBundleExportJob"
@@ -6212,6 +6337,11 @@
       "typeName": "AWS::QuickSight::KnowledgeBase"
     },
     {
+      "filename": "AWS_QuickSight_LimitsProfile.json",
+      "hasHandlers": true,
+      "typeName": "AWS::QuickSight::LimitsProfile"
+    },
+    {
       "filename": "AWS_QuickSight_OAuthClientApplication.json",
       "hasHandlers": true,
       "typeName": "AWS::QuickSight::OAuthClientApplication"
@@ -6260,6 +6390,11 @@
       "filename": "AWS_RAM_ResourceShare.json",
       "hasHandlers": true,
       "typeName": "AWS::RAM::ResourceShare"
+    },
+    {
+      "filename": "AWS_RDS_ClusterSnapshot.json",
+      "hasHandlers": true,
+      "typeName": "AWS::RDS::ClusterSnapshot"
     },
     {
       "filename": "AWS_RDS_CustomDBEngineVersion.json",
@@ -6315,6 +6450,11 @@
       "filename": "AWS_RDS_DBShardGroup.json",
       "hasHandlers": true,
       "typeName": "AWS::RDS::DBShardGroup"
+    },
+    {
+      "filename": "AWS_RDS_DBSnapshot.json",
+      "hasHandlers": true,
+      "typeName": "AWS::RDS::DBSnapshot"
     },
     {
       "filename": "AWS_RDS_DBSubnetGroup.json",
@@ -6743,7 +6883,7 @@
     },
     {
       "filename": "AWS_Route53_RecordSet.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Route53::RecordSet"
     },
     {
@@ -7743,7 +7883,7 @@
     },
     {
       "filename": "AWS_ServiceDiscovery_HttpNamespace.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ServiceDiscovery::HttpNamespace"
     },
     {
@@ -7857,6 +7997,11 @@
       "typeName": "AWS::SupportApp::SlackWorkspaceConfiguration"
     },
     {
+      "filename": "AWS_SupportAuthZ_SupportPermit.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SupportAuthZ::SupportPermit"
+    },
+    {
       "filename": "AWS_Synthetics_Canary.json",
       "hasHandlers": true,
       "typeName": "AWS::Synthetics::Canary"
@@ -7870,6 +8015,11 @@
       "filename": "AWS_SystemsManagerSAP_Application.json",
       "hasHandlers": true,
       "typeName": "AWS::SystemsManagerSAP::Application"
+    },
+    {
+      "filename": "AWS_Textract_Adapter.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Textract::Adapter"
     },
     {
       "filename": "AWS_ThinClient_SoftwareSet.json",
@@ -8382,5 +8532,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1676
+  "totalSchemas": 1706
 }
