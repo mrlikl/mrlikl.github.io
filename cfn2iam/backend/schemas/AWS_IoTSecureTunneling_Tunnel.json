@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:OpenTunnel",
+        "iot:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:CloseTunnel",
+        "iot:DescribeTunnel"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iot:ListTunnels"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:DescribeTunnel",
+        "iot:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iot:DescribeTunnel",
+        "iot:TagResource",
+        "iot:UntagResource",
+        "iot:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoTSecureTunneling::Tunnel"
+}

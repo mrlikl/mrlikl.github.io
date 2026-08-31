@@ -2,7 +2,8 @@
   "handlers": {
     "create": {
       "permissions": [
-        "codestar-notifications:createNotificationRule"
+        "codestar-notifications:createNotificationRule",
+        "codestar-notifications:TagResource"
       ]
     },
     "delete": {

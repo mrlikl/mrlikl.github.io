@@ -1,0 +1,65 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "codeconnections:CreateHost",
+        "codeconnections:GetHost",
+        "codeconnections:TagResource",
+        "ec2:CreateNetworkInterface",
+        "ec2:CreateTags",
+        "ec2:CreateVpcEndpoint",
+        "ec2:DeleteNetworkInterface",
+        "ec2:DeleteVpcEndpoints",
+        "ec2:DescribeDhcpOptions",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcEndpoints",
+        "ec2:DescribeVpcs"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "codeconnections:DeleteHost",
+        "codeconnections:GetHost",
+        "ec2:DeleteNetworkInterface",
+        "ec2:DeleteVpcEndpoints",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeVpcEndpoints"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "codeconnections:ListHosts"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "codeconnections:GetHost",
+        "codeconnections:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "codeconnections:GetHost",
+        "codeconnections:UpdateHost",
+        "codeconnections:TagResource",
+        "codeconnections:UntagResource",
+        "codeconnections:ListTagsForResource",
+        "ec2:CreateNetworkInterface",
+        "ec2:CreateTags",
+        "ec2:CreateVpcEndpoint",
+        "ec2:DeleteNetworkInterface",
+        "ec2:DeleteVpcEndpoints",
+        "ec2:DescribeDhcpOptions",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcEndpoints",
+        "ec2:DescribeVpcs",
+        "ec2:ModifyVpcEndpoint"
+      ]
+    }
+  },
+  "typeName": "AWS::CodeConnections::Host"
+}

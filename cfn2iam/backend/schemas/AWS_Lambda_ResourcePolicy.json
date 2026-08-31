@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lambda:PutResourcePolicy",
+        "lambda:GetResourcePolicy",
+        "lambda:AddPermission",
+        "lambda:RemovePermission",
+        "lambda:GetPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lambda:PutResourcePolicy",
+        "lambda:DeleteResourcePolicy",
+        "lambda:GetResourcePolicy",
+        "lambda:AddPermission",
+        "lambda:RemovePermission",
+        "lambda:GetPolicy",
+        "cloudformation:DescribeStacks"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lambda:GetResourcePolicy",
+        "lambda:GetPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lambda:PutResourcePolicy",
+        "lambda:GetResourcePolicy",
+        "lambda:AddPermission",
+        "lambda:RemovePermission",
+        "lambda:GetPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::Lambda::ResourcePolicy"
+}

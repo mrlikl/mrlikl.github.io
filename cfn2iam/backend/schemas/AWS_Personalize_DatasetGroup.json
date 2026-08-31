@@ -4,6 +4,8 @@
       "permissions": [
         "personalize:CreateDatasetGroup",
         "personalize:DescribeDatasetGroup",
+        "personalize:ListTagsForResource",
+        "personalize:TagResource",
         "iam:PassRole"
       ]
     },
@@ -20,7 +22,8 @@
     },
     "read": {
       "permissions": [
-        "personalize:DescribeDatasetGroup"
+        "personalize:DescribeDatasetGroup",
+        "personalize:ListTagsForResource"
       ]
     }
   },

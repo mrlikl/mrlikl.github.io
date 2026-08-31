@@ -1,4 +1,37 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreateSession",
+        "glue:GetSession",
+        "glue:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:DeleteSession",
+        "glue:GetSession"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:ListSessions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetSession",
+        "glue:GetTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:GetSession",
+        "glue:TagResource",
+        "glue:UntagResource"
+      ]
+    }
+  },
   "typeName": "AWS::Glue::Session"
 }

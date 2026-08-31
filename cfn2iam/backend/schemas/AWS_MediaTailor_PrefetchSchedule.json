@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediatailor:CreatePrefetchSchedule",
+        "mediatailor:GetPrefetchSchedule",
+        "mediatailor:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediatailor:DeletePrefetchSchedule",
+        "mediatailor:GetPrefetchSchedule"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "PlaybackConfigurationName": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "PlaybackConfigurationName"
+        ]
+      },
+      "permissions": [
+        "mediatailor:ListPrefetchSchedules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediatailor:GetPrefetchSchedule",
+        "mediatailor:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediatailor:GetPrefetchSchedule",
+        "mediatailor:TagResource",
+        "mediatailor:UntagResource",
+        "mediatailor:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaTailor::PrefetchSchedule"
+}

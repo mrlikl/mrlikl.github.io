@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appsync:CreateType",
+        "appsync:GetType"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appsync:DeleteType",
+        "appsync:GetType"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ApiId": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ApiId"
+        ]
+      },
+      "permissions": [
+        "appsync:ListTypes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appsync:GetType"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appsync:UpdateType",
+        "appsync:GetType"
+      ]
+    }
+  },
+  "typeName": "AWS::AppSync::Type"
+}

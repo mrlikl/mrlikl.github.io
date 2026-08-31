@@ -1,0 +1,51 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "amplify:CreateWebhook",
+        "amplify:GetWebhook",
+        "amplify:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "amplify:DeleteWebhook",
+        "amplify:GetWebhook"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AppId": {
+            "maxLength": 20,
+            "minLength": 1,
+            "pattern": "^d[a-z0-9]+$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "AppId"
+        ]
+      },
+      "permissions": [
+        "amplify:ListWebhooks"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "amplify:GetWebhook",
+        "amplify:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "amplify:UpdateWebhook",
+        "amplify:GetWebhook",
+        "amplify:TagResource",
+        "amplify:UntagResource",
+        "amplify:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Amplify::Webhook"
+}

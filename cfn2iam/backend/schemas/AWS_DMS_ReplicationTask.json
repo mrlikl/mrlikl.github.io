@@ -1,4 +1,39 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "dms:CreateReplicationTask",
+        "dms:DescribeReplicationTasks",
+        "dms:AddTagsToResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "dms:DeleteReplicationTask",
+        "dms:DescribeReplicationTasks"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "dms:DescribeReplicationTasks",
+        "dms:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dms:DescribeReplicationTasks",
+        "dms:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "dms:ModifyReplicationTask",
+        "dms:DescribeReplicationTasks",
+        "dms:ListTagsForResource",
+        "dms:AddTagsToResource",
+        "dms:RemoveTagsFromResource"
+      ]
+    }
+  },
   "typeName": "AWS::DMS::ReplicationTask"
 }

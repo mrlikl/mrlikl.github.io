@@ -6,7 +6,10 @@
         "personalize:DescribeDataset",
         "personalize:CreateDatasetImportJob",
         "personalize:DescribeDatasetImportJob",
-        "iam:PassRole"
+        "iam:PassRole",
+        "personalize:ListTagsForResource",
+        "personalize:TagResource",
+        "personalize:ListDatasetImportJobs"
       ],
       "timeoutInMinutes": 2160
     },
@@ -23,7 +26,10 @@
     },
     "read": {
       "permissions": [
-        "personalize:DescribeDataset"
+        "personalize:DescribeDataset",
+        "personalize:ListTagsForResource",
+        "personalize:ListDatasetImportJobs",
+        "personalize:DescribeDatasetImportJob"
       ]
     },
     "update": {
@@ -31,7 +37,9 @@
         "personalize:DescribeDataset",
         "personalize:CreateDatasetImportJob",
         "personalize:DescribeDatasetImportJob",
-        "iam:PassRole"
+        "personalize:ListTagsForResource",
+        "iam:PassRole",
+        "personalize:ListDatasetImportJobs"
       ],
       "timeoutInMinutes": 2160
     }

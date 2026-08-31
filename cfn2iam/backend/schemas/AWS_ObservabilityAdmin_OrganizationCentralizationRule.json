@@ -5,7 +5,8 @@
         "observabilityadmin:CreateCentralizationRuleForOrganization",
         "observabilityadmin:GetCentralizationRuleForOrganization",
         "observabilityadmin:ListTagsForResource",
-        "observabilityadmin:TagResource"
+        "observabilityadmin:TagResource",
+        "iam:PassRole"
       ],
       "timeoutInMinutes": 90
     },
@@ -31,7 +32,8 @@
         "observabilityadmin:GetCentralizationRuleForOrganization",
         "observabilityadmin:ListTagsForResource",
         "observabilityadmin:TagResource",
-        "observabilityadmin:UntagResource"
+        "observabilityadmin:UntagResource",
+        "iam:PassRole"
       ]
     }
   },

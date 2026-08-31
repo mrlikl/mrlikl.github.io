@@ -4,6 +4,7 @@
       "permissions": [
         "apigateway:POST",
         "apigateway:GET",
+        "apigateway:PUT",
         "apigateway:UpdateDomainNamePolicy"
       ]
     },
@@ -29,6 +30,7 @@
         "apigateway:GET",
         "apigateway:PUT",
         "apigateway:PATCH",
+        "apigateway:DELETE",
         "apigateway:UpdateDomainNamePolicy"
       ]
     }

@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudformation:CreateChangeSet",
+        "cloudformation:DescribeChangeSet",
+        "iam:PassRole",
+        "s3:GetObject"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudformation:DeleteChangeSet",
+        "cloudformation:DescribeChangeSet"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "StackName": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "StackName"
+        ]
+      },
+      "permissions": [
+        "cloudformation:ListChangeSets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudformation:DescribeChangeSet"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFormation::ChangeSet"
+}
