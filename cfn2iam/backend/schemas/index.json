@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30T06:21:10.712798Z",
+  "lastUpdated": "2026-09-06T05:41:07.627248Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -355,6 +355,11 @@
       "filename": "AWS_AppConfig_ExperimentDefinition.json",
       "hasHandlers": true,
       "typeName": "AWS::AppConfig::ExperimentDefinition"
+    },
+    {
+      "filename": "AWS_AppConfig_ExperimentRun.json",
+      "hasHandlers": true,
+      "typeName": "AWS::AppConfig::ExperimentRun"
     },
     {
       "filename": "AWS_AppConfig_Extension.json",
@@ -1202,6 +1207,11 @@
       "typeName": "AWS::Chime::ChannelFlow"
     },
     {
+      "filename": "AWS_Chime_MediaPipelineKinesisVideoStreamPool.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Chime::MediaPipelineKinesisVideoStreamPool"
+    },
+    {
       "filename": "AWS_CleanRoomsML_ConfiguredModelAlgorithm.json",
       "hasHandlers": true,
       "typeName": "AWS::CleanRoomsML::ConfiguredModelAlgorithm"
@@ -1823,7 +1833,7 @@
     },
     {
       "filename": "AWS_Config_DeliveryChannel.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Config::DeliveryChannel"
     },
     {
@@ -2133,7 +2143,7 @@
     },
     {
       "filename": "AWS_DLM_LifecyclePolicy.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::DLM::LifecyclePolicy"
     },
     {
@@ -2630,6 +2640,11 @@
       "filename": "AWS_DynamoDB_Table.json",
       "hasHandlers": true,
       "typeName": "AWS::DynamoDB::Table"
+    },
+    {
+      "filename": "AWS_EC2_ApplicationStatusCheck.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::ApplicationStatusCheck"
     },
     {
       "filename": "AWS_EC2_CapacityManagerDataExport.json",
@@ -3733,7 +3748,7 @@
     },
     {
       "filename": "AWS_FSx_Volume.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::FSx::Volume"
     },
     {
@@ -6247,6 +6262,11 @@
       "typeName": "AWS::Pipes::Pipe"
     },
     {
+      "filename": "AWS_PricingPlanManager_Subscription.json",
+      "hasHandlers": true,
+      "typeName": "AWS::PricingPlanManager::Subscription"
+    },
+    {
       "filename": "AWS_Proton_EnvironmentAccountConnection.json",
       "hasHandlers": true,
       "typeName": "AWS::Proton::EnvironmentAccountConnection"
@@ -7443,7 +7463,7 @@
     },
     {
       "filename": "AWS_SageMaker_EndpointConfig.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::SageMaker::EndpointConfig"
     },
     {
@@ -7553,7 +7573,7 @@
     },
     {
       "filename": "AWS_SageMaker_NotebookInstance.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::SageMaker::NotebookInstance"
     },
     {
@@ -7888,7 +7908,7 @@
     },
     {
       "filename": "AWS_ServiceDiscovery_Instance.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::ServiceDiscovery::Instance"
     },
     {
@@ -8532,5 +8552,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1706
+  "totalSchemas": 1710
 }

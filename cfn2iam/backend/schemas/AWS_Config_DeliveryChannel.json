@@ -1,4 +1,32 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "config:DescribeDeliveryChannels",
+        "config:PutDeliveryChannel"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "config:DeleteDeliveryChannel"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "config:DescribeDeliveryChannels"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "config:DescribeDeliveryChannels"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "config:DescribeDeliveryChannels",
+        "config:PutDeliveryChannel"
+      ]
+    }
+  },
   "typeName": "AWS::Config::DeliveryChannel"
 }

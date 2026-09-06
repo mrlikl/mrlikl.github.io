@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "pricingplanmanager:CreateSubscription",
+        "pricingplanmanager:GetSubscription",
+        "pricingplanmanager:ListSubscriptions",
+        "pricingplanmanager:CancelSubscriptionChange",
+        "cloudwatch:GetMetricData",
+        "shield:ListProtections"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "pricingplanmanager:CancelSubscription",
+        "pricingplanmanager:CancelSubscriptionChange",
+        "pricingplanmanager:GetSubscription"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "pricingplanmanager:ListSubscriptions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "pricingplanmanager:GetSubscription"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "pricingplanmanager:UpdateSubscription",
+        "pricingplanmanager:GetSubscription",
+        "pricingplanmanager:CancelSubscriptionChange",
+        "pricingplanmanager:AssociateResourcesToSubscription",
+        "pricingplanmanager:DisassociateResourcesFromSubscription",
+        "cloudwatch:GetMetricData",
+        "shield:ListProtections"
+      ]
+    }
+  },
+  "typeName": "AWS::PricingPlanManager::Subscription"
+}

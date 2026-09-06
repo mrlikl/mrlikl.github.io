@@ -1,0 +1,61 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appconfig:StartExperimentRun",
+        "appconfig:GetExperimentRun",
+        "appconfig:StartDeployment",
+        "appconfig:TagResource",
+        "appconfig:ListTagsForResource",
+        "kms:GenerateDataKey"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "delete": {
+      "permissions": [
+        "appconfig:StopExperimentRun",
+        "appconfig:GetExperimentRun",
+        "appconfig:StartDeployment",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ApplicationId": {
+            "$ref": "resource-schema.json#/properties/ApplicationId"
+          },
+          "ExperimentDefinitionId": {
+            "$ref": "resource-schema.json#/properties/ExperimentDefinitionId"
+          }
+        },
+        "required": [
+          "ApplicationId",
+          "ExperimentDefinitionId"
+        ]
+      },
+      "permissions": [
+        "appconfig:ListExperimentRuns"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appconfig:GetExperimentRun",
+        "appconfig:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appconfig:UpdateExperimentRun",
+        "appconfig:GetExperimentRun",
+        "appconfig:StartDeployment",
+        "appconfig:TagResource",
+        "appconfig:UntagResource",
+        "appconfig:ListTagsForResource",
+        "kms:GenerateDataKey"
+      ],
+      "timeoutInMinutes": 60
+    }
+  },
+  "typeName": "AWS::AppConfig::ExperimentRun"
+}

@@ -1,4 +1,62 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateNetworkInterface",
+        "ec2:CreateNetworkInterfacePermission",
+        "ec2:DeleteNetworkInterface",
+        "ec2:DeleteNetworkInterfacePermission",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeDhcpOptions",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "kms:CreateGrant",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "sagemaker:AddTags",
+        "sagemaker:CreateNotebookInstance",
+        "sagemaker:DescribeNotebookInstance",
+        "sagemaker:ListTags",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DeleteNetworkInterface",
+        "ec2:DeleteNetworkInterfacePermission",
+        "sagemaker:DeleteNotebookInstance",
+        "sagemaker:DescribeNotebookInstance",
+        "sagemaker:StopNotebookInstance"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListNotebookInstances"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeNotebookInstance",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeDhcpOptions",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:DescribeNotebookInstance",
+        "sagemaker:StartNotebookInstance",
+        "sagemaker:StopNotebookInstance",
+        "sagemaker:UpdateNotebookInstance",
+        "iam:PassRole"
+      ]
+    }
+  },
   "typeName": "AWS::SageMaker::NotebookInstance"
 }

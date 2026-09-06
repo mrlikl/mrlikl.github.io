@@ -1,4 +1,35 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateEndpointConfig",
+        "sagemaker:AddTags",
+        "iam:PassRole",
+        "kms:DescribeKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteEndpointConfig"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListEndpointConfigs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeEndpointConfig",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags"
+      ]
+    }
+  },
   "typeName": "AWS::SageMaker::EndpointConfig"
 }
