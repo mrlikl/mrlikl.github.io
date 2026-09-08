@@ -5,7 +5,8 @@
         "sagemaker:CreateEndpoint",
         "sagemaker:DescribeEndpoint",
         "sagemaker:AddTags"
-      ]
+      ],
+      "timeoutInMinutes": 160
     },
     "delete": {
       "permissions": [
@@ -30,7 +31,8 @@
         "sagemaker:DescribeEndpoint",
         "sagemaker:AddTags",
         "sagemaker:DeleteTags"
-      ]
+      ],
+      "timeoutInMinutes": 970
     }
   },
   "typeName": "AWS::SageMaker::Endpoint"

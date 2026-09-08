@@ -1,4 +1,37 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "dlm:TagResource",
+        "dlm:CreateLifecyclePolicy",
+        "iam:PassRole",
+        "dlm:GetLifecyclePolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "dlm:DeleteLifecyclePolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "dlm:GetLifecyclePolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dlm:GetLifecyclePolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "dlm:UpdateLifecyclePolicy",
+        "iam:PassRole",
+        "dlm:TagResource",
+        "dlm:UntagResource",
+        "dlm:GetLifecyclePolicy"
+      ]
+    }
+  },
   "typeName": "AWS::DLM::LifecyclePolicy"
 }

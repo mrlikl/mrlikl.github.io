@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "chime:CreateMediaPipelineKinesisVideoStreamPool",
+        "chime:GetMediaPipelineKinesisVideoStreamPool",
+        "chime:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "chime:DeleteMediaPipelineKinesisVideoStreamPool",
+        "chime:GetMediaPipelineKinesisVideoStreamPool"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "chime:ListMediaPipelineKinesisVideoStreamPools"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "chime:GetMediaPipelineKinesisVideoStreamPool",
+        "chime:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "chime:UpdateMediaPipelineKinesisVideoStreamPool",
+        "chime:GetMediaPipelineKinesisVideoStreamPool",
+        "chime:TagResource",
+        "chime:UntagResource",
+        "chime:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Chime::MediaPipelineKinesisVideoStreamPool"
+}

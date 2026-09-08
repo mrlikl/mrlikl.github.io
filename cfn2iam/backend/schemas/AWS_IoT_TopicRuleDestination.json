@@ -5,7 +5,8 @@
         "iam:PassRole",
         "iot:CreateTopicRuleDestination",
         "iot:GetTopicRuleDestination",
-        "iot:UpdateTopicRuleDestination"
+        "iot:UpdateTopicRuleDestination",
+        "secretsmanager:GetSecretValue"
       ]
     },
     "delete": {
@@ -28,7 +29,8 @@
       "permissions": [
         "iam:PassRole",
         "iot:GetTopicRuleDestination",
-        "iot:UpdateTopicRuleDestination"
+        "iot:UpdateTopicRuleDestination",
+        "secretsmanager:GetSecretValue"
       ]
     }
   },
