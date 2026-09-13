@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "drs:CreateLaunchConfigurationTemplate",
+        "drs:DescribeLaunchConfigurationTemplates"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "drs:DeleteLaunchConfigurationTemplate",
+        "drs:DescribeLaunchConfigurationTemplates"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "drs:DescribeLaunchConfigurationTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "drs:DescribeLaunchConfigurationTemplates"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "drs:UpdateLaunchConfigurationTemplate",
+        "drs:DescribeLaunchConfigurationTemplates",
+        "drs:TagResource",
+        "drs:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::DRS::LaunchConfigurationTemplate"
+}

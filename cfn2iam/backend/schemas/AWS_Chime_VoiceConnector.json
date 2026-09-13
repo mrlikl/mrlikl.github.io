@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "chime:CreateVoiceConnector",
+        "chime:GetVoiceConnector",
+        "chime:TagResource",
+        "chime:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "chime:DeleteVoiceConnector",
+        "chime:GetVoiceConnector",
+        "chime:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "chime:ListVoiceConnectors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "chime:GetVoiceConnector",
+        "chime:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "chime:UpdateVoiceConnector",
+        "chime:GetVoiceConnector",
+        "chime:TagResource",
+        "chime:UntagResource",
+        "chime:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Chime::VoiceConnector"
+}

@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "kinesis:CreateChannel",
+        "kinesis:DescribeChannel",
+        "kinesis:AssociateStreamsWithChannel",
+        "kinesis:TagResource",
+        "kinesis:ListTagsForResource",
+        "iam:PassRole"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "delete": {
+      "permissions": [
+        "kinesis:DeleteChannel",
+        "kinesis:DescribeChannel"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "list": {
+      "permissions": [
+        "kinesis:ListChannels"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "kinesis:DescribeChannel",
+        "kinesis:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "kinesis:UpdateChannel",
+        "kinesis:DescribeChannel",
+        "kinesis:TagResource",
+        "kinesis:UntagResource",
+        "kinesis:ListTagsForResource"
+      ],
+      "timeoutInMinutes": 60
+    }
+  },
+  "typeName": "AWS::Kinesis::Channel"
+}

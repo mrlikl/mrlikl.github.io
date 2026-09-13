@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-06T05:41:07.627248Z",
+  "lastUpdated": "2026-09-13T05:47:25.888504Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -1212,6 +1212,11 @@
       "typeName": "AWS::Chime::MediaPipelineKinesisVideoStreamPool"
     },
     {
+      "filename": "AWS_Chime_VoiceConnector.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Chime::VoiceConnector"
+    },
+    {
       "filename": "AWS_CleanRoomsML_ConfiguredModelAlgorithm.json",
       "hasHandlers": true,
       "typeName": "AWS::CleanRoomsML::ConfiguredModelAlgorithm"
@@ -1598,7 +1603,7 @@
     },
     {
       "filename": "AWS_CodeBuild_ReportGroup.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::CodeBuild::ReportGroup"
     },
     {
@@ -2202,6 +2207,11 @@
       "typeName": "AWS::DMS::ReplicationTask"
     },
     {
+      "filename": "AWS_DRS_LaunchConfigurationTemplate.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DRS::LaunchConfigurationTemplate"
+    },
+    {
       "filename": "AWS_DRS_SourceNetwork.json",
       "hasHandlers": true,
       "typeName": "AWS::DRS::SourceNetwork"
@@ -2618,7 +2628,7 @@
     },
     {
       "filename": "AWS_DynamoDB_Backup.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::DynamoDB::Backup"
     },
     {
@@ -3748,7 +3758,7 @@
     },
     {
       "filename": "AWS_FSx_Volume.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::FSx::Volume"
     },
     {
@@ -4870,6 +4880,11 @@
       "filename": "AWS_KinesisVideo_Stream.json",
       "hasHandlers": true,
       "typeName": "AWS::KinesisVideo::Stream"
+    },
+    {
+      "filename": "AWS_Kinesis_Channel.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Kinesis::Channel"
     },
     {
       "filename": "AWS_Kinesis_ResourcePolicy.json",
@@ -8552,5 +8567,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1710
+  "totalSchemas": 1713
 }

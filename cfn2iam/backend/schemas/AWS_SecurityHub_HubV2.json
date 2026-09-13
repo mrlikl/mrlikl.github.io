@@ -4,6 +4,8 @@
       "permissions": [
         "securityhub:EnableSecurityHubV2",
         "securityhub:DescribeSecurityHubV2",
+        "securityhub:EnableSecurityHubFeatureV2",
+        "securityhub:DisableSecurityHubFeatureV2",
         "securityhub:TagResource",
         "iam:CreateServiceLinkedRole"
       ]
@@ -29,6 +31,8 @@
     "update": {
       "permissions": [
         "securityhub:DescribeSecurityHubV2",
+        "securityhub:EnableSecurityHubFeatureV2",
+        "securityhub:DisableSecurityHubFeatureV2",
         "securityhub:TagResource",
         "securityhub:UntagResource",
         "securityhub:ListTagsForResource"
