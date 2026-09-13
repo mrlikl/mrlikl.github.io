@@ -15,14 +15,14 @@
         "pcs:ListTagsForResource",
         "pcs:TagResource"
       ],
-      "timeoutInMinutes": 60
+      "timeoutInMinutes": 160
     },
     "delete": {
       "permissions": [
         "pcs:DeleteQueue",
         "pcs:GetQueue"
       ],
-      "timeoutInMinutes": 60
+      "timeoutInMinutes": 160
     },
     "list": {
       "handlerSchema": {
@@ -54,7 +54,7 @@
         "pcs:TagResource",
         "pcs:UntagResource"
       ],
-      "timeoutInMinutes": 60
+      "timeoutInMinutes": 160
     }
   },
   "typeName": "AWS::PCS::Queue"
