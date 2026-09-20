@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "outposts:CreateOutpost",
+        "outposts:GetOutpost",
+        "outposts:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "outposts:DeleteOutpost"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "outposts:ListOutposts"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "outposts:GetOutpost"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "outposts:UpdateOutpost",
+        "outposts:GetOutpost",
+        "outposts:TagResource",
+        "outposts:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Outposts::Outpost"
+}

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-13T05:47:25.888504Z",
+  "lastUpdated": "2026-09-20T05:54:01.739806Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -543,7 +543,7 @@
     },
     {
       "filename": "AWS_AppSync_ApiKey.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::AppSync::ApiKey"
     },
     {
@@ -1207,9 +1207,19 @@
       "typeName": "AWS::Chime::ChannelFlow"
     },
     {
+      "filename": "AWS_Chime_MediaInsightsPipelineConfiguration.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Chime::MediaInsightsPipelineConfiguration"
+    },
+    {
       "filename": "AWS_Chime_MediaPipelineKinesisVideoStreamPool.json",
       "hasHandlers": true,
       "typeName": "AWS::Chime::MediaPipelineKinesisVideoStreamPool"
+    },
+    {
+      "filename": "AWS_Chime_SipMediaApplication.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Chime::SipMediaApplication"
     },
     {
       "filename": "AWS_Chime_VoiceConnector.json",
@@ -1795,6 +1805,11 @@
       "filename": "AWS_Comprehend_DocumentClassifier.json",
       "hasHandlers": true,
       "typeName": "AWS::Comprehend::DocumentClassifier"
+    },
+    {
+      "filename": "AWS_Comprehend_DocumentClassifierEndpoint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Comprehend::DocumentClassifierEndpoint"
     },
     {
       "filename": "AWS_Comprehend_Flywheel.json",
@@ -2595,6 +2610,11 @@
       "filename": "AWS_DocDBElastic_Cluster.json",
       "hasHandlers": true,
       "typeName": "AWS::DocDBElastic::Cluster"
+    },
+    {
+      "filename": "AWS_DocDBElastic_ClusterSnapshot.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DocDBElastic::ClusterSnapshot"
     },
     {
       "filename": "AWS_DocDB_DBCluster.json",
@@ -3418,7 +3438,7 @@
     },
     {
       "filename": "AWS_EMR_Cluster.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::EMR::Cluster"
     },
     {
@@ -3428,7 +3448,7 @@
     },
     {
       "filename": "AWS_EMR_InstanceGroupConfig.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::EMR::InstanceGroupConfig"
     },
     {
@@ -3717,6 +3737,11 @@
       "typeName": "AWS::FIS::TargetAccountConfiguration"
     },
     {
+      "filename": "AWS_FMS_ApplicationsList.json",
+      "hasHandlers": true,
+      "typeName": "AWS::FMS::ApplicationsList"
+    },
+    {
       "filename": "AWS_FMS_NotificationChannel.json",
       "hasHandlers": true,
       "typeName": "AWS::FMS::NotificationChannel"
@@ -3727,14 +3752,29 @@
       "typeName": "AWS::FMS::Policy"
     },
     {
+      "filename": "AWS_FMS_ProtocolsList.json",
+      "hasHandlers": true,
+      "typeName": "AWS::FMS::ProtocolsList"
+    },
+    {
       "filename": "AWS_FMS_ResourceSet.json",
       "hasHandlers": true,
       "typeName": "AWS::FMS::ResourceSet"
     },
     {
+      "filename": "AWS_FSx_Backup.json",
+      "hasHandlers": true,
+      "typeName": "AWS::FSx::Backup"
+    },
+    {
       "filename": "AWS_FSx_DataRepositoryAssociation.json",
       "hasHandlers": true,
       "typeName": "AWS::FSx::DataRepositoryAssociation"
+    },
+    {
+      "filename": "AWS_FSx_FileCache.json",
+      "hasHandlers": true,
+      "typeName": "AWS::FSx::FileCache"
     },
     {
       "filename": "AWS_FSx_FileSystem.json",
@@ -3877,6 +3917,11 @@
       "typeName": "AWS::Glue::Connection"
     },
     {
+      "filename": "AWS_Glue_ConnectionType.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Glue::ConnectionType"
+    },
+    {
       "filename": "AWS_Glue_Crawler.json",
       "hasHandlers": true,
       "typeName": "AWS::Glue::Crawler"
@@ -3933,7 +3978,7 @@
     },
     {
       "filename": "AWS_Glue_Partition.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Glue::Partition"
     },
     {
@@ -4783,7 +4828,7 @@
     },
     {
       "filename": "AWS_IoT_ThingPrincipalAttachment.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::IoT::ThingPrincipalAttachment"
     },
     {
@@ -5042,6 +5087,11 @@
       "typeName": "AWS::LicenseManager::License"
     },
     {
+      "filename": "AWS_LicenseManager_LicenseAssetGroup.json",
+      "hasHandlers": true,
+      "typeName": "AWS::LicenseManager::LicenseAssetGroup"
+    },
+    {
       "filename": "AWS_LicenseManager_LicenseAssetRuleSet.json",
       "hasHandlers": true,
       "typeName": "AWS::LicenseManager::LicenseAssetRuleSet"
@@ -5100,6 +5150,11 @@
       "filename": "AWS_Lightsail_InstanceSnapshot.json",
       "hasHandlers": true,
       "typeName": "AWS::Lightsail::InstanceSnapshot"
+    },
+    {
+      "filename": "AWS_Lightsail_KeyPair.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Lightsail::KeyPair"
     },
     {
       "filename": "AWS_Lightsail_LoadBalancer.json",
@@ -5327,6 +5382,11 @@
       "typeName": "AWS::Macie::FindingsFilter"
     },
     {
+      "filename": "AWS_Macie_Member.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Macie::Member"
+    },
+    {
       "filename": "AWS_Macie_Session.json",
       "hasHandlers": true,
       "typeName": "AWS::Macie::Session"
@@ -5403,7 +5463,7 @@
     },
     {
       "filename": "AWS_MediaConvert_JobTemplate.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::MediaConvert::JobTemplate"
     },
     {
@@ -5413,7 +5473,7 @@
     },
     {
       "filename": "AWS_MediaConvert_Queue.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::MediaConvert::Queue"
     },
     {
@@ -5627,6 +5687,11 @@
       "typeName": "AWS::MemoryDB::ReservedNode"
     },
     {
+      "filename": "AWS_MemoryDB_Snapshot.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MemoryDB::Snapshot"
+    },
+    {
       "filename": "AWS_MemoryDB_SubnetGroup.json",
       "hasHandlers": true,
       "typeName": "AWS::MemoryDB::SubnetGroup"
@@ -5685,6 +5750,11 @@
       "filename": "AWS_Neptune_GlobalCluster.json",
       "hasHandlers": true,
       "typeName": "AWS::Neptune::GlobalCluster"
+    },
+    {
+      "filename": "AWS_NetworkFirewall_ContainerAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::NetworkFirewall::ContainerAssociation"
     },
     {
       "filename": "AWS_NetworkFirewall_Firewall.json",
@@ -6050,6 +6120,11 @@
       "filename": "AWS_Organizations_ResourcePolicy.json",
       "hasHandlers": true,
       "typeName": "AWS::Organizations::ResourcePolicy"
+    },
+    {
+      "filename": "AWS_Outposts_Outpost.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Outposts::Outpost"
     },
     {
       "filename": "AWS_Outposts_Site.json",
@@ -6632,9 +6707,24 @@
       "typeName": "AWS::Redshift::ScheduledAction"
     },
     {
+      "filename": "AWS_Redshift_Snapshot.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Redshift::Snapshot"
+    },
+    {
+      "filename": "AWS_Redshift_SnapshotCopyGrant.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Redshift::SnapshotCopyGrant"
+    },
+    {
       "filename": "AWS_Redshift_SnapshotSchedule.json",
       "hasHandlers": true,
       "typeName": "AWS::Redshift::SnapshotSchedule"
+    },
+    {
+      "filename": "AWS_Redshift_UsageLimit.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Redshift::UsageLimit"
     },
     {
       "filename": "AWS_RefactorSpaces_Application.json",
@@ -6925,6 +7015,11 @@
       "filename": "AWS_Route53_RecordSetGroup.json",
       "hasHandlers": false,
       "typeName": "AWS::Route53::RecordSetGroup"
+    },
+    {
+      "filename": "AWS_Route53_TrafficPolicy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Route53::TrafficPolicy"
     },
     {
       "filename": "AWS_S3Express_AccessPoint.json",
@@ -7412,6 +7507,11 @@
       "typeName": "AWS::SSO::PermissionSet"
     },
     {
+      "filename": "AWS_SageMaker_AIWorkloadConfig.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::AIWorkloadConfig"
+    },
+    {
       "filename": "AWS_SageMaker_Action.json",
       "hasHandlers": true,
       "typeName": "AWS::SageMaker::Action"
@@ -7443,7 +7543,7 @@
     },
     {
       "filename": "AWS_SageMaker_CodeRepository.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::SageMaker::CodeRepository"
     },
     {
@@ -7593,7 +7693,7 @@
     },
     {
       "filename": "AWS_SageMaker_NotebookInstanceLifecycleConfig.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::SageMaker::NotebookInstanceLifecycleConfig"
     },
     {
@@ -8012,6 +8112,11 @@
       "typeName": "AWS::StepFunctions::StateMachineVersion"
     },
     {
+      "filename": "AWS_StorageGateway_Tape.json",
+      "hasHandlers": true,
+      "typeName": "AWS::StorageGateway::Tape"
+    },
+    {
       "filename": "AWS_StorageGateway_TapePool.json",
       "hasHandlers": true,
       "typeName": "AWS::StorageGateway::TapePool"
@@ -8087,9 +8192,19 @@
       "typeName": "AWS::Timestream::Table"
     },
     {
+      "filename": "AWS_Transcribe_CallAnalyticsCategory.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Transcribe::CallAnalyticsCategory"
+    },
+    {
       "filename": "AWS_Transcribe_MedicalTranscriptionJob.json",
       "hasHandlers": true,
       "typeName": "AWS::Transcribe::MedicalTranscriptionJob"
+    },
+    {
+      "filename": "AWS_Transcribe_Vocabulary.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Transcribe::Vocabulary"
     },
     {
       "filename": "AWS_Transcribe_VocabularyFilter.json",
@@ -8567,5 +8682,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1713
+  "totalSchemas": 1736
 }

@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "memorydb:CreateSnapshot",
+        "memorydb:DescribeSnapshots",
+        "memorydb:TagResource",
+        "memorydb:ListTags",
+        "kms:CreateGrant",
+        "kms:DescribeKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "memorydb:DeleteSnapshot",
+        "memorydb:DescribeSnapshots"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "memorydb:DescribeSnapshots"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "memorydb:DescribeSnapshots",
+        "memorydb:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "memorydb:DescribeSnapshots",
+        "memorydb:TagResource",
+        "memorydb:UntagResource",
+        "memorydb:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::MemoryDB::Snapshot"
+}

@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "redshift:CreateUsageLimit",
+        "redshift:DescribeUsageLimits",
+        "redshift:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "redshift:DeleteUsageLimit"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "redshift:DescribeUsageLimits"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "redshift:DescribeUsageLimits"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "redshift:ModifyUsageLimit",
+        "redshift:CreateTags",
+        "redshift:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::Redshift::UsageLimit"
+}

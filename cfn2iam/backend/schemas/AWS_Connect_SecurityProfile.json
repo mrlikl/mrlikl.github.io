@@ -30,6 +30,7 @@
     "read": {
       "permissions": [
         "connect:DescribeSecurityProfile",
+        "connect:ListSecurityProfileAIAgents",
         "connect:ListSecurityProfileApplications",
         "connect:ListSecurityProfileFlowModules",
         "connect:ListSecurityProfilePermissions"

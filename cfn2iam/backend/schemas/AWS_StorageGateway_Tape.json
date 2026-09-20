@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "storagegateway:CreateTapeWithBarcode",
+        "storagegateway:AddTagsToResource",
+        "storagegateway:ListTapes",
+        "storagegateway:DescribeTapes",
+        "storagegateway:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:CreateGrant",
+        "kms:GenerateDataKeyWithoutPlaintext"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "storagegateway:ListTapes",
+        "storagegateway:DescribeTapes",
+        "storagegateway:DeleteTape",
+        "storagegateway:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "storagegateway:ListTapes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "storagegateway:ListTapes",
+        "storagegateway:DescribeTapes",
+        "storagegateway:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "storagegateway:ListTapes",
+        "storagegateway:DescribeTapes",
+        "storagegateway:AddTagsToResource",
+        "storagegateway:RemoveTagsFromResource",
+        "storagegateway:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::StorageGateway::Tape"
+}

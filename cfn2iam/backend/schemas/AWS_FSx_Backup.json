@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "fsx:CreateBackup",
+        "fsx:DescribeBackups",
+        "fsx:TagResource",
+        "fsx:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "fsx:DeleteBackup",
+        "fsx:DescribeBackups",
+        "fsx:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "fsx:DescribeBackups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "fsx:DescribeBackups",
+        "fsx:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "fsx:DescribeBackups",
+        "fsx:TagResource",
+        "fsx:UntagResource",
+        "fsx:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::FSx::Backup"
+}

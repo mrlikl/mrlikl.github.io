@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "redshift:CreateSnapshotCopyGrant",
+        "redshift:DescribeSnapshotCopyGrants",
+        "redshift:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "redshift:DeleteSnapshotCopyGrant"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "redshift:DescribeSnapshotCopyGrants"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "redshift:DescribeSnapshotCopyGrants"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "redshift:DescribeSnapshotCopyGrants",
+        "redshift:CreateTags",
+        "redshift:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::Redshift::SnapshotCopyGrant"
+}

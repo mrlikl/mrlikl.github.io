@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "chime:CreateMediaInsightsPipelineConfiguration",
+        "chime:GetMediaInsightsPipelineConfiguration",
+        "chime:TagResource",
+        "iam:PassRole",
+        "kinesis:DescribeStream",
+        "s3:GetBucketPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "chime:DeleteMediaInsightsPipelineConfiguration",
+        "chime:ListVoiceConnectors"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "chime:ListMediaInsightsPipelineConfigurations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "chime:GetMediaInsightsPipelineConfiguration",
+        "chime:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "chime:UpdateMediaInsightsPipelineConfiguration",
+        "chime:GetMediaInsightsPipelineConfiguration",
+        "chime:TagResource",
+        "chime:UntagResource",
+        "chime:ListTagsForResource",
+        "iam:PassRole",
+        "kinesis:DescribeStream",
+        "s3:GetBucketPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::Chime::MediaInsightsPipelineConfiguration"
+}

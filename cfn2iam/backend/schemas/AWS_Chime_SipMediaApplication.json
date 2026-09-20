@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "chime:CreateSipMediaApplication",
+        "chime:GetSipMediaApplication",
+        "chime:TagResource",
+        "chime:ListTagsForResource",
+        "lambda:GetPolicy",
+        "lambda:AddPermission"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "chime:DeleteSipMediaApplication",
+        "chime:GetSipMediaApplication"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "chime:ListSipMediaApplications"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "chime:GetSipMediaApplication",
+        "chime:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "chime:UpdateSipMediaApplication",
+        "chime:GetSipMediaApplication",
+        "chime:TagResource",
+        "chime:UntagResource",
+        "chime:ListTagsForResource",
+        "lambda:GetPolicy",
+        "lambda:AddPermission"
+      ]
+    }
+  },
+  "typeName": "AWS::Chime::SipMediaApplication"
+}

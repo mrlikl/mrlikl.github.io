@@ -1,4 +1,34 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateNotebookInstanceLifecycleConfig",
+        "sagemaker:AddTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteNotebookInstanceLifecycleConfig"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListNotebookInstanceLifecycleConfigs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeNotebookInstanceLifecycleConfig",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateNotebookInstanceLifecycleConfig",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags"
+      ]
+    }
+  },
   "typeName": "AWS::SageMaker::NotebookInstanceLifecycleConfig"
 }

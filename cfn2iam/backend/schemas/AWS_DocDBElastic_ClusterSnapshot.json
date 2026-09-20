@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "docdb-elastic:CreateClusterSnapshot",
+        "docdb-elastic:GetClusterSnapshot",
+        "docdb-elastic:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "docdb-elastic:DeleteClusterSnapshot",
+        "docdb-elastic:GetClusterSnapshot"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "docdb-elastic:ListClusterSnapshots"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "docdb-elastic:GetClusterSnapshot",
+        "docdb-elastic:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "docdb-elastic:GetClusterSnapshot",
+        "docdb-elastic:TagResource",
+        "docdb-elastic:UntagResource",
+        "docdb-elastic:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::DocDBElastic::ClusterSnapshot"
+}
