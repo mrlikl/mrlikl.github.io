@@ -1,4 +1,42 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appsync:CreateApiCache",
+        "appsync:GetApiCache"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appsync:DeleteApiCache"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ApiId": {
+            "$ref": "resource-schema.json#/properties/ApiId"
+          }
+        },
+        "required": [
+          "ApiId"
+        ]
+      },
+      "permissions": [
+        "appsync:GetApiCache"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appsync:GetApiCache"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appsync:UpdateApiCache",
+        "appsync:GetApiCache"
+      ]
+    }
+  },
   "typeName": "AWS::AppSync::ApiCache"
 }

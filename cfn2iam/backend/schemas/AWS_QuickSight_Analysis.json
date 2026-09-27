@@ -8,6 +8,7 @@
         "quicksight:DescribeTemplate",
         "quicksight:DescribeTheme",
         "quicksight:PassDataSet",
+        "quicksight:PassTopic",
         "quicksight:TagResource",
         "quicksight:UntagResource",
         "quicksight:ListTagsForResource",
@@ -56,6 +57,7 @@
         "quicksight:DescribeTemplate",
         "quicksight:DescribeTheme",
         "quicksight:PassDataSet",
+        "quicksight:PassTopic",
         "quicksight:TagResource",
         "quicksight:UntagResource",
         "quicksight:ListTagsForResource"

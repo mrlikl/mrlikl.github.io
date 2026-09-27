@@ -1,4 +1,54 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:CreatePartition",
+        "glue:GetPartition",
+        "glue:GetSchemaVersion"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:GetPartitions",
+        "glue:DeletePartition"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "CatalogId": {
+            "$ref": "resource-schema.json#/properties/CatalogId"
+          },
+          "DatabaseName": {
+            "$ref": "resource-schema.json#/properties/DatabaseName"
+          },
+          "TableName": {
+            "$ref": "resource-schema.json#/properties/TableName"
+          }
+        },
+        "required": [
+          "CatalogId",
+          "DatabaseName",
+          "TableName"
+        ]
+      },
+      "permissions": [
+        "glue:GetPartitions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:GetPartitions",
+        "glue:GetPartition"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:UpdatePartition",
+        "glue:GetPartition",
+        "glue:GetSchemaVersion"
+      ]
+    }
+  },
   "typeName": "AWS::Glue::Partition"
 }

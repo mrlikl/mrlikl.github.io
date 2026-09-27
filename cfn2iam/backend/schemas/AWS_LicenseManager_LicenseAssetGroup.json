@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "license-manager:CreateLicenseAssetGroup",
+        "license-manager:GetLicenseAssetGroup",
+        "license-manager:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "license-manager:DeleteLicenseAssetGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "license-manager:ListLicenseAssetGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "license-manager:GetLicenseAssetGroup",
+        "license-manager:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "license-manager:UpdateLicenseAssetGroup",
+        "license-manager:GetLicenseAssetGroup",
+        "license-manager:TagResource",
+        "license-manager:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::LicenseManager::LicenseAssetGroup"
+}

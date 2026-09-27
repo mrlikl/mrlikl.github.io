@@ -1,0 +1,58 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "drs:CreateReplicationConfigurationTemplate",
+        "drs:DescribeReplicationConfigurationTemplates",
+        "drs:TagResource",
+        "drs:ListTagsForResource",
+        "ec2:CreateSecurityGroup",
+        "ec2:CreateTags",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeInstanceTypes",
+        "ec2:DescribeInstanceTypeOfferings",
+        "ec2:GetEbsEncryptionByDefault",
+        "ec2:GetEbsDefaultKmsKeyId",
+        "kms:CreateGrant",
+        "kms:DescribeKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "drs:DeleteReplicationConfigurationTemplate"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "drs:DescribeReplicationConfigurationTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "drs:DescribeReplicationConfigurationTemplates",
+        "drs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "drs:UpdateReplicationConfigurationTemplate",
+        "drs:DescribeReplicationConfigurationTemplates",
+        "drs:TagResource",
+        "drs:UntagResource",
+        "drs:ListTagsForResource",
+        "ec2:CreateSecurityGroup",
+        "ec2:CreateTags",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeInstanceTypes",
+        "ec2:DescribeInstanceTypeOfferings",
+        "ec2:GetEbsEncryptionByDefault",
+        "ec2:GetEbsDefaultKmsKeyId",
+        "kms:CreateGrant",
+        "kms:DescribeKey"
+      ]
+    }
+  },
+  "typeName": "AWS::DRS::ReplicationConfigurationTemplate"
+}

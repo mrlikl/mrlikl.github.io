@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "fms:PutAppsList",
+        "fms:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "fms:DeleteAppsList"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "fms:ListAppsLists"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "fms:GetAppsList",
+        "fms:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "fms:PutAppsList",
+        "fms:GetAppsList",
+        "fms:TagResource",
+        "fms:UntagResource",
+        "fms:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::FMS::ApplicationsList"
+}

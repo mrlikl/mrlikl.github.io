@@ -1,0 +1,36 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "fms:PutProtocolsList",
+        "fms:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "fms:DeleteProtocolsList"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "fms:ListProtocolsLists"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "fms:GetProtocolsList",
+        "fms:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "fms:PutProtocolsList",
+        "fms:GetProtocolsList",
+        "fms:TagResource",
+        "fms:UntagResource",
+        "fms:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::FMS::ProtocolsList"
+}

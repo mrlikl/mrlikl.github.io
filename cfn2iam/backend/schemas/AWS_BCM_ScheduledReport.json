@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bcm-dashboards:CreateScheduledReport",
+        "bcm-dashboards:GetDashboard",
+        "bcm-dashboards:TagResource",
+        "iam:PassRole",
+        "ce:GetCostAndUsage",
+        "ce:GetSavingsPlansCoverage",
+        "ce:GetSavingsPlansUtilization",
+        "ce:GetReservationCoverage",
+        "ce:GetReservationUtilization"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bcm-dashboards:DeleteScheduledReport"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bcm-dashboards:ListScheduledReports"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bcm-dashboards:GetScheduledReport",
+        "bcm-dashboards:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bcm-dashboards:UpdateScheduledReport",
+        "bcm-dashboards:GetDashboard",
+        "bcm-dashboards:TagResource",
+        "bcm-dashboards:UntagResource",
+        "iam:PassRole",
+        "ce:GetCostAndUsage",
+        "ce:GetSavingsPlansCoverage",
+        "ce:GetSavingsPlansUtilization",
+        "ce:GetReservationCoverage",
+        "ce:GetReservationUtilization"
+      ]
+    }
+  },
+  "typeName": "AWS::BCM::ScheduledReport"
+}

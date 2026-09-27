@@ -1,0 +1,31 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "emr-containers:CreateJobTemplate",
+        "emr-containers:TagResource",
+        "emr-containers:DescribeJobTemplate",
+        "emr-containers:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "emr-containers:DeleteJobTemplate",
+        "emr-containers:DescribeJobTemplate",
+        "emr-containers:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "emr-containers:ListJobTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "emr-containers:DescribeJobTemplate",
+        "emr-containers:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::EMRContainers::JobTemplate"
+}

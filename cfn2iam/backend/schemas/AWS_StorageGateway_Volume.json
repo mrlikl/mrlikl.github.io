@@ -1,0 +1,53 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "storagegateway:CreateCachediSCSIVolume",
+        "storagegateway:DescribeCachediSCSIVolumes",
+        "storagegateway:AddTagsToResource",
+        "kms:DescribeKey",
+        "kms:CreateGrant",
+        "kms:GenerateDataKeyWithoutPlaintext"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "storagegateway:DeleteVolume",
+        "storagegateway:DescribeCachediSCSIVolumes",
+        "storagegateway:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "GatewayARN": {
+            "description": "The Amazon Resource Name (ARN) of the gateway on which to list volumes.",
+            "maxLength": 500,
+            "type": "string"
+          }
+        },
+        "required": [
+          "GatewayARN"
+        ]
+      },
+      "permissions": [
+        "storagegateway:ListVolumes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "storagegateway:DescribeCachediSCSIVolumes",
+        "storagegateway:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "storagegateway:DescribeCachediSCSIVolumes",
+        "storagegateway:AddTagsToResource",
+        "storagegateway:RemoveTagsFromResource",
+        "storagegateway:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::StorageGateway::Volume"
+}

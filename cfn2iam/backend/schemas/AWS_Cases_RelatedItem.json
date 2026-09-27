@@ -1,0 +1,54 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cases:CreateRelatedItem",
+        "cases:SearchRelatedItems",
+        "cases:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cases:DeleteRelatedItem"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "CaseId": {
+            "maxLength": 500,
+            "minLength": 1,
+            "type": "string"
+          },
+          "DomainId": {
+            "maxLength": 500,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "DomainId",
+          "CaseId"
+        ]
+      },
+      "permissions": [
+        "cases:SearchRelatedItems"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cases:SearchRelatedItems",
+        "cases:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cases:UpdateRelatedItem",
+        "cases:TagResource",
+        "cases:UntagResource",
+        "cases:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Cases::RelatedItem"
+}

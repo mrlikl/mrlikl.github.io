@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "transcribe:CreateMedicalVocabulary",
+        "transcribe:GetMedicalVocabulary",
+        "transcribe:ListTagsForResource",
+        "transcribe:TagResource",
+        "s3:GetObject"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "transcribe:DeleteMedicalVocabulary",
+        "transcribe:GetMedicalVocabulary",
+        "transcribe:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "transcribe:ListMedicalVocabularies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "transcribe:GetMedicalVocabulary",
+        "transcribe:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "transcribe:UpdateMedicalVocabulary",
+        "transcribe:GetMedicalVocabulary",
+        "transcribe:TagResource",
+        "transcribe:UntagResource",
+        "transcribe:ListTagsForResource",
+        "s3:GetObject"
+      ]
+    }
+  },
+  "typeName": "AWS::Transcribe::MedicalVocabulary"
+}

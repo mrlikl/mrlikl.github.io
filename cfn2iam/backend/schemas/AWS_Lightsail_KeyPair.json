@@ -1,0 +1,35 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lightsail:CreateKeyPair",
+        "lightsail:GetKeyPair",
+        "lightsail:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lightsail:DeleteKeyPair",
+        "lightsail:GetKeyPair"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "lightsail:GetKeyPairs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lightsail:GetKeyPair"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lightsail:GetKeyPair",
+        "lightsail:TagResource",
+        "lightsail:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Lightsail::KeyPair"
+}

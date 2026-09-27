@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "redshift:CreateClusterSnapshot",
+        "redshift:DescribeClusterSnapshots",
+        "redshift:CreateTags",
+        "redshift:DescribeClusters"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "redshift:DeleteClusterSnapshot",
+        "redshift:DescribeClusterSnapshots",
+        "redshift:DescribeClusters"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "redshift:DescribeClusterSnapshots"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "redshift:DescribeClusterSnapshots"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "redshift:ModifyClusterSnapshot",
+        "redshift:DescribeClusterSnapshots",
+        "redshift:CreateTags",
+        "redshift:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::Redshift::Snapshot"
+}

@@ -1,4 +1,46 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloud9:CreateEnvironmentEC2",
+        "cloud9:DescribeEnvironments",
+        "cloud9:TagResource",
+        "cloud9:ListTagsForResource",
+        "iam:CreateServiceLinkedRole",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs",
+        "ssm:StartSession"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloud9:DeleteEnvironment",
+        "cloud9:DescribeEnvironments",
+        "ec2:DescribeInstances",
+        "ec2:TerminateInstances",
+        "ec2:DeleteSecurityGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloud9:ListEnvironments"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloud9:DescribeEnvironments",
+        "cloud9:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloud9:UpdateEnvironment",
+        "cloud9:DescribeEnvironments",
+        "cloud9:TagResource",
+        "cloud9:UntagResource",
+        "cloud9:ListTagsForResource"
+      ]
+    }
+  },
   "typeName": "AWS::Cloud9::EnvironmentEC2"
 }

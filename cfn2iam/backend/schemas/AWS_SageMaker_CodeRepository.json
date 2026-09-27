@@ -1,4 +1,34 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateCodeRepository",
+        "sagemaker:AddTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteCodeRepository"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListCodeRepositories"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeCodeRepository",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateCodeRepository",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags"
+      ]
+    }
+  },
   "typeName": "AWS::SageMaker::CodeRepository"
 }

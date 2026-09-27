@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ses:AssociateEmailIdentityCertificate",
+        "ses:ListEmailIdentityCertificates"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ses:DisassociateEmailIdentityCertificate",
+        "ses:ListEmailIdentityCertificates"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "EmailIdentity": {
+            "$ref": "resource-schema.json#/properties/EmailIdentity"
+          }
+        },
+        "required": [
+          "EmailIdentity"
+        ]
+      },
+      "permissions": [
+        "ses:ListEmailIdentityCertificates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ses:ListEmailIdentityCertificates"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ses:ListEmailIdentityCertificates"
+      ]
+    }
+  },
+  "typeName": "AWS::SES::EmailIdentityCertificate"
+}

@@ -1,0 +1,53 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "events:CreateEventBus",
+        "events:DescribeEventBus",
+        "events:ListEventBuses",
+        "events:ListTagsForResource",
+        "events:TagResource",
+        "kms:DescribeKey",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo",
+        "kms:Decrypt",
+        "kms:Encrypt"
+      ],
+      "timeoutInMinutes": 120
+    },
+    "delete": {
+      "permissions": [
+        "events:DeleteEventBus",
+        "events:DescribeEventBus"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "events:ListEventBuses"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "events:DescribeEventBus",
+        "events:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "events:UpdateEventBus",
+        "events:DescribeEventBus",
+        "events:TagResource",
+        "events:UntagResource",
+        "kms:DescribeKey",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo",
+        "kms:Decrypt",
+        "kms:Encrypt"
+      ],
+      "timeoutInMinutes": 180
+    }
+  },
+  "typeName": "AWS::EventsV2::EventBus"
+}

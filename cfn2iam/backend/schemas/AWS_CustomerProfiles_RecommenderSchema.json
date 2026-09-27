@@ -1,0 +1,53 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "profile:CreateRecommenderSchema",
+        "profile:GetRecommenderSchema",
+        "profile:ListTagsForResource",
+        "profile:TagResource",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "profile:DeleteRecommenderSchema",
+        "profile:GetRecommenderSchema"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainName": {
+            "maxLength": 64,
+            "minLength": 1,
+            "pattern": "^[a-zA-Z0-9_-]+$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "DomainName"
+        ]
+      },
+      "permissions": [
+        "profile:ListRecommenderSchemas"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "profile:GetRecommenderSchema",
+        "profile:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "profile:GetRecommenderSchema",
+        "profile:ListTagsForResource",
+        "profile:TagResource",
+        "profile:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CustomerProfiles::RecommenderSchema"
+}

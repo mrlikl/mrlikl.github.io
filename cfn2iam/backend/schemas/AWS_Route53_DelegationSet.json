@@ -1,0 +1,27 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53:CreateReusableDelegationSet",
+        "route53:GetReusableDelegationSet"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53:DeleteReusableDelegationSet",
+        "route53:GetReusableDelegationSet"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "route53:ListReusableDelegationSets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53:GetReusableDelegationSet"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53::DelegationSet"
+}

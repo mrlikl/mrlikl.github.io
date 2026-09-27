@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sms-voice:CreateRegistrationAttachment",
+        "sms-voice:DescribeRegistrationAttachments",
+        "sms-voice:TagResource",
+        "sms-voice:ListTagsForResource",
+        "s3:GetObject"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sms-voice:DeleteRegistrationAttachment",
+        "sms-voice:DescribeRegistrationAttachments",
+        "sms-voice:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sms-voice:DescribeRegistrationAttachments"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sms-voice:DescribeRegistrationAttachments",
+        "sms-voice:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sms-voice:DescribeRegistrationAttachments",
+        "sms-voice:TagResource",
+        "sms-voice:UntagResource",
+        "sms-voice:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SMSVOICE::RegistrationAttachment"
+}

@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "transcribe:CreateCallAnalyticsCategory",
+        "transcribe:GetCallAnalyticsCategory",
+        "transcribe:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "transcribe:DeleteCallAnalyticsCategory"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "transcribe:ListCallAnalyticsCategories"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "transcribe:GetCallAnalyticsCategory",
+        "transcribe:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "transcribe:UpdateCallAnalyticsCategory",
+        "transcribe:GetCallAnalyticsCategory",
+        "transcribe:TagResource",
+        "transcribe:UntagResource",
+        "transcribe:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Transcribe::CallAnalyticsCategory"
+}

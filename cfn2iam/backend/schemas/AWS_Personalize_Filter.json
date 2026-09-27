@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "personalize:CreateFilter",
+        "personalize:DescribeFilter",
+        "personalize:TagResource",
+        "personalize:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "personalize:DeleteFilter",
+        "personalize:DescribeFilter"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "personalize:ListFilters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "personalize:DescribeFilter",
+        "personalize:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "personalize:DescribeFilter",
+        "personalize:TagResource",
+        "personalize:UntagResource",
+        "personalize:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Personalize::Filter"
+}

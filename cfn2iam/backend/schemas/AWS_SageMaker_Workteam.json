@@ -1,4 +1,46 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateWorkteam",
+        "sagemaker:AddTags",
+        "sagemaker:ListWorkforces",
+        "cognito-idp:DescribeUserPool",
+        "cognito-idp:DescribeUserPoolClient",
+        "cognito-idp:UpdateUserPoolClient",
+        "cognito-idp:ListGroups",
+        "cognito-idp:AdminListGroupsForUser"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteWorkteam"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListWorkteams"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeWorkteam",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateWorkteam",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListWorkforces",
+        "cognito-idp:DescribeUserPool",
+        "cognito-idp:DescribeUserPoolClient",
+        "cognito-idp:UpdateUserPoolClient",
+        "cognito-idp:ListGroups",
+        "cognito-idp:AdminListGroupsForUser"
+      ]
+    }
+  },
   "typeName": "AWS::SageMaker::Workteam"
 }

@@ -1,0 +1,54 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "pi:CreatePerformanceAnalysisReport",
+        "pi:GetPerformanceAnalysisReport",
+        "pi:ListTagsForResource",
+        "pi:TagResource",
+        "pi:GetResourceMetadata",
+        "rds:DescribeDBInstances"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "pi:DeletePerformanceAnalysisReport",
+        "pi:GetPerformanceAnalysisReport",
+        "pi:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "Identifier": {
+            "maxLength": 256,
+            "minLength": 0,
+            "pattern": "^[a-zA-Z0-9-]+$",
+            "type": "string"
+          },
+          "ServiceType": {
+            "enum": [
+              "RDS",
+              "DOCDB"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "ServiceType",
+          "Identifier"
+        ]
+      },
+      "permissions": [
+        "pi:ListPerformanceAnalysisReports"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "pi:GetPerformanceAnalysisReport",
+        "pi:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::PI::PerfReports"
+}

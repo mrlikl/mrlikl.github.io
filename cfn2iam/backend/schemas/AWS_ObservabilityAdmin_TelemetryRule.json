@@ -15,6 +15,7 @@
     "delete": {
       "permissions": [
         "observabilityadmin:DeleteTelemetryRule",
+        "observabilityadmin:GetTelemetryRule",
         "observabilityadmin:GetTelemetryEvaluationStatus"
       ]
     },
