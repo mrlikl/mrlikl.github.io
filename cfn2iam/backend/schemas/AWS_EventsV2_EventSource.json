@@ -1,0 +1,56 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "events:CreateEventSource",
+        "events:DescribeEventSource",
+        "events:ListEventSources",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:Encrypt",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo",
+        "events:ListTagsForResource",
+        "events:TagResource"
+      ],
+      "timeoutInMinutes": 30
+    },
+    "delete": {
+      "permissions": [
+        "events:DeleteEventSource",
+        "events:DescribeEventSource"
+      ],
+      "timeoutInMinutes": 30
+    },
+    "list": {
+      "permissions": [
+        "events:ListEventSources"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "events:DescribeEventSource",
+        "kms:Decrypt",
+        "events:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "events:UpdateEventSource",
+        "events:DescribeEventSource",
+        "events:CreateEventSource",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:Encrypt",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo",
+        "events:TagResource",
+        "events:UntagResource"
+      ],
+      "timeoutInMinutes": 30
+    }
+  },
+  "typeName": "AWS::EventsV2::EventSource"
+}

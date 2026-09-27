@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "events:GetResourcePolicy",
+        "events:PutResourcePolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "events:DeleteResourcePolicy",
+        "events:GetResourcePolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "events:ListEventBuses",
+        "events:ListResourcePolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "events:GetResourcePolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "events:PutResourcePolicy",
+        "events:GetResourcePolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::EventsV2::ResourcePolicy"
+}

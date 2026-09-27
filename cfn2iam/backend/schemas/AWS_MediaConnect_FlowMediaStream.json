@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediaconnect:AddFlowMediaStreams",
+        "mediaconnect:TagResource",
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediaconnect:RemoveFlowMediaStream",
+        "mediaconnect:DescribeFlow"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "FlowArn": {
+            "description": "The Amazon Resource Name (ARN) of the flow whose media streams should be listed.",
+            "pattern": "^arn:(aws[a-zA-Z-]*):mediaconnect:[a-z0-9-]+:[0-9]{12}:flow:[a-zA-Z0-9-]+:[a-zA-Z0-9_-]+$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "FlowArn"
+        ]
+      },
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediaconnect:UpdateFlowMediaStream",
+        "mediaconnect:DescribeFlow",
+        "mediaconnect:TagResource",
+        "mediaconnect:UntagResource",
+        "mediaconnect:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaConnect::FlowMediaStream"
+}

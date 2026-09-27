@@ -1,4 +1,37 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:AttachThingPrincipal",
+        "iot:ListThingPrincipalsV2"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:DetachThingPrincipal",
+        "iot:ListThingPrincipalsV2"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ThingName": {
+            "$ref": "#/properties/ThingName"
+          }
+        },
+        "required": [
+          "ThingName"
+        ]
+      },
+      "permissions": [
+        "iot:ListThingPrincipalsV2"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:ListThingPrincipalsV2"
+      ]
+    }
+  },
   "typeName": "AWS::IoT::ThingPrincipalAttachment"
 }

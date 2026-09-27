@@ -1,4 +1,36 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "config:DescribeConfigurationRecorders",
+        "config:PutConfigurationRecorder",
+        "config:StartConfigurationRecorder",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "config:DeleteConfigurationRecorder"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "config:ListConfigurationRecorders"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "config:DescribeConfigurationRecorders",
+        "config:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "config:DescribeConfigurationRecorders",
+        "config:PutConfigurationRecorder",
+        "iam:PassRole"
+      ]
+    }
+  },
   "typeName": "AWS::Config::ConfigurationRecorder"
 }

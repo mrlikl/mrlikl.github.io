@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "networkmonitor:CreateMonitor",
+        "networkmonitor:GetMonitor",
+        "networkmonitor:TagResource",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "networkmonitor:DeleteMonitor",
+        "networkmonitor:GetMonitor"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "networkmonitor:ListMonitors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "networkmonitor:GetMonitor",
+        "networkmonitor:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "networkmonitor:UpdateMonitor",
+        "networkmonitor:GetMonitor",
+        "networkmonitor:TagResource",
+        "networkmonitor:UntagResource",
+        "networkmonitor:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkMonitor::Monitor"
+}

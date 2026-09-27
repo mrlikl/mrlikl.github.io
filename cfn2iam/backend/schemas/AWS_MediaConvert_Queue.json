@@ -1,4 +1,37 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediaconvert:CreateQueue",
+        "mediaconvert:GetQueue",
+        "mediaconvert:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediaconvert:GetQueue",
+        "mediaconvert:DeleteQueue"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediaconvert:ListQueues"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediaconvert:GetQueue",
+        "mediaconvert:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediaconvert:UpdateQueue",
+        "mediaconvert:TagResource",
+        "mediaconvert:UntagResource",
+        "mediaconvert:ListTagsForResource"
+      ]
+    }
+  },
   "typeName": "AWS::MediaConvert::Queue"
 }

@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreatePublicIpv4Pool",
+        "ec2:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DeletePublicIpv4Pool",
+        "ec2:DescribePublicIpv4Pools"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribePublicIpv4Pools"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribePublicIpv4Pools"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:DescribePublicIpv4Pools",
+        "ec2:CreateTags",
+        "ec2:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::IPv4Pool"
+}

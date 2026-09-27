@@ -1,0 +1,56 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateClusterSchedulerConfig",
+        "sagemaker:DescribeClusterSchedulerConfig",
+        "sagemaker:DescribeCluster",
+        "eks:DescribeCluster",
+        "eks:AssociateAccessPolicy",
+        "eks:DescribeAccessEntry",
+        "eks:ListAssociatedAccessPolicies",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteClusterSchedulerConfig",
+        "sagemaker:DescribeClusterSchedulerConfig",
+        "sagemaker:ListTags",
+        "sagemaker:DescribeCluster",
+        "eks:DescribeCluster",
+        "eks:DisassociateAccessPolicy",
+        "eks:DescribeAccessEntry",
+        "eks:ListAssociatedAccessPolicies"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListClusterSchedulerConfigs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeClusterSchedulerConfig",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateClusterSchedulerConfig",
+        "sagemaker:DescribeClusterSchedulerConfig",
+        "sagemaker:DescribeCluster",
+        "eks:DescribeCluster",
+        "eks:AssociateAccessPolicy",
+        "eks:DisassociateAccessPolicy",
+        "eks:DescribeAccessEntry",
+        "eks:ListAssociatedAccessPolicies",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::ClusterSchedulerConfig"
+}

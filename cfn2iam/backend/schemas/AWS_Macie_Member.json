@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "macie2:CreateMember",
+        "macie2:GetMember",
+        "macie2:TagResource",
+        "macie2:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "macie2:DeleteMember",
+        "macie2:GetMember",
+        "macie2:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "macie2:ListMembers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "macie2:GetMember",
+        "macie2:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "macie2:GetMember",
+        "macie2:TagResource",
+        "macie2:UntagResource",
+        "macie2:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Macie::Member"
+}

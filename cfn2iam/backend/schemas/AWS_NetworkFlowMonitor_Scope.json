@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "networkflowmonitor:CreateScope",
+        "networkflowmonitor:GetScope",
+        "networkflowmonitor:TagResource",
+        "iam:GetRole",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "networkflowmonitor:DeleteScope",
+        "networkflowmonitor:GetScope"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "networkflowmonitor:ListScopes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "networkflowmonitor:GetScope",
+        "networkflowmonitor:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "networkflowmonitor:UpdateScope",
+        "networkflowmonitor:GetScope",
+        "networkflowmonitor:TagResource",
+        "networkflowmonitor:UntagResource",
+        "networkflowmonitor:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkFlowMonitor::Scope"
+}

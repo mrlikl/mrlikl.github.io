@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "connect:CreateVocabulary",
+        "connect:DescribeVocabulary",
+        "connect:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "connect:DeleteVocabulary",
+        "connect:DescribeVocabulary"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "InstanceId": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "InstanceId"
+        ]
+      },
+      "permissions": [
+        "connect:SearchVocabularies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "connect:DescribeVocabulary"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "connect:DescribeVocabulary",
+        "connect:TagResource",
+        "connect:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Connect::Vocabulary"
+}

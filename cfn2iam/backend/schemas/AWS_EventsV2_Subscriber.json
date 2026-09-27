@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "events:CreateSubscriber",
+        "events:DescribeSubscriber",
+        "events:ListSubscribers",
+        "events:ListTagsForResource",
+        "events:TagResource",
+        "iam:PassRole"
+      ],
+      "timeoutInMinutes": 30
+    },
+    "delete": {
+      "permissions": [
+        "events:DeleteSubscriber",
+        "events:DescribeSubscriber"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "events:ListSubscribers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "events:DescribeSubscriber",
+        "events:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "events:UpdateSubscriber",
+        "events:DescribeSubscriber",
+        "events:TagResource",
+        "events:UntagResource",
+        "iam:PassRole"
+      ],
+      "timeoutInMinutes": 45
+    }
+  },
+  "typeName": "AWS::EventsV2::Subscriber"
+}

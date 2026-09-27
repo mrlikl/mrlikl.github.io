@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "glue:RegisterConnectionType",
+        "glue:DescribeConnectionType",
+        "glue:GetTags",
+        "glue:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "glue:DeleteConnectionType",
+        "glue:DescribeConnectionType",
+        "glue:GetTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "glue:ListConnectionTypes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "glue:DescribeConnectionType",
+        "glue:GetTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "glue:DescribeConnectionType",
+        "glue:GetTags",
+        "glue:TagResource",
+        "glue:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Glue::ConnectionType"
+}

@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "transcribe:CreateVocabulary",
+        "transcribe:GetVocabulary",
+        "transcribe:TagResource",
+        "transcribe:ListTagsForResource",
+        "iam:PassRole",
+        "s3:GetObject"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "transcribe:DeleteVocabulary",
+        "transcribe:GetVocabulary",
+        "transcribe:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "transcribe:ListVocabularies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "transcribe:GetVocabulary",
+        "transcribe:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "transcribe:UpdateVocabulary",
+        "transcribe:GetVocabulary",
+        "transcribe:TagResource",
+        "transcribe:UntagResource",
+        "transcribe:ListTagsForResource",
+        "iam:PassRole",
+        "s3:GetObject"
+      ]
+    }
+  },
+  "typeName": "AWS::Transcribe::Vocabulary"
+}

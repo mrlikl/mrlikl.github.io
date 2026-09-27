@@ -1,0 +1,66 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "fsx:CreateFileCache",
+        "fsx:DescribeFileCaches",
+        "fsx:CreateDataRepositoryAssociation",
+        "fsx:TagResource",
+        "fsx:ListTagsForResource",
+        "s3:ListBucket",
+        "s3:GetBucketLocation",
+        "s3:GetBucketPolicy",
+        "s3:PutBucketPolicy",
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:GetBucketAcl",
+        "s3:HeadBucket",
+        "s3:GetEncryptionConfiguration",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:GetSecurityGroupsForVpc",
+        "ec2:CreateNetworkInterface",
+        "ec2:CreateNetworkInterfacePermission",
+        "ec2:DescribeRouteTables",
+        "ec2:CreateTags",
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents",
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
+        "kms:DescribeKey",
+        "kms:CreateGrant"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "fsx:DeleteFileCache",
+        "fsx:DescribeFileCaches",
+        "fsx:DeleteDataRepositoryAssociation"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "fsx:DescribeFileCaches"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "fsx:DescribeFileCaches",
+        "fsx:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "fsx:UpdateFileCache",
+        "fsx:DescribeFileCaches",
+        "fsx:TagResource",
+        "fsx:UntagResource",
+        "fsx:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::FSx::FileCache"
+}

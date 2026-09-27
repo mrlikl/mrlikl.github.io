@@ -1,4 +1,37 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediaconvert:CreateJobTemplate",
+        "mediaconvert:GetJobTemplate",
+        "mediaconvert:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediaconvert:GetJobTemplate",
+        "mediaconvert:DeleteJobTemplate"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediaconvert:ListJobTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediaconvert:GetJobTemplate",
+        "mediaconvert:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediaconvert:UpdateJobTemplate",
+        "mediaconvert:TagResource",
+        "mediaconvert:UntagResource",
+        "mediaconvert:ListTagsForResource"
+      ]
+    }
+  },
   "typeName": "AWS::MediaConvert::JobTemplate"
 }

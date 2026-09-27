@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateAIWorkloadConfig",
+        "sagemaker:DescribeAIWorkloadConfig",
+        "sagemaker:ListTags",
+        "sagemaker:AddTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteAIWorkloadConfig",
+        "sagemaker:DescribeAIWorkloadConfig"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListAIWorkloadConfigs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeAIWorkloadConfig",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:DescribeAIWorkloadConfig",
+        "sagemaker:ListTags",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::AIWorkloadConfig"
+}

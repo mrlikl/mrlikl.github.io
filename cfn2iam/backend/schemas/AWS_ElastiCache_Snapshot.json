@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticache:CreateSnapshot",
+        "elasticache:DescribeSnapshots",
+        "elasticache:AddTagsToResource",
+        "elasticache:ListTagsForResource",
+        "kms:CreateGrant",
+        "kms:DescribeKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "elasticache:DeleteSnapshot",
+        "elasticache:DescribeSnapshots"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "elasticache:DescribeSnapshots"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticache:DescribeSnapshots",
+        "elasticache:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "elasticache:DescribeSnapshots",
+        "elasticache:AddTagsToResource",
+        "elasticache:RemoveTagsFromResource",
+        "elasticache:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::ElastiCache::Snapshot"
+}

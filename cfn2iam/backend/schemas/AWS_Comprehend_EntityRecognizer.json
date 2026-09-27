@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "comprehend:CreateEntityRecognizer",
+        "comprehend:DescribeEntityRecognizer",
+        "comprehend:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "comprehend:DeleteEntityRecognizer",
+        "comprehend:DescribeEntityRecognizer"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "comprehend:ListEntityRecognizers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "comprehend:DescribeEntityRecognizer",
+        "comprehend:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "comprehend:DescribeEntityRecognizer",
+        "comprehend:ListTagsForResource",
+        "comprehend:TagResource",
+        "comprehend:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Comprehend::EntityRecognizer"
+}

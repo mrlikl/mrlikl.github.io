@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mgn:CreateConnector",
+        "mgn:InitializeService",
+        "mgn:TagResource",
+        "ssm:GetCommandInvocation",
+        "ssm:SendCommand",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mgn:DeleteConnector",
+        "mgn:ListConnectors",
+        "mgn:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mgn:ListConnectors"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mgn:ListConnectors",
+        "mgn:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mgn:UpdateConnector",
+        "mgn:ListConnectors",
+        "mgn:TagResource",
+        "mgn:UntagResource",
+        "mgn:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::MGN::Connector"
+}

@@ -34,6 +34,7 @@
         "ecs:DescribeServiceDeployments",
         "ecs:DescribeServiceRevisions",
         "ecs:DescribeServices",
+        "ecs:DescribeTaskDefinition",
         "ecs:ListServiceDeployments",
         "ecs:RegisterTaskDefinition",
         "iam:PassRole"

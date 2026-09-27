@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mgn:CreateLaunchConfigurationTemplate",
+        "mgn:TagResource",
+        "mgn:DescribeLaunchConfigurationTemplates",
+        "ec2:CreateLaunchTemplate",
+        "ec2:CreateTags",
+        "kms:DescribeKey",
+        "ec2:GetEbsDefaultKmsKeyId"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mgn:DeleteLaunchConfigurationTemplate",
+        "ec2:DeleteLaunchTemplate"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mgn:DescribeLaunchConfigurationTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mgn:DescribeLaunchConfigurationTemplates"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mgn:UpdateLaunchConfigurationTemplate",
+        "mgn:DescribeLaunchConfigurationTemplates",
+        "ec2:DescribeLaunchTemplates",
+        "kms:DescribeKey",
+        "ec2:GetEbsDefaultKmsKeyId",
+        "mgn:TagResource",
+        "mgn:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::MGN::LaunchConfigurationTemplate"
+}

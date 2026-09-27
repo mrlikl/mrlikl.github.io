@@ -6,7 +6,8 @@
         "rds:DescribeDBProxyTargetGroups",
         "rds:DescribeDBProxyTargets",
         "rds:ModifyDBProxyTargetGroup",
-        "rds:RegisterDBProxyTargets"
+        "rds:RegisterDBProxyTargets",
+        "rds:AddTagsToResource"
       ]
     },
     "delete": {
@@ -22,7 +23,8 @@
     "read": {
       "permissions": [
         "rds:DescribeDBProxyTargetGroups",
-        "rds:DescribeDBProxyTargets"
+        "rds:DescribeDBProxyTargets",
+        "rds:ListTagsForResource"
       ]
     },
     "update": {
@@ -31,7 +33,10 @@
         "rds:DescribeDBProxyTargets",
         "rds:ModifyDBProxyTargetGroup",
         "rds:RegisterDBProxyTargets",
-        "rds:DeregisterDBProxyTargets"
+        "rds:DeregisterDBProxyTargets",
+        "rds:AddTagsToResource",
+        "rds:RemoveTagsFromResource",
+        "rds:ListTagsForResource"
       ]
     }
   },
