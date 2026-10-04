@@ -1,0 +1,57 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "connect:CreateUseCase",
+        "connect:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "connect:DeleteUseCase",
+        "connect:ListUseCases",
+        "connect:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "InstanceId": {
+            "description": "The identifier of the Amazon Connect instance.",
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "IntegrationAssociationId": {
+            "description": "The identifier for the integration association.",
+            "maxLength": 200,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "InstanceId",
+          "IntegrationAssociationId"
+        ]
+      },
+      "permissions": [
+        "connect:ListUseCases"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "connect:ListUseCases",
+        "connect:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "connect:TagResource",
+        "connect:UntagResource",
+        "connect:ListTagsForResource",
+        "connect:ListUseCases"
+      ]
+    }
+  },
+  "typeName": "AWS::Connect::UseCase"
+}

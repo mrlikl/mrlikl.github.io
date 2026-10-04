@@ -36,7 +36,9 @@
         "dms:ModifyDataProvider",
         "dms:AddTagsToResource",
         "dms:RemoveTagsFromResource",
-        "dms:ListTagsForResource"
+        "dms:ListTagsForResource",
+        "iam:GetRole",
+        "iam:PassRole"
       ]
     }
   },

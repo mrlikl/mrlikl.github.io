@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-27T06:24:49.864882Z",
+  "lastUpdated": "2026-10-04T06:40:53.618724Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -1548,7 +1548,7 @@
     },
     {
       "filename": "AWS_CloudWatch_AnomalyDetector.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::CloudWatch::AnomalyDetector"
     },
     {
@@ -1580,6 +1580,11 @@
       "filename": "AWS_CloudWatch_OTelEnrichment.json",
       "hasHandlers": true,
       "typeName": "AWS::CloudWatch::OTelEnrichment"
+    },
+    {
+      "filename": "AWS_CloudWatch_ResourceMetricsConfiguration.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudWatch::ResourceMetricsConfiguration"
     },
     {
       "filename": "AWS_CodeArtifact_Domain.json",
@@ -1623,7 +1628,7 @@
     },
     {
       "filename": "AWS_CodeBuild_ReportGroup.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::CodeBuild::ReportGroup"
     },
     {
@@ -1827,6 +1832,11 @@
       "typeName": "AWS::Comprehend::EntityRecognizer"
     },
     {
+      "filename": "AWS_Comprehend_EntityRecognizerEndpoint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Comprehend::EntityRecognizerEndpoint"
+    },
+    {
       "filename": "AWS_Comprehend_Flywheel.json",
       "hasHandlers": true,
       "typeName": "AWS::Comprehend::Flywheel"
@@ -1873,7 +1883,7 @@
     },
     {
       "filename": "AWS_Config_OrganizationConfigRule.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Config::OrganizationConfigRule"
     },
     {
@@ -2055,6 +2065,11 @@
       "filename": "AWS_Connect_TrafficDistributionGroup.json",
       "hasHandlers": true,
       "typeName": "AWS::Connect::TrafficDistributionGroup"
+    },
+    {
+      "filename": "AWS_Connect_UseCase.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Connect::UseCase"
     },
     {
       "filename": "AWS_Connect_User.json",
@@ -2628,7 +2643,7 @@
     },
     {
       "filename": "AWS_DirectoryService_MicrosoftAD.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::DirectoryService::MicrosoftAD"
     },
     {
@@ -2728,7 +2743,7 @@
     },
     {
       "filename": "AWS_EC2_ClientVpnAuthorizationRule.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::EC2::ClientVpnAuthorizationRule"
     },
     {
@@ -2738,7 +2753,7 @@
     },
     {
       "filename": "AWS_EC2_ClientVpnRoute.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::EC2::ClientVpnRoute"
     },
     {
@@ -3488,7 +3503,7 @@
     },
     {
       "filename": "AWS_EMR_InstanceFleetConfig.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::EMR::InstanceFleetConfig"
     },
     {
@@ -3868,7 +3883,7 @@
     },
     {
       "filename": "AWS_FSx_Volume.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::FSx::Volume"
     },
     {
@@ -4843,7 +4858,7 @@
     },
     {
       "filename": "AWS_IoT_PolicyPrincipalAttachment.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::IoT::PolicyPrincipalAttachment"
     },
     {
@@ -5120,6 +5135,21 @@
       "filename": "AWS_Lambda_Version.json",
       "hasHandlers": true,
       "typeName": "AWS::Lambda::Version"
+    },
+    {
+      "filename": "AWS_Lambda_WebFunction.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Lambda::WebFunction"
+    },
+    {
+      "filename": "AWS_Lambda_WebFunctionEndpoint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Lambda::WebFunctionEndpoint"
+    },
+    {
+      "filename": "AWS_Lambda_WebFunctionRevision.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Lambda::WebFunctionRevision"
     },
     {
       "filename": "AWS_LaunchWizard_Deployment.json",
@@ -5732,6 +5762,11 @@
       "typeName": "AWS::MediaTailor::PrefetchSchedule"
     },
     {
+      "filename": "AWS_MediaTailor_Program.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MediaTailor::Program"
+    },
+    {
       "filename": "AWS_MediaTailor_SourceLocation.json",
       "hasHandlers": true,
       "typeName": "AWS::MediaTailor::SourceLocation"
@@ -6292,6 +6327,11 @@
       "typeName": "AWS::PaymentCryptography::Key"
     },
     {
+      "filename": "AWS_Personalize_Campaign.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Personalize::Campaign"
+    },
+    {
       "filename": "AWS_Personalize_DataDeletionJob.json",
       "hasHandlers": false,
       "typeName": "AWS::Personalize::DataDeletionJob"
@@ -6602,9 +6642,29 @@
       "typeName": "AWS::RAM::Permission"
     },
     {
+      "filename": "AWS_RAM_PermissionAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::RAM::PermissionAssociation"
+    },
+    {
+      "filename": "AWS_RAM_PrincipalAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::RAM::PrincipalAssociation"
+    },
+    {
+      "filename": "AWS_RAM_ResourceAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::RAM::ResourceAssociation"
+    },
+    {
       "filename": "AWS_RAM_ResourceShare.json",
       "hasHandlers": true,
       "typeName": "AWS::RAM::ResourceShare"
+    },
+    {
+      "filename": "AWS_RAM_SourceAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::RAM::SourceAssociation"
     },
     {
       "filename": "AWS_RDS_ClusterSnapshot.json",
@@ -8397,6 +8457,11 @@
       "typeName": "AWS::Transfer::Workflow"
     },
     {
+      "filename": "AWS_Translate_Terminology.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Translate::Terminology"
+    },
+    {
       "filename": "AWS_UXC_AccountCustomization.json",
       "hasHandlers": true,
       "typeName": "AWS::UXC::AccountCustomization"
@@ -8687,6 +8752,16 @@
       "typeName": "AWS::Wisdom::AssistantAssociation"
     },
     {
+      "filename": "AWS_Wisdom_Content.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Wisdom::Content"
+    },
+    {
+      "filename": "AWS_Wisdom_ContentAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Wisdom::ContentAssociation"
+    },
+    {
       "filename": "AWS_Wisdom_KnowledgeBase.json",
       "hasHandlers": true,
       "typeName": "AWS::Wisdom::KnowledgeBase"
@@ -8822,5 +8897,5 @@
       "typeName": ""
     }
   ],
-  "totalSchemas": 1764
+  "totalSchemas": 1779
 }

@@ -3,6 +3,7 @@
     "create": {
       "permissions": [
         "dms:CreateReplicationConfig",
+        "dms:DescribeReplicationConfigs",
         "dms:AddTagsToResource",
         "dms:ListTagsForResource",
         "iam:CreateServiceLinkedRole",

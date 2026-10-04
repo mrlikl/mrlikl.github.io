@@ -1,0 +1,29 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ram:AssociateResourceShare",
+        "ram:GetResourceShares",
+        "ram:GetResourceShareAssociations"
+      ],
+      "timeoutInMinutes": 735
+    },
+    "delete": {
+      "permissions": [
+        "ram:DisassociateResourceShare",
+        "ram:GetResourceShareAssociations"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ram:GetResourceShareAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ram:GetResourceShareAssociations"
+      ]
+    }
+  },
+  "typeName": "AWS::RAM::PrincipalAssociation"
+}

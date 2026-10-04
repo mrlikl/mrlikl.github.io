@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wisdom:CreateContentAssociation",
+        "wisdom:GetContentAssociation",
+        "wisdom:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wisdom:DeleteContentAssociation",
+        "wisdom:GetContentAssociation"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ContentId": {
+            "pattern": "^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$",
+            "type": "string"
+          },
+          "KnowledgeBaseId": {
+            "pattern": "^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "KnowledgeBaseId",
+          "ContentId"
+        ]
+      },
+      "permissions": [
+        "wisdom:ListContentAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wisdom:GetContentAssociation"
+      ]
+    }
+  },
+  "typeName": "AWS::Wisdom::ContentAssociation"
+}

@@ -1,4 +1,43 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "config:PutOrganizationConfigRule",
+        "config:DescribeOrganizationConfigRules",
+        "config:DescribeOrganizationConfigRuleStatuses",
+        "iam:CreateServiceLinkedRole",
+        "organizations:EnableAWSServiceAccess"
+      ],
+      "timeoutInMinutes": 480
+    },
+    "delete": {
+      "permissions": [
+        "config:DescribeOrganizationConfigRuleStatuses",
+        "config:DeleteOrganizationConfigRule"
+      ],
+      "timeoutInMinutes": 480
+    },
+    "list": {
+      "permissions": [
+        "config:DescribeOrganizationConfigRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "config:DescribeOrganizationConfigRules",
+        "config:GetOrganizationCustomRulePolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "config:PutOrganizationConfigRule",
+        "config:DescribeOrganizationConfigRules",
+        "config:DescribeOrganizationConfigRuleStatuses",
+        "iam:CreateServiceLinkedRole",
+        "organizations:EnableAWSServiceAccess"
+      ],
+      "timeoutInMinutes": 480
+    }
+  },
   "typeName": "AWS::Config::OrganizationConfigRule"
 }

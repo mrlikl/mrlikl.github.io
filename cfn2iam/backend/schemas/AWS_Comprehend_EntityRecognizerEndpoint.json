@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "comprehend:CreateEndpoint",
+        "comprehend:DescribeEndpoint",
+        "comprehend:TagResource",
+        "comprehend:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "comprehend:DeleteEndpoint",
+        "comprehend:DescribeEndpoint",
+        "comprehend:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "comprehend:ListEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "comprehend:DescribeEndpoint",
+        "comprehend:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "comprehend:UpdateEndpoint",
+        "comprehend:DescribeEndpoint",
+        "comprehend:TagResource",
+        "comprehend:UntagResource",
+        "comprehend:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::Comprehend::EntityRecognizerEndpoint"
+}

@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lambda:CreateWebFunctionRevision",
+        "lambda:GetWebFunctionRevision",
+        "lambda:PassNetworkConnector",
+        "iam:PassRole",
+        "s3:GetObject",
+        "s3:GetObjectVersion",
+        "kms:CreateGrant",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lambda:DeleteWebFunctionRevision",
+        "lambda:GetWebFunctionRevision",
+        "kms:Decrypt"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "FunctionName": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "FunctionName"
+        ]
+      },
+      "permissions": [
+        "lambda:ListWebFunctionRevisions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lambda:GetWebFunctionRevision",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::Lambda::WebFunctionRevision"
+}

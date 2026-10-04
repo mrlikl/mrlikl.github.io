@@ -95,9 +95,6 @@
     "read": {
       "permissions": [
         "ssm-quicksetup:GetConfigurationManager",
-        "iam:GetRole",
-        "iam:PassRole",
-        "iam:ListRoles",
         "ssm:DescribeDocument",
         "ssm:GetDocument"
       ]

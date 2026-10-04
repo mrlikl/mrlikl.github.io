@@ -1,4 +1,37 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:AttachPrincipalPolicy",
+        "iot:ListAttachedPolicies"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:DetachPrincipalPolicy",
+        "iot:ListAttachedPolicies"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "Principal": {
+            "$ref": "resource-schema.json#/properties/Principal"
+          }
+        },
+        "required": [
+          "Principal"
+        ]
+      },
+      "permissions": [
+        "iot:ListAttachedPolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:ListAttachedPolicies"
+      ]
+    }
+  },
   "typeName": "AWS::IoT::PolicyPrincipalAttachment"
 }

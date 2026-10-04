@@ -1,4 +1,39 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:AuthorizeClientVpnIngress",
+        "ec2:DescribeClientVpnAuthorizationRules"
+      ],
+      "timeoutInMinutes": 130
+    },
+    "delete": {
+      "permissions": [
+        "ec2:RevokeClientVpnIngress",
+        "ec2:DescribeClientVpnAuthorizationRules"
+      ],
+      "timeoutInMinutes": 130
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ClientVpnEndpointId": {
+            "$ref": "resource-schema.json#/properties/ClientVpnEndpointId"
+          }
+        },
+        "required": [
+          "ClientVpnEndpointId"
+        ]
+      },
+      "permissions": [
+        "ec2:DescribeClientVpnAuthorizationRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeClientVpnAuthorizationRules"
+      ]
+    }
+  },
   "typeName": "AWS::EC2::ClientVpnAuthorizationRule"
 }

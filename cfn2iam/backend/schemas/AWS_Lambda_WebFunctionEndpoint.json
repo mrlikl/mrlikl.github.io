@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lambda:CreateWebFunctionEndpoint",
+        "lambda:GetWebFunctionEndpoint"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lambda:DeleteWebFunctionEndpoint",
+        "lambda:GetWebFunctionEndpoint"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "FunctionName": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "FunctionName"
+        ]
+      },
+      "permissions": [
+        "lambda:ListWebFunctionEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lambda:GetWebFunctionEndpoint"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lambda:UpdateWebFunctionEndpoint",
+        "lambda:GetWebFunctionEndpoint"
+      ]
+    }
+  },
+  "typeName": "AWS::Lambda::WebFunctionEndpoint"
+}

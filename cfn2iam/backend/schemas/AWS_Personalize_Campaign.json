@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "personalize:CreateCampaign",
+        "personalize:DescribeCampaign",
+        "personalize:TagResource",
+        "personalize:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "personalize:DeleteCampaign",
+        "personalize:DescribeCampaign"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "personalize:ListCampaigns"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "personalize:DescribeCampaign",
+        "personalize:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "personalize:UpdateCampaign",
+        "personalize:DescribeCampaign",
+        "personalize:TagResource",
+        "personalize:UntagResource",
+        "personalize:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Personalize::Campaign"
+}
