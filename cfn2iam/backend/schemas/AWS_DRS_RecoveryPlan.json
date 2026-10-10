@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "drs:CreateRecoveryPlan",
+        "drs:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "drs:DeleteRecoveryPlan"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "drs:ListRecoveryPlans"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "drs:GetRecoveryPlan",
+        "drs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "drs:UpdateRecoveryPlan",
+        "drs:TagResource",
+        "drs:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::DRS::RecoveryPlan"
+}

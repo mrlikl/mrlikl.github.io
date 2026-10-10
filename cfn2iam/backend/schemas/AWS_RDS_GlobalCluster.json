@@ -4,7 +4,8 @@
       "permissions": [
         "rds:CreateGlobalCluster",
         "rds:DescribeDBClusters",
-        "rds:DescribeGlobalClusters"
+        "rds:DescribeGlobalClusters",
+        "rds:ListTagsForResource"
       ]
     },
     "delete": {
@@ -22,7 +23,8 @@
     },
     "read": {
       "permissions": [
-        "rds:DescribeGlobalClusters"
+        "rds:DescribeGlobalClusters",
+        "rds:ListTagsForResource"
       ]
     },
     "update": {
@@ -30,6 +32,7 @@
         "rds:ModifyGlobalCluster",
         "rds:DescribeGlobalClusters",
         "rds:AddTagsToResource",
+        "rds:ListTagsForResource",
         "rds:RemoveTagsFromResource"
       ]
     }

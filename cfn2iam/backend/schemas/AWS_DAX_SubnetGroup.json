@@ -1,4 +1,31 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "dax:CreateSubnetGroup",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "dax:DeleteSubnetGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "dax:DescribeSubnetGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dax:DescribeSubnetGroups"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "dax:UpdateSubnetGroup"
+      ]
+    }
+  },
   "typeName": "AWS::DAX::SubnetGroup"
 }

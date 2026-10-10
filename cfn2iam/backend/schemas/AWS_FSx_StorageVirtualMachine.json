@@ -1,4 +1,43 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "fsx:CreateStorageVirtualMachine",
+        "fsx:DescribeStorageVirtualMachines",
+        "fsx:TagResource",
+        "kms:Decrypt",
+        "secretsmanager:DescribeSecret",
+        "secretsmanager:GetSecretValue"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "fsx:DeleteStorageVirtualMachine",
+        "fsx:DescribeStorageVirtualMachines"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "fsx:DescribeStorageVirtualMachines"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "fsx:DescribeStorageVirtualMachines",
+        "fsx:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "fsx:DescribeStorageVirtualMachines",
+        "fsx:UpdateStorageVirtualMachine",
+        "fsx:TagResource",
+        "fsx:UntagResource",
+        "kms:Decrypt",
+        "secretsmanager:DescribeSecret",
+        "secretsmanager:GetSecretValue"
+      ]
+    }
+  },
   "typeName": "AWS::FSx::StorageVirtualMachine"
 }

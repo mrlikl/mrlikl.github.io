@@ -6,7 +6,8 @@
         "ec2:DescribeVpcPeeringConnections",
         "ec2:AcceptVpcPeeringConnection",
         "ec2:CreateTags",
-        "sts:AssumeRole"
+        "sts:AssumeRole",
+        "ec2:ModifyVpcPeeringConnectionOptions"
       ]
     },
     "delete": {
@@ -22,14 +23,17 @@
     },
     "read": {
       "permissions": [
-        "ec2:DescribeVpcPeeringConnections"
+        "ec2:DescribeVpcPeeringConnections",
+        "sts:AssumeRole"
       ]
     },
     "update": {
       "permissions": [
         "ec2:CreateTags",
         "ec2:DeleteTags",
-        "ec2:DescribeVpcPeeringConnections"
+        "ec2:DescribeVpcPeeringConnections",
+        "ec2:ModifyVpcPeeringConnectionOptions",
+        "sts:AssumeRole"
       ]
     }
   },

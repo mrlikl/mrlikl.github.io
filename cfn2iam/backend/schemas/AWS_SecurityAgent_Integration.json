@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "securityagent:CreateIntegration",
+        "securityagent:TagResource",
+        "kms:DescribeKey",
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo",
+        "kms:GenerateDataKey",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:CreateGrant"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "securityagent:DeleteIntegration",
+        "securityagent:GetIntegration",
+        "securityagent:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "securityagent:ListIntegrations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "securityagent:GetIntegration",
+        "securityagent:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "securityagent:GetIntegration",
+        "securityagent:TagResource",
+        "securityagent:UntagResource",
+        "securityagent:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SecurityAgent::Integration"
+}

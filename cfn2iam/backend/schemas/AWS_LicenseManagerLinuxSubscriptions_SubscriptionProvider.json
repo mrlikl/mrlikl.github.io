@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "license-manager-linux-subscriptions:RegisterSubscriptionProvider",
+        "license-manager-linux-subscriptions:GetRegisteredSubscriptionProvider",
+        "license-manager-linux-subscriptions:TagResource",
+        "license-manager-linux-subscriptions:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "license-manager-linux-subscriptions:DeregisterSubscriptionProvider",
+        "license-manager-linux-subscriptions:GetRegisteredSubscriptionProvider",
+        "license-manager-linux-subscriptions:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "license-manager-linux-subscriptions:ListRegisteredSubscriptionProviders"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "license-manager-linux-subscriptions:GetRegisteredSubscriptionProvider",
+        "license-manager-linux-subscriptions:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "license-manager-linux-subscriptions:GetRegisteredSubscriptionProvider",
+        "license-manager-linux-subscriptions:TagResource",
+        "license-manager-linux-subscriptions:UntagResource",
+        "license-manager-linux-subscriptions:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::LicenseManagerLinuxSubscriptions::SubscriptionProvider"
+}

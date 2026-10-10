@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ivs:CreateAdConfiguration",
+        "ivs:TagResource",
+        "mediatailor:GetPlaybackConfiguration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ivs:DeleteAdConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ivs:ListAdConfigurations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ivs:GetAdConfiguration",
+        "ivs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ivs:UpdateAdConfiguration",
+        "ivs:TagResource",
+        "ivs:UntagResource",
+        "ivs:ListTagsForResource",
+        "mediatailor:GetPlaybackConfiguration"
+      ]
+    }
+  },
+  "typeName": "AWS::IVS::AdConfiguration"
+}
