@@ -1,4 +1,43 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "elasticmapreduce:AddInstanceFleet",
+        "elasticmapreduce:ListInstanceFleets"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "elasticmapreduce:ModifyInstanceFleet",
+        "elasticmapreduce:ListInstanceFleets"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ClusterId": {
+            "$ref": "resource-schema.json#/properties/ClusterId"
+          }
+        },
+        "required": [
+          "ClusterId"
+        ]
+      },
+      "permissions": [
+        "elasticmapreduce:ListInstanceFleets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "elasticmapreduce:ListInstanceFleets"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "elasticmapreduce:ModifyInstanceFleet",
+        "elasticmapreduce:ListInstanceFleets"
+      ]
+    }
+  },
   "typeName": "AWS::EMR::InstanceFleetConfig"
 }

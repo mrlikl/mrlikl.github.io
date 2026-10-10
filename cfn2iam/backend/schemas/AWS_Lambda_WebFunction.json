@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lambda:CreateWebFunction",
+        "lambda:GetWebFunction",
+        "lambda:TagResource",
+        "lambda:ListTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lambda:DeleteWebFunction",
+        "lambda:GetWebFunction",
+        "lambda:ListTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "lambda:ListWebFunctions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lambda:GetWebFunction",
+        "lambda:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lambda:GetWebFunction",
+        "lambda:TagResource",
+        "lambda:UntagResource",
+        "lambda:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::Lambda::WebFunction"
+}

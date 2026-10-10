@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediatailor:CreateProgram",
+        "mediatailor:DescribeProgram"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediatailor:DeleteProgram",
+        "mediatailor:DescribeProgram"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ChannelName": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ChannelName"
+        ]
+      },
+      "permissions": [
+        "mediatailor:GetChannelSchedule"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediatailor:DescribeProgram"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediatailor:UpdateProgram",
+        "mediatailor:DescribeProgram"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaTailor::Program"
+}

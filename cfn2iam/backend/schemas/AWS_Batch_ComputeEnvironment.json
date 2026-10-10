@@ -7,7 +7,12 @@
         "Batch:DescribeComputeEnvironments",
         "iam:CreateServiceLinkedRole",
         "Iam:PassRole",
+        "Eks:AssociateAccessPolicy",
+        "Eks:CreateAccessEntry",
+        "Eks:DeleteAccessEntry",
+        "Eks:DescribeAccessEntry",
         "Eks:DescribeCluster",
+        "Eks:ListAssociatedAccessPolicies",
         "ec2:DescribeLaunchTemplateVersions",
         "Batch:SetCapacityTags"
       ]
@@ -18,7 +23,12 @@
         "Batch:DescribeComputeEnvironments",
         "Batch:UpdateComputeEnvironment",
         "Iam:PassRole",
+        "Eks:AssociateAccessPolicy",
+        "Eks:CreateAccessEntry",
+        "Eks:DeleteAccessEntry",
+        "Eks:DescribeAccessEntry",
         "Eks:DescribeCluster",
+        "Eks:ListAssociatedAccessPolicies",
         "ec2:DescribeLaunchTemplateVersions"
       ]
     },
@@ -39,7 +49,12 @@
         "Batch:TagResource",
         "Batch:UnTagResource",
         "Iam:PassRole",
+        "Eks:AssociateAccessPolicy",
+        "Eks:CreateAccessEntry",
+        "Eks:DeleteAccessEntry",
+        "Eks:DescribeAccessEntry",
         "Eks:DescribeCluster",
+        "Eks:ListAssociatedAccessPolicies",
         "ec2:DescribeLaunchTemplateVersions",
         "Batch:SetCapacityTags"
       ]

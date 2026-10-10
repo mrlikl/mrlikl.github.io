@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wisdom:CreateContent",
+        "wisdom:GetContent",
+        "wisdom:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wisdom:DeleteContent",
+        "wisdom:GetContent",
+        "wisdom:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "KnowledgeBaseId": {
+            "pattern": "^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "KnowledgeBaseId"
+        ]
+      },
+      "permissions": [
+        "wisdom:ListContents"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wisdom:GetContent",
+        "wisdom:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wisdom:UpdateContent",
+        "wisdom:GetContent",
+        "wisdom:ListTagsForResource",
+        "wisdom:TagResource",
+        "wisdom:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Wisdom::Content"
+}

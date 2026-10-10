@@ -35,7 +35,12 @@
         "gamelift:UpdateContainerGroupDefinition",
         "gamelift:ListTagsForResource",
         "gamelift:TagResource",
-        "gamelift:UntagResource"
+        "gamelift:UntagResource",
+        "ecr:BatchCheckLayerAvailability",
+        "ecr:BatchGetImage",
+        "ecr:GetDownloadUrlForLayer",
+        "ecr:DescribeImages",
+        "ecr:GetAuthorizationToken"
       ]
     }
   },

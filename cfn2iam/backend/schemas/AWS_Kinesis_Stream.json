@@ -52,7 +52,8 @@
         "kinesis:ListTagsForStream",
         "kinesis:ListTagsForResource",
         "kinesis:UpdateMaxRecordSize",
-        "kinesis:UpdateStreamWarmThroughput"
+        "kinesis:UpdateStreamWarmThroughput",
+        "kinesis:UpdateStreamRecordDistributionStrategy"
       ],
       "timeoutInMinutes": 240
     }

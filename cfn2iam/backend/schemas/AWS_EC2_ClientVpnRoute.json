@@ -1,4 +1,39 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateClientVpnRoute",
+        "ec2:DescribeClientVpnRoutes"
+      ],
+      "timeoutInMinutes": 130
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DeleteClientVpnRoute",
+        "ec2:DescribeClientVpnRoutes"
+      ],
+      "timeoutInMinutes": 130
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ClientVpnEndpointId": {
+            "$ref": "resource-schema.json#/properties/ClientVpnEndpointId"
+          }
+        },
+        "required": [
+          "ClientVpnEndpointId"
+        ]
+      },
+      "permissions": [
+        "ec2:DescribeClientVpnRoutes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeClientVpnRoutes"
+      ]
+    }
+  },
   "typeName": "AWS::EC2::ClientVpnRoute"
 }

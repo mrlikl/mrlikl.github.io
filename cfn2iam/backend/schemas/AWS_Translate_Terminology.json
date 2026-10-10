@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "translate:ImportTerminology",
+        "translate:GetTerminology",
+        "translate:TagResource",
+        "translate:ListTagsForResource",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:CreateGrant"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "translate:DeleteTerminology",
+        "translate:GetTerminology"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "translate:ListTerminologies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "translate:GetTerminology",
+        "translate:ListTagsForResource",
+        "kms:Decrypt",
+        "kms:DescribeKey"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "translate:ImportTerminology",
+        "translate:GetTerminology",
+        "translate:ListTagsForResource",
+        "translate:TagResource",
+        "translate:UntagResource",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:CreateGrant"
+      ]
+    }
+  },
+  "typeName": "AWS::Translate::Terminology"
+}

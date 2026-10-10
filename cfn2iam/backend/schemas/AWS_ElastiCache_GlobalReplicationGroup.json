@@ -3,7 +3,9 @@
     "create": {
       "permissions": [
         "elasticache:CreateGlobalReplicationGroup",
-        "elasticache:DescribeGlobalReplicationGroups"
+        "elasticache:DescribeGlobalReplicationGroups",
+        "elasticache:AddTagsToResource",
+        "elasticache:ListTagsForResource"
       ]
     },
     "delete": {
@@ -20,7 +22,8 @@
     },
     "read": {
       "permissions": [
-        "elasticache:DescribeGlobalReplicationGroups"
+        "elasticache:DescribeGlobalReplicationGroups",
+        "elasticache:ListTagsForResource"
       ]
     },
     "update": {
@@ -31,7 +34,10 @@
         "elasticache:IncreaseNodeGroupsInGlobalReplicationGroup",
         "elasticache:DecreaseNodeGroupsInGlobalReplicationGroup",
         "elasticache:DisassociateGlobalReplicationGroup",
-        "elasticache:RebalanceSlotsInGlobalReplicationGroup"
+        "elasticache:RebalanceSlotsInGlobalReplicationGroup",
+        "elasticache:AddTagsToResource",
+        "elasticache:RemoveTagsFromResource",
+        "elasticache:ListTagsForResource"
       ]
     }
   },

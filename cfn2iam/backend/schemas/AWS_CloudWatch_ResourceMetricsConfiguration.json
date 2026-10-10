@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudwatch:CreateResourceMetricsConfiguration",
+        "cloudwatch:GetResourceMetricsConfiguration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudwatch:DeleteResourceMetricsConfiguration",
+        "cloudwatch:GetResourceMetricsConfiguration"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ResourceArn": {
+            "maxLength": 2048,
+            "minLength": 20,
+            "type": "string"
+          }
+        },
+        "required": [
+          "ResourceArn"
+        ]
+      },
+      "permissions": [
+        "cloudwatch:GetResourceMetricsConfiguration"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudwatch:GetResourceMetricsConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudwatch:UpdateResourceMetricsConfiguration",
+        "cloudwatch:GetResourceMetricsConfiguration"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudWatch::ResourceMetricsConfiguration"
+}
