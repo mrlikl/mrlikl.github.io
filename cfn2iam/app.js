@@ -3,6 +3,9 @@ class CFNIAMGenerator {
   constructor() {
     this.schemaCache = new Map();
     this.samRulesCache = new Map();
+    // Keep the empty states from the page so Clear can restore them.
+    this.initialPolicyHTML = document.getElementById("policyOutput").innerHTML;
+    this.initialResourcesHTML = document.getElementById("resourcesOutput").innerHTML;
     this.initializeEventListeners();
   }
 
@@ -29,8 +32,38 @@ class CFNIAMGenerator {
     });
 
     document.querySelectorAll(".tab").forEach((tab) => {
-      tab.addEventListener("click", (e) => this.switchTab(e.target.dataset.tab));
+      tab.addEventListener("click", () => this.switchTab(tab.dataset.tab));
     });
+
+    document.querySelectorAll(".seg").forEach((seg) => {
+      seg.addEventListener("click", () => this.switchMode(seg.dataset.mode));
+    });
+
+    document.getElementById("singleResourceType").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") this.lookupSingleResource();
+    });
+
+    document.querySelectorAll(".chip").forEach((chip) => {
+      chip.addEventListener("click", () => {
+        document.getElementById("singleResourceType").value = chip.dataset.type;
+        this.lookupSingleResource();
+      });
+    });
+
+    document.getElementById("templateInput").addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) this.generatePolicy();
+    });
+  }
+
+  switchMode(mode) {
+    document.querySelector(".workbench").dataset.mode = mode;
+    document.querySelectorAll(".seg").forEach((s) => {
+      const active = s.dataset.mode === mode;
+      s.classList.toggle("active", active);
+      s.setAttribute("aria-selected", String(active));
+    });
+    document.querySelectorAll(".mode").forEach((p) => p.classList.toggle("active", p.dataset.modePanel === mode));
+    if (mode === "lookup") document.getElementById("singleResourceType").focus();
   }
 
   async lookupSingleResource() {
@@ -87,9 +120,7 @@ class CFNIAMGenerator {
         samInfo
       );
 
-      this.showSuccess(
-        `Generated IAM policy for ${resourceType}${samInfo ? ` (expanded to ${expandedResourceTypes.length} resources)` : ""}`
-      );
+      this.reportResult(`Generated the policy for ${resourceType}${samInfo ? ` (${expandedResourceTypes.length} resource types)` : ""}`);
     } catch (error) {
       this.showError(`Error: ${error.message}`);
     } finally {
@@ -98,80 +129,55 @@ class CFNIAMGenerator {
   }
 
   displaySingleResourcePolicyResult(resourceType, policy, expandedResourceTypes, permissions, samInfo) {
-    document.getElementById("policyOutput").innerHTML = `
-    <div class="code-block">
-      <button class="copy-btn" onclick="copyToClipboard('policyOutput')">📋 Copy</button>
-      <pre id="policyJson">${highlightJSON(JSON.stringify(policy, null, 2))}</pre>
-    </div>
-  `;
+    this.renderPolicy(policy, permissions, expandedResourceTypes.length);
 
-    let resourcesHtml = `<h4>Single Resource Lookup: ${resourceType}</h4>`;
-
+    const base = new Set(samInfo ? samInfo.baseResources : []);
+    let resourcesHtml = `<p class="section-title">${escapeHTML(resourceType)}</p>`;
     if (samInfo) {
-      resourcesHtml += `
-        <div class="sam-info">
-          <h5>🚀 SAM Resource Expansion</h5>
-          <p><strong>Base Resources:</strong> ${samInfo.baseResources.join(", ")}</p>
-          <p><strong>Conditional Resources:</strong> ${samInfo.conditionalResources.length} rules</p>
-          <p><strong>Logical ID Templates:</strong> ${samInfo.logicalIdTemplates.join(", ")}</p>
-        </div>
-      `;
+      resourcesHtml += `<p class="hint">Includes every resource this SAM type can create. A real template only needs the ones its properties turn on.</p>`;
     }
-
-    resourcesHtml += `<h4>Expanded to ${expandedResourceTypes.length} resource type(s):</h4>`;
-    resourcesHtml += expandedResourceTypes
-      .map((type) => {
-        const cssClass = samInfo ? "resource-item sam-resource" : "resource-item";
-        return `<div class="${cssClass}">${type}</div>`;
-      })
-      .join("");
+    resourcesHtml += this.renderResourceList(expandedResourceTypes, permissions, (type) =>
+      samInfo ? (base.has(type) ? "always" : "conditional") : ""
+    );
 
     document.getElementById("resourcesOutput").innerHTML = resourcesHtml;
-
-    this.displayPermissionsBreakdown(permissions, resourceType, samInfo, expandedResourceTypes);
     this.switchTab("policy");
   }
 
-  displayPermissionsBreakdown(permissions, resourceType, samInfo, expandedResourceTypes) {
-    const outputElement = document.getElementById("permissionsOutput");
-    if (!outputElement) return;
+  // Shared result rendering for template and single-resource lookups.
+  renderPolicy(policy, permissions, typeCount) {
+    const unresolved = Object.entries(permissions.byResource || {}).filter(([, v]) => v.error);
+    const notice = unresolved.length
+      ? `<div class="notice"><strong>Incomplete policy.</strong> ${unresolved.length} resource type${unresolved.length === 1 ? "" : "s"} couldn't be resolved, so ${unresolved.length === 1 ? "its" : "their"} permissions are missing: ${unresolved.map(([t]) => `<code>${escapeHTML(t)}</code>`).join(", ")}. The CLI can look up private types in your account's CloudFormation registry.</div>`
+      : "";
+    const deleteLabel = document.getElementById("allowDelete").checked ? "delete actions allowed" : "delete actions denied";
 
-    let permissionsHtml = `
-      <div class="permission-group">
-        <h4>📊 Summary for ${resourceType}</h4>
-        <p><strong>Create/Update/Read/List:</strong> ${permissions.allUpdate.length} permissions</p>
-        <p><strong>Delete-only:</strong> ${permissions.allDelete.length} permissions</p>
-        ${samInfo ? `<p><strong>SAM Resource:</strong> Expanded to ${expandedResourceTypes.length} underlying resources</p>` : ""}
+    this.lastUnresolved = unresolved.length;
+    document.getElementById("policyOutput").innerHTML = `
+      ${notice}
+      <div class="policy-summary">
+        <span class="stat"><strong>${permissions.allUpdate.length}</strong> actions allowed</span>
+        <span class="stat"><strong>${permissions.allDelete.length}</strong> ${deleteLabel}</span>
+        <span class="stat"><strong>${typeCount}</strong> resource types</span>
+      </div>
+      <div class="code-block">
+        <button class="copy-btn" type="button" onclick="copyToClipboard('policyOutput')">Copy</button>
+        <pre id="policyJson">${highlightJSON(JSON.stringify(policy, null, 2))}</pre>
       </div>
     `;
+  }
 
-    if (permissions.allUpdate.length > 0) {
-      permissionsHtml += `
-        <div class="permission-group">
-          <h4>✅ Allowed Permissions</h4>
-          <div class="permission-list">
-            ${permissions.allUpdate.map((p) => `<div class="permission-item">${p}</div>`).join("")}
-          </div>
-        </div>
-      `;
-    }
-
-    if (permissions.allDelete.length > 0) {
-      permissionsHtml += `
-        <div class="permission-group">
-          <h4>🗑️ Delete Permissions</h4>
-          <div class="permission-list">
-            ${permissions.allDelete.map((p) => `<div class="permission-item">${p}</div>`).join("")}
-          </div>
-        </div>
-      `;
-    }
-
-    if (permissions.allUpdate.length === 0 && permissions.allDelete.length === 0) {
-      permissionsHtml += `<div class="alert error">No permissions found or schema not available for this resource type.</div>`;
-    }
-
-    outputElement.innerHTML = permissionsHtml;
+  renderResourceList(types, permissions, badgeFor) {
+    const rows = [...types].sort().map((type) => {
+      const info = (permissions.byResource || {})[type];
+      const badge = info && info.error
+        ? `<span class="badge error">not resolved</span>`
+        : badgeFor(type)
+          ? `<span class="badge${badgeFor(type) === "from SAM" ? " sam" : ""}">${badgeFor(type)}</span>`
+          : "";
+      return `<div class="resource-item"><span>${escapeHTML(type)}</span>${badge}</div>`;
+    });
+    return `<div class="resource-list">${rows.join("")}</div>`;
   }
 
   handleFileUpload(event) {
@@ -201,17 +207,10 @@ class CFNIAMGenerator {
   clearAll() {
     document.getElementById("templateInput").value = "";
     document.getElementById("singleResourceType").value = "";
-    document.getElementById("policyOutput").innerHTML = `
-    <div style="padding: 2rem; text-align: center; color: var(--text-secondary);">
-      Click "Generate Policy" to see results...
-    </div>
-  `;
-    document.getElementById("resourcesOutput").innerHTML = "No resources analyzed yet...";
-    const permissionsOutput = document.getElementById("permissionsOutput");
-    if (permissionsOutput) {
-      permissionsOutput.innerHTML = "No permissions analyzed yet...";
-    }
+    document.getElementById("policyOutput").innerHTML = this.initialPolicyHTML;
+    document.getElementById("resourcesOutput").innerHTML = this.initialResourcesHTML;
     this.clearMessages();
+    this.switchTab("policy");
   }
 
   switchTab(tabName) {
@@ -251,9 +250,7 @@ class CFNIAMGenerator {
       const policy = this.generatePolicyDocument(permissions, allowDelete);
 
       this.displayResults(policy, resourceTypes, permissions, samResources);
-      this.showSuccess(
-        `Generated IAM policy for ${resourceTypes.length} resource types${samResources.length > 0 ? ` (${samResources.length} SAM resources)` : ""}`
-      );
+      this.reportResult(`Generated the policy for ${resourceTypes.length} resource types`);
     } catch (error) {
       this.showError(`Error: ${error.message}`);
     } finally {
@@ -409,7 +406,9 @@ class CFNIAMGenerator {
 
       return Array.from(expandedTypes);
     } catch (error) {
-      return [];
+      // No rule for this SAM type: keep the type itself so it shows up as unresolved
+      // instead of silently dropping its permissions.
+      return [samResourceType];
     }
   }
 
@@ -633,35 +632,20 @@ class CFNIAMGenerator {
   }
 
   displayResults(policy, resourceTypes, permissions, samResources) {
-    document.getElementById("policyOutput").innerHTML = `
-    <div class="code-block">
-      <button class="copy-btn" onclick="copyToClipboard('policyOutput')">📋 Copy</button>
-      <pre id="policyJson">${highlightJSON(JSON.stringify(policy, null, 2))}</pre>
-    </div>
-  `;
+    this.renderPolicy(policy, permissions, resourceTypes.length);
 
-    let resourcesHtml = `<h4>Found ${resourceTypes.length} resource types:</h4>`;
-
+    let resourcesHtml = "";
     if (samResources.length > 0) {
-      resourcesHtml += `
-        <div class="sam-info">
-          <h5>🚀 SAM Resources (${samResources.length})</h5>
-          ${samResources.map((sr) => `<div class="resource-item sam-resource">${sr.logicalId}: ${sr.resource.Type}</div>`).join("")}
-        </div>
-      `;
+      resourcesHtml += `<p class="section-title">SAM resources</p>`;
+      resourcesHtml += `<div class="resource-list">${samResources
+        .map((sr) => `<div class="resource-item"><span>${escapeHTML(sr.logicalId)}</span><span class="badge sam">${escapeHTML(sr.resource.Type)}</span></div>`)
+        .join("")}</div>`;
     }
-
-    resourcesHtml += resourceTypes
-      .map((type) => {
-        const isSamExpanded = samResources.some((sr) => sr.resource.Type.startsWith("AWS::Serverless::"));
-        const cssClass = isSamExpanded && !type.startsWith("AWS::Serverless::") ? "resource-item sam-resource" : "resource-item";
-        return `<div class="${cssClass}">${type}</div>`;
-      })
-      .join("");
+    resourcesHtml += `<p class="section-title">Resource types in the policy</p>`;
+    resourcesHtml += this.renderResourceList(resourceTypes, permissions, () => "");
 
     document.getElementById("resourcesOutput").innerHTML = resourcesHtml;
-
-    this.displayPermissionsBreakdown(permissions, "Template Analysis", samResources.length > 0 ? samResources : null, resourceTypes);
+    this.switchTab("policy");
   }
 
   loadExample() {
@@ -779,6 +763,17 @@ class CFNIAMGenerator {
   showLoading(show) {
     document.getElementById("loading").style.display = show ? "block" : "none";
     document.getElementById("generateBtn").disabled = show;
+    document.getElementById("lookupBtn").disabled = show;
+  }
+
+  // After rendering: success, unless some types couldn't be resolved.
+  reportResult(successMessage) {
+    if (this.lastUnresolved) {
+      const n = this.lastUnresolved;
+      this.showError(`The policy is incomplete: ${n} resource type${n === 1 ? "" : "s"} couldn't be resolved`);
+    } else {
+      this.showSuccess(successMessage);
+    }
   }
 
   showError(message) {
@@ -794,8 +789,9 @@ class CFNIAMGenerator {
     const div = document.createElement("div");
     div.className = `alert ${type}`;
     div.textContent = message;
-    document.querySelector(".card").appendChild(div);
-    setTimeout(() => div.remove(), 5000);
+    div.setAttribute("role", type === "error" ? "alert" : "status");
+    document.getElementById("toasts").appendChild(div);
+    setTimeout(() => div.remove(), type === "error" ? 7000 : 3500);
   }
 
   clearMessages() {
@@ -873,13 +869,19 @@ function fallbackCopyToClipboard(text, element) {
 
 function showCopySuccess(element) {
   const btn = element.querySelector(".copy-btn");
-  if (btn) {
-    const originalText = btn.textContent;
-    btn.textContent = "✅ Copied!";
-    setTimeout(() => {
-      btn.textContent = originalText;
-    }, 3000);
-  }
+  if (btn) flashCopied(btn);
+}
+
+function flashCopied(btn) {
+  const originalText = btn.textContent;
+  btn.textContent = "Copied";
+  setTimeout(() => {
+    btn.textContent = originalText;
+  }, 2000);
+}
+
+function escapeHTML(value) {
+  return String(value).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 }
 
 new CFNIAMGenerator();

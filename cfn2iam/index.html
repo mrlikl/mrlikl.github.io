@@ -17,178 +17,162 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CFN2IAM - CloudFormation IAM Policy Generator</title>
+    <title>cfn2iam · Least-privilege IAM policies for CloudFormation and SAM</title>
+    <meta
+      name="description"
+      content="Paste a CloudFormation or SAM template and get the minimal IAM policy it needs to deploy, before the first deploy. Runs in your browser."
+    />
+    <meta property="og:title" content="cfn2iam · Least-privilege IAM for CloudFormation" />
+    <meta
+      property="og:description"
+      content="Get the IAM policy a CloudFormation or SAM stack needs from its template, before you deploy it."
+    />
+    <meta property="og:url" content="https://mrlikl.github.io/cfn2iam/" />
+    <meta property="og:type" content="website" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234f46e5' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/svg%3E"
+    />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <div class="header">
-      <div class="header-content">
-        <h1>
-          ⚡ CFN2IAM
-          <span class="header-description"
-            >- Generate minimal IAM policies for AWS CloudFormation & SAM
-            templates</span
-          >
-        </h1>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="./">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg>
+          </span>
+          cfn2iam
+        </a>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <h1 class="tagline">Least-privilege deploy policies, before you deploy</h1>
+        <nav class="topnav">
+          <a href="https://pypi.org/project/cfn2iam/" target="_blank" rel="noopener">CLI</a>
+          <a class="btn btn-secondary btn-sm" href="https://github.com/mrlikl/cfn2iam" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z" /></svg>
+            GitHub
+          </a>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <div class="container">
-      <div class="disclaimer">
-        <p>
-          <strong>⚠️ Disclaimer:</strong> This tool generates policies based on
-          CloudFormation resource schemas which are not available for all
-          resource types. Generated policies may include broader permissions
-          than needed and require manual review before production use.
-        </p>
-      </div>
-
-      <!-- Quick Resource Lookup -->
-      <div class="quick-lookup-card">
-        <h3>🔍 Quick Resource Lookup</h3>
-        <div class="resource-input-group">
-          <div class="input-group">
-            <label for="singleResourceType">Resource Type</label>
-            <input
-              type="text"
-              id="singleResourceType"
-              placeholder="e.g., AWS::S3::Bucket or AWS::Serverless::Function"
-            />
-          </div>
-          <button id="lookupBtn" class="btn btn-accent">
-            🔍 Lookup Permissions
-          </button>
-        </div>
-        <div
-          id="singleResourceResult"
-          class="single-resource-result"
-          style="display: none"
-        ></div>
-      </div>
-
-      <div class="main-grid">
-        <div class="card">
-          <h3>📄 CloudFormation / SAM Template</h3>
-
-          <div class="file-upload" id="fileUpload">
-            <button
-              class="btn btn-primary"
-              onclick="document.getElementById('fileInput').click()"
-            >
-              📂 Choose File
-            </button>
-            <span class="upload-text">
-              or Drag & drop your CloudFormation or SAM template (supports
-              .json, .yaml, .yml or .template) here
-            </span>
-            <input
-              type="file"
-              id="fileInput"
-              accept=".json,.yaml,.yml,.template"
-              style="display: none"
-            />
+    <main>
+      <section class="workbench" id="workbench">
+        <div class="panel card">
+          <div class="panel-header">
+            <div class="segmented" role="tablist" aria-label="Input">
+              <button class="seg active" type="button" role="tab" aria-selected="true" data-mode="template">Template</button>
+              <button class="seg" type="button" role="tab" aria-selected="false" data-mode="lookup">Single resource</button>
+            </div>
+            <div class="panel-actions mode-template-only">
+              <span class="muted">Example</span>
+              <button id="loadExampleBtn" class="btn btn-ghost btn-sm" type="button">CloudFormation</button>
+              <button id="loadSamExampleBtn" class="btn btn-ghost btn-sm" type="button">SAM</button>
+            </div>
           </div>
 
-          <textarea
-            id="templateInput"
-            class="textarea"
-            placeholder="Or paste your CloudFormation/SAM template (JSON or YAML) here..."
-          ></textarea>
+          <div class="mode active" data-mode-panel="template">
+            <div class="dropzone" id="fileUpload">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="17 8 12 3 7 8" /><line x1="12" y1="3" x2="12" y2="15" /></svg>
+              <span>
+                <button class="link" type="button" onclick="document.getElementById('fileInput').click()">Upload a file</button>
+                or drag it here
+              </span>
+              <span class="hint">.json, .yaml, .yml or .template, up to 1 MB</span>
+              <input type="file" id="fileInput" accept=".json,.yaml,.yml,.template" hidden />
+            </div>
+            <textarea
+              id="templateInput"
+              class="editor"
+              spellcheck="false"
+              placeholder="Or paste a CloudFormation or SAM template (JSON or YAML)"
+            ></textarea>
+          </div>
 
-          <div class="controls">
-            <div class="control-row">
-              <button id="generateBtn" class="btn btn-primary flex-grow">
-                ⚡ Generate Policy
-              </button>
-              <div class="checkbox-group flex-grow justify-center">
-                <input type="checkbox" id="allowDelete" />
-                <label for="allowDelete">Allow delete permissions</label>
-              </div>
+          <div class="mode" data-mode-panel="lookup">
+            <label class="field-label" for="singleResourceType">Resource type</label>
+            <div class="inline-form">
+              <input type="text" id="singleResourceType" placeholder="AWS::S3::Bucket" autocomplete="off" spellcheck="false" />
+              <button id="lookupBtn" class="btn btn-primary" type="button">Look up</button>
             </div>
-            <div class="control-row">
-              <button id="loadExampleBtn" class="btn btn-secondary flex-grow">
-                📋 Load Example
-              </button>
-              <button
-                id="loadSamExampleBtn"
-                class="btn btn-secondary flex-grow"
-              >
-                🚀 Load SAM Example
-              </button>
+            <p class="hint">
+              Any CloudFormation type. SAM types such as
+              <code>AWS::Serverless::Function</code> include everything they can
+              create.
+            </p>
+            <div class="chips">
+              <span class="muted">Try</span>
+              <button class="chip" type="button" data-type="AWS::S3::Bucket">AWS::S3::Bucket</button>
+              <button class="chip" type="button" data-type="AWS::Lambda::Function">AWS::Lambda::Function</button>
+              <button class="chip" type="button" data-type="AWS::DynamoDB::Table">AWS::DynamoDB::Table</button>
+              <button class="chip" type="button" data-type="AWS::Serverless::Function">AWS::Serverless::Function</button>
             </div>
-            <div class="control-row">
-              <button id="clearBtn" class="btn btn-secondary full-width">
-                🗑️ Clear
-              </button>
+          </div>
+
+          <div class="panel-footer">
+            <label class="switch">
+              <input type="checkbox" id="allowDelete" />
+              <span class="switch-track" aria-hidden="true"></span>
+              Allow deletes
+            </label>
+            <div class="footer-buttons">
+              <button id="clearBtn" class="btn btn-ghost" type="button">Clear</button>
+              <button id="generateBtn" class="btn btn-primary mode-template-only" type="button">Generate policy</button>
             </div>
           </div>
 
           <div class="loading" id="loading">
-            <div class="spinner"></div>
-            <p>Analyzing CloudFormation/SAM template...</p>
+            <div class="loading-inner"><span class="spinner"></span>Resolving resource schemas…</div>
           </div>
         </div>
 
-        <div class="card">
-          <h3>📋 Generated IAM Policy</h3>
-
-          <div class="output-tabs">
-            <div class="tab active" data-tab="policy">Policy</div>
-            <div class="tab" data-tab="resources">Resources</div>
+        <div class="panel card output-panel">
+          <div class="panel-header">
+            <div class="tabs" role="tablist" aria-label="Output">
+              <button class="tab active" type="button" role="tab" data-tab="policy">Policy</button>
+              <button class="tab" type="button" role="tab" data-tab="resources">Resources</button>
+            </div>
           </div>
 
           <div id="policy-content" class="output-content active">
             <div id="policyOutput">
-              <div
-                style="
-                  padding: 2rem;
-                  text-align: center;
-                  color: var(--text-secondary);
-                "
-              >
-                Click "Generate Policy" to see results...
+              <div class="empty">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg>
+                <p class="empty-title">Your policy will appear here</p>
+                <p class="empty-text">Paste a template or load an example, then generate.</p>
               </div>
             </div>
           </div>
 
           <div id="resources-content" class="output-content">
-            <div id="resourcesOutput">No resources analyzed yet...</div>
+            <div id="resourcesOutput">
+              <div class="empty">
+                <p class="empty-title">No resources yet</p>
+                <p class="empty-text">Resource types from your template are listed here.</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <!-- External Dependencies -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
-
-    <!-- Application Scripts -->
-    <script src="app.js"></script>
+    <div class="toasts" id="toasts" aria-live="polite"></div>
 
     <footer class="footer">
-      <p>
-        vibe coded with
-        <a href="https://claude.ai" target="_blank">Claude</a>,
-        <a href="https://github.com/aws/amazon-q-developer-cli" target="_blank"
-          >Q</a
-        >
-        and
-        <a href="https://github.com/google-gemini/gemini-cli" target="_blank"
-          >Gemini</a
-        >
-
-        ⚡ by <a href="https://github.com/mrlikl" target="_blank">mrlikl</a>
-      </p>
+      Vibe coded by <a href="https://github.com/mrlikl" target="_blank" rel="noopener">mrlikl</a> with Claude ❤️
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
