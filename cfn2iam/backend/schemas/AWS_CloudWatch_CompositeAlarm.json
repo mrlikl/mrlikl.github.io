@@ -4,7 +4,8 @@
       "permissions": [
         "cloudwatch:DescribeAlarms",
         "cloudwatch:PutCompositeAlarm",
-        "cloudwatch:TagResource"
+        "cloudwatch:TagResource",
+        "cloudwatch:ListTagsForResource"
       ]
     },
     "delete": {
@@ -29,7 +30,8 @@
         "cloudwatch:DescribeAlarms",
         "cloudwatch:PutCompositeAlarm",
         "cloudwatch:TagResource",
-        "cloudwatch:UntagResource"
+        "cloudwatch:UntagResource",
+        "cloudwatch:ListTagsForResource"
       ]
     }
   },

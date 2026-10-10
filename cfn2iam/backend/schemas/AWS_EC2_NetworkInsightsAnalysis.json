@@ -5,6 +5,8 @@
         "ec2:CreateTags",
         "ec2:StartNetworkInsightsAnalysis",
         "ec2:GetTransitGatewayRouteTablePropagations",
+        "ec2:GetTransitGatewayPolicyTableAssociations",
+        "ec2:GetTransitGatewayPolicyTableEntries",
         "ec2:SearchTransitGatewayRoutes",
         "ec2:Describe*",
         "ec2:GetManagedPrefixListEntries",

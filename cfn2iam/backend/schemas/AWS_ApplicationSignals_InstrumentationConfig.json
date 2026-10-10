@@ -1,0 +1,67 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "application-signals:CreateInstrumentationConfiguration",
+        "application-signals:GetInstrumentationConfiguration",
+        "application-signals:TagResource",
+        "application-signals:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "application-signals:DeleteInstrumentationConfiguration",
+        "application-signals:GetInstrumentationConfiguration",
+        "application-signals:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "Environment": {
+            "maxLength": 255,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9:/+=,.@_-]+$",
+            "type": "string"
+          },
+          "InstrumentationType": {
+            "enum": [
+              "BREAKPOINT",
+              "PROBE"
+            ],
+            "type": "string"
+          },
+          "Service": {
+            "maxLength": 255,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9:/+=,.@_-]+$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "Service",
+          "Environment",
+          "InstrumentationType"
+        ]
+      },
+      "permissions": [
+        "application-signals:ListInstrumentationConfigurations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "application-signals:GetInstrumentationConfiguration",
+        "application-signals:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "application-signals:GetInstrumentationConfiguration",
+        "application-signals:TagResource",
+        "application-signals:UntagResource",
+        "application-signals:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::ApplicationSignals::InstrumentationConfig"
+}

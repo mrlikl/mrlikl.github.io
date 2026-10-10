@@ -1,4 +1,40 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "fsx:CreateSnapshot",
+        "fsx:TagResource",
+        "fsx:DescribeSnapshots"
+      ],
+      "timeoutInMinutes": 490
+    },
+    "delete": {
+      "permissions": [
+        "fsx:DeleteSnapshot",
+        "fsx:DescribeSnapshots"
+      ],
+      "timeoutInMinutes": 70
+    },
+    "list": {
+      "permissions": [
+        "fsx:DescribeSnapshots"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "fsx:DescribeSnapshots",
+        "fsx:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "fsx:UpdateSnapshot",
+        "fsx:TagResource",
+        "fsx:UntagResource",
+        "fsx:DescribeSnapshots"
+      ],
+      "timeoutInMinutes": 490
+    }
+  },
   "typeName": "AWS::FSx::Snapshot"
 }

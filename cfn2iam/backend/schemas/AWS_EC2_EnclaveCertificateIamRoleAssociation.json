@@ -13,6 +13,16 @@
       ]
     },
     "list": {
+      "handlerSchema": {
+        "properties": {
+          "CertificateArn": {
+            "$ref": "resource-schema.json#/properties/CertificateArn"
+          }
+        },
+        "required": [
+          "CertificateArn"
+        ]
+      },
       "permissions": [
         "ec2:GetAssociatedEnclaveCertificateIamRoles"
       ]

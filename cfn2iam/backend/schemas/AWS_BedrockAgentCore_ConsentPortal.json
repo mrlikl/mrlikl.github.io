@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock-agentcore:CreateConsentPortal",
+        "bedrock-agentcore:GetConsentPortal",
+        "bedrock-agentcore:GetGateway",
+        "bedrock-agentcore:GetOauth2CredentialProvider",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock-agentcore:DeleteConsentPortal",
+        "bedrock-agentcore:GetConsentPortal",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "bedrock-agentcore:ListConsentPortals"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock-agentcore:GetConsentPortal",
+        "bedrock-agentcore:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock-agentcore:UpdateConsentPortal",
+        "bedrock-agentcore:GetConsentPortal",
+        "bedrock-agentcore:GetGateway",
+        "bedrock-agentcore:GetOauth2CredentialProvider",
+        "bedrock-agentcore:TagResource",
+        "bedrock-agentcore:UntagResource",
+        "bedrock-agentcore:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::BedrockAgentCore::ConsentPortal"
+}

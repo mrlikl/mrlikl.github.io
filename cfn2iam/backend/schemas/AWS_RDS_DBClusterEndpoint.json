@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rds:CreateDBClusterEndpoint",
+        "rds:DescribeDBClusterEndpoints",
+        "rds:AddTagsToResource",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rds:DeleteDBClusterEndpoint",
+        "rds:DescribeDBClusterEndpoints"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rds:DescribeDBClusterEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rds:DescribeDBClusterEndpoints",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rds:ModifyDBClusterEndpoint",
+        "rds:DescribeDBClusterEndpoints",
+        "rds:AddTagsToResource",
+        "rds:RemoveTagsFromResource",
+        "rds:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::RDS::DBClusterEndpoint"
+}

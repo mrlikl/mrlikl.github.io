@@ -3,6 +3,9 @@
     "create": {
       "permissions": [
         "servicecatalog:provisionProduct",
+        "servicecatalog:TagResource",
+        "servicecatalog:describeProvisionedProduct",
+        "servicecatalog:describeRecord",
         "cloudformation:CreateStack"
       ],
       "timeoutInMinutes": 720
@@ -14,15 +17,29 @@
         "cloudformation:DeleteStack"
       ]
     },
+    "list": {
+      "permissions": [
+        "servicecatalog:ScanProvisionedProducts"
+      ]
+    },
     "read": {
       "permissions": [
         "servicecatalog:describeProvisionedProduct",
-        "cloudformation:ListStacks"
+        "servicecatalog:describeRecord",
+        "servicecatalog:DescribeProduct",
+        "servicecatalog:ListTagsForResource",
+        "cloudformation:ListStacks",
+        "cloudformation:DescribeStacks"
       ]
     },
     "update": {
       "permissions": [
         "servicecatalog:updateProvisionedProduct",
+        "servicecatalog:TagResource",
+        "servicecatalog:UntagResource",
+        "servicecatalog:describeProvisionedProduct",
+        "servicecatalog:describeRecord",
+        "servicecatalog:DescribeProduct",
         "cloudformation:UpdateStack"
       ],
       "timeoutInMinutes": 720

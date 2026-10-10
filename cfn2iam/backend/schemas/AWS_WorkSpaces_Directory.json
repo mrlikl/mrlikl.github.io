@@ -1,0 +1,74 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "workspaces:RegisterWorkspaceDirectory",
+        "workspaces:DescribeWorkspaceDirectories",
+        "workspaces:CreateTags",
+        "workspaces:ModifyWorkspaceCreationProperties",
+        "workspaces:ModifyWorkspaceAccessProperties",
+        "workspaces:ModifySelfservicePermissions",
+        "workspaces:ModifySamlProperties",
+        "workspaces:ModifyCertificateBasedAuthProperties",
+        "workspaces:ModifyStreamingProperties",
+        "workspaces:ModifyEndpointEncryptionMode",
+        "workspaces:AssociateIpGroups",
+        "ec2:CreateSecurityGroup",
+        "ec2:CreateTags",
+        "ec2:DescribeAvailabilityZones",
+        "ec2:DescribeInternetGateways",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeRouteTables",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeVpcEndpoints",
+        "iam:GetRole",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "workspaces:DeregisterWorkspaceDirectory",
+        "workspaces:DescribeWorkspaceDirectories",
+        "workspaces:DescribeTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "workspaces:DescribeWorkspaceDirectories"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "workspaces:DescribeWorkspaceDirectories",
+        "workspaces:DescribeTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "workspaces:CreateTags",
+        "workspaces:DeleteTags",
+        "workspaces:DescribeTags",
+        "workspaces:DescribeWorkspaceDirectories",
+        "workspaces:ModifyWorkspaceCreationProperties",
+        "workspaces:ModifyWorkspaceAccessProperties",
+        "workspaces:ModifySelfservicePermissions",
+        "workspaces:ModifySamlProperties",
+        "workspaces:ModifyCertificateBasedAuthProperties",
+        "workspaces:ModifyStreamingProperties",
+        "workspaces:ModifyEndpointEncryptionMode",
+        "workspaces:AssociateIpGroups",
+        "workspaces:DisassociateIpGroups",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeVpcEndpoints",
+        "iam:GetRole",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::WorkSpaces::Directory"
+}

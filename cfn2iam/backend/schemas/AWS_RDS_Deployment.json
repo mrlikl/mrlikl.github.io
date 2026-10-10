@@ -1,0 +1,53 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rds:CreateBlueGreenDeployment",
+        "rds:DescribeBlueGreenDeployments",
+        "rds:AddTagsToResource",
+        "rds:CreateDBInstanceReadReplica",
+        "rds:CreateDBCluster",
+        "rds:CreateDBInstance",
+        "rds:CreateDBClusterEndpoint",
+        "rds:CreateGlobalCluster",
+        "iam:PassRole"
+      ],
+      "timeoutInMinutes": 540
+    },
+    "delete": {
+      "permissions": [
+        "rds:DescribeBlueGreenDeployments",
+        "rds:DeleteBlueGreenDeployment",
+        "rds:DeleteDBInstance",
+        "rds:DeleteDBCluster",
+        "rds:DeleteDBClusterEndpoint",
+        "rds:DeleteGlobalCluster",
+        "rds:PromoteReadReplica",
+        "rds:PromoteReadReplicaDBCluster",
+        "rds:RemoveFromGlobalCluster",
+        "rds:ListTagsForResource"
+      ],
+      "timeoutInMinutes": 540
+    },
+    "list": {
+      "permissions": [
+        "rds:DescribeBlueGreenDeployments"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rds:DescribeBlueGreenDeployments",
+        "rds:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rds:DescribeBlueGreenDeployments",
+        "rds:AddTagsToResource",
+        "rds:RemoveTagsFromResource",
+        "rds:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::RDS::Deployment"
+}
