@@ -1,43 +1,71 @@
 {
   "version": "1.0",
   "resource_type": "AWS::Serverless::StateMachine",
-  "base_resources": ["AWS::StepFunctions::StateMachine"],
+  "base_resources": [
+    "AWS::StepFunctions::StateMachine"
+  ],
   "conditional_resources": [
     {
-      "condition": { "path": "properties.Role", "op": "is_null" },
-      "resources": ["AWS::IAM::Role"]
+      "condition": {"path": "properties.Role", "op": "is_null"},
+      "resources": [
+        "AWS::IAM::Role"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Type",
-        "op": "any_eq",
-        "value": "Api"
-      },
-      "resources": ["AWS::ApiGateway::RestApi"]
+      "condition": {"path": "properties.AutoPublishAlias", "op": "truthy"},
+      "resources": [
+        "AWS::StepFunctions::StateMachineVersion",
+        "AWS::StepFunctions::StateMachineAlias"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Type",
-        "op": "any_eq",
-        "value": "EventBridgeRule"
-      },
-      "resources": ["AWS::Events::Rule"]
+      "condition": {"path": "properties.DeploymentPreference", "op": "truthy"},
+      "resources": [
+        "AWS::StepFunctions::StateMachineVersion",
+        "AWS::StepFunctions::StateMachineAlias"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Type",
-        "op": "any_eq",
-        "value": "Schedule"
-      },
-      "resources": ["AWS::Events::Rule"]
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "Api"},
+      "resources": [
+        "AWS::ApiGateway::RestApi",
+        "AWS::IAM::Role"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Type",
-        "op": "any_eq",
-        "value": "CloudWatchEvents"
-      },
-      "resources": ["AWS::Events::Rule"]
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "Schedule"},
+      "resources": [
+        "AWS::Events::Rule",
+        "AWS::IAM::Role"
+      ]
+    },
+    {
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "CloudWatchEvents"},
+      "resources": [
+        "AWS::Events::Rule",
+        "AWS::IAM::Role"
+      ]
+    },
+    {
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "EventBridgeRule"},
+      "resources": [
+        "AWS::Events::Rule",
+        "AWS::IAM::Role"
+      ]
+    },
+    {
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "ScheduleV2"},
+      "resources": [
+        "AWS::Scheduler::Schedule",
+        "AWS::IAM::Role"
+      ]
+    },
+    {
+      "condition": {"path": "properties.Events.*.Properties.DeadLetterConfig.Type", "op": "any_eq", "value": "SQS"},
+      "resources": [
+        "AWS::SQS::Queue",
+        "AWS::SQS::QueuePolicy"
+      ]
     }
   ],
   "logical_id_templates": [

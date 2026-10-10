@@ -2,25 +2,21 @@
   "version": "1.0",
   "resource_type": "AWS::Serverless::HttpApi",
   "base_resources": [
-    "AWS::ApiGatewayV2::Api"
+    "AWS::ApiGatewayV2::Api",
+    "AWS::ApiGatewayV2::Stage"
   ],
   "conditional_resources": [
     {
-      "condition": { "path": "properties.StageName", "op": "truthy" },
+      "condition": {"path": "properties.Domain.DomainName", "op": "truthy"},
       "resources": [
-        "AWS::ApiGatewayV2::Stage"
+        "AWS::ApiGatewayV2::DomainName",
+        "AWS::ApiGatewayV2::ApiMapping"
       ]
     },
     {
-      "condition": { "path": "properties.StageName", "op": "is_null" },
+      "condition": {"path": "properties.Domain.Route53", "op": "truthy"},
       "resources": [
-        "AWS::ApiGatewayV2::Stage"
-      ]
-    },
-    {
-      "condition": { "path": "properties.Domain.DomainName", "op": "truthy" },
-      "resources": [
-        "AWS::ApiGatewayV2::DomainName"
+        "AWS::Route53::RecordSetGroup"
       ]
     }
   ],

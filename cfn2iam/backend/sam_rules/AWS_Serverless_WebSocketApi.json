@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "resource_type": "AWS::Serverless::WebSocketApi",
+  "base_resources": [
+    "AWS::ApiGatewayV2::Api",
+    "AWS::ApiGatewayV2::Stage",
+    "AWS::ApiGatewayV2::Route",
+    "AWS::ApiGatewayV2::Integration",
+    "AWS::Lambda::Permission"
+  ],
+  "conditional_resources": [
+    {
+      "condition": {"path": "properties.Auth.AuthType", "op": "any_eq", "value": "CUSTOM"},
+      "resources": [
+        "AWS::ApiGatewayV2::Authorizer"
+      ]
+    },
+    {
+      "condition": {"path": "properties.Domain.DomainName", "op": "truthy"},
+      "resources": [
+        "AWS::ApiGatewayV2::DomainName",
+        "AWS::ApiGatewayV2::ApiMapping"
+      ]
+    },
+    {
+      "condition": {"path": "properties.Domain.Route53", "op": "truthy"},
+      "resources": [
+        "AWS::Route53::RecordSetGroup"
+      ]
+    }
+  ]
+}

@@ -2,67 +2,49 @@
   "version": "1.0",
   "resource_type": "AWS::Serverless::GraphQLApi",
   "base_resources": [
-    "AWS::AppSync::DataSource",
-    "AWS::AppSync::FunctionConfiguration",
     "AWS::AppSync::GraphQLApi",
     "AWS::AppSync::GraphQLSchema",
+    "AWS::AppSync::DataSource",
+    "AWS::AppSync::FunctionConfiguration",
     "AWS::AppSync::Resolver"
   ],
   "conditional_resources": [
     {
-      "condition": {
-        "path": "properties.Domain.DomainName",
-        "op": "truthy"
-      },
+      "condition": {"path": "properties.DomainName", "op": "truthy"},
       "resources": [
         "AWS::AppSync::DomainName",
         "AWS::AppSync::DomainNameApiAssociation"
       ]
     },
     {
-      "condition": {
-        "path": "properties.AuthenticationType",
-        "op": "any_eq",
-        "value": "API_KEY"
-      },
+      "condition": {"path": "properties.Auth.Type", "op": "any_eq", "value": "API_KEY"},
       "resources": [
         "AWS::AppSync::ApiKey"
       ]
     },
     {
-      "condition": {
-        "path": "properties.ApiKeys",
-        "op": "truthy"
-      },
+      "condition": {"path": "properties.ApiKeys", "op": "truthy"},
       "resources": [
         "AWS::AppSync::ApiKey"
       ]
     },
     {
-      "condition": {
-        "path": "properties.ApiCache",
-        "op": "truthy"
-      },
+      "condition": {"path": "properties.Cache", "op": "truthy"},
       "resources": [
         "AWS::AppSync::ApiCache"
       ]
     },
     {
-      "condition": {
-        "path": "properties.ApiCaching",
-        "op": "truthy"
-      },
+      "condition": {"path": "properties.Logging", "op": "truthy"},
       "resources": [
-        "AWS::AppSync::ApiCache"
+        "AWS::IAM::Role"
       ]
     },
     {
-      "condition": {
-        "path": "properties.Connectors",
-        "op": "truthy"
-      },
+      "condition": {"path": "properties.DataSources", "op": "truthy"},
       "resources": [
-        "AWS::Serverless::Connector"
+        "AWS::IAM::Role",
+        "AWS::IAM::ManagedPolicy"
       ]
     }
   ],

@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "resource_type": "AWS::Serverless::NetworkConnector",
+  "base_resources": [
+    "AWS::Lambda::NetworkConnector"
+  ],
+  "conditional_resources": [
+    {
+      "condition": {"path": "properties.OperatorRole", "op": "is_null"},
+      "resources": [
+        "AWS::IAM::Role"
+      ]
+    }
+  ]
+}

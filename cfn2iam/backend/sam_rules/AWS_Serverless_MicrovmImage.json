@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "resource_type": "AWS::Serverless::MicrovmImage",
+  "base_resources": [
+    "AWS::Lambda::MicrovmImage"
+  ],
+  "conditional_resources": [
+    {
+      "condition": {"path": "properties.BuildRoleArn", "op": "is_null"},
+      "resources": [
+        "AWS::IAM::Role"
+      ]
+    }
+  ]
+}

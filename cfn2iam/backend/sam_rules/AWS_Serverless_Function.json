@@ -1,194 +1,209 @@
 {
   "version": "1.0",
   "resource_type": "AWS::Serverless::Function",
-  "base_resources": ["AWS::Lambda::Function"],
+  "base_resources": [
+    "AWS::Lambda::Function"
+  ],
   "conditional_resources": [
     {
-      "condition": { "path": "properties.AutoPublishAlias", "op": "truthy" },
-      "resources": ["AWS::Lambda::Alias", "AWS::Lambda::Version"]
-    },
-    {
-      "condition": { "path": "properties.Role", "op": "is_null" },
-      "resources": ["AWS::IAM::Role"]
-    },
-    {
-      "condition": {
-        "path": "properties.DeploymentPreference",
-        "op": "truthy"
-      },
+      "condition": {"path": "properties.Role", "op": "is_null"},
       "resources": [
-        "AWS::CodeDeploy::Application",
-        "AWS::CodeDeploy::DeploymentGroup"
+        "AWS::IAM::Role"
       ]
     },
     {
-      "condition": {
-        "path": "properties.DeploymentPreference.Role",
-        "op": "is_null"
-      },
-      "resources": ["AWS::IAM::Role"]
+      "condition": {"path": "properties.AutoPublishAlias", "op": "truthy"},
+      "resources": [
+        "AWS::Lambda::Alias",
+        "AWS::Lambda::Version"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Type",
-        "op": "any_eq",
-        "value": "Api"
-      },
-      "resources": ["AWS::ApiGateway::Method"]
+      "condition": {"path": "properties.DeploymentPreference", "op": "truthy"},
+      "resources": [
+        "AWS::CodeDeploy::Application",
+        "AWS::CodeDeploy::DeploymentGroup",
+        "AWS::IAM::Role"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Properties.RestApiId",
-        "op": "is_null"
-      },
-      "resources": ["AWS::ApiGateway::RestApi"]
+      "condition": {"path": "properties.FunctionUrlConfig", "op": "truthy"},
+      "resources": [
+        "AWS::Lambda::Url"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Type",
-        "op": "any_eq",
-        "value": "HttpApi"
-      },
-      "resources": ["AWS::ApiGatewayV2::Api"]
+      "condition": {"path": "properties.FunctionUrlConfig.AuthType", "op": "any_eq", "value": "NONE"},
+      "resources": [
+        "AWS::Lambda::Permission"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Properties.ApiId",
-        "op": "is_null"
-      },
-      "resources": ["AWS::ApiGatewayV2::Api"]
+      "condition": {"path": "properties.EventInvokeConfig", "op": "truthy"},
+      "resources": [
+        "AWS::Lambda::EventInvokeConfig"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Type",
-        "op": "any_eq",
-        "value": "DynamoDB"
-      },
-      "resources": ["AWS::Lambda::EventSourceMapping"]
+      "condition": {"path": "properties.EventInvokeConfig.DestinationConfig.OnSuccess.Type", "op": "any_eq", "value": "SNS"},
+      "resources": [
+        "AWS::SNS::Topic"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Type",
-        "op": "any_eq",
-        "value": "Kinesis"
-      },
-      "resources": ["AWS::Lambda::EventSourceMapping"]
+      "condition": {"path": "properties.EventInvokeConfig.DestinationConfig.OnFailure.Type", "op": "any_eq", "value": "SNS"},
+      "resources": [
+        "AWS::SNS::Topic"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Type",
-        "op": "any_eq",
-        "value": "MQ"
-      },
-      "resources": ["AWS::Lambda::EventSourceMapping"]
+      "condition": {"path": "properties.EventInvokeConfig.DestinationConfig.OnSuccess.Type", "op": "any_eq", "value": "SQS"},
+      "resources": [
+        "AWS::SQS::Queue"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Type",
-        "op": "any_eq",
-        "value": "MSK"
-      },
-      "resources": ["AWS::Lambda::EventSourceMapping"]
+      "condition": {"path": "properties.EventInvokeConfig.DestinationConfig.OnFailure.Type", "op": "any_eq", "value": "SQS"},
+      "resources": [
+        "AWS::SQS::Queue"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Type",
-        "op": "any_eq",
-        "value": "SQS"
-      },
-      "resources": ["AWS::Lambda::EventSourceMapping"]
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "Api"},
+      "resources": [
+        "AWS::ApiGateway::RestApi",
+        "AWS::Lambda::Permission"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Type",
-        "op": "any_eq",
-        "value": "EventBridgeRule"
-      },
-      "resources": ["AWS::Events::Rule"]
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "HttpApi"},
+      "resources": [
+        "AWS::ApiGatewayV2::Api",
+        "AWS::Lambda::Permission"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Type",
-        "op": "any_eq",
-        "value": "Schedule"
-      },
-      "resources": ["AWS::Events::Rule"]
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "DynamoDB"},
+      "resources": [
+        "AWS::Lambda::EventSourceMapping"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Type",
-        "op": "any_eq",
-        "value": "CloudWatchEvents"
-      },
-      "resources": ["AWS::Events::Rule"]
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "Kinesis"},
+      "resources": [
+        "AWS::Lambda::EventSourceMapping"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.Events.*.Type",
-        "op": "any_eq",
-        "value": "IoTRule"
-      },
-      "resources": ["AWS::IoT::TopicRule"]
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "MQ"},
+      "resources": [
+        "AWS::Lambda::EventSourceMapping"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.EventInvokeConfig.DestinationConfig.OnSuccess.Type",
-        "op": "any_eq",
-        "value": "SNS"
-      },
-      "resources": ["AWS::Lambda::EventInvokeConfig"]
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "MSK"},
+      "resources": [
+        "AWS::Lambda::EventSourceMapping"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.EventInvokeConfig.DestinationConfig.OnFailure.Type",
-        "op": "any_eq",
-        "value": "SNS"
-      },
-      "resources": ["AWS::Lambda::EventInvokeConfig"]
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "SQS"},
+      "resources": [
+        "AWS::Lambda::EventSourceMapping"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.EventInvokeConfig.DestinationConfig.OnSuccess.Destination",
-        "op": "is_null"
-      },
-      "resources": ["AWS::SNS::Topic"]
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "SelfManagedKafka"},
+      "resources": [
+        "AWS::Lambda::EventSourceMapping"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.EventInvokeConfig.DestinationConfig.OnFailure.Destination",
-        "op": "is_null"
-      },
-      "resources": ["AWS::SNS::Topic"]
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "DocumentDB"},
+      "resources": [
+        "AWS::Lambda::EventSourceMapping"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.EventInvokeConfig.DestinationConfig.OnSuccess.Type",
-        "op": "any_eq",
-        "value": "SQS"
-      },
-      "resources": ["AWS::Lambda::EventInvokeConfig"]
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "Schedule"},
+      "resources": [
+        "AWS::Events::Rule",
+        "AWS::Lambda::Permission"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.EventInvokeConfig.DestinationConfig.OnFailure.Type",
-        "op": "any_eq",
-        "value": "SQS"
-      },
-      "resources": ["AWS::Lambda::EventInvokeConfig"]
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "CloudWatchEvents"},
+      "resources": [
+        "AWS::Events::Rule",
+        "AWS::Lambda::Permission"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.EventInvokeConfig.DestinationConfig.OnSuccess.Destination",
-        "op": "is_null"
-      },
-      "resources": ["AWS::SQS::Queue"]
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "EventBridgeRule"},
+      "resources": [
+        "AWS::Events::Rule",
+        "AWS::Lambda::Permission"
+      ]
     },
     {
-      "condition": {
-        "path": "properties.EventInvokeConfig.DestinationConfig.OnFailure.Destination",
-        "op": "is_null"
-      },
-      "resources": ["AWS::SQS::Queue"]
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "ScheduleV2"},
+      "resources": [
+        "AWS::Scheduler::Schedule",
+        "AWS::IAM::Role"
+      ]
+    },
+    {
+      "condition": {"path": "properties.Events.*.Properties.DeadLetterConfig.Type", "op": "any_eq", "value": "SQS"},
+      "resources": [
+        "AWS::SQS::Queue",
+        "AWS::SQS::QueuePolicy"
+      ]
+    },
+    {
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "IoTRule"},
+      "resources": [
+        "AWS::IoT::TopicRule",
+        "AWS::Lambda::Permission"
+      ]
+    },
+    {
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "S3"},
+      "resources": [
+        "AWS::Lambda::Permission"
+      ]
+    },
+    {
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "SNS"},
+      "resources": [
+        "AWS::SNS::Subscription",
+        "AWS::Lambda::Permission"
+      ]
+    },
+    {
+      "condition": {"path": "properties.Events.*.Properties.SqsSubscription", "op": "truthy"},
+      "resources": [
+        "AWS::SQS::Queue",
+        "AWS::SQS::QueuePolicy"
+      ]
+    },
+    {
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "CloudWatchLogs"},
+      "resources": [
+        "AWS::Logs::SubscriptionFilter",
+        "AWS::Lambda::Permission"
+      ]
+    },
+    {
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "AlexaSkill"},
+      "resources": [
+        "AWS::Lambda::Permission"
+      ]
+    },
+    {
+      "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "Cognito"},
+      "resources": [
+        "AWS::Lambda::Permission"
+      ]
     }
   ],
   "logical_id_templates": [
