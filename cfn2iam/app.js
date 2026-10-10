@@ -263,101 +263,11 @@ class CFNIAMGenerator {
       return JSON.parse(templateText);
     } catch (jsonError) {
       try {
-        return this.parseYamlSimple(templateText);
+        return jsyaml.load(templateText, { schema: CFN_YAML_SCHEMA });
       } catch (yamlError) {
         throw new Error(`Invalid format. JSON error: ${jsonError.message}. YAML error: ${yamlError.message}`);
       }
     }
-  }
-
-  parseYamlSimple(templateText) {
-    const result = { Resources: {} };
-    const lines = templateText.split("\n");
-    let inResources = false;
-    let currentResource = null;
-    let currentResourceIndent = 0;
-    let resourcesIndent = 0;
-    let inProperties = false;
-    let propertiesIndent = 0;
-    let currentSection = null;
-    let currentSectionIndent = 0;
-
-    for (const line of lines) {
-      const trimmed = line.trim();
-      const lineIndent = line.length - line.trimStart().length;
-
-      if (trimmed === "Resources:") {
-        inResources = true;
-        resourcesIndent = lineIndent;
-        continue;
-      }
-
-      if (inResources) {
-        if (line.trim() && lineIndent <= resourcesIndent) {
-          break;
-        }
-
-        if (lineIndent === resourcesIndent + 2 && trimmed.endsWith(":") && !trimmed.includes(" ")) {
-          currentResource = trimmed.slice(0, -1);
-          currentResourceIndent = lineIndent;
-          result.Resources[currentResource] = {};
-          inProperties = false;
-          currentSection = null;
-          continue;
-        }
-
-        if (currentResource) {
-          if (lineIndent === currentResourceIndent + 2 && trimmed.startsWith("Type:")) {
-            const type = trimmed.replace("Type:", "").trim().replace(/['"]/g, "");
-            result.Resources[currentResource].Type = type;
-            continue;
-          }
-
-          if (lineIndent === currentResourceIndent + 2 && trimmed === "Properties:") {
-            result.Resources[currentResource].Properties = {};
-            inProperties = true;
-            propertiesIndent = lineIndent;
-            currentSection = null;
-            continue;
-          }
-
-          if (inProperties) {
-            if (lineIndent === propertiesIndent + 2 && trimmed.endsWith(":") && !trimmed.includes(" ")) {
-              currentSection = trimmed.slice(0, -1);
-              currentSectionIndent = lineIndent;
-              result.Resources[currentResource].Properties[currentSection] = {};
-              continue;
-            }
-
-            if (lineIndent === propertiesIndent + 2 && trimmed.includes(":") && !trimmed.endsWith(":")) {
-              const [key, ...valueParts] = trimmed.split(":");
-              const value = valueParts.join(":").trim().replace(/['"]/g, "");
-              if (key && value) {
-                result.Resources[currentResource].Properties[key] = value;
-              }
-            }
-
-            if (currentSection && lineIndent > currentSectionIndent) {
-              if (currentSection === "Events" && lineIndent === currentSectionIndent + 2 && trimmed.endsWith(":")) {
-                const eventName = trimmed.slice(0, -1);
-                result.Resources[currentResource].Properties.Events[eventName] = {};
-              }
-
-              if (currentSection === "Events" && trimmed.startsWith("Type:")) {
-                const eventType = trimmed.replace("Type:", "").trim().replace(/['"]/g, "");
-                const events = result.Resources[currentResource].Properties.Events;
-                const eventKeys = Object.keys(events);
-                if (eventKeys.length > 0) {
-                  const lastEvent = eventKeys[eventKeys.length - 1];
-                  events[lastEvent].Type = eventType;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    return result;
   }
 
   async extractAndValidateResources(template) {
@@ -412,79 +322,25 @@ class CFNIAMGenerator {
     }
   }
 
+  // Same semantics as the CLI: a path can contain "*", and every value it reaches counts.
   evaluateCondition(condition, properties) {
     const { path, op, value } = condition;
-
-    try {
-      const pathValue = this.getNestedValue(properties, path);
-
-      switch (op) {
-        case "is_null":
-          return pathValue == null;
-        case "truthy":
-          return !!pathValue;
-        case "any_eq":
-          if (path.includes("*")) {
-            return this.evaluateWildcardPath(properties, path, value);
-          }
-          return pathValue === value;
-        default:
-          console.warn(`Unknown condition operator: ${op}`);
-          return false;
-      }
-    } catch (error) {
-      return false;
+    const values = valuesAtPath(properties, path.replace(/^properties\./, "").split("."));
+    switch (op) {
+      case "exists":
+        return values.length > 0;
+      case "truthy":
+        return values.some(isTruthy);
+      case "any_eq":
+        return values.some((v) => v === value);
+      case "all_eq":
+        return values.length > 0 && values.every((v) => v === value);
+      case "is_null":
+        return values.every((v) => v === null || v === undefined);
+      default:
+        // Unknown operator: fail rather than silently dropping the rule's permissions.
+        throw new Error(`Unsupported condition operator: ${op}`);
     }
-  }
-
-  evaluateWildcardPath(obj, path, expectedValue) {
-    const parts = path.split(".");
-
-    if (parts[0] === "properties" && parts.length >= 3) {
-      const objectProp = parts[1];
-      const wildcardIndex = parts.findIndex((part) => part === "*");
-
-      if (wildcardIndex !== -1 && obj[objectProp]) {
-        const targetObject = obj[objectProp];
-        const pathAfterWildcard = parts.slice(wildcardIndex + 1);
-
-        return Object.values(targetObject).some((item) => {
-          if (!item) return false;
-
-          let current = item;
-          for (const pathPart of pathAfterWildcard) {
-            if (!current || typeof current !== "object") return false;
-            current = current[pathPart];
-          }
-
-          return current === expectedValue;
-        });
-      }
-    }
-
-    return false;
-  }
-
-  getNestedValue(obj, path) {
-    if (path.startsWith("properties.")) {
-      path = path.substring(11);
-    }
-
-    const parts = path.split(".");
-    let current = obj;
-
-    for (const part of parts) {
-      if (current === null || current === undefined) {
-        return null;
-      }
-      if (typeof current === "object" && part in current) {
-        current = current[part];
-      } else {
-        return null;
-      }
-    }
-
-    return current;
   }
 
   async getSamRule(samResourceType) {
@@ -547,9 +403,11 @@ class CFNIAMGenerator {
       };
     }
 
+    // An action can be delete-only for one type but needed to create or update another.
+    // Keep it allowed: an explicit Deny would override the Allow and break the deploy.
     return {
       allUpdate: Array.from(allUpdatePermissions).sort(),
-      allDelete: Array.from(allDeletePermissions).sort(),
+      allDelete: Array.from(allDeletePermissions).filter((p) => !allUpdatePermissions.has(p)).sort(),
       byResource: permissionsByResource,
     };
   }
@@ -797,6 +655,44 @@ class CFNIAMGenerator {
   clearMessages() {
     document.querySelectorAll(".alert").forEach((el) => el.remove());
   }
+}
+
+// CloudFormation short-form intrinsics (!Ref, !GetAtt, ...) for js-yaml, in all three node kinds.
+const CFN_YAML_SCHEMA = (() => {
+  const tags = ["Ref", "Condition", "GetAtt", "Sub", "Join", "Select", "Split", "FindInMap", "If", "Not",
+    "Equals", "And", "Or", "Base64", "Cidr", "ImportValue", "GetAZs", "Transform", "Length", "ToJsonString",
+    "ForEach", "Contains", "EachMemberEquals", "EachMemberIn", "RefAll", "ValueOf", "ValueOfAll"];
+  const key = (tag) => (tag === "Ref" || tag === "Condition" ? tag : `Fn::${tag}`);
+  const types = tags.flatMap((tag) =>
+    ["scalar", "sequence", "mapping"].map(
+      (kind) => new jsyaml.Type(`!${tag}`, { kind, construct: (data) => ({ [key(tag)]: data }) })
+    )
+  );
+  return jsyaml.DEFAULT_SCHEMA.extend(types);
+})();
+
+// All values reached by a dotted path; "*" fans out over object values or array items.
+function valuesAtPath(obj, parts) {
+  let current = [obj];
+  for (const part of parts) {
+    const next = [];
+    for (const node of current) {
+      if (node === null || typeof node !== "object") continue;
+      if (part === "*") next.push(...Object.values(node));
+      else if (Object.prototype.hasOwnProperty.call(node, part)) next.push(node[part]);
+    }
+    current = next;
+    if (!current.length) break;
+  }
+  return current;
+}
+
+function isTruthy(value) {
+  if (value === null || value === undefined) return false;
+  if (typeof value === "boolean") return value;
+  if (typeof value === "string" || Array.isArray(value)) return value.length > 0;
+  if (typeof value === "object") return Object.keys(value).length > 0;
+  return true;
 }
 
 // JSON syntax highlighting helper

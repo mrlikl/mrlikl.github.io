@@ -46,8 +46,8 @@
     },
     {
       "title": "cfn2iam",
-      "description": "Tool to generate minimal IAM policy to deploy a CloudFormation stack from its template. This policy can be used to create the service role that can be used for the stack.",
-      "tags": ["Python", "Boto3", "CloudFormation"],
+      "description": "Generates the least-privilege IAM policy a CloudFormation or SAM stack needs from its template, before the first deploy. CLI on PyPI and a web version that runs in the browser.",
+      "tags": ["Python", "CloudFormation", "SAM", "IAM"],
       "links": [
         {
           "label": "Live Tool",
@@ -58,30 +58,35 @@
           "label": "GitHub",
           "url": "https://github.com/mrlikl/cfn2iam",
           "icon": "fab fa-github"
+        },
+        {
+          "label": "PyPI",
+          "url": "https://pypi.org/project/cfn2iam/",
+          "icon": "fas fa-cube"
         }
       ]
     },
     {
-      "title": "aws ec2 prices",
-      "description": "A static website that displays current AWS EC2 Linux On-Demand prices across multiple AWS regions. Automatically updated weekly using Github Actions.",
+      "title": "ec2prices",
+      "description": "EC2 Linux on-demand prices for every instance type across regions, per hour, per vCPU or per GiB, with specs. Refreshed weekly by GitHub Actions and published as JSON.",
       "tags": ["Python", "GitHub Actions", "EC2"],
       "links": [
         {
-          "label": "Live Dashboard",
+          "label": "Live Tool",
           "url": "/ec2prices",
           "icon": "fas fa-external-link-alt"
         },
         {
           "label": "GitHub",
-          "url": "https://github.com/mrlikl/mrlikl.github.io",
+          "url": "https://github.com/mrlikl/mrlikl.github.io/tree/main/ec2prices",
           "icon": "fab fa-github"
         }
       ]
     },
     {
       "title": "cfn-cur",
-      "description": "Tool to generate CLI commands to recover CloudFormation stacks stuck in UPDATE_ROLLBACK_FAILED state [Selected part of an internal hackathon while at AWS].",
-      "tags": ["Python", "CloudFormation", "Boto3"],
+      "description": "Generated the CLI command to recover CloudFormation stacks stuck in UPDATE_ROLLBACK_FAILED. Selected in an internal AWS hackathon. Archived: CloudFormation no longer needs these checks.",
+      "tags": ["Python", "CloudFormation", "Archived"],
       "links": [
         {
           "label": "GitHub",
