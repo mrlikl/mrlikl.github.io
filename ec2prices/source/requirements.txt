@@ -1,4 +1,1 @@
-flask
-jinja2
 requests
-beautifulsoup4

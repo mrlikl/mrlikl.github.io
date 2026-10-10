@@ -43,6 +43,8 @@ def download_and_process_schemas():
     # Process each JSON file
     processed_count = 0
     error_count = 0
+    changed = False
+    written = set()
 
     print("Processing schema files...")
 
@@ -70,9 +72,13 @@ def download_and_process_schemas():
             # Save with typeName as filename (safe filename)
             safe_filename = type_name.replace("::", "_").replace("/", "_")
             output_file = schemas_dir / f"{safe_filename}.json"
+            written.add(output_file.name)
 
-            with open(output_file, "w", encoding="utf-8") as f:
-                json.dump(minimal_schema, f, indent=2, sort_keys=True)
+            # Only rewrite files whose content changed, so unchanged weeks produce no diff.
+            content = json.dumps(minimal_schema, indent=2, sort_keys=True)
+            if not output_file.exists() or output_file.read_text(encoding="utf-8") != content:
+                output_file.write_text(content, encoding="utf-8")
+                changed = True
 
             processed_count += 1
 
@@ -91,18 +97,30 @@ def download_and_process_schemas():
     if error_count > 0:
         print(f"Errors: {error_count} files")
 
+    # Remove schemas AWS no longer publishes, but never on a partial or empty download.
+    if processed_count == 0:
+        print("No schemas processed; leaving existing files alone")
+        return False
+    if error_count == 0:
+        for stale in schemas_dir.glob("*.json"):
+            if stale.name != "index.json" and stale.name not in written:
+                print(f"Removing {stale.name} (no longer published)")
+                stale.unlink()
+                changed = True
+
     # Create index file for quick reference
-    create_schema_index(schemas_dir)
+    create_schema_index(schemas_dir, changed)
 
     return True
 
 
-def create_schema_index(schemas_dir):
+def create_schema_index(schemas_dir, changed=True):
     """Create an index file listing all available schemas"""
 
     print("Creating schema index...")
 
     index = {"lastUpdated": None, "totalSchemas": 0, "schemas": []}
+    index_path = schemas_dir / "index.json"
 
     try:
         from datetime import datetime, timezone
@@ -111,7 +129,7 @@ def create_schema_index(schemas_dir):
             "%Y-%m-%dT%H:%M:%S.%fZ"
         )
 
-        schema_files = list(schemas_dir.glob("*.json"))
+        schema_files = [p for p in schemas_dir.glob("*.json") if p.name != "index.json"]
         index["totalSchemas"] = len(schema_files)
 
         for schema_file in sorted(schema_files):
@@ -130,8 +148,15 @@ def create_schema_index(schemas_dir):
             except Exception as e:
                 print(f"Error reading {schema_file}: {e}")
 
+        # Keep the old date when nothing changed, so the weekly run has no diff.
+        if index_path.exists():
+            existing = json.loads(index_path.read_text(encoding="utf-8"))
+            if not changed and existing.get("schemas") == index["schemas"]:
+                print(f"No schema changes; index keeps lastUpdated {existing.get('lastUpdated')}")
+                return
+
         # Save index
-        with open(schemas_dir / "index.json", "w", encoding="utf-8") as f:
+        with open(index_path, "w", encoding="utf-8") as f:
             json.dump(index, f, indent=2, sort_keys=True)
 
         print(f"Schema index created with {len(index['schemas'])} entries")

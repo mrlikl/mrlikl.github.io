@@ -1,0 +1,29 @@
+{
+  "files": {
+    "instances.json": "2026-10-10T18:24:30Z",
+    "prices/ap-south-1.json": "2026-10-10T18:24:30Z",
+    "prices/ap-southeast-1.json": "2026-10-10T18:24:30Z",
+    "prices/ap-southeast-2.json": "2026-10-10T18:24:30Z",
+    "prices/ca-central-1.json": "2026-10-10T18:24:30Z",
+    "prices/eu-central-1.json": "2026-10-10T18:24:30Z",
+    "prices/eu-west-1.json": "2026-10-10T18:24:30Z",
+    "prices/us-east-1.json": "2026-10-10T18:24:30Z",
+    "prices/us-east-2.json": "2026-10-10T18:24:30Z",
+    "prices/us-west-1.json": "2026-10-10T18:24:30Z",
+    "prices/us-west-2.json": "2026-10-10T18:24:30Z"
+  },
+  "regions": [
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-west-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2"
+  ],
+  "source": "AWS Price List API",
+  "updated": "2026-10-10T18:24:30Z"
+}

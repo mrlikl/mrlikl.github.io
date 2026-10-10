@@ -5,6 +5,10 @@ on:
     - cron: "0 0 * * 0" # Weekly on Sunday at midnight UTC
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   update-pricing:
     runs-on: ubuntu-latest
@@ -20,23 +24,24 @@ jobs:
         run: pip install -r requirements.txt
         working-directory: ./ec2prices/source
 
+      # Writes ec2prices/data/ only when prices or specs actually changed.
       - name: Update pricing data
-        run: |
-          python3 data.py
-          python3 generate_static.py
+        run: python3 data.py
         working-directory: ./ec2prices/source
 
       - name: Get current date
         id: date
         run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
+      # One branch for all runs: an open PR is updated in place instead of a new one each week.
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v8
         with:
           commit-message: "pricing data updated"
           title: "🤖 Pricing data update - ${{ steps.date.outputs.date }}"
-          body: "This PR contains updated AWS EC2 Linux On-Demand pricing data and regenerated static HTML."
-          branch: pricing-update-${{ github.run_number }}
+          body: "Updated AWS EC2 Linux on-demand prices and instance specs in `ec2prices/data/`. Only regions whose prices changed are touched."
+          branch: pricing-update
+          delete-branch: true
           assignees: mrlikl
           add-paths: |
-            ec2prices/
+            ec2prices/data/

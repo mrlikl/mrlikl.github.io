@@ -5,6 +5,10 @@ on:
     - cron: "0 1 * * 0" # Weekly on Sunday at 1 AM UTC
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   update-schemas:
     runs-on: ubuntu-latest
@@ -16,6 +20,8 @@ jobs:
         with:
           python-version: "3.x"
 
+      # Rewrites only schemas that changed and removes ones AWS no longer publishes.
+      # SAM rules in cfn2iam/backend/sam_rules/ are maintained by hand and not touched.
       - name: Update schemas
         run: python3 process_schemas.py
         working-directory: ./cfn2iam/backend
@@ -24,13 +30,15 @@ jobs:
         id: date
         run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
+      # One branch for all runs: an open PR is updated in place instead of a new one each week.
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v8
         with:
           commit-message: "cfn schemas updated"
           title: "🤖 CFN Schema update - ${{ steps.date.outputs.date }}"
-          body: "This PR contains updated CloudFormation Schemas."
-          branch: schema-update-${{ github.run_number }}
+          body: "Updated CloudFormation resource schemas in `cfn2iam/backend/schemas/`."
+          branch: schema-update
+          delete-branch: true
           assignees: mrlikl
           add-paths: |
             cfn2iam/backend/schemas/
