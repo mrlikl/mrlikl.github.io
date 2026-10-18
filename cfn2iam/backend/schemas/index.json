@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-10T18:25:26.257193Z",
+  "lastUpdated": "2026-10-18T05:34:23.044497Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -578,7 +578,7 @@
     },
     {
       "filename": "AWS_AppSync_GraphQLSchema.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::AppSync::GraphQLSchema"
     },
     {
@@ -668,7 +668,7 @@
     },
     {
       "filename": "AWS_AutoScalingPlans_ScalingPlan.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::AutoScalingPlans::ScalingPlan"
     },
     {
@@ -1513,7 +1513,7 @@
     },
     {
       "filename": "AWS_CloudWatch_AnomalyDetector.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::CloudWatch::AnomalyDetector"
     },
     {
@@ -1573,7 +1573,7 @@
     },
     {
       "filename": "AWS_CodeBuild_Project.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::CodeBuild::Project"
     },
     {
@@ -2812,6 +2812,11 @@
       "typeName": "AWS::EC2::IpamExternalResourceVerificationToken"
     },
     {
+      "filename": "AWS_EC2_IpamInternetRegistryAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::IpamInternetRegistryAssociation"
+    },
+    {
       "filename": "AWS_EC2_KeyPair.json",
       "hasHandlers": true,
       "typeName": "AWS::EC2::KeyPair"
@@ -3778,7 +3783,7 @@
     },
     {
       "filename": "AWS_FSx_Volume.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::FSx::Volume"
     },
     {
@@ -5042,6 +5047,11 @@
       "typeName": "AWS::LicenseManagerLinuxSubscriptions::SubscriptionProvider"
     },
     {
+      "filename": "AWS_LicenseManagerUserSubscriptions_LicenseServerEndpoint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::LicenseManagerUserSubscriptions::LicenseServerEndpoint"
+    },
+    {
       "filename": "AWS_LicenseManager_Grant.json",
       "hasHandlers": true,
       "typeName": "AWS::LicenseManager::Grant"
@@ -5447,6 +5457,11 @@
       "typeName": "AWS::MediaConnect::RouterOutput"
     },
     {
+      "filename": "AWS_MediaConvert_CertificateAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MediaConvert::CertificateAssociation"
+    },
+    {
       "filename": "AWS_MediaConvert_JobTemplate.json",
       "hasHandlers": true,
       "typeName": "AWS::MediaConvert::JobTemplate"
@@ -5498,12 +5513,12 @@
     },
     {
       "filename": "AWS_MediaLive_Input.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::MediaLive::Input"
     },
     {
       "filename": "AWS_MediaLive_InputSecurityGroup.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::MediaLive::InputSecurityGroup"
     },
     {
@@ -5895,6 +5910,11 @@
       "filename": "AWS_Oam_Sink.json",
       "hasHandlers": true,
       "typeName": "AWS::Oam::Sink"
+    },
+    {
+      "filename": "AWS_ObservabilityAdmin_DatasetIntegration.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ObservabilityAdmin::DatasetIntegration"
     },
     {
       "filename": "AWS_ObservabilityAdmin_OrganizationCentralizationRule.json",
@@ -6290,6 +6310,11 @@
       "filename": "AWS_Pipes_Pipe.json",
       "hasHandlers": true,
       "typeName": "AWS::Pipes::Pipe"
+    },
+    {
+      "filename": "AWS_Polly_Lexicon.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Polly::Lexicon"
     },
     {
       "filename": "AWS_PricingPlanManager_Subscription.json",
@@ -7512,6 +7537,11 @@
       "typeName": "AWS::SageMaker::CodeRepository"
     },
     {
+      "filename": "AWS_SageMaker_ComputeQuota.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::ComputeQuota"
+    },
+    {
       "filename": "AWS_SageMaker_Context.json",
       "hasHandlers": true,
       "typeName": "AWS::SageMaker::Context"
@@ -7765,6 +7795,11 @@
       "filename": "AWS_SecurityAgent_TargetDomain.json",
       "hasHandlers": true,
       "typeName": "AWS::SecurityAgent::TargetDomain"
+    },
+    {
+      "filename": "AWS_SecurityHub_ActionTarget.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SecurityHub::ActionTarget"
     },
     {
       "filename": "AWS_SecurityHub_AggregatorV2.json",
@@ -8050,6 +8085,16 @@
       "filename": "AWS_StepFunctions_StateMachineVersion.json",
       "hasHandlers": true,
       "typeName": "AWS::StepFunctions::StateMachineVersion"
+    },
+    {
+      "filename": "AWS_StorageGateway_NFSFileShare.json",
+      "hasHandlers": true,
+      "typeName": "AWS::StorageGateway::NFSFileShare"
+    },
+    {
+      "filename": "AWS_StorageGateway_SMBFileShare.json",
+      "hasHandlers": true,
+      "typeName": "AWS::StorageGateway::SMBFileShare"
     },
     {
       "filename": "AWS_StorageGateway_Tape.json",
@@ -8637,5 +8682,5 @@
       "typeName": "AWS::XRay::TransactionSearchConfig"
     }
   ],
-  "totalSchemas": 1727
+  "totalSchemas": 1736
 }

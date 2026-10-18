@@ -9,7 +9,8 @@
         "sns:Publish",
         "imagebuilder:TagResource",
         "imagebuilder:GetInfrastructureConfiguration",
-        "imagebuilder:CreateInfrastructureConfiguration"
+        "imagebuilder:CreateInfrastructureConfiguration",
+        "autoscaling:DescribeAutoScalingGroups"
       ]
     },
     "delete": {
@@ -36,7 +37,8 @@
         "imagebuilder:GetInfrastructureConfiguration",
         "imagebuilder:UpdateInfrastructureConfiguration",
         "imagebuilder:TagResource",
-        "imagebuilder:UntagResource"
+        "imagebuilder:UntagResource",
+        "autoscaling:DescribeAutoScalingGroups"
       ]
     }
   },

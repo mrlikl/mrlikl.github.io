@@ -1,0 +1,55 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PassRole",
+        "logs:CreateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:UpdateLogDelivery",
+        "storagegateway:AddTagsToResource",
+        "storagegateway:CreateNFSFileShare",
+        "storagegateway:DescribeNFSFileShares"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "logs:CreateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:UpdateLogDelivery",
+        "storagegateway:DeleteFileShare",
+        "storagegateway:DescribeNFSFileShares",
+        "storagegateway:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "storagegateway:ListFileShares"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "storagegateway:DescribeNFSFileShares",
+        "storagegateway:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "logs:CreateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:UpdateLogDelivery",
+        "storagegateway:AddTagsToResource",
+        "storagegateway:DescribeNFSFileShares",
+        "storagegateway:ListTagsForResource",
+        "storagegateway:RemoveTagsFromResource",
+        "storagegateway:UpdateNFSFileShare"
+      ]
+    }
+  },
+  "typeName": "AWS::StorageGateway::NFSFileShare"
+}

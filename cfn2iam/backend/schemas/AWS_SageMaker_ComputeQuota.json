@@ -1,0 +1,55 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateComputeQuota",
+        "sagemaker:DescribeComputeQuota",
+        "sagemaker:DescribeCluster",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags",
+        "eks:AssociateAccessPolicy",
+        "eks:DescribeCluster",
+        "eks:ListAssociatedAccessPolicies"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteComputeQuota",
+        "sagemaker:DescribeComputeQuota",
+        "sagemaker:ListTags",
+        "sagemaker:DescribeCluster",
+        "eks:DescribeCluster",
+        "eks:DisassociateAccessPolicy",
+        "eks:DescribeAccessEntry",
+        "eks:ListAssociatedAccessPolicies"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListComputeQuotas"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeComputeQuota",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateComputeQuota",
+        "sagemaker:DescribeComputeQuota",
+        "sagemaker:DescribeCluster",
+        "eks:DescribeCluster",
+        "eks:AssociateAccessPolicy",
+        "eks:DisassociateAccessPolicy",
+        "eks:DescribeAccessEntry",
+        "eks:ListAssociatedAccessPolicies",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::ComputeQuota"
+}

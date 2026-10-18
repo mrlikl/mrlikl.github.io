@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "observabilityadmin:CreateDatasetIntegration",
+        "observabilityadmin:GetDatasetIntegration",
+        "observabilityadmin:TagResource",
+        "observabilityadmin:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "observabilityadmin:DeleteDatasetIntegration",
+        "observabilityadmin:GetDatasetIntegration",
+        "observabilityadmin:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "observabilityadmin:ListDatasetIntegrations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "observabilityadmin:GetDatasetIntegration",
+        "observabilityadmin:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "observabilityadmin:UpdateDatasetIntegration",
+        "observabilityadmin:GetDatasetIntegration",
+        "observabilityadmin:TagResource",
+        "observabilityadmin:UntagResource",
+        "observabilityadmin:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::ObservabilityAdmin::DatasetIntegration"
+}
