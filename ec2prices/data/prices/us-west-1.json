@@ -448,6 +448,18 @@
     "m8g.metal-24xl": 5.02656,
     "m8g.metal-48xl": 10.05312,
     "m8g.xlarge": 0.20944,
+    "m8gd.12xlarge": 3.25776,
+    "m8gd.16xlarge": 4.34368,
+    "m8gd.24xlarge": 6.51552,
+    "m8gd.2xlarge": 0.54296,
+    "m8gd.48xlarge": 13.03104,
+    "m8gd.4xlarge": 1.08592,
+    "m8gd.8xlarge": 2.17184,
+    "m8gd.large": 0.13574,
+    "m8gd.medium": 0.06787,
+    "m8gd.metal-24xl": 6.51552,
+    "m8gd.metal-48xl": 13.03104,
+    "m8gd.xlarge": 0.27148,
     "m8i-flex.12xlarge": 2.81544,
     "m8i-flex.16xlarge": 3.75392,
     "m8i-flex.2xlarge": 0.46924,
@@ -690,5 +702,5 @@
     "z1d.xlarge": 0.422
   },
   "region": "us-west-1",
-  "updated": "2026-10-10T18:24:30Z"
+  "updated": "2026-10-18T03:02:28Z"
 }

@@ -673,6 +673,15 @@
     "r7g.medium": 0.0587,
     "r7g.metal": 3.7536,
     "r7g.xlarge": 0.2346,
+    "r7gd.12xlarge": 3.5832,
+    "r7gd.16xlarge": 4.7776,
+    "r7gd.2xlarge": 0.5972,
+    "r7gd.4xlarge": 1.1944,
+    "r7gd.8xlarge": 2.3888,
+    "r7gd.large": 0.1493,
+    "r7gd.medium": 0.0747,
+    "r7gd.metal": 4.7776,
+    "r7gd.xlarge": 0.2986,
     "r7i.12xlarge": 3.4776,
     "r7i.16xlarge": 4.6368,
     "r7i.24xlarge": 6.9552,
@@ -811,5 +820,5 @@
     "x2iedn.xlarge": 0.917
   },
   "region": "ca-central-1",
-  "updated": "2026-10-10T18:24:30Z"
+  "updated": "2026-10-18T03:02:28Z"
 }
