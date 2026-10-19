@@ -1,4 +1,42 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "fsx:CreateVolume",
+        "fsx:CreateVolumeFromBackup",
+        "fsx:TagResource",
+        "fsx:DescribeVolumes"
+      ],
+      "timeoutInMinutes": 510
+    },
+    "delete": {
+      "permissions": [
+        "fsx:DeleteVolume",
+        "fsx:DescribeVolumes",
+        "fsx:DescribeStorageVirtualMachines",
+        "fsx:TagResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "fsx:DescribeVolumes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "fsx:DescribeVolumes",
+        "fsx:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "fsx:UpdateVolume",
+        "fsx:DescribeVolumes",
+        "fsx:TagResource",
+        "fsx:UntagResource",
+        "fsx:ListTagsForResource"
+      ]
+    }
+  },
   "typeName": "AWS::FSx::Volume"
 }

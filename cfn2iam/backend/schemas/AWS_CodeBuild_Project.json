@@ -1,4 +1,43 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "codebuild:CreateProject",
+        "codebuild:BatchGetProjects",
+        "codebuild:UpdateProjectVisibility",
+        "codebuild:CreateWebhook",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "codebuild:DeleteProject",
+        "codebuild:BatchGetProjects",
+        "codebuild:DeleteWebhook",
+        "iam:PassRole"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "codebuild:ListProjects"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "codebuild:BatchGetProjects"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "codebuild:UpdateProject",
+        "codebuild:BatchGetProjects",
+        "codebuild:UpdateProjectVisibility",
+        "codebuild:CreateWebhook",
+        "codebuild:UpdateWebhook",
+        "codebuild:DeleteWebhook",
+        "iam:PassRole"
+      ]
+    }
+  },
   "typeName": "AWS::CodeBuild::Project"
 }

@@ -1,0 +1,69 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "license-manager-user-subscriptions:CreateLicenseServerEndpoint",
+        "license-manager-user-subscriptions:ListLicenseServerEndpoints",
+        "license-manager-user-subscriptions:TagResource",
+        "ds:AuthorizeApplication",
+        "ds:DescribeDirectories",
+        "ds:DescribeDomainControllers",
+        "ds:GetAuthorizedApplicationDetails",
+        "ds:UnauthorizeApplication",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:CreateNetworkInterface",
+        "ec2:CreateNetworkInterfacePermission",
+        "ec2:CreateSecurityGroup",
+        "ec2:CreateTags",
+        "ec2:DeleteNetworkInterface",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSubnets",
+        "kms:Decrypt",
+        "route53:AssociateVPCWithHostedZone",
+        "route53:ChangeResourceRecordSets",
+        "route53:CreateHostedZone",
+        "route53:GetHostedZone",
+        "route53:ListHostedZonesByName",
+        "route53:ListHostedZonesByVPC",
+        "route53:ListResourceRecordSets",
+        "secretsmanager:GetSecretValue"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "license-manager-user-subscriptions:DeleteLicenseServerEndpoint",
+        "license-manager-user-subscriptions:ListLicenseServerEndpoints",
+        "license-manager-user-subscriptions:ListTagsForResource",
+        "ds:GetAuthorizedApplicationDetails",
+        "ds:UnauthorizeApplication",
+        "ec2:DeleteNetworkInterface",
+        "ec2:DescribeNetworkInterfaces",
+        "route53:ChangeResourceRecordSets",
+        "route53:DeleteHostedZone",
+        "route53:GetHostedZone",
+        "route53:ListResourceRecordSets"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "license-manager-user-subscriptions:ListLicenseServerEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "license-manager-user-subscriptions:ListLicenseServerEndpoints",
+        "license-manager-user-subscriptions:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "license-manager-user-subscriptions:ListLicenseServerEndpoints",
+        "license-manager-user-subscriptions:ListTagsForResource",
+        "license-manager-user-subscriptions:TagResource",
+        "license-manager-user-subscriptions:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::LicenseManagerUserSubscriptions::LicenseServerEndpoint"
+}

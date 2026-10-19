@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "polly:PutLexicon",
+        "polly:GetLexicon"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "polly:DeleteLexicon",
+        "polly:GetLexicon"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "polly:ListLexicons"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "polly:GetLexicon"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "polly:PutLexicon",
+        "polly:GetLexicon"
+      ]
+    }
+  },
+  "typeName": "AWS::Polly::Lexicon"
+}

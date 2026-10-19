@@ -1,33 +1,4 @@
 {
-  "handlers": {
-    "create": {
-      "permissions": [
-        "cloudwatch:PutAnomalyDetector",
-        "cloudwatch:DescribeAnomalyDetectors"
-      ]
-    },
-    "delete": {
-      "permissions": [
-        "cloudwatch:DeleteAnomalyDetector",
-        "cloudwatch:DescribeAnomalyDetectors"
-      ]
-    },
-    "list": {
-      "permissions": [
-        "cloudwatch:DescribeAnomalyDetectors"
-      ]
-    },
-    "read": {
-      "permissions": [
-        "cloudwatch:DescribeAnomalyDetectors"
-      ]
-    },
-    "update": {
-      "permissions": [
-        "cloudwatch:PutAnomalyDetector",
-        "cloudwatch:DescribeAnomalyDetectors"
-      ]
-    }
-  },
+  "handlers": {},
   "typeName": "AWS::CloudWatch::AnomalyDetector"
 }

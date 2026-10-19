@@ -84,7 +84,8 @@
         "lambda:PutFunctionScalingConfig",
         "lambda:PublishVersion",
         "lambda:PassCapacityProvider"
-      ]
+      ],
+      "timeoutInMinutes": 180
     }
   },
   "typeName": "AWS::Lambda::Function"

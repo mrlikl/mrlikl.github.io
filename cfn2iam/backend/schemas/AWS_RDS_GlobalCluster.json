@@ -5,6 +5,7 @@
         "rds:CreateGlobalCluster",
         "rds:DescribeDBClusters",
         "rds:DescribeGlobalClusters",
+        "rds:AddTagsToResource",
         "rds:ListTagsForResource"
       ]
     },

@@ -4,6 +4,7 @@
       "permissions": [
         "bedrock-agentcore:CreateMemory",
         "bedrock-agentcore:GetMemory",
+        "bedrock-agentcore:UpdateMemoryRecordExpirySpecification",
         "iam:PassRole",
         "kms:DescribeKey",
         "kms:CreateGrant",
@@ -43,6 +44,7 @@
       "permissions": [
         "bedrock-agentcore:UpdateMemory",
         "bedrock-agentcore:GetMemory",
+        "bedrock-agentcore:UpdateMemoryRecordExpirySpecification",
         "iam:PassRole",
         "bedrock-agentcore:TagResource",
         "bedrock-agentcore:UntagResource",

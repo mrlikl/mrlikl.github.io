@@ -6,23 +6,47 @@
         "sagemaker:DescribeUserProfile",
         "sagemaker:DescribeImage",
         "sagemaker:DescribeImageVersion",
-        "iam:PassRole"
-      ]
+        "sagemaker:ListTags",
+        "iam:PassRole",
+        "sso:DescribeInstance",
+        "sso:ListInstances",
+        "identitystore:DescribeUser",
+        "identitystore:ListUsers",
+        "sagemaker:AddTags"
+      ],
+      "timeoutInMinutes": 30
     },
     "delete": {
       "permissions": [
         "sagemaker:DeleteUserProfile",
-        "sagemaker:DescribeUserProfile"
+        "sagemaker:DescribeUserProfile",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags",
+        "sagemaker:DeleteTags",
+        "sso:DescribeInstance",
+        "sso:ListInstances",
+        "identitystore:DescribeUser",
+        "identitystore:ListUsers"
       ]
     },
     "list": {
       "permissions": [
-        "sagemaker:ListUserProfiles"
+        "sagemaker:ListUserProfiles",
+        "sagemaker:ListTags",
+        "sso:DescribeInstance",
+        "sso:ListInstances",
+        "identitystore:DescribeUser",
+        "identitystore:ListUsers"
       ]
     },
     "read": {
       "permissions": [
-        "sagemaker:DescribeUserProfile"
+        "sagemaker:DescribeUserProfile",
+        "sagemaker:ListTags",
+        "sso:DescribeInstance",
+        "sso:ListInstances",
+        "identitystore:DescribeUser",
+        "identitystore:ListUsers"
       ]
     },
     "update": {
@@ -31,7 +55,14 @@
         "sagemaker:DescribeUserProfile",
         "sagemaker:DescribeImage",
         "sagemaker:DescribeImageVersion",
-        "iam:PassRole"
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags",
+        "iam:PassRole",
+        "sso:DescribeInstance",
+        "sso:ListInstances",
+        "identitystore:DescribeUser",
+        "identitystore:ListUsers"
       ]
     }
   },

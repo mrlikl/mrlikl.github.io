@@ -1,4 +1,38 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "medialive:CreateInputSecurityGroup",
+        "medialive:ListTagsForResource",
+        "medialive:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "medialive:DeleteInputSecurityGroup",
+        "medialive:DescribeInputSecurityGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "medialive:ListInputSecurityGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "medialive:DescribeInputSecurityGroup",
+        "medialive:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "medialive:UpdateInputSecurityGroup",
+        "medialive:DescribeInputSecurityGroup",
+        "medialive:ListTagsForResource",
+        "medialive:CreateTags",
+        "medialive:DeleteTags"
+      ]
+    }
+  },
   "typeName": "AWS::MediaLive::InputSecurityGroup"
 }

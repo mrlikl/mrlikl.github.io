@@ -1,0 +1,31 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "securityhub:CreateActionTarget",
+        "securityhub:DescribeActionTargets"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "securityhub:DeleteActionTarget"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "securityhub:DescribeActionTargets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "securityhub:DescribeActionTargets"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "securityhub:UpdateActionTarget"
+      ]
+    }
+  },
+  "typeName": "AWS::SecurityHub::ActionTarget"
+}

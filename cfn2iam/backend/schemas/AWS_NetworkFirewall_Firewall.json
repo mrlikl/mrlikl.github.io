@@ -6,6 +6,9 @@
         "ec2:DescribeVpcEndpoints",
         "ec2:DescribeSubnets",
         "ec2:DescribeVpcs",
+        "ec2:DescribeNatGateways",
+        "ec2:AttachApplianceToNatGateway",
+        "ec2:CreateNetworkInterfacePermission",
         "iam:CreateServiceLinkedRole",
         "network-firewall:CreateFirewall",
         "network-firewall:DescribeFirewallPolicy",
@@ -21,6 +24,8 @@
       "permissions": [
         "ec2:DeleteVpcEndpoints",
         "ec2:DescribeRouteTables",
+        "ec2:DetachApplianceFromNatGateway",
+        "ec2:DeleteNetworkInterfacePermission",
         "logs:DescribeLogGroups",
         "logs:DescribeResourcePolicies",
         "logs:GetLogDelivery",
@@ -56,7 +61,8 @@
         "network-firewall:UpdateFirewallAnalysisSettings",
         "network-firewall:DisassociateAvailabilityZones",
         "network-firewall:AssociateAvailabilityZones",
-        "network-firewall:UpdateAvailabilityZoneChangeProtection"
+        "network-firewall:UpdateAvailabilityZoneChangeProtection",
+        "network-firewall:UpdateProxySettings"
       ]
     }
   },

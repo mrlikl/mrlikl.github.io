@@ -1,0 +1,55 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:PassRole",
+        "logs:CreateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:UpdateLogDelivery",
+        "storagegateway:AddTagsToResource",
+        "storagegateway:CreateSMBFileShare",
+        "storagegateway:DescribeSMBFileShares"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "logs:CreateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:UpdateLogDelivery",
+        "storagegateway:DeleteFileShare",
+        "storagegateway:DescribeSMBFileShares",
+        "storagegateway:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "storagegateway:ListFileShares"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "storagegateway:DescribeSMBFileShares",
+        "storagegateway:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "logs:CreateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:UpdateLogDelivery",
+        "storagegateway:AddTagsToResource",
+        "storagegateway:DescribeSMBFileShares",
+        "storagegateway:ListTagsForResource",
+        "storagegateway:RemoveTagsFromResource",
+        "storagegateway:UpdateSMBFileShare"
+      ]
+    }
+  },
+  "typeName": "AWS::StorageGateway::SMBFileShare"
+}

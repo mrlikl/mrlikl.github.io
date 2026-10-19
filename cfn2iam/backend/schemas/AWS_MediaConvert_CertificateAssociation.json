@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediaconvert:AssociateCertificate",
+        "acm:DescribeCertificate",
+        "acm:SearchCertificates"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediaconvert:DisassociateCertificate",
+        "acm:DescribeCertificate"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "acm:ListCertificates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "acm:DescribeCertificate"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaConvert::CertificateAssociation"
+}

@@ -1,4 +1,91 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "autoscaling-plans:CreateScalingPlan",
+        "autoscaling-plans:DescribeScalingPlans",
+        "autoscaling-plans:DescribeScalingPlanResources",
+        "cloudwatch:PutMetricAlarm",
+        "cloudwatch:DeleteAlarms",
+        "cloudwatch:DescribeAlarms",
+        "application-autoscaling:RegisterScalableTarget",
+        "application-autoscaling:DeregisterScalableTarget",
+        "application-autoscaling:PutScalingPolicy",
+        "application-autoscaling:DescribeScalingPolicies",
+        "application-autoscaling:DeleteScalingPolicy",
+        "iam:CreateServiceLinkedRole",
+        "dynamodb:DescribeTable",
+        "dynamodb:UpdateTable",
+        "ecs:DescribeServices",
+        "ecs:UpdateService",
+        "ec2:DescribeSpotFleetRequests",
+        "ec2:ModifySpotFleetRequest",
+        "autoscaling:UpdateAutoScalingGroup",
+        "autoscaling:DescribeAutoScalingGroups",
+        "autoscaling:PutScalingPolicy",
+        "autoscaling:DescribePolicies",
+        "autoscaling:DeletePolicy",
+        "rds:AddTagsToResource",
+        "rds:CreateDBInstance",
+        "rds:DeleteDBInstance",
+        "rds:DescribeDBClusters",
+        "rds:DescribeDBInstances",
+        "cloudwatch:GetMetricData",
+        "autoscaling:DescribeScheduledActions",
+        "autoscaling:BatchDeleteScheduledAction",
+        "autoscaling:BatchPutScheduledUpdateGroupAction"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "autoscaling-plans:DeleteScalingPlan",
+        "autoscaling-plans:DescribeScalingPlans",
+        "cloudwatch:DescribeAlarms",
+        "cloudwatch:DeleteAlarms",
+        "application-autoscaling:DeregisterScalableTarget",
+        "application-autoscaling:DescribeScalingPolicies",
+        "application-autoscaling:DeleteScalingPolicy",
+        "autoscaling:DescribePolicies",
+        "autoscaling:DeletePolicy",
+        "autoscaling:DescribeScheduledActions"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "autoscaling-plans:DescribeScalingPlans"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "autoscaling-plans:DescribeScalingPlans"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "autoscaling-plans:UpdateScalingPlan",
+        "autoscaling-plans:DescribeScalingPlans",
+        "autoscaling-plans:DescribeScalingPlanResources",
+        "cloudwatch:PutMetricAlarm",
+        "cloudwatch:DeleteAlarms",
+        "cloudwatch:DescribeAlarms",
+        "application-autoscaling:RegisterScalableTarget",
+        "application-autoscaling:DeregisterScalableTarget",
+        "application-autoscaling:PutScalingPolicy",
+        "application-autoscaling:DescribeScalingPolicies",
+        "application-autoscaling:DeleteScalingPolicy",
+        "dynamodb:DescribeTable",
+        "dynamodb:UpdateTable",
+        "autoscaling:UpdateAutoScalingGroup",
+        "autoscaling:DescribeAutoScalingGroups",
+        "autoscaling:PutScalingPolicy",
+        "autoscaling:DescribePolicies",
+        "autoscaling:DeletePolicy",
+        "cloudwatch:GetMetricData",
+        "autoscaling:DescribeScheduledActions",
+        "autoscaling:BatchDeleteScheduledAction",
+        "autoscaling:BatchPutScheduledUpdateGroupAction"
+      ]
+    }
+  },
   "typeName": "AWS::AutoScalingPlans::ScalingPlan"
 }

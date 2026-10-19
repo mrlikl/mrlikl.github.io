@@ -2,14 +2,31 @@
   "handlers": {
     "create": {
       "permissions": [
-        "emr:AddJobFlowSteps"
+        "elasticmapreduce:AddJobFlowSteps"
       ]
     },
     "delete": {
       "permissions": []
     },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "JobFlowId": {
+            "$ref": "resource-schema.json#/properties/JobFlowId"
+          }
+        },
+        "required": [
+          "JobFlowId"
+        ]
+      },
+      "permissions": [
+        "elasticmapreduce:ListSteps"
+      ]
+    },
     "read": {
-      "permissions": []
+      "permissions": [
+        "elasticmapreduce:DescribeStep"
+      ]
     }
   },
   "typeName": "AWS::EMR::Step"
