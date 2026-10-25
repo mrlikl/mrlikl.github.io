@@ -27,7 +27,8 @@
         "lambda:PutFunctionRecursionConfig",
         "lambda:GetFunctionRecursionConfig",
         "lambda:PutFunctionScalingConfig",
-        "lambda:PassCapacityProvider"
+        "lambda:PassCapacityProvider",
+        "lambda:AssociateRuntimeAlias"
       ]
     },
     "delete": {
@@ -83,7 +84,8 @@
         "lambda:GetFunctionRecursionConfig",
         "lambda:PutFunctionScalingConfig",
         "lambda:PublishVersion",
-        "lambda:PassCapacityProvider"
+        "lambda:PassCapacityProvider",
+        "lambda:AssociateRuntimeAlias"
       ],
       "timeoutInMinutes": 180
     }

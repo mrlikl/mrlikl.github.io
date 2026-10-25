@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iot:CreateOTAUpdate",
+        "iot:GetOTAUpdate",
+        "iot:TagResource",
+        "iam:PassRole",
+        "iot:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iot:DeleteOTAUpdate",
+        "iot:GetOTAUpdate",
+        "iot:DescribeJob",
+        "iot:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "iot:ListOTAUpdates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "iot:GetOTAUpdate",
+        "iot:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "iot:GetOTAUpdate",
+        "iot:TagResource",
+        "iot:UntagResource",
+        "iot:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::IoT::OTAUpdate"
+}

@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudwatch:CreateIntegration",
+        "cloudwatch:GetIntegration",
+        "cloudwatch:TagResource",
+        "cloudwatch:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudwatch:DeleteIntegration",
+        "cloudwatch:GetIntegration",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudwatch:ListIntegrations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudwatch:GetIntegration",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudwatch:UpdateIntegration",
+        "cloudwatch:GetIntegration",
+        "cloudwatch:TagResource",
+        "cloudwatch:UntagResource",
+        "cloudwatch:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudWatch::Integration"
+}

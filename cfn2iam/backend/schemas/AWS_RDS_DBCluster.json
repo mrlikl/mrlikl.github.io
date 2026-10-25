@@ -14,6 +14,7 @@
         "rds:DescribeDBSnapshots",
         "rds:DescribeEvents",
         "rds:EnableHttpEndpoint",
+        "rds:EnableInternetAccessGateway",
         "rds:ModifyDBCluster",
         "rds:RestoreDBClusterFromSnapshot",
         "rds:RestoreDBClusterToPointInTime",
@@ -30,6 +31,7 @@
         "rds:DeleteDBCluster",
         "rds:DeleteDBInstance",
         "rds:DescribeDBClusters",
+        "rds:DescribeDBInstances",
         "rds:DescribeGlobalClusters",
         "rds:RemoveFromGlobalCluster"
       ]

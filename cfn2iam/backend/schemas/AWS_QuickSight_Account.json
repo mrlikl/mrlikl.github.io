@@ -1,0 +1,75 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "quicksight:CreateAccountSubscription",
+        "quicksight:DescribeAccountSubscription",
+        "quicksight:UpdateAccountSettings",
+        "quicksight:DescribeAccountSettings",
+        "quicksight:Subscribe",
+        "quicksight:CheckAlias",
+        "iam:CreateServiceLinkedRole",
+        "ds:AuthorizeApplication",
+        "ds:CheckAlias",
+        "ds:CreateAlias",
+        "ds:CreateIdentityPoolDirectory",
+        "ds:DescribeDirectories",
+        "ds:UnauthorizeApplication",
+        "sso:DescribeApplication",
+        "sso:DescribeInstance",
+        "sso:CreateApplication",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:PutApplicationGrant",
+        "sso:DeleteApplication",
+        "sso:SearchGroups",
+        "sso:GetProfile",
+        "sso:CreateApplicationAssignment",
+        "sso:DeleteApplicationAssignment",
+        "sso:ListInstances",
+        "sso:ListApplicationAssignments",
+        "sso:DescribeRegisteredRegions",
+        "sso-directory:DescribeUser",
+        "sso-directory:DescribeGroup",
+        "identitystore:DescribeUser",
+        "identitystore:DescribeGroup",
+        "user-subscriptions:CreateClaim",
+        "user-subscriptions:UpdateClaim",
+        "organizations:DescribeOrganization",
+        "organizations:ListAWSServiceAccessForOrganization"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "quicksight:DeleteAccountSubscription",
+        "quicksight:DescribeAccountSubscription",
+        "quicksight:DescribeAccountSettings",
+        "sso:DescribeApplication",
+        "sso:DescribeInstance",
+        "sso:ListInstances",
+        "sso:ListApplicationAssignments",
+        "sso:DeleteApplicationAssignment",
+        "sso:DeleteApplication"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "quicksight:DescribeAccountSubscription",
+        "quicksight:DescribeAccountSettings"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "quicksight:DescribeAccountSubscription",
+        "quicksight:DescribeAccountSettings"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "quicksight:UpdateAccountSettings",
+        "quicksight:DescribeAccountSettings",
+        "quicksight:DescribeAccountSubscription"
+      ]
+    }
+  },
+  "typeName": "AWS::QuickSight::Account"
+}

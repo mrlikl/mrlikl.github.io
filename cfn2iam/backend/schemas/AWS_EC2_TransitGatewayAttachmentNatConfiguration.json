@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:ModifyTransitGatewayAttachmentNatConfiguration",
+        "ec2:GetTransitGatewayAttachmentNatConfiguration"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:ModifyTransitGatewayAttachmentNatConfiguration",
+        "ec2:GetTransitGatewayAttachmentNatConfiguration"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "TransitGatewayAttachmentId": {
+            "pattern": "^tgw-attach-[0-9a-f]{8,34}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "TransitGatewayAttachmentId"
+        ]
+      },
+      "permissions": [
+        "ec2:GetTransitGatewayAttachmentNatConfiguration"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:GetTransitGatewayAttachmentNatConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:ModifyTransitGatewayAttachmentNatConfiguration",
+        "ec2:GetTransitGatewayAttachmentNatConfiguration"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::TransitGatewayAttachmentNatConfiguration"
+}
