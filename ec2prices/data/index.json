@@ -9,7 +9,7 @@
     "prices/eu-west-1.json": "2026-10-10T18:24:30Z",
     "prices/us-east-1.json": "2026-10-10T18:24:30Z",
     "prices/us-east-2.json": "2026-10-10T18:24:30Z",
-    "prices/us-west-1.json": "2026-10-18T03:02:28Z",
+    "prices/us-west-1.json": "2026-10-25T03:13:07Z",
     "prices/us-west-2.json": "2026-10-10T18:24:30Z"
   },
   "regions": [
@@ -25,5 +25,5 @@
     "us-west-2"
   ],
   "source": "AWS Price List API",
-  "updated": "2026-10-18T03:02:28Z"
+  "updated": "2026-10-25T03:13:07Z"
 }
