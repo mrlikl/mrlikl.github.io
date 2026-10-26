@@ -1,0 +1,27 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ecs:AssociateGatewayWithCluster",
+        "ecs:ListGatewayClusterAssociations"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ecs:DisassociateGatewayFromCluster",
+        "ecs:ListGatewayClusterAssociations"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ecs:ListGatewayClusterAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ecs:ListGatewayClusterAssociations"
+      ]
+    }
+  },
+  "typeName": "AWS::ECS::GatewayClusterAssociations"
+}

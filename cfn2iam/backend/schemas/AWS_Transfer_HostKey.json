@@ -4,14 +4,19 @@
       "permissions": [
         "transfer:ImportHostKey",
         "transfer:DescribeHostKey",
-        "transfer:TagResource"
+        "transfer:TagResource",
+        "secretsmanager:CreateSecret",
+        "iam:CreateServiceLinkedRole",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
       ]
     },
     "delete": {
       "permissions": [
         "transfer:DeleteHostKey",
         "transfer:DescribeHostKey",
-        "transfer:ListTagsForResource"
+        "transfer:ListTagsForResource",
+        "secretsmanager:DeleteSecret"
       ]
     },
     "list": {
@@ -42,9 +47,17 @@
       "permissions": [
         "transfer:UpdateHostKey",
         "transfer:DescribeHostKey",
+        "transfer:ExportHostKey",
         "transfer:TagResource",
         "transfer:UntagResource",
-        "transfer:ListTagsForResource"
+        "transfer:ListTagsForResource",
+        "secretsmanager:CreateSecret",
+        "secretsmanager:GetSecretValue",
+        "secretsmanager:UpdateSecret",
+        "secretsmanager:DeleteSecret",
+        "iam:CreateServiceLinkedRole",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
       ]
     }
   },

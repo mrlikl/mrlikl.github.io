@@ -1,4 +1,49 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "appstream:CreateFleet",
+        "appstream:StartFleet",
+        "appstream:DescribeFleets",
+        "appstream:TagResource",
+        "appstream:ListTagsForResource",
+        "iam:PassRole",
+        "s3:ListBucket",
+        "s3:GetObject"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "appstream:StopFleet",
+        "appstream:DescribeFleets",
+        "appstream:DeleteFleet"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "appstream:DescribeFleets"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "appstream:DescribeFleets",
+        "appstream:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "appstream:UpdateFleet",
+        "appstream:DescribeFleets",
+        "appstream:StopFleet",
+        "appstream:StartFleet",
+        "appstream:TagResource",
+        "appstream:UntagResource",
+        "appstream:ListTagsForResource",
+        "iam:PassRole",
+        "s3:ListBucket",
+        "s3:GetObject"
+      ]
+    }
+  },
   "typeName": "AWS::AppStream::Fleet"
 }

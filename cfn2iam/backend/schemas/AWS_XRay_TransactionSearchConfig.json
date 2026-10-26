@@ -4,6 +4,7 @@
       "permissions": [
         "application-signals:StartDiscovery",
         "iam:CreateServiceLinkedRole",
+        "kms:DescribeKey",
         "logs:CreateLogGroup",
         "logs:CreateLogStream",
         "logs:PutRetentionPolicy",

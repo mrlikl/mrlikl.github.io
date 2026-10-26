@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "securityagent:CreatePrivateConnection",
+        "securityagent:DescribePrivateConnection",
+        "securityagent:TagResource",
+        "securityagent:ListTagsForResource",
+        "iam:CreateServiceLinkedRole",
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:CreateServiceNetworkResourceAssociation",
+        "vpc-lattice:AssociateViaAWSService"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "securityagent:DeletePrivateConnection",
+        "securityagent:DescribePrivateConnection",
+        "securityagent:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "securityagent:ListPrivateConnections"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "securityagent:DescribePrivateConnection",
+        "securityagent:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "securityagent:UpdatePrivateConnectionCertificate",
+        "securityagent:DescribePrivateConnection",
+        "securityagent:TagResource",
+        "securityagent:UntagResource",
+        "securityagent:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::SecurityAgent::PrivateConnection"
+}

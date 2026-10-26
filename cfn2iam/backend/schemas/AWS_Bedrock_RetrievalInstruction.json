@@ -1,0 +1,55 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "bedrock:CreateRetrievalInstruction",
+        "bedrock:GetRetrievalInstruction",
+        "bedrock:TagResource",
+        "kms:Decrypt",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "bedrock:DeleteRetrievalInstruction"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "Status": {
+            "description": "Whether the instruction can be used. Only ACTIVE is resolvable at retrieval time. Monotone: INACTIVE to ACTIVE once, never back. Numbered versions are always ACTIVE.",
+            "enum": [
+              "ACTIVE",
+              "INACTIVE"
+            ],
+            "type": "string"
+          }
+        }
+      },
+      "permissions": [
+        "bedrock:ListRetrievalInstructions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "bedrock:GetRetrievalInstruction",
+        "bedrock:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "bedrock:GetRetrievalInstruction",
+        "bedrock:ListTagsForResource",
+        "bedrock:TagResource",
+        "bedrock:UntagResource",
+        "bedrock:UpdateRetrievalInstruction",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    }
+  },
+  "typeName": "AWS::Bedrock::RetrievalInstruction"
+}

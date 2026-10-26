@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T05:34:23.044497Z",
+  "lastUpdated": "2026-10-25T05:48:59.101119Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -503,7 +503,7 @@
     },
     {
       "filename": "AWS_AppStream_Fleet.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::AppStream::Fleet"
     },
     {
@@ -518,7 +518,7 @@
     },
     {
       "filename": "AWS_AppStream_StackFleetAssociation.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::AppStream::StackFleetAssociation"
     },
     {
@@ -1047,6 +1047,11 @@
       "typeName": "AWS::Bedrock::ResourcePolicy"
     },
     {
+      "filename": "AWS_Bedrock_RetrievalInstruction.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Bedrock::RetrievalInstruction"
+    },
+    {
       "filename": "AWS_Bedrock_Session.json",
       "hasHandlers": true,
       "typeName": "AWS::Bedrock::Session"
@@ -1532,6 +1537,11 @@
       "typeName": "AWS::CloudWatch::InsightRule"
     },
     {
+      "filename": "AWS_CloudWatch_Integration.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudWatch::Integration"
+    },
+    {
       "filename": "AWS_CloudWatch_LogAlarm.json",
       "hasHandlers": true,
       "typeName": "AWS::CloudWatch::LogAlarm"
@@ -1550,6 +1560,11 @@
       "filename": "AWS_CloudWatch_ResourceMetricsConfiguration.json",
       "hasHandlers": true,
       "typeName": "AWS::CloudWatch::ResourceMetricsConfiguration"
+    },
+    {
+      "filename": "AWS_CloudWatch_View.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudWatch::View"
     },
     {
       "filename": "AWS_CodeArtifact_Domain.json",
@@ -3042,6 +3057,11 @@
       "typeName": "AWS::EC2::TransitGatewayAttachment"
     },
     {
+      "filename": "AWS_EC2_TransitGatewayAttachmentNatConfiguration.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::TransitGatewayAttachmentNatConfiguration"
+    },
+    {
       "filename": "AWS_EC2_TransitGatewayConnect.json",
       "hasHandlers": true,
       "typeName": "AWS::EC2::TransitGatewayConnect"
@@ -3312,6 +3332,16 @@
       "typeName": "AWS::ECS::ExpressGatewayService"
     },
     {
+      "filename": "AWS_ECS_Gateway.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ECS::Gateway"
+    },
+    {
+      "filename": "AWS_ECS_GatewayClusterAssociations.json",
+      "hasHandlers": true,
+      "typeName": "AWS::ECS::GatewayClusterAssociations"
+    },
+    {
       "filename": "AWS_ECS_PrimaryTaskSet.json",
       "hasHandlers": true,
       "typeName": "AWS::ECS::PrimaryTaskSet"
@@ -3418,7 +3448,7 @@
     },
     {
       "filename": "AWS_EMR_Cluster.json",
-      "hasHandlers": true,
+      "hasHandlers": false,
       "typeName": "AWS::EMR::Cluster"
     },
     {
@@ -4477,21 +4507,6 @@
       "typeName": "AWS::IoTAnalytics::Pipeline"
     },
     {
-      "filename": "AWS_IoTEvents_AlarmModel.json",
-      "hasHandlers": false,
-      "typeName": "AWS::IoTEvents::AlarmModel"
-    },
-    {
-      "filename": "AWS_IoTEvents_DetectorModel.json",
-      "hasHandlers": true,
-      "typeName": "AWS::IoTEvents::DetectorModel"
-    },
-    {
-      "filename": "AWS_IoTEvents_Input.json",
-      "hasHandlers": true,
-      "typeName": "AWS::IoTEvents::Input"
-    },
-    {
       "filename": "AWS_IoTFleetWise_Campaign.json",
       "hasHandlers": true,
       "typeName": "AWS::IoTFleetWise::Campaign"
@@ -4715,6 +4730,11 @@
       "filename": "AWS_IoT_MitigationAction.json",
       "hasHandlers": true,
       "typeName": "AWS::IoT::MitigationAction"
+    },
+    {
+      "filename": "AWS_IoT_OTAUpdate.json",
+      "hasHandlers": true,
+      "typeName": "AWS::IoT::OTAUpdate"
     },
     {
       "filename": "AWS_IoT_Policy.json",
@@ -5265,11 +5285,6 @@
       "filename": "AWS_Logs_Transformer.json",
       "hasHandlers": true,
       "typeName": "AWS::Logs::Transformer"
-    },
-    {
-      "filename": "AWS_LookoutVision_Project.json",
-      "hasHandlers": true,
-      "typeName": "AWS::LookoutVision::Project"
     },
     {
       "filename": "AWS_M2_Application.json",
@@ -5867,6 +5882,11 @@
       "typeName": "AWS::NetworkMonitor::Monitor"
     },
     {
+      "filename": "AWS_NetworkMonitor_Probe.json",
+      "hasHandlers": true,
+      "typeName": "AWS::NetworkMonitor::Probe"
+    },
+    {
       "filename": "AWS_NimbleStudio_Studio.json",
       "hasHandlers": true,
       "typeName": "AWS::NimbleStudio::Studio"
@@ -6345,6 +6365,11 @@
       "filename": "AWS_QLDB_Stream.json",
       "hasHandlers": true,
       "typeName": "AWS::QLDB::Stream"
+    },
+    {
+      "filename": "AWS_QuickSight_Account.json",
+      "hasHandlers": true,
+      "typeName": "AWS::QuickSight::Account"
     },
     {
       "filename": "AWS_QuickSight_Agent.json",
@@ -6895,6 +6920,11 @@
       "filename": "AWS_Route53Profiles_ProfileResourceAssociation.json",
       "hasHandlers": true,
       "typeName": "AWS::Route53Profiles::ProfileResourceAssociation"
+    },
+    {
+      "filename": "AWS_Route53Resolver_FirewallConfig.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Route53Resolver::FirewallConfig"
     },
     {
       "filename": "AWS_Route53Resolver_FirewallDomainList.json",
@@ -7785,6 +7815,11 @@
       "filename": "AWS_SecurityAgent_Pentest.json",
       "hasHandlers": true,
       "typeName": "AWS::SecurityAgent::Pentest"
+    },
+    {
+      "filename": "AWS_SecurityAgent_PrivateConnection.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SecurityAgent::PrivateConnection"
     },
     {
       "filename": "AWS_SecurityAgent_SecurityRequirementPack.json",
@@ -8682,5 +8717,5 @@
       "typeName": "AWS::XRay::TransactionSearchConfig"
     }
   ],
-  "totalSchemas": 1736
+  "totalSchemas": 1743
 }

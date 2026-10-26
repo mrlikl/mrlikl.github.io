@@ -3,17 +3,17 @@
     "create": {
       "permissions": [
         "bedrock-agentcore:CreatePaymentManager",
+        "bedrock-agentcore:CreateWorkloadIdentity",
         "bedrock-agentcore:GetPaymentManager",
         "bedrock-agentcore:TagResource",
-        "bedrock-agentcore:CreateWorkloadIdentity",
         "iam:PassRole"
       ]
     },
     "delete": {
       "permissions": [
         "bedrock-agentcore:DeletePaymentManager",
-        "bedrock-agentcore:GetPaymentManager",
-        "bedrock-agentcore:DeleteWorkloadIdentity"
+        "bedrock-agentcore:DeleteWorkloadIdentity",
+        "bedrock-agentcore:GetPaymentManager"
       ]
     },
     "list": {
@@ -29,11 +29,11 @@
     },
     "update": {
       "permissions": [
-        "bedrock-agentcore:UpdatePaymentManager",
         "bedrock-agentcore:GetPaymentManager",
+        "bedrock-agentcore:ListTagsForResource",
         "bedrock-agentcore:TagResource",
         "bedrock-agentcore:UntagResource",
-        "bedrock-agentcore:ListTagsForResource",
+        "bedrock-agentcore:UpdatePaymentManager",
         "iam:PassRole"
       ]
     }

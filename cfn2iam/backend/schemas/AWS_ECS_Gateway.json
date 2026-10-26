@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ecs:CreateGateway",
+        "ecs:DescribeGateway",
+        "ecs:ListGateways",
+        "ecs:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ecs:DeleteGateway",
+        "ecs:DescribeGateway"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ecs:ListGateways"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ecs:DescribeGateway",
+        "ecs:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ecs:UpdateGateway",
+        "ecs:DescribeGateway",
+        "ecs:TagResource",
+        "ecs:UntagResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::ECS::Gateway"
+}

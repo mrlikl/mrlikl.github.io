@@ -1,0 +1,53 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "networkmonitor:CreateProbe",
+        "networkmonitor:GetProbe",
+        "networkmonitor:TagResource",
+        "ec2:CreateNetworkInterface",
+        "ec2:CreateSecurityGroup",
+        "ec2:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "networkmonitor:DeleteProbe",
+        "networkmonitor:GetProbe"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "MonitorName": {
+            "description": "The name of the monitor whose probes are listed.",
+            "maxLength": 200,
+            "minLength": 1,
+            "pattern": "^[a-zA-Z0-9_-]+$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "MonitorName"
+        ]
+      },
+      "permissions": [
+        "networkmonitor:GetMonitor"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "networkmonitor:GetProbe"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "networkmonitor:UpdateProbe",
+        "networkmonitor:GetProbe",
+        "networkmonitor:TagResource",
+        "networkmonitor:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkMonitor::Probe"
+}

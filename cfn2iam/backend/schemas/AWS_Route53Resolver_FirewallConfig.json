@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53resolver:UpdateFirewallConfig",
+        "route53resolver:GetFirewallConfig",
+        "ec2:DescribeVpcs"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53resolver:UpdateFirewallConfig",
+        "route53resolver:GetFirewallConfig",
+        "ec2:DescribeVpcs"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "route53resolver:ListFirewallConfigs",
+        "ec2:DescribeVpcs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53resolver:GetFirewallConfig",
+        "ec2:DescribeVpcs"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "route53resolver:UpdateFirewallConfig",
+        "route53resolver:GetFirewallConfig",
+        "ec2:DescribeVpcs"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53Resolver::FirewallConfig"
+}
