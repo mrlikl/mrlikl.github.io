@@ -7,8 +7,10 @@
         "ec2:CreateNetworkInterface",
         "ec2:CreateTags",
         "iam:PassRole",
+        "mediaconnect:AssociateDestination",
         "mediaconnect:AssociateRouterNetworkInterface",
         "mediaconnect:CreateRouterInput",
+        "mediaconnect:RegisterDestinationEndpoint",
         "mediaconnect:TagResource",
         "mediaconnect:UpdateFlowOutput",
         "medialive:UpdateChannel"
@@ -21,7 +23,9 @@
         "mediaconnect:UpdateFlowOutput",
         "medialive:UpdateChannel",
         "mediaconnect:ListRouterInputs",
-        "mediaconnect:DeleteRouterInput"
+        "mediaconnect:DeleteRouterInput",
+        "mediaconnect:DeregisterDestinationEndpoint",
+        "mediaconnect:DisassociateDestination"
       ]
     },
     "list": {

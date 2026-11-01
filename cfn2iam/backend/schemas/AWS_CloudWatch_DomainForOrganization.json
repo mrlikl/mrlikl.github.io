@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudwatch:CreateDomainForOrganization",
+        "cloudwatch:TagResource",
+        "iam:PassRole",
+        "sso:CreateApplication",
+        "sso:CreateApplicationAssignment",
+        "sso:DescribeInstance",
+        "sso:ListRegions",
+        "sso:PutApplicationAccessScope",
+        "sso:PutApplicationAssignmentConfiguration",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:PutApplicationGrant"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudwatch:DeleteDomainForOrganization",
+        "cloudwatch:GetDomainForOrganization",
+        "cloudwatch:ListTagsForResource",
+        "sso:DeleteApplication",
+        "sso:DeleteApplicationAssignment"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudwatch:ListDomains"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudwatch:GetDomainForOrganization",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudwatch:TagResource",
+        "cloudwatch:UntagResource",
+        "cloudwatch:UpdateDomainForOrganization"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudWatch::DomainForOrganization"
+}

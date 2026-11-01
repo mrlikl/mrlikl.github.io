@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "personalize:CreateRecommender",
+        "personalize:DescribeRecommender",
+        "personalize:TagResource",
+        "personalize:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "personalize:DeleteRecommender",
+        "personalize:DescribeRecommender"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "personalize:ListRecommenders"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "personalize:DescribeRecommender",
+        "personalize:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "personalize:UpdateRecommender",
+        "personalize:DescribeRecommender",
+        "personalize:TagResource",
+        "personalize:UntagResource",
+        "personalize:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Personalize::Recommender"
+}

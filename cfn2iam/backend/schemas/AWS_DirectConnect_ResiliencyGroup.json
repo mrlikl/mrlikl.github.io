@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "directconnect:CreateResiliencyGroup",
+        "directconnect:GetResiliencyGroup",
+        "directconnect:AssociateConnectionsToResiliencyGroup",
+        "directconnect:ListResiliencyGroupAssociations",
+        "directconnect:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "directconnect:GetResiliencyGroup",
+        "directconnect:DisassociateConnectionsFromResiliencyGroup",
+        "directconnect:ListResiliencyGroupAssociations",
+        "directconnect:DeleteResiliencyGroup"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "directconnect:ListResiliencyGroups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "directconnect:GetResiliencyGroup",
+        "directconnect:ListResiliencyGroupAssociations"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "directconnect:GetResiliencyGroup",
+        "directconnect:UpdateResiliencyGroup",
+        "directconnect:AssociateConnectionsToResiliencyGroup",
+        "directconnect:DisassociateConnectionsFromResiliencyGroup",
+        "directconnect:ListResiliencyGroupAssociations",
+        "directconnect:TagResource",
+        "directconnect:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::DirectConnect::ResiliencyGroup"
+}

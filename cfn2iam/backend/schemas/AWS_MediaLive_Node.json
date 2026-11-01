@@ -11,14 +11,16 @@
     "delete": {
       "permissions": [
         "medialive:DeleteNode",
-        "medialive:DescribeNode"
+        "medialive:DescribeNode",
+        "medialive:ListTagsForResource"
       ]
     },
     "list": {
       "handlerSchema": {
         "properties": {
           "ClusterId": {
-            "$ref": "resource-schema.json#/properties/ClusterId"
+            "description": "The ID of the Cluster that the Node belongs to.",
+            "type": "string"
           }
         },
         "required": [

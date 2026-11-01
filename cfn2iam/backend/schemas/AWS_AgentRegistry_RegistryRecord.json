@@ -1,0 +1,65 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "agent-registry:CreateRegistryRecord",
+        "agent-registry:GetRegistryRecord",
+        "agent-registry:TagResource",
+        "agent-registry:ListTagsForResource",
+        "iam:PassRole",
+        "bedrock-agentcore:GetWorkloadAccessToken",
+        "bedrock-agentcore:GetResourceOauth2Token",
+        "secretsmanager:GetSecretValue",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "agent-registry:DeleteRegistryRecord",
+        "agent-registry:GetRegistryRecord",
+        "agent-registry:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "RegistryId": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "pattern": "^(arn:aws(-[^:]+)?:agent-registry:[a-z0-9-]+:[0-9]{12}:registry/)?[a-zA-Z0-9]{12,16}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "RegistryId"
+        ]
+      },
+      "permissions": [
+        "agent-registry:ListRegistryRecords"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "agent-registry:GetRegistryRecord",
+        "agent-registry:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "agent-registry:UpdateRegistryRecord",
+        "agent-registry:GetRegistryRecord",
+        "agent-registry:TagResource",
+        "agent-registry:UntagResource",
+        "agent-registry:ListTagsForResource",
+        "iam:PassRole",
+        "bedrock-agentcore:GetWorkloadAccessToken",
+        "bedrock-agentcore:GetResourceOauth2Token",
+        "secretsmanager:GetSecretValue",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::AgentRegistry::RegistryRecord"
+}

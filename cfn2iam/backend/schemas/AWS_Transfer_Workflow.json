@@ -2,12 +2,23 @@
   "handlers": {
     "create": {
       "permissions": [
+        "logs:CreateLogDelivery",
+        "logs:DeleteLogDelivery",
+        "logs:DescribeLogGroups",
+        "logs:DescribeResourcePolicies",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries",
+        "logs:PutResourcePolicy",
+        "logs:UpdateLogDelivery",
         "transfer:CreateWorkflow",
         "transfer:TagResource"
       ]
     },
     "delete": {
       "permissions": [
+        "logs:DeleteLogDelivery",
+        "logs:GetLogDelivery",
+        "logs:ListLogDeliveries",
         "transfer:DeleteWorkflow"
       ]
     },

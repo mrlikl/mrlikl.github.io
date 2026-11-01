@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "agent-registry:CreateRegistry",
+        "agent-registry:GetRegistry",
+        "agent-registry:TagResource",
+        "agent-registry:ListTagsForResource",
+        "bedrock-agentcore:CreateWorkloadIdentity",
+        "iam:CreateServiceLinkedRole",
+        "kms:DescribeKey",
+        "kms:CreateGrant",
+        "kms:GenerateDataKeyWithoutPlaintext",
+        "kms:ReEncryptFrom",
+        "kms:ReEncryptTo",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "agent-registry:DeleteRegistry",
+        "agent-registry:GetRegistry",
+        "bedrock-agentcore:DeleteWorkloadIdentity"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "agent-registry:ListRegistries"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "agent-registry:GetRegistry",
+        "agent-registry:ListTagsForResource",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "agent-registry:UpdateRegistry",
+        "agent-registry:GetRegistry",
+        "agent-registry:TagResource",
+        "agent-registry:UntagResource",
+        "agent-registry:ListTagsForResource",
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ]
+    }
+  },
+  "typeName": "AWS::AgentRegistry::Registry"
+}

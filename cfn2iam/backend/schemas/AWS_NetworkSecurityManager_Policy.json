@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "network-security-manager:CreatePolicy",
+        "network-security-manager:GetPolicy",
+        "network-security-manager:TagResource",
+        "network-security-manager:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "network-security-manager:DeletePolicy",
+        "network-security-manager:GetPolicy",
+        "network-security-manager:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "network-security-manager:ListPolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "network-security-manager:GetPolicy",
+        "network-security-manager:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "network-security-manager:UpdatePolicy",
+        "network-security-manager:GetPolicy",
+        "network-security-manager:TagResource",
+        "network-security-manager:UntagResource",
+        "network-security-manager:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkSecurityManager::Policy"
+}

@@ -14,7 +14,9 @@
         "ec2:DescribeNetworkInterfaces",
         "ec2:DescribeSecurityGroups",
         "ec2:CreateNetworkInterface",
-        "iam:CreateServiceLinkedRole"
+        "iam:CreateServiceLinkedRole",
+        "kms:DescribeKey",
+        "kms:CreateGrant"
       ],
       "timeoutInMinutes": 2160
     },
