@@ -659,6 +659,7 @@
     "p4d.24xlarge": 28.54493,
     "p5.48xlarge": 71.552,
     "p5.4xlarge": 8.944,
+    "p5e.48xlarge": 82.2848,
     "r3.2xlarge": 0.798,
     "r3.4xlarge": 1.596,
     "r3.8xlarge": 3.192,
@@ -981,5 +982,5 @@
     "z1d.xlarge": 0.452
   },
   "region": "ap-southeast-2",
-  "updated": "2026-10-18T03:02:28Z"
+  "updated": "2026-11-01T04:26:03Z"
 }
