@@ -1,4 +1,42 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateClientVpnEndpoint",
+        "ec2:DescribeClientVpnEndpoints",
+        "ec2:GetClientVpnEndpointAuthorizationPolicy",
+        "ec2:ModifyClientVpnEndpointAuthorizationPolicy",
+        "ec2:CreateTags",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DeleteClientVpnEndpoint",
+        "ec2:DescribeClientVpnEndpoints"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeClientVpnEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeClientVpnEndpoints",
+        "ec2:GetClientVpnEndpointAuthorizationPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:ModifyClientVpnEndpoint",
+        "ec2:ModifyClientVpnEndpointAuthorizationPolicy",
+        "ec2:DeleteClientVpnEndpointAuthorizationPolicy",
+        "ec2:GetClientVpnEndpointAuthorizationPolicy",
+        "ec2:DescribeClientVpnEndpoints",
+        "iam:CreateServiceLinkedRole"
+      ]
+    }
+  },
   "typeName": "AWS::EC2::ClientVpnEndpoint"
 }

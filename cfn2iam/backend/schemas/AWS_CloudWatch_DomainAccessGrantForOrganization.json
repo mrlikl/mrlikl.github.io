@@ -1,0 +1,29 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudwatch:CreateDomainAccessGrantForOrganization",
+        "cloudwatch:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudwatch:DeleteDomainAccessGrantForOrganization",
+        "cloudwatch:GetDomainAccessGrantForOrganization",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudwatch:ListDomainAccessGrantsForOrganization"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudwatch:GetDomainAccessGrantForOrganization",
+        "cloudwatch:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudWatch::DomainAccessGrantForOrganization"
+}

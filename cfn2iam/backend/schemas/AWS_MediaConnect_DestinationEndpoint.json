@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediaconnect:GetDestinationEndpoint",
+        "mediaconnect:ListDestinationEndpoints",
+        "ec2:CreateNetworkInterface",
+        "ec2:CreateTags",
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
+        "mediaconnect:AssociateDestination",
+        "mediaconnect:RegisterDestinationEndpoint",
+        "mediaconnect:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediaconnect:GetDestinationEndpoint",
+        "mediaconnect:ListDestinationEndpoints",
+        "mediaconnect:DeregisterDestinationEndpoint",
+        "mediaconnect:DisassociateDestination"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediaconnect:ListDestinationEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediaconnect:GetDestinationEndpoint"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediaconnect:ListTagsForResource",
+        "mediaconnect:TagResource",
+        "mediaconnect:UntagResource",
+        "mediaconnect:GetDestinationEndpoint",
+        "mediaconnect:UpdateDestinationEndpoint"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaConnect::DestinationEndpoint"
+}

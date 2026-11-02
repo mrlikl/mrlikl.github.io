@@ -37,6 +37,8 @@
         "iam:PassRole",
         "kinesisanalytics:UpdateApplication",
         "kinesisanalytics:DescribeApplication",
+        "kinesisanalytics:RestoreFromSnapshot",
+        "kinesisanalytics:CreateSystemSnapshot",
         "kinesisanalytics:TagResource",
         "kinesisanalytics:UntagResource",
         "kinesisanalytics:AddApplicationVpcConfiguration",

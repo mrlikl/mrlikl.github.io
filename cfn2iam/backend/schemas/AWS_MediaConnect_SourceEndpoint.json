@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mediaconnect:GetSourceEndpoint",
+        "mediaconnect:ListSourceEndpoints",
+        "ec2:CreateNetworkInterface",
+        "ec2:CreateTags",
+        "iam:CreateServiceLinkedRole",
+        "mediaconnect:AssociateSource",
+        "mediaconnect:RegisterSourceEndpoint",
+        "mediaconnect:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mediaconnect:GetSourceEndpoint",
+        "mediaconnect:ListSourceEndpoints",
+        "mediaconnect:DeregisterSourceEndpoint",
+        "mediaconnect:DisassociateSource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mediaconnect:ListSourceEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mediaconnect:GetSourceEndpoint"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mediaconnect:ListTagsForResource",
+        "mediaconnect:TagResource",
+        "mediaconnect:UntagResource",
+        "mediaconnect:GetSourceEndpoint",
+        "mediaconnect:UpdateSourceEndpoint"
+      ]
+    }
+  },
+  "typeName": "AWS::MediaConnect::SourceEndpoint"
+}

@@ -3,12 +3,14 @@
     "create": {
       "permissions": [
         "appstream:CreateStack",
+        "appstream:DescribeStacks",
         "appstream:TagResource"
       ]
     },
     "delete": {
       "permissions": [
-        "appstream:DeleteStack"
+        "appstream:DeleteStack",
+        "appstream:DescribeStacks"
       ]
     },
     "list": {

@@ -9,6 +9,7 @@
         "timestream-influxdb:GetDbCluster",
         "timestream-influxdb:GetDbParameterGroup",
         "timestream-influxdb:ListDbClusters",
+        "timestream-influxdb:ListDbInstancesForCluster",
         "timestream-influxdb:CreateDbCluster",
         "timestream-influxdb:TagResource",
         "timestream-influxdb:ListTagsForResource",
@@ -19,7 +20,9 @@
         "ec2:CreateNetworkInterface",
         "ec2:DescribeRouteTables",
         "ec2:DescribeVpcEndpoints",
-        "iam:CreateServiceLinkedRole"
+        "iam:CreateServiceLinkedRole",
+        "kms:DescribeKey",
+        "kms:CreateGrant"
       ],
       "timeoutInMinutes": 2160
     },
@@ -41,6 +44,7 @@
     "read": {
       "permissions": [
         "timestream-influxdb:GetDbCluster",
+        "timestream-influxdb:ListDbInstancesForCluster",
         "timestream-influxdb:ListTagsForResource"
       ],
       "timeoutInMinutes": 2160
@@ -52,6 +56,7 @@
         "timestream-influxdb:UpdateDbInstance",
         "timestream-influxdb:GetDbCluster",
         "timestream-influxdb:ListDbClusters",
+        "timestream-influxdb:ListDbInstancesForCluster",
         "timestream-influxdb:UpdateDbCluster",
         "timestream-influxdb:TagResource",
         "timestream-influxdb:UntagResource",

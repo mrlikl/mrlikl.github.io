@@ -33,7 +33,8 @@
         "bedrock-agentcore:DeleteWorkloadIdentity",
         "bedrock-agentcore:GetAgentRuntime",
         "bedrock-agentcore:GetAgentRuntimeEndpoint"
-      ]
+      ],
+      "timeoutInMinutes": 60
     },
     "list": {
       "permissions": [

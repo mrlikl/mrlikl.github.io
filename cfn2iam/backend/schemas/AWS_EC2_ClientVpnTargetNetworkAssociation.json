@@ -1,4 +1,39 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:AssociateClientVpnTargetNetwork",
+        "ec2:DescribeClientVpnTargetNetworks"
+      ],
+      "timeoutInMinutes": 130
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DisassociateClientVpnTargetNetwork",
+        "ec2:DescribeClientVpnTargetNetworks"
+      ],
+      "timeoutInMinutes": 130
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ClientVpnEndpointId": {
+            "$ref": "resource-schema.json#/properties/ClientVpnEndpointId"
+          }
+        },
+        "required": [
+          "ClientVpnEndpointId"
+        ]
+      },
+      "permissions": [
+        "ec2:DescribeClientVpnTargetNetworks"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeClientVpnTargetNetworks"
+      ]
+    }
+  },
   "typeName": "AWS::EC2::ClientVpnTargetNetworkAssociation"
 }

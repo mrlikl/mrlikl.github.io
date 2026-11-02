@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mgn:CreateWave",
+        "mgn:ListWaves",
+        "mgn:TagResource",
+        "mgn:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mgn:DeleteWave",
+        "mgn:ListWaves",
+        "mgn:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mgn:ListWaves"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mgn:ListWaves",
+        "mgn:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mgn:UpdateWave",
+        "mgn:ListWaves",
+        "mgn:TagResource",
+        "mgn:UntagResource",
+        "mgn:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::MGN::Wave"
+}

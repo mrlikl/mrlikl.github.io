@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "network-security-manager:CreateTemplate",
+        "network-security-manager:GetTemplate",
+        "network-security-manager:TagResource",
+        "network-security-manager:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "network-security-manager:DeleteTemplate",
+        "network-security-manager:GetTemplate",
+        "network-security-manager:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "network-security-manager:ListTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "network-security-manager:GetTemplate",
+        "network-security-manager:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "network-security-manager:UpdateTemplate",
+        "network-security-manager:GetTemplate",
+        "network-security-manager:TagResource",
+        "network-security-manager:UntagResource",
+        "network-security-manager:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkSecurityManager::Template"
+}

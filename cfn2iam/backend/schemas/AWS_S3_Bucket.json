@@ -6,6 +6,7 @@
         "s3:PutBucketTagging",
         "s3:TagResource",
         "s3:PutBucketAbac",
+        "s3:PutBucketDefaultStorageClass",
         "s3:PutAnalyticsConfiguration",
         "s3:PutEncryptionConfiguration",
         "s3:PutBucketCORS",
@@ -75,6 +76,7 @@
         "s3:GetBucketOwnershipControls",
         "s3:GetIntelligentTieringConfiguration",
         "s3:GetBucketMetadataTableConfiguration",
+        "s3:GetBucketDefaultStorageClass",
         "s3:ListBucket"
       ]
     },
@@ -85,6 +87,7 @@
         "s3:TagResource",
         "s3:UntagResource",
         "s3:PutBucketAbac",
+        "s3:PutBucketDefaultStorageClass",
         "s3:PutAnalyticsConfiguration",
         "s3:PutEncryptionConfiguration",
         "s3:PutBucketCORS",

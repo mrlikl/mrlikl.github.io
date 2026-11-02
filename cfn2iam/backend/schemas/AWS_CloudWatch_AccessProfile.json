@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudwatch:CreateAccessProfile",
+        "cloudwatch:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudwatch:DeleteAccessProfile",
+        "cloudwatch:GetAccessProfile",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "SpaceId": {
+            "description": "The unique identifier of the space to list access profiles for.",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "SpaceId"
+        ]
+      },
+      "permissions": [
+        "cloudwatch:ListAccessProfiles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudwatch:GetAccessProfile",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudwatch:ListTagsForResource",
+        "cloudwatch:TagResource",
+        "cloudwatch:UntagResource",
+        "cloudwatch:UpdateAccessProfile"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudWatch::AccessProfile"
+}

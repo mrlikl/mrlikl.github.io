@@ -1,0 +1,29 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudwatch:CreateAccessGrant",
+        "cloudwatch:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudwatch:DeleteAccessGrant",
+        "cloudwatch:GetAccessGrant",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudwatch:ListAccessGrants"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudwatch:GetAccessGrant",
+        "cloudwatch:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudWatch::AccessGrant"
+}

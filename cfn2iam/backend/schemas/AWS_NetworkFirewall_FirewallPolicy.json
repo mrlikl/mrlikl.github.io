@@ -6,7 +6,9 @@
         "network-firewall:DescribeFirewallPolicy",
         "network-firewall:ListTLSInspectionConfigurations",
         "network-firewall:TagResource",
-        "network-firewall:ListRuleGroups"
+        "network-firewall:ListRuleGroups",
+        "route53resolver:GetFirewallRuleGroup",
+        "route53resolver:AssociateFirewallRuleGroupWithService"
       ]
     },
     "delete": {
@@ -34,7 +36,9 @@
         "network-firewall:TagResource",
         "network-firewall:UntagResource",
         "network-firewall:ListRuleGroups",
-        "network-firewall:ListTLSInspectionConfigurations"
+        "network-firewall:ListTLSInspectionConfigurations",
+        "route53resolver:GetFirewallRuleGroup",
+        "route53resolver:AssociateFirewallRuleGroupWithService"
       ]
     }
   },

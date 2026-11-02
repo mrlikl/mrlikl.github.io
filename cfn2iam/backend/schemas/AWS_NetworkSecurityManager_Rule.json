@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "network-security-manager:CreateRule",
+        "network-security-manager:GetRule",
+        "network-security-manager:TagResource",
+        "network-security-manager:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "network-security-manager:DeleteRule",
+        "network-security-manager:GetRule",
+        "network-security-manager:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "network-security-manager:ListRules"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "network-security-manager:GetRule",
+        "network-security-manager:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "network-security-manager:UpdateRule",
+        "network-security-manager:GetRule",
+        "network-security-manager:TagResource",
+        "network-security-manager:UntagResource",
+        "network-security-manager:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkSecurityManager::Rule"
+}

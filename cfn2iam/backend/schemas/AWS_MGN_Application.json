@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mgn:CreateApplication",
+        "mgn:TagResource",
+        "mgn:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mgn:DeleteApplication",
+        "mgn:ListApplications",
+        "mgn:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mgn:ListApplications"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mgn:ListApplications",
+        "mgn:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mgn:UpdateApplication",
+        "mgn:TagResource",
+        "mgn:UntagResource",
+        "mgn:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::MGN::Application"
+}

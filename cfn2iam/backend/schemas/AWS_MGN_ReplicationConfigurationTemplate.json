@@ -1,0 +1,61 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "mgn:CreateReplicationConfigurationTemplate",
+        "mgn:TagResource",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:CreateSecurityGroup",
+        "kms:DescribeKey",
+        "kms:CreateGrant",
+        "ec2:CreateTags",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:RevokeSecurityGroupEgress",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeInstanceTypes",
+        "ec2:GetEbsEncryptionByDefault",
+        "ec2:GetEbsDefaultKmsKeyId"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "mgn:DeleteReplicationConfigurationTemplate"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "mgn:DescribeReplicationConfigurationTemplates"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "mgn:DescribeReplicationConfigurationTemplates",
+        "mgn:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "mgn:UpdateReplicationConfigurationTemplate",
+        "mgn:ListTagsForResource",
+        "mgn:TagResource",
+        "mgn:UntagResource",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeSecurityGroups",
+        "ec2:CreateSecurityGroup",
+        "kms:DescribeKey",
+        "kms:CreateGrant",
+        "ec2:CreateTags",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:RevokeSecurityGroupEgress",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeInstanceTypes",
+        "ec2:GetEbsEncryptionByDefault",
+        "ec2:GetEbsDefaultKmsKeyId"
+      ]
+    }
+  },
+  "typeName": "AWS::MGN::ReplicationConfigurationTemplate"
+}

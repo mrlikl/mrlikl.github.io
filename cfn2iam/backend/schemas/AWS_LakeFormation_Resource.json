@@ -1,4 +1,48 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lakeformation:RegisterResource",
+        "lakeformation:DescribeResource",
+        "lakeformation:ListResources",
+        "iam:PassRole",
+        "iam:GetRole",
+        "iam:GetRolePolicy",
+        "iam:PutRolePolicy",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lakeformation:DeregisterResource",
+        "iam:GetRole",
+        "iam:GetRolePolicy",
+        "iam:PutRolePolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "lakeformation:ListResources"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lakeformation:DescribeResource",
+        "lakeformation:ListResources"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lakeformation:UpdateResource",
+        "lakeformation:DeregisterResource",
+        "lakeformation:RegisterResource",
+        "iam:PassRole",
+        "iam:GetRole",
+        "iam:GetRolePolicy",
+        "iam:PutRolePolicy",
+        "iam:CreateServiceLinkedRole"
+      ]
+    }
+  },
   "typeName": "AWS::LakeFormation::Resource"
 }

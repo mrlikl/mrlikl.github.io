@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25T05:48:59.101119Z",
+  "lastUpdated": "2026-11-01T07:13:56.449825Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -90,6 +90,16 @@
       "filename": "AWS_AccountAccess_Entitlement.json",
       "hasHandlers": true,
       "typeName": "AWS::AccountAccess::Entitlement"
+    },
+    {
+      "filename": "AWS_AgentRegistry_Registry.json",
+      "hasHandlers": true,
+      "typeName": "AWS::AgentRegistry::Registry"
+    },
+    {
+      "filename": "AWS_AgentRegistry_RegistryRecord.json",
+      "hasHandlers": true,
+      "typeName": "AWS::AgentRegistry::RegistryRecord"
     },
     {
       "filename": "AWS_AmazonMQ_Broker.json",
@@ -1507,6 +1517,16 @@
       "typeName": "AWS::CloudTrail::Trail"
     },
     {
+      "filename": "AWS_CloudWatch_AccessGrant.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudWatch::AccessGrant"
+    },
+    {
+      "filename": "AWS_CloudWatch_AccessProfile.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudWatch::AccessProfile"
+    },
+    {
       "filename": "AWS_CloudWatch_Alarm.json",
       "hasHandlers": true,
       "typeName": "AWS::CloudWatch::Alarm"
@@ -1530,6 +1550,21 @@
       "filename": "AWS_CloudWatch_Dashboard.json",
       "hasHandlers": true,
       "typeName": "AWS::CloudWatch::Dashboard"
+    },
+    {
+      "filename": "AWS_CloudWatch_Domain.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudWatch::Domain"
+    },
+    {
+      "filename": "AWS_CloudWatch_DomainAccessGrantForOrganization.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudWatch::DomainAccessGrantForOrganization"
+    },
+    {
+      "filename": "AWS_CloudWatch_DomainForOrganization.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudWatch::DomainForOrganization"
     },
     {
       "filename": "AWS_CloudWatch_InsightRule.json",
@@ -1557,9 +1592,19 @@
       "typeName": "AWS::CloudWatch::OTelEnrichment"
     },
     {
+      "filename": "AWS_CloudWatch_OmniDashboard.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudWatch::OmniDashboard"
+    },
+    {
       "filename": "AWS_CloudWatch_ResourceMetricsConfiguration.json",
       "hasHandlers": true,
       "typeName": "AWS::CloudWatch::ResourceMetricsConfiguration"
+    },
+    {
+      "filename": "AWS_CloudWatch_Space.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudWatch::Space"
     },
     {
       "filename": "AWS_CloudWatch_View.json",
@@ -2128,7 +2173,7 @@
     },
     {
       "filename": "AWS_DAX_Cluster.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::DAX::Cluster"
     },
     {
@@ -2577,6 +2622,11 @@
       "typeName": "AWS::DirectConnect::PublicVirtualInterface"
     },
     {
+      "filename": "AWS_DirectConnect_ResiliencyGroup.json",
+      "hasHandlers": true,
+      "typeName": "AWS::DirectConnect::ResiliencyGroup"
+    },
+    {
       "filename": "AWS_DirectConnect_TransitVirtualInterface.json",
       "hasHandlers": true,
       "typeName": "AWS::DirectConnect::TransitVirtualInterface"
@@ -2678,7 +2728,7 @@
     },
     {
       "filename": "AWS_EC2_ClientVpnEndpoint.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::EC2::ClientVpnEndpoint"
     },
     {
@@ -2688,7 +2738,7 @@
     },
     {
       "filename": "AWS_EC2_ClientVpnTargetNetworkAssociation.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::EC2::ClientVpnTargetNetworkAssociation"
     },
     {
@@ -2990,6 +3040,11 @@
       "filename": "AWS_EC2_SecurityGroupVpcAssociation.json",
       "hasHandlers": true,
       "typeName": "AWS::EC2::SecurityGroupVpcAssociation"
+    },
+    {
+      "filename": "AWS_EC2_Snapshot.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::Snapshot"
     },
     {
       "filename": "AWS_EC2_SnapshotBlockPublicAccess.json",
@@ -3448,7 +3503,7 @@
     },
     {
       "filename": "AWS_EMR_Cluster.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::EMR::Cluster"
     },
     {
@@ -4938,7 +4993,7 @@
     },
     {
       "filename": "AWS_LakeFormation_Resource.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::LakeFormation::Resource"
     },
     {
@@ -5302,6 +5357,11 @@
       "typeName": "AWS::M2::Environment"
     },
     {
+      "filename": "AWS_MGN_Application.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MGN::Application"
+    },
+    {
       "filename": "AWS_MGN_Connector.json",
       "hasHandlers": true,
       "typeName": "AWS::MGN::Connector"
@@ -5315,6 +5375,16 @@
       "filename": "AWS_MGN_NetworkMigrationDefinition.json",
       "hasHandlers": true,
       "typeName": "AWS::MGN::NetworkMigrationDefinition"
+    },
+    {
+      "filename": "AWS_MGN_ReplicationConfigurationTemplate.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MGN::ReplicationConfigurationTemplate"
+    },
+    {
+      "filename": "AWS_MGN_Wave.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MGN::Wave"
     },
     {
       "filename": "AWS_MSK_BatchScramSecret.json",
@@ -5422,6 +5492,11 @@
       "typeName": "AWS::MediaConnect::BridgeSource"
     },
     {
+      "filename": "AWS_MediaConnect_DestinationEndpoint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MediaConnect::DestinationEndpoint"
+    },
+    {
       "filename": "AWS_MediaConnect_Flow.json",
       "hasHandlers": true,
       "typeName": "AWS::MediaConnect::Flow"
@@ -5470,6 +5545,11 @@
       "filename": "AWS_MediaConnect_RouterOutput.json",
       "hasHandlers": true,
       "typeName": "AWS::MediaConnect::RouterOutput"
+    },
+    {
+      "filename": "AWS_MediaConnect_SourceEndpoint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::MediaConnect::SourceEndpoint"
     },
     {
       "filename": "AWS_MediaConvert_CertificateAssociation.json",
@@ -5887,6 +5967,26 @@
       "typeName": "AWS::NetworkMonitor::Probe"
     },
     {
+      "filename": "AWS_NetworkSecurityManager_Policy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::NetworkSecurityManager::Policy"
+    },
+    {
+      "filename": "AWS_NetworkSecurityManager_Rule.json",
+      "hasHandlers": true,
+      "typeName": "AWS::NetworkSecurityManager::Rule"
+    },
+    {
+      "filename": "AWS_NetworkSecurityManager_Scope.json",
+      "hasHandlers": true,
+      "typeName": "AWS::NetworkSecurityManager::Scope"
+    },
+    {
+      "filename": "AWS_NetworkSecurityManager_Template.json",
+      "hasHandlers": true,
+      "typeName": "AWS::NetworkSecurityManager::Template"
+    },
+    {
       "filename": "AWS_NimbleStudio_Studio.json",
       "hasHandlers": true,
       "typeName": "AWS::NimbleStudio::Studio"
@@ -6200,6 +6300,11 @@
       "filename": "AWS_Personalize_MetricAttribution.json",
       "hasHandlers": true,
       "typeName": "AWS::Personalize::MetricAttribution"
+    },
+    {
+      "filename": "AWS_Personalize_Recommender.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Personalize::Recommender"
     },
     {
       "filename": "AWS_Personalize_Schema.json",
@@ -8717,5 +8822,5 @@
       "typeName": "AWS::XRay::TransactionSearchConfig"
     }
   ],
-  "totalSchemas": 1743
+  "totalSchemas": 1764
 }

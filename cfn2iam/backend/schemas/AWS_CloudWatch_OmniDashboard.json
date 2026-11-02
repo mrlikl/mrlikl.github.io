@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudwatch:CreateOmniDashboard",
+        "cloudwatch:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudwatch:DeleteOmniDashboard",
+        "cloudwatch:GetOmniDashboard",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "SpaceId": {
+            "description": "The unique identifier of the space to list dashboards for.",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "SpaceId"
+        ]
+      },
+      "permissions": [
+        "cloudwatch:ListOmniDashboards"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudwatch:GetOmniDashboard",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudwatch:ListTagsForResource",
+        "cloudwatch:TagResource",
+        "cloudwatch:UntagResource",
+        "cloudwatch:UpdateOmniDashboard"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudWatch::OmniDashboard"
+}
