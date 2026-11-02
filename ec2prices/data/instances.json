@@ -921,6 +921,7 @@
     "p4de.24xlarge": ["GPU instance", 96, 1152, "x86_64", "Intel Xeon Platinum 8275L", "3 GHz", "400 Gigabit", "8 x 1000 SSD", 8, 640, true],
     "p5.48xlarge": ["GPU instance", 192, 2048, "x86_64", "AMD EPYC 7R13 Processor", "2.95 GHz", "3200 Gigabit", "8 x 3840 GB SSD", 8, 640, true],
     "p5.4xlarge": ["GPU instance", 16, 256, "x86_64", "AMD EPYC 7R13 Processor", "2.95 GHz", "100 Gigabit", "1 x 3840 GB SSD", 1, 80, true],
+    "p5e.48xlarge": ["GPU instance", 192, 2048, "x86_64", "AMD EPYC 7R13 Processor", "2.95 GHz", "3200 Gigabit", "8 x 3840 GB SSD", 8, 1128, true],
     "p5en.48xlarge": ["GPU instance", 192, 2048, "x86_64", "Intel Xeon Scalable (Sapphire Rapids)", "3.2 GHz", "3200 Gigabit", "8 x 3840 NVMe SSD", 8, 141, true],
     "p6-b200.48xlarge": ["GPU instance", 192, 2048, "x86_64", "Intel Xeon Scalable (Emerald Rapids)", "3.2 GHz", "3200 Gigabit", "8 x 3840 NVMe SSD", 8, 1432, true],
     "p6-b300.48xlarge": ["GPU instance", 192, 4096, "x86_64", "Intel Xeon Scalable (Emerald Rapids)", "3.2 GHz", "6400 Gigabit", "8 x 3840 NVMe SSD", 8, 2144, true],
@@ -1412,5 +1413,5 @@
     "z1d.metal": ["Memory optimized", 48, 384, "x86_64", "Intel Xeon Platinum 8151", "4 GHz", "25 Gigabit", "2 x 900 NVMe SSD", 0, null, true],
     "z1d.xlarge": ["Memory optimized", 4, 32, "x86_64", "Intel Xeon Platinum 8151", "4 GHz", "Up to 10 Gigabit", "1 x 150 NVMe SSD", 0, null, true]
   },
-  "updated": "2026-10-10T18:24:30Z"
+  "updated": "2026-11-01T04:26:03Z"
 }
