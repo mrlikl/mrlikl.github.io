@@ -5,12 +5,12 @@
     "prices/ap-southeast-1.json": "2026-10-18T03:02:28Z",
     "prices/ap-southeast-2.json": "2026-11-01T04:26:03Z",
     "prices/ca-central-1.json": "2026-10-18T03:02:28Z",
-    "prices/eu-central-1.json": "2026-10-10T18:24:30Z",
+    "prices/eu-central-1.json": "2026-11-08T04:28:27Z",
     "prices/eu-west-1.json": "2026-10-10T18:24:30Z",
     "prices/us-east-1.json": "2026-10-10T18:24:30Z",
-    "prices/us-east-2.json": "2026-11-01T04:26:03Z",
+    "prices/us-east-2.json": "2026-11-08T04:28:27Z",
     "prices/us-west-1.json": "2026-10-25T03:13:07Z",
-    "prices/us-west-2.json": "2026-10-10T18:24:30Z"
+    "prices/us-west-2.json": "2026-11-08T04:28:27Z"
   },
   "regions": [
     "ap-south-1",
@@ -25,5 +25,5 @@
     "us-west-2"
   ],
   "source": "AWS Price List API",
-  "updated": "2026-11-01T04:26:03Z"
+  "updated": "2026-11-08T04:28:27Z"
 }

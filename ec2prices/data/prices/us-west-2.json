@@ -238,6 +238,8 @@
     "c8gn.8xlarge": 1.896,
     "c8gn.large": 0.1185,
     "c8gn.medium": 0.0593,
+    "c8gn.metal-24xl": 5.688,
+    "c8gn.metal-48xl": 11.376,
     "c8gn.xlarge": 0.237,
     "c8i-flex.12xlarge": 2.13648,
     "c8i-flex.16xlarge": 2.84864,
@@ -893,6 +895,7 @@
     "p4de.24xlarge": 27.44705,
     "p5.48xlarge": 55.04,
     "p5.4xlarge": 6.88,
+    "p5e.48xlarge": 63.296,
     "p5en.48xlarge": 63.296,
     "p6-b200.48xlarge": 113.9328,
     "p6-b300.48xlarge": 142.416,
@@ -1373,5 +1376,5 @@
     "z1d.xlarge": 0.372
   },
   "region": "us-west-2",
-  "updated": "2026-10-10T18:24:30Z"
+  "updated": "2026-11-08T04:28:27Z"
 }

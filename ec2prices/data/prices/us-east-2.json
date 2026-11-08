@@ -231,6 +231,8 @@
     "c8gn.8xlarge": 1.896,
     "c8gn.large": 0.1185,
     "c8gn.medium": 0.0593,
+    "c8gn.metal-24xl": 5.688,
+    "c8gn.metal-48xl": 11.376,
     "c8gn.xlarge": 0.237,
     "c8i-flex.12xlarge": 2.13648,
     "c8i-flex.16xlarge": 2.84864,
@@ -1251,5 +1253,5 @@
     "z1d.xlarge": 0.372
   },
   "region": "us-east-2",
-  "updated": "2026-11-01T04:26:03Z"
+  "updated": "2026-11-08T04:28:27Z"
 }

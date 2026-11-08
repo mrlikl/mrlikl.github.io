@@ -773,6 +773,8 @@
     "p3.8xlarge": 15.292,
     "p4d.24xlarge": 27.43298,
     "p4de.24xlarge": 34.29122,
+    "p5.48xlarge": 68.8,
+    "p5.4xlarge": 8.6,
     "r3.2xlarge": 0.8,
     "r3.4xlarge": 1.6,
     "r3.8xlarge": 3.201,
@@ -1198,5 +1200,5 @@
     "z1d.xlarge": 0.45
   },
   "region": "eu-central-1",
-  "updated": "2026-10-10T18:24:30Z"
+  "updated": "2026-11-08T04:28:27Z"
 }
