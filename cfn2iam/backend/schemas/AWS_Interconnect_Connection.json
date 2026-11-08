@@ -10,6 +10,7 @@
     "delete": {
       "permissions": [
         "interconnect:GetConnection",
+        "interconnect:ListTagsForResource",
         "interconnect:DeleteConnection"
       ]
     },

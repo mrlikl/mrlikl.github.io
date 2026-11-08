@@ -1,0 +1,45 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "backup:CreateBackupAccessPoint",
+        "backup:DescribeBackupAccessPoint",
+        "backup:ListTags",
+        "backup:TagResource",
+        "s3:CreateAccessPoint",
+        "s3:GetAccessPoint",
+        "s3:PutAccessPointPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "backup:DeleteBackupAccessPoint",
+        "backup:DescribeBackupAccessPoint",
+        "s3:DeleteAccessPoint",
+        "s3:GetAccessPoint"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "backup:ListBackupAccessPoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "backup:DescribeBackupAccessPoint",
+        "backup:ListTags",
+        "s3:GetAccessPoint"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "backup:DescribeBackupAccessPoint",
+        "backup:ListTags",
+        "backup:TagResource",
+        "backup:UntagResource",
+        "s3:GetAccessPoint"
+      ]
+    }
+  },
+  "typeName": "AWS::Backup::BackupAccessPoint"
+}

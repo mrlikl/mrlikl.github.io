@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "osis:CreatePipelineEndpoint",
+        "osis:ListPipelineEndpoints",
+        "iam:CreateServiceLinkedRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "osis:DeletePipelineEndpoint",
+        "osis:ListPipelineEndpoints"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "osis:ListPipelineEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "osis:ListPipelineEndpoints"
+      ]
+    }
+  },
+  "typeName": "AWS::OSIS::PipelineEndpoint"
+}

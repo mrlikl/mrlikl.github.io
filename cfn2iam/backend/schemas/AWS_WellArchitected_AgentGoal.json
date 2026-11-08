@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wellarchitected:CreateAgentGoal",
+        "wellarchitected:GetAgentGoal"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wellarchitected:DeleteAgentGoal",
+        "wellarchitected:GetAgentGoal"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ProfileArn": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "pattern": "^arn:aws([a-z0-9-]+)?:wellarchitected:[a-z0-9-]{6,64}:[0-9]{12}:agent-profile/[a-zA-Z0-9_-]+$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "ProfileArn"
+        ]
+      },
+      "permissions": [
+        "wellarchitected:ListAgentGoals"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wellarchitected:GetAgentGoal"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wellarchitected:UpdateAgentGoal",
+        "wellarchitected:GetAgentGoal"
+      ]
+    }
+  },
+  "typeName": "AWS::WellArchitected::AgentGoal"
+}

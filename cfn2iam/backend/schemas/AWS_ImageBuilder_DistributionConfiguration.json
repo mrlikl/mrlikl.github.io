@@ -10,7 +10,8 @@
         "ssm:GetParameter",
         "imagebuilder:TagResource",
         "imagebuilder:GetDistributionConfiguration",
-        "imagebuilder:CreateDistributionConfiguration"
+        "imagebuilder:CreateDistributionConfiguration",
+        "ecr:DescribeRepositories"
       ]
     },
     "delete": {
@@ -39,7 +40,8 @@
         "imagebuilder:GetDistributionConfiguration",
         "imagebuilder:UpdateDistributionConfiguration",
         "imagebuilder:TagResource",
-        "imagebuilder:UntagResource"
+        "imagebuilder:UntagResource",
+        "ecr:DescribeRepositories"
       ]
     }
   },
