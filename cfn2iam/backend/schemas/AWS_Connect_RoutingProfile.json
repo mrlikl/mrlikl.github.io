@@ -3,6 +3,7 @@
     "create": {
       "permissions": [
         "connect:CreateRoutingProfile",
+        "connect:AssociateRoutingProfileQueues",
         "connect:TagResource"
       ]
     },

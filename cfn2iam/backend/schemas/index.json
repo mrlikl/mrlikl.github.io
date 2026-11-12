@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-01T07:13:56.449825Z",
+  "lastUpdated": "2026-11-08T07:01:01.212111Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -725,6 +725,11 @@
       "filename": "AWS_BackupGateway_Hypervisor.json",
       "hasHandlers": true,
       "typeName": "AWS::BackupGateway::Hypervisor"
+    },
+    {
+      "filename": "AWS_Backup_BackupAccessPoint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Backup::BackupAccessPoint"
     },
     {
       "filename": "AWS_Backup_BackupPlan.json",
@@ -2160,6 +2165,11 @@
       "filename": "AWS_CustomerProfiles_Recommender.json",
       "hasHandlers": true,
       "typeName": "AWS::CustomerProfiles::Recommender"
+    },
+    {
+      "filename": "AWS_CustomerProfiles_RecommenderFilter.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CustomerProfiles::RecommenderFilter"
     },
     {
       "filename": "AWS_CustomerProfiles_RecommenderSchema.json",
@@ -6022,6 +6032,11 @@
       "typeName": "AWS::OSIS::Pipeline"
     },
     {
+      "filename": "AWS_OSIS_PipelineEndpoint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::OSIS::PipelineEndpoint"
+    },
+    {
       "filename": "AWS_Oam_Link.json",
       "hasHandlers": true,
       "typeName": "AWS::Oam::Link"
@@ -7432,6 +7447,11 @@
       "typeName": "AWS::SMSVOICE::ProtectConfiguration"
     },
     {
+      "filename": "AWS_SMSVOICE_RcsAgent.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SMSVOICE::RcsAgent"
+    },
+    {
       "filename": "AWS_SMSVOICE_Registration.json",
       "hasHandlers": true,
       "typeName": "AWS::SMSVOICE::Registration"
@@ -8612,6 +8632,21 @@
       "typeName": "AWS::WAFv2::WebACLAssociation"
     },
     {
+      "filename": "AWS_WellArchitected_AgentContext.json",
+      "hasHandlers": true,
+      "typeName": "AWS::WellArchitected::AgentContext"
+    },
+    {
+      "filename": "AWS_WellArchitected_AgentGoal.json",
+      "hasHandlers": true,
+      "typeName": "AWS::WellArchitected::AgentGoal"
+    },
+    {
+      "filename": "AWS_WellArchitected_AgentProfile.json",
+      "hasHandlers": true,
+      "typeName": "AWS::WellArchitected::AgentProfile"
+    },
+    {
       "filename": "AWS_WellArchitected_Lens.json",
       "hasHandlers": true,
       "typeName": "AWS::WellArchitected::Lens"
@@ -8822,5 +8857,5 @@
       "typeName": "AWS::XRay::TransactionSearchConfig"
     }
   ],
-  "totalSchemas": 1764
+  "totalSchemas": 1771
 }

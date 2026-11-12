@@ -2,16 +2,32 @@
   "handlers": {
     "create": {
       "permissions": [
+        "gamelift:AllowVendedLogDeliveryForResource",
         "gamelift:CreateGameSessionQueue",
         "gamelift:DescribeGameSessionQueues",
         "gamelift:ListTagsForResource",
-        "gamelift:TagResource"
+        "gamelift:TagResource",
+        "logs:PutDeliverySource",
+        "logs:PutDeliveryDestination",
+        "logs:CreateDelivery",
+        "logs:CreateLogGroup",
+        "logs:DescribeLogGroups",
+        "logs:DescribeResourcePolicies",
+        "logs:PutResourcePolicy",
+        "s3:CreateBucket",
+        "s3:GetBucketPolicy",
+        "s3:PutBucketPolicy",
+        "firehose:TagDeliveryStream",
+        "iam:CreateServiceLinkedRole"
       ]
     },
     "delete": {
       "permissions": [
         "gamelift:DescribeGameSessionQueues",
-        "gamelift:DeleteGameSessionQueue"
+        "gamelift:DeleteGameSessionQueue",
+        "logs:DeleteDelivery",
+        "logs:DeleteDeliveryDestination",
+        "logs:DeleteDeliverySource"
       ]
     },
     "list": {
@@ -27,11 +43,27 @@
     },
     "update": {
       "permissions": [
+        "gamelift:AllowVendedLogDeliveryForResource",
         "gamelift:UpdateGameSessionQueue",
         "gamelift:ListTagsForResource",
         "gamelift:TagResource",
         "gamelift:UntagResource",
-        "gamelift:DescribeGameSessionQueues"
+        "gamelift:DescribeGameSessionQueues",
+        "logs:PutDeliverySource",
+        "logs:PutDeliveryDestination",
+        "logs:CreateDelivery",
+        "logs:CreateLogGroup",
+        "logs:DeleteDelivery",
+        "logs:DeleteDeliveryDestination",
+        "logs:DeleteDeliverySource",
+        "logs:DescribeLogGroups",
+        "logs:DescribeResourcePolicies",
+        "logs:PutResourcePolicy",
+        "s3:CreateBucket",
+        "s3:GetBucketPolicy",
+        "s3:PutBucketPolicy",
+        "firehose:TagDeliveryStream",
+        "iam:CreateServiceLinkedRole"
       ]
     }
   },

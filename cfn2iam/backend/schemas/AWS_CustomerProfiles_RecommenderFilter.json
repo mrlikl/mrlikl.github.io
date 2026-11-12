@@ -1,0 +1,61 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "profile:CreateRecommenderFilter",
+        "profile:GetRecommenderFilter",
+        "profile:TagResource",
+        "profile:ListTagsForResource",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ],
+      "timeoutInMinutes": 390
+    },
+    "delete": {
+      "permissions": [
+        "profile:DeleteRecommenderFilter",
+        "profile:GetRecommenderFilter"
+      ],
+      "timeoutInMinutes": 390
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "DomainName": {
+            "maxLength": 64,
+            "minLength": 1,
+            "pattern": "^[a-zA-Z0-9_-]+$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "DomainName"
+        ]
+      },
+      "permissions": [
+        "profile:ListRecommenderFilters",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "profile:GetRecommenderFilter",
+        "profile:ListTagsForResource",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "profile:GetRecommenderFilter",
+        "profile:TagResource",
+        "profile:UntagResource",
+        "profile:ListTagsForResource",
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
+    }
+  },
+  "typeName": "AWS::CustomerProfiles::RecommenderFilter"
+}

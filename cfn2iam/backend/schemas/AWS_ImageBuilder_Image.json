@@ -47,6 +47,7 @@
     },
     "update": {
       "permissions": [
+        "imagebuilder:GetImage",
         "imagebuilder:TagResource",
         "imagebuilder:UntagResource"
       ]

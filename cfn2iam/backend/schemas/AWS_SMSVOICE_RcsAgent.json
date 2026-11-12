@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sms-voice:CreateRcsAgent",
+        "sms-voice:UpdateRcsAgent",
+        "sms-voice:TagResource",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sms-voice:DeleteRcsAgent",
+        "sms-voice:DescribeRcsAgents",
+        "sms-voice:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "sms-voice:DescribeRcsAgents"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sms-voice:DescribeRcsAgents",
+        "sms-voice:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sms-voice:DescribeRcsAgents",
+        "sms-voice:UpdateRcsAgent",
+        "sms-voice:TagResource",
+        "sms-voice:UntagResource",
+        "sms-voice:ListTagsForResource",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::SMSVOICE::RcsAgent"
+}
