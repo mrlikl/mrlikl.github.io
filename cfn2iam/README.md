@@ -6,13 +6,31 @@ A client-side web tool that generates minimal IAM policies for CloudFormation st
 
 The page runs the [cfn2iam](https://github.com/mrlikl/cfn2iam) Python package itself, in your browser, so the web tool and the CLI are one implementation and produce the same policy.
 
-1. **Runtime**: `app.js` loads [Pyodide](https://pyodide.org/) (a pinned version from cdn.jsdelivr.net) and installs a pinned `cfn2iam` release from PyPI with micropip. The template never leaves your browser.
+1. **Runtime**: `runtime.js` loads [Pyodide](https://pyodide.org/) (a pinned version from cdn.jsdelivr.net) and installs the `cfn2iam` release pinned in `requirements.txt` from PyPI, after checking its SHA-256 (see below). The template never leaves your browser.
 2. **Template Analysis**: `cfn2iam.core` parses the template (JSON or YAML, including short-form intrinsics like `!Ref`) and expands SAM resources with the rules in `backend/sam_rules/`
 3. **Schema Lookup**: Reads each resource type's schema from `backend/schemas/`, relative to the page
 4. **Permission Mapping**: Maps each schema's handler permissions to IAM actions
 5. **Policy Generation**: Creates the policy document; `app.js` renders it, the per-resource lists, and a warning for any resource type that couldn't be resolved
 
-`app.js` is only UI. A change to how policies are worked out belongs in the cfn2iam package: release it, then bump `CFN2IAM_VERSION` in `app.js`.
+`app.js` is only UI. A change to how policies are worked out belongs in the cfn2iam package: release it, and Dependabot opens the pull request that moves the page to it.
+
+## 📌 Which cfn2iam release the page runs
+
+`requirements.txt` (next to the page) pins it, with the SHA-256 of each file of that release:
+
+```
+cfn2iam==0.3.0 \
+    --hash=sha256:a3422dbb… \
+    --hash=sha256:d8af1c15…
+```
+
+At startup `runtime.js` reads that file, asks PyPI for that version (`https://pypi.org/pypi/cfn2iam/<version>/json`), downloads the `py3-none-any` wheel whose hash is pinned from files.pythonhosted.org, checks the downloaded bytes against the pin, and installs them with micropip, `deps=False` (PyYAML comes from Pyodide; typer and boto3 are CLI-only and are never installed). It does not use the package index (`/simple/cfn2iam/`): PyPI and the browser cache that for up to 10 minutes, so right after a release it can still list only the older versions, and micropip then fails with "Can't find a pure Python 3 wheel". If PyPI or the CDN can't be reached, or a hash doesn't match, the status line says which and what to do.
+
+**Updating.** Dependabot (`.github/dependabot.yml`, the `/cfn2iam` entry) checks PyPI daily with no cooldown and opens a "Bump cfn2iam from X to Y in /cfn2iam" pull request that changes the version and the hashes. The `Check cfn2iam web runtime` workflow runs on that PR: it installs the pinned release the same way the page does (Pyodide under Node, the same `runtime.js`) and runs a template through `cfn2iam.core` with this folder's `backend/`. Merging the PR is all it takes; nothing else holds the version. To bump by hand, change the version and replace the hashes with the ones PyPI lists for the new release (`pip download cfn2iam==X --no-deps` and `pip hash`, or the release's JSON), then run the check below.
+
+`requirements.txt` is not for `pip install -r`: its dependencies are not pinned, so pip's hash-checking mode would refuse it.
+
+The Pyodide version is `PYODIDE_VERSION` in `runtime.js`; the check workflow reads it from there.
 
 ## 📋 Generated Policy Structure
 
@@ -102,7 +120,16 @@ python3 -m http.server 3000
 # open http://localhost:3000/cfn2iam/?wheel=dev-wheels/cfn2iam-0.3.0-py3-none-any.whl
 ```
 
-`?wheel=` only accepts a wheel served by the same site, because installing it runs its code in the page. The status line under the template shows which cfn2iam version is running.
+`?wheel=` only accepts a wheel served by the same site, because installing it runs its code in the page; it skips `requirements.txt` and the hash check. The status line under the template shows which cfn2iam version is running and, with `?wheel=`, which file.
+
+Without `?wheel=`, the same local server runs the production path: the release pinned in `requirements.txt`, from PyPI. Serve over `http://localhost` (or https), not a LAN address: checking the hash needs a secure context.
+
+To run the CI check locally (Node 24):
+
+```bash
+npm install --no-save --prefix /tmp/pyodide pyodide@$(node --input-type=module -e 'console.log((await import("./cfn2iam/runtime.js")).PYODIDE_VERSION)')
+node .github/scripts/check-cfn2iam.mjs /tmp/pyodide/node_modules/pyodide
+```
 
 ## 🚦 Getting Started
 
