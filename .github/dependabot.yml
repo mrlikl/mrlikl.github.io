@@ -1,6 +1,7 @@
 version: 2
 
-# Weekly, grouped into one pull request per ecosystem, skipping releases younger than a week.
+# Weekly, grouped into one pull request per ecosystem, skipping releases younger than a week,
+# except the cfn2iam pin at the end.
 updates:
   # Actions are pinned by commit SHA with the version in a comment; Dependabot updates both.
   - package-ecosystem: "github-actions"
@@ -22,3 +23,13 @@ updates:
     groups:
       python:
         patterns: ["*"]
+
+  # The cfn2iam release the web tool runs (cfn2iam/requirements.txt, version and hashes).
+  # Daily with no cooldown and no group, so a new release gets its own "Bump cfn2iam" PR
+  # within a day; merging it is what changes the page.
+  - package-ecosystem: "pip"
+    directory: "/cfn2iam"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "cfn2iam"

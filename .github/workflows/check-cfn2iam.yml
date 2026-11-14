@@ -1,0 +1,39 @@
+name: Check cfn2iam web runtime
+
+# Installs the cfn2iam release pinned in cfn2iam/requirements.txt the way the page does
+# (Pyodide, PyPI, SHA-256 check, deps=False) and runs a template through cfn2iam.core with
+# this repo's cfn2iam/backend/. Runs on the Dependabot "Bump cfn2iam" PRs; needs no secrets.
+on:
+  pull_request:
+    paths:
+      - "cfn2iam/**"
+      - ".github/scripts/check-cfn2iam.mjs"
+      - ".github/workflows/check-cfn2iam.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+
+      # The same Pyodide version the page loads from the CDN (PYODIDE_VERSION in cfn2iam/runtime.js).
+      - name: Install Pyodide
+        shell: bash
+        run: |
+          version=$(node --input-type=module -e 'const m = await import("./cfn2iam/runtime.js"); console.log(m.PYODIDE_VERSION)')
+          npm install --no-save --no-audit --no-fund --prefix "$RUNNER_TEMP/pyodide" "pyodide@$version"
+
+      - name: Install the pinned cfn2iam and run a template
+        run: node .github/scripts/check-cfn2iam.mjs "$RUNNER_TEMP/pyodide/node_modules/pyodide"

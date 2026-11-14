@@ -2,47 +2,8 @@
 //
 // The logic is not here: the page runs the cfn2iam Python package (cfn2iam.core)
 // in the browser with Pyodide, so the web version and the CLI are one
-// implementation. This file only loads that runtime and renders what it returns.
-
-const PYODIDE_VERSION = "314.0.7";
-const PYODIDE_INDEX_URL = `https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VERSION}/full/`;
-// The cfn2iam release the page installs from PyPI. `?wheel=<same-origin URL>` overrides it.
-const CFN2IAM_VERSION = "0.3.0";
-
-// Glue between the page and cfn2iam.core: fetch backend files relative to the page,
-// and hand results back to JavaScript as JSON strings.
-const PYTHON_GLUE = `
-import json
-from pyodide.http import pyfetch
-from cfn2iam import core
-
-_cache = {}
-
-async def _fetch_json(path):
-    if path in _cache:
-        return _cache[path]
-    response = await pyfetch(BACKEND_URL + path)
-    if response.status == 404:
-        raise core.NotFound(path)
-    if not response.ok:
-        raise OSError(f"HTTP {response.status} for {path}")
-    data = await response.json()
-    _cache[path] = data
-    return data
-
-async def _run(make):
-    try:
-        analysis = await make()
-    except (core.TemplateError, ValueError) as e:
-        return json.dumps({"error": str(e)})
-    return json.dumps(analysis.to_dict())
-
-async def analyze_template(text, allow_delete):
-    return await _run(lambda: core.analyze_template(text, _fetch_json, allow_delete=bool(allow_delete)))
-
-async def analyze_resource_type(resource_type, allow_delete):
-    return await _run(lambda: core.analyze_resource_type(resource_type, _fetch_json, allow_delete=bool(allow_delete)))
-`;
+// implementation. runtime.js loads that runtime and installs the cfn2iam release
+// pinned in requirements.txt; this file renders what the core returns.
 
 class CoreRuntime {
   constructor(onStatus) {
@@ -52,57 +13,61 @@ class CoreRuntime {
     this.ready.catch(() => {});
   }
 
-  wheelSource() {
+  // `?wheel=<same-origin URL>` installs that wheel instead of the pinned release.
+  wheelOverride() {
     const override = new URLSearchParams(location.search).get("wheel");
-    if (!override) return { spec: `cfn2iam==${CFN2IAM_VERSION}`, label: `cfn2iam ${CFN2IAM_VERSION} from PyPI` };
+    if (!override) return null;
     const url = new URL(override, location.href);
     // Installing a wheel runs its code in this page, so only accept one served by this site.
     if (url.origin !== location.origin) {
       throw new Error(`?wheel must point to a file on ${location.origin}, not ${url.origin}`);
     }
-    return { spec: url.href, label: `cfn2iam wheel ${url.pathname}`, override: url.pathname };
+    return url;
   }
 
   async load() {
     const started = performance.now();
     try {
-      const source = this.wheelSource();
-      this.onStatus("loading", "Loading the Python runtime (Pyodide)…");
-      const { loadPyodide } = await import(`${PYODIDE_INDEX_URL}pyodide.mjs`);
-      const pyodide = await loadPyodide({ indexURL: PYODIDE_INDEX_URL });
-      await pyodide.loadPackage(["micropip", "pyyaml"], { messageCallback: () => {} });
-
-      this.onStatus("loading", `Installing ${source.label}…`);
-      const install = pyodide.toPy({ spec: source.spec });
-      try {
-        // deps=False: the core needs only PyYAML (loaded above); typer and boto3 are for the CLI.
-        await pyodide.runPythonAsync("import micropip\nawait micropip.install(spec, deps=False)", { globals: install });
-      } finally {
-        install.destroy();
-      }
-
-      pyodide.globals.set("BACKEND_URL", new URL("backend/", location.href).href);
-      await pyodide.runPythonAsync(PYTHON_GLUE);
-      this.analyzeTemplateFn = pyodide.globals.get("analyze_template");
-      this.analyzeResourceTypeFn = pyodide.globals.get("analyze_resource_type");
-      this.version = pyodide.runPython("from importlib.metadata import version; version('cfn2iam')");
+      const override = this.wheelOverride();
+      const runtime = await import("./runtime.js");
+      // Start the cfn2iam download now; it runs alongside loading Pyodide.
+      const wheel = override ? Promise.resolve({ url: override.href }) : this.pinnedWheel(runtime);
+      const core = await runtime.startCore({
+        loadPyodide: async (options) => (await import(`${runtime.PYODIDE_INDEX_URL}pyodide.mjs`)).loadPyodide(options),
+        pyodideOptions: { indexURL: runtime.PYODIDE_INDEX_URL },
+        wheel,
+        backendURL: new URL("backend/", location.href).href,
+        onStatus: (message) => this.onStatus("loading", message),
+      });
+      this.core = core;
 
       const seconds = ((performance.now() - started) / 1000).toFixed(1);
-      this.onStatus("ready", `cfn2iam ${this.version}${source.override ? ` from ${source.override}` : ""} · runs in your browser with Pyodide · ready in ${seconds}s`);
+      this.onStatus("ready", `cfn2iam ${core.version}${override ? ` from ${override.pathname}` : ""} · runs in your browser with Pyodide · ready in ${seconds}s`);
     } catch (error) {
       this.onStatus("error", `Couldn't start cfn2iam in your browser: ${firstLine(error)}`);
       throw error;
     }
   }
 
+  async pinnedWheel(runtime) {
+    let response;
+    try {
+      response = await fetch(new URL("requirements.txt", location.href), { cache: "no-cache" });
+    } catch (error) {
+      throw new runtime.StartupError(`couldn't read requirements.txt from this site (${error.message}); reload the page`);
+    }
+    if (!response.ok) throw new runtime.StartupError(`couldn't read requirements.txt from this site (HTTP ${response.status})`);
+    return runtime.fetchPinnedWheel(await response.text());
+  }
+
   async analyzeTemplate(text, allowDelete) {
     await this.ready;
-    return JSON.parse(await this.analyzeTemplateFn(text, allowDelete));
+    return this.core.analyzeTemplate(text, allowDelete);
   }
 
   async analyzeResourceType(resourceType, allowDelete) {
     await this.ready;
-    return JSON.parse(await this.analyzeResourceTypeFn(resourceType, allowDelete));
+    return this.core.analyzeResourceType(resourceType, allowDelete);
   }
 }
 

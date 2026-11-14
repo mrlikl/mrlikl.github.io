@@ -1,0 +1,8 @@
+# The cfn2iam release the page installs from PyPI (read at runtime by runtime.js).
+# Dependabot bumps the version and its hashes; merging that PR is all it takes to
+# change what the page runs. The page installs the wheel whose SHA-256 is listed
+# here, without dependencies (PyYAML comes from Pyodide; typer is CLI-only), so this
+# file is not meant for `pip install -r`.
+cfn2iam==0.3.0 \
+    --hash=sha256:a3422dbb958b48b7e9ad34c1d60eccd03d23052a50f1aa457923a5192faf27cd \
+    --hash=sha256:d8af1c15ad9d112993fcb9e3dab02c91c03adcb57b2b016641cda0a0afefc941
