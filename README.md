@@ -1,18 +1,18 @@
-# Portfolio
+# mrlikl.github.io
 
-This hosts the portfolio website alongside some tools I built partially (and vibe coded)
+Source of [mrlikl.github.io](https://mrlikl.github.io), a portfolio site, and of two small browser tools hosted on it.
 
-Visit [https://mrlikl.github.io](https://mrlikl.github.io) for portfolio. 
+## Tools
 
-## 🛠️ Tools
+### [cfn2iam](./cfn2iam/): stop deploying CloudFormation with AdministratorAccess
 
-### [CloudFormation to IAM Policy Generator](./cfn2iam/)
-Generate minimal IAM policies for CloudFormation stack deployment. Upload your CloudFormation template and get the exact IAM permissions needed for deployment.
+Reads a CloudFormation or SAM template and generates the IAM policy the stack needs to deploy, before the first deploy. IAM Access Analyzer policy generation works from CloudTrail activity, so it needs a broad-permission deploy first; cfn2iam reads the template instead. The policy is limited to actions (`"Resource": "*"`); see the [README](./cfn2iam/README.md) for scope and limitations.
 
-Visit [https://mrlikl.github.io/cfn2iam/](https://mrlikl.github.io/cfn2iam/)
+- Live: [mrlikl.github.io/cfn2iam](https://mrlikl.github.io/cfn2iam/)
+- Command-line version: [github.com/mrlikl/cfn2iam](https://github.com/mrlikl/cfn2iam) and [PyPI](https://pypi.org/project/cfn2iam/)
 
+### [ec2prices](./ec2prices/): EC2 on-demand prices by region
 
-### [AWS EC2 Prices](./ec2prices/)
-Compare EC2 instance pricing across regions and instance types. Find the most cost-effective options for your workloads.
+Compares EC2 Linux on-demand prices for every instance type across regions, from the AWS Price List API.
 
-Visit [https://mrlikl.github.io/ec2prices/](https://mrlikl.github.io/ec2prices/)
+- Live: [mrlikl.github.io/ec2prices](https://mrlikl.github.io/ec2prices/)
