@@ -124,6 +124,35 @@
             <span class="runtime-text">Loading the Python runtime (Pyodide)…</span>
           </div>
 
+          <div class="scope" id="scope" hidden>
+            <p class="scope-title">
+              Scope to an account <span class="muted">(optional, applies to both modes)</span>
+            </p>
+            <div class="scope-fields">
+              <div class="field">
+                <label class="field-label" for="scopeAccount">Account ID</label>
+                <input type="text" id="scopeAccount" inputmode="numeric" autocomplete="off" spellcheck="false" placeholder="123456789012" aria-describedby="scopeHint scopeError" />
+              </div>
+              <div class="field">
+                <label class="field-label" for="scopeRegion">Region</label>
+                <input type="text" id="scopeRegion" autocomplete="off" spellcheck="false" placeholder="any region, or us-east-1" aria-describedby="scopeHint scopeError" />
+              </div>
+            </div>
+            <details class="scope-more">
+              <summary>Partition</summary>
+              <div class="field">
+                <label class="field-label" for="scopePartition">Partition (only for China, GovCloud and other non-standard partitions)</label>
+                <select id="scopePartition" aria-describedby="scopeError"></select>
+              </div>
+            </details>
+            <p class="hint" id="scopeHint">
+              With an account ID, resource ARNs in the policy name that account (and region) instead of <code>*</code>.
+              It is used only in your browser to fill in the ARNs and is not sent anywhere.
+            </p>
+            <p class="scope-error" id="scopeError" role="alert" hidden></p>
+          </div>
+          <p class="hint scope-note" id="scopeNote" hidden></p>
+
           <div class="panel-footer">
             <label class="switch">
               <input type="checkbox" id="allowDelete" />
