@@ -114,7 +114,12 @@ try {
     console.log(`scoped template: ${scoped.scoping.scoped_count} scoped, ${scoped.scoping.unscoped_count} on *, ${scoped.policy.Statement.length} statements, ${scoped.policy_size} characters`);
 
     const unscoped = await core.analyzeTemplate(TEMPLATE, false, {});
-    check(unscoped.scoping === null && unscoped.policy.Statement.length <= 2, "an empty scope did not give the unscoped policy");
+    // Unscoped: every statement is on "*", except the one for the template's transform
+    // (cfn2iam 0.4.1+), whose resource is the transform ARN with wildcards for partition and region.
+    const unscopedOk = unscoped.policy.Statement.every((s) =>
+      [].concat(s.Resource).every((r) => r === "*" || /^arn:\*:cloudformation:\*:[^:]*:transform\//.test(r)),
+    );
+    check(unscoped.scoping === null && unscopedOk, `an empty scope did not give the unscoped policy: ${JSON.stringify(unscoped.policy.Statement.map((s) => s.Resource))}`);
 
     const bad = await core.analyzeTemplate(TEMPLATE, false, { account: "12345" });
     check(bad.error && bad.scope_error, `a bad account was not reported as a scope error: ${JSON.stringify(bad).slice(0, 200)}`);
