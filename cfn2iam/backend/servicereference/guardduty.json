@@ -1,0 +1,879 @@
+{
+ "actions": {
+  "acceptadministratorinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptAdministratorInvitation",
+   "resources": []
+  },
+  "acceptinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptInvitation",
+   "resources": []
+  },
+  "archivefindings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ArchiveFindings",
+   "resources": []
+  },
+  "createcustomdetectionruleassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomDetectionRuleAssociation",
+   "resources": []
+  },
+  "createcustomdetectionruleorgconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomDetectionRuleOrgConfiguration",
+   "resources": []
+  },
+  "createdetector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDetector",
+   "resources": []
+  },
+  "createfilter": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFilter",
+   "resources": [
+    "filter"
+   ]
+  },
+  "createinvestigation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInvestigation",
+   "resources": []
+  },
+  "createipset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIPSet",
+   "resources": []
+  },
+  "createmalwareprotectionplan": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMalwareProtectionPlan",
+   "resources": []
+  },
+  "createmembers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMembers",
+   "resources": []
+  },
+  "createpublishingdestination": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePublishingDestination",
+   "resources": []
+  },
+  "createsamplefindings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSampleFindings",
+   "resources": []
+  },
+  "createthreatentityset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateThreatEntitySet",
+   "resources": []
+  },
+  "createthreatintelset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateThreatIntelSet",
+   "resources": []
+  },
+  "createtrustedentityset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTrustedEntitySet",
+   "resources": []
+  },
+  "declineinvitations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeclineInvitations",
+   "resources": []
+  },
+  "deletecustomdetectionruleassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomDetectionRuleAssociation",
+   "resources": [
+    "customdetectionruleassociation"
+   ]
+  },
+  "deletecustomdetectionruleorgconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomDetectionRuleOrgConfiguration",
+   "resources": []
+  },
+  "deletedetector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDetector",
+   "resources": [
+    "detector"
+   ]
+  },
+  "deletefilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFilter",
+   "resources": [
+    "filter"
+   ]
+  },
+  "deleteinvitations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInvitations",
+   "resources": []
+  },
+  "deleteipset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIPSet",
+   "resources": [
+    "ipset"
+   ]
+  },
+  "deletemalwareprotectionplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMalwareProtectionPlan",
+   "resources": [
+    "malwareprotectionplan"
+   ]
+  },
+  "deletemembers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMembers",
+   "resources": []
+  },
+  "deletepublishingdestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePublishingDestination",
+   "resources": [
+    "publishingDestination"
+   ]
+  },
+  "deletethreatentityset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteThreatEntitySet",
+   "resources": [
+    "threatentityset"
+   ]
+  },
+  "deletethreatintelset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteThreatIntelSet",
+   "resources": [
+    "threatintelset"
+   ]
+  },
+  "deletetrustedentityset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTrustedEntitySet",
+   "resources": [
+    "trustedentityset"
+   ]
+  },
+  "describemalwarescans": {
+   "name": "DescribeMalwareScans",
+   "resources": []
+  },
+  "describeorganizationconfiguration": {
+   "name": "DescribeOrganizationConfiguration",
+   "resources": []
+  },
+  "describepublishingdestination": {
+   "name": "DescribePublishingDestination",
+   "resources": [
+    "publishingDestination"
+   ]
+  },
+  "disableorganizationadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableOrganizationAdminAccount",
+   "resources": []
+  },
+  "disassociatefromadministratoraccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateFromAdministratorAccount",
+   "resources": []
+  },
+  "disassociatefrommasteraccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateFromMasterAccount",
+   "resources": []
+  },
+  "disassociatemembers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateMembers",
+   "resources": []
+  },
+  "enableorganizationadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableOrganizationAdminAccount",
+   "resources": []
+  },
+  "getadministratoraccount": {
+   "name": "GetAdministratorAccount",
+   "resources": []
+  },
+  "getcoveragestatistics": {
+   "name": "GetCoverageStatistics",
+   "resources": [
+    "detector"
+   ]
+  },
+  "getcustomdetectionrule": {
+   "name": "GetCustomDetectionRule",
+   "resources": []
+  },
+  "getcustomdetectionruleassociation": {
+   "name": "GetCustomDetectionRuleAssociation",
+   "resources": [
+    "customdetectionruleassociation"
+   ]
+  },
+  "getcustomdetectionruleorgconfiguration": {
+   "name": "GetCustomDetectionRuleOrgConfiguration",
+   "resources": []
+  },
+  "getdetector": {
+   "name": "GetDetector",
+   "resources": [
+    "detector"
+   ]
+  },
+  "getfilter": {
+   "name": "GetFilter",
+   "resources": [
+    "filter"
+   ]
+  },
+  "getfindings": {
+   "name": "GetFindings",
+   "resources": []
+  },
+  "getfindingsstatistics": {
+   "name": "GetFindingsStatistics",
+   "resources": []
+  },
+  "getinvestigation": {
+   "name": "GetInvestigation",
+   "resources": []
+  },
+  "getinvitationscount": {
+   "name": "GetInvitationsCount",
+   "resources": []
+  },
+  "getipset": {
+   "name": "GetIPSet",
+   "resources": [
+    "ipset"
+   ]
+  },
+  "getmalwareprotectionplan": {
+   "name": "GetMalwareProtectionPlan",
+   "resources": [
+    "malwareprotectionplan"
+   ]
+  },
+  "getmalwarescan": {
+   "name": "GetMalwareScan",
+   "resources": []
+  },
+  "getmalwarescansettings": {
+   "name": "GetMalwareScanSettings",
+   "resources": []
+  },
+  "getmasteraccount": {
+   "name": "GetMasterAccount",
+   "resources": []
+  },
+  "getmemberdetectors": {
+   "name": "GetMemberDetectors",
+   "resources": []
+  },
+  "getmembers": {
+   "name": "GetMembers",
+   "resources": []
+  },
+  "getorganizationstatistics": {
+   "name": "GetOrganizationStatistics",
+   "resources": []
+  },
+  "getremainingfreetrialdays": {
+   "name": "GetRemainingFreeTrialDays",
+   "resources": []
+  },
+  "getthreatentityset": {
+   "name": "GetThreatEntitySet",
+   "resources": [
+    "threatentityset"
+   ]
+  },
+  "getthreatintelset": {
+   "name": "GetThreatIntelSet",
+   "resources": [
+    "threatintelset"
+   ]
+  },
+  "gettrustedentityset": {
+   "name": "GetTrustedEntitySet",
+   "resources": [
+    "trustedentityset"
+   ]
+  },
+  "getusagestatistics": {
+   "name": "GetUsageStatistics",
+   "resources": []
+  },
+  "invitemembers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InviteMembers",
+   "resources": []
+  },
+  "listcoverage": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCoverage",
+   "resources": [
+    "detector"
+   ]
+  },
+  "listcustomdetectionruleassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomDetectionRuleAssociations",
+   "resources": []
+  },
+  "listcustomdetectionruleorgconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomDetectionRuleOrgConfigurations",
+   "resources": []
+  },
+  "listcustomdetectionrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomDetectionRules",
+   "resources": []
+  },
+  "listdetectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDetectors",
+   "resources": []
+  },
+  "listfilters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFilters",
+   "resources": []
+  },
+  "listfindings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFindings",
+   "resources": []
+  },
+  "listinvestigationrecords": {
+   "name": "ListInvestigationRecords",
+   "resources": []
+  },
+  "listinvestigations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInvestigations",
+   "resources": []
+  },
+  "listinvitations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInvitations",
+   "resources": []
+  },
+  "listipsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIPSets",
+   "resources": []
+  },
+  "listmalwareprotectionplans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMalwareProtectionPlans",
+   "resources": []
+  },
+  "listmalwarescans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMalwareScans",
+   "resources": []
+  },
+  "listmembers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMembers",
+   "resources": []
+  },
+  "listorganizationadminaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrganizationAdminAccounts",
+   "resources": []
+  },
+  "listpublishingdestinations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPublishingDestinations",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "customdetectionruleassociation",
+    "detector",
+    "filter",
+    "ipset",
+    "malwareprotectionplan",
+    "publishingDestination",
+    "threatentityset",
+    "threatintelset",
+    "trustedentityset"
+   ]
+  },
+  "listthreatentitysets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThreatEntitySets",
+   "resources": []
+  },
+  "listthreatintelsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThreatIntelSets",
+   "resources": []
+  },
+  "listtrustedentitysets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrustedEntitySets",
+   "resources": []
+  },
+  "sendobjectmalwarescan": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendObjectMalwareScan",
+   "resources": []
+  },
+  "sendsecuritytelemetry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendSecurityTelemetry",
+   "resources": []
+  },
+  "startmalwarescan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMalwareScan",
+   "resources": []
+  },
+  "startmonitoringmembers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMonitoringMembers",
+   "resources": []
+  },
+  "stopmonitoringmembers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopMonitoringMembers",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "customdetectionruleassociation",
+    "detector",
+    "filter",
+    "ipset",
+    "malwareprotectionplan",
+    "publishingDestination",
+    "threatentityset",
+    "threatintelset",
+    "trustedentityset"
+   ]
+  },
+  "unarchivefindings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnarchiveFindings",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "customdetectionruleassociation",
+    "detector",
+    "filter",
+    "ipset",
+    "malwareprotectionplan",
+    "publishingDestination",
+    "threatentityset",
+    "threatintelset",
+    "trustedentityset"
+   ]
+  },
+  "updatecustomdetectionruleassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCustomDetectionRuleAssociation",
+   "resources": [
+    "customdetectionruleassociation"
+   ]
+  },
+  "updatecustomdetectionruleorgconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCustomDetectionRuleOrgConfiguration",
+   "resources": []
+  },
+  "updatedetector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDetector",
+   "resources": [
+    "detector"
+   ]
+  },
+  "updatefilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFilter",
+   "resources": [
+    "filter"
+   ]
+  },
+  "updatefindingsfeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFindingsFeedback",
+   "resources": []
+  },
+  "updateipset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIPSet",
+   "resources": [
+    "ipset"
+   ]
+  },
+  "updatemalwareprotectionplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMalwareProtectionPlan",
+   "resources": [
+    "malwareprotectionplan"
+   ]
+  },
+  "updatemalwarescansettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMalwareScanSettings",
+   "resources": []
+  },
+  "updatememberdetectors": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMemberDetectors",
+   "resources": []
+  },
+  "updateorganizationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOrganizationConfiguration",
+   "resources": []
+  },
+  "updatepublishingdestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePublishingDestination",
+   "resources": [
+    "publishingDestination"
+   ]
+  },
+  "updatethreatentityset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateThreatEntitySet",
+   "resources": [
+    "threatentityset"
+   ]
+  },
+  "updatethreatintelset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateThreatIntelSet",
+   "resources": [
+    "threatintelset"
+   ]
+  },
+  "updatetrustedentityset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTrustedEntitySet",
+   "resources": [
+    "trustedentityset"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "customdetectionrule": {
+   "arnFormats": [
+    "arn:${Partition}:guardduty::aws:detection-rule/custom/${RuleId}"
+   ]
+  },
+  "customdetectionruleassociation": {
+   "arnFormats": [
+    "arn:${Partition}:guardduty:${Region}:${Account}:detection-rule/custom/${RuleId}/association/${AssociationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "detector": {
+   "arnFormats": [
+    "arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "filter": {
+   "arnFormats": [
+    "arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/filter/${FilterName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ipset": {
+   "arnFormats": [
+    "arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/ipset/${IPSetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "malwareprotectionplan": {
+   "arnFormats": [
+    "arn:${Partition}:guardduty:${Region}:${Account}:malware-protection-plan/${MalwareProtectionPlanId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "publishingDestination": {
+   "arnFormats": [
+    "arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/publishingdestination/${PublishingDestinationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "threatentityset": {
+   "arnFormats": [
+    "arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/threatentityset/${ThreatEntitySetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "threatintelset": {
+   "arnFormats": [
+    "arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/threatintelset/${ThreatIntelSetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "trustedentityset": {
+   "arnFormats": [
+    "arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/trustedentityset/${TrustedEntitySetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "guardduty",
+ "serviceName": "GuardDuty",
+ "version": "v1.5"
+}

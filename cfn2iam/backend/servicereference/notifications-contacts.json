@@ -1,0 +1,111 @@
+{
+ "actions": {
+  "activateemailcontact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivateEmailContact",
+   "resources": [
+    "EmailContactResource"
+   ]
+  },
+  "createemailcontact": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEmailContact",
+   "resources": []
+  },
+  "deleteemailcontact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEmailContact",
+   "resources": [
+    "EmailContactResource"
+   ]
+  },
+  "getemailcontact": {
+   "name": "GetEmailContact",
+   "resources": [
+    "EmailContactResource"
+   ]
+  },
+  "listemailcontacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEmailContacts",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "sendactivationcode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendActivationCode",
+   "resources": [
+    "EmailContactResource"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "EmailContactResource"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "EmailContactResource"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "EmailContactResource": {
+   "arnFormats": [
+    "arn:${Partition}:notifications-contacts::${Account}:emailcontact/${EmailContactId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "notifications-contacts",
+ "serviceName": "User Notifications Contacts",
+ "version": "v1.5"
+}

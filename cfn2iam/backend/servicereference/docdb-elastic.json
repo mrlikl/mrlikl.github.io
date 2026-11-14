@@ -1,0 +1,257 @@
+{
+ "actions": {
+  "applypendingmaintenanceaction": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ApplyPendingMaintenanceAction",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "copyclustersnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyClusterSnapshot",
+   "resources": [
+    "cluster-snapshot"
+   ]
+  },
+  "createcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCluster",
+   "resources": []
+  },
+  "createclustersnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateClusterSnapshot",
+   "resources": [
+    "cluster",
+    "cluster-snapshot"
+   ]
+  },
+  "deletecluster": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "deleteclustersnapshot": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteClusterSnapshot",
+   "resources": [
+    "cluster-snapshot"
+   ]
+  },
+  "getcluster": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "getclustersnapshot": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetClusterSnapshot",
+   "resources": [
+    "cluster-snapshot"
+   ]
+  },
+  "getpendingmaintenanceaction": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetPendingMaintenanceAction",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClusters",
+   "resources": []
+  },
+  "listclustersnapshots": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClusterSnapshots",
+   "resources": []
+  },
+  "listpendingmaintenanceactions": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPendingMaintenanceActions",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "cluster",
+    "cluster-snapshot"
+   ]
+  },
+  "restoreclusterfromsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreClusterFromSnapshot",
+   "resources": [
+    "cluster",
+    "cluster-snapshot"
+   ]
+  },
+  "startcluster": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "stopcluster": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "cluster",
+    "cluster-snapshot"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "cluster",
+    "cluster-snapshot"
+   ]
+  },
+  "updatecluster": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCluster",
+   "resources": [
+    "cluster"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "cluster": {
+   "arnFormats": [
+    "arn:${Partition}:docdb-elastic:${Region}:${Account}:cluster/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "cluster-snapshot": {
+   "arnFormats": [
+    "arn:${Partition}:docdb-elastic:${Region}:${Account}:cluster-snapshot/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "docdb-elastic",
+ "serviceName": "DocumentDB Elastic Clusters",
+ "version": "v1.5"
+}

@@ -1,0 +1,101 @@
+{
+ "actions": {
+  "applicationaccessall": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "ApplicationAccessAll",
+   "resources": [
+    "application"
+   ]
+  },
+  "cancelautooptimizejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelAutoOptimizeJob",
+   "resources": []
+  },
+  "canceldirectquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelDirectQuery",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "deleteautooptimizejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAutoOptimizeJob",
+   "resources": []
+  },
+  "getautooptimizejob": {
+   "name": "GetAutoOptimizeJob",
+   "resources": []
+  },
+  "getdirectquery": {
+   "name": "GetDirectQuery",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "getdirectqueryresult": {
+   "name": "GetDirectQueryResult",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "listautooptimizejobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutoOptimizeJobs",
+   "resources": []
+  },
+  "startdirectquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDirectQuery",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "submitautooptimizejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitAutoOptimizeJob",
+   "resources": []
+  },
+  "viewloginpage": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "ViewLoginPage",
+   "resources": [
+    "application"
+   ]
+  }
+ },
+ "resources": {
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:opensearch:${Region}:${Account}:application/${AppId}"
+   ]
+  },
+  "datasource": {
+   "arnFormats": [
+    "arn:${Partition}:opensearch:${Region}:${Account}:datasource/${DataSourceName}"
+   ]
+  }
+ },
+ "service": "opensearch",
+ "serviceName": "OpenSearch",
+ "version": "v1.5"
+}

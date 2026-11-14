@@ -1,0 +1,207 @@
+{
+ "actions": {
+  "analyzedocument": {
+   "name": "AnalyzeDocument",
+   "resources": []
+  },
+  "analyzeexpense": {
+   "name": "AnalyzeExpense",
+   "resources": []
+  },
+  "analyzeid": {
+   "name": "AnalyzeID",
+   "resources": []
+  },
+  "createadapter": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAdapter",
+   "resources": []
+  },
+  "createadapterversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAdapterVersion",
+   "resources": [
+    "adapter"
+   ]
+  },
+  "deleteadapter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAdapter",
+   "resources": [
+    "adapter"
+   ]
+  },
+  "deleteadapterversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAdapterVersion",
+   "resources": [
+    "adapterversion"
+   ]
+  },
+  "detectdocumenttext": {
+   "name": "DetectDocumentText",
+   "resources": []
+  },
+  "getadapter": {
+   "name": "GetAdapter",
+   "resources": [
+    "adapter"
+   ]
+  },
+  "getadapterversion": {
+   "name": "GetAdapterVersion",
+   "resources": [
+    "adapterversion"
+   ]
+  },
+  "getdocumentanalysis": {
+   "name": "GetDocumentAnalysis",
+   "resources": []
+  },
+  "getdocumenttextdetection": {
+   "name": "GetDocumentTextDetection",
+   "resources": []
+  },
+  "getexpenseanalysis": {
+   "name": "GetExpenseAnalysis",
+   "resources": []
+  },
+  "getlendinganalysis": {
+   "name": "GetLendingAnalysis",
+   "resources": []
+  },
+  "getlendinganalysissummary": {
+   "name": "GetLendingAnalysisSummary",
+   "resources": []
+  },
+  "listadapters": {
+   "name": "ListAdapters",
+   "resources": []
+  },
+  "listadapterversions": {
+   "name": "ListAdapterVersions",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "adapter",
+    "adapterversion"
+   ]
+  },
+  "startdocumentanalysis": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDocumentAnalysis",
+   "resources": []
+  },
+  "startdocumenttextdetection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDocumentTextDetection",
+   "resources": []
+  },
+  "startexpenseanalysis": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartExpenseAnalysis",
+   "resources": []
+  },
+  "startlendinganalysis": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartLendingAnalysis",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "adapter",
+    "adapterversion"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "adapter",
+    "adapterversion"
+   ]
+  },
+  "updateadapter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAdapter",
+   "resources": [
+    "adapter"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "adapter": {
+   "arnFormats": [
+    "arn:${Partition}:textract:${Region}:${Account}:/adapters/${AdapterId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "adapterversion": {
+   "arnFormats": [
+    "arn:${Partition}:textract:${Region}:${Account}:/adapters/${AdapterId}/versions/${AdapterVersion}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "textract",
+ "serviceName": "Textract",
+ "version": "v1.5"
+}

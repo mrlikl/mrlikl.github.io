@@ -119,6 +119,11 @@
             </div>
           </div>
 
+          <div class="runtime-status" id="runtimeStatus" data-state="loading" role="status" aria-live="polite">
+            <span class="spinner" aria-hidden="true"></span>
+            <span class="runtime-text">Loading the Python runtime (Pyodide)…</span>
+          </div>
+
           <div class="panel-footer">
             <label class="switch">
               <input type="checkbox" id="allowDelete" />
@@ -132,7 +137,7 @@
           </div>
 
           <div class="loading" id="loading">
-            <div class="loading-inner"><span class="spinner"></span>Resolving resource schemas…</div>
+            <div class="loading-inner"><span class="spinner"></span><span id="loadingText">Resolving resource schemas…</span></div>
           </div>
         </div>
 
@@ -172,7 +177,6 @@
       Vibe coded by <a href="https://github.com/mrlikl" target="_blank" rel="noopener">mrlikl</a> with Claude ❤️
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

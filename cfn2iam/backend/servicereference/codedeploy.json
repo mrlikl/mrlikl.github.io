@@ -1,0 +1,448 @@
+{
+ "actions": {
+  "addtagstoonpremisesinstances": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "AddTagsToOnPremisesInstances",
+   "resources": [
+    "instance"
+   ]
+  },
+  "batchgetapplicationrevisions": {
+   "name": "BatchGetApplicationRevisions",
+   "resources": [
+    "application"
+   ]
+  },
+  "batchgetapplications": {
+   "name": "BatchGetApplications",
+   "resources": [
+    "application"
+   ]
+  },
+  "batchgetdeploymentgroups": {
+   "name": "BatchGetDeploymentGroups",
+   "resources": [
+    "deploymentgroup"
+   ]
+  },
+  "batchgetdeploymentinstances": {
+   "name": "BatchGetDeploymentInstances",
+   "resources": [
+    "deploymentgroup"
+   ]
+  },
+  "batchgetdeployments": {
+   "name": "BatchGetDeployments",
+   "resources": [
+    "deploymentgroup"
+   ]
+  },
+  "batchgetdeploymenttargets": {
+   "name": "BatchGetDeploymentTargets",
+   "resources": []
+  },
+  "batchgetonpremisesinstances": {
+   "name": "BatchGetOnPremisesInstances",
+   "resources": [
+    "instance"
+   ]
+  },
+  "continuedeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ContinueDeployment",
+   "resources": []
+  },
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "createcloudformationdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCloudFormationDeployment",
+   "resources": []
+  },
+  "createdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeployment",
+   "resources": [
+    "deploymentgroup"
+   ]
+  },
+  "createdeploymentconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeploymentConfig",
+   "resources": [
+    "deploymentconfig"
+   ]
+  },
+  "createdeploymentgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeploymentGroup",
+   "resources": [
+    "deploymentgroup"
+   ]
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "deletedeploymentconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDeploymentConfig",
+   "resources": [
+    "deploymentconfig"
+   ]
+  },
+  "deletedeploymentgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDeploymentGroup",
+   "resources": [
+    "deploymentgroup"
+   ]
+  },
+  "deletegithubaccounttoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGitHubAccountToken",
+   "resources": []
+  },
+  "deleteresourcesbyexternalid": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcesByExternalId",
+   "resources": []
+  },
+  "deregisteronpremisesinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterOnPremisesInstance",
+   "resources": [
+    "instance"
+   ]
+  },
+  "getapplication": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "getapplicationrevision": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetApplicationRevision",
+   "resources": [
+    "application"
+   ]
+  },
+  "getdeployment": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetDeployment",
+   "resources": [
+    "deploymentgroup"
+   ]
+  },
+  "getdeploymentconfig": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetDeploymentConfig",
+   "resources": [
+    "deploymentconfig"
+   ]
+  },
+  "getdeploymentgroup": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetDeploymentGroup",
+   "resources": [
+    "deploymentgroup"
+   ]
+  },
+  "getdeploymentinstance": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetDeploymentInstance",
+   "resources": [
+    "deploymentgroup"
+   ]
+  },
+  "getdeploymenttarget": {
+   "name": "GetDeploymentTarget",
+   "resources": []
+  },
+  "getonpremisesinstance": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetOnPremisesInstance",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listapplicationrevisions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationRevisions",
+   "resources": [
+    "application"
+   ]
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listdeploymentconfigs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeploymentConfigs",
+   "resources": []
+  },
+  "listdeploymentgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeploymentGroups",
+   "resources": [
+    "application"
+   ]
+  },
+  "listdeploymentinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeploymentInstances",
+   "resources": [
+    "deploymentgroup"
+   ]
+  },
+  "listdeployments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeployments",
+   "resources": [
+    "deploymentgroup"
+   ]
+  },
+  "listdeploymenttargets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeploymentTargets",
+   "resources": []
+  },
+  "listgithubaccounttokennames": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGitHubAccountTokenNames",
+   "resources": []
+  },
+  "listonpremisesinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOnPremisesInstances",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "application",
+    "deploymentgroup"
+   ]
+  },
+  "putlifecycleeventhookexecutionstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLifecycleEventHookExecutionStatus",
+   "resources": []
+  },
+  "registerapplicationrevision": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterApplicationRevision",
+   "resources": [
+    "application"
+   ]
+  },
+  "registeronpremisesinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterOnPremisesInstance",
+   "resources": [
+    "instance"
+   ]
+  },
+  "removetagsfromonpremisesinstances": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "RemoveTagsFromOnPremisesInstances",
+   "resources": [
+    "instance"
+   ]
+  },
+  "skipwaittimeforinstancetermination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SkipWaitTimeForInstanceTermination",
+   "resources": []
+  },
+  "stopdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopDeployment",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "application",
+    "deploymentgroup"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "application",
+    "deploymentgroup"
+   ]
+  },
+  "updateapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "updatedeploymentgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDeploymentGroup",
+   "resources": [
+    "deploymentgroup"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:codedeploy:${Region}:${Account}:application:${ApplicationName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "deploymentconfig": {
+   "arnFormats": [
+    "arn:${Partition}:codedeploy:${Region}:${Account}:deploymentconfig:${DeploymentConfigurationName}"
+   ]
+  },
+  "deploymentgroup": {
+   "arnFormats": [
+    "arn:${Partition}:codedeploy:${Region}:${Account}:deploymentgroup:${ApplicationName}/${DeploymentGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "instance": {
+   "arnFormats": [
+    "arn:${Partition}:codedeploy:${Region}:${Account}:instance:${InstanceName}"
+   ]
+  }
+ },
+ "service": "codedeploy",
+ "serviceName": "CodeDeploy",
+ "version": "v1.5"
+}

@@ -1,0 +1,674 @@
+{
+ "actions": {
+  "associatewebacl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateWebACL",
+   "resources": [
+    "agentcore-gateway",
+    "amplify-app",
+    "apigateway",
+    "apprunner",
+    "appsync",
+    "loadbalancer/app/",
+    "userpool",
+    "verified-access-instance",
+    "webacl"
+   ]
+  },
+  "checkcapacity": {
+   "name": "CheckCapacity",
+   "resources": []
+  },
+  "createapikey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAPIKey",
+   "resources": []
+  },
+  "createipset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIPSet",
+   "resources": [
+    "ipset"
+   ]
+  },
+  "createregexpatternset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRegexPatternSet",
+   "resources": [
+    "regexpatternset"
+   ]
+  },
+  "createrulegroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRuleGroup",
+   "resources": [
+    "ipset",
+    "regexpatternset",
+    "rulegroup"
+   ]
+  },
+  "createwebacl": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWebACL",
+   "resources": [
+    "ipset",
+    "managedruleset",
+    "regexpatternset",
+    "rulegroup",
+    "webacl"
+   ]
+  },
+  "deleteapikey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAPIKey",
+   "resources": []
+  },
+  "deletefirewallmanagerrulegroups": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFirewallManagerRuleGroups",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "deleteipset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIPSet",
+   "resources": [
+    "ipset"
+   ]
+  },
+  "deleteloggingconfiguration": {
+   "conditionKeys": [
+    "wafv2:LogScope"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLoggingConfiguration",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "deletepermissionpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeletePermissionPolicy",
+   "resources": [
+    "rulegroup"
+   ]
+  },
+  "deleteregexpatternset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRegexPatternSet",
+   "resources": [
+    "regexpatternset"
+   ]
+  },
+  "deleterulegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRuleGroup",
+   "resources": [
+    "rulegroup"
+   ]
+  },
+  "deletewebacl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWebACL",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "describeallmanagedproducts": {
+   "name": "DescribeAllManagedProducts",
+   "resources": []
+  },
+  "describemanagedproductsbyvendor": {
+   "name": "DescribeManagedProductsByVendor",
+   "resources": []
+  },
+  "describemanagedrulegroup": {
+   "name": "DescribeManagedRuleGroup",
+   "resources": []
+  },
+  "describetopcontributorsbyevent": {
+   "name": "DescribeTopContributorsByEvent",
+   "resources": []
+  },
+  "disassociatefirewallmanager": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateFirewallManager",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "disassociatewebacl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateWebACL",
+   "resources": [
+    "agentcore-gateway",
+    "amplify-app",
+    "apigateway",
+    "apprunner",
+    "appsync",
+    "loadbalancer/app/",
+    "userpool",
+    "verified-access-instance"
+   ]
+  },
+  "generatemobilesdkreleaseurl": {
+   "name": "GenerateMobileSdkReleaseUrl",
+   "resources": []
+  },
+  "getdecryptedapikey": {
+   "name": "GetDecryptedAPIKey",
+   "resources": []
+  },
+  "getipset": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetIPSet",
+   "resources": [
+    "ipset"
+   ]
+  },
+  "getloggingconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "wafv2:LogScope"
+   ],
+   "name": "GetLoggingConfiguration",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "getmanagedruleset": {
+   "name": "GetManagedRuleSet",
+   "resources": [
+    "managedruleset"
+   ]
+  },
+  "getmobilesdkrelease": {
+   "name": "GetMobileSdkRelease",
+   "resources": []
+  },
+  "getpermissionpolicy": {
+   "name": "GetPermissionPolicy",
+   "resources": [
+    "rulegroup"
+   ]
+  },
+  "getratebasedstatementmanagedkeys": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetRateBasedStatementManagedKeys",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "getregexpatternset": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetRegexPatternSet",
+   "resources": [
+    "regexpatternset"
+   ]
+  },
+  "getrevenuestatistics": {
+   "name": "GetRevenueStatistics",
+   "resources": []
+  },
+  "getrevenuestatisticssummary": {
+   "name": "GetRevenueStatisticsSummary",
+   "resources": []
+  },
+  "getrevenuestatisticstimeseries": {
+   "name": "GetRevenueStatisticsTimeSeries",
+   "resources": []
+  },
+  "getrulegroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetRuleGroup",
+   "resources": [
+    "rulegroup"
+   ]
+  },
+  "getsampledrequests": {
+   "name": "GetSampledRequests",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "gettoppathstatisticsbytraffic": {
+   "name": "GetTopPathStatisticsByTraffic",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "getwebacl": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetWebACL",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "getwebaclforresource": {
+   "name": "GetWebACLForResource",
+   "resources": [
+    "agentcore-gateway",
+    "amplify-app",
+    "apigateway",
+    "apprunner",
+    "appsync",
+    "loadbalancer/app/",
+    "userpool",
+    "verified-access-instance",
+    "webacl"
+   ]
+  },
+  "listapikeys": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAPIKeys",
+   "resources": []
+  },
+  "listavailablemanagedrulegroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAvailableManagedRuleGroups",
+   "resources": []
+  },
+  "listavailablemanagedrulegroupversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAvailableManagedRuleGroupVersions",
+   "resources": []
+  },
+  "listipsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIPSets",
+   "resources": []
+  },
+  "listloggingconfigurations": {
+   "conditionKeys": [
+    "wafv2:LogScope"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLoggingConfigurations",
+   "resources": []
+  },
+  "listmanagedrulesets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedRuleSets",
+   "resources": []
+  },
+  "listmobilesdkreleases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMobileSdkReleases",
+   "resources": []
+  },
+  "listregexpatternsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRegexPatternSets",
+   "resources": []
+  },
+  "listresourcesforwebacl": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourcesForWebACL",
+   "resources": [
+    "agentcore-gateway",
+    "amplify-app",
+    "apprunner",
+    "userpool",
+    "verified-access-instance",
+    "webacl"
+   ]
+  },
+  "listrulegroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRuleGroups",
+   "resources": []
+  },
+  "listsettlementrecords": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSettlementRecords",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "ipset",
+    "regexpatternset",
+    "rulegroup",
+    "webacl"
+   ]
+  },
+  "listwebacls": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWebACLs",
+   "resources": []
+  },
+  "putfirewallmanagerrulegroups": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFirewallManagerRuleGroups",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "putloggingconfiguration": {
+   "conditionKeys": [
+    "wafv2:LogDestinationResource",
+    "wafv2:LogScope"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLoggingConfiguration",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "putmanagedrulesetversions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutManagedRuleSetVersions",
+   "resources": [
+    "managedruleset",
+    "rulegroup"
+   ]
+  },
+  "putpermissionpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutPermissionPolicy",
+   "resources": [
+    "rulegroup"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "ipset",
+    "regexpatternset",
+    "rulegroup",
+    "webacl"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "ipset",
+    "regexpatternset",
+    "rulegroup",
+    "webacl"
+   ]
+  },
+  "updateipset": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIPSet",
+   "resources": [
+    "ipset"
+   ]
+  },
+  "updatemanagedrulesetversionexpirydate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateManagedRuleSetVersionExpiryDate",
+   "resources": [
+    "managedruleset"
+   ]
+  },
+  "updateregexpatternset": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRegexPatternSet",
+   "resources": [
+    "regexpatternset"
+   ]
+  },
+  "updaterulegroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRuleGroup",
+   "resources": [
+    "ipset",
+    "regexpatternset",
+    "rulegroup"
+   ]
+  },
+  "updatewebacl": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWebACL",
+   "resources": [
+    "ipset",
+    "managedruleset",
+    "regexpatternset",
+    "rulegroup",
+    "webacl"
+   ]
+  },
+  "validatenetworksecuritymanagerruleconfiguration": {
+   "name": "ValidateNetworkSecurityManagerRuleConfiguration",
+   "resources": []
+  },
+  "validatenetworksecuritymanagerwebaclconfiguration": {
+   "name": "ValidateNetworkSecurityManagerWebACLConfiguration",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "wafv2:LogDestinationResource": [
+   "ARN"
+  ],
+  "wafv2:LogScope": [
+   "String"
+  ]
+ },
+ "resources": {
+  "agentcore-gateway": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:gateway/${GatewayId}"
+   ]
+  },
+  "amplify-app": {
+   "arnFormats": [
+    "arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}"
+   ]
+  },
+  "apigateway": {
+   "arnFormats": [
+    "arn:${Partition}:apigateway:${Region}::/restapis/${ApiId}/stages/${StageName}"
+   ]
+  },
+  "apprunner": {
+   "arnFormats": [
+    "arn:${Partition}:apprunner:${Region}:${Account}:service/${ServiceName}/${ServiceId}"
+   ]
+  },
+  "appsync": {
+   "arnFormats": [
+    "arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}"
+   ]
+  },
+  "ipset": {
+   "arnFormats": [
+    "arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/ipset/${Name}/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "loadbalancer/app/": {
+   "arnFormats": [
+    "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/app/${LoadBalancerName}/${LoadBalancerId}"
+   ]
+  },
+  "managedruleset": {
+   "arnFormats": [
+    "arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/managedruleset/${Name}/${Id}"
+   ]
+  },
+  "regexpatternset": {
+   "arnFormats": [
+    "arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/regexpatternset/${Name}/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "rulegroup": {
+   "arnFormats": [
+    "arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/rulegroup/${Name}/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "userpool": {
+   "arnFormats": [
+    "arn:${Partition}:cognito-idp:${Region}:${Account}:userpool/${UserPoolId}"
+   ]
+  },
+  "verified-access-instance": {
+   "arnFormats": [
+    "arn:${Partition}:ec2:${Region}:${Account}:verified-access-instance/${VerifiedAccessInstanceId}"
+   ]
+  },
+  "webacl": {
+   "arnFormats": [
+    "arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/webacl/${Name}/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "wafv2",
+ "serviceName": "WAF V2",
+ "version": "v1.5"
+}

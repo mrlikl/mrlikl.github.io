@@ -1,0 +1,1404 @@
+{
+ "actions": {
+  "archiveapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ArchiveApplication",
+   "resources": [
+    "ApplicationResource"
+   ]
+  },
+  "archivewave": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ArchiveWave",
+   "resources": [
+    "WaveResource"
+   ]
+  },
+  "associateapplications": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateApplications",
+   "resources": [
+    "ApplicationResource",
+    "WaveResource"
+   ]
+  },
+  "associatesourceservers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSourceServers",
+   "resources": [
+    "ApplicationResource",
+    "SourceServerResource"
+   ]
+  },
+  "batchcreatevolumesnapshotgroupformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateVolumeSnapshotGroupForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "batchdeletesnapshotrequestformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteSnapshotRequestForMgn",
+   "resources": []
+  },
+  "changeserverlifecyclestate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ChangeServerLifeCycleState",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "createconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnector",
+   "resources": []
+  },
+  "createlaunchconfigurationtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLaunchConfigurationTemplate",
+   "resources": []
+  },
+  "createnetworkmigrationdefinition": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNetworkMigrationDefinition",
+   "resources": []
+  },
+  "createremotesourceaction": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRemoteSourceAction",
+   "resources": []
+  },
+  "createreplicationconfigurationtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReplicationConfigurationTemplate",
+   "resources": []
+  },
+  "createvcenterclientformgn": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVcenterClientForMgn",
+   "resources": []
+  },
+  "createwave": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWave",
+   "resources": []
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "ApplicationResource"
+   ]
+  },
+  "deleteconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnector",
+   "resources": [
+    "ConnectorResource"
+   ]
+  },
+  "deletejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteJob",
+   "resources": [
+    "JobResource"
+   ]
+  },
+  "deletelaunchconfigurationtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLaunchConfigurationTemplate",
+   "resources": [
+    "LaunchConfigurationTemplateResource"
+   ]
+  },
+  "deletenetworkmigrationdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNetworkMigrationDefinition",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "deleteremotesourceaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRemoteSourceAction",
+   "resources": [
+    "RemoteSourceActionResource"
+   ]
+  },
+  "deletereplicationconfigurationtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReplicationConfigurationTemplate",
+   "resources": [
+    "ReplicationConfigurationTemplateResource"
+   ]
+  },
+  "deletesourceserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSourceServer",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "deletevcenterclient": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVcenterClient",
+   "resources": [
+    "VcenterClientResource"
+   ]
+  },
+  "deletewave": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWave",
+   "resources": [
+    "WaveResource"
+   ]
+  },
+  "describejoblogitems": {
+   "name": "DescribeJobLogItems",
+   "resources": [
+    "JobResource"
+   ]
+  },
+  "describejobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeJobs",
+   "resources": []
+  },
+  "describelaunchconfigurationtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeLaunchConfigurationTemplates",
+   "resources": []
+  },
+  "describereplicationconfigurationtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeReplicationConfigurationTemplates",
+   "resources": []
+  },
+  "describereplicationserverassociationsformgn": {
+   "name": "DescribeReplicationServerAssociationsForMgn",
+   "resources": []
+  },
+  "describesnapshotrequestsformgn": {
+   "name": "DescribeSnapshotRequestsForMgn",
+   "resources": []
+  },
+  "describesourceservers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeSourceServers",
+   "resources": []
+  },
+  "describevcenterclients": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeVcenterClients",
+   "resources": []
+  },
+  "disassociateapplications": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateApplications",
+   "resources": [
+    "ApplicationResource",
+    "WaveResource"
+   ]
+  },
+  "disassociatesourceservers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateSourceServers",
+   "resources": [
+    "ApplicationResource",
+    "SourceServerResource"
+   ]
+  },
+  "disconnectfromservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisconnectFromService",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "finalizecutover": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "FinalizeCutover",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "getaccountsettings": {
+   "name": "GetAccountSettings",
+   "resources": []
+  },
+  "getagentcommandformgn": {
+   "name": "GetAgentCommandForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "getagentconfirmedresumeinfoformgn": {
+   "name": "GetAgentConfirmedResumeInfoForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "getagentinstallationassetsformgn": {
+   "name": "GetAgentInstallationAssetsForMgn",
+   "resources": []
+  },
+  "getagentreplicationinfoformgn": {
+   "name": "GetAgentReplicationInfoForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "getagentruntimeconfigurationformgn": {
+   "name": "GetAgentRuntimeConfigurationForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "getagentsnapshotcreditsformgn": {
+   "name": "GetAgentSnapshotCreditsForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "getchannelcommandsformgn": {
+   "name": "GetChannelCommandsForMgn",
+   "resources": []
+  },
+  "getlaunchconfiguration": {
+   "name": "GetLaunchConfiguration",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "getlaunchconfigurationdefaults": {
+   "name": "GetLaunchConfigurationDefaults",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "getnetworkmigrationdefinition": {
+   "name": "GetNetworkMigrationDefinition",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "getnetworkmigrationmappersegmentconstruct": {
+   "name": "GetNetworkMigrationMapperSegmentConstruct",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "getreplicationconfiguration": {
+   "name": "GetReplicationConfiguration",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "getvcenterclientcommandsformgn": {
+   "name": "GetVcenterClientCommandsForMgn",
+   "resources": [
+    "VcenterClientResource"
+   ]
+  },
+  "initializeservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitializeService",
+   "resources": []
+  },
+  "issueclientcertificateformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "IssueClientCertificateForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listconnectors": {
+   "name": "ListConnectors",
+   "resources": []
+  },
+  "listexporterrors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExportErrors",
+   "resources": [
+    "ExportResource"
+   ]
+  },
+  "listexports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExports",
+   "resources": []
+  },
+  "listimporterrors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListImportErrors",
+   "resources": [
+    "ImportResource"
+   ]
+  },
+  "listimportfileenrichments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListImportFileEnrichments",
+   "resources": []
+  },
+  "listimports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListImports",
+   "resources": []
+  },
+  "listmanagedaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedAccounts",
+   "resources": []
+  },
+  "listnetworkmigrationanalyses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkMigrationAnalyses",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "listnetworkmigrationanalysisresults": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkMigrationAnalysisResults",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "listnetworkmigrationcodegenerations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkMigrationCodeGenerations",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "listnetworkmigrationcodegenerationsegments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkMigrationCodeGenerationSegments",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "listnetworkmigrationdefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkMigrationDefinitions",
+   "resources": []
+  },
+  "listnetworkmigrationdeployedstacks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkMigrationDeployedStacks",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "listnetworkmigrationdeployedstacksdeletions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkMigrationDeployedStacksDeletions",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "listnetworkmigrationdeployments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkMigrationDeployments",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "listnetworkmigrationexecutionartifacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkMigrationExecutionArtifacts",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "listnetworkmigrationexecutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkMigrationExecutions",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "listnetworkmigrationinsights": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkMigrationInsights",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "listnetworkmigrationmappersegmentconstructs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkMigrationMapperSegmentConstructs",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "listnetworkmigrationmappersegments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkMigrationMapperSegments",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "listnetworkmigrationmappings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkMigrationMappings",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "listnetworkmigrationmappingupdates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkMigrationMappingUpdates",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "listremotesourceactioninvocationresults": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRemoteSourceActionInvocationResults",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "listremotesourceactioninvocations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRemoteSourceActionInvocations",
+   "resources": [
+    "RemoteSourceActionJobResource"
+   ]
+  },
+  "listremotesourceactionjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRemoteSourceActionJobs",
+   "resources": []
+  },
+  "listremotesourceactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRemoteSourceActions",
+   "resources": []
+  },
+  "listsourceserveractions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSourceServerActions",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "listtemplateactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTemplateActions",
+   "resources": [
+    "LaunchConfigurationTemplateResource"
+   ]
+  },
+  "listwaves": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWaves",
+   "resources": []
+  },
+  "markasarchived": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MarkAsArchived",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "notifyagentauthenticationformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyAgentAuthenticationForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "notifyagentconnectedformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyAgentConnectedForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "notifyagentdisconnectedformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyAgentDisconnectedForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "notifyagentreplicationprogressformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyAgentReplicationProgressForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "notifyvcenterclientstartedformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyVcenterClientStartedForMgn",
+   "resources": [
+    "VcenterClientResource"
+   ]
+  },
+  "pausereplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PauseReplication",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "putsourceserveraction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSourceServerAction",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "puttemplateaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTemplateAction",
+   "resources": [
+    "LaunchConfigurationTemplateResource"
+   ]
+  },
+  "registeragentformgn": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterAgentForMgn",
+   "resources": []
+  },
+  "removesourceserveraction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveSourceServerAction",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "removetemplateaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveTemplateAction",
+   "resources": [
+    "LaunchConfigurationTemplateResource"
+   ]
+  },
+  "resumereplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResumeReplication",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "retrydatareplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RetryDataReplication",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "sendagentlogsformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendAgentLogsForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "sendagentmetricsformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendAgentMetricsForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "sendchannelcommandresultformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendChannelCommandResultForMgn",
+   "resources": []
+  },
+  "sendclientlogsformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendClientLogsForMgn",
+   "resources": []
+  },
+  "sendclientmetricsformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendClientMetricsForMgn",
+   "resources": []
+  },
+  "sendvcenterclientcommandresultformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendVcenterClientCommandResultForMgn",
+   "resources": [
+    "VcenterClientResource"
+   ]
+  },
+  "sendvcenterclientlogsformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendVcenterClientLogsForMgn",
+   "resources": [
+    "VcenterClientResource"
+   ]
+  },
+  "sendvcenterclientmetricsformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendVcenterClientMetricsForMgn",
+   "resources": [
+    "VcenterClientResource"
+   ]
+  },
+  "startcutover": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCutover",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "startexport": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartExport",
+   "resources": []
+  },
+  "startimport": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartImport",
+   "resources": []
+  },
+  "startimportfileenrichment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartImportFileEnrichment",
+   "resources": []
+  },
+  "startnetworkmigrationanalysis": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartNetworkMigrationAnalysis",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "startnetworkmigrationcodegeneration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartNetworkMigrationCodeGeneration",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "startnetworkmigrationdeployedstacksdeletion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartNetworkMigrationDeployedStacksDeletion",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "startnetworkmigrationdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartNetworkMigrationDeployment",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "startnetworkmigrationmapping": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartNetworkMigrationMapping",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "startnetworkmigrationmappingupdate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartNetworkMigrationMappingUpdate",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "startremotesourceactionjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRemoteSourceActionJob",
+   "resources": [
+    "ConnectorResource",
+    "RemoteSourceActionResource",
+    "SourceServerResource"
+   ]
+  },
+  "startreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartReplication",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "startsnapshotgroupformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSnapshotGroupForMgn",
+   "resources": []
+  },
+  "starttest": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTest",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "stopreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopReplication",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "mgn:CreateAction"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "ApplicationResource",
+    "ConnectorResource",
+    "ExportResource",
+    "ImportResource",
+    "JobResource",
+    "LaunchConfigurationTemplateResource",
+    "RemoteSourceActionJobResource",
+    "RemoteSourceActionResource",
+    "ReplicationConfigurationTemplateResource",
+    "SourceServerResource",
+    "VcenterClientResource",
+    "WaveResource"
+   ]
+  },
+  "terminatetargetinstances": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TerminateTargetInstances",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "unarchiveapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnarchiveApplication",
+   "resources": [
+    "ApplicationResource"
+   ]
+  },
+  "unarchivewave": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnarchiveWave",
+   "resources": [
+    "WaveResource"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "ApplicationResource",
+    "ConnectorResource",
+    "JobResource",
+    "LaunchConfigurationTemplateResource",
+    "RemoteSourceActionJobResource",
+    "RemoteSourceActionResource",
+    "ReplicationConfigurationTemplateResource",
+    "SourceServerResource",
+    "VcenterClientResource",
+    "WaveResource"
+   ]
+  },
+  "updateaccountsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountSettings",
+   "resources": []
+  },
+  "updateagentbacklogformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentBacklogForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "updateagentconversioninfoformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentConversionInfoForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "updateagentreplicationinfoformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentReplicationInfoForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "updateagentreplicationprocessstateformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentReplicationProcessStateForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "updateagentsourcepropertiesformgn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentSourcePropertiesForMgn",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "updateapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": [
+    "ApplicationResource"
+   ]
+  },
+  "updateconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnector",
+   "resources": [
+    "ConnectorResource"
+   ]
+  },
+  "updatelaunchconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLaunchConfiguration",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "updatelaunchconfigurationdefaults": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLaunchConfigurationDefaults",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "updatelaunchconfigurationtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLaunchConfigurationTemplate",
+   "resources": [
+    "LaunchConfigurationTemplateResource"
+   ]
+  },
+  "updatenetworkmigrationdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNetworkMigrationDefinition",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "updatenetworkmigrationmappersegment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNetworkMigrationMapperSegment",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "updatenetworkmigrationmappersegmentconstruct": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNetworkMigrationMapperSegmentConstruct",
+   "resources": [
+    "NetworkMigrationDefinitionResource"
+   ]
+  },
+  "updateremotesourceaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRemoteSourceAction",
+   "resources": [
+    "RemoteSourceActionResource"
+   ]
+  },
+  "updatereplicationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReplicationConfiguration",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "updatereplicationconfigurationtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReplicationConfigurationTemplate",
+   "resources": [
+    "ReplicationConfigurationTemplateResource"
+   ]
+  },
+  "updatesourceserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSourceServer",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "updatesourceserverreplicationtype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSourceServerReplicationType",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "updatewave": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWave",
+   "resources": [
+    "WaveResource"
+   ]
+  },
+  "verifyclientroleformgn": {
+   "name": "VerifyClientRoleForMgn",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "mgn:CreateAction": [
+   "String"
+  ]
+ },
+ "resources": {
+  "ApplicationResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgn:${Region}:${Account}:application/${ApplicationID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ConnectorResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgn:${Region}:${Account}:connector/${ConnectorID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ExportResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgn:${Region}:${Account}:export/${ExportID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ImportResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgn:${Region}:${Account}:import/${ImportID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "JobResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgn:${Region}:${Account}:job/${JobID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "LaunchConfigurationTemplateResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgn:${Region}:${Account}:launch-configuration-template/${LaunchConfigurationTemplateID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "NetworkMigrationDefinitionResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgn:${Region}:${Account}:network-migration-definition/${NetworkMigrationDefinitionID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "RemoteSourceActionJobResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgn:${Region}:${Account}:remote-source-action-job/${RemoteSourceActionJobID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "RemoteSourceActionResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgn:${Region}:${Account}:remote-source-action/${RemoteSourceActionID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ReplicationConfigurationTemplateResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgn:${Region}:${Account}:replication-configuration-template/${ReplicationConfigurationTemplateID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "SourceServerResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgn:${Region}:${Account}:source-server/${SourceServerID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "VcenterClientResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgn:${Region}:${Account}:vcenter-client/${VcenterClientID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "WaveResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgn:${Region}:${Account}:wave/${WaveID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "mgn",
+ "serviceName": "MGN",
+ "version": "v1.5"
+}

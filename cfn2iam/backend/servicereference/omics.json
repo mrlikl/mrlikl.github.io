@@ -1,0 +1,1092 @@
+{
+ "actions": {
+  "abortmultipartreadsetupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AbortMultipartReadSetUpload",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "acceptshare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptShare",
+   "resources": []
+  },
+  "authorizerunprocessing": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AuthorizeRunProcessing",
+   "resources": [
+    "run"
+   ]
+  },
+  "batchdeletereadset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteReadSet",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "cancelannotationimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelAnnotationImportJob",
+   "resources": []
+  },
+  "cancelrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelRun",
+   "resources": [
+    "run"
+   ]
+  },
+  "cancelrunbatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelRunBatch",
+   "resources": [
+    "runBatch"
+   ]
+  },
+  "cancelvariantimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelVariantImportJob",
+   "resources": []
+  },
+  "completemultipartreadsetupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteMultipartReadSetUpload",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "createannotationstore": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAnnotationStore",
+   "resources": []
+  },
+  "createannotationstoreversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAnnotationStoreVersion",
+   "resources": [
+    "AnnotationStore"
+   ]
+  },
+  "createconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConfiguration",
+   "resources": []
+  },
+  "createmultipartreadsetupload": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMultipartReadSetUpload",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "createreferencestore": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReferenceStore",
+   "resources": []
+  },
+  "createruncache": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRunCache",
+   "resources": []
+  },
+  "createrungroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRunGroup",
+   "resources": []
+  },
+  "createsequencestore": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSequenceStore",
+   "resources": []
+  },
+  "createshare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateShare",
+   "resources": []
+  },
+  "createvariantstore": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVariantStore",
+   "resources": []
+  },
+  "createworkflow": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkflow",
+   "resources": []
+  },
+  "createworkflowversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkflowVersion",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "deleteannotationstore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAnnotationStore",
+   "resources": [
+    "AnnotationStore"
+   ]
+  },
+  "deleteannotationstoreversions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAnnotationStoreVersions",
+   "resources": [
+    "AnnotationStore",
+    "AnnotationStoreVersion"
+   ]
+  },
+  "deletebatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBatch",
+   "resources": [
+    "runBatch"
+   ]
+  },
+  "deleteconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfiguration",
+   "resources": [
+    "configuration"
+   ]
+  },
+  "deletereference": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReference",
+   "resources": [
+    "reference",
+    "referenceStore"
+   ]
+  },
+  "deletereferencestore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReferenceStore",
+   "resources": [
+    "referenceStore"
+   ]
+  },
+  "deleterun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRun",
+   "resources": [
+    "run"
+   ]
+  },
+  "deleterunbatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRunBatch",
+   "resources": [
+    "run",
+    "runBatch"
+   ]
+  },
+  "deleteruncache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRunCache",
+   "resources": [
+    "runCache"
+   ]
+  },
+  "deleterungroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRunGroup",
+   "resources": [
+    "runGroup"
+   ]
+  },
+  "deletes3accesspolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteS3AccessPolicy",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "deletesequencestore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSequenceStore",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "deleteshare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteShare",
+   "resources": []
+  },
+  "deletevariantstore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVariantStore",
+   "resources": [
+    "VariantStore"
+   ]
+  },
+  "deleteworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkflow",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "deleteworkflowversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkflowVersion",
+   "resources": [
+    "WorkflowVersion",
+    "workflow"
+   ]
+  },
+  "getannotationimportjob": {
+   "name": "GetAnnotationImportJob",
+   "resources": []
+  },
+  "getannotationstore": {
+   "name": "GetAnnotationStore",
+   "resources": [
+    "AnnotationStore"
+   ]
+  },
+  "getannotationstoreversion": {
+   "name": "GetAnnotationStoreVersion",
+   "resources": [
+    "AnnotationStoreVersion"
+   ]
+  },
+  "getbatch": {
+   "name": "GetBatch",
+   "resources": [
+    "runBatch"
+   ]
+  },
+  "getconfiguration": {
+   "name": "GetConfiguration",
+   "resources": [
+    "configuration"
+   ]
+  },
+  "getreadset": {
+   "name": "GetReadSet",
+   "resources": [
+    "readSet",
+    "sequenceStore"
+   ]
+  },
+  "getreadsetactivationjob": {
+   "name": "GetReadSetActivationJob",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "getreadsetexportjob": {
+   "name": "GetReadSetExportJob",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "getreadsetimportjob": {
+   "name": "GetReadSetImportJob",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "getreadsetmetadata": {
+   "name": "GetReadSetMetadata",
+   "resources": [
+    "readSet",
+    "sequenceStore"
+   ]
+  },
+  "getreference": {
+   "name": "GetReference",
+   "resources": [
+    "reference",
+    "referenceStore"
+   ]
+  },
+  "getreferenceimportjob": {
+   "name": "GetReferenceImportJob",
+   "resources": [
+    "referenceStore"
+   ]
+  },
+  "getreferencemetadata": {
+   "name": "GetReferenceMetadata",
+   "resources": [
+    "reference",
+    "referenceStore"
+   ]
+  },
+  "getreferencestore": {
+   "name": "GetReferenceStore",
+   "resources": [
+    "referenceStore"
+   ]
+  },
+  "getrun": {
+   "name": "GetRun",
+   "resources": [
+    "run"
+   ]
+  },
+  "getruncache": {
+   "name": "GetRunCache",
+   "resources": [
+    "runCache"
+   ]
+  },
+  "getrungroup": {
+   "name": "GetRunGroup",
+   "resources": [
+    "runGroup"
+   ]
+  },
+  "getruntask": {
+   "name": "GetRunTask",
+   "resources": [
+    "TaskResource",
+    "run"
+   ]
+  },
+  "gets3accesspolicy": {
+   "name": "GetS3AccessPolicy",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "getsequencestore": {
+   "name": "GetSequenceStore",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "getshare": {
+   "name": "GetShare",
+   "resources": []
+  },
+  "getvariantimportjob": {
+   "name": "GetVariantImportJob",
+   "resources": []
+  },
+  "getvariantstore": {
+   "name": "GetVariantStore",
+   "resources": [
+    "VariantStore"
+   ]
+  },
+  "getworkflow": {
+   "name": "GetWorkflow",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "getworkflowversion": {
+   "name": "GetWorkflowVersion",
+   "resources": [
+    "WorkflowVersion",
+    "workflow"
+   ]
+  },
+  "listannotationimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnnotationImportJobs",
+   "resources": []
+  },
+  "listannotationstores": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnnotationStores",
+   "resources": []
+  },
+  "listannotationstoreversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnnotationStoreVersions",
+   "resources": [
+    "AnnotationStore"
+   ]
+  },
+  "listbatch": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBatch",
+   "resources": []
+  },
+  "listconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigurations",
+   "resources": []
+  },
+  "listmultipartreadsetuploads": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMultipartReadSetUploads",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "listreadsetactivationjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReadSetActivationJobs",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "listreadsetexportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReadSetExportJobs",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "listreadsetimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReadSetImportJobs",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "listreadsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReadSets",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "listreadsetuploadparts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReadSetUploadParts",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "listreferenceimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReferenceImportJobs",
+   "resources": [
+    "referenceStore"
+   ]
+  },
+  "listreferences": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReferences",
+   "resources": [
+    "referenceStore"
+   ]
+  },
+  "listreferencestores": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReferenceStores",
+   "resources": []
+  },
+  "listruncaches": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRunCaches",
+   "resources": []
+  },
+  "listrungroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRunGroups",
+   "resources": []
+  },
+  "listruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRuns",
+   "resources": []
+  },
+  "listrunsinbatch": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRunsInBatch",
+   "resources": [
+    "runBatch"
+   ]
+  },
+  "listruntasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRunTasks",
+   "resources": [
+    "run"
+   ]
+  },
+  "listsequencestores": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSequenceStores",
+   "resources": []
+  },
+  "listshares": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListShares",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "listvariantimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVariantImportJobs",
+   "resources": []
+  },
+  "listvariantstores": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVariantStores",
+   "resources": []
+  },
+  "listworkflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkflows",
+   "resources": []
+  },
+  "listworkflowversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkflowVersions",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "puts3accesspolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutS3AccessPolicy",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "startannotationimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAnnotationImportJob",
+   "resources": [
+    "AnnotationStore",
+    "AnnotationStoreVersion"
+   ]
+  },
+  "startreadsetactivationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartReadSetActivationJob",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "startreadsetexportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartReadSetExportJob",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "startreadsetimportjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartReadSetImportJob",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "startreferenceimportjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartReferenceImportJob",
+   "resources": [
+    "referenceStore"
+   ]
+  },
+  "startrun": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRun",
+   "resources": [
+    "configuration",
+    "run",
+    "runBatch",
+    "runCache",
+    "runGroup",
+    "workflow"
+   ]
+  },
+  "startrunbatch": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRunBatch",
+   "resources": [
+    "run",
+    "runBatch",
+    "runCache",
+    "runGroup",
+    "workflow"
+   ]
+  },
+  "startvariantimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartVariantImportJob",
+   "resources": [
+    "VariantStore"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "AnnotationStore",
+    "AnnotationStoreVersion",
+    "VariantStore",
+    "WorkflowVersion",
+    "configuration",
+    "readSet",
+    "reference",
+    "referenceStore",
+    "run",
+    "runBatch",
+    "runCache",
+    "runGroup",
+    "sequenceStore",
+    "workflow"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "AnnotationStore",
+    "AnnotationStoreVersion",
+    "VariantStore",
+    "WorkflowVersion",
+    "configuration",
+    "readSet",
+    "reference",
+    "referenceStore",
+    "run",
+    "runBatch",
+    "runCache",
+    "runGroup",
+    "sequenceStore",
+    "workflow"
+   ]
+  },
+  "updateannotationstore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAnnotationStore",
+   "resources": [
+    "AnnotationStore"
+   ]
+  },
+  "updateannotationstoreversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAnnotationStoreVersion",
+   "resources": [
+    "AnnotationStoreVersion"
+   ]
+  },
+  "updateruncache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRunCache",
+   "resources": [
+    "runCache"
+   ]
+  },
+  "updaterungroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRunGroup",
+   "resources": [
+    "runGroup"
+   ]
+  },
+  "updatesequencestore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSequenceStore",
+   "resources": [
+    "sequenceStore"
+   ]
+  },
+  "updatevariantstore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVariantStore",
+   "resources": [
+    "VariantStore"
+   ]
+  },
+  "updateworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkflow",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "updateworkflowversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkflowVersion",
+   "resources": [
+    "WorkflowVersion",
+    "workflow"
+   ]
+  },
+  "uploadreadsetpart": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UploadReadSetPart",
+   "resources": [
+    "sequenceStore"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "AnnotationStore": {
+   "arnFormats": [
+    "arn:${Partition}:omics:${Region}:${Account}:annotationStore/${AnnotationStoreName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "AnnotationStoreVersion": {
+   "arnFormats": [
+    "arn:${Partition}:omics:${Region}:${Account}:annotationStore/${AnnotationStoreName}/version/${AnnotationStoreVersionName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "TaskResource": {
+   "arnFormats": [
+    "arn:${Partition}:omics:${Region}:${Account}:task/${Id}"
+   ]
+  },
+  "VariantStore": {
+   "arnFormats": [
+    "arn:${Partition}:omics:${Region}:${Account}:variantStore/${VariantStoreName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "WorkflowVersion": {
+   "arnFormats": [
+    "arn:${Partition}:omics:${Region}:${Account}:workflow/${Id}/version/${VersionName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "configuration": {
+   "arnFormats": [
+    "arn:${Partition}:omics:${Region}:${Account}:configuration/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "readSet": {
+   "arnFormats": [
+    "arn:${Partition}:omics:${Region}:${Account}:sequenceStore/${SequenceStoreId}/readSet/${ReadSetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "reference": {
+   "arnFormats": [
+    "arn:${Partition}:omics:${Region}:${Account}:referenceStore/${ReferenceStoreId}/reference/${ReferenceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "referenceStore": {
+   "arnFormats": [
+    "arn:${Partition}:omics:${Region}:${Account}:referenceStore/${ReferenceStoreId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "run": {
+   "arnFormats": [
+    "arn:${Partition}:omics:${Region}:${Account}:run/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "runBatch": {
+   "arnFormats": [
+    "arn:${Partition}:omics:${Region}:${Account}:runBatch/${BatchId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "runCache": {
+   "arnFormats": [
+    "arn:${Partition}:omics:${Region}:${Account}:runCache/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "runGroup": {
+   "arnFormats": [
+    "arn:${Partition}:omics:${Region}:${Account}:runGroup/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "sequenceStore": {
+   "arnFormats": [
+    "arn:${Partition}:omics:${Region}:${Account}:sequenceStore/${SequenceStoreId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workflow": {
+   "arnFormats": [
+    "arn:${Partition}:omics:${Region}:${Account}:workflow/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "omics",
+ "serviceName": "Omics",
+ "version": "v1.5"
+}

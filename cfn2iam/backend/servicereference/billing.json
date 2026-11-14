@@ -1,0 +1,401 @@
+{
+ "actions": {
+  "associatecontract": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateContract",
+   "resources": [
+    "contract"
+   ]
+  },
+  "associatesourceviews": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSourceViews",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "cancelcontractualinvestmentattestation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelContractualInvestmentAttestation",
+   "resources": [
+    "contract"
+   ]
+  },
+  "createbillingview": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBillingView",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "createcontractualinvestmentattestation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContractualInvestmentAttestation",
+   "resources": [
+    "contract"
+   ]
+  },
+  "deletebillingview": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBillingView",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "disassociatecontract": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateContract",
+   "resources": [
+    "contract"
+   ]
+  },
+  "disassociatesourceviews": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateSourceViews",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "getbillingdata": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetBillingData",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "getbillingdetails": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetBillingDetails",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "getbillingnotifications": {
+   "name": "GetBillingNotifications",
+   "resources": []
+  },
+  "getbillingpreferences": {
+   "name": "GetBillingPreferences",
+   "resources": []
+  },
+  "getbillingview": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetBillingView",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "getbillingviewdata": {
+   "name": "GetBillingViewData",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "getcontractinformation": {
+   "name": "GetContractInformation",
+   "resources": [
+    "contract"
+   ]
+  },
+  "getcreditallocationhistory": {
+   "name": "GetCreditAllocationHistory",
+   "resources": []
+  },
+  "getcredits": {
+   "name": "GetCredits",
+   "resources": []
+  },
+  "getenterprisesupportchargesummary": {
+   "name": "GetEnterpriseSupportChargeSummary",
+   "resources": []
+  },
+  "getenterprisesupportcontractdetails": {
+   "name": "GetEnterpriseSupportContractDetails",
+   "resources": []
+  },
+  "getiamaccesspreference": {
+   "name": "GetIAMAccessPreference",
+   "resources": []
+  },
+  "getresourcepolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "GetResourcePolicy",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "getsellerofrecord": {
+   "name": "GetSellerOfRecord",
+   "resources": []
+  },
+  "listbillingviews": {
+   "name": "ListBillingViews",
+   "resources": []
+  },
+  "listbillingviewsegments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBillingViewSegments",
+   "resources": []
+  },
+  "listbusinesssupportaccountcharges": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBusinessSupportAccountCharges",
+   "resources": []
+  },
+  "listbusinesssupportsubscriptionhistory": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBusinessSupportSubscriptionHistory",
+   "resources": []
+  },
+  "listcontracts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContracts",
+   "resources": []
+  },
+  "listcontractualinvestmentattestations": {
+   "name": "ListContractualInvestmentAttestations",
+   "resources": [
+    "contract"
+   ]
+  },
+  "listcontractualinvestments": {
+   "name": "ListContractualInvestments",
+   "resources": [
+    "contract"
+   ]
+  },
+  "listcontractualinvestmentsummaries": {
+   "name": "ListContractualInvestmentSummaries",
+   "resources": [
+    "contract"
+   ]
+  },
+  "listcreditentitlementperiods": {
+   "name": "ListCreditEntitlementPeriods",
+   "resources": []
+  },
+  "listcreditentitlements": {
+   "name": "ListCreditEntitlements",
+   "resources": []
+  },
+  "listenterprisesupportlinkedaccountcharges": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnterpriseSupportLinkedAccountCharges",
+   "resources": []
+  },
+  "listsourceviewsforbillingview": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSourceViewsForBillingView",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "putcontractinformation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutContractInformation",
+   "resources": []
+  },
+  "putresourcepolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "redeemcredits": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RedeemCredits",
+   "resources": []
+  },
+  "splitcredit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SplitCredit",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "transfercredit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TransferCredit",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "updatebillingpreferences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBillingPreferences",
+   "resources": []
+  },
+  "updatebillingview": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBillingView",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "updateiamaccesspreference": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIAMAccessPreference",
+   "resources": []
+  },
+  "usesourceview": {
+   "name": "UseSourceView",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "billingview": {
+   "arnFormats": [
+    "arn:${Partition}:billing::${Account}:billingview/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "contract": {
+   "arnFormats": [
+    "arn:${Partition}:billing::${Account}:contract/${ContractId}"
+   ]
+  }
+ },
+ "service": "billing",
+ "serviceName": "Billing",
+ "version": "v1.5"
+}

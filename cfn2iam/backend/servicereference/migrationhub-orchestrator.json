@@ -1,0 +1,320 @@
+{
+ "actions": {
+  "createtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTemplate",
+   "resources": []
+  },
+  "createworkflow": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkflow",
+   "resources": [
+    "template"
+   ]
+  },
+  "createworkflowstep": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkflowStep",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "createworkflowstepgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkflowStepGroup",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "deletetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "deleteworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkflow",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "deleteworkflowstep": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkflowStep",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "deleteworkflowstepgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkflowStepGroup",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "getmessage": {
+   "name": "GetMessage",
+   "resources": []
+  },
+  "gettemplate": {
+   "name": "GetTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "gettemplatestep": {
+   "name": "GetTemplateStep",
+   "resources": [
+    "template"
+   ]
+  },
+  "gettemplatestepgroup": {
+   "name": "GetTemplateStepGroup",
+   "resources": [
+    "template"
+   ]
+  },
+  "getworkflow": {
+   "name": "GetWorkflow",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "getworkflowstep": {
+   "name": "GetWorkflowStep",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "getworkflowstepgroup": {
+   "name": "GetWorkflowStepGroup",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "listplugins": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPlugins",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "template",
+    "workflow"
+   ]
+  },
+  "listtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTemplates",
+   "resources": []
+  },
+  "listtemplatestepgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTemplateStepGroups",
+   "resources": [
+    "template"
+   ]
+  },
+  "listtemplatesteps": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTemplateSteps",
+   "resources": [
+    "template"
+   ]
+  },
+  "listworkflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkflows",
+   "resources": []
+  },
+  "listworkflowstepgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkflowStepGroups",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "listworkflowsteps": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkflowSteps",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "registerplugin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterPlugin",
+   "resources": []
+  },
+  "retryworkflowstep": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RetryWorkflowStep",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "sendmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendMessage",
+   "resources": []
+  },
+  "startworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartWorkflow",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "stopworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopWorkflow",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "template",
+    "workflow"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "template",
+    "workflow"
+   ]
+  },
+  "updatetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "updateworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkflow",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "updateworkflowstep": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkflowStep",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "updateworkflowstepgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkflowStepGroup",
+   "resources": [
+    "workflow"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "template": {
+   "arnFormats": [
+    "arn:${Partition}:migrationhub-orchestrator:${Region}:${Account}:template/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workflow": {
+   "arnFormats": [
+    "arn:${Partition}:migrationhub-orchestrator:${Region}:${Account}:workflow/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "migrationhub-orchestrator",
+ "serviceName": "MigrationHubOrchestrator",
+ "version": "v1.5"
+}

@@ -1,0 +1,371 @@
+{
+ "actions": {
+  "acceptconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptConnection",
+   "resources": []
+  },
+  "associateiamroletoconnection": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateIamRoleToConnection",
+   "resources": [
+    "connections"
+   ]
+  },
+  "associateidentitycenterapplicationtospace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateIdentityCenterApplicationToSpace",
+   "resources": [
+    "identity-center-applications"
+   ]
+  },
+  "associateidentitytoidentitycenterapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateIdentityToIdentityCenterApplication",
+   "resources": [
+    "identity-center-applications"
+   ]
+  },
+  "batchassociateidentitiestoidentitycenterapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchAssociateIdentitiesToIdentityCenterApplication",
+   "resources": [
+    "identity-center-applications"
+   ]
+  },
+  "batchdisassociateidentitiesfromidentitycenterapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDisassociateIdentitiesFromIdentityCenterApplication",
+   "resources": [
+    "identity-center-applications"
+   ]
+  },
+  "createidentitycenterapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIdentityCenterApplication",
+   "resources": []
+  },
+  "createspace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSpace",
+   "resources": []
+  },
+  "createspaceadminroleassignment": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSpaceAdminRoleAssignment",
+   "resources": [
+    "identity-center-applications"
+   ]
+  },
+  "deleteconnection": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnection",
+   "resources": [
+    "connections"
+   ]
+  },
+  "deleteidentitycenterapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIdentityCenterApplication",
+   "resources": [
+    "identity-center-applications"
+   ]
+  },
+  "disassociateiamrolefromconnection": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateIamRoleFromConnection",
+   "resources": [
+    "connections"
+   ]
+  },
+  "disassociateidentitycenterapplicationfromspace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateIdentityCenterApplicationFromSpace",
+   "resources": [
+    "identity-center-applications"
+   ]
+  },
+  "disassociateidentityfromidentitycenterapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateIdentityFromIdentityCenterApplication",
+   "resources": [
+    "identity-center-applications"
+   ]
+  },
+  "getbillingauthorization": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetBillingAuthorization",
+   "resources": [
+    "connections"
+   ]
+  },
+  "getconnection": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetConnection",
+   "resources": [
+    "connections"
+   ]
+  },
+  "getidentitycenterapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetIdentityCenterApplication",
+   "resources": [
+    "identity-center-applications"
+   ]
+  },
+  "getpendingconnection": {
+   "name": "GetPendingConnection",
+   "resources": []
+  },
+  "listconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnections",
+   "resources": []
+  },
+  "listiamrolesforconnection": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIamRolesForConnection",
+   "resources": [
+    "connections"
+   ]
+  },
+  "listidentitycenterapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIdentityCenterApplications",
+   "resources": []
+  },
+  "listidentitycenterapplicationsforspace": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIdentityCenterApplicationsForSpace",
+   "resources": []
+  },
+  "listspacesforidentitycenterapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSpacesForIdentityCenterApplication",
+   "resources": [
+    "identity-center-applications"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "connections",
+    "identity-center-applications"
+   ]
+  },
+  "putbillingauthorization": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutBillingAuthorization",
+   "resources": [
+    "connections"
+   ]
+  },
+  "rejectconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectConnection",
+   "resources": []
+  },
+  "synchronizeidentitycenterapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SynchronizeIdentityCenterApplication",
+   "resources": [
+    "identity-center-applications"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "connections",
+    "identity-center-applications"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "connections",
+    "identity-center-applications"
+   ]
+  },
+  "updateidentitycenterapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIdentityCenterApplication",
+   "resources": [
+    "identity-center-applications"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "connections": {
+   "arnFormats": [
+    "arn:${Partition}:codecatalyst:${Region}:${Account}:/connections/${ConnectionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "identity-center-applications": {
+   "arnFormats": [
+    "arn:${Partition}:codecatalyst:${Region}:${Account}:/identity-center-applications/${IdentityCenterApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "project": {
+   "arnFormats": [
+    "arn:${Partition}:codecatalyst:::space/${SpaceId}/project/${ProjectId}"
+   ]
+  },
+  "space": {
+   "arnFormats": [
+    "arn:${Partition}:codecatalyst:::space/${SpaceId}"
+   ]
+  }
+ },
+ "service": "codecatalyst",
+ "serviceName": "CodeCatalyst",
+ "version": "v1.5"
+}

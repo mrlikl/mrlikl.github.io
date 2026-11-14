@@ -1,0 +1,377 @@
+{
+ "actions": {
+  "canceljournalkinesisstream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelJournalKinesisStream",
+   "resources": [
+    "stream"
+   ]
+  },
+  "createledger": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLedger",
+   "resources": [
+    "ledger"
+   ]
+  },
+  "deleteledger": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLedger",
+   "resources": [
+    "ledger"
+   ]
+  },
+  "describejournalkinesisstream": {
+   "name": "DescribeJournalKinesisStream",
+   "resources": [
+    "stream"
+   ]
+  },
+  "describejournals3export": {
+   "name": "DescribeJournalS3Export",
+   "resources": [
+    "ledger"
+   ]
+  },
+  "describeledger": {
+   "name": "DescribeLedger",
+   "resources": [
+    "ledger"
+   ]
+  },
+  "executestatement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExecuteStatement",
+   "resources": [
+    "ledger"
+   ]
+  },
+  "exportjournaltos3": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportJournalToS3",
+   "resources": [
+    "ledger"
+   ]
+  },
+  "getblock": {
+   "name": "GetBlock",
+   "resources": [
+    "ledger"
+   ]
+  },
+  "getdigest": {
+   "name": "GetDigest",
+   "resources": [
+    "ledger"
+   ]
+  },
+  "getrevision": {
+   "name": "GetRevision",
+   "resources": [
+    "ledger"
+   ]
+  },
+  "insertsampledata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InsertSampleData",
+   "resources": [
+    "ledger"
+   ]
+  },
+  "listjournalkinesisstreamsforledger": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJournalKinesisStreamsForLedger",
+   "resources": [
+    "stream"
+   ]
+  },
+  "listjournals3exports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJournalS3Exports",
+   "resources": []
+  },
+  "listjournals3exportsforledger": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJournalS3ExportsForLedger",
+   "resources": [
+    "ledger"
+   ]
+  },
+  "listledgers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLedgers",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "catalog",
+    "ledger",
+    "stream",
+    "table"
+   ]
+  },
+  "partiqlcreateindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PartiQLCreateIndex",
+   "resources": [
+    "table"
+   ]
+  },
+  "partiqlcreatetable": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PartiQLCreateTable",
+   "resources": [
+    "table"
+   ]
+  },
+  "partiqldelete": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PartiQLDelete",
+   "resources": [
+    "table"
+   ]
+  },
+  "partiqldropindex": {
+   "conditionKeys": [
+    "qldb:Purge"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PartiQLDropIndex",
+   "resources": [
+    "table"
+   ]
+  },
+  "partiqldroptable": {
+   "conditionKeys": [
+    "qldb:Purge"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PartiQLDropTable",
+   "resources": [
+    "table"
+   ]
+  },
+  "partiqlhistoryfunction": {
+   "name": "PartiQLHistoryFunction",
+   "resources": [
+    "table"
+   ]
+  },
+  "partiqlinsert": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PartiQLInsert",
+   "resources": [
+    "table"
+   ]
+  },
+  "partiqlredact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PartiQLRedact",
+   "resources": [
+    "table"
+   ]
+  },
+  "partiqlselect": {
+   "name": "PartiQLSelect",
+   "resources": [
+    "catalog",
+    "table"
+   ]
+  },
+  "partiqlundroptable": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PartiQLUndropTable",
+   "resources": [
+    "table"
+   ]
+  },
+  "partiqlupdate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PartiQLUpdate",
+   "resources": [
+    "table"
+   ]
+  },
+  "sendcommand": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendCommand",
+   "resources": [
+    "ledger"
+   ]
+  },
+  "showcatalog": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ShowCatalog",
+   "resources": [
+    "ledger"
+   ]
+  },
+  "streamjournaltokinesis": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StreamJournalToKinesis",
+   "resources": [
+    "stream"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "catalog",
+    "ledger",
+    "stream",
+    "table"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "catalog",
+    "ledger",
+    "stream",
+    "table"
+   ]
+  },
+  "updateledger": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLedger",
+   "resources": [
+    "ledger"
+   ]
+  },
+  "updateledgerpermissionsmode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLedgerPermissionsMode",
+   "resources": [
+    "ledger"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "qldb:Purge": [
+   "String"
+  ]
+ },
+ "resources": {
+  "catalog": {
+   "arnFormats": [
+    "arn:${Partition}:qldb:${Region}:${Account}:ledger/${LedgerName}/information_schema/user_tables"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ledger": {
+   "arnFormats": [
+    "arn:${Partition}:qldb:${Region}:${Account}:ledger/${LedgerName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "stream": {
+   "arnFormats": [
+    "arn:${Partition}:qldb:${Region}:${Account}:stream/${LedgerName}/${StreamId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "table": {
+   "arnFormats": [
+    "arn:${Partition}:qldb:${Region}:${Account}:ledger/${LedgerName}/table/${TableId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "qldb",
+ "serviceName": "QLDB",
+ "version": "v1.5"
+}

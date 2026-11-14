@@ -1,0 +1,884 @@
+{
+ "actions": {
+  "associateresourcetypes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateResourceTypes",
+   "resources": [
+    "ConfigurationRecorder"
+   ]
+  },
+  "batchgetaggregateresourceconfig": {
+   "name": "BatchGetAggregateResourceConfig",
+   "resources": [
+    "ConfigurationAggregator"
+   ]
+  },
+  "batchgetresourceconfig": {
+   "name": "BatchGetResourceConfig",
+   "resources": []
+  },
+  "deleteaggregationauthorization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAggregationAuthorization",
+   "resources": [
+    "AggregationAuthorization"
+   ]
+  },
+  "deleteconfigrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfigRule",
+   "resources": [
+    "ConfigRule"
+   ]
+  },
+  "deleteconfigurationaggregator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfigurationAggregator",
+   "resources": [
+    "ConfigurationAggregator"
+   ]
+  },
+  "deleteconfigurationrecorder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfigurationRecorder",
+   "resources": [
+    "ConfigurationRecorder"
+   ]
+  },
+  "deleteconformancepack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConformancePack",
+   "resources": [
+    "ConformancePack"
+   ]
+  },
+  "deleteconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnector",
+   "resources": [
+    "Connector"
+   ]
+  },
+  "deletedeliverychannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDeliveryChannel",
+   "resources": []
+  },
+  "deleteevaluationresults": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEvaluationResults",
+   "resources": [
+    "ConfigRule"
+   ]
+  },
+  "deleteorganizationconfigrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOrganizationConfigRule",
+   "resources": [
+    "OrganizationConfigRule"
+   ]
+  },
+  "deleteorganizationconformancepack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOrganizationConformancePack",
+   "resources": [
+    "OrganizationConformancePack"
+   ]
+  },
+  "deletependingaggregationrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePendingAggregationRequest",
+   "resources": []
+  },
+  "deleteremediationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRemediationConfiguration",
+   "resources": [
+    "RemediationConfiguration"
+   ]
+  },
+  "deleteremediationexceptions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRemediationExceptions",
+   "resources": []
+  },
+  "deleteresourceconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourceConfig",
+   "resources": []
+  },
+  "deleteretentionconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRetentionConfiguration",
+   "resources": []
+  },
+  "deleteservicelinkedconfigurationrecorder": {
+   "conditionKeys": [
+    "config:ConfigurationRecorderServicePrincipal"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceLinkedConfigurationRecorder",
+   "resources": [
+    "ConfigurationRecorder"
+   ]
+  },
+  "deletestoredquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStoredQuery",
+   "resources": [
+    "StoredQuery"
+   ]
+  },
+  "deliverconfigsnapshot": {
+   "name": "DeliverConfigSnapshot",
+   "resources": []
+  },
+  "describeaggregatecompliancebyconfigrules": {
+   "name": "DescribeAggregateComplianceByConfigRules",
+   "resources": [
+    "ConfigurationAggregator"
+   ]
+  },
+  "describeaggregatecompliancebyconformancepacks": {
+   "name": "DescribeAggregateComplianceByConformancePacks",
+   "resources": [
+    "ConfigurationAggregator"
+   ]
+  },
+  "describeaggregationauthorizations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeAggregationAuthorizations",
+   "resources": []
+  },
+  "describecompliancebyconfigrule": {
+   "name": "DescribeComplianceByConfigRule",
+   "resources": []
+  },
+  "describecompliancebyresource": {
+   "name": "DescribeComplianceByResource",
+   "resources": []
+  },
+  "describeconfigruleevaluationstatus": {
+   "name": "DescribeConfigRuleEvaluationStatus",
+   "resources": []
+  },
+  "describeconfigrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeConfigRules",
+   "resources": []
+  },
+  "describeconfigurationaggregators": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeConfigurationAggregators",
+   "resources": []
+  },
+  "describeconfigurationaggregatorsourcesstatus": {
+   "name": "DescribeConfigurationAggregatorSourcesStatus",
+   "resources": [
+    "ConfigurationAggregator"
+   ]
+  },
+  "describeconfigurationrecorders": {
+   "conditionKeys": [
+    "config:ConfigurationRecorderServicePrincipal"
+   ],
+   "name": "DescribeConfigurationRecorders",
+   "resources": [
+    "ConfigurationRecorder"
+   ]
+  },
+  "describeconfigurationrecorderstatus": {
+   "conditionKeys": [
+    "config:ConfigurationRecorderServicePrincipal"
+   ],
+   "name": "DescribeConfigurationRecorderStatus",
+   "resources": [
+    "ConfigurationRecorder"
+   ]
+  },
+  "describeconformancepackcompliance": {
+   "name": "DescribeConformancePackCompliance",
+   "resources": [
+    "ConformancePack"
+   ]
+  },
+  "describeconformancepacks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeConformancePacks",
+   "resources": []
+  },
+  "describeconformancepackstatus": {
+   "name": "DescribeConformancePackStatus",
+   "resources": []
+  },
+  "describedeliverychannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDeliveryChannels",
+   "resources": []
+  },
+  "describedeliverychannelstatus": {
+   "name": "DescribeDeliveryChannelStatus",
+   "resources": []
+  },
+  "describeorganizationconfigrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeOrganizationConfigRules",
+   "resources": []
+  },
+  "describeorganizationconfigrulestatuses": {
+   "name": "DescribeOrganizationConfigRuleStatuses",
+   "resources": []
+  },
+  "describeorganizationconformancepacks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeOrganizationConformancePacks",
+   "resources": []
+  },
+  "describeorganizationconformancepackstatuses": {
+   "name": "DescribeOrganizationConformancePackStatuses",
+   "resources": []
+  },
+  "describependingaggregationrequests": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribePendingAggregationRequests",
+   "resources": []
+  },
+  "describeremediationconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeRemediationConfigurations",
+   "resources": [
+    "RemediationConfiguration"
+   ]
+  },
+  "describeremediationexceptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeRemediationExceptions",
+   "resources": []
+  },
+  "describeremediationexecutionstatus": {
+   "name": "DescribeRemediationExecutionStatus",
+   "resources": [
+    "RemediationConfiguration"
+   ]
+  },
+  "describeretentionconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeRetentionConfigurations",
+   "resources": []
+  },
+  "disassociateresourcetypes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateResourceTypes",
+   "resources": [
+    "ConfigurationRecorder"
+   ]
+  },
+  "getaggregatecompliancedetailsbyconfigrule": {
+   "name": "GetAggregateComplianceDetailsByConfigRule",
+   "resources": [
+    "ConfigurationAggregator"
+   ]
+  },
+  "getaggregateconfigrulecompliancesummary": {
+   "name": "GetAggregateConfigRuleComplianceSummary",
+   "resources": [
+    "ConfigurationAggregator"
+   ]
+  },
+  "getaggregateconformancepackcompliancesummary": {
+   "name": "GetAggregateConformancePackComplianceSummary",
+   "resources": [
+    "ConfigurationAggregator"
+   ]
+  },
+  "getaggregatediscoveredresourcecounts": {
+   "name": "GetAggregateDiscoveredResourceCounts",
+   "resources": [
+    "ConfigurationAggregator"
+   ]
+  },
+  "getaggregateresourceconfig": {
+   "name": "GetAggregateResourceConfig",
+   "resources": [
+    "ConfigurationAggregator"
+   ]
+  },
+  "getcompliancedetailsbyconfigrule": {
+   "name": "GetComplianceDetailsByConfigRule",
+   "resources": [
+    "ConfigRule"
+   ]
+  },
+  "getcompliancedetailsbyresource": {
+   "name": "GetComplianceDetailsByResource",
+   "resources": []
+  },
+  "getcompliancesummarybyconfigrule": {
+   "name": "GetComplianceSummaryByConfigRule",
+   "resources": []
+  },
+  "getcompliancesummarybyresourcetype": {
+   "name": "GetComplianceSummaryByResourceType",
+   "resources": []
+  },
+  "getconformancepackcompliancedetails": {
+   "name": "GetConformancePackComplianceDetails",
+   "resources": [
+    "ConformancePack"
+   ]
+  },
+  "getconformancepackcompliancesummary": {
+   "name": "GetConformancePackComplianceSummary",
+   "resources": [
+    "ConformancePack"
+   ]
+  },
+  "getconnector": {
+   "name": "GetConnector",
+   "resources": [
+    "Connector"
+   ]
+  },
+  "getcustomrulepolicy": {
+   "name": "GetCustomRulePolicy",
+   "resources": [
+    "ConfigRule"
+   ]
+  },
+  "getdiscoveredresourcecounts": {
+   "name": "GetDiscoveredResourceCounts",
+   "resources": []
+  },
+  "getorganizationconfigruledetailedstatus": {
+   "name": "GetOrganizationConfigRuleDetailedStatus",
+   "resources": [
+    "OrganizationConfigRule"
+   ]
+  },
+  "getorganizationconformancepackdetailedstatus": {
+   "name": "GetOrganizationConformancePackDetailedStatus",
+   "resources": [
+    "OrganizationConformancePack"
+   ]
+  },
+  "getorganizationcustomrulepolicy": {
+   "name": "GetOrganizationCustomRulePolicy",
+   "resources": [
+    "OrganizationConfigRule"
+   ]
+  },
+  "getresourceconfighistory": {
+   "name": "GetResourceConfigHistory",
+   "resources": []
+  },
+  "getresourceevaluationsummary": {
+   "name": "GetResourceEvaluationSummary",
+   "resources": []
+  },
+  "getstoredquery": {
+   "name": "GetStoredQuery",
+   "resources": [
+    "StoredQuery"
+   ]
+  },
+  "listaggregatediscoveredresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAggregateDiscoveredResources",
+   "resources": [
+    "ConfigurationAggregator"
+   ]
+  },
+  "listconfigurationrecorders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigurationRecorders",
+   "resources": []
+  },
+  "listconformancepackcompliancescores": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConformancePackComplianceScores",
+   "resources": []
+  },
+  "listconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectors",
+   "resources": []
+  },
+  "listdiscoveredresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDiscoveredResources",
+   "resources": []
+  },
+  "listresourceevaluations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceEvaluations",
+   "resources": []
+  },
+  "liststoredqueries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStoredQueries",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "AggregationAuthorization",
+    "ConfigRule",
+    "ConfigurationAggregator",
+    "ConfigurationRecorder",
+    "ConformancePack",
+    "Connector",
+    "OrganizationConfigRule",
+    "OrganizationConformancePack",
+    "StoredQuery"
+   ]
+  },
+  "putaggregationauthorization": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAggregationAuthorization",
+   "resources": [
+    "AggregationAuthorization"
+   ]
+  },
+  "putconfigrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutConfigRule",
+   "resources": [
+    "ConfigRule"
+   ]
+  },
+  "putconfigurationaggregator": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutConfigurationAggregator",
+   "resources": [
+    "ConfigurationAggregator"
+   ]
+  },
+  "putconfigurationrecorder": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutConfigurationRecorder",
+   "resources": [
+    "ConfigurationRecorder"
+   ]
+  },
+  "putconformancepack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutConformancePack",
+   "resources": [
+    "ConformancePack"
+   ]
+  },
+  "putconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutConnector",
+   "resources": [
+    "Connector"
+   ]
+  },
+  "putdeliverychannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDeliveryChannel",
+   "resources": []
+  },
+  "putevaluations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutEvaluations",
+   "resources": []
+  },
+  "putexternalevaluation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutExternalEvaluation",
+   "resources": [
+    "ConfigRule"
+   ]
+  },
+  "putorganizationconfigrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutOrganizationConfigRule",
+   "resources": [
+    "OrganizationConfigRule"
+   ]
+  },
+  "putorganizationconformancepack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutOrganizationConformancePack",
+   "resources": [
+    "OrganizationConformancePack"
+   ]
+  },
+  "putremediationconfigurations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRemediationConfigurations",
+   "resources": [
+    "RemediationConfiguration"
+   ]
+  },
+  "putremediationexceptions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRemediationExceptions",
+   "resources": []
+  },
+  "putresourceconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourceConfig",
+   "resources": []
+  },
+  "putretentionconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRetentionConfiguration",
+   "resources": []
+  },
+  "putservicelinkedconfigurationrecorder": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "config:ConfigurationRecorderServicePrincipal"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutServiceLinkedConfigurationRecorder",
+   "resources": []
+  },
+  "putstoredquery": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutStoredQuery",
+   "resources": [
+    "StoredQuery"
+   ]
+  },
+  "putthirdpartyservicelinkedconfigurationrecorder": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "config:ConfigurationRecorderServicePrincipal"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutThirdPartyServiceLinkedConfigurationRecorder",
+   "resources": [
+    "Connector"
+   ]
+  },
+  "selectaggregateresourceconfig": {
+   "name": "SelectAggregateResourceConfig",
+   "resources": [
+    "ConfigurationAggregator"
+   ]
+  },
+  "selectresourceconfig": {
+   "name": "SelectResourceConfig",
+   "resources": []
+  },
+  "startconfigrulesevaluation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartConfigRulesEvaluation",
+   "resources": [
+    "ConfigRule"
+   ]
+  },
+  "startconfigurationrecorder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartConfigurationRecorder",
+   "resources": [
+    "ConfigurationRecorder"
+   ]
+  },
+  "startremediationexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRemediationExecution",
+   "resources": []
+  },
+  "startresourceevaluation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartResourceEvaluation",
+   "resources": []
+  },
+  "stopconfigurationrecorder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopConfigurationRecorder",
+   "resources": [
+    "ConfigurationRecorder"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "AggregationAuthorization",
+    "ConfigRule",
+    "ConfigurationAggregator",
+    "ConfigurationRecorder",
+    "ConformancePack",
+    "Connector",
+    "OrganizationConfigRule",
+    "OrganizationConformancePack",
+    "StoredQuery"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "AggregationAuthorization",
+    "ConfigRule",
+    "ConfigurationAggregator",
+    "ConfigurationRecorder",
+    "ConformancePack",
+    "Connector",
+    "OrganizationConfigRule",
+    "OrganizationConformancePack",
+    "StoredQuery"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "config:ConfigurationRecorderServicePrincipal": [
+   "String"
+  ]
+ },
+ "resources": {
+  "AggregationAuthorization": {
+   "arnFormats": [
+    "arn:${Partition}:config:${Region}:${Account}:aggregation-authorization/${AggregatorAccount}/${AggregatorRegion}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ConfigRule": {
+   "arnFormats": [
+    "arn:${Partition}:config:${Region}:${Account}:config-rule/${ConfigRuleId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ConfigurationAggregator": {
+   "arnFormats": [
+    "arn:${Partition}:config:${Region}:${Account}:config-aggregator/${AggregatorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ConfigurationRecorder": {
+   "arnFormats": [
+    "arn:${Partition}:config:${Region}:${Account}:configuration-recorder/${RecorderName}/${RecorderId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ConformancePack": {
+   "arnFormats": [
+    "arn:${Partition}:config:${Region}:${Account}:conformance-pack/${ConformancePackName}/${ConformancePackId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Connector": {
+   "arnFormats": [
+    "arn:${Partition}:config:${Region}:${Account}:connector/${Provider}/${ProviderId}/${ConnectorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "OrganizationConfigRule": {
+   "arnFormats": [
+    "arn:${Partition}:config:${Region}:${Account}:organization-config-rule/${OrganizationConfigRuleId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "OrganizationConformancePack": {
+   "arnFormats": [
+    "arn:${Partition}:config:${Region}:${Account}:organization-conformance-pack/${OrganizationConformancePackId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "RemediationConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:config:${Region}:${Account}:remediation-configuration/${RemediationConfigurationId}"
+   ]
+  },
+  "StoredQuery": {
+   "arnFormats": [
+    "arn:${Partition}:config:${Region}:${Account}:stored-query/${StoredQueryName}/${StoredQueryId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "config",
+ "serviceName": "Config",
+ "version": "v1.5"
+}

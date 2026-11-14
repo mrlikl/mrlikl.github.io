@@ -1,0 +1,522 @@
+{
+ "actions": {
+  "addcustomroutingendpoints": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddCustomRoutingEndpoints",
+   "resources": [
+    "endpointgroup"
+   ]
+  },
+  "addendpoints": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddEndpoints",
+   "resources": [
+    "endpointgroup"
+   ]
+  },
+  "advertisebyoipcidr": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdvertiseByoipCidr",
+   "resources": []
+  },
+  "allowcustomroutingtraffic": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AllowCustomRoutingTraffic",
+   "resources": [
+    "endpointgroup"
+   ]
+  },
+  "createaccelerator": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccelerator",
+   "resources": []
+  },
+  "createcrossaccountattachment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCrossAccountAttachment",
+   "resources": []
+  },
+  "createcustomroutingaccelerator": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomRoutingAccelerator",
+   "resources": []
+  },
+  "createcustomroutingendpointgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomRoutingEndpointGroup",
+   "resources": [
+    "listener"
+   ]
+  },
+  "createcustomroutinglistener": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomRoutingListener",
+   "resources": [
+    "accelerator"
+   ]
+  },
+  "createendpointgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEndpointGroup",
+   "resources": [
+    "listener"
+   ]
+  },
+  "createlistener": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateListener",
+   "resources": [
+    "accelerator"
+   ]
+  },
+  "deleteaccelerator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccelerator",
+   "resources": [
+    "accelerator"
+   ]
+  },
+  "deletecrossaccountattachment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCrossAccountAttachment",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "deletecustomroutingaccelerator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomRoutingAccelerator",
+   "resources": [
+    "accelerator"
+   ]
+  },
+  "deletecustomroutingendpointgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomRoutingEndpointGroup",
+   "resources": [
+    "endpointgroup"
+   ]
+  },
+  "deletecustomroutinglistener": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomRoutingListener",
+   "resources": [
+    "listener"
+   ]
+  },
+  "deleteendpointgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEndpointGroup",
+   "resources": [
+    "endpointgroup"
+   ]
+  },
+  "deletelistener": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteListener",
+   "resources": [
+    "listener"
+   ]
+  },
+  "denycustomroutingtraffic": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DenyCustomRoutingTraffic",
+   "resources": [
+    "endpointgroup"
+   ]
+  },
+  "deprovisionbyoipcidr": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeprovisionByoipCidr",
+   "resources": []
+  },
+  "describeaccelerator": {
+   "name": "DescribeAccelerator",
+   "resources": [
+    "accelerator"
+   ]
+  },
+  "describeacceleratorattributes": {
+   "name": "DescribeAcceleratorAttributes",
+   "resources": [
+    "accelerator"
+   ]
+  },
+  "describecrossaccountattachment": {
+   "name": "DescribeCrossAccountAttachment",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "describecustomroutingaccelerator": {
+   "name": "DescribeCustomRoutingAccelerator",
+   "resources": [
+    "accelerator"
+   ]
+  },
+  "describecustomroutingacceleratorattributes": {
+   "name": "DescribeCustomRoutingAcceleratorAttributes",
+   "resources": [
+    "accelerator"
+   ]
+  },
+  "describecustomroutingendpointgroup": {
+   "name": "DescribeCustomRoutingEndpointGroup",
+   "resources": [
+    "endpointgroup"
+   ]
+  },
+  "describecustomroutinglistener": {
+   "name": "DescribeCustomRoutingListener",
+   "resources": [
+    "listener"
+   ]
+  },
+  "describeendpointgroup": {
+   "name": "DescribeEndpointGroup",
+   "resources": [
+    "endpointgroup"
+   ]
+  },
+  "describelistener": {
+   "name": "DescribeListener",
+   "resources": [
+    "listener"
+   ]
+  },
+  "listaccelerators": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccelerators",
+   "resources": []
+  },
+  "listbyoipcidrs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListByoipCidrs",
+   "resources": []
+  },
+  "listcrossaccountattachments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCrossAccountAttachments",
+   "resources": []
+  },
+  "listcrossaccountresourceaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCrossAccountResourceAccounts",
+   "resources": []
+  },
+  "listcrossaccountresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCrossAccountResources",
+   "resources": []
+  },
+  "listcustomroutingaccelerators": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomRoutingAccelerators",
+   "resources": []
+  },
+  "listcustomroutingendpointgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomRoutingEndpointGroups",
+   "resources": [
+    "listener"
+   ]
+  },
+  "listcustomroutinglisteners": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomRoutingListeners",
+   "resources": [
+    "accelerator"
+   ]
+  },
+  "listcustomroutingportmappings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomRoutingPortMappings",
+   "resources": [
+    "accelerator"
+   ]
+  },
+  "listcustomroutingportmappingsbydestination": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomRoutingPortMappingsByDestination",
+   "resources": []
+  },
+  "listendpointgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEndpointGroups",
+   "resources": [
+    "listener"
+   ]
+  },
+  "listlisteners": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListListeners",
+   "resources": [
+    "accelerator"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "accelerator",
+    "attachment"
+   ]
+  },
+  "provisionbyoipcidr": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ProvisionByoipCidr",
+   "resources": []
+  },
+  "removecustomroutingendpoints": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveCustomRoutingEndpoints",
+   "resources": [
+    "endpointgroup"
+   ]
+  },
+  "removeendpoints": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveEndpoints",
+   "resources": [
+    "endpointgroup"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "accelerator",
+    "attachment"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "accelerator",
+    "attachment"
+   ]
+  },
+  "updateaccelerator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccelerator",
+   "resources": [
+    "accelerator"
+   ]
+  },
+  "updateacceleratorattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAcceleratorAttributes",
+   "resources": [
+    "accelerator"
+   ]
+  },
+  "updatecrossaccountattachment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCrossAccountAttachment",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "updatecustomroutingaccelerator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCustomRoutingAccelerator",
+   "resources": [
+    "accelerator"
+   ]
+  },
+  "updatecustomroutingacceleratorattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCustomRoutingAcceleratorAttributes",
+   "resources": [
+    "accelerator"
+   ]
+  },
+  "updatecustomroutinglistener": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCustomRoutingListener",
+   "resources": [
+    "listener"
+   ]
+  },
+  "updateendpointgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEndpointGroup",
+   "resources": [
+    "endpointgroup"
+   ]
+  },
+  "updatelistener": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateListener",
+   "resources": [
+    "listener"
+   ]
+  },
+  "withdrawbyoipcidr": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "WithdrawByoipCidr",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "accelerator": {
+   "arnFormats": [
+    "arn:${Partition}:globalaccelerator::${Account}:accelerator/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "attachment": {
+   "arnFormats": [
+    "arn:${Partition}:globalaccelerator::${Account}:attachment/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "endpointgroup": {
+   "arnFormats": [
+    "arn:${Partition}:globalaccelerator::${Account}:accelerator/${ResourceId}/listener/${ListenerId}/endpoint-group/${EndpointGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "listener": {
+   "arnFormats": [
+    "arn:${Partition}:globalaccelerator::${Account}:accelerator/${ResourceId}/listener/${ListenerId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "globalaccelerator",
+ "serviceName": "GlobalAccelerator",
+ "version": "v1.5"
+}

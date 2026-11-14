@@ -1,0 +1,113 @@
+{
+ "actions": {
+  "commitbackupjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CommitBackupJob",
+   "resources": []
+  },
+  "deleteobjects": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteObjects",
+   "resources": []
+  },
+  "describebackupjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DescribeBackupJob",
+   "resources": []
+  },
+  "getbasebackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetBaseBackup",
+   "resources": []
+  },
+  "getchunk": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetChunk",
+   "resources": []
+  },
+  "getincrementalbasebackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetIncrementalBaseBackup",
+   "resources": []
+  },
+  "getobjectmetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetObjectMetadata",
+   "resources": []
+  },
+  "listchunks": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ListChunks",
+   "resources": []
+  },
+  "listobjects": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ListObjects",
+   "resources": []
+  },
+  "mountcapsule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MountCapsule",
+   "resources": []
+  },
+  "notifyobjectcomplete": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyObjectComplete",
+   "resources": []
+  },
+  "putchunk": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutChunk",
+   "resources": []
+  },
+  "putobject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutObject",
+   "resources": []
+  },
+  "startobject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartObject",
+   "resources": []
+  },
+  "updateobjectcomplete": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateObjectComplete",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "backup-storage",
+ "serviceName": "Backup Storage",
+ "version": "v1.5"
+}

@@ -1,0 +1,29 @@
+{
+ "actions": {
+  "allowmultiregion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AllowMultiRegion",
+   "resources": [
+    "vpc-endpoint",
+    "vpc-endpoint-service"
+   ]
+  }
+ },
+ "resources": {
+  "vpc-endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:ec2:${Region}:${Account}:vpc-endpoint/${VpcEndpointId}"
+   ]
+  },
+  "vpc-endpoint-service": {
+   "arnFormats": [
+    "arn:${Partition}:ec2:${Region}:${Account}:vpc-endpoint-service/${VpcEndpointServiceId}"
+   ]
+  }
+ },
+ "service": "vpce",
+ "serviceName": "VPC Endpoints",
+ "version": "v1.5"
+}

@@ -1,0 +1,147 @@
+{
+ "actions": {
+  "createconfigurationmanager": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConfigurationManager",
+   "resourceConditionKeys": {
+    "configuration-manager": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "configuration-manager"
+   ]
+  },
+  "deleteconfigurationmanager": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfigurationManager",
+   "resources": [
+    "configuration-manager"
+   ]
+  },
+  "getconfiguration": {
+   "name": "GetConfiguration",
+   "resources": [
+    "configuration-manager"
+   ]
+  },
+  "getconfigurationmanager": {
+   "name": "GetConfigurationManager",
+   "resources": [
+    "configuration-manager"
+   ]
+  },
+  "getservicesettings": {
+   "name": "GetServiceSettings",
+   "resources": []
+  },
+  "listconfigurationmanagers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigurationManagers",
+   "resources": []
+  },
+  "listconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigurations",
+   "resources": [
+    "configuration-manager"
+   ]
+  },
+  "listquicksetuptypes": {
+   "name": "ListQuickSetupTypes",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "configuration-manager"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "configuration-manager"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "configuration-manager"
+   ]
+  },
+  "updateconfigurationdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConfigurationDefinition",
+   "resources": [
+    "configuration-manager"
+   ]
+  },
+  "updateconfigurationmanager": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConfigurationManager",
+   "resources": [
+    "configuration-manager"
+   ]
+  },
+  "updateservicesettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceSettings",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "configuration-manager": {
+   "arnFormats": [
+    "arn:${Partition}:ssm-quicksetup:${Region}:${Account}:configuration-manager/${ConfigurationManagerId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "ssm-quicksetup",
+ "serviceName": "Systems Manager Quick Setup",
+ "version": "v1.5"
+}

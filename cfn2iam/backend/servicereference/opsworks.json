@@ -1,0 +1,665 @@
+{
+ "actions": {
+  "assigninstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssignInstance",
+   "resources": [
+    "stack"
+   ]
+  },
+  "assignvolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssignVolume",
+   "resources": [
+    "stack"
+   ]
+  },
+  "associateelasticip": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateElasticIp",
+   "resources": [
+    "stack"
+   ]
+  },
+  "attachelasticloadbalancer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AttachElasticLoadBalancer",
+   "resources": [
+    "stack"
+   ]
+  },
+  "clonestack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CloneStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "createapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApp",
+   "resources": [
+    "stack"
+   ]
+  },
+  "createdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeployment",
+   "resources": [
+    "stack"
+   ]
+  },
+  "createinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInstance",
+   "resources": [
+    "stack"
+   ]
+  },
+  "createlayer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLayer",
+   "resources": [
+    "stack"
+   ]
+  },
+  "createstack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStack",
+   "resources": []
+  },
+  "createuserprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUserProfile",
+   "resources": []
+  },
+  "deleteapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApp",
+   "resources": [
+    "stack"
+   ]
+  },
+  "deleteinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInstance",
+   "resources": [
+    "stack"
+   ]
+  },
+  "deletelayer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLayer",
+   "resources": [
+    "stack"
+   ]
+  },
+  "deletestack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "deleteuserprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserProfile",
+   "resources": []
+  },
+  "deregisterecscluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterEcsCluster",
+   "resources": [
+    "stack"
+   ]
+  },
+  "deregisterelasticip": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterElasticIp",
+   "resources": [
+    "stack"
+   ]
+  },
+  "deregisterinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterInstance",
+   "resources": [
+    "stack"
+   ]
+  },
+  "deregisterrdsdbinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterRdsDbInstance",
+   "resources": [
+    "stack"
+   ]
+  },
+  "deregistervolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterVolume",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describeagentversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeAgentVersions",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describeapps": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeApps",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describecommands": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeCommands",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describedeployments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDeployments",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describeecsclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeEcsClusters",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describeelasticips": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeElasticIps",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describeelasticloadbalancers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeElasticLoadBalancers",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describeinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeInstances",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describelayers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeLayers",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describeloadbasedautoscaling": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeLoadBasedAutoScaling",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describemyuserprofile": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeMyUserProfile",
+   "resources": []
+  },
+  "describeoperatingsystems": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeOperatingSystems",
+   "resources": []
+  },
+  "describepermissions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribePermissions",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describeraidarrays": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeRaidArrays",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describerdsdbinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeRdsDbInstances",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describeserviceerrors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeServiceErrors",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describestackprovisioningparameters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeStackProvisioningParameters",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describestacks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeStacks",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describestacksummary": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeStackSummary",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describetimebasedautoscaling": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeTimeBasedAutoScaling",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describeuserprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeUserProfiles",
+   "resources": []
+  },
+  "describevolumes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeVolumes",
+   "resources": [
+    "stack"
+   ]
+  },
+  "detachelasticloadbalancer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetachElasticLoadBalancer",
+   "resources": [
+    "stack"
+   ]
+  },
+  "disassociateelasticip": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateElasticIp",
+   "resources": [
+    "stack"
+   ]
+  },
+  "gethostnamesuggestion": {
+   "name": "GetHostnameSuggestion",
+   "resources": [
+    "stack"
+   ]
+  },
+  "grantaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GrantAccess",
+   "resources": [
+    "stack"
+   ]
+  },
+  "listtags": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTags",
+   "resources": [
+    "stack"
+   ]
+  },
+  "rebootinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootInstance",
+   "resources": [
+    "stack"
+   ]
+  },
+  "registerecscluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterEcsCluster",
+   "resources": [
+    "stack"
+   ]
+  },
+  "registerelasticip": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterElasticIp",
+   "resources": [
+    "stack"
+   ]
+  },
+  "registerinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterInstance",
+   "resources": [
+    "stack"
+   ]
+  },
+  "registerrdsdbinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterRdsDbInstance",
+   "resources": [
+    "stack"
+   ]
+  },
+  "registervolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterVolume",
+   "resources": [
+    "stack"
+   ]
+  },
+  "setloadbasedautoscaling": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetLoadBasedAutoScaling",
+   "resources": [
+    "stack"
+   ]
+  },
+  "setpermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "SetPermission",
+   "resources": [
+    "stack"
+   ]
+  },
+  "settimebasedautoscaling": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetTimeBasedAutoScaling",
+   "resources": [
+    "stack"
+   ]
+  },
+  "startinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartInstance",
+   "resources": [
+    "stack"
+   ]
+  },
+  "startstack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "stopinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopInstance",
+   "resources": [
+    "stack"
+   ]
+  },
+  "stopstack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "tagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "stack"
+   ]
+  },
+  "unassigninstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnassignInstance",
+   "resources": [
+    "stack"
+   ]
+  },
+  "unassignvolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnassignVolume",
+   "resources": [
+    "stack"
+   ]
+  },
+  "untagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "stack"
+   ]
+  },
+  "updateapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApp",
+   "resources": [
+    "stack"
+   ]
+  },
+  "updateelasticip": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateElasticIp",
+   "resources": [
+    "stack"
+   ]
+  },
+  "updateinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInstance",
+   "resources": [
+    "stack"
+   ]
+  },
+  "updatelayer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLayer",
+   "resources": [
+    "stack"
+   ]
+  },
+  "updatemyuserprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMyUserProfile",
+   "resources": []
+  },
+  "updaterdsdbinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRdsDbInstance",
+   "resources": [
+    "stack"
+   ]
+  },
+  "updatestack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "updateuserprofile": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateUserProfile",
+   "resources": []
+  },
+  "updatevolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVolume",
+   "resources": [
+    "stack"
+   ]
+  }
+ },
+ "resources": {
+  "stack": {
+   "arnFormats": [
+    "arn:${Partition}:opsworks:${Region}:${Account}:stack/${StackId}/"
+   ]
+  }
+ },
+ "service": "opsworks",
+ "serviceName": "OpsWorks",
+ "version": "v1.5"
+}

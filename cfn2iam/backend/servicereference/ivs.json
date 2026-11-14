@@ -1,0 +1,911 @@
+{
+ "actions": {
+  "batchgetchannel": {
+   "name": "BatchGetChannel",
+   "resources": [
+    "Channel"
+   ]
+  },
+  "batchgetstreamkey": {
+   "name": "BatchGetStreamKey",
+   "resources": [
+    "Stream-Key"
+   ]
+  },
+  "batchstartviewersessionrevocation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchStartViewerSessionRevocation",
+   "resources": [
+    "Channel"
+   ]
+  },
+  "createadconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAdConfiguration",
+   "resources": [
+    "Ad-Configuration"
+   ]
+  },
+  "createchannel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannel",
+   "resources": [
+    "Channel",
+    "Stream-Key"
+   ]
+  },
+  "createencoderconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEncoderConfiguration",
+   "resources": [
+    "Encoder-Configuration"
+   ]
+  },
+  "createfailoverslateconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFailoverSlateConfiguration",
+   "resources": [
+    "Failover-Slate-Configuration"
+   ]
+  },
+  "createingestconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIngestConfiguration",
+   "resources": [
+    "Ingest-Configuration"
+   ]
+  },
+  "createparticipanttoken": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateParticipantToken",
+   "resources": [
+    "Stage"
+   ]
+  },
+  "createplaybackrestrictionpolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePlaybackRestrictionPolicy",
+   "resources": [
+    "Playback-Restriction-Policy"
+   ]
+  },
+  "createrecordingconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRecordingConfiguration",
+   "resources": [
+    "Recording-Configuration"
+   ]
+  },
+  "createstage": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStage",
+   "resources": [
+    "Stage"
+   ]
+  },
+  "createstorageconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStorageConfiguration",
+   "resources": [
+    "Storage-Configuration"
+   ]
+  },
+  "createstreamkey": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStreamKey",
+   "resources": [
+    "Stream-Key"
+   ]
+  },
+  "deleteadconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAdConfiguration",
+   "resources": [
+    "Ad-Configuration"
+   ]
+  },
+  "deletechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannel",
+   "resources": [
+    "Channel",
+    "Stream-Key"
+   ]
+  },
+  "deleteencoderconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEncoderConfiguration",
+   "resources": [
+    "Encoder-Configuration"
+   ]
+  },
+  "deletefailoverslateconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFailoverSlateConfiguration",
+   "resources": [
+    "Failover-Slate-Configuration"
+   ]
+  },
+  "deleteingestconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIngestConfiguration",
+   "resources": [
+    "Ingest-Configuration"
+   ]
+  },
+  "deleteplaybackkeypair": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePlaybackKeyPair",
+   "resources": [
+    "Playback-Key-Pair"
+   ]
+  },
+  "deleteplaybackrestrictionpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePlaybackRestrictionPolicy",
+   "resources": [
+    "Playback-Restriction-Policy"
+   ]
+  },
+  "deletepublickey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePublicKey",
+   "resources": [
+    "Public-Key"
+   ]
+  },
+  "deleterecordingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRecordingConfiguration",
+   "resources": [
+    "Recording-Configuration"
+   ]
+  },
+  "deletestage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStage",
+   "resources": [
+    "Stage"
+   ]
+  },
+  "deletestorageconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStorageConfiguration",
+   "resources": [
+    "Storage-Configuration"
+   ]
+  },
+  "deletestreamkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStreamKey",
+   "resources": [
+    "Stream-Key"
+   ]
+  },
+  "disconnectparticipant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisconnectParticipant",
+   "resources": [
+    "Stage"
+   ]
+  },
+  "getadconfiguration": {
+   "name": "GetAdConfiguration",
+   "resources": [
+    "Ad-Configuration"
+   ]
+  },
+  "getchannel": {
+   "name": "GetChannel",
+   "resources": [
+    "Channel"
+   ]
+  },
+  "getcomposition": {
+   "name": "GetComposition",
+   "resources": [
+    "Composition"
+   ]
+  },
+  "getencoderconfiguration": {
+   "name": "GetEncoderConfiguration",
+   "resources": [
+    "Encoder-Configuration"
+   ]
+  },
+  "getfailoverslateconfiguration": {
+   "name": "GetFailoverSlateConfiguration",
+   "resources": [
+    "Failover-Slate-Configuration"
+   ]
+  },
+  "getingestconfiguration": {
+   "name": "GetIngestConfiguration",
+   "resources": [
+    "Ingest-Configuration"
+   ]
+  },
+  "getparticipant": {
+   "name": "GetParticipant",
+   "resources": [
+    "Stage"
+   ]
+  },
+  "getplaybackkeypair": {
+   "name": "GetPlaybackKeyPair",
+   "resources": [
+    "Playback-Key-Pair"
+   ]
+  },
+  "getplaybackrestrictionpolicy": {
+   "name": "GetPlaybackRestrictionPolicy",
+   "resources": [
+    "Playback-Restriction-Policy"
+   ]
+  },
+  "getpublickey": {
+   "name": "GetPublicKey",
+   "resources": [
+    "Public-Key"
+   ]
+  },
+  "getrecordingconfiguration": {
+   "name": "GetRecordingConfiguration",
+   "resources": [
+    "Recording-Configuration"
+   ]
+  },
+  "getstage": {
+   "name": "GetStage",
+   "resources": [
+    "Stage"
+   ]
+  },
+  "getstagesession": {
+   "name": "GetStageSession",
+   "resources": [
+    "Stage"
+   ]
+  },
+  "getstorageconfiguration": {
+   "name": "GetStorageConfiguration",
+   "resources": [
+    "Storage-Configuration"
+   ]
+  },
+  "getstream": {
+   "name": "GetStream",
+   "resources": [
+    "Channel"
+   ]
+  },
+  "getstreamkey": {
+   "name": "GetStreamKey",
+   "resources": [
+    "Stream-Key"
+   ]
+  },
+  "getstreamsession": {
+   "name": "GetStreamSession",
+   "resources": [
+    "Channel"
+   ]
+  },
+  "importplaybackkeypair": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportPlaybackKeyPair",
+   "resources": [
+    "Playback-Key-Pair"
+   ]
+  },
+  "importpublickey": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportPublicKey",
+   "resources": [
+    "Public-Key"
+   ]
+  },
+  "insertadbreak": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InsertAdBreak",
+   "resources": [
+    "Channel"
+   ]
+  },
+  "listadconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAdConfigurations",
+   "resources": []
+  },
+  "listchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannels",
+   "resources": [
+    "Channel"
+   ]
+  },
+  "listcompositions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCompositions",
+   "resources": [
+    "Encoder-Configuration",
+    "Stage"
+   ]
+  },
+  "listencoderconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEncoderConfigurations",
+   "resources": []
+  },
+  "listfailoverslateconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFailoverSlateConfigurations",
+   "resources": [
+    "Failover-Slate-Configuration"
+   ]
+  },
+  "listingestconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIngestConfigurations",
+   "resources": []
+  },
+  "listparticipantevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListParticipantEvents",
+   "resources": [
+    "Stage"
+   ]
+  },
+  "listparticipantreplicas": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListParticipantReplicas",
+   "resources": [
+    "Stage"
+   ]
+  },
+  "listparticipants": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListParticipants",
+   "resources": [
+    "Stage"
+   ]
+  },
+  "listplaybackkeypairs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPlaybackKeyPairs",
+   "resources": [
+    "Playback-Key-Pair"
+   ]
+  },
+  "listplaybackrestrictionpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPlaybackRestrictionPolicies",
+   "resources": []
+  },
+  "listpublickeys": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPublicKeys",
+   "resources": []
+  },
+  "listrecordingconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecordingConfigurations",
+   "resources": [
+    "Recording-Configuration"
+   ]
+  },
+  "liststages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStages",
+   "resources": [
+    "Stage"
+   ]
+  },
+  "liststagesessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStageSessions",
+   "resources": [
+    "Stage"
+   ]
+  },
+  "liststorageconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStorageConfigurations",
+   "resources": []
+  },
+  "liststreamkeys": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStreamKeys",
+   "resources": [
+    "Channel",
+    "Stream-Key"
+   ]
+  },
+  "liststreams": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStreams",
+   "resources": [
+    "Channel"
+   ]
+  },
+  "liststreamsessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStreamSessions",
+   "resources": [
+    "Channel"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "Ad-Configuration",
+    "Channel",
+    "Composition",
+    "Encoder-Configuration",
+    "Failover-Slate-Configuration",
+    "Ingest-Configuration",
+    "Playback-Key-Pair",
+    "Playback-Restriction-Policy",
+    "Public-Key",
+    "Recording-Configuration",
+    "Stage",
+    "Storage-Configuration",
+    "Stream-Key"
+   ]
+  },
+  "putmetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMetadata",
+   "resources": [
+    "Channel"
+   ]
+  },
+  "revokeconnectiontoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeConnectionToken",
+   "resources": []
+  },
+  "startcomposition": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartComposition",
+   "resources": [
+    "Channel",
+    "Encoder-Configuration",
+    "Stage",
+    "Storage-Configuration"
+   ]
+  },
+  "startparticipantreplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartParticipantReplication",
+   "resources": [
+    "Stage"
+   ]
+  },
+  "startviewersessionrevocation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartViewerSessionRevocation",
+   "resources": [
+    "Channel"
+   ]
+  },
+  "stopcomposition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopComposition",
+   "resources": [
+    "Composition"
+   ]
+  },
+  "stopparticipantreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopParticipantReplication",
+   "resources": [
+    "Stage"
+   ]
+  },
+  "stopstream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopStream",
+   "resources": [
+    "Channel"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Ad-Configuration",
+    "Channel",
+    "Composition",
+    "Encoder-Configuration",
+    "Failover-Slate-Configuration",
+    "Ingest-Configuration",
+    "Playback-Key-Pair",
+    "Playback-Restriction-Policy",
+    "Public-Key",
+    "Recording-Configuration",
+    "Stage",
+    "Storage-Configuration",
+    "Stream-Key"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Ad-Configuration",
+    "Channel",
+    "Composition",
+    "Encoder-Configuration",
+    "Failover-Slate-Configuration",
+    "Ingest-Configuration",
+    "Playback-Key-Pair",
+    "Playback-Restriction-Policy",
+    "Public-Key",
+    "Recording-Configuration",
+    "Stage",
+    "Storage-Configuration",
+    "Stream-Key"
+   ]
+  },
+  "updateadconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAdConfiguration",
+   "resources": []
+  },
+  "updatechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChannel",
+   "resources": [
+    "Channel"
+   ]
+  },
+  "updatefailoverslateconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFailoverSlateConfiguration",
+   "resources": [
+    "Failover-Slate-Configuration"
+   ]
+  },
+  "updateingestconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIngestConfiguration",
+   "resources": [
+    "Ingest-Configuration"
+   ]
+  },
+  "updateplaybackrestrictionpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePlaybackRestrictionPolicy",
+   "resources": [
+    "Playback-Restriction-Policy"
+   ]
+  },
+  "updatestage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStage",
+   "resources": [
+    "Stage"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Ad-Configuration": {
+   "arnFormats": [
+    "arn:${Partition}:ivs:${Region}:${Account}:ad-configuration/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Channel": {
+   "arnFormats": [
+    "arn:${Partition}:ivs:${Region}:${Account}:channel/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Composition": {
+   "arnFormats": [
+    "arn:${Partition}:ivs:${Region}:${Account}:composition/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Encoder-Configuration": {
+   "arnFormats": [
+    "arn:${Partition}:ivs:${Region}:${Account}:encoder-configuration/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Failover-Slate-Configuration": {
+   "arnFormats": [
+    "arn:${Partition}:ivs:${Region}:${Account}:failover-slate-configuration/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Ingest-Configuration": {
+   "arnFormats": [
+    "arn:${Partition}:ivs:${Region}:${Account}:ingest-configuration/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Playback-Key-Pair": {
+   "arnFormats": [
+    "arn:${Partition}:ivs:${Region}:${Account}:playback-key/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Playback-Restriction-Policy": {
+   "arnFormats": [
+    "arn:${Partition}:ivs:${Region}:${Account}:playback-restriction-policy/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Public-Key": {
+   "arnFormats": [
+    "arn:${Partition}:ivs:${Region}:${Account}:public-key/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Recording-Configuration": {
+   "arnFormats": [
+    "arn:${Partition}:ivs:${Region}:${Account}:recording-configuration/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Stage": {
+   "arnFormats": [
+    "arn:${Partition}:ivs:${Region}:${Account}:stage/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Storage-Configuration": {
+   "arnFormats": [
+    "arn:${Partition}:ivs:${Region}:${Account}:storage-configuration/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Stream-Key": {
+   "arnFormats": [
+    "arn:${Partition}:ivs:${Region}:${Account}:stream-key/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "ivs",
+ "serviceName": "Interactive Video Service",
+ "version": "v1.5"
+}

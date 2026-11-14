@@ -1,0 +1,694 @@
+{
+ "actions": {
+  "associatemember": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateMember",
+   "resources": []
+  },
+  "batchassociatecodesecurityscanconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchAssociateCodeSecurityScanConfiguration",
+   "resources": []
+  },
+  "batchdisassociatecodesecurityscanconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDisassociateCodeSecurityScanConfiguration",
+   "resources": []
+  },
+  "batchgetaccountstatus": {
+   "name": "BatchGetAccountStatus",
+   "resources": []
+  },
+  "batchgetcodesnippet": {
+   "name": "BatchGetCodeSnippet",
+   "resources": []
+  },
+  "batchgetfindingdetails": {
+   "name": "BatchGetFindingDetails",
+   "resources": []
+  },
+  "batchgetfreetrialinfo": {
+   "name": "BatchGetFreeTrialInfo",
+   "resources": []
+  },
+  "batchgetmemberec2deepinspectionstatus": {
+   "name": "BatchGetMemberEc2DeepInspectionStatus",
+   "resources": []
+  },
+  "batchupdatememberec2deepinspectionstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateMemberEc2DeepInspectionStatus",
+   "resources": []
+  },
+  "cancelfindingsreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelFindingsReport",
+   "resources": []
+  },
+  "cancelsbomexport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelSbomExport",
+   "resources": []
+  },
+  "createcisscanconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCisScanConfiguration",
+   "resources": [
+    "CIS Scan Configuration"
+   ]
+  },
+  "createcodesecurityintegration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCodeSecurityIntegration",
+   "resources": [
+    "Code Security Integration"
+   ]
+  },
+  "createcodesecurityscanconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCodeSecurityScanConfiguration",
+   "resources": [
+    "Code Security Scan Configuration"
+   ]
+  },
+  "createconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnector",
+   "resources": [
+    "Connector"
+   ]
+  },
+  "createfilter": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFilter",
+   "resources": [
+    "Filter"
+   ]
+  },
+  "createfindingsreport": {
+   "conditionKeys": [
+    "inspector2:ExpectedBucketOwner"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFindingsReport",
+   "resources": []
+  },
+  "createsbomexport": {
+   "conditionKeys": [
+    "inspector2:ExpectedBucketOwner"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSbomExport",
+   "resources": []
+  },
+  "deletecisscanconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCisScanConfiguration",
+   "resources": [
+    "CIS Scan Configuration"
+   ]
+  },
+  "deletecodesecurityintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCodeSecurityIntegration",
+   "resources": [
+    "Code Security Integration"
+   ]
+  },
+  "deletecodesecurityscanconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCodeSecurityScanConfiguration",
+   "resources": [
+    "Code Security Scan Configuration"
+   ]
+  },
+  "deleteconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnector",
+   "resources": [
+    "Connector"
+   ]
+  },
+  "deletefilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFilter",
+   "resources": [
+    "Filter"
+   ]
+  },
+  "describeorganizationconfiguration": {
+   "name": "DescribeOrganizationConfiguration",
+   "resources": []
+  },
+  "disable": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Disable",
+   "resources": []
+  },
+  "disabledelegatedadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableDelegatedAdminAccount",
+   "resources": []
+  },
+  "disassociatemember": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateMember",
+   "resources": []
+  },
+  "enable": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Enable",
+   "resources": []
+  },
+  "enabledelegatedadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableDelegatedAdminAccount",
+   "resources": []
+  },
+  "getcisscanreport": {
+   "name": "GetCisScanReport",
+   "resources": []
+  },
+  "getcisscanresultdetails": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetCisScanResultDetails",
+   "resources": []
+  },
+  "getclustersforimage": {
+   "name": "GetClustersForImage",
+   "resources": []
+  },
+  "getcodesecurityintegration": {
+   "name": "GetCodeSecurityIntegration",
+   "resources": []
+  },
+  "getcodesecurityscan": {
+   "name": "GetCodeSecurityScan",
+   "resources": []
+  },
+  "getcodesecurityscanconfiguration": {
+   "name": "GetCodeSecurityScanConfiguration",
+   "resources": []
+  },
+  "getconfiguration": {
+   "name": "GetConfiguration",
+   "resources": []
+  },
+  "getdelegatedadminaccount": {
+   "name": "GetDelegatedAdminAccount",
+   "resources": []
+  },
+  "getec2deepinspectionconfiguration": {
+   "name": "GetEc2DeepInspectionConfiguration",
+   "resources": []
+  },
+  "getencryptionkey": {
+   "name": "GetEncryptionKey",
+   "resources": []
+  },
+  "getfindingsreportstatus": {
+   "name": "GetFindingsReportStatus",
+   "resources": []
+  },
+  "getmember": {
+   "name": "GetMember",
+   "resources": []
+  },
+  "getondemandscanstatus": {
+   "name": "GetOnDemandScanStatus",
+   "resources": []
+  },
+  "getsbomexport": {
+   "name": "GetSbomExport",
+   "resources": []
+  },
+  "listaccountpermissions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountPermissions",
+   "resources": []
+  },
+  "listcisscanconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCisScanConfigurations",
+   "resources": []
+  },
+  "listcisscanresultsaggregatedbychecks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCisScanResultsAggregatedByChecks",
+   "resources": []
+  },
+  "listcisscanresultsaggregatedbytargetresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCisScanResultsAggregatedByTargetResource",
+   "resources": []
+  },
+  "listcisscans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCisScans",
+   "resources": []
+  },
+  "listcodesecurityintegrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCodeSecurityIntegrations",
+   "resources": []
+  },
+  "listcodesecurityscanconfigurationassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCodeSecurityScanConfigurationAssociations",
+   "resources": []
+  },
+  "listcodesecurityscanconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCodeSecurityScanConfigurations",
+   "resources": []
+  },
+  "listconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectors",
+   "resources": []
+  },
+  "listconnectorscanconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectorScanConfigurations",
+   "resources": []
+  },
+  "listcoverage": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCoverage",
+   "resources": []
+  },
+  "listcoveragestatistics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCoverageStatistics",
+   "resources": []
+  },
+  "listdelegatedadminaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDelegatedAdminAccounts",
+   "resources": []
+  },
+  "listfilters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFilters",
+   "resources": []
+  },
+  "listfindingaggregations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFindingAggregations",
+   "resources": []
+  },
+  "listfindings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFindings",
+   "resources": []
+  },
+  "listmembers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMembers",
+   "resources": []
+  },
+  "listondemandscans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOnDemandScans",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "listusagetotals": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsageTotals",
+   "resources": []
+  },
+  "resetencryptionkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetEncryptionKey",
+   "resources": []
+  },
+  "searchvulnerabilities": {
+   "name": "SearchVulnerabilities",
+   "resources": []
+  },
+  "sendcissessionhealth": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendCisSessionHealth",
+   "resources": []
+  },
+  "sendcissessiontelemetry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendCisSessionTelemetry",
+   "resources": []
+  },
+  "startcissession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCisSession",
+   "resources": []
+  },
+  "startcodesecurityscan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCodeSecurityScan",
+   "resources": []
+  },
+  "startondemandscan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartOnDemandScan",
+   "resources": []
+  },
+  "stopcissession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopCisSession",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "CIS Scan Configuration",
+    "Code Security Integration",
+    "Code Security Scan Configuration",
+    "Connector",
+    "Filter"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "CIS Scan Configuration",
+    "Code Security Integration",
+    "Code Security Scan Configuration",
+    "Connector",
+    "Filter"
+   ]
+  },
+  "updatecisscanconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCisScanConfiguration",
+   "resources": [
+    "CIS Scan Configuration"
+   ]
+  },
+  "updatecodesecurityintegration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCodeSecurityIntegration",
+   "resources": [
+    "Code Security Integration"
+   ]
+  },
+  "updatecodesecurityscanconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCodeSecurityScanConfiguration",
+   "resources": [
+    "Code Security Scan Configuration"
+   ]
+  },
+  "updateconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConfiguration",
+   "resources": []
+  },
+  "updateconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnector",
+   "resources": [
+    "Connector"
+   ]
+  },
+  "updateconnectorscanconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnectorScanConfiguration",
+   "resources": []
+  },
+  "updateec2deepinspectionconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEc2DeepInspectionConfiguration",
+   "resources": []
+  },
+  "updateencryptionkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEncryptionKey",
+   "resources": []
+  },
+  "updatefilter": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFilter",
+   "resources": [
+    "Filter"
+   ]
+  },
+  "updateorganizationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOrganizationConfiguration",
+   "resources": []
+  },
+  "updateorgec2deepinspectionconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOrgEc2DeepInspectionConfiguration",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "inspector2:ExpectedBucketOwner": [
+   "String"
+  ]
+ },
+ "resources": {
+  "CIS Scan Configuration": {
+   "arnFormats": [
+    "arn:${Partition}:inspector2:${Region}:${Account}:owner/${OwnerId}/cis-configuration/${CISScanConfigurationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Code Security Integration": {
+   "arnFormats": [
+    "arn:${Partition}:inspector2:${Region}:${Account}:codesecurity-integration/${CodeSecurityIntegrationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Code Security Scan Configuration": {
+   "arnFormats": [
+    "arn:${Partition}:inspector2:${Region}:${Account}:owner/${OwnerId}/codesecurity-configuration/${CodeSecurityScanConfigurationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Connector": {
+   "arnFormats": [
+    "arn:${Partition}:inspector2:${Region}:${Account}:connector/${ConnectorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Filter": {
+   "arnFormats": [
+    "arn:${Partition}:inspector2:${Region}:${Account}:owner/${OwnerId}/filter/${FilterId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Finding": {
+   "arnFormats": [
+    "arn:${Partition}:inspector2:${Region}:${Account}:finding/${FindingId}"
+   ]
+  }
+ },
+ "service": "inspector2",
+ "serviceName": "Inspector2",
+ "version": "v1.5"
+}

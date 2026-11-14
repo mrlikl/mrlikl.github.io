@@ -1,0 +1,400 @@
+{
+ "actions": {
+  "acceptpage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptPage",
+   "resources": [
+    "page"
+   ]
+  },
+  "activatecontactchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivateContactChannel",
+   "resources": [
+    "contactchannel"
+   ]
+  },
+  "associatecontact": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AssociateContact",
+   "resources": [
+    "contact"
+   ]
+  },
+  "createcontact": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContact",
+   "resources": [
+    "contact"
+   ]
+  },
+  "createcontactchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContactChannel",
+   "resources": [
+    "contact"
+   ]
+  },
+  "createrotation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRotation",
+   "resources": [
+    "rotation"
+   ]
+  },
+  "createrotationoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRotationOverride",
+   "resources": [
+    "rotation"
+   ]
+  },
+  "deactivatecontactchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeactivateContactChannel",
+   "resources": [
+    "contactchannel"
+   ]
+  },
+  "deletecontact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContact",
+   "resources": [
+    "contact"
+   ]
+  },
+  "deletecontactchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContactChannel",
+   "resources": [
+    "contactchannel"
+   ]
+  },
+  "deleterotation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRotation",
+   "resources": [
+    "rotation"
+   ]
+  },
+  "deleterotationoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRotationOverride",
+   "resources": [
+    "rotation"
+   ]
+  },
+  "describeengagement": {
+   "name": "DescribeEngagement",
+   "resources": [
+    "engagement"
+   ]
+  },
+  "describepage": {
+   "name": "DescribePage",
+   "resources": [
+    "page"
+   ]
+  },
+  "getcontact": {
+   "name": "GetContact",
+   "resources": [
+    "contact"
+   ]
+  },
+  "getcontactchannel": {
+   "name": "GetContactChannel",
+   "resources": [
+    "contactchannel"
+   ]
+  },
+  "getcontactpolicy": {
+   "name": "GetContactPolicy",
+   "resources": [
+    "contact"
+   ]
+  },
+  "getrotation": {
+   "name": "GetRotation",
+   "resources": [
+    "rotation"
+   ]
+  },
+  "getrotationoverride": {
+   "name": "GetRotationOverride",
+   "resources": [
+    "rotation"
+   ]
+  },
+  "listcontactchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContactChannels",
+   "resources": [
+    "contact"
+   ]
+  },
+  "listcontacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContacts",
+   "resources": []
+  },
+  "listengagements": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEngagements",
+   "resources": []
+  },
+  "listpagereceipts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPageReceipts",
+   "resources": [
+    "page"
+   ]
+  },
+  "listpageresolutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPageResolutions",
+   "resources": [
+    "page"
+   ]
+  },
+  "listpagesbycontact": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPagesByContact",
+   "resources": [
+    "contact"
+   ]
+  },
+  "listpagesbyengagement": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPagesByEngagement",
+   "resources": [
+    "engagement"
+   ]
+  },
+  "listpreviewrotationshifts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPreviewRotationShifts",
+   "resources": []
+  },
+  "listrotationoverrides": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRotationOverrides",
+   "resources": [
+    "rotation"
+   ]
+  },
+  "listrotations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRotations",
+   "resources": []
+  },
+  "listrotationshifts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRotationShifts",
+   "resources": [
+    "rotation"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "contact",
+    "rotation"
+   ]
+  },
+  "putcontactpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutContactPolicy",
+   "resources": [
+    "contact"
+   ]
+  },
+  "sendactivationcode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendActivationCode",
+   "resources": [
+    "contactchannel"
+   ]
+  },
+  "startengagement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartEngagement",
+   "resources": [
+    "contact"
+   ]
+  },
+  "stopengagement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopEngagement",
+   "resources": [
+    "engagement"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "contact",
+    "rotation"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "contact",
+    "rotation"
+   ]
+  },
+  "updatecontact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContact",
+   "resources": [
+    "contact"
+   ]
+  },
+  "updatecontactchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContactChannel",
+   "resources": [
+    "contactchannel"
+   ]
+  },
+  "updaterotation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRotation",
+   "resources": [
+    "rotation"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "contact": {
+   "arnFormats": [
+    "arn:${Partition}:ssm-contacts:${Region}:${Account}:contact/${ContactAlias}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "contactchannel": {
+   "arnFormats": [
+    "arn:${Partition}:ssm-contacts:${Region}:${Account}:contactchannel/${ContactAlias}/${ContactChannelId}"
+   ]
+  },
+  "engagement": {
+   "arnFormats": [
+    "arn:${Partition}:ssm-contacts:${Region}:${Account}:engagement/${ContactAlias}/${EngagementId}"
+   ]
+  },
+  "page": {
+   "arnFormats": [
+    "arn:${Partition}:ssm-contacts:${Region}:${Account}:page/${ContactAlias}/${PageId}"
+   ]
+  },
+  "rotation": {
+   "arnFormats": [
+    "arn:${Partition}:ssm-contacts:${Region}:${Account}:rotation/${RotationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "ssm-contacts",
+ "serviceName": "Incident Manager Contacts",
+ "version": "v1.5"
+}

@@ -1,0 +1,664 @@
+{
+ "actions": {
+  "associatetrackerconsumer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateTrackerConsumer",
+   "resources": [
+    "tracker"
+   ]
+  },
+  "batchdeletedevicepositionhistory": {
+   "conditionKeys": [
+    "geo:DeviceIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteDevicePositionHistory",
+   "resources": [
+    "tracker"
+   ]
+  },
+  "batchdeletegeofence": {
+   "conditionKeys": [
+    "geo:GeofenceIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteGeofence",
+   "resources": [
+    "geofence-collection"
+   ]
+  },
+  "batchevaluategeofences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchEvaluateGeofences",
+   "resources": [
+    "geofence-collection"
+   ]
+  },
+  "batchgetdeviceposition": {
+   "conditionKeys": [
+    "geo:DeviceIds"
+   ],
+   "name": "BatchGetDevicePosition",
+   "resources": [
+    "tracker"
+   ]
+  },
+  "batchputgeofence": {
+   "conditionKeys": [
+    "geo:GeofenceIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchPutGeofence",
+   "resources": [
+    "geofence-collection"
+   ]
+  },
+  "batchupdatedeviceposition": {
+   "conditionKeys": [
+    "geo:DeviceIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateDevicePosition",
+   "resources": [
+    "tracker"
+   ]
+  },
+  "calculateroute": {
+   "name": "CalculateRoute",
+   "resources": [
+    "route-calculator"
+   ]
+  },
+  "calculateroutematrix": {
+   "name": "CalculateRouteMatrix",
+   "resources": [
+    "route-calculator"
+   ]
+  },
+  "canceljob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "creategeofencecollection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGeofenceCollection",
+   "resources": [
+    "geofence-collection"
+   ]
+  },
+  "createkey": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKey",
+   "resources": [
+    "api-key"
+   ]
+  },
+  "createmap": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMap",
+   "resources": [
+    "map"
+   ]
+  },
+  "createplaceindex": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePlaceIndex",
+   "resources": [
+    "place-index"
+   ]
+  },
+  "createroutecalculator": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRouteCalculator",
+   "resources": [
+    "route-calculator"
+   ]
+  },
+  "createtracker": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTracker",
+   "resources": [
+    "tracker"
+   ]
+  },
+  "deletegeofencecollection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGeofenceCollection",
+   "resources": [
+    "geofence-collection"
+   ]
+  },
+  "deletekey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKey",
+   "resources": [
+    "api-key"
+   ]
+  },
+  "deletemap": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMap",
+   "resources": [
+    "map"
+   ]
+  },
+  "deleteplaceindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePlaceIndex",
+   "resources": [
+    "place-index"
+   ]
+  },
+  "deleteroutecalculator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRouteCalculator",
+   "resources": [
+    "route-calculator"
+   ]
+  },
+  "deletetracker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTracker",
+   "resources": [
+    "tracker"
+   ]
+  },
+  "describegeofencecollection": {
+   "name": "DescribeGeofenceCollection",
+   "resources": [
+    "geofence-collection"
+   ]
+  },
+  "describekey": {
+   "name": "DescribeKey",
+   "resources": [
+    "api-key"
+   ]
+  },
+  "describemap": {
+   "name": "DescribeMap",
+   "resources": [
+    "map"
+   ]
+  },
+  "describeplaceindex": {
+   "name": "DescribePlaceIndex",
+   "resources": [
+    "place-index"
+   ]
+  },
+  "describeroutecalculator": {
+   "name": "DescribeRouteCalculator",
+   "resources": [
+    "route-calculator"
+   ]
+  },
+  "describetracker": {
+   "name": "DescribeTracker",
+   "resources": [
+    "tracker"
+   ]
+  },
+  "disassociatetrackerconsumer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateTrackerConsumer",
+   "resources": [
+    "tracker"
+   ]
+  },
+  "forecastgeofenceevents": {
+   "name": "ForecastGeofenceEvents",
+   "resources": [
+    "geofence-collection"
+   ]
+  },
+  "getdeviceposition": {
+   "conditionKeys": [
+    "geo:DeviceIds"
+   ],
+   "name": "GetDevicePosition",
+   "resources": [
+    "tracker"
+   ]
+  },
+  "getdevicepositionhistory": {
+   "conditionKeys": [
+    "geo:DeviceIds"
+   ],
+   "name": "GetDevicePositionHistory",
+   "resources": [
+    "tracker"
+   ]
+  },
+  "getgeofence": {
+   "conditionKeys": [
+    "geo:GeofenceIds"
+   ],
+   "name": "GetGeofence",
+   "resources": [
+    "geofence-collection"
+   ]
+  },
+  "getjob": {
+   "name": "GetJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "getmapglyphs": {
+   "name": "GetMapGlyphs",
+   "resources": [
+    "map"
+   ]
+  },
+  "getmapsprites": {
+   "name": "GetMapSprites",
+   "resources": [
+    "map"
+   ]
+  },
+  "getmapstyledescriptor": {
+   "name": "GetMapStyleDescriptor",
+   "resources": [
+    "map"
+   ]
+  },
+  "getmaptile": {
+   "name": "GetMapTile",
+   "resources": [
+    "map"
+   ]
+  },
+  "getplace": {
+   "name": "GetPlace",
+   "resources": [
+    "place-index"
+   ]
+  },
+  "listdevicepositions": {
+   "name": "ListDevicePositions",
+   "resources": [
+    "tracker"
+   ]
+  },
+  "listgeofencecollections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGeofenceCollections",
+   "resources": [
+    "geofence-collection"
+   ]
+  },
+  "listgeofences": {
+   "name": "ListGeofences",
+   "resources": [
+    "geofence-collection"
+   ]
+  },
+  "listjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobs",
+   "resources": [
+    "job"
+   ]
+  },
+  "listkeys": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKeys",
+   "resources": [
+    "api-key"
+   ]
+  },
+  "listmaps": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMaps",
+   "resources": [
+    "map"
+   ]
+  },
+  "listplaceindexes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPlaceIndexes",
+   "resources": [
+    "place-index"
+   ]
+  },
+  "listroutecalculators": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRouteCalculators",
+   "resources": [
+    "route-calculator"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "api-key",
+    "geofence-collection",
+    "job",
+    "map",
+    "place-index",
+    "route-calculator",
+    "tracker"
+   ]
+  },
+  "listtrackerconsumers": {
+   "name": "ListTrackerConsumers",
+   "resources": [
+    "tracker"
+   ]
+  },
+  "listtrackers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrackers",
+   "resources": [
+    "tracker"
+   ]
+  },
+  "putgeofence": {
+   "conditionKeys": [
+    "geo:GeofenceIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutGeofence",
+   "resources": [
+    "geofence-collection"
+   ]
+  },
+  "searchplaceindexforposition": {
+   "name": "SearchPlaceIndexForPosition",
+   "resources": [
+    "place-index"
+   ]
+  },
+  "searchplaceindexforsuggestions": {
+   "name": "SearchPlaceIndexForSuggestions",
+   "resources": [
+    "place-index"
+   ]
+  },
+  "searchplaceindexfortext": {
+   "name": "SearchPlaceIndexForText",
+   "resources": [
+    "place-index"
+   ]
+  },
+  "startjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "api-key",
+    "geofence-collection",
+    "job",
+    "map",
+    "place-index",
+    "route-calculator",
+    "tracker"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "api-key",
+    "geofence-collection",
+    "job",
+    "map",
+    "place-index",
+    "route-calculator",
+    "tracker"
+   ]
+  },
+  "updategeofencecollection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGeofenceCollection",
+   "resources": [
+    "geofence-collection"
+   ]
+  },
+  "updatekey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKey",
+   "resources": [
+    "api-key"
+   ]
+  },
+  "updatemap": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMap",
+   "resources": [
+    "map"
+   ]
+  },
+  "updateplaceindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePlaceIndex",
+   "resources": [
+    "place-index"
+   ]
+  },
+  "updateroutecalculator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRouteCalculator",
+   "resources": [
+    "route-calculator"
+   ]
+  },
+  "updatetracker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTracker",
+   "resources": [
+    "tracker"
+   ]
+  },
+  "verifydeviceposition": {
+   "conditionKeys": [
+    "geo:DeviceIds"
+   ],
+   "name": "VerifyDevicePosition",
+   "resources": [
+    "tracker"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "geo:DeviceIds": [
+   "ArrayOfString"
+  ],
+  "geo:GeofenceIds": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "api-key": {
+   "arnFormats": [
+    "arn:${Partition}:geo:${Region}:${Account}:api-key/${KeyName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "geofence-collection": {
+   "arnFormats": [
+    "arn:${Partition}:geo:${Region}:${Account}:geofence-collection/${GeofenceCollectionName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "geo:GeofenceIds"
+   ]
+  },
+  "job": {
+   "arnFormats": [
+    "arn:${Partition}:geo:${Region}:${Account}:job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "map": {
+   "arnFormats": [
+    "arn:${Partition}:geo:${Region}:${Account}:map/${MapName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "place-index": {
+   "arnFormats": [
+    "arn:${Partition}:geo:${Region}:${Account}:place-index/${IndexName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "route-calculator": {
+   "arnFormats": [
+    "arn:${Partition}:geo:${Region}:${Account}:route-calculator/${CalculatorName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "tracker": {
+   "arnFormats": [
+    "arn:${Partition}:geo:${Region}:${Account}:tracker/${TrackerName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "geo:DeviceIds"
+   ]
+  }
+ },
+ "service": "geo",
+ "serviceName": "Location",
+ "version": "v1.5"
+}

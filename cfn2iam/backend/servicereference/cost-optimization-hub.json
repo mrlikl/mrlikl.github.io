@@ -1,0 +1,58 @@
+{
+ "actions": {
+  "getpreferences": {
+   "name": "GetPreferences",
+   "resources": []
+  },
+  "getrecommendation": {
+   "name": "GetRecommendation",
+   "resources": []
+  },
+  "listefficiencymetrics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEfficiencyMetrics",
+   "resources": []
+  },
+  "listenrollmentstatuses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnrollmentStatuses",
+   "resources": []
+  },
+  "listrecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommendations",
+   "resources": []
+  },
+  "listrecommendationsummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommendationSummaries",
+   "resources": []
+  },
+  "updateenrollmentstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnrollmentStatus",
+   "resources": []
+  },
+  "updatepreferences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePreferences",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "cost-optimization-hub",
+ "serviceName": "Cost Optimization Hub",
+ "version": "v1.5"
+}

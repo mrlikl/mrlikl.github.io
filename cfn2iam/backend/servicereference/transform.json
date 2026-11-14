@@ -1,0 +1,212 @@
+{
+ "actions": {
+  "accesstransformprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AccessTransformProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "associateconnectorresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateConnectorResource",
+   "resources": [
+    "connector"
+   ]
+  },
+  "createprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "deleteagentruntimeconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentRuntimeConfiguration",
+   "resources": []
+  },
+  "deleteconnector": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "deleteprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "getaccountsettings": {
+   "name": "GetAccountSettings",
+   "resources": []
+  },
+  "getagent": {
+   "name": "GetAgent",
+   "resources": []
+  },
+  "getagentruntimeconfiguration": {
+   "name": "GetAgentRuntimeConfiguration",
+   "resources": []
+  },
+  "getconnector": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "getwebappurl": {
+   "name": "GetWebAppUrl",
+   "resources": []
+  },
+  "listagents": {
+   "name": "ListAgents",
+   "resources": []
+  },
+  "listconnectors": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectors",
+   "resources": []
+  },
+  "listprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfiles",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "connector"
+   ]
+  },
+  "putagentruntimeconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAgentRuntimeConfiguration",
+   "resources": []
+  },
+  "rejectconnector": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "connector"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "connector"
+   ]
+  },
+  "updateaccountsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountSettings",
+   "resources": []
+  },
+  "updateagentaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentAccess",
+   "resources": []
+  },
+  "updateprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProfile",
+   "resources": [
+    "profile"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "connector": {
+   "arnFormats": [
+    "arn:${Partition}:transform:${Region}:${Account}:connector/${WorkspaceId}/${ConnectorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "profile": {
+   "arnFormats": [
+    "arn:${Partition}:transform:${Region}:${Account}:profile/${Identifier}"
+   ]
+  }
+ },
+ "service": "transform",
+ "serviceName": "Transform",
+ "version": "v1.5"
+}

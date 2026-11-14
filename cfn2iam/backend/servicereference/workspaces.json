@@ -1,0 +1,1048 @@
+{
+ "actions": {
+  "acceptaccountlinkinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptAccountLinkInvitation",
+   "resources": []
+  },
+  "associateconnectionalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateConnectionAlias",
+   "resources": [
+    "connectionalias",
+    "directoryid"
+   ]
+  },
+  "associateipgroups": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateIpGroups",
+   "resources": [
+    "directoryid",
+    "workspaceipgroup"
+   ]
+  },
+  "associateworkspaceapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateWorkspaceApplication",
+   "resources": [
+    "workspaceapplication",
+    "workspaceid"
+   ]
+  },
+  "authorizeiprules": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AuthorizeIpRules",
+   "resources": [
+    "workspaceipgroup"
+   ]
+  },
+  "copyworkspaceimage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyWorkspaceImage",
+   "resourceConditionKeys": {
+    "workspaceimage": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "workspaceimage"
+   ]
+  },
+  "createaccountlinkinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccountLinkInvitation",
+   "resources": []
+  },
+  "createconnectclientaddin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnectClientAddIn",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "createconnectionalias": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnectionAlias",
+   "resources": []
+  },
+  "createipgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIpGroup",
+   "resources": []
+  },
+  "createrootclientcertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRootClientCertificate",
+   "resources": [
+    "certificateid"
+   ]
+  },
+  "createstandbyworkspaces": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStandbyWorkspaces",
+   "resourceConditionKeys": {
+    "directoryid": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspaceid": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "directoryid",
+    "workspaceid"
+   ]
+  },
+  "createtags": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "CreateTags",
+   "resources": []
+  },
+  "createupdatedworkspaceimage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUpdatedWorkspaceImage",
+   "resourceConditionKeys": {
+    "workspaceimage": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "workspaceimage"
+   ]
+  },
+  "createworkspacebundle": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkspaceBundle",
+   "resourceConditionKeys": {
+    "workspacebundle": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "workspaceimage": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspacebundle",
+    "workspaceimage"
+   ]
+  },
+  "createworkspaceimage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkspaceImage",
+   "resourceConditionKeys": {
+    "workspaceid": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspaceimage": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "workspaceid",
+    "workspaceimage"
+   ]
+  },
+  "createworkspaces": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkspaces",
+   "resourceConditionKeys": {
+    "directoryid": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspacebundle": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspaceid": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "directoryid",
+    "workspacebundle",
+    "workspaceid"
+   ]
+  },
+  "createworkspacespool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkspacesPool",
+   "resourceConditionKeys": {
+    "directoryid": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspacebundle": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspacespool": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "directoryid",
+    "workspacebundle",
+    "workspacespool"
+   ]
+  },
+  "deleteaccountlinkinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccountLinkInvitation",
+   "resources": []
+  },
+  "deleteclientbranding": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteClientBranding",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "deleteconnectclientaddin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnectClientAddIn",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "deleteconnectionalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnectionAlias",
+   "resources": [
+    "connectionalias"
+   ]
+  },
+  "deleteipgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIpGroup",
+   "resources": [
+    "workspaceipgroup"
+   ]
+  },
+  "deleterootclientcertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRootClientCertificate",
+   "resources": [
+    "certificateid"
+   ]
+  },
+  "deletetags": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "DeleteTags",
+   "resources": []
+  },
+  "deleteworkspacebundle": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkspaceBundle",
+   "resources": [
+    "workspacebundle"
+   ]
+  },
+  "deleteworkspaceimage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkspaceImage",
+   "resources": [
+    "workspaceimage"
+   ]
+  },
+  "deployworkspaceapplications": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeployWorkspaceApplications",
+   "resources": [
+    "workspaceid"
+   ]
+  },
+  "deregisterworkspacedirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterWorkspaceDirectory",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "describeaccount": {
+   "name": "DescribeAccount",
+   "resources": []
+  },
+  "describeaccountmodifications": {
+   "name": "DescribeAccountModifications",
+   "resources": []
+  },
+  "describeapplicationassociations": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeApplicationAssociations",
+   "resources": [
+    "workspaceapplication"
+   ]
+  },
+  "describeapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeApplications",
+   "resources": []
+  },
+  "describebundleassociations": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeBundleAssociations",
+   "resources": [
+    "workspacebundle"
+   ]
+  },
+  "describeclientbranding": {
+   "name": "DescribeClientBranding",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "describeclientproperties": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeClientProperties",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "describeconnectclientaddins": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeConnectClientAddIns",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "describeconnectionaliases": {
+   "name": "DescribeConnectionAliases",
+   "resources": []
+  },
+  "describeconnectionaliaspermissions": {
+   "name": "DescribeConnectionAliasPermissions",
+   "resources": [
+    "connectionalias"
+   ]
+  },
+  "describeconsent": {
+   "name": "DescribeConsent",
+   "resources": []
+  },
+  "describecustomworkspaceimageimport": {
+   "name": "DescribeCustomWorkspaceImageImport",
+   "resources": []
+  },
+  "describeimageassociations": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeImageAssociations",
+   "resources": [
+    "workspaceimage"
+   ]
+  },
+  "describeipgroups": {
+   "name": "DescribeIpGroups",
+   "resources": [
+    "workspaceipgroup"
+   ]
+  },
+  "describetags": {
+   "name": "DescribeTags",
+   "resources": []
+  },
+  "describeworkspaceassociations": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeWorkspaceAssociations",
+   "resources": [
+    "workspaceid"
+   ]
+  },
+  "describeworkspacebundles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeWorkspaceBundles",
+   "resources": []
+  },
+  "describeworkspacedirectories": {
+   "name": "DescribeWorkspaceDirectories",
+   "resources": []
+  },
+  "describeworkspaceimagepermissions": {
+   "name": "DescribeWorkspaceImagePermissions",
+   "resources": [
+    "workspaceimage"
+   ]
+  },
+  "describeworkspaceimages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeWorkspaceImages",
+   "resources": []
+  },
+  "describeworkspaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeWorkspaces",
+   "resources": []
+  },
+  "describeworkspacesconnectionstatus": {
+   "name": "DescribeWorkspacesConnectionStatus",
+   "resources": []
+  },
+  "describeworkspacesnapshots": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeWorkspaceSnapshots",
+   "resources": [
+    "workspaceid"
+   ]
+  },
+  "describeworkspacespools": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeWorkspacesPools",
+   "resources": []
+  },
+  "describeworkspacespoolsessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeWorkspacesPoolSessions",
+   "resources": [
+    "workspacespool"
+   ]
+  },
+  "directoryaccessmanagement": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DirectoryAccessManagement",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "disassociateconnectionalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateConnectionAlias",
+   "resources": [
+    "connectionalias"
+   ]
+  },
+  "disassociateipgroups": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateIpGroups",
+   "resources": [
+    "directoryid",
+    "workspaceipgroup"
+   ]
+  },
+  "disassociateworkspaceapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateWorkspaceApplication",
+   "resources": [
+    "workspaceapplication",
+    "workspaceid"
+   ]
+  },
+  "getaccountlink": {
+   "name": "GetAccountLink",
+   "resources": []
+  },
+  "gettroubleshootingrecommendation": {
+   "name": "GetTroubleshootingRecommendation",
+   "resources": [
+    "workspaceid"
+   ]
+  },
+  "importclientbranding": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportClientBranding",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "importcustomworkspaceimage": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportCustomWorkspaceImage",
+   "resources": []
+  },
+  "importworkspaceimage": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportWorkspaceImage",
+   "resources": []
+  },
+  "invokeonboardingagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeOnboardingAgent",
+   "resources": []
+  },
+  "invoketroubleshootinginvestigation": {
+   "name": "InvokeTroubleshootingInvestigation",
+   "resources": [
+    "workspaceid"
+   ]
+  },
+  "listaccountlinks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountLinks",
+   "resources": []
+  },
+  "listavailablemanagementcidrranges": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAvailableManagementCidrRanges",
+   "resources": []
+  },
+  "listtroubleshootingrecommendations": {
+   "name": "ListTroubleshootingRecommendations",
+   "resources": [
+    "workspaceid"
+   ]
+  },
+  "migrateworkspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MigrateWorkspace",
+   "resources": [
+    "workspacebundle",
+    "workspaceid"
+   ]
+  },
+  "modifyaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyAccount",
+   "resources": []
+  },
+  "modifycertificatebasedauthproperties": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyCertificateBasedAuthProperties",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "modifyclientproperties": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyClientProperties",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "modifyendpointencryptionmode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyEndpointEncryptionMode",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "modifysamlproperties": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifySamlProperties",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "modifyselfservicepermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "ModifySelfservicePermissions",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "modifystreamingproperties": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyStreamingProperties",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "modifyworkspaceaccessproperties": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyWorkspaceAccessProperties",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "modifyworkspacecreationproperties": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyWorkspaceCreationProperties",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "modifyworkspaceproperties": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyWorkspaceProperties",
+   "resources": [
+    "workspaceid"
+   ]
+  },
+  "modifyworkspacestate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyWorkspaceState",
+   "resources": [
+    "workspaceid"
+   ]
+  },
+  "personalization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Personalization",
+   "resources": []
+  },
+  "rebootworkspaces": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootWorkspaces",
+   "resources": [
+    "workspaceid"
+   ]
+  },
+  "rebuildworkspaces": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebuildWorkspaces",
+   "resources": [
+    "workspaceid"
+   ]
+  },
+  "registerworkspacedirectory": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterWorkspaceDirectory",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "rejectaccountlinkinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectAccountLinkInvitation",
+   "resources": []
+  },
+  "restoreworkspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreWorkspace",
+   "resources": [
+    "workspaceid"
+   ]
+  },
+  "revokeiprules": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeIpRules",
+   "resources": [
+    "workspaceipgroup"
+   ]
+  },
+  "startworkspaces": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartWorkspaces",
+   "resources": [
+    "workspaceid"
+   ]
+  },
+  "startworkspacespool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartWorkspacesPool",
+   "resources": [
+    "workspacespool"
+   ]
+  },
+  "stopworkspaces": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopWorkspaces",
+   "resources": [
+    "workspaceid"
+   ]
+  },
+  "stopworkspacespool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopWorkspacesPool",
+   "resources": [
+    "workspacespool"
+   ]
+  },
+  "stream": {
+   "conditionKeys": [
+    "workspaces:userId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Stream",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "terminateworkspaces": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TerminateWorkspaces",
+   "resources": [
+    "workspaceid"
+   ]
+  },
+  "terminateworkspacespool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TerminateWorkspacesPool",
+   "resources": [
+    "workspacespool"
+   ]
+  },
+  "terminateworkspacespoolsession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TerminateWorkspacesPoolSession",
+   "resources": []
+  },
+  "updateconnectclientaddin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnectClientAddIn",
+   "resources": [
+    "directoryid"
+   ]
+  },
+  "updateconnectionaliaspermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateConnectionAliasPermission",
+   "resources": [
+    "connectionalias"
+   ]
+  },
+  "updateconsent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConsent",
+   "resources": []
+  },
+  "updaterootclientcertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRootClientCertificate",
+   "resources": [
+    "certificateid"
+   ]
+  },
+  "updaterulesofipgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRulesOfIpGroup",
+   "resources": [
+    "workspaceipgroup"
+   ]
+  },
+  "updateworkspacebundle": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkspaceBundle",
+   "resources": [
+    "workspacebundle",
+    "workspaceimage"
+   ]
+  },
+  "updateworkspaceimagepermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateWorkspaceImagePermission",
+   "resources": [
+    "workspaceimage"
+   ]
+  },
+  "updateworkspacespool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkspacesPool",
+   "resources": [
+    "workspacespool"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "workspaces:userId": [
+   "String"
+  ]
+ },
+ "resources": {
+  "certificateid": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces:${Region}:${Account}:workspacecertificate/${CertificateId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "connectionalias": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces:${Region}:${Account}:connectionalias/${ConnectionAliasId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "directoryid": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces:${Region}:${Account}:directory/${DirectoryId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workspaceapplication": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces:${Region}:${Account}:workspaceapplication/${WorkSpaceApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workspacebundle": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces:${Region}:${Account}:workspacebundle/${BundleId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workspaceid": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces:${Region}:${Account}:workspace/${WorkspaceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workspaceimage": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces:${Region}:${Account}:workspaceimage/${ImageId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workspaceipgroup": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces:${Region}:${Account}:workspaceipgroup/${GroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workspacespool": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces:${Region}:${Account}:workspacespool/${PoolId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "workspaces",
+ "serviceName": "WorkSpaces",
+ "version": "v1.5"
+}

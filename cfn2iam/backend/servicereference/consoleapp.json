@@ -1,0 +1,27 @@
+{
+ "actions": {
+  "getdeviceidentity": {
+   "name": "GetDeviceIdentity",
+   "resources": [
+    "DeviceIdentity"
+   ]
+  },
+  "listdeviceidentities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeviceIdentities",
+   "resources": []
+  }
+ },
+ "resources": {
+  "DeviceIdentity": {
+   "arnFormats": [
+    "arn:${Partition}:consoleapp::${Account}:device/${DeviceId}/identity/${IdentityId}"
+   ]
+  }
+ },
+ "service": "consoleapp",
+ "serviceName": "Console Mobile App",
+ "version": "v1.5"
+}

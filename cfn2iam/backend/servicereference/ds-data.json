@@ -1,0 +1,261 @@
+{
+ "actions": {
+  "addgroupmember": {
+   "conditionKeys": [
+    "ds-data:Identifier",
+    "ds-data:MemberName",
+    "ds-data:MemberRealm",
+    "ds-data:Realm",
+    "ds-data:SAMAccountName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddGroupMember",
+   "resources": [
+    "directory"
+   ]
+  },
+  "creategroup": {
+   "conditionKeys": [
+    "ds-data:Identifier",
+    "ds-data:Realm",
+    "ds-data:SAMAccountName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGroup",
+   "resources": [
+    "directory"
+   ]
+  },
+  "createuser": {
+   "conditionKeys": [
+    "ds-data:Identifier",
+    "ds-data:Realm",
+    "ds-data:SAMAccountName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUser",
+   "resources": [
+    "directory"
+   ]
+  },
+  "deletegroup": {
+   "conditionKeys": [
+    "ds-data:Identifier",
+    "ds-data:Realm",
+    "ds-data:SAMAccountName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGroup",
+   "resources": [
+    "directory"
+   ]
+  },
+  "deleteuser": {
+   "conditionKeys": [
+    "ds-data:Identifier",
+    "ds-data:Realm",
+    "ds-data:SAMAccountName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUser",
+   "resources": [
+    "directory"
+   ]
+  },
+  "describegroup": {
+   "conditionKeys": [
+    "ds-data:Identifier",
+    "ds-data:Realm",
+    "ds-data:SAMAccountName"
+   ],
+   "name": "DescribeGroup",
+   "resources": [
+    "directory"
+   ]
+  },
+  "describeuser": {
+   "conditionKeys": [
+    "ds-data:Identifier",
+    "ds-data:Realm",
+    "ds-data:SAMAccountName"
+   ],
+   "name": "DescribeUser",
+   "resources": [
+    "directory"
+   ]
+  },
+  "disableuser": {
+   "conditionKeys": [
+    "ds-data:Identifier",
+    "ds-data:Realm",
+    "ds-data:SAMAccountName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableUser",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listgroupmembers": {
+   "conditionKeys": [
+    "ds-data:Identifier",
+    "ds-data:MemberRealm",
+    "ds-data:Realm",
+    "ds-data:SAMAccountName"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroupMembers",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listgroups": {
+   "conditionKeys": [
+    "ds-data:Realm"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroups",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listgroupsformember": {
+   "conditionKeys": [
+    "ds-data:Identifier",
+    "ds-data:MemberRealm",
+    "ds-data:Realm",
+    "ds-data:SAMAccountName"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroupsForMember",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listusers": {
+   "conditionKeys": [
+    "ds-data:Realm"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsers",
+   "resources": [
+    "directory"
+   ]
+  },
+  "removegroupmember": {
+   "conditionKeys": [
+    "ds-data:Identifier",
+    "ds-data:MemberName",
+    "ds-data:MemberRealm",
+    "ds-data:Realm",
+    "ds-data:SAMAccountName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveGroupMember",
+   "resources": [
+    "directory"
+   ]
+  },
+  "searchgroups": {
+   "conditionKeys": [
+    "ds-data:Realm"
+   ],
+   "name": "SearchGroups",
+   "resources": [
+    "directory"
+   ]
+  },
+  "searchusers": {
+   "conditionKeys": [
+    "ds-data:Realm"
+   ],
+   "name": "SearchUsers",
+   "resources": [
+    "directory"
+   ]
+  },
+  "updategroup": {
+   "conditionKeys": [
+    "ds-data:Identifier",
+    "ds-data:Realm",
+    "ds-data:SAMAccountName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGroup",
+   "resources": [
+    "directory"
+   ]
+  },
+  "updateuser": {
+   "conditionKeys": [
+    "ds-data:Identifier",
+    "ds-data:Realm",
+    "ds-data:SAMAccountName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUser",
+   "resources": [
+    "directory"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "ds-data:Identifier": [
+   "String"
+  ],
+  "ds-data:MemberName": [
+   "String"
+  ],
+  "ds-data:MemberRealm": [
+   "String"
+  ],
+  "ds-data:Realm": [
+   "String"
+  ],
+  "ds-data:SAMAccountName": [
+   "String"
+  ]
+ },
+ "resources": {
+  "directory": {
+   "arnFormats": [
+    "arn:${Partition}:ds:${Region}:${Account}:directory/${DirectoryId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "ds-data",
+ "serviceName": "Directory Service Data",
+ "version": "v1.5"
+}

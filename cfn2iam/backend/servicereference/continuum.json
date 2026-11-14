@@ -1,0 +1,343 @@
+{
+ "actions": {
+  "associatecollector": {
+   "conditionKeys": [
+    "continuum:CollectorArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateCollector",
+   "resources": [
+    "environments"
+   ]
+  },
+  "createcodefinding": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCodeFinding",
+   "resources": [
+    "code-findings",
+    "environments"
+   ]
+  },
+  "createcodescan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCodeScan",
+   "resources": [
+    "code-scans",
+    "environments"
+   ]
+  },
+  "createcollector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCollector",
+   "resources": [
+    "collectors"
+   ]
+  },
+  "createenvironment": {
+   "conditionKeys": [
+    "continuum:RepositoryName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironment",
+   "resources": [
+    "environments",
+    "integrations"
+   ]
+  },
+  "createintegration": {
+   "conditionKeys": [
+    "continuum:S3BucketName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIntegration",
+   "resources": [
+    "integrations"
+   ]
+  },
+  "deletecollector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCollector",
+   "resources": [
+    "collectors"
+   ]
+  },
+  "deleteenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironment",
+   "resources": [
+    "environments"
+   ]
+  },
+  "deleteintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIntegration",
+   "resources": [
+    "integrations"
+   ]
+  },
+  "disassociatecollector": {
+   "conditionKeys": [
+    "continuum:CollectorArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateCollector",
+   "resources": [
+    "environments"
+   ]
+  },
+  "getcodefinding": {
+   "name": "GetCodeFinding",
+   "resources": [
+    "code-findings"
+   ]
+  },
+  "getcodeissue": {
+   "name": "GetCodeIssue",
+   "resources": [
+    "code-issues"
+   ]
+  },
+  "getcodeissueartifact": {
+   "name": "GetCodeIssueArtifact",
+   "resources": [
+    "code-issues"
+   ]
+  },
+  "getcodescan": {
+   "name": "GetCodeScan",
+   "resources": [
+    "code-scans"
+   ]
+  },
+  "getcollector": {
+   "name": "GetCollector",
+   "resources": [
+    "collectors"
+   ]
+  },
+  "getcollectordataaccessauthorization": {
+   "conditionKeys": [
+    "continuum:EnvironmentArn"
+   ],
+   "name": "GetCollectorDataAccessAuthorization",
+   "resources": [
+    "collectors"
+   ]
+  },
+  "getenvironment": {
+   "name": "GetEnvironment",
+   "resources": [
+    "environments"
+   ]
+  },
+  "getintegration": {
+   "name": "GetIntegration",
+   "resources": [
+    "integrations"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "collectors"
+   ]
+  },
+  "listassociatedcollectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssociatedCollectors",
+   "resources": [
+    "environments"
+   ]
+  },
+  "listassociatedenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssociatedEnvironments",
+   "resources": [
+    "collectors"
+   ]
+  },
+  "listcodefindings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCodeFindings",
+   "resources": [
+    "environments"
+   ]
+  },
+  "listcodeissueartifacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCodeIssueArtifacts",
+   "resources": [
+    "code-issues"
+   ]
+  },
+  "listcodeissues": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCodeIssues",
+   "resources": [
+    "environments"
+   ]
+  },
+  "listcodescans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCodeScans",
+   "resources": [
+    "environments"
+   ]
+  },
+  "listcollectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCollectors",
+   "resources": [
+    "collectors"
+   ]
+  },
+  "listenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironments",
+   "resources": [
+    "environments"
+   ]
+  },
+  "listintegrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIntegrations",
+   "resources": [
+    "integrations"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "collectors"
+   ]
+  },
+  "startintegrationauthorization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartIntegrationAuthorization",
+   "resources": []
+  },
+  "updatecollector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCollector",
+   "resources": [
+    "collectors"
+   ]
+  },
+  "updateenvironment": {
+   "conditionKeys": [
+    "continuum:RepositoryName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironment",
+   "resources": [
+    "environments",
+    "integrations"
+   ]
+  },
+  "updateintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIntegration",
+   "resources": [
+    "integrations"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "continuum:CollectorArn": [
+   "ArrayOfARN"
+  ],
+  "continuum:EnvironmentArn": [
+   "ARN"
+  ],
+  "continuum:RepositoryName": [
+   "ArrayOfString"
+  ],
+  "continuum:S3BucketName": [
+   "String"
+  ]
+ },
+ "resources": {
+  "code-findings": {
+   "arnFormats": [
+    "arn:${Partition}:continuum:${Region}:${Account}:environments/${EnvironmentId}/code-findings/${FindingId}"
+   ]
+  },
+  "code-issues": {
+   "arnFormats": [
+    "arn:${Partition}:continuum:${Region}:${Account}:environments/${EnvironmentId}/code-issues/${IssueId}"
+   ]
+  },
+  "code-scans": {
+   "arnFormats": [
+    "arn:${Partition}:continuum:${Region}:${Account}:environments/${EnvironmentId}/code-scans/${ScanRunId}"
+   ]
+  },
+  "collectors": {
+   "arnFormats": [
+    "arn:${Partition}:continuum:${Region}:${Account}:collectors/${CollectorId}"
+   ]
+  },
+  "environments": {
+   "arnFormats": [
+    "arn:${Partition}:continuum:${Region}:${Account}:environments/${EnvironmentId}"
+   ]
+  },
+  "integrations": {
+   "arnFormats": [
+    "arn:${Partition}:continuum:${Region}:${Account}:integrations/${IntegrationId}"
+   ]
+  }
+ },
+ "service": "continuum",
+ "serviceName": "Continuum",
+ "version": "v1.5"
+}

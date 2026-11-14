@@ -1,0 +1,401 @@
+{
+ "actions": {
+  "accesssensitiveevents": {
+   "name": "AccessSensitiveEvents",
+   "resources": []
+  },
+  "associatechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateChannel",
+   "resources": [
+    "NotificationConfiguration"
+   ]
+  },
+  "associatemanagednotificationaccountcontact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateManagedNotificationAccountContact",
+   "resources": [
+    "ManagedNotificationConfiguration"
+   ]
+  },
+  "associatemanagednotificationadditionalchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateManagedNotificationAdditionalChannel",
+   "resources": [
+    "ManagedNotificationConfiguration"
+   ]
+  },
+  "associateorganizationalunit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateOrganizationalUnit",
+   "resources": [
+    "NotificationConfiguration"
+   ]
+  },
+  "createeventrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEventRule",
+   "resources": []
+  },
+  "createnotificationconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNotificationConfiguration",
+   "resources": []
+  },
+  "deleteeventrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventRule",
+   "resources": [
+    "EventRule"
+   ]
+  },
+  "deletenotificationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotificationConfiguration",
+   "resources": [
+    "NotificationConfiguration"
+   ]
+  },
+  "deregisternotificationhub": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterNotificationHub",
+   "resources": []
+  },
+  "disablenotificationsaccessfororganization": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DisableNotificationsAccessForOrganization",
+   "resources": []
+  },
+  "disassociatechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateChannel",
+   "resources": [
+    "NotificationConfiguration"
+   ]
+  },
+  "disassociatemanagednotificationaccountcontact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateManagedNotificationAccountContact",
+   "resources": [
+    "ManagedNotificationConfiguration"
+   ]
+  },
+  "disassociatemanagednotificationadditionalchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateManagedNotificationAdditionalChannel",
+   "resources": [
+    "ManagedNotificationConfiguration"
+   ]
+  },
+  "disassociateorganizationalunit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateOrganizationalUnit",
+   "resources": [
+    "NotificationConfiguration"
+   ]
+  },
+  "enablenotificationsaccessfororganization": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "EnableNotificationsAccessForOrganization",
+   "resources": []
+  },
+  "geteventrule": {
+   "name": "GetEventRule",
+   "resources": [
+    "EventRule"
+   ]
+  },
+  "getfeatureoptinstatus": {
+   "name": "GetFeatureOptInStatus",
+   "resources": []
+  },
+  "getmanagednotificationchildevent": {
+   "name": "GetManagedNotificationChildEvent",
+   "resources": [
+    "ManagedNotificationChildEvent"
+   ]
+  },
+  "getmanagednotificationconfiguration": {
+   "name": "GetManagedNotificationConfiguration",
+   "resources": [
+    "ManagedNotificationConfiguration"
+   ]
+  },
+  "getmanagednotificationevent": {
+   "name": "GetManagedNotificationEvent",
+   "resources": [
+    "ManagedNotificationEvent"
+   ]
+  },
+  "getnotificationconfiguration": {
+   "name": "GetNotificationConfiguration",
+   "resources": [
+    "NotificationConfiguration"
+   ]
+  },
+  "getnotificationevent": {
+   "name": "GetNotificationEvent",
+   "resources": [
+    "NotificationEvent"
+   ]
+  },
+  "getnotificationsaccessfororganization": {
+   "name": "GetNotificationsAccessForOrganization",
+   "resources": []
+  },
+  "listchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannels",
+   "resources": [
+    "NotificationConfiguration"
+   ]
+  },
+  "listeventrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEventRules",
+   "resources": []
+  },
+  "listmanagednotificationchannelassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedNotificationChannelAssociations",
+   "resources": [
+    "ManagedNotificationConfiguration"
+   ]
+  },
+  "listmanagednotificationchildevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedNotificationChildEvents",
+   "resources": []
+  },
+  "listmanagednotificationconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedNotificationConfigurations",
+   "resources": []
+  },
+  "listmanagednotificationevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedNotificationEvents",
+   "resources": []
+  },
+  "listmemberaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMemberAccounts",
+   "resources": [
+    "NotificationConfiguration"
+   ]
+  },
+  "listnotificationconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNotificationConfigurations",
+   "resources": []
+  },
+  "listnotificationevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNotificationEvents",
+   "resources": []
+  },
+  "listnotificationhubs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNotificationHubs",
+   "resources": []
+  },
+  "listorganizationalunits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrganizationalUnits",
+   "resources": [
+    "NotificationConfiguration"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "putfeatureoptinstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFeatureOptInStatus",
+   "resources": []
+  },
+  "registernotificationhub": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterNotificationHub",
+   "resources": []
+  },
+  "subscribesensitiveevents": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubscribeSensitiveEvents",
+   "resources": [
+    "ManagedNotificationConfiguration"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "NotificationConfiguration"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "NotificationConfiguration"
+   ]
+  },
+  "updateeventrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEventRule",
+   "resources": [
+    "EventRule"
+   ]
+  },
+  "updatemanagednotificationchannelassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateManagedNotificationChannelAssociation",
+   "resources": [
+    "ManagedNotificationConfiguration"
+   ]
+  },
+  "updatenotificationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotificationConfiguration",
+   "resources": [
+    "NotificationConfiguration"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "EventRule": {
+   "arnFormats": [
+    "arn:${Partition}:notifications::${Account}:configuration/${NotificationConfigurationId}/rule/${EventRuleId}"
+   ]
+  },
+  "ManagedNotificationChildEvent": {
+   "arnFormats": [
+    "arn:${Partition}:notifications::${Account}:managed-notification-configuration/category/${Category}/sub-category/${Subcategory}/event/${NotificationEventId}/child-event/${NotificationChildEventId}"
+   ]
+  },
+  "ManagedNotificationConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:notifications::${Account}:managed-notification-configuration/category/${Category}/sub-category/${Subcategory}"
+   ]
+  },
+  "ManagedNotificationEvent": {
+   "arnFormats": [
+    "arn:${Partition}:notifications::${Account}:managed-notification-configuration/category/${Category}/sub-category/${Subcategory}/event/${NotificationEventId}"
+   ]
+  },
+  "NotificationConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:notifications::${Account}:configuration/${NotificationConfigurationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "NotificationEvent": {
+   "arnFormats": [
+    "arn:${Partition}:notifications:${Region}:${Account}:configuration/${NotificationConfigurationId}/event/${NotificationEventId}"
+   ]
+  }
+ },
+ "service": "notifications",
+ "serviceName": "User Notifications",
+ "version": "v1.5"
+}

@@ -1,0 +1,765 @@
+{
+ "actions": {
+  "accepthandshake": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptHandshake",
+   "resources": [
+    "handshake"
+   ]
+  },
+  "attachpolicy": {
+   "conditionKeys": [
+    "organizations:PolicyType"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AttachPolicy",
+   "resources": [
+    "account",
+    "organizationalunit",
+    "policy",
+    "root"
+   ]
+  },
+  "cancelhandshake": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelHandshake",
+   "resources": [
+    "handshake"
+   ]
+  },
+  "closeaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CloseAccount",
+   "resources": [
+    "account"
+   ]
+  },
+  "createaccount": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccount",
+   "resources": []
+  },
+  "creategovcloudaccount": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGovCloudAccount",
+   "resources": []
+  },
+  "createorganization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOrganization",
+   "resources": []
+  },
+  "createorganizationalunit": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOrganizationalUnit",
+   "resources": [
+    "organizationalunit",
+    "root"
+   ]
+  },
+  "createpolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "organizations:PolicyType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePolicy",
+   "resources": [
+    "policy"
+   ]
+  },
+  "declinehandshake": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeclineHandshake",
+   "resources": [
+    "handshake"
+   ]
+  },
+  "deleteorganization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOrganization",
+   "resources": []
+  },
+  "deleteorganizationalunit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOrganizationalUnit",
+   "resources": [
+    "organizationalunit"
+   ]
+  },
+  "deletepolicy": {
+   "conditionKeys": [
+    "organizations:PolicyType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePolicy",
+   "resources": [
+    "policy"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": []
+  },
+  "deregisterdelegatedadministrator": {
+   "conditionKeys": [
+    "organizations:ServicePrincipal"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterDelegatedAdministrator",
+   "resources": [
+    "account"
+   ]
+  },
+  "describeaccount": {
+   "name": "DescribeAccount",
+   "resources": [
+    "account"
+   ]
+  },
+  "describecreateaccountstatus": {
+   "name": "DescribeCreateAccountStatus",
+   "resources": []
+  },
+  "describeeffectivepolicy": {
+   "conditionKeys": [
+    "organizations:PolicyType"
+   ],
+   "name": "DescribeEffectivePolicy",
+   "resources": [
+    "account"
+   ]
+  },
+  "describehandshake": {
+   "name": "DescribeHandshake",
+   "resources": [
+    "handshake"
+   ]
+  },
+  "describeorganization": {
+   "name": "DescribeOrganization",
+   "resources": []
+  },
+  "describeorganizationalunit": {
+   "name": "DescribeOrganizationalUnit",
+   "resources": [
+    "organizationalunit"
+   ]
+  },
+  "describepolicy": {
+   "conditionKeys": [
+    "organizations:PolicyType"
+   ],
+   "name": "DescribePolicy",
+   "resources": [
+    "policy"
+   ]
+  },
+  "describeresourcepolicy": {
+   "name": "DescribeResourcePolicy",
+   "resources": []
+  },
+  "describeresponsibilitytransfer": {
+   "conditionKeys": [
+    "organizations:TransferDirection",
+    "organizations:TransferType"
+   ],
+   "name": "DescribeResponsibilityTransfer",
+   "resources": [
+    "responsibilitytransfer"
+   ]
+  },
+  "detachpolicy": {
+   "conditionKeys": [
+    "organizations:PolicyType"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DetachPolicy",
+   "resources": [
+    "account",
+    "organizationalunit",
+    "policy",
+    "root"
+   ]
+  },
+  "disableawsserviceaccess": {
+   "conditionKeys": [
+    "organizations:ServicePrincipal"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableAWSServiceAccess",
+   "resources": []
+  },
+  "disablepolicytype": {
+   "conditionKeys": [
+    "organizations:PolicyType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisablePolicyType",
+   "resources": [
+    "root"
+   ]
+  },
+  "enableallfeatures": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableAllFeatures",
+   "resources": []
+  },
+  "enableawsserviceaccess": {
+   "conditionKeys": [
+    "organizations:ServicePrincipal"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableAWSServiceAccess",
+   "resources": []
+  },
+  "enablepolicytype": {
+   "conditionKeys": [
+    "organizations:PolicyType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnablePolicyType",
+   "resources": [
+    "root"
+   ]
+  },
+  "inviteaccounttoorganization": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InviteAccountToOrganization",
+   "resources": [
+    "account"
+   ]
+  },
+  "inviteorganizationtotransferresponsibility": {
+   "conditionKeys": [
+    "organizations:TransferDirection",
+    "organizations:TransferType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InviteOrganizationToTransferResponsibility",
+   "resources": [
+    "account"
+   ]
+  },
+  "leaveorganization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LeaveOrganization",
+   "resources": []
+  },
+  "listaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccounts",
+   "resources": []
+  },
+  "listaccountsforparent": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountsForParent",
+   "resources": [
+    "organizationalunit",
+    "root"
+   ]
+  },
+  "listaccountswithinvalideffectivepolicy": {
+   "conditionKeys": [
+    "organizations:PolicyType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountsWithInvalidEffectivePolicy",
+   "resources": []
+  },
+  "listawsserviceaccessfororganization": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAWSServiceAccessForOrganization",
+   "resources": []
+  },
+  "listchildren": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChildren",
+   "resources": [
+    "organizationalunit",
+    "root"
+   ]
+  },
+  "listcreateaccountstatus": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCreateAccountStatus",
+   "resources": []
+  },
+  "listdelegatedadministrators": {
+   "conditionKeys": [
+    "organizations:ServicePrincipal"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDelegatedAdministrators",
+   "resources": []
+  },
+  "listdelegatedservicesforaccount": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDelegatedServicesForAccount",
+   "resources": [
+    "account"
+   ]
+  },
+  "listeffectivepolicyvalidationerrors": {
+   "conditionKeys": [
+    "organizations:PolicyType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEffectivePolicyValidationErrors",
+   "resources": [
+    "account"
+   ]
+  },
+  "listhandshakesforaccount": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHandshakesForAccount",
+   "resources": []
+  },
+  "listhandshakesfororganization": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHandshakesForOrganization",
+   "resources": []
+  },
+  "listinboundresponsibilitytransfers": {
+   "conditionKeys": [
+    "organizations:TransferDirection",
+    "organizations:TransferType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInboundResponsibilityTransfers",
+   "resources": []
+  },
+  "listorganizationalunitsforparent": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrganizationalUnitsForParent",
+   "resources": [
+    "organizationalunit",
+    "root"
+   ]
+  },
+  "listoutboundresponsibilitytransfers": {
+   "conditionKeys": [
+    "organizations:TransferDirection",
+    "organizations:TransferType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOutboundResponsibilityTransfers",
+   "resources": []
+  },
+  "listparents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListParents",
+   "resources": [
+    "account",
+    "organizationalunit"
+   ]
+  },
+  "listpolicies": {
+   "conditionKeys": [
+    "organizations:PolicyType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicies",
+   "resources": []
+  },
+  "listpoliciesfortarget": {
+   "conditionKeys": [
+    "organizations:PolicyType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPoliciesForTarget",
+   "resources": [
+    "account",
+    "organizationalunit",
+    "root"
+   ]
+  },
+  "listroots": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRoots",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "organizations:PolicyType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resourceConditionKeys": {
+    "responsibilitytransfer": [
+     "organizations:TransferDirection",
+     "organizations:TransferType"
+    ]
+   },
+   "resources": [
+    "account",
+    "organizationalunit",
+    "policy",
+    "resourcepolicy",
+    "responsibilitytransfer",
+    "root"
+   ]
+  },
+  "listtargetsforpolicy": {
+   "conditionKeys": [
+    "organizations:PolicyType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTargetsForPolicy",
+   "resources": [
+    "policy"
+   ]
+  },
+  "moveaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MoveAccount",
+   "resources": [
+    "account",
+    "organizationalunit",
+    "root"
+   ]
+  },
+  "putresourcepolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "resourcepolicy"
+   ]
+  },
+  "registerdelegatedadministrator": {
+   "conditionKeys": [
+    "organizations:ServicePrincipal"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterDelegatedAdministrator",
+   "resources": [
+    "account"
+   ]
+  },
+  "removeaccountfromorganization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveAccountFromOrganization",
+   "resources": [
+    "account"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "organizations:PolicyType"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "policy": [
+     "organizations:PolicyType"
+    ],
+    "responsibilitytransfer": [
+     "organizations:TransferDirection",
+     "organizations:TransferType"
+    ]
+   },
+   "resources": [
+    "account",
+    "organizationalunit",
+    "policy",
+    "resourcepolicy",
+    "responsibilitytransfer",
+    "root"
+   ]
+  },
+  "terminateresponsibilitytransfer": {
+   "conditionKeys": [
+    "organizations:TransferDirection",
+    "organizations:TransferType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TerminateResponsibilityTransfer",
+   "resources": [
+    "responsibilitytransfer"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys",
+    "organizations:PolicyType"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "responsibilitytransfer": [
+     "organizations:TransferDirection",
+     "organizations:TransferType"
+    ]
+   },
+   "resources": [
+    "account",
+    "organizationalunit",
+    "policy",
+    "resourcepolicy",
+    "responsibilitytransfer",
+    "root"
+   ]
+  },
+  "updateorganizationalunit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOrganizationalUnit",
+   "resources": [
+    "organizationalunit"
+   ]
+  },
+  "updatepolicy": {
+   "conditionKeys": [
+    "organizations:PolicyType"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdatePolicy",
+   "resources": [
+    "policy"
+   ]
+  },
+  "updateresponsibilitytransfer": {
+   "conditionKeys": [
+    "organizations:TransferDirection",
+    "organizations:TransferType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResponsibilityTransfer",
+   "resources": [
+    "responsibilitytransfer"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "organizations:PolicyType": [
+   "String"
+  ],
+  "organizations:ServicePrincipal": [
+   "String"
+  ],
+  "organizations:TransferDirection": [
+   "String"
+  ],
+  "organizations:TransferType": [
+   "String"
+  ]
+ },
+ "resources": {
+  "account": {
+   "arnFormats": [
+    "arn:${Partition}:organizations::${Account}:account/o-${OrganizationId}/${AccountId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "awspolicy": {
+   "arnFormats": [
+    "arn:${Partition}:organizations::aws:policy/${PolicyType}/p-${PolicyId}"
+   ]
+  },
+  "handshake": {
+   "arnFormats": [
+    "arn:${Partition}:organizations::${Account}:handshake/o-${OrganizationId}/${HandshakeType}/h-${HandshakeId}"
+   ]
+  },
+  "organization": {
+   "arnFormats": [
+    "arn:${Partition}:organizations::${Account}:organization/o-${OrganizationId}"
+   ]
+  },
+  "organizationalunit": {
+   "arnFormats": [
+    "arn:${Partition}:organizations::${Account}:ou/o-${OrganizationId}/ou-${OrganizationalUnitId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "policy": {
+   "arnFormats": [
+    "arn:${Partition}:organizations::${Account}:policy/o-${OrganizationId}/${PolicyType}/p-${PolicyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "resourcepolicy": {
+   "arnFormats": [
+    "arn:${Partition}:organizations::${Account}:resourcepolicy/o-${OrganizationId}/rp-${ResourcePolicyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "responsibilitytransfer": {
+   "arnFormats": [
+    "arn:${Partition}:organizations::${Account}:transfer/o-${OrganizationId}/${TransferType}/${TransferDirection}/rt-${ResponsibilityTransferId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "root": {
+   "arnFormats": [
+    "arn:${Partition}:organizations::${Account}:root/o-${OrganizationId}/r-${RootId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "organizations",
+ "serviceName": "Organizations",
+ "version": "v1.5"
+}

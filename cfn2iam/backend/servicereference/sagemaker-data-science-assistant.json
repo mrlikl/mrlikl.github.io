@@ -1,0 +1,15 @@
+{
+ "actions": {
+  "sendconversation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendConversation",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "sagemaker-data-science-assistant",
+ "serviceName": "SageMakerDataScienceAssistant",
+ "version": "v1.5"
+}

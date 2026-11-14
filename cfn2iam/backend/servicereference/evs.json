@@ -1,0 +1,234 @@
+{
+ "actions": {
+  "associateeiptovlan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateEipToVlan",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createentitlement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEntitlement",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createenvironment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironment",
+   "resources": []
+  },
+  "createenvironmentconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironmentConnector",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createenvironmenthost": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironmentHost",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deleteentitlement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEntitlement",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deleteenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deleteenvironmentconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironmentConnector",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deleteenvironmenthost": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironmentHost",
+   "resources": [
+    "environment"
+   ]
+  },
+  "disassociateeipfromvlan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateEipFromVlan",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getaccountsettings": {
+   "name": "GetAccountSettings",
+   "resources": []
+  },
+  "getdepoturl": {
+   "name": "GetDepotUrl",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getenvironment": {
+   "name": "GetEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getversions": {
+   "name": "GetVersions",
+   "resources": []
+  },
+  "listenvironmentconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironmentConnectors",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listenvironmenthosts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironmentHosts",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironments",
+   "resources": []
+  },
+  "listenvironmentvlans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironmentVlans",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listvmentitlements": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVmEntitlements",
+   "resources": [
+    "environment"
+   ]
+  },
+  "putaccountsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAccountSettings",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "environment"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "environment"
+   ]
+  },
+  "updateenvironmentconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironmentConnector",
+   "resources": [
+    "environment"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "environment": {
+   "arnFormats": [
+    "arn:${Partition}:evs:${Region}:${Account}:environment/${EnvironmentIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "evs",
+ "serviceName": "EVS",
+ "version": "v1.5"
+}

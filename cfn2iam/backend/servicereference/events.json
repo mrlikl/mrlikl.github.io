@@ -1,0 +1,935 @@
+{
+ "actions": {
+  "activateeventsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivateEventSource",
+   "resources": [
+    "event-source"
+   ]
+  },
+  "allowvendedlogdeliveryforresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": [
+    "event-bus",
+    "subscriber"
+   ]
+  },
+  "cancelreplay": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelReplay",
+   "resources": [
+    "replay"
+   ]
+  },
+  "createapidestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApiDestination",
+   "resources": [
+    "api-destination",
+    "connection"
+   ]
+  },
+  "createarchive": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateArchive",
+   "resources": [
+    "alias",
+    "archive",
+    "event-bus",
+    "key"
+   ]
+  },
+  "createconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnection",
+   "resources": [
+    "connection"
+   ]
+  },
+  "createendpoint": {
+   "conditionKeys": [
+    "events:EventBusArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEndpoint",
+   "resources": [
+    "endpoint"
+   ]
+  },
+  "createeventbus": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEventBus",
+   "resources": [
+    "event-bus",
+    "event-busv2"
+   ]
+  },
+  "createeventsource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "events:source"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEventSource",
+   "resources": [
+    "event-busv2",
+    "event-sourcev2"
+   ]
+  },
+  "createpartnereventsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePartnerEventSource",
+   "resources": [
+    "event-source"
+   ]
+  },
+  "createsubscriber": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "events:ContentFilterPresent",
+    "events:Metadata/${MetadataKey}",
+    "events:Metadata/${MetadataKey}/Matcher"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSubscriber",
+   "resources": [
+    "event-busv2",
+    "subscriber"
+   ]
+  },
+  "deactivateeventsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeactivateEventSource",
+   "resources": [
+    "event-source"
+   ]
+  },
+  "deauthorizeconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeauthorizeConnection",
+   "resources": [
+    "connection"
+   ]
+  },
+  "deleteapidestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApiDestination",
+   "resources": [
+    "api-destination"
+   ]
+  },
+  "deletearchive": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteArchive",
+   "resources": [
+    "archive"
+   ]
+  },
+  "deleteconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnection",
+   "resources": [
+    "connection"
+   ]
+  },
+  "deleteendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEndpoint",
+   "resources": [
+    "endpoint"
+   ]
+  },
+  "deleteeventbus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventBus",
+   "resources": [
+    "event-bus",
+    "event-busv2"
+   ]
+  },
+  "deleteeventsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventSource",
+   "resources": [
+    "event-sourcev2"
+   ]
+  },
+  "deletepartnereventsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePartnerEventSource",
+   "resources": [
+    "event-source"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "conditionKeys": [
+    "events:PolicyName"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "event-busv2"
+   ]
+  },
+  "deleterule": {
+   "conditionKeys": [
+    "events:ManagedBy",
+    "events:creatorAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRule",
+   "resources": [
+    "rule-on-custom-event-bus",
+    "rule-on-default-event-bus"
+   ]
+  },
+  "deletesubscriber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSubscriber",
+   "resources": [
+    "subscriber"
+   ]
+  },
+  "describeapidestination": {
+   "name": "DescribeApiDestination",
+   "resources": [
+    "api-destination",
+    "connection"
+   ]
+  },
+  "describearchive": {
+   "name": "DescribeArchive",
+   "resources": [
+    "archive"
+   ]
+  },
+  "describeconnection": {
+   "name": "DescribeConnection",
+   "resources": [
+    "connection"
+   ]
+  },
+  "describeendpoint": {
+   "name": "DescribeEndpoint",
+   "resources": [
+    "endpoint"
+   ]
+  },
+  "describeeventbus": {
+   "name": "DescribeEventBus",
+   "resources": [
+    "event-bus",
+    "event-busv2"
+   ]
+  },
+  "describeeventsource": {
+   "name": "DescribeEventSource",
+   "resources": [
+    "event-source",
+    "event-sourcev2"
+   ]
+  },
+  "describepartnereventsource": {
+   "name": "DescribePartnerEventSource",
+   "resources": [
+    "event-source"
+   ]
+  },
+  "describereplay": {
+   "name": "DescribeReplay",
+   "resources": [
+    "replay"
+   ]
+  },
+  "describerule": {
+   "conditionKeys": [
+    "events:creatorAccount"
+   ],
+   "name": "DescribeRule",
+   "resources": [
+    "rule-on-custom-event-bus",
+    "rule-on-default-event-bus"
+   ]
+  },
+  "describesubscriber": {
+   "name": "DescribeSubscriber",
+   "resources": [
+    "subscriber"
+   ]
+  },
+  "disablerule": {
+   "conditionKeys": [
+    "events:ManagedBy",
+    "events:creatorAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableRule",
+   "resources": [
+    "rule-on-custom-event-bus",
+    "rule-on-default-event-bus"
+   ]
+  },
+  "enablerule": {
+   "conditionKeys": [
+    "events:ManagedBy",
+    "events:creatorAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableRule",
+   "resources": [
+    "rule-on-custom-event-bus",
+    "rule-on-default-event-bus"
+   ]
+  },
+  "getresourcepolicy": {
+   "conditionKeys": [
+    "events:PolicyName"
+   ],
+   "name": "GetResourcePolicy",
+   "resources": [
+    "event-busv2"
+   ]
+  },
+  "invokeapidestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeApiDestination",
+   "resources": [
+    "api-destination"
+   ]
+  },
+  "listapidestinations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApiDestinations",
+   "resources": []
+  },
+  "listarchives": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListArchives",
+   "resources": []
+  },
+  "listconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnections",
+   "resources": []
+  },
+  "listendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEndpoints",
+   "resources": []
+  },
+  "listeventbuses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEventBuses",
+   "resources": []
+  },
+  "listeventsources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEventSources",
+   "resources": []
+  },
+  "listpartnereventsourceaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPartnerEventSourceAccounts",
+   "resources": [
+    "event-source"
+   ]
+  },
+  "listpartnereventsources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPartnerEventSources",
+   "resources": []
+  },
+  "listreplays": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReplays",
+   "resources": []
+  },
+  "listresourcepolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourcePolicies",
+   "resources": [
+    "event-busv2"
+   ]
+  },
+  "listrulenamesbytarget": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRuleNamesByTarget",
+   "resources": []
+  },
+  "listrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRules",
+   "resources": []
+  },
+  "listsubscribers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubscribers",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "events:creatorAccount"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "event-bus",
+    "event-busv2",
+    "event-sourcev2",
+    "rule-on-custom-event-bus",
+    "rule-on-default-event-bus",
+    "subscriber"
+   ]
+  },
+  "listtargetsbyrule": {
+   "conditionKeys": [
+    "events:creatorAccount"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTargetsByRule",
+   "resources": [
+    "rule-on-custom-event-bus",
+    "rule-on-default-event-bus"
+   ]
+  },
+  "putevents": {
+   "conditionKeys": [
+    "events:SystemMetadata/AwsDetailType",
+    "events:SystemMetadata/AwsSource",
+    "events:SystemMetadata/ContentType",
+    "events:detail-type",
+    "events:eventBusInvocation",
+    "events:source"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutEvents",
+   "resources": [
+    "event-bus",
+    "event-busv2"
+   ]
+  },
+  "putpartnerevents": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutPartnerEvents",
+   "resources": []
+  },
+  "putpermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutPermission",
+   "resources": []
+  },
+  "putrawevents": {
+   "conditionKeys": [
+    "events:Metadata/${MetadataKey}",
+    "events:SystemMetadata/AwsDetailType",
+    "events:SystemMetadata/AwsSource",
+    "events:SystemMetadata/ContentType",
+    "events:eventBusInvocation"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutRawEvents",
+   "resources": [
+    "event-busv2"
+   ]
+  },
+  "putresourcepolicy": {
+   "conditionKeys": [
+    "events:PolicyName"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "event-busv2"
+   ]
+  },
+  "putrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "events:ManagedBy",
+    "events:creatorAccount",
+    "events:detail-type",
+    "events:detail.eventTypeCode",
+    "events:detail.service",
+    "events:detail.userIdentity.principalId",
+    "events:source"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRule",
+   "resources": [
+    "rule-on-custom-event-bus",
+    "rule-on-default-event-bus"
+   ]
+  },
+  "puttargets": {
+   "conditionKeys": [
+    "events:ManagedBy",
+    "events:TargetArn",
+    "events:creatorAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTargets",
+   "resources": [
+    "rule-on-custom-event-bus",
+    "rule-on-default-event-bus"
+   ]
+  },
+  "removepermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "RemovePermission",
+   "resources": []
+  },
+  "removetargets": {
+   "conditionKeys": [
+    "events:ManagedBy",
+    "events:creatorAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveTargets",
+   "resources": [
+    "rule-on-custom-event-bus",
+    "rule-on-default-event-bus"
+   ]
+  },
+  "retrieveconnectioncredentials": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RetrieveConnectionCredentials",
+   "resources": [
+    "connection"
+   ]
+  },
+  "revokeresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeResource",
+   "resources": [
+    "event-busv2"
+   ]
+  },
+  "startreplay": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartReplay",
+   "resources": [
+    "archive",
+    "event-bus",
+    "replay"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "events:creatorAccount"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "event-bus",
+    "event-busv2",
+    "event-sourcev2",
+    "rule-on-custom-event-bus",
+    "rule-on-default-event-bus",
+    "subscriber"
+   ]
+  },
+  "testeventpattern": {
+   "name": "TestEventPattern",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys",
+    "events:creatorAccount"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "event-bus",
+    "event-busv2",
+    "event-sourcev2",
+    "rule-on-custom-event-bus",
+    "rule-on-default-event-bus",
+    "subscriber"
+   ]
+  },
+  "updateapidestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApiDestination",
+   "resources": [
+    "api-destination"
+   ]
+  },
+  "updatearchive": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateArchive",
+   "resources": [
+    "alias",
+    "archive",
+    "key"
+   ]
+  },
+  "updateconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnection",
+   "resources": [
+    "connection"
+   ]
+  },
+  "updateendpoint": {
+   "conditionKeys": [
+    "events:EventBusArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEndpoint",
+   "resources": [
+    "endpoint"
+   ]
+  },
+  "updateeventbus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEventBus",
+   "resources": [
+    "event-bus",
+    "event-busv2"
+   ]
+  },
+  "updateeventsource": {
+   "conditionKeys": [
+    "events:source"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEventSource",
+   "resources": [
+    "event-busv2",
+    "event-sourcev2"
+   ]
+  },
+  "updatesubscriber": {
+   "conditionKeys": [
+    "events:ContentFilterPresent",
+    "events:Metadata/${MetadataKey}",
+    "events:Metadata/${MetadataKey}/Matcher"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSubscriber",
+   "resources": [
+    "event-busv2",
+    "subscriber"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "events:ContentFilterPresent": [
+   "Bool"
+  ],
+  "events:EventBusArn": [
+   "ArrayOfARN"
+  ],
+  "events:ManagedBy": [
+   "String"
+  ],
+  "events:Metadata/${MetadataKey}": [
+   "ArrayOfString"
+  ],
+  "events:Metadata/${MetadataKey}/Matcher": [
+   "String"
+  ],
+  "events:PolicyName": [
+   "String"
+  ],
+  "events:SystemMetadata/AwsDetailType": [
+   "String"
+  ],
+  "events:SystemMetadata/AwsSource": [
+   "String"
+  ],
+  "events:SystemMetadata/ContentType": [
+   "String"
+  ],
+  "events:TargetArn": [
+   "ArrayOfARN"
+  ],
+  "events:creatorAccount": [
+   "String"
+  ],
+  "events:detail-type": [
+   "ArrayOfString"
+  ],
+  "events:detail.eventTypeCode": [
+   "String"
+  ],
+  "events:detail.service": [
+   "String"
+  ],
+  "events:detail.userIdentity.principalId": [
+   "String"
+  ],
+  "events:eventBusInvocation": [
+   "String"
+  ],
+  "events:source": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "alias": {
+   "arnFormats": [
+    "arn:${Partition}:kms:${Region}:${Account}:alias/${Alias}"
+   ]
+  },
+  "api-destination": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}:${Account}:api-destination/${ApiDestinationName}"
+   ]
+  },
+  "archive": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}:${Account}:archive/${ArchiveName}"
+   ]
+  },
+  "connection": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}:${Account}:connection/${ConnectionName}"
+   ]
+  },
+  "create-snapshot": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}:${Account}:target/create-snapshot"
+   ]
+  },
+  "endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}:${Account}:endpoint/${EndpointName}"
+   ]
+  },
+  "event-bus": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}:${Account}:event-bus/${EventBusName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "event-busv2": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}:${Account}:event-busv2/${EventBusName}/${OpaqueId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "event-source": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}::event-source/${EventSourceName}"
+   ]
+  },
+  "event-sourcev2": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}:${Account}:event-sourcev2/${SourceType}/${EventSourceName}/${OpaqueId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "key": {
+   "arnFormats": [
+    "arn:${Partition}:kms:${Region}:${Account}:key/${KeyId}"
+   ]
+  },
+  "reboot-instance": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}:${Account}:target/reboot-instance"
+   ]
+  },
+  "replay": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}:${Account}:replay/${ReplayName}"
+   ]
+  },
+  "rule-on-custom-event-bus": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}:${Account}:rule/${EventBusName}/${RuleName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "rule-on-default-event-bus": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}:${Account}:rule/${RuleName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "stop-instance": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}:${Account}:target/stop-instance"
+   ]
+  },
+  "subscriber": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}:${Account}:subscriber/${SubscriberName}/${OpaqueId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "terminate-instance": {
+   "arnFormats": [
+    "arn:${Partition}:events:${Region}:${Account}:target/terminate-instance"
+   ]
+  }
+ },
+ "service": "events",
+ "serviceName": "EventBridge",
+ "version": "v1.5"
+}

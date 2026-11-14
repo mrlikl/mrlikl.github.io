@@ -1,0 +1,102 @@
+{
+ "actions": {
+  "associatepatchtomanifestjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociatePatchToManifestJob",
+   "resources": []
+  },
+  "createbatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBatch",
+   "resources": []
+  },
+  "createintakeform": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIntakeForm",
+   "resources": []
+  },
+  "createproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProject",
+   "resources": []
+  },
+  "createworkflowdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkflowDefinition",
+   "resources": []
+  },
+  "describeconsolejob": {
+   "name": "DescribeConsoleJob",
+   "resources": []
+  },
+  "generatelidarpreviewtaskconfigjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateLIDARPreviewTaskConfigJob",
+   "resources": []
+  },
+  "getbatch": {
+   "name": "GetBatch",
+   "resources": []
+  },
+  "getintakeformstatus": {
+   "name": "GetIntakeFormStatus",
+   "resources": []
+  },
+  "listbatches": {
+   "name": "ListBatches",
+   "resources": []
+  },
+  "listdatasetobjects": {
+   "name": "ListDatasetObjects",
+   "resources": []
+  },
+  "listprojects": {
+   "name": "ListProjects",
+   "resources": []
+  },
+  "runfilterorsampledatasetjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RunFilterOrSampleDatasetJob",
+   "resources": []
+  },
+  "rungeneratemanifestbycrawlingjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RunGenerateManifestByCrawlingJob",
+   "resources": []
+  },
+  "rungeneratemanifestmetricsjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RunGenerateManifestMetricsJob",
+   "resources": []
+  },
+  "updatebatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBatch",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "groundtruthlabeling",
+ "serviceName": "GroundTruth Labeling",
+ "version": "v1.5"
+}

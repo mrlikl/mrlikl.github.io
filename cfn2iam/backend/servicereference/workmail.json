@@ -1,0 +1,1089 @@
+{
+ "actions": {
+  "allowvendedlogdeliveryforresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": [
+    "organization"
+   ]
+  },
+  "associatedelegatetoresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateDelegateToResource",
+   "resources": [
+    "organization"
+   ]
+  },
+  "associatemembertogroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateMemberToGroup",
+   "resources": [
+    "organization"
+   ]
+  },
+  "assumeimpersonationrole": {
+   "conditionKeys": [
+    "workmail:ImpersonationRoleId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssumeImpersonationRole",
+   "resources": [
+    "organization"
+   ]
+  },
+  "cancelmailboxexportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelMailboxExportJob",
+   "resources": [
+    "organization"
+   ]
+  },
+  "createalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAlias",
+   "resources": [
+    "organization"
+   ]
+  },
+  "createavailabilityconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAvailabilityConfiguration",
+   "resources": [
+    "organization"
+   ]
+  },
+  "creategroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGroup",
+   "resources": [
+    "organization"
+   ]
+  },
+  "createidentitycenterapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIdentityCenterApplication",
+   "resources": []
+  },
+  "createimpersonationrole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateImpersonationRole",
+   "resources": [
+    "organization"
+   ]
+  },
+  "createinboundmailflowrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInboundMailFlowRule",
+   "resources": [
+    "organization"
+   ]
+  },
+  "createmaildomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMailDomain",
+   "resources": [
+    "organization"
+   ]
+  },
+  "createmobiledeviceaccessrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMobileDeviceAccessRule",
+   "resources": [
+    "organization"
+   ]
+  },
+  "createorganization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOrganization",
+   "resources": []
+  },
+  "createoutboundmailflowrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOutboundMailFlowRule",
+   "resources": [
+    "organization"
+   ]
+  },
+  "createresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResource",
+   "resources": [
+    "organization"
+   ]
+  },
+  "createsmtpgateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSmtpGateway",
+   "resources": [
+    "organization"
+   ]
+  },
+  "createuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUser",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deleteaccesscontrolrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccessControlRule",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deletealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAlias",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deleteavailabilityconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAvailabilityConfiguration",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deleteemailmonitoringconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEmailMonitoringConfiguration",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deletegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGroup",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deleteidentitycenterapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIdentityCenterApplication",
+   "resources": []
+  },
+  "deleteidentityproviderconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIdentityProviderConfiguration",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deleteimpersonationrole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteImpersonationRole",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deleteinboundmailflowrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInboundMailFlowRule",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deletemailboxpermissions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMailboxPermissions",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deletemaildomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMailDomain",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deletemobiledevice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMobileDevice",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deletemobiledeviceaccessoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMobileDeviceAccessOverride",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deletemobiledeviceaccessrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMobileDeviceAccessRule",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deleteorganization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOrganization",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deleteoutboundmailflowrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOutboundMailFlowRule",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deletepersonalaccesstoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePersonalAccessToken",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deleteresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResource",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deleteretentionpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRetentionPolicy",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deletesmtpgateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSmtpGateway",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deleteuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUser",
+   "resources": [
+    "organization"
+   ]
+  },
+  "delivertomailbox": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeliverToMailbox",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deregisterfromworkmail": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterFromWorkMail",
+   "resources": [
+    "organization"
+   ]
+  },
+  "deregistermaildomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterMailDomain",
+   "resources": [
+    "organization"
+   ]
+  },
+  "describeemailmonitoringconfiguration": {
+   "name": "DescribeEmailMonitoringConfiguration",
+   "resources": [
+    "organization"
+   ]
+  },
+  "describeentity": {
+   "name": "DescribeEntity",
+   "resources": [
+    "organization"
+   ]
+  },
+  "describegroup": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeGroup",
+   "resources": [
+    "organization"
+   ]
+  },
+  "describeidentityproviderconfiguration": {
+   "name": "DescribeIdentityProviderConfiguration",
+   "resources": [
+    "organization"
+   ]
+  },
+  "describeinbounddmarcsettings": {
+   "name": "DescribeInboundDmarcSettings",
+   "resources": [
+    "organization"
+   ]
+  },
+  "describeinboundmailflowrule": {
+   "name": "DescribeInboundMailFlowRule",
+   "resources": [
+    "organization"
+   ]
+  },
+  "describemailboxexportjob": {
+   "name": "DescribeMailboxExportJob",
+   "resources": [
+    "organization"
+   ]
+  },
+  "describemaildomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeMailDomains",
+   "resources": [
+    "organization"
+   ]
+  },
+  "describeorganization": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeOrganization",
+   "resources": [
+    "organization"
+   ]
+  },
+  "describeoutboundmailflowrule": {
+   "name": "DescribeOutboundMailFlowRule",
+   "resources": [
+    "organization"
+   ]
+  },
+  "describeresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeResource",
+   "resources": [
+    "organization"
+   ]
+  },
+  "describesmtpgateway": {
+   "name": "DescribeSmtpGateway",
+   "resources": [
+    "organization"
+   ]
+  },
+  "describeuser": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeUser",
+   "resources": [
+    "organization"
+   ]
+  },
+  "disassociatedelegatefromresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateDelegateFromResource",
+   "resources": [
+    "organization"
+   ]
+  },
+  "disassociatememberfromgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateMemberFromGroup",
+   "resources": [
+    "organization"
+   ]
+  },
+  "enablemaildomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableMailDomain",
+   "resources": [
+    "organization"
+   ]
+  },
+  "getaccesscontroleffect": {
+   "name": "GetAccessControlEffect",
+   "resources": [
+    "organization"
+   ]
+  },
+  "getdefaultretentionpolicy": {
+   "name": "GetDefaultRetentionPolicy",
+   "resources": [
+    "organization"
+   ]
+  },
+  "getimpersonationrole": {
+   "name": "GetImpersonationRole",
+   "resources": [
+    "organization"
+   ]
+  },
+  "getimpersonationroleeffect": {
+   "name": "GetImpersonationRoleEffect",
+   "resources": [
+    "organization"
+   ]
+  },
+  "getjournalingrules": {
+   "name": "GetJournalingRules",
+   "resources": [
+    "organization"
+   ]
+  },
+  "getmailboxdetails": {
+   "name": "GetMailboxDetails",
+   "resources": [
+    "organization"
+   ]
+  },
+  "getmaildomain": {
+   "name": "GetMailDomain",
+   "resources": [
+    "organization"
+   ]
+  },
+  "getmaildomaindetails": {
+   "name": "GetMailDomainDetails",
+   "resources": [
+    "organization"
+   ]
+  },
+  "getmobiledeviceaccesseffect": {
+   "name": "GetMobileDeviceAccessEffect",
+   "resources": [
+    "organization"
+   ]
+  },
+  "getmobiledeviceaccessoverride": {
+   "name": "GetMobileDeviceAccessOverride",
+   "resources": [
+    "organization"
+   ]
+  },
+  "getmobiledevicedetails": {
+   "name": "GetMobileDeviceDetails",
+   "resources": [
+    "organization"
+   ]
+  },
+  "getmobiledevicesforuser": {
+   "name": "GetMobileDevicesForUser",
+   "resources": [
+    "organization"
+   ]
+  },
+  "getmobilepolicydetails": {
+   "name": "GetMobilePolicyDetails",
+   "resources": [
+    "organization"
+   ]
+  },
+  "getpersonalaccesstokenmetadata": {
+   "name": "GetPersonalAccessTokenMetadata",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listaccesscontrolrules": {
+   "name": "ListAccessControlRules",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listaliases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAliases",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listavailabilityconfigurations": {
+   "name": "ListAvailabilityConfigurations",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listgroupmembers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroupMembers",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroups",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listgroupsforentity": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroupsForEntity",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listimpersonationroles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListImpersonationRoles",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listinboundmailflowrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInboundMailFlowRules",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listmailboxexportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMailboxExportJobs",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listmailboxpermissions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMailboxPermissions",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listmaildomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMailDomains",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listmobiledeviceaccessoverrides": {
+   "name": "ListMobileDeviceAccessOverrides",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listmobiledeviceaccessrules": {
+   "name": "ListMobileDeviceAccessRules",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listorganizations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrganizations",
+   "resources": []
+  },
+  "listoutboundmailflowrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOutboundMailFlowRules",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listpersonalaccesstokens": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPersonalAccessTokens",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listresourcedelegates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceDelegates",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResources",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listsmtpgateways": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSmtpGateways",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "organization"
+   ]
+  },
+  "listusers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsers",
+   "resources": [
+    "organization"
+   ]
+  },
+  "putaccesscontrolrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAccessControlRule",
+   "resources": [
+    "organization"
+   ]
+  },
+  "putemailmonitoringconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutEmailMonitoringConfiguration",
+   "resources": [
+    "organization"
+   ]
+  },
+  "putidentityproviderconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutIdentityProviderConfiguration",
+   "resources": [
+    "organization"
+   ]
+  },
+  "putinbounddmarcsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutInboundDmarcSettings",
+   "resources": [
+    "organization"
+   ]
+  },
+  "putmailboxpermissions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMailboxPermissions",
+   "resources": [
+    "organization"
+   ]
+  },
+  "putmobiledeviceaccessoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMobileDeviceAccessOverride",
+   "resources": [
+    "organization"
+   ]
+  },
+  "putretentionpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRetentionPolicy",
+   "resources": [
+    "organization"
+   ]
+  },
+  "registermaildomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterMailDomain",
+   "resources": [
+    "organization"
+   ]
+  },
+  "registertoworkmail": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterToWorkMail",
+   "resources": [
+    "organization"
+   ]
+  },
+  "resetpassword": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetPassword",
+   "resources": [
+    "organization"
+   ]
+  },
+  "searchmembers": {
+   "name": "SearchMembers",
+   "resources": [
+    "organization"
+   ]
+  },
+  "setdefaultmaildomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetDefaultMailDomain",
+   "resources": [
+    "organization"
+   ]
+  },
+  "setjournalingrules": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetJournalingRules",
+   "resources": [
+    "organization"
+   ]
+  },
+  "setmobilepolicydetails": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetMobilePolicyDetails",
+   "resources": [
+    "organization"
+   ]
+  },
+  "startmailboxexportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMailboxExportJob",
+   "resources": [
+    "organization"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "organization"
+   ]
+  },
+  "testavailabilityconfiguration": {
+   "name": "TestAvailabilityConfiguration",
+   "resources": [
+    "organization"
+   ]
+  },
+  "testinboundmailflowrules": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TestInboundMailFlowRules",
+   "resources": [
+    "organization"
+   ]
+  },
+  "testoutboundmailflowrules": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TestOutboundMailFlowRules",
+   "resources": [
+    "organization"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "organization"
+   ]
+  },
+  "updateavailabilityconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAvailabilityConfiguration",
+   "resources": [
+    "organization"
+   ]
+  },
+  "updatedefaultmaildomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDefaultMailDomain",
+   "resources": [
+    "organization"
+   ]
+  },
+  "updategroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGroup",
+   "resources": [
+    "organization"
+   ]
+  },
+  "updateimpersonationrole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateImpersonationRole",
+   "resources": [
+    "organization"
+   ]
+  },
+  "updateinboundmailflowrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInboundMailFlowRule",
+   "resources": [
+    "organization"
+   ]
+  },
+  "updatemailboxquota": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMailboxQuota",
+   "resources": [
+    "organization"
+   ]
+  },
+  "updatemobiledeviceaccessrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMobileDeviceAccessRule",
+   "resources": [
+    "organization"
+   ]
+  },
+  "updateoutboundmailflowrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOutboundMailFlowRule",
+   "resources": [
+    "organization"
+   ]
+  },
+  "updateprimaryemailaddress": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePrimaryEmailAddress",
+   "resources": [
+    "organization"
+   ]
+  },
+  "updateresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResource",
+   "resources": [
+    "organization"
+   ]
+  },
+  "updatesmtpgateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSmtpGateway",
+   "resources": [
+    "organization"
+   ]
+  },
+  "updateuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUser",
+   "resources": [
+    "organization"
+   ]
+  },
+  "wipemobiledevice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "WipeMobileDevice",
+   "resources": [
+    "organization"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "workmail:ImpersonationRoleId": [
+   "String"
+  ]
+ },
+ "resources": {
+  "organization": {
+   "arnFormats": [
+    "arn:${Partition}:workmail:${Region}:${Account}:organization/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "workmail",
+ "serviceName": "WorkMail",
+ "version": "v1.5"
+}

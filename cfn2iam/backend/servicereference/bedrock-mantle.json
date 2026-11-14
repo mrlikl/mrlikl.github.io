@@ -1,0 +1,648 @@
+{
+ "actions": {
+  "archiveproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ArchiveProject",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "associatecustomizedmodel": {
+   "conditionKeys": [
+    "bedrock-mantle:CustomizedModelArn",
+    "bedrock-mantle:ProjectArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateCustomizedModel",
+   "resourceConditionKeys": {
+    "customized-model": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "customized-model",
+    "project"
+   ]
+  },
+  "callwithbearertoken": {
+   "conditionKeys": [
+    "bedrock-mantle:BearerTokenType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "CallWithBearerToken",
+   "resources": []
+  },
+  "cancelfinetuningjob": {
+   "conditionKeys": [
+    "bedrock-mantle:FineTuningJob"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelFineTuningJob",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "cancelinference": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelInference",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "counttokens": {
+   "conditionKeys": [
+    "bedrock-mantle:Model"
+   ],
+   "name": "CountTokens",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "createcustomizedmodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomizedModel",
+   "resourceConditionKeys": {
+    "customized-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "customized-model"
+   ]
+  },
+  "createfile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFile",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "createfinetuningjob": {
+   "conditionKeys": [
+    "bedrock-mantle:Files",
+    "bedrock-mantle:Model"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFineTuningJob",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "createinference": {
+   "conditionKeys": [
+    "bedrock-mantle:Model",
+    "bedrock-mantle:ServiceTier"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInference",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "createproject": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "bedrock-mantle:DataRetentionMode"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProject",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "createreservation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "bedrock-mantle:ProjectArn",
+    "bedrock-mantle:ReservationArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReservation",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "reservation": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project",
+    "reservation"
+   ]
+  },
+  "deletecustomizedmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomizedModel",
+   "resourceConditionKeys": {
+    "customized-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "customized-model"
+   ]
+  },
+  "deletefile": {
+   "conditionKeys": [
+    "bedrock-mantle:Files"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFile",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "deleteinference": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInference",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "deletereservation": {
+   "conditionKeys": [
+    "bedrock-mantle:ProjectArn",
+    "bedrock-mantle:ReservationArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReservation",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "reservation": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project",
+    "reservation"
+   ]
+  },
+  "disassociatecustomizedmodel": {
+   "conditionKeys": [
+    "bedrock-mantle:CustomizedModelArn",
+    "bedrock-mantle:ProjectArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateCustomizedModel",
+   "resourceConditionKeys": {
+    "customized-model": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "customized-model",
+    "project"
+   ]
+  },
+  "getaccountdataretention": {
+   "name": "GetAccountDataRetention",
+   "resources": []
+  },
+  "getcustomizedmodel": {
+   "name": "GetCustomizedModel",
+   "resourceConditionKeys": {
+    "customized-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "customized-model"
+   ]
+  },
+  "getfile": {
+   "conditionKeys": [
+    "bedrock-mantle:Files"
+   ],
+   "name": "GetFile",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "getfinetuningjob": {
+   "conditionKeys": [
+    "bedrock-mantle:FineTuningJob"
+   ],
+   "name": "GetFineTuningJob",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "getinference": {
+   "name": "GetInference",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "getmodel": {
+   "name": "GetModel",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "getproject": {
+   "name": "GetProject",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "getreservation": {
+   "name": "GetReservation",
+   "resourceConditionKeys": {
+    "reservation": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "reservation"
+   ]
+  },
+  "listcustomizedmodelassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomizedModelAssociations",
+   "resources": [
+    "customized-model"
+   ]
+  },
+  "listcustomizedmodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomizedModels",
+   "resources": [
+    "customized-model"
+   ]
+  },
+  "listfiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFiles",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "listfinetuningjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFineTuningJobs",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "listmodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListModels",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "listprojects": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProjects",
+   "resources": [
+    "project"
+   ]
+  },
+  "listreservations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReservations",
+   "resources": [
+    "reservation"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resourceConditionKeys": {
+    "customized-model": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "reservation": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "customized-model",
+    "project",
+    "reservation"
+   ]
+  },
+  "putaccountdataretention": {
+   "conditionKeys": [
+    "bedrock-mantle:DataRetentionMode"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAccountDataRetention",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "customized-model": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "reservation": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "customized-model",
+    "project",
+    "reservation"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "customized-model": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "reservation": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "customized-model",
+    "project",
+    "reservation"
+   ]
+  },
+  "updateproject": {
+   "conditionKeys": [
+    "bedrock-mantle:DataRetentionMode"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProject",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "updatereservation": {
+   "conditionKeys": [
+    "bedrock-mantle:ProjectArn",
+    "bedrock-mantle:ReservationArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReservation",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "reservation": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project",
+    "reservation"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "bedrock-mantle:BearerTokenType": [
+   "String"
+  ],
+  "bedrock-mantle:CustomizedModelArn": [
+   "String"
+  ],
+  "bedrock-mantle:DataRetentionMode": [
+   "String"
+  ],
+  "bedrock-mantle:Files": [
+   "ArrayOfString"
+  ],
+  "bedrock-mantle:FineTuningJob": [
+   "String"
+  ],
+  "bedrock-mantle:Model": [
+   "String"
+  ],
+  "bedrock-mantle:ProjectArn": [
+   "String"
+  ],
+  "bedrock-mantle:ReservationArn": [
+   "String"
+  ],
+  "bedrock-mantle:ServiceTier": [
+   "String"
+  ]
+ },
+ "resources": {
+  "customized-model": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-mantle:${Region}:${Account}:customized-model/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "project": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-mantle:${Region}:${Account}:project/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "reservation": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-mantle:${Region}:${Account}:reservation/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "bedrock-mantle",
+ "serviceName": "Bedrock Mantle",
+ "version": "v1.5"
+}

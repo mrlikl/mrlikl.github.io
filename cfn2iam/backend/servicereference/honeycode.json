@@ -1,0 +1,254 @@
+{
+ "actions": {
+  "approveteamassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ApproveTeamAssociation",
+   "resources": []
+  },
+  "batchcreatetablerows": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateTableRows",
+   "resources": [
+    "table"
+   ]
+  },
+  "batchdeletetablerows": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteTableRows",
+   "resources": [
+    "table"
+   ]
+  },
+  "batchupdatetablerows": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateTableRows",
+   "resources": [
+    "table"
+   ]
+  },
+  "batchupserttablerows": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpsertTableRows",
+   "resources": [
+    "table"
+   ]
+  },
+  "createteam": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTeam",
+   "resources": []
+  },
+  "createtenant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTenant",
+   "resources": []
+  },
+  "deletedomains": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomains",
+   "resources": []
+  },
+  "deregistergroups": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterGroups",
+   "resources": []
+  },
+  "describetabledataimportjob": {
+   "name": "DescribeTableDataImportJob",
+   "resources": [
+    "table"
+   ]
+  },
+  "describeteam": {
+   "name": "DescribeTeam",
+   "resources": []
+  },
+  "getscreendata": {
+   "name": "GetScreenData",
+   "resources": [
+    "screen"
+   ]
+  },
+  "invokescreenautomation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeScreenAutomation",
+   "resources": [
+    "screen-automation"
+   ]
+  },
+  "listdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomains",
+   "resources": []
+  },
+  "listgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroups",
+   "resources": []
+  },
+  "listtablecolumns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTableColumns",
+   "resources": [
+    "table"
+   ]
+  },
+  "listtablerows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTableRows",
+   "resources": [
+    "table"
+   ]
+  },
+  "listtables": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTables",
+   "resources": [
+    "workbook"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "listteamassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTeamAssociations",
+   "resources": []
+  },
+  "listtenants": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTenants",
+   "resources": []
+  },
+  "querytablerows": {
+   "name": "QueryTableRows",
+   "resources": [
+    "table"
+   ]
+  },
+  "registerdomainforverification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterDomainForVerification",
+   "resources": []
+  },
+  "registergroups": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterGroups",
+   "resources": []
+  },
+  "rejectteamassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectTeamAssociation",
+   "resources": []
+  },
+  "restartdomainverification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestartDomainVerification",
+   "resources": []
+  },
+  "starttabledataimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTableDataImportJob",
+   "resources": [
+    "table"
+   ]
+  },
+  "tagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": []
+  },
+  "untagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": []
+  },
+  "updateteam": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTeam",
+   "resources": []
+  }
+ },
+ "resources": {
+  "screen": {
+   "arnFormats": [
+    "arn:${Partition}:honeycode:${Region}:${Account}:screen:workbook/${WorkbookId}/app/${AppId}/screen/${ScreenId}"
+   ]
+  },
+  "screen-automation": {
+   "arnFormats": [
+    "arn:${Partition}:honeycode:${Region}:${Account}:screen-automation:workbook/${WorkbookId}/app/${AppId}/screen/${ScreenId}/automation/${AutomationId}"
+   ]
+  },
+  "table": {
+   "arnFormats": [
+    "arn:${Partition}:honeycode:${Region}:${Account}:table:workbook/${WorkbookId}/table/${TableId}"
+   ]
+  },
+  "workbook": {
+   "arnFormats": [
+    "arn:${Partition}:honeycode:${Region}:${Account}:workbook:workbook/${WorkbookId}"
+   ]
+  }
+ },
+ "service": "honeycode",
+ "serviceName": "Honeycode",
+ "version": "v1.5"
+}

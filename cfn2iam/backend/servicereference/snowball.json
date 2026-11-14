@@ -1,0 +1,170 @@
+{
+ "actions": {
+  "cancelcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelCluster",
+   "resources": []
+  },
+  "canceljob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelJob",
+   "resources": []
+  },
+  "createaddress": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAddress",
+   "resources": []
+  },
+  "createcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCluster",
+   "resources": []
+  },
+  "createjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateJob",
+   "resources": []
+  },
+  "createlongtermpricing": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLongTermPricing",
+   "resources": []
+  },
+  "createreturnshippinglabel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReturnShippingLabel",
+   "resources": []
+  },
+  "describeaddress": {
+   "name": "DescribeAddress",
+   "resources": []
+  },
+  "describeaddresses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeAddresses",
+   "resources": []
+  },
+  "describecluster": {
+   "name": "DescribeCluster",
+   "resources": []
+  },
+  "describejob": {
+   "name": "DescribeJob",
+   "resources": []
+  },
+  "describereturnshippinglabel": {
+   "name": "DescribeReturnShippingLabel",
+   "resources": []
+  },
+  "getjobmanifest": {
+   "name": "GetJobManifest",
+   "resources": []
+  },
+  "getjobunlockcode": {
+   "name": "GetJobUnlockCode",
+   "resources": []
+  },
+  "getsnowballusage": {
+   "name": "GetSnowballUsage",
+   "resources": []
+  },
+  "getsoftwareupdates": {
+   "name": "GetSoftwareUpdates",
+   "resources": []
+  },
+  "listclusterjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClusterJobs",
+   "resources": []
+  },
+  "listclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClusters",
+   "resources": []
+  },
+  "listcompatibleimages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCompatibleImages",
+   "resources": []
+  },
+  "listjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobs",
+   "resources": []
+  },
+  "listlongtermpricing": {
+   "name": "ListLongTermPricing",
+   "resources": []
+  },
+  "listpickuplocations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPickupLocations",
+   "resources": []
+  },
+  "listserviceversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceVersions",
+   "resources": []
+  },
+  "updatecluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCluster",
+   "resources": []
+  },
+  "updatejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateJob",
+   "resources": []
+  },
+  "updatejobshipmentstate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateJobShipmentState",
+   "resources": []
+  },
+  "updatelongtermpricing": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLongTermPricing",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "snowball",
+ "serviceName": "Snowball",
+ "version": "v1.5"
+}

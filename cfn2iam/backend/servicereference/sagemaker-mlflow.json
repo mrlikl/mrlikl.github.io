@@ -1,0 +1,815 @@
+{
+ "actions": {
+  "accessui": {
+   "name": "AccessUI",
+   "resources": []
+  },
+  "createexperiment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExperiment",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "createmodelversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateModelVersion",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "createregisteredmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRegisteredModel",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "createrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRun",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "deleteexperiment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExperiment",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "deleteloggedmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLoggedModel",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "deleteloggedmodeltag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLoggedModelTag",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "deletemodelversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteModelVersion",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "deletemodelversiontag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteModelVersionTag",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "deleteregisteredmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRegisteredModel",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "deleteregisteredmodelalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRegisteredModelAlias",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "deleteregisteredmodeltag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRegisteredModelTag",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "deleterun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRun",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "deletetag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTag",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "deletetraces": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTraces",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "deletetracetag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTraceTag",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "endtrace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EndTrace",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "finalizeloggedmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "FinalizeLoggedModel",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "getdownloaduriformodelversionartifacts": {
+   "name": "GetDownloadURIForModelVersionArtifacts",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "getexperiment": {
+   "name": "GetExperiment",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "getexperimentbyname": {
+   "name": "GetExperimentByName",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "getlatestmodelversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetLatestModelVersions",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "getloggedmodel": {
+   "name": "GetLoggedModel",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "getmetrichistory": {
+   "name": "GetMetricHistory",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "getmodelversion": {
+   "name": "GetModelVersion",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "getmodelversionbyalias": {
+   "name": "GetModelVersionByAlias",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "getregisteredmodel": {
+   "name": "GetRegisteredModel",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "getrun": {
+   "name": "GetRun",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "gettraceinfo": {
+   "name": "GetTraceInfo",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "listartifacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListArtifacts",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "listloggedmodelartifacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLoggedModelArtifacts",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "logbatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LogBatch",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "loginputs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LogInputs",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "logloggedmodelparams": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LogLoggedModelParams",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "logmetric": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LogMetric",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "logmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LogModel",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "logoutputs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LogOutputs",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "logparam": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LogParam",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "renameregisteredmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RenameRegisteredModel",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "restoreexperiment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreExperiment",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "restorerun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreRun",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "searchexperiments": {
+   "name": "SearchExperiments",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "searchloggedmodels": {
+   "name": "SearchLoggedModels",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "searchmodelversions": {
+   "name": "SearchModelVersions",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "searchregisteredmodels": {
+   "name": "SearchRegisteredModels",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "searchruns": {
+   "name": "SearchRuns",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "searchtraces": {
+   "name": "SearchTraces",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "setexperimenttag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetExperimentTag",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "setloggedmodeltags": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetLoggedModelTags",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "setmodelversiontag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetModelVersionTag",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "setregisteredmodelalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetRegisteredModelAlias",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "setregisteredmodeltag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetRegisteredModelTag",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "settag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetTag",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "settracetag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetTraceTag",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "starttrace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTrace",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "transitionmodelversionstage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TransitionModelVersionStage",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "updateexperiment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExperiment",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "updatemodelversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateModelVersion",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "updateregisteredmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRegisteredModel",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  },
+  "updaterun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRun",
+   "resourceConditionKeys": {
+    "mlflow-tracking-server": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "mlflow-tracking-server"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ]
+ },
+ "resources": {
+  "mlflow-tracking-server": {
+   "arnFormats": [
+    "arn:${Partition}:sagemaker:${Region}:${Account}:mlflow-tracking-server/${MlflowTrackingServerName}"
+   ]
+  }
+ },
+ "service": "sagemaker-mlflow",
+ "serviceName": "SageMaker MLflow",
+ "version": "v1.5"
+}

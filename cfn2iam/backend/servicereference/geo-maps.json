@@ -1,0 +1,32 @@
+{
+ "actions": {
+  "getstaticmap": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetStaticMap",
+   "resources": [
+    "provider"
+   ]
+  },
+  "gettile": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetTile",
+   "resources": [
+    "provider"
+   ]
+  }
+ },
+ "resources": {
+  "provider": {
+   "arnFormats": [
+    "arn:${Partition}:geo-maps:${Region}::provider/default"
+   ]
+  }
+ },
+ "service": "geo-maps",
+ "serviceName": "Geo Maps",
+ "version": "v1.5"
+}

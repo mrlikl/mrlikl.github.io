@@ -1,0 +1,45 @@
+{
+ "actions": {
+  "getaccountactivity": {
+   "name": "GetAccountActivity",
+   "resources": []
+  },
+  "getaccountplanstate": {
+   "name": "GetAccountPlanState",
+   "resources": []
+  },
+  "getfreetieralertpreference": {
+   "name": "GetFreeTierAlertPreference",
+   "resources": []
+  },
+  "getfreetierusage": {
+   "name": "GetFreeTierUsage",
+   "resources": []
+  },
+  "listaccountactivities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountActivities",
+   "resources": []
+  },
+  "putfreetieralertpreference": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFreeTierAlertPreference",
+   "resources": []
+  },
+  "upgradeaccountplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpgradeAccountPlan",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "freetier",
+ "serviceName": "Free Tier",
+ "version": "v1.5"
+}

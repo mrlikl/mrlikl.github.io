@@ -1,0 +1,120 @@
+{
+ "actions": {
+  "completesnapshot": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteSnapshot",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "getsnapshotblock": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetSnapshotBlock",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "listchangedblocks": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "ListChangedBlocks",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "listsnapshotblocks": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "ListSnapshotBlocks",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "putsnapshotblock": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutSnapshotBlock",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "startsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "ebs:Description",
+    "ebs:ParentSnapshot",
+    "ebs:VolumeSize"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSnapshot",
+   "resources": [
+    "snapshot"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "ebs:Description": [
+   "String"
+  ],
+  "ebs:ParentSnapshot": [
+   "ARN"
+  ],
+  "ebs:VolumeSize": [
+   "Numeric"
+  ]
+ },
+ "resources": {
+  "snapshot": {
+   "arnFormats": [
+    "arn:${Partition}:ec2:${Region}::snapshot/${SnapshotId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "ebs:Description",
+    "ebs:ParentSnapshot",
+    "ebs:VolumeSize"
+   ]
+  }
+ },
+ "service": "ebs",
+ "serviceName": "Elastic Block Store",
+ "version": "v1.5"
+}

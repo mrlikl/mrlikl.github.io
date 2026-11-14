@@ -1,0 +1,22 @@
+{
+ "actions": {
+  "generatedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateDataSet",
+   "resources": []
+  },
+  "startsupportdataexport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSupportDataExport",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "marketplacecommerceanalytics",
+ "serviceName": "CAS",
+ "version": "v1.5"
+}

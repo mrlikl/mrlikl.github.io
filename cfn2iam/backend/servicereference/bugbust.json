@@ -1,0 +1,209 @@
+{
+ "actions": {
+  "createevent": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEvent",
+   "resources": []
+  },
+  "evaluateprofilinggroups": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EvaluateProfilingGroups",
+   "resources": [
+    "Event"
+   ]
+  },
+  "getevent": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetEvent",
+   "resources": [
+    "Event"
+   ]
+  },
+  "getjoineventstatus": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetJoinEventStatus",
+   "resources": [
+    "Event"
+   ]
+  },
+  "joinevent": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "JoinEvent",
+   "resources": [
+    "Event"
+   ]
+  },
+  "listbugs": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListBugs",
+   "resources": [
+    "Event"
+   ]
+  },
+  "listeventparticipants": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListEventParticipants",
+   "resources": [
+    "Event"
+   ]
+  },
+  "listevents": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEvents",
+   "resources": []
+  },
+  "listeventscores": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListEventScores",
+   "resources": [
+    "Event"
+   ]
+  },
+  "listprofilinggroups": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListProfilingGroups",
+   "resources": [
+    "Event"
+   ]
+  },
+  "listpullrequests": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListPullRequests",
+   "resources": [
+    "Event"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "Event"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Event"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Event"
+   ]
+  },
+  "updateevent": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEvent",
+   "resources": [
+    "Event"
+   ]
+  },
+  "updateworkitem": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkItem",
+   "resources": [
+    "Event"
+   ]
+  },
+  "updateworkitemadmin": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkItemAdmin",
+   "resources": [
+    "Event"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Event": {
+   "arnFormats": [
+    "arn:${Partition}:bugbust:${Region}:${Account}:events/${EventId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "bugbust",
+ "serviceName": "BugBust",
+ "version": "v1.5"
+}

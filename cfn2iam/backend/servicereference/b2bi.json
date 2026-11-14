@@ -1,0 +1,338 @@
+{
+ "actions": {
+  "createcapability": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCapability",
+   "resources": [
+    "transformer"
+   ]
+  },
+  "createpartnership": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePartnership",
+   "resources": [
+    "capability",
+    "profile"
+   ]
+  },
+  "createprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProfile",
+   "resources": []
+  },
+  "createstartermappingtemplate": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateStarterMappingTemplate",
+   "resources": [
+    "transformer"
+   ]
+  },
+  "createtransformer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTransformer",
+   "resources": []
+  },
+  "deletecapability": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCapability",
+   "resources": [
+    "capability"
+   ]
+  },
+  "deletepartnership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePartnership",
+   "resources": [
+    "partnership"
+   ]
+  },
+  "deleteprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "deletetransformer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTransformer",
+   "resources": [
+    "transformer"
+   ]
+  },
+  "generatemapping": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "GenerateMapping",
+   "resources": [
+    "transformer"
+   ]
+  },
+  "getcapability": {
+   "name": "GetCapability",
+   "resources": [
+    "capability"
+   ]
+  },
+  "getpartnership": {
+   "name": "GetPartnership",
+   "resources": [
+    "partnership"
+   ]
+  },
+  "getprofile": {
+   "name": "GetProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "gettransformer": {
+   "name": "GetTransformer",
+   "resources": [
+    "transformer"
+   ]
+  },
+  "gettransformerjob": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetTransformerJob",
+   "resources": [
+    "transformer"
+   ]
+  },
+  "listcapabilities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCapabilities",
+   "resources": []
+  },
+  "listpartnerships": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPartnerships",
+   "resources": []
+  },
+  "listprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfiles",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "capability",
+    "partnership",
+    "profile",
+    "transformer"
+   ]
+  },
+  "listtransformers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTransformers",
+   "resources": []
+  },
+  "starttransformerjob": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartTransformerJob",
+   "resources": [
+    "transformer"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "capability",
+    "partnership",
+    "profile",
+    "transformer"
+   ]
+  },
+  "testconversion": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "TestConversion",
+   "resources": [
+    "transformer"
+   ]
+  },
+  "testmapping": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "TestMapping",
+   "resources": [
+    "transformer"
+   ]
+  },
+  "testparsing": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "TestParsing",
+   "resources": [
+    "transformer"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "capability",
+    "partnership",
+    "profile",
+    "transformer"
+   ]
+  },
+  "updatecapability": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCapability",
+   "resources": [
+    "capability",
+    "transformer"
+   ]
+  },
+  "updatepartnership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePartnership",
+   "resources": [
+    "capability",
+    "partnership"
+   ]
+  },
+  "updateprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "updatetransformer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTransformer",
+   "resources": [
+    "transformer"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "capability": {
+   "arnFormats": [
+    "arn:${Partition}:b2bi:${Region}:${Account}:capability/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "partnership": {
+   "arnFormats": [
+    "arn:${Partition}:b2bi:${Region}:${Account}:partnership/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "profile": {
+   "arnFormats": [
+    "arn:${Partition}:b2bi:${Region}:${Account}:profile/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "transformer": {
+   "arnFormats": [
+    "arn:${Partition}:b2bi:${Region}:${Account}:transformer/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "b2bi",
+ "serviceName": "B2BI",
+ "version": "v1.5"
+}

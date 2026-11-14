@@ -1,0 +1,471 @@
+{
+ "actions": {
+  "acceptdatagrant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptDataGrant",
+   "resources": [
+    "data-grants"
+   ]
+  },
+  "canceljob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelJob",
+   "resources": [
+    "jobs"
+   ]
+  },
+  "createasset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAsset",
+   "resources": [
+    "revisions"
+   ]
+  },
+  "createdatagrant": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataGrant",
+   "resources": [
+    "data-grants"
+   ]
+  },
+  "createdataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataSet",
+   "resources": [
+    "data-sets"
+   ]
+  },
+  "createeventaction": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEventAction",
+   "resources": [
+    "event-actions"
+   ]
+  },
+  "createjob": {
+   "conditionKeys": [
+    "dataexchange:JobType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateJob",
+   "resources": [
+    "jobs"
+   ]
+  },
+  "createrevision": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRevision",
+   "resources": [
+    "data-sets"
+   ]
+  },
+  "deleteasset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAsset",
+   "resources": [
+    "assets"
+   ]
+  },
+  "deletedatagrant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataGrant",
+   "resources": [
+    "data-grants"
+   ]
+  },
+  "deletedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataSet",
+   "resources": [
+    "data-sets",
+    "entitled-data-sets"
+   ]
+  },
+  "deleteeventaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventAction",
+   "resources": [
+    "event-actions"
+   ]
+  },
+  "deleterevision": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRevision",
+   "resources": [
+    "revisions"
+   ]
+  },
+  "getasset": {
+   "name": "GetAsset",
+   "resources": [
+    "assets",
+    "entitled-assets"
+   ]
+  },
+  "getdatagrant": {
+   "name": "GetDataGrant",
+   "resources": [
+    "data-grants"
+   ]
+  },
+  "getdataset": {
+   "name": "GetDataSet",
+   "resources": [
+    "data-sets",
+    "entitled-data-sets"
+   ]
+  },
+  "geteventaction": {
+   "name": "GetEventAction",
+   "resources": [
+    "event-actions"
+   ]
+  },
+  "getjob": {
+   "name": "GetJob",
+   "resources": [
+    "jobs"
+   ]
+  },
+  "getreceiveddatagrant": {
+   "name": "GetReceivedDataGrant",
+   "resources": [
+    "data-grants"
+   ]
+  },
+  "getrevision": {
+   "name": "GetRevision",
+   "resources": [
+    "entitled-revisions",
+    "revisions"
+   ]
+  },
+  "listdatagrants": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataGrants",
+   "resources": []
+  },
+  "listdatasetrevisions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSetRevisions",
+   "resources": [
+    "data-sets",
+    "entitled-data-sets"
+   ]
+  },
+  "listdatasets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSets",
+   "resources": []
+  },
+  "listeventactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEventActions",
+   "resources": []
+  },
+  "listjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobs",
+   "resources": []
+  },
+  "listreceiveddatagrants": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReceivedDataGrants",
+   "resources": []
+  },
+  "listrevisionassets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRevisionAssets",
+   "resources": [
+    "entitled-revisions",
+    "revisions"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "assets",
+    "data-grants",
+    "data-sets",
+    "event-actions",
+    "revisions"
+   ]
+  },
+  "publishdataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PublishDataSet",
+   "resources": [
+    "data-sets"
+   ]
+  },
+  "publishtodatagrant": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PublishToDataGrant",
+   "resources": [
+    "data-sets"
+   ]
+  },
+  "revokerevision": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeRevision",
+   "resources": [
+    "revisions"
+   ]
+  },
+  "sendapiasset": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendApiAsset",
+   "resources": [
+    "assets",
+    "entitled-assets"
+   ]
+  },
+  "senddatasetnotification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendDataSetNotification",
+   "resources": [
+    "data-sets"
+   ]
+  },
+  "startjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartJob",
+   "resources": [
+    "jobs"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "assets",
+    "data-grants",
+    "data-sets",
+    "event-actions",
+    "revisions"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "assets",
+    "data-grants",
+    "data-sets",
+    "event-actions",
+    "revisions"
+   ]
+  },
+  "updateasset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAsset",
+   "resources": [
+    "assets"
+   ]
+  },
+  "updatedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataSet",
+   "resources": [
+    "data-sets"
+   ]
+  },
+  "updateeventaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEventAction",
+   "resources": [
+    "event-actions"
+   ]
+  },
+  "updaterevision": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRevision",
+   "resources": [
+    "revisions"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "dataexchange:JobType": [
+   "String"
+  ]
+ },
+ "resources": {
+  "assets": {
+   "arnFormats": [
+    "arn:${Partition}:dataexchange:${Region}:${Account}:data-sets/${DataSetId}/revisions/${RevisionId}/assets/${AssetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "data-grants": {
+   "arnFormats": [
+    "arn:${Partition}:dataexchange:${Region}:${Account}:data-grants/${DataGrantId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "data-sets": {
+   "arnFormats": [
+    "arn:${Partition}:dataexchange:${Region}:${Account}:data-sets/${DataSetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "entitled-assets": {
+   "arnFormats": [
+    "arn:${Partition}:dataexchange:${Region}::data-sets/${DataSetId}/revisions/${RevisionId}/assets/${AssetId}"
+   ]
+  },
+  "entitled-data-sets": {
+   "arnFormats": [
+    "arn:${Partition}:dataexchange:${Region}::data-sets/${DataSetId}"
+   ]
+  },
+  "entitled-revisions": {
+   "arnFormats": [
+    "arn:${Partition}:dataexchange:${Region}::data-sets/${DataSetId}/revisions/${RevisionId}"
+   ]
+  },
+  "event-actions": {
+   "arnFormats": [
+    "arn:${Partition}:dataexchange:${Region}:${Account}:event-actions/${EventActionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "jobs": {
+   "arnFormats": [
+    "arn:${Partition}:dataexchange:${Region}:${Account}:jobs/${JobId}"
+   ],
+   "conditionKeys": [
+    "dataexchange:JobType"
+   ]
+  },
+  "revisions": {
+   "arnFormats": [
+    "arn:${Partition}:dataexchange:${Region}:${Account}:data-sets/${DataSetId}/revisions/${RevisionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "dataexchange",
+ "serviceName": "Data Exchange",
+ "version": "v1.5"
+}

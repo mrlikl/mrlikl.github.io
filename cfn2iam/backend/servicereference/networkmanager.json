@@ -1,0 +1,1076 @@
+{
+ "actions": {
+  "acceptattachment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptAttachment",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "associateconnectpeer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateConnectPeer",
+   "resources": [
+    "device",
+    "global-network"
+   ]
+  },
+  "associatecustomergateway": {
+   "conditionKeys": [
+    "networkmanager:cgwArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateCustomerGateway",
+   "resources": [
+    "device",
+    "global-network",
+    "link"
+   ]
+  },
+  "associatelink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateLink",
+   "resources": [
+    "device",
+    "global-network",
+    "link"
+   ]
+  },
+  "associatetransitgatewayconnectpeer": {
+   "conditionKeys": [
+    "networkmanager:tgwConnectPeerArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateTransitGatewayConnectPeer",
+   "resources": [
+    "device",
+    "global-network",
+    "link"
+   ]
+  },
+  "createconnectattachment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnectAttachment",
+   "resources": [
+    "attachment",
+    "core-network"
+   ]
+  },
+  "createconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnection",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "createconnectpeer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnectPeer",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "createcorenetwork": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCoreNetwork",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "createcorenetworkprefixlistassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCoreNetworkPrefixListAssociation",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "createdevice": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDevice",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "createdirectconnectgatewayattachment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "networkmanager:directConnectGatewayArn",
+    "networkmanager:edgeLocations"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDirectConnectGatewayAttachment",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "createglobalnetwork": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGlobalNetwork",
+   "resources": []
+  },
+  "createlink": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLink",
+   "resources": [
+    "global-network",
+    "site"
+   ]
+  },
+  "createsite": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSite",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "createsitetositevpnattachment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "networkmanager:vpnConnectionArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSiteToSiteVpnAttachment",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "createtransitgatewaypeering": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "networkmanager:tgwArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTransitGatewayPeering",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "createtransitgatewayroutetableattachment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "networkmanager:tgwRtbArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTransitGatewayRouteTableAttachment",
+   "resources": [
+    "peering"
+   ]
+  },
+  "createvpcattachment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "networkmanager:subnetArns",
+    "networkmanager:vpcArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVpcAttachment",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "deleteattachment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAttachment",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "deleteconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnection",
+   "resources": [
+    "connection",
+    "global-network"
+   ]
+  },
+  "deleteconnectpeer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnectPeer",
+   "resources": [
+    "connect-peer"
+   ]
+  },
+  "deletecorenetwork": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCoreNetwork",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "deletecorenetworkpolicyversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCoreNetworkPolicyVersion",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "deletecorenetworkprefixlistassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCoreNetworkPrefixListAssociation",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "deletedevice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDevice",
+   "resources": [
+    "device",
+    "global-network"
+   ]
+  },
+  "deleteglobalnetwork": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGlobalNetwork",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "deletelink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLink",
+   "resources": [
+    "global-network",
+    "link"
+   ]
+  },
+  "deletepeering": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePeering",
+   "resources": [
+    "peering"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "deletesite": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSite",
+   "resources": [
+    "global-network",
+    "site"
+   ]
+  },
+  "deregistertransitgateway": {
+   "conditionKeys": [
+    "networkmanager:tgwArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterTransitGateway",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "describeglobalnetworks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeGlobalNetworks",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "disassociateconnectpeer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateConnectPeer",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "disassociatecustomergateway": {
+   "conditionKeys": [
+    "networkmanager:cgwArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateCustomerGateway",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "disassociatelink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateLink",
+   "resources": [
+    "device",
+    "global-network",
+    "link"
+   ]
+  },
+  "disassociatetransitgatewayconnectpeer": {
+   "conditionKeys": [
+    "networkmanager:tgwConnectPeerArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateTransitGatewayConnectPeer",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "executecorenetworkchangeset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExecuteCoreNetworkChangeSet",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "getconnectattachment": {
+   "name": "GetConnectAttachment",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "getconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetConnections",
+   "resources": [
+    "connection",
+    "global-network"
+   ]
+  },
+  "getconnectpeer": {
+   "name": "GetConnectPeer",
+   "resources": [
+    "connect-peer"
+   ]
+  },
+  "getconnectpeerassociations": {
+   "name": "GetConnectPeerAssociations",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "getcorenetwork": {
+   "name": "GetCoreNetwork",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "getcorenetworkchangeevents": {
+   "name": "GetCoreNetworkChangeEvents",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "getcorenetworkchangeset": {
+   "name": "GetCoreNetworkChangeSet",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "getcorenetworkpolicy": {
+   "name": "GetCoreNetworkPolicy",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "getcustomergatewayassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetCustomerGatewayAssociations",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "getdevices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetDevices",
+   "resources": [
+    "device",
+    "global-network"
+   ]
+  },
+  "getdirectconnectgatewayattachment": {
+   "name": "GetDirectConnectGatewayAttachment",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "getlinkassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetLinkAssociations",
+   "resources": [
+    "device",
+    "global-network",
+    "link"
+   ]
+  },
+  "getlinks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetLinks",
+   "resources": [
+    "global-network",
+    "link"
+   ]
+  },
+  "getnetworkresourcecounts": {
+   "name": "GetNetworkResourceCounts",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "getnetworkresourcerelationships": {
+   "name": "GetNetworkResourceRelationships",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "getnetworkresources": {
+   "name": "GetNetworkResources",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "getnetworkroutes": {
+   "name": "GetNetworkRoutes",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "getnetworktelemetry": {
+   "name": "GetNetworkTelemetry",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "getrouteanalysis": {
+   "name": "GetRouteAnalysis",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "getsites": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetSites",
+   "resources": [
+    "global-network",
+    "site"
+   ]
+  },
+  "getsitetositevpnattachment": {
+   "name": "GetSiteToSiteVpnAttachment",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "gettransitgatewayconnectpeerassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetTransitGatewayConnectPeerAssociations",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "gettransitgatewaypeering": {
+   "name": "GetTransitGatewayPeering",
+   "resources": [
+    "peering"
+   ]
+  },
+  "gettransitgatewayregistrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetTransitGatewayRegistrations",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "gettransitgatewayroutetableattachment": {
+   "name": "GetTransitGatewayRouteTableAttachment",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "getvpcattachment": {
+   "name": "GetVpcAttachment",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "listattachmentnatconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAttachmentNatConfigurations",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "listattachmentroutingpolicyassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAttachmentRoutingPolicyAssociations",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "listattachments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAttachments",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "listconnectpeers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectPeers",
+   "resources": [
+    "connect-peer"
+   ]
+  },
+  "listcorenetworkpolicyversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCoreNetworkPolicyVersions",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "listcorenetworkprefixlistassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCoreNetworkPrefixListAssociations",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "listcorenetworkroutinginformation": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCoreNetworkRoutingInformation",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "listcorenetworks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCoreNetworks",
+   "resources": []
+  },
+  "listorganizationserviceaccessstatus": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrganizationServiceAccessStatus",
+   "resources": []
+  },
+  "listpeerings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPeerings",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "attachment",
+    "connect-peer",
+    "connection",
+    "core-network",
+    "device",
+    "global-network",
+    "link",
+    "peering",
+    "site"
+   ]
+  },
+  "putattachmentroutingpolicylabel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAttachmentRoutingPolicyLabel",
+   "resources": [
+    "attachment",
+    "core-network"
+   ]
+  },
+  "putcorenetworkpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutCoreNetworkPolicy",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "registertransitgateway": {
+   "conditionKeys": [
+    "networkmanager:tgwArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterTransitGateway",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "rejectattachment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectAttachment",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "removeattachmentroutingpolicylabel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveAttachmentRoutingPolicyLabel",
+   "resources": [
+    "attachment",
+    "core-network"
+   ]
+  },
+  "restorecorenetworkpolicyversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreCoreNetworkPolicyVersion",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "startorganizationserviceaccessupdate": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "StartOrganizationServiceAccessUpdate",
+   "resources": []
+  },
+  "startrouteanalysis": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRouteAnalysis",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "attachment",
+    "connect-peer",
+    "connection",
+    "core-network",
+    "device",
+    "global-network",
+    "link",
+    "peering",
+    "site"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "attachment",
+    "connect-peer",
+    "connection",
+    "core-network",
+    "device",
+    "global-network",
+    "link",
+    "peering",
+    "site"
+   ]
+  },
+  "updateattachmentnatconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAttachmentNatConfiguration",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "updateconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnection",
+   "resources": [
+    "connection",
+    "global-network"
+   ]
+  },
+  "updatecorenetwork": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCoreNetwork",
+   "resources": [
+    "core-network"
+   ]
+  },
+  "updatedevice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDevice",
+   "resources": [
+    "device",
+    "global-network"
+   ]
+  },
+  "updatedirectconnectgatewayattachment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "networkmanager:edgeLocations"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDirectConnectGatewayAttachment",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "updateglobalnetwork": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGlobalNetwork",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "updatelink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLink",
+   "resources": [
+    "global-network",
+    "link"
+   ]
+  },
+  "updatenetworkresourcemetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNetworkResourceMetadata",
+   "resources": [
+    "global-network"
+   ]
+  },
+  "updatesite": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSite",
+   "resources": [
+    "global-network",
+    "site"
+   ]
+  },
+  "updatevpcattachment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "networkmanager:subnetArns"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVpcAttachment",
+   "resources": [
+    "attachment"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "networkmanager:cgwArn": [
+   "ARN"
+  ],
+  "networkmanager:directConnectGatewayArn": [
+   "ARN"
+  ],
+  "networkmanager:edgeLocations": [
+   "ArrayOfString"
+  ],
+  "networkmanager:subnetArns": [
+   "ArrayOfARN"
+  ],
+  "networkmanager:tgwArn": [
+   "ARN"
+  ],
+  "networkmanager:tgwConnectPeerArn": [
+   "ARN"
+  ],
+  "networkmanager:tgwRtbArn": [
+   "ARN"
+  ],
+  "networkmanager:vpcArn": [
+   "ARN"
+  ],
+  "networkmanager:vpnConnectionArn": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "attachment": {
+   "arnFormats": [
+    "arn:${Partition}:networkmanager::${Account}:attachment/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "connect-peer": {
+   "arnFormats": [
+    "arn:${Partition}:networkmanager::${Account}:connect-peer/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "connection": {
+   "arnFormats": [
+    "arn:${Partition}:networkmanager::${Account}:connection/${GlobalNetworkId}/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "core-network": {
+   "arnFormats": [
+    "arn:${Partition}:networkmanager::${Account}:core-network/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "device": {
+   "arnFormats": [
+    "arn:${Partition}:networkmanager::${Account}:device/${GlobalNetworkId}/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "global-network": {
+   "arnFormats": [
+    "arn:${Partition}:networkmanager::${Account}:global-network/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "link": {
+   "arnFormats": [
+    "arn:${Partition}:networkmanager::${Account}:link/${GlobalNetworkId}/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "peering": {
+   "arnFormats": [
+    "arn:${Partition}:networkmanager::${Account}:peering/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "site": {
+   "arnFormats": [
+    "arn:${Partition}:networkmanager::${Account}:site/${GlobalNetworkId}/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "networkmanager",
+ "serviceName": "Network Manager",
+ "version": "v1.5"
+}

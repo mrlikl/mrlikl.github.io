@@ -1,0 +1,741 @@
+{
+ "actions": {
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "createconfigurationprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConfigurationProfile",
+   "resources": [
+    "application"
+   ]
+  },
+  "createdeploymentstrategy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeploymentStrategy",
+   "resources": []
+  },
+  "createenvironment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironment",
+   "resources": [
+    "application"
+   ]
+  },
+  "createexperimentdefinition": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExperimentDefinition",
+   "resources": [
+    "application"
+   ]
+  },
+  "createextension": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExtension",
+   "resources": []
+  },
+  "createextensionassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExtensionAssociation",
+   "resources": []
+  },
+  "createhostedconfigurationversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHostedConfigurationVersion",
+   "resources": [
+    "application",
+    "configurationprofile"
+   ]
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteconfigurationprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfigurationProfile",
+   "resources": [
+    "application",
+    "configurationprofile"
+   ]
+  },
+  "deletedeploymentstrategy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDeploymentStrategy",
+   "resources": [
+    "deploymentstrategy"
+   ]
+  },
+  "deleteenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironment",
+   "resources": [
+    "application",
+    "environment"
+   ]
+  },
+  "deleteexperimentdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExperimentDefinition",
+   "resources": [
+    "application",
+    "experimentdefinition"
+   ]
+  },
+  "deleteextension": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExtension",
+   "resources": [
+    "extension"
+   ]
+  },
+  "deleteextensionassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExtensionAssociation",
+   "resources": [
+    "extensionassociation"
+   ]
+  },
+  "deletehostedconfigurationversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteHostedConfigurationVersion",
+   "resources": [
+    "application",
+    "configurationprofile",
+    "hostedconfigurationversion"
+   ]
+  },
+  "getaccountsettings": {
+   "name": "GetAccountSettings",
+   "resources": []
+  },
+  "getapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "getconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetConfiguration",
+   "resources": [
+    "application",
+    "configurationprofile",
+    "environment"
+   ]
+  },
+  "getconfigurationprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetConfigurationProfile",
+   "resources": [
+    "application",
+    "configurationprofile"
+   ]
+  },
+  "getdeployment": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetDeployment",
+   "resources": [
+    "application",
+    "deployment",
+    "environment"
+   ]
+  },
+  "getdeploymentstrategy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetDeploymentStrategy",
+   "resources": [
+    "deploymentstrategy"
+   ]
+  },
+  "getenvironment": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetEnvironment",
+   "resources": [
+    "application",
+    "environment"
+   ]
+  },
+  "getexperimentdefinition": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetExperimentDefinition",
+   "resources": [
+    "application",
+    "experimentdefinition"
+   ]
+  },
+  "getexperimentrun": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetExperimentRun",
+   "resources": [
+    "application",
+    "experimentdefinition",
+    "experimentrun"
+   ]
+  },
+  "getextension": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetExtension",
+   "resources": [
+    "extension"
+   ]
+  },
+  "getextensionassociation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetExtensionAssociation",
+   "resources": [
+    "extensionassociation"
+   ]
+  },
+  "gethostedconfigurationversion": {
+   "name": "GetHostedConfigurationVersion",
+   "resources": [
+    "application",
+    "configurationprofile",
+    "hostedconfigurationversion"
+   ]
+  },
+  "getlatestconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetLatestConfiguration",
+   "resources": [
+    "configuration"
+   ]
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listconfigurationprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigurationProfiles",
+   "resources": [
+    "application"
+   ]
+  },
+  "listdeployments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeployments",
+   "resources": [
+    "application",
+    "environment"
+   ]
+  },
+  "listdeploymentstrategies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeploymentStrategies",
+   "resources": []
+  },
+  "listenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironments",
+   "resources": [
+    "application"
+   ]
+  },
+  "listexperimentdefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExperimentDefinitions",
+   "resources": []
+  },
+  "listexperimentrunevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExperimentRunEvents",
+   "resources": [
+    "application",
+    "experimentdefinition",
+    "experimentrun"
+   ]
+  },
+  "listexperimentruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExperimentRuns",
+   "resources": [
+    "application",
+    "experimentdefinition"
+   ]
+  },
+  "listextensionassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExtensionAssociations",
+   "resources": []
+  },
+  "listextensions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExtensions",
+   "resources": []
+  },
+  "listhostedconfigurationversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHostedConfigurationVersions",
+   "resources": [
+    "application",
+    "configurationprofile"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "application",
+    "configurationprofile",
+    "deployment",
+    "deploymentstrategy",
+    "environment",
+    "experimentdefinition",
+    "experimentrun",
+    "extension",
+    "extensionassociation"
+   ]
+  },
+  "startconfigurationsession": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartConfigurationSession",
+   "resources": [
+    "configuration"
+   ]
+  },
+  "startdeployment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDeployment",
+   "resources": [
+    "application",
+    "configurationprofile",
+    "deploymentstrategy",
+    "environment"
+   ]
+  },
+  "startexperimentrun": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartExperimentRun",
+   "resources": [
+    "application",
+    "experimentdefinition"
+   ]
+  },
+  "stopdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopDeployment",
+   "resources": [
+    "application",
+    "deployment",
+    "environment"
+   ]
+  },
+  "stopexperimentrun": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopExperimentRun",
+   "resources": [
+    "application",
+    "experimentdefinition",
+    "experimentrun"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "application",
+    "configuration",
+    "configurationprofile",
+    "deployment",
+    "deploymentstrategy",
+    "environment",
+    "experimentdefinition",
+    "experimentrun",
+    "extension",
+    "extensionassociation"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "application",
+    "configuration",
+    "configurationprofile",
+    "deployment",
+    "deploymentstrategy",
+    "environment",
+    "experimentdefinition",
+    "experimentrun",
+    "extension",
+    "extensionassociation"
+   ]
+  },
+  "updateaccountsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountSettings",
+   "resources": []
+  },
+  "updateapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "updateconfigurationprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConfigurationProfile",
+   "resources": [
+    "application",
+    "configurationprofile"
+   ]
+  },
+  "updatedeploymentstrategy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDeploymentStrategy",
+   "resources": [
+    "deploymentstrategy"
+   ]
+  },
+  "updateenvironment": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironment",
+   "resources": [
+    "application",
+    "environment"
+   ]
+  },
+  "updateexperimentdefinition": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExperimentDefinition",
+   "resources": [
+    "application",
+    "experimentdefinition"
+   ]
+  },
+  "updateexperimentrun": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExperimentRun",
+   "resources": [
+    "application",
+    "experimentdefinition",
+    "experimentrun"
+   ]
+  },
+  "updateextension": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExtension",
+   "resources": [
+    "extension"
+   ]
+  },
+  "updateextensionassociation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExtensionAssociation",
+   "resources": [
+    "extensionassociation"
+   ]
+  },
+  "validateconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ValidateConfiguration",
+   "resources": [
+    "application",
+    "configurationprofile"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:appconfig:${Region}:${Account}:application/${ApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "configuration": {
+   "arnFormats": [
+    "arn:${Partition}:appconfig:${Region}:${Account}:application/${ApplicationId}/environment/${EnvironmentId}/configuration/${ConfigurationProfileId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "configurationprofile": {
+   "arnFormats": [
+    "arn:${Partition}:appconfig:${Region}:${Account}:application/${ApplicationId}/configurationprofile/${ConfigurationProfileId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "deployment": {
+   "arnFormats": [
+    "arn:${Partition}:appconfig:${Region}:${Account}:application/${ApplicationId}/environment/${EnvironmentId}/deployment/${DeploymentNumber}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "deploymentstrategy": {
+   "arnFormats": [
+    "arn:${Partition}:appconfig:${Region}:${Account}:deploymentstrategy/${DeploymentStrategyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "environment": {
+   "arnFormats": [
+    "arn:${Partition}:appconfig:${Region}:${Account}:application/${ApplicationId}/environment/${EnvironmentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "experimentdefinition": {
+   "arnFormats": [
+    "arn:${Partition}:appconfig:${Region}:${Account}:application/${ApplicationId}/experimentdefinition/${ExperimentDefinitionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "experimentrun": {
+   "arnFormats": [
+    "arn:${Partition}:appconfig:${Region}:${Account}:application/${ApplicationId}/experimentdefinition/${ExperimentDefinitionId}/experimentrun/${ExperimentRunNumber}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "extension": {
+   "arnFormats": [
+    "arn:${Partition}:appconfig:${Region}:${Account}:extension/${ExtensionId}/${ExtensionVersionNumber}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "extensionassociation": {
+   "arnFormats": [
+    "arn:${Partition}:appconfig:${Region}:${Account}:extensionassociation/${ExtensionAssociationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "hostedconfigurationversion": {
+   "arnFormats": [
+    "arn:${Partition}:appconfig:${Region}:${Account}:application/${ApplicationId}/configurationprofile/${ConfigurationProfileId}"
+   ]
+  }
+ },
+ "service": "appconfig",
+ "serviceName": "AppConfig",
+ "version": "v1.5"
+}

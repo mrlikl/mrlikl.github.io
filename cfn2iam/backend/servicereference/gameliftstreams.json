@@ -1,0 +1,325 @@
+{
+ "actions": {
+  "addstreamgrouplocations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddStreamGroupLocations",
+   "resources": [
+    "stream group"
+   ]
+  },
+  "associateapplications": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateApplications",
+   "resources": [
+    "application",
+    "stream group"
+   ]
+  },
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "createstreamgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStreamGroup",
+   "resources": []
+  },
+  "createstreamsessionadminshell": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateStreamSessionAdminShell",
+   "resources": [
+    "stream group"
+   ]
+  },
+  "createstreamsessionconnection": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateStreamSessionConnection",
+   "resources": [
+    "stream group"
+   ]
+  },
+  "createstreamurl": {
+   "conditionKeys": [
+    "gameliftstreams:RoleArn"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateStreamUrl",
+   "resources": [
+    "application",
+    "stream group"
+   ]
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "deletestreamgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStreamGroup",
+   "resources": [
+    "stream group"
+   ]
+  },
+  "disassociateapplications": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateApplications",
+   "resources": [
+    "application",
+    "stream group"
+   ]
+  },
+  "exportstreamsessionfiles": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "ExportStreamSessionFiles",
+   "resources": [
+    "stream group"
+   ]
+  },
+  "getapplication": {
+   "name": "GetApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "getstreamgroup": {
+   "name": "GetStreamGroup",
+   "resources": [
+    "stream group"
+   ]
+  },
+  "getstreamsession": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetStreamSession",
+   "resources": [
+    "stream group"
+   ]
+  },
+  "getstreamurl": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetStreamUrl",
+   "resources": [
+    "stream group"
+   ]
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listapplicationshadercaches": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationShaderCaches",
+   "resources": [
+    "application"
+   ]
+  },
+  "liststreamgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStreamGroups",
+   "resources": []
+  },
+  "liststreamsessions": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "ListStreamSessions",
+   "resources": [
+    "stream group"
+   ]
+  },
+  "liststreamsessionsbyaccount": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "ListStreamSessionsByAccount",
+   "resources": []
+  },
+  "liststreamurls": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListStreamUrls",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "application",
+    "stream group"
+   ]
+  },
+  "removestreamgrouplocations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveStreamGroupLocations",
+   "resources": [
+    "stream group"
+   ]
+  },
+  "revokestreamurl": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "RevokeStreamUrl",
+   "resources": [
+    "stream group"
+   ]
+  },
+  "startstreamsession": {
+   "conditionKeys": [
+    "gameliftstreams:RoleArn"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartStreamSession",
+   "resources": [
+    "stream group"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "application",
+    "stream group"
+   ]
+  },
+  "terminatestreamsession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "TerminateStreamSession",
+   "resources": [
+    "stream group"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "application",
+    "stream group"
+   ]
+  },
+  "updateapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "updatestreamgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStreamGroup",
+   "resources": [
+    "stream group"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "gameliftstreams:RoleArn": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:gameliftstreams:${Region}:${Account}:application/${ApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "stream group": {
+   "arnFormats": [
+    "arn:${Partition}:gameliftstreams:${Region}:${Account}:streamgroup/${StreamGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "gameliftstreams",
+ "serviceName": "GameLift Streams",
+ "version": "v1.5"
+}

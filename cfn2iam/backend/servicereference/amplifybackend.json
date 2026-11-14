@@ -1,0 +1,350 @@
+{
+ "actions": {
+  "clonebackend": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CloneBackend",
+   "resources": [
+    "backend"
+   ]
+  },
+  "createbackend": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBackend",
+   "resources": [
+    "created-backend"
+   ]
+  },
+  "createbackendapi": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBackendAPI",
+   "resources": [
+    "api",
+    "backend",
+    "environment"
+   ]
+  },
+  "createbackendauth": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBackendAuth",
+   "resources": [
+    "auth",
+    "backend",
+    "environment"
+   ]
+  },
+  "createbackendconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBackendConfig",
+   "resources": [
+    "config"
+   ]
+  },
+  "createbackendstorage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBackendStorage",
+   "resources": [
+    "backend",
+    "environment",
+    "storage"
+   ]
+  },
+  "createtoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateToken",
+   "resources": [
+    "backend",
+    "token"
+   ]
+  },
+  "deletebackend": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBackend",
+   "resources": [
+    "backend",
+    "environment"
+   ]
+  },
+  "deletebackendapi": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBackendAPI",
+   "resources": [
+    "api",
+    "backend",
+    "environment"
+   ]
+  },
+  "deletebackendauth": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBackendAuth",
+   "resources": [
+    "auth",
+    "backend",
+    "environment"
+   ]
+  },
+  "deletebackendstorage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBackendStorage",
+   "resources": [
+    "backend",
+    "environment",
+    "storage"
+   ]
+  },
+  "deletetoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteToken",
+   "resources": [
+    "backend",
+    "token"
+   ]
+  },
+  "generatebackendapimodels": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateBackendAPIModels",
+   "resources": [
+    "api",
+    "backend",
+    "environment"
+   ]
+  },
+  "getbackend": {
+   "name": "GetBackend",
+   "resources": [
+    "backend",
+    "environment"
+   ]
+  },
+  "getbackendapi": {
+   "name": "GetBackendAPI",
+   "resources": [
+    "api",
+    "backend",
+    "environment"
+   ]
+  },
+  "getbackendapimodels": {
+   "name": "GetBackendAPIModels",
+   "resources": [
+    "api",
+    "backend",
+    "environment"
+   ]
+  },
+  "getbackendauth": {
+   "name": "GetBackendAuth",
+   "resources": [
+    "auth",
+    "backend",
+    "environment"
+   ]
+  },
+  "getbackendjob": {
+   "name": "GetBackendJob",
+   "resources": [
+    "backend",
+    "job"
+   ]
+  },
+  "getbackendstorage": {
+   "name": "GetBackendStorage",
+   "resources": [
+    "backend",
+    "environment"
+   ]
+  },
+  "gettoken": {
+   "name": "GetToken",
+   "resources": [
+    "backend",
+    "token"
+   ]
+  },
+  "importbackendauth": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportBackendAuth",
+   "resources": [
+    "auth",
+    "backend",
+    "environment"
+   ]
+  },
+  "importbackendstorage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportBackendStorage",
+   "resources": [
+    "backend",
+    "environment",
+    "storage"
+   ]
+  },
+  "listbackendjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBackendJobs",
+   "resources": [
+    "backend",
+    "job"
+   ]
+  },
+  "lists3buckets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListS3Buckets",
+   "resources": []
+  },
+  "removeallbackends": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveAllBackends",
+   "resources": [
+    "backend",
+    "environment"
+   ]
+  },
+  "removebackendconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveBackendConfig",
+   "resources": [
+    "config"
+   ]
+  },
+  "updatebackendapi": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBackendAPI",
+   "resources": [
+    "api",
+    "backend",
+    "environment"
+   ]
+  },
+  "updatebackendauth": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBackendAuth",
+   "resources": [
+    "auth",
+    "backend",
+    "environment"
+   ]
+  },
+  "updatebackendconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBackendConfig",
+   "resources": [
+    "config"
+   ]
+  },
+  "updatebackendjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBackendJob",
+   "resources": [
+    "backend",
+    "job"
+   ]
+  },
+  "updatebackendstorage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBackendStorage",
+   "resources": [
+    "backend",
+    "environment",
+    "storage"
+   ]
+  }
+ },
+ "resources": {
+  "api": {
+   "arnFormats": [
+    "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/api/*"
+   ]
+  },
+  "auth": {
+   "arnFormats": [
+    "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/auth/*"
+   ]
+  },
+  "backend": {
+   "arnFormats": [
+    "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/*"
+   ]
+  },
+  "config": {
+   "arnFormats": [
+    "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/config/*"
+   ]
+  },
+  "created-backend": {
+   "arnFormats": [
+    "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/*"
+   ]
+  },
+  "environment": {
+   "arnFormats": [
+    "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/environments/*"
+   ]
+  },
+  "job": {
+   "arnFormats": [
+    "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/job/*"
+   ]
+  },
+  "storage": {
+   "arnFormats": [
+    "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/storage/*"
+   ]
+  },
+  "token": {
+   "arnFormats": [
+    "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/challenge/*"
+   ]
+  }
+ },
+ "service": "amplifybackend",
+ "serviceName": "Amplify Admin",
+ "version": "v1.5"
+}

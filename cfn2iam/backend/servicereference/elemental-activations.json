@@ -1,0 +1,78 @@
+{
+ "actions": {
+  "completeaccountregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteAccountRegistration",
+   "resources": []
+  },
+  "completefileupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteFileUpload",
+   "resources": []
+  },
+  "confirmaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfirmAccount",
+   "resources": []
+  },
+  "downloadkickstart": {
+   "name": "DownloadKickstart",
+   "resources": []
+  },
+  "downloadsoftware": {
+   "name": "DownloadSoftware",
+   "resources": []
+  },
+  "generatelicense": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateLicense",
+   "resources": []
+  },
+  "generatelicenses": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateLicenses",
+   "resources": []
+  },
+  "getartifactgroupsoftwareversions": {
+   "name": "GetArtifactGroupSoftwareVersions",
+   "resources": []
+  },
+  "getasset": {
+   "name": "GetAsset",
+   "resources": []
+  },
+  "getassets": {
+   "name": "GetAssets",
+   "resources": []
+  },
+  "getproductadvisories": {
+   "name": "GetProductAdvisories",
+   "resources": []
+  },
+  "getsoftwareversions": {
+   "name": "GetSoftwareVersions",
+   "resources": []
+  },
+  "startfileupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFileUpload",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "elemental-activations",
+ "serviceName": "Elemental Activations",
+ "version": "v1.5"
+}

@@ -1,0 +1,1365 @@
+{
+ "actions": {
+  "allocatestaticip": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AllocateStaticIp",
+   "resources": []
+  },
+  "attachcertificatetodistribution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AttachCertificateToDistribution",
+   "resources": [
+    "Certificate",
+    "Distribution"
+   ]
+  },
+  "attachdisk": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AttachDisk",
+   "resources": [
+    "Disk"
+   ]
+  },
+  "attachinstancestoloadbalancer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AttachInstancesToLoadBalancer",
+   "resources": [
+    "LoadBalancer"
+   ]
+  },
+  "attachloadbalancertlscertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AttachLoadBalancerTlsCertificate",
+   "resources": [
+    "LoadBalancer"
+   ]
+  },
+  "attachstaticip": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AttachStaticIp",
+   "resources": [
+    "Instance",
+    "StaticIp"
+   ]
+  },
+  "closeinstancepublicports": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CloseInstancePublicPorts",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "copysnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopySnapshot",
+   "resources": []
+  },
+  "createbucket": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBucket",
+   "resources": []
+  },
+  "createbucketaccesskey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBucketAccessKey",
+   "resources": [
+    "Bucket"
+   ]
+  },
+  "createcertificate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCertificate",
+   "resources": []
+  },
+  "createcloudformationstack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCloudFormationStack",
+   "resources": []
+  },
+  "createcontactmethod": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContactMethod",
+   "resources": []
+  },
+  "createcontainerservice": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContainerService",
+   "resources": []
+  },
+  "createcontainerservicedeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContainerServiceDeployment",
+   "resources": [
+    "ContainerService"
+   ]
+  },
+  "createcontainerserviceregistrylogin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContainerServiceRegistryLogin",
+   "resources": []
+  },
+  "createdisk": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDisk",
+   "resources": []
+  },
+  "creatediskfromsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDiskFromSnapshot",
+   "resources": [
+    "DiskSnapshot"
+   ]
+  },
+  "createdisksnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDiskSnapshot",
+   "resources": [
+    "Disk",
+    "Instance"
+   ]
+  },
+  "createdistribution": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDistribution",
+   "resources": []
+  },
+  "createdomain": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomain",
+   "resources": []
+  },
+  "createdomainentry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomainEntry",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "createguisessionaccessdetails": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGUISessionAccessDetails",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "createinstances": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInstances",
+   "resources": []
+  },
+  "createinstancesfromsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInstancesFromSnapshot",
+   "resources": [
+    "InstanceSnapshot"
+   ]
+  },
+  "createinstancesnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInstanceSnapshot",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "createkeypair": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKeyPair",
+   "resources": []
+  },
+  "createloadbalancer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLoadBalancer",
+   "resources": []
+  },
+  "createloadbalancertlscertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLoadBalancerTlsCertificate",
+   "resources": [
+    "LoadBalancer"
+   ]
+  },
+  "createrelationaldatabase": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRelationalDatabase",
+   "resources": []
+  },
+  "createrelationaldatabasefromsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRelationalDatabaseFromSnapshot",
+   "resources": [
+    "RelationalDatabaseSnapshot"
+   ]
+  },
+  "createrelationaldatabasesnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRelationalDatabaseSnapshot",
+   "resources": []
+  },
+  "deletealarm": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAlarm",
+   "resources": [
+    "Alarm"
+   ]
+  },
+  "deleteautosnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAutoSnapshot",
+   "resources": []
+  },
+  "deletebucket": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBucket",
+   "resources": [
+    "Bucket"
+   ]
+  },
+  "deletebucketaccesskey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBucketAccessKey",
+   "resources": [
+    "Bucket"
+   ]
+  },
+  "deletecertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCertificate",
+   "resources": [
+    "Certificate"
+   ]
+  },
+  "deletecontactmethod": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContactMethod",
+   "resources": []
+  },
+  "deletecontainerimage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContainerImage",
+   "resources": [
+    "ContainerService"
+   ]
+  },
+  "deletecontainerservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContainerService",
+   "resources": [
+    "ContainerService"
+   ]
+  },
+  "deletedisk": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDisk",
+   "resources": [
+    "Disk"
+   ]
+  },
+  "deletedisksnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDiskSnapshot",
+   "resources": [
+    "DiskSnapshot"
+   ]
+  },
+  "deletedistribution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDistribution",
+   "resources": [
+    "Distribution"
+   ]
+  },
+  "deletedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomain",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "deletedomainentry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomainEntry",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "deleteinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInstance",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "deleteinstancesnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInstanceSnapshot",
+   "resources": [
+    "InstanceSnapshot"
+   ]
+  },
+  "deletekeypair": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKeyPair",
+   "resources": [
+    "KeyPair"
+   ]
+  },
+  "deleteknownhostkeys": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKnownHostKeys",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "deleteloadbalancer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLoadBalancer",
+   "resources": [
+    "LoadBalancer"
+   ]
+  },
+  "deleteloadbalancertlscertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLoadBalancerTlsCertificate",
+   "resources": [
+    "LoadBalancer"
+   ]
+  },
+  "deleterelationaldatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRelationalDatabase",
+   "resources": [
+    "RelationalDatabase"
+   ]
+  },
+  "deleterelationaldatabasesnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRelationalDatabaseSnapshot",
+   "resources": [
+    "RelationalDatabaseSnapshot"
+   ]
+  },
+  "detachcertificatefromdistribution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetachCertificateFromDistribution",
+   "resources": [
+    "Distribution"
+   ]
+  },
+  "detachdisk": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetachDisk",
+   "resources": [
+    "Disk"
+   ]
+  },
+  "detachinstancesfromloadbalancer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetachInstancesFromLoadBalancer",
+   "resources": [
+    "LoadBalancer"
+   ]
+  },
+  "detachstaticip": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetachStaticIp",
+   "resources": [
+    "StaticIp"
+   ]
+  },
+  "disableaddon": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableAddOn",
+   "resources": []
+  },
+  "downloaddefaultkeypair": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DownloadDefaultKeyPair",
+   "resources": []
+  },
+  "enableaddon": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableAddOn",
+   "resources": []
+  },
+  "exportsnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportSnapshot",
+   "resources": [
+    "DiskSnapshot",
+    "InstanceSnapshot"
+   ]
+  },
+  "getactivenames": {
+   "name": "GetActiveNames",
+   "resources": []
+  },
+  "getalarms": {
+   "name": "GetAlarms",
+   "resources": []
+  },
+  "getautosnapshots": {
+   "name": "GetAutoSnapshots",
+   "resources": []
+  },
+  "getblueprints": {
+   "name": "GetBlueprints",
+   "resources": []
+  },
+  "getbucketaccesskeys": {
+   "name": "GetBucketAccessKeys",
+   "resources": []
+  },
+  "getbucketbundles": {
+   "name": "GetBucketBundles",
+   "resources": []
+  },
+  "getbucketmetricdata": {
+   "name": "GetBucketMetricData",
+   "resources": []
+  },
+  "getbuckets": {
+   "name": "GetBuckets",
+   "resources": []
+  },
+  "getbundles": {
+   "name": "GetBundles",
+   "resources": []
+  },
+  "getcertificates": {
+   "name": "GetCertificates",
+   "resources": []
+  },
+  "getcloudformationstackrecords": {
+   "name": "GetCloudFormationStackRecords",
+   "resources": []
+  },
+  "getcontactmethods": {
+   "name": "GetContactMethods",
+   "resources": []
+  },
+  "getcontainerapimetadata": {
+   "name": "GetContainerAPIMetadata",
+   "resources": []
+  },
+  "getcontainerimages": {
+   "name": "GetContainerImages",
+   "resources": []
+  },
+  "getcontainerlog": {
+   "name": "GetContainerLog",
+   "resources": []
+  },
+  "getcontainerservicedeployments": {
+   "name": "GetContainerServiceDeployments",
+   "resources": []
+  },
+  "getcontainerservicemetricdata": {
+   "name": "GetContainerServiceMetricData",
+   "resources": []
+  },
+  "getcontainerservicepowers": {
+   "name": "GetContainerServicePowers",
+   "resources": []
+  },
+  "getcontainerservices": {
+   "name": "GetContainerServices",
+   "resources": []
+  },
+  "getcostestimate": {
+   "name": "GetCostEstimate",
+   "resources": [
+    "Disk",
+    "Instance"
+   ]
+  },
+  "getdisk": {
+   "name": "GetDisk",
+   "resources": []
+  },
+  "getdisks": {
+   "name": "GetDisks",
+   "resources": []
+  },
+  "getdisksnapshot": {
+   "name": "GetDiskSnapshot",
+   "resources": []
+  },
+  "getdisksnapshots": {
+   "name": "GetDiskSnapshots",
+   "resources": []
+  },
+  "getdistributionbundles": {
+   "name": "GetDistributionBundles",
+   "resources": []
+  },
+  "getdistributionlatestcachereset": {
+   "name": "GetDistributionLatestCacheReset",
+   "resources": []
+  },
+  "getdistributionmetricdata": {
+   "name": "GetDistributionMetricData",
+   "resources": []
+  },
+  "getdistributions": {
+   "name": "GetDistributions",
+   "resources": []
+  },
+  "getdomain": {
+   "name": "GetDomain",
+   "resources": []
+  },
+  "getdomains": {
+   "name": "GetDomains",
+   "resources": []
+  },
+  "getexportsnapshotrecords": {
+   "name": "GetExportSnapshotRecords",
+   "resources": []
+  },
+  "getinstance": {
+   "name": "GetInstance",
+   "resources": []
+  },
+  "getinstanceaccessdetails": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetInstanceAccessDetails",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "getinstancemetricdata": {
+   "name": "GetInstanceMetricData",
+   "resources": []
+  },
+  "getinstanceportstates": {
+   "name": "GetInstancePortStates",
+   "resources": []
+  },
+  "getinstances": {
+   "name": "GetInstances",
+   "resources": []
+  },
+  "getinstancesnapshot": {
+   "name": "GetInstanceSnapshot",
+   "resources": []
+  },
+  "getinstancesnapshots": {
+   "name": "GetInstanceSnapshots",
+   "resources": []
+  },
+  "getinstancestate": {
+   "name": "GetInstanceState",
+   "resources": []
+  },
+  "getkeypair": {
+   "name": "GetKeyPair",
+   "resources": []
+  },
+  "getkeypairs": {
+   "name": "GetKeyPairs",
+   "resources": []
+  },
+  "getloadbalancer": {
+   "name": "GetLoadBalancer",
+   "resources": []
+  },
+  "getloadbalancermetricdata": {
+   "name": "GetLoadBalancerMetricData",
+   "resources": []
+  },
+  "getloadbalancers": {
+   "name": "GetLoadBalancers",
+   "resources": []
+  },
+  "getloadbalancertlscertificates": {
+   "name": "GetLoadBalancerTlsCertificates",
+   "resources": []
+  },
+  "getloadbalancertlspolicies": {
+   "name": "GetLoadBalancerTlsPolicies",
+   "resources": []
+  },
+  "getoperation": {
+   "name": "GetOperation",
+   "resources": []
+  },
+  "getoperations": {
+   "name": "GetOperations",
+   "resources": []
+  },
+  "getoperationsforresource": {
+   "name": "GetOperationsForResource",
+   "resources": []
+  },
+  "getregions": {
+   "name": "GetRegions",
+   "resources": []
+  },
+  "getrelationaldatabase": {
+   "name": "GetRelationalDatabase",
+   "resources": []
+  },
+  "getrelationaldatabaseblueprints": {
+   "name": "GetRelationalDatabaseBlueprints",
+   "resources": []
+  },
+  "getrelationaldatabasebundles": {
+   "name": "GetRelationalDatabaseBundles",
+   "resources": []
+  },
+  "getrelationaldatabaseevents": {
+   "name": "GetRelationalDatabaseEvents",
+   "resources": []
+  },
+  "getrelationaldatabaselogevents": {
+   "name": "GetRelationalDatabaseLogEvents",
+   "resources": []
+  },
+  "getrelationaldatabaselogstreams": {
+   "name": "GetRelationalDatabaseLogStreams",
+   "resources": []
+  },
+  "getrelationaldatabasemasteruserpassword": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetRelationalDatabaseMasterUserPassword",
+   "resources": [
+    "RelationalDatabase"
+   ]
+  },
+  "getrelationaldatabasemetricdata": {
+   "name": "GetRelationalDatabaseMetricData",
+   "resources": []
+  },
+  "getrelationaldatabaseparameters": {
+   "name": "GetRelationalDatabaseParameters",
+   "resources": []
+  },
+  "getrelationaldatabases": {
+   "name": "GetRelationalDatabases",
+   "resources": []
+  },
+  "getrelationaldatabasesnapshot": {
+   "name": "GetRelationalDatabaseSnapshot",
+   "resources": []
+  },
+  "getrelationaldatabasesnapshots": {
+   "name": "GetRelationalDatabaseSnapshots",
+   "resources": []
+  },
+  "getsetuphistory": {
+   "name": "GetSetupHistory",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "getstaticip": {
+   "name": "GetStaticIp",
+   "resources": []
+  },
+  "getstaticips": {
+   "name": "GetStaticIps",
+   "resources": []
+  },
+  "importkeypair": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportKeyPair",
+   "resources": []
+  },
+  "isvpcpeered": {
+   "name": "IsVpcPeered",
+   "resources": []
+  },
+  "openinstancepublicports": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "OpenInstancePublicPorts",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "peervpc": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PeerVpc",
+   "resources": []
+  },
+  "putalarm": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAlarm",
+   "resources": [
+    "Alarm"
+   ]
+  },
+  "putinstancepublicports": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutInstancePublicPorts",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "rebootinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootInstance",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "rebootrelationaldatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootRelationalDatabase",
+   "resources": [
+    "RelationalDatabase"
+   ]
+  },
+  "registercontainerimage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterContainerImage",
+   "resources": [
+    "ContainerService"
+   ]
+  },
+  "releasestaticip": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReleaseStaticIp",
+   "resources": [
+    "StaticIp"
+   ]
+  },
+  "resetdistributioncache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetDistributionCache",
+   "resources": [
+    "Distribution"
+   ]
+  },
+  "sendcontactmethodverification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendContactMethodVerification",
+   "resources": []
+  },
+  "setipaddresstype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetIpAddressType",
+   "resources": [
+    "Distribution",
+    "Instance",
+    "LoadBalancer"
+   ]
+  },
+  "setresourceaccessforbucket": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetResourceAccessForBucket",
+   "resources": [
+    "Bucket",
+    "Instance"
+   ]
+  },
+  "setupinstancehttps": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetupInstanceHttps",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "startguisession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartGUISession",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "startinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartInstance",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "startrelationaldatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRelationalDatabase",
+   "resources": [
+    "RelationalDatabase"
+   ]
+  },
+  "stopguisession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopGUISession",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "stopinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopInstance",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "stoprelationaldatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopRelationalDatabase",
+   "resources": [
+    "RelationalDatabase"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Alarm",
+    "Bucket",
+    "Certificate",
+    "ContactMethod",
+    "ContainerService",
+    "Disk",
+    "DiskSnapshot",
+    "Distribution",
+    "Domain",
+    "Instance",
+    "InstanceSnapshot",
+    "KeyPair",
+    "LoadBalancer",
+    "RelationalDatabase",
+    "RelationalDatabaseSnapshot",
+    "StaticIp"
+   ]
+  },
+  "testalarm": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TestAlarm",
+   "resources": [
+    "Alarm"
+   ]
+  },
+  "unpeervpc": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnpeerVpc",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Alarm",
+    "Bucket",
+    "Certificate",
+    "ContactMethod",
+    "ContainerService",
+    "Disk",
+    "DiskSnapshot",
+    "Distribution",
+    "Domain",
+    "Instance",
+    "InstanceSnapshot",
+    "KeyPair",
+    "LoadBalancer",
+    "RelationalDatabase",
+    "RelationalDatabaseSnapshot",
+    "StaticIp"
+   ]
+  },
+  "updatebucket": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBucket",
+   "resources": [
+    "Bucket"
+   ]
+  },
+  "updatebucketbundle": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBucketBundle",
+   "resources": [
+    "Bucket"
+   ]
+  },
+  "updatecontainerservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContainerService",
+   "resources": [
+    "ContainerService"
+   ]
+  },
+  "updatedistribution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDistribution",
+   "resources": [
+    "Distribution"
+   ]
+  },
+  "updatedistributionbundle": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDistributionBundle",
+   "resources": [
+    "Distribution"
+   ]
+  },
+  "updatedomainentry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomainEntry",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "updateinstancemetadataoptions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInstanceMetadataOptions",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "updateloadbalancerattribute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLoadBalancerAttribute",
+   "resources": [
+    "LoadBalancer"
+   ]
+  },
+  "updaterelationaldatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRelationalDatabase",
+   "resources": [
+    "RelationalDatabase"
+   ]
+  },
+  "updaterelationaldatabaseparameters": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRelationalDatabaseParameters",
+   "resources": [
+    "RelationalDatabase"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Alarm": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:Alarm/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Bucket": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:Bucket/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Certificate": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:Certificate/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "CloudFormationStackRecord": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:CloudFormationStackRecord/${Id}"
+   ]
+  },
+  "ContactMethod": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:ContactMethod/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ContainerService": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:ContainerService/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Disk": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:Disk/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "DiskSnapshot": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:DiskSnapshot/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Distribution": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:Distribution/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Domain": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:Domain/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ExportSnapshotRecord": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:ExportSnapshotRecord/${Id}"
+   ]
+  },
+  "Instance": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:Instance/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "InstanceSnapshot": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:InstanceSnapshot/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "KeyPair": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:KeyPair/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "LoadBalancer": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:LoadBalancer/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "LoadBalancerTlsCertificate": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:LoadBalancerTlsCertificate/${Id}"
+   ]
+  },
+  "RelationalDatabase": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:RelationalDatabase/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "RelationalDatabaseSnapshot": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:RelationalDatabaseSnapshot/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "StaticIp": {
+   "arnFormats": [
+    "arn:${Partition}:lightsail:${Region}:${Account}:StaticIp/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "lightsail",
+ "serviceName": "Lightsail",
+ "version": "v1.5"
+}

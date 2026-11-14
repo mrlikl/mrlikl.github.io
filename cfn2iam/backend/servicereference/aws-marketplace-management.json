@@ -1,0 +1,87 @@
+{
+ "actions": {
+  "getadditionalsellernotificationrecipients": {
+   "name": "GetAdditionalSellerNotificationRecipients",
+   "resources": []
+  },
+  "getbankaccountverificationdetails": {
+   "name": "GetBankAccountVerificationDetails",
+   "resources": []
+  },
+  "getsecondaryuserverificationdetails": {
+   "name": "GetSecondaryUserVerificationDetails",
+   "resources": []
+  },
+  "getsellerverificationdetails": {
+   "name": "GetSellerVerificationDetails",
+   "resources": []
+  },
+  "putadditionalsellernotificationrecipients": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAdditionalSellerNotificationRecipients",
+   "resources": []
+  },
+  "putbankaccountverificationdetails": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutBankAccountVerificationDetails",
+   "resources": []
+  },
+  "putsecondaryuserverificationdetails": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSecondaryUserVerificationDetails",
+   "resources": []
+  },
+  "putsellerverificationdetails": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSellerVerificationDetails",
+   "resources": []
+  },
+  "uploadfiles": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "uploadFiles",
+   "resources": []
+  },
+  "viewmarketing": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "viewMarketing",
+   "resources": []
+  },
+  "viewreports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "viewReports",
+   "resources": []
+  },
+  "viewsettings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "viewSettings",
+   "resources": []
+  },
+  "viewsupport": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "viewSupport",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "aws-marketplace-management",
+ "serviceName": "Marketplace Portal",
+ "version": "v1.5"
+}

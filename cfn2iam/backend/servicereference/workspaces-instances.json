@@ -1,0 +1,162 @@
+{
+ "actions": {
+  "associatevolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateVolume",
+   "resources": [
+    "WorkspaceInstanceId"
+   ]
+  },
+  "createvolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVolume",
+   "resources": []
+  },
+  "createworkspaceinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkspaceInstance",
+   "resources": []
+  },
+  "deletevolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVolume",
+   "resources": [
+    "VolumeId"
+   ]
+  },
+  "deleteworkspaceinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkspaceInstance",
+   "resources": [
+    "WorkspaceInstanceId"
+   ]
+  },
+  "disassociatevolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateVolume",
+   "resources": [
+    "WorkspaceInstanceId"
+   ]
+  },
+  "getworkspaceinstance": {
+   "name": "GetWorkspaceInstance",
+   "resources": [
+    "WorkspaceInstanceId"
+   ]
+  },
+  "listinstancetypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInstanceTypes",
+   "resources": []
+  },
+  "listregions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRegions",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "WorkspaceInstanceId"
+   ]
+  },
+  "listworkspaceinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkspaceInstances",
+   "resources": []
+  },
+  "modifyvolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyVolume",
+   "resources": [
+    "VolumeId"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "WorkspaceInstanceId"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "WorkspaceInstanceId"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "VolumeId": {
+   "arnFormats": [
+    "arn:${Partition}:ec2:${Region}:${Account}:volume/${VolumeId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "WorkspaceInstanceId": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces-instances:${Region}:${Account}:workspaceinstance/${WorkspaceInstanceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "workspaces-instances",
+ "serviceName": "WorkSpaces Managed Instances",
+ "version": "v1.5"
+}

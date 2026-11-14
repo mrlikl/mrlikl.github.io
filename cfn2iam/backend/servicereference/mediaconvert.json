@@ -1,0 +1,351 @@
+{
+ "actions": {
+  "associatecertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateCertificate",
+   "resources": []
+  },
+  "canceljob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelJob",
+   "resources": [
+    "Job"
+   ]
+  },
+  "createjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "mediaconvert:HttpInputsAllowed",
+    "mediaconvert:HttpsInputsAllowed",
+    "mediaconvert:S3InputsAllowed"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateJob",
+   "resources": [
+    "JobTemplate",
+    "Preset",
+    "Queue"
+   ]
+  },
+  "createjobtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateJobTemplate",
+   "resources": [
+    "Preset",
+    "Queue"
+   ]
+  },
+  "createpreset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePreset",
+   "resources": []
+  },
+  "createqueue": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQueue",
+   "resources": []
+  },
+  "createresourceshare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResourceShare",
+   "resources": [
+    "Job"
+   ]
+  },
+  "deletejobtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteJobTemplate",
+   "resources": [
+    "JobTemplate"
+   ]
+  },
+  "deletepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePolicy",
+   "resources": []
+  },
+  "deletepreset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePreset",
+   "resources": [
+    "Preset"
+   ]
+  },
+  "deletequeue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQueue",
+   "resources": [
+    "Queue"
+   ]
+  },
+  "describeendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeEndpoints",
+   "resources": []
+  },
+  "disassociatecertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateCertificate",
+   "resources": []
+  },
+  "getjob": {
+   "name": "GetJob",
+   "resources": [
+    "Job"
+   ]
+  },
+  "getjobtemplate": {
+   "name": "GetJobTemplate",
+   "resources": [
+    "JobTemplate"
+   ]
+  },
+  "getpolicy": {
+   "name": "GetPolicy",
+   "resources": []
+  },
+  "getpreset": {
+   "name": "GetPreset",
+   "resources": [
+    "Preset"
+   ]
+  },
+  "getqueue": {
+   "name": "GetQueue",
+   "resources": [
+    "Queue"
+   ]
+  },
+  "listjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobs",
+   "resources": [
+    "Queue"
+   ]
+  },
+  "listjobtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobTemplates",
+   "resources": []
+  },
+  "listpresets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPresets",
+   "resources": []
+  },
+  "listqueues": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQueues",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "Job",
+    "JobTemplate",
+    "Preset",
+    "Queue"
+   ]
+  },
+  "listversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVersions",
+   "resources": []
+  },
+  "probe": {
+   "name": "Probe",
+   "resources": []
+  },
+  "putpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutPolicy",
+   "resources": []
+  },
+  "searchjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchJobs",
+   "resources": [
+    "Queue"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Job",
+    "JobTemplate",
+    "Preset",
+    "Queue"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Job",
+    "JobTemplate",
+    "Preset",
+    "Queue"
+   ]
+  },
+  "updatejobtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateJobTemplate",
+   "resources": [
+    "JobTemplate",
+    "Preset",
+    "Queue"
+   ]
+  },
+  "updatepreset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePreset",
+   "resources": [
+    "Preset"
+   ]
+  },
+  "updatequeue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueue",
+   "resources": [
+    "Queue"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "mediaconvert:HttpInputsAllowed": [
+   "Bool"
+  ],
+  "mediaconvert:HttpsInputsAllowed": [
+   "Bool"
+  ],
+  "mediaconvert:S3InputsAllowed": [
+   "Bool"
+  ]
+ },
+ "resources": {
+  "CertificateAssociation": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconvert:${Region}:${Account}:certificates/${CertificateArn}"
+   ]
+  },
+  "Job": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconvert:${Region}:${Account}:jobs/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "JobTemplate": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconvert:${Region}:${Account}:jobTemplates/${JobTemplateName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Preset": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconvert:${Region}:${Account}:presets/${PresetName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Queue": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconvert:${Region}:${Account}:queues/${QueueName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "mediaconvert",
+ "serviceName": "MediaConvert",
+ "version": "v1.5"
+}

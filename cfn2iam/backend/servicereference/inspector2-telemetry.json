@@ -1,0 +1,43 @@
+{
+ "actions": {
+  "notifyheartbeat": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyHeartbeat",
+   "resources": []
+  },
+  "sendtelemetry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendTelemetry",
+   "resources": []
+  },
+  "sendtelemetryevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendTelemetryEvent",
+   "resources": []
+  },
+  "startsession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSession",
+   "resources": []
+  },
+  "stopsession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopSession",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "inspector2-telemetry",
+ "serviceName": "Inspector2Telemtry",
+ "version": "v1.5"
+}

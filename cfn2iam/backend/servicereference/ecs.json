@@ -1,0 +1,1608 @@
+{
+ "actions": {
+  "allowvendedlogdeliveryforresource": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "associategatewaywithcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateGatewayWithCluster",
+   "resourceConditionKeys": {
+    "gateway": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ]
+   },
+   "resources": [
+    "gateway"
+   ]
+  },
+  "continueservicedeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ContinueServiceDeployment",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ],
+    "service-deployment": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster",
+     "ecs:service"
+    ]
+   },
+   "resources": [
+    "service",
+    "service-deployment"
+   ]
+  },
+  "createcapacityprovider": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "ecs:instance-metadata-tags-propagation",
+    "ecs:propagate-tags"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCapacityProvider",
+   "resourceConditionKeys": {
+    "capacity-provider": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "capacity-provider"
+   ]
+  },
+  "createcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "ecs:capacity-provider",
+    "ecs:fargate-ephemeral-storage-kms-key"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCluster",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster"
+   ]
+  },
+  "createdaemon": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "ecs:capacity-provider",
+    "ecs:daemon-task-definition",
+    "ecs:enable-ecs-managed-tags",
+    "ecs:enable-execute-command",
+    "ecs:propagate-tags",
+    "ecs:task-cpu",
+    "ecs:task-memory"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDaemon",
+   "resourceConditionKeys": {
+    "daemon": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ]
+   },
+   "resources": [
+    "daemon"
+   ]
+  },
+  "createexpressgatewayservice": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "ecs:enable-ecs-managed-tags",
+    "ecs:propagate-tags",
+    "ecs:subnet",
+    "ecs:task-cpu",
+    "ecs:task-definition",
+    "ecs:task-memory"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExpressGatewayService",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "creategateway": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "ecs:enable-ecs-managed-tags",
+    "ecs:propagate-tags"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGateway",
+   "resourceConditionKeys": {
+    "gateway": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "gateway"
+   ]
+  },
+  "createservice": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "ecs:auto-assign-public-ip",
+    "ecs:capacity-provider",
+    "ecs:enable-ebs-volumes",
+    "ecs:enable-ecs-managed-tags",
+    "ecs:enable-execute-command",
+    "ecs:enable-service-connect",
+    "ecs:enable-vpc-lattice",
+    "ecs:namespace",
+    "ecs:propagate-tags",
+    "ecs:subnet",
+    "ecs:task-cpu",
+    "ecs:task-definition",
+    "ecs:task-memory"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateService",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "createtaskset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "ecs:capacity-provider",
+    "ecs:cluster",
+    "ecs:service",
+    "ecs:task-definition"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTaskSet",
+   "resources": [
+    "task-set"
+   ]
+  },
+  "deleteaccountsetting": {
+   "conditionKeys": [
+    "ecs:account-setting"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccountSetting",
+   "resources": []
+  },
+  "deleteattributes": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAttributes",
+   "resources": [
+    "container-instance"
+   ]
+  },
+  "deletecapacityprovider": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCapacityProvider",
+   "resources": [
+    "capacity-provider"
+   ]
+  },
+  "deletecluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCluster",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster"
+   ]
+  },
+  "deletedaemon": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDaemon",
+   "resourceConditionKeys": {
+    "daemon": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ]
+   },
+   "resources": [
+    "daemon"
+   ]
+  },
+  "deletedaemontaskdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDaemonTaskDefinition",
+   "resourceConditionKeys": {
+    "daemon-task-definition": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "daemon-task-definition"
+   ]
+  },
+  "deleteexpressgatewayservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExpressGatewayService",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "deletegateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGateway",
+   "resourceConditionKeys": {
+    "gateway": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "gateway"
+   ]
+  },
+  "deleteservice": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteService",
+   "resources": [
+    "service"
+   ]
+  },
+  "deletetaskdefinitions": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTaskDefinitions",
+   "resources": [
+    "task-definition"
+   ]
+  },
+  "deletetaskset": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster",
+    "ecs:service"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTaskSet",
+   "resources": [
+    "task-set"
+   ]
+  },
+  "deregistercontainerinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterContainerInstance",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster"
+   ]
+  },
+  "deregistertaskdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterTaskDefinition",
+   "resources": []
+  },
+  "describecapacityproviders": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeCapacityProviders",
+   "resources": [
+    "capacity-provider"
+   ]
+  },
+  "describeclusters": {
+   "name": "DescribeClusters",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster"
+   ]
+  },
+  "describecontainerinstances": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster"
+   ],
+   "name": "DescribeContainerInstances",
+   "resources": [
+    "container-instance"
+   ]
+  },
+  "describedaemon": {
+   "name": "DescribeDaemon",
+   "resourceConditionKeys": {
+    "daemon": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ]
+   },
+   "resources": [
+    "daemon"
+   ]
+  },
+  "describedaemondeployments": {
+   "name": "DescribeDaemonDeployments",
+   "resourceConditionKeys": {
+    "daemon": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ],
+    "daemon-deployment": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster",
+     "ecs:daemon"
+    ]
+   },
+   "resources": [
+    "daemon",
+    "daemon-deployment"
+   ]
+  },
+  "describedaemonrevisions": {
+   "name": "DescribeDaemonRevisions",
+   "resourceConditionKeys": {
+    "daemon": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ],
+    "daemon-revision": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster",
+     "ecs:daemon"
+    ]
+   },
+   "resources": [
+    "daemon",
+    "daemon-revision"
+   ]
+  },
+  "describedaemontaskdefinition": {
+   "name": "DescribeDaemonTaskDefinition",
+   "resourceConditionKeys": {
+    "daemon-task-definition": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "daemon-task-definition"
+   ]
+  },
+  "describeexpressgatewayservice": {
+   "name": "DescribeExpressGatewayService",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "describegateway": {
+   "name": "DescribeGateway",
+   "resourceConditionKeys": {
+    "gateway": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "gateway"
+   ]
+  },
+  "describegatewayresources": {
+   "name": "DescribeGatewayResources",
+   "resourceConditionKeys": {
+    "gateway": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "gateway"
+   ]
+  },
+  "describegatewayroute": {
+   "name": "DescribeGatewayRoute",
+   "resourceConditionKeys": {
+    "gateway": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "gateway-route": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:gateway"
+    ]
+   },
+   "resources": [
+    "gateway",
+    "gateway-route"
+   ]
+  },
+  "describeservicedeployments": {
+   "name": "DescribeServiceDeployments",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ],
+    "service-deployment": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster",
+     "ecs:service"
+    ]
+   },
+   "resources": [
+    "service",
+    "service-deployment"
+   ]
+  },
+  "describeservicerevisions": {
+   "name": "DescribeServiceRevisions",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ],
+    "service-revision": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster",
+     "ecs:service"
+    ]
+   },
+   "resources": [
+    "service",
+    "service-revision"
+   ]
+  },
+  "describeservices": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster"
+   ],
+   "name": "DescribeServices",
+   "resources": [
+    "service"
+   ]
+  },
+  "describetaskdefinition": {
+   "name": "DescribeTaskDefinition",
+   "resources": []
+  },
+  "describetasks": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster"
+   ],
+   "name": "DescribeTasks",
+   "resources": [
+    "task"
+   ]
+  },
+  "describetasksets": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster",
+    "ecs:service"
+   ],
+   "name": "DescribeTaskSets",
+   "resources": [
+    "task-set"
+   ]
+  },
+  "disassociategatewayfromcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateGatewayFromCluster",
+   "resourceConditionKeys": {
+    "gateway": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ]
+   },
+   "resources": [
+    "gateway"
+   ]
+  },
+  "discoverpollendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DiscoverPollEndpoint",
+   "resources": []
+  },
+  "executecommand": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster",
+    "ecs:container-name",
+    "ecs:task"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExecuteCommand",
+   "resources": [
+    "cluster",
+    "task"
+   ]
+  },
+  "gettaskprotection": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster"
+   ],
+   "name": "GetTaskProtection",
+   "resources": [
+    "task"
+   ]
+  },
+  "listaccountsettings": {
+   "name": "ListAccountSettings",
+   "resources": []
+  },
+  "listattributes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAttributes",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClusters",
+   "resources": []
+  },
+  "listcontainerinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContainerInstances",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listdaemondeployments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDaemonDeployments",
+   "resourceConditionKeys": {
+    "daemon": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ]
+   },
+   "resources": [
+    "daemon"
+   ]
+  },
+  "listdaemons": {
+   "conditionKeys": [
+    "ecs:cluster"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDaemons",
+   "resources": []
+  },
+  "listdaemontaskdefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDaemonTaskDefinitions",
+   "resources": []
+  },
+  "listgatewayclusterassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGatewayClusterAssociations",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ],
+    "gateway": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster",
+     "ecs:gateway"
+    ]
+   },
+   "resources": [
+    "cluster",
+    "gateway"
+   ]
+  },
+  "listgatewayroutes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGatewayRoutes",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ],
+    "gateway": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:gateway"
+    ],
+    "service": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster",
+     "ecs:service"
+    ]
+   },
+   "resources": [
+    "cluster",
+    "gateway",
+    "gateway-route",
+    "service"
+   ]
+  },
+  "listgateways": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGateways",
+   "resourceConditionKeys": {
+    "gateway": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:gateway"
+    ]
+   },
+   "resources": [
+    "gateway"
+   ]
+  },
+  "listservicedeployments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceDeployments",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listservices": {
+   "conditionKeys": [
+    "ecs:cluster"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServices",
+   "resources": []
+  },
+  "listservicesbynamespace": {
+   "conditionKeys": [
+    "ecs:namespace"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServicesByNamespace",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "capacity-provider",
+    "cluster",
+    "container-instance",
+    "service",
+    "task",
+    "task-definition",
+    "task-set"
+   ]
+  },
+  "listtaskdefinitionfamilies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTaskDefinitionFamilies",
+   "resources": []
+  },
+  "listtaskdefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTaskDefinitions",
+   "resources": []
+  },
+  "listtasks": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTasks",
+   "resources": [
+    "container-instance"
+   ]
+  },
+  "poll": {
+   "conditionKeys": [
+    "ecs:cluster"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Poll",
+   "resources": [
+    "container-instance"
+   ]
+  },
+  "putaccountsetting": {
+   "conditionKeys": [
+    "ecs:account-setting"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAccountSetting",
+   "resources": []
+  },
+  "putaccountsettingdefault": {
+   "conditionKeys": [
+    "ecs:account-setting"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAccountSettingDefault",
+   "resources": []
+  },
+  "putattributes": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAttributes",
+   "resources": [
+    "container-instance"
+   ]
+  },
+  "putclustercapacityproviders": {
+   "conditionKeys": [
+    "ecs:capacity-provider"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutClusterCapacityProviders",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster"
+   ]
+  },
+  "putsystemlogevents": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSystemLogEvents",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "container-instance": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:capacity-provider",
+     "ecs:cluster"
+    ]
+   },
+   "resources": [
+    "cluster",
+    "container-instance"
+   ]
+  },
+  "registercontainerinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterContainerInstance",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster"
+   ]
+  },
+  "registerdaemontaskdefinition": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "ecs:privileged",
+    "ecs:task-cpu",
+    "ecs:task-memory"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterDaemonTaskDefinition",
+   "resourceConditionKeys": {
+    "daemon-task-definition": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "daemon-task-definition"
+   ]
+  },
+  "registertaskdefinition": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "ecs:compute-compatibility",
+    "ecs:privileged",
+    "ecs:task-cpu",
+    "ecs:task-memory"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterTaskDefinition",
+   "resourceConditionKeys": {
+    "task-definition": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "task-definition"
+   ]
+  },
+  "runtask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "ecs:capacity-provider",
+    "ecs:cluster",
+    "ecs:enable-ebs-volumes",
+    "ecs:enable-execute-command",
+    "ecs:task-cpu",
+    "ecs:task-memory"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RunTask",
+   "resources": [
+    "task-definition"
+   ]
+  },
+  "starttask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "ecs:cluster",
+    "ecs:container-instances",
+    "ecs:enable-ebs-volumes",
+    "ecs:enable-execute-command",
+    "ecs:task-cpu",
+    "ecs:task-memory"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTask",
+   "resources": [
+    "task-definition"
+   ]
+  },
+  "starttelemetrysession": {
+   "conditionKeys": [
+    "ecs:cluster"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTelemetrySession",
+   "resources": [
+    "container-instance"
+   ]
+  },
+  "stopservicedeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopServiceDeployment",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ],
+    "service-deployment": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster",
+     "ecs:service"
+    ]
+   },
+   "resources": [
+    "service",
+    "service-deployment"
+   ]
+  },
+  "stoptask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopTask",
+   "resources": [
+    "task"
+   ]
+  },
+  "submitattachmentstatechanges": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitAttachmentStateChanges",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster"
+   ]
+  },
+  "submitcontainerstatechange": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitContainerStateChange",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster"
+   ]
+  },
+  "submittaskstatechange": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitTaskStateChange",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "ecs:CreateAction"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "capacity-provider",
+    "cluster",
+    "container-instance",
+    "daemon",
+    "daemon-task-definition",
+    "gateway",
+    "service",
+    "task",
+    "task-definition",
+    "task-set"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "capacity-provider",
+    "cluster",
+    "container-instance",
+    "daemon",
+    "daemon-task-definition",
+    "gateway",
+    "service",
+    "task",
+    "task-definition",
+    "task-set"
+   ]
+  },
+  "updatecapacityprovider": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:instance-metadata-tags-propagation",
+    "ecs:propagate-tags"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCapacityProvider",
+   "resources": [
+    "capacity-provider"
+   ]
+  },
+  "updatecluster": {
+   "conditionKeys": [
+    "ecs:fargate-ephemeral-storage-kms-key"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCluster",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster"
+   ]
+  },
+  "updateclustersettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateClusterSettings",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster"
+   ]
+  },
+  "updatecontaineragent": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContainerAgent",
+   "resources": [
+    "container-instance"
+   ]
+  },
+  "updatecontainerinstancesstate": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContainerInstancesState",
+   "resources": [
+    "container-instance"
+   ]
+  },
+  "updatedaemon": {
+   "conditionKeys": [
+    "ecs:capacity-provider",
+    "ecs:daemon-task-definition",
+    "ecs:enable-ecs-managed-tags",
+    "ecs:enable-execute-command",
+    "ecs:propagate-tags",
+    "ecs:task-cpu",
+    "ecs:task-memory"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDaemon",
+   "resourceConditionKeys": {
+    "daemon": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ]
+   },
+   "resources": [
+    "daemon"
+   ]
+  },
+  "updateexpressgatewayservice": {
+   "conditionKeys": [
+    "ecs:enable-ecs-managed-tags",
+    "ecs:propagate-tags",
+    "ecs:subnet",
+    "ecs:task-cpu",
+    "ecs:task-definition",
+    "ecs:task-memory"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExpressGatewayService",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "updategateway": {
+   "conditionKeys": [
+    "ecs:enable-ecs-managed-tags",
+    "ecs:propagate-tags"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGateway",
+   "resourceConditionKeys": {
+    "gateway": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updateservice": {
+   "conditionKeys": [
+    "ecs:auto-assign-public-ip",
+    "ecs:capacity-provider",
+    "ecs:enable-ebs-volumes",
+    "ecs:enable-ecs-managed-tags",
+    "ecs:enable-execute-command",
+    "ecs:enable-service-connect",
+    "ecs:enable-vpc-lattice",
+    "ecs:namespace",
+    "ecs:propagate-tags",
+    "ecs:subnet",
+    "ecs:task-cpu",
+    "ecs:task-definition",
+    "ecs:task-memory"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateService",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}",
+     "ecs:cluster"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "updateserviceprimarytaskset": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServicePrimaryTaskSet",
+   "resources": [
+    "service"
+   ]
+  },
+  "updatetaskprotection": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTaskProtection",
+   "resources": [
+    "task"
+   ]
+  },
+  "updatetaskset": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster",
+    "ecs:service"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTaskSet",
+   "resources": [
+    "task-set"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "ecs:CreateAction": [
+   "String"
+  ],
+  "ecs:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "ecs:account-setting": [
+   "String"
+  ],
+  "ecs:auto-assign-public-ip": [
+   "Bool"
+  ],
+  "ecs:capacity-provider": [
+   "ArrayOfARN"
+  ],
+  "ecs:cluster": [
+   "ARN"
+  ],
+  "ecs:compute-compatibility": [
+   "ArrayOfString"
+  ],
+  "ecs:container-instances": [
+   "ARN"
+  ],
+  "ecs:container-name": [
+   "String"
+  ],
+  "ecs:daemon": [
+   "ARN"
+  ],
+  "ecs:daemon-task-definition": [
+   "ARN"
+  ],
+  "ecs:enable-ebs-volumes": [
+   "String"
+  ],
+  "ecs:enable-ecs-managed-tags": [
+   "Bool"
+  ],
+  "ecs:enable-execute-command": [
+   "String"
+  ],
+  "ecs:enable-service-connect": [
+   "String"
+  ],
+  "ecs:enable-vpc-lattice": [
+   "String"
+  ],
+  "ecs:fargate-ephemeral-storage-kms-key": [
+   "String"
+  ],
+  "ecs:gateway": [
+   "ARN"
+  ],
+  "ecs:instance-metadata-tags-propagation": [
+   "Bool"
+  ],
+  "ecs:namespace": [
+   "ARN"
+  ],
+  "ecs:privileged": [
+   "String"
+  ],
+  "ecs:propagate-tags": [
+   "String"
+  ],
+  "ecs:service": [
+   "ARN"
+  ],
+  "ecs:subnet": [
+   "ArrayOfString"
+  ],
+  "ecs:task": [
+   "ARN"
+  ],
+  "ecs:task-cpu": [
+   "Numeric"
+  ],
+  "ecs:task-definition": [
+   "ARN"
+  ],
+  "ecs:task-memory": [
+   "Numeric"
+  ]
+ },
+ "resources": {
+  "capacity-provider": {
+   "arnFormats": [
+    "arn:${Partition}:ecs:${Region}:${Account}:capacity-provider/${CapacityProviderName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:ResourceTag/${TagKey}"
+   ]
+  },
+  "cluster": {
+   "arnFormats": [
+    "arn:${Partition}:ecs:${Region}:${Account}:cluster/${ClusterName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:ResourceTag/${TagKey}"
+   ]
+  },
+  "container-instance": {
+   "arnFormats": [
+    "arn:${Partition}:ecs:${Region}:${Account}:container-instance/${ClusterName}/${ContainerInstanceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:ResourceTag/${TagKey}"
+   ]
+  },
+  "daemon": {
+   "arnFormats": [
+    "arn:${Partition}:ecs:${Region}:${Account}:daemon/${ClusterName}/${DaemonName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster"
+   ]
+  },
+  "daemon-deployment": {
+   "arnFormats": [
+    "arn:${Partition}:ecs:${Region}:${Account}:daemon-deployment/${ClusterName}/${DaemonName}/${DaemonDeploymentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster",
+    "ecs:daemon"
+   ]
+  },
+  "daemon-revision": {
+   "arnFormats": [
+    "arn:${Partition}:ecs:${Region}:${Account}:daemon-revision/${ClusterName}/${DaemonName}/${DaemonRevisionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster",
+    "ecs:daemon"
+   ]
+  },
+  "daemon-task-definition": {
+   "arnFormats": [
+    "arn:${Partition}:ecs:${Region}:${Account}:daemon-task-definition/${DaemonTaskDefinitionFamilyName}:${DaemonTaskDefinitionRevisionNumber}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "gateway": {
+   "arnFormats": [
+    "arn:${Partition}:ecs:${Region}:${Account}:gateway/${GatewayName}/${GatewayId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "gateway-route": {
+   "arnFormats": [
+    "arn:${Partition}:ecs:${Region}:${Account}:gateway-route/${GatewayName}/${GatewayId}/${RouteId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:gateway"
+   ]
+  },
+  "service": {
+   "arnFormats": [
+    "arn:${Partition}:ecs:${Region}:${Account}:service/${ClusterName}/${ServiceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:ResourceTag/${TagKey}"
+   ]
+  },
+  "service-deployment": {
+   "arnFormats": [
+    "arn:${Partition}:ecs:${Region}:${Account}:service-deployment/${ClusterName}/${ServiceName}/${ServiceDeploymentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster",
+    "ecs:service"
+   ]
+  },
+  "service-revision": {
+   "arnFormats": [
+    "arn:${Partition}:ecs:${Region}:${Account}:service-revision/${ClusterName}/${ServiceName}/${ServiceRevisionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:cluster",
+    "ecs:service"
+   ]
+  },
+  "task": {
+   "arnFormats": [
+    "arn:${Partition}:ecs:${Region}:${Account}:task/${ClusterName}/${TaskId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:ResourceTag/${TagKey}"
+   ]
+  },
+  "task-definition": {
+   "arnFormats": [
+    "arn:${Partition}:ecs:${Region}:${Account}:task-definition/${TaskDefinitionFamilyName}:${TaskDefinitionRevisionNumber}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:ResourceTag/${TagKey}"
+   ]
+  },
+  "task-set": {
+   "arnFormats": [
+    "arn:${Partition}:ecs:${Region}:${Account}:task-set/${ClusterName}/${ServiceName}/${TaskSetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecs:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "ecs",
+ "serviceName": "Elastic Container Service",
+ "version": "v1.5"
+}

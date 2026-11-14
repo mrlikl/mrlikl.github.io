@@ -1,0 +1,153 @@
+{
+ "actions": {
+  "batchgetfindings": {
+   "name": "BatchGetFindings",
+   "resources": [
+    "ScanName"
+   ]
+  },
+  "createscan": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScan",
+   "resources": [
+    "ScanName"
+   ]
+  },
+  "createuploadurl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUploadUrl",
+   "resources": [
+    "ScanName"
+   ]
+  },
+  "deletescansbycategory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScansByCategory",
+   "resources": []
+  },
+  "getaccountconfiguration": {
+   "name": "GetAccountConfiguration",
+   "resources": []
+  },
+  "getfindings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetFindings",
+   "resources": [
+    "ScanName"
+   ]
+  },
+  "getmetricssummary": {
+   "name": "GetMetricsSummary",
+   "resources": []
+  },
+  "getscan": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetScan",
+   "resources": [
+    "ScanName"
+   ]
+  },
+  "listfindings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFindings",
+   "resources": []
+  },
+  "listfindingsmetrics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFindingsMetrics",
+   "resources": []
+  },
+  "listscans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScans",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "ScanName"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "ScanName"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "ScanName"
+   ]
+  },
+  "updateaccountconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountConfiguration",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "ScanName": {
+   "arnFormats": [
+    "arn:${Partition}:codeguru-security:${Region}:${Account}:scans/${ScanName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "codeguru-security",
+ "serviceName": "CodeGuru Security",
+ "version": "v1.5"
+}

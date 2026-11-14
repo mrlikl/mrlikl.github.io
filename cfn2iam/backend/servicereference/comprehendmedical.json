@@ -1,0 +1,143 @@
+{
+ "actions": {
+  "describeentitiesdetectionv2job": {
+   "name": "DescribeEntitiesDetectionV2Job",
+   "resources": []
+  },
+  "describeicd10cminferencejob": {
+   "name": "DescribeICD10CMInferenceJob",
+   "resources": []
+  },
+  "describephidetectionjob": {
+   "name": "DescribePHIDetectionJob",
+   "resources": []
+  },
+  "describerxnorminferencejob": {
+   "name": "DescribeRxNormInferenceJob",
+   "resources": []
+  },
+  "describesnomedctinferencejob": {
+   "name": "DescribeSNOMEDCTInferenceJob",
+   "resources": []
+  },
+  "detectentitiesv2": {
+   "name": "DetectEntitiesV2",
+   "resources": []
+  },
+  "detectphi": {
+   "name": "DetectPHI",
+   "resources": []
+  },
+  "infericd10cm": {
+   "name": "InferICD10CM",
+   "resources": []
+  },
+  "inferrxnorm": {
+   "name": "InferRxNorm",
+   "resources": []
+  },
+  "infersnomedct": {
+   "name": "InferSNOMEDCT",
+   "resources": []
+  },
+  "listentitiesdetectionv2jobs": {
+   "name": "ListEntitiesDetectionV2Jobs",
+   "resources": []
+  },
+  "listicd10cminferencejobs": {
+   "name": "ListICD10CMInferenceJobs",
+   "resources": []
+  },
+  "listphidetectionjobs": {
+   "name": "ListPHIDetectionJobs",
+   "resources": []
+  },
+  "listrxnorminferencejobs": {
+   "name": "ListRxNormInferenceJobs",
+   "resources": []
+  },
+  "listsnomedctinferencejobs": {
+   "name": "ListSNOMEDCTInferenceJobs",
+   "resources": []
+  },
+  "startentitiesdetectionv2job": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartEntitiesDetectionV2Job",
+   "resources": []
+  },
+  "starticd10cminferencejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartICD10CMInferenceJob",
+   "resources": []
+  },
+  "startphidetectionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartPHIDetectionJob",
+   "resources": []
+  },
+  "startrxnorminferencejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRxNormInferenceJob",
+   "resources": []
+  },
+  "startsnomedctinferencejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSNOMEDCTInferenceJob",
+   "resources": []
+  },
+  "stopentitiesdetectionv2job": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopEntitiesDetectionV2Job",
+   "resources": []
+  },
+  "stopicd10cminferencejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopICD10CMInferenceJob",
+   "resources": []
+  },
+  "stopphidetectionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopPHIDetectionJob",
+   "resources": []
+  },
+  "stoprxnorminferencejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopRxNormInferenceJob",
+   "resources": []
+  },
+  "stopsnomedctinferencejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopSNOMEDCTInferenceJob",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {},
+ "service": "comprehendmedical",
+ "serviceName": "ComprehendMedical",
+ "version": "v1.5"
+}

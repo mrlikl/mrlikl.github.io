@@ -1,0 +1,1013 @@
+{
+ "actions": {
+  "acceptnetworkfirewalltransitgatewayattachment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptNetworkFirewallTransitGatewayAttachment",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "associateavailabilityzones": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateAvailabilityZones",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "associatefirewallpolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateFirewallPolicy",
+   "resources": [
+    "Firewall",
+    "FirewallPolicy",
+    "FirewallPolicyV2"
+   ]
+  },
+  "associatesubnets": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSubnets",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "attachrulegroupstoproxyconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AttachRuleGroupsToProxyConfiguration",
+   "resources": [
+    "ProxyConfiguration",
+    "ProxyRuleGroup"
+   ]
+  },
+  "createcontainerassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContainerAssociation",
+   "resources": [
+    "ContainerAssociation"
+   ]
+  },
+  "createfirewall": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFirewall",
+   "resources": [
+    "Firewall",
+    "FirewallPolicy",
+    "FirewallPolicyV2"
+   ]
+  },
+  "createfirewallpolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFirewallPolicy",
+   "resources": [
+    "FirewallPolicy",
+    "StatefulRuleGroup",
+    "StatelessRuleGroup",
+    "TLSInspectionConfiguration"
+   ]
+  },
+  "createfirewallpolicyv2": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFirewallPolicyV2",
+   "resources": [
+    "FirewallPolicyV2",
+    "FirewallRuleGroup",
+    "IpsRuleGroup",
+    "TLSInspectionConfiguration"
+   ]
+  },
+  "createproxy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProxy",
+   "resources": [
+    "Proxy",
+    "ProxyConfiguration"
+   ]
+  },
+  "createproxyconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProxyConfiguration",
+   "resources": [
+    "ProxyConfiguration",
+    "ProxyRuleGroup"
+   ]
+  },
+  "createproxyrulegroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProxyRuleGroup",
+   "resources": [
+    "ProxyRuleGroup"
+   ]
+  },
+  "createproxyrules": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProxyRules",
+   "resources": [
+    "ProxyRuleGroup"
+   ]
+  },
+  "createrulegroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRuleGroup",
+   "resources": [
+    "FirewallRuleGroup",
+    "IpsRuleGroup",
+    "StatefulRuleGroup",
+    "StatelessRuleGroup"
+   ]
+  },
+  "createtlsinspectionconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTLSInspectionConfiguration",
+   "resources": [
+    "TLSInspectionConfiguration"
+   ]
+  },
+  "createvpcendpointassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVpcEndpointAssociation",
+   "resources": [
+    "Firewall",
+    "VpcEndpointAssociation"
+   ]
+  },
+  "deletecontainerassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContainerAssociation",
+   "resources": [
+    "ContainerAssociation"
+   ]
+  },
+  "deletefirewall": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFirewall",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "deletefirewallpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFirewallPolicy",
+   "resources": [
+    "FirewallPolicy"
+   ]
+  },
+  "deletefirewallpolicyv2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFirewallPolicyV2",
+   "resources": [
+    "FirewallPolicyV2"
+   ]
+  },
+  "deletenetworkfirewalltransitgatewayattachment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNetworkFirewallTransitGatewayAttachment",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "deleteproxy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProxy",
+   "resources": [
+    "Proxy"
+   ]
+  },
+  "deleteproxyconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProxyConfiguration",
+   "resources": [
+    "ProxyConfiguration"
+   ]
+  },
+  "deleteproxyrulegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProxyRuleGroup",
+   "resources": [
+    "ProxyRuleGroup"
+   ]
+  },
+  "deleteproxyrules": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProxyRules",
+   "resources": [
+    "ProxyRuleGroup"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "Firewall",
+    "FirewallPolicy",
+    "FirewallPolicyV2",
+    "FirewallRuleGroup",
+    "IpsRuleGroup",
+    "StatefulRuleGroup",
+    "StatelessRuleGroup"
+   ]
+  },
+  "deleterulegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRuleGroup",
+   "resources": [
+    "FirewallRuleGroup",
+    "IpsRuleGroup",
+    "StatefulRuleGroup",
+    "StatelessRuleGroup"
+   ]
+  },
+  "deletetlsinspectionconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTLSInspectionConfiguration",
+   "resources": [
+    "TLSInspectionConfiguration"
+   ]
+  },
+  "deletevpcendpointassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVpcEndpointAssociation",
+   "resources": [
+    "VpcEndpointAssociation"
+   ]
+  },
+  "describecontainerassociation": {
+   "name": "DescribeContainerAssociation",
+   "resources": [
+    "ContainerAssociation"
+   ]
+  },
+  "describefirewall": {
+   "name": "DescribeFirewall",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "describefirewallmetadata": {
+   "name": "DescribeFirewallMetadata",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "describefirewallpolicy": {
+   "name": "DescribeFirewallPolicy",
+   "resources": [
+    "FirewallPolicy",
+    "StatefulRuleGroup",
+    "StatelessRuleGroup",
+    "TLSInspectionConfiguration"
+   ]
+  },
+  "describefirewallpolicyv2": {
+   "name": "DescribeFirewallPolicyV2",
+   "resources": [
+    "FirewallPolicyV2",
+    "FirewallRuleGroup",
+    "IpsRuleGroup",
+    "TLSInspectionConfiguration"
+   ]
+  },
+  "describeflowoperation": {
+   "name": "DescribeFlowOperation",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "describeloggingconfiguration": {
+   "name": "DescribeLoggingConfiguration",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "describeproxy": {
+   "name": "DescribeProxy",
+   "resources": [
+    "Proxy"
+   ]
+  },
+  "describeproxyconfiguration": {
+   "name": "DescribeProxyConfiguration",
+   "resources": [
+    "ProxyConfiguration"
+   ]
+  },
+  "describeproxyrule": {
+   "name": "DescribeProxyRule",
+   "resources": [
+    "ProxyRuleGroup"
+   ]
+  },
+  "describeproxyrulegroup": {
+   "name": "DescribeProxyRuleGroup",
+   "resources": [
+    "ProxyRuleGroup"
+   ]
+  },
+  "describeresourcepolicy": {
+   "name": "DescribeResourcePolicy",
+   "resources": [
+    "Firewall",
+    "FirewallPolicy",
+    "FirewallPolicyV2",
+    "FirewallRuleGroup",
+    "IpsRuleGroup",
+    "StatefulRuleGroup",
+    "StatelessRuleGroup"
+   ]
+  },
+  "describerulegroup": {
+   "name": "DescribeRuleGroup",
+   "resources": [
+    "FirewallRuleGroup",
+    "IpsRuleGroup",
+    "StatefulRuleGroup",
+    "StatelessRuleGroup"
+   ]
+  },
+  "describerulegroupmetadata": {
+   "name": "DescribeRuleGroupMetadata",
+   "resources": [
+    "FirewallRuleGroup",
+    "IpsRuleGroup",
+    "StatefulRuleGroup",
+    "StatelessRuleGroup"
+   ]
+  },
+  "describerulegroupsummary": {
+   "name": "DescribeRuleGroupSummary",
+   "resources": [
+    "FirewallRuleGroup",
+    "IpsRuleGroup",
+    "StatefulRuleGroup",
+    "StatelessRuleGroup"
+   ]
+  },
+  "describetlsinspectionconfiguration": {
+   "name": "DescribeTLSInspectionConfiguration",
+   "resources": [
+    "TLSInspectionConfiguration"
+   ]
+  },
+  "describevpcendpointassociation": {
+   "name": "DescribeVpcEndpointAssociation",
+   "resources": [
+    "VpcEndpointAssociation"
+   ]
+  },
+  "detachrulegroupsfromproxyconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetachRuleGroupsFromProxyConfiguration",
+   "resources": [
+    "ProxyConfiguration",
+    "ProxyRuleGroup"
+   ]
+  },
+  "disassociateavailabilityzones": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateAvailabilityZones",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "disassociatesubnets": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateSubnets",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "getanalysisreportresults": {
+   "name": "GetAnalysisReportResults",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "listanalysisreports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnalysisReports",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "listcontainerassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContainerAssociations",
+   "resources": []
+  },
+  "listfirewallpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFirewallPolicies",
+   "resources": [
+    "FirewallPolicy"
+   ]
+  },
+  "listfirewallpoliciesv2": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFirewallPoliciesV2",
+   "resources": [
+    "FirewallPolicyV2"
+   ]
+  },
+  "listfirewalls": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFirewalls",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "listflowoperationresults": {
+   "name": "ListFlowOperationResults",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "listflowoperations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFlowOperations",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "listproxies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProxies",
+   "resources": [
+    "Proxy"
+   ]
+  },
+  "listproxyconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProxyConfigurations",
+   "resources": [
+    "ProxyConfiguration"
+   ]
+  },
+  "listproxyrulegroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProxyRuleGroups",
+   "resources": [
+    "ProxyRuleGroup"
+   ]
+  },
+  "listrulegroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRuleGroups",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "ContainerAssociation",
+    "Firewall",
+    "FirewallPolicy",
+    "FirewallPolicyV2",
+    "FirewallRuleGroup",
+    "IpsRuleGroup",
+    "StatefulRuleGroup",
+    "StatelessRuleGroup",
+    "TLSInspectionConfiguration",
+    "VpcEndpointAssociation"
+   ]
+  },
+  "listtlsinspectionconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTLSInspectionConfigurations",
+   "resources": [
+    "TLSInspectionConfiguration"
+   ]
+  },
+  "listvpcendpointassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVpcEndpointAssociations",
+   "resources": [
+    "VpcEndpointAssociation"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "Firewall",
+    "FirewallPolicy",
+    "FirewallPolicyV2",
+    "FirewallRuleGroup",
+    "IpsRuleGroup",
+    "StatefulRuleGroup",
+    "StatelessRuleGroup"
+   ]
+  },
+  "rejectnetworkfirewalltransitgatewayattachment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectNetworkFirewallTransitGatewayAttachment",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "startanalysisreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAnalysisReport",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "startflowcapture": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFlowCapture",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "startflowflush": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFlowFlush",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "ContainerAssociation",
+    "Firewall",
+    "FirewallPolicy",
+    "FirewallPolicyV2",
+    "FirewallRuleGroup",
+    "IpsRuleGroup",
+    "Proxy",
+    "ProxyConfiguration",
+    "ProxyRuleGroup",
+    "StatefulRuleGroup",
+    "StatelessRuleGroup",
+    "TLSInspectionConfiguration",
+    "VpcEndpointAssociation"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "ContainerAssociation",
+    "Firewall",
+    "FirewallPolicy",
+    "FirewallPolicyV2",
+    "FirewallRuleGroup",
+    "IpsRuleGroup",
+    "Proxy",
+    "ProxyConfiguration",
+    "ProxyRuleGroup",
+    "StatefulRuleGroup",
+    "StatelessRuleGroup",
+    "TLSInspectionConfiguration",
+    "VpcEndpointAssociation"
+   ]
+  },
+  "updateavailabilityzonechangeprotection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAvailabilityZoneChangeProtection",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "updatecontainerassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContainerAssociation",
+   "resources": [
+    "ContainerAssociation"
+   ]
+  },
+  "updatefirewallanalysissettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFirewallAnalysisSettings",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "updatefirewalldeleteprotection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFirewallDeleteProtection",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "updatefirewalldescription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFirewallDescription",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "updatefirewallencryptionconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFirewallEncryptionConfiguration",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "updatefirewallpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFirewallPolicy",
+   "resources": [
+    "FirewallPolicy",
+    "StatefulRuleGroup",
+    "StatelessRuleGroup",
+    "TLSInspectionConfiguration"
+   ]
+  },
+  "updatefirewallpolicychangeprotection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFirewallPolicyChangeProtection",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "updatefirewallpolicyv2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFirewallPolicyV2",
+   "resources": [
+    "FirewallPolicyV2",
+    "FirewallRuleGroup",
+    "IpsRuleGroup",
+    "TLSInspectionConfiguration"
+   ]
+  },
+  "updateloggingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLoggingConfiguration",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "updateproxy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProxy",
+   "resources": [
+    "Proxy"
+   ]
+  },
+  "updateproxyconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProxyConfiguration",
+   "resources": [
+    "ProxyConfiguration"
+   ]
+  },
+  "updateproxyrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProxyRule",
+   "resources": [
+    "ProxyRuleGroup"
+   ]
+  },
+  "updateproxyrulegrouppriorities": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProxyRuleGroupPriorities",
+   "resources": [
+    "ProxyConfiguration"
+   ]
+  },
+  "updateproxyrulepriorities": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProxyRulePriorities",
+   "resources": [
+    "ProxyRuleGroup"
+   ]
+  },
+  "updaterulegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRuleGroup",
+   "resources": [
+    "FirewallRuleGroup",
+    "IpsRuleGroup",
+    "StatefulRuleGroup",
+    "StatelessRuleGroup"
+   ]
+  },
+  "updatesubnetchangeprotection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSubnetChangeProtection",
+   "resources": [
+    "Firewall"
+   ]
+  },
+  "updatetlsinspectionconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTLSInspectionConfiguration",
+   "resources": [
+    "TLSInspectionConfiguration"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "ContainerAssociation": {
+   "arnFormats": [
+    "arn:${Partition}:network-firewall:${Region}:${Account}:container-association/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Firewall": {
+   "arnFormats": [
+    "arn:${Partition}:network-firewall:${Region}:${Account}:firewall/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "FirewallPolicy": {
+   "arnFormats": [
+    "arn:${Partition}:network-firewall:${Region}:${Account}:firewall-policy/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "FirewallPolicyV2": {
+   "arnFormats": [
+    "arn:${Partition}:network-firewall:${Region}:${Account}:firewall-policy-v2/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "FirewallRuleGroup": {
+   "arnFormats": [
+    "arn:${Partition}:network-firewall:${Region}:${Account}:firewall-rulegroup/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "IpsRuleGroup": {
+   "arnFormats": [
+    "arn:${Partition}:network-firewall:${Region}:${Account}:ips-rulegroup/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Proxy": {
+   "arnFormats": [
+    "arn:${Partition}:network-firewall:${Region}:${Account}:proxy/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ProxyConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:network-firewall:${Region}:${Account}:proxy-configuration/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ProxyRuleGroup": {
+   "arnFormats": [
+    "arn:${Partition}:network-firewall:${Region}:${Account}:proxy-rule-group/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "StatefulRuleGroup": {
+   "arnFormats": [
+    "arn:${Partition}:network-firewall:${Region}:${Account}:stateful-rulegroup/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "StatelessRuleGroup": {
+   "arnFormats": [
+    "arn:${Partition}:network-firewall:${Region}:${Account}:stateless-rulegroup/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "TLSInspectionConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:network-firewall:${Region}:${Account}:tls-configuration/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "VpcEndpointAssociation": {
+   "arnFormats": [
+    "arn:${Partition}:network-firewall:${Region}:${Account}:vpc-endpoint-association/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "network-firewall",
+ "serviceName": "Network Firewall",
+ "version": "v1.5"
+}

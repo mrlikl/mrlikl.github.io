@@ -1,0 +1,249 @@
+{
+ "actions": {
+  "approveplanexecutionstep": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ApprovePlanExecutionStep",
+   "resources": [
+    "plan"
+   ]
+  },
+  "cancelplanexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelPlanExecution",
+   "resources": [
+    "plan"
+   ]
+  },
+  "createplan": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePlan",
+   "resources": [
+    "plan"
+   ]
+  },
+  "deleteplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePlan",
+   "resources": [
+    "plan"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": []
+  },
+  "getplan": {
+   "name": "GetPlan",
+   "resources": [
+    "plan"
+   ]
+  },
+  "getplanevaluationstatus": {
+   "name": "GetPlanEvaluationStatus",
+   "resources": [
+    "plan"
+   ]
+  },
+  "getplanexecution": {
+   "name": "GetPlanExecution",
+   "resources": [
+    "plan"
+   ]
+  },
+  "getplaninregion": {
+   "name": "GetPlanInRegion",
+   "resources": [
+    "plan"
+   ]
+  },
+  "getresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "GetResourcePolicy",
+   "resources": [
+    "plan"
+   ]
+  },
+  "listplanexecutionevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPlanExecutionEvents",
+   "resources": [
+    "plan"
+   ]
+  },
+  "listplanexecutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPlanExecutions",
+   "resources": [
+    "plan"
+   ]
+  },
+  "listplans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPlans",
+   "resources": []
+  },
+  "listplansinregion": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPlansInRegion",
+   "resources": []
+  },
+  "listroute53healthchecks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRoute53HealthChecks",
+   "resources": [
+    "plan"
+   ]
+  },
+  "listroute53healthchecksinregion": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRoute53HealthChecksInRegion",
+   "resources": [
+    "plan"
+   ]
+  },
+  "listservicequotawarnings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceQuotaWarnings",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "plan"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": []
+  },
+  "startplanexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartPlanExecution",
+   "resources": [
+    "plan"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "plan"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "plan"
+   ]
+  },
+  "updateplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePlan",
+   "resources": [
+    "plan"
+   ]
+  },
+  "updateplanexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePlanExecution",
+   "resources": [
+    "plan"
+   ]
+  },
+  "updateplanexecutionstep": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePlanExecutionStep",
+   "resources": [
+    "plan"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "plan": {
+   "arnFormats": [
+    "arn:${Partition}:arc-region-switch::${Account}:plan/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "arc-region-switch",
+ "serviceName": "ARC Region switch",
+ "version": "v1.5"
+}

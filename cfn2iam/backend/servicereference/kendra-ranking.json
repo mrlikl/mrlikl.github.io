@@ -1,0 +1,112 @@
+{
+ "actions": {
+  "createrescoreexecutionplan": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRescoreExecutionPlan",
+   "resources": []
+  },
+  "deleterescoreexecutionplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRescoreExecutionPlan",
+   "resources": [
+    "rescore-execution-plan"
+   ]
+  },
+  "describerescoreexecutionplan": {
+   "name": "DescribeRescoreExecutionPlan",
+   "resources": [
+    "rescore-execution-plan"
+   ]
+  },
+  "listrescoreexecutionplans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRescoreExecutionPlans",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "rescore-execution-plan"
+   ]
+  },
+  "rescore": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "Rescore",
+   "resources": [
+    "rescore-execution-plan"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "rescore-execution-plan"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "rescore-execution-plan"
+   ]
+  },
+  "updaterescoreexecutionplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRescoreExecutionPlan",
+   "resources": [
+    "rescore-execution-plan"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "rescore-execution-plan": {
+   "arnFormats": [
+    "arn:${Partition}:kendra-ranking:${Region}:${Account}:rescore-execution-plan/${RescoreExecutionPlanId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "kendra-ranking",
+ "serviceName": "Kendra Intelligent Ranking",
+ "version": "v1.5"
+}

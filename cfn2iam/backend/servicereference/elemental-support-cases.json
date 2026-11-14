@@ -1,0 +1,169 @@
+{
+ "actions": {
+  "addcasecomment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddCaseComment",
+   "resources": [
+    "case"
+   ]
+  },
+  "checkcasepermission": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CheckCasePermission",
+   "resources": []
+  },
+  "completemultipartupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteMultipartUpload",
+   "resources": [
+    "case"
+   ]
+  },
+  "createcase": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCase",
+   "resources": []
+  },
+  "creates3cliuploadcommand": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateS3CLIUploadCommand",
+   "resources": [
+    "case"
+   ]
+  },
+  "creates3downloadurl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateS3DownloadUrl",
+   "resources": [
+    "case"
+   ]
+  },
+  "getcase": {
+   "name": "GetCase",
+   "resources": [
+    "case"
+   ]
+  },
+  "getcasepermission": {
+   "name": "GetCasePermission",
+   "resources": []
+  },
+  "getcases": {
+   "name": "GetCases",
+   "resources": []
+  },
+  "getuicache": {
+   "name": "GetUICache",
+   "resources": []
+  },
+  "listtagsforcase": {
+   "name": "ListTagsForCase",
+   "resources": [
+    "case"
+   ]
+  },
+  "startmultipartupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMultipartUpload",
+   "resources": [
+    "case"
+   ]
+  },
+  "tagcase": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagCase",
+   "resources": [
+    "case"
+   ]
+  },
+  "untagcase": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagCase",
+   "resources": [
+    "case"
+   ]
+  },
+  "updatecase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCase",
+   "resources": [
+    "case"
+   ]
+  },
+  "updatecasestatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCaseStatus",
+   "resources": [
+    "case"
+   ]
+  },
+  "updatemultipartupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMultipartUpload",
+   "resources": [
+    "case"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "case": {
+   "arnFormats": [
+    "arn:${Partition}:elemental-support-cases::${Account}:case/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "elemental-support-cases",
+ "serviceName": "Elemental Support Cases",
+ "version": "v1.5"
+}

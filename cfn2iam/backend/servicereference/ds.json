@@ -1,0 +1,776 @@
+{
+ "actions": {
+  "acceptshareddirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptSharedDirectory",
+   "resources": [
+    "directory"
+   ]
+  },
+  "accessdsdata": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AccessDSData",
+   "resources": [
+    "directory"
+   ]
+  },
+  "addiproutes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddIpRoutes",
+   "resources": [
+    "directory"
+   ]
+  },
+  "addregion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddRegion",
+   "resources": [
+    "directory"
+   ]
+  },
+  "addtagstoresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "AddTagsToResource",
+   "resources": [
+    "directory"
+   ]
+  },
+  "authorizeapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AuthorizeApplication",
+   "resources": [
+    "directory"
+   ]
+  },
+  "cancelschemaextension": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelSchemaExtension",
+   "resources": [
+    "directory"
+   ]
+  },
+  "checkalias": {
+   "name": "CheckAlias",
+   "resources": []
+  },
+  "connectdirectory": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConnectDirectory",
+   "resources": []
+  },
+  "createalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAlias",
+   "resources": [
+    "directory"
+   ]
+  },
+  "createcomputer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateComputer",
+   "resources": [
+    "directory"
+   ]
+  },
+  "createconditionalforwarder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConditionalForwarder",
+   "resources": [
+    "directory"
+   ]
+  },
+  "createdirectory": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDirectory",
+   "resources": []
+  },
+  "createhybridad": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHybridAD",
+   "resources": []
+  },
+  "createidentitypooldirectory": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIdentityPoolDirectory",
+   "resources": []
+  },
+  "createlogsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLogSubscription",
+   "resources": [
+    "directory"
+   ]
+  },
+  "createmicrosoftad": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMicrosoftAD",
+   "resources": []
+  },
+  "createsnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSnapshot",
+   "resources": [
+    "directory"
+   ]
+  },
+  "createtrust": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTrust",
+   "resources": [
+    "directory"
+   ]
+  },
+  "deleteadassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteADAssessment",
+   "resources": []
+  },
+  "deleteconditionalforwarder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConditionalForwarder",
+   "resources": [
+    "directory"
+   ]
+  },
+  "deletedirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDirectory",
+   "resources": [
+    "directory"
+   ]
+  },
+  "deletelogsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLogSubscription",
+   "resources": [
+    "directory"
+   ]
+  },
+  "deletesnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSnapshot",
+   "resources": [
+    "directory"
+   ]
+  },
+  "deletetrust": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTrust",
+   "resources": [
+    "directory"
+   ]
+  },
+  "deregistercertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterCertificate",
+   "resources": [
+    "directory"
+   ]
+  },
+  "deregistereventtopic": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterEventTopic",
+   "resources": [
+    "directory"
+   ]
+  },
+  "describeadassessment": {
+   "name": "DescribeADAssessment",
+   "resources": []
+  },
+  "describecaenrollmentpolicy": {
+   "name": "DescribeCAEnrollmentPolicy",
+   "resources": [
+    "directory"
+   ]
+  },
+  "describecertificate": {
+   "name": "DescribeCertificate",
+   "resources": [
+    "directory"
+   ]
+  },
+  "describeclientauthenticationsettings": {
+   "name": "DescribeClientAuthenticationSettings",
+   "resources": [
+    "directory"
+   ]
+  },
+  "describeconditionalforwarders": {
+   "name": "DescribeConditionalForwarders",
+   "resources": [
+    "directory"
+   ]
+  },
+  "describedirectories": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDirectories",
+   "resources": []
+  },
+  "describedirectorydataaccess": {
+   "name": "DescribeDirectoryDataAccess",
+   "resources": [
+    "directory"
+   ]
+  },
+  "describedomaincontrollers": {
+   "name": "DescribeDomainControllers",
+   "resources": [
+    "directory"
+   ]
+  },
+  "describeeventtopics": {
+   "name": "DescribeEventTopics",
+   "resources": [
+    "directory"
+   ]
+  },
+  "describehybridadupdate": {
+   "name": "DescribeHybridADUpdate",
+   "resources": [
+    "directory"
+   ]
+  },
+  "describeldapssettings": {
+   "name": "DescribeLDAPSSettings",
+   "resources": [
+    "directory"
+   ]
+  },
+  "describeregions": {
+   "name": "DescribeRegions",
+   "resources": [
+    "directory"
+   ]
+  },
+  "describesettings": {
+   "name": "DescribeSettings",
+   "resources": [
+    "directory"
+   ]
+  },
+  "describeshareddirectories": {
+   "name": "DescribeSharedDirectories",
+   "resources": [
+    "directory"
+   ]
+  },
+  "describesnapshots": {
+   "name": "DescribeSnapshots",
+   "resources": []
+  },
+  "describetrusts": {
+   "name": "DescribeTrusts",
+   "resources": []
+  },
+  "describeupdatedirectory": {
+   "name": "DescribeUpdateDirectory",
+   "resources": [
+    "directory"
+   ]
+  },
+  "disablecaenrollmentpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableCAEnrollmentPolicy",
+   "resources": [
+    "directory"
+   ]
+  },
+  "disableclientauthentication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableClientAuthentication",
+   "resources": [
+    "directory"
+   ]
+  },
+  "disabledirectorydataaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableDirectoryDataAccess",
+   "resources": [
+    "directory"
+   ]
+  },
+  "disableldaps": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableLDAPS",
+   "resources": [
+    "directory"
+   ]
+  },
+  "disableradius": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableRadius",
+   "resources": [
+    "directory"
+   ]
+  },
+  "disableroleaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableRoleAccess",
+   "resources": [
+    "directory"
+   ]
+  },
+  "disablesso": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableSso",
+   "resources": [
+    "directory"
+   ]
+  },
+  "enablecaenrollmentpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableCAEnrollmentPolicy",
+   "resources": [
+    "directory"
+   ]
+  },
+  "enableclientauthentication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableClientAuthentication",
+   "resources": [
+    "directory"
+   ]
+  },
+  "enabledirectorydataaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableDirectoryDataAccess",
+   "resources": [
+    "directory"
+   ]
+  },
+  "enableldaps": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableLDAPS",
+   "resources": [
+    "directory"
+   ]
+  },
+  "enableradius": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableRadius",
+   "resources": [
+    "directory"
+   ]
+  },
+  "enableroleaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableRoleAccess",
+   "resources": [
+    "directory"
+   ]
+  },
+  "enablesso": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableSso",
+   "resources": [
+    "directory"
+   ]
+  },
+  "getauthorizedapplicationdetails": {
+   "name": "GetAuthorizedApplicationDetails",
+   "resources": [
+    "directory"
+   ]
+  },
+  "getdirectorylimits": {
+   "name": "GetDirectoryLimits",
+   "resources": []
+  },
+  "getsnapshotlimits": {
+   "name": "GetSnapshotLimits",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listadassessments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListADAssessments",
+   "resources": []
+  },
+  "listauthorizedapplications": {
+   "name": "ListAuthorizedApplications",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listcertificates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCertificates",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listiproutes": {
+   "name": "ListIpRoutes",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listlogsubscriptions": {
+   "name": "ListLogSubscriptions",
+   "resources": []
+  },
+  "listschemaextensions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSchemaExtensions",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "directory"
+   ]
+  },
+  "registercertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterCertificate",
+   "resources": [
+    "directory"
+   ]
+  },
+  "registereventtopic": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterEventTopic",
+   "resources": [
+    "directory"
+   ]
+  },
+  "rejectshareddirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectSharedDirectory",
+   "resources": [
+    "directory"
+   ]
+  },
+  "removeiproutes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveIpRoutes",
+   "resources": [
+    "directory"
+   ]
+  },
+  "removeregion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveRegion",
+   "resources": [
+    "directory"
+   ]
+  },
+  "removetagsfromresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "RemoveTagsFromResource",
+   "resources": [
+    "directory"
+   ]
+  },
+  "resetuserpassword": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetUserPassword",
+   "resources": [
+    "directory"
+   ]
+  },
+  "restorefromsnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreFromSnapshot",
+   "resources": [
+    "directory"
+   ]
+  },
+  "sharedirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ShareDirectory",
+   "resources": [
+    "directory"
+   ]
+  },
+  "startadassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartADAssessment",
+   "resources": []
+  },
+  "startschemaextension": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSchemaExtension",
+   "resources": [
+    "directory"
+   ]
+  },
+  "unauthorizeapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnauthorizeApplication",
+   "resources": [
+    "directory"
+   ]
+  },
+  "unsharedirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnshareDirectory",
+   "resources": [
+    "directory"
+   ]
+  },
+  "updateauthorizedapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAuthorizedApplication",
+   "resources": [
+    "directory"
+   ]
+  },
+  "updateconditionalforwarder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConditionalForwarder",
+   "resources": [
+    "directory"
+   ]
+  },
+  "updatedirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDirectory",
+   "resources": [
+    "directory"
+   ]
+  },
+  "updatedirectorysetup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDirectorySetup",
+   "resources": [
+    "directory"
+   ]
+  },
+  "updatehybridad": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHybridAD",
+   "resources": [
+    "directory"
+   ]
+  },
+  "updatenumberofdomaincontrollers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNumberOfDomainControllers",
+   "resources": [
+    "directory"
+   ]
+  },
+  "updateradius": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRadius",
+   "resources": [
+    "directory"
+   ]
+  },
+  "updatesettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSettings",
+   "resources": [
+    "directory"
+   ]
+  },
+  "updatetrust": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTrust",
+   "resources": [
+    "directory"
+   ]
+  },
+  "verifytrust": {
+   "name": "VerifyTrust",
+   "resources": [
+    "directory"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "directory": {
+   "arnFormats": [
+    "arn:${Partition}:ds:${Region}:${Account}:directory/${DirectoryId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "ds",
+ "serviceName": "Directory Service",
+ "version": "v1.5"
+}

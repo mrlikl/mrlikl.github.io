@@ -1,0 +1,173 @@
+{
+ "actions": {
+  "createsoftwareconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSoftwareConfiguration",
+   "resources": [
+    "configuration"
+   ]
+  },
+  "createsubscription": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSubscription",
+   "resources": []
+  },
+  "deletesoftwareconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSoftwareConfiguration",
+   "resources": [
+    "configuration"
+   ]
+  },
+  "describehardwareplatform": {
+   "name": "DescribeHardwarePlatform",
+   "resources": []
+  },
+  "describesoftwareconfiguration": {
+   "name": "DescribeSoftwareConfiguration",
+   "resources": [
+    "configuration"
+   ]
+  },
+  "describesubscription": {
+   "name": "DescribeSubscription",
+   "resources": [
+    "subscription"
+   ]
+  },
+  "getemppatchurl": {
+   "name": "GetEmpPatchUrl",
+   "resources": []
+  },
+  "getsoftwareurl": {
+   "name": "GetSoftwareURL",
+   "resources": []
+  },
+  "getsoftwareurlforconfiguration": {
+   "name": "GetSoftwareURLForConfiguration",
+   "resources": []
+  },
+  "getsubscriptionbillingamount": {
+   "name": "GetSubscriptionBillingAmount",
+   "resources": []
+  },
+  "listfreertosversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFreeRTOSVersions",
+   "resources": []
+  },
+  "listhardwareplatforms": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHardwarePlatforms",
+   "resources": []
+  },
+  "listhardwarevendors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHardwareVendors",
+   "resources": []
+  },
+  "listsoftwareconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSoftwareConfigurations",
+   "resources": []
+  },
+  "listsoftwarepatches": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSoftwarePatches",
+   "resources": []
+  },
+  "listsubscriptionemails": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubscriptionEmails",
+   "resources": []
+  },
+  "listsubscriptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubscriptions",
+   "resources": []
+  },
+  "updateemailrecipients": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEmailRecipients",
+   "resources": []
+  },
+  "updatesoftwareconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSoftwareConfiguration",
+   "resources": [
+    "configuration"
+   ]
+  },
+  "verifyemail": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VerifyEmail",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "configuration": {
+   "arnFormats": [
+    "arn:${Partition}:freertos:${Region}:${Account}:configuration/${ConfigurationName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "subscription": {
+   "arnFormats": [
+    "arn:${Partition}:freertos:${Region}:${Account}:subscription/${SubscriptionID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "freertos",
+ "serviceName": "FreeRTOS",
+ "version": "v1.5"
+}

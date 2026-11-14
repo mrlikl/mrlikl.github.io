@@ -1,0 +1,29 @@
+{
+ "actions": {
+  "getrawmessagecontent": {
+   "name": "GetRawMessageContent",
+   "resources": [
+    "RawMessage"
+   ]
+  },
+  "putrawmessagecontent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRawMessageContent",
+   "resources": [
+    "RawMessage"
+   ]
+  }
+ },
+ "resources": {
+  "RawMessage": {
+   "arnFormats": [
+    "arn:${Partition}:workmailmessageflow:${Region}:${Account}:message/${OrganizationId}/${Context}/${MessageId}"
+   ]
+  }
+ },
+ "service": "workmailmessageflow",
+ "serviceName": "WorkMail Message Flow",
+ "version": "v1.5"
+}

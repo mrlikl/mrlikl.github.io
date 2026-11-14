@@ -1,0 +1,745 @@
+{
+ "actions": {
+  "batchgetnamedquery": {
+   "name": "BatchGetNamedQuery",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "batchgetpreparedstatement": {
+   "name": "BatchGetPreparedStatement",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "batchgetqueryexecution": {
+   "name": "BatchGetQueryExecution",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "cancelcapacityreservation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelCapacityReservation",
+   "resources": [
+    "capacity-reservation"
+   ]
+  },
+  "cancelqueryexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelQueryExecution",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "createcapacityreservation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCapacityReservation",
+   "resources": [
+    "capacity-reservation"
+   ]
+  },
+  "createdatacatalog": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataCatalog",
+   "resources": [
+    "datacatalog"
+   ]
+  },
+  "createnamedquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNamedQuery",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "createnotebook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNotebook",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "createpreparedstatement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePreparedStatement",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "createpresignednotebookurl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePresignedNotebookUrl",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "createsystemtableconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSystemTableConfiguration",
+   "resources": [
+    "system-table"
+   ]
+  },
+  "createworkgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkGroup",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "deletecapacityreservation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCapacityReservation",
+   "resources": [
+    "capacity-reservation"
+   ]
+  },
+  "deletedatacatalog": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataCatalog",
+   "resources": [
+    "datacatalog"
+   ]
+  },
+  "deletenamedquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNamedQuery",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "deletenotebook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotebook",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "deletepreparedstatement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePreparedStatement",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "deletesystemtableconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSystemTableConfiguration",
+   "resources": [
+    "system-table"
+   ]
+  },
+  "deleteworkgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkGroup",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "exportnotebook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportNotebook",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "getcalculationexecution": {
+   "name": "GetCalculationExecution",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "getcalculationexecutioncode": {
+   "name": "GetCalculationExecutionCode",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "getcalculationexecutionstatus": {
+   "name": "GetCalculationExecutionStatus",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "getcapacityassignmentconfiguration": {
+   "name": "GetCapacityAssignmentConfiguration",
+   "resources": [
+    "capacity-reservation"
+   ]
+  },
+  "getcapacityreservation": {
+   "name": "GetCapacityReservation",
+   "resources": [
+    "capacity-reservation"
+   ]
+  },
+  "getcatalogs": {
+   "name": "GetCatalogs",
+   "resources": []
+  },
+  "getdatabase": {
+   "name": "GetDatabase",
+   "resources": [
+    "datacatalog"
+   ]
+  },
+  "getdatacatalog": {
+   "name": "GetDataCatalog",
+   "resources": [
+    "datacatalog"
+   ]
+  },
+  "getexecutionengine": {
+   "name": "GetExecutionEngine",
+   "resources": []
+  },
+  "getexecutionengines": {
+   "name": "GetExecutionEngines",
+   "resources": []
+  },
+  "getnamedquery": {
+   "name": "GetNamedQuery",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "getnamespace": {
+   "name": "GetNamespace",
+   "resources": []
+  },
+  "getnamespaces": {
+   "name": "GetNamespaces",
+   "resources": []
+  },
+  "getnotebookmetadata": {
+   "name": "GetNotebookMetadata",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "getpreparedstatement": {
+   "name": "GetPreparedStatement",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "getqueryexecution": {
+   "name": "GetQueryExecution",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "getqueryexecutions": {
+   "name": "GetQueryExecutions",
+   "resources": []
+  },
+  "getqueryresults": {
+   "name": "GetQueryResults",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "getqueryresultsstream": {
+   "name": "GetQueryResultsStream",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "getqueryruntimestatistics": {
+   "name": "GetQueryRuntimeStatistics",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "getresourcedashboard": {
+   "name": "GetResourceDashboard",
+   "resources": [
+    "session",
+    "workgroup"
+   ]
+  },
+  "getsession": {
+   "name": "GetSession",
+   "resources": [
+    "session",
+    "workgroup"
+   ]
+  },
+  "getsessionendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetSessionEndpoint",
+   "resources": [
+    "session",
+    "workgroup"
+   ]
+  },
+  "getsessionstatus": {
+   "name": "GetSessionStatus",
+   "resources": [
+    "session",
+    "workgroup"
+   ]
+  },
+  "getsystemtableconfiguration": {
+   "name": "GetSystemTableConfiguration",
+   "resources": [
+    "system-table"
+   ]
+  },
+  "gettable": {
+   "name": "GetTable",
+   "resources": []
+  },
+  "gettablemetadata": {
+   "name": "GetTableMetadata",
+   "resources": [
+    "datacatalog"
+   ]
+  },
+  "gettables": {
+   "name": "GetTables",
+   "resources": []
+  },
+  "getworkgroup": {
+   "name": "GetWorkGroup",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "importnotebook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportNotebook",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "listapplicationdpusizes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationDPUSizes",
+   "resources": []
+  },
+  "listcalculationexecutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCalculationExecutions",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "listcapacityreservations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCapacityReservations",
+   "resources": []
+  },
+  "listdatabases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatabases",
+   "resources": [
+    "datacatalog"
+   ]
+  },
+  "listdatacatalogs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataCatalogs",
+   "resources": []
+  },
+  "listengineversions": {
+   "name": "ListEngineVersions",
+   "resources": []
+  },
+  "listexecutors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExecutors",
+   "resources": []
+  },
+  "listnamedqueries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNamedQueries",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "listnotebookmetadata": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNotebookMetadata",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "listnotebooksessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNotebookSessions",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "listpreparedstatements": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPreparedStatements",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "listqueryexecutions": {
+   "name": "ListQueryExecutions",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "listsessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSessions",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "listsystemtablestatuses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSystemTableStatuses",
+   "resources": []
+  },
+  "listtablemetadata": {
+   "name": "ListTableMetadata",
+   "resources": [
+    "datacatalog"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "capacity-reservation",
+    "datacatalog",
+    "session",
+    "system-table",
+    "workgroup"
+   ]
+  },
+  "listworkgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkGroups",
+   "resources": []
+  },
+  "putcapacityassignmentconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutCapacityAssignmentConfiguration",
+   "resources": [
+    "capacity-reservation",
+    "workgroup"
+   ]
+  },
+  "runquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RunQuery",
+   "resources": []
+  },
+  "startcalculationexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCalculationExecution",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "startqueryexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartQueryExecution",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "startsession": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSession",
+   "resources": [
+    "session",
+    "workgroup"
+   ]
+  },
+  "stopcalculationexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopCalculationExecution",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "stopqueryexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopQueryExecution",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "capacity-reservation",
+    "datacatalog",
+    "session",
+    "system-table",
+    "workgroup"
+   ]
+  },
+  "terminatesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TerminateSession",
+   "resources": [
+    "session",
+    "workgroup"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "capacity-reservation",
+    "datacatalog",
+    "session",
+    "system-table",
+    "workgroup"
+   ]
+  },
+  "updatecapacityreservation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCapacityReservation",
+   "resources": [
+    "capacity-reservation"
+   ]
+  },
+  "updatedatacatalog": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataCatalog",
+   "resources": [
+    "datacatalog"
+   ]
+  },
+  "updatenamedquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNamedQuery",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "updatenotebook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotebook",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "updatenotebookmetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotebookMetadata",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "updatepreparedstatement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePreparedStatement",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "updatesystemtableconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSystemTableConfiguration",
+   "resources": [
+    "system-table"
+   ]
+  },
+  "updateworkgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkGroup",
+   "resources": [
+    "workgroup"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "capacity-reservation": {
+   "arnFormats": [
+    "arn:${Partition}:athena:${Region}:${Account}:capacity-reservation/${CapacityReservationName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "datacatalog": {
+   "arnFormats": [
+    "arn:${Partition}:athena:${Region}:${Account}:datacatalog/${DataCatalogName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "session": {
+   "arnFormats": [
+    "arn:${Partition}:athena:${Region}:${Account}:workgroup/${WorkGroupName}/session/${SessionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "system-table": {
+   "arnFormats": [
+    "arn:${Partition}:athena:${Region}:${Account}:system-table/${TableName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workgroup": {
+   "arnFormats": [
+    "arn:${Partition}:athena:${Region}:${Account}:workgroup/${WorkGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "athena",
+ "serviceName": "Athena",
+ "version": "v1.5"
+}

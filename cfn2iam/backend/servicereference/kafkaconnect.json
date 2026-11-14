@@ -1,0 +1,256 @@
+{
+ "actions": {
+  "createconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnector",
+   "resources": []
+  },
+  "createcustomplugin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomPlugin",
+   "resources": []
+  },
+  "createworkerconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkerConfiguration",
+   "resources": []
+  },
+  "deleteconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "deletecustomplugin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomPlugin",
+   "resources": [
+    "custom plugin"
+   ]
+  },
+  "deleteworkerconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkerConfiguration",
+   "resources": [
+    "worker configuration"
+   ]
+  },
+  "describeconnector": {
+   "name": "DescribeConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "describeconnectoroperation": {
+   "name": "DescribeConnectorOperation",
+   "resources": [
+    "connector operation"
+   ]
+  },
+  "describecustomplugin": {
+   "name": "DescribeCustomPlugin",
+   "resources": [
+    "custom plugin"
+   ]
+  },
+  "describeworkerconfiguration": {
+   "name": "DescribeWorkerConfiguration",
+   "resources": [
+    "worker configuration"
+   ]
+  },
+  "listconnectoroperations": {
+   "name": "ListConnectorOperations",
+   "resources": [
+    "connector"
+   ]
+  },
+  "listconnectors": {
+   "name": "ListConnectors",
+   "resources": []
+  },
+  "listcustomplugins": {
+   "name": "ListCustomPlugins",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resourceConditionKeys": {
+    "connector": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "custom plugin": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "worker configuration": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "connector",
+    "custom plugin",
+    "worker configuration"
+   ]
+  },
+  "listworkerconfigurations": {
+   "name": "ListWorkerConfigurations",
+   "resources": []
+  },
+  "pauseconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PauseConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "restartconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestartConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "resumeconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResumeConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "connector": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "custom plugin": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "worker configuration": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "connector",
+    "custom plugin",
+    "worker configuration"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "connector": [
+     "aws:TagKeys"
+    ],
+    "custom plugin": [
+     "aws:TagKeys"
+    ],
+    "worker configuration": [
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "connector",
+    "custom plugin",
+    "worker configuration"
+   ]
+  },
+  "updateconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnector",
+   "resources": [
+    "connector"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "connector": {
+   "arnFormats": [
+    "arn:${Partition}:kafkaconnect:${Region}:${Account}:connector/${ConnectorName}/${UUID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "connector operation": {
+   "arnFormats": [
+    "arn:${Partition}:kafkaconnect:${Region}:${Account}:connector-operation/${ConnectorName}/${ConnectorUUID}/${UUID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "custom plugin": {
+   "arnFormats": [
+    "arn:${Partition}:kafkaconnect:${Region}:${Account}:custom-plugin/${CustomPluginName}/${UUID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "worker configuration": {
+   "arnFormats": [
+    "arn:${Partition}:kafkaconnect:${Region}:${Account}:worker-configuration/${WorkerConfigurationName}/${UUID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "kafkaconnect",
+ "serviceName": "MSK Connect",
+ "version": "v1.5"
+}

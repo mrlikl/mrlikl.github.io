@@ -1,0 +1,700 @@
+{
+ "actions": {
+  "associateentitiestoexperience": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateEntitiesToExperience",
+   "resources": [
+    "experience",
+    "index"
+   ]
+  },
+  "associatepersonastoentities": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociatePersonasToEntities",
+   "resources": [
+    "experience",
+    "index"
+   ]
+  },
+  "batchdeletedocument": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteDocument",
+   "resources": [
+    "index"
+   ]
+  },
+  "batchdeletefeaturedresultsset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteFeaturedResultsSet",
+   "resources": [
+    "featured-results-set",
+    "index"
+   ]
+  },
+  "batchgetdocumentstatus": {
+   "name": "BatchGetDocumentStatus",
+   "resources": [
+    "index"
+   ]
+  },
+  "batchputdocument": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchPutDocument",
+   "resources": [
+    "index"
+   ]
+  },
+  "clearquerysuggestions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ClearQuerySuggestions",
+   "resources": [
+    "index"
+   ]
+  },
+  "createaccesscontrolconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessControlConfiguration",
+   "resources": [
+    "index"
+   ]
+  },
+  "createdatasource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataSource",
+   "resources": [
+    "index"
+   ]
+  },
+  "createexperience": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExperience",
+   "resources": [
+    "index"
+   ]
+  },
+  "createfaq": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFaq",
+   "resources": [
+    "index"
+   ]
+  },
+  "createfeaturedresultsset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFeaturedResultsSet",
+   "resources": [
+    "index"
+   ]
+  },
+  "createindex": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIndex",
+   "resources": []
+  },
+  "createquerysuggestionsblocklist": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQuerySuggestionsBlockList",
+   "resources": [
+    "index"
+   ]
+  },
+  "createthesaurus": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateThesaurus",
+   "resources": [
+    "index"
+   ]
+  },
+  "deleteaccesscontrolconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccessControlConfiguration",
+   "resources": [
+    "access-control-configuration",
+    "index"
+   ]
+  },
+  "deletedatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataSource",
+   "resources": [
+    "data-source",
+    "index"
+   ]
+  },
+  "deleteexperience": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExperience",
+   "resources": [
+    "experience",
+    "index"
+   ]
+  },
+  "deletefaq": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFaq",
+   "resources": [
+    "faq",
+    "index"
+   ]
+  },
+  "deleteindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIndex",
+   "resources": [
+    "index"
+   ]
+  },
+  "deleteprincipalmapping": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePrincipalMapping",
+   "resources": [
+    "data-source",
+    "index"
+   ]
+  },
+  "deletequerysuggestionsblocklist": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQuerySuggestionsBlockList",
+   "resources": [
+    "index",
+    "query-suggestions-block-list"
+   ]
+  },
+  "deletethesaurus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteThesaurus",
+   "resources": [
+    "index",
+    "thesaurus"
+   ]
+  },
+  "describeaccesscontrolconfiguration": {
+   "name": "DescribeAccessControlConfiguration",
+   "resources": [
+    "access-control-configuration",
+    "index"
+   ]
+  },
+  "describedatasource": {
+   "name": "DescribeDataSource",
+   "resources": [
+    "data-source",
+    "index"
+   ]
+  },
+  "describeexperience": {
+   "name": "DescribeExperience",
+   "resources": [
+    "experience",
+    "index"
+   ]
+  },
+  "describefaq": {
+   "name": "DescribeFaq",
+   "resources": [
+    "faq",
+    "index"
+   ]
+  },
+  "describefeaturedresultsset": {
+   "name": "DescribeFeaturedResultsSet",
+   "resources": [
+    "featured-results-set",
+    "index"
+   ]
+  },
+  "describeindex": {
+   "name": "DescribeIndex",
+   "resources": [
+    "index"
+   ]
+  },
+  "describeprincipalmapping": {
+   "name": "DescribePrincipalMapping",
+   "resources": [
+    "data-source",
+    "index"
+   ]
+  },
+  "describequerysuggestionsblocklist": {
+   "name": "DescribeQuerySuggestionsBlockList",
+   "resources": [
+    "index",
+    "query-suggestions-block-list"
+   ]
+  },
+  "describequerysuggestionsconfig": {
+   "name": "DescribeQuerySuggestionsConfig",
+   "resources": [
+    "index"
+   ]
+  },
+  "describethesaurus": {
+   "name": "DescribeThesaurus",
+   "resources": [
+    "index",
+    "thesaurus"
+   ]
+  },
+  "disassociateentitiesfromexperience": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateEntitiesFromExperience",
+   "resources": [
+    "experience",
+    "index"
+   ]
+  },
+  "disassociatepersonasfromentities": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociatePersonasFromEntities",
+   "resources": [
+    "experience",
+    "index"
+   ]
+  },
+  "getquerysuggestions": {
+   "name": "GetQuerySuggestions",
+   "resources": [
+    "index"
+   ]
+  },
+  "getsnapshots": {
+   "name": "GetSnapshots",
+   "resources": [
+    "index"
+   ]
+  },
+  "listaccesscontrolconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessControlConfigurations",
+   "resources": [
+    "index"
+   ]
+  },
+  "listdatasources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSources",
+   "resources": [
+    "index"
+   ]
+  },
+  "listdatasourcesyncjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSourceSyncJobs",
+   "resources": [
+    "data-source",
+    "index"
+   ]
+  },
+  "listentitypersonas": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEntityPersonas",
+   "resources": [
+    "experience",
+    "index"
+   ]
+  },
+  "listexperienceentities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExperienceEntities",
+   "resources": [
+    "experience",
+    "index"
+   ]
+  },
+  "listexperiences": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExperiences",
+   "resources": [
+    "index"
+   ]
+  },
+  "listfaqs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFaqs",
+   "resources": [
+    "index"
+   ]
+  },
+  "listfeaturedresultssets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFeaturedResultsSets",
+   "resources": [
+    "index"
+   ]
+  },
+  "listgroupsolderthanorderingid": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroupsOlderThanOrderingId",
+   "resources": [
+    "data-source",
+    "index"
+   ]
+  },
+  "listindices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIndices",
+   "resources": []
+  },
+  "listquerysuggestionsblocklists": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQuerySuggestionsBlockLists",
+   "resources": [
+    "index"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "data-source",
+    "faq",
+    "featured-results-set",
+    "index",
+    "query-suggestions-block-list",
+    "thesaurus"
+   ]
+  },
+  "listthesauri": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThesauri",
+   "resources": [
+    "index"
+   ]
+  },
+  "putprincipalmapping": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutPrincipalMapping",
+   "resources": [
+    "data-source",
+    "index"
+   ]
+  },
+  "query": {
+   "name": "Query",
+   "resources": [
+    "index"
+   ]
+  },
+  "retrieve": {
+   "name": "Retrieve",
+   "resources": [
+    "index"
+   ]
+  },
+  "startdatasourcesyncjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDataSourceSyncJob",
+   "resources": [
+    "data-source",
+    "index"
+   ]
+  },
+  "stopdatasourcesyncjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopDataSourceSyncJob",
+   "resources": [
+    "data-source",
+    "index"
+   ]
+  },
+  "submitfeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitFeedback",
+   "resources": [
+    "index"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "data-source",
+    "faq",
+    "featured-results-set",
+    "index",
+    "query-suggestions-block-list",
+    "thesaurus"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "data-source",
+    "faq",
+    "featured-results-set",
+    "index",
+    "query-suggestions-block-list",
+    "thesaurus"
+   ]
+  },
+  "updateaccesscontrolconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccessControlConfiguration",
+   "resources": [
+    "access-control-configuration",
+    "index"
+   ]
+  },
+  "updatedatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataSource",
+   "resources": [
+    "data-source",
+    "index"
+   ]
+  },
+  "updateexperience": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExperience",
+   "resources": [
+    "index"
+   ]
+  },
+  "updatefeaturedresultsset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFeaturedResultsSet",
+   "resources": [
+    "featured-results-set",
+    "index"
+   ]
+  },
+  "updateindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIndex",
+   "resources": [
+    "index"
+   ]
+  },
+  "updatequerysuggestionsblocklist": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQuerySuggestionsBlockList",
+   "resources": [
+    "index",
+    "query-suggestions-block-list"
+   ]
+  },
+  "updatequerysuggestionsconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQuerySuggestionsConfig",
+   "resources": [
+    "index"
+   ]
+  },
+  "updatethesaurus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateThesaurus",
+   "resources": [
+    "index",
+    "thesaurus"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "access-control-configuration": {
+   "arnFormats": [
+    "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/access-control-configuration/${AccessControlConfigurationId}"
+   ]
+  },
+  "data-source": {
+   "arnFormats": [
+    "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/data-source/${DataSourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "experience": {
+   "arnFormats": [
+    "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/experience/${ExperienceId}"
+   ]
+  },
+  "faq": {
+   "arnFormats": [
+    "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/faq/${FaqId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "featured-results-set": {
+   "arnFormats": [
+    "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/featured-results-set/${FeaturedResultsSetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "index": {
+   "arnFormats": [
+    "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "query-suggestions-block-list": {
+   "arnFormats": [
+    "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/query-suggestions-block-list/${QuerySuggestionsBlockListId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "thesaurus": {
+   "arnFormats": [
+    "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/thesaurus/${ThesaurusId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "kendra",
+ "serviceName": "Kendra",
+ "version": "v1.5"
+}

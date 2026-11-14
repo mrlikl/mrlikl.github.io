@@ -1,0 +1,534 @@
+{
+ "actions": {
+  "associatelibraryitemreview": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "AssociateLibraryItemReview",
+   "resources": [
+    "qapp"
+   ]
+  },
+  "associateqappwithuser": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "AssociateQAppWithUser",
+   "resources": [
+    "application",
+    "qapp"
+   ]
+  },
+  "batchcreatecategory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateCategory",
+   "resources": [
+    "application"
+   ]
+  },
+  "batchdeletecategory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteCategory",
+   "resources": [
+    "application"
+   ]
+  },
+  "batchupdatecategory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateCategory",
+   "resources": [
+    "application"
+   ]
+  },
+  "copyqapp": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyQApp",
+   "resources": [
+    "application",
+    "qapp"
+   ]
+  },
+  "createlibraryitem": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLibraryItem",
+   "resources": [
+    "application",
+    "qapp"
+   ]
+  },
+  "createlibraryitemreview": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLibraryItemReview",
+   "resources": [
+    "application",
+    "qapp"
+   ]
+  },
+  "createqapp": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateQApp",
+   "resources": [
+    "application"
+   ]
+  },
+  "createsubscriptiontoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSubscriptionToken",
+   "resources": [
+    "application"
+   ]
+  },
+  "deletelibraryitem": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLibraryItem",
+   "resources": [
+    "application",
+    "qapp"
+   ]
+  },
+  "deleteqapp": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteQApp",
+   "resources": [
+    "application",
+    "qapp"
+   ]
+  },
+  "describeqapppermissions": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "name": "DescribeQAppPermissions",
+   "resources": [
+    "application",
+    "qapp"
+   ]
+  },
+  "disassociatelibraryitemreview": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DisassociateLibraryItemReview",
+   "resources": [
+    "qapp"
+   ]
+  },
+  "disassociateqappfromuser": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DisassociateQAppFromUser",
+   "resources": [
+    "application",
+    "qapp"
+   ]
+  },
+  "exportqappsessiondata": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "ExportQAppSessionData",
+   "resources": [
+    "qapp-session"
+   ]
+  },
+  "getlibraryitem": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "name": "GetLibraryItem",
+   "resources": [
+    "application",
+    "qapp"
+   ]
+  },
+  "getqapp": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetQApp",
+   "resources": [
+    "application",
+    "qapp"
+   ]
+  },
+  "getqappsession": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:SessionIsShared",
+    "qapps:UserIsAppOwner",
+    "qapps:UserIsSessionModerator"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetQAppSession",
+   "resources": [
+    "qapp-session"
+   ]
+  },
+  "getqappsessionmetadata": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetQAppSessionMetadata",
+   "resources": [
+    "qapp-session"
+   ]
+  },
+  "importdocument": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:SessionIsShared",
+    "qapps:UserIsAppOwner",
+    "qapps:UserIsSessionModerator"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "ImportDocument",
+   "resources": [
+    "qapp",
+    "qapp-session"
+   ]
+  },
+  "listcategories": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCategories",
+   "resources": [
+    "application"
+   ]
+  },
+  "listlibraryitems": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLibraryItems",
+   "resources": [
+    "application"
+   ]
+  },
+  "listqapps": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListQApps",
+   "resources": [
+    "application"
+   ]
+  },
+  "listqappsessiondata": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "ListQAppSessionData",
+   "resources": [
+    "qapp-session"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "qapp",
+    "qapp-session"
+   ]
+  },
+  "predictproblemstatementfromconversation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PredictProblemStatementFromConversation",
+   "resources": [
+    "application"
+   ]
+  },
+  "predictqapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PredictQApp",
+   "resources": [
+    "application"
+   ]
+  },
+  "predictqappfromproblemstatement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PredictQAppFromProblemStatement",
+   "resources": [
+    "application"
+   ]
+  },
+  "startqappsession": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartQAppSession",
+   "resources": [
+    "application",
+    "qapp"
+   ]
+  },
+  "stopqappsession": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:SessionIsShared",
+    "qapps:UserIsAppOwner",
+    "qapps:UserIsSessionModerator"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StopQAppSession",
+   "resources": [
+    "application",
+    "qapp-session"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "qapp",
+    "qapp-session"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "qapp",
+    "qapp-session"
+   ]
+  },
+  "updatelibraryitem": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLibraryItem",
+   "resources": [
+    "application",
+    "qapp"
+   ]
+  },
+  "updatelibraryitemmetadata": {
+   "conditionKeys": [
+    "qapps:AppIsPublished"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLibraryItemMetadata",
+   "resources": [
+    "qapp"
+   ]
+  },
+  "updateqapp": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateQApp",
+   "resources": [
+    "application",
+    "qapp"
+   ]
+  },
+  "updateqapppermissions": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:UserIsAppOwner"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQAppPermissions",
+   "resources": [
+    "application",
+    "qapp"
+   ]
+  },
+  "updateqappsession": {
+   "conditionKeys": [
+    "qapps:AppIsPublished",
+    "qapps:SessionIsShared",
+    "qapps:UserIsAppOwner",
+    "qapps:UserIsSessionModerator"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateQAppSession",
+   "resources": [
+    "qapp-session"
+   ]
+  },
+  "updateqappsessionmetadata": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateQAppSessionMetadata",
+   "resources": [
+    "qapp-session"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "qapps:AppIsPublished": [
+   "String"
+  ],
+  "qapps:SessionIsShared": [
+   "String"
+  ],
+  "qapps:UserIsAppOwner": [
+   "String"
+  ],
+  "qapps:UserIsSessionModerator": [
+   "String"
+  ]
+ },
+ "resources": {
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}"
+   ]
+  },
+  "qapp": {
+   "arnFormats": [
+    "arn:${Partition}:qapps:${Region}:${Account}:application/${ApplicationId}/qapp/${AppId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "qapp-session": {
+   "arnFormats": [
+    "arn:${Partition}:qapps:${Region}:${Account}:application/${ApplicationId}/qapp/${AppId}/session/${SessionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "qapps",
+ "serviceName": "Q Apps",
+ "version": "v1.5"
+}

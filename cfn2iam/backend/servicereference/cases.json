@@ -1,0 +1,497 @@
+{
+ "actions": {
+  "batchgetcaserule": {
+   "name": "BatchGetCaseRule",
+   "resources": [
+    "CaseRule",
+    "Domain"
+   ]
+  },
+  "batchgetfield": {
+   "name": "BatchGetField",
+   "resources": [
+    "Domain",
+    "Field"
+   ]
+  },
+  "batchputfieldoptions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchPutFieldOptions",
+   "resources": [
+    "Domain",
+    "Field"
+   ]
+  },
+  "createcase": {
+   "conditionKeys": [
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCase",
+   "resources": [
+    "Case",
+    "Domain",
+    "Field",
+    "Template"
+   ]
+  },
+  "createcaserule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCaseRule",
+   "resources": [
+    "CaseRule",
+    "Domain"
+   ]
+  },
+  "createdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomain",
+   "resources": []
+  },
+  "createfield": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateField",
+   "resources": [
+    "Domain",
+    "Field"
+   ]
+  },
+  "createlayout": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLayout",
+   "resources": [
+    "Domain",
+    "Layout"
+   ]
+  },
+  "createrelateditem": {
+   "conditionKeys": [
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRelatedItem",
+   "resources": [
+    "Case",
+    "Domain",
+    "RelatedItem"
+   ]
+  },
+  "createtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTemplate",
+   "resources": [
+    "Domain",
+    "Layout",
+    "Template"
+   ]
+  },
+  "deletecase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCase",
+   "resources": [
+    "Case",
+    "Domain"
+   ]
+  },
+  "deletecaserule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCaseRule",
+   "resources": [
+    "CaseRule",
+    "Domain"
+   ]
+  },
+  "deletedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomain",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "deletefield": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteField",
+   "resources": [
+    "Domain",
+    "Field"
+   ]
+  },
+  "deletelayout": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLayout",
+   "resources": [
+    "Domain",
+    "Layout"
+   ]
+  },
+  "deleterelateditem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRelatedItem",
+   "resources": [
+    "Case",
+    "Domain",
+    "RelatedItem"
+   ]
+  },
+  "deletetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTemplate",
+   "resources": [
+    "Domain",
+    "Template"
+   ]
+  },
+  "getcase": {
+   "name": "GetCase",
+   "resources": [
+    "Case",
+    "Domain",
+    "Field"
+   ]
+  },
+  "getcaseauditevents": {
+   "name": "GetCaseAuditEvents",
+   "resources": [
+    "Case",
+    "Domain"
+   ]
+  },
+  "getcaseeventconfiguration": {
+   "name": "GetCaseEventConfiguration",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "getdomain": {
+   "name": "GetDomain",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "getlayout": {
+   "name": "GetLayout",
+   "resources": [
+    "Domain",
+    "Layout"
+   ]
+  },
+  "gettemplate": {
+   "name": "GetTemplate",
+   "resources": [
+    "Domain",
+    "Template"
+   ]
+  },
+  "listcaserules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCaseRules",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "listcasesforcontact": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCasesForContact",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "listdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomains",
+   "resources": []
+  },
+  "listfieldoptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFieldOptions",
+   "resources": [
+    "Domain",
+    "Field"
+   ]
+  },
+  "listfields": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFields",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "listlayouts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLayouts",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "listtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTemplates",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "putcaseeventconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutCaseEventConfiguration",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "searchallrelateditems": {
+   "name": "SearchAllRelatedItems",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "searchcases": {
+   "name": "SearchCases",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "searchrelateditems": {
+   "name": "SearchRelatedItems",
+   "resources": [
+    "Case",
+    "Domain"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Case",
+    "CaseRule",
+    "Domain",
+    "Field",
+    "Layout",
+    "RelatedItem",
+    "Template"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Case",
+    "CaseRule",
+    "Domain",
+    "Field",
+    "Layout",
+    "RelatedItem",
+    "Template"
+   ]
+  },
+  "updatecase": {
+   "conditionKeys": [
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCase",
+   "resources": [
+    "Case",
+    "Domain",
+    "Field"
+   ]
+  },
+  "updatecaserule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCaseRule",
+   "resources": [
+    "CaseRule",
+    "Domain"
+   ]
+  },
+  "updatefield": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateField",
+   "resources": [
+    "Domain",
+    "Field"
+   ]
+  },
+  "updatelayout": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLayout",
+   "resources": [
+    "Domain",
+    "Layout"
+   ]
+  },
+  "updaterelateditem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRelatedItem",
+   "resources": [
+    "Case",
+    "Domain",
+    "RelatedItem"
+   ]
+  },
+  "updatetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTemplate",
+   "resources": [
+    "Domain",
+    "Template"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "cases:CreatedBy": [
+   "String"
+  ],
+  "cases:RelatedItemType": [
+   "String"
+  ],
+  "connect:UserArn": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "Case": {
+   "arnFormats": [
+    "arn:${Partition}:cases:${Region}:${Account}:domain/${DomainId}/case/${CaseId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "CaseRule": {
+   "arnFormats": [
+    "arn:${Partition}:cases:${Region}:${Account}:domain/${DomainId}/case-rule/${CaseRuleId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Domain": {
+   "arnFormats": [
+    "arn:${Partition}:cases:${Region}:${Account}:domain/${DomainId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Field": {
+   "arnFormats": [
+    "arn:${Partition}:cases:${Region}:${Account}:domain/${DomainId}/field/${FieldId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Layout": {
+   "arnFormats": [
+    "arn:${Partition}:cases:${Region}:${Account}:domain/${DomainId}/layout/${LayoutId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "RelatedItem": {
+   "arnFormats": [
+    "arn:${Partition}:cases:${Region}:${Account}:domain/${DomainId}/case/${CaseId}/related-item/${RelatedItemId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "cases:CreatedBy",
+    "cases:RelatedItemType"
+   ]
+  },
+  "Template": {
+   "arnFormats": [
+    "arn:${Partition}:cases:${Region}:${Account}:domain/${DomainId}/template/${TemplateId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "cases",
+ "serviceName": "Connect Cases",
+ "version": "v1.5"
+}

@@ -1,0 +1,318 @@
+{
+ "actions": {
+  "associatedefaultview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateDefaultView",
+   "resources": []
+  },
+  "batchgetview": {
+   "name": "BatchGetView",
+   "resources": []
+  },
+  "createindex": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIndex",
+   "resources": []
+  },
+  "createmanagedview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateManagedView",
+   "resources": []
+  },
+  "createresourceexplorersetup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResourceExplorerSetup",
+   "resources": []
+  },
+  "createstreamingaccessforservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStreamingAccessForService",
+   "resources": []
+  },
+  "createview": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateView",
+   "resources": []
+  },
+  "deleteindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIndex",
+   "resources": [
+    "index"
+   ]
+  },
+  "deleteresourceexplorersetup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourceExplorerSetup",
+   "resources": []
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "view"
+   ]
+  },
+  "deletestreamingaccessforservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStreamingAccessForService",
+   "resources": []
+  },
+  "deleteview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteView",
+   "resources": [
+    "view"
+   ]
+  },
+  "disassociatedefaultview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateDefaultView",
+   "resources": []
+  },
+  "getaccountlevelserviceconfiguration": {
+   "name": "GetAccountLevelServiceConfiguration",
+   "resources": []
+  },
+  "getdefaultview": {
+   "name": "GetDefaultView",
+   "resources": []
+  },
+  "getindex": {
+   "name": "GetIndex",
+   "resources": []
+  },
+  "getmanagedview": {
+   "name": "GetManagedView",
+   "resources": [
+    "managed-view"
+   ]
+  },
+  "getresourceexplorersetup": {
+   "name": "GetResourceExplorerSetup",
+   "resources": []
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "view"
+   ]
+  },
+  "getserviceindex": {
+   "name": "GetServiceIndex",
+   "resources": []
+  },
+  "getserviceview": {
+   "name": "GetServiceView",
+   "resources": []
+  },
+  "getview": {
+   "name": "GetView",
+   "resources": [
+    "view"
+   ]
+  },
+  "listindexes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIndexes",
+   "resources": []
+  },
+  "listindexesformembers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIndexesForMembers",
+   "resources": []
+  },
+  "listmanagedviews": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedViews",
+   "resources": []
+  },
+  "listserviceindexes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceIndexes",
+   "resources": []
+  },
+  "listserviceviews": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceViews",
+   "resources": []
+  },
+  "liststreamingaccessforservices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStreamingAccessForServices",
+   "resources": []
+  },
+  "listsupportedresourcetypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSupportedResourceTypes",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "index",
+    "view"
+   ]
+  },
+  "listviews": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListViews",
+   "resources": []
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "view"
+   ]
+  },
+  "search": {
+   "conditionKeys": [
+    "resource-explorer-2:Operation"
+   ],
+   "name": "Search",
+   "resources": [
+    "view"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "index",
+    "view"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "index",
+    "view"
+   ]
+  },
+  "updateindextype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIndexType",
+   "resources": [
+    "index"
+   ]
+  },
+  "updateview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateView",
+   "resources": [
+    "view"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "resource-explorer-2:Operation": [
+   "String"
+  ]
+ },
+ "resources": {
+  "index": {
+   "arnFormats": [
+    "arn:${Partition}:resource-explorer-2:${Region}:${Account}:index/${IndexUuid}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "managed-view": {
+   "arnFormats": [
+    "arn:${Partition}:resource-explorer-2:${Region}:${Account}:managed-view/${ManagedViewName}/${ManagedViewUuid}"
+   ]
+  },
+  "view": {
+   "arnFormats": [
+    "arn:${Partition}:resource-explorer-2:${Region}:${Account}:view/${ViewName}/${ViewUuid}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "resource-explorer-2",
+ "serviceName": "Resource Explorer",
+ "version": "v1.5"
+}

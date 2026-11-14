@@ -1,0 +1,58 @@
+{
+ "actions": {
+  "getfinding": {
+   "name": "GetFinding",
+   "resources": []
+  },
+  "getresource": {
+   "name": "GetResource",
+   "resources": []
+  },
+  "listaccountsummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountSummaries",
+   "resources": []
+  },
+  "listfindings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFindings",
+   "resources": []
+  },
+  "listinsights": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInsights",
+   "resources": []
+  },
+  "listremediations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRemediations",
+   "resources": []
+  },
+  "listresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResources",
+   "resources": []
+  },
+  "updatefinding": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFinding",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "network-security-director",
+ "serviceName": "Network Security Director",
+ "version": "v1.5"
+}

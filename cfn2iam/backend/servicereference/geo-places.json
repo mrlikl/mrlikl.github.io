@@ -1,0 +1,77 @@
+{
+ "actions": {
+  "autocomplete": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "Autocomplete",
+   "resources": [
+    "provider"
+   ]
+  },
+  "geocode": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "Geocode",
+   "resources": [
+    "provider"
+   ]
+  },
+  "getplace": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetPlace",
+   "resources": [
+    "provider"
+   ]
+  },
+  "reversegeocode": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "ReverseGeocode",
+   "resources": [
+    "provider"
+   ]
+  },
+  "searchnearby": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "SearchNearby",
+   "resources": [
+    "provider"
+   ]
+  },
+  "searchtext": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "SearchText",
+   "resources": [
+    "provider"
+   ]
+  },
+  "suggest": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "Suggest",
+   "resources": [
+    "provider"
+   ]
+  }
+ },
+ "resources": {
+  "provider": {
+   "arnFormats": [
+    "arn:${Partition}:geo-places:${Region}::provider/default"
+   ]
+  }
+ },
+ "service": "geo-places",
+ "serviceName": "Geo Places",
+ "version": "v1.5"
+}

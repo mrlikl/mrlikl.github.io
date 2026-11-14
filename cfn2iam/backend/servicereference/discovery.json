@@ -1,0 +1,194 @@
+{
+ "actions": {
+  "associateconfigurationitemstoapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateConfigurationItemsToApplication",
+   "resources": []
+  },
+  "batchdeleteagents": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteAgents",
+   "resources": []
+  },
+  "batchdeleteimportdata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteImportData",
+   "resources": []
+  },
+  "createapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "createtags": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "CreateTags",
+   "resources": []
+  },
+  "deleteapplications": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplications",
+   "resources": []
+  },
+  "deletetags": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "DeleteTags",
+   "resources": []
+  },
+  "describeagents": {
+   "name": "DescribeAgents",
+   "resources": []
+  },
+  "describebatchdeleteconfigurationtask": {
+   "name": "DescribeBatchDeleteConfigurationTask",
+   "resources": []
+  },
+  "describeconfigurations": {
+   "name": "DescribeConfigurations",
+   "resources": []
+  },
+  "describecontinuousexports": {
+   "name": "DescribeContinuousExports",
+   "resources": []
+  },
+  "describeexportconfigurations": {
+   "name": "DescribeExportConfigurations",
+   "resources": []
+  },
+  "describeexporttasks": {
+   "name": "DescribeExportTasks",
+   "resources": []
+  },
+  "describeimporttasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeImportTasks",
+   "resources": []
+  },
+  "describetags": {
+   "name": "DescribeTags",
+   "resources": []
+  },
+  "disassociateconfigurationitemsfromapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateConfigurationItemsFromApplication",
+   "resources": []
+  },
+  "exportconfigurations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportConfigurations",
+   "resources": []
+  },
+  "getdiscoverysummary": {
+   "name": "GetDiscoverySummary",
+   "resources": []
+  },
+  "getnetworkconnectiongraph": {
+   "name": "GetNetworkConnectionGraph",
+   "resources": []
+  },
+  "listconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigurations",
+   "resources": []
+  },
+  "listserverneighbors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServerNeighbors",
+   "resources": []
+  },
+  "startbatchdeleteconfigurationtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartBatchDeleteConfigurationTask",
+   "resources": []
+  },
+  "startcontinuousexport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartContinuousExport",
+   "resources": []
+  },
+  "startdatacollectionbyagentids": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDataCollectionByAgentIds",
+   "resources": []
+  },
+  "startexporttask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartExportTask",
+   "resources": []
+  },
+  "startimporttask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartImportTask",
+   "resources": []
+  },
+  "stopcontinuousexport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopContinuousExport",
+   "resources": []
+  },
+  "stopdatacollectionbyagentids": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopDataCollectionByAgentIds",
+   "resources": []
+  },
+  "updateapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {},
+ "service": "discovery",
+ "serviceName": "Application Discovery",
+ "version": "v1.5"
+}

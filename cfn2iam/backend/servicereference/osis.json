@@ -1,0 +1,235 @@
+{
+ "actions": {
+  "createpipeline": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePipeline",
+   "resources": []
+  },
+  "createpipelineendpoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePipelineEndpoint",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "deletepipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "deletepipelineendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePipelineEndpoint",
+   "resources": [
+    "pipeline-endpoint"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "getpipeline": {
+   "name": "GetPipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "getpipelineblueprint": {
+   "name": "GetPipelineBlueprint",
+   "resources": [
+    "pipeline-blueprint"
+   ]
+  },
+  "getpipelinechangeprogress": {
+   "name": "GetPipelineChangeProgress",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "ingest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Ingest",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "listpipelineblueprints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPipelineBlueprints",
+   "resources": []
+  },
+  "listpipelineendpointconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPipelineEndpointConnections",
+   "resources": []
+  },
+  "listpipelineendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPipelineEndpoints",
+   "resources": []
+  },
+  "listpipelines": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPipelines",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "revokepipelineendpointconnections": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokePipelineEndpointConnections",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "startpipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartPipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "stoppipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopPipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "updatepipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "validatepipeline": {
+   "name": "ValidatePipeline",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "pipeline": {
+   "arnFormats": [
+    "arn:${Partition}:osis:${Region}:${Account}:pipeline/${PipelineName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "pipeline-blueprint": {
+   "arnFormats": [
+    "arn:${Partition}:osis:${Region}:${Account}:blueprint/${BlueprintName}"
+   ]
+  },
+  "pipeline-endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:osis:${Region}:${Account}:endpoint/${EndpointId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "osis",
+ "serviceName": "OpenSearch Ingestion",
+ "version": "v1.5"
+}

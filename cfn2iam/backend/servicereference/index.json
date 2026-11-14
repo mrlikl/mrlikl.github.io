@@ -1,0 +1,1833 @@
+{
+ "services": {
+  "a2c": {
+   "filename": "a2c.json",
+   "serviceName": "App2Container"
+  },
+  "a4b": {
+   "filename": "a4b.json",
+   "serviceName": "Alexa for Business"
+  },
+  "access-analyzer": {
+   "filename": "access-analyzer.json",
+   "serviceName": "Access Analyzer"
+  },
+  "account": {
+   "filename": "account.json",
+   "serviceName": "Account"
+  },
+  "account-access": {
+   "filename": "account-access.json",
+   "serviceName": "Account access manager"
+  },
+  "acm": {
+   "filename": "acm.json",
+   "serviceName": "Certificate Manager"
+  },
+  "acm-pca": {
+   "filename": "acm-pca.json",
+   "serviceName": "Private Certificate Authority"
+  },
+  "aco-automation": {
+   "filename": "aco-automation.json",
+   "serviceName": "Compute Optimizer Automation"
+  },
+  "action-recommendations": {
+   "filename": "action-recommendations.json",
+   "serviceName": "Action Recommendations"
+  },
+  "activate": {
+   "filename": "activate.json",
+   "serviceName": "Activate"
+  },
+  "agent-registry": {
+   "filename": "agent-registry.json",
+   "serviceName": "Agent Registry"
+  },
+  "agentaccess-mcp": {
+   "filename": "agentaccess-mcp.json",
+   "serviceName": "WorkSpaces AgentAccess MCP"
+  },
+  "aidevops": {
+   "filename": "aidevops.json",
+   "serviceName": "DevOps Agent"
+  },
+  "aiops": {
+   "filename": "aiops.json",
+   "serviceName": "AI Operations"
+  },
+  "airflow": {
+   "filename": "airflow.json",
+   "serviceName": "MWAA"
+  },
+  "airflow-serverless": {
+   "filename": "airflow-serverless.json",
+   "serviceName": "MWAA Serverless"
+  },
+  "amplify": {
+   "filename": "amplify.json",
+   "serviceName": "Amplify"
+  },
+  "amplifybackend": {
+   "filename": "amplifybackend.json",
+   "serviceName": "Amplify Admin"
+  },
+  "amplifyuibuilder": {
+   "filename": "amplifyuibuilder.json",
+   "serviceName": "Amplify UI Builder"
+  },
+  "aoss": {
+   "filename": "aoss.json",
+   "serviceName": "OpenSearch Serverless"
+  },
+  "apigateway": {
+   "filename": "apigateway.json",
+   "serviceName": "API Gateway"
+  },
+  "app-integrations": {
+   "filename": "app-integrations.json",
+   "serviceName": "AppIntegrations"
+  },
+  "appconfig": {
+   "filename": "appconfig.json",
+   "serviceName": "AppConfig"
+  },
+  "appfabric": {
+   "filename": "appfabric.json",
+   "serviceName": "AppFabric"
+  },
+  "appflow": {
+   "filename": "appflow.json",
+   "serviceName": "AppFlow"
+  },
+  "application-autoscaling": {
+   "filename": "application-autoscaling.json",
+   "serviceName": "Application Auto Scaling"
+  },
+  "application-signals": {
+   "filename": "application-signals.json",
+   "serviceName": "Application Signals"
+  },
+  "application-signals-mcp": {
+   "filename": "application-signals-mcp.json",
+   "serviceName": "Application Signals MCP"
+  },
+  "application-transformation": {
+   "filename": "application-transformation.json",
+   "serviceName": "Application Transformation Service"
+  },
+  "applicationinsights": {
+   "filename": "applicationinsights.json",
+   "serviceName": "CloudWatch Application Insights"
+  },
+  "appmesh": {
+   "filename": "appmesh.json",
+   "serviceName": "App Mesh"
+  },
+  "appmesh-preview": {
+   "filename": "appmesh-preview.json",
+   "serviceName": "App Mesh Preview"
+  },
+  "apprunner": {
+   "filename": "apprunner.json",
+   "serviceName": "App Runner"
+  },
+  "appstream": {
+   "filename": "appstream.json",
+   "serviceName": "AppStream 2.0"
+  },
+  "appstudio": {
+   "filename": "appstudio.json",
+   "serviceName": "App Studio"
+  },
+  "appsync": {
+   "filename": "appsync.json",
+   "serviceName": "AppSync"
+  },
+  "apptest": {
+   "filename": "apptest.json",
+   "serviceName": "Mainframe Modernization Application Testing"
+  },
+  "aps": {
+   "filename": "aps.json",
+   "serviceName": "AMP"
+  },
+  "arc-region-switch": {
+   "filename": "arc-region-switch.json",
+   "serviceName": "ARC Region switch"
+  },
+  "arc-zonal-shift": {
+   "filename": "arc-zonal-shift.json",
+   "serviceName": "ARC Zonal Shift"
+  },
+  "arsenal": {
+   "filename": "arsenal.json",
+   "serviceName": "Application Discovery Arsenal"
+  },
+  "artifact": {
+   "filename": "artifact.json",
+   "serviceName": "Artifact"
+  },
+  "assurance": {
+   "filename": "assurance.json",
+   "serviceName": "Assurance"
+  },
+  "athena": {
+   "filename": "athena.json",
+   "serviceName": "Athena"
+  },
+  "auditmanager": {
+   "filename": "auditmanager.json",
+   "serviceName": "Audit Manager"
+  },
+  "autoscaling": {
+   "filename": "autoscaling.json",
+   "serviceName": "EC2 Auto Scaling"
+  },
+  "autoscaling-plans": {
+   "filename": "autoscaling-plans.json",
+   "serviceName": "Auto Scaling"
+  },
+  "aws-external-anthropic": {
+   "filename": "aws-external-anthropic.json",
+   "serviceName": "Claude Platform on AWS"
+  },
+  "aws-marketplace": {
+   "filename": "aws-marketplace.json",
+   "serviceName": "Marketplace"
+  },
+  "aws-marketplace-management": {
+   "filename": "aws-marketplace-management.json",
+   "serviceName": "Marketplace Portal"
+  },
+  "aws-portal": {
+   "filename": "aws-portal.json",
+   "serviceName": "Billing Console"
+  },
+  "awsconnector": {
+   "filename": "awsconnector.json",
+   "serviceName": "Connector Service"
+  },
+  "b2bi": {
+   "filename": "b2bi.json",
+   "serviceName": "B2BI"
+  },
+  "backup": {
+   "filename": "backup.json",
+   "serviceName": "Backup"
+  },
+  "backup-gateway": {
+   "filename": "backup-gateway.json",
+   "serviceName": "Backup Gateway"
+  },
+  "backup-search": {
+   "filename": "backup-search.json",
+   "serviceName": "Backup Search"
+  },
+  "backup-storage": {
+   "filename": "backup-storage.json",
+   "serviceName": "Backup Storage"
+  },
+  "batch": {
+   "filename": "batch.json",
+   "serviceName": "Batch"
+  },
+  "bcm-dashboards": {
+   "filename": "bcm-dashboards.json",
+   "serviceName": "Billing and Cost Management Dashboards"
+  },
+  "bcm-data-exports": {
+   "filename": "bcm-data-exports.json",
+   "serviceName": "BillingAndCostManagementDataExports"
+  },
+  "bcm-pricing-calculator": {
+   "filename": "bcm-pricing-calculator.json",
+   "serviceName": "Pricing Calculator"
+  },
+  "bcm-recommended-actions": {
+   "filename": "bcm-recommended-actions.json",
+   "serviceName": "BillingAndCostManagementRecommendedActions"
+  },
+  "bedrock": {
+   "filename": "bedrock.json",
+   "serviceName": "Bedrock"
+  },
+  "bedrock-agentcore": {
+   "filename": "bedrock-agentcore.json",
+   "serviceName": "Bedrock-Agentcore"
+  },
+  "bedrock-mantle": {
+   "filename": "bedrock-mantle.json",
+   "serviceName": "Bedrock Mantle"
+  },
+  "bedrock-websearch": {
+   "filename": "bedrock-websearch.json",
+   "serviceName": "Bedrock Web Search"
+  },
+  "billing": {
+   "filename": "billing.json",
+   "serviceName": "Billing"
+  },
+  "billingconductor": {
+   "filename": "billingconductor.json",
+   "serviceName": "Billing Conductor"
+  },
+  "braket": {
+   "filename": "braket.json",
+   "serviceName": "Braket"
+  },
+  "budgets": {
+   "filename": "budgets.json",
+   "serviceName": "Budget"
+  },
+  "bugbust": {
+   "filename": "bugbust.json",
+   "serviceName": "BugBust"
+  },
+  "cases": {
+   "filename": "cases.json",
+   "serviceName": "Connect Cases"
+  },
+  "cassandra": {
+   "filename": "cassandra.json",
+   "serviceName": "Keyspaces"
+  },
+  "ce": {
+   "filename": "ce.json",
+   "serviceName": "Cost Explorer Service"
+  },
+  "chatbot": {
+   "filename": "chatbot.json",
+   "serviceName": "Chatbot"
+  },
+  "chime": {
+   "filename": "chime.json",
+   "serviceName": "Chime"
+  },
+  "cleanrooms": {
+   "filename": "cleanrooms.json",
+   "serviceName": "Clean Rooms"
+  },
+  "cleanrooms-ml": {
+   "filename": "cleanrooms-ml.json",
+   "serviceName": "Clean Rooms ML"
+  },
+  "cloud9": {
+   "filename": "cloud9.json",
+   "serviceName": "Cloud9"
+  },
+  "clouddirectory": {
+   "filename": "clouddirectory.json",
+   "serviceName": "Cloud Directory"
+  },
+  "cloudformation": {
+   "filename": "cloudformation.json",
+   "serviceName": "CloudFormation"
+  },
+  "cloudfront": {
+   "filename": "cloudfront.json",
+   "serviceName": "CloudFront"
+  },
+  "cloudfront-keyvaluestore": {
+   "filename": "cloudfront-keyvaluestore.json",
+   "serviceName": "CloudFront KeyValueStore"
+  },
+  "cloudhsm": {
+   "filename": "cloudhsm.json",
+   "serviceName": "CloudHSM"
+  },
+  "cloudsearch": {
+   "filename": "cloudsearch.json",
+   "serviceName": "CloudSearch"
+  },
+  "cloudshell": {
+   "filename": "cloudshell.json",
+   "serviceName": "CloudShell"
+  },
+  "cloudtrail": {
+   "filename": "cloudtrail.json",
+   "serviceName": "CloudTrail"
+  },
+  "cloudtrail-data": {
+   "filename": "cloudtrail-data.json",
+   "serviceName": "CloudTrail-Data"
+  },
+  "cloudwatch": {
+   "filename": "cloudwatch.json",
+   "serviceName": "CloudWatch"
+  },
+  "codeartifact": {
+   "filename": "codeartifact.json",
+   "serviceName": "CodeArtifact"
+  },
+  "codebuild": {
+   "filename": "codebuild.json",
+   "serviceName": "CodeBuild"
+  },
+  "codecatalyst": {
+   "filename": "codecatalyst.json",
+   "serviceName": "CodeCatalyst"
+  },
+  "codecommit": {
+   "filename": "codecommit.json",
+   "serviceName": "CodeCommit"
+  },
+  "codeconnections": {
+   "filename": "codeconnections.json",
+   "serviceName": "CodeConnections"
+  },
+  "codedeploy": {
+   "filename": "codedeploy.json",
+   "serviceName": "CodeDeploy"
+  },
+  "codedeploy-commands-secure": {
+   "filename": "codedeploy-commands-secure.json",
+   "serviceName": "CodeDeploy Commands Secure"
+  },
+  "codeguru": {
+   "filename": "codeguru.json",
+   "serviceName": "CodeGuru"
+  },
+  "codeguru-profiler": {
+   "filename": "codeguru-profiler.json",
+   "serviceName": "CodeGuru Profiler"
+  },
+  "codeguru-reviewer": {
+   "filename": "codeguru-reviewer.json",
+   "serviceName": "CodeGuru Reviewer"
+  },
+  "codeguru-security": {
+   "filename": "codeguru-security.json",
+   "serviceName": "CodeGuru Security"
+  },
+  "codepipeline": {
+   "filename": "codepipeline.json",
+   "serviceName": "CodePipeline"
+  },
+  "codestar-connections": {
+   "filename": "codestar-connections.json",
+   "serviceName": "CodeStar Connections"
+  },
+  "codestar-notifications": {
+   "filename": "codestar-notifications.json",
+   "serviceName": "CodeStar Notifications"
+  },
+  "codewhisperer": {
+   "filename": "codewhisperer.json",
+   "serviceName": "CodeWhisperer"
+  },
+  "cognito-identity": {
+   "filename": "cognito-identity.json",
+   "serviceName": "Cognito Identity"
+  },
+  "cognito-idp": {
+   "filename": "cognito-idp.json",
+   "serviceName": "Cognito User Pools"
+  },
+  "cognito-sync": {
+   "filename": "cognito-sync.json",
+   "serviceName": "Cognito Sync"
+  },
+  "comprehend": {
+   "filename": "comprehend.json",
+   "serviceName": "Comprehend"
+  },
+  "comprehendmedical": {
+   "filename": "comprehendmedical.json",
+   "serviceName": "ComprehendMedical"
+  },
+  "compute-optimizer": {
+   "filename": "compute-optimizer.json",
+   "serviceName": "Compute Optimizer"
+  },
+  "config": {
+   "filename": "config.json",
+   "serviceName": "Config"
+  },
+  "connect": {
+   "filename": "connect.json",
+   "serviceName": "Connect"
+  },
+  "connect-campaigns": {
+   "filename": "connect-campaigns.json",
+   "serviceName": "Connect Outbound Campaigns"
+  },
+  "consoleapp": {
+   "filename": "consoleapp.json",
+   "serviceName": "Console Mobile App"
+  },
+  "consolidatedbilling": {
+   "filename": "consolidatedbilling.json",
+   "serviceName": "Consolidated Billing"
+  },
+  "continuum": {
+   "filename": "continuum.json",
+   "serviceName": "Continuum"
+  },
+  "controlcatalog": {
+   "filename": "controlcatalog.json",
+   "serviceName": "Control Catalog"
+  },
+  "controltower": {
+   "filename": "controltower.json",
+   "serviceName": "Control Tower"
+  },
+  "cost-optimization-hub": {
+   "filename": "cost-optimization-hub.json",
+   "serviceName": "Cost Optimization Hub"
+  },
+  "cur": {
+   "filename": "cur.json",
+   "serviceName": "Cost and Usage Report"
+  },
+  "customer-verification": {
+   "filename": "customer-verification.json",
+   "serviceName": "Customer Verification Service"
+  },
+  "databrew": {
+   "filename": "databrew.json",
+   "serviceName": "DataBrew"
+  },
+  "dataexchange": {
+   "filename": "dataexchange.json",
+   "serviceName": "Data Exchange"
+  },
+  "datapipeline": {
+   "filename": "datapipeline.json",
+   "serviceName": "Data Pipeline"
+  },
+  "datasync": {
+   "filename": "datasync.json",
+   "serviceName": "DataSync"
+  },
+  "datazone": {
+   "filename": "datazone.json",
+   "serviceName": "DataZone"
+  },
+  "dax": {
+   "filename": "dax.json",
+   "serviceName": "DynamoDBAccelerator"
+  },
+  "dbqms": {
+   "filename": "dbqms.json",
+   "serviceName": "DBQMS"
+  },
+  "deadline": {
+   "filename": "deadline.json",
+   "serviceName": "Deadline Cloud"
+  },
+  "detective": {
+   "filename": "detective.json",
+   "serviceName": "Detective"
+  },
+  "devicefarm": {
+   "filename": "devicefarm.json",
+   "serviceName": "Device Farm"
+  },
+  "devops-guru": {
+   "filename": "devops-guru.json",
+   "serviceName": "DevOps Guru"
+  },
+  "directconnect": {
+   "filename": "directconnect.json",
+   "serviceName": "Direct Connect"
+  },
+  "discovery": {
+   "filename": "discovery.json",
+   "serviceName": "Application Discovery"
+  },
+  "dlm": {
+   "filename": "dlm.json",
+   "serviceName": "Data Lifecycle Manager"
+  },
+  "dms": {
+   "filename": "dms.json",
+   "serviceName": "DMS"
+  },
+  "docdb-elastic": {
+   "filename": "docdb-elastic.json",
+   "serviceName": "DocumentDB Elastic Clusters"
+  },
+  "drs": {
+   "filename": "drs.json",
+   "serviceName": "DRS"
+  },
+  "ds": {
+   "filename": "ds.json",
+   "serviceName": "Directory Service"
+  },
+  "ds-data": {
+   "filename": "ds-data.json",
+   "serviceName": "Directory Service Data"
+  },
+  "dsql": {
+   "filename": "dsql.json",
+   "serviceName": "Aurora DSQL"
+  },
+  "dynamodb": {
+   "filename": "dynamodb.json",
+   "serviceName": "DynamoDB"
+  },
+  "ebs": {
+   "filename": "ebs.json",
+   "serviceName": "Elastic Block Store"
+  },
+  "ec2": {
+   "filename": "ec2.json",
+   "serviceName": "EC2"
+  },
+  "ec2-instance-connect": {
+   "filename": "ec2-instance-connect.json",
+   "serviceName": "EC2 Instance Connect"
+  },
+  "ec2messages": {
+   "filename": "ec2messages.json",
+   "serviceName": "EC2 Messages"
+  },
+  "ecr": {
+   "filename": "ecr.json",
+   "serviceName": "Elastic Container Registry"
+  },
+  "ecr-public": {
+   "filename": "ecr-public.json",
+   "serviceName": "Elastic Container Registry Public"
+  },
+  "ecs": {
+   "filename": "ecs.json",
+   "serviceName": "Elastic Container Service"
+  },
+  "ecs-mcp": {
+   "filename": "ecs-mcp.json",
+   "serviceName": "ECS MCP"
+  },
+  "eks": {
+   "filename": "eks.json",
+   "serviceName": "EKS"
+  },
+  "eks-auth": {
+   "filename": "eks-auth.json",
+   "serviceName": "EKS Auth"
+  },
+  "eks-mcp": {
+   "filename": "eks-mcp.json",
+   "serviceName": "EKS MCP"
+  },
+  "elasticache": {
+   "filename": "elasticache.json",
+   "serviceName": "ElastiCache"
+  },
+  "elasticbeanstalk": {
+   "filename": "elasticbeanstalk.json",
+   "serviceName": "Elastic Beanstalk"
+  },
+  "elasticfilesystem": {
+   "filename": "elasticfilesystem.json",
+   "serviceName": "EFS"
+  },
+  "elasticloadbalancing": {
+   "filename": "elasticloadbalancing.json",
+   "serviceName": "ELB"
+  },
+  "elasticmapreduce": {
+   "filename": "elasticmapreduce.json",
+   "serviceName": "EMR"
+  },
+  "elastictranscoder": {
+   "filename": "elastictranscoder.json",
+   "serviceName": "Elastic Transcoder"
+  },
+  "elemental-activations": {
+   "filename": "elemental-activations.json",
+   "serviceName": "Elemental Activations"
+  },
+  "elemental-appliances-software": {
+   "filename": "elemental-appliances-software.json",
+   "serviceName": "Elemental Appliances and Software"
+  },
+  "elemental-inference": {
+   "filename": "elemental-inference.json",
+   "serviceName": "Elemental Inference"
+  },
+  "elemental-support-cases": {
+   "filename": "elemental-support-cases.json",
+   "serviceName": "Elemental Support Cases"
+  },
+  "elemental-support-content": {
+   "filename": "elemental-support-content.json",
+   "serviceName": "Elemental Support Content"
+  },
+  "emr-containers": {
+   "filename": "emr-containers.json",
+   "serviceName": "EMR Containers"
+  },
+  "emr-serverless": {
+   "filename": "emr-serverless.json",
+   "serviceName": "EMR Serverless"
+  },
+  "end-user-messaging": {
+   "filename": "end-user-messaging.json",
+   "serviceName": "End User Messaging"
+  },
+  "entityresolution": {
+   "filename": "entityresolution.json",
+   "serviceName": "Entity Resolution"
+  },
+  "es": {
+   "filename": "es.json",
+   "serviceName": "OpenSearch Service"
+  },
+  "events": {
+   "filename": "events.json",
+   "serviceName": "EventBridge"
+  },
+  "eventsbilltoaws": {
+   "filename": "eventsbilltoaws.json",
+   "serviceName": "eventsbilltoaws"
+  },
+  "evs": {
+   "filename": "evs.json",
+   "serviceName": "EVS"
+  },
+  "execute-api": {
+   "filename": "execute-api.json",
+   "serviceName": "ExecuteAPI"
+  },
+  "finops-agent": {
+   "filename": "finops-agent.json",
+   "serviceName": "FinOps Agent"
+  },
+  "finspace": {
+   "filename": "finspace.json",
+   "serviceName": "FinSpace"
+  },
+  "finspace-api": {
+   "filename": "finspace-api.json",
+   "serviceName": "FinSpace API"
+  },
+  "firehose": {
+   "filename": "firehose.json",
+   "serviceName": "Firehose"
+  },
+  "fis": {
+   "filename": "fis.json",
+   "serviceName": "FIS"
+  },
+  "fms": {
+   "filename": "fms.json",
+   "serviceName": "Firewall Manager"
+  },
+  "forecast": {
+   "filename": "forecast.json",
+   "serviceName": "Forecast"
+  },
+  "frauddetector": {
+   "filename": "frauddetector.json",
+   "serviceName": "Fraud Detector"
+  },
+  "freertos": {
+   "filename": "freertos.json",
+   "serviceName": "FreeRTOS"
+  },
+  "freetier": {
+   "filename": "freetier.json",
+   "serviceName": "Free Tier"
+  },
+  "fsx": {
+   "filename": "fsx.json",
+   "serviceName": "FSx"
+  },
+  "gamelift": {
+   "filename": "gamelift.json",
+   "serviceName": "GameLift Servers"
+  },
+  "gameliftstreams": {
+   "filename": "gameliftstreams.json",
+   "serviceName": "GameLift Streams"
+  },
+  "geo": {
+   "filename": "geo.json",
+   "serviceName": "Location"
+  },
+  "geo-maps": {
+   "filename": "geo-maps.json",
+   "serviceName": "Geo Maps"
+  },
+  "geo-places": {
+   "filename": "geo-places.json",
+   "serviceName": "Geo Places"
+  },
+  "geo-routes": {
+   "filename": "geo-routes.json",
+   "serviceName": "Geo Routes"
+  },
+  "glacier": {
+   "filename": "glacier.json",
+   "serviceName": "Glacier"
+  },
+  "globalaccelerator": {
+   "filename": "globalaccelerator.json",
+   "serviceName": "GlobalAccelerator"
+  },
+  "glue": {
+   "filename": "glue.json",
+   "serviceName": "Glue"
+  },
+  "grafana": {
+   "filename": "grafana.json",
+   "serviceName": "Managed Grafana"
+  },
+  "greengrass": {
+   "filename": "greengrass.json",
+   "serviceName": "IoT Greengrass"
+  },
+  "groundstation": {
+   "filename": "groundstation.json",
+   "serviceName": "Ground Station"
+  },
+  "groundtruthlabeling": {
+   "filename": "groundtruthlabeling.json",
+   "serviceName": "GroundTruth Labeling"
+  },
+  "guardduty": {
+   "filename": "guardduty.json",
+   "serviceName": "GuardDuty"
+  },
+  "health": {
+   "filename": "health.json",
+   "serviceName": "Health"
+  },
+  "health-agent": {
+   "filename": "health-agent.json",
+   "serviceName": "Connect Health"
+  },
+  "healthlake": {
+   "filename": "healthlake.json",
+   "serviceName": "HealthLake"
+  },
+  "honeycode": {
+   "filename": "honeycode.json",
+   "serviceName": "Honeycode"
+  },
+  "iam": {
+   "filename": "iam.json",
+   "serviceName": "IAM"
+  },
+  "identity-sync": {
+   "filename": "identity-sync.json",
+   "serviceName": "Identity Sync"
+  },
+  "identitystore": {
+   "filename": "identitystore.json",
+   "serviceName": "Identity Store"
+  },
+  "identitystore-auth": {
+   "filename": "identitystore-auth.json",
+   "serviceName": "Identity Store Auth"
+  },
+  "imagebuilder": {
+   "filename": "imagebuilder.json",
+   "serviceName": "EC2 Image Builder"
+  },
+  "importexport": {
+   "filename": "importexport.json",
+   "serviceName": "Import/Export"
+  },
+  "inspector": {
+   "filename": "inspector.json",
+   "serviceName": "Inspector"
+  },
+  "inspector-scan": {
+   "filename": "inspector-scan.json",
+   "serviceName": "InspectorScan"
+  },
+  "inspector2": {
+   "filename": "inspector2.json",
+   "serviceName": "Inspector2"
+  },
+  "inspector2-telemetry": {
+   "filename": "inspector2-telemetry.json",
+   "serviceName": "Inspector2Telemtry"
+  },
+  "interconnect": {
+   "filename": "interconnect.json",
+   "serviceName": "Interconnect"
+  },
+  "internetmonitor": {
+   "filename": "internetmonitor.json",
+   "serviceName": "Internet Monitor"
+  },
+  "invoicing": {
+   "filename": "invoicing.json",
+   "serviceName": "Invoicing Service"
+  },
+  "iot": {
+   "filename": "iot.json",
+   "serviceName": "IoT"
+  },
+  "iot-device-tester": {
+   "filename": "iot-device-tester.json",
+   "serviceName": "IoT Device Tester"
+  },
+  "iotanalytics": {
+   "filename": "iotanalytics.json",
+   "serviceName": "IoT Analytics"
+  },
+  "iotdeviceadvisor": {
+   "filename": "iotdeviceadvisor.json",
+   "serviceName": "IoT Device Advisor"
+  },
+  "iotfleethub": {
+   "filename": "iotfleethub.json",
+   "serviceName": "IoT Fleet Hub"
+  },
+  "iotfleetwise": {
+   "filename": "iotfleetwise.json",
+   "serviceName": "IoT FleetWise"
+  },
+  "iotjobsdata": {
+   "filename": "iotjobsdata.json",
+   "serviceName": "IoT Jobs DataPlane"
+  },
+  "iotmanagedintegrations": {
+   "filename": "iotmanagedintegrations.json",
+   "serviceName": "IoT Managed Integrations"
+  },
+  "iotsitewise": {
+   "filename": "iotsitewise.json",
+   "serviceName": "IoT SiteWise"
+  },
+  "iottwinmaker": {
+   "filename": "iottwinmaker.json",
+   "serviceName": "IoT TwinMaker"
+  },
+  "iotwireless": {
+   "filename": "iotwireless.json",
+   "serviceName": "IoT Wireless"
+  },
+  "iq": {
+   "filename": "iq.json",
+   "serviceName": "IQ"
+  },
+  "iq-permission": {
+   "filename": "iq-permission.json",
+   "serviceName": "IQ Permission"
+  },
+  "ivs": {
+   "filename": "ivs.json",
+   "serviceName": "Interactive Video Service"
+  },
+  "ivschat": {
+   "filename": "ivschat.json",
+   "serviceName": "Interactive Video Service Chat"
+  },
+  "kafka": {
+   "filename": "kafka.json",
+   "serviceName": "MSK"
+  },
+  "kafka-cluster": {
+   "filename": "kafka-cluster.json",
+   "serviceName": "Apache Kafka APIs for MSK"
+  },
+  "kafkaconnect": {
+   "filename": "kafkaconnect.json",
+   "serviceName": "MSK Connect"
+  },
+  "kendra": {
+   "filename": "kendra.json",
+   "serviceName": "Kendra"
+  },
+  "kendra-ranking": {
+   "filename": "kendra-ranking.json",
+   "serviceName": "Kendra Intelligent Ranking"
+  },
+  "kinesis": {
+   "filename": "kinesis.json",
+   "serviceName": "Kinesis"
+  },
+  "kinesisanalytics": {
+   "filename": "kinesisanalytics.json",
+   "serviceName": "Kinesis Analytics"
+  },
+  "kinesisvideo": {
+   "filename": "kinesisvideo.json",
+   "serviceName": "Kinesis Video Streams"
+  },
+  "kms": {
+   "filename": "kms.json",
+   "serviceName": "KMS"
+  },
+  "lakeformation": {
+   "filename": "lakeformation.json",
+   "serviceName": "Lake Formation"
+  },
+  "lambda": {
+   "filename": "lambda.json",
+   "serviceName": "Lambda"
+  },
+  "launchwizard": {
+   "filename": "launchwizard.json",
+   "serviceName": "Launch Wizard"
+  },
+  "lex": {
+   "filename": "lex.json",
+   "serviceName": "Lex"
+  },
+  "license-manager": {
+   "filename": "license-manager.json",
+   "serviceName": "License Manager"
+  },
+  "license-manager-linux-subscriptions": {
+   "filename": "license-manager-linux-subscriptions.json",
+   "serviceName": "License Manager Linux Subscriptions"
+  },
+  "license-manager-user-subscriptions": {
+   "filename": "license-manager-user-subscriptions.json",
+   "serviceName": "License Manager User Subscriptions"
+  },
+  "lightsail": {
+   "filename": "lightsail.json",
+   "serviceName": "Lightsail"
+  },
+  "logs": {
+   "filename": "logs.json",
+   "serviceName": "CloudWatch Logs"
+  },
+  "lookoutequipment": {
+   "filename": "lookoutequipment.json",
+   "serviceName": "Lookout for Equipment"
+  },
+  "lookoutmetrics": {
+   "filename": "lookoutmetrics.json",
+   "serviceName": "Lookout Metrics"
+  },
+  "lookoutvision": {
+   "filename": "lookoutvision.json",
+   "serviceName": "Lookout Vision"
+  },
+  "m2": {
+   "filename": "m2.json",
+   "serviceName": "Mainframe Modernization"
+  },
+  "machinelearning": {
+   "filename": "machinelearning.json",
+   "serviceName": "Machine Learning"
+  },
+  "macie2": {
+   "filename": "macie2.json",
+   "serviceName": "Macie"
+  },
+  "managedblockchain": {
+   "filename": "managedblockchain.json",
+   "serviceName": "Managed Blockchain"
+  },
+  "managedblockchain-query": {
+   "filename": "managedblockchain-query.json",
+   "serviceName": "Managed Blockchain Query"
+  },
+  "mapcredits": {
+   "filename": "mapcredits.json",
+   "serviceName": "MapCredits"
+  },
+  "marketplacecommerceanalytics": {
+   "filename": "marketplacecommerceanalytics.json",
+   "serviceName": "CAS"
+  },
+  "mechanicalturk": {
+   "filename": "mechanicalturk.json",
+   "serviceName": "MechanicalTurk"
+  },
+  "mediaconnect": {
+   "filename": "mediaconnect.json",
+   "serviceName": "MediaConnect"
+  },
+  "mediaconvert": {
+   "filename": "mediaconvert.json",
+   "serviceName": "MediaConvert"
+  },
+  "mediaimport": {
+   "filename": "mediaimport.json",
+   "serviceName": "mediaimport"
+  },
+  "medialive": {
+   "filename": "medialive.json",
+   "serviceName": "MediaLive"
+  },
+  "mediapackage": {
+   "filename": "mediapackage.json",
+   "serviceName": "MediaPackage"
+  },
+  "mediapackage-vod": {
+   "filename": "mediapackage-vod.json",
+   "serviceName": "MediaPackage VOD"
+  },
+  "mediapackagev2": {
+   "filename": "mediapackagev2.json",
+   "serviceName": "MediaPackage v2"
+  },
+  "mediastore": {
+   "filename": "mediastore.json",
+   "serviceName": "MediaStore"
+  },
+  "mediatailor": {
+   "filename": "mediatailor.json",
+   "serviceName": "MediaTailor"
+  },
+  "medical-imaging": {
+   "filename": "medical-imaging.json",
+   "serviceName": "HealthImaging"
+  },
+  "memorydb": {
+   "filename": "memorydb.json",
+   "serviceName": "MemoryDB"
+  },
+  "mgh": {
+   "filename": "mgh.json",
+   "serviceName": "Migration Hub"
+  },
+  "mgn": {
+   "filename": "mgn.json",
+   "serviceName": "MGN"
+  },
+  "migrationhub-orchestrator": {
+   "filename": "migrationhub-orchestrator.json",
+   "serviceName": "MigrationHubOrchestrator"
+  },
+  "migrationhub-strategy": {
+   "filename": "migrationhub-strategy.json",
+   "serviceName": "Migration Hub Strategy Recommendations"
+  },
+  "mobileanalytics": {
+   "filename": "mobileanalytics.json",
+   "serviceName": "Mobile Analytics"
+  },
+  "mobiletargeting": {
+   "filename": "mobiletargeting.json",
+   "serviceName": "Pinpoint"
+  },
+  "monitron": {
+   "filename": "monitron.json",
+   "serviceName": "Monitron"
+  },
+  "mpa": {
+   "filename": "mpa.json",
+   "serviceName": "Multi-party approval"
+  },
+  "mq": {
+   "filename": "mq.json",
+   "serviceName": "MQ"
+  },
+  "neptune-db": {
+   "filename": "neptune-db.json",
+   "serviceName": "Neptune"
+  },
+  "neptune-graph": {
+   "filename": "neptune-graph.json",
+   "serviceName": "Neptune Analytics"
+  },
+  "network-firewall": {
+   "filename": "network-firewall.json",
+   "serviceName": "Network Firewall"
+  },
+  "network-security-director": {
+   "filename": "network-security-director.json",
+   "serviceName": "Network Security Director"
+  },
+  "network-security-manager": {
+   "filename": "network-security-manager.json",
+   "serviceName": "Network Security Manager"
+  },
+  "networkflowmonitor": {
+   "filename": "networkflowmonitor.json",
+   "serviceName": "Network Flow Monitor"
+  },
+  "networkmanager": {
+   "filename": "networkmanager.json",
+   "serviceName": "Network Manager"
+  },
+  "networkmanager-chat": {
+   "filename": "networkmanager-chat.json",
+   "serviceName": "Network Manager Chat"
+  },
+  "networkmonitor": {
+   "filename": "networkmonitor.json",
+   "serviceName": "Network Synthetic Monitor"
+  },
+  "nimble": {
+   "filename": "nimble.json",
+   "serviceName": "Nimble Studio"
+  },
+  "notifications": {
+   "filename": "notifications.json",
+   "serviceName": "User Notifications"
+  },
+  "notifications-contacts": {
+   "filename": "notifications-contacts.json",
+   "serviceName": "User Notifications Contacts"
+  },
+  "nova-act": {
+   "filename": "nova-act.json",
+   "serviceName": "Nova Act"
+  },
+  "oam": {
+   "filename": "oam.json",
+   "serviceName": "OAM"
+  },
+  "observabilityadmin": {
+   "filename": "observabilityadmin.json",
+   "serviceName": "CloudWatch Observability Admin"
+  },
+  "odb": {
+   "filename": "odb.json",
+   "serviceName": "Oracle Database@AWS"
+  },
+  "omics": {
+   "filename": "omics.json",
+   "serviceName": "Omics"
+  },
+  "one": {
+   "filename": "one.json",
+   "serviceName": "One"
+  },
+  "opensearch": {
+   "filename": "opensearch.json",
+   "serviceName": "OpenSearch"
+  },
+  "opsworks": {
+   "filename": "opsworks.json",
+   "serviceName": "OpsWorks"
+  },
+  "opsworks-cm": {
+   "filename": "opsworks-cm.json",
+   "serviceName": "OpsworksCM"
+  },
+  "organizations": {
+   "filename": "organizations.json",
+   "serviceName": "Organizations"
+  },
+  "osis": {
+   "filename": "osis.json",
+   "serviceName": "OpenSearch Ingestion"
+  },
+  "outposts": {
+   "filename": "outposts.json",
+   "serviceName": "Outposts"
+  },
+  "panorama": {
+   "filename": "panorama.json",
+   "serviceName": "Panorama"
+  },
+  "partnercentral": {
+   "filename": "partnercentral.json",
+   "serviceName": "Partner Central"
+  },
+  "partnercentral-account-management": {
+   "filename": "partnercentral-account-management.json",
+   "serviceName": "Partner central account management"
+  },
+  "payment-cryptography": {
+   "filename": "payment-cryptography.json",
+   "serviceName": "Payment Cryptography"
+  },
+  "payments": {
+   "filename": "payments.json",
+   "serviceName": "Payments"
+  },
+  "pca-connector-ad": {
+   "filename": "pca-connector-ad.json",
+   "serviceName": "Private CA Connector for Active Directory"
+  },
+  "pca-connector-scep": {
+   "filename": "pca-connector-scep.json",
+   "serviceName": "Private CA Connector for SCEP"
+  },
+  "pcs": {
+   "filename": "pcs.json",
+   "serviceName": "Parallel Computing Service"
+  },
+  "personalize": {
+   "filename": "personalize.json",
+   "serviceName": "Personalize"
+  },
+  "pi": {
+   "filename": "pi.json",
+   "serviceName": "Performance Insights"
+  },
+  "pipes": {
+   "filename": "pipes.json",
+   "serviceName": "EventBridge Pipes"
+  },
+  "polly": {
+   "filename": "polly.json",
+   "serviceName": "Polly"
+  },
+  "pricing": {
+   "filename": "pricing.json",
+   "serviceName": "Price List"
+  },
+  "pricingplanmanager": {
+   "filename": "pricingplanmanager.json",
+   "serviceName": "PricingPlanManager"
+  },
+  "private-networks": {
+   "filename": "private-networks.json",
+   "serviceName": "Private 5G"
+  },
+  "profile": {
+   "filename": "profile.json",
+   "serviceName": "Profile"
+  },
+  "proton": {
+   "filename": "proton.json",
+   "serviceName": "Proton"
+  },
+  "purchase-orders": {
+   "filename": "purchase-orders.json",
+   "serviceName": "Purchase Orders"
+  },
+  "q": {
+   "filename": "q.json",
+   "serviceName": "Q"
+  },
+  "qapps": {
+   "filename": "qapps.json",
+   "serviceName": "Q Apps"
+  },
+  "qbusiness": {
+   "filename": "qbusiness.json",
+   "serviceName": "Q Business"
+  },
+  "qdeveloper": {
+   "filename": "qdeveloper.json",
+   "serviceName": "Q Developer"
+  },
+  "qldb": {
+   "filename": "qldb.json",
+   "serviceName": "QLDB"
+  },
+  "quicksight": {
+   "filename": "quicksight.json",
+   "serviceName": "QuickSight"
+  },
+  "ram": {
+   "filename": "ram.json",
+   "serviceName": "Resource Access Manager"
+  },
+  "rbin": {
+   "filename": "rbin.json",
+   "serviceName": "Recycle Bin"
+  },
+  "rds": {
+   "filename": "rds.json",
+   "serviceName": "RDS"
+  },
+  "rds-data": {
+   "filename": "rds-data.json",
+   "serviceName": "RDS Data API"
+  },
+  "rds-db": {
+   "filename": "rds-db.json",
+   "serviceName": "RDS IAM Authentication"
+  },
+  "redshift": {
+   "filename": "redshift.json",
+   "serviceName": "Redshift"
+  },
+  "redshift-data": {
+   "filename": "redshift-data.json",
+   "serviceName": "Redshift Data API"
+  },
+  "redshift-serverless": {
+   "filename": "redshift-serverless.json",
+   "serviceName": "Redshift Serverless"
+  },
+  "refactor-spaces": {
+   "filename": "refactor-spaces.json",
+   "serviceName": "Migration Hub Refactor Spaces"
+  },
+  "rekognition": {
+   "filename": "rekognition.json",
+   "serviceName": "Rekognition"
+  },
+  "repostspace": {
+   "filename": "repostspace.json",
+   "serviceName": "re:Post Private"
+  },
+  "researchstudio": {
+   "filename": "researchstudio.json",
+   "serviceName": "Bio Discovery"
+  },
+  "resiliencehub": {
+   "filename": "resiliencehub.json",
+   "serviceName": "Resilience Hub"
+  },
+  "resource-explorer": {
+   "filename": "resource-explorer.json",
+   "serviceName": "Tag Editor"
+  },
+  "resource-explorer-2": {
+   "filename": "resource-explorer-2.json",
+   "serviceName": "Resource Explorer"
+  },
+  "resource-groups": {
+   "filename": "resource-groups.json",
+   "serviceName": "Resource Groups"
+  },
+  "rhelkb": {
+   "filename": "rhelkb.json",
+   "serviceName": "RHEL KB"
+  },
+  "robomaker": {
+   "filename": "robomaker.json",
+   "serviceName": "RoboMaker"
+  },
+  "rolesanywhere": {
+   "filename": "rolesanywhere.json",
+   "serviceName": "IAM Roles Anywhere"
+  },
+  "route53": {
+   "filename": "route53.json",
+   "serviceName": "Route 53"
+  },
+  "route53-recovery-cluster": {
+   "filename": "route53-recovery-cluster.json",
+   "serviceName": "Route 53 Recovery Cluster"
+  },
+  "route53-recovery-control-config": {
+   "filename": "route53-recovery-control-config.json",
+   "serviceName": "Route 53 Recovery Controls"
+  },
+  "route53-recovery-readiness": {
+   "filename": "route53-recovery-readiness.json",
+   "serviceName": "Route 53 Recovery Readiness"
+  },
+  "route53domains": {
+   "filename": "route53domains.json",
+   "serviceName": "Route 53 Domains"
+  },
+  "route53globalresolver": {
+   "filename": "route53globalresolver.json",
+   "serviceName": "Route 53 Global Resolver"
+  },
+  "route53profiles": {
+   "filename": "route53profiles.json",
+   "serviceName": "Route 53 Profiles"
+  },
+  "route53resolver": {
+   "filename": "route53resolver.json",
+   "serviceName": "Route 53 Resolver"
+  },
+  "rtbfabric": {
+   "filename": "rtbfabric.json",
+   "serviceName": "RTB Fabric"
+  },
+  "rum": {
+   "filename": "rum.json",
+   "serviceName": "CloudWatch RUM"
+  },
+  "s3": {
+   "filename": "s3.json",
+   "serviceName": "S3"
+  },
+  "s3-object-lambda": {
+   "filename": "s3-object-lambda.json",
+   "serviceName": "S3 Object Lambda"
+  },
+  "s3-outposts": {
+   "filename": "s3-outposts.json",
+   "serviceName": "S3 Outposts"
+  },
+  "s3express": {
+   "filename": "s3express.json",
+   "serviceName": "S3 Express"
+  },
+  "s3files": {
+   "filename": "s3files.json",
+   "serviceName": "S3 Files"
+  },
+  "s3tables": {
+   "filename": "s3tables.json",
+   "serviceName": "S3 Tables"
+  },
+  "s3vectors": {
+   "filename": "s3vectors.json",
+   "serviceName": "S3 Vectors"
+  },
+  "sagemaker": {
+   "filename": "sagemaker.json",
+   "serviceName": "SageMaker"
+  },
+  "sagemaker-data-science-assistant": {
+   "filename": "sagemaker-data-science-assistant.json",
+   "serviceName": "SageMakerDataScienceAssistant"
+  },
+  "sagemaker-geospatial": {
+   "filename": "sagemaker-geospatial.json",
+   "serviceName": "SageMaker geospatial capabilities"
+  },
+  "sagemaker-mlflow": {
+   "filename": "sagemaker-mlflow.json",
+   "serviceName": "SageMaker MLflow"
+  },
+  "sagemaker-unified-studio-mcp": {
+   "filename": "sagemaker-unified-studio-mcp.json",
+   "serviceName": "SageMaker Unified Studio MCP"
+  },
+  "savingsplans": {
+   "filename": "savingsplans.json",
+   "serviceName": "Savings Plans"
+  },
+  "scheduler": {
+   "filename": "scheduler.json",
+   "serviceName": "EventBridge Scheduler"
+  },
+  "schemas": {
+   "filename": "schemas.json",
+   "serviceName": "EventBridge Schemas"
+  },
+  "scn": {
+   "filename": "scn.json",
+   "serviceName": "ASC"
+  },
+  "sdb": {
+   "filename": "sdb.json",
+   "serviceName": "SimpleDB"
+  },
+  "secretsmanager": {
+   "filename": "secretsmanager.json",
+   "serviceName": "Secrets Manager"
+  },
+  "security-ir": {
+   "filename": "security-ir.json",
+   "serviceName": "Security Incident Response"
+  },
+  "securityagent": {
+   "filename": "securityagent.json",
+   "serviceName": "securityagent"
+  },
+  "securityhub": {
+   "filename": "securityhub.json",
+   "serviceName": "SecurityHub"
+  },
+  "securitylake": {
+   "filename": "securitylake.json",
+   "serviceName": "SecurityLake"
+  },
+  "serverlessrepo": {
+   "filename": "serverlessrepo.json",
+   "serviceName": "Serverless Application Repository"
+  },
+  "servicecatalog": {
+   "filename": "servicecatalog.json",
+   "serviceName": "Service Catalog"
+  },
+  "servicediscovery": {
+   "filename": "servicediscovery.json",
+   "serviceName": "Cloud Map"
+  },
+  "serviceextract": {
+   "filename": "serviceextract.json",
+   "serviceName": "Microservice Extractor for .NET"
+  },
+  "servicequotas": {
+   "filename": "servicequotas.json",
+   "serviceName": "Service Quotas"
+  },
+  "ses": {
+   "filename": "ses.json",
+   "serviceName": "SES"
+  },
+  "shield": {
+   "filename": "shield.json",
+   "serviceName": "Shield"
+  },
+  "signer": {
+   "filename": "signer.json",
+   "serviceName": "Signer"
+  },
+  "signin": {
+   "filename": "signin.json",
+   "serviceName": "Signin"
+  },
+  "simspaceweaver": {
+   "filename": "simspaceweaver.json",
+   "serviceName": "SimSpace Weaver"
+  },
+  "sms": {
+   "filename": "sms.json",
+   "serviceName": "ServerMigrationService"
+  },
+  "sms-voice": {
+   "filename": "sms-voice.json",
+   "serviceName": "Pinpoint SMS Voice"
+  },
+  "snow-device-management": {
+   "filename": "snow-device-management.json",
+   "serviceName": "Snow Device Management"
+  },
+  "snowball": {
+   "filename": "snowball.json",
+   "serviceName": "Snowball"
+  },
+  "sns": {
+   "filename": "sns.json",
+   "serviceName": "SNS"
+  },
+  "social-messaging": {
+   "filename": "social-messaging.json",
+   "serviceName": "Social Messaging"
+  },
+  "sqlworkbench": {
+   "filename": "sqlworkbench.json",
+   "serviceName": "SQL Workbench"
+  },
+  "sqs": {
+   "filename": "sqs.json",
+   "serviceName": "SQS"
+  },
+  "ssm": {
+   "filename": "ssm.json",
+   "serviceName": "Systems Manager"
+  },
+  "ssm-contacts": {
+   "filename": "ssm-contacts.json",
+   "serviceName": "Incident Manager Contacts"
+  },
+  "ssm-guiconnect": {
+   "filename": "ssm-guiconnect.json",
+   "serviceName": "GUI Connect"
+  },
+  "ssm-incidents": {
+   "filename": "ssm-incidents.json",
+   "serviceName": "Incident Manager"
+  },
+  "ssm-quicksetup": {
+   "filename": "ssm-quicksetup.json",
+   "serviceName": "Systems Manager Quick Setup"
+  },
+  "ssm-sap": {
+   "filename": "ssm-sap.json",
+   "serviceName": "Systems Manager for SAP"
+  },
+  "ssmmessages": {
+   "filename": "ssmmessages.json",
+   "serviceName": "SSM Messages"
+  },
+  "sso": {
+   "filename": "sso.json",
+   "serviceName": "IAM Identity Center"
+  },
+  "sso-directory": {
+   "filename": "sso-directory.json",
+   "serviceName": "IAM Identity Center directory"
+  },
+  "sso-oauth": {
+   "filename": "sso-oauth.json",
+   "serviceName": "OIDC service"
+  },
+  "startups": {
+   "filename": "startups.json",
+   "serviceName": "Startups"
+  },
+  "states": {
+   "filename": "states.json",
+   "serviceName": "Step Functions"
+  },
+  "storagegateway": {
+   "filename": "storagegateway.json",
+   "serviceName": "Storage Gateway"
+  },
+  "sts": {
+   "filename": "sts.json",
+   "serviceName": "STS"
+  },
+  "support": {
+   "filename": "support.json",
+   "serviceName": "Support"
+  },
+  "support-console": {
+   "filename": "support-console.json",
+   "serviceName": "Support Console"
+  },
+  "supportapp": {
+   "filename": "supportapp.json",
+   "serviceName": "Support App"
+  },
+  "supportauthz": {
+   "filename": "supportauthz.json",
+   "serviceName": "Support Authorization"
+  },
+  "supportplans": {
+   "filename": "supportplans.json",
+   "serviceName": "Support Plans"
+  },
+  "sustainability": {
+   "filename": "sustainability.json",
+   "serviceName": "Sustainability"
+  },
+  "swf": {
+   "filename": "swf.json",
+   "serviceName": "SWF"
+  },
+  "synthetics": {
+   "filename": "synthetics.json",
+   "serviceName": "CloudWatch Synthetics"
+  },
+  "tag": {
+   "filename": "tag.json",
+   "serviceName": "Resource Group Tagging"
+  },
+  "tax": {
+   "filename": "tax.json",
+   "serviceName": "Tax Settings"
+  },
+  "textract": {
+   "filename": "textract.json",
+   "serviceName": "Textract"
+  },
+  "thinclient": {
+   "filename": "thinclient.json",
+   "serviceName": "WorkSpaces Thin Client"
+  },
+  "timestream": {
+   "filename": "timestream.json",
+   "serviceName": "Timestream"
+  },
+  "timestream-influxdb": {
+   "filename": "timestream-influxdb.json",
+   "serviceName": "Timestream InfluxDB"
+  },
+  "tiros": {
+   "filename": "tiros.json",
+   "serviceName": "Tiros"
+  },
+  "tnb": {
+   "filename": "tnb.json",
+   "serviceName": "Telco Network Builder"
+  },
+  "transcribe": {
+   "filename": "transcribe.json",
+   "serviceName": "Transcribe"
+  },
+  "transfer": {
+   "filename": "transfer.json",
+   "serviceName": "Transfer"
+  },
+  "transform": {
+   "filename": "transform.json",
+   "serviceName": "Transform"
+  },
+  "transform-custom": {
+   "filename": "transform-custom.json",
+   "serviceName": "Transform custom"
+  },
+  "translate": {
+   "filename": "translate.json",
+   "serviceName": "Translate"
+  },
+  "trustedadvisor": {
+   "filename": "trustedadvisor.json",
+   "serviceName": "Trusted Advisor"
+  },
+  "ts": {
+   "filename": "ts.json",
+   "serviceName": "Diagnostic tools"
+  },
+  "user-subscriptions": {
+   "filename": "user-subscriptions.json",
+   "serviceName": "User Subscriptions"
+  },
+  "uxc": {
+   "filename": "uxc.json",
+   "serviceName": "User Experience Customization (UXC)"
+  },
+  "vendor-insights": {
+   "filename": "vendor-insights.json",
+   "serviceName": "Vendor Insights"
+  },
+  "verified-access": {
+   "filename": "verified-access.json",
+   "serviceName": "Verified Access"
+  },
+  "verifiedpermissions": {
+   "filename": "verifiedpermissions.json",
+   "serviceName": "Verified Permissions"
+  },
+  "voiceid": {
+   "filename": "voiceid.json",
+   "serviceName": "Voice ID"
+  },
+  "vpc-lattice": {
+   "filename": "vpc-lattice.json",
+   "serviceName": "VPC Lattice"
+  },
+  "vpc-lattice-svcs": {
+   "filename": "vpc-lattice-svcs.json",
+   "serviceName": "VPC Lattice Services"
+  },
+  "vpce": {
+   "filename": "vpce.json",
+   "serviceName": "VPC Endpoints"
+  },
+  "waf": {
+   "filename": "waf.json",
+   "serviceName": "WAF"
+  },
+  "waf-regional": {
+   "filename": "waf-regional.json",
+   "serviceName": "WAF Regional"
+  },
+  "wafv2": {
+   "filename": "wafv2.json",
+   "serviceName": "WAF V2"
+  },
+  "wam": {
+   "filename": "wam.json",
+   "serviceName": "WAM"
+  },
+  "wellarchitected": {
+   "filename": "wellarchitected.json",
+   "serviceName": "Well-Architected Tool"
+  },
+  "wickr": {
+   "filename": "wickr.json",
+   "serviceName": "Wickr"
+  },
+  "wisdom": {
+   "filename": "wisdom.json",
+   "serviceName": "Q in Connect"
+  },
+  "workdocs": {
+   "filename": "workdocs.json",
+   "serviceName": "WorkDocs"
+  },
+  "worklink": {
+   "filename": "worklink.json",
+   "serviceName": "WorkLink"
+  },
+  "workmail": {
+   "filename": "workmail.json",
+   "serviceName": "WorkMail"
+  },
+  "workmailmessageflow": {
+   "filename": "workmailmessageflow.json",
+   "serviceName": "WorkMail Message Flow"
+  },
+  "workspaces": {
+   "filename": "workspaces.json",
+   "serviceName": "WorkSpaces"
+  },
+  "workspaces-instances": {
+   "filename": "workspaces-instances.json",
+   "serviceName": "WorkSpaces Managed Instances"
+  },
+  "workspaces-web": {
+   "filename": "workspaces-web.json",
+   "serviceName": "WorkSpaces Secure Browser"
+  },
+  "xray": {
+   "filename": "xray.json",
+   "serviceName": "X-Ray"
+  }
+ },
+ "totalServices": 457
+}

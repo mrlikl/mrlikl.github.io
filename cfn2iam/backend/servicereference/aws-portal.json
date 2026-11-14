@@ -1,0 +1,56 @@
+{
+ "actions": {
+  "getconsoleactionsetenforced": {
+   "name": "GetConsoleActionSetEnforced",
+   "resources": []
+  },
+  "modifyaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyAccount",
+   "resources": []
+  },
+  "modifybilling": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyBilling",
+   "resources": []
+  },
+  "modifypaymentmethods": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyPaymentMethods",
+   "resources": []
+  },
+  "updateconsoleactionsetenforced": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConsoleActionSetEnforced",
+   "resources": []
+  },
+  "viewaccount": {
+   "name": "ViewAccount",
+   "resources": []
+  },
+  "viewbilling": {
+   "name": "ViewBilling",
+   "resources": []
+  },
+  "viewpaymentmethods": {
+   "name": "ViewPaymentMethods",
+   "resources": []
+  },
+  "viewusage": {
+   "name": "ViewUsage",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "aws-portal",
+ "serviceName": "Billing Console",
+ "version": "v1.5"
+}

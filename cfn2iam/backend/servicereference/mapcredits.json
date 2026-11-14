@@ -1,0 +1,41 @@
+{
+ "actions": {
+  "listassociatedprograms": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssociatedPrograms",
+   "resources": [
+    "agreement"
+   ]
+  },
+  "listquartercredits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQuarterCredits",
+   "resources": [
+    "agreement"
+   ]
+  },
+  "listquarterspend": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQuarterSpend",
+   "resources": [
+    "agreement"
+   ]
+  }
+ },
+ "resources": {
+  "agreement": {
+   "arnFormats": [
+    "arn:${Partition}:mapcredits:::${Agreement}/${AgreementId}"
+   ]
+  }
+ },
+ "service": "mapcredits",
+ "serviceName": "MapCredits",
+ "version": "v1.5"
+}

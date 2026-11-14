@@ -1,0 +1,1210 @@
+{
+ "actions": {
+  "addtagstoresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "dms:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "AddTagsToResource",
+   "resources": [
+    "Certificate",
+    "DataMigration",
+    "DataProvider",
+    "Endpoint",
+    "EventSubscription",
+    "InstanceProfile",
+    "MigrationProject",
+    "ReplicationConfig",
+    "ReplicationInstance",
+    "ReplicationSubnetGroup",
+    "ReplicationTask",
+    "ReplicationTaskAssessmentRun",
+    "ReplicationTaskIndividualAssessment"
+   ]
+  },
+  "applypendingmaintenanceaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ApplyPendingMaintenanceAction",
+   "resources": [
+    "ReplicationInstance"
+   ]
+  },
+  "associateextensionpack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateExtensionPack",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "batchstartrecommendations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchStartRecommendations",
+   "resources": []
+  },
+  "cancelmetadatamodelconversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelMetadataModelConversion",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "cancelmetadatamodelcreation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelMetadataModelCreation",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "cancelreplicationtaskassessmentrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelReplicationTaskAssessmentRun",
+   "resources": [
+    "ReplicationTaskAssessmentRun"
+   ]
+  },
+  "createdatamigration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "dms:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataMigration",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "createdataprovider": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "dms:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataProvider",
+   "resources": []
+  },
+  "createendpoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "dms:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEndpoint",
+   "resources": [
+    "Certificate",
+    "Endpoint"
+   ]
+  },
+  "createeventsubscription": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "dms:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEventSubscription",
+   "resources": [
+    "EventSubscription"
+   ]
+  },
+  "createfleetadvisorcollector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFleetAdvisorCollector",
+   "resources": []
+  },
+  "createinstanceprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "dms:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInstanceProfile",
+   "resources": []
+  },
+  "createmigrationproject": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "dms:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMigrationProject",
+   "resources": [
+    "DataProvider",
+    "InstanceProfile"
+   ]
+  },
+  "createoutboundintegration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "dms:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOutboundIntegration",
+   "resources": []
+  },
+  "createreplicationconfig": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "dms:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReplicationConfig",
+   "resources": [
+    "Endpoint"
+   ]
+  },
+  "createreplicationinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "dms:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReplicationInstance",
+   "resources": [
+    "ReplicationInstance",
+    "ReplicationSubnetGroup"
+   ]
+  },
+  "createreplicationsubnetgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "dms:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReplicationSubnetGroup",
+   "resources": [
+    "ReplicationSubnetGroup"
+   ]
+  },
+  "createreplicationtask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "dms:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReplicationTask",
+   "resources": [
+    "Endpoint",
+    "ReplicationInstance"
+   ]
+  },
+  "deletecertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCertificate",
+   "resources": [
+    "Certificate"
+   ]
+  },
+  "deleteconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnection",
+   "resources": [
+    "Endpoint",
+    "ReplicationInstance"
+   ]
+  },
+  "deletedatamigration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataMigration",
+   "resources": [
+    "DataMigration"
+   ]
+  },
+  "deletedataprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataProvider",
+   "resources": [
+    "DataProvider"
+   ]
+  },
+  "deleteendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEndpoint",
+   "resources": [
+    "Endpoint"
+   ]
+  },
+  "deleteeventsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventSubscription",
+   "resources": [
+    "EventSubscription"
+   ]
+  },
+  "deletefleetadvisorcollector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFleetAdvisorCollector",
+   "resources": []
+  },
+  "deletefleetadvisordatabases": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFleetAdvisorDatabases",
+   "resources": []
+  },
+  "deleteinstanceprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInstanceProfile",
+   "resources": [
+    "InstanceProfile"
+   ]
+  },
+  "deletemigrationproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMigrationProject",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "deletereplicationconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReplicationConfig",
+   "resources": [
+    "ReplicationConfig"
+   ]
+  },
+  "deletereplicationinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReplicationInstance",
+   "resources": [
+    "ReplicationInstance"
+   ]
+  },
+  "deletereplicationsubnetgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReplicationSubnetGroup",
+   "resources": [
+    "ReplicationSubnetGroup"
+   ]
+  },
+  "deletereplicationtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReplicationTask",
+   "resources": [
+    "ReplicationTask"
+   ]
+  },
+  "deletereplicationtaskassessmentrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReplicationTaskAssessmentRun",
+   "resources": [
+    "ReplicationTaskAssessmentRun"
+   ]
+  },
+  "describeaccountattributes": {
+   "name": "DescribeAccountAttributes",
+   "resources": []
+  },
+  "describeapplicableindividualassessments": {
+   "name": "DescribeApplicableIndividualAssessments",
+   "resources": [
+    "ReplicationInstance",
+    "ReplicationTask"
+   ]
+  },
+  "describecertificates": {
+   "name": "DescribeCertificates",
+   "resources": []
+  },
+  "describeconnections": {
+   "name": "DescribeConnections",
+   "resources": []
+  },
+  "describeconversionconfiguration": {
+   "name": "DescribeConversionConfiguration",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "describedatamigrations": {
+   "name": "DescribeDataMigrations",
+   "resources": []
+  },
+  "describeendpoints": {
+   "name": "DescribeEndpoints",
+   "resources": []
+  },
+  "describeendpointsettings": {
+   "name": "DescribeEndpointSettings",
+   "resources": []
+  },
+  "describeendpointtypes": {
+   "name": "DescribeEndpointTypes",
+   "resources": []
+  },
+  "describeengineversions": {
+   "name": "DescribeEngineVersions",
+   "resources": []
+  },
+  "describeeventcategories": {
+   "name": "DescribeEventCategories",
+   "resources": []
+  },
+  "describeevents": {
+   "name": "DescribeEvents",
+   "resources": []
+  },
+  "describeeventsubscriptions": {
+   "name": "DescribeEventSubscriptions",
+   "resources": []
+  },
+  "describefleetadvisorcollectors": {
+   "name": "DescribeFleetAdvisorCollectors",
+   "resources": []
+  },
+  "describefleetadvisordatabases": {
+   "name": "DescribeFleetAdvisorDatabases",
+   "resources": []
+  },
+  "describefleetadvisorlsaanalysis": {
+   "name": "DescribeFleetAdvisorLsaAnalysis",
+   "resources": []
+  },
+  "describefleetadvisorschemaobjectsummary": {
+   "name": "DescribeFleetAdvisorSchemaObjectSummary",
+   "resources": []
+  },
+  "describefleetadvisorschemas": {
+   "name": "DescribeFleetAdvisorSchemas",
+   "resources": []
+  },
+  "describemetadatamodel": {
+   "name": "DescribeMetadataModel",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "describemetadatamodelchildren": {
+   "name": "DescribeMetadataModelChildren",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "describemetadatamodelcreations": {
+   "name": "DescribeMetadataModelCreations",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "describemetadatamodelimports": {
+   "name": "DescribeMetadataModelImports",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "describeorderablereplicationinstances": {
+   "name": "DescribeOrderableReplicationInstances",
+   "resources": []
+  },
+  "describependingmaintenanceactions": {
+   "name": "DescribePendingMaintenanceActions",
+   "resources": []
+  },
+  "describerecommendationlimitations": {
+   "name": "DescribeRecommendationLimitations",
+   "resources": []
+  },
+  "describerecommendations": {
+   "name": "DescribeRecommendations",
+   "resources": []
+  },
+  "describerefreshschemasstatus": {
+   "name": "DescribeRefreshSchemasStatus",
+   "resources": [
+    "Endpoint"
+   ]
+  },
+  "describereplicationconfigs": {
+   "name": "DescribeReplicationConfigs",
+   "resources": []
+  },
+  "describereplicationinstances": {
+   "name": "DescribeReplicationInstances",
+   "resources": []
+  },
+  "describereplicationinstancetasklogs": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "DescribeReplicationInstanceTaskLogs",
+   "resources": [
+    "ReplicationInstance"
+   ]
+  },
+  "describereplications": {
+   "name": "DescribeReplications",
+   "resources": []
+  },
+  "describereplicationsubnetgroups": {
+   "name": "DescribeReplicationSubnetGroups",
+   "resources": []
+  },
+  "describereplicationtablestatistics": {
+   "name": "DescribeReplicationTableStatistics",
+   "resources": [
+    "ReplicationConfig"
+   ]
+  },
+  "describereplicationtaskassessmentresults": {
+   "name": "DescribeReplicationTaskAssessmentResults",
+   "resources": [
+    "ReplicationTask"
+   ]
+  },
+  "describereplicationtaskassessmentruns": {
+   "name": "DescribeReplicationTaskAssessmentRuns",
+   "resources": [
+    "ReplicationInstance",
+    "ReplicationTask",
+    "ReplicationTaskAssessmentRun"
+   ]
+  },
+  "describereplicationtaskindividualassessments": {
+   "name": "DescribeReplicationTaskIndividualAssessments",
+   "resources": [
+    "ReplicationTask",
+    "ReplicationTaskAssessmentRun"
+   ]
+  },
+  "describereplicationtasks": {
+   "name": "DescribeReplicationTasks",
+   "resources": []
+  },
+  "describeschemas": {
+   "name": "DescribeSchemas",
+   "resources": [
+    "Endpoint"
+   ]
+  },
+  "describetablestatistics": {
+   "name": "DescribeTableStatistics",
+   "resources": [
+    "ReplicationTask"
+   ]
+  },
+  "exportmetadatamodelassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportMetadataModelAssessment",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "getmetadatamodel": {
+   "name": "GetMetadataModel",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "gettargetselectionrules": {
+   "name": "GetTargetSelectionRules",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "importcertificate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportCertificate",
+   "resources": [
+    "Certificate"
+   ]
+  },
+  "listdataproviders": {
+   "name": "ListDataProviders",
+   "resources": []
+  },
+  "listextensionpacks": {
+   "name": "ListExtensionPacks",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "listinstanceprofiles": {
+   "name": "ListInstanceProfiles",
+   "resources": [
+    "InstanceProfile"
+   ]
+  },
+  "listmetadatamodelassessmentactionitems": {
+   "name": "ListMetadataModelAssessmentActionItems",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "listmetadatamodelassessments": {
+   "name": "ListMetadataModelAssessments",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "listmetadatamodelconversions": {
+   "name": "ListMetadataModelConversions",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "listmetadatamodelexports": {
+   "name": "ListMetadataModelExports",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "listmigrationprojects": {
+   "name": "ListMigrationProjects",
+   "resources": [
+    "DataProvider",
+    "InstanceProfile",
+    "MigrationProject"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "Certificate",
+    "DataMigration",
+    "DataProvider",
+    "Endpoint",
+    "EventSubscription",
+    "InstanceProfile",
+    "MigrationProject",
+    "ReplicationConfig",
+    "ReplicationInstance",
+    "ReplicationSubnetGroup",
+    "ReplicationTask",
+    "ReplicationTaskAssessmentRun",
+    "ReplicationTaskIndividualAssessment"
+   ]
+  },
+  "modifydatamigration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDataMigration",
+   "resources": [
+    "DataMigration"
+   ]
+  },
+  "modifyendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyEndpoint",
+   "resources": [
+    "Certificate",
+    "Endpoint"
+   ]
+  },
+  "modifyeventsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyEventSubscription",
+   "resources": [
+    "EventSubscription"
+   ]
+  },
+  "modifyfleetadvisorcollector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyFleetAdvisorCollector",
+   "resources": []
+  },
+  "modifyfleetadvisorcollectorstatuses": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyFleetAdvisorCollectorStatuses",
+   "resources": []
+  },
+  "modifyoutboundintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyOutboundIntegration",
+   "resources": []
+  },
+  "modifyreplicationconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyReplicationConfig",
+   "resources": [
+    "ReplicationConfig"
+   ]
+  },
+  "modifyreplicationinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyReplicationInstance",
+   "resources": [
+    "ReplicationInstance"
+   ]
+  },
+  "modifyreplicationsubnetgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyReplicationSubnetGroup",
+   "resources": [
+    "ReplicationSubnetGroup"
+   ]
+  },
+  "modifyreplicationtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyReplicationTask",
+   "resources": [
+    "ReplicationTask"
+   ]
+  },
+  "movereplicationtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MoveReplicationTask",
+   "resources": [
+    "ReplicationInstance",
+    "ReplicationTask"
+   ]
+  },
+  "rebootreplicationinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootReplicationInstance",
+   "resources": [
+    "ReplicationInstance"
+   ]
+  },
+  "refreshschemas": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RefreshSchemas",
+   "resources": [
+    "Endpoint",
+    "ReplicationInstance"
+   ]
+  },
+  "reloadreplicationtables": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReloadReplicationTables",
+   "resources": [
+    "ReplicationConfig"
+   ]
+  },
+  "reloadtables": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReloadTables",
+   "resources": [
+    "ReplicationTask"
+   ]
+  },
+  "removetagsfromresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "RemoveTagsFromResource",
+   "resources": [
+    "Certificate",
+    "DataMigration",
+    "DataProvider",
+    "Endpoint",
+    "EventSubscription",
+    "InstanceProfile",
+    "MigrationProject",
+    "ReplicationConfig",
+    "ReplicationInstance",
+    "ReplicationSubnetGroup",
+    "ReplicationTask",
+    "ReplicationTaskAssessmentRun",
+    "ReplicationTaskIndividualAssessment"
+   ]
+  },
+  "runfleetadvisorlsaanalysis": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RunFleetAdvisorLsaAnalysis",
+   "resources": []
+  },
+  "startdatamigration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDataMigration",
+   "resources": [
+    "DataMigration"
+   ]
+  },
+  "startmetadatamodelassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMetadataModelAssessment",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "startmetadatamodelconversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMetadataModelConversion",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "startmetadatamodelcreation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMetadataModelCreation",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "startmetadatamodelexportasscripts": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMetadataModelExportAsScripts",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "startmetadatamodelexporttotarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMetadataModelExportToTarget",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "startmetadatamodelimport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMetadataModelImport",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "startrecommendations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRecommendations",
+   "resources": []
+  },
+  "startreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartReplication",
+   "resources": [
+    "ReplicationConfig"
+   ]
+  },
+  "startreplicationtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartReplicationTask",
+   "resources": [
+    "ReplicationTask"
+   ]
+  },
+  "startreplicationtaskassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartReplicationTaskAssessment",
+   "resources": [
+    "ReplicationTask"
+   ]
+  },
+  "startreplicationtaskassessmentrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartReplicationTaskAssessmentRun",
+   "resources": [
+    "ReplicationTask"
+   ]
+  },
+  "stopdatamigration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopDataMigration",
+   "resources": [
+    "DataMigration"
+   ]
+  },
+  "stopreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopReplication",
+   "resources": [
+    "ReplicationConfig"
+   ]
+  },
+  "stopreplicationtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopReplicationTask",
+   "resources": [
+    "ReplicationTask"
+   ]
+  },
+  "testconnection": {
+   "name": "TestConnection",
+   "resources": [
+    "Endpoint",
+    "ReplicationInstance"
+   ]
+  },
+  "updateconversionconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConversionConfiguration",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "updatedataprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataProvider",
+   "resources": [
+    "DataProvider"
+   ]
+  },
+  "updateinstanceprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInstanceProfile",
+   "resources": [
+    "InstanceProfile"
+   ]
+  },
+  "updatemigrationproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMigrationProject",
+   "resources": [
+    "MigrationProject"
+   ]
+  },
+  "updatesubscriptionstoeventbridge": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSubscriptionsToEventBridge",
+   "resources": []
+  },
+  "uploadfilemetadatalist": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UploadFileMetadataList",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "dms:assessment-run-tag/${TagKey}": [
+   "String"
+  ],
+  "dms:cert-tag/${TagKey}": [
+   "String"
+  ],
+  "dms:data-migration-tag/${TagKey}": [
+   "String"
+  ],
+  "dms:data-provider-tag/${TagKey}": [
+   "String"
+  ],
+  "dms:endpoint-tag/${TagKey}": [
+   "String"
+  ],
+  "dms:es-tag/${TagKey}": [
+   "String"
+  ],
+  "dms:individual-assessment-tag/${TagKey}": [
+   "String"
+  ],
+  "dms:instance-profile-tag/${TagKey}": [
+   "String"
+  ],
+  "dms:migration-project-tag/${TagKey}": [
+   "String"
+  ],
+  "dms:rep-tag/${TagKey}": [
+   "String"
+  ],
+  "dms:replication-config-tag/${TagKey}": [
+   "String"
+  ],
+  "dms:req-tag/${TagKey}": [
+   "String"
+  ],
+  "dms:subgrp-tag/${TagKey}": [
+   "String"
+  ],
+  "dms:task-tag/${TagKey}": [
+   "String"
+  ]
+ },
+ "resources": {
+  "Certificate": {
+   "arnFormats": [
+    "arn:${Partition}:dms:${Region}:${Account}:cert:*"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "dms:cert-tag/${TagKey}"
+   ]
+  },
+  "DataMigration": {
+   "arnFormats": [
+    "arn:${Partition}:dms:${Region}:${Account}:data-migration:*"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "dms:data-migration-tag/${TagKey}"
+   ]
+  },
+  "DataProvider": {
+   "arnFormats": [
+    "arn:${Partition}:dms:${Region}:${Account}:data-provider:*"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "dms:data-provider-tag/${TagKey}"
+   ]
+  },
+  "Endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:dms:${Region}:${Account}:endpoint:*"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "dms:endpoint-tag/${TagKey}"
+   ]
+  },
+  "EventSubscription": {
+   "arnFormats": [
+    "arn:${Partition}:dms:${Region}:${Account}:es:*"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "dms:es-tag/${TagKey}"
+   ]
+  },
+  "InstanceProfile": {
+   "arnFormats": [
+    "arn:${Partition}:dms:${Region}:${Account}:instance-profile:*"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "dms:instance-profile-tag/${TagKey}"
+   ]
+  },
+  "MigrationProject": {
+   "arnFormats": [
+    "arn:${Partition}:dms:${Region}:${Account}:migration-project:*"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "dms:migration-project-tag/${TagKey}"
+   ]
+  },
+  "ReplicationConfig": {
+   "arnFormats": [
+    "arn:${Partition}:dms:${Region}:${Account}:replication-config:*"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "dms:replication-config-tag/${TagKey}"
+   ]
+  },
+  "ReplicationInstance": {
+   "arnFormats": [
+    "arn:${Partition}:dms:${Region}:${Account}:rep:*"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "dms:rep-tag/${TagKey}"
+   ]
+  },
+  "ReplicationSubnetGroup": {
+   "arnFormats": [
+    "arn:${Partition}:dms:${Region}:${Account}:subgrp:*"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "dms:subgrp-tag/${TagKey}"
+   ]
+  },
+  "ReplicationTask": {
+   "arnFormats": [
+    "arn:${Partition}:dms:${Region}:${Account}:task:*"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "dms:task-tag/${TagKey}"
+   ]
+  },
+  "ReplicationTaskAssessmentRun": {
+   "arnFormats": [
+    "arn:${Partition}:dms:${Region}:${Account}:assessment-run:*"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "dms:assessment-run-tag/${TagKey}"
+   ]
+  },
+  "ReplicationTaskIndividualAssessment": {
+   "arnFormats": [
+    "arn:${Partition}:dms:${Region}:${Account}:individual-assessment:*"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "dms:individual-assessment-tag/${TagKey}"
+   ]
+  }
+ },
+ "service": "dms",
+ "serviceName": "DMS",
+ "version": "v1.5"
+}

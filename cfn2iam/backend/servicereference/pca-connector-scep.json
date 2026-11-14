@@ -1,0 +1,143 @@
+{
+ "actions": {
+  "createchallenge": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChallenge",
+   "resources": [
+    "Connector"
+   ]
+  },
+  "createconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnector",
+   "resources": []
+  },
+  "deletechallenge": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChallenge",
+   "resources": [
+    "Challenge"
+   ]
+  },
+  "deleteconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnector",
+   "resources": [
+    "Connector"
+   ]
+  },
+  "getchallengemetadata": {
+   "name": "GetChallengeMetadata",
+   "resources": [
+    "Challenge"
+   ]
+  },
+  "getchallengepassword": {
+   "name": "GetChallengePassword",
+   "resources": [
+    "Challenge"
+   ]
+  },
+  "getconnector": {
+   "name": "GetConnector",
+   "resources": [
+    "Connector"
+   ]
+  },
+  "listchallengemetadata": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChallengeMetadata",
+   "resources": []
+  },
+  "listconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectors",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Challenge",
+    "Connector"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Challenge",
+    "Connector"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Challenge": {
+   "arnFormats": [
+    "arn:${Partition}:pca-connector-scep:${Region}:${Account}:connector/${ConnectorId}/challenge/${ChallengeId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Connector": {
+   "arnFormats": [
+    "arn:${Partition}:pca-connector-scep:${Region}:${Account}:connector/${ConnectorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "pca-connector-scep",
+ "serviceName": "Private CA Connector for SCEP",
+ "version": "v1.5"
+}

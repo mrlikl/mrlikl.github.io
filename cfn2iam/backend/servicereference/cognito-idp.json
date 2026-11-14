@@ -1,0 +1,1148 @@
+{
+ "actions": {
+  "addcustomattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddCustomAttributes",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adduserpoolclientsecret": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddUserPoolClientSecret",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminaddusertogroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminAddUserToGroup",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminconfirmsignup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminConfirmSignUp",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "admincreateuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminCreateUser",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "admindeletesoftwaretoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminDeleteSoftwareToken",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "admindeleteuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminDeleteUser",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "admindeleteuserattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminDeleteUserAttributes",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "admindisableproviderforuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminDisableProviderForUser",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "admindisableuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminDisableUser",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminenableuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminEnableUser",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminforgetdevice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminForgetDevice",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "admingetdevice": {
+   "name": "AdminGetDevice",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "admingetuser": {
+   "name": "AdminGetUser",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "admingetuserauthfactors": {
+   "name": "AdminGetUserAuthFactors",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "admininitiateauth": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminInitiateAuth",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminlinkproviderforuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminLinkProviderForUser",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminlistdevices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "AdminListDevices",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminlistgroupsforuser": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "AdminListGroupsForUser",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminlistuserauthevents": {
+   "name": "AdminListUserAuthEvents",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminlistusersessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "AdminListUserSessions",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminremoveuserfromgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminRemoveUserFromGroup",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminresetuserpassword": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminResetUserPassword",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminrespondtoauthchallenge": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminRespondToAuthChallenge",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminrevokeusersession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminRevokeUserSession",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminsetusermfapreference": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminSetUserMFAPreference",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminsetuserpassword": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminSetUserPassword",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminsetusersettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminSetUserSettings",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminupdateautheventfeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminUpdateAuthEventFeedback",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminupdatedevicestatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminUpdateDeviceStatus",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminupdateuserattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminUpdateUserAttributes",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "adminuserglobalsignout": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminUserGlobalSignOut",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "associatesoftwaretoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSoftwareToken",
+   "resources": []
+  },
+  "associatewebacl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateWebACL",
+   "resources": [
+    "userpool",
+    "webacl"
+   ]
+  },
+  "changepassword": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ChangePassword",
+   "resources": []
+  },
+  "confirmdevice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfirmDevice",
+   "resources": []
+  },
+  "confirmforgotpassword": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfirmForgotPassword",
+   "resources": []
+  },
+  "confirmsignup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfirmSignUp",
+   "resources": []
+  },
+  "creategroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGroup",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "createidentityprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIdentityProvider",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "createmanagedloginbranding": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateManagedLoginBranding",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "createresourceserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResourceServer",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "createterms": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTerms",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "createuserimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUserImportJob",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "createuserpool": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUserPool",
+   "resources": []
+  },
+  "createuserpoolclient": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUserPoolClient",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "createuserpooldomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUserPoolDomain",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "createuserpoolreplica": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUserPoolReplica",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "deletegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGroup",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "deleteidentityprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIdentityProvider",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "deletemanagedloginbranding": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteManagedLoginBranding",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "deleteresourceserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourceServer",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "deleteterms": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTerms",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "deleteuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUser",
+   "resources": []
+  },
+  "deleteuserattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserAttributes",
+   "resources": []
+  },
+  "deleteuserpool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserPool",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "deleteuserpoolclient": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserPoolClient",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "deleteuserpoolclientsecret": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserPoolClientSecret",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "deleteuserpooldomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserPoolDomain",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "deleteuserpoolreplica": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserPoolReplica",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "describeidentityprovider": {
+   "name": "DescribeIdentityProvider",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "describemanagedloginbranding": {
+   "name": "DescribeManagedLoginBranding",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "describemanagedloginbrandingbyclient": {
+   "name": "DescribeManagedLoginBrandingByClient",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "describeresourceserver": {
+   "name": "DescribeResourceServer",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "describeriskconfiguration": {
+   "name": "DescribeRiskConfiguration",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "describeterms": {
+   "name": "DescribeTerms",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "describetermsbyclient": {
+   "name": "DescribeTermsByClient",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "describeuserimportjob": {
+   "name": "DescribeUserImportJob",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "describeuserpool": {
+   "name": "DescribeUserPool",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "describeuserpoolclient": {
+   "name": "DescribeUserPoolClient",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "describeuserpooldomain": {
+   "name": "DescribeUserPoolDomain",
+   "resources": []
+  },
+  "disassociatewebacl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateWebACL",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "forgetdevice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ForgetDevice",
+   "resources": []
+  },
+  "forgotpassword": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ForgotPassword",
+   "resources": []
+  },
+  "getclienttoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetClientToken",
+   "resources": []
+  },
+  "getcsvheader": {
+   "name": "GetCSVHeader",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "getdevice": {
+   "name": "GetDevice",
+   "resources": []
+  },
+  "getgroup": {
+   "name": "GetGroup",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "getidentityproviderbyidentifier": {
+   "name": "GetIdentityProviderByIdentifier",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "getlogdeliveryconfiguration": {
+   "name": "GetLogDeliveryConfiguration",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "getprovisionedlimit": {
+   "name": "GetProvisionedLimit",
+   "resources": []
+  },
+  "getsigningcertificate": {
+   "name": "GetSigningCertificate",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "gettokensfromrefreshtoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetTokensFromRefreshToken",
+   "resources": []
+  },
+  "getuicustomization": {
+   "name": "GetUICustomization",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "getuser": {
+   "name": "GetUser",
+   "resources": []
+  },
+  "getuserattributeverificationcode": {
+   "name": "GetUserAttributeVerificationCode",
+   "resources": []
+  },
+  "getuserpoolclientsessionconfiguration": {
+   "name": "GetUserPoolClientSessionConfiguration",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "getuserpoolmfaconfig": {
+   "name": "GetUserPoolMfaConfig",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "getuserpoolsessionconfiguration": {
+   "name": "GetUserPoolSessionConfiguration",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "getwebaclforresource": {
+   "name": "GetWebACLForResource",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "globalsignout": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GlobalSignOut",
+   "resources": []
+  },
+  "initiateauth": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitiateAuth",
+   "resources": []
+  },
+  "listdevices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDevices",
+   "resources": []
+  },
+  "listgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroups",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "listidentityproviders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIdentityProviders",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "listresourceservers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceServers",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "listresourcesforwebacl": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourcesForWebACL",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "listterms": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTerms",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "listuserimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUserImportJobs",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "listuserpoolclients": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUserPoolClients",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "listuserpoolclientsecrets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUserPoolClientSecrets",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "listuserpoolreplicas": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUserPoolReplicas",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "listuserpools": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUserPools",
+   "resources": []
+  },
+  "listusers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsers",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "listusersessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUserSessions",
+   "resources": []
+  },
+  "listusersingroup": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsersInGroup",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "resendconfirmationcode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResendConfirmationCode",
+   "resources": []
+  },
+  "respondtoauthchallenge": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RespondToAuthChallenge",
+   "resources": []
+  },
+  "revoketoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeToken",
+   "resources": []
+  },
+  "revokeusersession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeUserSession",
+   "resources": []
+  },
+  "setlogdeliveryconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetLogDeliveryConfiguration",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "setriskconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetRiskConfiguration",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "setuicustomization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetUICustomization",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "setusermfapreference": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetUserMFAPreference",
+   "resources": []
+  },
+  "setuserpoolclientsessionconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetUserPoolClientSessionConfiguration",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "setuserpoolmfaconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetUserPoolMfaConfig",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "setuserpoolsessionconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetUserPoolSessionConfiguration",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "setusersettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetUserSettings",
+   "resources": []
+  },
+  "signup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SignUp",
+   "resources": []
+  },
+  "startuserimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartUserImportJob",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "stopuserimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopUserImportJob",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "updateautheventfeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAuthEventFeedback",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "updatedevicestatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDeviceStatus",
+   "resources": []
+  },
+  "updategroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGroup",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "updateidentityprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIdentityProvider",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "updatemanagedloginbranding": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateManagedLoginBranding",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "updateprovisionedlimit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProvisionedLimit",
+   "resources": []
+  },
+  "updateresourceserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResourceServer",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "updateterms": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTerms",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "updateuserattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserAttributes",
+   "resources": []
+  },
+  "updateuserpool": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserPool",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "updateuserpoolclient": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserPoolClient",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "updateuserpooldomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserPoolDomain",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "updateuserpoolreplica": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserPoolReplica",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "verifysoftwaretoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VerifySoftwareToken",
+   "resources": []
+  },
+  "verifyuserattribute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VerifyUserAttribute",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "userpool": {
+   "arnFormats": [
+    "arn:${Partition}:cognito-idp:${Region}:${Account}:userpool/${UserPoolId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "webacl": {
+   "arnFormats": [
+    "arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/webacl/${Name}/${Id}"
+   ]
+  }
+ },
+ "service": "cognito-idp",
+ "serviceName": "Cognito User Pools",
+ "version": "v1.5"
+}

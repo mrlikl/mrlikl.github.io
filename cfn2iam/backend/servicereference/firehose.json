@@ -1,0 +1,146 @@
+{
+ "actions": {
+  "createdeliverystream": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeliveryStream",
+   "resources": [
+    "deliverystream"
+   ]
+  },
+  "deletedeliverystream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDeliveryStream",
+   "resources": [
+    "deliverystream"
+   ]
+  },
+  "describedeliverystream": {
+   "name": "DescribeDeliveryStream",
+   "resources": [
+    "deliverystream"
+   ]
+  },
+  "listdeliverystreams": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeliveryStreams",
+   "resources": []
+  },
+  "listtagsfordeliverystream": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForDeliveryStream",
+   "resources": [
+    "deliverystream"
+   ]
+  },
+  "putrecord": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutRecord",
+   "resources": [
+    "deliverystream"
+   ]
+  },
+  "putrecordbatch": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutRecordBatch",
+   "resources": [
+    "deliverystream"
+   ]
+  },
+  "startdeliverystreamencryption": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDeliveryStreamEncryption",
+   "resources": [
+    "deliverystream"
+   ]
+  },
+  "stopdeliverystreamencryption": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopDeliveryStreamEncryption",
+   "resources": [
+    "deliverystream"
+   ]
+  },
+  "tagdeliverystream": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagDeliveryStream",
+   "resources": [
+    "deliverystream"
+   ]
+  },
+  "untagdeliverystream": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagDeliveryStream",
+   "resources": [
+    "deliverystream"
+   ]
+  },
+  "updatedestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDestination",
+   "resources": [
+    "deliverystream"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "deliverystream": {
+   "arnFormats": [
+    "arn:${Partition}:firehose:${Region}:${Account}:deliverystream/${DeliveryStreamName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "firehose",
+ "serviceName": "Firehose",
+ "version": "v1.5"
+}

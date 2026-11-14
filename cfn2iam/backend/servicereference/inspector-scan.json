@@ -1,0 +1,12 @@
+{
+ "actions": {
+  "scansbom": {
+   "name": "ScanSbom",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "inspector-scan",
+ "serviceName": "InspectorScan",
+ "version": "v1.5"
+}

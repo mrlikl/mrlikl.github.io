@@ -1,0 +1,688 @@
+{
+ "actions": {
+  "associatefilegateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateFileGateway",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "associatefilesystemaliases": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateFileSystemAliases",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "bypasssnaplockenterpriseretention": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "BypassSnaplockEnterpriseRetention",
+   "resources": [
+    "volume"
+   ]
+  },
+  "canceldatarepositorytask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelDataRepositoryTask",
+   "resources": [
+    "task"
+   ]
+  },
+  "copybackup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyBackup",
+   "resources": [
+    "backup"
+   ]
+  },
+  "copysnapshotandupdatevolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopySnapshotAndUpdateVolume",
+   "resources": [
+    "snapshot",
+    "volume"
+   ]
+  },
+  "createandattachs3accesspoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAndAttachS3AccessPoint",
+   "resources": [
+    "volume"
+   ]
+  },
+  "createbackup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBackup",
+   "resources": [
+    "backup",
+    "file-system",
+    "volume"
+   ]
+  },
+  "createdatarepositoryassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataRepositoryAssociation",
+   "resourceConditionKeys": {
+    "association": [
+     "fsx:NfsDataRepositoryAuthenticationEnabled",
+     "fsx:NfsDataRepositoryEncryptionInTransitEnabled"
+    ]
+   },
+   "resources": [
+    "association",
+    "file-system"
+   ]
+  },
+  "createdatarepositorytask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataRepositoryTask",
+   "resources": [
+    "file-system",
+    "task"
+   ]
+  },
+  "createfilecache": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFileCache",
+   "resourceConditionKeys": {
+    "association": [
+     "fsx:NfsDataRepositoryAuthenticationEnabled",
+     "fsx:NfsDataRepositoryEncryptionInTransitEnabled"
+    ]
+   },
+   "resources": [
+    "association",
+    "file-cache"
+   ]
+  },
+  "createfilesystem": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFileSystem",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "createfilesystemfrombackup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFileSystemFromBackup",
+   "resources": [
+    "backup",
+    "file-system"
+   ]
+  },
+  "createsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSnapshot",
+   "resources": [
+    "snapshot",
+    "volume"
+   ]
+  },
+  "createstoragevirtualmachine": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStorageVirtualMachine",
+   "resources": [
+    "file-system",
+    "storage-virtual-machine"
+   ]
+  },
+  "createvolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVolume",
+   "resourceConditionKeys": {
+    "volume": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys",
+     "fsx:ParentVolumeId",
+     "fsx:StorageVirtualMachineId"
+    ]
+   },
+   "resources": [
+    "snapshot",
+    "storage-virtual-machine",
+    "volume"
+   ]
+  },
+  "createvolumefrombackup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "fsx:StorageVirtualMachineId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVolumeFromBackup",
+   "resources": [
+    "backup",
+    "storage-virtual-machine",
+    "volume"
+   ]
+  },
+  "deletebackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBackup",
+   "resources": [
+    "backup"
+   ]
+  },
+  "deletedatarepositoryassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataRepositoryAssociation",
+   "resources": [
+    "association"
+   ]
+  },
+  "deletefilecache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFileCache",
+   "resources": [
+    "association",
+    "file-cache"
+   ]
+  },
+  "deletefilesystem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFileSystem",
+   "resourceConditionKeys": {
+    "backup": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "backup",
+    "file-system"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "volume"
+   ]
+  },
+  "deletesnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSnapshot",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "deletestoragevirtualmachine": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStorageVirtualMachine",
+   "resources": [
+    "storage-virtual-machine"
+   ]
+  },
+  "deletevolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVolume",
+   "resourceConditionKeys": {
+    "backup": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "volume": [
+     "fsx:ParentVolumeId",
+     "fsx:StorageVirtualMachineId"
+    ]
+   },
+   "resources": [
+    "backup",
+    "volume"
+   ]
+  },
+  "describeassociatedfilegateways": {
+   "name": "DescribeAssociatedFileGateways",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "describebackups": {
+   "name": "DescribeBackups",
+   "resources": []
+  },
+  "describedatarepositoryassociations": {
+   "name": "DescribeDataRepositoryAssociations",
+   "resources": []
+  },
+  "describedatarepositorytasks": {
+   "name": "DescribeDataRepositoryTasks",
+   "resources": []
+  },
+  "describefilecaches": {
+   "name": "DescribeFileCaches",
+   "resources": []
+  },
+  "describefilesystemaliases": {
+   "name": "DescribeFileSystemAliases",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "describefilesystems": {
+   "name": "DescribeFileSystems",
+   "resources": []
+  },
+  "describes3accesspointattachments": {
+   "name": "DescribeS3AccessPointAttachments",
+   "resources": []
+  },
+  "describesharedvpcconfiguration": {
+   "name": "DescribeSharedVpcConfiguration",
+   "resources": []
+  },
+  "describesnapshots": {
+   "name": "DescribeSnapshots",
+   "resources": []
+  },
+  "describestoragevirtualmachines": {
+   "name": "DescribeStorageVirtualMachines",
+   "resources": []
+  },
+  "describevolumes": {
+   "name": "DescribeVolumes",
+   "resources": []
+  },
+  "detachanddeletes3accesspoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetachAndDeleteS3AccessPoint",
+   "resources": [
+    "volume"
+   ]
+  },
+  "disassociatefilegateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateFileGateway",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "disassociatefilesystemaliases": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateFileSystemAliases",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "getresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "GetResourcePolicy",
+   "resources": [
+    "volume"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "association",
+    "backup",
+    "file-cache",
+    "file-system",
+    "snapshot",
+    "storage-virtual-machine",
+    "task",
+    "volume"
+   ]
+  },
+  "managebackupprincipalassociations": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "ManageBackupPrincipalAssociations",
+   "resources": [
+    "backup"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "volume"
+   ]
+  },
+  "releasefilesystemnfsv3locks": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReleaseFileSystemNfsV3Locks",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "restorevolumefromsnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreVolumeFromSnapshot",
+   "resources": [
+    "snapshot",
+    "volume"
+   ]
+  },
+  "startmisconfiguredstaterecovery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMisconfiguredStateRecovery",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "association": [
+     "fsx:NfsDataRepositoryAuthenticationEnabled",
+     "fsx:NfsDataRepositoryEncryptionInTransitEnabled"
+    ],
+    "volume": [
+     "fsx:ParentVolumeId",
+     "fsx:StorageVirtualMachineId"
+    ]
+   },
+   "resources": [
+    "association",
+    "backup",
+    "file-cache",
+    "file-system",
+    "snapshot",
+    "storage-virtual-machine",
+    "task",
+    "volume"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "association",
+    "backup",
+    "file-cache",
+    "file-system",
+    "snapshot",
+    "storage-virtual-machine",
+    "task",
+    "volume"
+   ]
+  },
+  "updatedatarepositoryassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataRepositoryAssociation",
+   "resources": [
+    "association"
+   ]
+  },
+  "updatefilecache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFileCache",
+   "resources": [
+    "file-cache"
+   ]
+  },
+  "updatefilesystem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFileSystem",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "updatesharedvpcconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSharedVpcConfiguration",
+   "resources": []
+  },
+  "updatesnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSnapshot",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "updatestoragevirtualmachine": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStorageVirtualMachine",
+   "resources": [
+    "storage-virtual-machine"
+   ]
+  },
+  "updatevolume": {
+   "conditionKeys": [
+    "fsx:ParentVolumeId",
+    "fsx:StorageVirtualMachineId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVolume",
+   "resources": [
+    "volume"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "fsx:IsBackupCopyDestination": [
+   "Bool"
+  ],
+  "fsx:IsBackupCopySource": [
+   "Bool"
+  ],
+  "fsx:NfsDataRepositoryAuthenticationEnabled": [
+   "Bool"
+  ],
+  "fsx:NfsDataRepositoryEncryptionInTransitEnabled": [
+   "Bool"
+  ],
+  "fsx:ParentVolumeId": [
+   "String"
+  ],
+  "fsx:StorageVirtualMachineId": [
+   "String"
+  ]
+ },
+ "resources": {
+  "association": {
+   "arnFormats": [
+    "arn:${Partition}:fsx:${Region}:${Account}:association/${FileSystemIdOrFileCacheId}/${DataRepositoryAssociationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "backup": {
+   "arnFormats": [
+    "arn:${Partition}:fsx:${Region}:${Account}:backup/${BackupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "file-cache": {
+   "arnFormats": [
+    "arn:${Partition}:fsx:${Region}:${Account}:file-cache/${FileCacheId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "file-system": {
+   "arnFormats": [
+    "arn:${Partition}:fsx:${Region}:${Account}:file-system/${FileSystemId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "snapshot": {
+   "arnFormats": [
+    "arn:${Partition}:fsx:${Region}:${Account}:snapshot/${VolumeId}/${SnapshotId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "storage-virtual-machine": {
+   "arnFormats": [
+    "arn:${Partition}:fsx:${Region}:${Account}:storage-virtual-machine/${FileSystemId}/${StorageVirtualMachineId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "task": {
+   "arnFormats": [
+    "arn:${Partition}:fsx:${Region}:${Account}:task/${TaskId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "volume": {
+   "arnFormats": [
+    "arn:${Partition}:fsx:${Region}:${Account}:volume/${FileSystemId}/${VolumeId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "fsx",
+ "serviceName": "FSx",
+ "version": "v1.5"
+}

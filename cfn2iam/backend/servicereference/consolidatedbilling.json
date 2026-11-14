@@ -1,0 +1,19 @@
+{
+ "actions": {
+  "getaccountbillingrole": {
+   "name": "GetAccountBillingRole",
+   "resources": []
+  },
+  "listlinkedaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLinkedAccounts",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "consolidatedbilling",
+ "serviceName": "Consolidated Billing",
+ "version": "v1.5"
+}

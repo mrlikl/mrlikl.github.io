@@ -1,0 +1,15 @@
+{
+ "actions": {
+  "listrecommendedactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommendedActions",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "action-recommendations",
+ "serviceName": "Action Recommendations",
+ "version": "v1.5"
+}

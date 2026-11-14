@@ -1,0 +1,886 @@
+{
+ "actions": {
+  "createbatchinferencejob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBatchInferenceJob",
+   "resources": [
+    "batchInferenceJob",
+    "solution"
+   ]
+  },
+  "createbatchsegmentjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBatchSegmentJob",
+   "resources": [
+    "batchSegmentJob"
+   ]
+  },
+  "createcampaign": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCampaign",
+   "resources": [
+    "campaign",
+    "solution"
+   ]
+  },
+  "createdatadeletionjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataDeletionJob",
+   "resources": [
+    "dataDeletionJob",
+    "datasetGroup"
+   ]
+  },
+  "createdatainsightsjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataInsightsJob",
+   "resources": [
+    "dataInsightsJob"
+   ]
+  },
+  "createdataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataset",
+   "resources": [
+    "dataset",
+    "datasetGroup"
+   ]
+  },
+  "createdatasetexportjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDatasetExportJob",
+   "resources": [
+    "dataset",
+    "datasetExportJob"
+   ]
+  },
+  "createdatasetgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDatasetGroup",
+   "resources": [
+    "datasetGroup"
+   ]
+  },
+  "createdatasetimportjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDatasetImportJob",
+   "resources": [
+    "dataset",
+    "datasetImportJob"
+   ]
+  },
+  "createeventtracker": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEventTracker",
+   "resources": [
+    "datasetGroup",
+    "eventTracker"
+   ]
+  },
+  "createfilter": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFilter",
+   "resources": [
+    "datasetGroup",
+    "filter"
+   ]
+  },
+  "createmetricattribution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMetricAttribution",
+   "resources": [
+    "datasetGroup",
+    "metricAttribution"
+   ]
+  },
+  "createrecommender": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRecommender",
+   "resources": [
+    "datasetGroup",
+    "recommender"
+   ]
+  },
+  "createschema": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSchema",
+   "resources": [
+    "schema"
+   ]
+  },
+  "createsolution": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSolution",
+   "resources": [
+    "datasetGroup",
+    "solution"
+   ]
+  },
+  "createsolutionversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSolutionVersion",
+   "resources": [
+    "solution"
+   ]
+  },
+  "deletecampaign": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "deletedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "deletedatasetgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDatasetGroup",
+   "resources": [
+    "datasetGroup"
+   ]
+  },
+  "deleteeventtracker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventTracker",
+   "resources": [
+    "eventTracker"
+   ]
+  },
+  "deletefilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFilter",
+   "resources": [
+    "filter"
+   ]
+  },
+  "deletemetricattribution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMetricAttribution",
+   "resources": [
+    "metricAttribution"
+   ]
+  },
+  "deleterecommender": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRecommender",
+   "resources": [
+    "recommender"
+   ]
+  },
+  "deleteschema": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSchema",
+   "resources": [
+    "schema"
+   ]
+  },
+  "deletesolution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSolution",
+   "resources": [
+    "solution"
+   ]
+  },
+  "describealgorithm": {
+   "name": "DescribeAlgorithm",
+   "resources": [
+    "algorithm"
+   ]
+  },
+  "describebatchinferencejob": {
+   "name": "DescribeBatchInferenceJob",
+   "resources": [
+    "batchInferenceJob"
+   ]
+  },
+  "describebatchsegmentjob": {
+   "name": "DescribeBatchSegmentJob",
+   "resources": [
+    "batchSegmentJob"
+   ]
+  },
+  "describecampaign": {
+   "name": "DescribeCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "describedatadeletionjob": {
+   "name": "DescribeDataDeletionJob",
+   "resources": [
+    "dataDeletionJob"
+   ]
+  },
+  "describedatainsightsjob": {
+   "name": "DescribeDataInsightsJob",
+   "resources": [
+    "dataInsightsJob"
+   ]
+  },
+  "describedataset": {
+   "name": "DescribeDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "describedatasetexportjob": {
+   "name": "DescribeDatasetExportJob",
+   "resources": [
+    "datasetExportJob"
+   ]
+  },
+  "describedatasetgroup": {
+   "name": "DescribeDatasetGroup",
+   "resources": [
+    "datasetGroup"
+   ]
+  },
+  "describedatasetimportjob": {
+   "name": "DescribeDatasetImportJob",
+   "resources": [
+    "datasetImportJob"
+   ]
+  },
+  "describeeventtracker": {
+   "name": "DescribeEventTracker",
+   "resources": [
+    "eventTracker"
+   ]
+  },
+  "describefeaturetransformation": {
+   "name": "DescribeFeatureTransformation",
+   "resources": [
+    "featureTransformation"
+   ]
+  },
+  "describefilter": {
+   "name": "DescribeFilter",
+   "resources": [
+    "filter"
+   ]
+  },
+  "describemetricattribution": {
+   "name": "DescribeMetricAttribution",
+   "resources": [
+    "metricAttribution"
+   ]
+  },
+  "describerecipe": {
+   "name": "DescribeRecipe",
+   "resources": [
+    "recipe"
+   ]
+  },
+  "describerecommender": {
+   "name": "DescribeRecommender",
+   "resources": [
+    "recommender"
+   ]
+  },
+  "describeschema": {
+   "name": "DescribeSchema",
+   "resources": [
+    "schema"
+   ]
+  },
+  "describesolution": {
+   "name": "DescribeSolution",
+   "resources": [
+    "solution"
+   ]
+  },
+  "describesolutionversion": {
+   "name": "DescribeSolutionVersion",
+   "resources": [
+    "solution"
+   ]
+  },
+  "getactionrecommendations": {
+   "name": "GetActionRecommendations",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "getdatainsights": {
+   "name": "GetDataInsights",
+   "resources": [
+    "dataInsightsJob"
+   ]
+  },
+  "getpersonalizedranking": {
+   "name": "GetPersonalizedRanking",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "getrecommendations": {
+   "name": "GetRecommendations",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "getsolutionmetrics": {
+   "name": "GetSolutionMetrics",
+   "resources": [
+    "solution"
+   ]
+  },
+  "listbatchinferencejobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBatchInferenceJobs",
+   "resources": []
+  },
+  "listbatchsegmentjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBatchSegmentJobs",
+   "resources": []
+  },
+  "listcampaigns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCampaigns",
+   "resources": []
+  },
+  "listdatadeletionjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataDeletionJobs",
+   "resources": []
+  },
+  "listdatainsightsjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataInsightsJobs",
+   "resources": []
+  },
+  "listdatasetexportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasetExportJobs",
+   "resources": []
+  },
+  "listdatasetgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasetGroups",
+   "resources": []
+  },
+  "listdatasetimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasetImportJobs",
+   "resources": []
+  },
+  "listdatasets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasets",
+   "resources": []
+  },
+  "listeventtrackers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEventTrackers",
+   "resources": []
+  },
+  "listfilters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFilters",
+   "resources": []
+  },
+  "listmetricattributionmetrics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMetricAttributionMetrics",
+   "resources": []
+  },
+  "listmetricattributions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMetricAttributions",
+   "resources": []
+  },
+  "listrecipes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecipes",
+   "resources": []
+  },
+  "listrecommenders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommenders",
+   "resources": []
+  },
+  "listschemas": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSchemas",
+   "resources": []
+  },
+  "listsolutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSolutions",
+   "resources": []
+  },
+  "listsolutionversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSolutionVersions",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "batchInferenceJob",
+    "batchSegmentJob",
+    "campaign",
+    "dataDeletionJob",
+    "dataset",
+    "datasetExportJob",
+    "datasetGroup",
+    "datasetImportJob",
+    "eventTracker",
+    "filter",
+    "recommender",
+    "solution"
+   ]
+  },
+  "putactioninteractions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutActionInteractions",
+   "resources": []
+  },
+  "putactions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutActions",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "putevents": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutEvents",
+   "resources": []
+  },
+  "putitems": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutItems",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "putusers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutUsers",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "startrecommender": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRecommender",
+   "resources": [
+    "recommender"
+   ]
+  },
+  "stoprecommender": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopRecommender",
+   "resources": [
+    "recommender"
+   ]
+  },
+  "stopsolutionversioncreation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopSolutionVersionCreation",
+   "resources": [
+    "solution"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "batchInferenceJob",
+    "batchSegmentJob",
+    "campaign",
+    "dataDeletionJob",
+    "dataset",
+    "datasetExportJob",
+    "datasetGroup",
+    "datasetImportJob",
+    "eventTracker",
+    "filter",
+    "recommender",
+    "solution"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "batchInferenceJob",
+    "batchSegmentJob",
+    "campaign",
+    "dataDeletionJob",
+    "dataset",
+    "datasetExportJob",
+    "datasetGroup",
+    "datasetImportJob",
+    "eventTracker",
+    "filter",
+    "recommender",
+    "solution"
+   ]
+  },
+  "updatecampaign": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "updatedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "updatemetricattribution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMetricAttribution",
+   "resources": [
+    "metricAttribution"
+   ]
+  },
+  "updaterecommender": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRecommender",
+   "resources": [
+    "recommender"
+   ]
+  },
+  "updatesolution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSolution",
+   "resources": [
+    "solution"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "algorithm": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:::algorithm/${ResourceId}"
+   ]
+  },
+  "batchInferenceJob": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:${Region}:${Account}:batch-inference-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "batchSegmentJob": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:${Region}:${Account}:batch-segment-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "campaign": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:${Region}:${Account}:campaign/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dataDeletionJob": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:${Region}:${Account}:data-deletion-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dataInsightsJob": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:${Region}:${Account}:data-insights-job/${ResourceId}"
+   ]
+  },
+  "dataset": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:${Region}:${Account}:dataset/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "datasetExportJob": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:${Region}:${Account}:dataset-export-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "datasetGroup": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:${Region}:${Account}:dataset-group/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "datasetImportJob": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:${Region}:${Account}:dataset-import-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "eventTracker": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:${Region}:${Account}:event-tracker/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "featureTransformation": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:::feature-transformation/${ResourceId}"
+   ]
+  },
+  "filter": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:${Region}:${Account}:filter/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "metricAttribution": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:${Region}:${Account}:metric-attribution/${ResourceId}"
+   ]
+  },
+  "recipe": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:::recipe/${ResourceId}"
+   ]
+  },
+  "recommender": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:${Region}:${Account}:recommender/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "schema": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:${Region}:${Account}:schema/${ResourceId}"
+   ]
+  },
+  "solution": {
+   "arnFormats": [
+    "arn:${Partition}:personalize:${Region}:${Account}:solution/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "personalize",
+ "serviceName": "Personalize",
+ "version": "v1.5"
+}

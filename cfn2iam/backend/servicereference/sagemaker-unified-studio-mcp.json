@@ -1,0 +1,12 @@
+{
+ "actions": {
+  "authorizevpce": {
+   "name": "AuthorizeVpce",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "sagemaker-unified-studio-mcp",
+ "serviceName": "SageMaker Unified Studio MCP",
+ "version": "v1.5"
+}

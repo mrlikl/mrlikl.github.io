@@ -1,0 +1,23 @@
+{
+ "actions": {
+  "callprivilegedtool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CallPrivilegedTool",
+   "resources": []
+  },
+  "callreadonlytool": {
+   "name": "CallReadOnlyTool",
+   "resources": []
+  },
+  "invokemcp": {
+   "name": "InvokeMcp",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "eks-mcp",
+ "serviceName": "EKS MCP",
+ "version": "v1.5"
+}

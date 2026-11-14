@@ -1,0 +1,55 @@
+{
+ "actions": {
+  "describejobexecution": {
+   "conditionKeys": [
+    "iot:JobId"
+   ],
+   "name": "DescribeJobExecution",
+   "resources": [
+    "thing"
+   ]
+  },
+  "getpendingjobexecutions": {
+   "name": "GetPendingJobExecutions",
+   "resources": [
+    "thing"
+   ]
+  },
+  "startnextpendingjobexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartNextPendingJobExecution",
+   "resources": [
+    "thing"
+   ]
+  },
+  "updatejobexecution": {
+   "conditionKeys": [
+    "iot:JobId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateJobExecution",
+   "resources": [
+    "thing"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "iot:JobId": [
+   "String"
+  ]
+ },
+ "resources": {
+  "thing": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:thing/${ThingName}"
+   ]
+  }
+ },
+ "service": "iotjobsdata",
+ "serviceName": "IoT Jobs DataPlane",
+ "version": "v1.5"
+}

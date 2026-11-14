@@ -1,0 +1,366 @@
+{
+ "actions": {
+  "createaccessor": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessor",
+   "resources": []
+  },
+  "createmember": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMember",
+   "resources": [
+    "network"
+   ]
+  },
+  "createnetwork": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNetwork",
+   "resources": []
+  },
+  "createnode": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNode",
+   "resources": [
+    "member",
+    "network"
+   ]
+  },
+  "createproposal": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProposal",
+   "resources": [
+    "network"
+   ]
+  },
+  "deleteaccessor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccessor",
+   "resources": [
+    "accessor"
+   ]
+  },
+  "deletemember": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMember",
+   "resources": [
+    "member"
+   ]
+  },
+  "deletenode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNode",
+   "resources": [
+    "node"
+   ]
+  },
+  "get": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "GET",
+   "resources": []
+  },
+  "getaccessor": {
+   "name": "GetAccessor",
+   "resources": [
+    "accessor"
+   ]
+  },
+  "getmember": {
+   "name": "GetMember",
+   "resources": [
+    "member"
+   ]
+  },
+  "getnetwork": {
+   "name": "GetNetwork",
+   "resources": [
+    "network"
+   ]
+  },
+  "getnode": {
+   "name": "GetNode",
+   "resources": [
+    "node"
+   ]
+  },
+  "getproposal": {
+   "name": "GetProposal",
+   "resources": [
+    "proposal"
+   ]
+  },
+  "invoke": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "Invoke",
+   "resources": []
+  },
+  "invokerpcbitcoinmainnet": {
+   "name": "InvokeRpcBitcoinMainnet",
+   "resources": []
+  },
+  "invokerpcbitcointestnet": {
+   "name": "InvokeRpcBitcoinTestnet",
+   "resources": []
+  },
+  "invokerpcpolygonmainnet": {
+   "name": "InvokeRpcPolygonMainnet",
+   "resources": []
+  },
+  "invokerpcpolygonmumbaitestnet": {
+   "name": "InvokeRpcPolygonMumbaiTestnet",
+   "resources": []
+  },
+  "listaccessors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessors",
+   "resources": []
+  },
+  "listinvitations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInvitations",
+   "resources": []
+  },
+  "listmembers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMembers",
+   "resources": [
+    "network"
+   ]
+  },
+  "listnetworks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworks",
+   "resources": []
+  },
+  "listnodes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNodes",
+   "resources": [
+    "member",
+    "network"
+   ]
+  },
+  "listproposals": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProposals",
+   "resources": [
+    "network"
+   ]
+  },
+  "listproposalvotes": {
+   "name": "ListProposalVotes",
+   "resources": [
+    "proposal"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "accessor",
+    "invitation",
+    "member",
+    "network",
+    "node",
+    "proposal"
+   ]
+  },
+  "post": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "POST",
+   "resources": []
+  },
+  "rejectinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectInvitation",
+   "resources": [
+    "invitation"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "accessor",
+    "invitation",
+    "member",
+    "network",
+    "node",
+    "proposal"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "accessor",
+    "invitation",
+    "member",
+    "network",
+    "node",
+    "proposal"
+   ]
+  },
+  "updatemember": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMember",
+   "resources": [
+    "member"
+   ]
+  },
+  "updatenode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNode",
+   "resources": [
+    "node"
+   ]
+  },
+  "voteonproposal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VoteOnProposal",
+   "resources": [
+    "proposal"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "accessor": {
+   "arnFormats": [
+    "arn:${Partition}:managedblockchain:${Region}:${Account}:accessors/${AccessorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "invitation": {
+   "arnFormats": [
+    "arn:${Partition}:managedblockchain:${Region}:${Account}:invitations/${InvitationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "member": {
+   "arnFormats": [
+    "arn:${Partition}:managedblockchain:${Region}:${Account}:members/${MemberId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "network": {
+   "arnFormats": [
+    "arn:${Partition}:managedblockchain:${Region}::networks/${NetworkId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "node": {
+   "arnFormats": [
+    "arn:${Partition}:managedblockchain:${Region}:${Account}:nodes/${NodeId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "proposal": {
+   "arnFormats": [
+    "arn:${Partition}:managedblockchain:${Region}::proposals/${ProposalId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "managedblockchain",
+ "serviceName": "Managed Blockchain",
+ "version": "v1.5"
+}

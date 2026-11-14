@@ -1,0 +1,800 @@
+{
+ "actions": {
+  "associateapi": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateApi",
+   "resources": [
+    "domain"
+   ]
+  },
+  "associatemergedgraphqlapi": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateMergedGraphqlApi",
+   "resources": [
+    "graphqlapi"
+   ]
+  },
+  "associatesourcegraphqlapi": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSourceGraphqlApi",
+   "resources": [
+    "graphqlapi"
+   ]
+  },
+  "associatewebacl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateWebACL",
+   "resources": [
+    "api",
+    "graphqlapi"
+   ]
+  },
+  "createapi": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApi",
+   "resources": []
+  },
+  "createapicache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApiCache",
+   "resources": []
+  },
+  "createapikey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApiKey",
+   "resources": []
+  },
+  "createchannelnamespace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannelNamespace",
+   "resources": [
+    "channelNamespace"
+   ]
+  },
+  "createdatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataSource",
+   "resources": []
+  },
+  "createdomainname": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomainName",
+   "resources": [
+    "domain"
+   ]
+  },
+  "createfunction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFunction",
+   "resources": []
+  },
+  "creategraphqlapi": {
+   "conditionKeys": [
+    "appsync:Visibility",
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGraphqlApi",
+   "resources": []
+  },
+  "createresolver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResolver",
+   "resources": []
+  },
+  "createtype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateType",
+   "resources": []
+  },
+  "deleteapi": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApi",
+   "resources": [
+    "api"
+   ]
+  },
+  "deleteapicache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApiCache",
+   "resources": []
+  },
+  "deleteapikey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApiKey",
+   "resources": []
+  },
+  "deletechannelnamespace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannelNamespace",
+   "resources": [
+    "channelNamespace"
+   ]
+  },
+  "deletedatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataSource",
+   "resources": []
+  },
+  "deletedomainname": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomainName",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deletefunction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFunction",
+   "resources": []
+  },
+  "deletegraphqlapi": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGraphqlApi",
+   "resources": [
+    "graphqlapi"
+   ]
+  },
+  "deleteresolver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResolver",
+   "resources": []
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": []
+  },
+  "deletetype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteType",
+   "resources": []
+  },
+  "disassociateapi": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateApi",
+   "resources": [
+    "domain"
+   ]
+  },
+  "disassociatemergedgraphqlapi": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateMergedGraphqlApi",
+   "resources": [
+    "mergedApiAssociation"
+   ]
+  },
+  "disassociatesourcegraphqlapi": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateSourceGraphqlApi",
+   "resources": [
+    "sourceApiAssociation"
+   ]
+  },
+  "disassociatewebacl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateWebACL",
+   "resources": [
+    "api",
+    "graphqlapi"
+   ]
+  },
+  "evaluatecode": {
+   "name": "EvaluateCode",
+   "resources": []
+  },
+  "evaluatemappingtemplate": {
+   "name": "EvaluateMappingTemplate",
+   "resources": []
+  },
+  "eventconnect": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EventConnect",
+   "resources": [
+    "api"
+   ]
+  },
+  "eventpublish": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EventPublish",
+   "resources": [
+    "channelNamespace"
+   ]
+  },
+  "eventsubscribe": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EventSubscribe",
+   "resources": [
+    "channelNamespace"
+   ]
+  },
+  "flushapicache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "FlushApiCache",
+   "resources": []
+  },
+  "getapi": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetApi",
+   "resources": [
+    "api"
+   ]
+  },
+  "getapiassociation": {
+   "name": "GetApiAssociation",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getapicache": {
+   "name": "GetApiCache",
+   "resources": []
+  },
+  "getchannelnamespace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetChannelNamespace",
+   "resources": [
+    "channelNamespace"
+   ]
+  },
+  "getdatasource": {
+   "name": "GetDataSource",
+   "resources": []
+  },
+  "getdatasourceintrospection": {
+   "name": "GetDataSourceIntrospection",
+   "resources": []
+  },
+  "getdomainname": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetDomainName",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getfunction": {
+   "name": "GetFunction",
+   "resources": []
+  },
+  "getgraphqlapi": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetGraphqlApi",
+   "resources": [
+    "graphqlapi"
+   ]
+  },
+  "getgraphqlapienvironmentvariables": {
+   "name": "GetGraphqlApiEnvironmentVariables",
+   "resources": []
+  },
+  "getintrospectionschema": {
+   "name": "GetIntrospectionSchema",
+   "resources": []
+  },
+  "getresolver": {
+   "name": "GetResolver",
+   "resources": []
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": []
+  },
+  "getschemacreationstatus": {
+   "name": "GetSchemaCreationStatus",
+   "resources": []
+  },
+  "getsourceapiassociation": {
+   "name": "GetSourceApiAssociation",
+   "resources": [
+    "sourceApiAssociation"
+   ]
+  },
+  "gettype": {
+   "name": "GetType",
+   "resources": []
+  },
+  "getwebaclforresource": {
+   "name": "GetWebACLForResource",
+   "resources": [
+    "api",
+    "graphqlapi"
+   ]
+  },
+  "graphql": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GraphQL",
+   "resources": [
+    "field",
+    "graphqlapi"
+   ]
+  },
+  "listapikeys": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApiKeys",
+   "resources": []
+  },
+  "listapis": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApis",
+   "resources": []
+  },
+  "listchannelnamespaces": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannelNamespaces",
+   "resources": [
+    "api"
+   ]
+  },
+  "listdatasources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSources",
+   "resources": []
+  },
+  "listdomainnames": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomainNames",
+   "resources": []
+  },
+  "listfunctions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFunctions",
+   "resources": []
+  },
+  "listgraphqlapis": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGraphqlApis",
+   "resources": []
+  },
+  "listresolvers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResolvers",
+   "resources": []
+  },
+  "listresolversbyfunction": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResolversByFunction",
+   "resources": []
+  },
+  "listresourcesforwebacl": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourcesForWebACL",
+   "resources": []
+  },
+  "listsourceapiassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSourceApiAssociations",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "api",
+    "channelNamespace",
+    "domain",
+    "graphqlapi"
+   ]
+  },
+  "listtypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTypes",
+   "resources": []
+  },
+  "listtypesbyassociation": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTypesByAssociation",
+   "resources": []
+  },
+  "putgraphqlapienvironmentvariables": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutGraphqlApiEnvironmentVariables",
+   "resources": []
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": []
+  },
+  "setwebacl": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "SetWebACL",
+   "resources": []
+  },
+  "sourcegraphql": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SourceGraphQL",
+   "resources": [
+    "field",
+    "graphqlapi"
+   ]
+  },
+  "startdatasourceintrospection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDataSourceIntrospection",
+   "resources": []
+  },
+  "startschemacreation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSchemaCreation",
+   "resources": []
+  },
+  "startschemamerge": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSchemaMerge",
+   "resources": [
+    "sourceApiAssociation"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "api",
+    "channelNamespace",
+    "domain",
+    "graphqlapi"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "api",
+    "channelNamespace",
+    "domain",
+    "graphqlapi"
+   ]
+  },
+  "updateapi": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApi",
+   "resources": [
+    "api"
+   ]
+  },
+  "updateapicache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApiCache",
+   "resources": []
+  },
+  "updateapikey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApiKey",
+   "resources": []
+  },
+  "updatechannelnamespace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChannelNamespace",
+   "resources": [
+    "channelNamespace"
+   ]
+  },
+  "updatedatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataSource",
+   "resources": []
+  },
+  "updatedomainname": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomainName",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updatefunction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFunction",
+   "resources": []
+  },
+  "updategraphqlapi": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGraphqlApi",
+   "resources": [
+    "graphqlapi"
+   ]
+  },
+  "updateresolver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResolver",
+   "resources": []
+  },
+  "updatesourceapiassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSourceApiAssociation",
+   "resources": [
+    "sourceApiAssociation"
+   ]
+  },
+  "updatetype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateType",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "appsync:Visibility": [
+   "String"
+  ],
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "api": {
+   "arnFormats": [
+    "arn:${Partition}:appsync:${Region}:${Account}:apis/${ApiId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "channelNamespace": {
+   "arnFormats": [
+    "arn:${Partition}:appsync:${Region}:${Account}:apis/${ApiId}/channelNamespace/${ChannelNamespaceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "datasource": {
+   "arnFormats": [
+    "arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}/datasources/${DatasourceName}"
+   ]
+  },
+  "domain": {
+   "arnFormats": [
+    "arn:${Partition}:appsync:${Region}:${Account}:domainnames/${DomainName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "field": {
+   "arnFormats": [
+    "arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}/types/${TypeName}/fields/${FieldName}"
+   ]
+  },
+  "function": {
+   "arnFormats": [
+    "arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}/functions/${FunctionId}"
+   ]
+  },
+  "graphqlapi": {
+   "arnFormats": [
+    "arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "mergedApiAssociation": {
+   "arnFormats": [
+    "arn:${Partition}:appsync:${Region}:${Account}:apis/${SourceGraphQLAPIId}/mergedApiAssociations/${Associationid}"
+   ]
+  },
+  "sourceApiAssociation": {
+   "arnFormats": [
+    "arn:${Partition}:appsync:${Region}:${Account}:apis/${MergedGraphQLAPIId}/sourceApiAssociations/${Associationid}"
+   ]
+  },
+  "type": {
+   "arnFormats": [
+    "arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}/types/${TypeName}"
+   ]
+  }
+ },
+ "service": "appsync",
+ "serviceName": "AppSync",
+ "version": "v1.5"
+}

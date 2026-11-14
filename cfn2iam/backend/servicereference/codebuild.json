@@ -1,0 +1,1323 @@
+{
+ "actions": {
+  "batchdeletebuilds": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteBuilds",
+   "resources": [
+    "project"
+   ]
+  },
+  "batchgetbuildbatches": {
+   "name": "BatchGetBuildBatches",
+   "resources": [
+    "project"
+   ]
+  },
+  "batchgetbuilds": {
+   "name": "BatchGetBuilds",
+   "resources": [
+    "project"
+   ]
+  },
+  "batchgetcommandexecutions": {
+   "name": "BatchGetCommandExecutions",
+   "resources": [
+    "sandbox"
+   ]
+  },
+  "batchgetfleets": {
+   "name": "BatchGetFleets",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "batchgetprojects": {
+   "name": "BatchGetProjects",
+   "resources": [
+    "project"
+   ]
+  },
+  "batchgetreportgroups": {
+   "name": "BatchGetReportGroups",
+   "resources": [
+    "report-group"
+   ]
+  },
+  "batchgetreports": {
+   "name": "BatchGetReports",
+   "resources": [
+    "report-group"
+   ]
+  },
+  "batchgetsandboxes": {
+   "name": "BatchGetSandboxes",
+   "resources": [
+    "project"
+   ]
+  },
+  "batchputcodecoverages": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchPutCodeCoverages",
+   "resources": [
+    "report-group"
+   ]
+  },
+  "batchputtestcases": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchPutTestCases",
+   "resources": [
+    "report-group"
+   ]
+  },
+  "createfleet": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "codebuild:computeConfiguration",
+    "codebuild:computeConfiguration.disk",
+    "codebuild:computeConfiguration.instanceType",
+    "codebuild:computeConfiguration.machineType",
+    "codebuild:computeConfiguration.memory",
+    "codebuild:computeConfiguration.vCpu",
+    "codebuild:computeType",
+    "codebuild:environmentType",
+    "codebuild:fleetServiceRole",
+    "codebuild:imageId",
+    "codebuild:vpcConfig",
+    "codebuild:vpcConfig.securityGroupIds",
+    "codebuild:vpcConfig.subnets",
+    "codebuild:vpcConfig.vpcId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "createproject": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "codebuild:artifacts",
+    "codebuild:artifacts.bucketOwnerAccess",
+    "codebuild:artifacts.encryptionDisabled",
+    "codebuild:artifacts.location",
+    "codebuild:autoRetryLimit",
+    "codebuild:buildBatchConfig",
+    "codebuild:buildBatchConfig.restrictions.computeTypesAllowed",
+    "codebuild:buildBatchConfig.restrictions.fleetsAllowed",
+    "codebuild:buildBatchConfig.serviceRole",
+    "codebuild:cache",
+    "codebuild:cache.location",
+    "codebuild:cache.modes",
+    "codebuild:cache.type",
+    "codebuild:concurrentBuildLimit",
+    "codebuild:encryptionKey",
+    "codebuild:environment",
+    "codebuild:environment.certificate",
+    "codebuild:environment.computeConfiguration",
+    "codebuild:environment.computeConfiguration.disk",
+    "codebuild:environment.computeConfiguration.instanceType",
+    "codebuild:environment.computeConfiguration.machineType",
+    "codebuild:environment.computeConfiguration.memory",
+    "codebuild:environment.computeConfiguration.vCpu",
+    "codebuild:environment.computeType",
+    "codebuild:environment.environmentVariables",
+    "codebuild:environment.environmentVariables.name",
+    "codebuild:environment.environmentVariables.value",
+    "codebuild:environment.environmentVariables/${name}.value",
+    "codebuild:environment.fleet.fleetArn",
+    "codebuild:environment.image",
+    "codebuild:environment.imagePullCredentialsType",
+    "codebuild:environment.privilegedMode",
+    "codebuild:environment.registryCredential",
+    "codebuild:environment.registryCredential.credential",
+    "codebuild:environment.registryCredential.credentialProvider",
+    "codebuild:environment.type",
+    "codebuild:fileSystemLocations.identifier",
+    "codebuild:fileSystemLocations.location",
+    "codebuild:fileSystemLocations.type",
+    "codebuild:fileSystemLocations/${identifier}.location",
+    "codebuild:fileSystemLocations/${identifier}.type",
+    "codebuild:logsConfig",
+    "codebuild:logsConfig.s3Logs",
+    "codebuild:logsConfig.s3Logs.bucketOwnerAccess",
+    "codebuild:logsConfig.s3Logs.encryptionDisabled",
+    "codebuild:logsConfig.s3Logs.location",
+    "codebuild:logsConfig.s3Logs.status",
+    "codebuild:secondaryArtifacts",
+    "codebuild:secondaryArtifacts.artifactIdentifier",
+    "codebuild:secondaryArtifacts.bucketOwnerAccess",
+    "codebuild:secondaryArtifacts.encryptionDisabled",
+    "codebuild:secondaryArtifacts.location",
+    "codebuild:secondaryArtifacts/${artifactIdentifier}.bucketOwnerAccess",
+    "codebuild:secondaryArtifacts/${artifactIdentifier}.encryptionDisabled",
+    "codebuild:secondaryArtifacts/${artifactIdentifier}.location",
+    "codebuild:secondarySources",
+    "codebuild:secondarySources.auth.resource",
+    "codebuild:secondarySources.auth.type",
+    "codebuild:secondarySources.buildStatusConfig.context",
+    "codebuild:secondarySources.buildStatusConfig.targetUrl",
+    "codebuild:secondarySources.buildspec",
+    "codebuild:secondarySources.insecureSsl",
+    "codebuild:secondarySources.location",
+    "codebuild:secondarySources.sourceIdentifier",
+    "codebuild:secondarySources/${sourceIdentifier}.auth.resource",
+    "codebuild:secondarySources/${sourceIdentifier}.auth.type",
+    "codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.context",
+    "codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.targetUrl",
+    "codebuild:secondarySources/${sourceIdentifier}.buildspec",
+    "codebuild:secondarySources/${sourceIdentifier}.insecureSsl",
+    "codebuild:secondarySources/${sourceIdentifier}.location",
+    "codebuild:serviceRole",
+    "codebuild:source",
+    "codebuild:source.auth.resource",
+    "codebuild:source.auth.type",
+    "codebuild:source.buildStatusConfig.context",
+    "codebuild:source.buildStatusConfig.targetUrl",
+    "codebuild:source.buildspec",
+    "codebuild:source.insecureSsl",
+    "codebuild:source.location",
+    "codebuild:vpcConfig",
+    "codebuild:vpcConfig.securityGroupIds",
+    "codebuild:vpcConfig.subnets",
+    "codebuild:vpcConfig.vpcId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProject",
+   "resources": [
+    "project"
+   ]
+  },
+  "createreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReport",
+   "resources": [
+    "report-group"
+   ]
+  },
+  "createreportgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "codebuild:exportConfig.s3Destination.bucket",
+    "codebuild:exportConfig.s3Destination.bucketOwner",
+    "codebuild:exportConfig.s3Destination.encryptionDisabled",
+    "codebuild:exportConfig.s3Destination.encryptionKey",
+    "codebuild:exportConfig.s3Destination.path"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReportGroup",
+   "resources": [
+    "report-group"
+   ]
+  },
+  "createwebhook": {
+   "conditionKeys": [
+    "codebuild:buildType",
+    "codebuild:manualCreation",
+    "codebuild:scopeConfiguration.domain",
+    "codebuild:scopeConfiguration.name",
+    "codebuild:scopeConfiguration.scope"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWebhook",
+   "resources": [
+    "project"
+   ]
+  },
+  "deletebuildbatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBuildBatch",
+   "resources": [
+    "project"
+   ]
+  },
+  "deletefleet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "deleteoauthtoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOAuthToken",
+   "resources": []
+  },
+  "deleteproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProject",
+   "resources": [
+    "project"
+   ]
+  },
+  "deletereport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReport",
+   "resources": [
+    "report-group"
+   ]
+  },
+  "deletereportgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReportGroup",
+   "resources": [
+    "report-group"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "project",
+    "report-group"
+   ]
+  },
+  "deletesourcecredentials": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSourceCredentials",
+   "resources": []
+  },
+  "deletewebhook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWebhook",
+   "resources": [
+    "project"
+   ]
+  },
+  "describecodecoverages": {
+   "name": "DescribeCodeCoverages",
+   "resources": [
+    "report-group"
+   ]
+  },
+  "describetestcases": {
+   "name": "DescribeTestCases",
+   "resources": [
+    "report-group"
+   ]
+  },
+  "getreportgrouptrend": {
+   "name": "GetReportGroupTrend",
+   "resources": [
+    "report-group"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "project",
+    "report-group"
+   ]
+  },
+  "importsourcecredentials": {
+   "conditionKeys": [
+    "codebuild:authType",
+    "codebuild:serverType",
+    "codebuild:shouldOverwrite",
+    "codebuild:token",
+    "codebuild:username"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportSourceCredentials",
+   "resources": []
+  },
+  "invalidateprojectcache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvalidateProjectCache",
+   "resources": [
+    "project"
+   ]
+  },
+  "listbuildbatches": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBuildBatches",
+   "resources": []
+  },
+  "listbuildbatchesforproject": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBuildBatchesForProject",
+   "resources": [
+    "project"
+   ]
+  },
+  "listbuilds": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBuilds",
+   "resources": []
+  },
+  "listbuildsforproject": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBuildsForProject",
+   "resources": [
+    "project"
+   ]
+  },
+  "listcommandexecutionsforsandbox": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCommandExecutionsForSandbox",
+   "resources": [
+    "sandbox"
+   ]
+  },
+  "listconnectedoauthaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectedOAuthAccounts",
+   "resources": []
+  },
+  "listcuratedenvironmentimages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCuratedEnvironmentImages",
+   "resources": []
+  },
+  "listfleets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFleets",
+   "resources": []
+  },
+  "listprojects": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProjects",
+   "resources": []
+  },
+  "listreportgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReportGroups",
+   "resources": []
+  },
+  "listreports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReports",
+   "resources": []
+  },
+  "listreportsforreportgroup": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReportsForReportGroup",
+   "resources": [
+    "report-group"
+   ]
+  },
+  "listrepositories": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRepositories",
+   "resources": []
+  },
+  "listsandboxes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSandboxes",
+   "resources": []
+  },
+  "listsandboxesforproject": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSandboxesForProject",
+   "resources": [
+    "project"
+   ]
+  },
+  "listsharedprojects": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSharedProjects",
+   "resources": []
+  },
+  "listsharedreportgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSharedReportGroups",
+   "resources": []
+  },
+  "listsourcecredentials": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSourceCredentials",
+   "resources": []
+  },
+  "persistoauthtoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PersistOAuthToken",
+   "resources": []
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "project",
+    "report-group"
+   ]
+  },
+  "retrybuild": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RetryBuild",
+   "resources": [
+    "project"
+   ]
+  },
+  "retrybuildbatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RetryBuildBatch",
+   "resources": [
+    "project"
+   ]
+  },
+  "startbuild": {
+   "conditionKeys": [
+    "codebuild:artifacts",
+    "codebuild:artifacts.bucketOwnerAccess",
+    "codebuild:artifacts.encryptionDisabled",
+    "codebuild:artifacts.location",
+    "codebuild:autoRetryLimit",
+    "codebuild:cache",
+    "codebuild:cache.location",
+    "codebuild:cache.modes",
+    "codebuild:cache.type",
+    "codebuild:encryptionKey",
+    "codebuild:environment",
+    "codebuild:environment.certificate",
+    "codebuild:environment.computeType",
+    "codebuild:environment.environmentVariables",
+    "codebuild:environment.environmentVariables.name",
+    "codebuild:environment.environmentVariables.value",
+    "codebuild:environment.environmentVariables/${name}.value",
+    "codebuild:environment.fleet.fleetArn",
+    "codebuild:environment.image",
+    "codebuild:environment.imagePullCredentialsType",
+    "codebuild:environment.privilegedMode",
+    "codebuild:environment.registryCredential",
+    "codebuild:environment.registryCredential.credential",
+    "codebuild:environment.registryCredential.credentialProvider",
+    "codebuild:environment.type",
+    "codebuild:logsConfig",
+    "codebuild:logsConfig.s3Logs",
+    "codebuild:logsConfig.s3Logs.bucketOwnerAccess",
+    "codebuild:logsConfig.s3Logs.encryptionDisabled",
+    "codebuild:logsConfig.s3Logs.location",
+    "codebuild:logsConfig.s3Logs.status",
+    "codebuild:secondaryArtifacts",
+    "codebuild:secondaryArtifacts.artifactIdentifier",
+    "codebuild:secondaryArtifacts.bucketOwnerAccess",
+    "codebuild:secondaryArtifacts.encryptionDisabled",
+    "codebuild:secondaryArtifacts.location",
+    "codebuild:secondaryArtifacts/${artifactIdentifier}.bucketOwnerAccess",
+    "codebuild:secondaryArtifacts/${artifactIdentifier}.encryptionDisabled",
+    "codebuild:secondaryArtifacts/${artifactIdentifier}.location",
+    "codebuild:secondarySources",
+    "codebuild:secondarySources.auth.resource",
+    "codebuild:secondarySources.auth.type",
+    "codebuild:secondarySources.buildStatusConfig.context",
+    "codebuild:secondarySources.buildStatusConfig.targetUrl",
+    "codebuild:secondarySources.buildspec",
+    "codebuild:secondarySources.insecureSsl",
+    "codebuild:secondarySources.location",
+    "codebuild:secondarySources.sourceIdentifier",
+    "codebuild:secondarySources/${sourceIdentifier}.auth.resource",
+    "codebuild:secondarySources/${sourceIdentifier}.auth.type",
+    "codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.context",
+    "codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.targetUrl",
+    "codebuild:secondarySources/${sourceIdentifier}.buildspec",
+    "codebuild:secondarySources/${sourceIdentifier}.insecureSsl",
+    "codebuild:secondarySources/${sourceIdentifier}.location",
+    "codebuild:serviceRole",
+    "codebuild:source",
+    "codebuild:source.auth.resource",
+    "codebuild:source.auth.type",
+    "codebuild:source.buildStatusConfig.context",
+    "codebuild:source.buildStatusConfig.targetUrl",
+    "codebuild:source.buildspec",
+    "codebuild:source.insecureSsl",
+    "codebuild:source.location"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartBuild",
+   "resources": [
+    "project"
+   ]
+  },
+  "startbuildbatch": {
+   "conditionKeys": [
+    "codebuild:artifacts",
+    "codebuild:artifacts.bucketOwnerAccess",
+    "codebuild:artifacts.encryptionDisabled",
+    "codebuild:artifacts.location",
+    "codebuild:buildBatchConfig",
+    "codebuild:buildBatchConfig.restrictions.computeTypesAllowed",
+    "codebuild:buildBatchConfig.restrictions.fleetsAllowed",
+    "codebuild:buildBatchConfig.serviceRole",
+    "codebuild:cache",
+    "codebuild:cache.location",
+    "codebuild:cache.modes",
+    "codebuild:cache.type",
+    "codebuild:encryptionKey",
+    "codebuild:environment",
+    "codebuild:environment.certificate",
+    "codebuild:environment.computeType",
+    "codebuild:environment.environmentVariables",
+    "codebuild:environment.environmentVariables.name",
+    "codebuild:environment.environmentVariables.value",
+    "codebuild:environment.environmentVariables/${name}.value",
+    "codebuild:environment.image",
+    "codebuild:environment.imagePullCredentialsType",
+    "codebuild:environment.privilegedMode",
+    "codebuild:environment.registryCredential",
+    "codebuild:environment.registryCredential.credential",
+    "codebuild:environment.registryCredential.credentialProvider",
+    "codebuild:environment.type",
+    "codebuild:logsConfig",
+    "codebuild:logsConfig.s3Logs",
+    "codebuild:logsConfig.s3Logs.bucketOwnerAccess",
+    "codebuild:logsConfig.s3Logs.encryptionDisabled",
+    "codebuild:logsConfig.s3Logs.location",
+    "codebuild:logsConfig.s3Logs.status",
+    "codebuild:secondaryArtifacts",
+    "codebuild:secondaryArtifacts.artifactIdentifier",
+    "codebuild:secondaryArtifacts.bucketOwnerAccess",
+    "codebuild:secondaryArtifacts.encryptionDisabled",
+    "codebuild:secondaryArtifacts.location",
+    "codebuild:secondaryArtifacts/${artifactIdentifier}.bucketOwnerAccess",
+    "codebuild:secondaryArtifacts/${artifactIdentifier}.encryptionDisabled",
+    "codebuild:secondaryArtifacts/${artifactIdentifier}.location",
+    "codebuild:secondarySources",
+    "codebuild:secondarySources.auth.resource",
+    "codebuild:secondarySources.auth.type",
+    "codebuild:secondarySources.buildStatusConfig.context",
+    "codebuild:secondarySources.buildStatusConfig.targetUrl",
+    "codebuild:secondarySources.buildspec",
+    "codebuild:secondarySources.insecureSsl",
+    "codebuild:secondarySources.location",
+    "codebuild:secondarySources.sourceIdentifier",
+    "codebuild:secondarySources/${sourceIdentifier}.auth.resource",
+    "codebuild:secondarySources/${sourceIdentifier}.auth.type",
+    "codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.context",
+    "codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.targetUrl",
+    "codebuild:secondarySources/${sourceIdentifier}.buildspec",
+    "codebuild:secondarySources/${sourceIdentifier}.insecureSsl",
+    "codebuild:secondarySources/${sourceIdentifier}.location",
+    "codebuild:serviceRole",
+    "codebuild:source",
+    "codebuild:source.auth.resource",
+    "codebuild:source.auth.type",
+    "codebuild:source.buildspec",
+    "codebuild:source.insecureSsl",
+    "codebuild:source.location"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartBuildBatch",
+   "resources": [
+    "project"
+   ]
+  },
+  "startcommandexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCommandExecution",
+   "resources": [
+    "sandbox"
+   ]
+  },
+  "startsandbox": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSandbox",
+   "resources": [
+    "project"
+   ]
+  },
+  "startsandboxconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSandboxConnection",
+   "resources": [
+    "sandbox"
+   ]
+  },
+  "stopbuild": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopBuild",
+   "resources": [
+    "project"
+   ]
+  },
+  "stopbuildbatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopBuildBatch",
+   "resources": [
+    "project"
+   ]
+  },
+  "stopsandbox": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopSandbox",
+   "resources": [
+    "project"
+   ]
+  },
+  "updatefleet": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "codebuild:computeConfiguration",
+    "codebuild:computeConfiguration.disk",
+    "codebuild:computeConfiguration.instanceType",
+    "codebuild:computeConfiguration.machineType",
+    "codebuild:computeConfiguration.memory",
+    "codebuild:computeConfiguration.vCpu",
+    "codebuild:computeType",
+    "codebuild:environmentType",
+    "codebuild:fleetServiceRole",
+    "codebuild:imageId",
+    "codebuild:vpcConfig",
+    "codebuild:vpcConfig.securityGroupIds",
+    "codebuild:vpcConfig.subnets",
+    "codebuild:vpcConfig.vpcId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "updateproject": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "codebuild:artifacts",
+    "codebuild:artifacts.bucketOwnerAccess",
+    "codebuild:artifacts.encryptionDisabled",
+    "codebuild:artifacts.location",
+    "codebuild:autoRetryLimit",
+    "codebuild:buildBatchConfig",
+    "codebuild:buildBatchConfig.restrictions.computeTypesAllowed",
+    "codebuild:buildBatchConfig.restrictions.fleetsAllowed",
+    "codebuild:buildBatchConfig.serviceRole",
+    "codebuild:cache",
+    "codebuild:cache.location",
+    "codebuild:cache.modes",
+    "codebuild:cache.type",
+    "codebuild:concurrentBuildLimit",
+    "codebuild:encryptionKey",
+    "codebuild:environment",
+    "codebuild:environment.certificate",
+    "codebuild:environment.computeConfiguration",
+    "codebuild:environment.computeConfiguration.disk",
+    "codebuild:environment.computeConfiguration.instanceType",
+    "codebuild:environment.computeConfiguration.machineType",
+    "codebuild:environment.computeConfiguration.memory",
+    "codebuild:environment.computeConfiguration.vCpu",
+    "codebuild:environment.computeType",
+    "codebuild:environment.environmentVariables",
+    "codebuild:environment.environmentVariables.name",
+    "codebuild:environment.environmentVariables.value",
+    "codebuild:environment.environmentVariables/${name}.value",
+    "codebuild:environment.fleet.fleetArn",
+    "codebuild:environment.image",
+    "codebuild:environment.imagePullCredentialsType",
+    "codebuild:environment.privilegedMode",
+    "codebuild:environment.registryCredential",
+    "codebuild:environment.registryCredential.credential",
+    "codebuild:environment.registryCredential.credentialProvider",
+    "codebuild:environment.type",
+    "codebuild:fileSystemLocations.identifier",
+    "codebuild:fileSystemLocations.location",
+    "codebuild:fileSystemLocations.type",
+    "codebuild:fileSystemLocations/${identifier}.location",
+    "codebuild:fileSystemLocations/${identifier}.type",
+    "codebuild:logsConfig",
+    "codebuild:logsConfig.s3Logs",
+    "codebuild:logsConfig.s3Logs.bucketOwnerAccess",
+    "codebuild:logsConfig.s3Logs.encryptionDisabled",
+    "codebuild:logsConfig.s3Logs.location",
+    "codebuild:logsConfig.s3Logs.status",
+    "codebuild:secondaryArtifacts",
+    "codebuild:secondaryArtifacts.artifactIdentifier",
+    "codebuild:secondaryArtifacts.bucketOwnerAccess",
+    "codebuild:secondaryArtifacts.encryptionDisabled",
+    "codebuild:secondaryArtifacts.location",
+    "codebuild:secondaryArtifacts/${artifactIdentifier}.bucketOwnerAccess",
+    "codebuild:secondaryArtifacts/${artifactIdentifier}.encryptionDisabled",
+    "codebuild:secondaryArtifacts/${artifactIdentifier}.location",
+    "codebuild:secondarySources",
+    "codebuild:secondarySources.auth.resource",
+    "codebuild:secondarySources.auth.type",
+    "codebuild:secondarySources.buildStatusConfig.context",
+    "codebuild:secondarySources.buildStatusConfig.targetUrl",
+    "codebuild:secondarySources.buildspec",
+    "codebuild:secondarySources.insecureSsl",
+    "codebuild:secondarySources.location",
+    "codebuild:secondarySources.sourceIdentifier",
+    "codebuild:secondarySources/${sourceIdentifier}.auth.resource",
+    "codebuild:secondarySources/${sourceIdentifier}.auth.type",
+    "codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.context",
+    "codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.targetUrl",
+    "codebuild:secondarySources/${sourceIdentifier}.buildspec",
+    "codebuild:secondarySources/${sourceIdentifier}.insecureSsl",
+    "codebuild:secondarySources/${sourceIdentifier}.location",
+    "codebuild:serviceRole",
+    "codebuild:source",
+    "codebuild:source.auth.resource",
+    "codebuild:source.auth.type",
+    "codebuild:source.buildStatusConfig.context",
+    "codebuild:source.buildStatusConfig.targetUrl",
+    "codebuild:source.buildspec",
+    "codebuild:source.insecureSsl",
+    "codebuild:source.location",
+    "codebuild:vpcConfig",
+    "codebuild:vpcConfig.securityGroupIds",
+    "codebuild:vpcConfig.subnets",
+    "codebuild:vpcConfig.vpcId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProject",
+   "resources": [
+    "project"
+   ]
+  },
+  "updateprojectvisibility": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "codebuild:projectVisibility"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProjectVisibility",
+   "resources": [
+    "project"
+   ]
+  },
+  "updatereport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReport",
+   "resources": [
+    "report-group"
+   ]
+  },
+  "updatereportgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "codebuild:exportConfig.s3Destination.bucket",
+    "codebuild:exportConfig.s3Destination.bucketOwner",
+    "codebuild:exportConfig.s3Destination.encryptionDisabled",
+    "codebuild:exportConfig.s3Destination.encryptionKey",
+    "codebuild:exportConfig.s3Destination.path"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReportGroup",
+   "resources": [
+    "report-group"
+   ]
+  },
+  "updatewebhook": {
+   "conditionKeys": [
+    "codebuild:buildType",
+    "codebuild:manualCreation",
+    "codebuild:scopeConfiguration.domain",
+    "codebuild:scopeConfiguration.name",
+    "codebuild:scopeConfiguration.scope"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWebhook",
+   "resources": [
+    "project"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "codebuild:artifacts": [
+   "Bool"
+  ],
+  "codebuild:artifacts.bucketOwnerAccess": [
+   "String"
+  ],
+  "codebuild:artifacts.encryptionDisabled": [
+   "Bool"
+  ],
+  "codebuild:artifacts.location": [
+   "String"
+  ],
+  "codebuild:authType": [
+   "String"
+  ],
+  "codebuild:autoRetryLimit": [
+   "Numeric"
+  ],
+  "codebuild:buildArn": [
+   "ARN"
+  ],
+  "codebuild:buildBatchConfig": [
+   "Bool"
+  ],
+  "codebuild:buildBatchConfig.restrictions.computeTypesAllowed": [
+   "ArrayOfString"
+  ],
+  "codebuild:buildBatchConfig.restrictions.fleetsAllowed": [
+   "ArrayOfString"
+  ],
+  "codebuild:buildBatchConfig.serviceRole": [
+   "String"
+  ],
+  "codebuild:buildType": [
+   "String"
+  ],
+  "codebuild:cache": [
+   "Bool"
+  ],
+  "codebuild:cache.location": [
+   "String"
+  ],
+  "codebuild:cache.modes": [
+   "ArrayOfString"
+  ],
+  "codebuild:cache.type": [
+   "String"
+  ],
+  "codebuild:computeConfiguration": [
+   "Bool"
+  ],
+  "codebuild:computeConfiguration.disk": [
+   "Numeric"
+  ],
+  "codebuild:computeConfiguration.instanceType": [
+   "String"
+  ],
+  "codebuild:computeConfiguration.machineType": [
+   "String"
+  ],
+  "codebuild:computeConfiguration.memory": [
+   "Numeric"
+  ],
+  "codebuild:computeConfiguration.vCpu": [
+   "Numeric"
+  ],
+  "codebuild:computeType": [
+   "String"
+  ],
+  "codebuild:concurrentBuildLimit": [
+   "Numeric"
+  ],
+  "codebuild:encryptionKey": [
+   "String"
+  ],
+  "codebuild:environment": [
+   "Bool"
+  ],
+  "codebuild:environment.certificate": [
+   "String"
+  ],
+  "codebuild:environment.computeConfiguration": [
+   "Bool"
+  ],
+  "codebuild:environment.computeConfiguration.disk": [
+   "Numeric"
+  ],
+  "codebuild:environment.computeConfiguration.instanceType": [
+   "String"
+  ],
+  "codebuild:environment.computeConfiguration.machineType": [
+   "String"
+  ],
+  "codebuild:environment.computeConfiguration.memory": [
+   "Numeric"
+  ],
+  "codebuild:environment.computeConfiguration.vCpu": [
+   "Numeric"
+  ],
+  "codebuild:environment.computeType": [
+   "String"
+  ],
+  "codebuild:environment.environmentVariables": [
+   "Bool"
+  ],
+  "codebuild:environment.environmentVariables.name": [
+   "ArrayOfString"
+  ],
+  "codebuild:environment.environmentVariables.value": [
+   "ArrayOfString"
+  ],
+  "codebuild:environment.environmentVariables/${name}.value": [
+   "String"
+  ],
+  "codebuild:environment.fleet.fleetArn": [
+   "ARN"
+  ],
+  "codebuild:environment.image": [
+   "String"
+  ],
+  "codebuild:environment.imagePullCredentialsType": [
+   "String"
+  ],
+  "codebuild:environment.privilegedMode": [
+   "Bool"
+  ],
+  "codebuild:environment.registryCredential": [
+   "Bool"
+  ],
+  "codebuild:environment.registryCredential.credential": [
+   "String"
+  ],
+  "codebuild:environment.registryCredential.credentialProvider": [
+   "String"
+  ],
+  "codebuild:environment.type": [
+   "String"
+  ],
+  "codebuild:environmentType": [
+   "String"
+  ],
+  "codebuild:exportConfig.s3Destination.bucket": [
+   "String"
+  ],
+  "codebuild:exportConfig.s3Destination.bucketOwner": [
+   "String"
+  ],
+  "codebuild:exportConfig.s3Destination.encryptionDisabled": [
+   "Bool"
+  ],
+  "codebuild:exportConfig.s3Destination.encryptionKey": [
+   "String"
+  ],
+  "codebuild:exportConfig.s3Destination.path": [
+   "String"
+  ],
+  "codebuild:fileSystemLocations.identifier": [
+   "ArrayOfString"
+  ],
+  "codebuild:fileSystemLocations.location": [
+   "ArrayOfString"
+  ],
+  "codebuild:fileSystemLocations.type": [
+   "ArrayOfString"
+  ],
+  "codebuild:fileSystemLocations/${identifier}.location": [
+   "String"
+  ],
+  "codebuild:fileSystemLocations/${identifier}.type": [
+   "String"
+  ],
+  "codebuild:fleetServiceRole": [
+   "String"
+  ],
+  "codebuild:imageId": [
+   "String"
+  ],
+  "codebuild:logsConfig": [
+   "Bool"
+  ],
+  "codebuild:logsConfig.s3Logs": [
+   "Bool"
+  ],
+  "codebuild:logsConfig.s3Logs.bucketOwnerAccess": [
+   "String"
+  ],
+  "codebuild:logsConfig.s3Logs.encryptionDisabled": [
+   "Bool"
+  ],
+  "codebuild:logsConfig.s3Logs.location": [
+   "String"
+  ],
+  "codebuild:logsConfig.s3Logs.status": [
+   "String"
+  ],
+  "codebuild:manualCreation": [
+   "Bool"
+  ],
+  "codebuild:projectArn": [
+   "ARN"
+  ],
+  "codebuild:projectVisibility": [
+   "String"
+  ],
+  "codebuild:scopeConfiguration.domain": [
+   "String"
+  ],
+  "codebuild:scopeConfiguration.name": [
+   "String"
+  ],
+  "codebuild:scopeConfiguration.scope": [
+   "String"
+  ],
+  "codebuild:secondaryArtifacts": [
+   "Bool"
+  ],
+  "codebuild:secondaryArtifacts.artifactIdentifier": [
+   "ArrayOfString"
+  ],
+  "codebuild:secondaryArtifacts.bucketOwnerAccess": [
+   "ArrayOfString"
+  ],
+  "codebuild:secondaryArtifacts.encryptionDisabled": [
+   "ArrayOfBool"
+  ],
+  "codebuild:secondaryArtifacts.location": [
+   "ArrayOfString"
+  ],
+  "codebuild:secondaryArtifacts/${artifactIdentifier}.bucketOwnerAccess": [
+   "String"
+  ],
+  "codebuild:secondaryArtifacts/${artifactIdentifier}.encryptionDisabled": [
+   "Bool"
+  ],
+  "codebuild:secondaryArtifacts/${artifactIdentifier}.location": [
+   "String"
+  ],
+  "codebuild:secondarySources": [
+   "Bool"
+  ],
+  "codebuild:secondarySources.auth.resource": [
+   "ArrayOfString"
+  ],
+  "codebuild:secondarySources.auth.type": [
+   "ArrayOfString"
+  ],
+  "codebuild:secondarySources.buildStatusConfig.context": [
+   "ArrayOfString"
+  ],
+  "codebuild:secondarySources.buildStatusConfig.targetUrl": [
+   "ArrayOfString"
+  ],
+  "codebuild:secondarySources.buildspec": [
+   "Bool"
+  ],
+  "codebuild:secondarySources.insecureSsl": [
+   "ArrayOfBool"
+  ],
+  "codebuild:secondarySources.location": [
+   "ArrayOfString"
+  ],
+  "codebuild:secondarySources.sourceIdentifier": [
+   "ArrayOfString"
+  ],
+  "codebuild:secondarySources/${sourceIdentifier}.auth.resource": [
+   "String"
+  ],
+  "codebuild:secondarySources/${sourceIdentifier}.auth.type": [
+   "String"
+  ],
+  "codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.context": [
+   "String"
+  ],
+  "codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.targetUrl": [
+   "String"
+  ],
+  "codebuild:secondarySources/${sourceIdentifier}.buildspec": [
+   "Bool"
+  ],
+  "codebuild:secondarySources/${sourceIdentifier}.insecureSsl": [
+   "Bool"
+  ],
+  "codebuild:secondarySources/${sourceIdentifier}.location": [
+   "String"
+  ],
+  "codebuild:serverType": [
+   "String"
+  ],
+  "codebuild:serviceRole": [
+   "String"
+  ],
+  "codebuild:shouldOverwrite": [
+   "Bool"
+  ],
+  "codebuild:source": [
+   "Bool"
+  ],
+  "codebuild:source.auth.resource": [
+   "String"
+  ],
+  "codebuild:source.auth.type": [
+   "String"
+  ],
+  "codebuild:source.buildStatusConfig.context": [
+   "String"
+  ],
+  "codebuild:source.buildStatusConfig.targetUrl": [
+   "String"
+  ],
+  "codebuild:source.buildspec": [
+   "Bool"
+  ],
+  "codebuild:source.insecureSsl": [
+   "Bool"
+  ],
+  "codebuild:source.location": [
+   "String"
+  ],
+  "codebuild:token": [
+   "String"
+  ],
+  "codebuild:username": [
+   "String"
+  ],
+  "codebuild:vpcConfig": [
+   "Bool"
+  ],
+  "codebuild:vpcConfig.securityGroupIds": [
+   "ArrayOfString"
+  ],
+  "codebuild:vpcConfig.subnets": [
+   "ArrayOfString"
+  ],
+  "codebuild:vpcConfig.vpcId": [
+   "String"
+  ]
+ },
+ "resources": {
+  "build": {
+   "arnFormats": [
+    "arn:${Partition}:codebuild:${Region}:${Account}:build/${BuildId}"
+   ]
+  },
+  "build-batch": {
+   "arnFormats": [
+    "arn:${Partition}:codebuild:${Region}:${Account}:build-batch/${BuildBatchId}"
+   ]
+  },
+  "fleet": {
+   "arnFormats": [
+    "arn:${Partition}:codebuild:${Region}:${Account}:fleet/${FleetName}:${FleetId}"
+   ]
+  },
+  "project": {
+   "arnFormats": [
+    "arn:${Partition}:codebuild:${Region}:${Account}:project/${ProjectName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "report": {
+   "arnFormats": [
+    "arn:${Partition}:codebuild:${Region}:${Account}:report/${ReportGroupName}:${ReportId}"
+   ]
+  },
+  "report-group": {
+   "arnFormats": [
+    "arn:${Partition}:codebuild:${Region}:${Account}:report-group/${ReportGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "sandbox": {
+   "arnFormats": [
+    "arn:${Partition}:codebuild:${Region}:${Account}:sandbox/${SandboxId}"
+   ]
+  }
+ },
+ "service": "codebuild",
+ "serviceName": "CodeBuild",
+ "version": "v1.5"
+}

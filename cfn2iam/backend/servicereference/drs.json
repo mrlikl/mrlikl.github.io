@@ -1,0 +1,1035 @@
+{
+ "actions": {
+  "associatefailbackclienttorecoveryinstancefordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateFailbackClientToRecoveryInstanceForDrs",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "associatesourcenetworkstack": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSourceNetworkStack",
+   "resources": [
+    "SourceNetworkResource"
+   ]
+  },
+  "batchcreatevolumesnapshotgroupfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateVolumeSnapshotGroupForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "batchdeletesnapshotrequestfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteSnapshotRequestForDrs",
+   "resources": []
+  },
+  "cancelrecoveryplanexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelRecoveryPlanExecution",
+   "resources": [
+    "RecoveryPlanExecutionResource"
+   ]
+  },
+  "createconvertedsnapshotfordrs": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConvertedSnapshotForDrs",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "createextendedsourceserver": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExtendedSourceServer",
+   "resources": []
+  },
+  "createlaunchconfigurationtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLaunchConfigurationTemplate",
+   "resources": []
+  },
+  "createrecoveryinstancefordrs": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRecoveryInstanceForDrs",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "createrecoveryplan": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRecoveryPlan",
+   "resources": []
+  },
+  "createrecoveryplanstep": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRecoveryPlanStep",
+   "resources": [
+    "RecoveryPlanResource"
+   ]
+  },
+  "createreplicationconfigurationtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReplicationConfigurationTemplate",
+   "resources": []
+  },
+  "createsourcenetwork": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSourceNetwork",
+   "resources": []
+  },
+  "createsourceserverfordrs": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSourceServerForDrs",
+   "resources": []
+  },
+  "deletejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteJob",
+   "resources": [
+    "JobResource"
+   ]
+  },
+  "deletelaunchaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLaunchAction",
+   "resources": [
+    "LaunchConfigurationTemplateResource",
+    "SourceServerResource"
+   ]
+  },
+  "deletelaunchconfigurationtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLaunchConfigurationTemplate",
+   "resources": [
+    "LaunchConfigurationTemplateResource"
+   ]
+  },
+  "deleterecoveryinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRecoveryInstance",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "deleterecoveryplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRecoveryPlan",
+   "resources": [
+    "RecoveryPlanResource"
+   ]
+  },
+  "deleterecoveryplanexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRecoveryPlanExecution",
+   "resources": [
+    "RecoveryPlanExecutionResource"
+   ]
+  },
+  "deleterecoveryplanstep": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRecoveryPlanStep",
+   "resources": [
+    "RecoveryPlanResource"
+   ]
+  },
+  "deletereplicationconfigurationtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReplicationConfigurationTemplate",
+   "resources": [
+    "ReplicationConfigurationTemplateResource"
+   ]
+  },
+  "deletesourcenetwork": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSourceNetwork",
+   "resources": [
+    "SourceNetworkResource"
+   ]
+  },
+  "deletesourceserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSourceServer",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "describejoblogitems": {
+   "name": "DescribeJobLogItems",
+   "resources": [
+    "JobResource"
+   ]
+  },
+  "describejobs": {
+   "name": "DescribeJobs",
+   "resources": []
+  },
+  "describelaunchconfigurationtemplates": {
+   "name": "DescribeLaunchConfigurationTemplates",
+   "resources": []
+  },
+  "describerecoveryinstances": {
+   "name": "DescribeRecoveryInstances",
+   "resources": []
+  },
+  "describerecoverysnapshots": {
+   "name": "DescribeRecoverySnapshots",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "describereplicationconfigurationtemplates": {
+   "name": "DescribeReplicationConfigurationTemplates",
+   "resources": []
+  },
+  "describereplicationserverassociationsfordrs": {
+   "name": "DescribeReplicationServerAssociationsForDrs",
+   "resources": []
+  },
+  "describesnapshotrequestsfordrs": {
+   "name": "DescribeSnapshotRequestsForDrs",
+   "resources": []
+  },
+  "describesourcenetworks": {
+   "name": "DescribeSourceNetworks",
+   "resources": []
+  },
+  "describesourceservers": {
+   "name": "DescribeSourceServers",
+   "resources": []
+  },
+  "disconnectrecoveryinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisconnectRecoveryInstance",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "disconnectsourceserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisconnectSourceServer",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "exportsourcenetworkcfntemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportSourceNetworkCfnTemplate",
+   "resources": [
+    "SourceNetworkResource"
+   ]
+  },
+  "getagentcommandfordrs": {
+   "name": "GetAgentCommandForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "getagentconfirmedresumeinfofordrs": {
+   "name": "GetAgentConfirmedResumeInfoForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "getagentinstallationassetsfordrs": {
+   "name": "GetAgentInstallationAssetsForDrs",
+   "resources": []
+  },
+  "getagentreplicationinfofordrs": {
+   "name": "GetAgentReplicationInfoForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "getagentruntimeconfigurationfordrs": {
+   "name": "GetAgentRuntimeConfigurationForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "getagentsnapshotcreditsfordrs": {
+   "name": "GetAgentSnapshotCreditsForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "getchannelcommandsfordrs": {
+   "name": "GetChannelCommandsForDrs",
+   "resources": []
+  },
+  "getfailbackcommandfordrs": {
+   "name": "GetFailbackCommandForDrs",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "getfailbacklaunchrequestedfordrs": {
+   "name": "GetFailbackLaunchRequestedForDrs",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "getfailbackreplicationconfiguration": {
+   "name": "GetFailbackReplicationConfiguration",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "getlaunchconfiguration": {
+   "name": "GetLaunchConfiguration",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "getrecoveryplan": {
+   "name": "GetRecoveryPlan",
+   "resources": [
+    "RecoveryPlanResource"
+   ]
+  },
+  "getrecoveryplanexecution": {
+   "name": "GetRecoveryPlanExecution",
+   "resources": [
+    "RecoveryPlanExecutionResource"
+   ]
+  },
+  "getrecoveryplanexecutionstep": {
+   "name": "GetRecoveryPlanExecutionStep",
+   "resources": [
+    "RecoveryPlanExecutionResource"
+   ]
+  },
+  "getrecoveryplanstep": {
+   "name": "GetRecoveryPlanStep",
+   "resources": [
+    "RecoveryPlanResource"
+   ]
+  },
+  "getreplicationconfiguration": {
+   "name": "GetReplicationConfiguration",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "getsuggestedfailbackclientdevicemappingfordrs": {
+   "name": "GetSuggestedFailbackClientDeviceMappingForDrs",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "initializeservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitializeService",
+   "resources": []
+  },
+  "issueagentcertificatefordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "IssueAgentCertificateForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "listextensiblesourceservers": {
+   "name": "ListExtensibleSourceServers",
+   "resources": []
+  },
+  "listlaunchactions": {
+   "name": "ListLaunchActions",
+   "resources": [
+    "LaunchConfigurationTemplateResource",
+    "SourceServerResource"
+   ]
+  },
+  "listrecoveryplanexecutions": {
+   "name": "ListRecoveryPlanExecutions",
+   "resources": [
+    "RecoveryPlanResource"
+   ]
+  },
+  "listrecoveryplanexecutionsteps": {
+   "name": "ListRecoveryPlanExecutionSteps",
+   "resources": [
+    "RecoveryPlanExecutionResource"
+   ]
+  },
+  "listrecoveryplans": {
+   "name": "ListRecoveryPlans",
+   "resources": []
+  },
+  "listrecoveryplansteps": {
+   "name": "ListRecoveryPlanSteps",
+   "resources": [
+    "RecoveryPlanResource"
+   ]
+  },
+  "liststagingaccounts": {
+   "name": "ListStagingAccounts",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "notifyagentauthenticationfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyAgentAuthenticationForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "notifyagentconnectedfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyAgentConnectedForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "notifyagentdisconnectedfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyAgentDisconnectedForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "notifyagentreplicationprogressfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyAgentReplicationProgressForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "notifyconsistencyattainedfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyConsistencyAttainedForDrs",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "notifyreplicationserverauthenticationfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyReplicationServerAuthenticationForDrs",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "notifyvolumeeventfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyVolumeEventForDrs",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "putlaunchaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLaunchAction",
+   "resources": [
+    "LaunchConfigurationTemplateResource",
+    "SourceServerResource"
+   ]
+  },
+  "reorderrecoveryplansteps": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReorderRecoveryPlanSteps",
+   "resources": [
+    "RecoveryPlanResource"
+   ]
+  },
+  "retrydatareplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RetryDataReplication",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "retryrecoveryplanexecutionstep": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RetryRecoveryPlanExecutionStep",
+   "resources": [
+    "RecoveryPlanExecutionResource"
+   ]
+  },
+  "reversereplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReverseReplication",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "sendagentlogsfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendAgentLogsForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "sendagentmetricsfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendAgentMetricsForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "sendchannelcommandresultfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendChannelCommandResultForDrs",
+   "resources": []
+  },
+  "sendclientlogsfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendClientLogsForDrs",
+   "resources": []
+  },
+  "sendclientmetricsfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendClientMetricsForDrs",
+   "resources": []
+  },
+  "sendvolumestatsfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendVolumeStatsForDrs",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "startfailbacklaunch": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFailbackLaunch",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "startrecovery": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRecovery",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "startrecoveryplanexecution": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRecoveryPlanExecution",
+   "resources": [
+    "RecoveryPlanResource"
+   ]
+  },
+  "startreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartReplication",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "startsourcenetworkrecovery": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSourceNetworkRecovery",
+   "resources": [
+    "SourceNetworkResource"
+   ]
+  },
+  "startsourcenetworkreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSourceNetworkReplication",
+   "resources": [
+    "SourceNetworkResource"
+   ]
+  },
+  "stopfailback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopFailback",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "stopreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopReplication",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "stopsourcenetworkreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopSourceNetworkReplication",
+   "resources": [
+    "SourceNetworkResource"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "drs:CreateAction"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "JobResource",
+    "LaunchConfigurationTemplateResource",
+    "RecoveryInstanceResource",
+    "RecoveryPlanExecutionResource",
+    "RecoveryPlanResource",
+    "ReplicationConfigurationTemplateResource",
+    "SourceNetworkResource",
+    "SourceServerResource"
+   ]
+  },
+  "terminaterecoveryinstances": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TerminateRecoveryInstances",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "JobResource",
+    "LaunchConfigurationTemplateResource",
+    "RecoveryInstanceResource",
+    "RecoveryPlanExecutionResource",
+    "RecoveryPlanResource",
+    "ReplicationConfigurationTemplateResource",
+    "SourceNetworkResource",
+    "SourceServerResource"
+   ]
+  },
+  "updateagentbacklogfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentBacklogForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "updateagentconversioninfofordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentConversionInfoForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "updateagentreplicationinfofordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentReplicationInfoForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "updateagentreplicationprocessstatefordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentReplicationProcessStateForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "updateagentsourcepropertiesfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentSourcePropertiesForDrs",
+   "resources": [
+    "RecoveryInstanceResource",
+    "SourceServerResource"
+   ]
+  },
+  "updatefailbackclientdevicemappingfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFailbackClientDeviceMappingForDrs",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "updatefailbackclientlastseenfordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFailbackClientLastSeenForDrs",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "updatefailbackreplicationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFailbackReplicationConfiguration",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "updatelaunchconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLaunchConfiguration",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "updatelaunchconfigurationtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLaunchConfigurationTemplate",
+   "resources": [
+    "LaunchConfigurationTemplateResource"
+   ]
+  },
+  "updaterecoveryplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRecoveryPlan",
+   "resources": [
+    "RecoveryPlanResource"
+   ]
+  },
+  "updaterecoveryplanexecutionstep": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRecoveryPlanExecutionStep",
+   "resources": [
+    "RecoveryPlanExecutionResource"
+   ]
+  },
+  "updaterecoveryplanstep": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRecoveryPlanStep",
+   "resources": [
+    "RecoveryPlanResource"
+   ]
+  },
+  "updatereplicationcertificatefordrs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReplicationCertificateForDrs",
+   "resources": [
+    "RecoveryInstanceResource"
+   ]
+  },
+  "updatereplicationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReplicationConfiguration",
+   "resources": [
+    "SourceServerResource"
+   ]
+  },
+  "updatereplicationconfigurationtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReplicationConfigurationTemplate",
+   "resources": [
+    "ReplicationConfigurationTemplateResource"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "drs:CreateAction": [
+   "String"
+  ],
+  "drs:EC2InstanceARN": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "JobResource": {
+   "arnFormats": [
+    "arn:${Partition}:drs:${Region}:${Account}:job/${JobID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "LaunchConfigurationTemplateResource": {
+   "arnFormats": [
+    "arn:${Partition}:drs:${Region}:${Account}:launch-configuration-template/${LaunchConfigurationTemplateID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "RecoveryInstanceResource": {
+   "arnFormats": [
+    "arn:${Partition}:drs:${Region}:${Account}:recovery-instance/${RecoveryInstanceID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "drs:EC2InstanceARN"
+   ]
+  },
+  "RecoveryPlanExecutionResource": {
+   "arnFormats": [
+    "arn:${Partition}:drs:${Region}:${Account}:recovery-plan-execution/${RecoveryPlanExecutionID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "RecoveryPlanResource": {
+   "arnFormats": [
+    "arn:${Partition}:drs:${Region}:${Account}:recovery-plan/${RecoveryPlanID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ReplicationConfigurationTemplateResource": {
+   "arnFormats": [
+    "arn:${Partition}:drs:${Region}:${Account}:replication-configuration-template/${ReplicationConfigurationTemplateID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "SourceNetworkResource": {
+   "arnFormats": [
+    "arn:${Partition}:drs:${Region}:${Account}:source-network/${SourceNetworkID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "SourceServerResource": {
+   "arnFormats": [
+    "arn:${Partition}:drs:${Region}:${Account}:source-server/${SourceServerID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "drs",
+ "serviceName": "DRS",
+ "version": "v1.5"
+}

@@ -1,0 +1,59 @@
+{
+ "actions": {
+  "calculateisolines": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "CalculateIsolines",
+   "resources": [
+    "provider"
+   ]
+  },
+  "calculateroutematrix": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "CalculateRouteMatrix",
+   "resources": [
+    "provider"
+   ]
+  },
+  "calculateroutes": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "CalculateRoutes",
+   "resources": [
+    "provider"
+   ]
+  },
+  "optimizewaypoints": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "OptimizeWaypoints",
+   "resources": [
+    "provider"
+   ]
+  },
+  "snaptoroads": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "SnapToRoads",
+   "resources": [
+    "provider"
+   ]
+  }
+ },
+ "resources": {
+  "provider": {
+   "arnFormats": [
+    "arn:${Partition}:geo-routes:${Region}::provider/default"
+   ]
+  }
+ },
+ "service": "geo-routes",
+ "serviceName": "Geo Routes",
+ "version": "v1.5"
+}

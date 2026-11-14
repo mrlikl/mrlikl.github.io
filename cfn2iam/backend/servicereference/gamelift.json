@@ -1,0 +1,1064 @@
+{
+ "actions": {
+  "acceptmatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptMatch",
+   "resources": []
+  },
+  "allowvendedlogdeliveryforresource": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": [
+    "gameSessionQueue"
+   ]
+  },
+  "claimgameserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ClaimGameServer",
+   "resources": [
+    "gameServerGroup"
+   ]
+  },
+  "createalias": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAlias",
+   "resources": []
+  },
+  "createbuild": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBuild",
+   "resources": []
+  },
+  "createcontainerfleet": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContainerFleet",
+   "resources": []
+  },
+  "createcontainergroupdefinition": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContainerGroupDefinition",
+   "resources": []
+  },
+  "createfleet": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFleet",
+   "resources": []
+  },
+  "createfleetlocations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFleetLocations",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "creategameservergroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGameServerGroup",
+   "resources": []
+  },
+  "creategamesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGameSession",
+   "resources": []
+  },
+  "creategamesessionqueue": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGameSessionQueue",
+   "resources": []
+  },
+  "createlocation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLocation",
+   "resources": []
+  },
+  "creatematchmakingconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMatchmakingConfiguration",
+   "resources": []
+  },
+  "creatematchmakingruleset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMatchmakingRuleSet",
+   "resources": []
+  },
+  "createplayersession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePlayerSession",
+   "resources": []
+  },
+  "createplayersessions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePlayerSessions",
+   "resources": []
+  },
+  "createscript": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScript",
+   "resources": []
+  },
+  "createvpcpeeringauthorization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVpcPeeringAuthorization",
+   "resources": []
+  },
+  "createvpcpeeringconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVpcPeeringConnection",
+   "resources": []
+  },
+  "deletealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAlias",
+   "resources": [
+    "alias"
+   ]
+  },
+  "deletebuild": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBuild",
+   "resources": [
+    "build"
+   ]
+  },
+  "deletecontainerfleet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContainerFleet",
+   "resources": [
+    "containerFleet"
+   ]
+  },
+  "deletecontainergroupdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContainerGroupDefinition",
+   "resources": [
+    "containerGroupDefinition"
+   ]
+  },
+  "deletefleet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "deletefleetlocations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFleetLocations",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "deletegameservergroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGameServerGroup",
+   "resources": [
+    "gameServerGroup"
+   ]
+  },
+  "deletegamesessionqueue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGameSessionQueue",
+   "resources": [
+    "gameSessionQueue"
+   ]
+  },
+  "deletelocation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLocation",
+   "resources": [
+    "location"
+   ]
+  },
+  "deletematchmakingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMatchmakingConfiguration",
+   "resources": [
+    "matchmakingConfiguration"
+   ]
+  },
+  "deletematchmakingruleset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMatchmakingRuleSet",
+   "resources": [
+    "matchmakingRuleSet"
+   ]
+  },
+  "deletescalingpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScalingPolicy",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "deletescript": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScript",
+   "resources": [
+    "script"
+   ]
+  },
+  "deletevpcpeeringauthorization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVpcPeeringAuthorization",
+   "resources": []
+  },
+  "deletevpcpeeringconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVpcPeeringConnection",
+   "resources": []
+  },
+  "deregistercompute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterCompute",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "deregistergameserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterGameServer",
+   "resources": [
+    "gameServerGroup"
+   ]
+  },
+  "describealias": {
+   "name": "DescribeAlias",
+   "resources": [
+    "alias"
+   ]
+  },
+  "describebuild": {
+   "name": "DescribeBuild",
+   "resources": [
+    "build"
+   ]
+  },
+  "describecompute": {
+   "name": "DescribeCompute",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "describecontainerfleet": {
+   "name": "DescribeContainerFleet",
+   "resources": [
+    "containerFleet"
+   ]
+  },
+  "describecontainergroupdefinition": {
+   "name": "DescribeContainerGroupDefinition",
+   "resources": [
+    "containerGroupDefinition"
+   ]
+  },
+  "describecontainergroupportmappings": {
+   "name": "DescribeContainerGroupPortMappings",
+   "resources": [
+    "containerFleet"
+   ]
+  },
+  "describeec2instancelimits": {
+   "name": "DescribeEC2InstanceLimits",
+   "resources": []
+  },
+  "describefleetattributes": {
+   "name": "DescribeFleetAttributes",
+   "resources": []
+  },
+  "describefleetcapacity": {
+   "name": "DescribeFleetCapacity",
+   "resources": []
+  },
+  "describefleetdeployment": {
+   "name": "DescribeFleetDeployment",
+   "resources": [
+    "containerFleet"
+   ]
+  },
+  "describefleetevents": {
+   "name": "DescribeFleetEvents",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "describefleetlocationattributes": {
+   "name": "DescribeFleetLocationAttributes",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "describefleetlocationcapacity": {
+   "name": "DescribeFleetLocationCapacity",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "describefleetlocationutilization": {
+   "name": "DescribeFleetLocationUtilization",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "describefleetportsettings": {
+   "name": "DescribeFleetPortSettings",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "describefleetutilization": {
+   "name": "DescribeFleetUtilization",
+   "resources": []
+  },
+  "describegameserver": {
+   "name": "DescribeGameServer",
+   "resources": [
+    "gameServerGroup"
+   ]
+  },
+  "describegameservergroup": {
+   "name": "DescribeGameServerGroup",
+   "resources": [
+    "gameServerGroup"
+   ]
+  },
+  "describegameserverinstances": {
+   "name": "DescribeGameServerInstances",
+   "resources": [
+    "gameServerGroup"
+   ]
+  },
+  "describegamesessiondetails": {
+   "name": "DescribeGameSessionDetails",
+   "resources": []
+  },
+  "describegamesessionplacement": {
+   "name": "DescribeGameSessionPlacement",
+   "resources": []
+  },
+  "describegamesessionqueues": {
+   "name": "DescribeGameSessionQueues",
+   "resources": []
+  },
+  "describegamesessions": {
+   "name": "DescribeGameSessions",
+   "resources": []
+  },
+  "describeinstances": {
+   "name": "DescribeInstances",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "describematchmaking": {
+   "name": "DescribeMatchmaking",
+   "resources": []
+  },
+  "describematchmakingconfigurations": {
+   "name": "DescribeMatchmakingConfigurations",
+   "resources": []
+  },
+  "describematchmakingrulesets": {
+   "name": "DescribeMatchmakingRuleSets",
+   "resources": []
+  },
+  "describeplayersessions": {
+   "name": "DescribePlayerSessions",
+   "resources": []
+  },
+  "describeruntimeconfiguration": {
+   "name": "DescribeRuntimeConfiguration",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "describescalingpolicies": {
+   "name": "DescribeScalingPolicies",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "describescript": {
+   "name": "DescribeScript",
+   "resources": [
+    "script"
+   ]
+  },
+  "describevpcpeeringauthorizations": {
+   "name": "DescribeVpcPeeringAuthorizations",
+   "resources": []
+  },
+  "describevpcpeeringconnections": {
+   "name": "DescribeVpcPeeringConnections",
+   "resources": []
+  },
+  "getcomputeaccess": {
+   "name": "GetComputeAccess",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "getcomputeauthtoken": {
+   "name": "GetComputeAuthToken",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "getgamesessionlogurl": {
+   "name": "GetGameSessionLogUrl",
+   "resources": []
+  },
+  "getinstanceaccess": {
+   "name": "GetInstanceAccess",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "getplayerconnectiondetails": {
+   "name": "GetPlayerConnectionDetails",
+   "resources": []
+  },
+  "listaliases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAliases",
+   "resources": []
+  },
+  "listbuilds": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBuilds",
+   "resources": []
+  },
+  "listcompute": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCompute",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "listcontainerfleets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContainerFleets",
+   "resources": []
+  },
+  "listcontainergroupdefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContainerGroupDefinitions",
+   "resources": []
+  },
+  "listcontainergroupdefinitionversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContainerGroupDefinitionVersions",
+   "resources": [
+    "containerGroupDefinition"
+   ]
+  },
+  "listfleetdeployments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFleetDeployments",
+   "resources": []
+  },
+  "listfleets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFleets",
+   "resources": []
+  },
+  "listgameservergroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGameServerGroups",
+   "resources": []
+  },
+  "listgameservers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGameServers",
+   "resources": [
+    "gameServerGroup"
+   ]
+  },
+  "listlocations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLocations",
+   "resources": []
+  },
+  "listscripts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScripts",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "alias",
+    "build",
+    "containerFleet",
+    "containerGroupDefinition",
+    "fleet",
+    "gameServerGroup",
+    "gameSessionQueue",
+    "location",
+    "matchmakingConfiguration",
+    "matchmakingRuleSet",
+    "script"
+   ]
+  },
+  "putscalingpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutScalingPolicy",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "registercompute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterCompute",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "registergameserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterGameServer",
+   "resources": [
+    "gameServerGroup"
+   ]
+  },
+  "requestuploadcredentials": {
+   "name": "RequestUploadCredentials",
+   "resources": [
+    "build"
+   ]
+  },
+  "resolvealias": {
+   "name": "ResolveAlias",
+   "resources": [
+    "alias"
+   ]
+  },
+  "resumegameservergroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResumeGameServerGroup",
+   "resources": [
+    "gameServerGroup"
+   ]
+  },
+  "searchgamesessions": {
+   "name": "SearchGameSessions",
+   "resources": []
+  },
+  "startfleetactions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFleetActions",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "startgamesessionplacement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartGameSessionPlacement",
+   "resources": [
+    "gameSessionQueue"
+   ]
+  },
+  "startmatchbackfill": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMatchBackfill",
+   "resources": []
+  },
+  "startmatchmaking": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMatchmaking",
+   "resources": []
+  },
+  "stopfleetactions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopFleetActions",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "stopgamesessionplacement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopGameSessionPlacement",
+   "resources": []
+  },
+  "stopmatchmaking": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopMatchmaking",
+   "resources": []
+  },
+  "suspendgameservergroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SuspendGameServerGroup",
+   "resources": [
+    "gameServerGroup"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "alias",
+    "build",
+    "containerFleet",
+    "containerGroupDefinition",
+    "fleet",
+    "gameServerGroup",
+    "gameSessionQueue",
+    "location",
+    "matchmakingConfiguration",
+    "matchmakingRuleSet",
+    "script"
+   ]
+  },
+  "terminategamesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TerminateGameSession",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "alias",
+    "build",
+    "containerFleet",
+    "containerGroupDefinition",
+    "fleet",
+    "gameServerGroup",
+    "gameSessionQueue",
+    "location",
+    "matchmakingConfiguration",
+    "matchmakingRuleSet",
+    "script"
+   ]
+  },
+  "updatealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAlias",
+   "resources": [
+    "alias"
+   ]
+  },
+  "updatebuild": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBuild",
+   "resources": [
+    "build"
+   ]
+  },
+  "updatecontainerfleet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContainerFleet",
+   "resources": [
+    "containerFleet"
+   ]
+  },
+  "updatecontainergroupdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContainerGroupDefinition",
+   "resources": [
+    "containerGroupDefinition"
+   ]
+  },
+  "updatefleetattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFleetAttributes",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "updatefleetcapacity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFleetCapacity",
+   "resources": [
+    "containerFleet",
+    "fleet"
+   ]
+  },
+  "updatefleetportsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFleetPortSettings",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "updategameserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGameServer",
+   "resources": [
+    "gameServerGroup"
+   ]
+  },
+  "updategameservergroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGameServerGroup",
+   "resources": [
+    "gameServerGroup"
+   ]
+  },
+  "updategamesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGameSession",
+   "resources": []
+  },
+  "updategamesessionqueue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGameSessionQueue",
+   "resources": [
+    "gameSessionQueue"
+   ]
+  },
+  "updatematchmakingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMatchmakingConfiguration",
+   "resources": [
+    "matchmakingConfiguration"
+   ]
+  },
+  "updateruntimeconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRuntimeConfiguration",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "updatescript": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateScript",
+   "resources": [
+    "script"
+   ]
+  },
+  "validatematchmakingruleset": {
+   "name": "ValidateMatchmakingRuleSet",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "alias": {
+   "arnFormats": [
+    "arn:${Partition}:gamelift:${Region}::alias/${AliasId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "build": {
+   "arnFormats": [
+    "arn:${Partition}:gamelift:${Region}:${Account}:build/${BuildId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "containerFleet": {
+   "arnFormats": [
+    "arn:${Partition}:gamelift:${Region}:${Account}:containerfleet/${FleetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "containerGroupDefinition": {
+   "arnFormats": [
+    "arn:${Partition}:gamelift:${Region}:${Account}:containergroupdefinition/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "fleet": {
+   "arnFormats": [
+    "arn:${Partition}:gamelift:${Region}:${Account}:fleet/${FleetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "gameServerGroup": {
+   "arnFormats": [
+    "arn:${Partition}:gamelift:${Region}:${Account}:gameservergroup/${GameServerGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "gameSessionQueue": {
+   "arnFormats": [
+    "arn:${Partition}:gamelift:${Region}:${Account}:gamesessionqueue/${GameSessionQueueName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "location": {
+   "arnFormats": [
+    "arn:${Partition}:gamelift:${Region}:${Account}:location/${LocationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "matchmakingConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:gamelift:${Region}:${Account}:matchmakingconfiguration/${MatchmakingConfigurationName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "matchmakingRuleSet": {
+   "arnFormats": [
+    "arn:${Partition}:gamelift:${Region}:${Account}:matchmakingruleset/${MatchmakingRuleSetName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "script": {
+   "arnFormats": [
+    "arn:${Partition}:gamelift:${Region}:${Account}:script/${ScriptId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "gamelift",
+ "serviceName": "GameLift Servers",
+ "version": "v1.5"
+}

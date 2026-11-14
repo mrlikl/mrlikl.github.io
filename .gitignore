@@ -6,3 +6,5 @@ __pycache__/
 *.py[cod]
 *.pyo
 .DS_Store
+# Locally built cfn2iam wheels for testing the page with ?wheel=
+cfn2iam/dev-wheels/

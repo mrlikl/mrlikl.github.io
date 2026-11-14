@@ -1,0 +1,391 @@
+{
+ "actions": {
+  "assignadminpermissionstouser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssignAdminPermissionsToUser",
+   "resources": [
+    "instance"
+   ]
+  },
+  "createbillofmaterialsimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBillOfMaterialsImportJob",
+   "resources": [
+    "instance"
+   ]
+  },
+  "createdataintegrationflow": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataIntegrationFlow",
+   "resources": [
+    "instance"
+   ]
+  },
+  "createdatalakedataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataLakeDataset",
+   "resources": [
+    "instance"
+   ]
+  },
+  "createdatalakenamespace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataLakeNamespace",
+   "resources": [
+    "instance"
+   ]
+  },
+  "createinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInstance",
+   "resources": [
+    "instance"
+   ]
+  },
+  "createssoapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSSOApplication",
+   "resources": [
+    "instance"
+   ]
+  },
+  "deletedataintegrationflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataIntegrationFlow",
+   "resources": [
+    "data-integration-flow"
+   ]
+  },
+  "deletedatalakedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataLakeDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "deletedatalakenamespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataLakeNamespace",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "deleteinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInstance",
+   "resources": [
+    "instance"
+   ]
+  },
+  "deletessoapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSSOApplication",
+   "resources": [
+    "instance"
+   ]
+  },
+  "describeinstance": {
+   "name": "DescribeInstance",
+   "resources": [
+    "instance"
+   ]
+  },
+  "getbillofmaterialsimportjob": {
+   "name": "GetBillOfMaterialsImportJob",
+   "resources": [
+    "bill-of-materials-import-job"
+   ]
+  },
+  "getdataintegrationevent": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetDataIntegrationEvent",
+   "resources": [
+    "instance"
+   ]
+  },
+  "getdataintegrationflow": {
+   "name": "GetDataIntegrationFlow",
+   "resources": [
+    "data-integration-flow"
+   ]
+  },
+  "getdataintegrationflowexecution": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetDataIntegrationFlowExecution",
+   "resources": [
+    "data-integration-flow"
+   ]
+  },
+  "getdatalakedataset": {
+   "name": "GetDataLakeDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "getdatalakenamespace": {
+   "name": "GetDataLakeNamespace",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "getinstance": {
+   "name": "GetInstance",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listadminusers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAdminUsers",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listdataintegrationevents": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListDataIntegrationEvents",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listdataintegrationflowexecutions": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListDataIntegrationFlowExecutions",
+   "resources": [
+    "data-integration-flow"
+   ]
+  },
+  "listdataintegrationflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataIntegrationFlows",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listdatalakedatasets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataLakeDatasets",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listdatalakenamespaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataLakeNamespaces",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInstances",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "instance"
+   ]
+  },
+  "removeadminpermissionsforuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveAdminPermissionsForUser",
+   "resources": [
+    "instance"
+   ]
+  },
+  "senddataintegrationevent": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendDataIntegrationEvent",
+   "resources": [
+    "instance"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "instance"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "instance"
+   ]
+  },
+  "updatedataintegrationflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataIntegrationFlow",
+   "resources": [
+    "data-integration-flow"
+   ]
+  },
+  "updatedatalakedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataLakeDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "updatedatalakenamespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataLakeNamespace",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "updateinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInstance",
+   "resources": [
+    "instance"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "bill-of-materials-import-job": {
+   "arnFormats": [
+    "arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}/bill-of-materials-import-job/${JobId}"
+   ]
+  },
+  "data-integration-flow": {
+   "arnFormats": [
+    "arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}/data-integration-flows/${FlowName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dataset": {
+   "arnFormats": [
+    "arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}/namespaces/${Namespace}/datasets/${DatasetName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "instance": {
+   "arnFormats": [
+    "arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "namespace": {
+   "arnFormats": [
+    "arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}/namespaces/${Namespace}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "scn",
+ "serviceName": "ASC",
+ "version": "v1.5"
+}

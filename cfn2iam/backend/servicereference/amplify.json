@@ -1,0 +1,419 @@
+{
+ "actions": {
+  "associatewebacl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateWebACL",
+   "resources": [
+    "apps"
+   ]
+  },
+  "createapp": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApp",
+   "resources": []
+  },
+  "createbackendenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBackendEnvironment",
+   "resources": [
+    "apps"
+   ]
+  },
+  "createbranch": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBranch",
+   "resources": [
+    "branches"
+   ]
+  },
+  "createdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeployment",
+   "resources": [
+    "branches"
+   ]
+  },
+  "createdomainassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomainAssociation",
+   "resources": [
+    "domains"
+   ]
+  },
+  "createwebhook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWebHook",
+   "resources": [
+    "branches"
+   ]
+  },
+  "deleteapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApp",
+   "resources": [
+    "apps"
+   ]
+  },
+  "deletebackendenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBackendEnvironment",
+   "resources": [
+    "apps"
+   ]
+  },
+  "deletebranch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBranch",
+   "resources": [
+    "branches"
+   ]
+  },
+  "deletedomainassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomainAssociation",
+   "resources": [
+    "domains"
+   ]
+  },
+  "deletejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteJob",
+   "resources": [
+    "jobs"
+   ]
+  },
+  "deletewebhook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWebHook",
+   "resources": [
+    "webhooks"
+   ]
+  },
+  "disassociatewebacl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateWebACL",
+   "resources": [
+    "apps"
+   ]
+  },
+  "generateaccesslogs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateAccessLogs",
+   "resources": [
+    "apps"
+   ]
+  },
+  "getapp": {
+   "name": "GetApp",
+   "resources": [
+    "apps"
+   ]
+  },
+  "getartifacturl": {
+   "name": "GetArtifactUrl",
+   "resources": [
+    "apps"
+   ]
+  },
+  "getbackendenvironment": {
+   "name": "GetBackendEnvironment",
+   "resources": [
+    "apps"
+   ]
+  },
+  "getbranch": {
+   "name": "GetBranch",
+   "resources": [
+    "branches"
+   ]
+  },
+  "getdomainassociation": {
+   "name": "GetDomainAssociation",
+   "resources": [
+    "domains"
+   ]
+  },
+  "getjob": {
+   "name": "GetJob",
+   "resources": [
+    "jobs"
+   ]
+  },
+  "getwebaclforresource": {
+   "name": "GetWebACLForResource",
+   "resources": [
+    "apps"
+   ]
+  },
+  "getwebhook": {
+   "name": "GetWebHook",
+   "resources": [
+    "webhooks"
+   ]
+  },
+  "listapps": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApps",
+   "resources": []
+  },
+  "listartifacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListArtifacts",
+   "resources": [
+    "apps"
+   ]
+  },
+  "listbackendenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBackendEnvironments",
+   "resources": [
+    "apps"
+   ]
+  },
+  "listbranches": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBranches",
+   "resources": [
+    "apps"
+   ]
+  },
+  "listdomainassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomainAssociations",
+   "resources": [
+    "apps"
+   ]
+  },
+  "listjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobs",
+   "resources": [
+    "branches"
+   ]
+  },
+  "listresourcesforwebacl": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourcesForWebACL",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "apps",
+    "branches",
+    "domains",
+    "webhooks"
+   ]
+  },
+  "listwebhooks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWebHooks",
+   "resources": [
+    "apps"
+   ]
+  },
+  "startdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDeployment",
+   "resources": [
+    "branches"
+   ]
+  },
+  "startjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartJob",
+   "resources": [
+    "jobs"
+   ]
+  },
+  "stopjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopJob",
+   "resources": [
+    "jobs"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "apps",
+    "branches",
+    "domains",
+    "webhooks"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "apps",
+    "branches",
+    "domains",
+    "webhooks"
+   ]
+  },
+  "updateapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApp",
+   "resources": [
+    "apps"
+   ]
+  },
+  "updatebranch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBranch",
+   "resources": [
+    "branches"
+   ]
+  },
+  "updatedomainassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomainAssociation",
+   "resources": [
+    "domains"
+   ]
+  },
+  "updatewebhook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWebHook",
+   "resources": [
+    "webhooks"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "apps": {
+   "arnFormats": [
+    "arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "branches": {
+   "arnFormats": [
+    "arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}/branches/${BranchName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "domains": {
+   "arnFormats": [
+    "arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}/domains/${DomainName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "jobs": {
+   "arnFormats": [
+    "arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}/branches/${BranchName}/jobs/${JobId}"
+   ]
+  },
+  "webhooks": {
+   "arnFormats": [
+    "arn:${Partition}:amplify:${Region}:${Account}:webhooks/${WebhookId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "amplify",
+ "serviceName": "Amplify",
+ "version": "v1.5"
+}

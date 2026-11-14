@@ -1,0 +1,199 @@
+{
+ "actions": {
+  "createparalleldata": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateParallelData",
+   "resources": [
+    "parallel-data"
+   ]
+  },
+  "deleteparalleldata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteParallelData",
+   "resources": [
+    "parallel-data"
+   ]
+  },
+  "deleteterminology": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTerminology",
+   "resources": [
+    "terminology"
+   ]
+  },
+  "describetexttranslationjob": {
+   "name": "DescribeTextTranslationJob",
+   "resources": []
+  },
+  "getparalleldata": {
+   "name": "GetParallelData",
+   "resources": [
+    "parallel-data"
+   ]
+  },
+  "getterminology": {
+   "name": "GetTerminology",
+   "resources": [
+    "terminology"
+   ]
+  },
+  "importterminology": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportTerminology",
+   "resources": [
+    "terminology"
+   ]
+  },
+  "listlanguages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLanguages",
+   "resources": []
+  },
+  "listparalleldata": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListParallelData",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "parallel-data",
+    "terminology"
+   ]
+  },
+  "listterminologies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTerminologies",
+   "resources": []
+  },
+  "listtexttranslationjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTextTranslationJobs",
+   "resources": []
+  },
+  "starttexttranslationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTextTranslationJob",
+   "resources": [
+    "parallel-data",
+    "terminology"
+   ]
+  },
+  "stoptexttranslationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopTextTranslationJob",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "parallel-data",
+    "terminology"
+   ]
+  },
+  "translatedocument": {
+   "name": "TranslateDocument",
+   "resources": [
+    "terminology"
+   ]
+  },
+  "translatetext": {
+   "name": "TranslateText",
+   "resources": [
+    "parallel-data",
+    "terminology"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "parallel-data",
+    "terminology"
+   ]
+  },
+  "updateparalleldata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateParallelData",
+   "resources": [
+    "parallel-data"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "parallel-data": {
+   "arnFormats": [
+    "arn:${Partition}:translate:${Region}:${Account}:parallel-data/${ResourceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "terminology": {
+   "arnFormats": [
+    "arn:${Partition}:translate:${Region}:${Account}:terminology/${ResourceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "translate",
+ "serviceName": "Translate",
+ "version": "v1.5"
+}

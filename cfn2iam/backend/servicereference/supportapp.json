@@ -1,0 +1,84 @@
+{
+ "actions": {
+  "createslackchannelconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSlackChannelConfiguration",
+   "resources": []
+  },
+  "deleteaccountalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccountAlias",
+   "resources": []
+  },
+  "deleteslackchannelconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSlackChannelConfiguration",
+   "resources": []
+  },
+  "deleteslackworkspaceconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSlackWorkspaceConfiguration",
+   "resources": []
+  },
+  "describeslackchannels": {
+   "name": "DescribeSlackChannels",
+   "resources": []
+  },
+  "getaccountalias": {
+   "name": "GetAccountAlias",
+   "resources": []
+  },
+  "getslackoauthparameters": {
+   "name": "GetSlackOauthParameters",
+   "resources": []
+  },
+  "listslackchannelconfigurations": {
+   "name": "ListSlackChannelConfigurations",
+   "resources": []
+  },
+  "listslackworkspaceconfigurations": {
+   "name": "ListSlackWorkspaceConfigurations",
+   "resources": []
+  },
+  "putaccountalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAccountAlias",
+   "resources": []
+  },
+  "redeemslackoauthcode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RedeemSlackOauthCode",
+   "resources": []
+  },
+  "registerslackworkspacefororganization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterSlackWorkspaceForOrganization",
+   "resources": []
+  },
+  "updateslackchannelconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSlackChannelConfiguration",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "supportapp",
+ "serviceName": "Support App",
+ "version": "v1.5"
+}

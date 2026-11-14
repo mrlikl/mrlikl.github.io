@@ -1,0 +1,297 @@
+{
+ "actions": {
+  "acceptagentrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptAgentRequest",
+   "resources": []
+  },
+  "canceltask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelTask",
+   "resources": []
+  },
+  "cancelturn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelTurn",
+   "resources": []
+  },
+  "createagentspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgentSpace",
+   "resources": []
+  },
+  "createautomation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAutomation",
+   "resources": []
+  },
+  "createconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnection",
+   "resources": []
+  },
+  "createconversation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConversation",
+   "resources": []
+  },
+  "createdocument": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDocument",
+   "resources": []
+  },
+  "createintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIntegration",
+   "resources": []
+  },
+  "createonetimeloginsession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOneTimeLoginSession",
+   "resources": []
+  },
+  "createtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTask",
+   "resources": []
+  },
+  "createturn": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTurn",
+   "resources": []
+  },
+  "deleteagentspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentSpace",
+   "resources": []
+  },
+  "deleteartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteArtifact",
+   "resources": []
+  },
+  "deleteautomation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAutomation",
+   "resources": []
+  },
+  "deleteconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnection",
+   "resources": []
+  },
+  "deletedocument": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDocument",
+   "resources": []
+  },
+  "deleteintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIntegration",
+   "resources": []
+  },
+  "getagentrequest": {
+   "name": "GetAgentRequest",
+   "resources": []
+  },
+  "getagentspace": {
+   "name": "GetAgentSpace",
+   "resources": []
+  },
+  "getartifactcontent": {
+   "name": "GetArtifactContent",
+   "resources": []
+  },
+  "getartifactmetadata": {
+   "name": "GetArtifactMetadata",
+   "resources": []
+  },
+  "getautomation": {
+   "name": "GetAutomation",
+   "resources": []
+  },
+  "getconnection": {
+   "name": "GetConnection",
+   "resources": []
+  },
+  "getdocumentcontent": {
+   "name": "GetDocumentContent",
+   "resources": []
+  },
+  "getdocumentmetadata": {
+   "name": "GetDocumentMetadata",
+   "resources": []
+  },
+  "getintegration": {
+   "name": "GetIntegration",
+   "resources": []
+  },
+  "gettask": {
+   "name": "GetTask",
+   "resources": []
+  },
+  "getturn": {
+   "name": "GetTurn",
+   "resources": []
+  },
+  "listagentspaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentSpaces",
+   "resources": []
+  },
+  "listartifacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListArtifacts",
+   "resources": []
+  },
+  "listautomations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomations",
+   "resources": []
+  },
+  "listconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnections",
+   "resources": []
+  },
+  "listconversations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConversations",
+   "resources": []
+  },
+  "listdocuments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDocuments",
+   "resources": []
+  },
+  "listintegrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIntegrations",
+   "resources": []
+  },
+  "listrecords": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecords",
+   "resources": []
+  },
+  "listtasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTasks",
+   "resources": []
+  },
+  "listturns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTurns",
+   "resources": []
+  },
+  "rejectagentrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectAgentRequest",
+   "resources": []
+  },
+  "restoredocument": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreDocument",
+   "resources": []
+  },
+  "sendfeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendFeedback",
+   "resources": []
+  },
+  "updateagentspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentSpace",
+   "resources": []
+  },
+  "updateautomation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAutomation",
+   "resources": []
+  },
+  "updateconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnection",
+   "resources": []
+  },
+  "updatedocument": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDocument",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "finops-agent",
+ "serviceName": "FinOps Agent",
+ "version": "v1.5"
+}

@@ -1,0 +1,141 @@
+{
+ "actions": {
+  "createdashboard": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDashboard",
+   "resources": []
+  },
+  "createscheduledreport": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScheduledReport",
+   "resources": []
+  },
+  "deletedashboard": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDashboard",
+   "resources": []
+  },
+  "deletescheduledreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScheduledReport",
+   "resources": []
+  },
+  "executescheduledreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExecuteScheduledReport",
+   "resources": []
+  },
+  "getdashboard": {
+   "name": "GetDashboard",
+   "resources": []
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": []
+  },
+  "getscheduledreport": {
+   "name": "GetScheduledReport",
+   "resources": []
+  },
+  "listdashboards": {
+   "name": "ListDashboards",
+   "resources": []
+  },
+  "listscheduledreports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScheduledReports",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": []
+  },
+  "updatedashboard": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDashboard",
+   "resources": []
+  },
+  "updatescheduledreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateScheduledReport",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "dashboard": {
+   "arnFormats": [
+    "arn:${Partition}:bcm-dashboards::${Account}:dashboard/${DashboardName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  },
+  "scheduled-report": {
+   "arnFormats": [
+    "arn:${Partition}:bcm-dashboards::${Account}:scheduled-report/${ScheduledReportName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  }
+ },
+ "service": "bcm-dashboards",
+ "serviceName": "Billing and Cost Management Dashboards",
+ "version": "v1.5"
+}

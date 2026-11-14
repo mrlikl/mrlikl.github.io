@@ -1,0 +1,516 @@
+{
+ "actions": {
+  "createdataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "createinferencescheduler": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInferenceScheduler",
+   "resources": [
+    "inference-scheduler",
+    "model"
+   ]
+  },
+  "createlabel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLabel",
+   "resources": [
+    "label-group"
+   ]
+  },
+  "createlabelgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLabelGroup",
+   "resources": [
+    "label-group"
+   ]
+  },
+  "createmodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateModel",
+   "resources": [
+    "dataset",
+    "label-group",
+    "model"
+   ]
+  },
+  "createretrainingscheduler": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRetrainingScheduler",
+   "resources": [
+    "model"
+   ]
+  },
+  "deletedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "deleteinferencescheduler": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInferenceScheduler",
+   "resources": [
+    "inference-scheduler"
+   ]
+  },
+  "deletelabel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLabel",
+   "resources": [
+    "label-group"
+   ]
+  },
+  "deletelabelgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLabelGroup",
+   "resources": [
+    "label-group"
+   ]
+  },
+  "deletemodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteModel",
+   "resources": [
+    "model"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "dataset",
+    "model",
+    "model-version"
+   ]
+  },
+  "deleteretrainingscheduler": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRetrainingScheduler",
+   "resources": [
+    "model"
+   ]
+  },
+  "describedataingestionjob": {
+   "name": "DescribeDataIngestionJob",
+   "resources": []
+  },
+  "describedataset": {
+   "name": "DescribeDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "describeinferencescheduler": {
+   "name": "DescribeInferenceScheduler",
+   "resources": [
+    "inference-scheduler"
+   ]
+  },
+  "describelabel": {
+   "name": "Describelabel",
+   "resources": [
+    "label-group"
+   ]
+  },
+  "describelabelgroup": {
+   "name": "DescribeLabelGroup",
+   "resources": [
+    "label-group"
+   ]
+  },
+  "describemodel": {
+   "name": "DescribeModel",
+   "resources": [
+    "model"
+   ]
+  },
+  "describemodelversion": {
+   "name": "DescribeModelVersion",
+   "resources": [
+    "model-version"
+   ]
+  },
+  "describeresourcepolicy": {
+   "name": "DescribeResourcePolicy",
+   "resources": [
+    "dataset",
+    "model",
+    "model-version"
+   ]
+  },
+  "describeretrainingscheduler": {
+   "name": "DescribeRetrainingScheduler",
+   "resources": [
+    "model"
+   ]
+  },
+  "importdataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "importmodelversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "lookoutequipment:IsImportingData"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportModelVersion",
+   "resources": [
+    "dataset",
+    "label-group",
+    "model"
+   ]
+  },
+  "listdataingestionjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataIngestionJobs",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "listdatasets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasets",
+   "resources": []
+  },
+  "listinferenceevents": {
+   "name": "ListInferenceEvents",
+   "resources": [
+    "inference-scheduler"
+   ]
+  },
+  "listinferenceexecutions": {
+   "name": "ListInferenceExecutions",
+   "resources": [
+    "inference-scheduler"
+   ]
+  },
+  "listinferenceschedulers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInferenceSchedulers",
+   "resources": []
+  },
+  "listlabelgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLabelGroups",
+   "resources": [
+    "label-group"
+   ]
+  },
+  "listlabels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLabels",
+   "resources": [
+    "label-group"
+   ]
+  },
+  "listmodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListModels",
+   "resources": []
+  },
+  "listmodelversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListModelVersions",
+   "resources": [
+    "model"
+   ]
+  },
+  "listretrainingschedulers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRetrainingSchedulers",
+   "resources": []
+  },
+  "listsensorstatistics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSensorStatistics",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "dataset",
+    "inference-scheduler",
+    "label-group",
+    "model",
+    "model-version"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "dataset",
+    "model",
+    "model-version"
+   ]
+  },
+  "startdataingestionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDataIngestionJob",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "startinferencescheduler": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartInferenceScheduler",
+   "resources": [
+    "inference-scheduler"
+   ]
+  },
+  "startretrainingscheduler": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRetrainingScheduler",
+   "resources": [
+    "model"
+   ]
+  },
+  "stopinferencescheduler": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopInferenceScheduler",
+   "resources": [
+    "inference-scheduler"
+   ]
+  },
+  "stopretrainingscheduler": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopRetrainingScheduler",
+   "resources": [
+    "model"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "dataset",
+    "inference-scheduler",
+    "label-group",
+    "model",
+    "model-version"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "dataset",
+    "inference-scheduler",
+    "label-group",
+    "model",
+    "model-version"
+   ]
+  },
+  "updateactivemodelversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateActiveModelVersion",
+   "resources": [
+    "model",
+    "model-version"
+   ]
+  },
+  "updateinferencescheduler": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInferenceScheduler",
+   "resources": [
+    "inference-scheduler"
+   ]
+  },
+  "updatelabelgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLabelGroup",
+   "resources": [
+    "label-group"
+   ]
+  },
+  "updatemodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateModel",
+   "resources": [
+    "model"
+   ]
+  },
+  "updateretrainingscheduler": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRetrainingScheduler",
+   "resources": [
+    "model"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "lookoutequipment:IsImportingData": [
+   "Bool"
+  ]
+ },
+ "resources": {
+  "dataset": {
+   "arnFormats": [
+    "arn:${Partition}:lookoutequipment:${Region}:${Account}:dataset/${DatasetName}/${DatasetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "inference-scheduler": {
+   "arnFormats": [
+    "arn:${Partition}:lookoutequipment:${Region}:${Account}:inference-scheduler/${InferenceSchedulerName}/${InferenceSchedulerId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "label-group": {
+   "arnFormats": [
+    "arn:${Partition}:lookoutequipment:${Region}:${Account}:label-group/${LabelGroupName}/${LabelGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "model": {
+   "arnFormats": [
+    "arn:${Partition}:lookoutequipment:${Region}:${Account}:model/${ModelName}/${ModelId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "model-version": {
+   "arnFormats": [
+    "arn:${Partition}:lookoutequipment:${Region}:${Account}:model/${ModelName}/${ModelId}/model-version/${ModelVersionNumber}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "lookoutequipment",
+ "serviceName": "Lookout for Equipment",
+ "version": "v1.5"
+}

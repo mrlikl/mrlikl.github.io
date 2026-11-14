@@ -1,0 +1,197 @@
+{
+ "actions": {
+  "associateprojectadminuser": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AssociateProjectAdminUser",
+   "resources": [
+    "project"
+   ]
+  },
+  "createproject": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProject",
+   "resources": []
+  },
+  "createprojectuserassociation": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "CreateProjectUserAssociation",
+   "resources": [
+    "project"
+   ]
+  },
+  "createuseraccessroleassociation": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "CreateUserAccessRoleAssociation",
+   "resources": [
+    "project"
+   ]
+  },
+  "deleteproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProject",
+   "resources": [
+    "project"
+   ]
+  },
+  "deleteprojectuserassociation": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteProjectUserAssociation",
+   "resources": [
+    "project"
+   ]
+  },
+  "deleteuseraccessroleassociation": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteUserAccessRoleAssociation",
+   "resources": [
+    "project"
+   ]
+  },
+  "disassociateprojectadminuser": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DisassociateProjectAdminUser",
+   "resources": [
+    "project"
+   ]
+  },
+  "getproject": {
+   "name": "GetProject",
+   "resources": [
+    "project"
+   ]
+  },
+  "getprojectadminuser": {
+   "name": "GetProjectAdminUser",
+   "resources": [
+    "project"
+   ]
+  },
+  "listprojectadminusers": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "ListProjectAdminUsers",
+   "resources": [
+    "project"
+   ]
+  },
+  "listprojects": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProjects",
+   "resources": []
+  },
+  "listprojectuserassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProjectUserAssociations",
+   "resources": [
+    "project"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "project"
+   ]
+  },
+  "listuseraccessroleassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUserAccessRoleAssociations",
+   "resources": [
+    "project"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "project"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "project"
+   ]
+  },
+  "updateproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProject",
+   "resources": [
+    "project"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "project": {
+   "arnFormats": [
+    "arn:${Partition}:monitron:${Region}:${Account}:project/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "monitron",
+ "serviceName": "Monitron",
+ "version": "v1.5"
+}

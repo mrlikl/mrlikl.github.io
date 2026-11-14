@@ -1,0 +1,146 @@
+{
+ "actions": {
+  "canceltask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelTask",
+   "resources": [
+    "task"
+   ]
+  },
+  "createtask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTask",
+   "resources": []
+  },
+  "describedevice": {
+   "name": "DescribeDevice",
+   "resources": [
+    "managed-device"
+   ]
+  },
+  "describedeviceec2instances": {
+   "name": "DescribeDeviceEc2Instances",
+   "resources": [
+    "managed-device"
+   ]
+  },
+  "describeexecution": {
+   "name": "DescribeExecution",
+   "resources": []
+  },
+  "describetask": {
+   "name": "DescribeTask",
+   "resources": [
+    "task"
+   ]
+  },
+  "listdeviceresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeviceResources",
+   "resources": [
+    "managed-device"
+   ]
+  },
+  "listdevices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDevices",
+   "resources": []
+  },
+  "listexecutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExecutions",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "listtasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTasks",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "managed-device",
+    "task"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "managed-device",
+    "task"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "managed-device": {
+   "arnFormats": [
+    "arn:${Partition}:snow-device-management:${Region}:${Account}:managed-device/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "task": {
+   "arnFormats": [
+    "arn:${Partition}:snow-device-management:${Region}:${Account}:task/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "snow-device-management",
+ "serviceName": "Snow Device Management",
+ "version": "v1.5"
+}

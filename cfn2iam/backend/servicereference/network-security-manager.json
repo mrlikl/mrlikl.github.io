@@ -1,0 +1,567 @@
+{
+ "actions": {
+  "createdeployment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeployment",
+   "resources": [
+    "policy",
+    "policy-snapshot",
+    "scope",
+    "scope-snapshot"
+   ]
+  },
+  "createdeploymentsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeploymentSnapshot",
+   "resources": [
+    "deployment"
+   ]
+  },
+  "createpolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePolicy",
+   "resources": [
+    "rule",
+    "rule-snapshot",
+    "template",
+    "template-snapshot"
+   ]
+  },
+  "createpolicysnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePolicySnapshot",
+   "resources": [
+    "policy"
+   ]
+  },
+  "createrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRule",
+   "resources": []
+  },
+  "createrulesnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRuleSnapshot",
+   "resources": [
+    "rule"
+   ]
+  },
+  "createscope": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScope",
+   "resources": []
+  },
+  "createscopesnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScopeSnapshot",
+   "resources": [
+    "scope"
+   ]
+  },
+  "createtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTemplate",
+   "resources": [
+    "rule",
+    "rule-snapshot"
+   ]
+  },
+  "createtemplatesnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTemplateSnapshot",
+   "resources": [
+    "template"
+   ]
+  },
+  "deleteadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAdminAccount",
+   "resources": []
+  },
+  "deletedeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDeployment",
+   "resources": [
+    "deployment",
+    "deployment-snapshot"
+   ]
+  },
+  "deletepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePolicy",
+   "resources": [
+    "policy",
+    "policy-snapshot"
+   ]
+  },
+  "deleterule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRule",
+   "resources": [
+    "rule",
+    "rule-snapshot"
+   ]
+  },
+  "deletescope": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScope",
+   "resources": [
+    "scope",
+    "scope-snapshot"
+   ]
+  },
+  "deletetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTemplate",
+   "resources": [
+    "template",
+    "template-snapshot"
+   ]
+  },
+  "generateruleconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateRuleConfiguration",
+   "resources": []
+  },
+  "getadminaccount": {
+   "name": "GetAdminAccount",
+   "resources": []
+  },
+  "getdeployment": {
+   "name": "GetDeployment",
+   "resources": [
+    "deployment",
+    "deployment-snapshot"
+   ]
+  },
+  "getpolicy": {
+   "name": "GetPolicy",
+   "resources": [
+    "policy",
+    "policy-snapshot"
+   ]
+  },
+  "getrule": {
+   "name": "GetRule",
+   "resources": [
+    "rule",
+    "rule-snapshot"
+   ]
+  },
+  "getscope": {
+   "name": "GetScope",
+   "resources": [
+    "scope",
+    "scope-snapshot"
+   ]
+  },
+  "gettemplate": {
+   "name": "GetTemplate",
+   "resources": [
+    "template",
+    "template-snapshot"
+   ]
+  },
+  "listadminaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAdminAccounts",
+   "resources": []
+  },
+  "listaggregateresourcesynchronizationstatuses": {
+   "name": "ListAggregateResourceSynchronizationStatuses",
+   "resources": []
+  },
+  "listdeployments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeployments",
+   "resources": []
+  },
+  "listdeploymentsnapshots": {
+   "name": "ListDeploymentSnapshots",
+   "resources": [
+    "deployment"
+   ]
+  },
+  "listpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicies",
+   "resources": []
+  },
+  "listpolicysnapshots": {
+   "name": "ListPolicySnapshots",
+   "resources": [
+    "policy"
+   ]
+  },
+  "listresourceassociations": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListResourceAssociations",
+   "resources": [
+    "deployment",
+    "deployment-snapshot",
+    "policy",
+    "policy-snapshot",
+    "rule",
+    "rule-snapshot",
+    "scope",
+    "scope-snapshot",
+    "template",
+    "template-snapshot"
+   ]
+  },
+  "listresourcesynchronizationstatuses": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListResourceSynchronizationStatuses",
+   "resources": [
+    "deployment",
+    "deployment-snapshot"
+   ]
+  },
+  "listrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRules",
+   "resources": []
+  },
+  "listrulesnapshots": {
+   "name": "ListRuleSnapshots",
+   "resources": [
+    "rule"
+   ]
+  },
+  "listscopes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScopes",
+   "resources": []
+  },
+  "listscopesnapshots": {
+   "name": "ListScopeSnapshots",
+   "resources": [
+    "scope"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "deployment",
+    "deployment-snapshot",
+    "policy",
+    "policy-snapshot",
+    "rule",
+    "rule-snapshot",
+    "scope",
+    "scope-snapshot",
+    "template",
+    "template-snapshot"
+   ]
+  },
+  "listtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTemplates",
+   "resources": []
+  },
+  "listtemplatesnapshots": {
+   "name": "ListTemplateSnapshots",
+   "resources": [
+    "template"
+   ]
+  },
+  "putadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAdminAccount",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "deployment",
+    "deployment-snapshot",
+    "policy",
+    "policy-snapshot",
+    "rule",
+    "rule-snapshot",
+    "scope",
+    "scope-snapshot",
+    "template",
+    "template-snapshot"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "deployment",
+    "deployment-snapshot",
+    "policy",
+    "policy-snapshot",
+    "rule",
+    "rule-snapshot",
+    "scope",
+    "scope-snapshot",
+    "template",
+    "template-snapshot"
+   ]
+  },
+  "updatedeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDeployment",
+   "resources": [
+    "deployment",
+    "policy",
+    "policy-snapshot",
+    "scope",
+    "scope-snapshot"
+   ]
+  },
+  "updatepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePolicy",
+   "resources": [
+    "policy",
+    "rule",
+    "rule-snapshot",
+    "template",
+    "template-snapshot"
+   ]
+  },
+  "updaterule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "updatescope": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateScope",
+   "resources": [
+    "scope"
+   ]
+  },
+  "updatetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTemplate",
+   "resources": [
+    "rule",
+    "rule-snapshot",
+    "template"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "deployment": {
+   "arnFormats": [
+    "arn:${Partition}:network-security-manager:${Region}:${Account}:deployment:${DeploymentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "deployment-snapshot": {
+   "arnFormats": [
+    "arn:${Partition}:network-security-manager:${Region}:${Account}:deployment:${DeploymentId}:${VersionNumber}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "policy": {
+   "arnFormats": [
+    "arn:${Partition}:network-security-manager:${Region}:${Account}:policy:${PolicyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "policy-snapshot": {
+   "arnFormats": [
+    "arn:${Partition}:network-security-manager:${Region}:${Account}:policy:${PolicyId}:${VersionNumber}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "rule": {
+   "arnFormats": [
+    "arn:${Partition}:network-security-manager:${Region}:${Account}:rule:${RuleId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "rule-snapshot": {
+   "arnFormats": [
+    "arn:${Partition}:network-security-manager:${Region}:${Account}:rule:${RuleId}:${VersionNumber}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "scope": {
+   "arnFormats": [
+    "arn:${Partition}:network-security-manager:${Region}:${Account}:scope:${ScopeId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "scope-snapshot": {
+   "arnFormats": [
+    "arn:${Partition}:network-security-manager:${Region}:${Account}:scope:${ScopeId}:${VersionNumber}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "template": {
+   "arnFormats": [
+    "arn:${Partition}:network-security-manager:${Region}:${Account}:template:${TemplateId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "template-snapshot": {
+   "arnFormats": [
+    "arn:${Partition}:network-security-manager:${Region}:${Account}:template:${TemplateId}:${VersionNumber}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "network-security-manager",
+ "serviceName": "Network Security Manager",
+ "version": "v1.5"
+}

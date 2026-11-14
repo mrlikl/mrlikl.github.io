@@ -1,0 +1,413 @@
+{
+ "actions": {
+  "abortdocumentversionupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AbortDocumentVersionUpload",
+   "resources": []
+  },
+  "activateuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivateUser",
+   "resources": []
+  },
+  "addnotificationpermissions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddNotificationPermissions",
+   "resources": []
+  },
+  "addresourcepermissions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddResourcePermissions",
+   "resources": []
+  },
+  "addusertogroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddUserToGroup",
+   "resources": []
+  },
+  "checkalias": {
+   "name": "CheckAlias",
+   "resources": []
+  },
+  "createcomment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateComment",
+   "resources": []
+  },
+  "createcustommetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomMetadata",
+   "resources": []
+  },
+  "createfolder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFolder",
+   "resources": []
+  },
+  "createinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInstance",
+   "resources": []
+  },
+  "createlabels": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLabels",
+   "resources": []
+  },
+  "createnotificationsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNotificationSubscription",
+   "resources": []
+  },
+  "createuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUser",
+   "resources": []
+  },
+  "deactivateuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeactivateUser",
+   "resources": []
+  },
+  "deletecomment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteComment",
+   "resources": []
+  },
+  "deletecustommetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomMetadata",
+   "resources": []
+  },
+  "deletedocument": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDocument",
+   "resources": []
+  },
+  "deletedocumentversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDocumentVersion",
+   "resources": []
+  },
+  "deletefolder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFolder",
+   "resources": []
+  },
+  "deletefoldercontents": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFolderContents",
+   "resources": []
+  },
+  "deleteinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInstance",
+   "resources": []
+  },
+  "deletelabels": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLabels",
+   "resources": []
+  },
+  "deletenotificationpermissions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotificationPermissions",
+   "resources": []
+  },
+  "deletenotificationsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotificationSubscription",
+   "resources": []
+  },
+  "deleteuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUser",
+   "resources": []
+  },
+  "deregisterdirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterDirectory",
+   "resources": []
+  },
+  "describeactivities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeActivities",
+   "resources": []
+  },
+  "describeavailabledirectories": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeAvailableDirectories",
+   "resources": []
+  },
+  "describecomments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeComments",
+   "resources": []
+  },
+  "describedocumentversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDocumentVersions",
+   "resources": []
+  },
+  "describefoldercontents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeFolderContents",
+   "resources": []
+  },
+  "describegroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeGroups",
+   "resources": []
+  },
+  "describeinstanceexports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeInstanceExports",
+   "resources": []
+  },
+  "describeinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeInstances",
+   "resources": []
+  },
+  "describenotificationpermissions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeNotificationPermissions",
+   "resources": []
+  },
+  "describenotificationsubscriptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeNotificationSubscriptions",
+   "resources": []
+  },
+  "describeresourcepermissions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeResourcePermissions",
+   "resources": []
+  },
+  "describerootfolders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeRootFolders",
+   "resources": []
+  },
+  "describeusers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeUsers",
+   "resources": []
+  },
+  "downloaddocumentversion": {
+   "name": "DownloadDocumentVersion",
+   "resources": []
+  },
+  "getcurrentuser": {
+   "name": "GetCurrentUser",
+   "resources": []
+  },
+  "getdocument": {
+   "name": "GetDocument",
+   "resources": []
+  },
+  "getdocumentpath": {
+   "name": "GetDocumentPath",
+   "resources": []
+  },
+  "getdocumentversion": {
+   "name": "GetDocumentVersion",
+   "resources": []
+  },
+  "getfolder": {
+   "name": "GetFolder",
+   "resources": []
+  },
+  "getfolderpath": {
+   "name": "GetFolderPath",
+   "resources": []
+  },
+  "getgroup": {
+   "name": "GetGroup",
+   "resources": []
+  },
+  "getresources": {
+   "name": "GetResources",
+   "resources": []
+  },
+  "initiatedocumentversionupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitiateDocumentVersionUpload",
+   "resources": []
+  },
+  "registerdirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterDirectory",
+   "resources": []
+  },
+  "removeallresourcepermissions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveAllResourcePermissions",
+   "resources": []
+  },
+  "removeresourcepermission": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveResourcePermission",
+   "resources": []
+  },
+  "restoredocumentversions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreDocumentVersions",
+   "resources": []
+  },
+  "searchresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchResources",
+   "resources": []
+  },
+  "startinstanceexport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartInstanceExport",
+   "resources": [
+    "organization"
+   ]
+  },
+  "updatedocument": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDocument",
+   "resources": []
+  },
+  "updatedocumentversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDocumentVersion",
+   "resources": []
+  },
+  "updatefolder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFolder",
+   "resources": []
+  },
+  "updateinstancealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInstanceAlias",
+   "resources": []
+  },
+  "updateuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUser",
+   "resources": []
+  },
+  "updateuseradministrativesettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserAdministrativeSettings",
+   "resources": []
+  }
+ },
+ "resources": {
+  "organization": {
+   "arnFormats": [
+    "arn:${Partition}:workdocs:${Region}:${Account}:organization/${ResourceId}"
+   ]
+  }
+ },
+ "service": "workdocs",
+ "serviceName": "WorkDocs",
+ "version": "v1.5"
+}

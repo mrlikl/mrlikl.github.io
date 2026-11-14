@@ -1,0 +1,1117 @@
+{
+ "actions": {
+  "associateoriginationidentity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateOriginationIdentity",
+   "resources": [
+    "PhoneNumber",
+    "Pool",
+    "RcsAgent",
+    "SenderId"
+   ]
+  },
+  "associateprotectconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateProtectConfiguration",
+   "resources": [
+    "ConfigurationSet",
+    "ProtectConfiguration"
+   ]
+  },
+  "carrierlookup": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "CarrierLookup",
+   "resources": []
+  },
+  "createconfigurationset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConfigurationSet",
+   "resources": []
+  },
+  "createconfigurationseteventdestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConfigurationSetEventDestination",
+   "resources": []
+  },
+  "createeventdestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEventDestination",
+   "resources": [
+    "ConfigurationSet"
+   ]
+  },
+  "createnotifyconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNotifyConfiguration",
+   "resources": []
+  },
+  "createoptoutlist": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOptOutList",
+   "resources": []
+  },
+  "createpool": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePool",
+   "resources": [
+    "PhoneNumber",
+    "SenderId"
+   ]
+  },
+  "createprotectconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProtectConfiguration",
+   "resources": []
+  },
+  "creatercsagent": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRcsAgent",
+   "resources": []
+  },
+  "createregistration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRegistration",
+   "resources": []
+  },
+  "createregistrationassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRegistrationAssociation",
+   "resources": [
+    "PhoneNumber",
+    "RcsAgent",
+    "Registration"
+   ]
+  },
+  "createregistrationattachment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRegistrationAttachment",
+   "resources": []
+  },
+  "createregistrationversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRegistrationVersion",
+   "resources": [
+    "Registration"
+   ]
+  },
+  "createverifieddestinationnumber": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVerifiedDestinationNumber",
+   "resources": []
+  },
+  "deleteaccountdefaultprotectconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccountDefaultProtectConfiguration",
+   "resources": []
+  },
+  "deleteconfigurationset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfigurationSet",
+   "resources": [
+    "ConfigurationSet"
+   ]
+  },
+  "deleteconfigurationseteventdestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfigurationSetEventDestination",
+   "resources": []
+  },
+  "deletedefaultmessagetype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDefaultMessageType",
+   "resources": [
+    "ConfigurationSet"
+   ]
+  },
+  "deletedefaultsenderid": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDefaultSenderId",
+   "resources": [
+    "ConfigurationSet"
+   ]
+  },
+  "deleteeventdestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventDestination",
+   "resources": [
+    "ConfigurationSet"
+   ]
+  },
+  "deletekeyword": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKeyword",
+   "resources": [
+    "PhoneNumber",
+    "Pool"
+   ]
+  },
+  "deletemediamessagespendlimitoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMediaMessageSpendLimitOverride",
+   "resources": []
+  },
+  "deletenotifyconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotifyConfiguration",
+   "resources": [
+    "NotifyConfiguration"
+   ]
+  },
+  "deletenotifymessagespendlimitoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotifyMessageSpendLimitOverride",
+   "resources": []
+  },
+  "deleteoptedoutnumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOptedOutNumber",
+   "resources": [
+    "OptOutList"
+   ]
+  },
+  "deleteoptoutlist": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOptOutList",
+   "resources": [
+    "OptOutList"
+   ]
+  },
+  "deletepool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePool",
+   "resources": [
+    "Pool"
+   ]
+  },
+  "deleteprotectconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProtectConfiguration",
+   "resources": [
+    "ProtectConfiguration"
+   ]
+  },
+  "deleteprotectconfigurationrulesetnumberoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProtectConfigurationRuleSetNumberOverride",
+   "resources": [
+    "ProtectConfiguration"
+   ]
+  },
+  "deletercsagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRcsAgent",
+   "resources": [
+    "RcsAgent"
+   ]
+  },
+  "deletercsmessagespendlimitoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRcsMessageSpendLimitOverride",
+   "resources": []
+  },
+  "deleteregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRegistration",
+   "resources": [
+    "Registration"
+   ]
+  },
+  "deleteregistrationattachment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRegistrationAttachment",
+   "resources": [
+    "RegistrationAttachment"
+   ]
+  },
+  "deleteregistrationfieldvalue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRegistrationFieldValue",
+   "resources": [
+    "Registration"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "OptOutList",
+    "PhoneNumber",
+    "Pool",
+    "SenderId"
+   ]
+  },
+  "deletetextmessagespendlimitoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTextMessageSpendLimitOverride",
+   "resources": []
+  },
+  "deleteverifieddestinationnumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVerifiedDestinationNumber",
+   "resources": [
+    "VerifiedDestinationNumber"
+   ]
+  },
+  "deletevoicemessagespendlimitoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVoiceMessageSpendLimitOverride",
+   "resources": []
+  },
+  "describeaccountattributes": {
+   "name": "DescribeAccountAttributes",
+   "resources": []
+  },
+  "describeaccountlimits": {
+   "name": "DescribeAccountLimits",
+   "resources": []
+  },
+  "describeconfigurationsets": {
+   "name": "DescribeConfigurationSets",
+   "resources": [
+    "ConfigurationSet"
+   ]
+  },
+  "describekeywords": {
+   "name": "DescribeKeywords",
+   "resources": [
+    "PhoneNumber",
+    "Pool"
+   ]
+  },
+  "describenotifyconfigurations": {
+   "name": "DescribeNotifyConfigurations",
+   "resources": [
+    "NotifyConfiguration"
+   ]
+  },
+  "describenotifytemplates": {
+   "name": "DescribeNotifyTemplates",
+   "resources": []
+  },
+  "describeoptedoutnumbers": {
+   "name": "DescribeOptedOutNumbers",
+   "resources": [
+    "OptOutList"
+   ]
+  },
+  "describeoptoutlists": {
+   "name": "DescribeOptOutLists",
+   "resources": [
+    "OptOutList"
+   ]
+  },
+  "describephonenumbers": {
+   "name": "DescribePhoneNumbers",
+   "resources": [
+    "PhoneNumber"
+   ]
+  },
+  "describepools": {
+   "name": "DescribePools",
+   "resources": [
+    "Pool"
+   ]
+  },
+  "describeprotectconfigurations": {
+   "name": "DescribeProtectConfigurations",
+   "resources": [
+    "ProtectConfiguration"
+   ]
+  },
+  "describercsagentcountrylaunchstatus": {
+   "name": "DescribeRcsAgentCountryLaunchStatus",
+   "resources": [
+    "RcsAgent"
+   ]
+  },
+  "describercsagents": {
+   "name": "DescribeRcsAgents",
+   "resources": [
+    "RcsAgent"
+   ]
+  },
+  "describeregistrationattachments": {
+   "name": "DescribeRegistrationAttachments",
+   "resources": [
+    "RegistrationAttachment"
+   ]
+  },
+  "describeregistrationfielddefinitions": {
+   "name": "DescribeRegistrationFieldDefinitions",
+   "resources": []
+  },
+  "describeregistrationfieldvalues": {
+   "name": "DescribeRegistrationFieldValues",
+   "resources": [
+    "Registration"
+   ]
+  },
+  "describeregistrations": {
+   "name": "DescribeRegistrations",
+   "resources": [
+    "Registration"
+   ]
+  },
+  "describeregistrationsectiondefinitions": {
+   "name": "DescribeRegistrationSectionDefinitions",
+   "resources": []
+  },
+  "describeregistrationtypedefinitions": {
+   "name": "DescribeRegistrationTypeDefinitions",
+   "resources": []
+  },
+  "describeregistrationversions": {
+   "name": "DescribeRegistrationVersions",
+   "resources": [
+    "Registration"
+   ]
+  },
+  "describesenderids": {
+   "name": "DescribeSenderIds",
+   "resources": [
+    "SenderId"
+   ]
+  },
+  "describespendlimits": {
+   "name": "DescribeSpendLimits",
+   "resources": []
+  },
+  "describeverifieddestinationnumbers": {
+   "name": "DescribeVerifiedDestinationNumbers",
+   "resources": [
+    "VerifiedDestinationNumber"
+   ]
+  },
+  "disassociateoriginationidentity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateOriginationIdentity",
+   "resources": [
+    "PhoneNumber",
+    "Pool",
+    "RcsAgent",
+    "SenderId"
+   ]
+  },
+  "disassociateprotectconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateProtectConfiguration",
+   "resources": [
+    "ConfigurationSet",
+    "ProtectConfiguration"
+   ]
+  },
+  "discardregistrationversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DiscardRegistrationVersion",
+   "resources": [
+    "Registration"
+   ]
+  },
+  "getconfigurationseteventdestinations": {
+   "name": "GetConfigurationSetEventDestinations",
+   "resources": []
+  },
+  "getprotectconfigurationcountryruleset": {
+   "name": "GetProtectConfigurationCountryRuleSet",
+   "resources": [
+    "ProtectConfiguration"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "OptOutList",
+    "PhoneNumber",
+    "Pool",
+    "SenderId"
+   ]
+  },
+  "listavailablephonenumbers": {
+   "name": "ListAvailablePhoneNumbers",
+   "resources": []
+  },
+  "listconfigurationsets": {
+   "name": "ListConfigurationSets",
+   "resources": []
+  },
+  "listnotifycountries": {
+   "name": "ListNotifyCountries",
+   "resources": []
+  },
+  "listpooloriginationidentities": {
+   "name": "ListPoolOriginationIdentities",
+   "resources": [
+    "Pool"
+   ]
+  },
+  "listprotectconfigurationrulesetnumberoverrides": {
+   "name": "ListProtectConfigurationRuleSetNumberOverrides",
+   "resources": [
+    "ProtectConfiguration"
+   ]
+  },
+  "listregistrationassociations": {
+   "name": "ListRegistrationAssociations",
+   "resources": [
+    "Registration"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "ConfigurationSet",
+    "NotifyConfiguration",
+    "OptOutList",
+    "PhoneNumber",
+    "Pool",
+    "ProtectConfiguration",
+    "RcsAgent",
+    "Registration",
+    "RegistrationAttachment",
+    "SenderId",
+    "VerifiedDestinationNumber"
+   ]
+  },
+  "putkeyword": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutKeyword",
+   "resources": [
+    "PhoneNumber",
+    "Pool"
+   ]
+  },
+  "putmessagefeedback": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutMessageFeedback",
+   "resources": [
+    "Message"
+   ]
+  },
+  "putoptedoutnumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutOptedOutNumber",
+   "resources": [
+    "OptOutList"
+   ]
+  },
+  "putprotectconfigurationrulesetnumberoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutProtectConfigurationRuleSetNumberOverride",
+   "resources": [
+    "ProtectConfiguration"
+   ]
+  },
+  "putregistrationfieldvalue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRegistrationFieldValue",
+   "resources": [
+    "Registration"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "OptOutList",
+    "PhoneNumber",
+    "Pool",
+    "SenderId"
+   ]
+  },
+  "releasephonenumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReleasePhoneNumber",
+   "resources": [
+    "PhoneNumber"
+   ]
+  },
+  "releasesenderid": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReleaseSenderId",
+   "resources": [
+    "SenderId"
+   ]
+  },
+  "requestphonenumber": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RequestPhoneNumber",
+   "resources": [
+    "OptOutList",
+    "Pool",
+    "Registration"
+   ]
+  },
+  "requestsenderid": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RequestSenderId",
+   "resources": []
+  },
+  "senddestinationnumberverificationcode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendDestinationNumberVerificationCode",
+   "resources": [
+    "ConfigurationSet",
+    "PhoneNumber",
+    "Pool",
+    "SenderId"
+   ]
+  },
+  "sendmediamessage": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendMediaMessage",
+   "resources": [
+    "ConfigurationSet",
+    "PhoneNumber",
+    "Pool",
+    "ProtectConfiguration"
+   ]
+  },
+  "sendnotifytextmessage": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendNotifyTextMessage",
+   "resources": [
+    "ConfigurationSet",
+    "NotifyConfiguration"
+   ]
+  },
+  "sendnotifyvoicemessage": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendNotifyVoiceMessage",
+   "resources": [
+    "ConfigurationSet",
+    "NotifyConfiguration"
+   ]
+  },
+  "sendrcsmessage": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendRcsMessage",
+   "resources": [
+    "ConfigurationSet",
+    "PhoneNumber",
+    "Pool",
+    "ProtectConfiguration",
+    "RcsAgent",
+    "SenderId"
+   ]
+  },
+  "sendtextmessage": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendTextMessage",
+   "resources": [
+    "ConfigurationSet",
+    "PhoneNumber",
+    "Pool",
+    "ProtectConfiguration",
+    "SenderId"
+   ]
+  },
+  "sendvoicemessage": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendVoiceMessage",
+   "resources": [
+    "ConfigurationSet",
+    "PhoneNumber",
+    "Pool"
+   ]
+  },
+  "setaccountdefaultprotectconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetAccountDefaultProtectConfiguration",
+   "resources": [
+    "ProtectConfiguration"
+   ]
+  },
+  "setdefaultmessagefeedbackenabled": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetDefaultMessageFeedbackEnabled",
+   "resources": [
+    "ConfigurationSet"
+   ]
+  },
+  "setdefaultmessagetype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetDefaultMessageType",
+   "resources": [
+    "ConfigurationSet"
+   ]
+  },
+  "setdefaultsenderid": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetDefaultSenderId",
+   "resources": [
+    "ConfigurationSet"
+   ]
+  },
+  "setmediamessagespendlimitoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetMediaMessageSpendLimitOverride",
+   "resources": []
+  },
+  "setnotifymessagespendlimitoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetNotifyMessageSpendLimitOverride",
+   "resources": []
+  },
+  "setrcsmessagespendlimitoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetRcsMessageSpendLimitOverride",
+   "resources": []
+  },
+  "settextmessagespendlimitoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetTextMessageSpendLimitOverride",
+   "resources": []
+  },
+  "setvoicemessagespendlimitoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetVoiceMessageSpendLimitOverride",
+   "resources": []
+  },
+  "submitregistrationversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitRegistrationVersion",
+   "resources": [
+    "Registration"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "ConfigurationSet",
+    "NotifyConfiguration",
+    "OptOutList",
+    "PhoneNumber",
+    "Pool",
+    "ProtectConfiguration",
+    "RcsAgent",
+    "Registration",
+    "RegistrationAttachment",
+    "SenderId",
+    "VerifiedDestinationNumber"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "ConfigurationSet",
+    "NotifyConfiguration",
+    "OptOutList",
+    "PhoneNumber",
+    "Pool",
+    "ProtectConfiguration",
+    "RcsAgent",
+    "Registration",
+    "RegistrationAttachment",
+    "SenderId",
+    "VerifiedDestinationNumber"
+   ]
+  },
+  "updateconfigurationseteventdestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConfigurationSetEventDestination",
+   "resources": []
+  },
+  "updateeventdestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEventDestination",
+   "resources": [
+    "ConfigurationSet"
+   ]
+  },
+  "updatenotifyconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotifyConfiguration",
+   "resources": [
+    "NotifyConfiguration"
+   ]
+  },
+  "updatephonenumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePhoneNumber",
+   "resources": [
+    "OptOutList",
+    "PhoneNumber"
+   ]
+  },
+  "updatepool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePool",
+   "resources": [
+    "OptOutList",
+    "Pool"
+   ]
+  },
+  "updateprotectconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProtectConfiguration",
+   "resources": [
+    "ProtectConfiguration"
+   ]
+  },
+  "updateprotectconfigurationcountryruleset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProtectConfigurationCountryRuleSet",
+   "resources": [
+    "ProtectConfiguration"
+   ]
+  },
+  "updatercsagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRcsAgent",
+   "resources": [
+    "RcsAgent"
+   ]
+  },
+  "updatesenderid": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSenderId",
+   "resources": [
+    "SenderId"
+   ]
+  },
+  "verifydestinationnumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VerifyDestinationNumber",
+   "resources": [
+    "VerifiedDestinationNumber"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "ConfigurationSet": {
+   "arnFormats": [
+    "arn:${Partition}:sms-voice:${Region}:${Account}:configuration-set/${ConfigurationSetName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Message": {
+   "arnFormats": [
+    "arn:${Partition}:sms-voice:${Region}:${Account}:message/${MessageId}"
+   ]
+  },
+  "NotifyConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:sms-voice:${Region}:${Account}:notify-configuration/${NotifyConfigurationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "OptOutList": {
+   "arnFormats": [
+    "arn:${Partition}:sms-voice:${Region}:${Account}:opt-out-list/${OptOutListName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "PhoneNumber": {
+   "arnFormats": [
+    "arn:${Partition}:sms-voice:${Region}:${Account}:phone-number/${PhoneNumberId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Pool": {
+   "arnFormats": [
+    "arn:${Partition}:sms-voice:${Region}:${Account}:pool/${PoolId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ProtectConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:sms-voice:${Region}:${Account}:protect-configuration/${ProtectConfigurationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "RcsAgent": {
+   "arnFormats": [
+    "arn:${Partition}:sms-voice:${Region}:${Account}:rcs-agent/${RcsAgentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Registration": {
+   "arnFormats": [
+    "arn:${Partition}:sms-voice:${Region}:${Account}:registration/${RegistrationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "RegistrationAttachment": {
+   "arnFormats": [
+    "arn:${Partition}:sms-voice:${Region}:${Account}:registration-attachment/${RegistrationAttachmentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "SenderId": {
+   "arnFormats": [
+    "arn:${Partition}:sms-voice:${Region}:${Account}:sender-id/${SenderId}/${IsoCountryCode}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "VerifiedDestinationNumber": {
+   "arnFormats": [
+    "arn:${Partition}:sms-voice:${Region}:${Account}:verified-destination-number/${VerifiedDestinationNumberId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "sms-voice",
+ "serviceName": "Pinpoint SMS Voice",
+ "version": "v1.5"
+}

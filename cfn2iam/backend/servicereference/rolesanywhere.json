@@ -1,0 +1,321 @@
+{
+ "actions": {
+  "createprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProfile",
+   "resources": []
+  },
+  "createtrustanchor": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTrustAnchor",
+   "resources": []
+  },
+  "deleteattributemapping": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAttributeMapping",
+   "resources": [
+    "profile"
+   ]
+  },
+  "deletecrl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCrl",
+   "resources": [
+    "crl"
+   ]
+  },
+  "deleteprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "deletetrustanchor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTrustAnchor",
+   "resources": [
+    "trust-anchor"
+   ]
+  },
+  "disablecrl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableCrl",
+   "resources": [
+    "crl"
+   ]
+  },
+  "disableprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "disabletrustanchor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableTrustAnchor",
+   "resources": [
+    "trust-anchor"
+   ]
+  },
+  "enablecrl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableCrl",
+   "resources": [
+    "crl"
+   ]
+  },
+  "enableprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "enabletrustanchor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableTrustAnchor",
+   "resources": [
+    "trust-anchor"
+   ]
+  },
+  "getcrl": {
+   "name": "GetCrl",
+   "resources": [
+    "crl"
+   ]
+  },
+  "getprofile": {
+   "name": "GetProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "getsubject": {
+   "name": "GetSubject",
+   "resources": [
+    "subject"
+   ]
+  },
+  "gettrustanchor": {
+   "name": "GetTrustAnchor",
+   "resources": [
+    "trust-anchor"
+   ]
+  },
+  "importcrl": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportCrl",
+   "resources": []
+  },
+  "listcrls": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCrls",
+   "resources": []
+  },
+  "listprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfiles",
+   "resources": []
+  },
+  "listsubjects": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubjects",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "listtrustanchors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrustAnchors",
+   "resources": []
+  },
+  "putattributemapping": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAttributeMapping",
+   "resources": [
+    "profile"
+   ]
+  },
+  "putnotificationsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutNotificationSettings",
+   "resources": [
+    "trust-anchor"
+   ]
+  },
+  "resetnotificationsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetNotificationSettings",
+   "resources": [
+    "trust-anchor"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "crl",
+    "profile",
+    "subject",
+    "trust-anchor"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "crl",
+    "profile",
+    "subject",
+    "trust-anchor"
+   ]
+  },
+  "updatecrl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCrl",
+   "resources": [
+    "crl"
+   ]
+  },
+  "updateprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "updatetrustanchor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTrustAnchor",
+   "resources": [
+    "trust-anchor"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "crl": {
+   "arnFormats": [
+    "arn:${Partition}:rolesanywhere:${Region}:${Account}:crl/${CrlId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "profile": {
+   "arnFormats": [
+    "arn:${Partition}:rolesanywhere:${Region}:${Account}:profile/${ProfileId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "subject": {
+   "arnFormats": [
+    "arn:${Partition}:rolesanywhere:${Region}:${Account}:subject/${SubjectId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "trust-anchor": {
+   "arnFormats": [
+    "arn:${Partition}:rolesanywhere:${Region}:${Account}:trust-anchor/${TrustAnchorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "rolesanywhere",
+ "serviceName": "IAM Roles Anywhere",
+ "version": "v1.5"
+}

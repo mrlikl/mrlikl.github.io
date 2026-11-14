@@ -1,0 +1,784 @@
+{
+ "actions": {
+  "associateapprovalruletemplatewithrepository": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateApprovalRuleTemplateWithRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "batchassociateapprovalruletemplatewithrepositories": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchAssociateApprovalRuleTemplateWithRepositories",
+   "resources": [
+    "repository"
+   ]
+  },
+  "batchdescribemergeconflicts": {
+   "name": "BatchDescribeMergeConflicts",
+   "resources": [
+    "repository"
+   ]
+  },
+  "batchdisassociateapprovalruletemplatefromrepositories": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDisassociateApprovalRuleTemplateFromRepositories",
+   "resources": [
+    "repository"
+   ]
+  },
+  "batchgetcommits": {
+   "name": "BatchGetCommits",
+   "resources": [
+    "repository"
+   ]
+  },
+  "batchgetpullrequests": {
+   "name": "BatchGetPullRequests",
+   "resources": [
+    "repository"
+   ]
+  },
+  "batchgetrepositories": {
+   "name": "BatchGetRepositories",
+   "resources": [
+    "repository"
+   ]
+  },
+  "canceluploadarchive": {
+   "name": "CancelUploadArchive",
+   "resources": [
+    "repository"
+   ]
+  },
+  "createapprovalruletemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApprovalRuleTemplate",
+   "resources": []
+  },
+  "createbranch": {
+   "conditionKeys": [
+    "codecommit:References"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBranch",
+   "resources": [
+    "repository"
+   ]
+  },
+  "createcommit": {
+   "conditionKeys": [
+    "codecommit:References"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCommit",
+   "resources": [
+    "repository"
+   ]
+  },
+  "createpullrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePullRequest",
+   "resources": [
+    "repository"
+   ]
+  },
+  "createpullrequestapprovalrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePullRequestApprovalRule",
+   "resources": [
+    "repository"
+   ]
+  },
+  "createrepository": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "createunreferencedmergecommit": {
+   "conditionKeys": [
+    "codecommit:References"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUnreferencedMergeCommit",
+   "resources": [
+    "repository"
+   ]
+  },
+  "deleteapprovalruletemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApprovalRuleTemplate",
+   "resources": []
+  },
+  "deletebranch": {
+   "conditionKeys": [
+    "codecommit:References"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBranch",
+   "resources": [
+    "repository"
+   ]
+  },
+  "deletecommentcontent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCommentContent",
+   "resources": [
+    "repository"
+   ]
+  },
+  "deletefile": {
+   "conditionKeys": [
+    "codecommit:References"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFile",
+   "resources": [
+    "repository"
+   ]
+  },
+  "deletepullrequestapprovalrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePullRequestApprovalRule",
+   "resources": [
+    "repository"
+   ]
+  },
+  "deleterepository": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "describemergeconflicts": {
+   "name": "DescribeMergeConflicts",
+   "resources": [
+    "repository"
+   ]
+  },
+  "describepullrequestevents": {
+   "name": "DescribePullRequestEvents",
+   "resources": [
+    "repository"
+   ]
+  },
+  "disassociateapprovalruletemplatefromrepository": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateApprovalRuleTemplateFromRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "evaluatepullrequestapprovalrules": {
+   "name": "EvaluatePullRequestApprovalRules",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getapprovalruletemplate": {
+   "name": "GetApprovalRuleTemplate",
+   "resources": []
+  },
+  "getblob": {
+   "name": "GetBlob",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getblobdifferences": {
+   "name": "GetBlobDifferences",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getbranch": {
+   "name": "GetBranch",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getcomment": {
+   "name": "GetComment",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getcommentreactions": {
+   "name": "GetCommentReactions",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getcommentsforcomparedcommit": {
+   "name": "GetCommentsForComparedCommit",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getcommentsforpullrequest": {
+   "name": "GetCommentsForPullRequest",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getcommit": {
+   "name": "GetCommit",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getcommithistory": {
+   "name": "GetCommitHistory",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getcommitsfrommergebase": {
+   "name": "GetCommitsFromMergeBase",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getdifferences": {
+   "name": "GetDifferences",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getfile": {
+   "name": "GetFile",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getfolder": {
+   "name": "GetFolder",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getmergecommit": {
+   "conditionKeys": [
+    "codecommit:References"
+   ],
+   "name": "GetMergeCommit",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getmergeconflicts": {
+   "name": "GetMergeConflicts",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getmergeoptions": {
+   "name": "GetMergeOptions",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getobjectidentifier": {
+   "name": "GetObjectIdentifier",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getpullrequest": {
+   "name": "GetPullRequest",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getpullrequestapprovalstates": {
+   "name": "GetPullRequestApprovalStates",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getpullrequestoverridestate": {
+   "name": "GetPullRequestOverrideState",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getreferences": {
+   "name": "GetReferences",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getrepository": {
+   "name": "GetRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getrepositorytriggers": {
+   "name": "GetRepositoryTriggers",
+   "resources": [
+    "repository"
+   ]
+  },
+  "gettree": {
+   "name": "GetTree",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getuploadarchivestatus": {
+   "name": "GetUploadArchiveStatus",
+   "resources": [
+    "repository"
+   ]
+  },
+  "gitpull": {
+   "name": "GitPull",
+   "resources": [
+    "repository"
+   ]
+  },
+  "gitpush": {
+   "conditionKeys": [
+    "codecommit:References"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GitPush",
+   "resources": [
+    "repository"
+   ]
+  },
+  "listapprovalruletemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApprovalRuleTemplates",
+   "resources": []
+  },
+  "listassociatedapprovalruletemplatesforrepository": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssociatedApprovalRuleTemplatesForRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "listbranches": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBranches",
+   "resources": [
+    "repository"
+   ]
+  },
+  "listfilecommithistory": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFileCommitHistory",
+   "resources": [
+    "repository"
+   ]
+  },
+  "listpullrequests": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPullRequests",
+   "resources": [
+    "repository"
+   ]
+  },
+  "listrepositories": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRepositories",
+   "resources": []
+  },
+  "listrepositoriesforapprovalruletemplate": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRepositoriesForApprovalRuleTemplate",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "repository"
+   ]
+  },
+  "mergebranchesbyfastforward": {
+   "conditionKeys": [
+    "codecommit:References"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MergeBranchesByFastForward",
+   "resources": [
+    "repository"
+   ]
+  },
+  "mergebranchesbysquash": {
+   "conditionKeys": [
+    "codecommit:References"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MergeBranchesBySquash",
+   "resources": [
+    "repository"
+   ]
+  },
+  "mergebranchesbythreeway": {
+   "conditionKeys": [
+    "codecommit:References"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MergeBranchesByThreeWay",
+   "resources": [
+    "repository"
+   ]
+  },
+  "mergepullrequestbyfastforward": {
+   "conditionKeys": [
+    "codecommit:References"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MergePullRequestByFastForward",
+   "resources": [
+    "repository"
+   ]
+  },
+  "mergepullrequestbysquash": {
+   "conditionKeys": [
+    "codecommit:References"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MergePullRequestBySquash",
+   "resources": [
+    "repository"
+   ]
+  },
+  "mergepullrequestbythreeway": {
+   "conditionKeys": [
+    "codecommit:References"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MergePullRequestByThreeWay",
+   "resources": [
+    "repository"
+   ]
+  },
+  "overridepullrequestapprovalrules": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "OverridePullRequestApprovalRules",
+   "resources": [
+    "repository"
+   ]
+  },
+  "postcommentforcomparedcommit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PostCommentForComparedCommit",
+   "resources": [
+    "repository"
+   ]
+  },
+  "postcommentforpullrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PostCommentForPullRequest",
+   "resources": [
+    "repository"
+   ]
+  },
+  "postcommentreply": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PostCommentReply",
+   "resources": [
+    "repository"
+   ]
+  },
+  "putcommentreaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutCommentReaction",
+   "resources": [
+    "repository"
+   ]
+  },
+  "putfile": {
+   "conditionKeys": [
+    "codecommit:References"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFile",
+   "resources": [
+    "repository"
+   ]
+  },
+  "putrepositorytriggers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRepositoryTriggers",
+   "resources": [
+    "repository"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "repository"
+   ]
+  },
+  "testrepositorytriggers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TestRepositoryTriggers",
+   "resources": [
+    "repository"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "repository"
+   ]
+  },
+  "updateapprovalruletemplatecontent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApprovalRuleTemplateContent",
+   "resources": []
+  },
+  "updateapprovalruletemplatedescription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApprovalRuleTemplateDescription",
+   "resources": []
+  },
+  "updateapprovalruletemplatename": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApprovalRuleTemplateName",
+   "resources": []
+  },
+  "updatecomment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateComment",
+   "resources": [
+    "repository"
+   ]
+  },
+  "updatedefaultbranch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDefaultBranch",
+   "resources": [
+    "repository"
+   ]
+  },
+  "updatepullrequestapprovalrulecontent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePullRequestApprovalRuleContent",
+   "resources": [
+    "repository"
+   ]
+  },
+  "updatepullrequestapprovalstate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePullRequestApprovalState",
+   "resources": [
+    "repository"
+   ]
+  },
+  "updatepullrequestdescription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePullRequestDescription",
+   "resources": [
+    "repository"
+   ]
+  },
+  "updatepullrequeststatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePullRequestStatus",
+   "resources": [
+    "repository"
+   ]
+  },
+  "updatepullrequesttitle": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePullRequestTitle",
+   "resources": [
+    "repository"
+   ]
+  },
+  "updaterepositorydescription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRepositoryDescription",
+   "resources": [
+    "repository"
+   ]
+  },
+  "updaterepositoryencryptionkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRepositoryEncryptionKey",
+   "resources": [
+    "repository"
+   ]
+  },
+  "updaterepositoryname": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRepositoryName",
+   "resources": [
+    "repository"
+   ]
+  },
+  "uploadarchive": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UploadArchive",
+   "resources": [
+    "repository"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "codecommit:References": [
+   "String"
+  ]
+ },
+ "resources": {
+  "repository": {
+   "arnFormats": [
+    "arn:${Partition}:codecommit:${Region}:${Account}:${RepositoryName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "codecommit",
+ "serviceName": "CodeCommit",
+ "version": "v1.5"
+}

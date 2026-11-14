@@ -1,0 +1,422 @@
+{
+ "actions": {
+  "acknowledgejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcknowledgeJob",
+   "resources": []
+  },
+  "acknowledgethirdpartyjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcknowledgeThirdPartyJob",
+   "resources": []
+  },
+  "createcustomactiontype": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomActionType",
+   "resources": [
+    "actiontype"
+   ]
+  },
+  "createpipeline": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "deletecustomactiontype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomActionType",
+   "resources": [
+    "actiontype"
+   ]
+  },
+  "deletepipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "deletewebhook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWebhook",
+   "resources": [
+    "webhook"
+   ]
+  },
+  "deregisterwebhookwiththirdparty": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterWebhookWithThirdParty",
+   "resources": [
+    "webhook"
+   ]
+  },
+  "disablestagetransition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableStageTransition",
+   "resources": [
+    "stage"
+   ]
+  },
+  "enablestagetransition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableStageTransition",
+   "resources": [
+    "stage"
+   ]
+  },
+  "getactiontype": {
+   "name": "GetActionType",
+   "resources": []
+  },
+  "getjobdetails": {
+   "name": "GetJobDetails",
+   "resources": []
+  },
+  "getpipeline": {
+   "name": "GetPipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "getpipelineexecution": {
+   "name": "GetPipelineExecution",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "getpipelinestate": {
+   "name": "GetPipelineState",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "getthirdpartyjobdetails": {
+   "name": "GetThirdPartyJobDetails",
+   "resources": []
+  },
+  "listactionexecutions": {
+   "name": "ListActionExecutions",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "listactiontypes": {
+   "name": "ListActionTypes",
+   "resources": []
+  },
+  "listdeployactionexecutiontargets": {
+   "name": "ListDeployActionExecutionTargets",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "listpipelineexecutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPipelineExecutions",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "listpipelines": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPipelines",
+   "resources": []
+  },
+  "listruleexecutions": {
+   "name": "ListRuleExecutions",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "listruletypes": {
+   "name": "ListRuleTypes",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "actiontype",
+    "pipeline",
+    "webhook"
+   ]
+  },
+  "listwebhooks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWebhooks",
+   "resources": [
+    "webhook"
+   ]
+  },
+  "overridestagecondition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "OverrideStageCondition",
+   "resources": [
+    "stage"
+   ]
+  },
+  "pollforjobs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PollForJobs",
+   "resources": [
+    "actiontype"
+   ]
+  },
+  "pollforthirdpartyjobs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PollForThirdPartyJobs",
+   "resources": []
+  },
+  "putactionrevision": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutActionRevision",
+   "resources": [
+    "action"
+   ]
+  },
+  "putapprovalresult": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutApprovalResult",
+   "resources": [
+    "action"
+   ]
+  },
+  "putjobfailureresult": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutJobFailureResult",
+   "resources": []
+  },
+  "putjobsuccessresult": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutJobSuccessResult",
+   "resources": []
+  },
+  "putthirdpartyjobfailureresult": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutThirdPartyJobFailureResult",
+   "resources": []
+  },
+  "putthirdpartyjobsuccessresult": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutThirdPartyJobSuccessResult",
+   "resources": []
+  },
+  "putwebhook": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutWebhook",
+   "resources": [
+    "pipeline",
+    "webhook"
+   ]
+  },
+  "registerwebhookwiththirdparty": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterWebhookWithThirdParty",
+   "resources": [
+    "webhook"
+   ]
+  },
+  "retrystageexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RetryStageExecution",
+   "resources": [
+    "stage"
+   ]
+  },
+  "rollbackstage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RollbackStage",
+   "resources": [
+    "stage"
+   ]
+  },
+  "startpipelineexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartPipelineExecution",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "stoppipelineexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopPipelineExecution",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "actiontype",
+    "pipeline",
+    "webhook"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "actiontype",
+    "pipeline",
+    "webhook"
+   ]
+  },
+  "updateactiontype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateActionType",
+   "resources": [
+    "actiontype"
+   ]
+  },
+  "updatepipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePipeline",
+   "resources": [
+    "pipeline"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "action": {
+   "arnFormats": [
+    "arn:${Partition}:codepipeline:${Region}:${Account}:${PipelineName}/${StageName}/${ActionName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "actiontype": {
+   "arnFormats": [
+    "arn:${Partition}:codepipeline:${Region}:${Account}:actiontype:${Owner}/${Category}/${Provider}/${Version}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "pipeline": {
+   "arnFormats": [
+    "arn:${Partition}:codepipeline:${Region}:${Account}:${PipelineName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "stage": {
+   "arnFormats": [
+    "arn:${Partition}:codepipeline:${Region}:${Account}:${PipelineName}/${StageName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "webhook": {
+   "arnFormats": [
+    "arn:${Partition}:codepipeline:${Region}:${Account}:webhook:${WebhookName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "codepipeline",
+ "serviceName": "CodePipeline",
+ "version": "v1.5"
+}

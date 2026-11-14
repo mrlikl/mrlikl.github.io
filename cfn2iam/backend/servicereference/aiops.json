@@ -1,0 +1,306 @@
+{
+ "actions": {
+  "createinvestigation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInvestigation",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "createinvestigationevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInvestigationEvent",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "createinvestigationgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInvestigationGroup",
+   "resources": []
+  },
+  "createinvestigationresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInvestigationResource",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "createreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReport",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "deleteinvestigation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInvestigation",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "deleteinvestigationgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInvestigationGroup",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "deleteinvestigationgrouppolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInvestigationGroupPolicy",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "generatereport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateReport",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "getephemeralinvestigationresults": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetEphemeralInvestigationResults",
+   "resources": []
+  },
+  "getfact": {
+   "name": "GetFact",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "getfactversions": {
+   "name": "GetFactVersions",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "getinvestigation": {
+   "name": "GetInvestigation",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "getinvestigationevent": {
+   "name": "GetInvestigationEvent",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "getinvestigationgroup": {
+   "name": "GetInvestigationGroup",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "getinvestigationgrouppolicy": {
+   "name": "GetInvestigationGroupPolicy",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "getinvestigationresource": {
+   "name": "GetInvestigationResource",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "getreport": {
+   "name": "GetReport",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "listfacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFacts",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "listinvestigationevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInvestigationEvents",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "listinvestigationgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInvestigationGroups",
+   "resources": []
+  },
+  "listinvestigations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInvestigations",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "listreports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReports",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "putfact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFact",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "putinvestigationgrouppolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutInvestigationGroupPolicy",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "updateinvestigation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInvestigation",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "updateinvestigationevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInvestigationEvent",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "updateinvestigationgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInvestigationGroup",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "updatereport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReport",
+   "resources": [
+    "investigation-group"
+   ]
+  },
+  "validateinvestigationgroup": {
+   "name": "ValidateInvestigationGroup",
+   "resources": [
+    "investigation-group"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "investigation-group": {
+   "arnFormats": [
+    "arn:${Partition}:aiops:${Region}:${Account}:investigation-group/${InvestigationGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "aiops",
+ "serviceName": "AI Operations",
+ "version": "v1.5"
+}

@@ -1,0 +1,2672 @@
+{
+ "actions": {
+  "acceptdelegate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptDelegate",
+   "resources": []
+  },
+  "activateusers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivateUsers",
+   "resources": []
+  },
+  "adddomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddDomain",
+   "resources": []
+  },
+  "addorupdategroups": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddOrUpdateGroups",
+   "resources": []
+  },
+  "associatechannelflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateChannelFlow",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel",
+    "channel-flow"
+   ]
+  },
+  "associatephonenumberswithvoiceconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociatePhoneNumbersWithVoiceConnector",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "associatephonenumberswithvoiceconnectorgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociatePhoneNumbersWithVoiceConnectorGroup",
+   "resources": []
+  },
+  "associatephonenumberwithuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociatePhoneNumberWithUser",
+   "resources": []
+  },
+  "associatesignindelegategroupswithaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSigninDelegateGroupsWithAccount",
+   "resources": []
+  },
+  "associatevoiceconnectorconnect": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateVoiceConnectorConnect",
+   "resources": []
+  },
+  "authorizedirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AuthorizeDirectory",
+   "resources": []
+  },
+  "batchcreateattendee": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateAttendee",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "batchcreatechannelmembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateChannelMembership",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "batchcreateroommembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateRoomMembership",
+   "resources": []
+  },
+  "batchdeletephonenumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeletePhoneNumber",
+   "resources": []
+  },
+  "batchsuspenduser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchSuspendUser",
+   "resources": []
+  },
+  "batchunsuspenduser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUnsuspendUser",
+   "resources": []
+  },
+  "batchupdateattendeecapabilitiesexcept": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateAttendeeCapabilitiesExcept",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "batchupdatephonenumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdatePhoneNumber",
+   "resources": []
+  },
+  "batchupdateuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateUser",
+   "resources": []
+  },
+  "channelflowcallback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ChannelFlowCallback",
+   "resources": [
+    "channel"
+   ]
+  },
+  "connect": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Connect",
+   "resources": [
+    "app-instance-user"
+   ]
+  },
+  "connectdirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConnectDirectory",
+   "resources": []
+  },
+  "createaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccount",
+   "resources": []
+  },
+  "createapikey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApiKey",
+   "resources": []
+  },
+  "createappinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAppInstance",
+   "resources": []
+  },
+  "createappinstanceadmin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAppInstanceAdmin",
+   "resources": [
+    "app-instance",
+    "app-instance-bot",
+    "app-instance-user"
+   ]
+  },
+  "createappinstancebot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAppInstanceBot",
+   "resources": []
+  },
+  "createappinstanceuser": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAppInstanceUser",
+   "resources": []
+  },
+  "createattendee": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAttendee",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "createbot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBot",
+   "resources": []
+  },
+  "createcdrbucket": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCDRBucket",
+   "resources": []
+  },
+  "createchannel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannel",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user"
+   ]
+  },
+  "createchannelban": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannelBan",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "createchannelflow": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannelFlow",
+   "resources": [
+    "app-instance"
+   ]
+  },
+  "createchannelmembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannelMembership",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "createchannelmoderator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannelModerator",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "createconnectanalyticsconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnectAnalyticsConnector",
+   "resources": []
+  },
+  "createconnectcalltransferconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnectCallTransferConnector",
+   "resources": []
+  },
+  "createmediacapturepipeline": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMediaCapturePipeline",
+   "resources": []
+  },
+  "createmediaconcatenationpipeline": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMediaConcatenationPipeline",
+   "resources": []
+  },
+  "createmediainsightspipeline": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMediaInsightsPipeline",
+   "resources": [
+    "media-insights-pipeline-configuration"
+   ]
+  },
+  "createmediainsightspipelineconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMediaInsightsPipelineConfiguration",
+   "resources": []
+  },
+  "createmedialiveconnectorpipeline": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMediaLiveConnectorPipeline",
+   "resources": []
+  },
+  "createmediapipelinekinesisvideostreampool": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMediaPipelineKinesisVideoStreamPool",
+   "resources": []
+  },
+  "createmediastreampipeline": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMediaStreamPipeline",
+   "resources": [
+    "media-pipeline-kinesis-video-stream-pool"
+   ]
+  },
+  "createmeeting": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMeeting",
+   "resources": []
+  },
+  "createmeetingdialout": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMeetingDialOut",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "createmeetingwithattendees": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMeetingWithAttendees",
+   "resources": []
+  },
+  "createphonenumberorder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePhoneNumberOrder",
+   "resources": []
+  },
+  "createproxysession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProxySession",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "createroom": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRoom",
+   "resources": []
+  },
+  "createroommembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRoomMembership",
+   "resources": []
+  },
+  "createsipmediaapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSipMediaApplication",
+   "resources": []
+  },
+  "createsipmediaapplicationcall": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSipMediaApplicationCall",
+   "resources": [
+    "sip-media-application"
+   ]
+  },
+  "createsiprule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSipRule",
+   "resources": [
+    "sip-media-application"
+   ]
+  },
+  "createuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUser",
+   "resources": []
+  },
+  "createvoiceconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVoiceConnector",
+   "resources": []
+  },
+  "createvoiceconnectorgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVoiceConnectorGroup",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "createvoiceprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVoiceProfile",
+   "resources": []
+  },
+  "createvoiceprofiledomain": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVoiceProfileDomain",
+   "resources": []
+  },
+  "deleteaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccount",
+   "resources": []
+  },
+  "deleteaccountopenidconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccountOpenIdConfig",
+   "resources": []
+  },
+  "deleteapikey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApiKey",
+   "resources": []
+  },
+  "deleteappinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppInstance",
+   "resources": [
+    "app-instance"
+   ]
+  },
+  "deleteappinstanceadmin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppInstanceAdmin",
+   "resources": [
+    "app-instance",
+    "app-instance-bot",
+    "app-instance-user"
+   ]
+  },
+  "deleteappinstancebot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppInstanceBot",
+   "resources": [
+    "app-instance-bot"
+   ]
+  },
+  "deleteappinstancestreamingconfigurations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppInstanceStreamingConfigurations",
+   "resources": [
+    "app-instance"
+   ]
+  },
+  "deleteappinstanceuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppInstanceUser",
+   "resources": [
+    "app-instance-user"
+   ]
+  },
+  "deleteattendee": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAttendee",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "deletecdrbucket": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCDRBucket",
+   "resources": []
+  },
+  "deletechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannel",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "deletechannelban": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannelBan",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "deletechannelflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannelFlow",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deletechannelmembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannelMembership",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "deletechannelmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannelMessage",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "deletechannelmoderator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannelModerator",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "deletedelegate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDelegate",
+   "resources": []
+  },
+  "deletedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomain",
+   "resources": []
+  },
+  "deleteeventsconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventsConfiguration",
+   "resources": []
+  },
+  "deletegroups": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGroups",
+   "resources": []
+  },
+  "deletemediacapturepipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMediaCapturePipeline",
+   "resources": [
+    "media-pipeline"
+   ]
+  },
+  "deletemediainsightspipelineconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMediaInsightsPipelineConfiguration",
+   "resources": [
+    "media-insights-pipeline-configuration"
+   ]
+  },
+  "deletemediapipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMediaPipeline",
+   "resources": [
+    "media-pipeline"
+   ]
+  },
+  "deletemediapipelinekinesisvideostreampool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMediaPipelineKinesisVideoStreamPool",
+   "resources": [
+    "media-pipeline-kinesis-video-stream-pool"
+   ]
+  },
+  "deletemeeting": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMeeting",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "deletemessagingstreamingconfigurations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMessagingStreamingConfigurations",
+   "resources": [
+    "app-instance"
+   ]
+  },
+  "deletephonenumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePhoneNumber",
+   "resources": []
+  },
+  "deleteproxysession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProxySession",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "deleteroom": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRoom",
+   "resources": []
+  },
+  "deleteroommembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRoomMembership",
+   "resources": []
+  },
+  "deletesipmediaapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSipMediaApplication",
+   "resources": [
+    "sip-media-application"
+   ]
+  },
+  "deletesiprule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSipRule",
+   "resources": []
+  },
+  "deletevoiceconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVoiceConnector",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "deletevoiceconnectoremergencycallingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVoiceConnectorEmergencyCallingConfiguration",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "deletevoiceconnectorexternalsystemsconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVoiceConnectorExternalSystemsConfiguration",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "deletevoiceconnectorgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVoiceConnectorGroup",
+   "resources": []
+  },
+  "deletevoiceconnectororigination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVoiceConnectorOrigination",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "deletevoiceconnectorproxy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVoiceConnectorProxy",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "deletevoiceconnectorstreamingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVoiceConnectorStreamingConfiguration",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "deletevoiceconnectortermination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVoiceConnectorTermination",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "deletevoiceconnectorterminationcredentials": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVoiceConnectorTerminationCredentials",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "deletevoiceprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVoiceProfile",
+   "resources": [
+    "voice-profile"
+   ]
+  },
+  "deletevoiceprofiledomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVoiceProfileDomain",
+   "resources": [
+    "voice-profile-domain"
+   ]
+  },
+  "deregisterappinstanceuserendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterAppInstanceUserEndpoint",
+   "resources": [
+    "app-instance-user"
+   ]
+  },
+  "describeappinstance": {
+   "name": "DescribeAppInstance",
+   "resources": [
+    "app-instance"
+   ]
+  },
+  "describeappinstanceadmin": {
+   "name": "DescribeAppInstanceAdmin",
+   "resources": [
+    "app-instance",
+    "app-instance-bot",
+    "app-instance-user"
+   ]
+  },
+  "describeappinstancebot": {
+   "name": "DescribeAppInstanceBot",
+   "resources": [
+    "app-instance-bot"
+   ]
+  },
+  "describeappinstanceuser": {
+   "name": "DescribeAppInstanceUser",
+   "resources": [
+    "app-instance-user"
+   ]
+  },
+  "describeappinstanceuserendpoint": {
+   "name": "DescribeAppInstanceUserEndpoint",
+   "resources": [
+    "app-instance-user"
+   ]
+  },
+  "describechannel": {
+   "name": "DescribeChannel",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "describechannelban": {
+   "name": "DescribeChannelBan",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "describechannelflow": {
+   "name": "DescribeChannelFlow",
+   "resources": [
+    "channel-flow"
+   ]
+  },
+  "describechannelmembership": {
+   "name": "DescribeChannelMembership",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "describechannelmembershipforappinstanceuser": {
+   "name": "DescribeChannelMembershipForAppInstanceUser",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "describechannelmoderatedbyappinstanceuser": {
+   "name": "DescribeChannelModeratedByAppInstanceUser",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "describechannelmoderator": {
+   "name": "DescribeChannelModerator",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "disassociatechannelflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateChannelFlow",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel",
+    "channel-flow"
+   ]
+  },
+  "disassociatephonenumberfromuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociatePhoneNumberFromUser",
+   "resources": []
+  },
+  "disassociatephonenumbersfromvoiceconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociatePhoneNumbersFromVoiceConnector",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "disassociatephonenumbersfromvoiceconnectorgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociatePhoneNumbersFromVoiceConnectorGroup",
+   "resources": []
+  },
+  "disassociatesignindelegategroupsfromaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateSigninDelegateGroupsFromAccount",
+   "resources": []
+  },
+  "disassociatevoiceconnectorconnect": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateVoiceConnectorConnect",
+   "resources": []
+  },
+  "disconnectdirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisconnectDirectory",
+   "resources": []
+  },
+  "getaccount": {
+   "name": "GetAccount",
+   "resources": []
+  },
+  "getaccountresource": {
+   "name": "GetAccountResource",
+   "resources": []
+  },
+  "getaccountsettings": {
+   "name": "GetAccountSettings",
+   "resources": []
+  },
+  "getaccountwithopenidconfig": {
+   "name": "GetAccountWithOpenIdConfig",
+   "resources": []
+  },
+  "getappinstanceretentionsettings": {
+   "name": "GetAppInstanceRetentionSettings",
+   "resources": [
+    "app-instance"
+   ]
+  },
+  "getappinstancestreamingconfigurations": {
+   "name": "GetAppInstanceStreamingConfigurations",
+   "resources": [
+    "app-instance"
+   ]
+  },
+  "getattendee": {
+   "name": "GetAttendee",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "getbot": {
+   "name": "GetBot",
+   "resources": []
+  },
+  "getcdrbucket": {
+   "name": "GetCDRBucket",
+   "resources": []
+  },
+  "getchannelmembershippreferences": {
+   "name": "GetChannelMembershipPreferences",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "getchannelmessage": {
+   "name": "GetChannelMessage",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "getchannelmessagestatus": {
+   "name": "GetChannelMessageStatus",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "getdomain": {
+   "name": "GetDomain",
+   "resources": []
+  },
+  "geteventsconfiguration": {
+   "name": "GetEventsConfiguration",
+   "resources": []
+  },
+  "getglobalsettings": {
+   "name": "GetGlobalSettings",
+   "resources": []
+  },
+  "getmediacapturepipeline": {
+   "name": "GetMediaCapturePipeline",
+   "resources": [
+    "media-pipeline"
+   ]
+  },
+  "getmediainsightspipelineconfiguration": {
+   "name": "GetMediaInsightsPipelineConfiguration",
+   "resources": [
+    "media-insights-pipeline-configuration"
+   ]
+  },
+  "getmediapipeline": {
+   "name": "GetMediaPipeline",
+   "resources": [
+    "media-pipeline"
+   ]
+  },
+  "getmediapipelinekinesisvideostreampool": {
+   "name": "GetMediaPipelineKinesisVideoStreamPool",
+   "resources": [
+    "media-pipeline-kinesis-video-stream-pool"
+   ]
+  },
+  "getmeeting": {
+   "name": "GetMeeting",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "getmeetingdetail": {
+   "name": "GetMeetingDetail",
+   "resources": []
+  },
+  "getmessagingsessionendpoint": {
+   "name": "GetMessagingSessionEndpoint",
+   "resources": []
+  },
+  "getmessagingstreamingconfigurations": {
+   "name": "GetMessagingStreamingConfigurations",
+   "resources": [
+    "app-instance"
+   ]
+  },
+  "getphonenumber": {
+   "name": "GetPhoneNumber",
+   "resources": []
+  },
+  "getphonenumberorder": {
+   "name": "GetPhoneNumberOrder",
+   "resources": []
+  },
+  "getphonenumbersettings": {
+   "name": "GetPhoneNumberSettings",
+   "resources": []
+  },
+  "getproxysession": {
+   "name": "GetProxySession",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "getretentionsettings": {
+   "name": "GetRetentionSettings",
+   "resources": []
+  },
+  "getroom": {
+   "name": "GetRoom",
+   "resources": []
+  },
+  "getsipmediaapplication": {
+   "name": "GetSipMediaApplication",
+   "resources": [
+    "sip-media-application"
+   ]
+  },
+  "getsipmediaapplicationalexaskillconfiguration": {
+   "name": "GetSipMediaApplicationAlexaSkillConfiguration",
+   "resources": [
+    "sip-media-application"
+   ]
+  },
+  "getsipmediaapplicationloggingconfiguration": {
+   "name": "GetSipMediaApplicationLoggingConfiguration",
+   "resources": [
+    "sip-media-application"
+   ]
+  },
+  "getsiprule": {
+   "name": "GetSipRule",
+   "resources": []
+  },
+  "getspeakersearchtask": {
+   "name": "GetSpeakerSearchTask",
+   "resources": [
+    "media-pipeline",
+    "voice-connector"
+   ]
+  },
+  "gettelephonylimits": {
+   "name": "GetTelephonyLimits",
+   "resources": []
+  },
+  "getuser": {
+   "name": "GetUser",
+   "resources": []
+  },
+  "getuseractivityreportdata": {
+   "name": "GetUserActivityReportData",
+   "resources": []
+  },
+  "getuserbyemail": {
+   "name": "GetUserByEmail",
+   "resources": []
+  },
+  "getusersettings": {
+   "name": "GetUserSettings",
+   "resources": []
+  },
+  "getvoiceconnector": {
+   "name": "GetVoiceConnector",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "getvoiceconnectoremergencycallingconfiguration": {
+   "name": "GetVoiceConnectorEmergencyCallingConfiguration",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "getvoiceconnectorexternalsystemsconfiguration": {
+   "name": "GetVoiceConnectorExternalSystemsConfiguration",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "getvoiceconnectorgroup": {
+   "name": "GetVoiceConnectorGroup",
+   "resources": []
+  },
+  "getvoiceconnectorloggingconfiguration": {
+   "name": "GetVoiceConnectorLoggingConfiguration",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "getvoiceconnectororigination": {
+   "name": "GetVoiceConnectorOrigination",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "getvoiceconnectorproxy": {
+   "name": "GetVoiceConnectorProxy",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "getvoiceconnectorstreamingconfiguration": {
+   "name": "GetVoiceConnectorStreamingConfiguration",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "getvoiceconnectortermination": {
+   "name": "GetVoiceConnectorTermination",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "getvoiceconnectorterminationhealth": {
+   "name": "GetVoiceConnectorTerminationHealth",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "getvoiceprofile": {
+   "name": "GetVoiceProfile",
+   "resources": [
+    "voice-profile"
+   ]
+  },
+  "getvoiceprofiledomain": {
+   "name": "GetVoiceProfileDomain",
+   "resources": [
+    "voice-profile-domain"
+   ]
+  },
+  "getvoicetoneanalysistask": {
+   "name": "GetVoiceToneAnalysisTask",
+   "resources": [
+    "media-pipeline",
+    "voice-connector"
+   ]
+  },
+  "invitedelegate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InviteDelegate",
+   "resources": []
+  },
+  "inviteusers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InviteUsers",
+   "resources": []
+  },
+  "inviteusersfromprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InviteUsersFromProvider",
+   "resources": []
+  },
+  "listaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccounts",
+   "resources": []
+  },
+  "listaccountusagereportdata": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountUsageReportData",
+   "resources": []
+  },
+  "listapikeys": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApiKeys",
+   "resources": []
+  },
+  "listappinstanceadmins": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppInstanceAdmins",
+   "resources": [
+    "app-instance",
+    "app-instance-bot",
+    "app-instance-user"
+   ]
+  },
+  "listappinstancebots": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppInstanceBots",
+   "resources": [
+    "app-instance-bot"
+   ]
+  },
+  "listappinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppInstances",
+   "resources": [
+    "app-instance"
+   ]
+  },
+  "listappinstanceuserendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppInstanceUserEndpoints",
+   "resources": [
+    "app-instance-user"
+   ]
+  },
+  "listappinstanceusers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppInstanceUsers",
+   "resources": [
+    "app-instance-user"
+   ]
+  },
+  "listattendees": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAttendees",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "listattendeetags": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAttendeeTags",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "listavailablevoiceconnectorregions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAvailableVoiceConnectorRegions",
+   "resources": []
+  },
+  "listbots": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBots",
+   "resources": []
+  },
+  "listcallingregions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCallingRegions",
+   "resources": []
+  },
+  "listcdrbucket": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCDRBucket",
+   "resources": []
+  },
+  "listchannelbans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannelBans",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "listchannelflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannelFlows",
+   "resources": [
+    "channel-flow"
+   ]
+  },
+  "listchannelmemberships": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannelMemberships",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "listchannelmembershipsforappinstanceuser": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannelMembershipsForAppInstanceUser",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user"
+   ]
+  },
+  "listchannelmessages": {
+   "name": "ListChannelMessages",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "listchannelmoderators": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannelModerators",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "listchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannels",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user"
+   ]
+  },
+  "listchannelsassociatedwithchannelflow": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannelsAssociatedWithChannelFlow",
+   "resources": [
+    "channel-flow"
+   ]
+  },
+  "listchannelsmoderatedbyappinstanceuser": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannelsModeratedByAppInstanceUser",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user"
+   ]
+  },
+  "listdelegates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDelegates",
+   "resources": []
+  },
+  "listdirectories": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDirectories",
+   "resources": []
+  },
+  "listdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomains",
+   "resources": []
+  },
+  "listgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroups",
+   "resources": []
+  },
+  "listmediacapturepipelines": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMediaCapturePipelines",
+   "resources": []
+  },
+  "listmediainsightspipelineconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMediaInsightsPipelineConfigurations",
+   "resources": []
+  },
+  "listmediapipelinekinesisvideostreampools": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMediaPipelineKinesisVideoStreamPools",
+   "resources": []
+  },
+  "listmediapipelines": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMediaPipelines",
+   "resources": []
+  },
+  "listmeetingevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMeetingEvents",
+   "resources": []
+  },
+  "listmeetings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMeetings",
+   "resources": []
+  },
+  "listmeetingsreportdata": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMeetingsReportData",
+   "resources": []
+  },
+  "listmeetingtags": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMeetingTags",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "listphonenumberorders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPhoneNumberOrders",
+   "resources": []
+  },
+  "listphonenumbers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPhoneNumbers",
+   "resources": []
+  },
+  "listproxysessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProxySessions",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "listroommemberships": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRoomMemberships",
+   "resources": []
+  },
+  "listrooms": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRooms",
+   "resources": []
+  },
+  "listsipmediaapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSipMediaApplications",
+   "resources": []
+  },
+  "listsiprules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSipRules",
+   "resources": [
+    "sip-media-application"
+   ]
+  },
+  "listsubchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubChannels",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "listsupportedphonenumbercountries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSupportedPhoneNumberCountries",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "app-instance",
+    "app-instance-bot",
+    "app-instance-user",
+    "channel",
+    "channel-flow",
+    "media-insights-pipeline-configuration",
+    "media-pipeline",
+    "media-pipeline-kinesis-video-stream-pool",
+    "meeting",
+    "sip-media-application",
+    "voice-connector",
+    "voice-profile-domain"
+   ]
+  },
+  "listusers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsers",
+   "resources": []
+  },
+  "listvoiceconnectorgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVoiceConnectorGroups",
+   "resources": []
+  },
+  "listvoiceconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVoiceConnectors",
+   "resources": []
+  },
+  "listvoiceconnectorterminationcredentials": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVoiceConnectorTerminationCredentials",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "listvoiceprofiledomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVoiceProfileDomains",
+   "resources": []
+  },
+  "listvoiceprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVoiceProfiles",
+   "resources": [
+    "voice-profile-domain"
+   ]
+  },
+  "logoutuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LogoutUser",
+   "resources": []
+  },
+  "putappinstanceretentionsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAppInstanceRetentionSettings",
+   "resources": [
+    "app-instance"
+   ]
+  },
+  "putappinstancestreamingconfigurations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAppInstanceStreamingConfigurations",
+   "resources": [
+    "app-instance"
+   ]
+  },
+  "putappinstanceuserexpirationsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAppInstanceUserExpirationSettings",
+   "resources": [
+    "app-instance-user"
+   ]
+  },
+  "putchannelexpirationsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutChannelExpirationSettings",
+   "resources": [
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "putchannelmembershippreferences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutChannelMembershipPreferences",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "puteventsconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutEventsConfiguration",
+   "resources": []
+  },
+  "putmessagingstreamingconfigurations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMessagingStreamingConfigurations",
+   "resources": [
+    "app-instance"
+   ]
+  },
+  "putretentionsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRetentionSettings",
+   "resources": []
+  },
+  "putsipmediaapplicationalexaskillconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSipMediaApplicationAlexaSkillConfiguration",
+   "resources": [
+    "sip-media-application"
+   ]
+  },
+  "putsipmediaapplicationloggingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSipMediaApplicationLoggingConfiguration",
+   "resources": [
+    "sip-media-application"
+   ]
+  },
+  "putvoiceconnectoremergencycallingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutVoiceConnectorEmergencyCallingConfiguration",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "putvoiceconnectorexternalsystemsconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutVoiceConnectorExternalSystemsConfiguration",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "putvoiceconnectorloggingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutVoiceConnectorLoggingConfiguration",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "putvoiceconnectororigination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutVoiceConnectorOrigination",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "putvoiceconnectorproxy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutVoiceConnectorProxy",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "putvoiceconnectorstreamingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutVoiceConnectorStreamingConfiguration",
+   "resources": [
+    "media-insights-pipeline-configuration",
+    "voice-connector"
+   ]
+  },
+  "putvoiceconnectortermination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutVoiceConnectorTermination",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "putvoiceconnectorterminationcredentials": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutVoiceConnectorTerminationCredentials",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "redactchannelmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RedactChannelMessage",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "redactconversationmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RedactConversationMessage",
+   "resources": []
+  },
+  "redactroommessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RedactRoomMessage",
+   "resources": []
+  },
+  "regeneratesecuritytoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegenerateSecurityToken",
+   "resources": []
+  },
+  "registerappinstanceuserendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterAppInstanceUserEndpoint",
+   "resources": [
+    "app-instance-user"
+   ]
+  },
+  "renameaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RenameAccount",
+   "resources": []
+  },
+  "renewdelegate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RenewDelegate",
+   "resources": []
+  },
+  "resetaccountresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetAccountResource",
+   "resources": []
+  },
+  "resetpersonalpin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetPersonalPIN",
+   "resources": []
+  },
+  "restorephonenumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestorePhoneNumber",
+   "resources": []
+  },
+  "retrievedataexports": {
+   "name": "RetrieveDataExports",
+   "resources": []
+  },
+  "searchavailablephonenumbers": {
+   "name": "SearchAvailablePhoneNumbers",
+   "resources": []
+  },
+  "searchchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchChannels",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user"
+   ]
+  },
+  "sendchannelmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendChannelMessage",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "startdataexport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDataExport",
+   "resources": []
+  },
+  "startmeetingtranscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMeetingTranscription",
+   "resources": []
+  },
+  "startspeakersearchtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSpeakerSearchTask",
+   "resources": [
+    "media-pipeline",
+    "voice-connector"
+   ]
+  },
+  "startvoicetoneanalysistask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartVoiceToneAnalysisTask",
+   "resources": [
+    "media-pipeline",
+    "voice-connector"
+   ]
+  },
+  "stopmeetingtranscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopMeetingTranscription",
+   "resources": []
+  },
+  "stopspeakersearchtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopSpeakerSearchTask",
+   "resources": [
+    "media-pipeline",
+    "voice-connector"
+   ]
+  },
+  "stopvoicetoneanalysistask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopVoiceToneAnalysisTask",
+   "resources": [
+    "media-pipeline",
+    "voice-connector"
+   ]
+  },
+  "submitsupportrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitSupportRequest",
+   "resources": []
+  },
+  "suspendusers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SuspendUsers",
+   "resources": []
+  },
+  "tagattendee": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagAttendee",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "tagmeeting": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagMeeting",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "app-instance",
+    "app-instance-bot",
+    "app-instance-user",
+    "channel",
+    "channel-flow",
+    "media-insights-pipeline-configuration",
+    "media-pipeline",
+    "media-pipeline-kinesis-video-stream-pool",
+    "meeting",
+    "sip-media-application",
+    "voice-connector",
+    "voice-profile-domain"
+   ]
+  },
+  "unauthorizedirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnauthorizeDirectory",
+   "resources": []
+  },
+  "untagattendee": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagAttendee",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "untagmeeting": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagMeeting",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "app-instance",
+    "app-instance-bot",
+    "app-instance-user",
+    "channel",
+    "channel-flow",
+    "media-insights-pipeline-configuration",
+    "media-pipeline",
+    "media-pipeline-kinesis-video-stream-pool",
+    "meeting",
+    "sip-media-application",
+    "voice-connector",
+    "voice-profile-domain"
+   ]
+  },
+  "updateaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccount",
+   "resources": []
+  },
+  "updateaccountopenidconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountOpenIdConfig",
+   "resources": []
+  },
+  "updateaccountresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountResource",
+   "resources": []
+  },
+  "updateaccountsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountSettings",
+   "resources": []
+  },
+  "updateappinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAppInstance",
+   "resources": [
+    "app-instance"
+   ]
+  },
+  "updateappinstancebot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAppInstanceBot",
+   "resources": [
+    "app-instance-bot"
+   ]
+  },
+  "updateappinstanceuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAppInstanceUser",
+   "resources": [
+    "app-instance-user"
+   ]
+  },
+  "updateappinstanceuserendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAppInstanceUserEndpoint",
+   "resources": [
+    "app-instance-user"
+   ]
+  },
+  "updateattendeecapabilities": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAttendeeCapabilities",
+   "resources": [
+    "meeting"
+   ]
+  },
+  "updatebot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBot",
+   "resources": []
+  },
+  "updatecdrsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCDRSettings",
+   "resources": []
+  },
+  "updatechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChannel",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "updatechannelflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChannelFlow",
+   "resources": [
+    "channel-flow"
+   ]
+  },
+  "updatechannelmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChannelMessage",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "updatechannelreadmarker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChannelReadMarker",
+   "resources": [
+    "app-instance-bot",
+    "app-instance-user",
+    "channel"
+   ]
+  },
+  "updateglobalsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGlobalSettings",
+   "resources": []
+  },
+  "updatemediainsightspipelineconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMediaInsightsPipelineConfiguration",
+   "resources": [
+    "media-insights-pipeline-configuration"
+   ]
+  },
+  "updatemediainsightspipelinestatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMediaInsightsPipelineStatus",
+   "resources": [
+    "media-pipeline"
+   ]
+  },
+  "updatemediapipelinekinesisvideostreampool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMediaPipelineKinesisVideoStreamPool",
+   "resources": [
+    "media-pipeline-kinesis-video-stream-pool"
+   ]
+  },
+  "updatephonenumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePhoneNumber",
+   "resources": []
+  },
+  "updatephonenumbersettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePhoneNumberSettings",
+   "resources": []
+  },
+  "updateproxysession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProxySession",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "updateroom": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoom",
+   "resources": []
+  },
+  "updateroommembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoomMembership",
+   "resources": []
+  },
+  "updatesipmediaapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSipMediaApplication",
+   "resources": [
+    "sip-media-application"
+   ]
+  },
+  "updatesipmediaapplicationcall": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSipMediaApplicationCall",
+   "resources": [
+    "sip-media-application"
+   ]
+  },
+  "updatesiprule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSipRule",
+   "resources": [
+    "sip-media-application"
+   ]
+  },
+  "updatesupportedlicenses": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSupportedLicenses",
+   "resources": []
+  },
+  "updateuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUser",
+   "resources": []
+  },
+  "updateuserlicenses": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserLicenses",
+   "resources": []
+  },
+  "updateusersettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserSettings",
+   "resources": []
+  },
+  "updatevoiceconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVoiceConnector",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "updatevoiceconnectorgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVoiceConnectorGroup",
+   "resources": [
+    "voice-connector"
+   ]
+  },
+  "updatevoiceprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVoiceProfile",
+   "resources": [
+    "voice-profile"
+   ]
+  },
+  "updatevoiceprofiledomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVoiceProfileDomain",
+   "resources": [
+    "voice-profile-domain"
+   ]
+  },
+  "validateaccountresource": {
+   "name": "ValidateAccountResource",
+   "resources": []
+  },
+  "validatee911address": {
+   "name": "ValidateE911Address",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "app-instance": {
+   "arnFormats": [
+    "arn:${Partition}:chime:${Region}:${AccountId}:app-instance/${AppInstanceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "app-instance-bot": {
+   "arnFormats": [
+    "arn:${Partition}:chime:${Region}:${AccountId}:app-instance/${AppInstanceId}/bot/${AppInstanceBotId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "app-instance-user": {
+   "arnFormats": [
+    "arn:${Partition}:chime:${Region}:${AccountId}:app-instance/${AppInstanceId}/user/${AppInstanceUserId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "channel": {
+   "arnFormats": [
+    "arn:${Partition}:chime:${Region}:${AccountId}:app-instance/${AppInstanceId}/channel/${ChannelId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "channel-flow": {
+   "arnFormats": [
+    "arn:${Partition}:chime:${Region}:${AccountId}:app-instance/${AppInstanceId}/channel-flow/${ChannelFlowId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "media-insights-pipeline-configuration": {
+   "arnFormats": [
+    "arn:${Partition}:chime:${Region}:${AccountId}:media-insights-pipeline-configuration/${ConfigurationName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "media-pipeline": {
+   "arnFormats": [
+    "arn:${Partition}:chime:${Region}:${AccountId}:media-pipeline/${MediaPipelineId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "media-pipeline-kinesis-video-stream-pool": {
+   "arnFormats": [
+    "arn:${Partition}:chime:${Region}:${AccountId}:media-pipeline-kinesis-video-stream-pool/${PoolName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "meeting": {
+   "arnFormats": [
+    "arn:${Partition}:chime:${Region}:${AccountId}:meeting/${MeetingId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "sip-media-application": {
+   "arnFormats": [
+    "arn:${Partition}:chime:${Region}:${AccountId}:sma/${SipMediaApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "voice-connector": {
+   "arnFormats": [
+    "arn:${Partition}:chime:${Region}:${AccountId}:vc/${VoiceConnectorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "voice-profile": {
+   "arnFormats": [
+    "arn:${Partition}:chime:${Region}:${AccountId}:voice-profile/${VoiceProfileId}"
+   ]
+  },
+  "voice-profile-domain": {
+   "arnFormats": [
+    "arn:${Partition}:chime:${Region}:${AccountId}:voice-profile-domain/${VoiceProfileDomainId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "chime",
+ "serviceName": "Chime",
+ "version": "v1.5"
+}

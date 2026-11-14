@@ -1,0 +1,71 @@
+{
+ "actions": {
+  "approvepaidsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ApprovePaidSubscription",
+   "resources": []
+  },
+  "associateresourcestosubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateResourcesToSubscription",
+   "resources": []
+  },
+  "cancelsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelSubscription",
+   "resources": []
+  },
+  "cancelsubscriptionchange": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelSubscriptionChange",
+   "resources": []
+  },
+  "createsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSubscription",
+   "resources": []
+  },
+  "disassociateresourcesfromsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateResourcesFromSubscription",
+   "resources": []
+  },
+  "getsubscription": {
+   "name": "GetSubscription",
+   "resources": []
+  },
+  "listsubscriptions": {
+   "name": "ListSubscriptions",
+   "resources": []
+  },
+  "updatesubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSubscription",
+   "resources": []
+  }
+ },
+ "resources": {
+  "subscription": {
+   "arnFormats": [
+    "arn:${Partition}:pricingplanmanager::${Account}:subscription/${SubscriptionId}"
+   ]
+  }
+ },
+ "service": "pricingplanmanager",
+ "serviceName": "PricingPlanManager",
+ "version": "v1.5"
+}

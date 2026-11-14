@@ -1,0 +1,271 @@
+{
+ "actions": {
+  "accessinteractiveendpoints": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AccessInteractiveEndpoints",
+   "resources": [
+    "application"
+   ]
+  },
+  "accesslivyendpoints": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AccessLivyEndpoints",
+   "resources": [
+    "application"
+   ]
+  },
+  "accesssystemprofilelogs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AccessSystemProfileLogs",
+   "resources": [
+    "jobRun"
+   ]
+  },
+  "canceljobrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelJobRun",
+   "resources": [
+    "jobRun"
+   ]
+  },
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "getapplication": {
+   "name": "GetApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "getdashboardforjobrun": {
+   "name": "GetDashboardForJobRun",
+   "resources": [
+    "jobRun"
+   ]
+  },
+  "getjobrun": {
+   "name": "GetJobRun",
+   "resources": [
+    "jobRun"
+   ]
+  },
+  "getresourcedashboard": {
+   "name": "GetResourceDashboard",
+   "resources": [
+    "session"
+   ]
+  },
+  "getsession": {
+   "name": "GetSession",
+   "resources": [
+    "session"
+   ]
+  },
+  "getsessionendpoint": {
+   "name": "GetSessionEndpoint",
+   "resources": [
+    "session"
+   ]
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listjobrunattempts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobRunAttempts",
+   "resources": [
+    "jobRun"
+   ]
+  },
+  "listjobruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobRuns",
+   "resources": [
+    "application"
+   ]
+  },
+  "listsessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSessions",
+   "resources": [
+    "application"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "application",
+    "jobRun",
+    "session"
+   ]
+  },
+  "startapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "startjobrun": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartJobRun",
+   "resources": [
+    "application"
+   ]
+  },
+  "startsession": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSession",
+   "resources": [
+    "application"
+   ]
+  },
+  "stopapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "application",
+    "jobRun",
+    "session"
+   ]
+  },
+  "terminatesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TerminateSession",
+   "resources": [
+    "session"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "application",
+    "jobRun",
+    "session"
+   ]
+  },
+  "updateapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": [
+    "application"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:emr-serverless:${Region}:${Account}:/applications/${ApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "jobRun": {
+   "arnFormats": [
+    "arn:${Partition}:emr-serverless:${Region}:${Account}:/applications/${ApplicationId}/jobruns/${JobRunId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "session": {
+   "arnFormats": [
+    "arn:${Partition}:emr-serverless:${Region}:${Account}:/applications/${ApplicationId}/sessions/${SessionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "emr-serverless",
+ "serviceName": "EMR Serverless",
+ "version": "v1.5"
+}

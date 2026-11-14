@@ -1,0 +1,582 @@
+{
+ "actions": {
+  "associatevehiclefleet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateVehicleFleet",
+   "resources": [
+    "fleet",
+    "vehicle"
+   ]
+  },
+  "createcampaign": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "iotfleetwise:DestinationArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCampaign",
+   "resources": [
+    "campaign",
+    "fleet",
+    "signalcatalog",
+    "vehicle"
+   ]
+  },
+  "createdecodermanifest": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDecoderManifest",
+   "resources": [
+    "decodermanifest",
+    "modelmanifest"
+   ]
+  },
+  "createfleet": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFleet",
+   "resources": [
+    "fleet",
+    "signalcatalog"
+   ]
+  },
+  "createmodelmanifest": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateModelManifest",
+   "resources": [
+    "modelmanifest",
+    "signalcatalog"
+   ]
+  },
+  "createsignalcatalog": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSignalCatalog",
+   "resources": [
+    "signalcatalog"
+   ]
+  },
+  "createstatetemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStateTemplate",
+   "resources": [
+    "signalcatalog",
+    "statetemplate"
+   ]
+  },
+  "createvehicle": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVehicle",
+   "resources": [
+    "decodermanifest",
+    "modelmanifest",
+    "vehicle"
+   ]
+  },
+  "deletecampaign": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "deletedecodermanifest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDecoderManifest",
+   "resources": [
+    "decodermanifest"
+   ]
+  },
+  "deletefleet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "deletemodelmanifest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteModelManifest",
+   "resources": [
+    "modelmanifest"
+   ]
+  },
+  "deletesignalcatalog": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSignalCatalog",
+   "resources": [
+    "signalcatalog"
+   ]
+  },
+  "deletestatetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStateTemplate",
+   "resources": [
+    "statetemplate"
+   ]
+  },
+  "deletevehicle": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVehicle",
+   "resources": [
+    "vehicle"
+   ]
+  },
+  "disassociatevehiclefleet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateVehicleFleet",
+   "resources": [
+    "fleet",
+    "vehicle"
+   ]
+  },
+  "generatecommandpayload": {
+   "conditionKeys": [
+    "iotfleetwise:Signals"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "GenerateCommandPayload",
+   "resources": [
+    "statetemplate",
+    "vehicle"
+   ]
+  },
+  "getcampaign": {
+   "name": "GetCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "getdecodermanifest": {
+   "name": "GetDecoderManifest",
+   "resources": [
+    "decodermanifest"
+   ]
+  },
+  "getencryptionconfiguration": {
+   "name": "GetEncryptionConfiguration",
+   "resources": []
+  },
+  "getfleet": {
+   "name": "GetFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "getloggingoptions": {
+   "name": "GetLoggingOptions",
+   "resources": []
+  },
+  "getmodelmanifest": {
+   "name": "GetModelManifest",
+   "resources": [
+    "modelmanifest"
+   ]
+  },
+  "getregisteraccountstatus": {
+   "name": "GetRegisterAccountStatus",
+   "resources": []
+  },
+  "getsignalcatalog": {
+   "name": "GetSignalCatalog",
+   "resources": [
+    "signalcatalog"
+   ]
+  },
+  "getstatetemplate": {
+   "name": "GetStateTemplate",
+   "resources": [
+    "statetemplate"
+   ]
+  },
+  "getvehicle": {
+   "name": "GetVehicle",
+   "resources": [
+    "vehicle"
+   ]
+  },
+  "getvehiclestatus": {
+   "name": "GetVehicleStatus",
+   "resources": [
+    "vehicle"
+   ]
+  },
+  "importdecodermanifest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportDecoderManifest",
+   "resources": [
+    "decodermanifest"
+   ]
+  },
+  "importsignalcatalog": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportSignalCatalog",
+   "resources": [
+    "signalcatalog"
+   ]
+  },
+  "listcampaigns": {
+   "name": "ListCampaigns",
+   "resources": []
+  },
+  "listdecodermanifestnetworkinterfaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDecoderManifestNetworkInterfaces",
+   "resources": [
+    "decodermanifest"
+   ]
+  },
+  "listdecodermanifests": {
+   "name": "ListDecoderManifests",
+   "resources": []
+  },
+  "listdecodermanifestsignals": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDecoderManifestSignals",
+   "resources": [
+    "decodermanifest"
+   ]
+  },
+  "listfleets": {
+   "name": "ListFleets",
+   "resources": []
+  },
+  "listfleetsforvehicle": {
+   "name": "ListFleetsForVehicle",
+   "resources": [
+    "vehicle"
+   ]
+  },
+  "listmodelmanifestnodes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListModelManifestNodes",
+   "resources": [
+    "modelmanifest"
+   ]
+  },
+  "listmodelmanifests": {
+   "name": "ListModelManifests",
+   "resources": []
+  },
+  "listsignalcatalognodes": {
+   "name": "ListSignalCatalogNodes",
+   "resources": [
+    "signalcatalog"
+   ]
+  },
+  "listsignalcatalogs": {
+   "name": "ListSignalCatalogs",
+   "resources": []
+  },
+  "liststatetemplates": {
+   "name": "ListStateTemplates",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "campaign",
+    "decodermanifest",
+    "fleet",
+    "modelmanifest",
+    "signalcatalog",
+    "statetemplate",
+    "vehicle"
+   ]
+  },
+  "listvehicles": {
+   "name": "ListVehicles",
+   "resources": []
+  },
+  "listvehiclesinfleet": {
+   "name": "ListVehiclesInFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "putencryptionconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutEncryptionConfiguration",
+   "resources": []
+  },
+  "putloggingoptions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLoggingOptions",
+   "resources": []
+  },
+  "registeraccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterAccount",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "campaign",
+    "decodermanifest",
+    "fleet",
+    "modelmanifest",
+    "signalcatalog",
+    "statetemplate",
+    "vehicle"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "campaign",
+    "decodermanifest",
+    "fleet",
+    "modelmanifest",
+    "signalcatalog",
+    "statetemplate",
+    "vehicle"
+   ]
+  },
+  "updatecampaign": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "updatedecodermanifest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDecoderManifest",
+   "resources": [
+    "decodermanifest"
+   ]
+  },
+  "updatefleet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "updatemodelmanifest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateModelManifest",
+   "resources": [
+    "modelmanifest"
+   ]
+  },
+  "updatesignalcatalog": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSignalCatalog",
+   "resources": [
+    "signalcatalog"
+   ]
+  },
+  "updatestatetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStateTemplate",
+   "resources": [
+    "statetemplate"
+   ]
+  },
+  "updatevehicle": {
+   "conditionKeys": [
+    "iotfleetwise:UpdateToDecoderManifestArn",
+    "iotfleetwise:UpdateToModelManifestArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVehicle",
+   "resources": [
+    "decodermanifest",
+    "modelmanifest",
+    "vehicle"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "iotfleetwise:DestinationArn": [
+   "ARN"
+  ],
+  "iotfleetwise:Signals": [
+   "ArrayOfString"
+  ],
+  "iotfleetwise:UpdateToDecoderManifestArn": [
+   "ARN"
+  ],
+  "iotfleetwise:UpdateToModelManifestArn": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "campaign": {
+   "arnFormats": [
+    "arn:${Partition}:iotfleetwise:${Region}:${Account}:campaign/${CampaignName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "decodermanifest": {
+   "arnFormats": [
+    "arn:${Partition}:iotfleetwise:${Region}:${Account}:decoder-manifest/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "fleet": {
+   "arnFormats": [
+    "arn:${Partition}:iotfleetwise:${Region}:${Account}:fleet/${FleetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "modelmanifest": {
+   "arnFormats": [
+    "arn:${Partition}:iotfleetwise:${Region}:${Account}:model-manifest/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "signalcatalog": {
+   "arnFormats": [
+    "arn:${Partition}:iotfleetwise:${Region}:${Account}:signal-catalog/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "statetemplate": {
+   "arnFormats": [
+    "arn:${Partition}:iotfleetwise:${Region}:${Account}:state-template/${StateTemplateId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "vehicle": {
+   "arnFormats": [
+    "arn:${Partition}:iotfleetwise:${Region}:${Account}:vehicle/${VehicleId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "iotfleetwise",
+ "serviceName": "IoT FleetWise",
+ "version": "v1.5"
+}

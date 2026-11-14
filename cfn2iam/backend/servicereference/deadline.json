@@ -1,0 +1,1320 @@
+{
+ "actions": {
+  "associatemembertofarm": {
+   "conditionKeys": [
+    "deadline:AssociatedMembershipLevel",
+    "deadline:MembershipLevel"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AssociateMemberToFarm",
+   "resources": [
+    "farm"
+   ]
+  },
+  "associatemembertofleet": {
+   "conditionKeys": [
+    "deadline:AssociatedMembershipLevel",
+    "deadline:MembershipLevel"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AssociateMemberToFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "associatemembertojob": {
+   "conditionKeys": [
+    "deadline:AssociatedMembershipLevel",
+    "deadline:MembershipLevel"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AssociateMemberToJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "associatemembertoqueue": {
+   "conditionKeys": [
+    "deadline:AssociatedMembershipLevel",
+    "deadline:MembershipLevel"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AssociateMemberToQueue",
+   "resources": [
+    "queue"
+   ]
+  },
+  "assumefleetroleforread": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssumeFleetRoleForRead",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "assumefleetroleforworker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssumeFleetRoleForWorker",
+   "resources": [
+    "worker"
+   ]
+  },
+  "assumequeueroleforread": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssumeQueueRoleForRead",
+   "resources": [
+    "queue"
+   ]
+  },
+  "assumequeueroleforuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssumeQueueRoleForUser",
+   "resources": [
+    "queue"
+   ]
+  },
+  "assumequeueroleforworker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssumeQueueRoleForWorker",
+   "resources": [
+    "queue",
+    "worker"
+   ]
+  },
+  "batchgetjobentity": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "BatchGetJobEntity",
+   "resources": [
+    "worker"
+   ]
+  },
+  "copyjobtemplate": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CopyJobTemplate",
+   "resources": [
+    "job"
+   ]
+  },
+  "createbudget": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBudget",
+   "resources": [
+    "budget"
+   ]
+  },
+  "createfarm": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFarm",
+   "resources": [
+    "farm"
+   ]
+  },
+  "createfleet": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "createjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "createlicenseendpoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLicenseEndpoint",
+   "resources": [
+    "license-endpoint"
+   ]
+  },
+  "createlimit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLimit",
+   "resources": [
+    "farm"
+   ]
+  },
+  "createmonitor": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMonitor",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "createqueue": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQueue",
+   "resources": [
+    "queue"
+   ]
+  },
+  "createqueueenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQueueEnvironment",
+   "resources": [
+    "queue"
+   ]
+  },
+  "createqueuefleetassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQueueFleetAssociation",
+   "resources": [
+    "fleet",
+    "queue"
+   ]
+  },
+  "createqueuelimitassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQueueLimitAssociation",
+   "resources": [
+    "farm",
+    "queue"
+   ]
+  },
+  "createstorageprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStorageProfile",
+   "resources": [
+    "farm"
+   ]
+  },
+  "createworker": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorker",
+   "resources": [
+    "worker"
+   ]
+  },
+  "deletebudget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBudget",
+   "resources": [
+    "budget"
+   ]
+  },
+  "deletefarm": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFarm",
+   "resources": [
+    "farm"
+   ]
+  },
+  "deletefleet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "deletelicenseendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLicenseEndpoint",
+   "resources": [
+    "license-endpoint"
+   ]
+  },
+  "deletelimit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLimit",
+   "resources": [
+    "farm"
+   ]
+  },
+  "deletemeteredproduct": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMeteredProduct",
+   "resources": [
+    "license-endpoint"
+   ]
+  },
+  "deletemonitor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMonitor",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "deletequeue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQueue",
+   "resources": [
+    "queue"
+   ]
+  },
+  "deletequeueenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQueueEnvironment",
+   "resources": [
+    "queue"
+   ]
+  },
+  "deletequeuefleetassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQueueFleetAssociation",
+   "resources": [
+    "fleet",
+    "queue"
+   ]
+  },
+  "deletequeuelimitassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQueueLimitAssociation",
+   "resources": [
+    "farm",
+    "queue"
+   ]
+  },
+  "deletestorageprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStorageProfile",
+   "resources": [
+    "farm"
+   ]
+  },
+  "deletevolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVolume",
+   "resources": [
+    "volume"
+   ]
+  },
+  "deleteworker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorker",
+   "resources": [
+    "worker"
+   ]
+  },
+  "disassociatememberfromfarm": {
+   "conditionKeys": [
+    "deadline:AssociatedMembershipLevel"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DisassociateMemberFromFarm",
+   "resources": [
+    "farm"
+   ]
+  },
+  "disassociatememberfromfleet": {
+   "conditionKeys": [
+    "deadline:AssociatedMembershipLevel"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DisassociateMemberFromFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "disassociatememberfromjob": {
+   "conditionKeys": [
+    "deadline:AssociatedMembershipLevel"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DisassociateMemberFromJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "disassociatememberfromqueue": {
+   "conditionKeys": [
+    "deadline:AssociatedMembershipLevel"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DisassociateMemberFromQueue",
+   "resources": [
+    "queue"
+   ]
+  },
+  "getapplicationversion": {
+   "name": "GetApplicationVersion",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "getbudget": {
+   "name": "GetBudget",
+   "resources": [
+    "budget"
+   ]
+  },
+  "getfarm": {
+   "name": "GetFarm",
+   "resources": [
+    "farm"
+   ]
+  },
+  "getfleet": {
+   "name": "GetFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "getjob": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "getjobtemplate": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetJobTemplate",
+   "resources": [
+    "job"
+   ]
+  },
+  "getlicenseendpoint": {
+   "name": "GetLicenseEndpoint",
+   "resources": [
+    "license-endpoint"
+   ]
+  },
+  "getlimit": {
+   "name": "GetLimit",
+   "resources": [
+    "farm"
+   ]
+  },
+  "getmonitor": {
+   "name": "GetMonitor",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "getmonitorsettings": {
+   "name": "GetMonitorSettings",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "getqueue": {
+   "name": "GetQueue",
+   "resources": [
+    "queue"
+   ]
+  },
+  "getqueueenvironment": {
+   "name": "GetQueueEnvironment",
+   "resources": [
+    "queue"
+   ]
+  },
+  "getqueuefleetassociation": {
+   "name": "GetQueueFleetAssociation",
+   "resources": [
+    "fleet",
+    "queue"
+   ]
+  },
+  "getqueuelimitassociation": {
+   "name": "GetQueueLimitAssociation",
+   "resources": [
+    "farm",
+    "queue"
+   ]
+  },
+  "getsession": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetSession",
+   "resources": [
+    "job"
+   ]
+  },
+  "getsessionaction": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetSessionAction",
+   "resources": [
+    "job"
+   ]
+  },
+  "getsessionsstatisticsaggregation": {
+   "name": "GetSessionsStatisticsAggregation",
+   "resources": [
+    "farm",
+    "fleet",
+    "queue"
+   ]
+  },
+  "getstep": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetStep",
+   "resources": [
+    "job"
+   ]
+  },
+  "getstorageprofile": {
+   "name": "GetStorageProfile",
+   "resources": [
+    "farm"
+   ]
+  },
+  "getstorageprofileforqueue": {
+   "name": "GetStorageProfileForQueue",
+   "resources": [
+    "queue"
+   ]
+  },
+  "gettask": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetTask",
+   "resources": [
+    "job"
+   ]
+  },
+  "getvolume": {
+   "name": "GetVolume",
+   "resources": [
+    "volume"
+   ]
+  },
+  "getworker": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetWorker",
+   "resources": [
+    "worker"
+   ]
+  },
+  "listavailablemeteredproducts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAvailableMeteredProducts",
+   "resources": []
+  },
+  "listbudgets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBudgets",
+   "resources": [
+    "budget"
+   ]
+  },
+  "listfarmmembers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFarmMembers",
+   "resources": [
+    "farm"
+   ]
+  },
+  "listfarms": {
+   "conditionKeys": [
+    "deadline:PrincipalId",
+    "deadline:RequesterPrincipalId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFarms",
+   "resources": [
+    "farm"
+   ]
+  },
+  "listfleetmembers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFleetMembers",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "listfleets": {
+   "conditionKeys": [
+    "deadline:PrincipalId",
+    "deadline:RequesterPrincipalId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFleets",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "listjobmembers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobMembers",
+   "resources": [
+    "job"
+   ]
+  },
+  "listjobparameterdefinitions": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListJobParameterDefinitions",
+   "resources": [
+    "job"
+   ]
+  },
+  "listjobs": {
+   "conditionKeys": [
+    "deadline:PrincipalId",
+    "deadline:RequesterPrincipalId"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListJobs",
+   "resources": [
+    "job"
+   ]
+  },
+  "listlicenseendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLicenseEndpoints",
+   "resources": [
+    "license-endpoint"
+   ]
+  },
+  "listlimits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLimits",
+   "resources": [
+    "farm"
+   ]
+  },
+  "listmemberships": {
+   "conditionKeys": [
+    "deadline:PrincipalId",
+    "deadline:RequesterPrincipalId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMemberships",
+   "resources": []
+  },
+  "listmeteredproducts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMeteredProducts",
+   "resources": [
+    "license-endpoint"
+   ]
+  },
+  "listmonitors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMonitors",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "listqueueenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQueueEnvironments",
+   "resources": [
+    "queue"
+   ]
+  },
+  "listqueuefleetassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQueueFleetAssociations",
+   "resources": [
+    "farm",
+    "fleet",
+    "queue"
+   ]
+  },
+  "listqueuelimitassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQueueLimitAssociations",
+   "resources": [
+    "farm",
+    "queue"
+   ]
+  },
+  "listqueuemembers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQueueMembers",
+   "resources": [
+    "queue"
+   ]
+  },
+  "listqueues": {
+   "conditionKeys": [
+    "deadline:PrincipalId",
+    "deadline:RequesterPrincipalId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQueues",
+   "resources": [
+    "queue"
+   ]
+  },
+  "listsessionactions": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListSessionActions",
+   "resources": [
+    "job"
+   ]
+  },
+  "listsessions": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListSessions",
+   "resources": [
+    "job"
+   ]
+  },
+  "listsessionsforworker": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListSessionsForWorker",
+   "resources": [
+    "worker"
+   ]
+  },
+  "liststepconsumers": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListStepConsumers",
+   "resources": [
+    "job"
+   ]
+  },
+  "liststepdependencies": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListStepDependencies",
+   "resources": [
+    "job"
+   ]
+  },
+  "liststeps": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListSteps",
+   "resources": [
+    "job"
+   ]
+  },
+  "liststorageprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStorageProfiles",
+   "resources": [
+    "farm"
+   ]
+  },
+  "liststorageprofilesforqueue": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStorageProfilesForQueue",
+   "resources": [
+    "queue"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "deadline:CalledAction"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "budget",
+    "farm",
+    "fleet",
+    "job",
+    "license-endpoint",
+    "monitor",
+    "queue",
+    "volume",
+    "worker"
+   ]
+  },
+  "listtasks": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListTasks",
+   "resources": [
+    "job"
+   ]
+  },
+  "listvolumes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVolumes",
+   "resources": [
+    "volume"
+   ]
+  },
+  "listworkers": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListWorkers",
+   "resources": [
+    "worker"
+   ]
+  },
+  "putmeteredproduct": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMeteredProduct",
+   "resources": [
+    "license-endpoint"
+   ]
+  },
+  "searchjobs": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "SearchJobs",
+   "resources": [
+    "queue"
+   ]
+  },
+  "searchsteps": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "SearchSteps",
+   "resources": [
+    "job",
+    "queue"
+   ]
+  },
+  "searchtasks": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "SearchTasks",
+   "resources": [
+    "job",
+    "queue"
+   ]
+  },
+  "searchworkers": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "SearchWorkers",
+   "resources": []
+  },
+  "startsessionsstatisticsaggregation": {
+   "name": "StartSessionsStatisticsAggregation",
+   "resources": [
+    "fleet",
+    "queue"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "deadline:CalledAction"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "budget",
+    "farm",
+    "fleet",
+    "job",
+    "license-endpoint",
+    "monitor",
+    "queue",
+    "volume",
+    "worker"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "budget",
+    "farm",
+    "fleet",
+    "job",
+    "license-endpoint",
+    "monitor",
+    "queue",
+    "volume",
+    "worker"
+   ]
+  },
+  "updatebudget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBudget",
+   "resources": [
+    "budget"
+   ]
+  },
+  "updatefarm": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFarm",
+   "resources": [
+    "farm"
+   ]
+  },
+  "updatefleet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "updatejob": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "updatelimit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLimit",
+   "resources": [
+    "farm"
+   ]
+  },
+  "updatemonitor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMonitor",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "updatemonitorsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMonitorSettings",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "updatequeue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueue",
+   "resources": [
+    "queue"
+   ]
+  },
+  "updatequeueenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueueEnvironment",
+   "resources": [
+    "queue"
+   ]
+  },
+  "updatequeuefleetassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueueFleetAssociation",
+   "resources": [
+    "fleet",
+    "queue"
+   ]
+  },
+  "updatequeuelimitassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueueLimitAssociation",
+   "resources": [
+    "farm",
+    "queue"
+   ]
+  },
+  "updatesession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateSession",
+   "resources": [
+    "job"
+   ]
+  },
+  "updatestep": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateStep",
+   "resources": [
+    "job"
+   ]
+  },
+  "updatestorageprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStorageProfile",
+   "resources": [
+    "farm"
+   ]
+  },
+  "updatetask": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateTask",
+   "resources": [
+    "job"
+   ]
+  },
+  "updateworker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorker",
+   "resources": [
+    "worker"
+   ]
+  },
+  "updateworkerschedule": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateWorkerSchedule",
+   "resources": [
+    "worker"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "deadline:AssociatedMembershipLevel": [
+   "String"
+  ],
+  "deadline:CalledAction": [
+   "String"
+  ],
+  "deadline:FarmMembershipLevels": [
+   "ArrayOfString"
+  ],
+  "deadline:FleetMembershipLevels": [
+   "ArrayOfString"
+  ],
+  "deadline:JobMembershipLevels": [
+   "ArrayOfString"
+  ],
+  "deadline:MembershipLevel": [
+   "String"
+  ],
+  "deadline:PrincipalId": [
+   "String"
+  ],
+  "deadline:QueueMembershipLevels": [
+   "ArrayOfString"
+  ],
+  "deadline:RequesterPrincipalId": [
+   "String"
+  ]
+ },
+ "resources": {
+  "budget": {
+   "arnFormats": [
+    "arn:${Partition}:deadline:${Region}:${Account}:farm/${FarmId}/budget/${BudgetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "deadline:FarmMembershipLevels"
+   ]
+  },
+  "farm": {
+   "arnFormats": [
+    "arn:${Partition}:deadline:${Region}:${Account}:farm/${FarmId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "deadline:FarmMembershipLevels"
+   ]
+  },
+  "fleet": {
+   "arnFormats": [
+    "arn:${Partition}:deadline:${Region}:${Account}:farm/${FarmId}/fleet/${FleetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "deadline:FarmMembershipLevels",
+    "deadline:FleetMembershipLevels"
+   ]
+  },
+  "job": {
+   "arnFormats": [
+    "arn:${Partition}:deadline:${Region}:${Account}:farm/${FarmId}/queue/${QueueId}/job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "deadline:FarmMembershipLevels",
+    "deadline:JobMembershipLevels",
+    "deadline:QueueMembershipLevels"
+   ]
+  },
+  "license-endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:deadline:${Region}:${Account}:license-endpoint/${LicenseEndpointId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "monitor": {
+   "arnFormats": [
+    "arn:${Partition}:deadline:${Region}:${Account}:monitor/${MonitorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "queue": {
+   "arnFormats": [
+    "arn:${Partition}:deadline:${Region}:${Account}:farm/${FarmId}/queue/${QueueId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "deadline:FarmMembershipLevels",
+    "deadline:QueueMembershipLevels"
+   ]
+  },
+  "volume": {
+   "arnFormats": [
+    "arn:${Partition}:deadline:${Region}:${Account}:farm/${FarmId}/fleet/${FleetId}/volume/${VolumeId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "deadline:FarmMembershipLevels",
+    "deadline:FleetMembershipLevels"
+   ]
+  },
+  "worker": {
+   "arnFormats": [
+    "arn:${Partition}:deadline:${Region}:${Account}:farm/${FarmId}/fleet/${FleetId}/worker/${WorkerId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "deadline:FarmMembershipLevels",
+    "deadline:FleetMembershipLevels"
+   ]
+  }
+ },
+ "service": "deadline",
+ "serviceName": "Deadline Cloud",
+ "version": "v1.5"
+}

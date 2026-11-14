@@ -1,0 +1,235 @@
+{
+ "actions": {
+  "associateaccounts": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateAccounts",
+   "resources": []
+  },
+  "createautomationrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAutomationRule",
+   "resources": []
+  },
+  "deleteautomationrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAutomationRule",
+   "resourceConditionKeys": {
+    "AutomationRule": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "AutomationRule"
+   ]
+  },
+  "disassociateaccounts": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateAccounts",
+   "resources": []
+  },
+  "getautomationevent": {
+   "name": "GetAutomationEvent",
+   "resources": []
+  },
+  "getautomationrule": {
+   "name": "GetAutomationRule",
+   "resourceConditionKeys": {
+    "AutomationRule": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "AutomationRule"
+   ]
+  },
+  "getenrollmentconfiguration": {
+   "name": "GetEnrollmentConfiguration",
+   "resources": []
+  },
+  "listaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccounts",
+   "resources": []
+  },
+  "listautomationevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomationEvents",
+   "resources": []
+  },
+  "listautomationeventsteps": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomationEventSteps",
+   "resources": []
+  },
+  "listautomationeventsummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomationEventSummaries",
+   "resources": []
+  },
+  "listautomationrulepreview": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomationRulePreview",
+   "resources": []
+  },
+  "listautomationrulepreviewsummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomationRulePreviewSummaries",
+   "resources": []
+  },
+  "listautomationrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomationRules",
+   "resources": []
+  },
+  "listrecommendedactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommendedActions",
+   "resources": []
+  },
+  "listrecommendedactionsummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommendedActionSummaries",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resourceConditionKeys": {
+    "AutomationRule": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "AutomationRule"
+   ]
+  },
+  "rollbackautomationevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RollbackAutomationEvent",
+   "resources": []
+  },
+  "startautomationevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAutomationEvent",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "AutomationRule": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "AutomationRule"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "AutomationRule": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "AutomationRule"
+   ]
+  },
+  "updateautomationrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAutomationRule",
+   "resourceConditionKeys": {
+    "AutomationRule": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "AutomationRule"
+   ]
+  },
+  "updateenrollmentconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnrollmentConfiguration",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "AutomationRule": {
+   "arnFormats": [
+    "arn:${Partition}:compute-optimizer::${Account}:automation-rule/${RuleId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "aco-automation",
+ "serviceName": "Compute Optimizer Automation",
+ "version": "v1.5"
+}

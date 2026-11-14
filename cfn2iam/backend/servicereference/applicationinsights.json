@@ -1,0 +1,236 @@
+{
+ "actions": {
+  "addworkload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddWorkload",
+   "resources": []
+  },
+  "createapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "createcomponent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateComponent",
+   "resources": []
+  },
+  "createlogpattern": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLogPattern",
+   "resources": []
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": []
+  },
+  "deletecomponent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteComponent",
+   "resources": []
+  },
+  "deletelogpattern": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLogPattern",
+   "resources": []
+  },
+  "describeapplication": {
+   "name": "DescribeApplication",
+   "resources": []
+  },
+  "describecomponent": {
+   "name": "DescribeComponent",
+   "resources": []
+  },
+  "describecomponentconfiguration": {
+   "name": "DescribeComponentConfiguration",
+   "resources": []
+  },
+  "describecomponentconfigurationrecommendation": {
+   "name": "DescribeComponentConfigurationRecommendation",
+   "resources": []
+  },
+  "describelogpattern": {
+   "name": "DescribeLogPattern",
+   "resources": []
+  },
+  "describeobservation": {
+   "name": "DescribeObservation",
+   "resources": []
+  },
+  "describeproblem": {
+   "name": "DescribeProblem",
+   "resources": []
+  },
+  "describeproblemobservations": {
+   "name": "DescribeProblemObservations",
+   "resources": []
+  },
+  "describeworkload": {
+   "name": "DescribeWorkload",
+   "resources": []
+  },
+  "link": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Link",
+   "resources": []
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listcomponents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListComponents",
+   "resources": []
+  },
+  "listconfigurationhistory": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigurationHistory",
+   "resources": []
+  },
+  "listlogpatterns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLogPatterns",
+   "resources": []
+  },
+  "listlogpatternsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLogPatternSets",
+   "resources": []
+  },
+  "listproblems": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProblems",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "listworkloads": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkloads",
+   "resources": []
+  },
+  "removeworkload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveWorkload",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": []
+  },
+  "updateapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": []
+  },
+  "updatecomponent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateComponent",
+   "resources": []
+  },
+  "updatecomponentconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateComponentConfiguration",
+   "resources": []
+  },
+  "updatelogpattern": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLogPattern",
+   "resources": []
+  },
+  "updateproblem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProblem",
+   "resources": []
+  },
+  "updateworkload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkload",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {},
+ "service": "applicationinsights",
+ "serviceName": "CloudWatch Application Insights",
+ "version": "v1.5"
+}

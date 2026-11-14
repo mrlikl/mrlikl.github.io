@@ -1,0 +1,506 @@
+{
+ "actions": {
+  "associatecustomdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateCustomDomain",
+   "resources": [
+    "service"
+   ]
+  },
+  "associatewebacl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateWebAcl",
+   "resources": [
+    "service",
+    "webacl"
+   ]
+  },
+  "createautoscalingconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAutoScalingConfiguration",
+   "resources": [
+    "autoscalingconfiguration"
+   ]
+  },
+  "createconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnection",
+   "resources": [
+    "connection"
+   ]
+  },
+  "createobservabilityconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateObservabilityConfiguration",
+   "resources": [
+    "observabilityconfiguration"
+   ]
+  },
+  "createservice": {
+   "conditionKeys": [
+    "apprunner:AutoScalingConfigurationArn",
+    "apprunner:ConnectionArn",
+    "apprunner:ObservabilityConfigurationArn",
+    "apprunner:VpcConnectorArn",
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateService",
+   "resources": [
+    "autoscalingconfiguration",
+    "connection",
+    "observabilityconfiguration",
+    "service",
+    "vpcconnector"
+   ]
+  },
+  "createvpcconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVpcConnector",
+   "resources": [
+    "vpcconnector"
+   ]
+  },
+  "createvpcingressconnection": {
+   "conditionKeys": [
+    "apprunner:ServiceArn",
+    "apprunner:VpcEndpointId",
+    "apprunner:VpcId",
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVpcIngressConnection",
+   "resources": [
+    "vpcingressconnection"
+   ]
+  },
+  "deleteautoscalingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAutoScalingConfiguration",
+   "resources": [
+    "autoscalingconfiguration"
+   ]
+  },
+  "deleteconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnection",
+   "resources": [
+    "connection"
+   ]
+  },
+  "deleteobservabilityconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteObservabilityConfiguration",
+   "resources": [
+    "observabilityconfiguration"
+   ]
+  },
+  "deleteservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteService",
+   "resources": [
+    "service"
+   ]
+  },
+  "deletevpcconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVpcConnector",
+   "resources": [
+    "vpcconnector"
+   ]
+  },
+  "deletevpcingressconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVpcIngressConnection",
+   "resources": [
+    "vpcingressconnection"
+   ]
+  },
+  "describeautoscalingconfiguration": {
+   "name": "DescribeAutoScalingConfiguration",
+   "resources": [
+    "autoscalingconfiguration"
+   ]
+  },
+  "describecustomdomains": {
+   "name": "DescribeCustomDomains",
+   "resources": [
+    "service"
+   ]
+  },
+  "describeobservabilityconfiguration": {
+   "name": "DescribeObservabilityConfiguration",
+   "resources": [
+    "observabilityconfiguration"
+   ]
+  },
+  "describeoperation": {
+   "name": "DescribeOperation",
+   "resources": [
+    "service"
+   ]
+  },
+  "describeservice": {
+   "name": "DescribeService",
+   "resources": [
+    "service"
+   ]
+  },
+  "describevpcconnector": {
+   "name": "DescribeVpcConnector",
+   "resources": [
+    "vpcconnector"
+   ]
+  },
+  "describevpcingressconnection": {
+   "name": "DescribeVpcIngressConnection",
+   "resources": [
+    "vpcingressconnection"
+   ]
+  },
+  "describewebaclforservice": {
+   "name": "DescribeWebAclForService",
+   "resources": [
+    "service"
+   ]
+  },
+  "disassociatecustomdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateCustomDomain",
+   "resources": [
+    "service"
+   ]
+  },
+  "disassociatewebacl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateWebAcl",
+   "resources": [
+    "service"
+   ]
+  },
+  "listassociatedservicesforwebacl": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssociatedServicesForWebAcl",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "listautoscalingconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutoScalingConfigurations",
+   "resources": []
+  },
+  "listconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnections",
+   "resources": []
+  },
+  "listobservabilityconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListObservabilityConfigurations",
+   "resources": []
+  },
+  "listoperations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOperations",
+   "resources": [
+    "service"
+   ]
+  },
+  "listservices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServices",
+   "resources": []
+  },
+  "listservicesforautoscalingconfiguration": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServicesForAutoScalingConfiguration",
+   "resources": [
+    "autoscalingconfiguration"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "autoscalingconfiguration",
+    "connection",
+    "observabilityconfiguration",
+    "service",
+    "vpcconnector"
+   ]
+  },
+  "listvpcconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVpcConnectors",
+   "resources": []
+  },
+  "listvpcingressconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVpcIngressConnections",
+   "resources": []
+  },
+  "pauseservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PauseService",
+   "resources": [
+    "service"
+   ]
+  },
+  "resumeservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResumeService",
+   "resources": [
+    "service"
+   ]
+  },
+  "startdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDeployment",
+   "resources": [
+    "service"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "autoscalingconfiguration",
+    "connection",
+    "observabilityconfiguration",
+    "service",
+    "vpcconnector",
+    "vpcingressconnection"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "autoscalingconfiguration",
+    "connection",
+    "observabilityconfiguration",
+    "service",
+    "vpcconnector",
+    "vpcingressconnection"
+   ]
+  },
+  "updatedefaultautoscalingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDefaultAutoScalingConfiguration",
+   "resources": [
+    "autoscalingconfiguration"
+   ]
+  },
+  "updateservice": {
+   "conditionKeys": [
+    "apprunner:AutoScalingConfigurationArn",
+    "apprunner:ConnectionArn",
+    "apprunner:ObservabilityConfigurationArn",
+    "apprunner:VpcConnectorArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateService",
+   "resources": [
+    "autoscalingconfiguration",
+    "connection",
+    "observabilityconfiguration",
+    "service",
+    "vpcconnector"
+   ]
+  },
+  "updatevpcingressconnection": {
+   "conditionKeys": [
+    "apprunner:VpcEndpointId",
+    "apprunner:VpcId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVpcIngressConnection",
+   "resources": [
+    "vpcingressconnection"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "apprunner:AutoScalingConfigurationArn": [
+   "ARN"
+  ],
+  "apprunner:ConnectionArn": [
+   "ARN"
+  ],
+  "apprunner:ObservabilityConfigurationArn": [
+   "ARN"
+  ],
+  "apprunner:ServiceArn": [
+   "ARN"
+  ],
+  "apprunner:VpcConnectorArn": [
+   "ARN"
+  ],
+  "apprunner:VpcEndpointId": [
+   "String"
+  ],
+  "apprunner:VpcId": [
+   "String"
+  ],
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "autoscalingconfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:apprunner:${Region}:${Account}:autoscalingconfiguration/${AutoscalingConfigurationName}/${AutoscalingConfigurationVersion}/${AutoscalingConfigurationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "connection": {
+   "arnFormats": [
+    "arn:${Partition}:apprunner:${Region}:${Account}:connection/${ConnectionName}/${ConnectionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "observabilityconfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:apprunner:${Region}:${Account}:observabilityconfiguration/${ObservabilityConfigurationName}/${ObservabilityConfigurationVersion}/${ObservabilityConfigurationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "service": {
+   "arnFormats": [
+    "arn:${Partition}:apprunner:${Region}:${Account}:service/${ServiceName}/${ServiceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "vpcconnector": {
+   "arnFormats": [
+    "arn:${Partition}:apprunner:${Region}:${Account}:vpcconnector/${VpcConnectorName}/${VpcConnectorVersion}/${VpcConnectorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "vpcingressconnection": {
+   "arnFormats": [
+    "arn:${Partition}:apprunner:${Region}:${Account}:vpcingressconnection/${VpcIngressConnectionName}/${VpcIngressConnectionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "webacl": {
+   "arnFormats": [
+    "arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/webacl/${Name}/${Id}"
+   ]
+  }
+ },
+ "service": "apprunner",
+ "serviceName": "App Runner",
+ "version": "v1.5"
+}

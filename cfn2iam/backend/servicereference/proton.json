@@ -1,0 +1,1150 @@
+{
+ "actions": {
+  "acceptenvironmentaccountconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptEnvironmentAccountConnection",
+   "resources": [
+    "environment-account-connection"
+   ]
+  },
+  "cancelcomponentdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelComponentDeployment",
+   "resources": [
+    "component"
+   ]
+  },
+  "cancelenvironmentdeployment": {
+   "conditionKeys": [
+    "proton:EnvironmentTemplate"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelEnvironmentDeployment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "cancelserviceinstancedeployment": {
+   "conditionKeys": [
+    "proton:ServiceTemplate"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelServiceInstanceDeployment",
+   "resources": [
+    "service-instance"
+   ]
+  },
+  "cancelservicepipelinedeployment": {
+   "conditionKeys": [
+    "proton:ServiceTemplate"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelServicePipelineDeployment",
+   "resources": [
+    "service"
+   ]
+  },
+  "createcomponent": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateComponent",
+   "resources": [
+    "component"
+   ]
+  },
+  "createenvironment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "proton:EnvironmentTemplate"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createenvironmentaccountconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironmentAccountConnection",
+   "resources": []
+  },
+  "createenvironmenttemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironmentTemplate",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "createenvironmenttemplatemajorversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironmentTemplateMajorVersion",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "createenvironmenttemplateminorversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironmentTemplateMinorVersion",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "createenvironmenttemplateversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironmentTemplateVersion",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "createrepository": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "createservice": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "proton:ServiceTemplate"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateService",
+   "resources": [
+    "service"
+   ]
+  },
+  "createserviceinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "proton:ServiceTemplate"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceInstance",
+   "resources": [
+    "service-instance"
+   ]
+  },
+  "createservicesyncconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceSyncConfig",
+   "resources": []
+  },
+  "createservicetemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceTemplate",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "createservicetemplatemajorversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceTemplateMajorVersion",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "createservicetemplateminorversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceTemplateMinorVersion",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "createservicetemplateversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceTemplateVersion",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "createtemplatesyncconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTemplateSyncConfig",
+   "resources": []
+  },
+  "deleteaccountroles": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccountRoles",
+   "resources": []
+  },
+  "deletecomponent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteComponent",
+   "resources": [
+    "component"
+   ]
+  },
+  "deletedeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDeployment",
+   "resources": [
+    "deployment"
+   ]
+  },
+  "deleteenvironment": {
+   "conditionKeys": [
+    "proton:EnvironmentTemplate"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deleteenvironmentaccountconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironmentAccountConnection",
+   "resources": [
+    "environment-account-connection"
+   ]
+  },
+  "deleteenvironmenttemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironmentTemplate",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "deleteenvironmenttemplatemajorversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironmentTemplateMajorVersion",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "deleteenvironmenttemplateminorversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironmentTemplateMinorVersion",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "deleteenvironmenttemplateversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironmentTemplateVersion",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "deleterepository": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "deleteservice": {
+   "conditionKeys": [
+    "proton:ServiceTemplate"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteService",
+   "resources": [
+    "service"
+   ]
+  },
+  "deleteservicesyncconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceSyncConfig",
+   "resources": []
+  },
+  "deleteservicetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceTemplate",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "deleteservicetemplatemajorversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceTemplateMajorVersion",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "deleteservicetemplateminorversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceTemplateMinorVersion",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "deleteservicetemplateversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceTemplateVersion",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "deletetemplatesyncconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTemplateSyncConfig",
+   "resources": []
+  },
+  "getaccountroles": {
+   "name": "GetAccountRoles",
+   "resources": []
+  },
+  "getaccountsettings": {
+   "name": "GetAccountSettings",
+   "resources": []
+  },
+  "getcomponent": {
+   "name": "GetComponent",
+   "resources": [
+    "component"
+   ]
+  },
+  "getdeployment": {
+   "name": "GetDeployment",
+   "resources": [
+    "deployment"
+   ]
+  },
+  "getenvironment": {
+   "name": "GetEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getenvironmentaccountconnection": {
+   "name": "GetEnvironmentAccountConnection",
+   "resources": [
+    "environment-account-connection"
+   ]
+  },
+  "getenvironmenttemplate": {
+   "name": "GetEnvironmentTemplate",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "getenvironmenttemplatemajorversion": {
+   "name": "GetEnvironmentTemplateMajorVersion",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "getenvironmenttemplateminorversion": {
+   "name": "GetEnvironmentTemplateMinorVersion",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "getenvironmenttemplateversion": {
+   "name": "GetEnvironmentTemplateVersion",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "getrepository": {
+   "name": "GetRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getrepositorysyncstatus": {
+   "name": "GetRepositorySyncStatus",
+   "resources": []
+  },
+  "getresourcessummary": {
+   "name": "GetResourcesSummary",
+   "resources": []
+  },
+  "getresourcetemplateversionstatuscounts": {
+   "name": "GetResourceTemplateVersionStatusCounts",
+   "resources": []
+  },
+  "getservice": {
+   "name": "GetService",
+   "resources": [
+    "service"
+   ]
+  },
+  "getserviceinstance": {
+   "name": "GetServiceInstance",
+   "resources": [
+    "service-instance"
+   ]
+  },
+  "getserviceinstancesyncstatus": {
+   "name": "GetServiceInstanceSyncStatus",
+   "resources": []
+  },
+  "getservicesyncblockersummary": {
+   "name": "GetServiceSyncBlockerSummary",
+   "resources": []
+  },
+  "getservicesyncconfig": {
+   "name": "GetServiceSyncConfig",
+   "resources": []
+  },
+  "getservicetemplate": {
+   "name": "GetServiceTemplate",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "getservicetemplatemajorversion": {
+   "name": "GetServiceTemplateMajorVersion",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "getservicetemplateminorversion": {
+   "name": "GetServiceTemplateMinorVersion",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "getservicetemplateversion": {
+   "name": "GetServiceTemplateVersion",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "gettemplatesyncconfig": {
+   "name": "GetTemplateSyncConfig",
+   "resources": []
+  },
+  "gettemplatesyncstatus": {
+   "name": "GetTemplateSyncStatus",
+   "resources": []
+  },
+  "listcomponentoutputs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListComponentOutputs",
+   "resources": [
+    "component",
+    "deployment"
+   ]
+  },
+  "listcomponentprovisionedresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListComponentProvisionedResources",
+   "resources": [
+    "component"
+   ]
+  },
+  "listcomponents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListComponents",
+   "resources": [
+    "environment",
+    "service",
+    "service-instance"
+   ]
+  },
+  "listdeployments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeployments",
+   "resources": []
+  },
+  "listenvironmentaccountconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironmentAccountConnections",
+   "resources": []
+  },
+  "listenvironmentoutputs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironmentOutputs",
+   "resources": [
+    "deployment",
+    "environment"
+   ]
+  },
+  "listenvironmentprovisionedresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironmentProvisionedResources",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironments",
+   "resources": []
+  },
+  "listenvironmenttemplatemajorversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironmentTemplateMajorVersions",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "listenvironmenttemplateminorversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironmentTemplateMinorVersions",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "listenvironmenttemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironmentTemplates",
+   "resources": []
+  },
+  "listenvironmenttemplateversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironmentTemplateVersions",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "listrepositories": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRepositories",
+   "resources": []
+  },
+  "listrepositorysyncdefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRepositorySyncDefinitions",
+   "resources": []
+  },
+  "listserviceinstanceoutputs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceInstanceOutputs",
+   "resources": [
+    "deployment",
+    "service",
+    "service-instance"
+   ]
+  },
+  "listserviceinstanceprovisionedresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceInstanceProvisionedResources",
+   "resources": [
+    "service",
+    "service-instance"
+   ]
+  },
+  "listserviceinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceInstances",
+   "resources": []
+  },
+  "listservicepipelineoutputs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServicePipelineOutputs",
+   "resources": [
+    "deployment",
+    "service"
+   ]
+  },
+  "listservicepipelineprovisionedresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServicePipelineProvisionedResources",
+   "resources": [
+    "service"
+   ]
+  },
+  "listservices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServices",
+   "resources": []
+  },
+  "listservicetemplatemajorversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceTemplateMajorVersions",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "listservicetemplateminorversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceTemplateMinorVersions",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "listservicetemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceTemplates",
+   "resources": []
+  },
+  "listservicetemplateversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceTemplateVersions",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "component",
+    "environment",
+    "environment-account-connection",
+    "environment-template",
+    "environment-template-major-version",
+    "environment-template-minor-version",
+    "environment-template-version",
+    "repository",
+    "service",
+    "service-instance",
+    "service-template",
+    "service-template-major-version",
+    "service-template-minor-version",
+    "service-template-version"
+   ]
+  },
+  "notifyresourcedeploymentstatuschange": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyResourceDeploymentStatusChange",
+   "resources": [
+    "environment",
+    "service-instance"
+   ]
+  },
+  "rejectenvironmentaccountconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectEnvironmentAccountConnection",
+   "resources": [
+    "environment-account-connection"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "component",
+    "environment",
+    "environment-account-connection",
+    "environment-template",
+    "environment-template-major-version",
+    "environment-template-minor-version",
+    "environment-template-version",
+    "repository",
+    "service",
+    "service-instance",
+    "service-template",
+    "service-template-major-version",
+    "service-template-minor-version",
+    "service-template-version"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "component",
+    "environment",
+    "environment-account-connection",
+    "environment-template",
+    "environment-template-major-version",
+    "environment-template-minor-version",
+    "environment-template-version",
+    "repository",
+    "service",
+    "service-instance",
+    "service-template",
+    "service-template-major-version",
+    "service-template-minor-version",
+    "service-template-version"
+   ]
+  },
+  "updateaccountroles": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountRoles",
+   "resources": []
+  },
+  "updateaccountsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountSettings",
+   "resources": []
+  },
+  "updatecomponent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateComponent",
+   "resources": [
+    "component"
+   ]
+  },
+  "updateenvironment": {
+   "conditionKeys": [
+    "proton:EnvironmentTemplate"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "updateenvironmentaccountconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironmentAccountConnection",
+   "resources": [
+    "environment-account-connection"
+   ]
+  },
+  "updateenvironmenttemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironmentTemplate",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "updateenvironmenttemplatemajorversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironmentTemplateMajorVersion",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "updateenvironmenttemplateminorversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironmentTemplateMinorVersion",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "updateenvironmenttemplateversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironmentTemplateVersion",
+   "resources": [
+    "environment-template"
+   ]
+  },
+  "updateservice": {
+   "conditionKeys": [
+    "proton:ServiceTemplate"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateService",
+   "resources": [
+    "service"
+   ]
+  },
+  "updateserviceinstance": {
+   "conditionKeys": [
+    "proton:ServiceTemplate"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceInstance",
+   "resources": [
+    "service-instance"
+   ]
+  },
+  "updateservicepipeline": {
+   "conditionKeys": [
+    "proton:ServiceTemplate"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServicePipeline",
+   "resources": [
+    "service"
+   ]
+  },
+  "updateservicesyncblocker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceSyncBlocker",
+   "resources": []
+  },
+  "updateservicesyncconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceSyncConfig",
+   "resources": []
+  },
+  "updateservicetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceTemplate",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "updateservicetemplatemajorversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceTemplateMajorVersion",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "updateservicetemplateminorversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceTemplateMinorVersion",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "updateservicetemplateversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceTemplateVersion",
+   "resources": [
+    "service-template"
+   ]
+  },
+  "updatetemplatesyncconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTemplateSyncConfig",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "proton:EnvironmentTemplate": [
+   "String"
+  ],
+  "proton:ServiceTemplate": [
+   "String"
+  ]
+ },
+ "resources": {
+  "component": {
+   "arnFormats": [
+    "arn:${Partition}:proton:${Region}:${Account}:component/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "deployment": {
+   "arnFormats": [
+    "arn:${Partition}:proton:${Region}:${Account}:deployment/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "environment": {
+   "arnFormats": [
+    "arn:${Partition}:proton:${Region}:${Account}:environment/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "environment-account-connection": {
+   "arnFormats": [
+    "arn:${Partition}:proton:${Region}:${Account}:environment-account-connection/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "environment-template": {
+   "arnFormats": [
+    "arn:${Partition}:proton:${Region}:${Account}:environment-template/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "environment-template-major-version": {
+   "arnFormats": [
+    "arn:${Partition}:proton:${Region}:${Account}:environment-template/${TemplateName}:${MajorVersionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "environment-template-minor-version": {
+   "arnFormats": [
+    "arn:${Partition}:proton:${Region}:${Account}:environment-template/${TemplateName}:${MajorVersionId}.${MinorVersionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "environment-template-version": {
+   "arnFormats": [
+    "arn:${Partition}:proton:${Region}:${Account}:environment-template/${TemplateName}:${MajorVersion}.${MinorVersion}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "repository": {
+   "arnFormats": [
+    "arn:${Partition}:proton:${Region}:${Account}:repository/${Provider}:${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "service": {
+   "arnFormats": [
+    "arn:${Partition}:proton:${Region}:${Account}:service/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "service-instance": {
+   "arnFormats": [
+    "arn:${Partition}:proton:${Region}:${Account}:service/${ServiceName}/service-instance/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "service-template": {
+   "arnFormats": [
+    "arn:${Partition}:proton:${Region}:${Account}:service-template/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "service-template-major-version": {
+   "arnFormats": [
+    "arn:${Partition}:proton:${Region}:${Account}:service-template/${TemplateName}:${MajorVersionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "service-template-minor-version": {
+   "arnFormats": [
+    "arn:${Partition}:proton:${Region}:${Account}:service-template/${TemplateName}:${MajorVersionId}.${MinorVersionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "service-template-version": {
+   "arnFormats": [
+    "arn:${Partition}:proton:${Region}:${Account}:service-template/${TemplateName}:${MajorVersion}.${MinorVersion}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "proton",
+ "serviceName": "Proton",
+ "version": "v1.5"
+}

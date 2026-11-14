@@ -1,0 +1,691 @@
+{
+ "actions": {
+  "addstoragesystem": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddStorageSystem",
+   "resources": [
+    "agent"
+   ]
+  },
+  "canceltaskexecution": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelTaskExecution",
+   "resources": [
+    "taskexecution"
+   ]
+  },
+  "createagent": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgent",
+   "resources": []
+  },
+  "createlocationazureblob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLocationAzureBlob",
+   "resources": [
+    "agent"
+   ]
+  },
+  "createlocationefs": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLocationEfs",
+   "resources": []
+  },
+  "createlocationfsxlustre": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLocationFsxLustre",
+   "resources": []
+  },
+  "createlocationfsxontap": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLocationFsxOntap",
+   "resources": []
+  },
+  "createlocationfsxopenzfs": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLocationFsxOpenZfs",
+   "resources": []
+  },
+  "createlocationfsxwindows": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLocationFsxWindows",
+   "resources": []
+  },
+  "createlocationhdfs": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLocationHdfs",
+   "resources": [
+    "agent"
+   ]
+  },
+  "createlocationnfs": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLocationNfs",
+   "resources": [
+    "agent"
+   ]
+  },
+  "createlocationobjectstorage": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLocationObjectStorage",
+   "resources": [
+    "agent"
+   ]
+  },
+  "createlocations3": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLocationS3",
+   "resources": [
+    "agent"
+   ]
+  },
+  "createlocationsmb": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLocationSmb",
+   "resources": [
+    "agent"
+   ]
+  },
+  "createtask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTask",
+   "resources": [
+    "agent",
+    "location"
+   ]
+  },
+  "deleteagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgent",
+   "resources": [
+    "agent"
+   ]
+  },
+  "deletelocation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLocation",
+   "resources": [
+    "location"
+   ]
+  },
+  "deletetask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTask",
+   "resources": [
+    "task"
+   ]
+  },
+  "describeagent": {
+   "name": "DescribeAgent",
+   "resources": [
+    "agent"
+   ]
+  },
+  "describediscoveryjob": {
+   "name": "DescribeDiscoveryJob",
+   "resources": [
+    "discoveryjob"
+   ]
+  },
+  "describelocationazureblob": {
+   "name": "DescribeLocationAzureBlob",
+   "resources": [
+    "location"
+   ]
+  },
+  "describelocationefs": {
+   "name": "DescribeLocationEfs",
+   "resources": [
+    "location"
+   ]
+  },
+  "describelocationfsxlustre": {
+   "name": "DescribeLocationFsxLustre",
+   "resources": [
+    "location"
+   ]
+  },
+  "describelocationfsxontap": {
+   "name": "DescribeLocationFsxOntap",
+   "resources": [
+    "location"
+   ]
+  },
+  "describelocationfsxopenzfs": {
+   "name": "DescribeLocationFsxOpenZfs",
+   "resources": [
+    "location"
+   ]
+  },
+  "describelocationfsxwindows": {
+   "name": "DescribeLocationFsxWindows",
+   "resources": [
+    "location"
+   ]
+  },
+  "describelocationhdfs": {
+   "name": "DescribeLocationHdfs",
+   "resources": [
+    "location"
+   ]
+  },
+  "describelocationnfs": {
+   "name": "DescribeLocationNfs",
+   "resources": [
+    "location"
+   ]
+  },
+  "describelocationobjectstorage": {
+   "name": "DescribeLocationObjectStorage",
+   "resources": [
+    "location"
+   ]
+  },
+  "describelocations3": {
+   "name": "DescribeLocationS3",
+   "resources": [
+    "location"
+   ]
+  },
+  "describelocationsmb": {
+   "name": "DescribeLocationSmb",
+   "resources": [
+    "location"
+   ]
+  },
+  "describestoragesystem": {
+   "name": "DescribeStorageSystem",
+   "resources": [
+    "storagesystem"
+   ]
+  },
+  "describestoragesystemresourcemetrics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeStorageSystemResourceMetrics",
+   "resources": [
+    "discoveryjob"
+   ]
+  },
+  "describestoragesystemresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeStorageSystemResources",
+   "resources": [
+    "discoveryjob"
+   ]
+  },
+  "describetask": {
+   "name": "DescribeTask",
+   "resources": [
+    "task"
+   ]
+  },
+  "describetaskexecution": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeTaskExecution",
+   "resources": [
+    "taskexecution"
+   ]
+  },
+  "generaterecommendations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateRecommendations",
+   "resources": [
+    "discoveryjob"
+   ]
+  },
+  "listagents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgents",
+   "resources": []
+  },
+  "listdiscoveryjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDiscoveryJobs",
+   "resources": []
+  },
+  "listlocations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLocations",
+   "resources": []
+  },
+  "liststoragesystems": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStorageSystems",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "agent",
+    "discoveryjob",
+    "location",
+    "storagesystem",
+    "task",
+    "taskexecution"
+   ]
+  },
+  "listtaskexecutions": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTaskExecutions",
+   "resources": []
+  },
+  "listtasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTasks",
+   "resources": []
+  },
+  "removestoragesystem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveStorageSystem",
+   "resources": [
+    "storagesystem"
+   ]
+  },
+  "startdiscoveryjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDiscoveryJob",
+   "resources": [
+    "storagesystem"
+   ]
+  },
+  "starttaskexecution": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTaskExecution",
+   "resources": [
+    "task"
+   ]
+  },
+  "stopdiscoveryjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopDiscoveryJob",
+   "resources": [
+    "discoveryjob"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "agent",
+    "discoveryjob",
+    "location",
+    "storagesystem",
+    "task",
+    "taskexecution"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "agent",
+    "discoveryjob",
+    "location",
+    "storagesystem",
+    "task",
+    "taskexecution"
+   ]
+  },
+  "updateagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgent",
+   "resources": [
+    "agent"
+   ]
+  },
+  "updatediscoveryjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDiscoveryJob",
+   "resources": [
+    "discoveryjob"
+   ]
+  },
+  "updatelocationazureblob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLocationAzureBlob",
+   "resources": [
+    "agent",
+    "location"
+   ]
+  },
+  "updatelocationefs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLocationEfs",
+   "resources": [
+    "location"
+   ]
+  },
+  "updatelocationfsxlustre": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLocationFsxLustre",
+   "resources": [
+    "location"
+   ]
+  },
+  "updatelocationfsxontap": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLocationFsxOntap",
+   "resources": [
+    "location"
+   ]
+  },
+  "updatelocationfsxopenzfs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLocationFsxOpenZfs",
+   "resources": [
+    "location"
+   ]
+  },
+  "updatelocationfsxwindows": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLocationFsxWindows",
+   "resources": [
+    "location"
+   ]
+  },
+  "updatelocationhdfs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLocationHdfs",
+   "resources": [
+    "agent",
+    "location"
+   ]
+  },
+  "updatelocationnfs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLocationNfs",
+   "resources": [
+    "agent",
+    "location"
+   ]
+  },
+  "updatelocationobjectstorage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLocationObjectStorage",
+   "resources": [
+    "agent",
+    "location"
+   ]
+  },
+  "updatelocations3": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLocationS3",
+   "resources": [
+    "location"
+   ]
+  },
+  "updatelocationsmb": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLocationSmb",
+   "resources": [
+    "agent",
+    "location"
+   ]
+  },
+  "updatestoragesystem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStorageSystem",
+   "resources": [
+    "storagesystem"
+   ]
+  },
+  "updatetask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTask",
+   "resources": [
+    "task"
+   ]
+  },
+  "updatetaskexecution": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTaskExecution",
+   "resources": [
+    "taskexecution"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "agent": {
+   "arnFormats": [
+    "arn:${Partition}:datasync:${Region}:${AccountId}:agent/${AgentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "discoveryjob": {
+   "arnFormats": [
+    "arn:${Partition}:datasync:${Region}:${AccountId}:system/${StorageSystemId}/job/${DiscoveryJobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "location": {
+   "arnFormats": [
+    "arn:${Partition}:datasync:${Region}:${AccountId}:location/${LocationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "storagesystem": {
+   "arnFormats": [
+    "arn:${Partition}:datasync:${Region}:${AccountId}:system/${StorageSystemId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "task": {
+   "arnFormats": [
+    "arn:${Partition}:datasync:${Region}:${AccountId}:task/${TaskId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "taskexecution": {
+   "arnFormats": [
+    "arn:${Partition}:datasync:${Region}:${AccountId}:task/${TaskId}/execution/${ExecutionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "datasync",
+ "serviceName": "DataSync",
+ "version": "v1.5"
+}

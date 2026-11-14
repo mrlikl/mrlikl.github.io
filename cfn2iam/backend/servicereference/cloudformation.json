@@ -1,0 +1,947 @@
+{
+ "actions": {
+  "activateorganizationsaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivateOrganizationsAccess",
+   "resources": []
+  },
+  "activatetype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivateType",
+   "resources": []
+  },
+  "batchdescribetypeconfigurations": {
+   "name": "BatchDescribeTypeConfigurations",
+   "resources": []
+  },
+  "cancelresourcerequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelResourceRequest",
+   "resources": []
+  },
+  "cancelupdatestack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelUpdateStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "continueupdaterollback": {
+   "conditionKeys": [
+    "cloudformation:RoleArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ContinueUpdateRollback",
+   "resources": [
+    "stack"
+   ]
+  },
+  "createchangeset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cloudformation:ChangeSetName",
+    "cloudformation:ImportResourceTypes",
+    "cloudformation:ResourceTypes",
+    "cloudformation:RoleArn",
+    "cloudformation:StackPolicyUrl",
+    "cloudformation:TemplateUrl"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChangeSet",
+   "resources": [
+    "stack"
+   ]
+  },
+  "creategeneratedtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGeneratedTemplate",
+   "resources": []
+  },
+  "createresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResource",
+   "resources": []
+  },
+  "createstack": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cloudformation:ResourceTypes",
+    "cloudformation:RoleArn",
+    "cloudformation:StackPolicyUrl",
+    "cloudformation:TemplateUrl"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "createstackinstances": {
+   "conditionKeys": [
+    "aws:TagKeys",
+    "cloudformation:TargetRegion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStackInstances",
+   "resources": [
+    "stackset",
+    "stackset-target",
+    "type"
+   ]
+  },
+  "createstackrefactor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStackRefactor",
+   "resources": [
+    "stack"
+   ]
+  },
+  "createstackset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cloudformation:RoleArn",
+    "cloudformation:TemplateUrl"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStackSet",
+   "resources": []
+  },
+  "createuploadbucket": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUploadBucket",
+   "resources": []
+  },
+  "deactivateorganizationsaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeactivateOrganizationsAccess",
+   "resources": []
+  },
+  "deactivatetype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeactivateType",
+   "resources": []
+  },
+  "deletechangeset": {
+   "conditionKeys": [
+    "cloudformation:ChangeSetName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChangeSet",
+   "resources": [
+    "stack"
+   ]
+  },
+  "deletegeneratedtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGeneratedTemplate",
+   "resources": []
+  },
+  "deleteresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResource",
+   "resources": []
+  },
+  "deletestack": {
+   "conditionKeys": [
+    "cloudformation:RoleArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "deletestackinstances": {
+   "conditionKeys": [
+    "cloudformation:TargetRegion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStackInstances",
+   "resources": [
+    "stackset",
+    "stackset-target",
+    "type"
+   ]
+  },
+  "deletestackset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStackSet",
+   "resources": [
+    "stackset"
+   ]
+  },
+  "deregistertype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterType",
+   "resources": []
+  },
+  "describeaccountlimits": {
+   "name": "DescribeAccountLimits",
+   "resources": []
+  },
+  "describechangeset": {
+   "conditionKeys": [
+    "cloudformation:ChangeSetName"
+   ],
+   "name": "DescribeChangeSet",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describechangesethooks": {
+   "conditionKeys": [
+    "cloudformation:ChangeSetName"
+   ],
+   "name": "DescribeChangeSetHooks",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describeevents": {
+   "name": "DescribeEvents",
+   "resources": [
+    "changeset",
+    "stack"
+   ]
+  },
+  "describegeneratedtemplate": {
+   "name": "DescribeGeneratedTemplate",
+   "resources": []
+  },
+  "describeorganizationsaccess": {
+   "name": "DescribeOrganizationsAccess",
+   "resources": []
+  },
+  "describepublisher": {
+   "name": "DescribePublisher",
+   "resources": []
+  },
+  "describeresourcescan": {
+   "name": "DescribeResourceScan",
+   "resources": []
+  },
+  "describestackdriftdetectionstatus": {
+   "name": "DescribeStackDriftDetectionStatus",
+   "resources": []
+  },
+  "describestackevents": {
+   "name": "DescribeStackEvents",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describestackinstance": {
+   "name": "DescribeStackInstance",
+   "resources": [
+    "stackset"
+   ]
+  },
+  "describestackrefactor": {
+   "name": "DescribeStackRefactor",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describestackresource": {
+   "name": "DescribeStackResource",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describestackresourcedrifts": {
+   "name": "DescribeStackResourceDrifts",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describestackresources": {
+   "name": "DescribeStackResources",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describestacks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeStacks",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describestackset": {
+   "name": "DescribeStackSet",
+   "resources": [
+    "stackset"
+   ]
+  },
+  "describestacksetoperation": {
+   "name": "DescribeStackSetOperation",
+   "resources": [
+    "stackset"
+   ]
+  },
+  "describetype": {
+   "name": "DescribeType",
+   "resources": []
+  },
+  "describetyperegistration": {
+   "name": "DescribeTypeRegistration",
+   "resources": []
+  },
+  "detectstackdrift": {
+   "name": "DetectStackDrift",
+   "resources": [
+    "stack"
+   ]
+  },
+  "detectstackresourcedrift": {
+   "name": "DetectStackResourceDrift",
+   "resources": [
+    "stack"
+   ]
+  },
+  "detectstacksetdrift": {
+   "name": "DetectStackSetDrift",
+   "resources": [
+    "stackset"
+   ]
+  },
+  "estimatetemplatecost": {
+   "conditionKeys": [
+    "cloudformation:TemplateUrl"
+   ],
+   "name": "EstimateTemplateCost",
+   "resources": []
+  },
+  "executechangeset": {
+   "conditionKeys": [
+    "cloudformation:ChangeSetName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExecuteChangeSet",
+   "resources": [
+    "stack"
+   ]
+  },
+  "executestackrefactor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExecuteStackRefactor",
+   "resources": [
+    "stack"
+   ]
+  },
+  "getgeneratedtemplate": {
+   "name": "GetGeneratedTemplate",
+   "resources": []
+  },
+  "gethookresult": {
+   "conditionKeys": [
+    "cloudformation:TypeArn"
+   ],
+   "name": "GetHookResult",
+   "resources": []
+  },
+  "getresource": {
+   "name": "GetResource",
+   "resources": []
+  },
+  "getresourcerequeststatus": {
+   "name": "GetResourceRequestStatus",
+   "resources": []
+  },
+  "getstackpolicy": {
+   "name": "GetStackPolicy",
+   "resources": [
+    "stack"
+   ]
+  },
+  "gettemplate": {
+   "name": "GetTemplate",
+   "resources": [
+    "stack"
+   ]
+  },
+  "gettemplatesummary": {
+   "conditionKeys": [
+    "cloudformation:TemplateUrl"
+   ],
+   "name": "GetTemplateSummary",
+   "resources": [
+    "stack",
+    "stackset"
+   ]
+  },
+  "importstackstostackset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportStacksToStackSet",
+   "resources": [
+    "stackset"
+   ]
+  },
+  "listallhookresults": {
+   "conditionKeys": [
+    "cloudformation:TypeArn"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAllHookResults",
+   "resources": []
+  },
+  "listchangesets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChangeSets",
+   "resources": [
+    "stack"
+   ]
+  },
+  "listexports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExports",
+   "resources": []
+  },
+  "listgeneratedtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGeneratedTemplates",
+   "resources": []
+  },
+  "listhookresults": {
+   "conditionKeys": [
+    "cloudformation:ChangeSetName"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHookResults",
+   "resources": [
+    "stack"
+   ]
+  },
+  "listimports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListImports",
+   "resources": []
+  },
+  "listresourcerequests": {
+   "name": "ListResourceRequests",
+   "resources": []
+  },
+  "listresources": {
+   "name": "ListResources",
+   "resources": []
+  },
+  "listresourcescanrelatedresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceScanRelatedResources",
+   "resources": []
+  },
+  "listresourcescanresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceScanResources",
+   "resources": []
+  },
+  "listresourcescans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceScans",
+   "resources": []
+  },
+  "liststackinstanceresourcedrifts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStackInstanceResourceDrifts",
+   "resources": [
+    "stackset"
+   ]
+  },
+  "liststackinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStackInstances",
+   "resources": [
+    "stackset"
+   ]
+  },
+  "liststackrefactoractions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStackRefactorActions",
+   "resources": [
+    "stack"
+   ]
+  },
+  "liststackrefactors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStackRefactors",
+   "resources": [
+    "stack"
+   ]
+  },
+  "liststackresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStackResources",
+   "resources": [
+    "stack"
+   ]
+  },
+  "liststacks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStacks",
+   "resources": []
+  },
+  "liststacksetautodeploymenttargets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStackSetAutoDeploymentTargets",
+   "resources": [
+    "stackset"
+   ]
+  },
+  "liststacksetoperationresults": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStackSetOperationResults",
+   "resources": [
+    "stackset"
+   ]
+  },
+  "liststacksetoperations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStackSetOperations",
+   "resources": [
+    "stackset"
+   ]
+  },
+  "liststacksets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStackSets",
+   "resources": []
+  },
+  "listtyperegistrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTypeRegistrations",
+   "resources": []
+  },
+  "listtypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTypes",
+   "resources": []
+  },
+  "listtypeversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTypeVersions",
+   "resources": []
+  },
+  "publishtype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PublishType",
+   "resources": []
+  },
+  "recordhandlerprogress": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RecordHandlerProgress",
+   "resources": [
+    "stack"
+   ]
+  },
+  "registerpublisher": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterPublisher",
+   "resources": []
+  },
+  "registertype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterType",
+   "resources": []
+  },
+  "removealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveAlias",
+   "resources": [
+    "stack"
+   ]
+  },
+  "rollbackstack": {
+   "conditionKeys": [
+    "cloudformation:RoleArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RollbackStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "setalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetAlias",
+   "resources": [
+    "stack"
+   ]
+  },
+  "setstackpolicy": {
+   "conditionKeys": [
+    "cloudformation:StackPolicyUrl"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "SetStackPolicy",
+   "resources": [
+    "stack"
+   ]
+  },
+  "settypeconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetTypeConfiguration",
+   "resources": []
+  },
+  "settypedefaultversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetTypeDefaultVersion",
+   "resources": []
+  },
+  "signalresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SignalResource",
+   "resources": [
+    "stack"
+   ]
+  },
+  "startresourcescan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartResourceScan",
+   "resources": []
+  },
+  "stopstacksetoperation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopStackSetOperation",
+   "resources": [
+    "stackset"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cloudformation:CreateAction"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "changeset",
+    "stack",
+    "stackset"
+   ]
+  },
+  "testtype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TestType",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys",
+    "cloudformation:CreateAction"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "changeset",
+    "stack",
+    "stackset"
+   ]
+  },
+  "updategeneratedtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGeneratedTemplate",
+   "resources": []
+  },
+  "updateresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResource",
+   "resources": []
+  },
+  "updatestack": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cloudformation:ResourceTypes",
+    "cloudformation:RoleArn",
+    "cloudformation:StackPolicyUrl",
+    "cloudformation:TemplateUrl"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "updatestackinstances": {
+   "conditionKeys": [
+    "cloudformation:TargetRegion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStackInstances",
+   "resources": [
+    "stackset",
+    "stackset-target",
+    "type"
+   ]
+  },
+  "updatestackset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cloudformation:RoleArn",
+    "cloudformation:TargetRegion",
+    "cloudformation:TemplateUrl"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStackSet",
+   "resources": [
+    "stackset",
+    "stackset-target",
+    "type"
+   ]
+  },
+  "updateterminationprotection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTerminationProtection",
+   "resources": [
+    "stack"
+   ]
+  },
+  "validatetemplate": {
+   "conditionKeys": [
+    "cloudformation:TemplateUrl"
+   ],
+   "name": "ValidateTemplate",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "cloudformation:ChangeSetName": [
+   "String"
+  ],
+  "cloudformation:CreateAction": [
+   "String"
+  ],
+  "cloudformation:ImportResourceTypes": [
+   "String"
+  ],
+  "cloudformation:ResourceTypes": [
+   "ArrayOfString"
+  ],
+  "cloudformation:RoleArn": [
+   "ARN"
+  ],
+  "cloudformation:StackPolicyUrl": [
+   "String"
+  ],
+  "cloudformation:TargetRegion": [
+   "ArrayOfString"
+  ],
+  "cloudformation:TemplateUrl": [
+   "String"
+  ],
+  "cloudformation:TypeArn": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "changeset": {
+   "arnFormats": [
+    "arn:${Partition}:cloudformation:${Region}:${Account}:changeSet/${ChangeSetName}/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "generatedtemplate": {
+   "arnFormats": [
+    "arn:${Partition}:cloudformation:${Region}:${Account}:generatedTemplate/${Id}"
+   ]
+  },
+  "resourcescan": {
+   "arnFormats": [
+    "arn:${Partition}:cloudformation:${Region}:${Account}:resourceScan/${Id}"
+   ]
+  },
+  "stack": {
+   "arnFormats": [
+    "arn:${Partition}:cloudformation:${Region}:${Account}:stack/${StackName}/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "stackset": {
+   "arnFormats": [
+    "arn:${Partition}:cloudformation:${Region}:${Account}:stackset/${StackSetName}:${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "stackset-target": {
+   "arnFormats": [
+    "arn:${Partition}:cloudformation:${Region}:${Account}:stackset-target/${StackSetTarget}"
+   ]
+  },
+  "type": {
+   "arnFormats": [
+    "arn:${Partition}:cloudformation:${Region}:${Account}:type/resource/${Type}"
+   ]
+  },
+  "typeHook": {
+   "arnFormats": [
+    "arn:${Partition}:cloudformation:${Region}:${Account}:type/hook/${Type}"
+   ]
+  }
+ },
+ "service": "cloudformation",
+ "serviceName": "CloudFormation",
+ "version": "v1.5"
+}

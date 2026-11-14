@@ -1,0 +1,589 @@
+{
+ "actions": {
+  "addtagstocertificate": {
+   "conditionKeys": [
+    "acm:CertificateKeyPairOrigin",
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "AddTagsToCertificate",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "createacmedomainvalidation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAcmeDomainValidation",
+   "resourceConditionKeys": {
+    "acme-endpoint": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-endpoint"
+   ]
+  },
+  "createacmeendpoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAcmeEndpoint",
+   "resources": []
+  },
+  "createacmeexternalaccountbinding": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAcmeExternalAccountBinding",
+   "resourceConditionKeys": {
+    "acme-endpoint": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-endpoint"
+   ]
+  },
+  "createtimestamp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTimeStamp",
+   "resources": []
+  },
+  "deleteacmedomainvalidation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAcmeDomainValidation",
+   "resourceConditionKeys": {
+    "acme-domain-validation": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-domain-validation"
+   ]
+  },
+  "deleteacmeendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAcmeEndpoint",
+   "resourceConditionKeys": {
+    "acme-endpoint": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-endpoint"
+   ]
+  },
+  "deleteacmeexternalaccountbinding": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAcmeExternalAccountBinding",
+   "resourceConditionKeys": {
+    "acme-external-account-binding": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-external-account-binding"
+   ]
+  },
+  "deletecertificate": {
+   "conditionKeys": [
+    "acm:CertificateKeyPairOrigin"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCertificate",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "describeacmeaccount": {
+   "name": "DescribeAcmeAccount",
+   "resourceConditionKeys": {
+    "acme-endpoint": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-endpoint"
+   ]
+  },
+  "describeacmedomainvalidation": {
+   "name": "DescribeAcmeDomainValidation",
+   "resourceConditionKeys": {
+    "acme-domain-validation": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-domain-validation"
+   ]
+  },
+  "describeacmeendpoint": {
+   "name": "DescribeAcmeEndpoint",
+   "resourceConditionKeys": {
+    "acme-endpoint": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-endpoint"
+   ]
+  },
+  "describeacmeexternalaccountbinding": {
+   "name": "DescribeAcmeExternalAccountBinding",
+   "resourceConditionKeys": {
+    "acme-external-account-binding": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-external-account-binding"
+   ]
+  },
+  "describecertificate": {
+   "name": "DescribeCertificate",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "exportcertificate": {
+   "conditionKeys": [
+    "acm:DomainNames"
+   ],
+   "name": "ExportCertificate",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "getaccountconfiguration": {
+   "name": "GetAccountConfiguration",
+   "resources": []
+  },
+  "getacmeexternalaccountbindingcredentials": {
+   "name": "GetAcmeExternalAccountBindingCredentials",
+   "resourceConditionKeys": {
+    "acme-external-account-binding": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-external-account-binding"
+   ]
+  },
+  "getcertificate": {
+   "name": "GetCertificate",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "importcertificate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportCertificate",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "listacmeaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAcmeAccounts",
+   "resourceConditionKeys": {
+    "acme-endpoint": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-endpoint"
+   ]
+  },
+  "listacmedomainvalidations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAcmeDomainValidations",
+   "resourceConditionKeys": {
+    "acme-endpoint": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-endpoint"
+   ]
+  },
+  "listacmeendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAcmeEndpoints",
+   "resources": []
+  },
+  "listacmeexternalaccountbindings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAcmeExternalAccountBindings",
+   "resourceConditionKeys": {
+    "acme-endpoint": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-endpoint"
+   ]
+  },
+  "listcertificatedomainvalidations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCertificateDomainValidations",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "listcertificates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCertificates",
+   "resources": []
+  },
+  "listtagsforcertificate": {
+   "name": "ListTagsForCertificate",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resourceConditionKeys": {
+    "acme-domain-validation": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "acme-endpoint": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "acme-external-account-binding": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-domain-validation",
+    "acme-endpoint",
+    "acme-external-account-binding"
+   ]
+  },
+  "putaccountconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAccountConfiguration",
+   "resources": []
+  },
+  "removetagsfromcertificate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "RemoveTagsFromCertificate",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "renewcertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RenewCertificate",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "requestcertificate": {
+   "conditionKeys": [
+    "acm:CertificateAuthority",
+    "acm:CertificateKeyPairOrigin",
+    "acm:CertificateTransparencyLogging",
+    "acm:DomainNames",
+    "acm:Export",
+    "acm:KeyAlgorithm",
+    "acm:ValidationMethod",
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RequestCertificate",
+   "resources": []
+  },
+  "resendvalidationemail": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResendValidationEmail",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "revokeacmeaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeAcmeAccount",
+   "resourceConditionKeys": {
+    "acme-endpoint": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-endpoint"
+   ]
+  },
+  "revokeacmeexternalaccountbinding": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeAcmeExternalAccountBinding",
+   "resourceConditionKeys": {
+    "acme-external-account-binding": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-external-account-binding"
+   ]
+  },
+  "revokecertificate": {
+   "conditionKeys": [
+    "acm:CertificateKeyPairOrigin",
+    "acm:DomainNames"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeCertificate",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "searchcertificates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchCertificates",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "acme-domain-validation": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "acme-endpoint": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "acme-external-account-binding": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-domain-validation",
+    "acme-endpoint",
+    "acme-external-account-binding"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "acme-domain-validation": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "acme-endpoint": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "acme-external-account-binding": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-domain-validation",
+    "acme-endpoint",
+    "acme-external-account-binding"
+   ]
+  },
+  "updateacmedomainvalidation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAcmeDomainValidation",
+   "resourceConditionKeys": {
+    "acme-domain-validation": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-domain-validation"
+   ]
+  },
+  "updateacmeendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAcmeEndpoint",
+   "resourceConditionKeys": {
+    "acme-endpoint": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "acme-endpoint"
+   ]
+  },
+  "updatecertificate": {
+   "conditionKeys": [
+    "acm:CertificateKeyPairOrigin"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCertificate",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "updatecertificateoptions": {
+   "conditionKeys": [
+    "acm:ValidationMethod"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCertificateOptions",
+   "resources": [
+    "certificate"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "acm:CertificateAuthority": [
+   "String"
+  ],
+  "acm:CertificateKeyPairOrigin": [
+   "String"
+  ],
+  "acm:CertificateTransparencyLogging": [
+   "String"
+  ],
+  "acm:DomainNames": [
+   "ArrayOfString"
+  ],
+  "acm:Export": [
+   "String"
+  ],
+  "acm:KeyAlgorithm": [
+   "String"
+  ],
+  "acm:ValidationMethod": [
+   "String"
+  ],
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "acme-domain-validation": {
+   "arnFormats": [
+    "arn:${Partition}:acm:${Region}:${Account}:acme-endpoint/${AcmeEndpointId}/acme-domain-validation/${AcmeDomainValidationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "acme-endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:acm:${Region}:${Account}:acme-endpoint/${AcmeEndpointId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "acme-external-account-binding": {
+   "arnFormats": [
+    "arn:${Partition}:acm:${Region}:${Account}:acme-endpoint/${AcmeEndpointId}/acme-external-account-binding/${ExternalAccountBindingId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "certificate": {
+   "arnFormats": [
+    "arn:${Partition}:acm:${Region}:${Account}:certificate/${CertificateId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "acm",
+ "serviceName": "Certificate Manager",
+ "version": "v1.5"
+}

@@ -1,0 +1,360 @@
+{
+ "actions": {
+  "allowvendedlogdeliveryforresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": [
+    "protection"
+   ]
+  },
+  "associatedrtlogbucket": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateDRTLogBucket",
+   "resources": []
+  },
+  "associatedrtrole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateDRTRole",
+   "resources": []
+  },
+  "associatehealthcheck": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateHealthCheck",
+   "resources": [
+    "protection"
+   ]
+  },
+  "associateproactiveengagementdetails": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateProactiveEngagementDetails",
+   "resources": []
+  },
+  "createprotection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProtection",
+   "resources": []
+  },
+  "createprotectiongroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProtectionGroup",
+   "resources": []
+  },
+  "createsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSubscription",
+   "resources": []
+  },
+  "deleteprotection": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProtection",
+   "resources": [
+    "protection"
+   ]
+  },
+  "deleteprotectiongroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProtectionGroup",
+   "resources": [
+    "protection-group"
+   ]
+  },
+  "deletesubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSubscription",
+   "resources": []
+  },
+  "describeattack": {
+   "name": "DescribeAttack",
+   "resources": [
+    "attack"
+   ]
+  },
+  "describeattackcontributors": {
+   "name": "DescribeAttackContributors",
+   "resources": [
+    "attack",
+    "protection-group"
+   ]
+  },
+  "describeattackstatistics": {
+   "name": "DescribeAttackStatistics",
+   "resources": []
+  },
+  "describedrtaccess": {
+   "name": "DescribeDRTAccess",
+   "resources": []
+  },
+  "describeemergencycontactsettings": {
+   "name": "DescribeEmergencyContactSettings",
+   "resources": []
+  },
+  "describeprotection": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeProtection",
+   "resources": [
+    "protection"
+   ]
+  },
+  "describeprotectiongroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeProtectionGroup",
+   "resources": [
+    "protection-group"
+   ]
+  },
+  "describesubscription": {
+   "name": "DescribeSubscription",
+   "resources": []
+  },
+  "disableapplicationlayerautomaticresponse": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableApplicationLayerAutomaticResponse",
+   "resources": []
+  },
+  "disableproactiveengagement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableProactiveEngagement",
+   "resources": []
+  },
+  "disassociatedrtlogbucket": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateDRTLogBucket",
+   "resources": []
+  },
+  "disassociatedrtrole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateDRTRole",
+   "resources": []
+  },
+  "disassociatehealthcheck": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateHealthCheck",
+   "resources": [
+    "protection"
+   ]
+  },
+  "enableapplicationlayerautomaticresponse": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableApplicationLayerAutomaticResponse",
+   "resources": []
+  },
+  "enableproactiveengagement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableProactiveEngagement",
+   "resources": []
+  },
+  "getglobalthreatdata": {
+   "name": "GetGlobalThreatData",
+   "resources": []
+  },
+  "getsubscriptionstate": {
+   "name": "GetSubscriptionState",
+   "resources": []
+  },
+  "listattacks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAttacks",
+   "resources": []
+  },
+  "listmitigations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMitigations",
+   "resources": [
+    "attack"
+   ]
+  },
+  "listprotectiongroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProtectionGroups",
+   "resources": []
+  },
+  "listprotections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProtections",
+   "resources": []
+  },
+  "listresourcesinprotectiongroup": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourcesInProtectionGroup",
+   "resources": [
+    "protection-group"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "protection",
+    "protection-group"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "protection",
+    "protection-group"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "protection",
+    "protection-group"
+   ]
+  },
+  "updateapplicationlayerautomaticresponse": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplicationLayerAutomaticResponse",
+   "resources": []
+  },
+  "updateemergencycontactsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEmergencyContactSettings",
+   "resources": []
+  },
+  "updateprotectiongroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProtectionGroup",
+   "resources": [
+    "protection-group"
+   ]
+  },
+  "updatesubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSubscription",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "attack": {
+   "arnFormats": [
+    "arn:${Partition}:shield::${Account}:attack/${Id}"
+   ]
+  },
+  "protection": {
+   "arnFormats": [
+    "arn:${Partition}:shield::${Account}:protection/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "protection-group": {
+   "arnFormats": [
+    "arn:${Partition}:shield::${Account}:protection-group/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "shield",
+ "serviceName": "Shield",
+ "version": "v1.5"
+}

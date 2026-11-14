@@ -1,0 +1,498 @@
+{
+ "actions": {
+  "creategatewayroute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGatewayRoute",
+   "resourceConditionKeys": {
+    "gatewayRoute": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "gatewayRoute",
+    "virtualService"
+   ]
+  },
+  "createmesh": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMesh",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "createroute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRoute",
+   "resourceConditionKeys": {
+    "route": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "route",
+    "virtualNode"
+   ]
+  },
+  "createvirtualgateway": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVirtualGateway",
+   "resources": [
+    "virtualGateway"
+   ]
+  },
+  "createvirtualnode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVirtualNode",
+   "resourceConditionKeys": {
+    "virtualNode": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "virtualNode",
+    "virtualService"
+   ]
+  },
+  "createvirtualrouter": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVirtualRouter",
+   "resources": [
+    "virtualRouter"
+   ]
+  },
+  "createvirtualservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVirtualService",
+   "resourceConditionKeys": {
+    "virtualService": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "virtualNode",
+    "virtualRouter",
+    "virtualService"
+   ]
+  },
+  "deletegatewayroute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGatewayRoute",
+   "resources": [
+    "gatewayRoute"
+   ]
+  },
+  "deletemesh": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMesh",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "deletemeshpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMeshPolicy",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "deleteroute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRoute",
+   "resources": [
+    "route"
+   ]
+  },
+  "deletevirtualgateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVirtualGateway",
+   "resources": [
+    "virtualGateway"
+   ]
+  },
+  "deletevirtualnode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVirtualNode",
+   "resources": [
+    "virtualNode"
+   ]
+  },
+  "deletevirtualrouter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVirtualRouter",
+   "resources": [
+    "virtualRouter"
+   ]
+  },
+  "deletevirtualservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVirtualService",
+   "resources": [
+    "virtualService"
+   ]
+  },
+  "describegatewayroute": {
+   "name": "DescribeGatewayRoute",
+   "resources": [
+    "gatewayRoute"
+   ]
+  },
+  "describemesh": {
+   "name": "DescribeMesh",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "describeroute": {
+   "name": "DescribeRoute",
+   "resources": [
+    "route"
+   ]
+  },
+  "describevirtualgateway": {
+   "name": "DescribeVirtualGateway",
+   "resources": [
+    "virtualGateway"
+   ]
+  },
+  "describevirtualnode": {
+   "name": "DescribeVirtualNode",
+   "resources": [
+    "virtualNode"
+   ]
+  },
+  "describevirtualrouter": {
+   "name": "DescribeVirtualRouter",
+   "resources": [
+    "virtualRouter"
+   ]
+  },
+  "describevirtualservice": {
+   "name": "DescribeVirtualService",
+   "resources": [
+    "virtualService"
+   ]
+  },
+  "getmeshpolicy": {
+   "name": "GetMeshPolicy",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "listgatewayroutes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGatewayRoutes",
+   "resources": [
+    "virtualGateway"
+   ]
+  },
+  "listmeshes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMeshes",
+   "resources": []
+  },
+  "listroutes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRoutes",
+   "resources": [
+    "virtualRouter"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "gatewayRoute",
+    "mesh",
+    "route",
+    "virtualGateway",
+    "virtualNode",
+    "virtualRouter",
+    "virtualService"
+   ]
+  },
+  "listvirtualgateways": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVirtualGateways",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "listvirtualnodes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVirtualNodes",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "listvirtualrouters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVirtualRouters",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "listvirtualservices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVirtualServices",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "putmeshpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMeshPolicy",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "streamaggregatedresources": {
+   "name": "StreamAggregatedResources",
+   "resources": [
+    "virtualGateway",
+    "virtualNode"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "gatewayRoute",
+    "mesh",
+    "route",
+    "virtualGateway",
+    "virtualNode",
+    "virtualRouter",
+    "virtualService"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "gatewayRoute",
+    "mesh",
+    "route",
+    "virtualGateway",
+    "virtualNode",
+    "virtualRouter",
+    "virtualService"
+   ]
+  },
+  "updategatewayroute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGatewayRoute",
+   "resources": [
+    "gatewayRoute",
+    "virtualService"
+   ]
+  },
+  "updatemesh": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMesh",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "updateroute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoute",
+   "resources": [
+    "route",
+    "virtualNode"
+   ]
+  },
+  "updatevirtualgateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVirtualGateway",
+   "resources": [
+    "virtualGateway"
+   ]
+  },
+  "updatevirtualnode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVirtualNode",
+   "resources": [
+    "virtualNode"
+   ]
+  },
+  "updatevirtualrouter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVirtualRouter",
+   "resources": [
+    "virtualRouter"
+   ]
+  },
+  "updatevirtualservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVirtualService",
+   "resources": [
+    "virtualNode",
+    "virtualRouter",
+    "virtualService"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "gatewayRoute": {
+   "arnFormats": [
+    "arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualGateway/${VirtualGatewayName}/gatewayRoute/${GatewayRouteName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "mesh": {
+   "arnFormats": [
+    "arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "route": {
+   "arnFormats": [
+    "arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualRouter/${VirtualRouterName}/route/${RouteName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "virtualGateway": {
+   "arnFormats": [
+    "arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualGateway/${VirtualGatewayName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "virtualNode": {
+   "arnFormats": [
+    "arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualNode/${VirtualNodeName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "virtualRouter": {
+   "arnFormats": [
+    "arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualRouter/${VirtualRouterName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "virtualService": {
+   "arnFormats": [
+    "arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualService/${VirtualServiceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "appmesh",
+ "serviceName": "App Mesh",
+ "version": "v1.5"
+}

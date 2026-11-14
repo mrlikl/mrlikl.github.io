@@ -1,0 +1,772 @@
+{
+ "actions": {
+  "associatewebacl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateWebACL",
+   "resources": [
+    "loadbalancer/app/",
+    "webacl"
+   ]
+  },
+  "createbytematchset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateByteMatchSet",
+   "resources": [
+    "bytematchset"
+   ]
+  },
+  "creategeomatchset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGeoMatchSet",
+   "resources": [
+    "geomatchset"
+   ]
+  },
+  "createipset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIPSet",
+   "resources": [
+    "ipset"
+   ]
+  },
+  "createratebasedrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRateBasedRule",
+   "resources": [
+    "ratebasedrule"
+   ]
+  },
+  "createregexmatchset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRegexMatchSet",
+   "resources": [
+    "regexmatchset"
+   ]
+  },
+  "createregexpatternset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRegexPatternSet",
+   "resources": [
+    "regexpatternset"
+   ]
+  },
+  "createrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "createrulegroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRuleGroup",
+   "resources": [
+    "rulegroup"
+   ]
+  },
+  "createsizeconstraintset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSizeConstraintSet",
+   "resources": [
+    "sizeconstraintset"
+   ]
+  },
+  "createsqlinjectionmatchset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSqlInjectionMatchSet",
+   "resources": [
+    "sqlinjectionmatchset"
+   ]
+  },
+  "createwebacl": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "CreateWebACL",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "createwebaclmigrationstack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWebACLMigrationStack",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "createxssmatchset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateXssMatchSet",
+   "resources": [
+    "xssmatchset"
+   ]
+  },
+  "deletebytematchset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteByteMatchSet",
+   "resources": [
+    "bytematchset"
+   ]
+  },
+  "deletegeomatchset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGeoMatchSet",
+   "resources": [
+    "geomatchset"
+   ]
+  },
+  "deleteipset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIPSet",
+   "resources": [
+    "ipset"
+   ]
+  },
+  "deleteloggingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLoggingConfiguration",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "deletepermissionpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeletePermissionPolicy",
+   "resources": [
+    "rulegroup"
+   ]
+  },
+  "deleteratebasedrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRateBasedRule",
+   "resources": [
+    "ratebasedrule"
+   ]
+  },
+  "deleteregexmatchset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRegexMatchSet",
+   "resources": [
+    "regexmatchset"
+   ]
+  },
+  "deleteregexpatternset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRegexPatternSet",
+   "resources": [
+    "regexpatternset"
+   ]
+  },
+  "deleterule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "deleterulegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRuleGroup",
+   "resources": [
+    "rulegroup"
+   ]
+  },
+  "deletesizeconstraintset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSizeConstraintSet",
+   "resources": [
+    "sizeconstraintset"
+   ]
+  },
+  "deletesqlinjectionmatchset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSqlInjectionMatchSet",
+   "resources": [
+    "sqlinjectionmatchset"
+   ]
+  },
+  "deletewebacl": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteWebACL",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "deletexssmatchset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteXssMatchSet",
+   "resources": [
+    "xssmatchset"
+   ]
+  },
+  "disassociatewebacl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateWebACL",
+   "resources": [
+    "loadbalancer/app/"
+   ]
+  },
+  "getbytematchset": {
+   "name": "GetByteMatchSet",
+   "resources": [
+    "bytematchset"
+   ]
+  },
+  "getchangetoken": {
+   "name": "GetChangeToken",
+   "resources": []
+  },
+  "getchangetokenstatus": {
+   "name": "GetChangeTokenStatus",
+   "resources": []
+  },
+  "getgeomatchset": {
+   "name": "GetGeoMatchSet",
+   "resources": [
+    "geomatchset"
+   ]
+  },
+  "getipset": {
+   "name": "GetIPSet",
+   "resources": [
+    "ipset"
+   ]
+  },
+  "getloggingconfiguration": {
+   "name": "GetLoggingConfiguration",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "getpermissionpolicy": {
+   "name": "GetPermissionPolicy",
+   "resources": [
+    "rulegroup"
+   ]
+  },
+  "getratebasedrule": {
+   "name": "GetRateBasedRule",
+   "resources": [
+    "ratebasedrule"
+   ]
+  },
+  "getratebasedrulemanagedkeys": {
+   "name": "GetRateBasedRuleManagedKeys",
+   "resources": [
+    "ratebasedrule"
+   ]
+  },
+  "getregexmatchset": {
+   "name": "GetRegexMatchSet",
+   "resources": [
+    "regexmatchset"
+   ]
+  },
+  "getregexpatternset": {
+   "name": "GetRegexPatternSet",
+   "resources": [
+    "regexpatternset"
+   ]
+  },
+  "getrule": {
+   "name": "GetRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "getrulegroup": {
+   "name": "GetRuleGroup",
+   "resources": [
+    "rulegroup"
+   ]
+  },
+  "getsampledrequests": {
+   "name": "GetSampledRequests",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "getsizeconstraintset": {
+   "name": "GetSizeConstraintSet",
+   "resources": [
+    "sizeconstraintset"
+   ]
+  },
+  "getsqlinjectionmatchset": {
+   "name": "GetSqlInjectionMatchSet",
+   "resources": [
+    "sqlinjectionmatchset"
+   ]
+  },
+  "getwebacl": {
+   "name": "GetWebACL",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "getwebaclforresource": {
+   "name": "GetWebACLForResource",
+   "resources": [
+    "loadbalancer/app/"
+   ]
+  },
+  "getxssmatchset": {
+   "name": "GetXssMatchSet",
+   "resources": [
+    "xssmatchset"
+   ]
+  },
+  "listactivatedrulesinrulegroup": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListActivatedRulesInRuleGroup",
+   "resources": []
+  },
+  "listbytematchsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListByteMatchSets",
+   "resources": []
+  },
+  "listgeomatchsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGeoMatchSets",
+   "resources": []
+  },
+  "listipsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIPSets",
+   "resources": []
+  },
+  "listloggingconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLoggingConfigurations",
+   "resources": []
+  },
+  "listratebasedrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRateBasedRules",
+   "resources": []
+  },
+  "listregexmatchsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRegexMatchSets",
+   "resources": []
+  },
+  "listregexpatternsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRegexPatternSets",
+   "resources": []
+  },
+  "listresourcesforwebacl": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourcesForWebACL",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "listrulegroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRuleGroups",
+   "resources": []
+  },
+  "listrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRules",
+   "resources": []
+  },
+  "listsizeconstraintsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSizeConstraintSets",
+   "resources": []
+  },
+  "listsqlinjectionmatchsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSqlInjectionMatchSets",
+   "resources": []
+  },
+  "listsubscribedrulegroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubscribedRuleGroups",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "ratebasedrule",
+    "rule",
+    "rulegroup",
+    "webacl"
+   ]
+  },
+  "listwebacls": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWebACLs",
+   "resources": []
+  },
+  "listxssmatchsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListXssMatchSets",
+   "resources": []
+  },
+  "putloggingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLoggingConfiguration",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "putpermissionpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutPermissionPolicy",
+   "resources": [
+    "rulegroup"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "ratebasedrule",
+    "rule",
+    "rulegroup",
+    "webacl"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "ratebasedrule",
+    "rule",
+    "rulegroup",
+    "webacl"
+   ]
+  },
+  "updatebytematchset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateByteMatchSet",
+   "resources": [
+    "bytematchset"
+   ]
+  },
+  "updategeomatchset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGeoMatchSet",
+   "resources": [
+    "geomatchset"
+   ]
+  },
+  "updateipset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIPSet",
+   "resources": [
+    "ipset"
+   ]
+  },
+  "updateratebasedrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRateBasedRule",
+   "resources": [
+    "ratebasedrule"
+   ]
+  },
+  "updateregexmatchset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRegexMatchSet",
+   "resources": [
+    "regexmatchset"
+   ]
+  },
+  "updateregexpatternset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRegexPatternSet",
+   "resources": [
+    "regexpatternset"
+   ]
+  },
+  "updaterule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "updaterulegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRuleGroup",
+   "resources": [
+    "rulegroup"
+   ]
+  },
+  "updatesizeconstraintset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSizeConstraintSet",
+   "resources": [
+    "sizeconstraintset"
+   ]
+  },
+  "updatesqlinjectionmatchset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSqlInjectionMatchSet",
+   "resources": [
+    "sqlinjectionmatchset"
+   ]
+  },
+  "updatewebacl": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateWebACL",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "updatexssmatchset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateXssMatchSet",
+   "resources": [
+    "xssmatchset"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "bytematchset": {
+   "arnFormats": [
+    "arn:${Partition}:waf-regional:${Region}:${Account}:bytematchset/${Id}"
+   ]
+  },
+  "geomatchset": {
+   "arnFormats": [
+    "arn:${Partition}:waf-regional:${Region}:${Account}:geomatchset/${Id}"
+   ]
+  },
+  "ipset": {
+   "arnFormats": [
+    "arn:${Partition}:waf-regional:${Region}:${Account}:ipset/${Id}"
+   ]
+  },
+  "loadbalancer/app/": {
+   "arnFormats": [
+    "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/app/${LoadBalancerName}/${LoadBalancerId}"
+   ]
+  },
+  "ratebasedrule": {
+   "arnFormats": [
+    "arn:${Partition}:waf-regional:${Region}:${Account}:ratebasedrule/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "regexmatchset": {
+   "arnFormats": [
+    "arn:${Partition}:waf-regional:${Region}:${Account}:regexmatch/${Id}"
+   ]
+  },
+  "regexpatternset": {
+   "arnFormats": [
+    "arn:${Partition}:waf-regional:${Region}:${Account}:regexpatternset/${Id}"
+   ]
+  },
+  "rule": {
+   "arnFormats": [
+    "arn:${Partition}:waf-regional:${Region}:${Account}:rule/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "rulegroup": {
+   "arnFormats": [
+    "arn:${Partition}:waf-regional:${Region}:${Account}:rulegroup/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "sizeconstraintset": {
+   "arnFormats": [
+    "arn:${Partition}:waf-regional:${Region}:${Account}:sizeconstraintset/${Id}"
+   ]
+  },
+  "sqlinjectionmatchset": {
+   "arnFormats": [
+    "arn:${Partition}:waf-regional:${Region}:${Account}:sqlinjectionset/${Id}"
+   ]
+  },
+  "webacl": {
+   "arnFormats": [
+    "arn:${Partition}:waf-regional:${Region}:${Account}:webacl/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "xssmatchset": {
+   "arnFormats": [
+    "arn:${Partition}:waf-regional:${Region}:${Account}:xssmatchset/${Id}"
+   ]
+  }
+ },
+ "service": "waf-regional",
+ "serviceName": "WAF Regional",
+ "version": "v1.5"
+}

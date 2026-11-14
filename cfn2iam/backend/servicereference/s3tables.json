@@ -1,0 +1,732 @@
+{
+ "actions": {
+  "completetablemigration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3tables:TableBucketTag/${TagKey}",
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteTableMigration",
+   "resources": [
+    "Table"
+   ]
+  },
+  "createnamespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNamespace",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "createtable": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "s3tables:KMSKeyArn",
+    "s3tables:SSEAlgorithm",
+    "s3tables:TableBucketTag/${TagKey}",
+    "s3tables:namespace"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTable",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "createtablebucket": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "s3tables:KMSKeyArn",
+    "s3tables:SSEAlgorithm",
+    "s3tables:TableBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTableBucket",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "deletenamespace": {
+   "conditionKeys": [
+    "s3tables:namespace"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNamespace",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "deletetable": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTable",
+   "resources": [
+    "Table"
+   ]
+  },
+  "deletetablebucket": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTableBucket",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "deletetablebucketencryption": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTableBucketEncryption",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "deletetablebucketmetricsconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTableBucketMetricsConfiguration",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "deletetablebucketpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteTableBucketPolicy",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "deletetablebucketreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTableBucketReplication",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "deletetablepolicy": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteTablePolicy",
+   "resources": [
+    "Table"
+   ]
+  },
+  "deletetablereplication": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTableReplication",
+   "resources": [
+    "Table"
+   ]
+  },
+  "getnamespace": {
+   "conditionKeys": [
+    "s3tables:namespace"
+   ],
+   "name": "GetNamespace",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "gettable": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "name": "GetTable",
+   "resources": [
+    "Table"
+   ]
+  },
+  "gettablebucket": {
+   "name": "GetTableBucket",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "gettablebucketencryption": {
+   "name": "GetTableBucketEncryption",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "gettablebucketlogging": {
+   "name": "GetTableBucketLogging",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "gettablebucketmaintenanceconfiguration": {
+   "name": "GetTableBucketMaintenanceConfiguration",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "gettablebucketmetricsconfiguration": {
+   "name": "GetTableBucketMetricsConfiguration",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "gettablebucketpolicy": {
+   "name": "GetTableBucketPolicy",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "gettablebucketreplication": {
+   "name": "GetTableBucketReplication",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "gettablebucketstorageclass": {
+   "name": "GetTableBucketStorageClass",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "gettabledata": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "name": "GetTableData",
+   "resources": [
+    "Table"
+   ]
+  },
+  "gettableencryption": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "name": "GetTableEncryption",
+   "resources": [
+    "Table"
+   ]
+  },
+  "gettablemaintenanceconfiguration": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "name": "GetTableMaintenanceConfiguration",
+   "resources": [
+    "Table"
+   ]
+  },
+  "gettablemaintenancejobstatus": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "name": "GetTableMaintenanceJobStatus",
+   "resources": [
+    "Table"
+   ]
+  },
+  "gettablemetadatalocation": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "name": "GetTableMetadataLocation",
+   "resources": [
+    "Table"
+   ]
+  },
+  "gettablemigration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3tables:TableBucketTag/${TagKey}",
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "name": "GetTableMigration",
+   "resources": [
+    "Table"
+   ]
+  },
+  "gettablepolicy": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "name": "GetTablePolicy",
+   "resources": [
+    "Table"
+   ]
+  },
+  "gettablerecordexpirationconfiguration": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "name": "GetTableRecordExpirationConfiguration",
+   "resources": [
+    "Table"
+   ]
+  },
+  "gettablerecordexpirationjobstatus": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "name": "GetTableRecordExpirationJobStatus",
+   "resources": [
+    "Table"
+   ]
+  },
+  "gettablereplication": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "name": "GetTableReplication",
+   "resources": [
+    "Table"
+   ]
+  },
+  "gettablereplicationstatus": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "name": "GetTableReplicationStatus",
+   "resources": [
+    "Table"
+   ]
+  },
+  "gettablestorageclass": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "name": "GetTableStorageClass",
+   "resources": [
+    "Table"
+   ]
+  },
+  "listnamespaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNamespaces",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "listtablebuckets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTableBuckets",
+   "resources": []
+  },
+  "listtablemigrations": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3tables:TableBucketTag/${TagKey}",
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTableMigrations",
+   "resources": [
+    "Table",
+    "TableBucket"
+   ]
+  },
+  "listtables": {
+   "conditionKeys": [
+    "s3tables:namespace"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTables",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3tables:TableBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "Table",
+    "TableBucket"
+   ]
+  },
+  "puttablebucketencryption": {
+   "conditionKeys": [
+    "s3tables:KMSKeyArn",
+    "s3tables:SSEAlgorithm"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTableBucketEncryption",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "puttablebucketlogging": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTableBucketLogging",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "puttablebucketmaintenanceconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTableBucketMaintenanceConfiguration",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "puttablebucketmetricsconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTableBucketMetricsConfiguration",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "puttablebucketpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutTableBucketPolicy",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "puttablebucketreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTableBucketReplication",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "puttablebucketstorageclass": {
+   "conditionKeys": [
+    "s3tables:StorageClass"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTableBucketStorageClass",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "puttabledata": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTableData",
+   "resources": [
+    "Table"
+   ]
+  },
+  "puttableencryption": {
+   "conditionKeys": [
+    "s3tables:KMSKeyArn",
+    "s3tables:SSEAlgorithm",
+    "s3tables:namespace"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTableEncryption",
+   "resources": [
+    "Table"
+   ]
+  },
+  "puttablemaintenanceconfiguration": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTableMaintenanceConfiguration",
+   "resources": [
+    "Table"
+   ]
+  },
+  "puttablepolicy": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutTablePolicy",
+   "resources": [
+    "Table"
+   ]
+  },
+  "puttablerecordexpirationconfiguration": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTableRecordExpirationConfiguration",
+   "resources": [
+    "Table"
+   ]
+  },
+  "puttablereplication": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTableReplication",
+   "resources": [
+    "Table"
+   ]
+  },
+  "puttablestorageclass": {
+   "conditionKeys": [
+    "s3tables:StorageClass",
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTableStorageClass",
+   "resources": [
+    "Table"
+   ]
+  },
+  "renametable": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RenameTable",
+   "resources": [
+    "Table"
+   ]
+  },
+  "starttablemigration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "s3tables:TableBucketTag/${TagKey}",
+    "s3tables:namespace"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTableMigration",
+   "resources": [
+    "TableBucket"
+   ]
+  },
+  "synctablemigration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3tables:TableBucketTag/${TagKey}",
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SyncTableMigration",
+   "resources": [
+    "Table"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "s3tables:TableBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Table",
+    "TableBucket"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "s3tables:TableBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Table",
+    "TableBucket"
+   ]
+  },
+  "updatetablemetadatalocation": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTableMetadataLocation",
+   "resources": [
+    "Table"
+   ]
+  },
+  "updatetablemigration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3tables:TableBucketTag/${TagKey}",
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTableMigration",
+   "resources": [
+    "Table"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "s3tables:KMSKeyArn": [
+   "ARN"
+  ],
+  "s3tables:SSEAlgorithm": [
+   "String"
+  ],
+  "s3tables:StorageClass": [
+   "String"
+  ],
+  "s3tables:TableBucketTag/${TagKey}": [
+   "String"
+  ],
+  "s3tables:namespace": [
+   "String"
+  ],
+  "s3tables:tableName": [
+   "String"
+  ]
+ },
+ "resources": {
+  "Table": {
+   "arnFormats": [
+    "arn:${Partition}:s3tables:${Region}:${Account}:bucket/${TableBucketName}/table/${TableID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3tables:TableBucketTag/${TagKey}",
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ]
+  },
+  "TableBucket": {
+   "arnFormats": [
+    "arn:${Partition}:s3tables:${Region}:${Account}:bucket/${TableBucketName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3tables:TableBucketTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "s3tables",
+ "serviceName": "S3 Tables",
+ "version": "v1.5"
+}

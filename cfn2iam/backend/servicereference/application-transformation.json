@@ -1,0 +1,88 @@
+{
+ "actions": {
+  "getcontainerization": {
+   "name": "GetContainerization",
+   "resources": []
+  },
+  "getdeployment": {
+   "name": "GetDeployment",
+   "resources": []
+  },
+  "getgroupingassessment": {
+   "name": "GetGroupingAssessment",
+   "resources": []
+  },
+  "getportingcompatibilityassessment": {
+   "name": "GetPortingCompatibilityAssessment",
+   "resources": []
+  },
+  "getportingrecommendationassessment": {
+   "name": "GetPortingRecommendationAssessment",
+   "resources": []
+  },
+  "getruntimeassessment": {
+   "name": "GetRuntimeAssessment",
+   "resources": []
+  },
+  "putlogdata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLogData",
+   "resources": []
+  },
+  "putmetricdata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMetricData",
+   "resources": []
+  },
+  "startcontainerization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartContainerization",
+   "resources": []
+  },
+  "startdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDeployment",
+   "resources": []
+  },
+  "startgroupingassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartGroupingAssessment",
+   "resources": []
+  },
+  "startportingcompatibilityassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartPortingCompatibilityAssessment",
+   "resources": []
+  },
+  "startportingrecommendationassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartPortingRecommendationAssessment",
+   "resources": []
+  },
+  "startruntimeassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRuntimeAssessment",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "application-transformation",
+ "serviceName": "Application Transformation Service",
+ "version": "v1.5"
+}

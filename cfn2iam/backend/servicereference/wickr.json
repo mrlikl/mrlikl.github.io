@@ -1,0 +1,409 @@
+{
+ "actions": {
+  "batchcreateuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateUser",
+   "resources": [
+    "network"
+   ]
+  },
+  "batchdeleteuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteUser",
+   "resources": [
+    "network"
+   ]
+  },
+  "batchlookupuseruname": {
+   "name": "BatchLookupUserUname",
+   "resources": [
+    "network"
+   ]
+  },
+  "batchreinviteuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchReinviteUser",
+   "resources": [
+    "network"
+   ]
+  },
+  "batchresetdevicesforuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchResetDevicesForUser",
+   "resources": [
+    "network"
+   ]
+  },
+  "batchtoggleusersuspendstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchToggleUserSuspendStatus",
+   "resources": [
+    "network"
+   ]
+  },
+  "createadminsession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAdminSession",
+   "resources": [
+    "network"
+   ]
+  },
+  "createbot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBot",
+   "resources": [
+    "network"
+   ]
+  },
+  "createdataretentionbot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataRetentionBot",
+   "resources": [
+    "network"
+   ]
+  },
+  "createdataretentionbotchallenge": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataRetentionBotChallenge",
+   "resources": [
+    "network"
+   ]
+  },
+  "createnetwork": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNetwork",
+   "resources": [
+    "network"
+   ]
+  },
+  "createsecuritygroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSecurityGroup",
+   "resources": [
+    "network"
+   ]
+  },
+  "deletebot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBot",
+   "resources": [
+    "network"
+   ]
+  },
+  "deletedataretentionbot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataRetentionBot",
+   "resources": [
+    "network"
+   ]
+  },
+  "deletenetwork": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNetwork",
+   "resources": [
+    "network"
+   ]
+  },
+  "deletesecuritygroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSecurityGroup",
+   "resources": [
+    "network"
+   ]
+  },
+  "getbot": {
+   "name": "GetBot",
+   "resources": [
+    "network"
+   ]
+  },
+  "getbotscount": {
+   "name": "GetBotsCount",
+   "resources": [
+    "network"
+   ]
+  },
+  "getdataretentionbot": {
+   "name": "GetDataRetentionBot",
+   "resources": [
+    "network"
+   ]
+  },
+  "getguestuserhistorycount": {
+   "name": "GetGuestUserHistoryCount",
+   "resources": [
+    "network"
+   ]
+  },
+  "getnetwork": {
+   "name": "GetNetwork",
+   "resources": [
+    "network"
+   ]
+  },
+  "getnetworksettings": {
+   "name": "GetNetworkSettings",
+   "resources": [
+    "network"
+   ]
+  },
+  "getoidcinfo": {
+   "name": "GetOidcInfo",
+   "resources": [
+    "network"
+   ]
+  },
+  "getopentdfconfig": {
+   "name": "GetOpentdfConfig",
+   "resources": [
+    "network"
+   ]
+  },
+  "getsecuritygroup": {
+   "name": "GetSecurityGroup",
+   "resources": [
+    "network"
+   ]
+  },
+  "getuser": {
+   "name": "GetUser",
+   "resources": [
+    "network"
+   ]
+  },
+  "getuserscount": {
+   "name": "GetUsersCount",
+   "resources": [
+    "network"
+   ]
+  },
+  "listblockedguestusers": {
+   "name": "ListBlockedGuestUsers",
+   "resources": [
+    "network"
+   ]
+  },
+  "listbots": {
+   "name": "ListBots",
+   "resources": [
+    "network"
+   ]
+  },
+  "listdevicesforuser": {
+   "name": "ListDevicesForUser",
+   "resources": [
+    "network"
+   ]
+  },
+  "listguestusers": {
+   "name": "ListGuestUsers",
+   "resources": [
+    "network"
+   ]
+  },
+  "listnetworks": {
+   "name": "ListNetworks",
+   "resources": []
+  },
+  "listsecuritygroups": {
+   "name": "ListSecurityGroups",
+   "resources": [
+    "network"
+   ]
+  },
+  "listsecuritygroupusers": {
+   "name": "ListSecurityGroupUsers",
+   "resources": [
+    "network"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "network"
+   ]
+  },
+  "listusers": {
+   "name": "ListUsers",
+   "resources": [
+    "network"
+   ]
+  },
+  "registeroidcconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterOidcConfig",
+   "resources": [
+    "network"
+   ]
+  },
+  "registeroidcconfigtest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterOidcConfigTest",
+   "resources": [
+    "network"
+   ]
+  },
+  "registeropentdfconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterOpentdfConfig",
+   "resources": [
+    "network"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "network"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "network"
+   ]
+  },
+  "updatebot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBot",
+   "resources": [
+    "network"
+   ]
+  },
+  "updatedataretention": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataRetention",
+   "resources": [
+    "network"
+   ]
+  },
+  "updateguestuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGuestUser",
+   "resources": [
+    "network"
+   ]
+  },
+  "updatenetworkdetails": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNetworkDetails",
+   "resources": [
+    "network"
+   ]
+  },
+  "updatenetworksettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNetworkSettings",
+   "resources": [
+    "network"
+   ]
+  },
+  "updatesecuritygroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSecurityGroup",
+   "resources": [
+    "network"
+   ]
+  },
+  "updateuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUser",
+   "resources": [
+    "network"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "network": {
+   "arnFormats": [
+    "arn:${Partition}:wickr:${Region}:${Account}:network/${NetworkId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "wickr",
+ "serviceName": "Wickr",
+ "version": "v1.5"
+}

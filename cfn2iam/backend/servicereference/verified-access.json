@@ -1,0 +1,15 @@
+{
+ "actions": {
+  "allowverifiedaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AllowVerifiedAccess",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "verified-access",
+ "serviceName": "Verified Access",
+ "version": "v1.5"
+}

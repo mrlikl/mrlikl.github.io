@@ -1,0 +1,103 @@
+{
+ "actions": {
+  "createlifecyclepolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLifecyclePolicy",
+   "resources": []
+  },
+  "deletelifecyclepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLifecyclePolicy",
+   "resources": [
+    "policy"
+   ]
+  },
+  "getlifecyclepolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetLifecyclePolicies",
+   "resources": []
+  },
+  "getlifecyclepolicy": {
+   "name": "GetLifecyclePolicy",
+   "resources": [
+    "policy"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "policy"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "policy"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "policy"
+   ]
+  },
+  "updatelifecyclepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLifecyclePolicy",
+   "resources": [
+    "policy"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "policy": {
+   "arnFormats": [
+    "arn:${Partition}:dlm:${Region}:${Account}:policy/${ResourceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "dlm",
+ "serviceName": "Data Lifecycle Manager",
+ "version": "v1.5"
+}

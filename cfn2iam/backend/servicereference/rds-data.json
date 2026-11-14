@@ -1,0 +1,110 @@
+{
+ "actions": {
+  "batchexecutestatement": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "BatchExecuteStatement",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "begintransaction": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "BeginTransaction",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "committransaction": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CommitTransaction",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "executesql": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "ExecuteSql",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "executestatement": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "ExecuteStatement",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "rollbacktransaction": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "RollbackTransaction",
+   "resources": [
+    "cluster"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "cluster": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:cluster:${DbClusterInstanceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  }
+ },
+ "service": "rds-data",
+ "serviceName": "RDS Data API",
+ "version": "v1.5"
+}

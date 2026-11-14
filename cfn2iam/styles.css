@@ -901,3 +901,30 @@ input[type="text"] {
     scroll-behavior: auto !important;
   }
 }
+
+/* Python runtime status (cfn2iam runs in the browser with Pyodide) */
+.runtime-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 16px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12.5px;
+  overflow-wrap: anywhere;
+}
+
+.runtime-status .spinner {
+  flex: none;
+  width: 12px;
+  height: 12px;
+}
+
+.runtime-status:not([data-state="loading"]) .spinner {
+  display: none;
+}
+
+.runtime-status[data-state="error"] {
+  background: var(--warn-bg);
+  color: var(--danger-text);
+}

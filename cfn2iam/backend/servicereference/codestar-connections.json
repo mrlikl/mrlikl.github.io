@@ -1,0 +1,421 @@
+{
+ "actions": {
+  "createconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "codestar-connections:ProviderType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnection",
+   "resources": []
+  },
+  "createhost": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "codestar-connections:ProviderType",
+    "codestar-connections:VpcId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHost",
+   "resources": []
+  },
+  "createrepositorylink": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRepositoryLink",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "createsyncconfiguration": {
+   "conditionKeys": [
+    "codestar-connections:Branch"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSyncConfiguration",
+   "resources": [
+    "RepositoryLink"
+   ]
+  },
+  "deleteconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnection",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "deletehost": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteHost",
+   "resources": [
+    "Host"
+   ]
+  },
+  "deleterepositorylink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRepositoryLink",
+   "resources": [
+    "RepositoryLink"
+   ]
+  },
+  "deletesyncconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSyncConfiguration",
+   "resources": []
+  },
+  "getconnection": {
+   "name": "GetConnection",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "getconnectiontoken": {
+   "name": "GetConnectionToken",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "gethost": {
+   "name": "GetHost",
+   "resources": [
+    "Host"
+   ]
+  },
+  "getindividualaccesstoken": {
+   "conditionKeys": [
+    "codestar-connections:ProviderType"
+   ],
+   "name": "GetIndividualAccessToken",
+   "resources": []
+  },
+  "getinstallationurl": {
+   "conditionKeys": [
+    "codestar-connections:ProviderType"
+   ],
+   "name": "GetInstallationUrl",
+   "resources": []
+  },
+  "getrepositorylink": {
+   "name": "GetRepositoryLink",
+   "resources": [
+    "RepositoryLink"
+   ]
+  },
+  "getrepositorysyncstatus": {
+   "conditionKeys": [
+    "codestar-connections:Branch"
+   ],
+   "name": "GetRepositorySyncStatus",
+   "resources": [
+    "RepositoryLink"
+   ]
+  },
+  "getresourcesyncstatus": {
+   "name": "GetResourceSyncStatus",
+   "resources": []
+  },
+  "getsyncblockersummary": {
+   "name": "GetSyncBlockerSummary",
+   "resources": []
+  },
+  "getsyncconfiguration": {
+   "name": "GetSyncConfiguration",
+   "resources": []
+  },
+  "listconnections": {
+   "conditionKeys": [
+    "codestar-connections:ProviderTypeFilter"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnections",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "listhosts": {
+   "conditionKeys": [
+    "codestar-connections:ProviderTypeFilter"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHosts",
+   "resources": []
+  },
+  "listinstallationtargets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInstallationTargets",
+   "resources": []
+  },
+  "listrepositorylinks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRepositoryLinks",
+   "resources": []
+  },
+  "listrepositorysyncdefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRepositorySyncDefinitions",
+   "resources": []
+  },
+  "listsyncconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSyncConfigurations",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "Connection",
+    "Host",
+    "RepositoryLink"
+   ]
+  },
+  "passconnection": {
+   "conditionKeys": [
+    "codestar-connections:PassedToService"
+   ],
+   "name": "PassConnection",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "passrepository": {
+   "conditionKeys": [
+    "codestar-connections:PassedToService"
+   ],
+   "name": "PassRepository",
+   "resources": [
+    "RepositoryLink"
+   ]
+  },
+  "registerappcode": {
+   "conditionKeys": [
+    "codestar-connections:HostArn"
+   ],
+   "name": "RegisterAppCode",
+   "resources": []
+  },
+  "startappregistrationhandshake": {
+   "conditionKeys": [
+    "codestar-connections:HostArn"
+   ],
+   "name": "StartAppRegistrationHandshake",
+   "resources": []
+  },
+  "startoauthhandshake": {
+   "conditionKeys": [
+    "codestar-connections:ProviderType"
+   ],
+   "name": "StartOAuthHandshake",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Connection",
+    "Host",
+    "RepositoryLink"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Connection",
+    "Host",
+    "RepositoryLink"
+   ]
+  },
+  "updateconnectioninstallation": {
+   "conditionKeys": [
+    "codestar-connections:InstallationId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnectionInstallation",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "updatehost": {
+   "conditionKeys": [
+    "codestar-connections:VpcId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHost",
+   "resources": [
+    "Host"
+   ]
+  },
+  "updaterepositorylink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRepositoryLink",
+   "resources": [
+    "RepositoryLink"
+   ]
+  },
+  "updatesyncblocker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSyncBlocker",
+   "resources": []
+  },
+  "updatesyncconfiguration": {
+   "conditionKeys": [
+    "codestar-connections:Branch"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSyncConfiguration",
+   "resources": []
+  },
+  "useconnection": {
+   "conditionKeys": [
+    "codestar-connections:BranchName",
+    "codestar-connections:FullRepositoryId",
+    "codestar-connections:OwnerId",
+    "codestar-connections:ProviderAction",
+    "codestar-connections:ProviderPermissionsRequired",
+    "codestar-connections:RepositoryName"
+   ],
+   "name": "UseConnection",
+   "resources": [
+    "Connection"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "codestar-connections:Branch": [
+   "String"
+  ],
+  "codestar-connections:BranchName": [
+   "String"
+  ],
+  "codestar-connections:FullRepositoryId": [
+   "String"
+  ],
+  "codestar-connections:HostArn": [
+   "ARN"
+  ],
+  "codestar-connections:InstallationId": [
+   "String"
+  ],
+  "codestar-connections:OwnerId": [
+   "String"
+  ],
+  "codestar-connections:PassedToService": [
+   "String"
+  ],
+  "codestar-connections:ProviderAction": [
+   "String"
+  ],
+  "codestar-connections:ProviderPermissionsRequired": [
+   "String"
+  ],
+  "codestar-connections:ProviderType": [
+   "String"
+  ],
+  "codestar-connections:ProviderTypeFilter": [
+   "String"
+  ],
+  "codestar-connections:RepositoryName": [
+   "String"
+  ],
+  "codestar-connections:VpcId": [
+   "String"
+  ]
+ },
+ "resources": {
+  "Connection": {
+   "arnFormats": [
+    "arn:${Partition}:codestar-connections:${Region}:${Account}:connection/${ConnectionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Host": {
+   "arnFormats": [
+    "arn:${Partition}:codestar-connections:${Region}:${Account}:host/${HostId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "RepositoryLink": {
+   "arnFormats": [
+    "arn:${Partition}:codestar-connections:${Region}:${Account}:repository-link/${RepositoryLinkId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "codestar-connections",
+ "serviceName": "CodeStar Connections",
+ "version": "v1.5"
+}

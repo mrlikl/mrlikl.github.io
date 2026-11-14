@@ -1,0 +1,694 @@
+{
+ "actions": {
+  "addtagstostream": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "AddTagsToStream",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "associatestreamswithchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateStreamsWithChannel",
+   "resourceConditionKeys": {
+    "channel": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "channel",
+    "stream"
+   ]
+  },
+  "createchannel": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "CreateChannel",
+   "resourceConditionKeys": {
+    "channel": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "channel"
+   ]
+  },
+  "createstream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStream",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "decreasestreamretentionperiod": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DecreaseStreamRetentionPeriod",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "deletechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannel",
+   "resourceConditionKeys": {
+    "channel": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "channel"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resourceConditionKeys": {
+    "consumer": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "consumer",
+    "stream"
+   ]
+  },
+  "deletestream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStream",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "deregisterstreamconsumer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterStreamConsumer",
+   "resourceConditionKeys": {
+    "consumer": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "consumer"
+   ]
+  },
+  "describeaccountsettings": {
+   "name": "DescribeAccountSettings",
+   "resources": []
+  },
+  "describechannel": {
+   "name": "DescribeChannel",
+   "resourceConditionKeys": {
+    "channel": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "channel"
+   ]
+  },
+  "describelimits": {
+   "name": "DescribeLimits",
+   "resources": []
+  },
+  "describestream": {
+   "name": "DescribeStream",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "describestreamconsumer": {
+   "name": "DescribeStreamConsumer",
+   "resourceConditionKeys": {
+    "consumer": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "consumer"
+   ]
+  },
+  "describestreamsummary": {
+   "name": "DescribeStreamSummary",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "disableenhancedmonitoring": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableEnhancedMonitoring",
+   "resources": []
+  },
+  "enableenhancedmonitoring": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableEnhancedMonitoring",
+   "resources": []
+  },
+  "getrecords": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetRecords",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resourceConditionKeys": {
+    "consumer": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "consumer",
+    "stream"
+   ]
+  },
+  "getsharditerator": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetShardIterator",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "increasestreamretentionperiod": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "IncreaseStreamRetentionPeriod",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "injectapierror": {
+   "conditionKeys": [
+    "kinesis:FisActionId",
+    "kinesis:FisInjectPercentage",
+    "kinesis:FisTargetArns"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InjectApiError",
+   "resources": []
+  },
+  "listchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannels",
+   "resources": []
+  },
+  "listshards": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListShards",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "liststreamconsumers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStreamConsumers",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "liststreams": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStreams",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resourceConditionKeys": {
+    "channel": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "consumer": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "channel",
+    "consumer",
+    "stream"
+   ]
+  },
+  "listtagsforstream": {
+   "name": "ListTagsForStream",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "mergeshards": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MergeShards",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "putrecord": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutRecord",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "putrecords": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutRecords",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resourceConditionKeys": {
+    "consumer": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "consumer",
+    "stream"
+   ]
+  },
+  "registerstreamconsumer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterStreamConsumer",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "removetagsfromstream": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "RemoveTagsFromStream",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "splitshard": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SplitShard",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "startstreamencryption": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartStreamEncryption",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "kmsKey",
+    "stream"
+   ]
+  },
+  "stopstreamencryption": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopStreamEncryption",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "kmsKey",
+    "stream"
+   ]
+  },
+  "subscribetoshard": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "SubscribeToShard",
+   "resourceConditionKeys": {
+    "consumer": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "consumer"
+   ]
+  },
+  "tagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "channel": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "consumer": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "stream": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "channel",
+    "consumer",
+    "stream"
+   ]
+  },
+  "untagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "channel": [
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "consumer": [
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "stream": [
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "channel",
+    "consumer",
+    "stream"
+   ]
+  },
+  "updateaccountsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountSettings",
+   "resources": []
+  },
+  "updatechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChannel",
+   "resourceConditionKeys": {
+    "channel": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "channel"
+   ]
+  },
+  "updatemaxrecordsize": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMaxRecordSize",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "updateshardcount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateShardCount",
+   "resources": []
+  },
+  "updatestreammode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStreamMode",
+   "resources": []
+  },
+  "updatestreamrecorddistributionstrategy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStreamRecordDistributionStrategy",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
+  "updatestreamwarmthroughput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStreamWarmThroughput",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "kinesis:FisActionId": [
+   "String"
+  ],
+  "kinesis:FisInjectPercentage": [
+   "Numeric"
+  ],
+  "kinesis:FisTargetArns": [
+   "ArrayOfARN"
+  ]
+ },
+ "resources": {
+  "channel": {
+   "arnFormats": [
+    "arn:${Partition}:kinesis:${Region}:${Account}:channel/${ChannelId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "consumer": {
+   "arnFormats": [
+    "arn:${Partition}:kinesis:${Region}:${Account}:${StreamType}/${StreamName}/consumer/${ConsumerName}:${ConsumerCreationTimpstamp}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "kmsKey": {
+   "arnFormats": [
+    "arn:${Partition}:kms:${Region}:${Account}:key/${KeyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "stream": {
+   "arnFormats": [
+    "arn:${Partition}:kinesis:${Region}:${Account}:stream/${StreamName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "kinesis",
+ "serviceName": "Kinesis",
+ "version": "v1.5"
+}

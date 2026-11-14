@@ -1,0 +1,30 @@
+{
+ "actions": {
+  "externalwebaccess": {
+   "name": "ExternalWebAccess",
+   "resources": []
+  },
+  "invokefetch": {
+   "name": "InvokeFetch",
+   "resources": [
+    "tool"
+   ]
+  },
+  "invokesearch": {
+   "name": "InvokeSearch",
+   "resources": [
+    "tool"
+   ]
+  }
+ },
+ "resources": {
+  "tool": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-websearch:${Region}:aws:tool/${ToolName}"
+   ]
+  }
+ },
+ "service": "bedrock-websearch",
+ "serviceName": "Bedrock Web Search",
+ "version": "v1.5"
+}

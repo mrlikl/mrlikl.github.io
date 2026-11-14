@@ -1,0 +1,189 @@
+{
+ "actions": {
+  "getantipattern": {
+   "name": "GetAntiPattern",
+   "resources": []
+  },
+  "getapplicationcomponentdetails": {
+   "name": "GetApplicationComponentDetails",
+   "resources": []
+  },
+  "getapplicationcomponentstrategies": {
+   "name": "GetApplicationComponentStrategies",
+   "resources": []
+  },
+  "getassessment": {
+   "name": "GetAssessment",
+   "resources": []
+  },
+  "getimportfiletask": {
+   "name": "GetImportFileTask",
+   "resources": []
+  },
+  "getlatestassessmentid": {
+   "name": "GetLatestAssessmentId",
+   "resources": []
+  },
+  "getmessage": {
+   "name": "GetMessage",
+   "resources": []
+  },
+  "getportfoliopreferences": {
+   "name": "GetPortfolioPreferences",
+   "resources": []
+  },
+  "getportfoliosummary": {
+   "name": "GetPortfolioSummary",
+   "resources": []
+  },
+  "getrecommendationreportdetails": {
+   "name": "GetRecommendationReportDetails",
+   "resources": []
+  },
+  "getserverdetails": {
+   "name": "GetServerDetails",
+   "resources": []
+  },
+  "getserverstrategies": {
+   "name": "GetServerStrategies",
+   "resources": []
+  },
+  "listanalyzableservers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnalyzableServers",
+   "resources": []
+  },
+  "listantipatterns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAntiPatterns",
+   "resources": []
+  },
+  "listapplicationcomponents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationComponents",
+   "resources": []
+  },
+  "listcollectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCollectors",
+   "resources": []
+  },
+  "listimportfiletask": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListImportFileTask",
+   "resources": []
+  },
+  "listjarartifacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJarArtifacts",
+   "resources": []
+  },
+  "listservers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServers",
+   "resources": []
+  },
+  "putlogdata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLogData",
+   "resources": []
+  },
+  "putmetricdata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMetricData",
+   "resources": []
+  },
+  "putportfoliopreferences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutPortfolioPreferences",
+   "resources": []
+  },
+  "registercollector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterCollector",
+   "resources": []
+  },
+  "sendmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendMessage",
+   "resources": []
+  },
+  "startassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAssessment",
+   "resources": []
+  },
+  "startimportfiletask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartImportFileTask",
+   "resources": []
+  },
+  "startrecommendationreportgeneration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRecommendationReportGeneration",
+   "resources": []
+  },
+  "stopassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopAssessment",
+   "resources": []
+  },
+  "updateapplicationcomponentconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplicationComponentConfig",
+   "resources": []
+  },
+  "updatecollectorconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCollectorConfiguration",
+   "resources": []
+  },
+  "updateserverconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServerConfig",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "migrationhub-strategy",
+ "serviceName": "Migration Hub Strategy Recommendations",
+ "version": "v1.5"
+}

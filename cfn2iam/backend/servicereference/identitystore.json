@@ -1,0 +1,408 @@
+{
+ "actions": {
+  "addregion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddRegion",
+   "resources": [
+    "Identitystore"
+   ]
+  },
+  "creategroup": {
+   "conditionKeys": [
+    "identitystore:GroupExternalIdIssuers",
+    "identitystore:PrimaryRegion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGroup",
+   "resources": [
+    "Identitystore"
+   ]
+  },
+  "creategroupmembership": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGroupMembership",
+   "resources": [
+    "Group",
+    "Identitystore",
+    "User"
+   ]
+  },
+  "createidentitystore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIdentityStore",
+   "resources": []
+  },
+  "createuser": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion",
+    "identitystore:ReservedUserId",
+    "identitystore:UserExternalIdIssuers"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUser",
+   "resources": [
+    "Identitystore"
+   ]
+  },
+  "deletegroup": {
+   "conditionKeys": [
+    "identitystore:GroupExternalIdIssuers",
+    "identitystore:PrimaryRegion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGroup",
+   "resources": [
+    "Group",
+    "Identitystore"
+   ]
+  },
+  "deletegroupmembership": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGroupMembership",
+   "resources": [
+    "Group",
+    "GroupMembership",
+    "Identitystore",
+    "User"
+   ]
+  },
+  "deleteidentitystore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIdentityStore",
+   "resources": [
+    "Identitystore"
+   ]
+  },
+  "deleteuser": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion",
+    "identitystore:UserExternalIdIssuers"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUser",
+   "resources": [
+    "Identitystore",
+    "User"
+   ]
+  },
+  "describegroup": {
+   "conditionKeys": [
+    "identitystore:GroupExternalIdIssuers",
+    "identitystore:PrimaryRegion"
+   ],
+   "name": "DescribeGroup",
+   "resources": [
+    "Group",
+    "Identitystore"
+   ]
+  },
+  "describegroupmembership": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion"
+   ],
+   "name": "DescribeGroupMembership",
+   "resources": [
+    "Group",
+    "GroupMembership",
+    "Identitystore",
+    "User"
+   ]
+  },
+  "describeidentitystore": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion"
+   ],
+   "name": "DescribeIdentityStore",
+   "resources": [
+    "Identitystore"
+   ]
+  },
+  "describeregion": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion"
+   ],
+   "name": "DescribeRegion",
+   "resources": [
+    "Identitystore"
+   ]
+  },
+  "describeuser": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion",
+    "identitystore:UserExternalIdIssuers"
+   ],
+   "name": "DescribeUser",
+   "resources": [
+    "Identitystore",
+    "User"
+   ]
+  },
+  "getgroupid": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion"
+   ],
+   "name": "GetGroupId",
+   "resources": [
+    "Group",
+    "Identitystore"
+   ]
+  },
+  "getgroupmembershipid": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion"
+   ],
+   "name": "GetGroupMembershipId",
+   "resources": [
+    "Group",
+    "GroupMembership",
+    "Identitystore",
+    "User"
+   ]
+  },
+  "getuserid": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion"
+   ],
+   "name": "GetUserId",
+   "resources": [
+    "Identitystore",
+    "User"
+   ]
+  },
+  "ismemberingroups": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion"
+   ],
+   "name": "IsMemberInGroups",
+   "resources": [
+    "AllGroupMemberships",
+    "Group",
+    "Identitystore",
+    "User"
+   ]
+  },
+  "listgroupmemberships": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroupMemberships",
+   "resources": [
+    "AllGroupMemberships",
+    "Group",
+    "Identitystore"
+   ]
+  },
+  "listgroupmembershipsformember": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroupMembershipsForMember",
+   "resources": [
+    "AllGroupMemberships",
+    "Identitystore",
+    "User"
+   ]
+  },
+  "listgroups": {
+   "conditionKeys": [
+    "identitystore:GroupExternalIdIssuers",
+    "identitystore:PrimaryRegion"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroups",
+   "resources": [
+    "AllGroups",
+    "Identitystore"
+   ]
+  },
+  "listidentitystores": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIdentityStores",
+   "resources": []
+  },
+  "listregions": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRegions",
+   "resources": [
+    "Identitystore"
+   ]
+  },
+  "listusers": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion",
+    "identitystore:UserExternalIdIssuers"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsers",
+   "resources": [
+    "AllUsers",
+    "Identitystore"
+   ]
+  },
+  "removeregion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveRegion",
+   "resources": [
+    "Identitystore"
+   ]
+  },
+  "reserveuser": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReserveUser",
+   "resources": [
+    "Identitystore"
+   ]
+  },
+  "updategroup": {
+   "conditionKeys": [
+    "identitystore:GroupExternalIdIssuers",
+    "identitystore:PrimaryRegion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGroup",
+   "resources": [
+    "Group",
+    "Identitystore"
+   ]
+  },
+  "updateidentitystore": {
+   "conditionKeys": [
+    "identitystore:VpceAccessRequired"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIdentityStore",
+   "resources": [
+    "Identitystore"
+   ]
+  },
+  "updateuser": {
+   "conditionKeys": [
+    "identitystore:PrimaryRegion",
+    "identitystore:UserExternalIdIssuers"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUser",
+   "resources": [
+    "Identitystore",
+    "User"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "identitystore:GroupExternalIdIssuers": [
+   "ArrayOfARN"
+  ],
+  "identitystore:IdentityStoreArn": [
+   "ARN"
+  ],
+  "identitystore:PrimaryRegion": [
+   "String"
+  ],
+  "identitystore:ReservedUserId": [
+   "String"
+  ],
+  "identitystore:UserExternalIdIssuers": [
+   "ArrayOfARN"
+  ],
+  "identitystore:UserId": [
+   "String"
+  ],
+  "identitystore:VpceAccessRequired": [
+   "Bool"
+  ]
+ },
+ "resources": {
+  "AllGroupMemberships": {
+   "arnFormats": [
+    "arn:${Partition}:identitystore:::membership/*"
+   ]
+  },
+  "AllGroups": {
+   "arnFormats": [
+    "arn:${Partition}:identitystore:::group/*"
+   ]
+  },
+  "AllUsers": {
+   "arnFormats": [
+    "arn:${Partition}:identitystore:::user/*"
+   ]
+  },
+  "Group": {
+   "arnFormats": [
+    "arn:${Partition}:identitystore:::group/${GroupId}"
+   ]
+  },
+  "GroupMembership": {
+   "arnFormats": [
+    "arn:${Partition}:identitystore:::membership/${MembershipId}"
+   ]
+  },
+  "Identitystore": {
+   "arnFormats": [
+    "arn:${Partition}:identitystore::${Account}:identitystore/${IdentityStoreId}"
+   ]
+  },
+  "User": {
+   "arnFormats": [
+    "arn:${Partition}:identitystore:::user/${UserId}"
+   ]
+  }
+ },
+ "service": "identitystore",
+ "serviceName": "Identity Store",
+ "version": "v1.5"
+}

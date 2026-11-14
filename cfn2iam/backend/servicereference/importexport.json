@@ -1,0 +1,44 @@
+{
+ "actions": {
+  "canceljob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelJob",
+   "resources": []
+  },
+  "createjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateJob",
+   "resources": []
+  },
+  "getshippinglabel": {
+   "name": "GetShippingLabel",
+   "resources": []
+  },
+  "getstatus": {
+   "name": "GetStatus",
+   "resources": []
+  },
+  "listjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobs",
+   "resources": []
+  },
+  "updatejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateJob",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "importexport",
+ "serviceName": "Import/Export",
+ "version": "v1.5"
+}

@@ -1,0 +1,581 @@
+{
+ "actions": {
+  "cancelfhirexportjobwithdelete": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelFHIRExportJobWithDelete",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "confirmattributionlist": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfirmAttributionList",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "createdatatransformationprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataTransformationProfile",
+   "resources": []
+  },
+  "createfhirdatastore": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFHIRDatastore",
+   "resources": []
+  },
+  "createresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResource",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "deletedatatransformationprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataTransformationProfile",
+   "resources": [
+    "dataTransformationProfile"
+   ]
+  },
+  "deletefhirdatastore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFHIRDatastore",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "deleteresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResource",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "describedatatransformationjob": {
+   "name": "DescribeDataTransformationJob",
+   "resources": []
+  },
+  "describefhirbulkdeletejob": {
+   "name": "DescribeFHIRBulkDeleteJob",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "describefhirbulkmembermatchjob": {
+   "name": "DescribeFHIRBulkMemberMatchJob",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "describefhirbulkpatchjob": {
+   "name": "DescribeFHIRBulkPatchJob",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "describefhirdatastore": {
+   "name": "DescribeFHIRDatastore",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "describefhirexportjob": {
+   "name": "DescribeFHIRExportJob",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "describefhirexportjobwithget": {
+   "name": "DescribeFHIRExportJobWithGet",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "describefhirimportjob": {
+   "name": "DescribeFHIRImportJob",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "expandvaluesetwithget": {
+   "name": "ExpandValueSetWithGet",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "expandvaluesetwithpost": {
+   "name": "ExpandValueSetWithPost",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "generatedocumentwithget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateDocumentWithGet",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "generatedocumentwithpost": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateDocumentWithPost",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "getcapabilities": {
+   "name": "GetCapabilities",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "getdatatransformationprofile": {
+   "name": "GetDataTransformationProfile",
+   "resources": [
+    "dataTransformationProfile"
+   ]
+  },
+  "getexportedfile": {
+   "name": "GetExportedFile",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "gethistorybyresourceid": {
+   "name": "GetHistoryByResourceId",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "inquirepreauthclaim": {
+   "name": "InquirePreAuthClaim",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "listdatatransformationjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataTransformationJobs",
+   "resources": []
+  },
+  "listdatatransformationprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataTransformationProfiles",
+   "resources": []
+  },
+  "listdatatransformationprofileversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataTransformationProfileVersions",
+   "resources": [
+    "dataTransformationProfile"
+   ]
+  },
+  "listfhirdatastores": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFHIRDatastores",
+   "resources": []
+  },
+  "listfhirexportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFHIRExportJobs",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "listfhirimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFHIRImportJobs",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "dataTransformationProfile",
+    "datastore"
+   ]
+  },
+  "lookupcodesystemwithget": {
+   "name": "LookupCodeSystemWithGet",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "lookupcodesystemwithpost": {
+   "name": "LookupCodeSystemWithPost",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "memberadd": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MemberAdd",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "membermatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MemberMatch",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "memberremove": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MemberRemove",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "patchresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PatchResource",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "processbundle": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ProcessBundle",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "publishdatatransformationprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PublishDataTransformationProfile",
+   "resources": [
+    "dataTransformationProfile"
+   ]
+  },
+  "questionnairepackage": {
+   "name": "QuestionnairePackage",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "readresource": {
+   "name": "ReadResource",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "restorefhirdatastore": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreFHIRDatastore",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "retrieveattributionstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RetrieveAttributionStatus",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "searcheverything": {
+   "name": "SearchEverything",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "searchwithget": {
+   "name": "SearchWithGet",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "searchwithpost": {
+   "name": "SearchWithPost",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "startdatatransformationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDataTransformationJob",
+   "resources": [
+    "dataTransformationProfile"
+   ]
+  },
+  "startfhirbulkdeletejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFHIRBulkDeleteJob",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "startfhirbulkmembermatchjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFHIRBulkMemberMatchJob",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "startfhirbulkpatchjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFHIRBulkPatchJob",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "startfhirexportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFHIRExportJob",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "startfhirexportjobwithget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFHIRExportJobWithGet",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "startfhirexportjobwithpost": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFHIRExportJobWithPost",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "startfhirimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFHIRImportJob",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "submitpreauthclaim": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitPreAuthClaim",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "dataTransformationProfile",
+    "datastore"
+   ]
+  },
+  "transformdata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TransformData",
+   "resources": [
+    "dataTransformationProfile"
+   ]
+  },
+  "translateconceptmapwithget": {
+   "name": "TranslateConceptMapWithGet",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "translateconceptmapwithpost": {
+   "name": "TranslateConceptMapWithPost",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "dataTransformationProfile",
+    "datastore"
+   ]
+  },
+  "updatedatatransformationprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataTransformationProfile",
+   "resources": [
+    "dataTransformationProfile"
+   ]
+  },
+  "updatefhirdatastore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFHIRDatastore",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "updateprofilewithagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProfileWithAgent",
+   "resources": [
+    "dataTransformationProfile"
+   ]
+  },
+  "updateresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResource",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "validateresource": {
+   "name": "ValidateResource",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "validatesource": {
+   "name": "ValidateSource",
+   "resources": []
+  },
+  "versionreadresource": {
+   "name": "VersionReadResource",
+   "resources": [
+    "datastore"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "dataTransformationProfile": {
+   "arnFormats": [
+    "arn:${Partition}:healthlake:${Region}:${Account}:dataTransformationProfile/${ProfileId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "datastore": {
+   "arnFormats": [
+    "arn:${Partition}:healthlake:${Region}:${Account}:datastore/fhir/${DatastoreId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "healthlake",
+ "serviceName": "HealthLake",
+ "version": "v1.5"
+}

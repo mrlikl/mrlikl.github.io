@@ -1,0 +1,975 @@
+{
+ "actions": {
+  "acceptmarketplaceregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptMarketplaceRegistration",
+   "resources": []
+  },
+  "associateiamroletoresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateIamRoleToResource",
+   "resources": [
+    "cloud-autonomous-vm-cluster",
+    "cloud-vm-cluster"
+   ]
+  },
+  "associatevirtualmachinestocloudvmcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateVirtualMachinesToCloudVmCluster",
+   "resources": [
+    "cloud-vm-cluster"
+   ]
+  },
+  "associatevirtualmachinestoexadbvmcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateVirtualMachinesToExadbVmCluster",
+   "resources": [
+    "exadb-vm-cluster"
+   ]
+  },
+  "createautonomousdatabase": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAutonomousDatabase",
+   "resources": [
+    "odb-network"
+   ]
+  },
+  "createautonomousdatabasebackup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAutonomousDatabaseBackup",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "createautonomousdatabasewallet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAutonomousDatabaseWallet",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "createcloudautonomousvmcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCloudAutonomousVmCluster",
+   "resources": [
+    "cloud-exadata-infrastructure",
+    "odb-network"
+   ]
+  },
+  "createcloudexadatainfrastructure": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCloudExadataInfrastructure",
+   "resources": []
+  },
+  "createcloudvmcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCloudVmCluster",
+   "resources": [
+    "cloud-exadata-infrastructure",
+    "exascale-db-storage-vault",
+    "odb-network"
+   ]
+  },
+  "createdbnode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDbNode",
+   "resources": [
+    "db-node"
+   ]
+  },
+  "createexadbvmcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExadbVmCluster",
+   "resources": [
+    "exascale-db-storage-vault",
+    "odb-network"
+   ]
+  },
+  "createexascaledbstoragevault": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExascaleDbStorageVault",
+   "resources": [
+    "cloud-exadata-infrastructure"
+   ]
+  },
+  "creategrantshare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGrantShare",
+   "resources": []
+  },
+  "createodbnetwork": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOdbNetwork",
+   "resources": []
+  },
+  "createodbpeeringconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOdbPeeringConnection",
+   "resources": [
+    "odb-network"
+   ]
+  },
+  "createoutboundintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOutboundIntegration",
+   "resources": [
+    "cloud-autonomous-vm-cluster",
+    "cloud-vm-cluster"
+   ]
+  },
+  "deleteautonomousdatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAutonomousDatabase",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "deleteautonomousdatabasebackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAutonomousDatabaseBackup",
+   "resources": [
+    "autonomous-database-backup"
+   ]
+  },
+  "deletecloudautonomousvmcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCloudAutonomousVmCluster",
+   "resources": [
+    "cloud-autonomous-vm-cluster"
+   ]
+  },
+  "deletecloudexadatainfrastructure": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCloudExadataInfrastructure",
+   "resources": [
+    "cloud-exadata-infrastructure"
+   ]
+  },
+  "deletecloudvmcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCloudVmCluster",
+   "resources": [
+    "cloud-vm-cluster"
+   ]
+  },
+  "deletedbnode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDbNode",
+   "resources": [
+    "db-node"
+   ]
+  },
+  "deleteexadbvmcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExadbVmCluster",
+   "resources": [
+    "exadb-vm-cluster"
+   ]
+  },
+  "deleteexascaledbstoragevault": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExascaleDbStorageVault",
+   "resources": [
+    "exascale-db-storage-vault"
+   ]
+  },
+  "deletegrantshare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGrantShare",
+   "resources": []
+  },
+  "deleteodbnetwork": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOdbNetwork",
+   "resources": [
+    "odb-network"
+   ]
+  },
+  "deleteodbpeeringconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOdbPeeringConnection",
+   "resources": [
+    "odb-peering-connection"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "cloud-exadata-infrastructure",
+    "exascale-db-storage-vault",
+    "odb-network"
+   ]
+  },
+  "disassociateiamrolefromresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateIamRoleFromResource",
+   "resources": [
+    "cloud-autonomous-vm-cluster",
+    "cloud-vm-cluster"
+   ]
+  },
+  "disassociatevirtualmachinesfromcloudvmcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateVirtualMachinesFromCloudVmCluster",
+   "resources": [
+    "cloud-vm-cluster"
+   ]
+  },
+  "disassociatevirtualmachinesfromexadbvmcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateVirtualMachinesFromExadbVmCluster",
+   "resources": [
+    "exadb-vm-cluster"
+   ]
+  },
+  "failoverautonomousdatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "FailoverAutonomousDatabase",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "getautonomousdatabase": {
+   "name": "GetAutonomousDatabase",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "getautonomousdatabasebackup": {
+   "name": "GetAutonomousDatabaseBackup",
+   "resources": [
+    "autonomous-database-backup"
+   ]
+  },
+  "getautonomousdatabasewalletdetails": {
+   "name": "GetAutonomousDatabaseWalletDetails",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "getcloudautonomousvmcluster": {
+   "name": "GetCloudAutonomousVmCluster",
+   "resources": [
+    "cloud-autonomous-vm-cluster"
+   ]
+  },
+  "getcloudexadatainfrastructure": {
+   "name": "GetCloudExadataInfrastructure",
+   "resources": [
+    "cloud-exadata-infrastructure"
+   ]
+  },
+  "getcloudexadatainfrastructureunallocatedresources": {
+   "name": "GetCloudExadataInfrastructureUnallocatedResources",
+   "resources": [
+    "cloud-exadata-infrastructure"
+   ]
+  },
+  "getcloudvmcluster": {
+   "name": "GetCloudVmCluster",
+   "resources": [
+    "cloud-vm-cluster"
+   ]
+  },
+  "getdbnode": {
+   "name": "GetDbNode",
+   "resources": [
+    "cloud-vm-cluster",
+    "db-node"
+   ]
+  },
+  "getdbserver": {
+   "name": "GetDbServer",
+   "resources": [
+    "cloud-exadata-infrastructure"
+   ]
+  },
+  "getexadbvmcluster": {
+   "name": "GetExadbVmCluster",
+   "resources": [
+    "exadb-vm-cluster"
+   ]
+  },
+  "getexascaledbstoragevault": {
+   "name": "GetExascaleDbStorageVault",
+   "resources": [
+    "exascale-db-storage-vault"
+   ]
+  },
+  "getocionboardingstatus": {
+   "name": "GetOciOnboardingStatus",
+   "resources": []
+  },
+  "getodbnetwork": {
+   "name": "GetOdbNetwork",
+   "resources": [
+    "odb-network"
+   ]
+  },
+  "getodbpeeringconnection": {
+   "name": "GetOdbPeeringConnection",
+   "resources": [
+    "odb-peering-connection"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "cloud-exadata-infrastructure",
+    "exascale-db-storage-vault",
+    "odb-network"
+   ]
+  },
+  "initializeservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitializeService",
+   "resources": []
+  },
+  "listautonomousdatabasebackups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutonomousDatabaseBackups",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "listautonomousdatabasecharactersets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutonomousDatabaseCharacterSets",
+   "resources": []
+  },
+  "listautonomousdatabaseclones": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutonomousDatabaseClones",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "listautonomousdatabasepeers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutonomousDatabasePeers",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "listautonomousdatabases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutonomousDatabases",
+   "resources": []
+  },
+  "listautonomousdatabaseversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutonomousDatabaseVersions",
+   "resources": []
+  },
+  "listautonomousvirtualmachines": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutonomousVirtualMachines",
+   "resources": [
+    "cloud-autonomous-vm-cluster"
+   ]
+  },
+  "listcloudautonomousvmclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCloudAutonomousVmClusters",
+   "resources": [
+    "cloud-exadata-infrastructure"
+   ]
+  },
+  "listcloudexadatainfrastructures": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCloudExadataInfrastructures",
+   "resources": []
+  },
+  "listcloudvmclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCloudVmClusters",
+   "resources": [
+    "cloud-exadata-infrastructure"
+   ]
+  },
+  "listdbnodes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDbNodes",
+   "resources": [
+    "cloud-vm-cluster"
+   ]
+  },
+  "listdbservers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDbServers",
+   "resources": [
+    "cloud-exadata-infrastructure"
+   ]
+  },
+  "listdbsystemshapes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDbSystemShapes",
+   "resources": []
+  },
+  "listexadbvmclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExadbVmClusters",
+   "resources": [
+    "exascale-db-storage-vault"
+   ]
+  },
+  "listexascaledbstoragevaults": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExascaleDbStorageVaults",
+   "resources": [
+    "cloud-exadata-infrastructure"
+   ]
+  },
+  "listflexcomponents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFlexComponents",
+   "resources": []
+  },
+  "listgiminorversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGiMinorVersions",
+   "resources": []
+  },
+  "listgiversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGiVersions",
+   "resources": []
+  },
+  "listodbnetworks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOdbNetworks",
+   "resources": []
+  },
+  "listodbpeeringconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOdbPeeringConnections",
+   "resources": [
+    "odb-network"
+   ]
+  },
+  "listsystemversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSystemVersions",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "autonomous-database",
+    "autonomous-database-backup",
+    "cloud-autonomous-vm-cluster",
+    "cloud-exadata-infrastructure",
+    "cloud-vm-cluster",
+    "db-node",
+    "exadb-vm-cluster",
+    "exascale-db-storage-vault",
+    "odb-network",
+    "odb-peering-connection"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "cloud-exadata-infrastructure",
+    "exascale-db-storage-vault",
+    "odb-network"
+   ]
+  },
+  "rebootautonomousdatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootAutonomousDatabase",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "rebootdbnode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootDbNode",
+   "resources": [
+    "cloud-vm-cluster",
+    "db-node"
+   ]
+  },
+  "restoreautonomousdatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreAutonomousDatabase",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "shrinkautonomousdatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ShrinkAutonomousDatabase",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "startautonomousdatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAutonomousDatabase",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "startdbnode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDbNode",
+   "resources": [
+    "cloud-vm-cluster",
+    "db-node"
+   ]
+  },
+  "stopautonomousdatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopAutonomousDatabase",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "stopdbnode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopDbNode",
+   "resources": [
+    "cloud-vm-cluster",
+    "db-node"
+   ]
+  },
+  "switchoverautonomousdatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SwitchoverAutonomousDatabase",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "autonomous-database",
+    "autonomous-database-backup",
+    "cloud-autonomous-vm-cluster",
+    "cloud-exadata-infrastructure",
+    "cloud-vm-cluster",
+    "db-node",
+    "exadb-vm-cluster",
+    "exascale-db-storage-vault",
+    "odb-network",
+    "odb-peering-connection"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "autonomous-database",
+    "autonomous-database-backup",
+    "cloud-autonomous-vm-cluster",
+    "cloud-exadata-infrastructure",
+    "cloud-vm-cluster",
+    "db-node",
+    "exadb-vm-cluster",
+    "exascale-db-storage-vault",
+    "odb-network",
+    "odb-peering-connection"
+   ]
+  },
+  "updateautonomousdatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAutonomousDatabase",
+   "resources": [
+    "autonomous-database"
+   ]
+  },
+  "updateautonomousdatabasebackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAutonomousDatabaseBackup",
+   "resources": [
+    "autonomous-database-backup"
+   ]
+  },
+  "updatecloudautonomousvmcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCloudAutonomousVmCluster",
+   "resources": [
+    "cloud-autonomous-vm-cluster"
+   ]
+  },
+  "updatecloudexadatainfrastructure": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCloudExadataInfrastructure",
+   "resources": [
+    "cloud-exadata-infrastructure"
+   ]
+  },
+  "updatecloudexadatainfrastructurestoragecapacity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCloudExadataInfrastructureStorageCapacity",
+   "resources": [
+    "cloud-exadata-infrastructure"
+   ]
+  },
+  "updatecloudvmcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCloudVmCluster",
+   "resources": [
+    "cloud-vm-cluster"
+   ]
+  },
+  "updateexadbvmcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExadbVmCluster",
+   "resources": [
+    "exadb-vm-cluster"
+   ]
+  },
+  "updateexascalecloudexadatainfrastructure": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExascaleCloudExadataInfrastructure",
+   "resources": [
+    "cloud-exadata-infrastructure"
+   ]
+  },
+  "updateexascaledbstoragevault": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExascaleDbStorageVault",
+   "resources": [
+    "exascale-db-storage-vault"
+   ]
+  },
+  "updategrantshare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGrantShare",
+   "resources": []
+  },
+  "updateodbnetwork": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOdbNetwork",
+   "resources": [
+    "odb-network"
+   ]
+  },
+  "updateodbpeeringconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOdbPeeringConnection",
+   "resources": [
+    "odb-peering-connection"
+   ]
+  },
+  "updateoutboundintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOutboundIntegration",
+   "resources": [
+    "cloud-autonomous-vm-cluster",
+    "cloud-vm-cluster"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "autonomous-database": {
+   "arnFormats": [
+    "arn:${Partition}:odb:${Region}:${Account}:autonomous-database/${AutonomousDatabaseId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "autonomous-database-backup": {
+   "arnFormats": [
+    "arn:${Partition}:odb:${Region}:${Account}:autonomous-database-backup/${AutonomousDatabaseBackupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "cloud-autonomous-vm-cluster": {
+   "arnFormats": [
+    "arn:${Partition}:odb:${Region}:${Account}:cloud-autonomous-vm-cluster/${CloudAutonomousVmClusterId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "cloud-exadata-infrastructure": {
+   "arnFormats": [
+    "arn:${Partition}:odb:${Region}:${Account}:cloud-exadata-infrastructure/${CloudExadataInfrastructureId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "cloud-vm-cluster": {
+   "arnFormats": [
+    "arn:${Partition}:odb:${Region}:${Account}:cloud-vm-cluster/${CloudVmClusterId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "db-node": {
+   "arnFormats": [
+    "arn:${Partition}:odb:${Region}:${Account}:db-node/${DbNodeId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "exadb-vm-cluster": {
+   "arnFormats": [
+    "arn:${Partition}:odb:${Region}:${Account}:exadb-vm-cluster/${ExadbVmClusterId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "exascale-db-storage-vault": {
+   "arnFormats": [
+    "arn:${Partition}:odb:${Region}:${Account}:exascale-db-storage-vault/${ExascaleDbStorageVaultId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "odb-network": {
+   "arnFormats": [
+    "arn:${Partition}:odb:${Region}:${Account}:odb-network/${OdbNetworkId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "odb-peering-connection": {
+   "arnFormats": [
+    "arn:${Partition}:odb:${Region}:${Account}:odb-peering-connection/${OdbPeeringConnectionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "odb",
+ "serviceName": "Oracle Database@AWS",
+ "version": "v1.5"
+}

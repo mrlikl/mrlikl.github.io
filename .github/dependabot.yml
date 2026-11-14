@@ -1,11 +1,24 @@
 version: 2
+
+# Weekly, grouped into one pull request per ecosystem, skipping releases younger than a week.
 updates:
+  # Actions are pinned by commit SHA with the version in a comment; Dependabot updates both.
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
+    groups:
+      actions:
+        patterns: ["*"]
 
   - package-ecosystem: "pip"
     directory: "/ec2prices/source"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
+    groups:
+      python:
+        patterns: ["*"]

@@ -1,0 +1,631 @@
+{
+ "actions": {
+  "batchassociatescramsecret": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchAssociateScramSecret",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "batchdisassociatescramsecret": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDisassociateScramSecret",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "createchannel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannel",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "createcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCluster",
+   "resources": [
+    "cluster",
+    "configuration"
+   ]
+  },
+  "createclusterv2": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateClusterV2",
+   "resources": [
+    "cluster",
+    "configuration"
+   ]
+  },
+  "createconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConfiguration",
+   "resources": [
+    "configuration"
+   ]
+  },
+  "createreplicator": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReplicator",
+   "resources": [
+    "replicator"
+   ]
+  },
+  "createtopic": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTopic",
+   "resources": [
+    "topic"
+   ]
+  },
+  "createvpcconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVpcConnection",
+   "resources": [
+    "cluster",
+    "vpc-connection"
+   ]
+  },
+  "deletechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannel",
+   "resources": [
+    "channel",
+    "cluster"
+   ]
+  },
+  "deletecluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "deleteclusterpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteClusterPolicy",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "deleteconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfiguration",
+   "resources": [
+    "configuration"
+   ]
+  },
+  "deletereplicator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReplicator",
+   "resources": [
+    "replicator"
+   ]
+  },
+  "deletetopic": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTopic",
+   "resources": [
+    "topic"
+   ]
+  },
+  "deletevpcconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVpcConnection",
+   "resources": [
+    "vpc-connection"
+   ]
+  },
+  "describechannel": {
+   "name": "DescribeChannel",
+   "resources": [
+    "channel",
+    "cluster"
+   ]
+  },
+  "describecluster": {
+   "name": "DescribeCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "describeclusteroperation": {
+   "name": "DescribeClusterOperation",
+   "resources": []
+  },
+  "describeclusteroperationv2": {
+   "name": "DescribeClusterOperationV2",
+   "resources": []
+  },
+  "describeclusterv2": {
+   "name": "DescribeClusterV2",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "describeconfiguration": {
+   "name": "DescribeConfiguration",
+   "resources": [
+    "configuration"
+   ]
+  },
+  "describeconfigurationrevision": {
+   "name": "DescribeConfigurationRevision",
+   "resources": [
+    "configuration"
+   ]
+  },
+  "describereplicator": {
+   "name": "DescribeReplicator",
+   "resources": [
+    "replicator"
+   ]
+  },
+  "describetopic": {
+   "name": "DescribeTopic",
+   "resources": [
+    "topic"
+   ]
+  },
+  "describetopicpartitions": {
+   "name": "DescribeTopicPartitions",
+   "resources": [
+    "topic"
+   ]
+  },
+  "describevpcconnection": {
+   "name": "DescribeVpcConnection",
+   "resources": [
+    "vpc-connection"
+   ]
+  },
+  "getbootstrapbrokers": {
+   "name": "GetBootstrapBrokers",
+   "resources": []
+  },
+  "getclusterpolicy": {
+   "name": "GetClusterPolicy",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "getcompatiblekafkaversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetCompatibleKafkaVersions",
+   "resources": []
+  },
+  "listchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannels",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listclientvpcconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClientVpcConnections",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listclusteroperations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClusterOperations",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listclusteroperationsv2": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClusterOperationsV2",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClusters",
+   "resources": []
+  },
+  "listclustersv2": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClustersV2",
+   "resources": []
+  },
+  "listconfigurationrevisions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigurationRevisions",
+   "resources": [
+    "configuration"
+   ]
+  },
+  "listconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigurations",
+   "resources": []
+  },
+  "listkafkaversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKafkaVersions",
+   "resources": []
+  },
+  "listnodes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNodes",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listreplicators": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReplicators",
+   "resources": []
+  },
+  "listscramsecrets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScramSecrets",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listtopics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTopics",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listvpcconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVpcConnections",
+   "resources": []
+  },
+  "putclusterpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutClusterPolicy",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "rebootbroker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootBroker",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "rejectclientvpcconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectClientVpcConnection",
+   "resources": [
+    "cluster",
+    "vpc-connection"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "cluster",
+    "vpc-connection"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "cluster",
+    "vpc-connection"
+   ]
+  },
+  "updatebrokercount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBrokerCount",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "updatebrokerstorage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBrokerStorage",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "updatebrokertype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBrokerType",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "updatechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChannel",
+   "resources": [
+    "channel",
+    "cluster"
+   ]
+  },
+  "updateclusterconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateClusterConfiguration",
+   "resources": [
+    "cluster",
+    "configuration"
+   ]
+  },
+  "updateclusterkafkaversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateClusterKafkaVersion",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "updateconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConfiguration",
+   "resources": [
+    "configuration"
+   ]
+  },
+  "updateconnectivity": {
+   "conditionKeys": [
+    "kafka:publicAccessEnabled"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnectivity",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "updatemonitoring": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMonitoring",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "updaterebalancing": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRebalancing",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "updatereplicationinfo": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReplicationInfo",
+   "resources": [
+    "replicator"
+   ]
+  },
+  "updatesecurity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSecurity",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "updatestorage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStorage",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "updatetopic": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTopic",
+   "resources": [
+    "topic"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "kafka:publicAccessEnabled": [
+   "Bool"
+  ]
+ },
+ "resources": {
+  "channel": {
+   "arnFormats": [
+    "arn:${Partition}:kafka:${Region}:${Account}:channel/${ClusterName}/${ClusterUuid}/${ChannelName}/${Uuid}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "cluster": {
+   "arnFormats": [
+    "arn:${Partition}:kafka:${Region}:${Account}:cluster/${ClusterName}/${Uuid}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "configuration": {
+   "arnFormats": [
+    "arn:${Partition}:kafka:${Region}:${Account}:configuration/${ConfigurationName}/${Uuid}"
+   ]
+  },
+  "group": {
+   "arnFormats": [
+    "arn:${Partition}:kafka:${Region}:${Account}:group/${ClusterName}/${ClusterUuid}/${GroupName}"
+   ]
+  },
+  "replicator": {
+   "arnFormats": [
+    "arn:${Partition}:kafka:${Region}:${Account}:replicator/${ReplicatorName}/${Uuid}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "topic": {
+   "arnFormats": [
+    "arn:${Partition}:kafka:${Region}:${Account}:topic/${ClusterName}/${ClusterUuid}/${TopicName}"
+   ]
+  },
+  "transactional-id": {
+   "arnFormats": [
+    "arn:${Partition}:kafka:${Region}:${Account}:transactional-id/${ClusterName}/${ClusterUuid}/${TransactionalId}"
+   ]
+  },
+  "vpc-connection": {
+   "arnFormats": [
+    "arn:${Partition}:kafka:${Region}:${VpcOwnerAccount}:vpc-connection/${ClusterOwnerAccount}/${ClusterName}/${Uuid}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "kafka",
+ "serviceName": "MSK",
+ "version": "v1.5"
+}

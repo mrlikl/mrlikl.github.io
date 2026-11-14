@@ -1,0 +1,31 @@
+{
+ "actions": {
+  "checkversion": {
+   "name": "CheckVersion",
+   "resources": []
+  },
+  "downloadtestsuite": {
+   "name": "DownloadTestSuite",
+   "resources": []
+  },
+  "latestidt": {
+   "name": "LatestIdt",
+   "resources": []
+  },
+  "sendmetrics": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendMetrics",
+   "resources": []
+  },
+  "supportedversion": {
+   "name": "SupportedVersion",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "iot-device-tester",
+ "serviceName": "IoT Device Tester",
+ "version": "v1.5"
+}

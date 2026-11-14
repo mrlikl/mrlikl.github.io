@@ -1,0 +1,1422 @@
+{
+ "actions": {
+  "addlayerversionpermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AddLayerVersionPermission",
+   "resources": [
+    "layerVersion"
+   ]
+  },
+  "addpermission": {
+   "conditionKeys": [
+    "lambda:FunctionUrlAuthType",
+    "lambda:Principal"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AddPermission",
+   "resources": [
+    "function"
+   ]
+  },
+  "checkpointdurableexecution": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CheckpointDurableExecution",
+   "resources": [
+    "durable execution"
+   ]
+  },
+  "connectmicrovm": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConnectMicrovm",
+   "resources": []
+  },
+  "createalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAlias",
+   "resources": [
+    "function"
+   ]
+  },
+  "createcapacityprovider": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "lambda:SecurityGroupIds",
+    "lambda:SubnetIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCapacityProvider",
+   "resources": [
+    "capacityProvider"
+   ]
+  },
+  "createcodesigningconfig": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCodeSigningConfig",
+   "resources": []
+  },
+  "createeventsourcemapping": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "lambda:FunctionArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEventSourceMapping",
+   "resources": []
+  },
+  "createfunction": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "lambda:CodeSigningConfigArn",
+    "lambda:Layer",
+    "lambda:SecurityGroupIds",
+    "lambda:SubnetIds",
+    "lambda:VpcIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFunction",
+   "resources": [
+    "function"
+   ]
+  },
+  "createfunctionurlconfig": {
+   "conditionKeys": [
+    "lambda:FunctionArn",
+    "lambda:FunctionUrlAuthType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFunctionUrlConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "createmicrovmauthtoken": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateMicrovmAuthToken",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "createmicrovmimage": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMicrovmImage",
+   "resources": []
+  },
+  "createmicrovmshellauthtoken": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateMicrovmShellAuthToken",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "createnetworkconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "lambda:SecurityGroupIds",
+    "lambda:SubnetIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNetworkConnector",
+   "resources": [
+    "networkConnector"
+   ]
+  },
+  "createwebfunction": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "lambda:Request/WebFunctionAuthType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWebFunction",
+   "resources": [
+    "webFunction"
+   ]
+  },
+  "createwebfunctionendpoint": {
+   "conditionKeys": [
+    "lambda:Request/WebFunctionAuthType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWebFunctionEndpoint",
+   "resources": [
+    "webFunction"
+   ]
+  },
+  "createwebfunctionrevision": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWebFunctionRevision",
+   "resources": [
+    "webFunction"
+   ]
+  },
+  "deletealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAlias",
+   "resources": [
+    "function"
+   ]
+  },
+  "deletecapacityprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCapacityProvider",
+   "resources": [
+    "capacityProvider"
+   ]
+  },
+  "deletecodesigningconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCodeSigningConfig",
+   "resources": [
+    "code signing config"
+   ]
+  },
+  "deleteeventsourcemapping": {
+   "conditionKeys": [
+    "lambda:FunctionArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventSourceMapping",
+   "resources": [
+    "eventSourceMapping"
+   ]
+  },
+  "deletefunction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFunction",
+   "resources": [
+    "function"
+   ]
+  },
+  "deletefunctioncodesigningconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFunctionCodeSigningConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "deletefunctionconcurrency": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFunctionConcurrency",
+   "resources": [
+    "function"
+   ]
+  },
+  "deletefunctioneventinvokeconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFunctionEventInvokeConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "deletefunctionurlconfig": {
+   "conditionKeys": [
+    "lambda:FunctionArn",
+    "lambda:FunctionUrlAuthType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFunctionUrlConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "deletelayerversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLayerVersion",
+   "resources": [
+    "layerVersion"
+   ]
+  },
+  "deletemicrovmimage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMicrovmImage",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "deletemicrovmimageversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMicrovmImageVersion",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "deletenetworkconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNetworkConnector",
+   "resources": [
+    "networkConnector"
+   ]
+  },
+  "deleteprovisionedconcurrencyconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProvisionedConcurrencyConfig",
+   "resources": [
+    "function alias",
+    "function version"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "conditionKeys": [
+    "lambda:Principal"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "function",
+    "webFunction"
+   ]
+  },
+  "deletewebfunction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWebFunction",
+   "resources": [
+    "webFunction"
+   ]
+  },
+  "deletewebfunctionendpoint": {
+   "conditionKeys": [
+    "lambda:Resource/WebFunctionAuthType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWebFunctionEndpoint",
+   "resources": [
+    "webFunctionEndpoint"
+   ]
+  },
+  "deletewebfunctionrevision": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWebFunctionRevision",
+   "resources": [
+    "webFunctionRevision"
+   ]
+  },
+  "disablereplication": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DisableReplication",
+   "resources": [
+    "function"
+   ]
+  },
+  "enablereplication": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "EnableReplication",
+   "resources": [
+    "function"
+   ]
+  },
+  "getaccountsettings": {
+   "name": "GetAccountSettings",
+   "resources": []
+  },
+  "getalias": {
+   "name": "GetAlias",
+   "resources": [
+    "function"
+   ]
+  },
+  "getcapacityprovider": {
+   "name": "GetCapacityProvider",
+   "resources": [
+    "capacityProvider"
+   ]
+  },
+  "getcodesigningconfig": {
+   "name": "GetCodeSigningConfig",
+   "resources": [
+    "code signing config"
+   ]
+  },
+  "getdurableexecution": {
+   "name": "GetDurableExecution",
+   "resources": [
+    "durable execution"
+   ]
+  },
+  "getdurableexecutionhistory": {
+   "name": "GetDurableExecutionHistory",
+   "resources": [
+    "durable execution"
+   ]
+  },
+  "getdurableexecutionstate": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetDurableExecutionState",
+   "resources": [
+    "durable execution"
+   ]
+  },
+  "geteventsourcemapping": {
+   "conditionKeys": [
+    "lambda:FunctionArn"
+   ],
+   "name": "GetEventSourceMapping",
+   "resources": [
+    "eventSourceMapping"
+   ]
+  },
+  "getfunction": {
+   "name": "GetFunction",
+   "resources": [
+    "function"
+   ]
+  },
+  "getfunctioncodesigningconfig": {
+   "name": "GetFunctionCodeSigningConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "getfunctionconcurrency": {
+   "name": "GetFunctionConcurrency",
+   "resources": [
+    "function"
+   ]
+  },
+  "getfunctionconfiguration": {
+   "name": "GetFunctionConfiguration",
+   "resources": [
+    "function"
+   ]
+  },
+  "getfunctioneventinvokeconfig": {
+   "name": "GetFunctionEventInvokeConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "getfunctionrecursionconfig": {
+   "name": "GetFunctionRecursionConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "getfunctionscalingconfig": {
+   "name": "GetFunctionScalingConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "getfunctionurlconfig": {
+   "conditionKeys": [
+    "lambda:FunctionArn",
+    "lambda:FunctionUrlAuthType"
+   ],
+   "name": "GetFunctionUrlConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "getlayerversion": {
+   "name": "GetLayerVersion",
+   "resources": [
+    "layerVersion"
+   ]
+  },
+  "getlayerversionpolicy": {
+   "name": "GetLayerVersionPolicy",
+   "resources": [
+    "layerVersion"
+   ]
+  },
+  "getmicrovm": {
+   "name": "GetMicrovm",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "getmicrovmimage": {
+   "name": "GetMicrovmImage",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "getmicrovmimagebuild": {
+   "name": "GetMicrovmImageBuild",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "getmicrovmimageversion": {
+   "name": "GetMicrovmImageVersion",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "getnetworkconnector": {
+   "name": "GetNetworkConnector",
+   "resources": [
+    "networkConnector"
+   ]
+  },
+  "getpolicy": {
+   "name": "GetPolicy",
+   "resources": [
+    "function"
+   ]
+  },
+  "getprovisionedconcurrencyconfig": {
+   "name": "GetProvisionedConcurrencyConfig",
+   "resources": [
+    "function alias",
+    "function version"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "function",
+    "webFunction"
+   ]
+  },
+  "getruntimemanagementconfig": {
+   "name": "GetRuntimeManagementConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "getwebaccountsettings": {
+   "name": "GetWebAccountSettings",
+   "resources": []
+  },
+  "getwebfunction": {
+   "name": "GetWebFunction",
+   "resources": [
+    "webFunction"
+   ]
+  },
+  "getwebfunctionendpoint": {
+   "conditionKeys": [
+    "lambda:Resource/WebFunctionAuthType"
+   ],
+   "name": "GetWebFunctionEndpoint",
+   "resources": [
+    "webFunctionEndpoint"
+   ]
+  },
+  "getwebfunctionrevision": {
+   "name": "GetWebFunctionRevision",
+   "resources": [
+    "webFunctionRevision"
+   ]
+  },
+  "invokeasync": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeAsync",
+   "resources": [
+    "function"
+   ]
+  },
+  "invokefunction": {
+   "conditionKeys": [
+    "lambda:EventSourceToken",
+    "lambda:InvokedViaFunctionUrl"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "InvokeFunction",
+   "resources": [
+    "function"
+   ]
+  },
+  "invokefunctionurl": {
+   "conditionKeys": [
+    "lambda:EventSourceToken",
+    "lambda:FunctionArn",
+    "lambda:FunctionUrlAuthType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeFunctionUrl",
+   "resources": [
+    "function"
+   ]
+  },
+  "invokewebfunctionendpoint": {
+   "conditionKeys": [
+    "lambda:Resource/WebFunctionAuthType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeWebFunctionEndpoint",
+   "resources": [
+    "webFunctionEndpoint"
+   ]
+  },
+  "listaliases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAliases",
+   "resources": [
+    "function"
+   ]
+  },
+  "listcapacityproviders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCapacityProviders",
+   "resources": []
+  },
+  "listcodesigningconfigs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCodeSigningConfigs",
+   "resources": []
+  },
+  "listdurableexecutionsbyfunction": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDurableExecutionsByFunction",
+   "resources": [
+    "function"
+   ]
+  },
+  "listeventsourcemappings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEventSourceMappings",
+   "resources": []
+  },
+  "listfunctioneventinvokeconfigs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFunctionEventInvokeConfigs",
+   "resources": [
+    "function"
+   ]
+  },
+  "listfunctions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFunctions",
+   "resources": []
+  },
+  "listfunctionsbycodesigningconfig": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFunctionsByCodeSigningConfig",
+   "resources": [
+    "code signing config"
+   ]
+  },
+  "listfunctionurlconfigs": {
+   "conditionKeys": [
+    "lambda:FunctionUrlAuthType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFunctionUrlConfigs",
+   "resources": [
+    "function"
+   ]
+  },
+  "listfunctionversionsbycapacityprovider": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFunctionVersionsByCapacityProvider",
+   "resources": [
+    "capacityProvider"
+   ]
+  },
+  "listlayers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLayers",
+   "resources": []
+  },
+  "listlayerversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLayerVersions",
+   "resources": []
+  },
+  "listmanagedmicrovmimages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedMicrovmImages",
+   "resources": []
+  },
+  "listmanagedmicrovmimageversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedMicrovmImageVersions",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "listmicrovmimagebuilds": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMicrovmImageBuilds",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "listmicrovmimages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMicrovmImages",
+   "resources": []
+  },
+  "listmicrovmimageversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMicrovmImageVersions",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "listmicrovms": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMicrovms",
+   "resources": []
+  },
+  "listnetworkconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkConnectors",
+   "resources": []
+  },
+  "listnetworkconnectorversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkConnectorVersions",
+   "resources": [
+    "networkConnector"
+   ]
+  },
+  "listprovisionedconcurrencyconfigs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProvisionedConcurrencyConfigs",
+   "resources": [
+    "function"
+   ]
+  },
+  "listtags": {
+   "name": "ListTags",
+   "resources": [
+    "capacityProvider",
+    "code signing config",
+    "eventSourceMapping",
+    "function",
+    "microvmImage",
+    "networkConnector",
+    "webFunction"
+   ]
+  },
+  "listversionsbyfunction": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVersionsByFunction",
+   "resources": [
+    "function"
+   ]
+  },
+  "listwebfunctionendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWebFunctionEndpoints",
+   "resources": [
+    "webFunction"
+   ]
+  },
+  "listwebfunctionrevisions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWebFunctionRevisions",
+   "resources": [
+    "webFunction"
+   ]
+  },
+  "listwebfunctions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWebFunctions",
+   "resources": []
+  },
+  "passcapacityprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PassCapacityProvider",
+   "resources": [
+    "capacityProvider"
+   ]
+  },
+  "passnetworkconnector": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PassNetworkConnector",
+   "resources": []
+  },
+  "publishlayerversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PublishLayerVersion",
+   "resources": [
+    "layer"
+   ]
+  },
+  "publishversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PublishVersion",
+   "resources": [
+    "function"
+   ]
+  },
+  "putfunctioncodesigningconfig": {
+   "conditionKeys": [
+    "lambda:CodeSigningConfigArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFunctionCodeSigningConfig",
+   "resources": [
+    "code signing config",
+    "function"
+   ]
+  },
+  "putfunctionconcurrency": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFunctionConcurrency",
+   "resources": [
+    "function"
+   ]
+  },
+  "putfunctioneventinvokeconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFunctionEventInvokeConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "putfunctionrecursionconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFunctionRecursionConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "putfunctionscalingconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFunctionScalingConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "putprovisionedconcurrencyconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutProvisionedConcurrencyConfig",
+   "resources": [
+    "function alias",
+    "function version"
+   ]
+  },
+  "putresourcepolicy": {
+   "conditionKeys": [
+    "lambda:Principal"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "function",
+    "webFunction"
+   ]
+  },
+  "putruntimemanagementconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRuntimeManagementConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "removelayerversionpermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "RemoveLayerVersionPermission",
+   "resources": [
+    "layerVersion"
+   ]
+  },
+  "removepermission": {
+   "conditionKeys": [
+    "lambda:FunctionUrlAuthType",
+    "lambda:Principal"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "RemovePermission",
+   "resources": [
+    "function"
+   ]
+  },
+  "resumemicrovm": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "ResumeMicrovm",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "runmicrovm": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "RunMicrovm",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "senddurableexecutioncallbackfailure": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendDurableExecutionCallbackFailure",
+   "resources": [
+    "durable execution"
+   ]
+  },
+  "senddurableexecutioncallbackheartbeat": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendDurableExecutionCallbackHeartbeat",
+   "resources": [
+    "durable execution"
+   ]
+  },
+  "senddurableexecutioncallbacksuccess": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendDurableExecutionCallbackSuccess",
+   "resources": [
+    "durable execution"
+   ]
+  },
+  "stopdurableexecution": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StopDurableExecution",
+   "resources": [
+    "durable execution"
+   ]
+  },
+  "suspendmicrovm": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SuspendMicrovm",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "capacityProvider",
+    "code signing config",
+    "eventSourceMapping",
+    "function",
+    "microvmImage",
+    "networkConnector",
+    "webFunction"
+   ]
+  },
+  "terminatemicrovm": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "TerminateMicrovm",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "capacityProvider",
+    "code signing config",
+    "eventSourceMapping",
+    "function",
+    "microvmImage",
+    "networkConnector",
+    "webFunction"
+   ]
+  },
+  "updatealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAlias",
+   "resources": [
+    "function"
+   ]
+  },
+  "updatecapacityprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCapacityProvider",
+   "resources": [
+    "capacityProvider"
+   ]
+  },
+  "updatecodesigningconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCodeSigningConfig",
+   "resources": [
+    "code signing config"
+   ]
+  },
+  "updateeventsourcemapping": {
+   "conditionKeys": [
+    "lambda:FunctionArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEventSourceMapping",
+   "resources": [
+    "eventSourceMapping"
+   ]
+  },
+  "updatefunctioncode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFunctionCode",
+   "resources": [
+    "function"
+   ]
+  },
+  "updatefunctioncodesigningconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFunctionCodeSigningConfig",
+   "resources": [
+    "code signing config",
+    "function"
+   ]
+  },
+  "updatefunctionconfiguration": {
+   "conditionKeys": [
+    "lambda:Layer",
+    "lambda:SecurityGroupIds",
+    "lambda:SubnetIds",
+    "lambda:VpcIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFunctionConfiguration",
+   "resources": [
+    "function"
+   ]
+  },
+  "updatefunctioneventinvokeconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFunctionEventInvokeConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "updatefunctionurlconfig": {
+   "conditionKeys": [
+    "lambda:FunctionArn",
+    "lambda:FunctionUrlAuthType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFunctionUrlConfig",
+   "resources": [
+    "function"
+   ]
+  },
+  "updatemicrovmimage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMicrovmImage",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "updatemicrovmimageversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMicrovmImageVersion",
+   "resources": [
+    "microvmImage"
+   ]
+  },
+  "updatenetworkconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNetworkConnector",
+   "resources": [
+    "networkConnector"
+   ]
+  },
+  "updatewebfunctionendpoint": {
+   "conditionKeys": [
+    "lambda:Request/WebFunctionAuthType",
+    "lambda:Resource/WebFunctionAuthType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWebFunctionEndpoint",
+   "resources": [
+    "webFunctionEndpoint"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "lambda:CodeSigningConfigArn": [
+   "ARN"
+  ],
+  "lambda:EventSourceToken": [
+   "String"
+  ],
+  "lambda:FunctionArn": [
+   "ARN"
+  ],
+  "lambda:FunctionUrlAuthType": [
+   "String"
+  ],
+  "lambda:InvokedViaFunctionUrl": [
+   "Bool"
+  ],
+  "lambda:Layer": [
+   "ArrayOfString"
+  ],
+  "lambda:Principal": [
+   "String"
+  ],
+  "lambda:Request/WebFunctionAuthType": [
+   "String"
+  ],
+  "lambda:Resource/WebFunctionAuthType": [
+   "String"
+  ],
+  "lambda:SecurityGroupIds": [
+   "ArrayOfString"
+  ],
+  "lambda:SourceFunctionArn": [
+   "ARN"
+  ],
+  "lambda:SubnetIds": [
+   "ArrayOfString"
+  ],
+  "lambda:VpcIds": [
+   "String"
+  ]
+ },
+ "resources": {
+  "capacityProvider": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:capacity-provider:${CapacityProviderName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "code signing config": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:code-signing-config:${CodeSigningConfigId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "durable execution": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:function:${FunctionName}:${Version}/durable-execution/${ExecutionName}/${ExecutionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "eventSourceMapping": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:event-source-mapping:${UUID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "function": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:function:${FunctionName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "function alias": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:function:${FunctionName}:${Alias}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "function version": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:function:${FunctionName}:${Version}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "layer": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:layer:${LayerName}"
+   ]
+  },
+  "layerVersion": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:layer:${LayerName}:${LayerVersion}"
+   ]
+  },
+  "microvmImage": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:microvm-image:${MicrovmImageName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "networkConnector": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:network-connector:${NetworkConnectorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "webFunction": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:web-function/${FunctionName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "webFunctionEndpoint": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:web-function/${FunctionName}/endpoint/${EndpointName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "webFunctionRevision": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:web-function/${FunctionName}/revision/${RevisionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "lambda",
+ "serviceName": "Lambda",
+ "version": "v1.5"
+}

@@ -1,0 +1,1257 @@
+{
+ "actions": {
+  "associatelenses": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateLenses",
+   "resources": [
+    "workload"
+   ]
+  },
+  "associateprofiles": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateProfiles",
+   "resources": [
+    "workload"
+   ]
+  },
+  "configureintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfigureIntegration",
+   "resources": []
+  },
+  "createagentbasicprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgentBasicProfile",
+   "resources": []
+  },
+  "createagentcontext": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgentContext",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "createagentgoal": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgentGoal",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "createagentorganizationalprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgentOrganizationalProfile",
+   "resources": []
+  },
+  "createagentorganizationalreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgentOrganizationalReport",
+   "resources": []
+  },
+  "createagentprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgentProfile",
+   "resources": []
+  },
+  "createlensshare": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLensShare",
+   "resources": [
+    "lens"
+   ]
+  },
+  "createlensversion": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLensVersion",
+   "resources": [
+    "lens"
+   ]
+  },
+  "createmilestone": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMilestone",
+   "resources": [
+    "workload"
+   ]
+  },
+  "createprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProfile",
+   "resources": []
+  },
+  "createprofileshare": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProfileShare",
+   "resources": [
+    "profile"
+   ]
+  },
+  "createreviewtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReviewTemplate",
+   "resources": []
+  },
+  "createtemplateshare": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTemplateShare",
+   "resources": [
+    "review-template"
+   ]
+  },
+  "createworkload": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "wellarchitected:JiraProjectKey"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkload",
+   "resources": []
+  },
+  "createworkloadshare": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkloadShare",
+   "resources": [
+    "workload"
+   ]
+  },
+  "deleteagentcontext": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentContext",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "deleteagentgoal": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentGoal",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "deleteagentorganizationalreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentOrganizationalReport",
+   "resources": []
+  },
+  "deleteagentprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentProfile",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "deleteagentprofilepolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentProfilePolicy",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "deleteagentrecommendationpolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentRecommendationPolicy",
+   "resources": [
+    "agent-recommendation"
+   ]
+  },
+  "deletelens": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLens",
+   "resources": [
+    "lens"
+   ]
+  },
+  "deletelensshare": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLensShare",
+   "resources": [
+    "lens"
+   ]
+  },
+  "deleteprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "deleteprofileshare": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProfileShare",
+   "resources": [
+    "profile"
+   ]
+  },
+  "deletereviewtemplate": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReviewTemplate",
+   "resources": [
+    "review-template"
+   ]
+  },
+  "deletetemplateshare": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTemplateShare",
+   "resources": [
+    "review-template"
+   ]
+  },
+  "deleteworkload": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkload",
+   "resources": [
+    "workload"
+   ]
+  },
+  "deleteworkloadshare": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkloadShare",
+   "resources": [
+    "workload"
+   ]
+  },
+  "disassociatelenses": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateLenses",
+   "resources": [
+    "workload"
+   ]
+  },
+  "disassociateprofiles": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateProfiles",
+   "resources": [
+    "workload"
+   ]
+  },
+  "exportlens": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ExportLens",
+   "resources": [
+    "lens"
+   ]
+  },
+  "getagentcontext": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAgentContext",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "getagentgoal": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAgentGoal",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "getagentorganizationalreport": {
+   "name": "GetAgentOrganizationalReport",
+   "resources": []
+  },
+  "getagentorganizationalreportdata": {
+   "name": "GetAgentOrganizationalReportData",
+   "resources": []
+  },
+  "getagentpreferences": {
+   "name": "GetAgentPreferences",
+   "resources": []
+  },
+  "getagentprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAgentProfile",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "getagentprofilepolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAgentProfilePolicy",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "getagentrecommendation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAgentRecommendation",
+   "resources": [
+    "agent-recommendation"
+   ]
+  },
+  "getagentrecommendationgeneration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAgentRecommendationGeneration",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "getagentrecommendationpolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAgentRecommendationPolicy",
+   "resources": [
+    "agent-recommendation"
+   ]
+  },
+  "getanswer": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAnswer",
+   "resources": [
+    "workload"
+   ]
+  },
+  "getconsolidatedreport": {
+   "name": "GetConsolidatedReport",
+   "resources": []
+  },
+  "getglobalsettings": {
+   "name": "GetGlobalSettings",
+   "resources": []
+  },
+  "getlens": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetLens",
+   "resources": [
+    "lens"
+   ]
+  },
+  "getlensreview": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetLensReview",
+   "resources": [
+    "workload"
+   ]
+  },
+  "getlensreviewreport": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetLensReviewReport",
+   "resources": [
+    "workload"
+   ]
+  },
+  "getlensversiondifference": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetLensVersionDifference",
+   "resources": [
+    "lens"
+   ]
+  },
+  "getmilestone": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetMilestone",
+   "resources": [
+    "workload"
+   ]
+  },
+  "getprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "getprofiletemplate": {
+   "name": "GetProfileTemplate",
+   "resources": []
+  },
+  "getreviewtemplate": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetReviewTemplate",
+   "resources": [
+    "review-template"
+   ]
+  },
+  "getreviewtemplateanswer": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetReviewTemplateAnswer",
+   "resources": [
+    "review-template"
+   ]
+  },
+  "getreviewtemplatelensreview": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetReviewTemplateLensReview",
+   "resources": [
+    "review-template"
+   ]
+  },
+  "getworkload": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetWorkload",
+   "resources": [
+    "workload"
+   ]
+  },
+  "importlens": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportLens",
+   "resources": []
+  },
+  "listagentcontexts": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentContexts",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "listagentgoals": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentGoals",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "listagentorganizationalreports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentOrganizationalReports",
+   "resources": []
+  },
+  "listagentprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentProfiles",
+   "resources": []
+  },
+  "listagentrecommendationgenerations": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentRecommendationGenerations",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "listagentrecommendationitems": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentRecommendationItems",
+   "resources": [
+    "agent-recommendation"
+   ]
+  },
+  "listagentrecommendations": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentRecommendations",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "listanswers": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnswers",
+   "resources": [
+    "workload"
+   ]
+  },
+  "listcheckdetails": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCheckDetails",
+   "resources": [
+    "workload"
+   ]
+  },
+  "listchecksummaries": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCheckSummaries",
+   "resources": [
+    "workload"
+   ]
+  },
+  "listlenses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLenses",
+   "resources": []
+  },
+  "listlensreviewimprovements": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLensReviewImprovements",
+   "resources": [
+    "workload"
+   ]
+  },
+  "listlensreviews": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLensReviews",
+   "resources": [
+    "workload"
+   ]
+  },
+  "listlensshares": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLensShares",
+   "resources": [
+    "lens"
+   ]
+  },
+  "listmilestones": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMilestones",
+   "resources": [
+    "workload"
+   ]
+  },
+  "listnotifications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNotifications",
+   "resources": []
+  },
+  "listprofilenotifications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfileNotifications",
+   "resources": []
+  },
+  "listprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfiles",
+   "resources": []
+  },
+  "listprofileshares": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfileShares",
+   "resources": [
+    "profile"
+   ]
+  },
+  "listreviewtemplateanswers": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReviewTemplateAnswers",
+   "resources": [
+    "review-template"
+   ]
+  },
+  "listreviewtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReviewTemplates",
+   "resources": []
+  },
+  "listshareinvitations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListShareInvitations",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "agent-profile",
+    "agent-recommendation",
+    "lens",
+    "profile",
+    "review-template",
+    "workload"
+   ]
+  },
+  "listtemplateshares": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTemplateShares",
+   "resources": [
+    "review-template"
+   ]
+  },
+  "listworkloads": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkloads",
+   "resources": []
+  },
+  "listworkloadshares": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkloadShares",
+   "resources": [
+    "workload"
+   ]
+  },
+  "putagentpreferences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAgentPreferences",
+   "resources": []
+  },
+  "putagentprofilepolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAgentProfilePolicy",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "putagentrecommendationfeedback": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutAgentRecommendationFeedback",
+   "resources": [
+    "agent-recommendation"
+   ]
+  },
+  "putagentrecommendationpolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAgentRecommendationPolicy",
+   "resources": [
+    "agent-recommendation"
+   ]
+  },
+  "sendagentorganizationalreportdatatos3": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendAgentOrganizationalReportDataToS3",
+   "resources": []
+  },
+  "startagentrecommendationgeneration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAgentRecommendationGeneration",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "agent-profile",
+    "agent-recommendation",
+    "lens",
+    "profile",
+    "review-template",
+    "workload"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "agent-profile",
+    "agent-recommendation",
+    "lens",
+    "profile",
+    "review-template",
+    "workload"
+   ]
+  },
+  "updateagentcontext": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentContext",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "updateagentgoal": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentGoal",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "updateagentorganizationalprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentOrganizationalProfile",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "updateagentprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentProfile",
+   "resources": [
+    "agent-profile"
+   ]
+  },
+  "updateagentrecommendationstatus": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentRecommendationStatus",
+   "resources": [
+    "agent-recommendation"
+   ]
+  },
+  "updateanswer": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAnswer",
+   "resources": [
+    "workload"
+   ]
+  },
+  "updateglobalsettings": {
+   "conditionKeys": [
+    "wellarchitected:JiraProjectKey"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGlobalSettings",
+   "resources": []
+  },
+  "updateintegration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIntegration",
+   "resources": [
+    "workload"
+   ]
+  },
+  "updatelensreview": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLensReview",
+   "resources": [
+    "workload"
+   ]
+  },
+  "updateprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "updatereviewtemplate": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReviewTemplate",
+   "resources": [
+    "review-template"
+   ]
+  },
+  "updatereviewtemplateanswer": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReviewTemplateAnswer",
+   "resources": [
+    "review-template"
+   ]
+  },
+  "updatereviewtemplatelensreview": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReviewTemplateLensReview",
+   "resources": [
+    "review-template"
+   ]
+  },
+  "updateshareinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateShareInvitation",
+   "resources": []
+  },
+  "updateworkload": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "wellarchitected:JiraProjectKey"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkload",
+   "resources": [
+    "workload"
+   ]
+  },
+  "updateworkloadshare": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkloadShare",
+   "resources": [
+    "workload"
+   ]
+  },
+  "upgradelensreview": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpgradeLensReview",
+   "resources": [
+    "workload"
+   ]
+  },
+  "upgradeprofileversion": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpgradeProfileVersion",
+   "resources": [
+    "profile",
+    "workload"
+   ]
+  },
+  "upgradereviewtemplatelensreview": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpgradeReviewTemplateLensReview",
+   "resources": [
+    "review-template"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "wellarchitected:JiraProjectKey": [
+   "String"
+  ]
+ },
+ "resources": {
+  "agent-profile": {
+   "arnFormats": [
+    "arn:${Partition}:wellarchitected:${Region}:${Account}:agent-profile/${ProfileName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "agent-recommendation": {
+   "arnFormats": [
+    "arn:${Partition}:wellarchitected:${Region}:${Account}:agent-recommendation/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "lens": {
+   "arnFormats": [
+    "arn:${Partition}:wellarchitected:${Region}:${Account}:lens/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "profile": {
+   "arnFormats": [
+    "arn:${Partition}:wellarchitected:${Region}:${Account}:profile/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "review-template": {
+   "arnFormats": [
+    "arn:${Partition}:wellarchitected:${Region}:${Account}:review-template/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workload": {
+   "arnFormats": [
+    "arn:${Partition}:wellarchitected:${Region}:${Account}:workload/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "wellarchitected",
+ "serviceName": "Well-Architected Tool",
+ "version": "v1.5"
+}

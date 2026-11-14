@@ -1,0 +1,272 @@
+{
+ "actions": {
+  "addtags": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "AddTags",
+   "resources": [
+    "domain"
+   ]
+  },
+  "buildsuggesters": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BuildSuggesters",
+   "resources": [
+    "domain"
+   ]
+  },
+  "createdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "defineanalysisscheme": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DefineAnalysisScheme",
+   "resources": [
+    "domain"
+   ]
+  },
+  "defineexpression": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DefineExpression",
+   "resources": [
+    "domain"
+   ]
+  },
+  "defineindexfield": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DefineIndexField",
+   "resources": [
+    "domain"
+   ]
+  },
+  "definesuggester": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DefineSuggester",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deleteanalysisscheme": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAnalysisScheme",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deletedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deleteexpression": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExpression",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deleteindexfield": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIndexField",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deletesuggester": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSuggester",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describeanalysisschemes": {
+   "name": "DescribeAnalysisSchemes",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describeavailabilityoptions": {
+   "name": "DescribeAvailabilityOptions",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describedomainendpointoptions": {
+   "name": "DescribeDomainEndpointOptions",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describedomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDomains",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describeexpressions": {
+   "name": "DescribeExpressions",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describeindexfields": {
+   "name": "DescribeIndexFields",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describescalingparameters": {
+   "name": "DescribeScalingParameters",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describeserviceaccesspolicies": {
+   "name": "DescribeServiceAccessPolicies",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describesuggesters": {
+   "name": "DescribeSuggesters",
+   "resources": [
+    "domain"
+   ]
+  },
+  "document": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "document",
+   "resources": [
+    "domain"
+   ]
+  },
+  "indexdocuments": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "IndexDocuments",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listdomainnames": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomainNames",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listtags": {
+   "name": "ListTags",
+   "resources": [
+    "domain"
+   ]
+  },
+  "removetags": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "RemoveTags",
+   "resources": [
+    "domain"
+   ]
+  },
+  "search": {
+   "name": "search",
+   "resources": [
+    "domain"
+   ]
+  },
+  "suggest": {
+   "name": "suggest",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updateavailabilityoptions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAvailabilityOptions",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updatedomainendpointoptions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomainEndpointOptions",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updatescalingparameters": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateScalingParameters",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updateserviceaccesspolicies": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateServiceAccessPolicies",
+   "resources": [
+    "domain"
+   ]
+  }
+ },
+ "resources": {
+  "domain": {
+   "arnFormats": [
+    "arn:${Partition}:cloudsearch:${Region}:${Account}:domain/${DomainName}"
+   ]
+  }
+ },
+ "service": "cloudsearch",
+ "serviceName": "CloudSearch",
+ "version": "v1.5"
+}

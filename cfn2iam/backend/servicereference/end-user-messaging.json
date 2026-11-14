@@ -1,0 +1,274 @@
+{
+ "actions": {
+  "createbrandprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBrandProfile",
+   "resources": []
+  },
+  "createbrandprofileattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBrandProfileAttributes",
+   "resources": [
+    "brand-profile"
+   ]
+  },
+  "createbrandprofilefromregistration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBrandProfileFromRegistration",
+   "resources": []
+  },
+  "createnotifycodeconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNotifyCodeConfiguration",
+   "resources": []
+  },
+  "createregistrationsfrombrandprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRegistrationsFromBrandProfile",
+   "resources": [
+    "brand-profile"
+   ]
+  },
+  "deletebrandprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBrandProfile",
+   "resources": [
+    "brand-profile"
+   ]
+  },
+  "deletebrandprofileattribute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBrandProfileAttribute",
+   "resources": [
+    "brand-profile"
+   ]
+  },
+  "deletenotifycodeconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotifyCodeConfiguration",
+   "resources": [
+    "notify-code-configuration"
+   ]
+  },
+  "getbrandprofile": {
+   "name": "GetBrandProfile",
+   "resources": [
+    "brand-profile"
+   ]
+  },
+  "getbrandprofileattribute": {
+   "name": "GetBrandProfileAttribute",
+   "resources": [
+    "brand-profile"
+   ]
+  },
+  "getjob": {
+   "name": "GetJob",
+   "resources": []
+  },
+  "getnotifycodeconfiguration": {
+   "name": "GetNotifyCodeConfiguration",
+   "resources": [
+    "notify-code-configuration"
+   ]
+  },
+  "listbrandprofileattributes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBrandProfileAttributes",
+   "resources": [
+    "brand-profile"
+   ]
+  },
+  "listbrandprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBrandProfiles",
+   "resources": []
+  },
+  "listjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobs",
+   "resources": []
+  },
+  "listnotifycodeconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNotifyCodeConfigurations",
+   "resources": []
+  },
+  "listregistrationsfrombrandprofile": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRegistrationsFromBrandProfile",
+   "resources": [
+    "brand-profile"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "brand-profile",
+    "notify-code-configuration"
+   ]
+  },
+  "sendnotifycodeverification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendNotifyCodeVerification",
+   "resources": [
+    "notify-code-configuration"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "brand-profile",
+    "notify-code-configuration"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "brand-profile",
+    "notify-code-configuration"
+   ]
+  },
+  "updatebrandprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBrandProfile",
+   "resources": [
+    "brand-profile"
+   ]
+  },
+  "updatebrandprofileattribute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBrandProfileAttribute",
+   "resources": [
+    "brand-profile"
+   ]
+  },
+  "updatebrandprofilefromregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBrandProfileFromRegistration",
+   "resources": [
+    "brand-profile"
+   ]
+  },
+  "updatenotifycodeconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotifyCodeConfiguration",
+   "resources": [
+    "notify-code-configuration"
+   ]
+  },
+  "updateregistrationsfrombrandprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRegistrationsFromBrandProfile",
+   "resources": [
+    "brand-profile"
+   ]
+  },
+  "validatenotifycodeverification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ValidateNotifyCodeVerification",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "brand-profile": {
+   "arnFormats": [
+    "arn:${Partition}:end-user-messaging:${Region}:${Account}:brand-profile/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "notify-code-configuration": {
+   "arnFormats": [
+    "arn:${Partition}:end-user-messaging:${Region}:${Account}:notify-code-configuration/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "end-user-messaging",
+ "serviceName": "End User Messaging",
+ "version": "v1.5"
+}

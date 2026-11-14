@@ -1,0 +1,926 @@
+{
+ "actions": {
+  "accesskubernetesapi": {
+   "name": "AccessKubernetesApi",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "activatecertificateauthority": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivateCertificateAuthority",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "associateaccesspolicy": {
+   "conditionKeys": [
+    "eks:accessScope",
+    "eks:namespaces",
+    "eks:policyArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateAccessPolicy",
+   "resources": [
+    "access-entry"
+   ]
+  },
+  "associateencryptionconfig": {
+   "conditionKeys": [
+    "eks:encryptionConfigProviderKeyArns"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateEncryptionConfig",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "associateidentityproviderconfig": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "eks:clientId",
+    "eks:issuerUrl"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateIdentityProviderConfig",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "cancelupdate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelUpdate",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "createaccessentry": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "eks:accessEntryType",
+    "eks:kubernetesGroups",
+    "eks:principalArn",
+    "eks:username"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessEntry",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "createaddon": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAddon",
+   "resources": [
+    "cluster",
+    "podidentityassociation"
+   ]
+  },
+  "createcapability": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCapability",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "createcertificateauthority": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCertificateAuthority",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "createcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "eks:authenticationMode",
+    "eks:blockStorageEnabled",
+    "eks:bootstrapClusterCreatorAdminPermissions",
+    "eks:bootstrapSelfManagedAddons",
+    "eks:computeConfigEnabled",
+    "eks:controlPlaneEgressMode",
+    "eks:controlPlaneScalingTier",
+    "eks:deletionProtection",
+    "eks:elasticLoadBalancingEnabled",
+    "eks:encryptionConfigProviderKeyArns",
+    "eks:endpointPrivateAccess",
+    "eks:endpointPublicAccess",
+    "eks:kubeApiServerConfig",
+    "eks:kubeControllerManagerConfig",
+    "eks:kubeSchedulerConfig",
+    "eks:kubernetesVersion",
+    "eks:loggingType/${type}",
+    "eks:supportType",
+    "eks:zonalShiftEnabled"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCluster",
+   "resources": []
+  },
+  "createeksanywheresubscription": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEksAnywhereSubscription",
+   "resources": []
+  },
+  "createfargateprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFargateProfile",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "createnodegroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNodegroup",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "createpodidentityassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePodIdentityAssociation",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "deleteaccessentry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccessEntry",
+   "resources": [
+    "access-entry"
+   ]
+  },
+  "deleteaddon": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAddon",
+   "resources": [
+    "addon",
+    "podidentityassociation"
+   ]
+  },
+  "deletecapability": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCapability",
+   "resources": [
+    "capability"
+   ]
+  },
+  "deletecertificateauthority": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCertificateAuthority",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "deletecluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "deleteeksanywheresubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEksAnywhereSubscription",
+   "resources": [
+    "eks-anywhere-subscription"
+   ]
+  },
+  "deletefargateprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFargateProfile",
+   "resources": [
+    "fargateprofile"
+   ]
+  },
+  "deletenodegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNodegroup",
+   "resources": [
+    "nodegroup"
+   ]
+  },
+  "deletepodidentityassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePodIdentityAssociation",
+   "resources": [
+    "podidentityassociation"
+   ]
+  },
+  "deregistercluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "describeaccessentry": {
+   "name": "DescribeAccessEntry",
+   "resources": [
+    "access-entry"
+   ]
+  },
+  "describeaddon": {
+   "name": "DescribeAddon",
+   "resources": [
+    "addon"
+   ]
+  },
+  "describeaddonconfiguration": {
+   "name": "DescribeAddonConfiguration",
+   "resources": []
+  },
+  "describeaddonversions": {
+   "name": "DescribeAddonVersions",
+   "resources": []
+  },
+  "describecapability": {
+   "name": "DescribeCapability",
+   "resources": [
+    "capability"
+   ]
+  },
+  "describecertificateauthority": {
+   "name": "DescribeCertificateAuthority",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "describecluster": {
+   "name": "DescribeCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "describeclusterversions": {
+   "name": "DescribeClusterVersions",
+   "resources": []
+  },
+  "describeeksanywheresubscription": {
+   "name": "DescribeEksAnywhereSubscription",
+   "resources": [
+    "eks-anywhere-subscription"
+   ]
+  },
+  "describefargateprofile": {
+   "name": "DescribeFargateProfile",
+   "resources": [
+    "fargateprofile"
+   ]
+  },
+  "describeidentityproviderconfig": {
+   "name": "DescribeIdentityProviderConfig",
+   "resources": [
+    "identityproviderconfig"
+   ]
+  },
+  "describeinsight": {
+   "name": "DescribeInsight",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "describeinsightsrefresh": {
+   "name": "DescribeInsightsRefresh",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "describenodegroup": {
+   "name": "DescribeNodegroup",
+   "resources": [
+    "nodegroup"
+   ]
+  },
+  "describepodidentityassociation": {
+   "name": "DescribePodIdentityAssociation",
+   "resources": [
+    "podidentityassociation"
+   ]
+  },
+  "describeupdate": {
+   "name": "DescribeUpdate",
+   "resources": [
+    "addon",
+    "capability",
+    "cluster",
+    "nodegroup"
+   ]
+  },
+  "disassociateaccesspolicy": {
+   "conditionKeys": [
+    "eks:accessScope",
+    "eks:namespaces",
+    "eks:policyArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateAccessPolicy",
+   "resources": [
+    "access-entry"
+   ]
+  },
+  "disassociateidentityproviderconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateIdentityProviderConfig",
+   "resources": [
+    "identityproviderconfig"
+   ]
+  },
+  "listaccessentries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessEntries",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listaccesspolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessPolicies",
+   "resources": []
+  },
+  "listaddons": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAddons",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listassociatedaccesspolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssociatedAccessPolicies",
+   "resources": [
+    "access-entry"
+   ]
+  },
+  "listcapabilities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCapabilities",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listcertificateauthorities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCertificateAuthorities",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClusters",
+   "resources": []
+  },
+  "listdashboarddata": {
+   "name": "ListDashboardData",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "listdashboardresources": {
+   "name": "ListDashboardResources",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "listeksanywheresubscriptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEksAnywhereSubscriptions",
+   "resources": []
+  },
+  "listfargateprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFargateProfiles",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listidentityproviderconfigs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIdentityProviderConfigs",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listinsights": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInsights",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listnodegroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNodegroups",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listpodidentityassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPodIdentityAssociations",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "addon",
+    "capability",
+    "cluster",
+    "dashboard",
+    "eks-anywhere-subscription",
+    "fargateprofile",
+    "identityproviderconfig",
+    "nodegroup"
+   ]
+  },
+  "listupdates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUpdates",
+   "resources": [
+    "addon",
+    "capability",
+    "cluster",
+    "nodegroup"
+   ]
+  },
+  "mutateviakubernetesapi": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MutateViaKubernetesApi",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "registercluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterCluster",
+   "resources": []
+  },
+  "startinsightsrefresh": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartInsightsRefresh",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "access-entry",
+    "addon",
+    "capability",
+    "cluster",
+    "dashboard",
+    "eks-anywhere-subscription",
+    "fargateprofile",
+    "identityproviderconfig",
+    "nodegroup",
+    "podidentityassociation"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "access-entry",
+    "addon",
+    "capability",
+    "cluster",
+    "dashboard",
+    "eks-anywhere-subscription",
+    "fargateprofile",
+    "identityproviderconfig",
+    "nodegroup",
+    "podidentityassociation"
+   ]
+  },
+  "updateaccessentry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccessEntry",
+   "resources": [
+    "access-entry"
+   ]
+  },
+  "updateaddon": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAddon",
+   "resources": [
+    "addon",
+    "podidentityassociation"
+   ]
+  },
+  "updatecapability": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCapability",
+   "resources": [
+    "capability"
+   ]
+  },
+  "updateclusterconfig": {
+   "conditionKeys": [
+    "eks:authenticationMode",
+    "eks:blockStorageEnabled",
+    "eks:computeConfigEnabled",
+    "eks:controlPlaneEgressMode",
+    "eks:controlPlaneScalingTier",
+    "eks:deletionProtection",
+    "eks:elasticLoadBalancingEnabled",
+    "eks:endpointPrivateAccess",
+    "eks:endpointPublicAccess",
+    "eks:kubeApiServerConfig",
+    "eks:kubeControllerManagerConfig",
+    "eks:kubeSchedulerConfig",
+    "eks:loggingType/${type}",
+    "eks:supportType",
+    "eks:zonalShiftEnabled"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateClusterConfig",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "updateclusterversion": {
+   "conditionKeys": [
+    "eks:kubernetesVersion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateClusterVersion",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "updateeksanywheresubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEksAnywhereSubscription",
+   "resources": [
+    "eks-anywhere-subscription"
+   ]
+  },
+  "updatenodegroupconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNodegroupConfig",
+   "resources": [
+    "nodegroup"
+   ]
+  },
+  "updatenodegroupversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNodegroupVersion",
+   "resources": [
+    "nodegroup"
+   ]
+  },
+  "updatepodidentityassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePodIdentityAssociation",
+   "resources": [
+    "podidentityassociation"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "eks:accessEntryType": [
+   "String"
+  ],
+  "eks:accessScope": [
+   "String"
+  ],
+  "eks:authenticationMode": [
+   "String"
+  ],
+  "eks:blockStorageEnabled": [
+   "Bool"
+  ],
+  "eks:bootstrapClusterCreatorAdminPermissions": [
+   "Bool"
+  ],
+  "eks:bootstrapSelfManagedAddons": [
+   "Bool"
+  ],
+  "eks:clientId": [
+   "String"
+  ],
+  "eks:clusterName": [
+   "String"
+  ],
+  "eks:computeConfigEnabled": [
+   "Bool"
+  ],
+  "eks:controlPlaneEgressMode": [
+   "String"
+  ],
+  "eks:controlPlaneScalingTier": [
+   "String"
+  ],
+  "eks:deletionProtection": [
+   "Bool"
+  ],
+  "eks:elasticLoadBalancingEnabled": [
+   "Bool"
+  ],
+  "eks:encryptionConfigProviderKeyArns": [
+   "ArrayOfARN"
+  ],
+  "eks:endpointPrivateAccess": [
+   "Bool"
+  ],
+  "eks:endpointPublicAccess": [
+   "Bool"
+  ],
+  "eks:issuerUrl": [
+   "String"
+  ],
+  "eks:kubeApiServerConfig": [
+   "Bool"
+  ],
+  "eks:kubeControllerManagerConfig": [
+   "Bool"
+  ],
+  "eks:kubeSchedulerConfig": [
+   "Bool"
+  ],
+  "eks:kubernetesGroups": [
+   "ArrayOfString"
+  ],
+  "eks:kubernetesVersion": [
+   "String"
+  ],
+  "eks:loggingType/${type}": [
+   "Bool"
+  ],
+  "eks:namespaces": [
+   "ArrayOfString"
+  ],
+  "eks:policyArn": [
+   "ARN"
+  ],
+  "eks:principalArn": [
+   "ARN"
+  ],
+  "eks:supportType": [
+   "String"
+  ],
+  "eks:username": [
+   "String"
+  ],
+  "eks:zonalShiftEnabled": [
+   "Bool"
+  ]
+ },
+ "resources": {
+  "access-entry": {
+   "arnFormats": [
+    "arn:${Partition}:eks:${Region}:${Account}:access-entry/${ClusterName}/${IamIdentityType}/${IamIdentityAccountID}/${IamIdentityName}/${UUID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "eks:accessEntryType",
+    "eks:clusterName",
+    "eks:kubernetesGroups",
+    "eks:principalArn",
+    "eks:username"
+   ]
+  },
+  "access-policy": {
+   "arnFormats": [
+    "arn:${Partition}:eks::aws:cluster-access-policy/${AccessPolicyName}"
+   ]
+  },
+  "addon": {
+   "arnFormats": [
+    "arn:${Partition}:eks:${Region}:${Account}:addon/${ClusterName}/${AddonName}/${UUID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "capability": {
+   "arnFormats": [
+    "arn:${Partition}:eks:${Region}:${Account}:capability/${ClusterName}/${CapabilityType}/${CapabilityName}/${UUID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "cluster": {
+   "arnFormats": [
+    "arn:${Partition}:eks:${Region}:${Account}:cluster/${ClusterName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dashboard": {
+   "arnFormats": [
+    "arn:${Partition}:eks:${Region}:${Account}:dashboard/${DashboardName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "eks-anywhere-subscription": {
+   "arnFormats": [
+    "arn:${Partition}:eks:${Region}:${Account}:eks-anywhere-subscription/${UUID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "fargateprofile": {
+   "arnFormats": [
+    "arn:${Partition}:eks:${Region}:${Account}:fargateprofile/${ClusterName}/${FargateProfileName}/${UUID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "identityproviderconfig": {
+   "arnFormats": [
+    "arn:${Partition}:eks:${Region}:${Account}:identityproviderconfig/${ClusterName}/${IdentityProviderType}/${IdentityProviderConfigName}/${UUID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "nodegroup": {
+   "arnFormats": [
+    "arn:${Partition}:eks:${Region}:${Account}:nodegroup/${ClusterName}/${NodegroupName}/${UUID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "podidentityassociation": {
+   "arnFormats": [
+    "arn:${Partition}:eks:${Region}:${Account}:podidentityassociation/${ClusterName}/${UUID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "eks",
+ "serviceName": "EKS",
+ "version": "v1.5"
+}

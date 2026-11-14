@@ -1,0 +1,173 @@
+{
+ "actions": {
+  "cancelpurchasesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelPurchaseSession",
+   "resources": []
+  },
+  "confirmpurchasesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfirmPurchaseSession",
+   "resources": []
+  },
+  "createclaim": {
+   "conditionKeys": [
+    "user-subscriptions:CreateForSelf"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateClaim",
+   "resources": []
+  },
+  "createclaimaddon": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateClaimAddOn",
+   "resources": []
+  },
+  "createpurchasesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePurchaseSession",
+   "resources": []
+  },
+  "createupdateplanpreview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUpdatePlanPreview",
+   "resources": []
+  },
+  "deleteautotopuprule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAutoTopUpRule",
+   "resources": []
+  },
+  "deleteclaim": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteClaim",
+   "resources": []
+  },
+  "getautotopuprule": {
+   "name": "GetAutoTopUpRule",
+   "resources": []
+  },
+  "getcurrentplandetails": {
+   "name": "GetCurrentPlanDetails",
+   "resources": []
+  },
+  "geteffectiveusagelimit": {
+   "name": "GetEffectiveUsageLimit",
+   "resources": []
+  },
+  "getoverageconfig": {
+   "name": "GetOverageConfig",
+   "resources": []
+  },
+  "getpurchasesession": {
+   "name": "GetPurchaseSession",
+   "resources": []
+  },
+  "getusagelimithistory": {
+   "name": "GetUsageLimitHistory",
+   "resources": []
+  },
+  "listapplicationclaims": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationClaims",
+   "resources": []
+  },
+  "listclaimaddons": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClaimAddOns",
+   "resources": []
+  },
+  "listclaims": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClaims",
+   "resources": []
+  },
+  "listentitlements": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEntitlements",
+   "resources": []
+  },
+  "listusagelimits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsageLimits",
+   "resources": []
+  },
+  "listusagesandlimits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsagesAndLimits",
+   "resources": []
+  },
+  "listusersubscriptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUserSubscriptions",
+   "resources": []
+  },
+  "setautotopuprule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetAutoTopUpRule",
+   "resources": []
+  },
+  "setoverageconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetOverageConfig",
+   "resources": []
+  },
+  "setusagelimit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetUsageLimit",
+   "resources": []
+  },
+  "updateclaim": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateClaim",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "user-subscriptions:CreateForSelf": [
+   "Bool"
+  ]
+ },
+ "resources": {},
+ "service": "user-subscriptions",
+ "serviceName": "User Subscriptions",
+ "version": "v1.5"
+}

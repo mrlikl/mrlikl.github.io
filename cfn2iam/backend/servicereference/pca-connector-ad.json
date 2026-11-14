@@ -1,0 +1,269 @@
+{
+ "actions": {
+  "createconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnector",
+   "resources": []
+  },
+  "createdirectoryregistration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDirectoryRegistration",
+   "resources": []
+  },
+  "createserviceprincipalname": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServicePrincipalName",
+   "resources": [
+    "DirectoryRegistration"
+   ]
+  },
+  "createtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTemplate",
+   "resources": [
+    "Connector"
+   ]
+  },
+  "createtemplategroupaccesscontrolentry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTemplateGroupAccessControlEntry",
+   "resources": [
+    "Template"
+   ]
+  },
+  "deleteconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnector",
+   "resources": [
+    "Connector"
+   ]
+  },
+  "deletedirectoryregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDirectoryRegistration",
+   "resources": [
+    "DirectoryRegistration"
+   ]
+  },
+  "deleteserviceprincipalname": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServicePrincipalName",
+   "resources": [
+    "DirectoryRegistration"
+   ]
+  },
+  "deletetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTemplate",
+   "resources": [
+    "Template"
+   ]
+  },
+  "deletetemplategroupaccesscontrolentry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTemplateGroupAccessControlEntry",
+   "resources": [
+    "Template"
+   ]
+  },
+  "getconnector": {
+   "name": "GetConnector",
+   "resources": [
+    "Connector"
+   ]
+  },
+  "getdirectoryregistration": {
+   "name": "GetDirectoryRegistration",
+   "resources": [
+    "DirectoryRegistration"
+   ]
+  },
+  "getserviceprincipalname": {
+   "name": "GetServicePrincipalName",
+   "resources": [
+    "DirectoryRegistration"
+   ]
+  },
+  "gettemplate": {
+   "name": "GetTemplate",
+   "resources": [
+    "Template"
+   ]
+  },
+  "gettemplategroupaccesscontrolentry": {
+   "name": "GetTemplateGroupAccessControlEntry",
+   "resources": [
+    "Template"
+   ]
+  },
+  "listconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectors",
+   "resources": []
+  },
+  "listdirectoryregistrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDirectoryRegistrations",
+   "resources": []
+  },
+  "listserviceprincipalnames": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServicePrincipalNames",
+   "resources": [
+    "DirectoryRegistration"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "listtemplategroupaccesscontrolentries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTemplateGroupAccessControlEntries",
+   "resources": [
+    "Template"
+   ]
+  },
+  "listtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTemplates",
+   "resources": [
+    "Connector"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Connector",
+    "DirectoryRegistration",
+    "Template"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Connector",
+    "DirectoryRegistration",
+    "Template"
+   ]
+  },
+  "updatetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTemplate",
+   "resources": [
+    "Template"
+   ]
+  },
+  "updatetemplategroupaccesscontrolentry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTemplateGroupAccessControlEntry",
+   "resources": [
+    "Template"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Connector": {
+   "arnFormats": [
+    "arn:${Partition}:pca-connector-ad:${Region}:${Account}:connector/${ConnectorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "DirectoryRegistration": {
+   "arnFormats": [
+    "arn:${Partition}:pca-connector-ad:${Region}:${Account}:directory-registration/${DirectoryId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Template": {
+   "arnFormats": [
+    "arn:${Partition}:pca-connector-ad:${Region}:${Account}:connector/${ConnectorId}/template/${TemplateId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "pca-connector-ad",
+ "serviceName": "Private CA Connector for Active Directory",
+ "version": "v1.5"
+}

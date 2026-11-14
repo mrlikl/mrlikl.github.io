@@ -1,0 +1,700 @@
+{
+ "actions": {
+  "associateconnectionwithchart": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateConnectionWithChart",
+   "resources": [
+    "chart",
+    "connection"
+   ]
+  },
+  "associateconnectionwithtab": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateConnectionWithTab",
+   "resources": [
+    "connection"
+   ]
+  },
+  "associatenotebookwithtab": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateNotebookWithTab",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "associatequerywithtab": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateQueryWithTab",
+   "resources": [
+    "query"
+   ]
+  },
+  "batchdeletefolder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteFolder",
+   "resources": []
+  },
+  "batchgetnotebookcell": {
+   "name": "BatchGetNotebookCell",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "createaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccount",
+   "resources": []
+  },
+  "createchart": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChart",
+   "resources": [
+    "chart"
+   ]
+  },
+  "createconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnection",
+   "resources": [
+    "connection"
+   ]
+  },
+  "createfolder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFolder",
+   "resources": []
+  },
+  "createnotebook": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNotebook",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "createnotebookcell": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNotebookCell",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "createnotebookfromversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNotebookFromVersion",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "createnotebookversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNotebookVersion",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "createsavedquery": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSavedQuery",
+   "resources": [
+    "query"
+   ]
+  },
+  "deletechart": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChart",
+   "resources": [
+    "chart"
+   ]
+  },
+  "deleteconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnection",
+   "resources": [
+    "connection"
+   ]
+  },
+  "deletenotebook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotebook",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "deletenotebookcell": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotebookCell",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "deletenotebookversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotebookVersion",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "deleteqcustomcontext": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQCustomContext",
+   "resources": []
+  },
+  "deletesavedquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSavedQuery",
+   "resources": [
+    "query"
+   ]
+  },
+  "deletesqlgenerationcontext": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSqlGenerationContext",
+   "resources": []
+  },
+  "deletetab": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTab",
+   "resources": []
+  },
+  "driverexecute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DriverExecute",
+   "resources": [
+    "connection"
+   ]
+  },
+  "duplicatenotebook": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DuplicateNotebook",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "exportnotebook": {
+   "name": "ExportNotebook",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "generatesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateSession",
+   "resources": []
+  },
+  "getaccountinfo": {
+   "name": "GetAccountInfo",
+   "resources": []
+  },
+  "getaccountsettings": {
+   "name": "GetAccountSettings",
+   "resources": []
+  },
+  "getautocompletionmetadata": {
+   "name": "GetAutocompletionMetadata",
+   "resources": []
+  },
+  "getautocompletionresource": {
+   "name": "GetAutocompletionResource",
+   "resources": []
+  },
+  "getchart": {
+   "name": "GetChart",
+   "resources": [
+    "chart"
+   ]
+  },
+  "getconnection": {
+   "name": "GetConnection",
+   "resources": [
+    "connection"
+   ]
+  },
+  "getnotebook": {
+   "name": "GetNotebook",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "getnotebookversion": {
+   "name": "GetNotebookVersion",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "getqcustomcontext": {
+   "name": "GetQCustomContext",
+   "resources": []
+  },
+  "getqsqlpromptquotas": {
+   "name": "GetQSqlPromptQuotas",
+   "resources": []
+  },
+  "getqsqlrecommendations": {
+   "name": "GetQSqlRecommendations",
+   "resources": []
+  },
+  "getqueryexecutionhistory": {
+   "name": "GetQueryExecutionHistory",
+   "resources": []
+  },
+  "getsavedquery": {
+   "name": "GetSavedQuery",
+   "resources": [
+    "query"
+   ]
+  },
+  "getschemainference": {
+   "name": "GetSchemaInference",
+   "resources": []
+  },
+  "getsqlgenerationcontext": {
+   "name": "GetSqlGenerationContext",
+   "resources": []
+  },
+  "getsqlrecommendations": {
+   "name": "GetSqlRecommendations",
+   "resources": []
+  },
+  "getuserinfo": {
+   "name": "GetUserInfo",
+   "resources": []
+  },
+  "getuserworkspacesettings": {
+   "name": "GetUserWorkspaceSettings",
+   "resources": []
+  },
+  "importnotebook": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportNotebook",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "listconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnections",
+   "resources": []
+  },
+  "listdatabases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatabases",
+   "resources": []
+  },
+  "listfiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFiles",
+   "resources": []
+  },
+  "listnotebooks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNotebooks",
+   "resources": []
+  },
+  "listnotebookversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNotebookVersions",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "listqueryexecutionhistory": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQueryExecutionHistory",
+   "resources": []
+  },
+  "listredshiftclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRedshiftClusters",
+   "resources": []
+  },
+  "listsampledatabases": {
+   "name": "ListSampleDatabases",
+   "resources": []
+  },
+  "listsavedqueryversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSavedQueryVersions",
+   "resources": [
+    "query"
+   ]
+  },
+  "listtabs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTabs",
+   "resources": []
+  },
+  "listtaggedresources": {
+   "name": "ListTaggedResources",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "chart",
+    "connection",
+    "notebook",
+    "query"
+   ]
+  },
+  "passaccountsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PassAccountSettings",
+   "resources": []
+  },
+  "putqcustomcontext": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutQCustomContext",
+   "resources": []
+  },
+  "putsqlgenerationcontext": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSqlGenerationContext",
+   "resources": []
+  },
+  "puttab": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTab",
+   "resources": []
+  },
+  "putuserworkspacesettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutUserWorkspaceSettings",
+   "resources": []
+  },
+  "restorenotebookversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreNotebookVersion",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "chart",
+    "connection",
+    "notebook",
+    "query"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "chart",
+    "connection",
+    "notebook",
+    "query"
+   ]
+  },
+  "updateaccountconnectionsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountConnectionSettings",
+   "resources": []
+  },
+  "updateaccountexportsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountExportSettings",
+   "resources": []
+  },
+  "updateaccountgeneralsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountGeneralSettings",
+   "resources": []
+  },
+  "updateaccountqsqlsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountQSqlSettings",
+   "resources": []
+  },
+  "updatechart": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChart",
+   "resources": [
+    "chart"
+   ]
+  },
+  "updateconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnection",
+   "resources": [
+    "connection"
+   ]
+  },
+  "updatefilefolder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFileFolder",
+   "resources": [
+    "chart",
+    "query"
+   ]
+  },
+  "updatefolder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFolder",
+   "resources": []
+  },
+  "updatenotebook": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotebook",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "updatenotebookcellcontent": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotebookCellContent",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "updatenotebookcelllayout": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotebookCellLayout",
+   "resources": [
+    "notebook"
+   ]
+  },
+  "updatesavedquery": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSavedQuery",
+   "resources": [
+    "query"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "chart": {
+   "arnFormats": [
+    "arn:${Partition}:sqlworkbench:${Region}:${Account}:chart/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "connection": {
+   "arnFormats": [
+    "arn:${Partition}:sqlworkbench:${Region}:${Account}:connection/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "notebook": {
+   "arnFormats": [
+    "arn:${Partition}:sqlworkbench:${Region}:${Account}:notebook/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "query": {
+   "arnFormats": [
+    "arn:${Partition}:sqlworkbench:${Region}:${Account}:query/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "sqlworkbench",
+ "serviceName": "SQL Workbench",
+ "version": "v1.5"
+}

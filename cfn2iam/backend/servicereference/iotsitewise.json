@@ -1,0 +1,2412 @@
+{
+ "actions": {
+  "associateassets": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateAssets",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset"
+   ]
+  },
+  "associatetimeseriestoassetproperty": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateTimeSeriesToAssetProperty",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "time-series"
+   ]
+  },
+  "batchassociatedatasegmentstodataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchAssociateDataSegmentsToDataset",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset",
+    "workspace"
+   ]
+  },
+  "batchassociateprojectassets": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchAssociateProjectAssets",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "batchdeletedatasetdatasegments": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteDatasetDataSegments",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset",
+    "workspace"
+   ]
+  },
+  "batchdisassociatedatasegmentsfromdataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDisassociateDataSegmentsFromDataset",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset",
+    "workspace"
+   ]
+  },
+  "batchdisassociateprojectassets": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDisassociateProjectAssets",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "batchgetassetpropertyaggregates": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "BatchGetAssetPropertyAggregates",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "time-series"
+   ]
+  },
+  "batchgetassetpropertyvalue": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "BatchGetAssetPropertyValue",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "time-series"
+   ]
+  },
+  "batchgetassetpropertyvaluehistory": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "BatchGetAssetPropertyValueHistory",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "time-series"
+   ]
+  },
+  "batchputassetpropertyvalue": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "BatchPutAssetPropertyValue",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "time-series"
+   ]
+  },
+  "cancelenrichmentjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelEnrichmentJob",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "cancelpipelineexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelPipelineExecution",
+   "resourceConditionKeys": {
+    "pipeline": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "cancelquery": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CancelQuery",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createaccesspolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessPolicy",
+   "resourceConditionKeys": {
+    "portal": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "portal",
+    "project"
+   ]
+  },
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "createasset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAsset",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "createassetmodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssetModel",
+   "resources": []
+  },
+  "createassetmodelcompositemodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssetModelCompositeModel",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "createbulkimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBulkImportJob",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset",
+    "workspace"
+   ]
+  },
+  "createcomputationmodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateComputationModel",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "asset-model"
+   ]
+  },
+  "createdashboard": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDashboard",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "createdataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataset",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createdatasetexportjob": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateDatasetExportJob",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset",
+    "time-series",
+    "workspace"
+   ]
+  },
+  "createenrichmentjob": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateEnrichmentJob",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset",
+    "workspace"
+   ]
+  },
+  "creategateway": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGateway",
+   "resources": []
+  },
+  "createpipeline": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "iotsitewise:taskArns"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePipeline",
+   "resources": []
+  },
+  "createportal": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePortal",
+   "resources": []
+  },
+  "createproject": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProject",
+   "resourceConditionKeys": {
+    "portal": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "portal"
+   ]
+  },
+  "createtask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTask",
+   "resources": []
+  },
+  "createworkspace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkspace",
+   "resources": []
+  },
+  "deleteaccesspolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccessPolicy",
+   "resourceConditionKeys": {
+    "access-policy": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "access-policy"
+   ]
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resourceConditionKeys": {
+    "application": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteasset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAsset",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset"
+   ]
+  },
+  "deleteassetmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssetModel",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "deleteassetmodelcompositemodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssetModelCompositeModel",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "deleteassetmodelinterfacerelationship": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssetModelInterfaceRelationship",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "deletecomputationmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteComputationModel",
+   "resourceConditionKeys": {
+    "computation-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "computation-model"
+   ]
+  },
+  "deletedashboard": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDashboard",
+   "resourceConditionKeys": {
+    "dashboard": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "deletedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataset",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset",
+    "workspace"
+   ]
+  },
+  "deletegateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGateway",
+   "resourceConditionKeys": {
+    "gateway": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "gateway"
+   ]
+  },
+  "deletepipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePipeline",
+   "resourceConditionKeys": {
+    "pipeline": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "deleteportal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePortal",
+   "resourceConditionKeys": {
+    "portal": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "portal"
+   ]
+  },
+  "deleteproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProject",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "deletetask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTask",
+   "resourceConditionKeys": {
+    "task": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "task"
+   ]
+  },
+  "deletetimeseries": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTimeSeries",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "time-series",
+    "workspace"
+   ]
+  },
+  "deleteworkspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkspace",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "describeaccesspolicy": {
+   "name": "DescribeAccessPolicy",
+   "resourceConditionKeys": {
+    "access-policy": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "access-policy"
+   ]
+  },
+  "describeaction": {
+   "name": "DescribeAction",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "computation-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "computation-model"
+   ]
+  },
+  "describeapplication": {
+   "name": "DescribeApplication",
+   "resourceConditionKeys": {
+    "application": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "application"
+   ]
+  },
+  "describeasset": {
+   "name": "DescribeAsset",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset"
+   ]
+  },
+  "describeassetcompositemodel": {
+   "name": "DescribeAssetCompositeModel",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset"
+   ]
+  },
+  "describeassetmodel": {
+   "name": "DescribeAssetModel",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "describeassetmodelcompositemodel": {
+   "name": "DescribeAssetModelCompositeModel",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "describeassetmodelinterfacerelationship": {
+   "name": "DescribeAssetModelInterfaceRelationship",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "describeassetproperty": {
+   "name": "DescribeAssetProperty",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset"
+   ]
+  },
+  "describebulkimportjob": {
+   "name": "DescribeBulkImportJob",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset",
+    "workspace"
+   ]
+  },
+  "describecomputationmodel": {
+   "name": "DescribeComputationModel",
+   "resourceConditionKeys": {
+    "computation-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "computation-model"
+   ]
+  },
+  "describecomputationmodelexecutionsummary": {
+   "name": "DescribeComputationModelExecutionSummary",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "computation-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "computation-model"
+   ]
+  },
+  "describedashboard": {
+   "name": "DescribeDashboard",
+   "resourceConditionKeys": {
+    "dashboard": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "describedataset": {
+   "name": "DescribeDataset",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset",
+    "workspace"
+   ]
+  },
+  "describedatasetexportjob": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "DescribeDatasetExportJob",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "describedefaultencryptionconfiguration": {
+   "name": "DescribeDefaultEncryptionConfiguration",
+   "resources": []
+  },
+  "describeenrichmentjob": {
+   "name": "DescribeEnrichmentJob",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "describeexecution": {
+   "name": "DescribeExecution",
+   "resources": []
+  },
+  "describegateway": {
+   "name": "DescribeGateway",
+   "resourceConditionKeys": {
+    "gateway": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "gateway"
+   ]
+  },
+  "describegatewaycapabilityconfiguration": {
+   "name": "DescribeGatewayCapabilityConfiguration",
+   "resourceConditionKeys": {
+    "gateway": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "gateway"
+   ]
+  },
+  "describeloggingoptions": {
+   "name": "DescribeLoggingOptions",
+   "resources": []
+  },
+  "describepipeline": {
+   "name": "DescribePipeline",
+   "resourceConditionKeys": {
+    "pipeline": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "describepipelineexecution": {
+   "name": "DescribePipelineExecution",
+   "resourceConditionKeys": {
+    "pipeline": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "describeportal": {
+   "name": "DescribePortal",
+   "resourceConditionKeys": {
+    "portal": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "portal"
+   ]
+  },
+  "describeproject": {
+   "name": "DescribeProject",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "describequery": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "DescribeQuery",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "describesearch": {
+   "name": "DescribeSearch",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "describestorageconfiguration": {
+   "name": "DescribeStorageConfiguration",
+   "resources": []
+  },
+  "describetask": {
+   "name": "DescribeTask",
+   "resourceConditionKeys": {
+    "task": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "task"
+   ]
+  },
+  "describetimeseries": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "DescribeTimeSeries",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "time-series",
+    "workspace"
+   ]
+  },
+  "describeworkspace": {
+   "name": "DescribeWorkspace",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "disassociateassets": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateAssets",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset"
+   ]
+  },
+  "disassociatetimeseriesfromassetproperty": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateTimeSeriesFromAssetProperty",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "time-series"
+   ]
+  },
+  "enablesitewiseintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableSiteWiseIntegration",
+   "resources": []
+  },
+  "executeaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExecuteAction",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "computation-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "computation-model"
+   ]
+  },
+  "executequery": {
+   "name": "ExecuteQuery",
+   "resources": []
+  },
+  "getassetpropertyaggregates": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetAssetPropertyAggregates",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "time-series"
+   ]
+  },
+  "getassetpropertyvalue": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetAssetPropertyValue",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "time-series"
+   ]
+  },
+  "getassetpropertyvaluehistory": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetAssetPropertyValueHistory",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "time-series"
+   ]
+  },
+  "getcapturedata": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetCaptureData",
+   "resourceConditionKeys": {
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "time-series",
+    "workspace"
+   ]
+  },
+  "getinterpolatedassetpropertyvalues": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetInterpolatedAssetPropertyValues",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "time-series"
+   ]
+  },
+  "getqueryresults": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetQueryResults",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getsearchresults": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetSearchResults",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "invokeassistant": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "InvokeAssistant",
+   "resources": []
+  },
+  "listaccesspolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessPolicies",
+   "resourceConditionKeys": {
+    "portal": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "portal",
+    "project"
+   ]
+  },
+  "listactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListActions",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "computation-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "computation-model"
+   ]
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listassetmodelcompositemodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssetModelCompositeModels",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "listassetmodelproperties": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssetModelProperties",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "listassetmodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssetModels",
+   "resources": []
+  },
+  "listassetproperties": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssetProperties",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset"
+   ]
+  },
+  "listassetrelationships": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssetRelationships",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset"
+   ]
+  },
+  "listassets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssets",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "listassociatedassets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssociatedAssets",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset"
+   ]
+  },
+  "listbulkimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBulkImportJobs",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listcompositionrelationships": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCompositionRelationships",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "listcomputationmodeldatabindingusages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListComputationModelDataBindingUsages",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "asset-model"
+   ]
+  },
+  "listcomputationmodelresolvetoresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListComputationModelResolveToResources",
+   "resourceConditionKeys": {
+    "computation-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "computation-model"
+   ]
+  },
+  "listcomputationmodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListComputationModels",
+   "resources": []
+  },
+  "listdashboards": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDashboards",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "listdatasetdatasegmentrelationships": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasetDataSegmentRelationships",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset",
+    "workspace"
+   ]
+  },
+  "listdatasetdatasegments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasetDataSegments",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset",
+    "workspace"
+   ]
+  },
+  "listdatasetexportjobs": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListDatasetExportJobs",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listdatasets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasets",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listenrichmentjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnrichmentJobs",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset",
+    "workspace"
+   ]
+  },
+  "listexecutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExecutions",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "computation-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "computation-model"
+   ]
+  },
+  "listgateways": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGateways",
+   "resources": []
+  },
+  "listinterfacerelationships": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInterfaceRelationships",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "listpipelineexecutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPipelineExecutions",
+   "resourceConditionKeys": {
+    "pipeline": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "listpipelines": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPipelines",
+   "resources": []
+  },
+  "listportals": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPortals",
+   "resources": []
+  },
+  "listprojectassets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProjectAssets",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "listprojects": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProjects",
+   "resourceConditionKeys": {
+    "portal": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "portal"
+   ]
+  },
+  "listqueries": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListQueries",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listsearches": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSearches",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resourceConditionKeys": {
+    "access-policy": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "application": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "computation-model": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "dashboard": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "gateway": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "pipeline": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "portal": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "task": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "access-policy",
+    "application",
+    "asset",
+    "asset-model",
+    "computation-model",
+    "dashboard",
+    "dataset",
+    "gateway",
+    "pipeline",
+    "portal",
+    "project",
+    "task",
+    "time-series",
+    "workspace"
+   ]
+  },
+  "listtasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTasks",
+   "resources": []
+  },
+  "listtimeseries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTimeSeries",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "workspace"
+   ]
+  },
+  "listworkspaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkspaces",
+   "resources": []
+  },
+  "putassetmodelinterfacerelationship": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAssetModelInterfaceRelationship",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "putdefaultencryptionconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDefaultEncryptionConfiguration",
+   "resources": []
+  },
+  "putloggingoptions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLoggingOptions",
+   "resources": []
+  },
+  "putstorageconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutStorageConfiguration",
+   "resources": []
+  },
+  "startpipelineexecution": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartPipelineExecution",
+   "resourceConditionKeys": {
+    "pipeline": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "startquery": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartQuery",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "startsearch": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartSearch",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "access-policy": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "application": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "computation-model": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "dashboard": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "gateway": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "pipeline": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "portal": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "task": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "access-policy",
+    "application",
+    "asset",
+    "asset-model",
+    "computation-model",
+    "dashboard",
+    "dataset",
+    "gateway",
+    "pipeline",
+    "portal",
+    "project",
+    "task",
+    "time-series",
+    "workspace"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "access-policy": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "application": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "computation-model": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "dashboard": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "gateway": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "pipeline": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "portal": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "task": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "time-series": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "access-policy",
+    "application",
+    "asset",
+    "asset-model",
+    "computation-model",
+    "dashboard",
+    "dataset",
+    "gateway",
+    "pipeline",
+    "portal",
+    "project",
+    "task",
+    "time-series",
+    "workspace"
+   ]
+  },
+  "updateaccesspolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccessPolicy",
+   "resourceConditionKeys": {
+    "access-policy": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "access-policy"
+   ]
+  },
+  "updateasset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAsset",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset"
+   ]
+  },
+  "updateassetmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssetModel",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "updateassetmodelcompositemodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssetModelCompositeModel",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "updateassetmodelpropertyrouting": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssetModelPropertyRouting",
+   "resourceConditionKeys": {
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset-model"
+   ]
+  },
+  "updateassetproperty": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssetProperty",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset"
+   ]
+  },
+  "updatecomputationmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateComputationModel",
+   "resourceConditionKeys": {
+    "asset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "asset-model": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "computation-model": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "asset",
+    "asset-model",
+    "computation-model"
+   ]
+  },
+  "updatedashboard": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDashboard",
+   "resourceConditionKeys": {
+    "dashboard": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "updatedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataset",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset",
+    "workspace"
+   ]
+  },
+  "updategateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGateway",
+   "resourceConditionKeys": {
+    "gateway": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updategatewaycapabilityconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGatewayCapabilityConfiguration",
+   "resourceConditionKeys": {
+    "gateway": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updatepipeline": {
+   "conditionKeys": [
+    "iotsitewise:taskArns"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePipeline",
+   "resourceConditionKeys": {
+    "pipeline": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "updateportal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePortal",
+   "resourceConditionKeys": {
+    "portal": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "portal"
+   ]
+  },
+  "updateproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProject",
+   "resourceConditionKeys": {
+    "project": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "project"
+   ]
+  },
+  "updatetask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTask",
+   "resourceConditionKeys": {
+    "task": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "task"
+   ]
+  },
+  "updateworkspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkspace",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "iotsitewise:assetHierarchyPath": [
+   "String"
+  ],
+  "iotsitewise:childAssetId": [
+   "String"
+  ],
+  "iotsitewise:group": [
+   "String"
+  ],
+  "iotsitewise:iam": [
+   "String"
+  ],
+  "iotsitewise:isAssociatedWithAssetProperty": [
+   "String"
+  ],
+  "iotsitewise:portal": [
+   "String"
+  ],
+  "iotsitewise:project": [
+   "String"
+  ],
+  "iotsitewise:propertyAlias": [
+   "String"
+  ],
+  "iotsitewise:propertyId": [
+   "String"
+  ],
+  "iotsitewise:taskArns": [
+   "ArrayOfARN"
+  ],
+  "iotsitewise:user": [
+   "String"
+  ]
+ },
+ "resources": {
+  "access-policy": {
+   "arnFormats": [
+    "arn:${Partition}:iotsitewise:${Region}:${Account}:access-policy/${AccessPolicyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:iotsitewise:${Region}:${Account}:workspace/${WorkspaceName}/application/${ApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "asset": {
+   "arnFormats": [
+    "arn:${Partition}:iotsitewise:${Region}:${Account}:asset/${AssetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "asset-model": {
+   "arnFormats": [
+    "arn:${Partition}:iotsitewise:${Region}:${Account}:asset-model/${AssetModelId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "computation-model": {
+   "arnFormats": [
+    "arn:${Partition}:iotsitewise:${Region}:${Account}:computation-model/${ComputationModelId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dashboard": {
+   "arnFormats": [
+    "arn:${Partition}:iotsitewise:${Region}:${Account}:dashboard/${DashboardId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dataset": {
+   "arnFormats": [
+    "arn:${Partition}:iotsitewise:${Region}:${Account}:dataset/${DatasetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "gateway": {
+   "arnFormats": [
+    "arn:${Partition}:iotsitewise:${Region}:${Account}:gateway/${GatewayId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "pipeline": {
+   "arnFormats": [
+    "arn:${Partition}:iotsitewise:${Region}:${Account}:workspace/${WorkspaceName}/pipeline/${PipelineName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "portal": {
+   "arnFormats": [
+    "arn:${Partition}:iotsitewise:${Region}:${Account}:portal/${PortalId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "project": {
+   "arnFormats": [
+    "arn:${Partition}:iotsitewise:${Region}:${Account}:project/${ProjectId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "task": {
+   "arnFormats": [
+    "arn:${Partition}:iotsitewise:${Region}:${Account}:workspace/${WorkspaceName}/task/${TaskName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "time-series": {
+   "arnFormats": [
+    "arn:${Partition}:iotsitewise:${Region}:${Account}:time-series/${TimeSeriesId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workspace": {
+   "arnFormats": [
+    "arn:${Partition}:iotsitewise:${Region}:${Account}:workspace/${WorkspaceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "iotsitewise",
+ "serviceName": "IoT SiteWise",
+ "version": "v1.5"
+}

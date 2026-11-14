@@ -1,0 +1,794 @@
+{
+ "actions": {
+  "createdevicepool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDevicePool",
+   "resources": [
+    "project"
+   ]
+  },
+  "createinstanceprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInstanceProfile",
+   "resources": []
+  },
+  "createnetworkprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNetworkProfile",
+   "resources": [
+    "project"
+   ]
+  },
+  "createproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProject",
+   "resources": []
+  },
+  "createremoteaccesssession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRemoteAccessSession",
+   "resources": [
+    "device",
+    "deviceinstance",
+    "project",
+    "upload"
+   ]
+  },
+  "createtestgridproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTestGridProject",
+   "resources": []
+  },
+  "createtestgridurl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTestGridUrl",
+   "resources": [
+    "testgrid-project"
+   ]
+  },
+  "createupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUpload",
+   "resources": [
+    "project"
+   ]
+  },
+  "createvpceconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVPCEConfiguration",
+   "resources": []
+  },
+  "deletedevicepool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDevicePool",
+   "resources": [
+    "devicepool"
+   ]
+  },
+  "deleteinstanceprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInstanceProfile",
+   "resources": [
+    "instanceprofile"
+   ]
+  },
+  "deletenetworkprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNetworkProfile",
+   "resources": [
+    "networkprofile"
+   ]
+  },
+  "deleteproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProject",
+   "resources": [
+    "project"
+   ]
+  },
+  "deleteremoteaccesssession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRemoteAccessSession",
+   "resources": [
+    "session"
+   ]
+  },
+  "deleterun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRun",
+   "resources": [
+    "run"
+   ]
+  },
+  "deletetestgridproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTestGridProject",
+   "resources": [
+    "testgrid-project"
+   ]
+  },
+  "deleteupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUpload",
+   "resources": [
+    "upload"
+   ]
+  },
+  "deletevpceconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVPCEConfiguration",
+   "resources": [
+    "vpceconfiguration"
+   ]
+  },
+  "getaccountsettings": {
+   "name": "GetAccountSettings",
+   "resources": []
+  },
+  "getdevice": {
+   "name": "GetDevice",
+   "resources": [
+    "device"
+   ]
+  },
+  "getdeviceinstance": {
+   "name": "GetDeviceInstance",
+   "resources": [
+    "deviceinstance"
+   ]
+  },
+  "getdevicepool": {
+   "name": "GetDevicePool",
+   "resources": [
+    "devicepool"
+   ]
+  },
+  "getdevicepoolcompatibility": {
+   "name": "GetDevicePoolCompatibility",
+   "resources": [
+    "devicepool",
+    "upload"
+   ]
+  },
+  "getinstanceprofile": {
+   "name": "GetInstanceProfile",
+   "resources": [
+    "instanceprofile"
+   ]
+  },
+  "getjob": {
+   "name": "GetJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "getnetworkprofile": {
+   "name": "GetNetworkProfile",
+   "resources": [
+    "networkprofile"
+   ]
+  },
+  "getofferingstatus": {
+   "name": "GetOfferingStatus",
+   "resources": []
+  },
+  "getproject": {
+   "name": "GetProject",
+   "resources": [
+    "project"
+   ]
+  },
+  "getremoteaccesssession": {
+   "name": "GetRemoteAccessSession",
+   "resources": [
+    "session"
+   ]
+  },
+  "getrun": {
+   "name": "GetRun",
+   "resources": [
+    "run"
+   ]
+  },
+  "getsuite": {
+   "name": "GetSuite",
+   "resources": [
+    "suite"
+   ]
+  },
+  "gettest": {
+   "name": "GetTest",
+   "resources": [
+    "test"
+   ]
+  },
+  "gettestgridproject": {
+   "name": "GetTestGridProject",
+   "resources": [
+    "testgrid-project"
+   ]
+  },
+  "gettestgridsession": {
+   "name": "GetTestGridSession",
+   "resources": [
+    "testgrid-project",
+    "testgrid-session"
+   ]
+  },
+  "getupload": {
+   "name": "GetUpload",
+   "resources": [
+    "upload"
+   ]
+  },
+  "getvpceconfiguration": {
+   "name": "GetVPCEConfiguration",
+   "resources": [
+    "vpceconfiguration"
+   ]
+  },
+  "installtoremoteaccesssession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InstallToRemoteAccessSession",
+   "resources": [
+    "session",
+    "upload"
+   ]
+  },
+  "listartifacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListArtifacts",
+   "resources": [
+    "job",
+    "run",
+    "suite",
+    "test"
+   ]
+  },
+  "listdeviceinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeviceInstances",
+   "resources": []
+  },
+  "listdevicepools": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDevicePools",
+   "resources": [
+    "project"
+   ]
+  },
+  "listdevices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDevices",
+   "resources": []
+  },
+  "listinstanceprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInstanceProfiles",
+   "resources": []
+  },
+  "listjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobs",
+   "resources": [
+    "run"
+   ]
+  },
+  "listnetworkprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNetworkProfiles",
+   "resources": [
+    "project"
+   ]
+  },
+  "listofferingpromotions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOfferingPromotions",
+   "resources": []
+  },
+  "listofferings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOfferings",
+   "resources": []
+  },
+  "listofferingtransactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOfferingTransactions",
+   "resources": []
+  },
+  "listprojects": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProjects",
+   "resources": []
+  },
+  "listremoteaccesssessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRemoteAccessSessions",
+   "resources": [
+    "project"
+   ]
+  },
+  "listruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRuns",
+   "resources": [
+    "project"
+   ]
+  },
+  "listsamples": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSamples",
+   "resources": [
+    "job"
+   ]
+  },
+  "listsuites": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSuites",
+   "resources": [
+    "job"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "device",
+    "deviceinstance",
+    "devicepool",
+    "instanceprofile",
+    "networkprofile",
+    "project",
+    "run",
+    "session",
+    "testgrid-project",
+    "testgrid-session",
+    "vpceconfiguration"
+   ]
+  },
+  "listtestgridprojects": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTestGridProjects",
+   "resources": []
+  },
+  "listtestgridsessionactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTestGridSessionActions",
+   "resources": [
+    "testgrid-session"
+   ]
+  },
+  "listtestgridsessionartifacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTestGridSessionArtifacts",
+   "resources": [
+    "testgrid-session"
+   ]
+  },
+  "listtestgridsessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTestGridSessions",
+   "resources": [
+    "testgrid-project"
+   ]
+  },
+  "listtests": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTests",
+   "resources": [
+    "suite"
+   ]
+  },
+  "listuniqueproblems": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUniqueProblems",
+   "resources": [
+    "run"
+   ]
+  },
+  "listuploads": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUploads",
+   "resources": [
+    "project"
+   ]
+  },
+  "listvpceconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVPCEConfigurations",
+   "resources": []
+  },
+  "purchaseoffering": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PurchaseOffering",
+   "resources": []
+  },
+  "renewoffering": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RenewOffering",
+   "resources": []
+  },
+  "schedulerun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ScheduleRun",
+   "resources": [
+    "devicepool",
+    "project",
+    "upload"
+   ]
+  },
+  "stopjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "stopremoteaccesssession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopRemoteAccessSession",
+   "resources": [
+    "session"
+   ]
+  },
+  "stoprun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopRun",
+   "resources": [
+    "run"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "device",
+    "deviceinstance",
+    "devicepool",
+    "instanceprofile",
+    "networkprofile",
+    "project",
+    "run",
+    "session",
+    "testgrid-project",
+    "testgrid-session",
+    "vpceconfiguration"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "device",
+    "deviceinstance",
+    "devicepool",
+    "instanceprofile",
+    "networkprofile",
+    "project",
+    "run",
+    "session",
+    "testgrid-project",
+    "testgrid-session",
+    "vpceconfiguration"
+   ]
+  },
+  "updatedeviceinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDeviceInstance",
+   "resources": [
+    "deviceinstance",
+    "instanceprofile"
+   ]
+  },
+  "updatedevicepool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDevicePool",
+   "resources": [
+    "devicepool"
+   ]
+  },
+  "updateinstanceprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInstanceProfile",
+   "resources": [
+    "instanceprofile"
+   ]
+  },
+  "updatenetworkprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNetworkProfile",
+   "resources": [
+    "networkprofile"
+   ]
+  },
+  "updateproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProject",
+   "resources": [
+    "project"
+   ]
+  },
+  "updatetestgridproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTestGridProject",
+   "resources": [
+    "testgrid-project"
+   ]
+  },
+  "updateupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUpload",
+   "resources": [
+    "upload"
+   ]
+  },
+  "updatevpceconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVPCEConfiguration",
+   "resources": [
+    "vpceconfiguration"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "artifact": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}:${Account}:artifact:${ResourceId}"
+   ]
+  },
+  "device": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}::device:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "deviceinstance": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}::deviceinstance:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "devicepool": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}:${Account}:devicepool:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "instanceprofile": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}:${Account}:instanceprofile:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "job": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}:${Account}:job:${ResourceId}"
+   ]
+  },
+  "networkprofile": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}:${Account}:networkprofile:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "project": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}:${Account}:project:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "run": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}:${Account}:run:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "sample": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}:${Account}:sample:${ResourceId}"
+   ]
+  },
+  "session": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}:${Account}:session:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "suite": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}:${Account}:suite:${ResourceId}"
+   ]
+  },
+  "test": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}:${Account}:test:${ResourceId}"
+   ]
+  },
+  "testgrid-project": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}:${Account}:testgrid-project:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "testgrid-session": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}:${Account}:testgrid-session:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "upload": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}:${Account}:upload:${ResourceId}"
+   ]
+  },
+  "vpceconfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:devicefarm:${Region}:${Account}:vpceconfiguration:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "devicefarm",
+ "serviceName": "Device Farm",
+ "version": "v1.5"
+}

@@ -1,0 +1,906 @@
+{
+ "actions": {
+  "associatetablereplica": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateTableReplica",
+   "resources": [
+    "table"
+   ]
+  },
+  "batchgetitem": {
+   "conditionKeys": [
+    "dynamodb:Attributes",
+    "dynamodb:LeadingKeys",
+    "dynamodb:ReturnConsumedCapacity",
+    "dynamodb:Select"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "BatchGetItem",
+   "resources": [
+    "table"
+   ]
+  },
+  "batchwriteitem": {
+   "conditionKeys": [
+    "dynamodb:Attributes",
+    "dynamodb:LeadingKeys",
+    "dynamodb:ReturnConsumedCapacity"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "BatchWriteItem",
+   "resources": [
+    "table"
+   ]
+  },
+  "bulkputitems": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BulkPutItems",
+   "resources": [
+    "table"
+   ]
+  },
+  "cancelbulkoperation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelBulkOperation",
+   "resources": [
+    "bulk-operation"
+   ]
+  },
+  "conditioncheckitem": {
+   "conditionKeys": [
+    "dynamodb:Attributes",
+    "dynamodb:LeadingKeys",
+    "dynamodb:ReturnConsumedCapacity",
+    "dynamodb:ReturnValues"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "ConditionCheckItem",
+   "resources": [
+    "table"
+   ]
+  },
+  "createbackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBackup",
+   "resources": [
+    "table"
+   ]
+  },
+  "createglobaltable": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGlobalTable",
+   "resources": [
+    "global-table",
+    "table"
+   ]
+  },
+  "createglobaltablewitness": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGlobalTableWitness",
+   "resources": [
+    "table"
+   ]
+  },
+  "createtable": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTable",
+   "resources": [
+    "table"
+   ]
+  },
+  "createtablereplica": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTableReplica",
+   "resources": [
+    "table"
+   ]
+  },
+  "deletebackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBackup",
+   "resources": [
+    "backup"
+   ]
+  },
+  "deleteglobaltablewitness": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGlobalTableWitness",
+   "resources": [
+    "table"
+   ]
+  },
+  "deleteitem": {
+   "conditionKeys": [
+    "dynamodb:Attributes",
+    "dynamodb:EnclosingOperation",
+    "dynamodb:LeadingKeys",
+    "dynamodb:ReturnConsumedCapacity",
+    "dynamodb:ReturnValues"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteItem",
+   "resources": [
+    "table"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "stream",
+    "table"
+   ]
+  },
+  "deletetable": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTable",
+   "resources": [
+    "table"
+   ]
+  },
+  "deletetablereplica": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTableReplica",
+   "resources": [
+    "table"
+   ]
+  },
+  "describebackup": {
+   "name": "DescribeBackup",
+   "resources": [
+    "backup"
+   ]
+  },
+  "describebulkoperation": {
+   "name": "DescribeBulkOperation",
+   "resources": [
+    "bulk-operation"
+   ]
+  },
+  "describecontinuousbackups": {
+   "name": "DescribeContinuousBackups",
+   "resources": [
+    "table"
+   ]
+  },
+  "describecontributorinsights": {
+   "name": "DescribeContributorInsights",
+   "resources": [
+    "index",
+    "table"
+   ]
+  },
+  "describeendpoints": {
+   "name": "DescribeEndpoints",
+   "resources": []
+  },
+  "describeexport": {
+   "name": "DescribeExport",
+   "resources": [
+    "export"
+   ]
+  },
+  "describeglobaltable": {
+   "name": "DescribeGlobalTable",
+   "resources": [
+    "global-table"
+   ]
+  },
+  "describeglobaltablesettings": {
+   "name": "DescribeGlobalTableSettings",
+   "resources": [
+    "global-table"
+   ]
+  },
+  "describeimport": {
+   "name": "DescribeImport",
+   "resources": [
+    "import"
+   ]
+  },
+  "describekinesisstreamingdestination": {
+   "name": "DescribeKinesisStreamingDestination",
+   "resources": [
+    "table"
+   ]
+  },
+  "describelimits": {
+   "name": "DescribeLimits",
+   "resources": []
+  },
+  "describereservedcapacity": {
+   "name": "DescribeReservedCapacity",
+   "resources": []
+  },
+  "describereservedcapacityofferings": {
+   "name": "DescribeReservedCapacityOfferings",
+   "resources": []
+  },
+  "describestream": {
+   "name": "DescribeStream",
+   "resources": [
+    "stream"
+   ]
+  },
+  "describetable": {
+   "name": "DescribeTable",
+   "resources": [
+    "table"
+   ]
+  },
+  "describetablereplicaautoscaling": {
+   "name": "DescribeTableReplicaAutoScaling",
+   "resources": [
+    "table"
+   ]
+  },
+  "describetimetolive": {
+   "name": "DescribeTimeToLive",
+   "resources": [
+    "table"
+   ]
+  },
+  "disablekinesisstreamingdestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableKinesisStreamingDestination",
+   "resources": [
+    "table"
+   ]
+  },
+  "disassociatetablereplica": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateTableReplica",
+   "resources": [
+    "table"
+   ]
+  },
+  "enablekinesisstreamingdestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableKinesisStreamingDestination",
+   "resources": [
+    "table"
+   ]
+  },
+  "exporttabletopointintime": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportTableToPointInTime",
+   "resources": [
+    "table"
+   ]
+  },
+  "getabacstatus": {
+   "name": "GetAbacStatus",
+   "resources": []
+  },
+  "getitem": {
+   "conditionKeys": [
+    "dynamodb:Attributes",
+    "dynamodb:EnclosingOperation",
+    "dynamodb:LeadingKeys",
+    "dynamodb:ReturnConsumedCapacity",
+    "dynamodb:Select"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetItem",
+   "resources": [
+    "table"
+   ]
+  },
+  "getrecords": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetRecords",
+   "resources": [
+    "stream"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "stream",
+    "table"
+   ]
+  },
+  "getsharditerator": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetShardIterator",
+   "resources": [
+    "stream"
+   ]
+  },
+  "importtable": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportTable",
+   "resources": [
+    "table"
+   ]
+  },
+  "injecterror": {
+   "conditionKeys": [
+    "dynamodb:FisActionId",
+    "dynamodb:FisTargetArns"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InjectError",
+   "resources": []
+  },
+  "listbackups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBackups",
+   "resources": []
+  },
+  "listbulkoperations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBulkOperations",
+   "resources": []
+  },
+  "listcontributorinsights": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContributorInsights",
+   "resources": []
+  },
+  "listexports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExports",
+   "resources": [
+    "table"
+   ]
+  },
+  "listglobaltables": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGlobalTables",
+   "resources": []
+  },
+  "listimports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListImports",
+   "resources": [
+    "table"
+   ]
+  },
+  "liststreams": {
+   "name": "ListStreams",
+   "resources": []
+  },
+  "listtables": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTables",
+   "resources": []
+  },
+  "listtagsofresource": {
+   "name": "ListTagsOfResource",
+   "resources": [
+    "stream",
+    "table"
+   ]
+  },
+  "partiqldelete": {
+   "conditionKeys": [
+    "dynamodb:Attributes",
+    "dynamodb:EnclosingOperation",
+    "dynamodb:LeadingKeys",
+    "dynamodb:ReturnValues"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PartiQLDelete",
+   "resources": [
+    "table"
+   ]
+  },
+  "partiqlinsert": {
+   "conditionKeys": [
+    "dynamodb:Attributes",
+    "dynamodb:EnclosingOperation",
+    "dynamodb:LeadingKeys"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PartiQLInsert",
+   "resources": [
+    "table"
+   ]
+  },
+  "partiqlselect": {
+   "conditionKeys": [
+    "dynamodb:Attributes",
+    "dynamodb:EnclosingOperation",
+    "dynamodb:FullTableScan",
+    "dynamodb:LeadingKeys",
+    "dynamodb:Select"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "PartiQLSelect",
+   "resources": [
+    "index",
+    "table"
+   ]
+  },
+  "partiqlupdate": {
+   "conditionKeys": [
+    "dynamodb:Attributes",
+    "dynamodb:EnclosingOperation",
+    "dynamodb:LeadingKeys",
+    "dynamodb:ReturnValues"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PartiQLUpdate",
+   "resources": [
+    "table"
+   ]
+  },
+  "purchasereservedcapacityofferings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PurchaseReservedCapacityOfferings",
+   "resources": []
+  },
+  "putitem": {
+   "conditionKeys": [
+    "dynamodb:Attributes",
+    "dynamodb:EnclosingOperation",
+    "dynamodb:LeadingKeys",
+    "dynamodb:ReturnConsumedCapacity",
+    "dynamodb:ReturnValues"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutItem",
+   "resources": [
+    "table"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "stream",
+    "table"
+   ]
+  },
+  "query": {
+   "conditionKeys": [
+    "dynamodb:Attributes",
+    "dynamodb:LeadingKeys",
+    "dynamodb:ReturnConsumedCapacity",
+    "dynamodb:ReturnValues",
+    "dynamodb:Select"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "Query",
+   "resources": [
+    "index",
+    "table"
+   ]
+  },
+  "readdataforreplication": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "ReadDataForReplication",
+   "resources": [
+    "table"
+   ]
+  },
+  "replicatesettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReplicateSettings",
+   "resources": [
+    "table"
+   ]
+  },
+  "restoretablefromawsbackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreTableFromAwsBackup",
+   "resources": [
+    "table"
+   ]
+  },
+  "restoretablefrombackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreTableFromBackup",
+   "resources": [
+    "backup",
+    "table"
+   ]
+  },
+  "restoretabletopointintime": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreTableToPointInTime",
+   "resources": [
+    "table"
+   ]
+  },
+  "scan": {
+   "conditionKeys": [
+    "dynamodb:Attributes",
+    "dynamodb:ReturnConsumedCapacity",
+    "dynamodb:ReturnValues",
+    "dynamodb:Select"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "Scan",
+   "resources": [
+    "index",
+    "table"
+   ]
+  },
+  "searchvectors": {
+   "name": "SearchVectors",
+   "resources": [
+    "index",
+    "table"
+   ]
+  },
+  "startawsbackupjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAwsBackupJob",
+   "resources": [
+    "table"
+   ]
+  },
+  "startbulkoperation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartBulkOperation",
+   "resources": [
+    "bulk-operation"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "stream",
+    "table"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "stream",
+    "table"
+   ]
+  },
+  "updateabacstatus": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateAbacStatus",
+   "resources": []
+  },
+  "updatecontinuousbackups": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContinuousBackups",
+   "resources": [
+    "table"
+   ]
+  },
+  "updatecontributorinsights": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContributorInsights",
+   "resources": [
+    "index",
+    "table"
+   ]
+  },
+  "updateglobaltable": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGlobalTable",
+   "resources": [
+    "global-table",
+    "table"
+   ]
+  },
+  "updateglobaltablesettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGlobalTableSettings",
+   "resources": [
+    "global-table",
+    "table"
+   ]
+  },
+  "updateglobaltableversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGlobalTableVersion",
+   "resources": [
+    "global-table",
+    "table"
+   ]
+  },
+  "updateitem": {
+   "conditionKeys": [
+    "dynamodb:Attributes",
+    "dynamodb:EnclosingOperation",
+    "dynamodb:LeadingKeys",
+    "dynamodb:ReturnConsumedCapacity",
+    "dynamodb:ReturnValues"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateItem",
+   "resources": [
+    "table"
+   ]
+  },
+  "updatekinesisstreamingdestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKinesisStreamingDestination",
+   "resources": [
+    "table"
+   ]
+  },
+  "updatetable": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTable",
+   "resources": [
+    "table"
+   ]
+  },
+  "updatetablereplicaautoscaling": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTableReplicaAutoScaling",
+   "resources": [
+    "table"
+   ]
+  },
+  "updatetimetolive": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTimeToLive",
+   "resources": [
+    "table"
+   ]
+  },
+  "writedataforreplication": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "WriteDataForReplication",
+   "resources": [
+    "table"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "dynamodb:Attributes": [
+   "ArrayOfString"
+  ],
+  "dynamodb:EnclosingOperation": [
+   "String"
+  ],
+  "dynamodb:FirstPartitionKeyValues": [
+   "ArrayOfString"
+  ],
+  "dynamodb:FisActionId": [
+   "String"
+  ],
+  "dynamodb:FisTargetArns": [
+   "ArrayOfARN"
+  ],
+  "dynamodb:FourthPartitionKeyValues": [
+   "ArrayOfString"
+  ],
+  "dynamodb:FullTableScan": [
+   "Bool"
+  ],
+  "dynamodb:LeadingKeys": [
+   "ArrayOfString"
+  ],
+  "dynamodb:ReturnConsumedCapacity": [
+   "String"
+  ],
+  "dynamodb:ReturnValues": [
+   "String"
+  ],
+  "dynamodb:SecondPartitionKeyValues": [
+   "ArrayOfString"
+  ],
+  "dynamodb:Select": [
+   "String"
+  ],
+  "dynamodb:ThirdPartitionKeyValues": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "backup": {
+   "arnFormats": [
+    "arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/backup/${BackupName}"
+   ]
+  },
+  "bulk-operation": {
+   "arnFormats": [
+    "arn:${Partition}:dynamodb:${Region}:${Account}:bulk-operation/${BulkOperationId}"
+   ]
+  },
+  "export": {
+   "arnFormats": [
+    "arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/export/${ExportName}"
+   ]
+  },
+  "global-table": {
+   "arnFormats": [
+    "arn:${Partition}:dynamodb::${Account}:global-table/${GlobalTableName}"
+   ]
+  },
+  "import": {
+   "arnFormats": [
+    "arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/import/${ImportName}"
+   ]
+  },
+  "index": {
+   "arnFormats": [
+    "arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/index/${IndexName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "stream": {
+   "arnFormats": [
+    "arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/stream/${StreamLabel}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "table": {
+   "arnFormats": [
+    "arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "dynamodb",
+ "serviceName": "DynamoDB",
+ "version": "v1.5"
+}

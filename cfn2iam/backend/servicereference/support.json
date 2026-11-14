@@ -1,0 +1,215 @@
+{
+ "actions": {
+  "addattachmentstoset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddAttachmentsToSet",
+   "resources": []
+  },
+  "addcommunicationtocase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddCommunicationToCase",
+   "resources": []
+  },
+  "addrelateditemtocase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddRelatedItemToCase",
+   "resources": []
+  },
+  "createcase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCase",
+   "resources": []
+  },
+  "describeattachment": {
+   "name": "DescribeAttachment",
+   "resources": []
+  },
+  "describecaseattributes": {
+   "name": "DescribeCaseAttributes",
+   "resources": []
+  },
+  "describecaseoptions": {
+   "name": "DescribeCaseOptions",
+   "resources": []
+  },
+  "describecases": {
+   "name": "DescribeCases",
+   "resources": []
+  },
+  "describecommunication": {
+   "name": "DescribeCommunication",
+   "resources": []
+  },
+  "describecommunications": {
+   "name": "DescribeCommunications",
+   "resources": []
+  },
+  "describecreatecaseoptions": {
+   "name": "DescribeCreateCaseOptions",
+   "resources": []
+  },
+  "describeissuetypes": {
+   "name": "DescribeIssueTypes",
+   "resources": []
+  },
+  "describerelateditems": {
+   "name": "DescribeRelatedItems",
+   "resources": []
+  },
+  "describeservices": {
+   "name": "DescribeServices",
+   "resources": []
+  },
+  "describeseveritylevels": {
+   "name": "DescribeSeverityLevels",
+   "resources": []
+  },
+  "describesupportedlanguages": {
+   "name": "DescribeSupportedLanguages",
+   "resources": []
+  },
+  "describesupportlevel": {
+   "name": "DescribeSupportLevel",
+   "resources": []
+  },
+  "describetrustedadvisorcheckrefreshstatuses": {
+   "name": "DescribeTrustedAdvisorCheckRefreshStatuses",
+   "resources": []
+  },
+  "describetrustedadvisorcheckresult": {
+   "name": "DescribeTrustedAdvisorCheckResult",
+   "resources": []
+  },
+  "describetrustedadvisorchecks": {
+   "name": "DescribeTrustedAdvisorChecks",
+   "resources": []
+  },
+  "describetrustedadvisorchecksummaries": {
+   "name": "DescribeTrustedAdvisorCheckSummaries",
+   "resources": []
+  },
+  "disconnectlivecontactforcase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisconnectLiveContactForCase",
+   "resources": []
+  },
+  "downloadattachment": {
+   "name": "DownloadAttachment",
+   "resources": []
+  },
+  "getinteraction": {
+   "name": "GetInteraction",
+   "resources": []
+  },
+  "initiatecallforcase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitiateCallForCase",
+   "resources": []
+  },
+  "initiatechatforcase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitiateChatForCase",
+   "resources": []
+  },
+  "initiatelivecontactforcase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitiateLiveContactForCase",
+   "resources": []
+  },
+  "listinteractionentries": {
+   "name": "ListInteractionEntries",
+   "resources": []
+  },
+  "listinteractions": {
+   "name": "ListInteractions",
+   "resources": []
+  },
+  "putcaseattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutCaseAttributes",
+   "resources": []
+  },
+  "ratecasecommunication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RateCaseCommunication",
+   "resources": []
+  },
+  "refreshtrustedadvisorcheck": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RefreshTrustedAdvisorCheck",
+   "resources": []
+  },
+  "resolvecase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResolveCase",
+   "resources": []
+  },
+  "resolveinteraction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResolveInteraction",
+   "resources": []
+  },
+  "searchforcases": {
+   "name": "SearchForCases",
+   "resources": []
+  },
+  "startinteraction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartInteraction",
+   "resources": []
+  },
+  "updatecaseseverity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCaseSeverity",
+   "resources": []
+  },
+  "updateinteraction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInteraction",
+   "resources": []
+  },
+  "uploadattachment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UploadAttachment",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "support",
+ "serviceName": "Support",
+ "version": "v1.5"
+}

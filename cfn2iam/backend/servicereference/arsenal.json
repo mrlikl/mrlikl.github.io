@@ -1,0 +1,15 @@
+{
+ "actions": {
+  "registeronpremisesagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterOnPremisesAgent",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "arsenal",
+ "serviceName": "Application Discovery Arsenal",
+ "version": "v1.5"
+}

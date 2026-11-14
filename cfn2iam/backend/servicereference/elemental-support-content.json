@@ -1,0 +1,12 @@
+{
+ "actions": {
+  "query": {
+   "name": "Query",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "elemental-support-content",
+ "serviceName": "Elemental Support Content",
+ "version": "v1.5"
+}

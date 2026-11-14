@@ -1,0 +1,453 @@
+{
+ "actions": {
+  "createactivity": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateActivity",
+   "resources": [
+    "activity"
+   ]
+  },
+  "createstatemachine": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStateMachine",
+   "resources": [
+    "statemachine"
+   ]
+  },
+  "createstatemachinealias": {
+   "conditionKeys": [
+    "states:StateMachineQualifier"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStateMachineAlias",
+   "resources": [
+    "statemachine"
+   ]
+  },
+  "deleteactivity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteActivity",
+   "resources": [
+    "activity"
+   ]
+  },
+  "deletestatemachine": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStateMachine",
+   "resources": [
+    "statemachine"
+   ]
+  },
+  "deletestatemachinealias": {
+   "conditionKeys": [
+    "states:StateMachineQualifier"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStateMachineAlias",
+   "resources": [
+    "statemachine"
+   ]
+  },
+  "deletestatemachineversion": {
+   "conditionKeys": [
+    "states:StateMachineQualifier"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStateMachineVersion",
+   "resources": [
+    "statemachine"
+   ]
+  },
+  "describeactivity": {
+   "name": "DescribeActivity",
+   "resources": [
+    "activity"
+   ]
+  },
+  "describeexecution": {
+   "name": "DescribeExecution",
+   "resources": [
+    "execution",
+    "express"
+   ]
+  },
+  "describemaprun": {
+   "name": "DescribeMapRun",
+   "resources": [
+    "maprun"
+   ]
+  },
+  "describestatemachine": {
+   "conditionKeys": [
+    "states:StateMachineQualifier"
+   ],
+   "name": "DescribeStateMachine",
+   "resources": [
+    "statemachine"
+   ]
+  },
+  "describestatemachinealias": {
+   "conditionKeys": [
+    "states:StateMachineQualifier"
+   ],
+   "name": "DescribeStateMachineAlias",
+   "resources": [
+    "statemachine"
+   ]
+  },
+  "describestatemachineforexecution": {
+   "name": "DescribeStateMachineForExecution",
+   "resources": [
+    "execution"
+   ]
+  },
+  "getactivitytask": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "GetActivityTask",
+   "resources": [
+    "activity"
+   ]
+  },
+  "getexecutionhistory": {
+   "name": "GetExecutionHistory",
+   "resources": [
+    "execution"
+   ]
+  },
+  "invokehttpendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeHTTPEndpoint",
+   "resources": []
+  },
+  "listactivities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListActivities",
+   "resources": []
+  },
+  "listexecutions": {
+   "conditionKeys": [
+    "states:StateMachineQualifier"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExecutions",
+   "resources": [
+    "maprun",
+    "statemachine"
+   ]
+  },
+  "listmapruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMapRuns",
+   "resources": [
+    "execution"
+   ]
+  },
+  "liststatemachinealiases": {
+   "conditionKeys": [
+    "states:StateMachineQualifier"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStateMachineAliases",
+   "resources": [
+    "statemachine"
+   ]
+  },
+  "liststatemachines": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStateMachines",
+   "resources": []
+  },
+  "liststatemachineversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStateMachineVersions",
+   "resources": [
+    "statemachine"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "activity",
+    "statemachine"
+   ]
+  },
+  "publishstatemachineversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PublishStateMachineVersion",
+   "resources": [
+    "statemachine"
+   ]
+  },
+  "redriveexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RedriveExecution",
+   "resources": [
+    "execution"
+   ]
+  },
+  "revealsecrets": {
+   "name": "RevealSecrets",
+   "resources": []
+  },
+  "sendtaskfailure": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendTaskFailure",
+   "resources": []
+  },
+  "sendtaskheartbeat": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendTaskHeartbeat",
+   "resources": []
+  },
+  "sendtasksuccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendTaskSuccess",
+   "resources": []
+  },
+  "startexecution": {
+   "conditionKeys": [
+    "states:StateMachineQualifier"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartExecution",
+   "resources": [
+    "statemachine"
+   ]
+  },
+  "startsyncexecution": {
+   "conditionKeys": [
+    "states:StateMachineQualifier"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartSyncExecution",
+   "resources": [
+    "statemachine"
+   ]
+  },
+  "stopexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopExecution",
+   "resources": [
+    "execution"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "activity",
+    "statemachine"
+   ]
+  },
+  "teststate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TestState",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "activity",
+    "statemachine"
+   ]
+  },
+  "updatemaprun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMapRun",
+   "resources": [
+    "maprun"
+   ]
+  },
+  "updatestatemachine": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStateMachine",
+   "resources": [
+    "statemachine"
+   ]
+  },
+  "updatestatemachinealias": {
+   "conditionKeys": [
+    "states:StateMachineQualifier"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStateMachineAlias",
+   "resources": [
+    "statemachine"
+   ]
+  },
+  "validatestatemachinedefinition": {
+   "name": "ValidateStateMachineDefinition",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "states:HTTPEndpoint": [
+   "String"
+  ],
+  "states:HTTPMethod": [
+   "String"
+  ],
+  "states:StateMachineQualifier": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "activity": {
+   "arnFormats": [
+    "arn:${Partition}:states:${Region}:${Account}:activity:${ActivityName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "execution": {
+   "arnFormats": [
+    "arn:${Partition}:states:${Region}:${Account}:execution:${StateMachineName}:${ExecutionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "express": {
+   "arnFormats": [
+    "arn:${Partition}:states:${Region}:${Account}:express:${StateMachineName}:${ExecutionId}:${ExpressId}"
+   ]
+  },
+  "labelled execution": {
+   "arnFormats": [
+    "arn:${Partition}:states:${Region}:${Account}:execution:${StateMachineName}/${MapRunLabel}:${ExecutionId}"
+   ]
+  },
+  "labelled express": {
+   "arnFormats": [
+    "arn:${Partition}:states:${Region}:${Account}:express:${StateMachineName}/${MapRunLabel}:${ExecutionId}:${ExpressId}"
+   ]
+  },
+  "maprun": {
+   "arnFormats": [
+    "arn:${Partition}:states:${Region}:${Account}:mapRun:${StateMachineName}/${MapRunLabel}:${MapRunId}"
+   ]
+  },
+  "statemachine": {
+   "arnFormats": [
+    "arn:${Partition}:states:${Region}:${Account}:stateMachine:${StateMachineName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "statemachinealias": {
+   "arnFormats": [
+    "arn:${Partition}:states:${Region}:${Account}:stateMachine:${StateMachineName}:${StateMachineAliasName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "statemachineversion": {
+   "arnFormats": [
+    "arn:${Partition}:states:${Region}:${Account}:stateMachine:${StateMachineName}:${StateMachineVersionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "states",
+ "serviceName": "Step Functions",
+ "version": "v1.5"
+}

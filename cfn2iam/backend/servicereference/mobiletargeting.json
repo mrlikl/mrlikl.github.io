@@ -1,0 +1,1277 @@
+{
+ "actions": {
+  "createapp": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApp",
+   "resources": [
+    "apps"
+   ]
+  },
+  "createcampaign": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCampaign",
+   "resources": [
+    "app"
+   ]
+  },
+  "createemailtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEmailTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "createexportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExportJob",
+   "resources": [
+    "app"
+   ]
+  },
+  "createimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateImportJob",
+   "resources": [
+    "app"
+   ]
+  },
+  "createinapptemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInAppTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "createjourney": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateJourney",
+   "resources": [
+    "journeys"
+   ]
+  },
+  "createpushtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePushTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "createrecommenderconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRecommenderConfiguration",
+   "resources": [
+    "recommenders"
+   ]
+  },
+  "createsegment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSegment",
+   "resources": [
+    "app"
+   ]
+  },
+  "createsmstemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSmsTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "createvoicetemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVoiceTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "deleteadmchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAdmChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deleteapnschannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApnsChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deleteapnssandboxchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApnsSandboxChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deleteapnsvoipchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApnsVoipChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deleteapnsvoipsandboxchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApnsVoipSandboxChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deleteapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApp",
+   "resources": [
+    "app"
+   ]
+  },
+  "deletebaiduchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBaiduChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deletecampaign": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "deleteemailchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEmailChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deleteemailtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEmailTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "deleteendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEndpoint",
+   "resources": [
+    "endpoint"
+   ]
+  },
+  "deleteeventstream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventStream",
+   "resources": [
+    "event-stream"
+   ]
+  },
+  "deletegcmchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGcmChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deleteinapptemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInAppTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "deletejourney": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteJourney",
+   "resources": [
+    "journey"
+   ]
+  },
+  "deletepushtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePushTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "deleterecommenderconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRecommenderConfiguration",
+   "resources": [
+    "recommender"
+   ]
+  },
+  "deletesegment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSegment",
+   "resources": [
+    "segment"
+   ]
+  },
+  "deletesmschannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSmsChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deletesmstemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSmsTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "deleteuserendpoints": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserEndpoints",
+   "resources": [
+    "user"
+   ]
+  },
+  "deletevoicechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVoiceChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deletevoicetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVoiceTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "getadmchannel": {
+   "name": "GetAdmChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getapnschannel": {
+   "name": "GetApnsChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getapnssandboxchannel": {
+   "name": "GetApnsSandboxChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getapnsvoipchannel": {
+   "name": "GetApnsVoipChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getapnsvoipsandboxchannel": {
+   "name": "GetApnsVoipSandboxChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getapp": {
+   "name": "GetApp",
+   "resources": [
+    "app"
+   ]
+  },
+  "getapplicationdaterangekpi": {
+   "name": "GetApplicationDateRangeKpi",
+   "resources": [
+    "application-metrics"
+   ]
+  },
+  "getapplicationsettings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetApplicationSettings",
+   "resources": [
+    "app"
+   ]
+  },
+  "getapps": {
+   "name": "GetApps",
+   "resources": [
+    "apps"
+   ]
+  },
+  "getbaiduchannel": {
+   "name": "GetBaiduChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getcampaign": {
+   "name": "GetCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "getcampaignactivities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetCampaignActivities",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "getcampaigndaterangekpi": {
+   "name": "GetCampaignDateRangeKpi",
+   "resources": [
+    "campaign-metrics"
+   ]
+  },
+  "getcampaigns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetCampaigns",
+   "resources": [
+    "app"
+   ]
+  },
+  "getcampaignversion": {
+   "name": "GetCampaignVersion",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "getcampaignversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetCampaignVersions",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "getchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetChannels",
+   "resources": [
+    "channels"
+   ]
+  },
+  "getemailchannel": {
+   "name": "GetEmailChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getemailtemplate": {
+   "name": "GetEmailTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "getendpoint": {
+   "name": "GetEndpoint",
+   "resources": [
+    "endpoint"
+   ]
+  },
+  "geteventstream": {
+   "name": "GetEventStream",
+   "resources": [
+    "event-stream"
+   ]
+  },
+  "getexportjob": {
+   "name": "GetExportJob",
+   "resources": [
+    "export-job"
+   ]
+  },
+  "getexportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetExportJobs",
+   "resources": [
+    "app"
+   ]
+  },
+  "getgcmchannel": {
+   "name": "GetGcmChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getimportjob": {
+   "name": "GetImportJob",
+   "resources": [
+    "import-job"
+   ]
+  },
+  "getimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetImportJobs",
+   "resources": [
+    "app"
+   ]
+  },
+  "getinappmessages": {
+   "name": "GetInAppMessages",
+   "resources": [
+    "app"
+   ]
+  },
+  "getinapptemplate": {
+   "name": "GetInAppTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "getjourney": {
+   "name": "GetJourney",
+   "resources": [
+    "journey"
+   ]
+  },
+  "getjourneydaterangekpi": {
+   "name": "GetJourneyDateRangeKpi",
+   "resources": [
+    "journey-metrics"
+   ]
+  },
+  "getjourneyexecutionactivitymetrics": {
+   "name": "GetJourneyExecutionActivityMetrics",
+   "resources": [
+    "journey-execution-activity-metrics"
+   ]
+  },
+  "getjourneyexecutionmetrics": {
+   "name": "GetJourneyExecutionMetrics",
+   "resources": [
+    "journey-execution-metrics"
+   ]
+  },
+  "getjourneyrunexecutionactivitymetrics": {
+   "name": "GetJourneyRunExecutionActivityMetrics",
+   "resources": [
+    "journey"
+   ]
+  },
+  "getjourneyrunexecutionmetrics": {
+   "name": "GetJourneyRunExecutionMetrics",
+   "resources": [
+    "journey"
+   ]
+  },
+  "getjourneyruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetJourneyRuns",
+   "resources": [
+    "journey"
+   ]
+  },
+  "getpushtemplate": {
+   "name": "GetPushTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "getrecommenderconfiguration": {
+   "name": "GetRecommenderConfiguration",
+   "resources": [
+    "recommender"
+   ]
+  },
+  "getrecommenderconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetRecommenderConfigurations",
+   "resources": [
+    "recommenders"
+   ]
+  },
+  "getreports": {
+   "name": "GetReports",
+   "resources": [
+    "reports"
+   ]
+  },
+  "getsegment": {
+   "name": "GetSegment",
+   "resources": [
+    "segment"
+   ]
+  },
+  "getsegmentexportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetSegmentExportJobs",
+   "resources": [
+    "segment"
+   ]
+  },
+  "getsegmentimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetSegmentImportJobs",
+   "resources": [
+    "segment"
+   ]
+  },
+  "getsegments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetSegments",
+   "resources": [
+    "app"
+   ]
+  },
+  "getsegmentversion": {
+   "name": "GetSegmentVersion",
+   "resources": [
+    "segment"
+   ]
+  },
+  "getsegmentversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetSegmentVersions",
+   "resources": [
+    "segment"
+   ]
+  },
+  "getsmschannel": {
+   "name": "GetSmsChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getsmstemplate": {
+   "name": "GetSmsTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "getuserendpoints": {
+   "name": "GetUserEndpoints",
+   "resources": [
+    "user"
+   ]
+  },
+  "getvoicechannel": {
+   "name": "GetVoiceChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getvoicetemplate": {
+   "name": "GetVoiceTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "listjourneys": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJourneys",
+   "resources": [
+    "app"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "app",
+    "campaign",
+    "journey",
+    "segment",
+    "template"
+   ]
+  },
+  "listtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTemplates",
+   "resources": [
+    "templates"
+   ]
+  },
+  "listtemplateversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTemplateVersions",
+   "resources": [
+    "template"
+   ]
+  },
+  "phonenumbervalidate": {
+   "name": "PhoneNumberValidate",
+   "resources": [
+    "phone-number-validate"
+   ]
+  },
+  "putevents": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutEvents",
+   "resources": [
+    "events"
+   ]
+  },
+  "puteventstream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutEventStream",
+   "resources": [
+    "event-stream"
+   ]
+  },
+  "removeattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveAttributes",
+   "resources": [
+    "attribute"
+   ]
+  },
+  "sendmessages": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendMessages",
+   "resources": [
+    "messages"
+   ]
+  },
+  "sendotpmessage": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendOTPMessage",
+   "resources": [
+    "otp"
+   ]
+  },
+  "sendusersmessages": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendUsersMessages",
+   "resources": [
+    "messages"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "app",
+    "campaign",
+    "journey",
+    "segment",
+    "template"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "app",
+    "campaign",
+    "journey",
+    "segment",
+    "template"
+   ]
+  },
+  "updateadmchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAdmChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updateapnschannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApnsChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updateapnssandboxchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApnsSandboxChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updateapnsvoipchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApnsVoipChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updateapnsvoipsandboxchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApnsVoipSandboxChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updateapplicationsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplicationSettings",
+   "resources": [
+    "app"
+   ]
+  },
+  "updatebaiduchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBaiduChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updatecampaign": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "updateemailchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEmailChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updateemailtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEmailTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "updateendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEndpoint",
+   "resources": [
+    "endpoint"
+   ]
+  },
+  "updateendpointsbatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEndpointsBatch",
+   "resources": [
+    "app"
+   ]
+  },
+  "updategcmchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGcmChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updateinapptemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInAppTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "updatejourney": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateJourney",
+   "resources": [
+    "journey"
+   ]
+  },
+  "updatejourneystate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateJourneyState",
+   "resources": [
+    "journey"
+   ]
+  },
+  "updatepushtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePushTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "updaterecommenderconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRecommenderConfiguration",
+   "resources": [
+    "recommender"
+   ]
+  },
+  "updatesegment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSegment",
+   "resources": [
+    "segment"
+   ]
+  },
+  "updatesmschannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSmsChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updatesmstemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSmsTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "updatetemplateactiveversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTemplateActiveVersion",
+   "resources": [
+    "template"
+   ]
+  },
+  "updatevoicechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVoiceChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updatevoicetemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVoiceTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "verifyotpmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VerifyOTPMessage",
+   "resources": [
+    "verify-otp"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "app": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "application-metrics": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/kpis/daterange/${KpiName}"
+   ]
+  },
+  "apps": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/*"
+   ]
+  },
+  "attribute": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/attributes/${AttributeType}"
+   ]
+  },
+  "campaign": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/campaigns/${CampaignId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "campaign-metrics": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/campaigns/${CampaignId}/kpis/daterange/${KpiName}"
+   ]
+  },
+  "channel": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/channels/${ChannelType}"
+   ]
+  },
+  "channels": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/channels"
+   ]
+  },
+  "endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/endpoints/${EndpointId}"
+   ]
+  },
+  "event-stream": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/eventstream"
+   ]
+  },
+  "events": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/events"
+   ]
+  },
+  "export-job": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/jobs/export/${JobId}"
+   ]
+  },
+  "import-job": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/jobs/import/${JobId}"
+   ]
+  },
+  "journey": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/journeys/${JourneyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "journey-execution-activity-metrics": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/journeys/${JourneyId}/activities/${JourneyActivityId}/execution-metrics"
+   ]
+  },
+  "journey-execution-metrics": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/journeys/${JourneyId}/execution-metrics"
+   ]
+  },
+  "journey-metrics": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/journeys/${JourneyId}/kpis/daterange/${KpiName}"
+   ]
+  },
+  "journeys": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/journeys"
+   ]
+  },
+  "messages": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/messages"
+   ]
+  },
+  "otp": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/otp"
+   ]
+  },
+  "phone-number-validate": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:phone/number/validate"
+   ]
+  },
+  "recommender": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:recommenders/${RecommenderId}"
+   ]
+  },
+  "recommenders": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:recommenders/*"
+   ]
+  },
+  "reports": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:reports"
+   ]
+  },
+  "segment": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/segments/${SegmentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "template": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:templates/${TemplateName}/${TemplateType}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "templates": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:templates"
+   ]
+  },
+  "user": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/users/${UserId}"
+   ]
+  },
+  "verify-otp": {
+   "arnFormats": [
+    "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/verify-otp"
+   ]
+  }
+ },
+ "service": "mobiletargeting",
+ "serviceName": "Pinpoint",
+ "version": "v1.5"
+}

@@ -1,0 +1,15 @@
+{
+ "actions": {
+  "authenticatepackager": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AuthenticatePackager",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "wam",
+ "serviceName": "WAM",
+ "version": "v1.5"
+}

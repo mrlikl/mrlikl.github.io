@@ -1,0 +1,233 @@
+{
+ "actions": {
+  "acceptprimaryemailupdate": {
+   "conditionKeys": [
+    "account:EmailTargetDomain"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptPrimaryEmailUpdate",
+   "resources": [
+    "accountInOrganization"
+   ]
+  },
+  "closeaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CloseAccount",
+   "resources": [
+    "account"
+   ]
+  },
+  "deletealternatecontact": {
+   "conditionKeys": [
+    "account:AlternateContactTypes"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAlternateContact",
+   "resources": [
+    "account",
+    "accountInOrganization"
+   ]
+  },
+  "disableregion": {
+   "conditionKeys": [
+    "account:TargetRegion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableRegion",
+   "resources": [
+    "account",
+    "accountInOrganization"
+   ]
+  },
+  "enableregion": {
+   "conditionKeys": [
+    "account:TargetRegion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableRegion",
+   "resources": [
+    "account",
+    "accountInOrganization"
+   ]
+  },
+  "getaccountinformation": {
+   "name": "GetAccountInformation",
+   "resources": [
+    "account",
+    "accountInOrganization"
+   ]
+  },
+  "getalternatecontact": {
+   "conditionKeys": [
+    "account:AlternateContactTypes"
+   ],
+   "name": "GetAlternateContact",
+   "resources": [
+    "account",
+    "accountInOrganization"
+   ]
+  },
+  "getcontactinformation": {
+   "name": "GetContactInformation",
+   "resources": [
+    "account",
+    "accountInOrganization"
+   ]
+  },
+  "getgovcloudaccountinformation": {
+   "name": "GetGovCloudAccountInformation",
+   "resources": [
+    "account",
+    "accountInOrganization"
+   ]
+  },
+  "getprimaryemail": {
+   "name": "GetPrimaryEmail",
+   "resources": [
+    "accountInOrganization"
+   ]
+  },
+  "getprimaryemailupdatestatus": {
+   "name": "GetPrimaryEmailUpdateStatus",
+   "resources": [
+    "accountInOrganization"
+   ]
+  },
+  "getregionoptstatus": {
+   "conditionKeys": [
+    "account:TargetRegion"
+   ],
+   "name": "GetRegionOptStatus",
+   "resources": [
+    "account",
+    "accountInOrganization"
+   ]
+  },
+  "listregions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRegions",
+   "resources": [
+    "account",
+    "accountInOrganization"
+   ]
+  },
+  "putaccountname": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAccountName",
+   "resources": [
+    "account",
+    "accountInOrganization"
+   ]
+  },
+  "putalternatecontact": {
+   "conditionKeys": [
+    "account:AlternateContactTypes"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAlternateContact",
+   "resources": [
+    "account",
+    "accountInOrganization"
+   ]
+  },
+  "putcontactinformation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutContactInformation",
+   "resources": [
+    "account",
+    "accountInOrganization"
+   ]
+  },
+  "reopenaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReopenAccount",
+   "resources": [
+    "account"
+   ]
+  },
+  "sendphonenumberverification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendPhoneNumberVerification",
+   "resources": [
+    "account",
+    "accountInOrganization"
+   ]
+  },
+  "startprimaryemailupdate": {
+   "conditionKeys": [
+    "account:EmailTargetDomain"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartPrimaryEmailUpdate",
+   "resources": [
+    "accountInOrganization"
+   ]
+  },
+  "verifyphonenumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VerifyPhoneNumber",
+   "resources": [
+    "account",
+    "accountInOrganization"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "account:AccountResourceOrgPaths": [
+   "ArrayOfString"
+  ],
+  "account:AccountResourceOrgTags/${TagKey}": [
+   "String"
+  ],
+  "account:AlternateContactTypes": [
+   "ArrayOfString"
+  ],
+  "account:EmailTargetDomain": [
+   "String"
+  ],
+  "account:TargetRegion": [
+   "String"
+  ]
+ },
+ "resources": {
+  "account": {
+   "arnFormats": [
+    "arn:${Partition}:account::${Account}:account"
+   ]
+  },
+  "accountInOrganization": {
+   "arnFormats": [
+    "arn:${Partition}:account::${ManagementAccountId}:account/o-${OrganizationId}/${MemberAccountId}"
+   ]
+  }
+ },
+ "service": "account",
+ "serviceName": "Account",
+ "version": "v1.5"
+}

@@ -1,0 +1,750 @@
+{
+ "actions": {
+  "createaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccess",
+   "resources": [
+    "server"
+   ]
+  },
+  "createagreement": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgreement",
+   "resources": [
+    "server"
+   ]
+  },
+  "createconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "transfer:RequestConnectorProtocol",
+    "transfer:RequestSecurityPolicyName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnector",
+   "resources": [
+    "profile"
+   ]
+  },
+  "createprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProfile",
+   "resources": []
+  },
+  "createserver": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "transfer:RequestSecurityPolicyName",
+    "transfer:RequestServerDomain",
+    "transfer:RequestServerEndpointType",
+    "transfer:RequestServerProtocols"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServer",
+   "resources": []
+  },
+  "createuser": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUser",
+   "resources": [
+    "server"
+   ]
+  },
+  "createwebapp": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWebApp",
+   "resources": []
+  },
+  "createworkflow": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkflow",
+   "resources": []
+  },
+  "deleteaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccess",
+   "resources": [
+    "server"
+   ]
+  },
+  "deleteagreement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgreement",
+   "resources": [
+    "agreement"
+   ]
+  },
+  "deletecertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCertificate",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "deleteconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "deletehostkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteHostKey",
+   "resources": [
+    "host-key"
+   ]
+  },
+  "deleteprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "deleteserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServer",
+   "resources": [
+    "server"
+   ]
+  },
+  "deletesshpublickey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSshPublicKey",
+   "resources": [
+    "user"
+   ]
+  },
+  "deleteuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "deletewebapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWebApp",
+   "resources": [
+    "webapp"
+   ]
+  },
+  "deletewebappcustomization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWebAppCustomization",
+   "resources": [
+    "webapp"
+   ]
+  },
+  "deleteworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkflow",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "describeaccess": {
+   "name": "DescribeAccess",
+   "resources": [
+    "server"
+   ]
+  },
+  "describeagreement": {
+   "name": "DescribeAgreement",
+   "resources": [
+    "agreement"
+   ]
+  },
+  "describecertificate": {
+   "name": "DescribeCertificate",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "describeconnector": {
+   "name": "DescribeConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "describeexecution": {
+   "name": "DescribeExecution",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "describehostkey": {
+   "name": "DescribeHostKey",
+   "resources": [
+    "host-key"
+   ]
+  },
+  "describeprofile": {
+   "name": "DescribeProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "describesecuritypolicy": {
+   "name": "DescribeSecurityPolicy",
+   "resources": []
+  },
+  "describeserver": {
+   "name": "DescribeServer",
+   "resources": [
+    "server"
+   ]
+  },
+  "describeuser": {
+   "name": "DescribeUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "describewebapp": {
+   "name": "DescribeWebApp",
+   "resources": [
+    "webapp"
+   ]
+  },
+  "describewebappcustomization": {
+   "name": "DescribeWebAppCustomization",
+   "resources": [
+    "webapp"
+   ]
+  },
+  "describeworkflow": {
+   "name": "DescribeWorkflow",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "exporthostkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportHostKey",
+   "resources": [
+    "host-key"
+   ]
+  },
+  "importcertificate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportCertificate",
+   "resources": []
+  },
+  "importhostkey": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportHostKey",
+   "resources": [
+    "server"
+   ]
+  },
+  "importsshpublickey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportSshPublicKey",
+   "resources": [
+    "user"
+   ]
+  },
+  "listaccesses": {
+   "name": "ListAccesses",
+   "resources": [
+    "server"
+   ]
+  },
+  "listagreements": {
+   "name": "ListAgreements",
+   "resources": [
+    "server"
+   ]
+  },
+  "listcertificates": {
+   "name": "ListCertificates",
+   "resources": []
+  },
+  "listconnectors": {
+   "name": "ListConnectors",
+   "resources": []
+  },
+  "listexecutions": {
+   "name": "ListExecutions",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "listfiletransferresults": {
+   "name": "ListFileTransferResults",
+   "resources": [
+    "connector"
+   ]
+  },
+  "listhostkeys": {
+   "name": "ListHostKeys",
+   "resources": [
+    "server"
+   ]
+  },
+  "listprofiles": {
+   "name": "ListProfiles",
+   "resources": []
+  },
+  "listsecuritypolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityPolicies",
+   "resources": []
+  },
+  "listservers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServers",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "agreement",
+    "certificate",
+    "connector",
+    "host-key",
+    "profile",
+    "server",
+    "user",
+    "workflow"
+   ]
+  },
+  "listusers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsers",
+   "resources": [
+    "server"
+   ]
+  },
+  "listwebapps": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWebApps",
+   "resources": []
+  },
+  "listworkflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkflows",
+   "resources": []
+  },
+  "sendworkflowstepstate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendWorkflowStepState",
+   "resources": [
+    "workflow"
+   ]
+  },
+  "startdirectorylisting": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDirectoryListing",
+   "resources": [
+    "connector"
+   ]
+  },
+  "startfiletransfer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFileTransfer",
+   "resources": [
+    "connector"
+   ]
+  },
+  "startremotedelete": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRemoteDelete",
+   "resources": [
+    "connector"
+   ]
+  },
+  "startremotemove": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRemoteMove",
+   "resources": [
+    "connector"
+   ]
+  },
+  "startserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartServer",
+   "resources": [
+    "server"
+   ]
+  },
+  "stopserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopServer",
+   "resources": [
+    "server"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "agreement",
+    "certificate",
+    "connector",
+    "host-key",
+    "profile",
+    "server",
+    "user",
+    "webapp",
+    "workflow"
+   ]
+  },
+  "testconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TestConnection",
+   "resources": [
+    "connector"
+   ]
+  },
+  "testidentityprovider": {
+   "name": "TestIdentityProvider",
+   "resources": [
+    "user"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "agreement",
+    "certificate",
+    "connector",
+    "host-key",
+    "profile",
+    "server",
+    "user",
+    "webapp",
+    "workflow"
+   ]
+  },
+  "updateaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccess",
+   "resources": []
+  },
+  "updateagreement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgreement",
+   "resources": [
+    "agreement"
+   ]
+  },
+  "updatecertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCertificate",
+   "resources": [
+    "certificate"
+   ]
+  },
+  "updateconnector": {
+   "conditionKeys": [
+    "transfer:RequestSecurityPolicyName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnector",
+   "resources": [
+    "connector",
+    "profile"
+   ]
+  },
+  "updatehostkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHostKey",
+   "resources": [
+    "host-key"
+   ]
+  },
+  "updateprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "updateserver": {
+   "conditionKeys": [
+    "transfer:RequestSecurityPolicyName",
+    "transfer:RequestServerEndpointType",
+    "transfer:RequestServerProtocols"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServer",
+   "resources": [
+    "server"
+   ]
+  },
+  "updateuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "updatewebapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWebApp",
+   "resources": [
+    "webapp"
+   ]
+  },
+  "updatewebappcustomization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWebAppCustomization",
+   "resources": [
+    "webapp"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "transfer:RequestConnectorProtocol": [
+   "String"
+  ],
+  "transfer:RequestSecurityPolicyName": [
+   "String"
+  ],
+  "transfer:RequestServerDomain": [
+   "String"
+  ],
+  "transfer:RequestServerEndpointType": [
+   "String"
+  ],
+  "transfer:RequestServerProtocols": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "agreement": {
+   "arnFormats": [
+    "arn:${Partition}:transfer:${Region}:${Account}:agreement/${ServerId}/${AgreementId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "certificate": {
+   "arnFormats": [
+    "arn:${Partition}:transfer:${Region}:${Account}:certificate/${CertificateId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "connector": {
+   "arnFormats": [
+    "arn:${Partition}:transfer:${Region}:${Account}:connector/${ConnectorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "host-key": {
+   "arnFormats": [
+    "arn:${Partition}:transfer:${Region}:${Account}:host-key/${ServerId}/${HostKeyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "profile": {
+   "arnFormats": [
+    "arn:${Partition}:transfer:${Region}:${Account}:profile/${ProfileId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "server": {
+   "arnFormats": [
+    "arn:${Partition}:transfer:${Region}:${Account}:server/${ServerId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "user": {
+   "arnFormats": [
+    "arn:${Partition}:transfer:${Region}:${Account}:user/${ServerId}/${UserName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "webapp": {
+   "arnFormats": [
+    "arn:${Partition}:transfer:${Region}:${Account}:webapp/${WebAppId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workflow": {
+   "arnFormats": [
+    "arn:${Partition}:transfer:${Region}:${Account}:workflow/${WorkflowId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "transfer",
+ "serviceName": "Transfer",
+ "version": "v1.5"
+}

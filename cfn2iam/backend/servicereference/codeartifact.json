@@ -1,0 +1,489 @@
+{
+ "actions": {
+  "associateexternalconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateExternalConnection",
+   "resources": [
+    "repository"
+   ]
+  },
+  "associatewithdownstreamrepository": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateWithDownstreamRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "copypackageversions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyPackageVersions",
+   "resources": [
+    "package",
+    "repository"
+   ]
+  },
+  "createdomain": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomain",
+   "resources": []
+  },
+  "createpackagegroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePackageGroup",
+   "resources": []
+  },
+  "createrepository": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRepository",
+   "resources": []
+  },
+  "deletedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deletedomainpermissionspolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteDomainPermissionsPolicy",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deletepackage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePackage",
+   "resources": [
+    "package"
+   ]
+  },
+  "deletepackagegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePackageGroup",
+   "resources": [
+    "package-group"
+   ]
+  },
+  "deletepackageversions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePackageVersions",
+   "resources": [
+    "package"
+   ]
+  },
+  "deleterepository": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "deleterepositorypermissionspolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteRepositoryPermissionsPolicy",
+   "resources": [
+    "repository"
+   ]
+  },
+  "describedomain": {
+   "name": "DescribeDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describepackage": {
+   "name": "DescribePackage",
+   "resources": [
+    "package"
+   ]
+  },
+  "describepackagegroup": {
+   "name": "DescribePackageGroup",
+   "resources": [
+    "package-group"
+   ]
+  },
+  "describepackageversion": {
+   "name": "DescribePackageVersion",
+   "resources": [
+    "package"
+   ]
+  },
+  "describerepository": {
+   "name": "DescribeRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "disassociateexternalconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateExternalConnection",
+   "resources": [
+    "repository"
+   ]
+  },
+  "disposepackageversions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisposePackageVersions",
+   "resources": [
+    "package"
+   ]
+  },
+  "getassociatedpackagegroup": {
+   "name": "GetAssociatedPackageGroup",
+   "resources": [
+    "package-group"
+   ]
+  },
+  "getauthorizationtoken": {
+   "name": "GetAuthorizationToken",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getdomainpermissionspolicy": {
+   "name": "GetDomainPermissionsPolicy",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getpackageversionasset": {
+   "name": "GetPackageVersionAsset",
+   "resources": [
+    "package"
+   ]
+  },
+  "getpackageversionreadme": {
+   "name": "GetPackageVersionReadme",
+   "resources": [
+    "package"
+   ]
+  },
+  "getrepositoryendpoint": {
+   "name": "GetRepositoryEndpoint",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getrepositorypermissionspolicy": {
+   "name": "GetRepositoryPermissionsPolicy",
+   "resources": [
+    "repository"
+   ]
+  },
+  "listallowedrepositoriesforgroup": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAllowedRepositoriesForGroup",
+   "resources": [
+    "package-group"
+   ]
+  },
+  "listassociatedpackages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssociatedPackages",
+   "resources": [
+    "package-group"
+   ]
+  },
+  "listdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomains",
+   "resources": []
+  },
+  "listpackagegroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPackageGroups",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listpackages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPackages",
+   "resources": [
+    "repository"
+   ]
+  },
+  "listpackageversionassets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPackageVersionAssets",
+   "resources": [
+    "package"
+   ]
+  },
+  "listpackageversiondependencies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPackageVersionDependencies",
+   "resources": [
+    "package"
+   ]
+  },
+  "listpackageversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPackageVersions",
+   "resources": [
+    "package"
+   ]
+  },
+  "listrepositories": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRepositories",
+   "resources": []
+  },
+  "listrepositoriesindomain": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRepositoriesInDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listsubpackagegroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubPackageGroups",
+   "resources": [
+    "package-group"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "domain",
+    "package-group",
+    "repository"
+   ]
+  },
+  "publishpackageversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PublishPackageVersion",
+   "resources": [
+    "package"
+   ]
+  },
+  "putdomainpermissionspolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDomainPermissionsPolicy",
+   "resources": [
+    "domain"
+   ]
+  },
+  "putpackagemetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutPackageMetadata",
+   "resources": [
+    "package"
+   ]
+  },
+  "putpackageoriginconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutPackageOriginConfiguration",
+   "resources": [
+    "package"
+   ]
+  },
+  "putrepositorypermissionspolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRepositoryPermissionsPolicy",
+   "resources": [
+    "repository"
+   ]
+  },
+  "readfromrepository": {
+   "name": "ReadFromRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "domain",
+    "package-group",
+    "repository"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "domain",
+    "package-group",
+    "repository"
+   ]
+  },
+  "updatepackagegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePackageGroup",
+   "resources": [
+    "package-group"
+   ]
+  },
+  "updatepackagegrouporiginconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePackageGroupOriginConfiguration",
+   "resources": [
+    "package-group"
+   ]
+  },
+  "updatepackageversionsstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePackageVersionsStatus",
+   "resources": [
+    "package"
+   ]
+  },
+  "updaterepository": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRepository",
+   "resources": [
+    "repository"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "domain": {
+   "arnFormats": [
+    "arn:${Partition}:codeartifact:${Region}:${Account}:domain/${DomainName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "package": {
+   "arnFormats": [
+    "arn:${Partition}:codeartifact:${Region}:${Account}:package/${DomainName}/${RepositoryName}/${PackageFormat}/${PackageNamespace}/${PackageName}"
+   ]
+  },
+  "package-group": {
+   "arnFormats": [
+    "arn:${Partition}:codeartifact:${Region}:${Account}:package-group/${DomainName}${EncodedPackageGroupPattern}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "repository": {
+   "arnFormats": [
+    "arn:${Partition}:codeartifact:${Region}:${Account}:repository/${DomainName}/${RepositoryName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "codeartifact",
+ "serviceName": "CodeArtifact",
+ "version": "v1.5"
+}

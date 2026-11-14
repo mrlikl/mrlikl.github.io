@@ -1,0 +1,260 @@
+{
+ "actions": {
+  "batchgetitem": {
+   "name": "BatchGetItem",
+   "resources": [
+    "application"
+   ]
+  },
+  "batchwriteitem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchWriteItem",
+   "resources": [
+    "application"
+   ]
+  },
+  "conditioncheckitem": {
+   "name": "ConditionCheckItem",
+   "resources": [
+    "application"
+   ]
+  },
+  "createcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCluster",
+   "resources": [
+    "application"
+   ]
+  },
+  "createparametergroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateParameterGroup",
+   "resources": []
+  },
+  "createsubnetgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSubnetGroup",
+   "resources": []
+  },
+  "decreasereplicationfactor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DecreaseReplicationFactor",
+   "resources": [
+    "application"
+   ]
+  },
+  "deletecluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCluster",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteitem": {
+   "conditionKeys": [
+    "dax:EnclosingOperation"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteItem",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteparametergroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteParameterGroup",
+   "resources": []
+  },
+  "deletesubnetgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSubnetGroup",
+   "resources": []
+  },
+  "describeclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeClusters",
+   "resources": [
+    "application"
+   ]
+  },
+  "describedefaultparameters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDefaultParameters",
+   "resources": []
+  },
+  "describeevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeEvents",
+   "resources": []
+  },
+  "describeparametergroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeParameterGroups",
+   "resources": []
+  },
+  "describeparameters": {
+   "name": "DescribeParameters",
+   "resources": []
+  },
+  "describesubnetgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeSubnetGroups",
+   "resources": []
+  },
+  "getitem": {
+   "conditionKeys": [
+    "dax:EnclosingOperation"
+   ],
+   "name": "GetItem",
+   "resources": [
+    "application"
+   ]
+  },
+  "increasereplicationfactor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "IncreaseReplicationFactor",
+   "resources": [
+    "application"
+   ]
+  },
+  "listtags": {
+   "name": "ListTags",
+   "resources": [
+    "application"
+   ]
+  },
+  "putitem": {
+   "conditionKeys": [
+    "dax:EnclosingOperation"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutItem",
+   "resources": [
+    "application"
+   ]
+  },
+  "query": {
+   "name": "Query",
+   "resources": [
+    "application"
+   ]
+  },
+  "rebootnode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootNode",
+   "resources": [
+    "application"
+   ]
+  },
+  "scan": {
+   "name": "Scan",
+   "resources": [
+    "application"
+   ]
+  },
+  "tagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "application"
+   ]
+  },
+  "untagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "application"
+   ]
+  },
+  "updatecluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCluster",
+   "resources": [
+    "application"
+   ]
+  },
+  "updateitem": {
+   "conditionKeys": [
+    "dax:EnclosingOperation"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateItem",
+   "resources": [
+    "application"
+   ]
+  },
+  "updateparametergroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateParameterGroup",
+   "resources": []
+  },
+  "updatesubnetgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSubnetGroup",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "dax:EnclosingOperation": [
+   "String"
+  ]
+ },
+ "resources": {
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:dax:${Region}:${Account}:cache/${ClusterName}"
+   ]
+  }
+ },
+ "service": "dax",
+ "serviceName": "DynamoDBAccelerator",
+ "version": "v1.5"
+}

@@ -1,0 +1,110 @@
+{
+ "actions": {
+  "deregistersubscriptionprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterSubscriptionProvider",
+   "resources": [
+    "subscription-provider"
+   ]
+  },
+  "getregisteredsubscriptionprovider": {
+   "name": "GetRegisteredSubscriptionProvider",
+   "resources": [
+    "subscription-provider"
+   ]
+  },
+  "getservicesettings": {
+   "name": "GetServiceSettings",
+   "resources": []
+  },
+  "listlinuxsubscriptioninstances": {
+   "name": "ListLinuxSubscriptionInstances",
+   "resources": []
+  },
+  "listlinuxsubscriptions": {
+   "name": "ListLinuxSubscriptions",
+   "resources": []
+  },
+  "listregisteredsubscriptionproviders": {
+   "name": "ListRegisteredSubscriptionProviders",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "subscription-provider"
+   ]
+  },
+  "registersubscriptionprovider": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterSubscriptionProvider",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "subscription-provider"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "subscription-provider"
+   ]
+  },
+  "updateservicesettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceSettings",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "subscription-provider": {
+   "arnFormats": [
+    "arn:${Partition}:license-manager-linux-subscriptions:${Region}:${Account}:subscription-provider/${SubscriptionProviderId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "license-manager-linux-subscriptions",
+ "serviceName": "License Manager Linux Subscriptions",
+ "version": "v1.5"
+}

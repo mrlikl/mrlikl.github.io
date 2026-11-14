@@ -1,0 +1,284 @@
+{
+ "actions": {
+  "callforwardedtool": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CallForwardedTool",
+   "resources": []
+  },
+  "checkconnectionstatus": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "name": "CheckConnectionStatus",
+   "resources": []
+  },
+  "closesession": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CloseSession",
+   "resources": []
+  },
+  "doubleclick": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DoubleClick",
+   "resources": []
+  },
+  "executesequence": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExecuteSequence",
+   "resources": []
+  },
+  "getcurrentuser": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "name": "GetCurrentUser",
+   "resources": []
+  },
+  "getscreenshot": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "name": "GetScreenshot",
+   "resources": []
+  },
+  "getsessioninfo": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "name": "GetSessionInfo",
+   "resources": []
+  },
+  "holdkey": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "HoldKey",
+   "resources": []
+  },
+  "invokemcp": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:LocalUser",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeMcp",
+   "resources": []
+  },
+  "keypress": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "KeyPress",
+   "resources": []
+  },
+  "launchapplication": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LaunchApplication",
+   "resources": []
+  },
+  "leftclick": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LeftClick",
+   "resources": []
+  },
+  "leftclickdrag": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LeftClickDrag",
+   "resources": []
+  },
+  "leftmousedown": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LeftMouseDown",
+   "resources": []
+  },
+  "leftmouseup": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LeftMouseUp",
+   "resources": []
+  },
+  "middleclick": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MiddleClick",
+   "resources": []
+  },
+  "movepointer": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MovePointer",
+   "resources": []
+  },
+  "rightclick": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RightClick",
+   "resources": []
+  },
+  "scroll": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Scroll",
+   "resources": []
+  },
+  "switchuser": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:LocalUser",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SwitchUser",
+   "resources": []
+  },
+  "toggleappswitcher": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ToggleAppSwitcher",
+   "resources": []
+  },
+  "tripleclick": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TripleClick",
+   "resources": []
+  },
+  "typetext": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TypeText",
+   "resources": []
+  },
+  "wait": {
+   "conditionKeys": [
+    "agentaccess-mcp:ImageBuilderArn",
+    "agentaccess-mcp:StackArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Wait",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "agentaccess-mcp:ImageBuilderArn": [
+   "ARN"
+  ],
+  "agentaccess-mcp:LocalUser": [
+   "String"
+  ],
+  "agentaccess-mcp:StackArn": [
+   "ARN"
+  ]
+ },
+ "resources": {},
+ "service": "agentaccess-mcp",
+ "serviceName": "WorkSpaces AgentAccess MCP",
+ "version": "v1.5"
+}

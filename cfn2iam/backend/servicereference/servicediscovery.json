@@ -1,0 +1,368 @@
+{
+ "actions": {
+  "createhttpnamespace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHttpNamespace",
+   "resources": []
+  },
+  "createprivatednsnamespace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePrivateDnsNamespace",
+   "resources": []
+  },
+  "createpublicdnsnamespace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePublicDnsNamespace",
+   "resources": []
+  },
+  "createservice": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "servicediscovery:NamespaceArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateService",
+   "resources": [
+    "namespace",
+    "service"
+   ]
+  },
+  "deletenamespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNamespace",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "deleteservice": {
+   "conditionKeys": [
+    "servicediscovery:ServiceCreatedByAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteService",
+   "resources": [
+    "service"
+   ]
+  },
+  "deleteserviceattributes": {
+   "conditionKeys": [
+    "servicediscovery:ServiceCreatedByAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceAttributes",
+   "resources": [
+    "service"
+   ]
+  },
+  "deregisterinstance": {
+   "conditionKeys": [
+    "servicediscovery:ServiceArn",
+    "servicediscovery:ServiceCreatedByAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterInstance",
+   "resources": [
+    "service"
+   ]
+  },
+  "discoverinstances": {
+   "conditionKeys": [
+    "servicediscovery:NamespaceName",
+    "servicediscovery:ServiceName"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "DiscoverInstances",
+   "resources": [
+    "namespace",
+    "service"
+   ]
+  },
+  "discoverinstancesrevision": {
+   "conditionKeys": [
+    "servicediscovery:NamespaceName",
+    "servicediscovery:ServiceName"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "DiscoverInstancesRevision",
+   "resources": [
+    "namespace",
+    "service"
+   ]
+  },
+  "getinstance": {
+   "conditionKeys": [
+    "servicediscovery:ServiceArn"
+   ],
+   "name": "GetInstance",
+   "resources": [
+    "service"
+   ]
+  },
+  "getinstanceshealthstatus": {
+   "conditionKeys": [
+    "servicediscovery:ServiceArn"
+   ],
+   "name": "GetInstancesHealthStatus",
+   "resources": [
+    "service"
+   ]
+  },
+  "getnamespace": {
+   "name": "GetNamespace",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "getoperation": {
+   "name": "GetOperation",
+   "resources": [
+    "namespace",
+    "service"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "getservice": {
+   "name": "GetService",
+   "resources": [
+    "service"
+   ]
+  },
+  "getserviceattributes": {
+   "name": "GetServiceAttributes",
+   "resources": [
+    "service"
+   ]
+  },
+  "listinstances": {
+   "conditionKeys": [
+    "servicediscovery:ServiceArn"
+   ],
+   "name": "ListInstances",
+   "resources": [
+    "service"
+   ]
+  },
+  "listnamespaces": {
+   "name": "ListNamespaces",
+   "resources": []
+  },
+  "listoperations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOperations",
+   "resources": []
+  },
+  "listservices": {
+   "name": "ListServices",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "registerinstance": {
+   "conditionKeys": [
+    "servicediscovery:ServiceArn",
+    "servicediscovery:ServiceCreatedByAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterInstance",
+   "resources": [
+    "service"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": []
+  },
+  "updatehttpnamespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHttpNamespace",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "updateinstancecustomhealthstatus": {
+   "conditionKeys": [
+    "servicediscovery:ServiceArn",
+    "servicediscovery:ServiceCreatedByAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInstanceCustomHealthStatus",
+   "resources": [
+    "service"
+   ]
+  },
+  "updateprivatednsnamespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePrivateDnsNamespace",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "updatepublicdnsnamespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePublicDnsNamespace",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "updateservice": {
+   "conditionKeys": [
+    "servicediscovery:ServiceCreatedByAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateService",
+   "resources": [
+    "service"
+   ]
+  },
+  "updateserviceattributes": {
+   "conditionKeys": [
+    "servicediscovery:ServiceCreatedByAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceAttributes",
+   "resources": [
+    "service"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "servicediscovery:NamespaceArn": [
+   "ARN"
+  ],
+  "servicediscovery:NamespaceName": [
+   "String"
+  ],
+  "servicediscovery:ServiceArn": [
+   "ARN"
+  ],
+  "servicediscovery:ServiceCreatedByAccount": [
+   "String"
+  ],
+  "servicediscovery:ServiceName": [
+   "String"
+  ]
+ },
+ "resources": {
+  "namespace": {
+   "arnFormats": [
+    "arn:${Partition}:servicediscovery:${Region}:${Account}:namespace/${NamespaceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "service": {
+   "arnFormats": [
+    "arn:${Partition}:servicediscovery:${Region}:${Account}:service/${ServiceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "servicediscovery",
+ "serviceName": "Cloud Map",
+ "version": "v1.5"
+}

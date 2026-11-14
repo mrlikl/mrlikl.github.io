@@ -1,0 +1,215 @@
+{
+ "actions": {
+  "deleterecommendationpreferences": {
+   "conditionKeys": [
+    "compute-optimizer:ResourceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRecommendationPreferences",
+   "resources": []
+  },
+  "describerecommendationexportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeRecommendationExportJobs",
+   "resources": []
+  },
+  "exportautoscalinggrouprecommendations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportAutoScalingGroupRecommendations",
+   "resources": []
+  },
+  "exportebsvolumerecommendations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportEBSVolumeRecommendations",
+   "resources": []
+  },
+  "exportec2instancerecommendations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportEC2InstanceRecommendations",
+   "resources": []
+  },
+  "exportecsservicerecommendations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportECSServiceRecommendations",
+   "resources": []
+  },
+  "exportidlerecommendations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportIdleRecommendations",
+   "resources": []
+  },
+  "exportlambdafunctionrecommendations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportLambdaFunctionRecommendations",
+   "resources": []
+  },
+  "exportlicenserecommendations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportLicenseRecommendations",
+   "resources": []
+  },
+  "exportrdsdatabaserecommendations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportRDSDatabaseRecommendations",
+   "resources": []
+  },
+  "getautoscalinggrouprecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetAutoScalingGroupRecommendations",
+   "resources": []
+  },
+  "getebsvolumerecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetEBSVolumeRecommendations",
+   "resources": []
+  },
+  "getec2instancerecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetEC2InstanceRecommendations",
+   "resources": []
+  },
+  "getec2recommendationprojectedmetrics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetEC2RecommendationProjectedMetrics",
+   "resources": []
+  },
+  "getecsservicerecommendationprojectedmetrics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetECSServiceRecommendationProjectedMetrics",
+   "resources": []
+  },
+  "getecsservicerecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetECSServiceRecommendations",
+   "resources": []
+  },
+  "geteffectiverecommendationpreferences": {
+   "conditionKeys": [
+    "compute-optimizer:ResourceType"
+   ],
+   "name": "GetEffectiveRecommendationPreferences",
+   "resources": []
+  },
+  "getenrollmentstatus": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetEnrollmentStatus",
+   "resources": []
+  },
+  "getenrollmentstatusesfororganization": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetEnrollmentStatusesForOrganization",
+   "resources": []
+  },
+  "getidlerecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetIdleRecommendations",
+   "resources": []
+  },
+  "getlambdafunctionrecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetLambdaFunctionRecommendations",
+   "resources": []
+  },
+  "getlicenserecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetLicenseRecommendations",
+   "resources": []
+  },
+  "getrdsdatabaserecommendationprojectedmetrics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetRDSDatabaseRecommendationProjectedMetrics",
+   "resources": []
+  },
+  "getrdsdatabaserecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetRDSDatabaseRecommendations",
+   "resources": []
+  },
+  "getrecommendationpreferences": {
+   "conditionKeys": [
+    "compute-optimizer:ResourceType"
+   ],
+   "name": "GetRecommendationPreferences",
+   "resources": []
+  },
+  "getrecommendationsummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetRecommendationSummaries",
+   "resources": []
+  },
+  "putrecommendationpreferences": {
+   "conditionKeys": [
+    "compute-optimizer:ResourceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRecommendationPreferences",
+   "resources": []
+  },
+  "updateenrollmentstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnrollmentStatus",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "compute-optimizer:ResourceType": [
+   "String"
+  ]
+ },
+ "resources": {},
+ "service": "compute-optimizer",
+ "serviceName": "Compute Optimizer",
+ "version": "v1.5"
+}

@@ -1,0 +1,442 @@
+{
+ "actions": {
+  "configurelogsforchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfigureLogsForChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "configurelogsforplaybackconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfigureLogsForPlaybackConfiguration",
+   "resources": [
+    "playbackConfiguration"
+   ]
+  },
+  "createchannel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannel",
+   "resources": []
+  },
+  "createlivesource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLiveSource",
+   "resources": []
+  },
+  "createprefetchschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePrefetchSchedule",
+   "resources": [
+    "playbackConfiguration"
+   ]
+  },
+  "createprogram": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProgram",
+   "resources": []
+  },
+  "createsourcelocation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSourceLocation",
+   "resources": []
+  },
+  "createvodsource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVodSource",
+   "resources": []
+  },
+  "deletechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deletechannelpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteChannelPolicy",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deletelivesource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLiveSource",
+   "resources": [
+    "liveSource"
+   ]
+  },
+  "deleteplaybackconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePlaybackConfiguration",
+   "resources": [
+    "playbackConfiguration"
+   ]
+  },
+  "deleteprefetchschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePrefetchSchedule",
+   "resources": [
+    "playbackConfiguration",
+    "prefetchSchedule"
+   ]
+  },
+  "deleteprogram": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProgram",
+   "resources": [
+    "program"
+   ]
+  },
+  "deletesourcelocation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSourceLocation",
+   "resources": [
+    "sourceLocation"
+   ]
+  },
+  "deletevodsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVodSource",
+   "resources": [
+    "vodSource"
+   ]
+  },
+  "describechannel": {
+   "name": "DescribeChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "describelivesource": {
+   "name": "DescribeLiveSource",
+   "resources": [
+    "liveSource"
+   ]
+  },
+  "describeprogram": {
+   "name": "DescribeProgram",
+   "resources": [
+    "program"
+   ]
+  },
+  "describesourcelocation": {
+   "name": "DescribeSourceLocation",
+   "resources": [
+    "sourceLocation"
+   ]
+  },
+  "describevodsource": {
+   "name": "DescribeVodSource",
+   "resources": [
+    "vodSource"
+   ]
+  },
+  "getchannelpolicy": {
+   "name": "GetChannelPolicy",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getchannelschedule": {
+   "name": "GetChannelSchedule",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getplaybackconfiguration": {
+   "name": "GetPlaybackConfiguration",
+   "resources": [
+    "playbackConfiguration"
+   ]
+  },
+  "getprefetchschedule": {
+   "name": "GetPrefetchSchedule",
+   "resources": [
+    "playbackConfiguration",
+    "prefetchSchedule"
+   ]
+  },
+  "listalerts": {
+   "name": "ListAlerts",
+   "resources": []
+  },
+  "listchannels": {
+   "name": "ListChannels",
+   "resources": []
+  },
+  "listlivesources": {
+   "name": "ListLiveSources",
+   "resources": []
+  },
+  "listplaybackconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPlaybackConfigurations",
+   "resources": []
+  },
+  "listprefetchschedules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPrefetchSchedules",
+   "resources": [
+    "playbackConfiguration"
+   ]
+  },
+  "listsourcelocations": {
+   "name": "ListSourceLocations",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "channel",
+    "liveSource",
+    "playbackConfiguration",
+    "sourceLocation",
+    "vodSource"
+   ]
+  },
+  "listvodsources": {
+   "name": "ListVodSources",
+   "resources": []
+  },
+  "putchannelpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutChannelPolicy",
+   "resources": [
+    "channel"
+   ]
+  },
+  "putplaybackconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutPlaybackConfiguration",
+   "resources": []
+  },
+  "startchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "stopchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "channel",
+    "liveSource",
+    "playbackConfiguration",
+    "sourceLocation",
+    "vodSource"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "channel",
+    "liveSource",
+    "playbackConfiguration",
+    "sourceLocation",
+    "vodSource"
+   ]
+  },
+  "updatechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updatelivesource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLiveSource",
+   "resources": [
+    "liveSource"
+   ]
+  },
+  "updateprogram": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProgram",
+   "resources": [
+    "program"
+   ]
+  },
+  "updatesourcelocation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSourceLocation",
+   "resources": [
+    "sourceLocation"
+   ]
+  },
+  "updatevodsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVodSource",
+   "resources": [
+    "vodSource"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "channel": {
+   "arnFormats": [
+    "arn:${Partition}:mediatailor:${Region}:${Account}:channel/${ChannelName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "liveSource": {
+   "arnFormats": [
+    "arn:${Partition}:mediatailor:${Region}:${Account}:liveSource/${SourceLocationName}/${LiveSourceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "playbackConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:mediatailor:${Region}:${Account}:playbackConfiguration/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "prefetchSchedule": {
+   "arnFormats": [
+    "arn:${Partition}:mediatailor:${Region}:${Account}:prefetchSchedule/${ResourceId}"
+   ]
+  },
+  "program": {
+   "arnFormats": [
+    "arn:${Partition}:mediatailor:${Region}:${Account}:program/${ChannelName}/${ProgramName}"
+   ]
+  },
+  "sourceLocation": {
+   "arnFormats": [
+    "arn:${Partition}:mediatailor:${Region}:${Account}:sourceLocation/${SourceLocationName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "vodSource": {
+   "arnFormats": [
+    "arn:${Partition}:mediatailor:${Region}:${Account}:vodSource/${SourceLocationName}/${VodSourceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "mediatailor",
+ "serviceName": "MediaTailor",
+ "version": "v1.5"
+}

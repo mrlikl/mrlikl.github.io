@@ -1,0 +1,201 @@
+{
+ "actions": {
+  "addpermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AddPermission",
+   "resources": [
+    "queue"
+   ]
+  },
+  "cancelmessagemovetask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelMessageMoveTask",
+   "resources": [
+    "queue"
+   ]
+  },
+  "changemessagevisibility": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ChangeMessageVisibility",
+   "resources": [
+    "queue"
+   ]
+  },
+  "createqueue": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQueue",
+   "resources": [
+    "queue"
+   ]
+  },
+  "deletemessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMessage",
+   "resources": [
+    "queue"
+   ]
+  },
+  "deletequeue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQueue",
+   "resources": [
+    "queue"
+   ]
+  },
+  "getqueueattributes": {
+   "name": "GetQueueAttributes",
+   "resources": [
+    "queue"
+   ]
+  },
+  "getqueueurl": {
+   "name": "GetQueueUrl",
+   "resources": [
+    "queue"
+   ]
+  },
+  "listdeadlettersourcequeues": {
+   "name": "ListDeadLetterSourceQueues",
+   "resources": [
+    "queue"
+   ]
+  },
+  "listmessagemovetasks": {
+   "name": "ListMessageMoveTasks",
+   "resources": [
+    "queue"
+   ]
+  },
+  "listqueues": {
+   "name": "ListQueues",
+   "resources": []
+  },
+  "listqueuetags": {
+   "name": "ListQueueTags",
+   "resources": [
+    "queue"
+   ]
+  },
+  "purgequeue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PurgeQueue",
+   "resources": [
+    "queue"
+   ]
+  },
+  "receivemessage": {
+   "name": "ReceiveMessage",
+   "resources": [
+    "queue"
+   ]
+  },
+  "removepermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "RemovePermission",
+   "resources": [
+    "queue"
+   ]
+  },
+  "sendmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendMessage",
+   "resources": [
+    "queue"
+   ]
+  },
+  "setqueueattributes": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "SetQueueAttributes",
+   "resources": [
+    "queue"
+   ]
+  },
+  "startmessagemovetask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMessageMoveTask",
+   "resources": [
+    "queue"
+   ]
+  },
+  "tagqueue": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagQueue",
+   "resources": [
+    "queue"
+   ]
+  },
+  "untagqueue": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagQueue",
+   "resources": [
+    "queue"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "queue": {
+   "arnFormats": [
+    "arn:${Partition}:sqs:${Region}:${Account}:${QueueName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "sqs",
+ "serviceName": "SQS",
+ "version": "v1.5"
+}

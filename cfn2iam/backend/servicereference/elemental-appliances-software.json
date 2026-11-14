@@ -1,0 +1,97 @@
+{
+ "actions": {
+  "completeupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteUpload",
+   "resources": []
+  },
+  "createorderv1": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOrderV1",
+   "resources": []
+  },
+  "createquote": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQuote",
+   "resources": [
+    "quote"
+   ]
+  },
+  "getavscorrectaddress": {
+   "name": "GetAvsCorrectAddress",
+   "resources": []
+  },
+  "getbillingaddresses": {
+   "name": "GetBillingAddresses",
+   "resources": []
+  },
+  "getdeliveryaddressesv2": {
+   "name": "GetDeliveryAddressesV2",
+   "resources": []
+  },
+  "getorder": {
+   "name": "GetOrder",
+   "resources": []
+  },
+  "getordersv2": {
+   "name": "GetOrdersV2",
+   "resources": []
+  },
+  "getquote": {
+   "name": "GetQuote",
+   "resources": [
+    "quote"
+   ]
+  },
+  "gettaxes": {
+   "name": "GetTaxes",
+   "resources": []
+  },
+  "listquotes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQuotes",
+   "resources": []
+  },
+  "startupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartUpload",
+   "resources": []
+  },
+  "submitorderv1": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitOrderV1",
+   "resources": []
+  },
+  "updatequote": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQuote",
+   "resources": [
+    "quote"
+   ]
+  }
+ },
+ "resources": {
+  "quote": {
+   "arnFormats": [
+    "arn:${Partition}:elemental-appliances-software:${Region}:${Account}:quote/${ResourceId}"
+   ]
+  }
+ },
+ "service": "elemental-appliances-software",
+ "serviceName": "Elemental Appliances and Software",
+ "version": "v1.5"
+}

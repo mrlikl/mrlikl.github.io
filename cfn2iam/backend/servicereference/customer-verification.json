@@ -1,0 +1,48 @@
+{
+ "actions": {
+  "createcustomerverificationdetails": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomerVerificationDetails",
+   "resources": []
+  },
+  "createuploadurls": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUploadUrls",
+   "resources": []
+  },
+  "getcustomerverificationdetails": {
+   "name": "GetCustomerVerificationDetails",
+   "resources": []
+  },
+  "getcustomerverificationeligibility": {
+   "name": "GetCustomerVerificationEligibility",
+   "resources": []
+  },
+  "getinheritanceconfig": {
+   "name": "GetInheritanceConfig",
+   "resources": []
+  },
+  "putinheritanceconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutInheritanceConfig",
+   "resources": []
+  },
+  "updatecustomerverificationdetails": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCustomerVerificationDetails",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "customer-verification",
+ "serviceName": "Customer Verification Service",
+ "version": "v1.5"
+}

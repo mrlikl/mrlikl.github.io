@@ -1,0 +1,313 @@
+{
+ "actions": {
+  "activateanomalydetector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivateAnomalyDetector",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "backtestanomalydetector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BackTestAnomalyDetector",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "createalert": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAlert",
+   "resources": [
+    "Alert",
+    "AnomalyDetector"
+   ]
+  },
+  "createanomalydetector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAnomalyDetector",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "createmetricset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMetricSet",
+   "resources": [
+    "AnomalyDetector",
+    "MetricSet"
+   ]
+  },
+  "deactivateanomalydetector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeactivateAnomalyDetector",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "deletealert": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAlert",
+   "resources": [
+    "Alert"
+   ]
+  },
+  "deleteanomalydetector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAnomalyDetector",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "describealert": {
+   "name": "DescribeAlert",
+   "resources": [
+    "Alert"
+   ]
+  },
+  "describeanomalydetectionexecutions": {
+   "name": "DescribeAnomalyDetectionExecutions",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "describeanomalydetector": {
+   "name": "DescribeAnomalyDetector",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "describemetricset": {
+   "name": "DescribeMetricSet",
+   "resources": [
+    "MetricSet"
+   ]
+  },
+  "detectmetricsetconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetectMetricSetConfig",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "getanomalygroup": {
+   "name": "GetAnomalyGroup",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "getdataqualitymetrics": {
+   "name": "GetDataQualityMetrics",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "getfeedback": {
+   "name": "GetFeedback",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "getsampledata": {
+   "name": "GetSampleData",
+   "resources": []
+  },
+  "listalerts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAlerts",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "listanomalydetectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnomalyDetectors",
+   "resources": []
+  },
+  "listanomalygrouprelatedmetrics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnomalyGroupRelatedMetrics",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "listanomalygroupsummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnomalyGroupSummaries",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "listanomalygrouptimeseries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnomalyGroupTimeSeries",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "listmetricsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMetricSets",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "Alert",
+    "AnomalyDetector",
+    "MetricSet"
+   ]
+  },
+  "putfeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFeedback",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Alert",
+    "AnomalyDetector",
+    "MetricSet"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Alert",
+    "AnomalyDetector",
+    "MetricSet"
+   ]
+  },
+  "updatealert": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAlert",
+   "resources": [
+    "Alert"
+   ]
+  },
+  "updateanomalydetector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAnomalyDetector",
+   "resources": [
+    "AnomalyDetector"
+   ]
+  },
+  "updatemetricset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMetricSet",
+   "resources": [
+    "MetricSet"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Alert": {
+   "arnFormats": [
+    "arn:${Partition}:lookoutmetrics:${Region}:${Account}:Alert:${AlertName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "AnomalyDetector": {
+   "arnFormats": [
+    "arn:${Partition}:lookoutmetrics:${Region}:${Account}:AnomalyDetector:${AnomalyDetectorName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "MetricSet": {
+   "arnFormats": [
+    "arn:${Partition}:lookoutmetrics:${Region}:${Account}:MetricSet/${AnomalyDetectorName}/${MetricSetName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "lookoutmetrics",
+ "serviceName": "Lookout Metrics",
+ "version": "v1.5"
+}

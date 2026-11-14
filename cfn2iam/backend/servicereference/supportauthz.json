@@ -1,0 +1,144 @@
+{
+ "actions": {
+  "createsupportpermit": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSupportPermit",
+   "resources": []
+  },
+  "deletesupportpermit": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSupportPermit",
+   "resources": [
+    "supportpermit"
+   ]
+  },
+  "getaction": {
+   "name": "GetAction",
+   "resources": []
+  },
+  "getsupportpermit": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSupportPermit",
+   "resources": [
+    "supportpermit"
+   ]
+  },
+  "listactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListActions",
+   "resources": []
+  },
+  "listsupportpermitrequests": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSupportPermitRequests",
+   "resources": []
+  },
+  "listsupportpermits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSupportPermits",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "supportpermit"
+   ]
+  },
+  "registerkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterKey",
+   "resources": []
+  },
+  "rejectsupportpermitrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectSupportPermitRequest",
+   "resources": [
+    "supportpermitrequest"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "supportpermit"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "supportpermit"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "supportpermit": {
+   "arnFormats": [
+    "arn:${Partition}:supportauthz:${Region}:${Account}:supportpermit/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "supportpermitrequest": {
+   "arnFormats": [
+    "arn:${Partition}:supportauthz:${Region}:${Account}:supportpermitrequest/${ResourceId}"
+   ]
+  }
+ },
+ "service": "supportauthz",
+ "serviceName": "Support Authorization",
+ "version": "v1.5"
+}

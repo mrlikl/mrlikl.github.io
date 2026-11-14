@@ -1,0 +1,348 @@
+{
+ "actions": {
+  "addpermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AddPermission",
+   "resources": [
+    "topic"
+   ]
+  },
+  "checkifphonenumberisoptedout": {
+   "name": "CheckIfPhoneNumberIsOptedOut",
+   "resources": []
+  },
+  "confirmsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfirmSubscription",
+   "resources": [
+    "topic"
+   ]
+  },
+  "createplatformapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePlatformApplication",
+   "resources": []
+  },
+  "createplatformendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePlatformEndpoint",
+   "resources": []
+  },
+  "createsmssandboxphonenumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSMSSandboxPhoneNumber",
+   "resources": []
+  },
+  "createtopic": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTopic",
+   "resources": [
+    "topic"
+   ]
+  },
+  "deleteendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEndpoint",
+   "resources": []
+  },
+  "deleteplatformapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePlatformApplication",
+   "resources": []
+  },
+  "deletesmssandboxphonenumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSMSSandboxPhoneNumber",
+   "resources": []
+  },
+  "deletetopic": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTopic",
+   "resources": [
+    "topic"
+   ]
+  },
+  "getdataprotectionpolicy": {
+   "name": "GetDataProtectionPolicy",
+   "resources": [
+    "topic"
+   ]
+  },
+  "getendpointattributes": {
+   "name": "GetEndpointAttributes",
+   "resources": []
+  },
+  "getplatformapplicationattributes": {
+   "name": "GetPlatformApplicationAttributes",
+   "resources": []
+  },
+  "getsmsattributes": {
+   "name": "GetSMSAttributes",
+   "resources": []
+  },
+  "getsmssandboxaccountstatus": {
+   "name": "GetSMSSandboxAccountStatus",
+   "resources": []
+  },
+  "getsubscriptionattributes": {
+   "name": "GetSubscriptionAttributes",
+   "resources": [
+    "topic"
+   ]
+  },
+  "gettopicattributes": {
+   "name": "GetTopicAttributes",
+   "resources": [
+    "topic"
+   ]
+  },
+  "listendpointsbyplatformapplication": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEndpointsByPlatformApplication",
+   "resources": []
+  },
+  "listoriginationnumbers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOriginationNumbers",
+   "resources": []
+  },
+  "listphonenumbersoptedout": {
+   "name": "ListPhoneNumbersOptedOut",
+   "resources": []
+  },
+  "listplatformapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPlatformApplications",
+   "resources": []
+  },
+  "listsmssandboxphonenumbers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSMSSandboxPhoneNumbers",
+   "resources": []
+  },
+  "listsubscriptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubscriptions",
+   "resources": []
+  },
+  "listsubscriptionsbytopic": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubscriptionsByTopic",
+   "resources": [
+    "topic"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "topic"
+   ]
+  },
+  "listtopics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTopics",
+   "resources": []
+  },
+  "optinphonenumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "OptInPhoneNumber",
+   "resources": []
+  },
+  "publish": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "Publish",
+   "resources": [
+    "topic"
+   ]
+  },
+  "putdataprotectionpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDataProtectionPolicy",
+   "resources": [
+    "topic"
+   ]
+  },
+  "removepermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "RemovePermission",
+   "resources": [
+    "topic"
+   ]
+  },
+  "setendpointattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetEndpointAttributes",
+   "resources": []
+  },
+  "setplatformapplicationattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetPlatformApplicationAttributes",
+   "resources": []
+  },
+  "setsmsattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetSMSAttributes",
+   "resources": []
+  },
+  "setsubscriptionattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetSubscriptionAttributes",
+   "resources": [
+    "topic"
+   ]
+  },
+  "settopicattributes": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "SetTopicAttributes",
+   "resources": [
+    "topic"
+   ]
+  },
+  "subscribe": {
+   "conditionKeys": [
+    "sns:Endpoint",
+    "sns:Protocol"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Subscribe",
+   "resources": [
+    "topic"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "topic"
+   ]
+  },
+  "unsubscribe": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Unsubscribe",
+   "resources": [
+    "topic"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "topic"
+   ]
+  },
+  "verifysmssandboxphonenumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VerifySMSSandboxPhoneNumber",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "sns:Endpoint": [
+   "String"
+  ],
+  "sns:Protocol": [
+   "String"
+  ]
+ },
+ "resources": {
+  "topic": {
+   "arnFormats": [
+    "arn:${Partition}:sns:${Region}:${Account}:${TopicName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "sns",
+ "serviceName": "SNS",
+ "version": "v1.5"
+}

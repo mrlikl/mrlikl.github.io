@@ -1,0 +1,803 @@
+{
+ "actions": {
+  "canceltrainedmodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelTrainedModel",
+   "resources": [
+    "TrainedModel"
+   ]
+  },
+  "canceltrainedmodelinferencejob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelTrainedModelInferenceJob",
+   "resources": [
+    "TrainedModelInferenceJob"
+   ]
+  },
+  "createaudiencemodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAudienceModel",
+   "resources": [
+    "trainingdataset"
+   ]
+  },
+  "createconfiguredaudiencemodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConfiguredAudienceModel",
+   "resources": [
+    "audiencemodel"
+   ]
+  },
+  "createconfiguredmodelalgorithm": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConfiguredModelAlgorithm",
+   "resources": []
+  },
+  "createconfiguredmodelalgorithmassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConfiguredModelAlgorithmAssociation",
+   "resources": [
+    "ConfiguredModelAlgorithm"
+   ]
+  },
+  "createmlinputchannel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMLInputChannel",
+   "resources": [
+    "ConfiguredModelAlgorithmAssociation"
+   ]
+  },
+  "createtrainedmodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTrainedModel",
+   "resources": [
+    "ConfiguredModelAlgorithmAssociation"
+   ]
+  },
+  "createtrainingdataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTrainingDataset",
+   "resources": []
+  },
+  "deleteaudiencegenerationjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAudienceGenerationJob",
+   "resources": [
+    "audiencegenerationjob"
+   ]
+  },
+  "deleteaudiencemodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAudienceModel",
+   "resources": [
+    "audiencemodel"
+   ]
+  },
+  "deleteconfiguredaudiencemodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfiguredAudienceModel",
+   "resources": [
+    "configuredaudiencemodel"
+   ]
+  },
+  "deleteconfiguredaudiencemodelpolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfiguredAudienceModelPolicy",
+   "resources": [
+    "configuredaudiencemodel"
+   ]
+  },
+  "deleteconfiguredmodelalgorithm": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfiguredModelAlgorithm",
+   "resources": [
+    "ConfiguredModelAlgorithm"
+   ]
+  },
+  "deleteconfiguredmodelalgorithmassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfiguredModelAlgorithmAssociation",
+   "resources": [
+    "ConfiguredModelAlgorithmAssociation"
+   ]
+  },
+  "deletemlconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMLConfiguration",
+   "resources": []
+  },
+  "deletemlinputchanneldata": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMLInputChannelData",
+   "resources": [
+    "MLInputChannel"
+   ]
+  },
+  "deletetrainedmodeloutput": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTrainedModelOutput",
+   "resources": [
+    "TrainedModel"
+   ]
+  },
+  "deletetrainingdataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTrainingDataset",
+   "resources": [
+    "trainingdataset"
+   ]
+  },
+  "getaudiencegenerationjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetAudienceGenerationJob",
+   "resources": [
+    "audiencegenerationjob"
+   ]
+  },
+  "getaudiencemodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetAudienceModel",
+   "resources": [
+    "audiencemodel"
+   ]
+  },
+  "getcollaborationconfiguredmodelalgorithmassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cleanrooms-ml:CollaborationId"
+   ],
+   "name": "GetCollaborationConfiguredModelAlgorithmAssociation",
+   "resources": [
+    "ConfiguredModelAlgorithmAssociation"
+   ]
+  },
+  "getcollaborationmlinputchannel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cleanrooms-ml:CollaborationId"
+   ],
+   "name": "GetCollaborationMLInputChannel",
+   "resources": [
+    "MLInputChannel"
+   ]
+  },
+  "getcollaborationtrainedmodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cleanrooms-ml:CollaborationId"
+   ],
+   "name": "GetCollaborationTrainedModel",
+   "resources": [
+    "TrainedModel"
+   ]
+  },
+  "getconfiguredaudiencemodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetConfiguredAudienceModel",
+   "resources": [
+    "configuredaudiencemodel"
+   ]
+  },
+  "getconfiguredaudiencemodelpolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetConfiguredAudienceModelPolicy",
+   "resources": [
+    "configuredaudiencemodel"
+   ]
+  },
+  "getconfiguredmodelalgorithm": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetConfiguredModelAlgorithm",
+   "resources": [
+    "ConfiguredModelAlgorithm"
+   ]
+  },
+  "getconfiguredmodelalgorithmassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetConfiguredModelAlgorithmAssociation",
+   "resources": [
+    "ConfiguredModelAlgorithmAssociation"
+   ]
+  },
+  "getmlconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetMLConfiguration",
+   "resources": []
+  },
+  "getmlinputchannel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetMLInputChannel",
+   "resources": [
+    "MLInputChannel"
+   ]
+  },
+  "gettrainedmodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetTrainedModel",
+   "resources": [
+    "TrainedModel"
+   ]
+  },
+  "gettrainedmodelinferencejob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetTrainedModelInferenceJob",
+   "resources": [
+    "TrainedModelInferenceJob"
+   ]
+  },
+  "gettrainingdataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetTrainingDataset",
+   "resources": [
+    "trainingdataset"
+   ]
+  },
+  "listaudienceexportjobs": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAudienceExportJobs",
+   "resources": [
+    "audiencegenerationjob"
+   ]
+  },
+  "listaudiencegenerationjobs": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAudienceGenerationJobs",
+   "resources": [
+    "configuredaudiencemodel"
+   ]
+  },
+  "listaudiencemodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAudienceModels",
+   "resources": []
+  },
+  "listcollaborationconfiguredmodelalgorithmassociations": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cleanrooms-ml:CollaborationId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCollaborationConfiguredModelAlgorithmAssociations",
+   "resources": []
+  },
+  "listcollaborationmlinputchannels": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cleanrooms-ml:CollaborationId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCollaborationMLInputChannels",
+   "resources": []
+  },
+  "listcollaborationtrainedmodelexportjobs": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cleanrooms-ml:CollaborationId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCollaborationTrainedModelExportJobs",
+   "resources": [
+    "TrainedModel"
+   ]
+  },
+  "listcollaborationtrainedmodelinferencejobs": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cleanrooms-ml:CollaborationId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCollaborationTrainedModelInferenceJobs",
+   "resources": []
+  },
+  "listcollaborationtrainedmodels": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cleanrooms-ml:CollaborationId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCollaborationTrainedModels",
+   "resources": []
+  },
+  "listconfiguredaudiencemodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfiguredAudienceModels",
+   "resources": []
+  },
+  "listconfiguredmodelalgorithmassociations": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfiguredModelAlgorithmAssociations",
+   "resources": []
+  },
+  "listconfiguredmodelalgorithms": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfiguredModelAlgorithms",
+   "resources": []
+  },
+  "listmlinputchannels": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMLInputChannels",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "audiencegenerationjob",
+    "audiencemodel",
+    "configuredaudiencemodel",
+    "trainingdataset"
+   ]
+  },
+  "listtrainedmodelinferencejobs": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrainedModelInferenceJobs",
+   "resources": []
+  },
+  "listtrainedmodels": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrainedModels",
+   "resources": []
+  },
+  "listtrainedmodelversions": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrainedModelVersions",
+   "resources": []
+  },
+  "listtrainingdatasets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrainingDatasets",
+   "resources": []
+  },
+  "putconfiguredaudiencemodelpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutConfiguredAudienceModelPolicy",
+   "resources": [
+    "configuredaudiencemodel"
+   ]
+  },
+  "putmlconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMLConfiguration",
+   "resources": []
+  },
+  "startaudienceexportjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAudienceExportJob",
+   "resources": [
+    "audiencegenerationjob"
+   ]
+  },
+  "startaudiencegenerationjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cleanrooms-ml:CollaborationId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAudienceGenerationJob",
+   "resources": [
+    "configuredaudiencemodel"
+   ]
+  },
+  "starttrainedmodelexportjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTrainedModelExportJob",
+   "resources": [
+    "TrainedModel"
+   ]
+  },
+  "starttrainedmodelinferencejob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTrainedModelInferenceJob",
+   "resources": [
+    "ConfiguredModelAlgorithmAssociation",
+    "MLInputChannel",
+    "TrainedModel"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "ConfiguredModelAlgorithm",
+    "ConfiguredModelAlgorithmAssociation",
+    "MLInputChannel",
+    "TrainedModel",
+    "TrainedModelInferenceJob",
+    "audiencegenerationjob",
+    "audiencemodel",
+    "configuredaudiencemodel",
+    "trainingdataset"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UnTagResource",
+   "resources": [
+    "ConfiguredModelAlgorithm",
+    "ConfiguredModelAlgorithmAssociation",
+    "MLInputChannel",
+    "TrainedModel",
+    "TrainedModelInferenceJob",
+    "audiencegenerationjob",
+    "audiencemodel",
+    "configuredaudiencemodel",
+    "trainingdataset"
+   ]
+  },
+  "updateconfiguredaudiencemodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConfiguredAudienceModel",
+   "resources": [
+    "audiencemodel",
+    "configuredaudiencemodel"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "cleanrooms-ml:CollaborationId": [
+   "String"
+  ]
+ },
+ "resources": {
+  "ConfiguredModelAlgorithm": {
+   "arnFormats": [
+    "arn:${Partition}:cleanrooms-ml:${Region}:${Account}:configured-model-algorithm/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ConfiguredModelAlgorithmAssociation": {
+   "arnFormats": [
+    "arn:${Partition}:cleanrooms-ml:${Region}:${Account}:membership/${MembershipId}/configured-model-algorithm-association/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "MLInputChannel": {
+   "arnFormats": [
+    "arn:${Partition}:cleanrooms-ml:${Region}:${Account}:membership/${MembershipId}/ml-input-channel/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "TrainedModel": {
+   "arnFormats": [
+    "arn:${Partition}:cleanrooms-ml:${Region}:${Account}:membership/${MembershipId}/trained-model/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "TrainedModelInferenceJob": {
+   "arnFormats": [
+    "arn:${Partition}:cleanrooms-ml:${Region}:${Account}:membership/${MembershipId}/trained-model-inference-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "audiencegenerationjob": {
+   "arnFormats": [
+    "arn:${Partition}:cleanrooms-ml:${Region}:${Account}:audience-generation-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "audiencemodel": {
+   "arnFormats": [
+    "arn:${Partition}:cleanrooms-ml:${Region}:${Account}:audience-model/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "configuredaudiencemodel": {
+   "arnFormats": [
+    "arn:${Partition}:cleanrooms-ml:${Region}:${Account}:configured-audience-model/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "trainingdataset": {
+   "arnFormats": [
+    "arn:${Partition}:cleanrooms-ml:${Region}:${Account}:training-dataset/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "cleanrooms-ml",
+ "serviceName": "Clean Rooms ML",
+ "version": "v1.5"
+}

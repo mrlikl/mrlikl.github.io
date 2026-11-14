@@ -1,0 +1,1836 @@
+{
+ "actions": {
+  "acceptpredictions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptPredictions",
+   "resources": []
+  },
+  "acceptsubscriptionrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptSubscriptionRequest",
+   "resources": []
+  },
+  "addentityowner": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddEntityOwner",
+   "resources": []
+  },
+  "addpolicygrant": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AddPolicyGrant",
+   "resources": []
+  },
+  "associateenvironmentrole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateEnvironmentRole",
+   "resources": []
+  },
+  "associategovernedterms": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateGovernedTerms",
+   "resources": []
+  },
+  "batchdeletelinkedtypes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteLinkedTypes",
+   "resources": [
+    "domain"
+   ]
+  },
+  "batchgetattributesmetadata": {
+   "name": "BatchGetAttributesMetadata",
+   "resources": []
+  },
+  "batchgetcell": {
+   "name": "BatchGetCell",
+   "resources": []
+  },
+  "batchgetcellrun": {
+   "name": "BatchGetCellRun",
+   "resources": []
+  },
+  "batchputattributesmetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchPutAttributesMetadata",
+   "resources": []
+  },
+  "batchputlinkedtypes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchPutLinkedTypes",
+   "resources": [
+    "domain"
+   ]
+  },
+  "batchupdatenotifications": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateNotifications",
+   "resources": []
+  },
+  "cancelmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelMessage",
+   "resources": []
+  },
+  "cancelmetadatagenerationrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelMetadataGenerationRun",
+   "resources": []
+  },
+  "cancelsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelSubscription",
+   "resources": []
+  },
+  "createaccountpool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccountPool",
+   "resources": []
+  },
+  "createasset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAsset",
+   "resources": []
+  },
+  "createassetfilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssetFilter",
+   "resources": []
+  },
+  "createassetrevision": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssetRevision",
+   "resources": []
+  },
+  "createassettype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssetType",
+   "resources": []
+  },
+  "createcell": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCell",
+   "resources": []
+  },
+  "createcellrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCellRun",
+   "resources": []
+  },
+  "createconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnection",
+   "resources": []
+  },
+  "createdataapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataApp",
+   "resources": []
+  },
+  "createdataproduct": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataProduct",
+   "resources": []
+  },
+  "createdataproductrevision": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataProductRevision",
+   "resources": []
+  },
+  "createdatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataSource",
+   "resources": []
+  },
+  "createdesignation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDesignation",
+   "resources": []
+  },
+  "createdomain": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomain",
+   "resources": []
+  },
+  "createdomainunit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomainUnit",
+   "resources": []
+  },
+  "createenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironment",
+   "resources": []
+  },
+  "createenvironmentaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironmentAction",
+   "resources": []
+  },
+  "createenvironmentblueprint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironmentBlueprint",
+   "resources": []
+  },
+  "createenvironmentprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironmentProfile",
+   "resources": []
+  },
+  "createformtype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFormType",
+   "resources": []
+  },
+  "createglossary": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGlossary",
+   "resources": []
+  },
+  "createglossaryterm": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGlossaryTerm",
+   "resources": []
+  },
+  "creategroupprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGroupProfile",
+   "resources": []
+  },
+  "createlistingchangeset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateListingChangeSet",
+   "resources": []
+  },
+  "createnotebook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNotebook",
+   "resources": []
+  },
+  "createnotificationpreference": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNotificationPreference",
+   "resources": []
+  },
+  "createproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProject",
+   "resources": []
+  },
+  "createprojectmembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProjectMembership",
+   "resources": []
+  },
+  "createprojectprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProjectProfile",
+   "resources": []
+  },
+  "createrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRule",
+   "resources": []
+  },
+  "createsubscriptiongrant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSubscriptionGrant",
+   "resources": []
+  },
+  "createsubscriptionrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSubscriptionRequest",
+   "resources": []
+  },
+  "createsubscriptiontarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSubscriptionTarget",
+   "resources": []
+  },
+  "createuiconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUIConfiguration",
+   "resources": []
+  },
+  "createuserprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUserProfile",
+   "resources": []
+  },
+  "deleteaccountpool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccountPool",
+   "resources": []
+  },
+  "deleteagentapprovalpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentApprovalPolicy",
+   "resources": []
+  },
+  "deleteasset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAsset",
+   "resources": []
+  },
+  "deleteassetfilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssetFilter",
+   "resources": []
+  },
+  "deleteassettype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssetType",
+   "resources": []
+  },
+  "deletecell": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCell",
+   "resources": []
+  },
+  "deletecellrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCellRun",
+   "resources": []
+  },
+  "deleteconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnection",
+   "resources": []
+  },
+  "deleteconversation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConversation",
+   "resources": []
+  },
+  "deletedataapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataApp",
+   "resources": []
+  },
+  "deletedataexportconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataExportConfiguration",
+   "resources": []
+  },
+  "deletedataproduct": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataProduct",
+   "resources": []
+  },
+  "deletedatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataSource",
+   "resources": []
+  },
+  "deletedesignation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDesignation",
+   "resources": []
+  },
+  "deletedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deletedomainsharingpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteDomainSharingPolicy",
+   "resources": []
+  },
+  "deletedomainunit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomainUnit",
+   "resources": []
+  },
+  "deleteenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironment",
+   "resources": []
+  },
+  "deleteenvironmentaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironmentAction",
+   "resources": []
+  },
+  "deleteenvironmentblueprint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironmentBlueprint",
+   "resources": []
+  },
+  "deleteenvironmentblueprintconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironmentBlueprintConfiguration",
+   "resources": []
+  },
+  "deleteenvironmentprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironmentProfile",
+   "resources": []
+  },
+  "deleteformtype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFormType",
+   "resources": []
+  },
+  "deleteglossary": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGlossary",
+   "resources": []
+  },
+  "deleteglossaryterm": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGlossaryTerm",
+   "resources": []
+  },
+  "deletelineageevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLineageEvent",
+   "resources": []
+  },
+  "deletelisting": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteListing",
+   "resources": []
+  },
+  "deletenotebook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotebook",
+   "resources": []
+  },
+  "deletenotificationpreference": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotificationPreference",
+   "resources": []
+  },
+  "deleteproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProject",
+   "resources": []
+  },
+  "deleteprojectmembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProjectMembership",
+   "resources": []
+  },
+  "deleteprojectprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProjectProfile",
+   "resources": []
+  },
+  "deleterule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRule",
+   "resources": []
+  },
+  "deletesubscriptiongrant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSubscriptionGrant",
+   "resources": []
+  },
+  "deletesubscriptionrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSubscriptionRequest",
+   "resources": []
+  },
+  "deletesubscriptiontarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSubscriptionTarget",
+   "resources": []
+  },
+  "deletetimeseriesdatapoints": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTimeSeriesDataPoints",
+   "resources": []
+  },
+  "deleteuiconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUIConfiguration",
+   "resources": []
+  },
+  "deregisteragentartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterAgentArtifact",
+   "resources": []
+  },
+  "disassociateenvironmentrole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateEnvironmentRole",
+   "resources": []
+  },
+  "disassociategovernedterms": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateGovernedTerms",
+   "resources": []
+  },
+  "generatecode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateCode",
+   "resources": []
+  },
+  "getaccountpool": {
+   "name": "GetAccountPool",
+   "resources": []
+  },
+  "getagentapprovalpolicy": {
+   "name": "GetAgentApprovalPolicy",
+   "resources": []
+  },
+  "getasset": {
+   "name": "GetAsset",
+   "resources": []
+  },
+  "getassetfilter": {
+   "name": "GetAssetFilter",
+   "resources": []
+  },
+  "getassettype": {
+   "name": "GetAssetType",
+   "resources": []
+  },
+  "getcell": {
+   "name": "GetCell",
+   "resources": []
+  },
+  "getcellrun": {
+   "name": "GetCellRun",
+   "resources": []
+  },
+  "getcellrunresult": {
+   "name": "GetCellRunResult",
+   "resources": []
+  },
+  "getcompute": {
+   "name": "GetCompute",
+   "resources": []
+  },
+  "getconnection": {
+   "name": "GetConnection",
+   "resources": []
+  },
+  "getconversation": {
+   "name": "GetConversation",
+   "resources": []
+  },
+  "getcurrenteffectivepolicy": {
+   "name": "GetCurrentEffectivePolicy",
+   "resources": []
+  },
+  "getdataapp": {
+   "name": "GetDataApp",
+   "resources": []
+  },
+  "getdataexportconfiguration": {
+   "name": "GetDataExportConfiguration",
+   "resources": []
+  },
+  "getdataproduct": {
+   "name": "GetDataProduct",
+   "resources": []
+  },
+  "getdatasource": {
+   "name": "GetDataSource",
+   "resources": []
+  },
+  "getdatasourcerun": {
+   "name": "GetDataSourceRun",
+   "resources": []
+  },
+  "getdesignation": {
+   "name": "GetDesignation",
+   "resources": []
+  },
+  "getdomain": {
+   "name": "GetDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getdomainexecutionrolecredentials": {
+   "name": "GetDomainExecutionRoleCredentials",
+   "resources": []
+  },
+  "getdomainsharingpolicy": {
+   "name": "GetDomainSharingPolicy",
+   "resources": []
+  },
+  "getdomainunit": {
+   "name": "GetDomainUnit",
+   "resources": []
+  },
+  "geteffectiveuicustomization": {
+   "name": "GetEffectiveUICustomization",
+   "resources": []
+  },
+  "getenvironment": {
+   "name": "GetEnvironment",
+   "resources": []
+  },
+  "getenvironmentaction": {
+   "name": "GetEnvironmentAction",
+   "resources": []
+  },
+  "getenvironmentactionlink": {
+   "name": "GetEnvironmentActionLink",
+   "resources": []
+  },
+  "getenvironmentblueprint": {
+   "name": "GetEnvironmentBlueprint",
+   "resources": []
+  },
+  "getenvironmentblueprintconfiguration": {
+   "name": "GetEnvironmentBlueprintConfiguration",
+   "resources": []
+  },
+  "getenvironmentcredentials": {
+   "name": "GetEnvironmentCredentials",
+   "resources": []
+  },
+  "getenvironmentprofile": {
+   "name": "GetEnvironmentProfile",
+   "resources": []
+  },
+  "getformtype": {
+   "name": "GetFormType",
+   "resources": []
+  },
+  "getglossary": {
+   "name": "GetGlossary",
+   "resources": []
+  },
+  "getglossaryterm": {
+   "name": "GetGlossaryTerm",
+   "resources": []
+  },
+  "getgroupprofile": {
+   "name": "GetGroupProfile",
+   "resources": []
+  },
+  "getiamportalloginurl": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "GetIamPortalLoginUrl",
+   "resources": []
+  },
+  "getjobrun": {
+   "name": "GetJobRun",
+   "resources": []
+  },
+  "getlineageevent": {
+   "name": "GetLineageEvent",
+   "resources": []
+  },
+  "getlineagenode": {
+   "name": "GetLineageNode",
+   "resources": []
+  },
+  "getlisting": {
+   "name": "GetListing",
+   "resources": []
+  },
+  "getmetadatagenerationrun": {
+   "name": "GetMetadataGenerationRun",
+   "resources": []
+  },
+  "getnotebook": {
+   "name": "GetNotebook",
+   "resources": []
+  },
+  "getnotebookcompute": {
+   "name": "GetNotebookCompute",
+   "resources": []
+  },
+  "getnotebookexport": {
+   "name": "GetNotebookExport",
+   "resources": []
+  },
+  "getnotebookrun": {
+   "name": "GetNotebookRun",
+   "resources": []
+  },
+  "getnotificationpreference": {
+   "name": "GetNotificationPreference",
+   "resources": []
+  },
+  "getproject": {
+   "name": "GetProject",
+   "resources": []
+  },
+  "getprojectprofile": {
+   "name": "GetProjectProfile",
+   "resources": []
+  },
+  "getrule": {
+   "name": "GetRule",
+   "resources": []
+  },
+  "getsubscription": {
+   "name": "GetSubscription",
+   "resources": []
+  },
+  "getsubscriptioneligibility": {
+   "name": "GetSubscriptionEligibility",
+   "resources": []
+  },
+  "getsubscriptiongrant": {
+   "name": "GetSubscriptionGrant",
+   "resources": []
+  },
+  "getsubscriptionrequestdetails": {
+   "name": "GetSubscriptionRequestDetails",
+   "resources": []
+  },
+  "getsubscriptiontarget": {
+   "name": "GetSubscriptionTarget",
+   "resources": []
+  },
+  "getsystemtableexportconfiguration": {
+   "name": "GetSystemTableExportConfiguration",
+   "resources": []
+  },
+  "gettimeseriesdatapoint": {
+   "name": "GetTimeSeriesDataPoint",
+   "resources": []
+  },
+  "getuiconfiguration": {
+   "name": "GetUIConfiguration",
+   "resources": []
+  },
+  "getupdateeligibility": {
+   "name": "GetUpdateEligibility",
+   "resources": []
+  },
+  "getuserprofile": {
+   "name": "GetUserProfile",
+   "resources": []
+  },
+  "invokeagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeAgent",
+   "resources": []
+  },
+  "listaccountenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountEnvironments",
+   "resources": []
+  },
+  "listaccountpools": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountPools",
+   "resources": []
+  },
+  "listaccountsinaccountpool": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountsInAccountPool",
+   "resources": []
+  },
+  "listagentartifacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentArtifacts",
+   "resources": []
+  },
+  "listagentsessionrecords": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentSessionRecords",
+   "resources": []
+  },
+  "listassetfilters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssetFilters",
+   "resources": []
+  },
+  "listassetrevisions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssetRevisions",
+   "resources": []
+  },
+  "listcellruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCellRuns",
+   "resources": []
+  },
+  "listconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnections",
+   "resources": []
+  },
+  "listconversations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConversations",
+   "resources": []
+  },
+  "listdataapps": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataApps",
+   "resources": []
+  },
+  "listdataproductrevisions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataProductRevisions",
+   "resources": []
+  },
+  "listdatasourcerunactivities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSourceRunActivities",
+   "resources": []
+  },
+  "listdatasourceruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSourceRuns",
+   "resources": []
+  },
+  "listdatasources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSources",
+   "resources": []
+  },
+  "listdeployableenvironmentblueprints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeployableEnvironmentBlueprints",
+   "resources": []
+  },
+  "listdesignations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDesignations",
+   "resources": []
+  },
+  "listdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomains",
+   "resources": []
+  },
+  "listdomainunitsforparent": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomainUnitsForParent",
+   "resources": []
+  },
+  "listentityowners": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEntityOwners",
+   "resources": []
+  },
+  "listenvironmentactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironmentActions",
+   "resources": []
+  },
+  "listenvironmentblueprintconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironmentBlueprintConfigurations",
+   "resources": []
+  },
+  "listenvironmentblueprintconfigurationsummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironmentBlueprintConfigurationSummaries",
+   "resources": []
+  },
+  "listenvironmentblueprints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironmentBlueprints",
+   "resources": []
+  },
+  "listenvironmentprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironmentProfiles",
+   "resources": []
+  },
+  "listenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironments",
+   "resources": []
+  },
+  "listgroupsforuser": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroupsForUser",
+   "resources": []
+  },
+  "listjobruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobRuns",
+   "resources": []
+  },
+  "listlineageevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLineageEvents",
+   "resources": []
+  },
+  "listlineagenodehistory": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLineageNodeHistory",
+   "resources": []
+  },
+  "listlinkedtypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLinkedTypes",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listmetadatagenerationruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMetadataGenerationRuns",
+   "resources": []
+  },
+  "listnotebookruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNotebookRuns",
+   "resources": []
+  },
+  "listnotebooks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNotebooks",
+   "resources": []
+  },
+  "listnotifications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNotifications",
+   "resources": []
+  },
+  "listpolicygrants": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicyGrants",
+   "resources": []
+  },
+  "listprojectmemberships": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProjectMemberships",
+   "resources": []
+  },
+  "listprojectprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProjectProfiles",
+   "resources": []
+  },
+  "listprojects": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProjects",
+   "resources": []
+  },
+  "listrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRules",
+   "resources": []
+  },
+  "listshareddataapps": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSharedDataApps",
+   "resources": []
+  },
+  "listsubscriptiongrants": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubscriptionGrants",
+   "resources": []
+  },
+  "listsubscriptionrequests": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubscriptionRequests",
+   "resources": []
+  },
+  "listsubscriptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubscriptions",
+   "resources": []
+  },
+  "listsubscriptiontargets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubscriptionTargets",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listtimeseriesdatapoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTimeSeriesDataPoints",
+   "resources": []
+  },
+  "listuiconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUIConfigurations",
+   "resources": []
+  },
+  "listwarehousemetadata": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWarehouseMetadata",
+   "resources": []
+  },
+  "postlineageevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PostLineageEvent",
+   "resources": []
+  },
+  "posttimeseriesdatapoints": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PostTimeSeriesDataPoints",
+   "resources": []
+  },
+  "provisiondomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ProvisionDomain",
+   "resources": []
+  },
+  "putagentapprovalpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAgentApprovalPolicy",
+   "resources": []
+  },
+  "putcellrunresult": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutCellRunResult",
+   "resources": []
+  },
+  "putdataexportconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDataExportConfiguration",
+   "resources": []
+  },
+  "putdomainsharingpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutDomainSharingPolicy",
+   "resources": []
+  },
+  "putenvironmentblueprintconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutEnvironmentBlueprintConfiguration",
+   "resources": []
+  },
+  "putsystemtableexportconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSystemTableExportConfiguration",
+   "resources": []
+  },
+  "querygraph": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "QueryGraph",
+   "resources": []
+  },
+  "refreshtoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RefreshToken",
+   "resources": []
+  },
+  "registeragentartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterAgentArtifact",
+   "resources": []
+  },
+  "rejectpredictions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectPredictions",
+   "resources": []
+  },
+  "rejectsubscriptionrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectSubscriptionRequest",
+   "resources": []
+  },
+  "removeentityowner": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveEntityOwner",
+   "resources": []
+  },
+  "removepolicygrant": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "RemovePolicyGrant",
+   "resources": []
+  },
+  "revokesubscription": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "RevokeSubscription",
+   "resources": []
+  },
+  "search": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "Search",
+   "resources": []
+  },
+  "searchgroupprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchGroupProfiles",
+   "resources": []
+  },
+  "searchlistings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchListings",
+   "resources": []
+  },
+  "searchrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchRules",
+   "resources": []
+  },
+  "searchtypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchTypes",
+   "resources": []
+  },
+  "searchuserprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchUserProfiles",
+   "resources": []
+  },
+  "sendmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendMessage",
+   "resources": []
+  },
+  "ssologin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SsoLogin",
+   "resources": []
+  },
+  "ssologout": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SsoLogout",
+   "resources": []
+  },
+  "startaccountbootstrapaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAccountBootstrapAction",
+   "resources": [
+    "domain"
+   ]
+  },
+  "startcompute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCompute",
+   "resources": []
+  },
+  "startconversation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartConversation",
+   "resources": []
+  },
+  "startdatasourcerun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDataSourceRun",
+   "resources": []
+  },
+  "startmetadatagenerationrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMetadataGenerationRun",
+   "resources": []
+  },
+  "startnotebookcompute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartNotebookCompute",
+   "resources": []
+  },
+  "startnotebookexport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartNotebookExport",
+   "resources": []
+  },
+  "startnotebookimport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartNotebookImport",
+   "resources": []
+  },
+  "startnotebookrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartNotebookRun",
+   "resources": []
+  },
+  "startnotebooksync": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartNotebookSync",
+   "resources": []
+  },
+  "stopagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopAgent",
+   "resources": []
+  },
+  "stopcompute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopCompute",
+   "resources": []
+  },
+  "stopmetadatagenerationrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopMetadataGenerationRun",
+   "resources": []
+  },
+  "stopnotebookcompute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopNotebookCompute",
+   "resources": []
+  },
+  "stopnotebookrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopNotebookRun",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "domain"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updateaccountpool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountPool",
+   "resources": []
+  },
+  "updateassetfilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssetFilter",
+   "resources": []
+  },
+  "updateassetowner": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssetOwner",
+   "resources": []
+  },
+  "updatecell": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCell",
+   "resources": []
+  },
+  "updatecellrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCellRun",
+   "resources": []
+  },
+  "updateconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnection",
+   "resources": []
+  },
+  "updateconversation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConversation",
+   "resources": []
+  },
+  "updatedataapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataApp",
+   "resources": []
+  },
+  "updatedatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataSource",
+   "resources": []
+  },
+  "updatedatasourcerunactivities": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataSourceRunActivities",
+   "resources": []
+  },
+  "updatedesignation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDesignation",
+   "resources": []
+  },
+  "updatedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updatedomainunit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomainUnit",
+   "resources": []
+  },
+  "updateenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironment",
+   "resources": []
+  },
+  "updateenvironmentaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironmentAction",
+   "resources": []
+  },
+  "updateenvironmentblueprint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironmentBlueprint",
+   "resources": []
+  },
+  "updateenvironmentconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironmentConfiguration",
+   "resources": []
+  },
+  "updateenvironmentdeploymentstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironmentDeploymentStatus",
+   "resources": []
+  },
+  "updateenvironmentprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironmentProfile",
+   "resources": []
+  },
+  "updateglossary": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGlossary",
+   "resources": []
+  },
+  "updateglossaryterm": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGlossaryTerm",
+   "resources": []
+  },
+  "updategroupprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGroupProfile",
+   "resources": []
+  },
+  "updatenotebook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotebook",
+   "resources": []
+  },
+  "updatenotificationpreference": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotificationPreference",
+   "resources": []
+  },
+  "updateproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProject",
+   "resources": []
+  },
+  "updateprojectprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProjectProfile",
+   "resources": []
+  },
+  "updaterule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRule",
+   "resources": []
+  },
+  "updatesubscriptiongrantstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSubscriptionGrantStatus",
+   "resources": []
+  },
+  "updatesubscriptionrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSubscriptionRequest",
+   "resources": []
+  },
+  "updatesubscriptiontarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSubscriptionTarget",
+   "resources": []
+  },
+  "updateuiconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUIConfiguration",
+   "resources": []
+  },
+  "updateuserprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserProfile",
+   "resources": []
+  },
+  "validatepassrole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ValidatePassRole",
+   "resources": []
+  },
+  "validatepolicy": {
+   "name": "ValidatePolicy",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "datazone:domainId": [
+   "String"
+  ],
+  "datazone:projectId": [
+   "String"
+  ],
+  "datazone:userId": [
+   "String"
+  ]
+ },
+ "resources": {
+  "domain": {
+   "arnFormats": [
+    "arn:${Partition}:datazone:${Region}:${Account}:domain/${DomainId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "datazone",
+ "serviceName": "DataZone",
+ "version": "v1.5"
+}

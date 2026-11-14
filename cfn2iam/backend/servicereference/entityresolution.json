@@ -1,0 +1,396 @@
+{
+ "actions": {
+  "addpolicystatement": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AddPolicyStatement",
+   "resources": []
+  },
+  "batchdeleteuniqueid": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteUniqueId",
+   "resources": [
+    "MatchingWorkflow"
+   ]
+  },
+  "createidmappingworkflow": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIdMappingWorkflow",
+   "resources": []
+  },
+  "createidnamespace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIdNamespace",
+   "resources": []
+  },
+  "creatematchingworkflow": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMatchingWorkflow",
+   "resources": []
+  },
+  "createschemamapping": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSchemaMapping",
+   "resources": []
+  },
+  "deleteidmappingworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIdMappingWorkflow",
+   "resources": [
+    "IdMappingWorkflow"
+   ]
+  },
+  "deleteidnamespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIdNamespace",
+   "resources": [
+    "IdNamespace"
+   ]
+  },
+  "deletematchingworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMatchingWorkflow",
+   "resources": [
+    "MatchingWorkflow"
+   ]
+  },
+  "deletepolicystatement": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeletePolicyStatement",
+   "resources": []
+  },
+  "deleteschemamapping": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSchemaMapping",
+   "resources": [
+    "SchemaMapping"
+   ]
+  },
+  "generatematchid": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateMatchId",
+   "resources": [
+    "MatchingWorkflow"
+   ]
+  },
+  "getidmappingjob": {
+   "name": "GetIdMappingJob",
+   "resources": [
+    "IdMappingWorkflow"
+   ]
+  },
+  "getidmappingworkflow": {
+   "name": "GetIdMappingWorkflow",
+   "resources": [
+    "IdMappingWorkflow"
+   ]
+  },
+  "getidnamespace": {
+   "name": "GetIdNamespace",
+   "resources": [
+    "IdNamespace"
+   ]
+  },
+  "getmatchid": {
+   "name": "GetMatchId",
+   "resources": [
+    "MatchingWorkflow"
+   ]
+  },
+  "getmatchingjob": {
+   "name": "GetMatchingJob",
+   "resources": [
+    "MatchingWorkflow"
+   ]
+  },
+  "getmatchingworkflow": {
+   "name": "GetMatchingWorkflow",
+   "resources": [
+    "MatchingWorkflow"
+   ]
+  },
+  "getpolicy": {
+   "name": "GetPolicy",
+   "resources": []
+  },
+  "getproviderservice": {
+   "name": "GetProviderService",
+   "resources": [
+    "ProviderService"
+   ]
+  },
+  "getschemamapping": {
+   "name": "GetSchemaMapping",
+   "resources": [
+    "SchemaMapping"
+   ]
+  },
+  "listidmappingjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIdMappingJobs",
+   "resources": [
+    "IdMappingWorkflow"
+   ]
+  },
+  "listidmappingworkflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIdMappingWorkflows",
+   "resources": []
+  },
+  "listidnamespaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIdNamespaces",
+   "resources": []
+  },
+  "listmatchingjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMatchingJobs",
+   "resources": [
+    "MatchingWorkflow"
+   ]
+  },
+  "listmatchingworkflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMatchingWorkflows",
+   "resources": []
+  },
+  "listproviderservices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProviderServices",
+   "resources": []
+  },
+  "listschemamappings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSchemaMappings",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "putpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutPolicy",
+   "resources": []
+  },
+  "startidmappingjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartIdMappingJob",
+   "resources": [
+    "IdMappingWorkflow"
+   ]
+  },
+  "startmatchingjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMatchingJob",
+   "resources": [
+    "MatchingWorkflow"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "IdMappingWorkflow",
+    "IdNamespace",
+    "MatchingWorkflow",
+    "ProviderService",
+    "SchemaMapping"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "IdMappingWorkflow",
+    "IdNamespace",
+    "MatchingWorkflow",
+    "ProviderService",
+    "SchemaMapping"
+   ]
+  },
+  "updateidmappingworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIdMappingWorkflow",
+   "resources": [
+    "IdMappingWorkflow"
+   ]
+  },
+  "updateidnamespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIdNamespace",
+   "resources": [
+    "IdNamespace"
+   ]
+  },
+  "updatematchingworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMatchingWorkflow",
+   "resources": [
+    "MatchingWorkflow"
+   ]
+  },
+  "updateschemamapping": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSchemaMapping",
+   "resources": [
+    "SchemaMapping"
+   ]
+  },
+  "useidnamespace": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UseIdNamespace",
+   "resources": []
+  },
+  "useworkflow": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UseWorkflow",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "IdMappingWorkflow": {
+   "arnFormats": [
+    "arn:${Partition}:entityresolution:${Region}:${Account}:idmappingworkflow/${WorkflowName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "IdNamespace": {
+   "arnFormats": [
+    "arn:${Partition}:entityresolution:${Region}:${Account}:idnamespace/${IdNamespaceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "MatchingWorkflow": {
+   "arnFormats": [
+    "arn:${Partition}:entityresolution:${Region}:${Account}:matchingworkflow/${WorkflowName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ProviderService": {
+   "arnFormats": [
+    "arn:${Partition}:entityresolution:${Region}:${Account}:providerservice/${ProviderName}/${ProviderServiceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "SchemaMapping": {
+   "arnFormats": [
+    "arn:${Partition}:entityresolution:${Region}:${Account}:schemamapping/${SchemaName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "entityresolution",
+ "serviceName": "Entity Resolution",
+ "version": "v1.5"
+}

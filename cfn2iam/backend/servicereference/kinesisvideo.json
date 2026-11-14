@@ -1,0 +1,446 @@
+{
+ "actions": {
+  "connectasmaster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConnectAsMaster",
+   "resources": [
+    "channel"
+   ]
+  },
+  "connectasviewer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConnectAsViewer",
+   "resources": [
+    "channel"
+   ]
+  },
+  "createsignalingchannel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSignalingChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "createstream": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStream",
+   "resources": [
+    "stream"
+   ]
+  },
+  "deleteedgeconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEdgeConfiguration",
+   "resources": [
+    "stream"
+   ]
+  },
+  "deletesignalingchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSignalingChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deletestream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStream",
+   "resources": [
+    "stream"
+   ]
+  },
+  "describeedgeconfiguration": {
+   "name": "DescribeEdgeConfiguration",
+   "resources": [
+    "stream"
+   ]
+  },
+  "describeimagegenerationconfiguration": {
+   "name": "DescribeImageGenerationConfiguration",
+   "resources": [
+    "stream"
+   ]
+  },
+  "describemappedresourceconfiguration": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeMappedResourceConfiguration",
+   "resources": [
+    "stream"
+   ]
+  },
+  "describemediastorageconfiguration": {
+   "name": "DescribeMediaStorageConfiguration",
+   "resources": [
+    "channel"
+   ]
+  },
+  "describenotificationconfiguration": {
+   "name": "DescribeNotificationConfiguration",
+   "resources": [
+    "stream"
+   ]
+  },
+  "describesignalingchannel": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeSignalingChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "describestream": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeStream",
+   "resources": [
+    "stream"
+   ]
+  },
+  "describestreamstorageconfiguration": {
+   "name": "DescribeStreamStorageConfiguration",
+   "resources": [
+    "stream"
+   ]
+  },
+  "getclip": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetClip",
+   "resources": [
+    "stream"
+   ]
+  },
+  "getdashstreamingsessionurl": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetDASHStreamingSessionURL",
+   "resources": [
+    "stream"
+   ]
+  },
+  "getdataendpoint": {
+   "name": "GetDataEndpoint",
+   "resources": [
+    "stream"
+   ]
+  },
+  "gethlsstreamingsessionurl": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetHLSStreamingSessionURL",
+   "resources": [
+    "stream"
+   ]
+  },
+  "geticeserverconfig": {
+   "name": "GetIceServerConfig",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getimages": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetImages",
+   "resources": [
+    "stream"
+   ]
+  },
+  "getmedia": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetMedia",
+   "resources": [
+    "stream"
+   ]
+  },
+  "getmediaforfragmentlist": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetMediaForFragmentList",
+   "resources": [
+    "stream"
+   ]
+  },
+  "getsignalingchannelendpoint": {
+   "name": "GetSignalingChannelEndpoint",
+   "resources": [
+    "channel"
+   ]
+  },
+  "joinstoragesession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "JoinStorageSession",
+   "resources": [
+    "channel"
+   ]
+  },
+  "joinstoragesessionasviewer": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "JoinStorageSessionAsViewer",
+   "resources": [
+    "channel"
+   ]
+  },
+  "listedgeagentconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEdgeAgentConfigurations",
+   "resources": []
+  },
+  "listfragments": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListFragments",
+   "resources": [
+    "stream"
+   ]
+  },
+  "listsignalingchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSignalingChannels",
+   "resources": []
+  },
+  "liststreams": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStreams",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "channel",
+    "stream"
+   ]
+  },
+  "listtagsforstream": {
+   "name": "ListTagsForStream",
+   "resources": [
+    "stream"
+   ]
+  },
+  "putmedia": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMedia",
+   "resources": [
+    "stream"
+   ]
+  },
+  "sendalexaoffertomaster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendAlexaOfferToMaster",
+   "resources": [
+    "channel"
+   ]
+  },
+  "startedgeconfigurationupdate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartEdgeConfigurationUpdate",
+   "resources": [
+    "stream"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "channel",
+    "stream"
+   ]
+  },
+  "tagstream": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagStream",
+   "resources": [
+    "stream"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "channel",
+    "stream"
+   ]
+  },
+  "untagstream": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagStream",
+   "resources": [
+    "stream"
+   ]
+  },
+  "updatedataretention": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataRetention",
+   "resources": [
+    "stream"
+   ]
+  },
+  "updateimagegenerationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateImageGenerationConfiguration",
+   "resources": [
+    "stream"
+   ]
+  },
+  "updatemediastorageconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMediaStorageConfiguration",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updatenotificationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotificationConfiguration",
+   "resources": [
+    "stream"
+   ]
+  },
+  "updatesignalingchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSignalingChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updatestream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStream",
+   "resources": [
+    "stream"
+   ]
+  },
+  "updatestreamstorageconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStreamStorageConfiguration",
+   "resources": [
+    "stream"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "channel": {
+   "arnFormats": [
+    "arn:${Partition}:kinesisvideo:${Region}:${Account}:channel/${ChannelName}/${CreationTime}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "stream": {
+   "arnFormats": [
+    "arn:${Partition}:kinesisvideo:${Region}:${Account}:stream/${StreamName}/${CreationTime}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "kinesisvideo",
+ "serviceName": "Kinesis Video Streams",
+ "version": "v1.5"
+}

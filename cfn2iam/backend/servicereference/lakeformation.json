@@ -1,0 +1,445 @@
+{
+ "actions": {
+  "addlftagstoresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "AddLFTagsToResource",
+   "resources": []
+  },
+  "attachrlspolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AttachRLSPolicy",
+   "resources": []
+  },
+  "batchgrantpermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "BatchGrantPermissions",
+   "resources": []
+  },
+  "batchrevokepermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "BatchRevokePermissions",
+   "resources": []
+  },
+  "canceltransaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelTransaction",
+   "resources": []
+  },
+  "committransaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CommitTransaction",
+   "resources": []
+  },
+  "createdatacellsfilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataCellsFilter",
+   "resources": []
+  },
+  "createlakeformationidentitycenterconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLakeFormationIdentityCenterConfiguration",
+   "resources": []
+  },
+  "createlakeformationoptin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLakeFormationOptIn",
+   "resources": []
+  },
+  "createlftag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLFTag",
+   "resources": []
+  },
+  "createlftagexpression": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLFTagExpression",
+   "resources": []
+  },
+  "createrlspolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRLSPolicy",
+   "resources": []
+  },
+  "deletedatacellsfilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataCellsFilter",
+   "resources": []
+  },
+  "deletelakeformationidentitycenterconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLakeFormationIdentityCenterConfiguration",
+   "resources": []
+  },
+  "deletelakeformationoptin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLakeFormationOptIn",
+   "resources": []
+  },
+  "deletelftag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLFTag",
+   "resources": []
+  },
+  "deletelftagexpression": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLFTagExpression",
+   "resources": []
+  },
+  "deleteobjectsoncancel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteObjectsOnCancel",
+   "resources": []
+  },
+  "deleterlspolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRLSPolicy",
+   "resources": []
+  },
+  "deregisterresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterResource",
+   "resources": []
+  },
+  "describelakeformationidentitycenterconfiguration": {
+   "name": "DescribeLakeFormationIdentityCenterConfiguration",
+   "resources": []
+  },
+  "describeresource": {
+   "name": "DescribeResource",
+   "resources": []
+  },
+  "describetransaction": {
+   "name": "DescribeTransaction",
+   "resources": []
+  },
+  "detachrlspolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DetachRLSPolicy",
+   "resources": []
+  },
+  "extendtransaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExtendTransaction",
+   "resources": []
+  },
+  "getdataaccess": {
+   "conditionKeys": [
+    "lakeformation:EnabledOnlyForMetaDataAccess"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetDataAccess",
+   "resources": []
+  },
+  "getdatacellsfilter": {
+   "name": "GetDataCellsFilter",
+   "resources": []
+  },
+  "getdatalakeprincipal": {
+   "name": "GetDataLakePrincipal",
+   "resources": []
+  },
+  "getdatalakesettings": {
+   "name": "GetDataLakeSettings",
+   "resources": []
+  },
+  "geteffectivepermissionsforpath": {
+   "name": "GetEffectivePermissionsForPath",
+   "resources": []
+  },
+  "getlftag": {
+   "name": "GetLFTag",
+   "resources": []
+  },
+  "getlftagexpression": {
+   "name": "GetLFTagExpression",
+   "resources": []
+  },
+  "getquerystate": {
+   "name": "GetQueryState",
+   "resources": []
+  },
+  "getquerystatistics": {
+   "name": "GetQueryStatistics",
+   "resources": []
+  },
+  "getresourcelftags": {
+   "name": "GetResourceLFTags",
+   "resources": []
+  },
+  "getrlspolicy": {
+   "name": "GetRLSPolicy",
+   "resources": []
+  },
+  "gettableobjects": {
+   "name": "GetTableObjects",
+   "resources": []
+  },
+  "gettemporarygluepartitioncredentials": {
+   "name": "GetTemporaryGluePartitionCredentials",
+   "resources": []
+  },
+  "gettemporarygluetablecredentials": {
+   "name": "GetTemporaryGlueTableCredentials",
+   "resources": []
+  },
+  "getworkunitresults": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetWorkUnitResults",
+   "resources": []
+  },
+  "getworkunits": {
+   "name": "GetWorkUnits",
+   "resources": []
+  },
+  "grantpermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "GrantPermissions",
+   "resources": []
+  },
+  "listdatacellsfilter": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataCellsFilter",
+   "resources": []
+  },
+  "listlakeformationoptins": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLakeFormationOptIns",
+   "resources": []
+  },
+  "listlftagexpressions": {
+   "name": "ListLFTagExpressions",
+   "resources": []
+  },
+  "listlftags": {
+   "name": "ListLFTags",
+   "resources": []
+  },
+  "listpermissions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPermissions",
+   "resources": []
+  },
+  "listresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResources",
+   "resources": []
+  },
+  "listrlspolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRLSPolicies",
+   "resources": []
+  },
+  "listrlspolicyattachments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRLSPolicyAttachments",
+   "resources": []
+  },
+  "listtablestorageoptimizers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTableStorageOptimizers",
+   "resources": []
+  },
+  "listtransactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTransactions",
+   "resources": []
+  },
+  "putdatalakesettings": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutDataLakeSettings",
+   "resources": []
+  },
+  "registerresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterResource",
+   "resources": []
+  },
+  "registerresourcewithprivilegedaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterResourceWithPrivilegedAccess",
+   "resources": []
+  },
+  "removelftagsfromresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "RemoveLFTagsFromResource",
+   "resources": []
+  },
+  "revokepermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "RevokePermissions",
+   "resources": []
+  },
+  "searchdatabasesbylftags": {
+   "name": "SearchDatabasesByLFTags",
+   "resources": []
+  },
+  "searchtablesbylftags": {
+   "name": "SearchTablesByLFTags",
+   "resources": []
+  },
+  "startqueryplanning": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartQueryPlanning",
+   "resources": []
+  },
+  "starttransaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTransaction",
+   "resources": []
+  },
+  "updatedatacellsfilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataCellsFilter",
+   "resources": []
+  },
+  "updatelakeformationidentitycenterconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLakeFormationIdentityCenterConfiguration",
+   "resources": []
+  },
+  "updatelftag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLFTag",
+   "resources": []
+  },
+  "updatelftagexpression": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLFTagExpression",
+   "resources": []
+  },
+  "updateresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResource",
+   "resources": []
+  },
+  "updaterlspolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRLSPolicy",
+   "resources": []
+  },
+  "updatetableobjects": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTableObjects",
+   "resources": []
+  },
+  "updatetablestorageoptimizer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTableStorageOptimizer",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "lakeformation:EnabledOnlyForMetaDataAccess": [
+   "Bool"
+  ]
+ },
+ "resources": {},
+ "service": "lakeformation",
+ "serviceName": "Lake Formation",
+ "version": "v1.5"
+}

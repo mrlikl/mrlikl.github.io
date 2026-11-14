@@ -1,0 +1,70 @@
+{
+ "actions": {
+  "accesslegacypartnercentral": {
+   "conditionKeys": [
+    "partnercentral-account-management:LegacyPartnerCentralRole"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AccessLegacyPartnerCentral",
+   "resources": []
+  },
+  "accessmarketingcentral": {
+   "conditionKeys": [
+    "partnercentral-account-management:MarketingCentralRole"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AccessMarketingCentral",
+   "resources": []
+  },
+  "accessproservetools": {
+   "conditionKeys": [
+    "partnercentral-account-management:ProServeRole"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AccessProServeTools",
+   "resources": []
+  },
+  "associatepartneraccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociatePartnerAccount",
+   "resources": []
+  },
+  "associatepartneruser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociatePartnerUser",
+   "resources": []
+  },
+  "disassociatepartneruser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociatePartnerUser",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "partnercentral-account-management:LegacyPartnerCentralRole": [
+   "ArrayOfString"
+  ],
+  "partnercentral-account-management:MarketingCentralRole": [
+   "ArrayOfString"
+  ],
+  "partnercentral-account-management:ProServeRole": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {},
+ "service": "partnercentral-account-management",
+ "serviceName": "Partner central account management",
+ "version": "v1.5"
+}

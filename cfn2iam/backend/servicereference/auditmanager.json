@@ -1,0 +1,550 @@
+{
+ "actions": {
+  "associateassessmentreportevidencefolder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateAssessmentReportEvidenceFolder",
+   "resources": [
+    "assessment"
+   ]
+  },
+  "batchassociateassessmentreportevidence": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchAssociateAssessmentReportEvidence",
+   "resources": [
+    "assessment"
+   ]
+  },
+  "batchcreatedelegationbyassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateDelegationByAssessment",
+   "resources": [
+    "assessment",
+    "assessmentControlSet"
+   ]
+  },
+  "batchdeletedelegationbyassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteDelegationByAssessment",
+   "resources": [
+    "assessment",
+    "assessmentControlSet"
+   ]
+  },
+  "batchdisassociateassessmentreportevidence": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDisassociateAssessmentReportEvidence",
+   "resources": [
+    "assessment"
+   ]
+  },
+  "batchimportevidencetoassessmentcontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchImportEvidenceToAssessmentControl",
+   "resources": [
+    "assessmentControlSet"
+   ]
+  },
+  "createassessment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssessment",
+   "resources": []
+  },
+  "createassessmentframework": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssessmentFramework",
+   "resources": [
+    "assessmentFramework",
+    "control"
+   ]
+  },
+  "createassessmentreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssessmentReport",
+   "resources": [
+    "assessment"
+   ]
+  },
+  "createcontrol": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateControl",
+   "resources": []
+  },
+  "deleteassessment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssessment",
+   "resources": [
+    "assessment"
+   ]
+  },
+  "deleteassessmentframework": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssessmentFramework",
+   "resources": [
+    "assessmentFramework"
+   ]
+  },
+  "deleteassessmentframeworkshare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssessmentFrameworkShare",
+   "resources": []
+  },
+  "deleteassessmentreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssessmentReport",
+   "resources": [
+    "assessment"
+   ]
+  },
+  "deletecontrol": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteControl",
+   "resources": [
+    "control"
+   ]
+  },
+  "deregisteraccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterAccount",
+   "resources": []
+  },
+  "deregisterorganizationadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterOrganizationAdminAccount",
+   "resources": []
+  },
+  "disassociateassessmentreportevidencefolder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateAssessmentReportEvidenceFolder",
+   "resources": [
+    "assessment"
+   ]
+  },
+  "getaccountstatus": {
+   "name": "GetAccountStatus",
+   "resources": []
+  },
+  "getassessment": {
+   "name": "GetAssessment",
+   "resources": [
+    "assessment"
+   ]
+  },
+  "getassessmentframework": {
+   "name": "GetAssessmentFramework",
+   "resources": [
+    "assessmentFramework"
+   ]
+  },
+  "getassessmentreporturl": {
+   "name": "GetAssessmentReportUrl",
+   "resources": [
+    "assessment"
+   ]
+  },
+  "getchangelogs": {
+   "name": "GetChangeLogs",
+   "resources": [
+    "assessment"
+   ]
+  },
+  "getcontrol": {
+   "name": "GetControl",
+   "resources": [
+    "control"
+   ]
+  },
+  "getdelegations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetDelegations",
+   "resources": []
+  },
+  "getevidence": {
+   "name": "GetEvidence",
+   "resources": [
+    "assessmentControlSet"
+   ]
+  },
+  "getevidencebyevidencefolder": {
+   "name": "GetEvidenceByEvidenceFolder",
+   "resources": [
+    "assessmentControlSet"
+   ]
+  },
+  "getevidencefileuploadurl": {
+   "name": "GetEvidenceFileUploadUrl",
+   "resources": []
+  },
+  "getevidencefolder": {
+   "name": "GetEvidenceFolder",
+   "resources": [
+    "assessmentControlSet"
+   ]
+  },
+  "getevidencefoldersbyassessment": {
+   "name": "GetEvidenceFoldersByAssessment",
+   "resources": [
+    "assessment"
+   ]
+  },
+  "getevidencefoldersbyassessmentcontrol": {
+   "name": "GetEvidenceFoldersByAssessmentControl",
+   "resources": [
+    "assessmentControlSet"
+   ]
+  },
+  "getinsights": {
+   "name": "GetInsights",
+   "resources": []
+  },
+  "getinsightsbyassessment": {
+   "name": "GetInsightsByAssessment",
+   "resources": []
+  },
+  "getorganizationadminaccount": {
+   "name": "GetOrganizationAdminAccount",
+   "resources": []
+  },
+  "getservicesinscope": {
+   "name": "GetServicesInScope",
+   "resources": []
+  },
+  "getsettings": {
+   "name": "GetSettings",
+   "resources": []
+  },
+  "listassessmentcontrolinsightsbycontroldomain": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssessmentControlInsightsByControlDomain",
+   "resources": []
+  },
+  "listassessmentframeworks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssessmentFrameworks",
+   "resources": []
+  },
+  "listassessmentframeworksharerequests": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssessmentFrameworkShareRequests",
+   "resources": []
+  },
+  "listassessmentreports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssessmentReports",
+   "resources": []
+  },
+  "listassessments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssessments",
+   "resources": []
+  },
+  "listcontroldomaininsights": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListControlDomainInsights",
+   "resources": []
+  },
+  "listcontroldomaininsightsbyassessment": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListControlDomainInsightsByAssessment",
+   "resources": []
+  },
+  "listcontrolinsightsbycontroldomain": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListControlInsightsByControlDomain",
+   "resources": []
+  },
+  "listcontrols": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListControls",
+   "resources": []
+  },
+  "listkeywordsfordatasource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKeywordsForDataSource",
+   "resources": []
+  },
+  "listnotifications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNotifications",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "assessment",
+    "control"
+   ]
+  },
+  "registeraccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterAccount",
+   "resources": []
+  },
+  "registerorganizationadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterOrganizationAdminAccount",
+   "resources": []
+  },
+  "startassessmentframeworkshare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAssessmentFrameworkShare",
+   "resources": [
+    "assessmentFramework"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "assessment",
+    "assessmentFramework",
+    "control"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "assessment": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "assessmentFramework": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "control": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "assessment",
+    "assessmentFramework",
+    "control"
+   ]
+  },
+  "updateassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssessment",
+   "resources": [
+    "assessment"
+   ]
+  },
+  "updateassessmentcontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssessmentControl",
+   "resources": [
+    "assessmentControlSet"
+   ]
+  },
+  "updateassessmentcontrolsetstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssessmentControlSetStatus",
+   "resources": [
+    "assessmentControlSet"
+   ]
+  },
+  "updateassessmentframework": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssessmentFramework",
+   "resources": [
+    "assessmentFramework",
+    "control"
+   ]
+  },
+  "updateassessmentframeworkshare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssessmentFrameworkShare",
+   "resources": [
+    "assessmentFramework"
+   ]
+  },
+  "updateassessmentstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssessmentStatus",
+   "resources": [
+    "assessment"
+   ]
+  },
+  "updatecontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateControl",
+   "resources": [
+    "control"
+   ]
+  },
+  "updatesettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSettings",
+   "resources": []
+  },
+  "validateassessmentreportintegrity": {
+   "name": "ValidateAssessmentReportIntegrity",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "assessment": {
+   "arnFormats": [
+    "arn:${Partition}:auditmanager:${Region}:${Account}:assessment/${AssessmentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "assessmentControlSet": {
+   "arnFormats": [
+    "arn:${Partition}:auditmanager:${Region}:${Account}:assessment/${AssessmentId}/controlSet/${ControlSetId}"
+   ]
+  },
+  "assessmentFramework": {
+   "arnFormats": [
+    "arn:${Partition}:auditmanager:${Region}:${Account}:assessmentFramework/${AssessmentFrameworkId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "control": {
+   "arnFormats": [
+    "arn:${Partition}:auditmanager:${Region}:${Account}:control/${ControlId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "auditmanager",
+ "serviceName": "Audit Manager",
+ "version": "v1.5"
+}

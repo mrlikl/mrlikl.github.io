@@ -1,0 +1,148 @@
+{
+ "actions": {
+  "associatenode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateNode",
+   "resources": []
+  },
+  "createbackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBackup",
+   "resources": []
+  },
+  "createserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServer",
+   "resources": []
+  },
+  "deletebackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBackup",
+   "resources": []
+  },
+  "deleteserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServer",
+   "resources": []
+  },
+  "describeaccountattributes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeAccountAttributes",
+   "resources": []
+  },
+  "describebackups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeBackups",
+   "resources": []
+  },
+  "describeevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeEvents",
+   "resources": []
+  },
+  "describenodeassociationstatus": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeNodeAssociationStatus",
+   "resources": []
+  },
+  "describeservers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeServers",
+   "resources": []
+  },
+  "disassociatenode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateNode",
+   "resources": []
+  },
+  "exportserverengineattribute": {
+   "name": "ExportServerEngineAttribute",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "restoreserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreServer",
+   "resources": []
+  },
+  "startmaintenance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMaintenance",
+   "resources": []
+  },
+  "tagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": []
+  },
+  "untagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": []
+  },
+  "updateserver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServer",
+   "resources": []
+  },
+  "updateserverengineattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServerEngineAttributes",
+   "resources": []
+  }
+ },
+ "resources": {
+  "backup": {
+   "arnFormats": [
+    "arn:${Partition}:opsworks-cm::${Account}:backup/${ServerName}-{Date-and-Time-Stamp-of-Backup}"
+   ]
+  },
+  "server": {
+   "arnFormats": [
+    "arn:${Partition}:opsworks-cm::${Account}:server/${ServerName}/${UniqueId}"
+   ]
+  }
+ },
+ "service": "opsworks-cm",
+ "serviceName": "OpsworksCM",
+ "version": "v1.5"
+}

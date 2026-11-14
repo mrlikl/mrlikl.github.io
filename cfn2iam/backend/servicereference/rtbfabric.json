@@ -1,0 +1,443 @@
+{
+ "actions": {
+  "acceptlink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptLink",
+   "resources": [
+    "Link"
+   ]
+  },
+  "associatecertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateCertificate",
+   "resources": [
+    "ResponderGateway"
+   ]
+  },
+  "createinboundexternallink": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInboundExternalLink",
+   "resources": [
+    "ResponderGateway"
+   ]
+  },
+  "createlink": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLink",
+   "resources": []
+  },
+  "createlinkroutingrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLinkRoutingRule",
+   "resources": [
+    "Link"
+   ]
+  },
+  "createoutboundexternallink": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOutboundExternalLink",
+   "resources": [
+    "RequesterGateway"
+   ]
+  },
+  "createrequestergateway": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRequesterGateway",
+   "resources": []
+  },
+  "createrespondergateway": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResponderGateway",
+   "resources": []
+  },
+  "deleteinboundexternallink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInboundExternalLink",
+   "resources": [
+    "InboundExternalLink",
+    "ResponderGateway"
+   ]
+  },
+  "deletelink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLink",
+   "resources": [
+    "Link"
+   ]
+  },
+  "deletelinkroutingrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLinkRoutingRule",
+   "resources": [
+    "Link",
+    "LinkRoutingRule"
+   ]
+  },
+  "deleteoutboundexternallink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOutboundExternalLink",
+   "resources": [
+    "OutboundExternalLink",
+    "RequesterGateway"
+   ]
+  },
+  "deleterequestergateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRequesterGateway",
+   "resources": [
+    "RequesterGateway"
+   ]
+  },
+  "deleterespondergateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResponderGateway",
+   "resources": [
+    "ResponderGateway"
+   ]
+  },
+  "disassociatecertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateCertificate",
+   "resources": [
+    "ResponderGateway"
+   ]
+  },
+  "getcertificateassociation": {
+   "name": "GetCertificateAssociation",
+   "resources": [
+    "ResponderGateway"
+   ]
+  },
+  "getinboundexternallink": {
+   "name": "GetInboundExternalLink",
+   "resources": [
+    "InboundExternalLink",
+    "ResponderGateway"
+   ]
+  },
+  "getlink": {
+   "name": "GetLink",
+   "resources": [
+    "Link"
+   ]
+  },
+  "getlinkroutingrule": {
+   "name": "GetLinkRoutingRule",
+   "resources": [
+    "Link",
+    "LinkRoutingRule"
+   ]
+  },
+  "getoutboundexternallink": {
+   "name": "GetOutboundExternalLink",
+   "resources": [
+    "OutboundExternalLink",
+    "RequesterGateway"
+   ]
+  },
+  "getrequestergateway": {
+   "name": "GetRequesterGateway",
+   "resources": [
+    "RequesterGateway"
+   ]
+  },
+  "getrespondergateway": {
+   "name": "GetResponderGateway",
+   "resources": [
+    "ResponderGateway"
+   ]
+  },
+  "listcertificateassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCertificateAssociations",
+   "resources": [
+    "ResponderGateway"
+   ]
+  },
+  "listlinkroutingrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLinkRoutingRules",
+   "resources": [
+    "Link"
+   ]
+  },
+  "listlinks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLinks",
+   "resources": []
+  },
+  "listrequestergateways": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRequesterGateways",
+   "resources": []
+  },
+  "listrespondergateways": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResponderGateways",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "InboundExternalLink",
+    "Link",
+    "LinkRoutingRule",
+    "OutboundExternalLink",
+    "RequesterGateway",
+    "ResponderGateway"
+   ]
+  },
+  "rejectlink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectLink",
+   "resources": [
+    "Link"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "InboundExternalLink",
+    "Link",
+    "LinkRoutingRule",
+    "OutboundExternalLink",
+    "RequesterGateway",
+    "ResponderGateway"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "InboundExternalLink",
+    "Link",
+    "LinkRoutingRule",
+    "OutboundExternalLink",
+    "RequesterGateway",
+    "ResponderGateway"
+   ]
+  },
+  "updatelink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLink",
+   "resources": [
+    "Link"
+   ]
+  },
+  "updatelinkmoduleflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLinkModuleFlow",
+   "resources": [
+    "Link"
+   ]
+  },
+  "updatelinkroutingrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLinkRoutingRule",
+   "resources": [
+    "Link",
+    "LinkRoutingRule"
+   ]
+  },
+  "updaterequestergateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRequesterGateway",
+   "resources": [
+    "RequesterGateway"
+   ]
+  },
+  "updaterespondergateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResponderGateway",
+   "resources": [
+    "ResponderGateway"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "rtbfabric:InboundExternalLinkGatewayId": [
+   "String"
+  ],
+  "rtbfabric:InboundExternalLinkLinkId": [
+   "String"
+  ],
+  "rtbfabric:LinkLinkId": [
+   "String"
+  ],
+  "rtbfabric:LinkRoutingRuleRuleId": [
+   "String"
+  ],
+  "rtbfabric:OutboundExternalLinkLinkId": [
+   "String"
+  ],
+  "rtbfabric:RequesterGatewayGatewayId": [
+   "String"
+  ],
+  "rtbfabric:ResponderGatewayGatewayId": [
+   "String"
+  ]
+ },
+ "resources": {
+  "InboundExternalLink": {
+   "arnFormats": [
+    "arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}/link/${LinkId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rtbfabric:InboundExternalLinkLinkId",
+    "rtbfabric:ResponderGatewayGatewayId"
+   ]
+  },
+  "Link": {
+   "arnFormats": [
+    "arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}/link/${LinkId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rtbfabric:LinkLinkId",
+    "rtbfabric:RequesterGatewayGatewayId",
+    "rtbfabric:ResponderGatewayGatewayId"
+   ]
+  },
+  "LinkRoutingRule": {
+   "arnFormats": [
+    "arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}/link/${LinkId}/routing-rule/${RuleId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rtbfabric:LinkLinkId",
+    "rtbfabric:LinkRoutingRuleRuleId"
+   ]
+  },
+  "OutboundExternalLink": {
+   "arnFormats": [
+    "arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}/link/${LinkId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rtbfabric:OutboundExternalLinkLinkId",
+    "rtbfabric:RequesterGatewayGatewayId"
+   ]
+  },
+  "RequesterGateway": {
+   "arnFormats": [
+    "arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rtbfabric:RequesterGatewayGatewayId"
+   ]
+  },
+  "ResponderGateway": {
+   "arnFormats": [
+    "arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rtbfabric:ResponderGatewayGatewayId"
+   ]
+  }
+ },
+ "service": "rtbfabric",
+ "serviceName": "RTB Fabric",
+ "version": "v1.5"
+}

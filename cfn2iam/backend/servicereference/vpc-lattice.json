@@ -1,0 +1,1052 @@
+{
+ "actions": {
+  "associateviaawsservice": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AssociateViaAWSService",
+   "resources": []
+  },
+  "associateviaawsservice-eventsandstates": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AssociateViaAWSService-EventsAndStates",
+   "resources": []
+  },
+  "createaccesslogsubscription": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessLogSubscription",
+   "resources": [
+    "AccessLogSubscription",
+    "ResourceConfiguration",
+    "Service",
+    "ServiceNetwork"
+   ]
+  },
+  "createlistener": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:Protocol",
+    "vpc-lattice:TargetGroupArns"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateListener",
+   "resources": [
+    "Listener"
+   ]
+  },
+  "createresourceconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResourceConfiguration",
+   "resources": [
+    "DomainVerification",
+    "ResourceConfiguration",
+    "ResourceGateway"
+   ]
+  },
+  "createresourcegateway": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:VpcId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResourceGateway",
+   "resources": [
+    "ResourceGateway"
+   ]
+  },
+  "createrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:TargetGroupArns"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRule",
+   "resources": [
+    "Rule"
+   ]
+  },
+  "createservice": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:AuthType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateService",
+   "resources": [
+    "Service"
+   ]
+  },
+  "createservicenetwork": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:AuthType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceNetwork",
+   "resources": [
+    "ServiceNetwork"
+   ]
+  },
+  "createservicenetworkresourceassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:ResourceConfigurationArn",
+    "vpc-lattice:ServiceNetworkArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceNetworkResourceAssociation",
+   "resources": [
+    "ResourceConfiguration",
+    "ServiceNetwork",
+    "ServiceNetworkResourceAssociation"
+   ]
+  },
+  "createservicenetworkserviceassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:ServiceArn",
+    "vpc-lattice:ServiceNetworkArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceNetworkServiceAssociation",
+   "resources": [
+    "Service",
+    "ServiceNetwork",
+    "ServiceNetworkServiceAssociation"
+   ]
+  },
+  "createservicenetworkvpcassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:PrivateDnsPreference",
+    "vpc-lattice:PrivateDnsSpecifiedDomains",
+    "vpc-lattice:SecurityGroupIds",
+    "vpc-lattice:ServiceNetworkArn",
+    "vpc-lattice:VpcId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceNetworkVpcAssociation",
+   "resources": [
+    "ServiceNetwork",
+    "ServiceNetworkVpcAssociation"
+   ]
+  },
+  "createservicenetworkvpcendpointassociation": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "CreateServiceNetworkVpcEndpointAssociation",
+   "resources": []
+  },
+  "createtargetgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:VpcId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTargetGroup",
+   "resources": [
+    "TargetGroup"
+   ]
+  },
+  "deleteaccesslogsubscription": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccessLogSubscription",
+   "resources": [
+    "AccessLogSubscription"
+   ]
+  },
+  "deleteauthpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteAuthPolicy",
+   "resources": [
+    "Service",
+    "ServiceNetwork"
+   ]
+  },
+  "deletedomainverification": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomainVerification",
+   "resources": [
+    "DomainVerification"
+   ]
+  },
+  "deletelistener": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteListener",
+   "resources": [
+    "Listener"
+   ]
+  },
+  "deleteresourceconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourceConfiguration",
+   "resources": [
+    "ResourceConfiguration"
+   ]
+  },
+  "deleteresourceendpointassociation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourceEndpointAssociation",
+   "resources": [
+    "ResourceEndpointAssociation"
+   ]
+  },
+  "deleteresourcegateway": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourceGateway",
+   "resources": [
+    "ResourceGateway"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "ResourceConfiguration",
+    "Service",
+    "ServiceNetwork"
+   ]
+  },
+  "deleterule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRule",
+   "resources": [
+    "Rule"
+   ]
+  },
+  "deleteservice": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteService",
+   "resources": [
+    "Service"
+   ]
+  },
+  "deleteservicenetwork": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceNetwork",
+   "resources": [
+    "ServiceNetwork"
+   ]
+  },
+  "deleteservicenetworkresourceassociation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceNetworkResourceAssociation",
+   "resources": [
+    "ServiceNetworkResourceAssociation"
+   ]
+  },
+  "deleteservicenetworkserviceassociation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceNetworkServiceAssociation",
+   "resources": [
+    "ServiceNetworkServiceAssociation"
+   ]
+  },
+  "deleteservicenetworkvpcassociation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "vpc-lattice:ServiceNetworkArn",
+    "vpc-lattice:VpcId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceNetworkVpcAssociation",
+   "resources": [
+    "ServiceNetworkVpcAssociation"
+   ]
+  },
+  "deletetargetgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTargetGroup",
+   "resources": [
+    "TargetGroup"
+   ]
+  },
+  "deregistertargets": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterTargets",
+   "resources": [
+    "TargetGroup"
+   ]
+  },
+  "getaccesslogsubscription": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAccessLogSubscription",
+   "resources": [
+    "AccessLogSubscription"
+   ]
+  },
+  "getauthpolicy": {
+   "name": "GetAuthPolicy",
+   "resources": [
+    "Service",
+    "ServiceNetwork"
+   ]
+  },
+  "getdomainverification": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetDomainVerification",
+   "resources": [
+    "DomainVerification"
+   ]
+  },
+  "getlistener": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetListener",
+   "resources": [
+    "Listener"
+   ]
+  },
+  "getresourceconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetResourceConfiguration",
+   "resources": [
+    "ResourceConfiguration"
+   ]
+  },
+  "getresourcegateway": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetResourceGateway",
+   "resources": [
+    "ResourceGateway"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "ResourceConfiguration",
+    "Service",
+    "ServiceNetwork"
+   ]
+  },
+  "getrule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetRule",
+   "resources": [
+    "Rule"
+   ]
+  },
+  "getservice": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetService",
+   "resources": [
+    "Service"
+   ]
+  },
+  "getservicenetwork": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetServiceNetwork",
+   "resources": [
+    "ServiceNetwork"
+   ]
+  },
+  "getservicenetworkresourceassociation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetServiceNetworkResourceAssociation",
+   "resources": [
+    "ServiceNetworkResourceAssociation"
+   ]
+  },
+  "getservicenetworkserviceassociation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetServiceNetworkServiceAssociation",
+   "resources": [
+    "ServiceNetworkServiceAssociation"
+   ]
+  },
+  "getservicenetworkvpcassociation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "vpc-lattice:ServiceNetworkArn",
+    "vpc-lattice:VpcId"
+   ],
+   "name": "GetServiceNetworkVpcAssociation",
+   "resources": [
+    "ServiceNetworkVpcAssociation"
+   ]
+  },
+  "gettargetgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetTargetGroup",
+   "resources": [
+    "TargetGroup"
+   ]
+  },
+  "listaccesslogsubscriptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessLogSubscriptions",
+   "resources": []
+  },
+  "listdomainverifications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomainVerifications",
+   "resources": []
+  },
+  "listlisteners": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListListeners",
+   "resources": []
+  },
+  "listresourceconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceConfigurations",
+   "resources": []
+  },
+  "listresourceendpointassociations": {
+   "conditionKeys": [
+    "vpc-lattice:ResourceConfigurationArn",
+    "vpc-lattice:VpcEndpointId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceEndpointAssociations",
+   "resources": []
+  },
+  "listresourcegateways": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceGateways",
+   "resources": []
+  },
+  "listrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRules",
+   "resources": []
+  },
+  "listservicenetworkresourceassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceNetworkResourceAssociations",
+   "resources": []
+  },
+  "listservicenetworks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceNetworks",
+   "resources": []
+  },
+  "listservicenetworkserviceassociations": {
+   "conditionKeys": [
+    "vpc-lattice:ServiceArn",
+    "vpc-lattice:ServiceNetworkArn"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceNetworkServiceAssociations",
+   "resources": []
+  },
+  "listservicenetworkvpcassociations": {
+   "conditionKeys": [
+    "vpc-lattice:ServiceNetworkArn"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceNetworkVpcAssociations",
+   "resources": []
+  },
+  "listservicenetworkvpcendpointassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceNetworkVpcEndpointAssociations",
+   "resources": []
+  },
+  "listservices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServices",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "listtargetgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTargetGroups",
+   "resources": []
+  },
+  "listtargets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTargets",
+   "resources": [
+    "TargetGroup"
+   ]
+  },
+  "putauthpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutAuthPolicy",
+   "resources": [
+    "Service",
+    "ServiceNetwork"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "ResourceConfiguration",
+    "Service",
+    "ServiceNetwork"
+   ]
+  },
+  "registertargets": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterTargets",
+   "resources": [
+    "TargetGroup"
+   ]
+  },
+  "startdomainverification": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:DomainName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDomainVerification",
+   "resources": [
+    "DomainVerification"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:CreateAction"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "AccessLogSubscription",
+    "DomainVerification",
+    "Listener",
+    "ResourceConfiguration",
+    "ResourceEndpointAssociation",
+    "ResourceGateway",
+    "Rule",
+    "Service",
+    "ServiceNetwork",
+    "ServiceNetworkResourceAssociation",
+    "ServiceNetworkServiceAssociation",
+    "ServiceNetworkVpcAssociation",
+    "TargetGroup"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "AccessLogSubscription",
+    "DomainVerification",
+    "Listener",
+    "ResourceConfiguration",
+    "ResourceEndpointAssociation",
+    "ResourceGateway",
+    "Rule",
+    "Service",
+    "ServiceNetwork",
+    "ServiceNetworkResourceAssociation",
+    "ServiceNetworkServiceAssociation",
+    "ServiceNetworkVpcAssociation",
+    "TargetGroup"
+   ]
+  },
+  "updateaccesslogsubscription": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccessLogSubscription",
+   "resources": [
+    "AccessLogSubscription"
+   ]
+  },
+  "updatelistener": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "vpc-lattice:TargetGroupArns"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateListener",
+   "resources": [
+    "Listener"
+   ]
+  },
+  "updateresourceconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResourceConfiguration",
+   "resources": [
+    "ResourceConfiguration"
+   ]
+  },
+  "updateresourcegateway": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "vpc-lattice:SecurityGroupIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResourceGateway",
+   "resources": [
+    "ResourceGateway"
+   ]
+  },
+  "updaterule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "vpc-lattice:TargetGroupArns"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRule",
+   "resources": [
+    "Rule"
+   ]
+  },
+  "updateservice": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "vpc-lattice:AuthType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateService",
+   "resources": [
+    "Service"
+   ]
+  },
+  "updateservicenetwork": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "vpc-lattice:AuthType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceNetwork",
+   "resources": [
+    "ServiceNetwork"
+   ]
+  },
+  "updateservicenetworkvpcassociation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:SecurityGroupIds",
+    "vpc-lattice:ServiceNetworkArn",
+    "vpc-lattice:VpcId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceNetworkVpcAssociation",
+   "resources": [
+    "ServiceNetworkVpcAssociation"
+   ]
+  },
+  "updatetargetgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTargetGroup",
+   "resources": [
+    "TargetGroup"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "vpc-lattice:AuthType": [
+   "String"
+  ],
+  "vpc-lattice:CreateAction": [
+   "String"
+  ],
+  "vpc-lattice:DomainName": [
+   "String"
+  ],
+  "vpc-lattice:PrivateDnsPreference": [
+   "String"
+  ],
+  "vpc-lattice:PrivateDnsSpecifiedDomains": [
+   "ArrayOfString"
+  ],
+  "vpc-lattice:Protocol": [
+   "String"
+  ],
+  "vpc-lattice:ResourceConfigurationArn": [
+   "ARN"
+  ],
+  "vpc-lattice:SecurityGroupIds": [
+   "ArrayOfString"
+  ],
+  "vpc-lattice:ServiceArn": [
+   "ARN"
+  ],
+  "vpc-lattice:ServiceNetworkArn": [
+   "ARN"
+  ],
+  "vpc-lattice:TargetGroupArns": [
+   "ArrayOfARN"
+  ],
+  "vpc-lattice:VpcEndpointId": [
+   "String"
+  ],
+  "vpc-lattice:VpcId": [
+   "String"
+  ]
+ },
+ "resources": {
+  "AccessLogSubscription": {
+   "arnFormats": [
+    "arn:${Partition}:vpc-lattice:${Region}:${Account}:accesslogsubscription/${AccessLogSubscriptionId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  },
+  "DomainVerification": {
+   "arnFormats": [
+    "arn:${Partition}:vpc-lattice:${Region}:${Account}:domainverification/${DomainVerificationId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:DomainName"
+   ]
+  },
+  "Listener": {
+   "arnFormats": [
+    "arn:${Partition}:vpc-lattice:${Region}:${Account}:service/${ServiceId}/listener/${ListenerId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:Protocol",
+    "vpc-lattice:TargetGroupArns"
+   ]
+  },
+  "ResourceConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:vpc-lattice:${Region}:${Account}:resourceconfiguration/${ResourceConfigurationId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  },
+  "ResourceEndpointAssociation": {
+   "arnFormats": [
+    "arn:${Partition}:vpc-lattice:${Region}:${Account}:resourceendpointassociation/${ResourceEndpointAssociationId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:ResourceConfigurationArn",
+    "vpc-lattice:VpcEndpointId"
+   ]
+  },
+  "ResourceGateway": {
+   "arnFormats": [
+    "arn:${Partition}:vpc-lattice:${Region}:${Account}:resourcegateway/${ResourceGatewayId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:VpcId"
+   ]
+  },
+  "Rule": {
+   "arnFormats": [
+    "arn:${Partition}:vpc-lattice:${Region}:${Account}:service/${ServiceId}/listener/${ListenerId}/rule/${RuleId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:TargetGroupArns"
+   ]
+  },
+  "Service": {
+   "arnFormats": [
+    "arn:${Partition}:vpc-lattice:${Region}:${Account}:service/${ServiceId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:AuthType"
+   ]
+  },
+  "ServiceNetwork": {
+   "arnFormats": [
+    "arn:${Partition}:vpc-lattice:${Region}:${Account}:servicenetwork/${ServiceNetworkId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:AuthType"
+   ]
+  },
+  "ServiceNetworkResourceAssociation": {
+   "arnFormats": [
+    "arn:${Partition}:vpc-lattice:${Region}:${Account}:servicenetworkresourceassociation/${ServiceNetworkResourceAssociationId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:ResourceConfigurationArn",
+    "vpc-lattice:ServiceNetworkArn"
+   ]
+  },
+  "ServiceNetworkServiceAssociation": {
+   "arnFormats": [
+    "arn:${Partition}:vpc-lattice:${Region}:${Account}:servicenetworkserviceassociation/${ServiceNetworkServiceAssociationId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:ServiceArn",
+    "vpc-lattice:ServiceNetworkArn"
+   ]
+  },
+  "ServiceNetworkVpcAssociation": {
+   "arnFormats": [
+    "arn:${Partition}:vpc-lattice:${Region}:${Account}:servicenetworkvpcassociation/${ServiceNetworkVpcAssociationId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:PrivateDnsPreference",
+    "vpc-lattice:PrivateDnsSpecifiedDomains",
+    "vpc-lattice:SecurityGroupIds",
+    "vpc-lattice:ServiceNetworkArn",
+    "vpc-lattice:VpcId"
+   ]
+  },
+  "TargetGroup": {
+   "arnFormats": [
+    "arn:${Partition}:vpc-lattice:${Region}:${Account}:targetgroup/${TargetGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "vpc-lattice:VpcId"
+   ]
+  }
+ },
+ "service": "vpc-lattice",
+ "serviceName": "VPC Lattice",
+ "version": "v1.5"
+}

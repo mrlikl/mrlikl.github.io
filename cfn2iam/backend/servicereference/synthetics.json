@@ -1,0 +1,283 @@
+{
+ "actions": {
+  "associateresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateResource",
+   "resources": [
+    "group"
+   ]
+  },
+  "createcanary": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCanary",
+   "resources": []
+  },
+  "creategroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGroup",
+   "resources": []
+  },
+  "deletecanary": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCanary",
+   "resources": [
+    "canary"
+   ]
+  },
+  "deletegroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "describecanaries": {
+   "conditionKeys": [
+    "synthetics:Names"
+   ],
+   "name": "DescribeCanaries",
+   "resources": []
+  },
+  "describecanarieslastrun": {
+   "conditionKeys": [
+    "synthetics:Names"
+   ],
+   "name": "DescribeCanariesLastRun",
+   "resources": []
+  },
+  "describeruntimeversions": {
+   "name": "DescribeRuntimeVersions",
+   "resources": []
+  },
+  "disassociateresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateResource",
+   "resources": [
+    "group"
+   ]
+  },
+  "getcanary": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetCanary",
+   "resources": [
+    "canary"
+   ]
+  },
+  "getcanaryruns": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetCanaryRuns",
+   "resources": [
+    "canary"
+   ]
+  },
+  "getgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "listassociatedgroups": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssociatedGroups",
+   "resources": [
+    "canary"
+   ]
+  },
+  "listgroupresources": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroupResources",
+   "resources": [
+    "group"
+   ]
+  },
+  "listgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroups",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "canary",
+    "group"
+   ]
+  },
+  "startcanary": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCanary",
+   "resources": [
+    "canary"
+   ]
+  },
+  "startcanarydryrun": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCanaryDryRun",
+   "resources": [
+    "canary"
+   ]
+  },
+  "stopcanary": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopCanary",
+   "resources": [
+    "canary"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "canary",
+    "group"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "canary",
+    "group"
+   ]
+  },
+  "updatecanary": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCanary",
+   "resources": [
+    "canary"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "synthetics:Names": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "canary": {
+   "arnFormats": [
+    "arn:${Partition}:synthetics:${Region}:${Account}:canary:${CanaryName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "group": {
+   "arnFormats": [
+    "arn:${Partition}:synthetics:${Region}:${Account}:group:${GroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "synthetics",
+ "serviceName": "CloudWatch Synthetics",
+ "version": "v1.5"
+}

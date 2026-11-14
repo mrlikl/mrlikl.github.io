@@ -1,0 +1,28 @@
+{
+ "actions": {
+  "getcarbonfootprintsummary": {
+   "name": "GetCarbonFootprintSummary",
+   "resources": []
+  },
+  "getestimatedcarbonemissions": {
+   "name": "GetEstimatedCarbonEmissions",
+   "resources": []
+  },
+  "getestimatedcarbonemissionsdimensionvalues": {
+   "name": "GetEstimatedCarbonEmissionsDimensionValues",
+   "resources": []
+  },
+  "getestimatedwaterallocation": {
+   "name": "GetEstimatedWaterAllocation",
+   "resources": []
+  },
+  "getestimatedwaterallocationdimensionvalues": {
+   "name": "GetEstimatedWaterAllocationDimensionValues",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "sustainability",
+ "serviceName": "Sustainability",
+ "version": "v1.5"
+}

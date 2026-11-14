@@ -1,0 +1,274 @@
+{
+ "actions": {
+  "backupdatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BackupDatabase",
+   "resources": []
+  },
+  "deleteresourcepermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePermission",
+   "resources": []
+  },
+  "deregisterapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "getapplication": {
+   "name": "GetApplication",
+   "resources": []
+  },
+  "getcomponent": {
+   "name": "GetComponent",
+   "resources": [
+    "component"
+   ]
+  },
+  "getconfigurationcheckoperation": {
+   "name": "GetConfigurationCheckOperation",
+   "resources": []
+  },
+  "getdatabase": {
+   "name": "GetDatabase",
+   "resources": []
+  },
+  "getoperation": {
+   "name": "GetOperation",
+   "resources": []
+  },
+  "getresourcepermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "GetResourcePermission",
+   "resources": []
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listcomponents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListComponents",
+   "resources": [
+    "application"
+   ]
+  },
+  "listconfigurationcheckdefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigurationCheckDefinitions",
+   "resources": []
+  },
+  "listconfigurationcheckoperations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigurationCheckOperations",
+   "resources": []
+  },
+  "listdatabases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatabases",
+   "resources": []
+  },
+  "listoperationevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOperationEvents",
+   "resources": []
+  },
+  "listoperations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOperations",
+   "resources": []
+  },
+  "listsubcheckresults": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubCheckResults",
+   "resources": []
+  },
+  "listsubcheckruleresults": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubCheckRuleResults",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "putresourcepermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePermission",
+   "resources": []
+  },
+  "registerapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterApplication",
+   "resources": []
+  },
+  "restoredatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreDatabase",
+   "resources": []
+  },
+  "startapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "startapplicationrefresh": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartApplicationRefresh",
+   "resources": [
+    "application"
+   ]
+  },
+  "startconfigurationchecks": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartConfigurationChecks",
+   "resources": []
+  },
+  "stopapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "application",
+    "component",
+    "database"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "application",
+    "component",
+    "database"
+   ]
+  },
+  "updateapplicationsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplicationSettings",
+   "resources": [
+    "application"
+   ]
+  },
+  "updatehanabackupsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHANABackupSettings",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:ssm-sap:${Region}:${Account}:${ApplicationType}/${ApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "component": {
+   "arnFormats": [
+    "arn:${Partition}:ssm-sap:${Region}:${Account}:${ApplicationType}/${ApplicationId}/COMPONENT/${ComponentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "database": {
+   "arnFormats": [
+    "arn:${Partition}:ssm-sap:${Region}:${Account}:${ApplicationType}/${ApplicationId}/DB/${DatabaseId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "ssm-sap",
+ "serviceName": "Systems Manager for SAP",
+ "version": "v1.5"
+}

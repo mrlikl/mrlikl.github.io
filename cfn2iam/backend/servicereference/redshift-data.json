@@ -1,0 +1,153 @@
+{
+ "actions": {
+  "batchexecutestatement": {
+   "conditionKeys": [
+    "redshift-data:glue-catalog-arn",
+    "redshift-data:session-owner-iam-userid"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchExecuteStatement",
+   "resources": [
+    "cluster",
+    "workgroup"
+   ]
+  },
+  "cancelstatement": {
+   "conditionKeys": [
+    "redshift-data:statement-owner-iam-userid"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelStatement",
+   "resources": []
+  },
+  "describestatement": {
+   "conditionKeys": [
+    "redshift-data:statement-owner-iam-userid"
+   ],
+   "name": "DescribeStatement",
+   "resources": []
+  },
+  "describetable": {
+   "name": "DescribeTable",
+   "resources": [
+    "cluster",
+    "workgroup"
+   ]
+  },
+  "executestatement": {
+   "conditionKeys": [
+    "redshift-data:glue-catalog-arn",
+    "redshift-data:session-owner-iam-userid"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExecuteStatement",
+   "resources": [
+    "cluster",
+    "workgroup"
+   ]
+  },
+  "getstagingbucketlocation": {
+   "name": "GetStagingBucketLocation",
+   "resources": [
+    "managed-workgroup"
+   ]
+  },
+  "getstatementresult": {
+   "conditionKeys": [
+    "redshift-data:statement-owner-iam-userid"
+   ],
+   "name": "GetStatementResult",
+   "resources": []
+  },
+  "listdatabases": {
+   "name": "ListDatabases",
+   "resources": [
+    "cluster",
+    "workgroup"
+   ]
+  },
+  "listschemas": {
+   "name": "ListSchemas",
+   "resources": [
+    "cluster",
+    "workgroup"
+   ]
+  },
+  "listsessions": {
+   "conditionKeys": [
+    "redshift-data:session-owner-iam-userid"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSessions",
+   "resources": []
+  },
+  "liststatements": {
+   "conditionKeys": [
+    "redshift-data:statement-owner-iam-userid"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStatements",
+   "resources": []
+  },
+  "listtables": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTables",
+   "resources": [
+    "cluster",
+    "workgroup"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "redshift-data:glue-catalog-arn": [
+   "ARN"
+  ],
+  "redshift-data:session-owner-iam-userid": [
+   "String"
+  ],
+  "redshift-data:statement-owner-iam-userid": [
+   "String"
+  ]
+ },
+ "resources": {
+  "cluster": {
+   "arnFormats": [
+    "arn:${Partition}:redshift:${Region}:${Account}:cluster:${ClusterName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "managed-workgroup": {
+   "arnFormats": [
+    "arn:${Partition}:redshift-serverless:${Region}:${Account}:managed-workgroup/${ManagedWorkgroupId}"
+   ]
+  },
+  "workgroup": {
+   "arnFormats": [
+    "arn:${Partition}:redshift-serverless:${Region}:${Account}:workgroup/${WorkgroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "redshift-data",
+ "serviceName": "Redshift Data API",
+ "version": "v1.5"
+}

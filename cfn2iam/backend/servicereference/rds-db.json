@@ -1,0 +1,37 @@
+{
+ "actions": {
+  "connect": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "connect",
+   "resourceConditionKeys": {
+    "db-user": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "db-user"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ]
+ },
+ "resources": {
+  "db-user": {
+   "arnFormats": [
+    "arn:${Partition}:rds-db:${Region}:${Account}:dbuser:${DbiResourceId}/${DbUserName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "rds-db",
+ "serviceName": "RDS IAM Authentication",
+ "version": "v1.5"
+}

@@ -1,0 +1,843 @@
+{
+ "actions": {
+  "abortmultipartupload": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AbortMultipartUpload",
+   "resources": [
+    "object"
+   ]
+  },
+  "createaccesspoint": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessPoint",
+   "resources": [
+    "accesspoint"
+   ]
+  },
+  "createbucket": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBucket",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "createendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEndpoint",
+   "resources": [
+    "endpoint"
+   ]
+  },
+  "deleteaccesspoint": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccessPoint",
+   "resources": [
+    "accesspoint"
+   ]
+  },
+  "deleteaccesspointpolicy": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteAccessPointPolicy",
+   "resources": [
+    "accesspoint"
+   ]
+  },
+  "deletebucket": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBucket",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "deletebucketpolicy": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteBucketPolicy",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "deleteendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEndpoint",
+   "resources": [
+    "endpoint"
+   ]
+  },
+  "deleteobject": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteObject",
+   "resources": [
+    "object"
+   ]
+  },
+  "deleteobjecttagging": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:ExistingObjectTag/<key>",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "DeleteObjectTagging",
+   "resources": [
+    "object"
+   ]
+  },
+  "deleteobjectversion": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:versionid",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteObjectVersion",
+   "resources": [
+    "object"
+   ]
+  },
+  "deleteobjectversiontagging": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:ExistingObjectTag/<key>",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:versionid",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "DeleteObjectVersionTagging",
+   "resources": [
+    "object"
+   ]
+  },
+  "getaccesspoint": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "name": "GetAccessPoint",
+   "resources": []
+  },
+  "getaccesspointpolicy": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "name": "GetAccessPointPolicy",
+   "resources": [
+    "accesspoint"
+   ]
+  },
+  "getbucket": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "name": "GetBucket",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "getbucketpolicy": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "name": "GetBucketPolicy",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "getbuckettagging": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "name": "GetBucketTagging",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "getbucketversioning": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "name": "GetBucketVersioning",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "getlifecycleconfiguration": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "name": "GetLifecycleConfiguration",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "getobject": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:ExistingObjectTag/<key>",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "name": "GetObject",
+   "resources": [
+    "object"
+   ]
+  },
+  "getobjecttagging": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:ExistingObjectTag/<key>",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "name": "GetObjectTagging",
+   "resources": [
+    "object"
+   ]
+  },
+  "getobjectversion": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:ExistingObjectTag/<key>",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:versionid",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "name": "GetObjectVersion",
+   "resources": [
+    "object"
+   ]
+  },
+  "getobjectversionforreplication": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "name": "GetObjectVersionForReplication",
+   "resources": [
+    "object"
+   ]
+  },
+  "getobjectversiontagging": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:ExistingObjectTag/<key>",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:versionid",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "name": "GetObjectVersionTagging",
+   "resources": [
+    "object"
+   ]
+  },
+  "getreplicationconfiguration": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "name": "GetReplicationConfiguration",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "listaccesspoints": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessPoints",
+   "resources": []
+  },
+  "listbucket": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:authType",
+    "s3-outposts:delimiter",
+    "s3-outposts:max-keys",
+    "s3-outposts:prefix",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBucket",
+   "resources": [
+    "accesspoint",
+    "bucket"
+   ]
+  },
+  "listbucketmultipartuploads": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBucketMultipartUploads",
+   "resources": [
+    "accesspoint",
+    "bucket"
+   ]
+  },
+  "listbucketversions": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:authType",
+    "s3-outposts:delimiter",
+    "s3-outposts:max-keys",
+    "s3-outposts:prefix",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBucketVersions",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "listendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEndpoints",
+   "resources": []
+  },
+  "listmultipartuploadparts": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMultipartUploadParts",
+   "resources": [
+    "object"
+   ]
+  },
+  "listoutpostswiths3": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOutpostsWithS3",
+   "resources": []
+  },
+  "listregionalbuckets": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRegionalBuckets",
+   "resources": []
+  },
+  "listsharedendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSharedEndpoints",
+   "resources": []
+  },
+  "putaccesspointpolicy": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutAccessPointPolicy",
+   "resources": [
+    "accesspoint"
+   ]
+  },
+  "putbucketpolicy": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutBucketPolicy",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "putbuckettagging": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "PutBucketTagging",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "putbucketversioning": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutBucketVersioning",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "putlifecycleconfiguration": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLifecycleConfiguration",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "putobject": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:RequestObjectTag/<key>",
+    "s3-outposts:RequestObjectTagKeys",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-acl",
+    "s3-outposts:x-amz-content-sha256",
+    "s3-outposts:x-amz-copy-source",
+    "s3-outposts:x-amz-metadata-directive",
+    "s3-outposts:x-amz-server-side-encryption",
+    "s3-outposts:x-amz-storage-class"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutObject",
+   "resources": [
+    "object"
+   ]
+  },
+  "putobjectacl": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:ExistingObjectTag/<key>",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-acl",
+    "s3-outposts:x-amz-content-sha256",
+    "s3-outposts:x-amz-storage-class"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutObjectAcl",
+   "resources": [
+    "object"
+   ]
+  },
+  "putobjecttagging": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:ExistingObjectTag/<key>",
+    "s3-outposts:RequestObjectTag/<key>",
+    "s3-outposts:RequestObjectTagKeys",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "PutObjectTagging",
+   "resources": [
+    "object"
+   ]
+  },
+  "putobjectversiontagging": {
+   "conditionKeys": [
+    "s3-outposts:AccessPointNetworkOrigin",
+    "s3-outposts:DataAccessPointAccount",
+    "s3-outposts:DataAccessPointArn",
+    "s3-outposts:ExistingObjectTag/<key>",
+    "s3-outposts:RequestObjectTag/<key>",
+    "s3-outposts:RequestObjectTagKeys",
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:versionid",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "PutObjectVersionTagging",
+   "resources": [
+    "object"
+   ]
+  },
+  "putreplicationconfiguration": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutReplicationConfiguration",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "replicatedelete": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReplicateDelete",
+   "resources": [
+    "object"
+   ]
+  },
+  "replicateobject": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256",
+    "s3-outposts:x-amz-server-side-encryption"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReplicateObject",
+   "resources": [
+    "object"
+   ]
+  },
+  "replicatetags": {
+   "conditionKeys": [
+    "s3-outposts:authType",
+    "s3-outposts:signatureAge",
+    "s3-outposts:signatureversion",
+    "s3-outposts:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "ReplicateTags",
+   "resources": [
+    "object"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "s3-outposts:AccessPointNetworkOrigin": [
+   "String"
+  ],
+  "s3-outposts:DataAccessPointAccount": [
+   "String"
+  ],
+  "s3-outposts:DataAccessPointArn": [
+   "ARN"
+  ],
+  "s3-outposts:ExistingObjectTag/<key>": [
+   "String"
+  ],
+  "s3-outposts:RequestObjectTag/<key>": [
+   "String"
+  ],
+  "s3-outposts:RequestObjectTagKeys": [
+   "String"
+  ],
+  "s3-outposts:authType": [
+   "String"
+  ],
+  "s3-outposts:delimiter": [
+   "String"
+  ],
+  "s3-outposts:max-keys": [
+   "Numeric"
+  ],
+  "s3-outposts:prefix": [
+   "String"
+  ],
+  "s3-outposts:signatureAge": [
+   "Numeric"
+  ],
+  "s3-outposts:signatureversion": [
+   "String"
+  ],
+  "s3-outposts:versionid": [
+   "String"
+  ],
+  "s3-outposts:x-amz-acl": [
+   "String"
+  ],
+  "s3-outposts:x-amz-content-sha256": [
+   "String"
+  ],
+  "s3-outposts:x-amz-copy-source": [
+   "String"
+  ],
+  "s3-outposts:x-amz-metadata-directive": [
+   "String"
+  ],
+  "s3-outposts:x-amz-server-side-encryption": [
+   "String"
+  ],
+  "s3-outposts:x-amz-storage-class": [
+   "String"
+  ]
+ },
+ "resources": {
+  "accesspoint": {
+   "arnFormats": [
+    "arn:${Partition}:s3-outposts:${Region}:${Account}:outpost/${OutpostId}/accesspoint/${AccessPointName}"
+   ]
+  },
+  "bucket": {
+   "arnFormats": [
+    "arn:${Partition}:s3-outposts:${Region}:${Account}:outpost/${OutpostId}/bucket/${BucketName}"
+   ]
+  },
+  "endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:s3-outposts:${Region}:${Account}:outpost/${OutpostId}/endpoint/${EndpointId}"
+   ]
+  },
+  "object": {
+   "arnFormats": [
+    "arn:${Partition}:s3-outposts:${Region}:${Account}:outpost/${OutpostId}/bucket/${BucketName}/object/${ObjectName}"
+   ]
+  }
+ },
+ "service": "s3-outposts",
+ "serviceName": "S3 Outposts",
+ "version": "v1.5"
+}

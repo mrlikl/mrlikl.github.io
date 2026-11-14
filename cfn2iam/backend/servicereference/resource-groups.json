@@ -1,0 +1,277 @@
+{
+ "actions": {
+  "associateresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateResource",
+   "resources": [
+    "group"
+   ]
+  },
+  "canceltagsynctask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelTagSyncTask",
+   "resources": [
+    "group"
+   ]
+  },
+  "creategroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGroup",
+   "resources": []
+  },
+  "deletegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "deletegrouppolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGroupPolicy",
+   "resources": [
+    "group"
+   ]
+  },
+  "disassociateresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateResource",
+   "resources": [
+    "group"
+   ]
+  },
+  "getaccountsettings": {
+   "name": "GetAccountSettings",
+   "resources": []
+  },
+  "getgroup": {
+   "name": "GetGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "getgroupconfiguration": {
+   "name": "GetGroupConfiguration",
+   "resources": [
+    "group"
+   ]
+  },
+  "getgrouppolicy": {
+   "name": "GetGroupPolicy",
+   "resources": [
+    "group"
+   ]
+  },
+  "getgroupquery": {
+   "name": "GetGroupQuery",
+   "resources": [
+    "group"
+   ]
+  },
+  "gettags": {
+   "name": "GetTags",
+   "resources": [
+    "group"
+   ]
+  },
+  "gettagsynctask": {
+   "name": "GetTagSyncTask",
+   "resources": [
+    "group"
+   ]
+  },
+  "groupresources": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GroupResources",
+   "resources": [
+    "group"
+   ]
+  },
+  "listgroupingstatuses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroupingStatuses",
+   "resources": [
+    "group"
+   ]
+  },
+  "listgroupresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroupResources",
+   "resources": [
+    "group"
+   ]
+  },
+  "listgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroups",
+   "resources": []
+  },
+  "listresourcetypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceTypes",
+   "resources": []
+  },
+  "listtagsynctasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagSyncTasks",
+   "resources": [
+    "group"
+   ]
+  },
+  "putgroupconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutGroupConfiguration",
+   "resources": [
+    "group"
+   ]
+  },
+  "putgrouppolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutGroupPolicy",
+   "resources": [
+    "group"
+   ]
+  },
+  "searchresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchResources",
+   "resources": []
+  },
+  "starttagsynctask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTagSyncTask",
+   "resources": [
+    "group"
+   ]
+  },
+  "tag": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "Tag",
+   "resources": [
+    "group"
+   ]
+  },
+  "ungroupresources": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UngroupResources",
+   "resources": [
+    "group"
+   ]
+  },
+  "untag": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "Untag",
+   "resources": [
+    "group"
+   ]
+  },
+  "updateaccountsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountSettings",
+   "resources": []
+  },
+  "updategroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "updategroupquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGroupQuery",
+   "resources": [
+    "group"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "group": {
+   "arnFormats": [
+    "arn:${Partition}:resource-groups:${Region}:${Account}:group/${GroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "tagSyncTask": {
+   "arnFormats": [
+    "arn:${Partition}:resource-groups:${Region}:${Account}:group/${GroupName}/tag-sync-task/${TaskId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "resource-groups",
+ "serviceName": "Resource Groups",
+ "version": "v1.5"
+}

@@ -1,0 +1,157 @@
+{
+ "actions": {
+  "canceljob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "createjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateJob",
+   "resources": [
+    "pipeline",
+    "preset"
+   ]
+  },
+  "createpipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePipeline",
+   "resources": []
+  },
+  "createpreset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePreset",
+   "resources": []
+  },
+  "deletepipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "deletepreset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePreset",
+   "resources": [
+    "preset"
+   ]
+  },
+  "listjobsbypipeline": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobsByPipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "listjobsbystatus": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobsByStatus",
+   "resources": []
+  },
+  "listpipelines": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPipelines",
+   "resources": []
+  },
+  "listpresets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPresets",
+   "resources": []
+  },
+  "readjob": {
+   "name": "ReadJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "readpipeline": {
+   "name": "ReadPipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "readpreset": {
+   "name": "ReadPreset",
+   "resources": [
+    "preset"
+   ]
+  },
+  "testrole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TestRole",
+   "resources": []
+  },
+  "updatepipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "updatepipelinenotifications": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePipelineNotifications",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "updatepipelinestatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePipelineStatus",
+   "resources": [
+    "pipeline"
+   ]
+  }
+ },
+ "resources": {
+  "job": {
+   "arnFormats": [
+    "arn:${Partition}:elastictranscoder:${Region}:${Account}:job/${JobId}"
+   ]
+  },
+  "pipeline": {
+   "arnFormats": [
+    "arn:${Partition}:elastictranscoder:${Region}:${Account}:pipeline/${PipelineId}"
+   ]
+  },
+  "preset": {
+   "arnFormats": [
+    "arn:${Partition}:elastictranscoder:${Region}:${Account}:preset/${PresetId}"
+   ]
+  }
+ },
+ "service": "elastictranscoder",
+ "serviceName": "Elastic Transcoder",
+ "version": "v1.5"
+}

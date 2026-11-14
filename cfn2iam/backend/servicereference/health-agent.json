@@ -1,0 +1,515 @@
+{
+ "actions": {
+  "activatesubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivateSubscription",
+   "resources": [
+    "Domain",
+    "Subscription"
+   ]
+  },
+  "batchrefillpatientpharmacyprescriptions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchRefillPatientPharmacyPrescriptions",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "cancelappointment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelAppointment",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "createagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgent",
+   "resources": [
+    "Agent",
+    "Domain"
+   ]
+  },
+  "createdomain": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomain",
+   "resources": []
+  },
+  "createintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIntegration",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "createsession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSession",
+   "resources": [
+    "Agent",
+    "Domain",
+    "Session"
+   ]
+  },
+  "createsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSubscription",
+   "resources": [
+    "Domain",
+    "Subscription"
+   ]
+  },
+  "deactivatesubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeactivateSubscription",
+   "resources": [
+    "Domain",
+    "Subscription"
+   ]
+  },
+  "deleteagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgent",
+   "resources": [
+    "Agent",
+    "Domain"
+   ]
+  },
+  "deletedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomain",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "deleteintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIntegration",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "getagent": {
+   "name": "GetAgent",
+   "resources": [
+    "Agent",
+    "Domain"
+   ]
+  },
+  "getcareteamprovider": {
+   "name": "GetCareTeamProvider",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "getdomain": {
+   "name": "GetDomain",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "getdomainanalytics": {
+   "name": "GetDomainAnalytics",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "getintegration": {
+   "name": "GetIntegration",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "getmedicalscribelisteningsession": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetMedicalScribeListeningSession",
+   "resources": [
+    "Domain",
+    "Subscription"
+   ]
+  },
+  "getpatient": {
+   "name": "GetPatient",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "getpatientinsightsjob": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetPatientInsightsJob",
+   "resources": [
+    "Domain",
+    "PatientInsightsJob"
+   ]
+  },
+  "getpractitioner": {
+   "name": "GetPractitioner",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "getsessioncontext": {
+   "name": "GetSessionContext",
+   "resources": [
+    "Domain",
+    "Session"
+   ]
+  },
+  "getsubscription": {
+   "name": "GetSubscription",
+   "resources": [
+    "Domain",
+    "Subscription"
+   ]
+  },
+  "invokeagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeAgent",
+   "resources": [
+    "Domain",
+    "Session"
+   ]
+  },
+  "listagents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgents",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "listappointmentslots": {
+   "name": "ListAppointmentSlots",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "listdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomains",
+   "resources": []
+  },
+  "listintegrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIntegrations",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "listpatientappointments": {
+   "name": "ListPatientAppointments",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "listpatientinsurancecoverages": {
+   "name": "ListPatientInsuranceCoverages",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "listpatientmedications": {
+   "name": "ListPatientMedications",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "listpatientpharmacyprescriptions": {
+   "name": "ListPatientPharmacyPrescriptions",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "listproviders": {
+   "name": "ListProviders",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "listsessionrecords": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSessionRecords",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "listsubscriptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubscriptions",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "matchpatient": {
+   "name": "MatchPatient",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "publishagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PublishAgent",
+   "resources": [
+    "Agent",
+    "Domain"
+   ]
+  },
+  "rescheduleappointment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RescheduleAppointment",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "resetpassword": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetPassword",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "scheduleappointment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ScheduleAppointment",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "startmedicalscribelisteningsession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartMedicalScribeListeningSession",
+   "resources": [
+    "Domain",
+    "Subscription"
+   ]
+  },
+  "startpatientinsightsjob": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartPatientInsightsJob",
+   "resources": [
+    "Domain",
+    "PatientInsightsJob"
+   ]
+  },
+  "submitmedicationrenewal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitMedicationRenewal",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "Domain": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "Domain"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Domain"
+   ]
+  },
+  "updateagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgent",
+   "resources": [
+    "Agent",
+    "Domain"
+   ]
+  },
+  "updateintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIntegration",
+   "resources": [
+    "Domain",
+    "Integration"
+   ]
+  },
+  "updatesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSession",
+   "resources": [
+    "Domain",
+    "Session"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Agent": {
+   "arnFormats": [
+    "arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}/agent/${AgentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Domain": {
+   "arnFormats": [
+    "arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Integration": {
+   "arnFormats": [
+    "arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}/integration/${IntegrationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "PatientInsightsJob": {
+   "arnFormats": [
+    "arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}/patient-insights-job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Session": {
+   "arnFormats": [
+    "arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}/session/${SessionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Subscription": {
+   "arnFormats": [
+    "arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}/subscription/${SubscriptionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "health-agent",
+ "serviceName": "Connect Health",
+ "version": "v1.5"
+}

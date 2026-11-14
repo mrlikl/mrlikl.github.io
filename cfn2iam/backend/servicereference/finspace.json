@@ -1,0 +1,654 @@
+{
+ "actions": {
+  "connectkxcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConnectKxCluster",
+   "resources": [
+    "kxCluster"
+   ]
+  },
+  "createenvironment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createkxchangeset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKxChangeset",
+   "resources": [
+    "kxDatabase"
+   ]
+  },
+  "createkxcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKxCluster",
+   "resources": [
+    "kxCluster"
+   ]
+  },
+  "createkxdatabase": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKxDatabase",
+   "resources": [
+    "kxDatabase"
+   ]
+  },
+  "createkxdataview": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKxDataview",
+   "resources": [
+    "kxDataview"
+   ]
+  },
+  "createkxenvironment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKxEnvironment",
+   "resources": []
+  },
+  "createkxscalinggroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKxScalingGroup",
+   "resources": [
+    "kxScalingGroup"
+   ]
+  },
+  "createkxuser": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKxUser",
+   "resources": [
+    "kxEnvironment"
+   ]
+  },
+  "createkxvolume": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKxVolume",
+   "resources": [
+    "kxVolume"
+   ]
+  },
+  "createuser": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUser",
+   "resources": [
+    "environment",
+    "user"
+   ]
+  },
+  "deleteenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deletekxcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKxCluster",
+   "resources": [
+    "kxCluster"
+   ]
+  },
+  "deletekxclusternode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKxClusterNode",
+   "resources": [
+    "kxCluster"
+   ]
+  },
+  "deletekxdatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKxDatabase",
+   "resources": [
+    "kxDatabase"
+   ]
+  },
+  "deletekxdataview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKxDataview",
+   "resources": [
+    "kxDataview"
+   ]
+  },
+  "deletekxenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKxEnvironment",
+   "resources": [
+    "kxEnvironment"
+   ]
+  },
+  "deletekxscalinggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKxScalingGroup",
+   "resources": [
+    "kxScalingGroup"
+   ]
+  },
+  "deletekxuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKxUser",
+   "resources": [
+    "kxUser"
+   ]
+  },
+  "deletekxvolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKxVolume",
+   "resources": [
+    "kxVolume"
+   ]
+  },
+  "getenvironment": {
+   "name": "GetEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getkxchangeset": {
+   "name": "GetKxChangeset",
+   "resources": [
+    "kxDatabase"
+   ]
+  },
+  "getkxcluster": {
+   "name": "GetKxCluster",
+   "resources": [
+    "kxCluster"
+   ]
+  },
+  "getkxconnectionstring": {
+   "name": "GetKxConnectionString",
+   "resources": [
+    "kxCluster"
+   ]
+  },
+  "getkxdatabase": {
+   "name": "GetKxDatabase",
+   "resources": [
+    "kxDatabase"
+   ]
+  },
+  "getkxdataview": {
+   "name": "GetKxDataview",
+   "resources": [
+    "kxDataview"
+   ]
+  },
+  "getkxenvironment": {
+   "name": "GetKxEnvironment",
+   "resources": [
+    "kxEnvironment"
+   ]
+  },
+  "getkxscalinggroup": {
+   "name": "GetKxScalingGroup",
+   "resources": [
+    "kxScalingGroup"
+   ]
+  },
+  "getkxuser": {
+   "name": "GetKxUser",
+   "resources": [
+    "kxUser"
+   ]
+  },
+  "getkxvolume": {
+   "name": "GetKxVolume",
+   "resources": [
+    "kxVolume"
+   ]
+  },
+  "getloadsampledatasetgroupintoenvironmentstatus": {
+   "name": "GetLoadSampleDataSetGroupIntoEnvironmentStatus",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getuser": {
+   "name": "GetUser",
+   "resources": [
+    "environment",
+    "user"
+   ]
+  },
+  "listenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironments",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listkxchangesets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKxChangesets",
+   "resources": [
+    "kxDatabase"
+   ]
+  },
+  "listkxclusternodes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKxClusterNodes",
+   "resources": [
+    "kxCluster"
+   ]
+  },
+  "listkxclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKxClusters",
+   "resources": [
+    "kxEnvironment"
+   ]
+  },
+  "listkxdatabases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKxDatabases",
+   "resources": [
+    "kxEnvironment"
+   ]
+  },
+  "listkxdataviews": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKxDataviews",
+   "resources": [
+    "kxDatabase"
+   ]
+  },
+  "listkxenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKxEnvironments",
+   "resources": []
+  },
+  "listkxscalinggroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKxScalingGroups",
+   "resources": [
+    "kxEnvironment"
+   ]
+  },
+  "listkxusers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKxUsers",
+   "resources": [
+    "kxEnvironment"
+   ]
+  },
+  "listkxvolumes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKxVolumes",
+   "resources": [
+    "kxEnvironment"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "environment",
+    "kxCluster",
+    "kxDatabase",
+    "kxDataview",
+    "kxEnvironment",
+    "kxScalingGroup",
+    "kxUser",
+    "kxVolume"
+   ]
+  },
+  "listusers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsers",
+   "resources": [
+    "environment",
+    "user"
+   ]
+  },
+  "loadsampledatasetgroupintoenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LoadSampleDataSetGroupIntoEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "mountkxdatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MountKxDatabase",
+   "resources": [
+    "kxDatabase"
+   ]
+  },
+  "resetuserpassword": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetUserPassword",
+   "resources": [
+    "environment",
+    "user"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "environment",
+    "kxCluster",
+    "kxDatabase",
+    "kxDataview",
+    "kxEnvironment",
+    "kxScalingGroup",
+    "kxUser",
+    "kxVolume"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "environment",
+    "kxCluster",
+    "kxDatabase",
+    "kxDataview",
+    "kxEnvironment",
+    "kxScalingGroup",
+    "kxUser",
+    "kxVolume"
+   ]
+  },
+  "updateenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "updatekxclustercodeconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKxClusterCodeConfiguration",
+   "resources": [
+    "kxCluster"
+   ]
+  },
+  "updatekxclusterdatabases": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKxClusterDatabases",
+   "resources": [
+    "kxCluster"
+   ]
+  },
+  "updatekxdatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKxDatabase",
+   "resources": [
+    "kxDatabase"
+   ]
+  },
+  "updatekxdataview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKxDataview",
+   "resources": [
+    "kxDataview"
+   ]
+  },
+  "updatekxenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKxEnvironment",
+   "resources": [
+    "kxEnvironment"
+   ]
+  },
+  "updatekxenvironmentnetwork": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKxEnvironmentNetwork",
+   "resources": [
+    "kxEnvironment"
+   ]
+  },
+  "updatekxuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKxUser",
+   "resources": [
+    "kxUser"
+   ]
+  },
+  "updatekxvolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKxVolume",
+   "resources": [
+    "kxVolume"
+   ]
+  },
+  "updateuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUser",
+   "resources": [
+    "environment",
+    "user"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "environment": {
+   "arnFormats": [
+    "arn:${Partition}:finspace:${Region}:${Account}:environment/${EnvironmentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "kxCluster": {
+   "arnFormats": [
+    "arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}/kxCluster/${KxCluster}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "kxDatabase": {
+   "arnFormats": [
+    "arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}/kxDatabase/${KxDatabase}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "kxDataview": {
+   "arnFormats": [
+    "arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}/kxDatabase/${KxDatabase}/kxDataview/${KxDataview}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "kxEnvironment": {
+   "arnFormats": [
+    "arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "kxScalingGroup": {
+   "arnFormats": [
+    "arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}/kxScalingGroup/${KxScalingGroup}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "kxUser": {
+   "arnFormats": [
+    "arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}/kxUser/${UserName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "kxVolume": {
+   "arnFormats": [
+    "arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}/kxVolume/${KxVolume}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "user": {
+   "arnFormats": [
+    "arn:${Partition}:finspace:${Region}:${Account}:user/${UserId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "finspace",
+ "serviceName": "FinSpace",
+ "version": "v1.5"
+}

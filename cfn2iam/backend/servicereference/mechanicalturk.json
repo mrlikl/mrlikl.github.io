@@ -1,0 +1,263 @@
+{
+ "actions": {
+  "acceptqualificationrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptQualificationRequest",
+   "resources": []
+  },
+  "approveassignment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ApproveAssignment",
+   "resources": []
+  },
+  "associatequalificationwithworker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateQualificationWithWorker",
+   "resources": []
+  },
+  "createadditionalassignmentsforhit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAdditionalAssignmentsForHIT",
+   "resources": []
+  },
+  "createhit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHIT",
+   "resources": []
+  },
+  "createhittype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHITType",
+   "resources": []
+  },
+  "createhitwithhittype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHITWithHITType",
+   "resources": []
+  },
+  "createqualificationtype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQualificationType",
+   "resources": []
+  },
+  "createworkerblock": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkerBlock",
+   "resources": []
+  },
+  "deletehit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteHIT",
+   "resources": []
+  },
+  "deletequalificationtype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQualificationType",
+   "resources": []
+  },
+  "deleteworkerblock": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkerBlock",
+   "resources": []
+  },
+  "disassociatequalificationfromworker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateQualificationFromWorker",
+   "resources": []
+  },
+  "getaccountbalance": {
+   "name": "GetAccountBalance",
+   "resources": []
+  },
+  "getassignment": {
+   "name": "GetAssignment",
+   "resources": []
+  },
+  "getfileuploadurl": {
+   "name": "GetFileUploadURL",
+   "resources": []
+  },
+  "gethit": {
+   "name": "GetHIT",
+   "resources": []
+  },
+  "getqualificationscore": {
+   "name": "GetQualificationScore",
+   "resources": []
+  },
+  "getqualificationtype": {
+   "name": "GetQualificationType",
+   "resources": []
+  },
+  "listassignmentsforhit": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssignmentsForHIT",
+   "resources": []
+  },
+  "listbonuspayments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBonusPayments",
+   "resources": []
+  },
+  "listhits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHITs",
+   "resources": []
+  },
+  "listhitsforqualificationtype": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHITsForQualificationType",
+   "resources": []
+  },
+  "listqualificationrequests": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQualificationRequests",
+   "resources": []
+  },
+  "listqualificationtypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQualificationTypes",
+   "resources": []
+  },
+  "listreviewablehits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReviewableHITs",
+   "resources": []
+  },
+  "listreviewpolicyresultsforhit": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReviewPolicyResultsForHIT",
+   "resources": []
+  },
+  "listworkerblocks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkerBlocks",
+   "resources": []
+  },
+  "listworkerswithqualificationtype": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkersWithQualificationType",
+   "resources": []
+  },
+  "notifyworkers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyWorkers",
+   "resources": []
+  },
+  "rejectassignment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectAssignment",
+   "resources": []
+  },
+  "rejectqualificationrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectQualificationRequest",
+   "resources": []
+  },
+  "sendbonus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendBonus",
+   "resources": []
+  },
+  "sendtesteventnotification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendTestEventNotification",
+   "resources": []
+  },
+  "updateexpirationforhit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExpirationForHIT",
+   "resources": []
+  },
+  "updatehitreviewstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHITReviewStatus",
+   "resources": []
+  },
+  "updatehittypeofhit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHITTypeOfHIT",
+   "resources": []
+  },
+  "updatenotificationsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotificationSettings",
+   "resources": []
+  },
+  "updatequalificationtype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQualificationType",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "mechanicalturk",
+ "serviceName": "MechanicalTurk",
+ "version": "v1.5"
+}

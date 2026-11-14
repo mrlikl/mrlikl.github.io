@@ -1,0 +1,256 @@
+{
+ "actions": {
+  "batchgetmemberaccountdetails": {
+   "name": "BatchGetMemberAccountDetails",
+   "resources": [
+    "membership"
+   ]
+  },
+  "cancelmembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelMembership",
+   "resources": [
+    "membership"
+   ]
+  },
+  "closecase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CloseCase",
+   "resources": [
+    "case"
+   ]
+  },
+  "createcase": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCase",
+   "resources": [
+    "case"
+   ]
+  },
+  "createcasecomment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCaseComment",
+   "resources": [
+    "case"
+   ]
+  },
+  "createmembership": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMembership",
+   "resources": [
+    "membership"
+   ]
+  },
+  "getcase": {
+   "name": "GetCase",
+   "resources": [
+    "case"
+   ]
+  },
+  "getcaseattachmentdownloadurl": {
+   "name": "GetCaseAttachmentDownloadUrl",
+   "resources": [
+    "case"
+   ]
+  },
+  "getcaseattachmentuploadurl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetCaseAttachmentUploadUrl",
+   "resources": [
+    "case"
+   ]
+  },
+  "getfindingmetrics": {
+   "name": "GetFindingMetrics",
+   "resources": [
+    "membership"
+   ]
+  },
+  "getmembership": {
+   "name": "GetMembership",
+   "resources": [
+    "membership"
+   ]
+  },
+  "listcaseedits": {
+   "name": "ListCaseEdits",
+   "resources": [
+    "case"
+   ]
+  },
+  "listcases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCases",
+   "resources": []
+  },
+  "listcomments": {
+   "name": "ListComments",
+   "resources": [
+    "case"
+   ]
+  },
+  "listinvestigations": {
+   "name": "ListInvestigations",
+   "resources": [
+    "case"
+   ]
+  },
+  "listmemberships": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMemberships",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "case",
+    "membership"
+   ]
+  },
+  "sendfeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendFeedback",
+   "resources": [
+    "case"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "case",
+    "membership"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "case",
+    "membership"
+   ]
+  },
+  "updatecase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCase",
+   "resources": [
+    "case"
+   ]
+  },
+  "updatecasecomment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCaseComment",
+   "resources": [
+    "case"
+   ]
+  },
+  "updatecasestatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCaseStatus",
+   "resources": [
+    "case"
+   ]
+  },
+  "updatemembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMembership",
+   "resources": [
+    "membership"
+   ]
+  },
+  "updateresolvertype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResolverType",
+   "resources": [
+    "case"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "case": {
+   "arnFormats": [
+    "arn:${Partition}:security-ir:${Region}:${Account}:case/${CaseId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "membership": {
+   "arnFormats": [
+    "arn:${Partition}:security-ir:${Region}:${Account}:membership/${MembershipId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "security-ir",
+ "serviceName": "Security Incident Response",
+ "version": "v1.5"
+}

@@ -1,0 +1,193 @@
+{
+ "actions": {
+  "createlink": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "oam:ResourceTypes"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLink",
+   "resources": [
+    "Sink"
+   ]
+  },
+  "createsink": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSink",
+   "resources": []
+  },
+  "deletelink": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLink",
+   "resources": [
+    "Link"
+   ]
+  },
+  "deletesink": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSink",
+   "resources": [
+    "Sink"
+   ]
+  },
+  "getlink": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetLink",
+   "resources": [
+    "Link"
+   ]
+  },
+  "getsink": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSink",
+   "resources": [
+    "Sink"
+   ]
+  },
+  "getsinkpolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSinkPolicy",
+   "resources": [
+    "Sink"
+   ]
+  },
+  "listattachedlinks": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListAttachedLinks",
+   "resources": [
+    "Sink"
+   ]
+  },
+  "listlinks": {
+   "name": "ListLinks",
+   "resources": []
+  },
+  "listsinks": {
+   "name": "ListSinks",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "Link",
+    "Sink"
+   ]
+  },
+  "putsinkpolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSinkPolicy",
+   "resources": [
+    "Sink"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Link",
+    "Sink"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Link",
+    "Sink"
+   ]
+  },
+  "updatelink": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "oam:ResourceTypes"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLink",
+   "resources": [
+    "Link"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "oam:ResourceTypes": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Link": {
+   "arnFormats": [
+    "arn:${Partition}:oam:${Region}:${Account}:link/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Sink": {
+   "arnFormats": [
+    "arn:${Partition}:oam:${Region}:${Account}:sink/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "oam",
+ "serviceName": "OAM",
+ "version": "v1.5"
+}

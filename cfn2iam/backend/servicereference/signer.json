@@ -1,0 +1,217 @@
+{
+ "actions": {
+  "addprofilepermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AddProfilePermission",
+   "resources": [
+    "signing-profile"
+   ]
+  },
+  "cancelsigningprofile": {
+   "conditionKeys": [
+    "signer:ProfileVersion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelSigningProfile",
+   "resources": [
+    "signing-profile"
+   ]
+  },
+  "describesigningjob": {
+   "name": "DescribeSigningJob",
+   "resources": [
+    "signing-job"
+   ]
+  },
+  "getrevocationstatus": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetRevocationStatus",
+   "resources": [
+    "signing-job",
+    "signing-profile"
+   ]
+  },
+  "getsigningplatform": {
+   "name": "GetSigningPlatform",
+   "resources": []
+  },
+  "getsigningprofile": {
+   "conditionKeys": [
+    "signer:ProfileVersion"
+   ],
+   "name": "GetSigningProfile",
+   "resources": [
+    "signing-profile"
+   ]
+  },
+  "listprofilepermissions": {
+   "name": "ListProfilePermissions",
+   "resources": [
+    "signing-profile"
+   ]
+  },
+  "listsigningjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSigningJobs",
+   "resources": []
+  },
+  "listsigningplatforms": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSigningPlatforms",
+   "resources": []
+  },
+  "listsigningprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSigningProfiles",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "signing-profile"
+   ]
+  },
+  "putsigningprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSigningProfile",
+   "resources": []
+  },
+  "removeprofilepermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "RemoveProfilePermission",
+   "resources": [
+    "signing-profile"
+   ]
+  },
+  "revokesignature": {
+   "conditionKeys": [
+    "signer:ProfileVersion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeSignature",
+   "resources": [
+    "signing-job"
+   ]
+  },
+  "revokesigningprofile": {
+   "conditionKeys": [
+    "signer:ProfileVersion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeSigningProfile",
+   "resources": [
+    "signing-profile"
+   ]
+  },
+  "signpayload": {
+   "conditionKeys": [
+    "signer:ProfileVersion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SignPayload",
+   "resources": [
+    "signing-profile"
+   ]
+  },
+  "startsigningjob": {
+   "conditionKeys": [
+    "signer:ProfileVersion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSigningJob",
+   "resources": [
+    "signing-profile"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "signing-profile"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "signing-profile"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "signer:ProfileVersion": [
+   "String"
+  ]
+ },
+ "resources": {
+  "signing-job": {
+   "arnFormats": [
+    "arn:${Partition}:signer:${Region}:${Account}:/signing-jobs/${JobId}"
+   ]
+  },
+  "signing-profile": {
+   "arnFormats": [
+    "arn:${Partition}:signer:${Region}:${Account}:/signing-profiles/${ProfileName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "signer",
+ "serviceName": "Signer",
+ "version": "v1.5"
+}

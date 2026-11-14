@@ -1,0 +1,523 @@
+{
+ "actions": {
+  "batchchecklayeravailability": {
+   "name": "BatchCheckLayerAvailability",
+   "resources": [
+    "repository"
+   ]
+  },
+  "batchdeleteimage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteImage",
+   "resources": [
+    "repository"
+   ]
+  },
+  "batchgetimage": {
+   "name": "BatchGetImage",
+   "resources": [
+    "repository"
+   ]
+  },
+  "batchgetrepositoryscanningconfiguration": {
+   "name": "BatchGetRepositoryScanningConfiguration",
+   "resources": [
+    "repository"
+   ]
+  },
+  "batchimportupstreamimage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchImportUpstreamImage",
+   "resources": [
+    "repository"
+   ]
+  },
+  "completelayerupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteLayerUpload",
+   "resources": [
+    "repository"
+   ]
+  },
+  "createpullthroughcacherule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePullThroughCacheRule",
+   "resources": []
+  },
+  "createrepository": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "createrepositorycreationtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRepositoryCreationTemplate",
+   "resources": []
+  },
+  "deletelifecyclepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLifecyclePolicy",
+   "resources": [
+    "repository"
+   ]
+  },
+  "deletepullthroughcacherule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePullThroughCacheRule",
+   "resources": []
+  },
+  "deleteregistrypolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteRegistryPolicy",
+   "resources": []
+  },
+  "deleterepository": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "deleterepositorycreationtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRepositoryCreationTemplate",
+   "resources": []
+  },
+  "deleterepositorypolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteRepositoryPolicy",
+   "resources": [
+    "repository"
+   ]
+  },
+  "deletesigningconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSigningConfiguration",
+   "resources": []
+  },
+  "deregisterpulltimeupdateexclusion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterPullTimeUpdateExclusion",
+   "resources": []
+  },
+  "describeimagereplicationstatus": {
+   "name": "DescribeImageReplicationStatus",
+   "resources": [
+    "repository"
+   ]
+  },
+  "describeimages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeImages",
+   "resources": [
+    "repository"
+   ]
+  },
+  "describeimagescanfindings": {
+   "name": "DescribeImageScanFindings",
+   "resources": [
+    "repository"
+   ]
+  },
+  "describeimagesigningstatus": {
+   "name": "DescribeImageSigningStatus",
+   "resources": [
+    "repository"
+   ]
+  },
+  "describepullthroughcacherules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribePullThroughCacheRules",
+   "resources": []
+  },
+  "describeregistry": {
+   "name": "DescribeRegistry",
+   "resources": []
+  },
+  "describereplicationbackfillresults": {
+   "name": "DescribeReplicationBackfillResults",
+   "resources": []
+  },
+  "describerepositories": {
+   "name": "DescribeRepositories",
+   "resources": [
+    "repository"
+   ]
+  },
+  "describerepositorycreationtemplates": {
+   "name": "DescribeRepositoryCreationTemplates",
+   "resources": []
+  },
+  "getaccountsetting": {
+   "conditionKeys": [
+    "ecr:AccountSetting"
+   ],
+   "name": "GetAccountSetting",
+   "resources": []
+  },
+  "getauthorizationtoken": {
+   "name": "GetAuthorizationToken",
+   "resources": []
+  },
+  "getdownloadurlforlayer": {
+   "name": "GetDownloadUrlForLayer",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getimagecopystatus": {
+   "name": "GetImageCopyStatus",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getlifecyclepolicy": {
+   "name": "GetLifecyclePolicy",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getlifecyclepolicypreview": {
+   "name": "GetLifecyclePolicyPreview",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getregistrypolicy": {
+   "name": "GetRegistryPolicy",
+   "resources": []
+  },
+  "getregistryscanningconfiguration": {
+   "name": "GetRegistryScanningConfiguration",
+   "resources": []
+  },
+  "getrepositorypolicy": {
+   "name": "GetRepositoryPolicy",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getsigningconfiguration": {
+   "name": "GetSigningConfiguration",
+   "resources": []
+  },
+  "initiatelayerupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitiateLayerUpload",
+   "resources": [
+    "repository"
+   ]
+  },
+  "listimages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListImages",
+   "resources": [
+    "repository"
+   ]
+  },
+  "listpulltimeupdateexclusions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPullTimeUpdateExclusions",
+   "resources": []
+  },
+  "listreplicationbackfills": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReplicationBackfills",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "repository"
+   ]
+  },
+  "putaccountsetting": {
+   "conditionKeys": [
+    "ecr:AccountSetting"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAccountSetting",
+   "resources": []
+  },
+  "putimage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutImage",
+   "resources": [
+    "repository"
+   ]
+  },
+  "putimagescanningconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutImageScanningConfiguration",
+   "resources": [
+    "repository"
+   ]
+  },
+  "putimagetagmutability": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutImageTagMutability",
+   "resources": [
+    "repository"
+   ]
+  },
+  "putlifecyclepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLifecyclePolicy",
+   "resources": [
+    "repository"
+   ]
+  },
+  "putregistrypolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutRegistryPolicy",
+   "resources": []
+  },
+  "putregistryscanningconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRegistryScanningConfiguration",
+   "resources": []
+  },
+  "putreplicationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutReplicationConfiguration",
+   "resources": []
+  },
+  "putsigningconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSigningConfiguration",
+   "resources": []
+  },
+  "registerpulltimeupdateexclusion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterPullTimeUpdateExclusion",
+   "resources": []
+  },
+  "replicateimage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReplicateImage",
+   "resources": [
+    "repository"
+   ]
+  },
+  "replicateimagedelete": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReplicateImageDelete",
+   "resources": [
+    "repository"
+   ]
+  },
+  "setrepositorypolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "SetRepositoryPolicy",
+   "resources": [
+    "repository"
+   ]
+  },
+  "startimagescan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartImageScan",
+   "resources": [
+    "repository"
+   ]
+  },
+  "startlifecyclepolicypreview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartLifecyclePolicyPreview",
+   "resources": [
+    "repository"
+   ]
+  },
+  "startreplicationbackfill": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartReplicationBackfill",
+   "resources": []
+  },
+  "stopreplicationbackfill": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopReplicationBackfill",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "repository"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "repository"
+   ]
+  },
+  "updateimagestorageclass": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateImageStorageClass",
+   "resources": [
+    "repository"
+   ]
+  },
+  "updatepullthroughcacherule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePullThroughCacheRule",
+   "resources": []
+  },
+  "updaterepositorycreationtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRepositoryCreationTemplate",
+   "resources": []
+  },
+  "uploadlayerpart": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UploadLayerPart",
+   "resources": [
+    "repository"
+   ]
+  },
+  "validatepullthroughcacherule": {
+   "name": "ValidatePullThroughCacheRule",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "ecr:AccountSetting": [
+   "String"
+  ],
+  "ecr:ResourceTag/${TagKey}": [
+   "String"
+  ]
+ },
+ "resources": {
+  "repository": {
+   "arnFormats": [
+    "arn:${Partition}:ecr:${Region}:${Account}:repository/${RepositoryName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecr:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "ecr",
+ "serviceName": "Elastic Container Registry",
+ "version": "v1.5"
+}

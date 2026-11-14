@@ -1,0 +1,199 @@
+{
+ "actions": {
+  "associateservicequotatemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateServiceQuotaTemplate",
+   "resources": []
+  },
+  "createsupportcase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSupportCase",
+   "resources": []
+  },
+  "deleteservicequotaincreaserequestfromtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceQuotaIncreaseRequestFromTemplate",
+   "resources": []
+  },
+  "disassociateservicequotatemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateServiceQuotaTemplate",
+   "resources": []
+  },
+  "getassociationforservicequotatemplate": {
+   "name": "GetAssociationForServiceQuotaTemplate",
+   "resources": []
+  },
+  "getautomanagementconfiguration": {
+   "name": "GetAutoManagementConfiguration",
+   "resources": []
+  },
+  "getawsdefaultservicequota": {
+   "name": "GetAWSDefaultServiceQuota",
+   "resources": []
+  },
+  "getquotautilizationreport": {
+   "name": "GetQuotaUtilizationReport",
+   "resources": []
+  },
+  "getrequestedservicequotachange": {
+   "name": "GetRequestedServiceQuotaChange",
+   "resources": []
+  },
+  "getservicequota": {
+   "conditionKeys": [
+    "servicequotas:service"
+   ],
+   "name": "GetServiceQuota",
+   "resources": [
+    "quota"
+   ]
+  },
+  "getservicequotaincreaserequestfromtemplate": {
+   "conditionKeys": [
+    "servicequotas:service"
+   ],
+   "name": "GetServiceQuotaIncreaseRequestFromTemplate",
+   "resources": [
+    "quota"
+   ]
+  },
+  "listawsdefaultservicequotas": {
+   "name": "ListAWSDefaultServiceQuotas",
+   "resources": []
+  },
+  "listrequestedservicequotachangehistory": {
+   "name": "ListRequestedServiceQuotaChangeHistory",
+   "resources": []
+  },
+  "listrequestedservicequotachangehistorybyquota": {
+   "conditionKeys": [
+    "servicequotas:service"
+   ],
+   "name": "ListRequestedServiceQuotaChangeHistoryByQuota",
+   "resources": [
+    "quota"
+   ]
+  },
+  "listservicequotaincreaserequestsintemplate": {
+   "name": "ListServiceQuotaIncreaseRequestsInTemplate",
+   "resources": []
+  },
+  "listservicequotas": {
+   "name": "ListServiceQuotas",
+   "resources": []
+  },
+  "listservices": {
+   "name": "ListServices",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "putservicequotaincreaserequestintotemplate": {
+   "conditionKeys": [
+    "servicequotas:service"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutServiceQuotaIncreaseRequestIntoTemplate",
+   "resources": [
+    "quota"
+   ]
+  },
+  "requestservicequotaincrease": {
+   "conditionKeys": [
+    "servicequotas:service"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RequestServiceQuotaIncrease",
+   "resources": [
+    "quota"
+   ]
+  },
+  "startautomanagement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAutoManagement",
+   "resources": []
+  },
+  "startquotautilizationreport": {
+   "name": "StartQuotaUtilizationReport",
+   "resources": []
+  },
+  "stopautomanagement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopAutoManagement",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": []
+  },
+  "updateautomanagement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAutoManagement",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "servicequotas:service": [
+   "String"
+  ]
+ },
+ "resources": {
+  "quota": {
+   "arnFormats": [
+    "arn:${Partition}:servicequotas:${Region}:${Account}:${ServiceCode}/${QuotaCode}"
+   ]
+  }
+ },
+ "service": "servicequotas",
+ "serviceName": "Service Quotas",
+ "version": "v1.5"
+}

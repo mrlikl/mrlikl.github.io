@@ -1,0 +1,413 @@
+{
+ "actions": {
+  "cancelsolnetworkoperation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelSolNetworkOperation",
+   "resources": [
+    "network-operation"
+   ]
+  },
+  "createsolfunctionpackage": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSolFunctionPackage",
+   "resources": [
+    "function-package"
+   ]
+  },
+  "createsolnetworkinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSolNetworkInstance",
+   "resources": [
+    "network-instance",
+    "network-package"
+   ]
+  },
+  "createsolnetworkpackage": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSolNetworkPackage",
+   "resources": [
+    "network-package"
+   ]
+  },
+  "deletesolfunctionpackage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSolFunctionPackage",
+   "resources": [
+    "function-package"
+   ]
+  },
+  "deletesolnetworkinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSolNetworkInstance",
+   "resources": [
+    "network-instance"
+   ]
+  },
+  "deletesolnetworkpackage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSolNetworkPackage",
+   "resources": [
+    "network-package"
+   ]
+  },
+  "getsolfunctioninstance": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSolFunctionInstance",
+   "resources": [
+    "function-instance"
+   ]
+  },
+  "getsolfunctionpackage": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSolFunctionPackage",
+   "resources": [
+    "function-package"
+   ]
+  },
+  "getsolfunctionpackagecontent": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSolFunctionPackageContent",
+   "resources": [
+    "function-package"
+   ]
+  },
+  "getsolfunctionpackagedescriptor": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSolFunctionPackageDescriptor",
+   "resources": [
+    "function-package"
+   ]
+  },
+  "getsolnetworkinstance": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSolNetworkInstance",
+   "resources": [
+    "network-instance"
+   ]
+  },
+  "getsolnetworkoperation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSolNetworkOperation",
+   "resources": [
+    "network-operation"
+   ]
+  },
+  "getsolnetworkpackage": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSolNetworkPackage",
+   "resources": [
+    "network-package"
+   ]
+  },
+  "getsolnetworkpackagecontent": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSolNetworkPackageContent",
+   "resources": [
+    "network-package"
+   ]
+  },
+  "getsolnetworkpackagedescriptor": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSolNetworkPackageDescriptor",
+   "resources": [
+    "network-package"
+   ]
+  },
+  "instantiatesolnetworkinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InstantiateSolNetworkInstance",
+   "resources": [
+    "network-instance"
+   ]
+  },
+  "listsolfunctioninstances": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSolFunctionInstances",
+   "resources": [
+    "function-instance"
+   ]
+  },
+  "listsolfunctionpackages": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSolFunctionPackages",
+   "resources": [
+    "function-package"
+   ]
+  },
+  "listsolnetworkinstances": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSolNetworkInstances",
+   "resources": [
+    "network-instance"
+   ]
+  },
+  "listsolnetworkoperations": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSolNetworkOperations",
+   "resources": [
+    "network-operation"
+   ]
+  },
+  "listsolnetworkpackages": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSolNetworkPackages",
+   "resources": [
+    "network-package"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "putsolfunctionpackagecontent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSolFunctionPackageContent",
+   "resources": [
+    "function-package"
+   ]
+  },
+  "putsolnetworkpackagecontent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSolNetworkPackageContent",
+   "resources": [
+    "network-package"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "function-instance",
+    "function-package",
+    "network-instance",
+    "network-operation",
+    "network-package"
+   ]
+  },
+  "terminatesolnetworkinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TerminateSolNetworkInstance",
+   "resources": [
+    "network-instance"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "function-instance",
+    "function-package",
+    "network-instance",
+    "network-operation",
+    "network-package"
+   ]
+  },
+  "updatesolfunctionpackage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSolFunctionPackage",
+   "resources": [
+    "function-package"
+   ]
+  },
+  "updatesolnetworkinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSolNetworkInstance",
+   "resources": [
+    "function-instance",
+    "network-instance"
+   ]
+  },
+  "updatesolnetworkpackage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSolNetworkPackage",
+   "resources": [
+    "network-package"
+   ]
+  },
+  "validatesolfunctionpackagecontent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ValidateSolFunctionPackageContent",
+   "resources": [
+    "function-package"
+   ]
+  },
+  "validatesolnetworkpackagecontent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ValidateSolNetworkPackageContent",
+   "resources": [
+    "network-package"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "function-instance": {
+   "arnFormats": [
+    "arn:${Partition}:tnb:${Region}:${Account}:function-instance/${FunctionInstanceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "function-package": {
+   "arnFormats": [
+    "arn:${Partition}:tnb:${Region}:${Account}:function-package/${FunctionPackageId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "network-instance": {
+   "arnFormats": [
+    "arn:${Partition}:tnb:${Region}:${Account}:network-instance/${NetworkInstanceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "network-operation": {
+   "arnFormats": [
+    "arn:${Partition}:tnb:${Region}:${Account}:network-operation/${NetworkOperationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "network-package": {
+   "arnFormats": [
+    "arn:${Partition}:tnb:${Region}:${Account}:network-package/${NetworkPackageId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "tnb",
+ "serviceName": "Telco Network Builder",
+ "version": "v1.5"
+}

@@ -1,0 +1,23 @@
+{
+ "actions": {
+  "getfinancialreports": {
+   "name": "GetFinancialReports",
+   "resources": []
+  },
+  "getreports": {
+   "name": "GetReports",
+   "resources": []
+  },
+  "putevents": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutEvents",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "mobileanalytics",
+ "serviceName": "Mobile Analytics",
+ "version": "v1.5"
+}

@@ -1,0 +1,122 @@
+{
+ "actions": {
+  "batchdeleteattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteAttributes",
+   "resources": [
+    "domain"
+   ]
+  },
+  "batchputattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchPutAttributes",
+   "resources": [
+    "domain"
+   ]
+  },
+  "createdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deleteattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAttributes",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deletedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "domainmetadata": {
+   "name": "DomainMetadata",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getattributes": {
+   "name": "GetAttributes",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getexport": {
+   "name": "GetExport",
+   "resources": [
+    "export"
+   ]
+  },
+  "listdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomains",
+   "resources": []
+  },
+  "listexports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExports",
+   "resources": [
+    "domain"
+   ]
+  },
+  "putattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAttributes",
+   "resources": [
+    "domain"
+   ]
+  },
+  "select": {
+   "name": "Select",
+   "resources": [
+    "domain"
+   ]
+  },
+  "startdomainexport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDomainExport",
+   "resources": [
+    "domain"
+   ]
+  }
+ },
+ "resources": {
+  "domain": {
+   "arnFormats": [
+    "arn:${Partition}:sdb:${Region}:${Account}:domain/${DomainName}"
+   ]
+  },
+  "export": {
+   "arnFormats": [
+    "arn:${Partition}:sdb:${Region}:${Account}:domain/${DomainName}/export/${ExportUUID}"
+   ]
+  }
+ },
+ "service": "sdb",
+ "serviceName": "SimpleDB",
+ "version": "v1.5"
+}

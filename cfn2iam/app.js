@@ -1,11 +1,117 @@
-// CFN2IAM Application - Optimized & Simplified
+// cfn2iam web UI.
+//
+// The logic is not here: the page runs the cfn2iam Python package (cfn2iam.core)
+// in the browser with Pyodide, so the web version and the CLI are one
+// implementation. This file only loads that runtime and renders what it returns.
+
+const PYODIDE_VERSION = "314.0.7";
+const PYODIDE_INDEX_URL = `https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VERSION}/full/`;
+// The cfn2iam release the page installs from PyPI. `?wheel=<same-origin URL>` overrides it.
+const CFN2IAM_VERSION = "0.3.0";
+
+// Glue between the page and cfn2iam.core: fetch backend files relative to the page,
+// and hand results back to JavaScript as JSON strings.
+const PYTHON_GLUE = `
+import json
+from pyodide.http import pyfetch
+from cfn2iam import core
+
+_cache = {}
+
+async def _fetch_json(path):
+    if path in _cache:
+        return _cache[path]
+    response = await pyfetch(BACKEND_URL + path)
+    if response.status == 404:
+        raise core.NotFound(path)
+    if not response.ok:
+        raise OSError(f"HTTP {response.status} for {path}")
+    data = await response.json()
+    _cache[path] = data
+    return data
+
+async def _run(make):
+    try:
+        analysis = await make()
+    except (core.TemplateError, ValueError) as e:
+        return json.dumps({"error": str(e)})
+    return json.dumps(analysis.to_dict())
+
+async def analyze_template(text, allow_delete):
+    return await _run(lambda: core.analyze_template(text, _fetch_json, allow_delete=bool(allow_delete)))
+
+async def analyze_resource_type(resource_type, allow_delete):
+    return await _run(lambda: core.analyze_resource_type(resource_type, _fetch_json, allow_delete=bool(allow_delete)))
+`;
+
+class CoreRuntime {
+  constructor(onStatus) {
+    this.onStatus = onStatus;
+    this.ready = this.load();
+    // The error is shown by onStatus; keep it from surfacing as an unhandled rejection.
+    this.ready.catch(() => {});
+  }
+
+  wheelSource() {
+    const override = new URLSearchParams(location.search).get("wheel");
+    if (!override) return { spec: `cfn2iam==${CFN2IAM_VERSION}`, label: `cfn2iam ${CFN2IAM_VERSION} from PyPI` };
+    const url = new URL(override, location.href);
+    // Installing a wheel runs its code in this page, so only accept one served by this site.
+    if (url.origin !== location.origin) {
+      throw new Error(`?wheel must point to a file on ${location.origin}, not ${url.origin}`);
+    }
+    return { spec: url.href, label: `cfn2iam wheel ${url.pathname}`, override: url.pathname };
+  }
+
+  async load() {
+    const started = performance.now();
+    try {
+      const source = this.wheelSource();
+      this.onStatus("loading", "Loading the Python runtime (Pyodide)…");
+      const { loadPyodide } = await import(`${PYODIDE_INDEX_URL}pyodide.mjs`);
+      const pyodide = await loadPyodide({ indexURL: PYODIDE_INDEX_URL });
+      await pyodide.loadPackage(["micropip", "pyyaml"], { messageCallback: () => {} });
+
+      this.onStatus("loading", `Installing ${source.label}…`);
+      const install = pyodide.toPy({ spec: source.spec });
+      try {
+        // deps=False: the core needs only PyYAML (loaded above); typer and boto3 are for the CLI.
+        await pyodide.runPythonAsync("import micropip\nawait micropip.install(spec, deps=False)", { globals: install });
+      } finally {
+        install.destroy();
+      }
+
+      pyodide.globals.set("BACKEND_URL", new URL("backend/", location.href).href);
+      await pyodide.runPythonAsync(PYTHON_GLUE);
+      this.analyzeTemplateFn = pyodide.globals.get("analyze_template");
+      this.analyzeResourceTypeFn = pyodide.globals.get("analyze_resource_type");
+      this.version = pyodide.runPython("from importlib.metadata import version; version('cfn2iam')");
+
+      const seconds = ((performance.now() - started) / 1000).toFixed(1);
+      this.onStatus("ready", `cfn2iam ${this.version}${source.override ? ` from ${source.override}` : ""} · runs in your browser with Pyodide · ready in ${seconds}s`);
+    } catch (error) {
+      this.onStatus("error", `Couldn't start cfn2iam in your browser: ${firstLine(error)}`);
+      throw error;
+    }
+  }
+
+  async analyzeTemplate(text, allowDelete) {
+    await this.ready;
+    return JSON.parse(await this.analyzeTemplateFn(text, allowDelete));
+  }
+
+  async analyzeResourceType(resourceType, allowDelete) {
+    await this.ready;
+    return JSON.parse(await this.analyzeResourceTypeFn(resourceType, allowDelete));
+  }
+}
+
 class CFNIAMGenerator {
   constructor() {
-    this.schemaCache = new Map();
-    this.samRulesCache = new Map();
     // Keep the empty states from the page so Clear can restore them.
     this.initialPolicyHTML = document.getElementById("policyOutput").innerHTML;
     this.initialResourcesHTML = document.getElementById("resourcesOutput").innerHTML;
+    this.runtime = new CoreRuntime((state, message) => this.setRuntimeStatus(state, message));
     this.initializeEventListeners();
   }
 
@@ -55,6 +161,14 @@ class CFNIAMGenerator {
     });
   }
 
+  setRuntimeStatus(state, message) {
+    const el = document.getElementById("runtimeStatus");
+    el.dataset.state = state;
+    el.querySelector(".runtime-text").textContent = message;
+    el.setAttribute("role", state === "error" ? "alert" : "status");
+    if (state === "error") this.showError(message);
+  }
+
   switchMode(mode) {
     document.querySelector(".workbench").dataset.mode = mode;
     document.querySelectorAll(".seg").forEach((s) => {
@@ -64,6 +178,21 @@ class CFNIAMGenerator {
     });
     document.querySelectorAll(".mode").forEach((p) => p.classList.toggle("active", p.dataset.modePanel === mode));
     if (mode === "lookup") document.getElementById("singleResourceType").focus();
+  }
+
+  // Runs one analysis with the loading overlay up, waiting for the runtime if it is still starting.
+  async runAnalysis(call) {
+    const runtimeReady = document.getElementById("runtimeStatus").dataset.state === "ready";
+    this.showLoading(true, runtimeReady ? "Resolving resource schemas…" : "Starting Python in your browser…");
+    this.clearMessages();
+    try {
+      const result = await call();
+      // A template the core can't read: show its message whole, on one line.
+      if (result.error) throw new Error(result.error.replace(/\s+/g, " "));
+      return result;
+    } finally {
+      this.showLoading(false);
+    }
   }
 
   async lookupSingleResource() {
@@ -79,65 +208,27 @@ class CFNIAMGenerator {
       return;
     }
 
-    this.showLoading(true);
-    this.clearMessages();
-
+    const allowDelete = document.getElementById("allowDelete").checked;
     try {
-      let permissions;
-      let samInfo = null;
-      let expandedResourceTypes = [];
-
-      if (resourceType.startsWith("AWS::Serverless::")) {
-        const samRule = await this.getSamRule(resourceType);
-        const baseResources = samRule.base_resources || [];
-        const conditionalResources = samRule.conditional_resources || [];
-
-        const allResourceTypes = [...baseResources];
-        conditionalResources.forEach((cr) => {
-          allResourceTypes.push(...cr.resources);
-        });
-
-        expandedResourceTypes = [...new Set(allResourceTypes)];
-        permissions = await this.getPermissionsForResources(expandedResourceTypes);
-        samInfo = {
-          baseResources,
-          conditionalResources,
-          logicalIdTemplates: samRule.logical_id_templates || [],
-        };
-      } else {
-        expandedResourceTypes = [resourceType];
-        permissions = await this.getPermissionsForResources([resourceType]);
-      }
-
-      const allowDelete = document.getElementById("allowDelete").checked;
-      const policy = this.generatePolicyDocument(permissions, allowDelete);
-
-      this.displaySingleResourcePolicyResult(
-        resourceType,
-        policy,
-        expandedResourceTypes,
-        permissions,
-        samInfo
-      );
-
-      this.reportResult(`Generated the policy for ${resourceType}${samInfo ? ` (${expandedResourceTypes.length} resource types)` : ""}`);
+      const result = await this.runAnalysis(() => this.runtime.analyzeResourceType(resourceType, allowDelete));
+      this.displaySingleResourcePolicyResult(resourceType, result);
+      this.reportResult(`Generated the policy for ${resourceType}${result.sam ? ` (${result.resource_types.length} resource types)` : ""}`);
     } catch (error) {
-      this.showError(`Error: ${error.message}`);
-    } finally {
-      this.showLoading(false);
+      this.showError(`Error: ${firstLine(error)}`);
     }
   }
 
-  displaySingleResourcePolicyResult(resourceType, policy, expandedResourceTypes, permissions, samInfo) {
-    this.renderPolicy(policy, permissions, expandedResourceTypes.length);
+  displaySingleResourcePolicyResult(resourceType, result) {
+    this.renderPolicy(result);
 
-    const base = new Set(samInfo ? samInfo.baseResources : []);
+    const sam = result.sam;
+    const base = new Set(sam ? sam.base_resources : []);
     let resourcesHtml = `<p class="section-title">${escapeHTML(resourceType)}</p>`;
-    if (samInfo) {
+    if (sam) {
       resourcesHtml += `<p class="hint">Includes every resource this SAM type can create. A real template only needs the ones its properties turn on.</p>`;
     }
-    resourcesHtml += this.renderResourceList(expandedResourceTypes, permissions, (type) =>
-      samInfo ? (base.has(type) ? "always" : "conditional") : ""
+    resourcesHtml += this.renderResourceList(result, (type) =>
+      sam ? (base.has(type) ? "always" : "conditional") : ""
     );
 
     document.getElementById("resourcesOutput").innerHTML = resourcesHtml;
@@ -145,33 +236,34 @@ class CFNIAMGenerator {
   }
 
   // Shared result rendering for template and single-resource lookups.
-  renderPolicy(policy, permissions, typeCount) {
-    const unresolved = Object.entries(permissions.byResource || {}).filter(([, v]) => v.error);
-    const notice = unresolved.length
-      ? `<div class="notice"><strong>Incomplete policy.</strong> ${unresolved.length} resource type${unresolved.length === 1 ? "" : "s"} couldn't be resolved, so ${unresolved.length === 1 ? "its" : "their"} permissions are missing: ${unresolved.map(([t]) => `<code>${escapeHTML(t)}</code>`).join(", ")}. The CLI can look up private types in your account's CloudFormation registry.</div>`
+  renderPolicy(result) {
+    const unresolved = Object.keys(result.unresolved);
+    const n = unresolved.length;
+    const notice = n
+      ? `<div class="notice"><strong>Incomplete policy.</strong> ${n} resource type${n === 1 ? "" : "s"} couldn't be resolved, so ${n === 1 ? "its" : "their"} permissions are missing: ${unresolved.map((t) => `<code title="${escapeHTML(result.unresolved[t])}">${escapeHTML(t)}</code>`).join(", ")}. The CLI can look up private types in your account's CloudFormation registry.</div>`
       : "";
     const deleteLabel = document.getElementById("allowDelete").checked ? "delete actions allowed" : "delete actions denied";
 
-    this.lastUnresolved = unresolved.length;
+    this.lastUnresolved = n;
     document.getElementById("policyOutput").innerHTML = `
       ${notice}
       <div class="policy-summary">
-        <span class="stat"><strong>${permissions.allUpdate.length}</strong> actions allowed</span>
-        <span class="stat"><strong>${permissions.allDelete.length}</strong> ${deleteLabel}</span>
-        <span class="stat"><strong>${typeCount}</strong> resource types</span>
+        <span class="stat"><strong>${result.allow.length}</strong> actions allowed</span>
+        <span class="stat"><strong>${result.delete.length}</strong> ${deleteLabel}</span>
+        <span class="stat"><strong>${result.resource_types.length}</strong> resource types</span>
       </div>
       <div class="code-block">
         <button class="copy-btn" type="button" onclick="copyToClipboard('policyOutput')">Copy</button>
-        <pre id="policyJson">${highlightJSON(JSON.stringify(policy, null, 2))}</pre>
+        <pre id="policyJson">${highlightJSON(JSON.stringify(result.policy, null, 2))}</pre>
       </div>
     `;
   }
 
-  renderResourceList(types, permissions, badgeFor) {
-    const rows = [...types].sort().map((type) => {
-      const info = (permissions.byResource || {})[type];
+  renderResourceList(result, badgeFor) {
+    const rows = [...result.resource_types].sort().map((type) => {
+      const info = result.by_type[type];
       const badge = info && info.error
-        ? `<span class="badge error">not resolved</span>`
+        ? `<span class="badge error" title="${escapeHTML(info.error)}">not resolved</span>`
         : badgeFor(type)
           ? `<span class="badge${badgeFor(type) === "from SAM" ? " sam" : ""}">${badgeFor(type)}</span>`
           : "";
@@ -234,273 +326,31 @@ class CFNIAMGenerator {
       return;
     }
 
-    this.showLoading(true);
-    this.clearMessages();
-
     try {
-      const template = this.parseTemplate(templateText);
-      const { resourceTypes, samResources } = await this.extractAndValidateResources(template);
-
-      if (resourceTypes.length === 0) {
+      const result = await this.runAnalysis(() => this.runtime.analyzeTemplate(templateText, allowDelete));
+      if (result.resource_types.length === 0) {
         this.showError("No valid AWS resources found in template");
         return;
       }
-
-      const permissions = await this.getPermissionsForResources(resourceTypes);
-      const policy = this.generatePolicyDocument(permissions, allowDelete);
-
-      this.displayResults(policy, resourceTypes, permissions, samResources);
-      this.reportResult(`Generated the policy for ${resourceTypes.length} resource types`);
+      this.displayResults(result);
+      this.reportResult(`Generated the policy for ${result.resource_types.length} resource types`);
     } catch (error) {
-      this.showError(`Error: ${error.message}`);
-    } finally {
-      this.showLoading(false);
+      this.showError(`Error: ${firstLine(error)}`);
     }
   }
 
-  parseTemplate(templateText) {
-    try {
-      return JSON.parse(templateText);
-    } catch (jsonError) {
-      try {
-        return jsyaml.load(templateText, { schema: CFN_YAML_SCHEMA });
-      } catch (yamlError) {
-        throw new Error(`Invalid format. JSON error: ${jsonError.message}. YAML error: ${yamlError.message}`);
-      }
-    }
-  }
-
-  async extractAndValidateResources(template) {
-    if (!template.Resources) {
-      throw new Error("No Resources section found in template");
-    }
-
-    const resourceTypes = new Set();
-    const samResources = [];
-    const ignorePatterns = [/^Custom::.*/, /^AWS::CDK::Metadata$/, /^AWS::CloudFormation::CustomResource$/];
-
-    for (const [logicalId, resource] of Object.entries(template.Resources)) {
-      if (resource.Type && !ignorePatterns.some((pattern) => pattern.test(resource.Type))) {
-        if (resource.Type.startsWith("AWS::Serverless::")) {
-          samResources.push({ logicalId, resource });
-          const expandedTypes = await this.expandSamResource(resource.Type, resource.Properties || {});
-          expandedTypes.forEach((type) => resourceTypes.add(type));
-        } else {
-          resourceTypes.add(resource.Type);
-        }
-      }
-    }
-
-    return {
-      resourceTypes: Array.from(resourceTypes),
-      samResources,
-    };
-  }
-
-  async expandSamResource(samResourceType, properties) {
-    try {
-      const samRule = await this.getSamRule(samResourceType);
-      const expandedTypes = new Set();
-
-      if (samRule.base_resources) {
-        samRule.base_resources.forEach((type) => expandedTypes.add(type));
-      }
-
-      if (samRule.conditional_resources) {
-        for (const condition of samRule.conditional_resources) {
-          if (this.evaluateCondition(condition.condition, properties)) {
-            condition.resources.forEach((type) => expandedTypes.add(type));
-          }
-        }
-      }
-
-      return Array.from(expandedTypes);
-    } catch (error) {
-      // No rule for this SAM type: keep the type itself so it shows up as unresolved
-      // instead of silently dropping its permissions.
-      return [samResourceType];
-    }
-  }
-
-  // Same semantics as the CLI: a path can contain "*", and every value it reaches counts.
-  evaluateCondition(condition, properties) {
-    const { path, op, value } = condition;
-    const values = valuesAtPath(properties, path.replace(/^properties\./, "").split("."));
-    switch (op) {
-      case "exists":
-        return values.length > 0;
-      case "truthy":
-        return values.some(isTruthy);
-      case "any_eq":
-        return values.some((v) => v === value);
-      case "all_eq":
-        return values.length > 0 && values.every((v) => v === value);
-      case "is_null":
-        return values.every((v) => v === null || v === undefined);
-      default:
-        // Unknown operator: fail rather than silently dropping the rule's permissions.
-        throw new Error(`Unsupported condition operator: ${op}`);
-    }
-  }
-
-  async getSamRule(samResourceType) {
-    if (this.samRulesCache.has(samResourceType)) {
-      return this.samRulesCache.get(samResourceType);
-    }
-
-    const safeFilename = samResourceType.replace(/::/g, "_");
-    const ruleUrl = `./backend/sam_rules/${safeFilename}.json`;
-
-    try {
-      const response = await fetch(ruleUrl);
-      if (!response.ok) {
-        throw new Error(`SAM rule not available (${response.status})`);
-      }
-
-      const rule = await response.json();
-      this.samRulesCache.set(samResourceType, rule);
-      return rule;
-    } catch (error) {
-      throw new Error(`SAM rule not found for ${samResourceType}`);
-    }
-  }
-
-  async getPermissionsForResources(resourceTypes) {
-    const allUpdatePermissions = new Set();
-    const allDeletePermissions = new Set();
-    const permissionsByResource = {};
-
-    // PARALLEL FETCH OPTIMIZATION
-    const schemaPromises = resourceTypes.map(async (resourceType) => {
-      try {
-        const schema = await this.getResourceSchema(resourceType);
-        return { resourceType, schema, error: null };
-      } catch (error) {
-        return { resourceType, schema: null, error: error.message };
-      }
-    });
-
-    const results = await Promise.all(schemaPromises);
-
-    for (const { resourceType, schema, error } of results) {
-      if (error) {
-        permissionsByResource[resourceType] = {
-          update: [],
-          delete: [],
-          error,
-        };
-        continue;
-      }
-
-      const { updatePermissions, deletePermissions } = this.extractPermissions(schema);
-
-      updatePermissions.forEach((p) => allUpdatePermissions.add(p));
-      deletePermissions.forEach((p) => allDeletePermissions.add(p));
-
-      permissionsByResource[resourceType] = {
-        update: Array.from(updatePermissions),
-        delete: Array.from(deletePermissions),
-      };
-    }
-
-    // An action can be delete-only for one type but needed to create or update another.
-    // Keep it allowed: an explicit Deny would override the Allow and break the deploy.
-    return {
-      allUpdate: Array.from(allUpdatePermissions).sort(),
-      allDelete: Array.from(allDeletePermissions).filter((p) => !allUpdatePermissions.has(p)).sort(),
-      byResource: permissionsByResource,
-    };
-  }
-
-  async getResourceSchema(resourceType) {
-    if (this.schemaCache.has(resourceType)) {
-      return this.schemaCache.get(resourceType);
-    }
-
-    const safeFilename = resourceType.replace(/::/g, "_").replace(/\//g, "_");
-    const schemaUrl = `./backend/schemas/${safeFilename}.json`;
-
-    try {
-      const response = await fetch(schemaUrl);
-      if (!response.ok) {
-        throw new Error(`Schema not available (${response.status})`);
-      }
-
-      const schema = await response.json();
-      this.schemaCache.set(resourceType, schema);
-      return schema;
-    } catch (error) {
-      throw new Error(`Schema not found for ${resourceType}`);
-    }
-  }
-
-  extractPermissions(schema) {
-    const updatePermissions = new Set();
-    const deletePermissions = new Set();
-
-    if (schema.handlers) {
-      ["create", "update", "read", "list"].forEach((action) => {
-        if (schema.handlers[action]?.permissions) {
-          schema.handlers[action].permissions.forEach((p) => updatePermissions.add(p));
-        }
-      });
-
-      if (schema.handlers.delete?.permissions) {
-        schema.handlers.delete.permissions.forEach((p) => {
-          if (!updatePermissions.has(p)) {
-            deletePermissions.add(p);
-          }
-        });
-      }
-    }
-
-    return {
-      updatePermissions: Array.from(updatePermissions),
-      deletePermissions: Array.from(deletePermissions),
-    };
-  }
-
-  generatePolicyDocument(permissions, allowDelete) {
-    return this.generateTraditionalPolicy(permissions, allowDelete);
-  }
-
-  generateTraditionalPolicy(permissions, allowDelete) {
-    const statements = [];
-
-    if (permissions.allUpdate.length > 0) {
-      statements.push({
-        Effect: "Allow",
-        Action: [...new Set(permissions.allUpdate)],
-        Resource: "*",
-      });
-    }
-
-    if (permissions.allDelete.length > 0) {
-      statements.push({
-        Effect: allowDelete ? "Allow" : "Deny",
-        Action: [...new Set(permissions.allDelete)],
-        Resource: "*",
-      });
-    }
-
-    return {
-      Version: "2012-10-17",
-      Statement: statements,
-    };
-  }
-
-  displayResults(policy, resourceTypes, permissions, samResources) {
-    this.renderPolicy(policy, permissions, resourceTypes.length);
+  displayResults(result) {
+    this.renderPolicy(result);
 
     let resourcesHtml = "";
-    if (samResources.length > 0) {
+    if (result.sam_resources.length > 0) {
       resourcesHtml += `<p class="section-title">SAM resources</p>`;
-      resourcesHtml += `<div class="resource-list">${samResources
-        .map((sr) => `<div class="resource-item"><span>${escapeHTML(sr.logicalId)}</span><span class="badge sam">${escapeHTML(sr.resource.Type)}</span></div>`)
+      resourcesHtml += `<div class="resource-list">${result.sam_resources
+        .map((sr) => `<div class="resource-item" title="Creates ${escapeHTML(sr.expands_to.join(", "))}"><span>${escapeHTML(sr.logical_id)}</span><span class="badge sam">${escapeHTML(sr.type)}</span></div>`)
         .join("")}</div>`;
     }
     resourcesHtml += `<p class="section-title">Resource types in the policy</p>`;
-    resourcesHtml += this.renderResourceList(resourceTypes, permissions, () => "");
+    resourcesHtml += this.renderResourceList(result, () => "");
 
     document.getElementById("resourcesOutput").innerHTML = resourcesHtml;
     this.switchTab("policy");
@@ -618,7 +468,8 @@ class CFNIAMGenerator {
     this.showSuccess("Loaded SAM example with Function, API, SimpleTable, and StateMachine");
   }
 
-  showLoading(show) {
+  showLoading(show, message) {
+    if (message) document.getElementById("loadingText").textContent = message;
     document.getElementById("loading").style.display = show ? "block" : "none";
     document.getElementById("generateBtn").disabled = show;
     document.getElementById("lookupBtn").disabled = show;
@@ -657,42 +508,17 @@ class CFNIAMGenerator {
   }
 }
 
-// CloudFormation short-form intrinsics (!Ref, !GetAtt, ...) for js-yaml, in all three node kinds.
-const CFN_YAML_SCHEMA = (() => {
-  const tags = ["Ref", "Condition", "GetAtt", "Sub", "Join", "Select", "Split", "FindInMap", "If", "Not",
-    "Equals", "And", "Or", "Base64", "Cidr", "ImportValue", "GetAZs", "Transform", "Length", "ToJsonString",
-    "ForEach", "Contains", "EachMemberEquals", "EachMemberIn", "RefAll", "ValueOf", "ValueOfAll"];
-  const key = (tag) => (tag === "Ref" || tag === "Condition" ? tag : `Fn::${tag}`);
-  const types = tags.flatMap((tag) =>
-    ["scalar", "sequence", "mapping"].map(
-      (kind) => new jsyaml.Type(`!${tag}`, { kind, construct: (data) => ({ [key(tag)]: data }) })
-    )
-  );
-  return jsyaml.DEFAULT_SCHEMA.extend(types);
-})();
-
-// All values reached by a dotted path; "*" fans out over object values or array items.
-function valuesAtPath(obj, parts) {
-  let current = [obj];
-  for (const part of parts) {
-    const next = [];
-    for (const node of current) {
-      if (node === null || typeof node !== "object") continue;
-      if (part === "*") next.push(...Object.values(node));
-      else if (Object.prototype.hasOwnProperty.call(node, part)) next.push(node[part]);
-    }
-    current = next;
-    if (!current.length) break;
-  }
-  return current;
-}
-
-function isTruthy(value) {
-  if (value === null || value === undefined) return false;
-  if (typeof value === "boolean") return value;
-  if (typeof value === "string" || Array.isArray(value)) return value.length > 0;
-  if (typeof value === "object") return Object.keys(value).length > 0;
-  return true;
+// An error's message on one line. For a Python error, that's the exception and its
+// message, without the traceback frames before it.
+function firstLine(error) {
+  const lines = String((error && error.message) || error).trim().split("\n");
+  let start = 0;
+  lines.forEach((line, i) => {
+    if (/^\s+File "/.test(line)) start = i + 1;
+  });
+  // Skip the frame's source line and its ^^^ markers.
+  while (start < lines.length - 1 && /^\s{4}/.test(lines[start])) start += 1;
+  return lines.slice(start).join(" ").replace(/\s+/g, " ").trim();
 }
 
 // JSON syntax highlighting helper

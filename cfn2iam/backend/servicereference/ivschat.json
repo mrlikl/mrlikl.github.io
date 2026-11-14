@@ -1,0 +1,207 @@
+{
+ "actions": {
+  "createchattoken": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChatToken",
+   "resources": [
+    "Room"
+   ]
+  },
+  "createloggingconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLoggingConfiguration",
+   "resources": [
+    "Logging-Configuration"
+   ]
+  },
+  "createroom": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRoom",
+   "resources": [
+    "Room"
+   ]
+  },
+  "deleteloggingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLoggingConfiguration",
+   "resources": [
+    "Logging-Configuration"
+   ]
+  },
+  "deletemessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMessage",
+   "resources": [
+    "Room"
+   ]
+  },
+  "deleteroom": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRoom",
+   "resources": [
+    "Room"
+   ]
+  },
+  "disconnectuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisconnectUser",
+   "resources": [
+    "Room"
+   ]
+  },
+  "getloggingconfiguration": {
+   "name": "GetLoggingConfiguration",
+   "resources": [
+    "Logging-Configuration"
+   ]
+  },
+  "getroom": {
+   "name": "GetRoom",
+   "resources": [
+    "Room"
+   ]
+  },
+  "listloggingconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLoggingConfigurations",
+   "resources": [
+    "Logging-Configuration"
+   ]
+  },
+  "listrooms": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRooms",
+   "resources": [
+    "Room"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "Room"
+   ]
+  },
+  "sendevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendEvent",
+   "resources": [
+    "Room"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Logging-Configuration",
+    "Room"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Logging-Configuration",
+    "Room"
+   ]
+  },
+  "updateloggingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLoggingConfiguration",
+   "resources": [
+    "Logging-Configuration"
+   ]
+  },
+  "updateroom": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoom",
+   "resources": [
+    "Room"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Logging-Configuration": {
+   "arnFormats": [
+    "arn:${Partition}:ivschat:${Region}:${Account}:logging-configuration/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Room": {
+   "arnFormats": [
+    "arn:${Partition}:ivschat:${Region}:${Account}:room/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "ivschat",
+ "serviceName": "Interactive Video Service Chat",
+ "version": "v1.5"
+}
