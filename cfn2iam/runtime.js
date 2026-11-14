@@ -34,18 +34,41 @@ async def _fetch_json(path):
     _cache[path] = data
     return data
 
+# Resource scoping (account, region, partition) arrived in cfn2iam 0.4.0. Detect it from the
+# installed core rather than from its version number, and never pass the keywords to a core
+# that lacks them.
+SUPPORTS_SCOPING = hasattr(core, "UNSCOPED_REASONS") and hasattr(core, "ScopeError")
+
+_EXPECTED = (core.TemplateError, ValueError)
+if SUPPORTS_SCOPING:
+    _EXPECTED += (core.ServiceReferenceError,)
+
+def _scope_kwargs(account, region, partition):
+    if not SUPPORTS_SCOPING:
+        return {}
+    return {"account": account or None, "region": region or None, "partition": partition or "aws"}
+
 async def _run(make):
     try:
         analysis = await make()
-    except (core.TemplateError, ValueError) as e:
-        return json.dumps({"error": str(e)})
+    except _EXPECTED as e:
+        # A bad account, region or partition is reported apart so the page can show it by the fields.
+        scope = SUPPORTS_SCOPING and isinstance(e, core.ScopeError)
+        return json.dumps({"error": str(e), "scope_error": scope})
     return json.dumps(analysis.to_dict())
 
-async def analyze_template(text, allow_delete):
-    return await _run(lambda: core.analyze_template(text, _fetch_json, allow_delete=bool(allow_delete)))
+async def analyze_template(text, allow_delete, account="", region="", partition=""):
+    kwargs = _scope_kwargs(account, region, partition)
+    return await _run(lambda: core.analyze_template(text, _fetch_json, allow_delete=bool(allow_delete), **kwargs))
 
-async def analyze_resource_type(resource_type, allow_delete):
-    return await _run(lambda: core.analyze_resource_type(resource_type, _fetch_json, allow_delete=bool(allow_delete)))
+async def analyze_resource_type(resource_type, allow_delete, account="", region="", partition=""):
+    kwargs = _scope_kwargs(account, region, partition)
+    return await _run(lambda: core.analyze_resource_type(resource_type, _fetch_json, allow_delete=bool(allow_delete), **kwargs))
+
+def scoping_info():
+    if not SUPPORTS_SCOPING:
+        return json.dumps(None)
+    return json.dumps({"reasons": dict(core.UNSCOPED_REASONS), "partitions": list(core.PARTITIONS)})
 `;
 
 // A startup failure with a message that says what to do about it.
@@ -153,11 +176,18 @@ export async function startCore({ loadPyodide, pyodideOptions = {}, wheel, backe
   }
   const analyzeTemplate = pyodide.globals.get("analyze_template");
   const analyzeResourceType = pyodide.globals.get("analyze_resource_type");
+  // null for a core without resource scoping (before cfn2iam 0.4.0); otherwise the core's
+  // wording for each reason an action stays on "*", and its partitions.
+  const scoping = JSON.parse(pyodide.globals.get("scoping_info")());
+  // scope: { account, region, partition }, all optional strings. A core without scoping ignores it.
   return {
     pyodide,
     version,
-    analyzeTemplate: async (text, allowDelete) => JSON.parse(await analyzeTemplate(text, allowDelete)),
-    analyzeResourceType: async (type, allowDelete) => JSON.parse(await analyzeResourceType(type, allowDelete)),
+    scoping,
+    analyzeTemplate: async (text, allowDelete, scope = {}) =>
+      JSON.parse(await analyzeTemplate(text, allowDelete, scope.account || "", scope.region || "", scope.partition || "")),
+    analyzeResourceType: async (type, allowDelete, scope = {}) =>
+      JSON.parse(await analyzeResourceType(type, allowDelete, scope.account || "", scope.region || "", scope.partition || "")),
   };
 }
 

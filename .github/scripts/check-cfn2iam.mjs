@@ -5,9 +5,15 @@
 //   npm install --no-save --prefix <dir> pyodide@<PYODIDE_VERSION from cfn2iam/runtime.js>
 //   node .github/scripts/check-cfn2iam.mjs <dir>/node_modules/pyodide
 //
+// Resource scoping (account and region) arrived in cfn2iam 0.4.0. If the pinned release has
+// it, the check also runs a scoped analysis; if not, it logs that and skips that part.
+// To try an unreleased build, set CFN2IAM_WHEEL=<path to a .whl> to install it instead of
+// the pinned release (the pin and its hash are not checked then).
+//
 // backend/ is served on a local port so the page's own fetch glue (pyfetch) is what reads it.
 import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
+import { basename } from "node:path";
 import { join, normalize, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
@@ -64,7 +70,15 @@ try {
   const pin = runtime.parsePin(requirements);
   console.log(`requirements.txt pins cfn2iam ${pin.version} (${pin.hashes.length} hashes)`);
 
-  const wheel = runtime.fetchPinnedWheel(requirements);
+  const localWheel = process.env.CFN2IAM_WHEEL;
+  const wheel = localWheel
+    ? readFile(localWheel).then((bytes) => ({
+        version: basename(localWheel).split("-")[1],
+        filename: basename(localWheel),
+        bytes: new Uint8Array(bytes),
+        sha256: "(local wheel)",
+      }))
+    : runtime.fetchPinnedWheel(requirements);
   const { loadPyodide } = await import(pathToFileURL(join(resolve(pyodideDir), "pyodide.mjs")).href);
   const core = await runtime.startCore({ loadPyodide, wheel, backendURL, onStatus: (m) => console.log(m) });
   const { filename, sha256 } = await wheel;
@@ -84,6 +98,32 @@ try {
   const lookup = await core.analyzeResourceType("AWS::S3::Bucket", true);
   check(!lookup.error && lookup.allow.length > 0, `lookup failed: ${JSON.stringify(lookup).slice(0, 300)}`);
   console.log(`lookup AWS::S3::Bucket: ${lookup.allow.length} allowed, ${lookup.delete.length} delete`);
+
+  if (core.scoping) {
+    const account = "123456789012";
+    const region = "us-east-1";
+    const scoped = await core.analyzeTemplate(TEMPLATE, false, { account, region });
+    check(!scoped.error, `scoped template error: ${scoped.error}`);
+    check(scoped.scoping && scoped.scoping.account === account && scoped.scoping.region === region, `no scoping report: ${JSON.stringify(scoped.scoping)}`);
+    check(scoped.scoping.scoped_count > 0, "no action was scoped");
+    check(scoped.policy.Statement.length > 2, `expected several statements, got ${scoped.policy.Statement.length}`);
+    const s3 = scoped.policy.Statement.find((s) => s.Effect === "Allow" && s.Action.includes("s3:CreateBucket"));
+    check(s3 && [].concat(s3.Resource).every((r) => r !== "*" && r.startsWith("arn:aws:s3:")), `s3:CreateBucket is not scoped: ${JSON.stringify(s3)}`);
+    check(scoped.policy.Statement.some((s) => s.Effect === "Deny" && s.Resource === "*"), "the Deny statement is not on Resource *");
+    check(Object.keys(core.scoping.reasons).length > 0 && typeof scoped.policy_size === "number", "reasons or policy_size missing");
+    console.log(`scoped template: ${scoped.scoping.scoped_count} scoped, ${scoped.scoping.unscoped_count} on *, ${scoped.policy.Statement.length} statements, ${scoped.policy_size} characters`);
+
+    const unscoped = await core.analyzeTemplate(TEMPLATE, false, {});
+    check(unscoped.scoping === null && unscoped.policy.Statement.length <= 2, "an empty scope did not give the unscoped policy");
+
+    const bad = await core.analyzeTemplate(TEMPLATE, false, { account: "12345" });
+    check(bad.error && bad.scope_error, `a bad account was not reported as a scope error: ${JSON.stringify(bad).slice(0, 200)}`);
+    const noAccount = await core.analyzeResourceType("AWS::S3::Bucket", false, { region });
+    check(noAccount.error && noAccount.scope_error, "a region without an account was not refused");
+    console.log(`scoping errors reported: "${bad.error}"`);
+  } else {
+    console.log(`cfn2iam ${core.version} has no resource scoping (added in 0.4.0): skipping the scoped checks`);
+  }
 
   const cliOnly = core.pyodide.runPython(
     "import sys, json; json.dumps(sorted(m for m in ('typer', 'click', 'boto3', 'cfn2iam.app') if m in sys.modules))"

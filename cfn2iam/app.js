@@ -60,14 +60,14 @@ class CoreRuntime {
     return runtime.fetchPinnedWheel(await response.text());
   }
 
-  async analyzeTemplate(text, allowDelete) {
+  async analyzeTemplate(text, allowDelete, scope) {
     await this.ready;
-    return this.core.analyzeTemplate(text, allowDelete);
+    return this.core.analyzeTemplate(text, allowDelete, scope);
   }
 
-  async analyzeResourceType(resourceType, allowDelete) {
+  async analyzeResourceType(resourceType, allowDelete, scope) {
     await this.ready;
-    return this.core.analyzeResourceType(resourceType, allowDelete);
+    return this.core.analyzeResourceType(resourceType, allowDelete, scope);
   }
 }
 
@@ -76,6 +76,8 @@ class CFNIAMGenerator {
     // Keep the empty states from the page so Clear can restore them.
     this.initialPolicyHTML = document.getElementById("policyOutput").innerHTML;
     this.initialResourcesHTML = document.getElementById("resourcesOutput").innerHTML;
+    // The core's wording for why an action stays on "*"; null until a core with scoping has loaded.
+    this.scoping = null;
     this.runtime = new CoreRuntime((state, message) => this.setRuntimeStatus(state, message));
     this.initializeEventListeners();
   }
@@ -121,6 +123,17 @@ class CFNIAMGenerator {
       });
     });
 
+    // Enter in a scope field runs whichever mode is showing; any edit clears the old scope error.
+    ["scopeAccount", "scopeRegion"].forEach((id) => {
+      const input = document.getElementById(id);
+      input.addEventListener("input", () => this.showScopeError(""));
+      input.addEventListener("keydown", (e) => {
+        if (e.key !== "Enter") return;
+        if (document.querySelector(".workbench").dataset.mode === "lookup") this.lookupSingleResource();
+        else this.generatePolicy();
+      });
+    });
+
     document.getElementById("templateInput").addEventListener("keydown", (e) => {
       if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) this.generatePolicy();
     });
@@ -132,6 +145,50 @@ class CFNIAMGenerator {
     el.querySelector(".runtime-text").textContent = message;
     el.setAttribute("role", state === "error" ? "alert" : "status");
     if (state === "error") this.showError(message);
+    if (state === "ready") this.applyScopingSupport(this.runtime.core.scoping, this.runtime.core.version);
+  }
+
+  // Shows the account/region fields when the installed cfn2iam can scope policies (0.4.0 or
+  // later), and otherwise one line saying so. Nothing here depends on the pinned version.
+  applyScopingSupport(scoping, version) {
+    this.scoping = scoping;
+    const section = document.getElementById("scope");
+    const note = document.getElementById("scopeNote");
+    section.hidden = !scoping;
+    note.hidden = !!scoping;
+    if (!scoping) {
+      note.textContent = `Scoping resource ARNs to an account and region needs cfn2iam 0.4.0 or later; this page runs ${version}.`;
+      return;
+    }
+    const select = document.getElementById("scopePartition");
+    select.innerHTML = scoping.partitions.map((p) => `<option value="${escapeHTML(p)}">${escapeHTML(p)}</option>`).join("");
+  }
+
+  // The account, region and partition fields, or null (after showing why) if the account is not 12 digits.
+  // A core without scoping gets {}. Values stay in this page: they are never put in the URL or storage.
+  readScope() {
+    if (!this.scoping) return {};
+    const account = document.getElementById("scopeAccount").value.trim();
+    const region = document.getElementById("scopeRegion").value.trim();
+    const partition = document.getElementById("scopePartition").value;
+    this.showScopeError("");
+    if (account && !/^\d{12}$/.test(account)) {
+      this.showScopeError("The account ID must be exactly 12 digits, for example 123456789012.");
+      document.getElementById("scopeAccount").focus();
+      return null;
+    }
+    return { account, region, partition };
+  }
+
+  showScopeError(message) {
+    const el = document.getElementById("scopeError");
+    el.textContent = message;
+    el.hidden = !message;
+    ["scopeAccount", "scopeRegion"].forEach((id) => {
+      const input = document.getElementById(id);
+      if (message) input.setAttribute("aria-invalid", "true");
+      else input.removeAttribute("aria-invalid");
+    });
   }
 
   switchMode(mode) {
@@ -153,7 +210,11 @@ class CFNIAMGenerator {
     try {
       const result = await call();
       // A template the core can't read: show its message whole, on one line.
-      if (result.error) throw new Error(result.error.replace(/\s+/g, " "));
+      if (result.error) {
+        // The core's own account/region/partition errors also show by the fields.
+        if (result.scope_error) this.showScopeError(result.error.replace(/\s+/g, " "));
+        throw new Error(result.error.replace(/\s+/g, " "));
+      }
       return result;
     } finally {
       this.showLoading(false);
@@ -174,8 +235,10 @@ class CFNIAMGenerator {
     }
 
     const allowDelete = document.getElementById("allowDelete").checked;
+    const scope = this.readScope();
+    if (!scope) return;
     try {
-      const result = await this.runAnalysis(() => this.runtime.analyzeResourceType(resourceType, allowDelete));
+      const result = await this.runAnalysis(() => this.runtime.analyzeResourceType(resourceType, allowDelete, scope));
       this.displaySingleResourcePolicyResult(resourceType, result);
       this.reportResult(`Generated the policy for ${resourceType}${result.sam ? ` (${result.resource_types.length} resource types)` : ""}`);
     } catch (error) {
@@ -209,19 +272,52 @@ class CFNIAMGenerator {
       : "";
     const deleteLabel = document.getElementById("allowDelete").checked ? "delete actions allowed" : "delete actions denied";
 
+    const warnings = (result.warnings || []).length
+      ? `<div class="notice"><strong>${result.warnings.length === 1 ? "Warning." : "Warnings."}</strong><ul>${result.warnings.map((w) => `<li>${escapeHTML(w)}</li>`).join("")}</ul></div>`
+      : "";
+    const scoping = result.scoping;
+    const statements = result.policy.Statement.length;
+
     this.lastUnresolved = n;
     document.getElementById("policyOutput").innerHTML = `
       ${notice}
+      ${warnings}
       <div class="policy-summary">
         <span class="stat"><strong>${result.allow.length}</strong> actions allowed</span>
         <span class="stat"><strong>${result.delete.length}</strong> ${deleteLabel}</span>
         <span class="stat"><strong>${result.resource_types.length}</strong> resource types</span>
+        ${scoping ? `<span class="stat"><strong>${statements}</strong> statements</span><span class="stat"><strong>${result.policy_size.toLocaleString("en-US")}</strong> characters</span>` : ""}
       </div>
+      ${scoping ? this.renderScoping(scoping) : ""}
       <div class="code-block">
         <button class="copy-btn" type="button" onclick="copyToClipboard('policyOutput')">Copy</button>
         <pre id="policyJson">${highlightJSON(JSON.stringify(result.policy, null, 2))}</pre>
       </div>
     `;
+  }
+
+  // What scoping did: how many actions got ARNs, which stayed on "*" and why, and which were left
+  // open to any account or region on purpose. Reason wording comes from the core.
+  renderScoping(scoping) {
+    const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+    const where = [
+      `account <code>${escapeHTML(scoping.account)}</code>`,
+      scoping.region ? `region <code>${escapeHTML(scoping.region)}</code>` : "any region",
+      ...(scoping.partition !== "aws" ? [`partition <code>${escapeHTML(scoping.partition)}</code>`] : []),
+    ].join(", ");
+    const list = (actions) => `<p class="action-list">${actions.map((a) => `<code>${escapeHTML(a)}</code>`).join(" ")}</p>`;
+    const reasons = this.scoping ? this.scoping.reasons : {};
+    const stays = Object.entries(scoping.unscoped).map(
+      ([reason, actions]) => `<details class="reason"><summary>${plural(actions.length, "action", "actions")} ${escapeHTML(reasons[reason] || reason)}</summary>${list(actions)}</details>`
+    );
+    const widened = scoping.widened.length
+      ? `<details class="reason"><summary>${plural(scoping.widened.length, "scoped action", "scoped actions")} left open to any ${scoping.region ? "account or region" : "account"} on purpose</summary><p class="hint">These can act on resources in another account or region (replicas, peers, shared layers), so that part of their ARN is <code>*</code>.</p>${list(scoping.widened)}</details>`
+      : "";
+    return `<div class="scoping">
+      <p class="scoping-summary"><strong>${scoping.scoped_count}</strong> of ${scoping.scoped_count + scoping.unscoped_count} actions scoped to ${where}.
+      ${scoping.unscoped_count ? `<strong>${scoping.unscoped_count}</strong> stay on <code>"Resource": "*"</code>${stays.length ? ":" : "."}` : "None stay on <code>\"Resource\": \"*\"</code>."}</p>
+      ${stays.join("")}${widened}
+    </div>`;
   }
 
   renderResourceList(result, badgeFor) {
@@ -267,6 +363,7 @@ class CFNIAMGenerator {
     document.getElementById("policyOutput").innerHTML = this.initialPolicyHTML;
     document.getElementById("resourcesOutput").innerHTML = this.initialResourcesHTML;
     this.clearMessages();
+    this.showScopeError("");
     this.switchTab("policy");
   }
 
@@ -291,8 +388,10 @@ class CFNIAMGenerator {
       return;
     }
 
+    const scope = this.readScope();
+    if (!scope) return;
     try {
-      const result = await this.runAnalysis(() => this.runtime.analyzeTemplate(templateText, allowDelete));
+      const result = await this.runAnalysis(() => this.runtime.analyzeTemplate(templateText, allowDelete, scope));
       if (result.resource_types.length === 0) {
         this.showError("No valid AWS resources found in template");
         return;
