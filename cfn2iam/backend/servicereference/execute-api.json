@@ -1,0 +1,55 @@
+{
+ "actions": {
+  "invalidatecache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvalidateCache",
+   "resources": [
+    "execute-api-general"
+   ]
+  },
+  "invoke": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Invoke",
+   "resources": [
+    "execute-api-domain",
+    "execute-api-general"
+   ]
+  },
+  "manageconnections": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ManageConnections",
+   "resources": [
+    "execute-api-general"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "execute-api:viaDomainArn": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "execute-api-domain": {
+   "arnFormats": [
+    "arn:${Partition}:execute-api:${Region}:${Account}:/domainnames/${DomainName}+${DomainIdentifier}"
+   ]
+  },
+  "execute-api-general": {
+   "arnFormats": [
+    "arn:${Partition}:execute-api:${Region}:${Account}:${ApiId}/${Stage}/${Method}/${ApiSpecificResourcePath}"
+   ],
+   "conditionKeys": [
+    "execute-api:viaDomainArn"
+   ]
+  }
+ },
+ "service": "execute-api",
+ "serviceName": "ExecuteAPI",
+ "version": "v1.5"
+}

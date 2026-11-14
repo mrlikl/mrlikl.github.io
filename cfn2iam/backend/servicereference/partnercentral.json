@@ -1,0 +1,2083 @@
+{
+ "actions": {
+  "acceptchannelhandshake": {
+   "conditionKeys": [
+    "partnercentral:Catalog",
+    "partnercentral:ChannelHandshakeType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptChannelHandshake",
+   "resources": [
+    "ChannelHandshake"
+   ]
+  },
+  "acceptconnectioninvitation": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptConnectionInvitation",
+   "resources": [
+    "ConnectionInvitation"
+   ]
+  },
+  "acceptengagementinvitation": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptEngagementInvitation",
+   "resources": [
+    "engagement-invitation"
+   ]
+  },
+  "amendbenefitapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes",
+    "partnercentral:Programs"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AmendBenefitApplication",
+   "resources": [
+    "BenefitApplication"
+   ]
+  },
+  "assignopportunity": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssignOpportunity",
+   "resources": [
+    "Opportunity"
+   ]
+  },
+  "associateawstrainingcertificationemaildomain": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateAwsTrainingCertificationEmailDomain",
+   "resources": [
+    "Partner"
+   ]
+  },
+  "associatebenefitapplicationresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes",
+    "partnercentral:Programs"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateBenefitApplicationResource",
+   "resources": [
+    "BenefitAllocation",
+    "BenefitApplication",
+    "Opportunity"
+   ]
+  },
+  "associatebusinessplan": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateBusinessPlan",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "associateopportunity": {
+   "conditionKeys": [
+    "partnercentral:Catalog",
+    "partnercentral:RelatedEntityType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateOpportunity",
+   "resources": [
+    "Opportunity"
+   ]
+  },
+  "cancelbenefitapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes",
+    "partnercentral:Programs"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelBenefitApplication",
+   "resources": [
+    "BenefitApplication"
+   ]
+  },
+  "cancelbusinessplan": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:AllowAwsEngagement",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelBusinessPlan",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "cancelbusinessplansubmissiontask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:AllowAwsEngagement",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelBusinessPlanSubmissionTask",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "cancelchannelhandshake": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog",
+    "partnercentral:ChannelHandshakeType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelChannelHandshake",
+   "resources": [
+    "ChannelHandshake"
+   ]
+  },
+  "cancelconnection": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelConnection",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "cancelconnectioninvitation": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelConnectionInvitation",
+   "resources": [
+    "ConnectionInvitation"
+   ]
+  },
+  "cancelprofileupdatetask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelProfileUpdateTask",
+   "resources": [
+    "Partner"
+   ]
+  },
+  "createbenefitapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes",
+    "partnercentral:Programs"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBenefitApplication",
+   "resources": []
+  },
+  "createbusinessplan": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:AllowAwsEngagement",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBusinessPlan",
+   "resources": []
+  },
+  "createbusinessplanitem": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:AllowAwsEngagement",
+    "partnercentral:BusinessPlanItemStage",
+    "partnercentral:BusinessPlanItemType",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBusinessPlanItem",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "createchannelhandshake": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog",
+    "partnercentral:ChannelHandshakeType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannelHandshake",
+   "resources": [
+    "ProgramManagementAccount",
+    "Relationship"
+   ]
+  },
+  "createcollaborationchannelmembers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCollaborationChannelMembers",
+   "resources": []
+  },
+  "createcollaborationchannelrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCollaborationChannelRequest",
+   "resources": []
+  },
+  "createconnectioninvitation": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnectionInvitation",
+   "resources": []
+  },
+  "createengagement": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEngagement",
+   "resources": [
+    "Engagement"
+   ]
+  },
+  "createengagementcontext": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEngagementContext",
+   "resources": [
+    "Engagement"
+   ]
+  },
+  "createengagementinvitation": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEngagementInvitation",
+   "resources": [
+    "engagement-invitation"
+   ]
+  },
+  "createmarketplacerevenueshare": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMarketplaceRevenueShare",
+   "resources": []
+  },
+  "createmarketplacerevenueshareallocation": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMarketplaceRevenueShareAllocation",
+   "resources": [
+    "MarketplaceRevenueShare"
+   ]
+  },
+  "createopportunity": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOpportunity",
+   "resources": [
+    "Opportunity"
+   ]
+  },
+  "createpartner": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePartner",
+   "resources": []
+  },
+  "createprogrammanagementaccount": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProgramManagementAccount",
+   "resources": []
+  },
+  "createrelationship": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRelationship",
+   "resources": [
+    "ProgramManagementAccount"
+   ]
+  },
+  "createresourcesnapshot": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResourceSnapshot",
+   "resources": [
+    "ResourceSnapshot"
+   ]
+  },
+  "createresourcesnapshotjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResourceSnapshotJob",
+   "resources": [
+    "resource-snapshot-job"
+   ]
+  },
+  "createrevenueattribution": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRevenueAttribution",
+   "resources": []
+  },
+  "deletebusinessplanattachment": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:AllowAwsEngagement",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBusinessPlanAttachment",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "deletebusinessplanitem": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:AllowAwsEngagement",
+    "partnercentral:BusinessPlanItemStage",
+    "partnercentral:BusinessPlanItemType",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBusinessPlanItem",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "deleteprogrammanagementaccount": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProgramManagementAccount",
+   "resources": [
+    "ProgramManagementAccount"
+   ]
+  },
+  "deleterelationship": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRelationship",
+   "resources": [
+    "Relationship"
+   ]
+  },
+  "deleteresourcesnapshotjob": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourceSnapshotJob",
+   "resources": [
+    "resource-snapshot-job"
+   ]
+  },
+  "disassociateawstrainingcertificationemaildomain": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateAwsTrainingCertificationEmailDomain",
+   "resources": [
+    "Partner"
+   ]
+  },
+  "disassociatebenefitapplicationresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes",
+    "partnercentral:Programs"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateBenefitApplicationResource",
+   "resources": [
+    "BenefitAllocation",
+    "BenefitApplication",
+    "Opportunity"
+   ]
+  },
+  "disassociatebusinessplan": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateBusinessPlan",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "disassociateopportunity": {
+   "conditionKeys": [
+    "partnercentral:Catalog",
+    "partnercentral:RelatedEntityType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateOpportunity",
+   "resources": [
+    "Opportunity"
+   ]
+  },
+  "enrollinpartnerpath": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnrollInPartnerPath",
+   "resources": []
+  },
+  "getallianceleadcontact": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "name": "GetAllianceLeadContact",
+   "resources": [
+    "Partner"
+   ]
+  },
+  "getawsopportunitysummary": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetAwsOpportunitySummary",
+   "resources": [
+    "Opportunity"
+   ]
+  },
+  "getbenefit": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes",
+    "partnercentral:Programs"
+   ],
+   "name": "GetBenefit",
+   "resources": [
+    "Benefit"
+   ]
+  },
+  "getbenefitallocation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes"
+   ],
+   "name": "GetBenefitAllocation",
+   "resources": [
+    "BenefitAllocation"
+   ]
+  },
+  "getbenefitapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes",
+    "partnercentral:Programs"
+   ],
+   "name": "GetBenefitApplication",
+   "resources": [
+    "BenefitApplication"
+   ]
+  },
+  "getbusinessplan": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "name": "GetBusinessPlan",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "getbusinessplanattachment": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "name": "GetBusinessPlanAttachment",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "getbusinessplanattachmentimporttask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "name": "GetBusinessPlanAttachmentImportTask",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "getbusinessplanitem": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:BusinessPlanItemStage",
+    "partnercentral:BusinessPlanItemType",
+    "partnercentral:Catalog"
+   ],
+   "name": "GetBusinessPlanItem",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "getbusinessplanitemschema": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetBusinessPlanItemSchema",
+   "resources": []
+  },
+  "getbusinessplansettings": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetBusinessPlanSettings",
+   "resources": []
+  },
+  "getbusinessplansubmissiontask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "name": "GetBusinessPlanSubmissionTask",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "getcollaborationchannel": {
+   "name": "GetCollaborationChannel",
+   "resources": []
+  },
+  "getconnection": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetConnection",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "getconnectioninvitation": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetConnectionInvitation",
+   "resources": [
+    "ConnectionInvitation"
+   ]
+  },
+  "getconnectionpreferences": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetConnectionPreferences",
+   "resources": []
+  },
+  "getengagement": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetEngagement",
+   "resources": [
+    "Engagement"
+   ]
+  },
+  "getengagementinvitation": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetEngagementInvitation",
+   "resources": [
+    "engagement-invitation"
+   ]
+  },
+  "getmarketplacerevenueshare": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetMarketplaceRevenueShare",
+   "resources": [
+    "MarketplaceRevenueShare"
+   ]
+  },
+  "getmarketplacerevenueshareallocation": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetMarketplaceRevenueShareAllocation",
+   "resources": [
+    "MarketplaceRevenueShare"
+   ]
+  },
+  "getopportunity": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetOpportunity",
+   "resources": [
+    "Opportunity"
+   ]
+  },
+  "getpartner": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "name": "GetPartner",
+   "resources": [
+    "Partner"
+   ]
+  },
+  "getpartnercentralcontentdocument": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetPartnerCentralContentDocument",
+   "resources": []
+  },
+  "getpartnercentralcontentmetadata": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetPartnerCentralContentMetadata",
+   "resources": []
+  },
+  "getpartnerdashboard": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetPartnerDashboard",
+   "resources": [
+    "Dashboard"
+   ]
+  },
+  "getpartnerprofile": {
+   "name": "GetPartnerProfile",
+   "resources": []
+  },
+  "getpartnerreportingdata": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetPartnerReportingData",
+   "resources": [
+    "Dataset"
+   ]
+  },
+  "getprofileupdatetask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "name": "GetProfileUpdateTask",
+   "resources": [
+    "Partner"
+   ]
+  },
+  "getprofilevisibility": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "name": "GetProfileVisibility",
+   "resources": [
+    "Partner"
+   ]
+  },
+  "getprogrammanagementaccount": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetProgramManagementAccount",
+   "resources": []
+  },
+  "getprospectingfromengagementtask": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetProspectingFromEngagementTask",
+   "resources": [
+    "ProspectingFromEngagementTask"
+   ]
+  },
+  "getqualificationsassociationdetails": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "name": "GetQualificationsAssociationDetails",
+   "resources": [
+    "Partner"
+   ]
+  },
+  "getqualificationsassociationtask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "name": "GetQualificationsAssociationTask",
+   "resources": [
+    "Partner"
+   ]
+  },
+  "getqualificationsdisassociationtask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "name": "GetQualificationsDisassociationTask",
+   "resources": [
+    "Partner"
+   ]
+  },
+  "getrelationship": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "name": "GetRelationship",
+   "resources": [
+    "Relationship"
+   ]
+  },
+  "getresourcesnapshot": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetResourceSnapshot",
+   "resources": [
+    "ResourceSnapshot"
+   ]
+  },
+  "getresourcesnapshotjob": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetResourceSnapshotJob",
+   "resources": [
+    "resource-snapshot-job"
+   ]
+  },
+  "getrevenueattribution": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetRevenueAttribution",
+   "resources": [
+    "RevenueAttribution"
+   ]
+  },
+  "getrevenueattributionallocation": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetRevenueAttributionAllocation",
+   "resources": [
+    "RevenueAttribution"
+   ]
+  },
+  "getrevenueattributionallocationstask": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetRevenueAttributionAllocationsTask",
+   "resources": [
+    "RevenueAttribution"
+   ]
+  },
+  "getsellingsystemsettings": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetSellingSystemSettings",
+   "resources": []
+  },
+  "getverification": {
+   "conditionKeys": [
+    "partnercentral:Catalog",
+    "partnercentral:VerificationType"
+   ],
+   "name": "GetVerification",
+   "resources": []
+  },
+  "listbenefitallocations": {
+   "conditionKeys": [
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBenefitAllocations",
+   "resources": [
+    "BenefitAllocation"
+   ]
+  },
+  "listbenefitapplications": {
+   "conditionKeys": [
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes",
+    "partnercentral:Programs"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBenefitApplications",
+   "resources": [
+    "BenefitApplication"
+   ]
+  },
+  "listbenefits": {
+   "conditionKeys": [
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes",
+    "partnercentral:Programs"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBenefits",
+   "resources": [
+    "Benefit"
+   ]
+  },
+  "listbusinessplanassociations": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBusinessPlanAssociations",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "listbusinessplanattachmentimporttasks": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBusinessPlanAttachmentImportTasks",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "listbusinessplanattachments": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBusinessPlanAttachments",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "listbusinessplanhistory": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBusinessPlanHistory",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "listbusinessplanitems": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBusinessPlanItems",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "listbusinessplans": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBusinessPlans",
+   "resources": []
+  },
+  "listbusinessplansubmissiontasks": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBusinessPlanSubmissionTasks",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "listchannelhandshakes": {
+   "conditionKeys": [
+    "partnercentral:Catalog",
+    "partnercentral:ChannelHandshakeType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannelHandshakes",
+   "resources": [
+    "ChannelHandshake"
+   ]
+  },
+  "listcollaborationchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCollaborationChannels",
+   "resources": []
+  },
+  "listconnectioninvitations": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectionInvitations",
+   "resources": []
+  },
+  "listconnections": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnections",
+   "resources": []
+  },
+  "listengagementbyacceptinginvitationtasks": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEngagementByAcceptingInvitationTasks",
+   "resources": []
+  },
+  "listengagementfromopportunitytasks": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEngagementFromOpportunityTasks",
+   "resources": []
+  },
+  "listengagementinvitations": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEngagementInvitations",
+   "resources": []
+  },
+  "listengagementmembers": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "ListEngagementMembers",
+   "resources": [
+    "Engagement"
+   ]
+  },
+  "listengagementresourceassociations": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "ListEngagementResourceAssociations",
+   "resources": [
+    "ResourceSnapshot"
+   ]
+  },
+  "listengagements": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEngagements",
+   "resources": []
+  },
+  "listmarketplacerevenueshareallocations": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMarketplaceRevenueShareAllocations",
+   "resources": [
+    "MarketplaceRevenueShare"
+   ]
+  },
+  "listmarketplacerevenueshares": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMarketplaceRevenueShares",
+   "resources": []
+  },
+  "listopportunities": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOpportunities",
+   "resources": []
+  },
+  "listopportunityfromengagementtasks": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOpportunityFromEngagementTasks",
+   "resources": []
+  },
+  "listpartnercentralcontent": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPartnerCentralContent",
+   "resources": []
+  },
+  "listpartnerpaths": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPartnerPaths",
+   "resources": []
+  },
+  "listpartners": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPartners",
+   "resources": []
+  },
+  "listprogrammanagementaccounts": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProgramManagementAccounts",
+   "resources": [
+    "ProgramManagementAccount"
+   ]
+  },
+  "listprospectingfromengagementtasks": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProspectingFromEngagementTasks",
+   "resources": []
+  },
+  "listrelationships": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRelationships",
+   "resources": [
+    "Relationship"
+   ]
+  },
+  "listresourcesnapshotjobs": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceSnapshotJobs",
+   "resources": []
+  },
+  "listresourcesnapshots": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceSnapshots",
+   "resources": [
+    "ResourceSnapshot"
+   ]
+  },
+  "listrevenueattributionallocations": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRevenueAttributionAllocations",
+   "resources": [
+    "RevenueAttribution"
+   ]
+  },
+  "listrevenueattributions": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRevenueAttributions",
+   "resources": []
+  },
+  "listsolutions": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSolutions",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes",
+    "partnercentral:Programs"
+   ],
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "putallianceleadcontact": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAllianceLeadContact",
+   "resources": [
+    "Partner"
+   ]
+  },
+  "putbusinessplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutBusinessPlan",
+   "resources": []
+  },
+  "putbusinessplansettings": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutBusinessPlanSettings",
+   "resources": []
+  },
+  "putprofilevisibility": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutProfileVisibility",
+   "resources": [
+    "Partner"
+   ]
+  },
+  "putsellingsystemsettings": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSellingSystemSettings",
+   "resources": []
+  },
+  "recallbenefitapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes",
+    "partnercentral:Programs"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RecallBenefitApplication",
+   "resources": [
+    "BenefitApplication"
+   ]
+  },
+  "rejectchannelhandshake": {
+   "conditionKeys": [
+    "partnercentral:Catalog",
+    "partnercentral:ChannelHandshakeType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectChannelHandshake",
+   "resources": [
+    "ChannelHandshake"
+   ]
+  },
+  "rejectconnectioninvitation": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectConnectionInvitation",
+   "resources": [
+    "ConnectionInvitation"
+   ]
+  },
+  "rejectengagementinvitation": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectEngagementInvitation",
+   "resources": [
+    "engagement-invitation"
+   ]
+  },
+  "searchopportunities": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchOpportunities",
+   "resources": []
+  },
+  "searchpartnercentralcontent": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchPartnerCentralContent",
+   "resources": []
+  },
+  "searchpartnerprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchPartnerProfiles",
+   "resources": []
+  },
+  "sendemailverificationcode": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendEmailVerificationCode",
+   "resources": []
+  },
+  "startbusinessplanattachmentimporttask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:AllowAwsEngagement",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartBusinessPlanAttachmentImportTask",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "startbusinessplansubmissiontask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:AllowAwsEngagement",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartBusinessPlanSubmissionTask",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "startengagementbyacceptinginvitationtask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartEngagementByAcceptingInvitationTask",
+   "resources": [
+    "engagement-by-accepting-invitation-task"
+   ]
+  },
+  "startengagementfromopportunitytask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartEngagementFromOpportunityTask",
+   "resources": [
+    "engagement-from-opportunity-task"
+   ]
+  },
+  "startopportunityfromengagementtask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartOpportunityFromEngagementTask",
+   "resources": [
+    "OpportunityFromEngagementTask"
+   ]
+  },
+  "startprofileupdatetask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartProfileUpdateTask",
+   "resources": [
+    "Partner"
+   ]
+  },
+  "startprospectingfromengagementtask": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartProspectingFromEngagementTask",
+   "resources": [
+    "Engagement"
+   ]
+  },
+  "startqualificationsassociationtask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartQualificationsAssociationTask",
+   "resources": [
+    "Partner"
+   ]
+  },
+  "startqualificationsdisassociationtask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartQualificationsDisassociationTask",
+   "resources": [
+    "Partner"
+   ]
+  },
+  "startresourcesnapshotjob": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartResourceSnapshotJob",
+   "resources": [
+    "resource-snapshot-job"
+   ]
+  },
+  "startrevenueattributionallocationstask": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRevenueAttributionAllocationsTask",
+   "resources": [
+    "RevenueAttribution"
+   ]
+  },
+  "startverification": {
+   "conditionKeys": [
+    "partnercentral:Catalog",
+    "partnercentral:VerificationType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartVerification",
+   "resources": []
+  },
+  "stopresourcesnapshotjob": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopResourceSnapshotJob",
+   "resources": [
+    "resource-snapshot-job"
+   ]
+  },
+  "submitbenefitapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes",
+    "partnercentral:Programs"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitBenefitApplication",
+   "resources": [
+    "BenefitApplication"
+   ]
+  },
+  "submitopportunity": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitOpportunity",
+   "resources": [
+    "Opportunity"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes",
+    "partnercentral:Programs"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "BenefitApplication",
+    "BusinessPlan",
+    "ChannelHandshake",
+    "MarketplaceRevenueShare",
+    "Opportunity",
+    "Partner",
+    "ProgramManagementAccount",
+    "Relationship",
+    "RevenueAttribution",
+    "resource-snapshot-job"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes",
+    "partnercentral:Programs"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "BenefitApplication",
+    "BusinessPlan",
+    "ChannelHandshake",
+    "MarketplaceRevenueShare",
+    "Opportunity",
+    "Partner",
+    "ProgramManagementAccount",
+    "Relationship",
+    "RevenueAttribution",
+    "resource-snapshot-job"
+   ]
+  },
+  "updatebenefitapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog",
+    "partnercentral:FulfillmentTypes",
+    "partnercentral:Programs"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBenefitApplication",
+   "resources": [
+    "BenefitApplication"
+   ]
+  },
+  "updatebusinessplan": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:AllowAwsEngagement",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBusinessPlan",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "updatebusinessplanitem": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:AllowAwsEngagement",
+    "partnercentral:BusinessPlanItemStage",
+    "partnercentral:BusinessPlanItemType",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBusinessPlanItem",
+   "resources": [
+    "BusinessPlan"
+   ]
+  },
+  "updateconnectionpreferences": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnectionPreferences",
+   "resources": []
+  },
+  "updateengagementcontext": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEngagementContext",
+   "resources": [
+    "Engagement"
+   ]
+  },
+  "updatemarketplacerevenueshareallocation": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMarketplaceRevenueShareAllocation",
+   "resources": [
+    "MarketplaceRevenueShare"
+   ]
+  },
+  "updateopportunity": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOpportunity",
+   "resources": [
+    "Opportunity"
+   ]
+  },
+  "updateprogrammanagementaccount": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProgramManagementAccount",
+   "resources": [
+    "ProgramManagementAccount"
+   ]
+  },
+  "updaterelationship": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRelationship",
+   "resources": [
+    "Relationship"
+   ]
+  },
+  "updaterevenueattribution": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRevenueAttribution",
+   "resources": [
+    "RevenueAttribution"
+   ]
+  },
+  "usesession": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UseSession",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "partnercentral:AllowAwsEngagement": [
+   "String"
+  ],
+  "partnercentral:BusinessPlanItemStage": [
+   "String"
+  ],
+  "partnercentral:BusinessPlanItemType": [
+   "String"
+  ],
+  "partnercentral:Catalog": [
+   "String"
+  ],
+  "partnercentral:ChannelHandshakeType": [
+   "String"
+  ],
+  "partnercentral:FulfillmentTypes": [
+   "ArrayOfString"
+  ],
+  "partnercentral:Programs": [
+   "ArrayOfString"
+  ],
+  "partnercentral:RelatedEntityType": [
+   "String"
+  ],
+  "partnercentral:VerificationType": [
+   "String"
+  ]
+ },
+ "resources": {
+  "Benefit": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/benefit/${Identifier}"
+   ]
+  },
+  "BenefitAllocation": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/benefit-allocation/${Identifier}"
+   ]
+  },
+  "BenefitApplication": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/benefit-application/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "BusinessPlan": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/business-plan/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ChannelHandshake": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/channel-handshake/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Connection": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/connection/${Identifier}"
+   ]
+  },
+  "ConnectionInvitation": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/connection-invitation/${Identifier}"
+   ]
+  },
+  "ConnectionPreferences": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/connection-preferences"
+   ]
+  },
+  "Dashboard": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral::${Account}:catalog/${Catalog}/ReportingData/${TableId}/Dashboard/${DashboardId}"
+   ]
+  },
+  "Dataset": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral::${Account}:catalog/${Catalog}/ReportingData/${Domain}/Dataset/${DatasetName}"
+   ]
+  },
+  "Engagement": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/engagement/${Identifier}"
+   ]
+  },
+  "MarketplaceRevenueShare": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/marketplace-revenue-share/${MarketplaceProductId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Opportunity": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/opportunity/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "OpportunityFromEngagementTask": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/opportunity-from-engagement-task/${TaskId}"
+   ]
+  },
+  "Partner": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/partner/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ProgramManagementAccount": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/program-management-account/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ProspectingFromEngagementTask": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/prospecting-from-engagement-task/${TaskIdentifier}"
+   ]
+  },
+  "Relationship": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/program-management-account/${ProgramManagementAccountId}/relationship/${RelationshipId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ResourceSnapshot": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/engagement/${EngagementIdentifier}/resource/${ResourceType}/${ResourceIdentifier}/template/${TemplateIdentifier}/resource-snapshot/${SnapshotRevision}"
+   ]
+  },
+  "RevenueAttribution": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/revenue-attribution/${RevenueAttributionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Solution": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/solution/${Identifier}"
+   ]
+  },
+  "engagement-by-accepting-invitation-task": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/engagement-by-accepting-invitation-task/${TaskId}"
+   ]
+  },
+  "engagement-from-opportunity-task": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/engagement-from-opportunity-task/${TaskId}"
+   ]
+  },
+  "engagement-invitation": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/engagement-invitation/${Identifier}"
+   ]
+  },
+  "resource-snapshot-job": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/resource-snapshot-job/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "partnercentral",
+ "serviceName": "Partner Central",
+ "version": "v1.5"
+}

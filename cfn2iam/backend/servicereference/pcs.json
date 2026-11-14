@@ -1,0 +1,262 @@
+{
+ "actions": {
+  "allowvendedlogdeliveryforresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "createcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCluster",
+   "resources": []
+  },
+  "createcomputenodegroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateComputeNodeGroup",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "createqueue": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQueue",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "deletecluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "deletecomputenodegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteComputeNodeGroup",
+   "resources": [
+    "cluster",
+    "computenodegroup"
+   ]
+  },
+  "deletequeue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQueue",
+   "resources": [
+    "cluster",
+    "queue"
+   ]
+  },
+  "getcluster": {
+   "name": "GetCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "getcomputenodegroup": {
+   "name": "GetComputeNodeGroup",
+   "resources": [
+    "cluster",
+    "computenodegroup"
+   ]
+  },
+  "getqueue": {
+   "name": "GetQueue",
+   "resources": [
+    "cluster",
+    "queue"
+   ]
+  },
+  "listclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClusters",
+   "resources": []
+  },
+  "listcomputenodegroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListComputeNodeGroups",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listqueues": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQueues",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "registercomputenodegroupinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterComputeNodeGroupInstance",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "computenodegroup": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster",
+    "computenodegroup",
+    "queue"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "computenodegroup": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster",
+    "computenodegroup",
+    "queue"
+   ]
+  },
+  "updatecluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "updatecomputenodegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateComputeNodeGroup",
+   "resources": [
+    "cluster",
+    "computenodegroup"
+   ]
+  },
+  "updatequeue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueue",
+   "resources": [
+    "cluster",
+    "queue"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "cluster": {
+   "arnFormats": [
+    "arn:${Partition}:pcs:${Region}:${Account}:cluster/${ClusterIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "computenodegroup": {
+   "arnFormats": [
+    "arn:${Partition}:pcs:${Region}:${Account}:cluster/${ClusterIdentifier}/computenodegroup/${ComputeNodeGroupIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "queue": {
+   "arnFormats": [
+    "arn:${Partition}:pcs:${Region}:${Account}:cluster/${ClusterIdentifier}/queue/${QueueIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "pcs",
+ "serviceName": "Parallel Computing Service",
+ "version": "v1.5"
+}

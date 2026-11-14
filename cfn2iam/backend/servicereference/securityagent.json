@@ -1,0 +1,1077 @@
+{
+ "actions": {
+  "addartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddArtifact",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchcreatesecurityrequirements": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateSecurityRequirements",
+   "resources": [
+    "SecurityRequirementPack"
+   ]
+  },
+  "batchdeletecodereviews": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteCodeReviews",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchdeletepentests": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeletePentests",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchdeletesecurityrequirements": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteSecurityRequirements",
+   "resources": [
+    "SecurityRequirementPack"
+   ]
+  },
+  "batchdeletethreatmodels": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteThreatModels",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchdisassociatefindingissue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDisassociateFindingIssue",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchexportfindings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchExportFindings",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchgetagentspaces": {
+   "name": "BatchGetAgentSpaces",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchgetartifactmetadata": {
+   "name": "BatchGetArtifactMetadata",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchgetcodereviewjobs": {
+   "name": "BatchGetCodeReviewJobs",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchgetcodereviewjobtasks": {
+   "name": "BatchGetCodeReviewJobTasks",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchgetcodereviews": {
+   "name": "BatchGetCodeReviews",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchgetfindings": {
+   "name": "BatchGetFindings",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchgetpentestjobcontentmetadata": {
+   "name": "BatchGetPentestJobContentMetadata",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchgetpentestjobs": {
+   "name": "BatchGetPentestJobs",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchgetpentestjobtasks": {
+   "name": "BatchGetPentestJobTasks",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchgetpentests": {
+   "name": "BatchGetPentests",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchgetsecurityrequirements": {
+   "name": "BatchGetSecurityRequirements",
+   "resources": [
+    "SecurityRequirementPack"
+   ]
+  },
+  "batchgettargetdomains": {
+   "name": "BatchGetTargetDomains",
+   "resources": [
+    "TargetDomain"
+   ]
+  },
+  "batchgetthreatmodeljobs": {
+   "name": "BatchGetThreatModelJobs",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchgetthreatmodeljobtasks": {
+   "name": "BatchGetThreatModelJobTasks",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchgetthreatmodels": {
+   "name": "BatchGetThreatModels",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchgetthreats": {
+   "name": "BatchGetThreats",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchgetvalidationruns": {
+   "name": "BatchGetValidationRuns",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "batchupdatesecurityrequirements": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateSecurityRequirements",
+   "resources": [
+    "SecurityRequirementPack"
+   ]
+  },
+  "createagentspace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgentSpace",
+   "resources": []
+  },
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "createcodereview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCodeReview",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "createdesignreview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDesignReview",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "createintegration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIntegration",
+   "resources": []
+  },
+  "createmembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMembership",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "createonetimeloginsession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOneTimeLoginSession",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "createpentest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePentest",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "createprivateconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePrivateConnection",
+   "resources": []
+  },
+  "createsecurityrequirement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSecurityRequirement",
+   "resources": [
+    "SecurityRequirementPack"
+   ]
+  },
+  "createsecurityrequirementpack": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSecurityRequirementPack",
+   "resources": []
+  },
+  "createtargetdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTargetDomain",
+   "resources": []
+  },
+  "createthreat": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateThreat",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "createthreatmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateThreatModel",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "deleteagentspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentSpace",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "Application"
+   ]
+  },
+  "deleteartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteArtifact",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "deletedesignreview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDesignReview",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "deleteintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIntegration",
+   "resources": [
+    "Integration"
+   ]
+  },
+  "deletemembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMembership",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "deleteprivateconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePrivateConnection",
+   "resources": [
+    "PrivateConnection"
+   ]
+  },
+  "deletesecurityrequirement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSecurityRequirement",
+   "resources": [
+    "SecurityRequirementPack"
+   ]
+  },
+  "deletesecurityrequirementpack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSecurityRequirementPack",
+   "resources": [
+    "SecurityRequirementPack"
+   ]
+  },
+  "deletetargetdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTargetDomain",
+   "resources": [
+    "TargetDomain"
+   ]
+  },
+  "describeprivateconnection": {
+   "name": "DescribePrivateConnection",
+   "resources": [
+    "PrivateConnection"
+   ]
+  },
+  "getapplication": {
+   "name": "GetApplication",
+   "resources": [
+    "Application"
+   ]
+  },
+  "getartifact": {
+   "name": "GetArtifact",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "getdesignreview": {
+   "name": "GetDesignReview",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "getdesignreviewartifact": {
+   "name": "GetDesignReviewArtifact",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "getdesignreviewfeedback": {
+   "name": "GetDesignReviewFeedback",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "getintegration": {
+   "name": "GetIntegration",
+   "resources": [
+    "Integration"
+   ]
+  },
+  "getproviderregistrationmanifest": {
+   "name": "GetProviderRegistrationManifest",
+   "resources": []
+  },
+  "getsecurityrequirement": {
+   "name": "GetSecurityRequirement",
+   "resources": [
+    "SecurityRequirementPack"
+   ]
+  },
+  "getsecurityrequirementpack": {
+   "name": "GetSecurityRequirementPack",
+   "resources": [
+    "SecurityRequirementPack"
+   ]
+  },
+  "handleprovidercallback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "HandleProviderCallback",
+   "resources": []
+  },
+  "handleproviderregistrationcallback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "HandleProviderRegistrationCallback",
+   "resources": []
+  },
+  "importsecurityrequirements": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportSecurityRequirements",
+   "resources": [
+    "SecurityRequirementPack"
+   ]
+  },
+  "initiateproviderregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitiateProviderRegistration",
+   "resources": []
+  },
+  "listactormessages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListActorMessages",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listagentspaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentSpaces",
+   "resources": []
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listartifacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListArtifacts",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listcodereviewjobsforcodereview": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCodeReviewJobsForCodeReview",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listcodereviewjobtasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCodeReviewJobTasks",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listcodereviews": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCodeReviews",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listdesignreviewcomments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDesignReviewComments",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listdesignreviews": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDesignReviews",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listdiscovereddomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDiscoveredDomains",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listdiscoveredendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDiscoveredEndpoints",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listfindings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFindings",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listintegratedresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIntegratedResources",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listintegrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIntegrations",
+   "resources": []
+  },
+  "listmemberships": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMemberships",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listpentestjobsforpentest": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPentestJobsForPentest",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listpentestjobtasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPentestJobTasks",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listpentests": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPentests",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listprivateconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPrivateConnections",
+   "resources": []
+  },
+  "listresourcesfromintegration": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourcesFromIntegration",
+   "resources": [
+    "Integration"
+   ]
+  },
+  "listsecurityrequirementpacks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityRequirementPacks",
+   "resources": []
+  },
+  "listsecurityrequirements": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityRequirements",
+   "resources": [
+    "SecurityRequirementPack"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "AgentSpace",
+    "Application",
+    "Integration",
+    "PrivateConnection",
+    "SecurityRequirementPack",
+    "TargetDomain"
+   ]
+  },
+  "listtargetdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTargetDomains",
+   "resources": []
+  },
+  "listthreatmodeljobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThreatModelJobs",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listthreatmodeljobtasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThreatModelJobTasks",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listthreatmodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThreatModels",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "listthreats": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThreats",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "putdesignreviewfeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDesignReviewFeedback",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "resumepentestjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResumePentestJob",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "startcoderemediation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCodeRemediation",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "startcodereviewjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCodeReviewJob",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "startpentestjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartPentestJob",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "startthreatmodeljob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartThreatModelJob",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "startvalidationrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartValidationRun",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "stopcodereviewjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopCodeReviewJob",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "stoppentestjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopPentestJob",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "stopthreatmodeljob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopThreatModelJob",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "AgentSpace",
+    "Application",
+    "Integration",
+    "PrivateConnection",
+    "SecurityRequirementPack",
+    "TargetDomain"
+   ]
+  },
+  "togglemanagedsecurityrequirement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ToggleManagedSecurityRequirement",
+   "resources": [
+    "SecurityRequirementPack"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "AgentSpace",
+    "Application",
+    "Integration",
+    "PrivateConnection",
+    "SecurityRequirementPack",
+    "TargetDomain"
+   ]
+  },
+  "updateagentspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentSpace",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "updateapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": [
+    "Application"
+   ]
+  },
+  "updatecodereview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCodeReview",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "updatediscovereddomains": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDiscoveredDomains",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "updatefinding": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFinding",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "updateintegratedresources": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIntegratedResources",
+   "resources": [
+    "AgentSpace",
+    "Integration"
+   ]
+  },
+  "updateintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIntegration",
+   "resources": [
+    "Integration"
+   ]
+  },
+  "updatepentest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePentest",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "updateprivateconnectioncertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePrivateConnectionCertificate",
+   "resources": [
+    "PrivateConnection"
+   ]
+  },
+  "updatesecurityrequirement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSecurityRequirement",
+   "resources": [
+    "SecurityRequirementPack"
+   ]
+  },
+  "updatesecurityrequirementpack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSecurityRequirementPack",
+   "resources": [
+    "SecurityRequirementPack"
+   ]
+  },
+  "updatetargetdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTargetDomain",
+   "resources": [
+    "TargetDomain"
+   ]
+  },
+  "updatethreat": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateThreat",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "updatethreatmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateThreatModel",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "verifytargetdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VerifyTargetDomain",
+   "resources": [
+    "TargetDomain"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "AgentSpace": {
+   "arnFormats": [
+    "arn:${Partition}:securityagent:${Region}:${Account}:agent-space/${AgentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Application": {
+   "arnFormats": [
+    "arn:${Partition}:securityagent:${Region}:${Account}:application/${ApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Integration": {
+   "arnFormats": [
+    "arn:${Partition}:securityagent:${Region}:${Account}:integration/${IntegrationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "PrivateConnection": {
+   "arnFormats": [
+    "arn:${Partition}:securityagent:${Region}:${Account}:private-connection/${PrivateConnectionName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "SecurityRequirementPack": {
+   "arnFormats": [
+    "arn:${Partition}:securityagent:${Region}:${Account}:security-requirement-pack/${SecurityRequirementPackId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "TargetDomain": {
+   "arnFormats": [
+    "arn:${Partition}:securityagent:${Region}:${Account}:target-domain/${TargetDomainId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "securityagent",
+ "serviceName": "securityagent",
+ "version": "v1.5"
+}

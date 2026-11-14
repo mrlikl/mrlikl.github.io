@@ -1,0 +1,131 @@
+{
+ "actions": {
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "createentitlement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEntitlement",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteentitlement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEntitlement",
+   "resources": [
+    "application"
+   ]
+  },
+  "getapplication": {
+   "name": "GetApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "getentitlement": {
+   "name": "GetEntitlement",
+   "resources": [
+    "application"
+   ]
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listentitlements": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEntitlements",
+   "resources": [
+    "application"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "application"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "application"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "application"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:account-access:${Region}:${Account}:application/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "account-access",
+ "serviceName": "Account access manager",
+ "version": "v1.5"
+}

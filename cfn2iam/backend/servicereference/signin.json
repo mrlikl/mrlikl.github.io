@@ -1,0 +1,231 @@
+{
+ "actions": {
+  "authenticate": {
+   "conditionKeys": [
+    "signin:PrincipalArn"
+   ],
+   "name": "Authenticate",
+   "resources": [
+    "console"
+   ]
+  },
+  "authorizeoauth2access": {
+   "name": "AuthorizeOAuth2Access",
+   "resourceConditionKeys": {
+    "oauth2-public-client-localhost": [
+     "signin:OAuthClientId",
+     "signin:OAuthRedirectUri"
+    ],
+    "oauth2-public-client-remote": [
+     "signin:OAuthClientId",
+     "signin:OAuthRedirectUri"
+    ],
+    "oauth2-resource-service-principal": [
+     "signin:OAuthClientId",
+     "signin:OAuthRedirectUri"
+    ]
+   },
+   "resources": [
+    "console",
+    "oauth2-public-client-localhost",
+    "oauth2-public-client-remote",
+    "oauth2-resource-service-principal"
+   ]
+  },
+  "createaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccount",
+   "resources": [
+    "console"
+   ]
+  },
+  "createbearertoken": {
+   "name": "CreateBearerToken",
+   "resourceConditionKeys": {
+    "oauth2-resource-service-principal": [
+     "signin:OAuthClientId",
+     "signin:OAuthGrantType"
+    ]
+   },
+   "resources": [
+    "oauth2-resource-service-principal"
+   ]
+  },
+  "createoauth2publicclient": {
+   "conditionKeys": [
+    "signin:OAuthRedirectUri"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOAuth2PublicClient",
+   "resources": [
+    "oauth2-public-client-registration"
+   ]
+  },
+  "createoauth2token": {
+   "name": "CreateOAuth2Token",
+   "resourceConditionKeys": {
+    "oauth2-public-client-localhost": [
+     "signin:OAuthClientAuthentication",
+     "signin:OAuthClientId",
+     "signin:OAuthGrantType",
+     "signin:OAuthRedirectUri"
+    ],
+    "oauth2-public-client-remote": [
+     "signin:OAuthClientAuthentication",
+     "signin:OAuthClientId",
+     "signin:OAuthGrantType",
+     "signin:OAuthRedirectUri"
+    ],
+    "oauth2-resource-service-principal": [
+     "signin:OAuthClientAuthentication",
+     "signin:OAuthClientId",
+     "signin:OAuthGrantType",
+     "signin:OAuthRedirectUri"
+    ]
+   },
+   "resources": [
+    "console",
+    "oauth2-public-client-localhost",
+    "oauth2-public-client-remote",
+    "oauth2-resource-service-principal"
+   ]
+  },
+  "createtrustedidentitypropagationapplicationforconsole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTrustedIdentityPropagationApplicationForConsole",
+   "resources": []
+  },
+  "deleteconsoleauthorizationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConsoleAuthorizationConfiguration",
+   "resources": []
+  },
+  "deleteresourcepermissionstatement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePermissionStatement",
+   "resources": []
+  },
+  "getconsoleauthorizationconfiguration": {
+   "name": "GetConsoleAuthorizationConfiguration",
+   "resources": []
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": []
+  },
+  "introspectoauth2token": {
+   "conditionKeys": [
+    "signin:OAuthClientId",
+    "signin:OAuthTokenType"
+   ],
+   "name": "IntrospectOAuth2Token",
+   "resources": [
+    "oauth2-public-client-localhost",
+    "oauth2-public-client-remote",
+    "oauth2-resource-service-principal"
+   ]
+  },
+  "listresourcepermissionstatements": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourcePermissionStatements",
+   "resources": []
+  },
+  "listtrustedidentitypropagationapplicationsforconsole": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrustedIdentityPropagationApplicationsForConsole",
+   "resources": []
+  },
+  "putconsoleauthorizationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutConsoleAuthorizationConfiguration",
+   "resources": []
+  },
+  "putresourcepermissionstatement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePermissionStatement",
+   "resources": []
+  },
+  "revokeoauth2token": {
+   "conditionKeys": [
+    "signin:OAuthTokenType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeOAuth2Token",
+   "resources": [
+    "oauth2-public-client-localhost",
+    "oauth2-public-client-remote",
+    "oauth2-resource-service-principal"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "signin:OAuthClientAuthentication": [
+   "String"
+  ],
+  "signin:OAuthClientId": [
+   "String"
+  ],
+  "signin:OAuthGrantType": [
+   "String"
+  ],
+  "signin:OAuthRedirectUri": [
+   "String"
+  ],
+  "signin:OAuthTokenType": [
+   "String"
+  ],
+  "signin:PrincipalArn": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "console": {
+   "arnFormats": [
+    "arn:${Partition}:signin:::console/${ConsoleName}"
+   ]
+  },
+  "oauth2-public-client-localhost": {
+   "arnFormats": [
+    "arn:${Partition}:signin:${Region}:${Account}:oauth2/public-client/localhost"
+   ]
+  },
+  "oauth2-public-client-registration": {
+   "arnFormats": [
+    "arn:${Partition}:signin:${Region}::external-client/dcr/*"
+   ]
+  },
+  "oauth2-public-client-remote": {
+   "arnFormats": [
+    "arn:${Partition}:signin:${Region}:${Account}:oauth2/public-client/remote"
+   ]
+  },
+  "oauth2-resource-service-principal": {
+   "arnFormats": [
+    "arn:${Partition}:signin:${Region}:${Account}:service-principal/${ServicePrincipalName}"
+   ]
+  }
+ },
+ "service": "signin",
+ "serviceName": "Signin",
+ "version": "v1.5"
+}

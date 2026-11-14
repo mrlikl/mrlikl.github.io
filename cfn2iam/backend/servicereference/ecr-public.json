@@ -1,0 +1,235 @@
+{
+ "actions": {
+  "batchchecklayeravailability": {
+   "name": "BatchCheckLayerAvailability",
+   "resources": [
+    "repository"
+   ]
+  },
+  "batchdeleteimage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteImage",
+   "resources": [
+    "repository"
+   ]
+  },
+  "completelayerupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteLayerUpload",
+   "resources": [
+    "repository"
+   ]
+  },
+  "createrepository": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "deleterepository": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "deleterepositorypolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRepositoryPolicy",
+   "resources": [
+    "repository"
+   ]
+  },
+  "describeimages": {
+   "name": "DescribeImages",
+   "resources": [
+    "repository"
+   ]
+  },
+  "describeimagetags": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeImageTags",
+   "resources": [
+    "repository"
+   ]
+  },
+  "describeregistries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeRegistries",
+   "resources": [
+    "registry"
+   ]
+  },
+  "describerepositories": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeRepositories",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getauthorizationtoken": {
+   "name": "GetAuthorizationToken",
+   "resources": []
+  },
+  "getregistrycatalogdata": {
+   "name": "GetRegistryCatalogData",
+   "resources": [
+    "registry"
+   ]
+  },
+  "getrepositorycatalogdata": {
+   "name": "GetRepositoryCatalogData",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getrepositorypolicy": {
+   "name": "GetRepositoryPolicy",
+   "resources": [
+    "repository"
+   ]
+  },
+  "initiatelayerupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitiateLayerUpload",
+   "resources": [
+    "repository"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "repository"
+   ]
+  },
+  "putimage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutImage",
+   "resources": [
+    "repository"
+   ]
+  },
+  "putregistrycatalogdata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRegistryCatalogData",
+   "resources": [
+    "registry"
+   ]
+  },
+  "putrepositorycatalogdata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRepositoryCatalogData",
+   "resources": [
+    "repository"
+   ]
+  },
+  "setrepositorypolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "SetRepositoryPolicy",
+   "resources": [
+    "repository"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "repository"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "repository"
+   ]
+  },
+  "uploadlayerpart": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UploadLayerPart",
+   "resources": [
+    "repository"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "ecr-public:ResourceTag/${TagKey}": [
+   "String"
+  ]
+ },
+ "resources": {
+  "registry": {
+   "arnFormats": [
+    "arn:${Partition}:ecr-public::${Account}:registry/${RegistryId}"
+   ]
+  },
+  "repository": {
+   "arnFormats": [
+    "arn:${Partition}:ecr-public::${Account}:repository/${RepositoryName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ecr-public:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "ecr-public",
+ "serviceName": "Elastic Container Registry Public",
+ "version": "v1.5"
+}

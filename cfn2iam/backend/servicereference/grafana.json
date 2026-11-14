@@ -1,0 +1,242 @@
+{
+ "actions": {
+  "associatelicense": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateLicense",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createworkspace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkspace",
+   "resources": []
+  },
+  "createworkspaceapikey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkspaceApiKey",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createworkspaceserviceaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkspaceServiceAccount",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createworkspaceserviceaccounttoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkspaceServiceAccountToken",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deleteworkspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkspace",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deleteworkspaceapikey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkspaceApiKey",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deleteworkspaceserviceaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkspaceServiceAccount",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deleteworkspaceserviceaccounttoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkspaceServiceAccountToken",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "describeworkspace": {
+   "name": "DescribeWorkspace",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "describeworkspaceauthentication": {
+   "name": "DescribeWorkspaceAuthentication",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "describeworkspaceconfiguration": {
+   "name": "DescribeWorkspaceConfiguration",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "disassociatelicense": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateLicense",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listpermissions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPermissions",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVersions",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listworkspaces": {
+   "name": "ListWorkspaces",
+   "resources": []
+  },
+  "listworkspaceserviceaccounts": {
+   "name": "ListWorkspaceServiceAccounts",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listworkspaceserviceaccounttokens": {
+   "name": "ListWorkspaceServiceAccountTokens",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updatepermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdatePermissions",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updateworkspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkspace",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updateworkspaceauthentication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkspaceAuthentication",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updateworkspaceconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkspaceConfiguration",
+   "resources": [
+    "workspace"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "workspace": {
+   "arnFormats": [
+    "arn:${Partition}:grafana:${Region}:${Account}:/workspaces/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "grafana",
+ "serviceName": "Managed Grafana",
+ "version": "v1.5"
+}

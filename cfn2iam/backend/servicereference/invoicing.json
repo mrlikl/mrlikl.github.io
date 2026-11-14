@@ -1,0 +1,251 @@
+{
+ "actions": {
+  "batchgetinvoiceprofile": {
+   "name": "BatchGetInvoiceProfile",
+   "resources": []
+  },
+  "createinvoiceunit": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInvoiceUnit",
+   "resources": []
+  },
+  "createprocurementportalpreference": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProcurementPortalPreference",
+   "resources": []
+  },
+  "deleteinvoiceunit": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInvoiceUnit",
+   "resources": [
+    "invoice-unit"
+   ]
+  },
+  "deleteprocurementportalpreference": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProcurementPortalPreference",
+   "resources": []
+  },
+  "getinvoicecorrection": {
+   "name": "GetInvoiceCorrection",
+   "resources": []
+  },
+  "getinvoiceemaildeliverypreferences": {
+   "name": "GetInvoiceEmailDeliveryPreferences",
+   "resources": []
+  },
+  "getinvoicepdf": {
+   "name": "GetInvoicePDF",
+   "resources": []
+  },
+  "getinvoiceunit": {
+   "name": "GetInvoiceUnit",
+   "resources": [
+    "invoice-unit"
+   ]
+  },
+  "getprocurementportalpreference": {
+   "name": "GetProcurementPortalPreference",
+   "resources": []
+  },
+  "listinvoicecorrections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInvoiceCorrections",
+   "resources": []
+  },
+  "listinvoicesummaries": {
+   "name": "ListInvoiceSummaries",
+   "resources": []
+  },
+  "listinvoiceunits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInvoiceUnits",
+   "resources": []
+  },
+  "listprocurementportalpreferences": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProcurementPortalPreferences",
+   "resources": []
+  },
+  "listprocurementportals": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProcurementPortals",
+   "resources": []
+  },
+  "listprocurementportalsuppliers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProcurementPortalSuppliers",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "invoice-unit",
+    "procurement-portal-preference"
+   ]
+  },
+  "putinvoiceemaildeliverypreferences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutInvoiceEmailDeliveryPreferences",
+   "resources": []
+  },
+  "putprocurementportalpreference": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutProcurementPortalPreference",
+   "resources": []
+  },
+  "sendprocurementportalvalidation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendProcurementPortalValidation",
+   "resources": []
+  },
+  "startinvoicecorrection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartInvoiceCorrection",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "invoice-unit",
+    "procurement-portal-preference"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "invoice-unit",
+    "procurement-portal-preference"
+   ]
+  },
+  "updateinvoiceunit": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInvoiceUnit",
+   "resources": [
+    "invoice-unit"
+   ]
+  },
+  "updateprocurementportalpreferencestatus": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProcurementPortalPreferenceStatus",
+   "resources": []
+  },
+  "verifyprocurementportalvalidation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VerifyProcurementPortalValidation",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "invoice-unit": {
+   "arnFormats": [
+    "arn:${Partition}:invoicing::${Account}:invoice-unit/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "procurement-portal-preference": {
+   "arnFormats": [
+    "arn:${Partition}:invoicing::${Account}:procurement-portal-preference/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "invoicing",
+ "serviceName": "Invoicing Service",
+ "version": "v1.5"
+}

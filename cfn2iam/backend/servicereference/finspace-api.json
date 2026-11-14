@@ -1,0 +1,20 @@
+{
+ "actions": {
+  "getprogrammaticaccesscredentials": {
+   "name": "GetProgrammaticAccessCredentials",
+   "resources": [
+    "credential"
+   ]
+  }
+ },
+ "resources": {
+  "credential": {
+   "arnFormats": [
+    "arn:${Partition}:finspace-api:${Region}:${Account}:/credentials/programmatic"
+   ]
+  }
+ },
+ "service": "finspace-api",
+ "serviceName": "FinSpace API",
+ "version": "v1.5"
+}

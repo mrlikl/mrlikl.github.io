@@ -1,0 +1,458 @@
+{
+ "actions": {
+  "cancelexporttask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelExportTask",
+   "resources": [
+    "export-task"
+   ]
+  },
+  "cancelimporttask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelImportTask",
+   "resources": [
+    "import-task"
+   ]
+  },
+  "cancelquery": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelQuery",
+   "resources": [
+    "graph"
+   ]
+  },
+  "creategraph": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "neptune-graph:PublicConnectivity"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGraph",
+   "resources": [
+    "graph"
+   ]
+  },
+  "creategraphsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGraphSnapshot",
+   "resources": [
+    "graph",
+    "graph-snapshot"
+   ]
+  },
+  "creategraphusingimporttask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "neptune-graph:PublicConnectivity"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGraphUsingImportTask",
+   "resources": [
+    "graph",
+    "import-task"
+   ]
+  },
+  "createprivategraphendpoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePrivateGraphEndpoint",
+   "resources": [
+    "graph"
+   ]
+  },
+  "deletedataviaquery": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataViaQuery",
+   "resources": [
+    "graph"
+   ]
+  },
+  "deletegraph": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGraph",
+   "resources": [
+    "graph"
+   ]
+  },
+  "deletegraphsnapshot": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGraphSnapshot",
+   "resources": [
+    "graph-snapshot"
+   ]
+  },
+  "deleteprivategraphendpoint": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePrivateGraphEndpoint",
+   "resources": [
+    "graph"
+   ]
+  },
+  "getenginestatus": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetEngineStatus",
+   "resources": [
+    "graph"
+   ]
+  },
+  "getexporttask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetExportTask",
+   "resources": [
+    "export-task"
+   ]
+  },
+  "getgraph": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetGraph",
+   "resources": [
+    "graph"
+   ]
+  },
+  "getgraphsnapshot": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetGraphSnapshot",
+   "resources": [
+    "graph-snapshot"
+   ]
+  },
+  "getgraphsummary": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetGraphSummary",
+   "resources": [
+    "graph"
+   ]
+  },
+  "getimporttask": {
+   "name": "GetImportTask",
+   "resources": [
+    "import-task"
+   ]
+  },
+  "getprivategraphendpoint": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetPrivateGraphEndpoint",
+   "resources": [
+    "graph"
+   ]
+  },
+  "getquerystatus": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetQueryStatus",
+   "resources": [
+    "graph"
+   ]
+  },
+  "getstatisticsstatus": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetStatisticsStatus",
+   "resources": [
+    "graph"
+   ]
+  },
+  "listexporttasks": {
+   "name": "ListExportTasks",
+   "resources": [
+    "export-task"
+   ]
+  },
+  "listgraphs": {
+   "name": "ListGraphs",
+   "resources": [
+    "graph"
+   ]
+  },
+  "listgraphsnapshots": {
+   "name": "ListGraphSnapshots",
+   "resources": [
+    "graph-snapshot"
+   ]
+  },
+  "listimporttasks": {
+   "name": "ListImportTasks",
+   "resources": [
+    "import-task"
+   ]
+  },
+  "listprivategraphendpoints": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListPrivateGraphEndpoints",
+   "resources": [
+    "graph"
+   ]
+  },
+  "listqueries": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListQueries",
+   "resources": [
+    "graph"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "graph",
+    "graph-snapshot"
+   ]
+  },
+  "readdataviaquery": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ReadDataViaQuery",
+   "resources": [
+    "graph"
+   ]
+  },
+  "resetgraph": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetGraph",
+   "resources": [
+    "graph"
+   ]
+  },
+  "restoregraphfromsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "neptune-graph:PublicConnectivity"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreGraphFromSnapshot",
+   "resources": [
+    "graph",
+    "graph-snapshot"
+   ]
+  },
+  "startexporttask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartExportTask",
+   "resources": [
+    "export-task",
+    "graph"
+   ]
+  },
+  "startgraph": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartGraph",
+   "resources": [
+    "graph"
+   ]
+  },
+  "startimporttask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartImportTask",
+   "resources": [
+    "graph",
+    "import-task"
+   ]
+  },
+  "stopgraph": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopGraph",
+   "resources": [
+    "graph"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "graph",
+    "graph-snapshot"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "graph",
+    "graph-snapshot"
+   ]
+  },
+  "updategraph": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "neptune-graph:PublicConnectivity"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGraph",
+   "resources": [
+    "graph"
+   ]
+  },
+  "writedataviaquery": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "WriteDataViaQuery",
+   "resources": [
+    "graph"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "neptune-graph:PublicConnectivity": [
+   "Bool"
+  ]
+ },
+ "resources": {
+  "export-task": {
+   "arnFormats": [
+    "arn:${Partition}:neptune-graph:${Region}:${Account}:export-task/${ResourceId}"
+   ]
+  },
+  "graph": {
+   "arnFormats": [
+    "arn:${Partition}:neptune-graph:${Region}:${Account}:graph/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "graph-snapshot": {
+   "arnFormats": [
+    "arn:${Partition}:neptune-graph:${Region}:${Account}:graph-snapshot/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "import-task": {
+   "arnFormats": [
+    "arn:${Partition}:neptune-graph:${Region}:${Account}:import-task/${ResourceId}"
+   ]
+  }
+ },
+ "service": "neptune-graph",
+ "serviceName": "Neptune Analytics",
+ "version": "v1.5"
+}

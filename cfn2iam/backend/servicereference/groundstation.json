@@ -1,0 +1,458 @@
+{
+ "actions": {
+  "cancelcontact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelContact",
+   "resources": [
+    "Contact"
+   ]
+  },
+  "createconfig": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConfig",
+   "resources": []
+  },
+  "createdataflowendpointgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataflowEndpointGroup",
+   "resources": []
+  },
+  "createdataflowendpointgroupv2": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataflowEndpointGroupV2",
+   "resources": []
+  },
+  "createephemeris": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEphemeris",
+   "resources": []
+  },
+  "createmissionprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMissionProfile",
+   "resources": []
+  },
+  "deleteconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfig",
+   "resources": [
+    "Config"
+   ]
+  },
+  "deletedataflowendpointgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataflowEndpointGroup",
+   "resources": [
+    "DataflowEndpointGroup"
+   ]
+  },
+  "deleteephemeris": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEphemeris",
+   "resources": [
+    "EphemerisItem"
+   ]
+  },
+  "deletemissionprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMissionProfile",
+   "resources": [
+    "MissionProfile"
+   ]
+  },
+  "describecontact": {
+   "name": "DescribeContact",
+   "resources": [
+    "Contact"
+   ]
+  },
+  "describecontactversion": {
+   "name": "DescribeContactVersion",
+   "resources": [
+    "Contact"
+   ]
+  },
+  "describeephemeris": {
+   "name": "DescribeEphemeris",
+   "resources": [
+    "EphemerisItem"
+   ]
+  },
+  "getagentconfiguration": {
+   "name": "GetAgentConfiguration",
+   "resources": [
+    "Agent"
+   ]
+  },
+  "getagenttaskresponseurl": {
+   "name": "GetAgentTaskResponseUrl",
+   "resources": [
+    "Agent"
+   ]
+  },
+  "getconfig": {
+   "name": "GetConfig",
+   "resources": [
+    "Config"
+   ]
+  },
+  "getdataflowendpointgroup": {
+   "name": "GetDataflowEndpointGroup",
+   "resources": [
+    "DataflowEndpointGroup"
+   ]
+  },
+  "getminuteusage": {
+   "name": "GetMinuteUsage",
+   "resources": []
+  },
+  "getmissionprofile": {
+   "name": "GetMissionProfile",
+   "resources": [
+    "MissionProfile"
+   ]
+  },
+  "getsatellite": {
+   "name": "GetSatellite",
+   "resources": [
+    "Satellite"
+   ]
+  },
+  "listantennas": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAntennas",
+   "resources": [
+    "GroundStationResource"
+   ]
+  },
+  "listconfigs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigs",
+   "resources": []
+  },
+  "listcontacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContacts",
+   "resources": []
+  },
+  "listcontactversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContactVersions",
+   "resources": [
+    "Contact"
+   ]
+  },
+  "listdataflowendpointgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataflowEndpointGroups",
+   "resources": []
+  },
+  "listephemerides": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEphemerides",
+   "resources": []
+  },
+  "listgroundstationreservations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroundStationReservations",
+   "resources": [
+    "GroundStationResource"
+   ]
+  },
+  "listgroundstations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroundStations",
+   "resources": []
+  },
+  "listmissionprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMissionProfiles",
+   "resources": []
+  },
+  "listsatellites": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSatellites",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "Config",
+    "Contact",
+    "DataflowEndpointGroup",
+    "MissionProfile"
+   ]
+  },
+  "registeragent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterAgent",
+   "resources": []
+  },
+  "reservecontact": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReserveContact",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Config",
+    "Contact",
+    "DataflowEndpointGroup",
+    "EphemerisItem",
+    "MissionProfile"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Config",
+    "Contact",
+    "DataflowEndpointGroup",
+    "EphemerisItem",
+    "MissionProfile"
+   ]
+  },
+  "updateagentstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentStatus",
+   "resources": [
+    "Agent"
+   ]
+  },
+  "updateconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConfig",
+   "resources": [
+    "Config"
+   ]
+  },
+  "updatecontact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContact",
+   "resources": [
+    "Contact"
+   ]
+  },
+  "updateephemeris": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEphemeris",
+   "resources": [
+    "EphemerisItem"
+   ]
+  },
+  "updatemissionprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMissionProfile",
+   "resources": [
+    "MissionProfile"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "groundstation:AgentId": [
+   "String"
+  ],
+  "groundstation:ConfigId": [
+   "String"
+  ],
+  "groundstation:ConfigType": [
+   "String"
+  ],
+  "groundstation:ContactId": [
+   "String"
+  ],
+  "groundstation:DataflowEndpointGroupId": [
+   "String"
+  ],
+  "groundstation:EphemerisId": [
+   "String"
+  ],
+  "groundstation:GroundStationId": [
+   "String"
+  ],
+  "groundstation:MissionProfileId": [
+   "String"
+  ],
+  "groundstation:SatelliteId": [
+   "String"
+  ]
+ },
+ "resources": {
+  "Agent": {
+   "arnFormats": [
+    "arn:${Partition}:groundstation:${Region}:${Account}:agent/${AgentId}"
+   ],
+   "conditionKeys": [
+    "groundstation:AgentId"
+   ]
+  },
+  "Config": {
+   "arnFormats": [
+    "arn:${Partition}:groundstation:${Region}:${Account}:config/${ConfigType}/${ConfigId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "groundstation:ConfigId",
+    "groundstation:ConfigType"
+   ]
+  },
+  "Contact": {
+   "arnFormats": [
+    "arn:${Partition}:groundstation:${Region}:${Account}:contact/${ContactId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "groundstation:ContactId"
+   ]
+  },
+  "DataflowEndpointGroup": {
+   "arnFormats": [
+    "arn:${Partition}:groundstation:${Region}:${Account}:dataflow-endpoint-group/${DataflowEndpointGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "groundstation:DataflowEndpointGroupId"
+   ]
+  },
+  "EphemerisItem": {
+   "arnFormats": [
+    "arn:${Partition}:groundstation:${Region}:${Account}:ephemeris/${EphemerisId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "groundstation:EphemerisId"
+   ]
+  },
+  "GroundStationResource": {
+   "arnFormats": [
+    "arn:${Partition}:groundstation:${Region}:${Account}:groundstation:${GroundStationId}"
+   ],
+   "conditionKeys": [
+    "groundstation:GroundStationId"
+   ]
+  },
+  "MissionProfile": {
+   "arnFormats": [
+    "arn:${Partition}:groundstation:${Region}:${Account}:mission-profile/${MissionProfileId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "groundstation:MissionProfileId"
+   ]
+  },
+  "Satellite": {
+   "arnFormats": [
+    "arn:${Partition}:groundstation:${Region}:${Account}:satellite/${SatelliteId}"
+   ],
+   "conditionKeys": [
+    "groundstation:SatelliteId"
+   ]
+  }
+ },
+ "service": "groundstation",
+ "serviceName": "Ground Station",
+ "version": "v1.5"
+}

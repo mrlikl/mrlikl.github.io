@@ -1,0 +1,354 @@
+{
+ "actions": {
+  "cancelquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelQuery",
+   "resources": []
+  },
+  "createbatchloadtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBatchLoadTask",
+   "resources": [
+    "table"
+   ]
+  },
+  "createdatabase": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDatabase",
+   "resources": [
+    "database"
+   ]
+  },
+  "createscheduledquery": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScheduledQuery",
+   "resources": []
+  },
+  "createtable": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTable",
+   "resources": [
+    "table"
+   ]
+  },
+  "deletedatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDatabase",
+   "resources": [
+    "database"
+   ]
+  },
+  "deletescheduledquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScheduledQuery",
+   "resources": [
+    "scheduled-query"
+   ]
+  },
+  "deletetable": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTable",
+   "resources": [
+    "table"
+   ]
+  },
+  "describeaccountsettings": {
+   "name": "DescribeAccountSettings",
+   "resources": []
+  },
+  "describebatchloadtask": {
+   "name": "DescribeBatchLoadTask",
+   "resources": []
+  },
+  "describedatabase": {
+   "name": "DescribeDatabase",
+   "resources": [
+    "database"
+   ]
+  },
+  "describeendpoints": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "DescribeEndpoints",
+   "resources": []
+  },
+  "describescheduledquery": {
+   "name": "DescribeScheduledQuery",
+   "resources": [
+    "scheduled-query"
+   ]
+  },
+  "describetable": {
+   "name": "DescribeTable",
+   "resources": [
+    "table"
+   ]
+  },
+  "executescheduledquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExecuteScheduledQuery",
+   "resources": [
+    "scheduled-query"
+   ]
+  },
+  "getawsbackupstatus": {
+   "name": "GetAwsBackupStatus",
+   "resources": []
+  },
+  "getawsrestorestatus": {
+   "name": "GetAwsRestoreStatus",
+   "resources": []
+  },
+  "listbatchloadtasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBatchLoadTasks",
+   "resources": []
+  },
+  "listdatabases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatabases",
+   "resources": []
+  },
+  "listmeasures": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListMeasures",
+   "resources": [
+    "table"
+   ]
+  },
+  "listscheduledqueries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScheduledQueries",
+   "resources": []
+  },
+  "listtables": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTables",
+   "resources": [
+    "database"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "database",
+    "scheduled-query",
+    "table"
+   ]
+  },
+  "preparequery": {
+   "name": "PrepareQuery",
+   "resources": [
+    "table"
+   ]
+  },
+  "resumebatchloadtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResumeBatchLoadTask",
+   "resources": []
+  },
+  "select": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "Select",
+   "resources": [
+    "table"
+   ]
+  },
+  "selectvalues": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "SelectValues",
+   "resources": []
+  },
+  "startawsbackupjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAwsBackupJob",
+   "resources": [
+    "table"
+   ]
+  },
+  "startawsrestorejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAwsRestoreJob",
+   "resources": [
+    "table"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "database",
+    "scheduled-query",
+    "table"
+   ]
+  },
+  "unload": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "Unload",
+   "resources": [
+    "table"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "database",
+    "scheduled-query",
+    "table"
+   ]
+  },
+  "updateaccountsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountSettings",
+   "resources": []
+  },
+  "updatedatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDatabase",
+   "resources": [
+    "database"
+   ]
+  },
+  "updatescheduledquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateScheduledQuery",
+   "resources": [
+    "scheduled-query"
+   ]
+  },
+  "updatetable": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTable",
+   "resources": [
+    "table"
+   ]
+  },
+  "writerecords": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "WriteRecords",
+   "resources": [
+    "table"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "database": {
+   "arnFormats": [
+    "arn:${Partition}:timestream:${Region}:${Account}:database/${DatabaseName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "scheduled-query": {
+   "arnFormats": [
+    "arn:${Partition}:timestream:${Region}:${Account}:scheduled-query/${ScheduledQueryName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "table": {
+   "arnFormats": [
+    "arn:${Partition}:timestream:${Region}:${Account}:database/${DatabaseName}/table/${TableName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "timestream",
+ "serviceName": "Timestream",
+ "version": "v1.5"
+}

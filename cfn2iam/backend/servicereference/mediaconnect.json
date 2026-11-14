@@ -1,0 +1,979 @@
+{
+ "actions": {
+  "addbridgeoutputs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddBridgeOutputs",
+   "resources": [
+    "Bridge"
+   ]
+  },
+  "addbridgesources": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddBridgeSources",
+   "resources": [
+    "Bridge"
+   ]
+  },
+  "addflowmediastreams": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddFlowMediaStreams",
+   "resources": [
+    "Flow",
+    "MediaStream"
+   ]
+  },
+  "addflowoutputs": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddFlowOutputs",
+   "resources": [
+    "Flow",
+    "Output"
+   ]
+  },
+  "addflowsources": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddFlowSources",
+   "resources": [
+    "Flow",
+    "Source"
+   ]
+  },
+  "addflowvpcinterfaces": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddFlowVpcInterfaces",
+   "resources": [
+    "Flow",
+    "VpcInterface"
+   ]
+  },
+  "associaterouternetworkinterface": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateRouterNetworkInterface",
+   "resources": []
+  },
+  "connectendpoints": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConnectEndpoints",
+   "resources": [
+    "DestinationEndpoint"
+   ]
+  },
+  "createbridge": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBridge",
+   "resources": [
+    "Bridge"
+   ]
+  },
+  "createflow": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFlow",
+   "resources": [
+    "Flow"
+   ]
+  },
+  "creategateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGateway",
+   "resources": [
+    "Gateway"
+   ]
+  },
+  "createrouterinput": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRouterInput",
+   "resources": [
+    "RouterInput"
+   ]
+  },
+  "createrouternetworkinterface": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRouterNetworkInterface",
+   "resources": [
+    "RouterNetworkInterface"
+   ]
+  },
+  "createrouteroutput": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRouterOutput",
+   "resources": [
+    "RouterOutput"
+   ]
+  },
+  "deletebridge": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBridge",
+   "resources": [
+    "Bridge"
+   ]
+  },
+  "deleteflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFlow",
+   "resources": [
+    "Flow"
+   ]
+  },
+  "deletegateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGateway",
+   "resources": [
+    "Gateway"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": []
+  },
+  "deleterouterinput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRouterInput",
+   "resources": [
+    "RouterInput"
+   ]
+  },
+  "deleterouternetworkinterface": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRouterNetworkInterface",
+   "resources": [
+    "RouterNetworkInterface"
+   ]
+  },
+  "deleterouteroutput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRouterOutput",
+   "resources": [
+    "RouterOutput"
+   ]
+  },
+  "deregisterdestinationendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterDestinationEndpoint",
+   "resources": [
+    "DestinationEndpoint"
+   ]
+  },
+  "deregistergatewayinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterGatewayInstance",
+   "resources": [
+    "GatewayInstance"
+   ]
+  },
+  "deregistersourceendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterSourceEndpoint",
+   "resources": [
+    "SourceEndpoint"
+   ]
+  },
+  "describebridge": {
+   "name": "DescribeBridge",
+   "resources": [
+    "Bridge"
+   ]
+  },
+  "describeflow": {
+   "name": "DescribeFlow",
+   "resources": [
+    "Flow"
+   ]
+  },
+  "describeflowsourcemetadata": {
+   "name": "DescribeFlowSourceMetadata",
+   "resources": [
+    "Flow"
+   ]
+  },
+  "describeflowsourcethumbnail": {
+   "name": "DescribeFlowSourceThumbnail",
+   "resources": [
+    "Flow"
+   ]
+  },
+  "describegateway": {
+   "name": "DescribeGateway",
+   "resources": [
+    "Gateway"
+   ]
+  },
+  "describegatewayinstance": {
+   "name": "DescribeGatewayInstance",
+   "resources": [
+    "GatewayInstance"
+   ]
+  },
+  "describeoffering": {
+   "name": "DescribeOffering",
+   "resources": [
+    "Offering"
+   ]
+  },
+  "describereservation": {
+   "name": "DescribeReservation",
+   "resources": [
+    "Reservation"
+   ]
+  },
+  "disconnectendpoints": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisconnectEndpoints",
+   "resources": [
+    "DestinationEndpoint"
+   ]
+  },
+  "discovergatewaypollendpoint": {
+   "name": "DiscoverGatewayPollEndpoint",
+   "resources": [
+    "Gateway"
+   ]
+  },
+  "getdestinationendpoint": {
+   "name": "GetDestinationEndpoint",
+   "resources": [
+    "DestinationEndpoint"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": []
+  },
+  "getrouterinput": {
+   "name": "GetRouterInput",
+   "resources": [
+    "RouterInput"
+   ]
+  },
+  "getrouterinputsourcemetadata": {
+   "name": "GetRouterInputSourceMetadata",
+   "resources": [
+    "RouterInput"
+   ]
+  },
+  "getrouterinputthumbnail": {
+   "name": "GetRouterInputThumbnail",
+   "resources": [
+    "RouterInput"
+   ]
+  },
+  "getrouternetworkinterface": {
+   "name": "GetRouterNetworkInterface",
+   "resources": [
+    "RouterNetworkInterface"
+   ]
+  },
+  "getrouteroutput": {
+   "name": "GetRouterOutput",
+   "resources": [
+    "RouterOutput"
+   ]
+  },
+  "getsourceendpoint": {
+   "name": "GetSourceEndpoint",
+   "resources": [
+    "SourceEndpoint"
+   ]
+  },
+  "grantflowentitlements": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "GrantFlowEntitlements",
+   "resources": [
+    "Entitlement",
+    "Flow"
+   ]
+  },
+  "listbridges": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBridges",
+   "resources": []
+  },
+  "listdestinationendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDestinationEndpoints",
+   "resources": []
+  },
+  "listentitlements": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEntitlements",
+   "resources": []
+  },
+  "listflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFlows",
+   "resources": []
+  },
+  "listgatewayinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGatewayInstances",
+   "resources": []
+  },
+  "listgateways": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGateways",
+   "resources": []
+  },
+  "listofferings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOfferings",
+   "resources": []
+  },
+  "listreservations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReservations",
+   "resources": []
+  },
+  "listrouterinputs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRouterInputs",
+   "resources": []
+  },
+  "listrouternetworkinterfaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRouterNetworkInterfaces",
+   "resources": []
+  },
+  "listrouteroutputs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRouterOutputs",
+   "resources": []
+  },
+  "listsourceendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSourceEndpoints",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "pollgateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PollGateway",
+   "resources": []
+  },
+  "purchaseoffering": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PurchaseOffering",
+   "resources": [
+    "Reservation"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": []
+  },
+  "registerdestinationendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterDestinationEndpoint",
+   "resources": [
+    "DestinationEndpoint"
+   ]
+  },
+  "registersourceendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterSourceEndpoint",
+   "resources": [
+    "SourceEndpoint"
+   ]
+  },
+  "removebridgeoutput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveBridgeOutput",
+   "resources": [
+    "Bridge"
+   ]
+  },
+  "removebridgesource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveBridgeSource",
+   "resources": [
+    "Bridge"
+   ]
+  },
+  "removeflowmediastream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveFlowMediaStream",
+   "resources": [
+    "Flow",
+    "MediaStream"
+   ]
+  },
+  "removeflowoutput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveFlowOutput",
+   "resources": [
+    "Flow",
+    "Output"
+   ]
+  },
+  "removeflowsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveFlowSource",
+   "resources": [
+    "Flow",
+    "Source"
+   ]
+  },
+  "removeflowvpcinterface": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveFlowVpcInterface",
+   "resources": [
+    "Flow",
+    "VpcInterface"
+   ]
+  },
+  "restartrouterinput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestartRouterInput",
+   "resources": [
+    "RouterInput"
+   ]
+  },
+  "restartrouteroutput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestartRouterOutput",
+   "resources": [
+    "RouterOutput"
+   ]
+  },
+  "revokeflowentitlement": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "RevokeFlowEntitlement",
+   "resources": [
+    "Entitlement",
+    "Flow"
+   ]
+  },
+  "startflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFlow",
+   "resources": [
+    "Flow"
+   ]
+  },
+  "startrouterinput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRouterInput",
+   "resources": [
+    "RouterInput"
+   ]
+  },
+  "startrouteroutput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRouterOutput",
+   "resources": [
+    "RouterOutput"
+   ]
+  },
+  "stopflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopFlow",
+   "resources": [
+    "Flow"
+   ]
+  },
+  "stoprouterinput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopRouterInput",
+   "resources": [
+    "RouterInput"
+   ]
+  },
+  "stoprouteroutput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopRouterOutput",
+   "resources": [
+    "RouterOutput"
+   ]
+  },
+  "submitgatewaystatechange": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitGatewayStateChange",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "DestinationEndpoint",
+    "Entitlement",
+    "Flow",
+    "MediaStream",
+    "Output",
+    "RouterInput",
+    "RouterNetworkInterface",
+    "RouterOutput",
+    "Source",
+    "SourceEndpoint",
+    "VpcInterface"
+   ]
+  },
+  "takerouterinput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TakeRouterInput",
+   "resources": [
+    "RouterOutput"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "DestinationEndpoint",
+    "Entitlement",
+    "Flow",
+    "MediaStream",
+    "Output",
+    "RouterInput",
+    "RouterNetworkInterface",
+    "RouterOutput",
+    "Source",
+    "SourceEndpoint",
+    "VpcInterface"
+   ]
+  },
+  "updatebridge": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBridge",
+   "resources": [
+    "Bridge"
+   ]
+  },
+  "updatebridgeoutput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBridgeOutput",
+   "resources": [
+    "Bridge"
+   ]
+  },
+  "updatebridgesource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBridgeSource",
+   "resources": [
+    "Bridge"
+   ]
+  },
+  "updatebridgestate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBridgeState",
+   "resources": [
+    "Bridge"
+   ]
+  },
+  "updatedestinationendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDestinationEndpoint",
+   "resources": [
+    "DestinationEndpoint"
+   ]
+  },
+  "updateflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFlow",
+   "resources": [
+    "Flow"
+   ]
+  },
+  "updateflowentitlement": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateFlowEntitlement",
+   "resources": [
+    "Flow"
+   ]
+  },
+  "updateflowmediastream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFlowMediaStream",
+   "resources": [
+    "Flow",
+    "MediaStream"
+   ]
+  },
+  "updateflowoutput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFlowOutput",
+   "resources": [
+    "Flow",
+    "Output"
+   ]
+  },
+  "updateflowsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFlowSource",
+   "resources": [
+    "Flow",
+    "Source"
+   ]
+  },
+  "updategatewayinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGatewayInstance",
+   "resources": [
+    "GatewayInstance"
+   ]
+  },
+  "updaterouterinput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRouterInput",
+   "resources": [
+    "RouterInput"
+   ]
+  },
+  "updaterouternetworkinterface": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRouterNetworkInterface",
+   "resources": [
+    "RouterNetworkInterface"
+   ]
+  },
+  "updaterouteroutput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRouterOutput",
+   "resources": [
+    "RouterOutput"
+   ]
+  },
+  "updatesourceendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSourceEndpoint",
+   "resources": [
+    "SourceEndpoint"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Bridge": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:${Account}:bridge:${BridgeId}:${BridgeName}"
+   ]
+  },
+  "DestinationEndpoint": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:${Account}:destinationEndpoint:${DestinationEndpointId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Entitlement": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:${Account}:entitlement:${FlowId}:${EntitlementName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Flow": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:${Account}:flow:${FlowId}:${FlowName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Gateway": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:${Account}:gateway:${GatewayId}:${GatewayName}"
+   ]
+  },
+  "GatewayInstance": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:${Account}:gateway:${GatewayId}:${GatewayName}:instance:${InstanceId}"
+   ]
+  },
+  "MediaStream": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:${Account}:flow:${FlowId}:${FlowName}/mediaStream/${MediaStreamName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Offering": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:offering:${OfferingId}"
+   ]
+  },
+  "Output": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:${Account}:output:${OutputId}:${OutputName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Reservation": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:${Account}:reservation:${ReservationId}:${ReservationName}"
+   ]
+  },
+  "RouterInput": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:${Account}:routerInput:${RouterInputId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "RouterNetworkInterface": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:${Account}:routerNetworkInterface:${RouterNetworkInterfaceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "RouterOutput": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:${Account}:routerOutput:${RouterOutputId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Source": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:${Account}:source:${SourceId}:${SourceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "SourceEndpoint": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:${Account}:sourceEndpoint:${SourceEndpointId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "VpcInterface": {
+   "arnFormats": [
+    "arn:${Partition}:mediaconnect:${Region}:${Account}:flow:${FlowId}:${FlowName}/vpcInterface/${VpcInterfaceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "mediaconnect",
+ "serviceName": "MediaConnect",
+ "version": "v1.5"
+}

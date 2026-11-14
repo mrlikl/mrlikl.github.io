@@ -1,0 +1,623 @@
+{
+ "actions": {
+  "canceljob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "createcomputeenvironment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateComputeEnvironment",
+   "resources": [
+    "compute-environment"
+   ]
+  },
+  "createconsumableresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConsumableResource",
+   "resources": [
+    "consumable-resource"
+   ]
+  },
+  "createjobqueue": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateJobQueue",
+   "resources": [
+    "compute-environment",
+    "job-queue",
+    "scheduling-policy",
+    "service-environment"
+   ]
+  },
+  "createquotashare": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQuotaShare",
+   "resources": [
+    "job-queue",
+    "quota-share"
+   ]
+  },
+  "createschedulingpolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSchedulingPolicy",
+   "resources": [
+    "scheduling-policy"
+   ]
+  },
+  "createserviceenvironment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceEnvironment",
+   "resources": [
+    "service-environment"
+   ]
+  },
+  "deletecomputeenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteComputeEnvironment",
+   "resources": [
+    "compute-environment"
+   ]
+  },
+  "deleteconsumableresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConsumableResource",
+   "resources": [
+    "consumable-resource"
+   ]
+  },
+  "deletejobqueue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteJobQueue",
+   "resources": [
+    "job-queue"
+   ]
+  },
+  "deletequotashare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQuotaShare",
+   "resources": [
+    "quota-share"
+   ]
+  },
+  "deleteschedulingpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSchedulingPolicy",
+   "resources": [
+    "scheduling-policy"
+   ]
+  },
+  "deleteserviceenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceEnvironment",
+   "resources": [
+    "service-environment"
+   ]
+  },
+  "deregisterjobdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterJobDefinition",
+   "resources": [
+    "job-definition-revision"
+   ]
+  },
+  "describecomputeenvironments": {
+   "name": "DescribeComputeEnvironments",
+   "resources": []
+  },
+  "describeconsumableresource": {
+   "name": "DescribeConsumableResource",
+   "resources": [
+    "consumable-resource"
+   ]
+  },
+  "describejobdefinitions": {
+   "name": "DescribeJobDefinitions",
+   "resources": []
+  },
+  "describejobqueues": {
+   "name": "DescribeJobQueues",
+   "resources": []
+  },
+  "describejobs": {
+   "name": "DescribeJobs",
+   "resources": []
+  },
+  "describequotashare": {
+   "name": "DescribeQuotaShare",
+   "resources": [
+    "quota-share"
+   ]
+  },
+  "describeschedulingpolicies": {
+   "name": "DescribeSchedulingPolicies",
+   "resources": []
+  },
+  "describeserviceenvironments": {
+   "name": "DescribeServiceEnvironments",
+   "resources": []
+  },
+  "describeservicejob": {
+   "name": "DescribeServiceJob",
+   "resources": []
+  },
+  "getjobqueuesnapshot": {
+   "name": "GetJobQueueSnapshot",
+   "resources": [
+    "job-queue"
+   ]
+  },
+  "listconsumableresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConsumableResources",
+   "resources": []
+  },
+  "listjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobs",
+   "resources": []
+  },
+  "listjobsbyconsumableresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobsByConsumableResource",
+   "resources": [
+    "consumable-resource"
+   ]
+  },
+  "listquotashares": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQuotaShares",
+   "resources": [
+    "job-queue"
+   ]
+  },
+  "listschedulingpolicies": {
+   "name": "ListSchedulingPolicies",
+   "resources": []
+  },
+  "listservicejobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceJobs",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "compute-environment",
+    "consumable-resource",
+    "job",
+    "job-definition-revision",
+    "job-queue",
+    "quota-share",
+    "scheduling-policy",
+    "service-environment",
+    "service-job"
+   ]
+  },
+  "registerjobdefinition": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "batch:AWSLogsCreateGroup",
+    "batch:AWSLogsGroup",
+    "batch:AWSLogsRegion",
+    "batch:AWSLogsStreamPrefix",
+    "batch:EKSImage",
+    "batch:EKSNamespace",
+    "batch:EKSPrivileged",
+    "batch:EKSRunAsGroup",
+    "batch:EKSRunAsUser",
+    "batch:EKSServiceAccountName",
+    "batch:Image",
+    "batch:LogDriver",
+    "batch:Privileged",
+    "batch:User"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterJobDefinition",
+   "resourceConditionKeys": {
+    "job-definition": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "consumable-resource",
+    "job-definition"
+   ]
+  },
+  "setcapacitytags": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "SetCapacityTags",
+   "resources": [
+    "compute-environment"
+   ]
+  },
+  "submitjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitJob",
+   "resourceConditionKeys": {
+    "job": [
+     "batch:EKSImage",
+     "batch:EKSNamespace",
+     "batch:ShareIdentifier"
+    ]
+   },
+   "resources": [
+    "consumable-resource",
+    "job",
+    "job-definition",
+    "job-definition-revision",
+    "job-queue"
+   ]
+  },
+  "submitservicejob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "batch:SchedulingPriority"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitServiceJob",
+   "resourceConditionKeys": {
+    "service-job": [
+     "batch:ShareIdentifier"
+    ]
+   },
+   "resources": [
+    "job-queue",
+    "quota-share",
+    "service-job"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "compute-environment",
+    "consumable-resource",
+    "job",
+    "job-definition-revision",
+    "job-queue",
+    "quota-share",
+    "scheduling-policy",
+    "service-environment",
+    "service-job"
+   ]
+  },
+  "terminatejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TerminateJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "terminateservicejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TerminateServiceJob",
+   "resources": [
+    "service-job"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "compute-environment",
+    "consumable-resource",
+    "job",
+    "job-definition-revision",
+    "job-queue",
+    "quota-share",
+    "scheduling-policy",
+    "service-environment",
+    "service-job"
+   ]
+  },
+  "updatecomputeenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateComputeEnvironment",
+   "resources": [
+    "compute-environment"
+   ]
+  },
+  "updateconsumableresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConsumableResource",
+   "resources": [
+    "consumable-resource"
+   ]
+  },
+  "updatejobqueue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateJobQueue",
+   "resources": [
+    "compute-environment",
+    "job-queue",
+    "scheduling-policy"
+   ]
+  },
+  "updatequotashare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQuotaShare",
+   "resources": [
+    "quota-share"
+   ]
+  },
+  "updateschedulingpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSchedulingPolicy",
+   "resources": [
+    "scheduling-policy"
+   ]
+  },
+  "updateserviceenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceEnvironment",
+   "resources": [
+    "service-environment"
+   ]
+  },
+  "updateservicejob": {
+   "conditionKeys": [
+    "batch:SchedulingPriority"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceJob",
+   "resources": [
+    "service-job"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "batch:AWSLogsCreateGroup": [
+   "Bool"
+  ],
+  "batch:AWSLogsGroup": [
+   "String"
+  ],
+  "batch:AWSLogsRegion": [
+   "String"
+  ],
+  "batch:AWSLogsStreamPrefix": [
+   "String"
+  ],
+  "batch:EKSImage": [
+   "String"
+  ],
+  "batch:EKSNamespace": [
+   "String"
+  ],
+  "batch:EKSPrivileged": [
+   "Bool"
+  ],
+  "batch:EKSRunAsGroup": [
+   "Numeric"
+  ],
+  "batch:EKSRunAsUser": [
+   "Numeric"
+  ],
+  "batch:EKSServiceAccountName": [
+   "String"
+  ],
+  "batch:Image": [
+   "String"
+  ],
+  "batch:LogDriver": [
+   "String"
+  ],
+  "batch:Privileged": [
+   "Bool"
+  ],
+  "batch:SchedulingPriority": [
+   "Numeric"
+  ],
+  "batch:ShareIdentifier": [
+   "String"
+  ],
+  "batch:User": [
+   "String"
+  ]
+ },
+ "resources": {
+  "compute-environment": {
+   "arnFormats": [
+    "arn:${Partition}:batch:${Region}:${Account}:compute-environment/${ComputeEnvironmentName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "consumable-resource": {
+   "arnFormats": [
+    "arn:${Partition}:batch:${Region}:${Account}:consumable-resource/${ConsumableResourceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "job": {
+   "arnFormats": [
+    "arn:${Partition}:batch:${Region}:${Account}:job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "job-definition": {
+   "arnFormats": [
+    "arn:${Partition}:batch:${Region}:${Account}:job-definition/${JobDefinitionName}"
+   ]
+  },
+  "job-definition-revision": {
+   "arnFormats": [
+    "arn:${Partition}:batch:${Region}:${Account}:job-definition/${JobDefinitionName}:${Revision}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "job-queue": {
+   "arnFormats": [
+    "arn:${Partition}:batch:${Region}:${Account}:job-queue/${JobQueueName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "quota-share": {
+   "arnFormats": [
+    "arn:${Partition}:batch:${Region}:${Account}:job-queue/${JobQueueName}/quota-share/${QuotaShareName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "scheduling-policy": {
+   "arnFormats": [
+    "arn:${Partition}:batch:${Region}:${Account}:scheduling-policy/${SchedulingPolicyName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "service-environment": {
+   "arnFormats": [
+    "arn:${Partition}:batch:${Region}:${Account}:service-environment/${ServiceEnvironmentName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "service-job": {
+   "arnFormats": [
+    "arn:${Partition}:batch:${Region}:${Account}:service-job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "batch",
+ "serviceName": "Batch",
+ "version": "v1.5"
+}

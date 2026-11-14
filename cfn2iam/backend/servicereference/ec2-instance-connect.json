@@ -1,0 +1,86 @@
+{
+ "actions": {
+  "opentunnel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "OpenTunnel",
+   "resourceConditionKeys": {
+    "instance-connect-endpoint": [
+     "aws:ResourceTag/${TagKey}",
+     "ec2-instance-connect:MaxTunnelDuration",
+     "ec2-instance-connect:privateIpAddress",
+     "ec2-instance-connect:remotePort",
+     "ec2:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "instance-connect-endpoint"
+   ]
+  },
+  "sendserialconsolesshpublickey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendSerialConsoleSSHPublicKey",
+   "resources": [
+    "instance"
+   ]
+  },
+  "sendsshpublickey": {
+   "conditionKeys": [
+    "ec2:osuser"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendSSHPublicKey",
+   "resources": [
+    "instance"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "ec2-instance-connect:maxTunnelDuration": [
+   "Numeric"
+  ],
+  "ec2-instance-connect:privateIpAddress": [
+   "IPAddress"
+  ],
+  "ec2-instance-connect:remotePort": [
+   "Numeric"
+  ],
+  "ec2:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "ec2:osuser": [
+   "String"
+  ]
+ },
+ "resources": {
+  "instance": {
+   "arnFormats": [
+    "arn:${Partition}:ec2:${Region}:${Account}:instance/${InstanceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ec2:ResourceTag/${TagKey}"
+   ]
+  },
+  "instance-connect-endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:ec2:${Region}:${Account}:instance-connect-endpoint/${InstanceConnectEndpointId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "ec2:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "ec2-instance-connect",
+ "serviceName": "EC2 Instance Connect",
+ "version": "v1.5"
+}

@@ -1,0 +1,30 @@
+{
+ "actions": {
+  "getcontainerizationjobdetails": {
+   "name": "GetContainerizationJobDetails",
+   "resources": []
+  },
+  "getdeploymentjobdetails": {
+   "name": "GetDeploymentJobDetails",
+   "resources": []
+  },
+  "startcontainerizationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartContainerizationJob",
+   "resources": []
+  },
+  "startdeploymentjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDeploymentJob",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "a2c",
+ "serviceName": "App2Container",
+ "version": "v1.5"
+}

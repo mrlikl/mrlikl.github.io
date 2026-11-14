@@ -1,0 +1,12 @@
+{
+ "actions": {
+  "getrhelurl": {
+   "name": "GetRhelURL",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "rhelkb",
+ "serviceName": "RHEL KB",
+ "version": "v1.5"
+}

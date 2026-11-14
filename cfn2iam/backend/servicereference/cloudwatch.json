@@ -1,0 +1,1814 @@
+{
+ "actions": {
+  "assumeaccessprofile": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AssumeAccessProfile",
+   "resources": []
+  },
+  "batchgetservicelevelindicatorreport": {
+   "name": "BatchGetServiceLevelIndicatorReport",
+   "resources": []
+  },
+  "batchgetservicelevelobjectivebudgetreport": {
+   "name": "BatchGetServiceLevelObjectiveBudgetReport",
+   "resources": [
+    "slo"
+   ]
+  },
+  "callwithbearertoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CallWithBearerToken",
+   "resources": []
+  },
+  "createaccessgrant": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "CreateAccessGrant",
+   "resources": []
+  },
+  "createaccessprofile": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "CreateAccessProfile",
+   "resources": []
+  },
+  "createalert": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAlert",
+   "resources": []
+  },
+  "createdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomain",
+   "resources": []
+  },
+  "createdomainaccessgrantfororganization": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "CreateDomainAccessGrantForOrganization",
+   "resources": []
+  },
+  "createdomainfororganization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomainForOrganization",
+   "resources": []
+  },
+  "createingestionendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIngestionEndpoint",
+   "resources": []
+  },
+  "createintegration": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIntegration",
+   "resources": []
+  },
+  "createomnidashboard": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOmniDashboard",
+   "resources": []
+  },
+  "createomnithread": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOmniThread",
+   "resources": []
+  },
+  "createonetimedeeplinkcode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOneTimeDeepLinkCode",
+   "resources": []
+  },
+  "createresourcemetricsconfiguration": {
+   "conditionKeys": [
+    "cloudwatch:ResourceArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResourceMetricsConfiguration",
+   "resources": []
+  },
+  "createservicelevelobjective": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceLevelObjective",
+   "resources": []
+  },
+  "createspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSpace",
+   "resources": []
+  },
+  "createview": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateView",
+   "resources": []
+  },
+  "deleteaccessgrant": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteAccessGrant",
+   "resources": [
+    "access-grant"
+   ]
+  },
+  "deleteaccessprofile": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteAccessProfile",
+   "resources": [
+    "access-profile"
+   ]
+  },
+  "deletealarmmuterule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAlarmMuteRule",
+   "resources": [
+    "alarm-mute-rule"
+   ]
+  },
+  "deletealarms": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAlarms",
+   "resources": [
+    "alarm"
+   ]
+  },
+  "deletealert": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAlert",
+   "resources": [
+    "alert"
+   ]
+  },
+  "deleteanomalydetector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAnomalyDetector",
+   "resources": []
+  },
+  "deletedashboards": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDashboards",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "deletedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deletedomainaccessgrantfororganization": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteDomainAccessGrantForOrganization",
+   "resources": [
+    "organization-access-grant"
+   ]
+  },
+  "deletedomainfororganization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomainForOrganization",
+   "resources": [
+    "organization-domain"
+   ]
+  },
+  "deleteingestionendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIngestionEndpoint",
+   "resources": [
+    "ingestion-endpoint"
+   ]
+  },
+  "deleteinsightrules": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInsightRules",
+   "resources": [
+    "insight-rule"
+   ]
+  },
+  "deleteintegration": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIntegration",
+   "resources": [
+    "integration"
+   ]
+  },
+  "deletemetricdataquerydefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMetricDataQueryDefinition",
+   "resources": [
+    "metric-query-definition"
+   ]
+  },
+  "deletemetricstream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMetricStream",
+   "resources": [
+    "metric-stream"
+   ]
+  },
+  "deleteomnidashboard": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOmniDashboard",
+   "resources": [
+    "omni-dashboard"
+   ]
+  },
+  "deleteomnithread": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOmniThread",
+   "resources": []
+  },
+  "deletepipelinerule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePipelineRule",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "deleteresourcemetricsconfiguration": {
+   "conditionKeys": [
+    "cloudwatch:ResourceArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourceMetricsConfiguration",
+   "resources": []
+  },
+  "deleteservicelevelobjective": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceLevelObjective",
+   "resources": [
+    "slo"
+   ]
+  },
+  "deletespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSpace",
+   "resources": [
+    "space"
+   ]
+  },
+  "deleteview": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteView",
+   "resources": [
+    "view"
+   ]
+  },
+  "describealarmhistory": {
+   "name": "DescribeAlarmHistory",
+   "resources": [
+    "alarm"
+   ]
+  },
+  "describealarms": {
+   "name": "DescribeAlarms",
+   "resources": [
+    "alarm"
+   ]
+  },
+  "describealarmsformetric": {
+   "name": "DescribeAlarmsForMetric",
+   "resources": []
+  },
+  "describeanomalydetectors": {
+   "name": "DescribeAnomalyDetectors",
+   "resources": []
+  },
+  "describeinsightrules": {
+   "name": "DescribeInsightRules",
+   "resources": []
+  },
+  "detectgroupoutliers": {
+   "name": "DetectGroupOutliers",
+   "resources": []
+  },
+  "disablealarmactions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableAlarmActions",
+   "resources": [
+    "alarm"
+   ]
+  },
+  "disableinsightrules": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableInsightRules",
+   "resources": [
+    "insight-rule"
+   ]
+  },
+  "enablealarmactions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableAlarmActions",
+   "resources": [
+    "alarm"
+   ]
+  },
+  "enableinsightrules": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableInsightRules",
+   "resources": [
+    "insight-rule"
+   ]
+  },
+  "enabletopologydiscovery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableTopologyDiscovery",
+   "resources": []
+  },
+  "generatequery": {
+   "name": "GenerateQuery",
+   "resources": []
+  },
+  "generatequeryresultssummary": {
+   "name": "GenerateQueryResultsSummary",
+   "resources": []
+  },
+  "getaccessgrant": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetAccessGrant",
+   "resources": [
+    "access-grant"
+   ]
+  },
+  "getaccessprofile": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetAccessProfile",
+   "resources": [
+    "access-profile"
+   ]
+  },
+  "getagentgraph": {
+   "name": "GetAgentGraph",
+   "resources": []
+  },
+  "getalarmmuterule": {
+   "name": "GetAlarmMuteRule",
+   "resources": [
+    "alarm-mute-rule"
+   ]
+  },
+  "getalert": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetAlert",
+   "resources": [
+    "alert"
+   ]
+  },
+  "getcontextgraph": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetContextGraph",
+   "resources": []
+  },
+  "getdashboard": {
+   "name": "GetDashboard",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "getdataset": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "getdomain": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getdomainaccessgrantfororganization": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetDomainAccessGrantForOrganization",
+   "resources": [
+    "organization-access-grant"
+   ]
+  },
+  "getdomainfororganization": {
+   "name": "GetDomainForOrganization",
+   "resources": [
+    "organization-domain"
+   ]
+  },
+  "getingestionendpoint": {
+   "name": "GetIngestionEndpoint",
+   "resources": [
+    "ingestion-endpoint"
+   ]
+  },
+  "getinsightrulereport": {
+   "name": "GetInsightRuleReport",
+   "resources": [
+    "insight-rule"
+   ]
+  },
+  "getintegration": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetIntegration",
+   "resources": [
+    "integration"
+   ]
+  },
+  "getintelligenceconfiguration": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetIntelligenceConfiguration",
+   "resources": []
+  },
+  "getmetricdata": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetMetricData",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset"
+   ]
+  },
+  "getmetricdataquerydefinition": {
+   "name": "GetMetricDataQueryDefinition",
+   "resources": [
+    "metric-query-definition"
+   ]
+  },
+  "getmetricstatistics": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetMetricStatistics",
+   "resources": []
+  },
+  "getmetricstream": {
+   "name": "GetMetricStream",
+   "resources": [
+    "metric-stream"
+   ]
+  },
+  "getmetricwidgetimage": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetMetricWidgetImage",
+   "resources": []
+  },
+  "getomnidashboard": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetOmniDashboard",
+   "resources": [
+    "omni-dashboard"
+   ]
+  },
+  "getomnithread": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetOmniThread",
+   "resources": []
+  },
+  "getotelenrichment": {
+   "name": "GetOTelEnrichment",
+   "resources": []
+  },
+  "getpreferences": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetPreferences",
+   "resources": []
+  },
+  "getprofilerecords": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetProfileRecords",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset"
+   ]
+  },
+  "getrecords": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetRecords",
+   "resources": []
+  },
+  "getresourcemetricsconfiguration": {
+   "conditionKeys": [
+    "cloudwatch:ResourceArn"
+   ],
+   "name": "GetResourceMetricsConfiguration",
+   "resources": []
+  },
+  "getservice": {
+   "name": "GetService",
+   "resources": [
+    "service"
+   ]
+  },
+  "getservicedata": {
+   "name": "GetServiceData",
+   "resources": [
+    "service"
+   ]
+  },
+  "getservicelevelobjective": {
+   "name": "GetServiceLevelObjective",
+   "resources": [
+    "slo"
+   ]
+  },
+  "getspace": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetSpace",
+   "resources": [
+    "space"
+   ]
+  },
+  "getspacecredentials": {
+   "name": "GetSpaceCredentials",
+   "resources": []
+  },
+  "getspacecredentialsfororganization": {
+   "name": "GetSpaceCredentialsForOrganization",
+   "resources": []
+  },
+  "getspacedataaccess": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetSpaceDataAccess",
+   "resources": []
+  },
+  "gettelemetryqueryresults": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetTelemetryQueryResults",
+   "resources": []
+  },
+  "gettopologydiscoverystatus": {
+   "name": "GetTopologyDiscoveryStatus",
+   "resources": []
+  },
+  "gettopologymap": {
+   "name": "GetTopologyMap",
+   "resources": []
+  },
+  "getview": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetView",
+   "resources": [
+    "view"
+   ]
+  },
+  "invokeintegration": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeIntegration",
+   "resources": []
+  },
+  "link": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Link",
+   "resources": []
+  },
+  "listaccessgrants": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessGrants",
+   "resources": []
+  },
+  "listaccessprofiles": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessProfiles",
+   "resources": []
+  },
+  "listalarmmuterules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAlarmMuteRules",
+   "resources": [
+    "alarm-mute-rule"
+   ]
+  },
+  "listalertcontributors": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAlertContributors",
+   "resources": []
+  },
+  "listalerts": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAlerts",
+   "resources": []
+  },
+  "listdashboards": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDashboards",
+   "resources": []
+  },
+  "listdomainaccessgrantsfororganization": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomainAccessGrantsForOrganization",
+   "resources": []
+  },
+  "listdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomains",
+   "resources": []
+  },
+  "listentitiesformetric": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEntitiesForMetric",
+   "resources": []
+  },
+  "listingestionendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIngestionEndpoints",
+   "resources": []
+  },
+  "listintegrations": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIntegrations",
+   "resources": []
+  },
+  "listmanagedinsightrules": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cloudwatch:requestManagedResourceARNs"
+   ],
+   "name": "ListManagedInsightRules",
+   "resources": []
+  },
+  "listmetricdataquerydefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMetricDataQueryDefinitions",
+   "resources": []
+  },
+  "listmetrics": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListMetrics",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset"
+   ]
+  },
+  "listmetricstreams": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMetricStreams",
+   "resources": []
+  },
+  "listomnidashboards": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOmniDashboards",
+   "resources": []
+  },
+  "listomnithreads": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOmniThreads",
+   "resources": []
+  },
+  "listservicelevelobjectives": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceLevelObjectives",
+   "resources": []
+  },
+  "listservices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServices",
+   "resources": []
+  },
+  "listspaceaccess": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSpaceAccess",
+   "resources": []
+  },
+  "listspaces": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSpaces",
+   "resources": []
+  },
+  "listspacesfororganization": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSpacesForOrganization",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resourceConditionKeys": {
+    "alarm": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "alarm-mute-rule": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "dashboard": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "insight-rule": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "metric-query-definition": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "metric-stream": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "slo": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "alarm",
+    "alarm-mute-rule",
+    "dashboard",
+    "dataset",
+    "insight-rule",
+    "metric-query-definition",
+    "metric-stream",
+    "service",
+    "slo"
+   ]
+  },
+  "listtelemetryfields": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTelemetryFields",
+   "resources": []
+  },
+  "listtelemetryquerysessions": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTelemetryQuerySessions",
+   "resources": []
+  },
+  "listviews": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListViews",
+   "resources": []
+  },
+  "putalarmmuterule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAlarmMuteRule",
+   "resources": [
+    "alarm",
+    "alarm-mute-rule"
+   ]
+  },
+  "putanomalydetector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAnomalyDetector",
+   "resources": []
+  },
+  "putcompositealarm": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cloudwatch:AlarmActions",
+    "cloudwatch:AlarmTagsPropagationEnabled"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutCompositeAlarm",
+   "resources": [
+    "alarm"
+   ]
+  },
+  "putdashboard": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDashboard",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "putinsightrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cloudwatch:requestInsightRuleLogGroups"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutInsightRule",
+   "resources": [
+    "insight-rule"
+   ]
+  },
+  "putintelligenceconfiguration": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutIntelligenceConfiguration",
+   "resources": []
+  },
+  "putlogalarm": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cloudwatch:AlarmActions",
+    "cloudwatch:AlarmTagsPropagationEnabled"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLogAlarm",
+   "resources": [
+    "alarm"
+   ]
+  },
+  "putmanagedinsightrules": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cloudwatch:requestManagedResourceARNs"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutManagedInsightRules",
+   "resources": []
+  },
+  "putmetricalarm": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cloudwatch:AlarmActions",
+    "cloudwatch:AlarmTagsPropagationEnabled"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMetricAlarm",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "alarm",
+    "dataset"
+   ]
+  },
+  "putmetricdata": {
+   "conditionKeys": [
+    "cloudwatch:namespace"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutMetricData",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset"
+   ]
+  },
+  "putmetricdataquerydefinition": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMetricDataQueryDefinition",
+   "resources": [
+    "metric-query-definition"
+   ]
+  },
+  "putmetricstream": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMetricStream",
+   "resources": [
+    "metric-stream"
+   ]
+  },
+  "putpipelinerule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutPipelineRule",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "putprofilerecords": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutProfileRecords",
+   "resourceConditionKeys": {
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "dataset"
+   ]
+  },
+  "putrecords": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRecords",
+   "resources": []
+  },
+  "querytraces": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "QueryTraces",
+   "resources": []
+  },
+  "searchprincipals": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SearchPrincipals",
+   "resources": []
+  },
+  "setalarmstate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetAlarmState",
+   "resources": [
+    "alarm"
+   ]
+  },
+  "startmetricstreams": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMetricStreams",
+   "resources": [
+    "metric-stream"
+   ]
+  },
+  "startomnithreadsession": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartOmniThreadSession",
+   "resources": []
+  },
+  "startotelenrichment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartOTelEnrichment",
+   "resources": []
+  },
+  "starttelemetryquery": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTelemetryQuery",
+   "resources": []
+  },
+  "starttelemetryquerysession": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTelemetryQuerySession",
+   "resources": []
+  },
+  "stopmetricstreams": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopMetricStreams",
+   "resources": [
+    "metric-stream"
+   ]
+  },
+  "stopotelenrichment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopOTelEnrichment",
+   "resources": []
+  },
+  "stoptelemetryquery": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopTelemetryQuery",
+   "resources": []
+  },
+  "stoptelemetryquerysession": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopTelemetryQuerySession",
+   "resources": []
+  },
+  "submitalarmfeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitAlarmFeedback",
+   "resources": []
+  },
+  "submitfeedback": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitFeedback",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "alarm": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "alarm-mute-rule": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "dashboard": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "insight-rule": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "metric-query-definition": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "metric-stream": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "slo": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "alarm",
+    "alarm-mute-rule",
+    "dashboard",
+    "dataset",
+    "insight-rule",
+    "metric-query-definition",
+    "metric-stream",
+    "service",
+    "slo"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys",
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "alarm": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "alarm-mute-rule": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "dashboard": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "dataset": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "insight-rule": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "metric-query-definition": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "metric-stream": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "slo": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "alarm",
+    "alarm-mute-rule",
+    "dashboard",
+    "dataset",
+    "insight-rule",
+    "metric-query-definition",
+    "metric-stream",
+    "service",
+    "slo"
+   ]
+  },
+  "updateaccessprofile": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateAccessProfile",
+   "resources": [
+    "access-profile"
+   ]
+  },
+  "updatealert": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAlert",
+   "resources": [
+    "alert"
+   ]
+  },
+  "updatedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updatedomainfororganization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomainForOrganization",
+   "resources": [
+    "organization-domain"
+   ]
+  },
+  "updateingestionendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIngestionEndpoint",
+   "resources": [
+    "ingestion-endpoint"
+   ]
+  },
+  "updateintegration": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIntegration",
+   "resources": [
+    "integration"
+   ]
+  },
+  "updateomnidashboard": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOmniDashboard",
+   "resources": [
+    "omni-dashboard"
+   ]
+  },
+  "updateomnithread": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOmniThread",
+   "resources": []
+  },
+  "updateotelenrichment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOTelEnrichment",
+   "resources": []
+  },
+  "updatepreferences": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePreferences",
+   "resources": []
+  },
+  "updateresourcemetricsconfiguration": {
+   "conditionKeys": [
+    "cloudwatch:ResourceArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResourceMetricsConfiguration",
+   "resources": []
+  },
+  "updateservicelevelobjective": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceLevelObjective",
+   "resources": [
+    "slo"
+   ]
+  },
+  "updatespace": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSpace",
+   "resources": [
+    "space"
+   ]
+  },
+  "updateview": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateView",
+   "resources": [
+    "view"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "cloudwatch:AlarmActions": [
+   "ArrayOfString"
+  ],
+  "cloudwatch:AlarmTagsPropagationEnabled": [
+   "Bool"
+  ],
+  "cloudwatch:HasAccessGrant": [
+   "String"
+  ],
+  "cloudwatch:ResourceArn": [
+   "ARN"
+  ],
+  "cloudwatch:namespace": [
+   "String"
+  ],
+  "cloudwatch:requestInsightRuleLogGroups": [
+   "ArrayOfString"
+  ],
+  "cloudwatch:requestManagedResourceARNs": [
+   "ArrayOfARN"
+  ]
+ },
+ "resources": {
+  "access-grant": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:access-grant/${GrantId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "access-profile": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:access-profile/${ProfileId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "alarm": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:alarm:${AlarmName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "alarm-mute-rule": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:alarm-mute-rule:${AlarmMuteRuleName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "alert": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:alert/${AlertId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dashboard": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch::${Account}:dashboard/${DashboardName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dataset": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:dataset/${DatasetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "domain": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:domain/${DomainId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ingestion-endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:ingestion-endpoint/${IngestionEndpointName}/${IngestionEndpointId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "insight-rule": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:insight-rule/${InsightRuleName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "integration": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:integration/${IntegrationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "metric-query-definition": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:metric-query-definition/${MetricDataQueryDefinitionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "metric-stream": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:metric-stream/${MetricStreamName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "omni-dashboard": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:omni-dashboard/${DashboardId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "organization-access-grant": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:organization-access-grant/${GrantId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "organization-domain": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:organization-domain/${DomainId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "service": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:service/${ServiceName}-${UniqueAttributesHex}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "slo": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:slo/${SloName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "space": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:space/${SpaceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "view": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:view/${ViewName}/${ViewId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "cloudwatch",
+ "serviceName": "CloudWatch",
+ "version": "v1.5"
+}

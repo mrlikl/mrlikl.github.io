@@ -1,0 +1,113 @@
+{
+ "actions": {
+  "getexecution": {
+   "name": "GetExecution",
+   "resources": [
+    "execution"
+   ]
+  },
+  "getexecutionoutput": {
+   "name": "GetExecutionOutput",
+   "resources": [
+    "execution"
+   ]
+  },
+  "gettool": {
+   "name": "GetTool",
+   "resources": [
+    "tool"
+   ]
+  },
+  "listexecutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExecutions",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "execution"
+   ]
+  },
+  "listtools": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTools",
+   "resources": []
+  },
+  "startexecution": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartExecution",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "execution"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "execution"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "execution": {
+   "arnFormats": [
+    "arn:${Partition}:ts::${Account}:execution/${UserId}/${ToolId}/${ExecutionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "tool": {
+   "arnFormats": [
+    "arn:${Partition}:ts::aws:tool/${ToolId}"
+   ]
+  }
+ },
+ "service": "ts",
+ "serviceName": "Diagnostic tools",
+ "version": "v1.5"
+}

@@ -1,0 +1,702 @@
+{
+ "actions": {
+  "batchcreatefindings": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateFindings",
+   "resources": []
+  },
+  "batchupdatefindings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateFindings",
+   "resources": []
+  },
+  "completetransformationpackageupload": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteTransformationPackageUpload",
+   "resources": [
+    "package"
+   ]
+  },
+  "contributeknowledgeitems": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ContributeKnowledgeItems",
+   "resources": [
+    "package"
+   ]
+  },
+  "conversestream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConverseStream",
+   "resources": []
+  },
+  "createanalysis": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAnalysis",
+   "resources": [
+    "analysis"
+   ]
+  },
+  "createcampaign": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "createremediation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRemediation",
+   "resources": [
+    "remediation"
+   ]
+  },
+  "createrepository": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "createsource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSource",
+   "resources": [
+    "source"
+   ]
+  },
+  "createtransformationpackageurl": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTransformationPackageUrl",
+   "resources": [
+    "package"
+   ]
+  },
+  "deleteanalysis": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAnalysis",
+   "resources": [
+    "analysis"
+   ]
+  },
+  "deletecampaign": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "deletefinding": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFinding",
+   "resources": [
+    "finding"
+   ]
+  },
+  "deleteknowledgeitem": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKnowledgeItem",
+   "resources": [
+    "knowledge-item"
+   ]
+  },
+  "deleteremediation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRemediation",
+   "resources": [
+    "remediation"
+   ]
+  },
+  "deleterepository": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "package"
+   ]
+  },
+  "deletesource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSource",
+   "resources": [
+    "source"
+   ]
+  },
+  "deletetransformationpackage": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTransformationPackage",
+   "resources": [
+    "package"
+   ]
+  },
+  "executetransformation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExecuteTransformation",
+   "resources": [
+    "package"
+   ]
+  },
+  "getanalysis": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAnalysis",
+   "resources": [
+    "analysis"
+   ]
+  },
+  "getanalysisartifactdownloadurl": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAnalysisArtifactDownloadUrl",
+   "resources": [
+    "analysis"
+   ]
+  },
+  "getcampaign": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "getfinding": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetFinding",
+   "resources": [
+    "finding"
+   ]
+  },
+  "getfindinggroups": {
+   "name": "GetFindingGroups",
+   "resources": []
+  },
+  "getknowledgeitem": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetKnowledgeItem",
+   "resources": [
+    "knowledge-item"
+   ]
+  },
+  "getremediation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetRemediation",
+   "resources": [
+    "remediation"
+   ]
+  },
+  "getrepository": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "getresourcepolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetResourcePolicy",
+   "resources": [
+    "package"
+   ]
+  },
+  "getsource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSource",
+   "resources": [
+    "source"
+   ]
+  },
+  "gettransformationpackageurl": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetTransformationPackageUrl",
+   "resources": [
+    "package"
+   ]
+  },
+  "listanalyses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnalyses",
+   "resources": []
+  },
+  "listanalysisartifacts": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListAnalysisArtifacts",
+   "resources": [
+    "analysis"
+   ]
+  },
+  "listcampaignrepositories": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListCampaignRepositories",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "listcampaigns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCampaigns",
+   "resources": []
+  },
+  "listfindings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFindings",
+   "resources": []
+  },
+  "listknowledgeitems": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKnowledgeItems",
+   "resources": []
+  },
+  "listremediations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRemediations",
+   "resources": []
+  },
+  "listrepositories": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRepositories",
+   "resources": []
+  },
+  "listsources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSources",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "listtransformationpackagemetadata": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTransformationPackageMetadata",
+   "resources": []
+  },
+  "listtransformationpackageshares": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTransformationPackageShares",
+   "resources": [
+    "package"
+   ]
+  },
+  "putresourcepolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "package"
+   ]
+  },
+  "sendtelemetryevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendTelemetryEvent",
+   "resources": []
+  },
+  "sharetransformationpackage": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ShareTransformationPackage",
+   "resources": [
+    "package"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "analysis",
+    "campaign",
+    "finding",
+    "knowledge-item",
+    "package",
+    "remediation",
+    "repository",
+    "source"
+   ]
+  },
+  "unsharetransformationpackage": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnshareTransformationPackage",
+   "resources": [
+    "package"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "analysis",
+    "campaign",
+    "finding",
+    "knowledge-item",
+    "package",
+    "remediation",
+    "repository",
+    "source"
+   ]
+  },
+  "updateanalysis": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAnalysis",
+   "resources": [
+    "analysis"
+   ]
+  },
+  "updatecampaign": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "updatecampaignrepositorystatus": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaignRepositoryStatus",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "updateknowledgeitemconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKnowledgeItemConfiguration",
+   "resources": [
+    "package"
+   ]
+  },
+  "updateknowledgeitemstatus": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKnowledgeItemStatus",
+   "resources": [
+    "knowledge-item"
+   ]
+  },
+  "updateremediation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRemediation",
+   "resources": [
+    "remediation"
+   ]
+  },
+  "updaterepository": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRepository",
+   "resources": [
+    "repository"
+   ]
+  },
+  "updatesource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSource",
+   "resources": [
+    "source"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "analysis": {
+   "arnFormats": [
+    "arn:${Partition}:transform-custom:${Region}:${Account}:analysis/${AnalysisId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "campaign": {
+   "arnFormats": [
+    "arn:${Partition}:transform-custom:${Region}:${Account}:campaign/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "finding": {
+   "arnFormats": [
+    "arn:${Partition}:transform-custom:${Region}:${Account}:finding/${FindingId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "knowledge-item": {
+   "arnFormats": [
+    "arn:${Partition}:transform-custom:${Region}:${Account}:package/${TransformationPackageName}/knowledge-item/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "package": {
+   "arnFormats": [
+    "arn:${Partition}:transform-custom:${Region}:${Account}:package/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "remediation": {
+   "arnFormats": [
+    "arn:${Partition}:transform-custom:${Region}:${Account}:remediation/${RemediationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "repository": {
+   "arnFormats": [
+    "arn:${Partition}:transform-custom:${Region}:${Account}:repository/${RepositoryId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "source": {
+   "arnFormats": [
+    "arn:${Partition}:transform-custom:${Region}:${Account}:source/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "transform-custom",
+ "serviceName": "Transform custom",
+ "version": "v1.5"
+}

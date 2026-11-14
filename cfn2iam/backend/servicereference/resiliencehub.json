@@ -1,0 +1,1514 @@
+{
+ "actions": {
+  "acceptresourcegroupingrecommendations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptResourceGroupingRecommendations",
+   "resources": [
+    "application"
+   ]
+  },
+  "adddraftappversionresourcemappings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddDraftAppVersionResourceMappings",
+   "resources": [
+    "application"
+   ]
+  },
+  "batchupdaterecommendationstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateRecommendationStatus",
+   "resources": [
+    "application"
+   ]
+  },
+  "createapp": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApp",
+   "resources": [
+    "application"
+   ]
+  },
+  "createappversionappcomponent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAppVersionAppComponent",
+   "resources": [
+    "application"
+   ]
+  },
+  "createappversionresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAppVersionResource",
+   "resources": [
+    "application"
+   ]
+  },
+  "createassertion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssertion",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "createinputsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInputSource",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "createpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePolicy",
+   "resourceConditionKeys": {
+    "policy": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "policy"
+   ]
+  },
+  "createrecommendationtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRecommendationTemplate",
+   "resources": [
+    "application"
+   ]
+  },
+  "createreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReport",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "createresiliencypolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResiliencyPolicy",
+   "resources": [
+    "resiliency-policy"
+   ]
+  },
+  "createservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateService",
+   "resourceConditionKeys": {
+    "policy": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "service": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "system": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "policy",
+    "service",
+    "system"
+   ]
+  },
+  "createservicefunction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceFunction",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "createservicefunctionresources": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceFunctionResources",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "createsystem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSystem",
+   "resourceConditionKeys": {
+    "system": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "system"
+   ]
+  },
+  "createtest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTest",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "createuserjourney": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUserJourney",
+   "resourceConditionKeys": {
+    "policy": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "system": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "policy",
+    "system"
+   ]
+  },
+  "deleteapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApp",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteappassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppAssessment",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteappinputsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppInputSource",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteappversionappcomponent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppVersionAppComponent",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteappversionresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppVersionResource",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteassertion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssertion",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "deleteinputsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInputSource",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "deletepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePolicy",
+   "resourceConditionKeys": {
+    "policy": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "policy"
+   ]
+  },
+  "deleterecommendationtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRecommendationTemplate",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteresiliencypolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResiliencyPolicy",
+   "resources": [
+    "resiliency-policy"
+   ]
+  },
+  "deleteservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteService",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "deleteservicefunction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceFunction",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "deleteservicefunctionresources": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceFunctionResources",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "deletesystem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSystem",
+   "resourceConditionKeys": {
+    "system": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "system"
+   ]
+  },
+  "deletetest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTest",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "deletetestsources": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTestSources",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "deleteuserjourney": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserJourney",
+   "resourceConditionKeys": {
+    "system": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "system"
+   ]
+  },
+  "describeapp": {
+   "name": "DescribeApp",
+   "resources": [
+    "application"
+   ]
+  },
+  "describeappassessment": {
+   "name": "DescribeAppAssessment",
+   "resources": [
+    "application"
+   ]
+  },
+  "describeappversion": {
+   "name": "DescribeAppVersion",
+   "resources": [
+    "application"
+   ]
+  },
+  "describeappversionappcomponent": {
+   "name": "DescribeAppVersionAppComponent",
+   "resources": [
+    "application"
+   ]
+  },
+  "describeappversionresource": {
+   "name": "DescribeAppVersionResource",
+   "resources": [
+    "application"
+   ]
+  },
+  "describeappversionresourcesresolutionstatus": {
+   "name": "DescribeAppVersionResourcesResolutionStatus",
+   "resources": [
+    "application"
+   ]
+  },
+  "describeappversiontemplate": {
+   "name": "DescribeAppVersionTemplate",
+   "resources": [
+    "application"
+   ]
+  },
+  "describedraftappversionresourcesimportstatus": {
+   "name": "DescribeDraftAppVersionResourcesImportStatus",
+   "resources": [
+    "application"
+   ]
+  },
+  "describemetricsexport": {
+   "name": "DescribeMetricsExport",
+   "resources": []
+  },
+  "describeresiliencypolicy": {
+   "name": "DescribeResiliencyPolicy",
+   "resources": [
+    "resiliency-policy"
+   ]
+  },
+  "describeresourcegroupingrecommendationtask": {
+   "name": "DescribeResourceGroupingRecommendationTask",
+   "resources": [
+    "application"
+   ]
+  },
+  "getdependencyinsights": {
+   "name": "GetDependencyInsights",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "getfailuremodefinding": {
+   "name": "GetFailureModeFinding",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "getpolicy": {
+   "name": "GetPolicy",
+   "resourceConditionKeys": {
+    "policy": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "policy"
+   ]
+  },
+  "getservice": {
+   "name": "GetService",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "getsystem": {
+   "name": "GetSystem",
+   "resourceConditionKeys": {
+    "system": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "system"
+   ]
+  },
+  "gettest": {
+   "name": "GetTest",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "gettestrun": {
+   "name": "GetTestRun",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "gettesttemplate": {
+   "name": "GetTestTemplate",
+   "resources": []
+  },
+  "getuserjourney": {
+   "name": "GetUserJourney",
+   "resourceConditionKeys": {
+    "system": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "system"
+   ]
+  },
+  "importapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportApp",
+   "resourceConditionKeys": {
+    "application": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "service": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "application",
+    "service"
+   ]
+  },
+  "importpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportPolicy",
+   "resourceConditionKeys": {
+    "policy": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "resiliency-policy": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "policy",
+    "resiliency-policy"
+   ]
+  },
+  "importresourcestodraftappversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportResourcesToDraftAppVersion",
+   "resources": [
+    "application"
+   ]
+  },
+  "listalarmrecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAlarmRecommendations",
+   "resources": [
+    "application"
+   ]
+  },
+  "listappassessmentcompliancedrifts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppAssessmentComplianceDrifts",
+   "resources": [
+    "application"
+   ]
+  },
+  "listappassessmentresourcedrifts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppAssessmentResourceDrifts",
+   "resources": [
+    "application"
+   ]
+  },
+  "listappassessments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppAssessments",
+   "resources": []
+  },
+  "listappcomponentcompliances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppComponentCompliances",
+   "resources": [
+    "application"
+   ]
+  },
+  "listappcomponentrecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppComponentRecommendations",
+   "resources": [
+    "application"
+   ]
+  },
+  "listappinputsources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppInputSources",
+   "resources": [
+    "application"
+   ]
+  },
+  "listapps": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApps",
+   "resources": []
+  },
+  "listappversionappcomponents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppVersionAppComponents",
+   "resources": [
+    "application"
+   ]
+  },
+  "listappversionresourcemappings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppVersionResourceMappings",
+   "resources": [
+    "application"
+   ]
+  },
+  "listappversionresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppVersionResources",
+   "resources": [
+    "application"
+   ]
+  },
+  "listappversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppVersions",
+   "resources": [
+    "application"
+   ]
+  },
+  "listassertions": {
+   "name": "ListAssertions",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listdependencies": {
+   "name": "ListDependencies",
+   "resources": []
+  },
+  "listfailuremodeassessments": {
+   "name": "ListFailureModeAssessments",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listfailuremodefindings": {
+   "name": "ListFailureModeFindings",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listinputsources": {
+   "name": "ListInputSources",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listmetrics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMetrics",
+   "resources": []
+  },
+  "listpolicies": {
+   "name": "ListPolicies",
+   "resources": []
+  },
+  "listpolicyevents": {
+   "name": "ListPolicyEvents",
+   "resourceConditionKeys": {
+    "policy": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "policy"
+   ]
+  },
+  "listrecommendationtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommendationTemplates",
+   "resources": [
+    "application"
+   ]
+  },
+  "listreports": {
+   "name": "ListReports",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listresiliencypolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResiliencyPolicies",
+   "resources": []
+  },
+  "listresolvedtestruntargetresources": {
+   "name": "ListResolvedTestRunTargetResources",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listresourcegroupingrecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceGroupingRecommendations",
+   "resources": [
+    "application"
+   ]
+  },
+  "listresources": {
+   "name": "ListResources",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listserviceevents": {
+   "name": "ListServiceEvents",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listservicefunctions": {
+   "name": "ListServiceFunctions",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listservices": {
+   "name": "ListServices",
+   "resources": []
+  },
+  "listservicetopologyedges": {
+   "name": "ListServiceTopologyEdges",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listsoprecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSopRecommendations",
+   "resources": [
+    "application"
+   ]
+  },
+  "listsuggestedresiliencypolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSuggestedResiliencyPolicies",
+   "resources": []
+  },
+  "listsystemevents": {
+   "name": "ListSystemEvents",
+   "resourceConditionKeys": {
+    "system": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "system"
+   ]
+  },
+  "listsystems": {
+   "name": "ListSystems",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "app-assessment",
+    "application",
+    "policy",
+    "recommendation-template",
+    "resiliency-policy",
+    "service",
+    "system"
+   ]
+  },
+  "listtestrecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTestRecommendations",
+   "resources": [
+    "application"
+   ]
+  },
+  "listtestrundependencies": {
+   "name": "ListTestRunDependencies",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listtestrunevents": {
+   "name": "ListTestRunEvents",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listtestruns": {
+   "name": "ListTestRuns",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listtestrunsourceevents": {
+   "name": "ListTestRunSourceEvents",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listtestrunsources": {
+   "name": "ListTestRunSources",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listtests": {
+   "name": "ListTests",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listtestsources": {
+   "name": "ListTestSources",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "listtesttemplates": {
+   "name": "ListTestTemplates",
+   "resources": []
+  },
+  "listunsupportedappversionresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUnsupportedAppVersionResources",
+   "resources": [
+    "application"
+   ]
+  },
+  "listuserjourneys": {
+   "name": "ListUserJourneys",
+   "resourceConditionKeys": {
+    "system": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "system"
+   ]
+  },
+  "publishappversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PublishAppVersion",
+   "resources": [
+    "application"
+   ]
+  },
+  "putdraftappversiontemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDraftAppVersionTemplate",
+   "resources": [
+    "application"
+   ]
+  },
+  "puttestsources": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTestSources",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "rejectresourcegroupingrecommendations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectResourceGroupingRecommendations",
+   "resources": [
+    "application"
+   ]
+  },
+  "removedraftappversionresourcemappings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveDraftAppVersionResourceMappings",
+   "resources": [
+    "application"
+   ]
+  },
+  "resolveappversionresources": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResolveAppVersionResources",
+   "resources": [
+    "application"
+   ]
+  },
+  "startappassessment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAppAssessment",
+   "resources": [
+    "application"
+   ]
+  },
+  "startdependencyinsights": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDependencyInsights",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "startfailuremodeassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFailureModeAssessment",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "startmetricsexport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMetricsExport",
+   "resources": []
+  },
+  "startresourcegroupingrecommendationtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartResourceGroupingRecommendationTask",
+   "resources": [
+    "application"
+   ]
+  },
+  "starttestrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTestRun",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "stoptestrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopTestRun",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "app-assessment",
+    "application",
+    "policy",
+    "recommendation-template",
+    "resiliency-policy",
+    "service",
+    "system"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "app-assessment",
+    "application",
+    "policy",
+    "recommendation-template",
+    "resiliency-policy",
+    "service",
+    "system"
+   ]
+  },
+  "updateapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApp",
+   "resources": [
+    "application"
+   ]
+  },
+  "updateappversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAppVersion",
+   "resources": [
+    "application"
+   ]
+  },
+  "updateappversionappcomponent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAppVersionAppComponent",
+   "resources": [
+    "application"
+   ]
+  },
+  "updateappversionresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAppVersionResource",
+   "resources": [
+    "application"
+   ]
+  },
+  "updateassertion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssertion",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "updatedependency": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDependency",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "updatefailuremodefinding": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFailureModeFinding",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "updatepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePolicy",
+   "resourceConditionKeys": {
+    "policy": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "policy"
+   ]
+  },
+  "updateresiliencypolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResiliencyPolicy",
+   "resources": [
+    "resiliency-policy"
+   ]
+  },
+  "updateservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateService",
+   "resourceConditionKeys": {
+    "policy": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "system": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "policy",
+    "service",
+    "system"
+   ]
+  },
+  "updateservicefunction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceFunction",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "updatesystem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSystem",
+   "resourceConditionKeys": {
+    "system": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "system"
+   ]
+  },
+  "updatetest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTest",
+   "resourceConditionKeys": {
+    "service": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "service"
+   ]
+  },
+  "updateuserjourney": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserJourney",
+   "resourceConditionKeys": {
+    "policy": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "system": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "policy",
+    "system"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "app-assessment": {
+   "arnFormats": [
+    "arn:${Partition}:resiliencehub:${Region}:${Account}:app-assessment/${AppAssessmentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:resiliencehub:${Region}:${Account}:app/${AppId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "policy": {
+   "arnFormats": [
+    "arn:${Partition}:resiliencehub:${Region}:${Account}:policy/${PolicyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "recommendation-template": {
+   "arnFormats": [
+    "arn:${Partition}:resiliencehub:${Region}:${Account}:recommendation-template/${RecommendationTemplateId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "resiliency-policy": {
+   "arnFormats": [
+    "arn:${Partition}:resiliencehub:${Region}:${Account}:resiliency-policy/${ResiliencyPolicyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "service": {
+   "arnFormats": [
+    "arn:${Partition}:resiliencehub:${Region}:${Account}:service/${ServiceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "system": {
+   "arnFormats": [
+    "arn:${Partition}:resiliencehub:${Region}:${Account}:system/${SystemId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "test-template": {
+   "arnFormats": [
+    "arn:${Partition}:resiliencehub:${Region}:${Account}:test-template/${TestTemplateId}"
+   ]
+  }
+ },
+ "service": "resiliencehub",
+ "serviceName": "Resilience Hub",
+ "version": "v1.5"
+}

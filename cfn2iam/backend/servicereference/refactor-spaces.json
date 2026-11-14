@@ -1,0 +1,348 @@
+{
+ "actions": {
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "refactor-spaces:ApplicationCreatedByAccount",
+    "refactor-spaces:CreatedByAccountIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "createenvironment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironment",
+   "resources": []
+  },
+  "createroute": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "refactor-spaces:ApplicationCreatedByAccount",
+    "refactor-spaces:CreatedByAccountIds",
+    "refactor-spaces:RouteCreatedByAccount",
+    "refactor-spaces:ServiceCreatedByAccount",
+    "refactor-spaces:SourcePath"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRoute",
+   "resources": []
+  },
+  "createservice": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "refactor-spaces:ApplicationCreatedByAccount",
+    "refactor-spaces:CreatedByAccountIds",
+    "refactor-spaces:ServiceCreatedByAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateService",
+   "resources": []
+  },
+  "deleteapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "refactor-spaces:ApplicationCreatedByAccount",
+    "refactor-spaces:CreatedByAccountIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteenvironment": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": []
+  },
+  "deleteroute": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "refactor-spaces:ApplicationCreatedByAccount",
+    "refactor-spaces:CreatedByAccountIds",
+    "refactor-spaces:RouteCreatedByAccount",
+    "refactor-spaces:ServiceCreatedByAccount",
+    "refactor-spaces:SourcePath"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRoute",
+   "resources": [
+    "route"
+   ]
+  },
+  "deleteservice": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "refactor-spaces:ApplicationCreatedByAccount",
+    "refactor-spaces:CreatedByAccountIds",
+    "refactor-spaces:ServiceCreatedByAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteService",
+   "resources": [
+    "service"
+   ]
+  },
+  "getapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "refactor-spaces:ApplicationCreatedByAccount",
+    "refactor-spaces:CreatedByAccountIds"
+   ],
+   "name": "GetApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "getenvironment": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": []
+  },
+  "getroute": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "refactor-spaces:ApplicationCreatedByAccount",
+    "refactor-spaces:CreatedByAccountIds",
+    "refactor-spaces:RouteCreatedByAccount",
+    "refactor-spaces:ServiceCreatedByAccount",
+    "refactor-spaces:SourcePath"
+   ],
+   "name": "GetRoute",
+   "resources": [
+    "route"
+   ]
+  },
+  "getservice": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "refactor-spaces:ApplicationCreatedByAccount",
+    "refactor-spaces:CreatedByAccountIds",
+    "refactor-spaces:ServiceCreatedByAccount"
+   ],
+   "name": "GetService",
+   "resources": [
+    "service"
+   ]
+  },
+  "listapplications": {
+   "name": "ListApplications",
+   "resources": [
+    "application"
+   ]
+  },
+  "listenvironments": {
+   "name": "ListEnvironments",
+   "resources": []
+  },
+  "listenvironmentvpcs": {
+   "name": "ListEnvironmentVpcs",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listroutes": {
+   "name": "ListRoutes",
+   "resources": [
+    "route"
+   ]
+  },
+  "listservices": {
+   "name": "ListServices",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "refactor-spaces:ApplicationCreatedByAccount",
+    "refactor-spaces:CreatedByAccountIds",
+    "refactor-spaces:RouteCreatedByAccount",
+    "refactor-spaces:ServiceCreatedByAccount",
+    "refactor-spaces:SourcePath"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "application",
+    "environment",
+    "route",
+    "service"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "refactor-spaces:ApplicationCreatedByAccount",
+    "refactor-spaces:CreatedByAccountIds",
+    "refactor-spaces:RouteCreatedByAccount",
+    "refactor-spaces:ServiceCreatedByAccount",
+    "refactor-spaces:SourcePath"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "application",
+    "environment",
+    "route",
+    "service"
+   ]
+  },
+  "updateroute": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "refactor-spaces:ApplicationCreatedByAccount",
+    "refactor-spaces:CreatedByAccountIds",
+    "refactor-spaces:RouteCreatedByAccount",
+    "refactor-spaces:ServiceCreatedByAccount",
+    "refactor-spaces:SourcePath"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoute",
+   "resources": [
+    "route"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "refactor-spaces:ApplicationCreatedByAccount": [
+   "String"
+  ],
+  "refactor-spaces:CreatedByAccountIds": [
+   "ArrayOfString"
+  ],
+  "refactor-spaces:RouteCreatedByAccount": [
+   "String"
+  ],
+  "refactor-spaces:ServiceCreatedByAccount": [
+   "String"
+  ],
+  "refactor-spaces:SourcePath": [
+   "String"
+  ]
+ },
+ "resources": {
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:refactor-spaces:${Region}:${Account}:environment/${EnvironmentId}/application/${ApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "refactor-spaces:ApplicationCreatedByAccount",
+    "refactor-spaces:CreatedByAccountIds"
+   ]
+  },
+  "environment": {
+   "arnFormats": [
+    "arn:${Partition}:refactor-spaces:${Region}:${Account}:environment/${EnvironmentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "route": {
+   "arnFormats": [
+    "arn:${Partition}:refactor-spaces:${Region}:${Account}:environment/${EnvironmentId}/application/${ApplicationId}/route/${RouteId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "refactor-spaces:ApplicationCreatedByAccount",
+    "refactor-spaces:CreatedByAccountIds",
+    "refactor-spaces:RouteCreatedByAccount",
+    "refactor-spaces:ServiceCreatedByAccount",
+    "refactor-spaces:SourcePath"
+   ]
+  },
+  "service": {
+   "arnFormats": [
+    "arn:${Partition}:refactor-spaces:${Region}:${Account}:environment/${EnvironmentId}/application/${ApplicationId}/service/${ServiceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "refactor-spaces:ApplicationCreatedByAccount",
+    "refactor-spaces:CreatedByAccountIds",
+    "refactor-spaces:ServiceCreatedByAccount"
+   ]
+  }
+ },
+ "service": "refactor-spaces",
+ "serviceName": "Migration Hub Refactor Spaces",
+ "version": "v1.5"
+}

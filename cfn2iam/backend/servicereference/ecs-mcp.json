@@ -1,0 +1,16 @@
+{
+ "actions": {
+  "invokereadonlytools": {
+   "name": "InvokeReadOnlyTools",
+   "resources": []
+  },
+  "usemcp": {
+   "name": "UseMcp",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "ecs-mcp",
+ "serviceName": "ECS MCP",
+ "version": "v1.5"
+}

@@ -1,0 +1,283 @@
+{
+ "actions": {
+  "batchdeleteinstrumentationconfigurations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteInstrumentationConfigurations",
+   "resources": [
+    "instrumentationConfig"
+   ]
+  },
+  "batchgetservicelevelobjectivebudgetreport": {
+   "name": "BatchGetServiceLevelObjectiveBudgetReport",
+   "resources": [
+    "slo"
+   ]
+  },
+  "batchupdateexclusionwindows": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateExclusionWindows",
+   "resources": [
+    "slo"
+   ]
+  },
+  "createinstrumentationconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInstrumentationConfiguration",
+   "resources": []
+  },
+  "createservicelevelobjective": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceLevelObjective",
+   "resources": []
+  },
+  "deletegroupingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGroupingConfiguration",
+   "resources": []
+  },
+  "deleteinstrumentationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInstrumentationConfiguration",
+   "resources": [
+    "instrumentationConfig"
+   ]
+  },
+  "deleteservicelevelobjective": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceLevelObjective",
+   "resources": [
+    "slo"
+   ]
+  },
+  "getinstrumentationconfiguration": {
+   "name": "GetInstrumentationConfiguration",
+   "resources": [
+    "instrumentationConfig"
+   ]
+  },
+  "getinstrumentationconfigurationstatus": {
+   "name": "GetInstrumentationConfigurationStatus",
+   "resources": [
+    "instrumentationConfig"
+   ]
+  },
+  "getservice": {
+   "name": "GetService",
+   "resources": []
+  },
+  "getservicelevelobjective": {
+   "name": "GetServiceLevelObjective",
+   "resources": [
+    "slo"
+   ]
+  },
+  "link": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Link",
+   "resources": []
+  },
+  "listauditfindings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAuditFindings",
+   "resources": []
+  },
+  "listentityevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEntityEvents",
+   "resources": []
+  },
+  "listgroupingattributedefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroupingAttributeDefinitions",
+   "resources": []
+  },
+  "listinstrumentationconfigurations": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListInstrumentationConfigurations",
+   "resources": []
+  },
+  "listobservedentities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListObservedEntities",
+   "resources": []
+  },
+  "listservicedependencies": {
+   "name": "ListServiceDependencies",
+   "resources": []
+  },
+  "listservicedependents": {
+   "name": "ListServiceDependents",
+   "resources": []
+  },
+  "listservicelevelobjectiveexclusionwindows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceLevelObjectiveExclusionWindows",
+   "resources": [
+    "slo"
+   ]
+  },
+  "listservicelevelobjectives": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceLevelObjectives",
+   "resources": []
+  },
+  "listserviceoperations": {
+   "name": "ListServiceOperations",
+   "resources": []
+  },
+  "listservices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServices",
+   "resources": []
+  },
+  "listservicestates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceStates",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "instrumentationConfig",
+    "slo"
+   ]
+  },
+  "putgroupingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutGroupingConfiguration",
+   "resources": []
+  },
+  "reportinstrumentationconfigurationstatus": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "ReportInstrumentationConfigurationStatus",
+   "resources": [
+    "instrumentationConfig"
+   ]
+  },
+  "startdiscovery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDiscovery",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "instrumentationConfig",
+    "slo"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "instrumentationConfig",
+    "slo"
+   ]
+  },
+  "updateservicelevelobjective": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceLevelObjective",
+   "resources": [
+    "slo"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "instrumentationConfig": {
+   "arnFormats": [
+    "arn:${Partition}:application-signals:${Region}:${Account}:instrumentationConfig/${Service}/${Environment}/${SignalType}/${LocationHash}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "slo": {
+   "arnFormats": [
+    "arn:${Partition}:application-signals:${Region}:${Account}:slo/${SloName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "application-signals",
+ "serviceName": "Application Signals",
+ "version": "v1.5"
+}

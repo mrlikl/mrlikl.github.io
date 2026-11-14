@@ -1,0 +1,290 @@
+{
+ "actions": {
+  "createdbbackup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDbBackup",
+   "resources": [
+    "db-backup"
+   ]
+  },
+  "createdbcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDbCluster",
+   "resources": [
+    "db-parameter-group"
+   ]
+  },
+  "createdbinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDbInstance",
+   "resources": [
+    "db-parameter-group"
+   ]
+  },
+  "createdbparametergroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDbParameterGroup",
+   "resources": []
+  },
+  "deletedbbackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDbBackup",
+   "resources": [
+    "db-backup"
+   ]
+  },
+  "deletedbcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDbCluster",
+   "resources": [
+    "db-cluster"
+   ]
+  },
+  "deletedbinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDbInstance",
+   "resources": [
+    "db-instance"
+   ]
+  },
+  "getdbbackup": {
+   "name": "GetDbBackup",
+   "resources": [
+    "db-backup"
+   ]
+  },
+  "getdbcluster": {
+   "name": "GetDbCluster",
+   "resources": [
+    "db-cluster"
+   ]
+  },
+  "getdbinstance": {
+   "name": "GetDbInstance",
+   "resources": [
+    "db-instance"
+   ]
+  },
+  "getdbparametergroup": {
+   "name": "GetDbParameterGroup",
+   "resources": [
+    "db-parameter-group"
+   ]
+  },
+  "listdbbackups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDbBackups",
+   "resources": []
+  },
+  "listdbclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDbClusters",
+   "resources": []
+  },
+  "listdbinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDbInstances",
+   "resources": []
+  },
+  "listdbinstancesforcluster": {
+   "name": "ListDbInstancesForCluster",
+   "resources": [
+    "db-cluster"
+   ]
+  },
+  "listdbparametergroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDbParameterGroups",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "db-backup",
+    "db-cluster",
+    "db-instance",
+    "db-parameter-group"
+   ]
+  },
+  "rebootdbcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootDbCluster",
+   "resources": [
+    "db-cluster",
+    "db-instance"
+   ]
+  },
+  "rebootdbinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootDbInstance",
+   "resources": [
+    "db-instance"
+   ]
+  },
+  "restorefromdbbackup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "timestream-influxdb:RestoreMode"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreFromDbBackup",
+   "resources": [
+    "db-backup"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "db-backup",
+    "db-cluster",
+    "db-instance",
+    "db-parameter-group"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "db-backup",
+    "db-cluster",
+    "db-instance",
+    "db-parameter-group"
+   ]
+  },
+  "updatedbcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDbCluster",
+   "resources": [
+    "db-cluster",
+    "db-parameter-group"
+   ]
+  },
+  "updatedbinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDbInstance",
+   "resources": [
+    "db-instance",
+    "db-parameter-group"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "timestream-influxdb:RestoreMode": [
+   "String"
+  ]
+ },
+ "resources": {
+  "db-backup": {
+   "arnFormats": [
+    "arn:${Partition}:timestream-influxdb:${Region}:${Account}:db-backup/${DbBackupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "db-cluster": {
+   "arnFormats": [
+    "arn:${Partition}:timestream-influxdb:${Region}:${Account}:db-cluster/${DbClusterId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "db-instance": {
+   "arnFormats": [
+    "arn:${Partition}:timestream-influxdb:${Region}:${Account}:db-instance/${DbInstanceIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "db-parameter-group": {
+   "arnFormats": [
+    "arn:${Partition}:timestream-influxdb:${Region}:${Account}:db-parameter-group/${DbParameterGroupIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "timestream-influxdb",
+ "serviceName": "Timestream InfluxDB",
+ "version": "v1.5"
+}

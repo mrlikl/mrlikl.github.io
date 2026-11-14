@@ -1,0 +1,226 @@
+{
+ "actions": {
+  "createdataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataset",
+   "resources": []
+  },
+  "createmodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateModel",
+   "resources": [
+    "model"
+   ]
+  },
+  "createproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProject",
+   "resources": [
+    "project"
+   ]
+  },
+  "deletedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataset",
+   "resources": []
+  },
+  "deletemodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteModel",
+   "resources": [
+    "model"
+   ]
+  },
+  "deleteproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProject",
+   "resources": [
+    "project"
+   ]
+  },
+  "describedataset": {
+   "name": "DescribeDataset",
+   "resources": []
+  },
+  "describemodel": {
+   "name": "DescribeModel",
+   "resources": [
+    "model"
+   ]
+  },
+  "describemodelpackagingjob": {
+   "name": "DescribeModelPackagingJob",
+   "resources": []
+  },
+  "describeproject": {
+   "name": "DescribeProject",
+   "resources": [
+    "project"
+   ]
+  },
+  "describetrialdetection": {
+   "name": "DescribeTrialDetection",
+   "resources": []
+  },
+  "detectanomalies": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetectAnomalies",
+   "resources": [
+    "model"
+   ]
+  },
+  "listdatasetentries": {
+   "name": "ListDatasetEntries",
+   "resources": []
+  },
+  "listmodelpackagingjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListModelPackagingJobs",
+   "resources": []
+  },
+  "listmodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListModels",
+   "resources": []
+  },
+  "listprojects": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProjects",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "model"
+   ]
+  },
+  "listtrialdetections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrialDetections",
+   "resources": []
+  },
+  "startmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartModel",
+   "resources": [
+    "model"
+   ]
+  },
+  "startmodelpackagingjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartModelPackagingJob",
+   "resources": [
+    "model"
+   ]
+  },
+  "starttrialdetection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTrialDetection",
+   "resources": []
+  },
+  "stopmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopModel",
+   "resources": [
+    "model"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "model"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "model"
+   ]
+  },
+  "updatedatasetentries": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDatasetEntries",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "model": {
+   "arnFormats": [
+    "arn:${Partition}:lookoutvision:${Region}:${Account}:model/${ProjectName}/${ModelVersion}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "project": {
+   "arnFormats": [
+    "arn:${Partition}:lookoutvision:${Region}:${Account}:project/${ProjectName}"
+   ]
+  }
+ },
+ "service": "lookoutvision",
+ "serviceName": "Lookout Vision",
+ "version": "v1.5"
+}

@@ -1,0 +1,318 @@
+{
+ "actions": {
+  "createcell": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCell",
+   "resources": [
+    "cell"
+   ]
+  },
+  "createcrossaccountauthorization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCrossAccountAuthorization",
+   "resources": []
+  },
+  "createreadinesscheck": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReadinessCheck",
+   "resources": [
+    "readinesscheck"
+   ]
+  },
+  "createrecoverygroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRecoveryGroup",
+   "resources": [
+    "recoverygroup"
+   ]
+  },
+  "createresourceset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResourceSet",
+   "resources": [
+    "resourceset"
+   ]
+  },
+  "deletecell": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCell",
+   "resources": [
+    "cell"
+   ]
+  },
+  "deletecrossaccountauthorization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCrossAccountAuthorization",
+   "resources": []
+  },
+  "deletereadinesscheck": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReadinessCheck",
+   "resources": [
+    "readinesscheck"
+   ]
+  },
+  "deleterecoverygroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRecoveryGroup",
+   "resources": [
+    "recoverygroup"
+   ]
+  },
+  "deleteresourceset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourceSet",
+   "resources": [
+    "resourceset"
+   ]
+  },
+  "getarchitecturerecommendations": {
+   "name": "GetArchitectureRecommendations",
+   "resources": [
+    "recoverygroup"
+   ]
+  },
+  "getcell": {
+   "name": "GetCell",
+   "resources": [
+    "cell"
+   ]
+  },
+  "getcellreadinesssummary": {
+   "name": "GetCellReadinessSummary",
+   "resources": [
+    "cell"
+   ]
+  },
+  "getreadinesscheck": {
+   "name": "GetReadinessCheck",
+   "resources": [
+    "readinesscheck"
+   ]
+  },
+  "getreadinesscheckresourcestatus": {
+   "name": "GetReadinessCheckResourceStatus",
+   "resources": [
+    "readinesscheck"
+   ]
+  },
+  "getreadinesscheckstatus": {
+   "name": "GetReadinessCheckStatus",
+   "resources": [
+    "readinesscheck"
+   ]
+  },
+  "getrecoverygroup": {
+   "name": "GetRecoveryGroup",
+   "resources": [
+    "recoverygroup"
+   ]
+  },
+  "getrecoverygroupreadinesssummary": {
+   "name": "GetRecoveryGroupReadinessSummary",
+   "resources": [
+    "recoverygroup"
+   ]
+  },
+  "getresourceset": {
+   "name": "GetResourceSet",
+   "resources": [
+    "resourceset"
+   ]
+  },
+  "listcells": {
+   "name": "ListCells",
+   "resources": []
+  },
+  "listcrossaccountauthorizations": {
+   "name": "ListCrossAccountAuthorizations",
+   "resources": []
+  },
+  "listreadinesschecks": {
+   "name": "ListReadinessChecks",
+   "resources": []
+  },
+  "listrecoverygroups": {
+   "name": "ListRecoveryGroups",
+   "resources": []
+  },
+  "listresourcesets": {
+   "name": "ListResourceSets",
+   "resources": []
+  },
+  "listrules": {
+   "name": "ListRules",
+   "resources": []
+  },
+  "listtagsforresources": {
+   "name": "ListTagsForResources",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "cell",
+    "readinesscheck",
+    "recoverygroup",
+    "resourceset"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "cell",
+    "readinesscheck",
+    "recoverygroup",
+    "resourceset"
+   ]
+  },
+  "updatecell": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCell",
+   "resources": [
+    "cell"
+   ]
+  },
+  "updatereadinesscheck": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReadinessCheck",
+   "resources": [
+    "readinesscheck"
+   ]
+  },
+  "updaterecoverygroup": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRecoveryGroup",
+   "resources": [
+    "recoverygroup"
+   ]
+  },
+  "updateresourceset": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResourceSet",
+   "resources": [
+    "resourceset"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "cell": {
+   "arnFormats": [
+    "arn:${Partition}:route53-recovery-readiness::${Account}:cell/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "readinesscheck": {
+   "arnFormats": [
+    "arn:${Partition}:route53-recovery-readiness::${Account}:readiness-check/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "recoverygroup": {
+   "arnFormats": [
+    "arn:${Partition}:route53-recovery-readiness::${Account}:recovery-group/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "resourceset": {
+   "arnFormats": [
+    "arn:${Partition}:route53-recovery-readiness::${Account}:resource-set/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "route53-recovery-readiness",
+ "serviceName": "Route 53 Recovery Readiness",
+ "version": "v1.5"
+}

@@ -1,0 +1,357 @@
+{
+ "actions": {
+  "associatetoconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateToConfiguration",
+   "resources": [
+    "ChatbotConfiguration",
+    "custom-action"
+   ]
+  },
+  "createchimewebhookconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChimeWebhookConfiguration",
+   "resources": []
+  },
+  "createcustomaction": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomAction",
+   "resources": []
+  },
+  "createmicrosoftteamschannelconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMicrosoftTeamsChannelConfiguration",
+   "resources": []
+  },
+  "createslackchannelconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSlackChannelConfiguration",
+   "resources": []
+  },
+  "deletechimewebhookconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChimeWebhookConfiguration",
+   "resources": [
+    "ChatbotConfiguration"
+   ]
+  },
+  "deletecustomaction": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomAction",
+   "resources": [
+    "custom-action"
+   ]
+  },
+  "deletemicrosoftteamschannelconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMicrosoftTeamsChannelConfiguration",
+   "resources": [
+    "ChatbotConfiguration"
+   ]
+  },
+  "deletemicrosoftteamsconfiguredteam": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMicrosoftTeamsConfiguredTeam",
+   "resources": []
+  },
+  "deletemicrosoftteamsuseridentity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMicrosoftTeamsUserIdentity",
+   "resources": []
+  },
+  "deleteslackchannelconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSlackChannelConfiguration",
+   "resources": [
+    "ChatbotConfiguration"
+   ]
+  },
+  "deleteslackuseridentity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSlackUserIdentity",
+   "resources": []
+  },
+  "deleteslackworkspaceauthorization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSlackWorkspaceAuthorization",
+   "resources": []
+  },
+  "describechimewebhookconfigurations": {
+   "name": "DescribeChimeWebhookConfigurations",
+   "resources": []
+  },
+  "describeslackchannelconfigurations": {
+   "name": "DescribeSlackChannelConfigurations",
+   "resources": []
+  },
+  "describeslackchannels": {
+   "name": "DescribeSlackChannels",
+   "resources": []
+  },
+  "describeslackuseridentities": {
+   "name": "DescribeSlackUserIdentities",
+   "resources": []
+  },
+  "describeslackworkspaces": {
+   "name": "DescribeSlackWorkspaces",
+   "resources": []
+  },
+  "disassociatefromconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateFromConfiguration",
+   "resources": [
+    "ChatbotConfiguration",
+    "custom-action"
+   ]
+  },
+  "getaccountpreferences": {
+   "name": "GetAccountPreferences",
+   "resources": []
+  },
+  "getcustomaction": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetCustomAction",
+   "resources": [
+    "custom-action"
+   ]
+  },
+  "getmicrosoftteamschannelconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetMicrosoftTeamsChannelConfiguration",
+   "resources": []
+  },
+  "getmicrosoftteamsoauthparameters": {
+   "name": "GetMicrosoftTeamsOauthParameters",
+   "resources": []
+  },
+  "getslackoauthparameters": {
+   "name": "GetSlackOauthParameters",
+   "resources": []
+  },
+  "listassociations": {
+   "name": "ListAssociations",
+   "resources": [
+    "ChatbotConfiguration"
+   ]
+  },
+  "listcustomactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomActions",
+   "resources": []
+  },
+  "listmicrosoftteamschannelconfigurations": {
+   "name": "ListMicrosoftTeamsChannelConfigurations",
+   "resources": []
+  },
+  "listmicrosoftteamsconfiguredteams": {
+   "name": "ListMicrosoftTeamsConfiguredTeams",
+   "resources": []
+  },
+  "listmicrosoftteamsuseridentities": {
+   "name": "ListMicrosoftTeamsUserIdentities",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "redeemmicrosoftteamsoauthcode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RedeemMicrosoftTeamsOauthCode",
+   "resources": []
+  },
+  "redeemslackoauthcode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RedeemSlackOauthCode",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "ChatbotConfiguration",
+    "custom-action"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "ChatbotConfiguration",
+    "custom-action"
+   ]
+  },
+  "updateaccountpreferences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountPreferences",
+   "resources": []
+  },
+  "updatechimewebhookconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChimeWebhookConfiguration",
+   "resources": [
+    "ChatbotConfiguration"
+   ]
+  },
+  "updatecustomaction": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCustomAction",
+   "resources": [
+    "custom-action"
+   ]
+  },
+  "updatemicrosoftteamschannelconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMicrosoftTeamsChannelConfiguration",
+   "resources": [
+    "ChatbotConfiguration"
+   ]
+  },
+  "updateslackchannelconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSlackChannelConfiguration",
+   "resources": [
+    "ChatbotConfiguration"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "ChatbotConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:chatbot::${Account}:chat-configuration/${ConfigurationType}/${ChatbotConfigurationName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "custom-action": {
+   "arnFormats": [
+    "arn:${Partition}:chatbot::${Account}:custom-action/${ActionName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "chatbot",
+ "serviceName": "Chatbot",
+ "version": "v1.5"
+}

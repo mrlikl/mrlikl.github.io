@@ -1,0 +1,314 @@
+{
+ "actions": {
+  "createadditionalnode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAdditionalNode",
+   "resources": []
+  },
+  "createdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeployment",
+   "resourceConditionKeys": {
+    "deployment": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "deployment"
+   ]
+  },
+  "createsettingsset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSettingsSet",
+   "resources": []
+  },
+  "deleteadditionalnode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAdditionalNode",
+   "resources": []
+  },
+  "deleteapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApp",
+   "resources": []
+  },
+  "deletedeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDeployment",
+   "resourceConditionKeys": {
+    "deployment": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "deployment"
+   ]
+  },
+  "deletesettingsset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSettingsSet",
+   "resources": []
+  },
+  "describeadditionalnode": {
+   "name": "DescribeAdditionalNode",
+   "resources": []
+  },
+  "describeprovisionedapp": {
+   "name": "DescribeProvisionedApp",
+   "resources": []
+  },
+  "describeprovisioningevents": {
+   "name": "DescribeProvisioningEvents",
+   "resources": []
+  },
+  "describesettingsset": {
+   "name": "DescribeSettingsSet",
+   "resources": []
+  },
+  "getdeployment": {
+   "name": "GetDeployment",
+   "resourceConditionKeys": {
+    "deployment": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "deployment"
+   ]
+  },
+  "getdeploymentpatternversion": {
+   "name": "GetDeploymentPatternVersion",
+   "resources": []
+  },
+  "getinfrastructuresuggestion": {
+   "name": "GetInfrastructureSuggestion",
+   "resources": []
+  },
+  "getipaddress": {
+   "name": "GetIpAddress",
+   "resources": []
+  },
+  "getresourcecostestimate": {
+   "name": "GetResourceCostEstimate",
+   "resources": []
+  },
+  "getresourcerecommendation": {
+   "name": "GetResourceRecommendation",
+   "resources": []
+  },
+  "getsettingsset": {
+   "name": "GetSettingsSet",
+   "resources": []
+  },
+  "getworkload": {
+   "name": "GetWorkload",
+   "resources": []
+  },
+  "getworkloadasset": {
+   "name": "GetWorkloadAsset",
+   "resources": []
+  },
+  "getworkloadassets": {
+   "name": "GetWorkloadAssets",
+   "resources": []
+  },
+  "getworkloaddeploymentpattern": {
+   "name": "GetWorkloadDeploymentPattern",
+   "resources": []
+  },
+  "listadditionalnodes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAdditionalNodes",
+   "resources": []
+  },
+  "listallowedresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAllowedResources",
+   "resources": []
+  },
+  "listdeploymentevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeploymentEvents",
+   "resources": []
+  },
+  "listdeploymentpatternversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeploymentPatternVersions",
+   "resources": []
+  },
+  "listdeployments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeployments",
+   "resources": []
+  },
+  "listprovisionedapps": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProvisionedApps",
+   "resources": []
+  },
+  "listresourcecostestimates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceCostEstimates",
+   "resources": []
+  },
+  "listsettingssets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSettingsSets",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resourceConditionKeys": {
+    "deployment": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "deployment"
+   ]
+  },
+  "listworkloaddeploymentoptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkloadDeploymentOptions",
+   "resources": []
+  },
+  "listworkloaddeploymentpatterns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkloadDeploymentPatterns",
+   "resources": []
+  },
+  "listworkloads": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkloads",
+   "resources": []
+  },
+  "putsettingsset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSettingsSet",
+   "resources": []
+  },
+  "startprovisioning": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartProvisioning",
+   "resources": []
+  },
+  "tagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "deployment": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "deployment"
+   ]
+  },
+  "untagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "deployment": [
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "deployment"
+   ]
+  },
+  "updatedeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDeployment",
+   "resourceConditionKeys": {
+    "deployment": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "deployment"
+   ]
+  },
+  "updatesettingsset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSettingsSet",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "deployment": {
+   "arnFormats": [
+    "arn:${Partition}:launchwizard:${Region}:${Account}:deployment/${DeploymentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "launchwizard",
+ "serviceName": "Launch Wizard",
+ "version": "v1.5"
+}

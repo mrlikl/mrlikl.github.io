@@ -1,0 +1,321 @@
+{
+ "actions": {
+  "acceptinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptInvitation",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "batchgetgraphmemberdatasources": {
+   "name": "BatchGetGraphMemberDatasources",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "batchgetmembershipdatasources": {
+   "name": "BatchGetMembershipDatasources",
+   "resources": []
+  },
+  "creategraph": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGraph",
+   "resources": []
+  },
+  "createmembers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMembers",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "deletegraph": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGraph",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "deletemembers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMembers",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "describeorganizationconfiguration": {
+   "name": "DescribeOrganizationConfiguration",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "disableorganizationadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableOrganizationAdminAccount",
+   "resources": []
+  },
+  "disassociatemembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateMembership",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "enableorganizationadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableOrganizationAdminAccount",
+   "resources": []
+  },
+  "getfreetrialeligibility": {
+   "name": "GetFreeTrialEligibility",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "getgraphingeststate": {
+   "name": "GetGraphIngestState",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "getinvestigation": {
+   "name": "GetInvestigation",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "getmembers": {
+   "name": "GetMembers",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "getpricinginformation": {
+   "name": "GetPricingInformation",
+   "resources": []
+  },
+  "getusageinformation": {
+   "name": "GetUsageInformation",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "invokeassistant": {
+   "name": "InvokeAssistant",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "listdatasourcepackages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasourcePackages",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "listgraphs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGraphs",
+   "resources": []
+  },
+  "listhighdegreeentities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHighDegreeEntities",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "listindicators": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIndicators",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "listinvestigations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInvestigations",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "listinvitations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInvitations",
+   "resources": []
+  },
+  "listmembers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMembers",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "listorganizationadminaccount": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrganizationAdminAccount",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "rejectinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectInvitation",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "searchgraph": {
+   "name": "SearchGraph",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "startinvestigation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartInvestigation",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "startmonitoringmember": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMonitoringMember",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "updatedatasourcepackages": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDatasourcePackages",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "updateinvestigationstate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInvestigationState",
+   "resources": [
+    "Graph"
+   ]
+  },
+  "updateorganizationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOrganizationConfiguration",
+   "resources": [
+    "Graph"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Graph": {
+   "arnFormats": [
+    "arn:${Partition}:detective:${Region}:${Account}:graph:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "detective",
+ "serviceName": "Detective",
+ "version": "v1.5"
+}

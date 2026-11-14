@@ -1,0 +1,219 @@
+{
+ "actions": {
+  "cancelpracticerun": {
+   "conditionKeys": [
+    "arc-zonal-shift:ResourceIdentifier",
+    "aws:ResourceTag/${TagKey}",
+    "elasticloadbalancing:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelPracticeRun",
+   "resources": [
+    "ALB",
+    "NLB"
+   ]
+  },
+  "cancelzonalshift": {
+   "conditionKeys": [
+    "arc-zonal-shift:ResourceIdentifier",
+    "aws:ResourceTag/${TagKey}",
+    "elasticloadbalancing:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelZonalShift",
+   "resources": [
+    "ALB",
+    "NLB"
+   ]
+  },
+  "createpracticerunconfiguration": {
+   "conditionKeys": [
+    "arc-zonal-shift:ResourceIdentifier",
+    "aws:ResourceTag/${TagKey}",
+    "elasticloadbalancing:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePracticeRunConfiguration",
+   "resources": [
+    "ALB",
+    "NLB"
+   ]
+  },
+  "deletepracticerunconfiguration": {
+   "conditionKeys": [
+    "arc-zonal-shift:ResourceIdentifier",
+    "aws:ResourceTag/${TagKey}",
+    "elasticloadbalancing:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePracticeRunConfiguration",
+   "resources": [
+    "ALB",
+    "NLB"
+   ]
+  },
+  "getautoshiftobservernotificationstatus": {
+   "name": "GetAutoshiftObserverNotificationStatus",
+   "resources": []
+  },
+  "getmanagedresource": {
+   "conditionKeys": [
+    "arc-zonal-shift:ResourceIdentifier",
+    "aws:ResourceTag/${TagKey}",
+    "elasticloadbalancing:ResourceTag/${TagKey}"
+   ],
+   "name": "GetManagedResource",
+   "resources": [
+    "ALB",
+    "NLB"
+   ]
+  },
+  "listautoshifts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutoshifts",
+   "resources": []
+  },
+  "listmanagedresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedResources",
+   "resources": []
+  },
+  "listzonalshifts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListZonalShifts",
+   "resources": []
+  },
+  "startpracticerun": {
+   "conditionKeys": [
+    "arc-zonal-shift:ResourceIdentifier",
+    "aws:ResourceTag/${TagKey}",
+    "elasticloadbalancing:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartPracticeRun",
+   "resources": [
+    "ALB",
+    "NLB"
+   ]
+  },
+  "startzonalshift": {
+   "conditionKeys": [
+    "arc-zonal-shift:ResourceIdentifier",
+    "aws:ResourceTag/${TagKey}",
+    "elasticloadbalancing:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartZonalShift",
+   "resources": [
+    "ALB",
+    "NLB"
+   ]
+  },
+  "updateautoshiftobservernotificationstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAutoshiftObserverNotificationStatus",
+   "resources": []
+  },
+  "updatepracticerunconfiguration": {
+   "conditionKeys": [
+    "arc-zonal-shift:ResourceIdentifier",
+    "aws:ResourceTag/${TagKey}",
+    "elasticloadbalancing:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePracticeRunConfiguration",
+   "resources": [
+    "ALB",
+    "NLB"
+   ]
+  },
+  "updatezonalautoshiftconfiguration": {
+   "conditionKeys": [
+    "arc-zonal-shift:ResourceIdentifier",
+    "aws:ResourceTag/${TagKey}",
+    "elasticloadbalancing:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateZonalAutoshiftConfiguration",
+   "resources": [
+    "ALB",
+    "NLB"
+   ]
+  },
+  "updatezonalshift": {
+   "conditionKeys": [
+    "arc-zonal-shift:ResourceIdentifier",
+    "aws:ResourceTag/${TagKey}",
+    "elasticloadbalancing:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateZonalShift",
+   "resources": [
+    "ALB",
+    "NLB"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "arc-zonal-shift:ResourceIdentifier": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "elasticloadbalancing:ResourceTag/${TagKey}": [
+   "String"
+  ]
+ },
+ "resources": {
+  "ALB": {
+   "arnFormats": [
+    "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/app/${LoadBalancerName}/${LoadBalancerId}"
+   ],
+   "conditionKeys": [
+    "arc-zonal-shift:ResourceIdentifier",
+    "aws:ResourceTag/${TagKey}",
+    "elasticloadbalancing:ResourceTag/${TagKey}"
+   ]
+  },
+  "NLB": {
+   "arnFormats": [
+    "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/net/${LoadBalancerName}/${LoadBalancerId}"
+   ],
+   "conditionKeys": [
+    "arc-zonal-shift:ResourceIdentifier",
+    "aws:ResourceTag/${TagKey}",
+    "elasticloadbalancing:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "arc-zonal-shift",
+ "serviceName": "ARC Zonal Shift",
+ "version": "v1.5"
+}

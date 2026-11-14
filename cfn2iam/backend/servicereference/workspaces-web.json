@@ -1,0 +1,735 @@
+{
+ "actions": {
+  "associatebrowsersettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateBrowserSettings",
+   "resources": [
+    "browserSettings",
+    "portal"
+   ]
+  },
+  "associatedataprotectionsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateDataProtectionSettings",
+   "resources": [
+    "dataProtectionSettings",
+    "portal"
+   ]
+  },
+  "associateipaccesssettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateIpAccessSettings",
+   "resources": [
+    "ipAccessSettings",
+    "portal"
+   ]
+  },
+  "associatenetworksettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateNetworkSettings",
+   "resources": [
+    "networkSettings",
+    "portal"
+   ]
+  },
+  "associatesessionlogger": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSessionLogger",
+   "resources": [
+    "portal",
+    "sessionLogger"
+   ]
+  },
+  "associatetruststore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateTrustStore",
+   "resources": [
+    "portal",
+    "trustStore"
+   ]
+  },
+  "associateuseraccessloggingsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateUserAccessLoggingSettings",
+   "resources": [
+    "portal",
+    "userAccessLoggingSettings"
+   ]
+  },
+  "associateusersettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateUserSettings",
+   "resources": [
+    "portal",
+    "userSettings"
+   ]
+  },
+  "createbrowsersettings": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBrowserSettings",
+   "resources": []
+  },
+  "createdataprotectionsettings": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataProtectionSettings",
+   "resources": []
+  },
+  "createidentityprovider": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIdentityProvider",
+   "resources": [
+    "identityProvider",
+    "portal"
+   ]
+  },
+  "createipaccesssettings": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIpAccessSettings",
+   "resources": []
+  },
+  "createnetworksettings": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNetworkSettings",
+   "resources": []
+  },
+  "createportal": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePortal",
+   "resources": []
+  },
+  "createsessionlogger": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSessionLogger",
+   "resources": []
+  },
+  "createtruststore": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTrustStore",
+   "resources": []
+  },
+  "createuseraccessloggingsettings": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUserAccessLoggingSettings",
+   "resources": []
+  },
+  "createusersettings": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUserSettings",
+   "resources": []
+  },
+  "deletebrowsersettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBrowserSettings",
+   "resources": [
+    "browserSettings"
+   ]
+  },
+  "deletedataprotectionsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataProtectionSettings",
+   "resources": [
+    "dataProtectionSettings"
+   ]
+  },
+  "deleteidentityprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIdentityProvider",
+   "resources": [
+    "identityProvider",
+    "portal"
+   ]
+  },
+  "deleteipaccesssettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIpAccessSettings",
+   "resources": [
+    "ipAccessSettings"
+   ]
+  },
+  "deletenetworksettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNetworkSettings",
+   "resources": [
+    "networkSettings"
+   ]
+  },
+  "deleteportal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePortal",
+   "resources": [
+    "portal"
+   ]
+  },
+  "deletesessionlogger": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSessionLogger",
+   "resources": [
+    "sessionLogger"
+   ]
+  },
+  "deletetruststore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTrustStore",
+   "resources": [
+    "trustStore"
+   ]
+  },
+  "deleteuseraccessloggingsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserAccessLoggingSettings",
+   "resources": [
+    "userAccessLoggingSettings"
+   ]
+  },
+  "deleteusersettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserSettings",
+   "resources": [
+    "userSettings"
+   ]
+  },
+  "disassociatebrowsersettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateBrowserSettings",
+   "resources": [
+    "portal"
+   ]
+  },
+  "disassociatedataprotectionsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateDataProtectionSettings",
+   "resources": [
+    "portal"
+   ]
+  },
+  "disassociateipaccesssettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateIpAccessSettings",
+   "resources": [
+    "portal"
+   ]
+  },
+  "disassociatenetworksettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateNetworkSettings",
+   "resources": [
+    "portal"
+   ]
+  },
+  "disassociatesessionlogger": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateSessionLogger",
+   "resources": [
+    "portal"
+   ]
+  },
+  "disassociatetruststore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateTrustStore",
+   "resources": [
+    "portal"
+   ]
+  },
+  "disassociateuseraccessloggingsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateUserAccessLoggingSettings",
+   "resources": [
+    "portal"
+   ]
+  },
+  "disassociateusersettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateUserSettings",
+   "resources": [
+    "portal"
+   ]
+  },
+  "expiresession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExpireSession",
+   "resources": [
+    "portal"
+   ]
+  },
+  "getbrowsersettings": {
+   "name": "GetBrowserSettings",
+   "resources": [
+    "browserSettings"
+   ]
+  },
+  "getdataprotectionsettings": {
+   "name": "GetDataProtectionSettings",
+   "resources": [
+    "dataProtectionSettings"
+   ]
+  },
+  "getidentityprovider": {
+   "name": "GetIdentityProvider",
+   "resources": [
+    "identityProvider"
+   ]
+  },
+  "getipaccesssettings": {
+   "name": "GetIpAccessSettings",
+   "resources": [
+    "ipAccessSettings"
+   ]
+  },
+  "getnetworksettings": {
+   "name": "GetNetworkSettings",
+   "resources": [
+    "networkSettings"
+   ]
+  },
+  "getportal": {
+   "name": "GetPortal",
+   "resources": [
+    "portal"
+   ]
+  },
+  "getportalserviceprovidermetadata": {
+   "name": "GetPortalServiceProviderMetadata",
+   "resources": [
+    "portal"
+   ]
+  },
+  "getsession": {
+   "name": "GetSession",
+   "resources": [
+    "portal"
+   ]
+  },
+  "getsessionlogger": {
+   "name": "GetSessionLogger",
+   "resources": [
+    "sessionLogger"
+   ]
+  },
+  "gettruststore": {
+   "name": "GetTrustStore",
+   "resources": [
+    "trustStore"
+   ]
+  },
+  "gettruststorecertificate": {
+   "name": "GetTrustStoreCertificate",
+   "resources": [
+    "trustStore"
+   ]
+  },
+  "getuseraccessloggingsettings": {
+   "name": "GetUserAccessLoggingSettings",
+   "resources": [
+    "userAccessLoggingSettings"
+   ]
+  },
+  "getusersettings": {
+   "name": "GetUserSettings",
+   "resources": [
+    "userSettings"
+   ]
+  },
+  "listbrowsersettings": {
+   "name": "ListBrowserSettings",
+   "resources": []
+  },
+  "listdataprotectionsettings": {
+   "name": "ListDataProtectionSettings",
+   "resources": []
+  },
+  "listidentityproviders": {
+   "name": "ListIdentityProviders",
+   "resources": [
+    "identityProvider"
+   ]
+  },
+  "listipaccesssettings": {
+   "name": "ListIpAccessSettings",
+   "resources": []
+  },
+  "listnetworksettings": {
+   "name": "ListNetworkSettings",
+   "resources": []
+  },
+  "listportals": {
+   "name": "ListPortals",
+   "resources": []
+  },
+  "listsessionloggers": {
+   "name": "ListSessionLoggers",
+   "resources": []
+  },
+  "listsessions": {
+   "name": "ListSessions",
+   "resources": [
+    "portal"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "listtruststorecertificates": {
+   "name": "ListTrustStoreCertificates",
+   "resources": []
+  },
+  "listtruststores": {
+   "name": "ListTrustStores",
+   "resources": []
+  },
+  "listuseraccessloggingsettings": {
+   "name": "ListUserAccessLoggingSettings",
+   "resources": []
+  },
+  "listusersettings": {
+   "name": "ListUserSettings",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "browserSettings",
+    "dataProtectionSettings",
+    "identityProvider",
+    "ipAccessSettings",
+    "networkSettings",
+    "portal",
+    "sessionLogger",
+    "trustStore",
+    "userAccessLoggingSettings",
+    "userSettings"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "browserSettings",
+    "dataProtectionSettings",
+    "identityProvider",
+    "ipAccessSettings",
+    "networkSettings",
+    "portal",
+    "sessionLogger",
+    "trustStore",
+    "userAccessLoggingSettings",
+    "userSettings"
+   ]
+  },
+  "updatebrowsersettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBrowserSettings",
+   "resources": [
+    "browserSettings"
+   ]
+  },
+  "updatedataprotectionsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataProtectionSettings",
+   "resources": [
+    "dataProtectionSettings"
+   ]
+  },
+  "updateidentityprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIdentityProvider",
+   "resources": [
+    "identityProvider",
+    "portal"
+   ]
+  },
+  "updateipaccesssettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIpAccessSettings",
+   "resources": [
+    "ipAccessSettings"
+   ]
+  },
+  "updatenetworksettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNetworkSettings",
+   "resources": [
+    "networkSettings"
+   ]
+  },
+  "updateportal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePortal",
+   "resources": [
+    "portal"
+   ]
+  },
+  "updatesessionlogger": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSessionLogger",
+   "resources": [
+    "sessionLogger"
+   ]
+  },
+  "updatetruststore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTrustStore",
+   "resources": [
+    "trustStore"
+   ]
+  },
+  "updateuseraccessloggingsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserAccessLoggingSettings",
+   "resources": [
+    "userAccessLoggingSettings"
+   ]
+  },
+  "updateusersettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserSettings",
+   "resources": [
+    "userSettings"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "browserSettings": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces-web:${Region}:${Account}:browserSettings/${BrowserSettingsId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dataProtectionSettings": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces-web:${Region}:${Account}:dataProtectionSettings/${DataProtectionSettingsId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "identityProvider": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces-web:${Region}:${Account}:identityProvider/${PortalId}/${IdentityProviderId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ipAccessSettings": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces-web:${Region}:${Account}:ipAccessSettings/${IpAccessSettingsId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "networkSettings": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces-web:${Region}:${Account}:networkSettings/${NetworkSettingsId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "portal": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces-web:${Region}:${Account}:portal/${PortalId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "sessionLogger": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces-web:${Region}:${Account}:sessionLogger/${SessionLoggerId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "trustStore": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces-web:${Region}:${Account}:trustStore/${TrustStoreId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "userAccessLoggingSettings": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces-web:${Region}:${Account}:userAccessLoggingSettings/${UserAccessLoggingSettingsId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "userSettings": {
+   "arnFormats": [
+    "arn:${Partition}:workspaces-web:${Region}:${Account}:userSettings/${UserSettingsId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "workspaces-web",
+ "serviceName": "WorkSpaces Secure Browser",
+ "version": "v1.5"
+}

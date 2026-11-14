@@ -1,0 +1,917 @@
+{
+ "actions": {
+  "batchdetectdominantlanguage": {
+   "name": "BatchDetectDominantLanguage",
+   "resources": []
+  },
+  "batchdetectentities": {
+   "name": "BatchDetectEntities",
+   "resources": []
+  },
+  "batchdetectkeyphrases": {
+   "name": "BatchDetectKeyPhrases",
+   "resources": []
+  },
+  "batchdetectsentiment": {
+   "name": "BatchDetectSentiment",
+   "resources": []
+  },
+  "batchdetectsyntax": {
+   "name": "BatchDetectSyntax",
+   "resources": []
+  },
+  "batchdetecttargetedsentiment": {
+   "name": "BatchDetectTargetedSentiment",
+   "resources": []
+  },
+  "classifydocument": {
+   "name": "ClassifyDocument",
+   "resources": [
+    "document-classifier-endpoint"
+   ]
+  },
+  "containspiientities": {
+   "name": "ContainsPiiEntities",
+   "resources": []
+  },
+  "createdataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataset",
+   "resources": [
+    "flywheel"
+   ]
+  },
+  "createdocumentclassifier": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "comprehend:ModelKmsKey",
+    "comprehend:OutputKmsKey",
+    "comprehend:VolumeKmsKey",
+    "comprehend:VpcSecurityGroupIds",
+    "comprehend:VpcSubnets"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDocumentClassifier",
+   "resources": [
+    "document-classifier"
+   ]
+  },
+  "createendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEndpoint",
+   "resourceConditionKeys": {
+    "document-classifier-endpoint": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "entity-recognizer-endpoint": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "document-classifier",
+    "document-classifier-endpoint",
+    "entity-recognizer",
+    "entity-recognizer-endpoint",
+    "flywheel"
+   ]
+  },
+  "createentityrecognizer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "comprehend:ModelKmsKey",
+    "comprehend:VolumeKmsKey",
+    "comprehend:VpcSecurityGroupIds",
+    "comprehend:VpcSubnets"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEntityRecognizer",
+   "resources": [
+    "entity-recognizer"
+   ]
+  },
+  "createflywheel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFlywheel",
+   "resourceConditionKeys": {
+    "flywheel": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys",
+     "comprehend:DataLakeKmsKey",
+     "comprehend:ModelKmsKey",
+     "comprehend:VolumeKmsKey",
+     "comprehend:VpcSecurityGroupIds",
+     "comprehend:VpcSubnets"
+    ]
+   },
+   "resources": [
+    "document-classifier",
+    "entity-recognizer",
+    "flywheel"
+   ]
+  },
+  "deletedocumentclassifier": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDocumentClassifier",
+   "resources": [
+    "document-classifier"
+   ]
+  },
+  "deleteendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEndpoint",
+   "resources": [
+    "document-classifier-endpoint",
+    "entity-recognizer-endpoint"
+   ]
+  },
+  "deleteentityrecognizer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEntityRecognizer",
+   "resources": [
+    "entity-recognizer"
+   ]
+  },
+  "deleteflywheel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFlywheel",
+   "resources": [
+    "flywheel"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "document-classifier",
+    "entity-recognizer"
+   ]
+  },
+  "describedataset": {
+   "name": "DescribeDataset",
+   "resources": [
+    "flywheel-dataset"
+   ]
+  },
+  "describedocumentclassificationjob": {
+   "name": "DescribeDocumentClassificationJob",
+   "resources": [
+    "document-classification-job"
+   ]
+  },
+  "describedocumentclassifier": {
+   "name": "DescribeDocumentClassifier",
+   "resources": [
+    "document-classifier"
+   ]
+  },
+  "describedominantlanguagedetectionjob": {
+   "name": "DescribeDominantLanguageDetectionJob",
+   "resources": [
+    "dominant-language-detection-job"
+   ]
+  },
+  "describeendpoint": {
+   "name": "DescribeEndpoint",
+   "resources": [
+    "document-classifier-endpoint",
+    "entity-recognizer-endpoint"
+   ]
+  },
+  "describeentitiesdetectionjob": {
+   "name": "DescribeEntitiesDetectionJob",
+   "resources": [
+    "entities-detection-job"
+   ]
+  },
+  "describeentityrecognizer": {
+   "name": "DescribeEntityRecognizer",
+   "resources": [
+    "entity-recognizer"
+   ]
+  },
+  "describeeventsdetectionjob": {
+   "name": "DescribeEventsDetectionJob",
+   "resources": [
+    "events-detection-job"
+   ]
+  },
+  "describeflywheel": {
+   "name": "DescribeFlywheel",
+   "resources": [
+    "flywheel"
+   ]
+  },
+  "describeflywheeliteration": {
+   "conditionKeys": [
+    "comprehend:FlywheelIterationId"
+   ],
+   "name": "DescribeFlywheelIteration",
+   "resources": [
+    "flywheel"
+   ]
+  },
+  "describekeyphrasesdetectionjob": {
+   "name": "DescribeKeyPhrasesDetectionJob",
+   "resources": [
+    "key-phrases-detection-job"
+   ]
+  },
+  "describepiientitiesdetectionjob": {
+   "name": "DescribePiiEntitiesDetectionJob",
+   "resources": [
+    "pii-entities-detection-job"
+   ]
+  },
+  "describeresourcepolicy": {
+   "name": "DescribeResourcePolicy",
+   "resources": [
+    "document-classifier",
+    "entity-recognizer"
+   ]
+  },
+  "describesentimentdetectionjob": {
+   "name": "DescribeSentimentDetectionJob",
+   "resources": [
+    "sentiment-detection-job"
+   ]
+  },
+  "describetargetedsentimentdetectionjob": {
+   "name": "DescribeTargetedSentimentDetectionJob",
+   "resources": [
+    "targeted-sentiment-detection-job"
+   ]
+  },
+  "describetopicsdetectionjob": {
+   "name": "DescribeTopicsDetectionJob",
+   "resources": [
+    "topics-detection-job"
+   ]
+  },
+  "detectdominantlanguage": {
+   "name": "DetectDominantLanguage",
+   "resources": []
+  },
+  "detectentities": {
+   "name": "DetectEntities",
+   "resources": [
+    "entity-recognizer-endpoint"
+   ]
+  },
+  "detectkeyphrases": {
+   "name": "DetectKeyPhrases",
+   "resources": []
+  },
+  "detectpiientities": {
+   "name": "DetectPiiEntities",
+   "resources": []
+  },
+  "detectsentiment": {
+   "name": "DetectSentiment",
+   "resources": []
+  },
+  "detectsyntax": {
+   "name": "DetectSyntax",
+   "resources": []
+  },
+  "detecttargetedsentiment": {
+   "name": "DetectTargetedSentiment",
+   "resources": []
+  },
+  "detecttoxiccontent": {
+   "name": "DetectToxicContent",
+   "resources": []
+  },
+  "importmodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "comprehend:ModelKmsKey"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportModel",
+   "resources": [
+    "document-classifier",
+    "entity-recognizer"
+   ]
+  },
+  "listdatasets": {
+   "name": "ListDatasets",
+   "resources": [
+    "flywheel"
+   ]
+  },
+  "listdocumentclassificationjobs": {
+   "name": "ListDocumentClassificationJobs",
+   "resources": []
+  },
+  "listdocumentclassifiers": {
+   "name": "ListDocumentClassifiers",
+   "resources": []
+  },
+  "listdocumentclassifiersummaries": {
+   "name": "ListDocumentClassifierSummaries",
+   "resources": []
+  },
+  "listdominantlanguagedetectionjobs": {
+   "name": "ListDominantLanguageDetectionJobs",
+   "resources": []
+  },
+  "listendpoints": {
+   "name": "ListEndpoints",
+   "resources": []
+  },
+  "listentitiesdetectionjobs": {
+   "name": "ListEntitiesDetectionJobs",
+   "resources": []
+  },
+  "listentityrecognizers": {
+   "name": "ListEntityRecognizers",
+   "resources": []
+  },
+  "listentityrecognizersummaries": {
+   "name": "ListEntityRecognizerSummaries",
+   "resources": []
+  },
+  "listeventsdetectionjobs": {
+   "name": "ListEventsDetectionJobs",
+   "resources": []
+  },
+  "listflywheeliterationhistory": {
+   "name": "ListFlywheelIterationHistory",
+   "resources": [
+    "flywheel"
+   ]
+  },
+  "listflywheels": {
+   "name": "ListFlywheels",
+   "resources": []
+  },
+  "listkeyphrasesdetectionjobs": {
+   "name": "ListKeyPhrasesDetectionJobs",
+   "resources": []
+  },
+  "listpiientitiesdetectionjobs": {
+   "name": "ListPiiEntitiesDetectionJobs",
+   "resources": []
+  },
+  "listsentimentdetectionjobs": {
+   "name": "ListSentimentDetectionJobs",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "document-classification-job",
+    "document-classifier",
+    "document-classifier-endpoint",
+    "dominant-language-detection-job",
+    "entities-detection-job",
+    "entity-recognizer",
+    "entity-recognizer-endpoint",
+    "events-detection-job",
+    "flywheel",
+    "flywheel-dataset",
+    "key-phrases-detection-job",
+    "pii-entities-detection-job",
+    "sentiment-detection-job",
+    "targeted-sentiment-detection-job",
+    "topics-detection-job"
+   ]
+  },
+  "listtargetedsentimentdetectionjobs": {
+   "name": "ListTargetedSentimentDetectionJobs",
+   "resources": []
+  },
+  "listtopicsdetectionjobs": {
+   "name": "ListTopicsDetectionJobs",
+   "resources": []
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "document-classifier",
+    "entity-recognizer"
+   ]
+  },
+  "startdocumentclassificationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDocumentClassificationJob",
+   "resourceConditionKeys": {
+    "document-classification-job": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys",
+     "comprehend:OutputKmsKey",
+     "comprehend:VolumeKmsKey",
+     "comprehend:VpcSecurityGroupIds",
+     "comprehend:VpcSubnets"
+    ]
+   },
+   "resources": [
+    "document-classification-job",
+    "document-classifier",
+    "flywheel"
+   ]
+  },
+  "startdominantlanguagedetectionjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "comprehend:OutputKmsKey",
+    "comprehend:VolumeKmsKey",
+    "comprehend:VpcSecurityGroupIds",
+    "comprehend:VpcSubnets"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDominantLanguageDetectionJob",
+   "resources": [
+    "dominant-language-detection-job"
+   ]
+  },
+  "startentitiesdetectionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartEntitiesDetectionJob",
+   "resourceConditionKeys": {
+    "entities-detection-job": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys",
+     "comprehend:OutputKmsKey",
+     "comprehend:VolumeKmsKey",
+     "comprehend:VpcSecurityGroupIds",
+     "comprehend:VpcSubnets"
+    ]
+   },
+   "resources": [
+    "entities-detection-job",
+    "entity-recognizer",
+    "flywheel"
+   ]
+  },
+  "starteventsdetectionjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "comprehend:OutputKmsKey"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartEventsDetectionJob",
+   "resources": [
+    "events-detection-job"
+   ]
+  },
+  "startflywheeliteration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFlywheelIteration",
+   "resources": [
+    "flywheel"
+   ]
+  },
+  "startkeyphrasesdetectionjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "comprehend:OutputKmsKey",
+    "comprehend:VolumeKmsKey",
+    "comprehend:VpcSecurityGroupIds",
+    "comprehend:VpcSubnets"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartKeyPhrasesDetectionJob",
+   "resources": [
+    "key-phrases-detection-job"
+   ]
+  },
+  "startpiientitiesdetectionjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "comprehend:OutputKmsKey"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartPiiEntitiesDetectionJob",
+   "resources": [
+    "pii-entities-detection-job"
+   ]
+  },
+  "startsentimentdetectionjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "comprehend:OutputKmsKey",
+    "comprehend:VolumeKmsKey",
+    "comprehend:VpcSecurityGroupIds",
+    "comprehend:VpcSubnets"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSentimentDetectionJob",
+   "resources": [
+    "sentiment-detection-job"
+   ]
+  },
+  "starttargetedsentimentdetectionjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "comprehend:OutputKmsKey",
+    "comprehend:VolumeKmsKey",
+    "comprehend:VpcSecurityGroupIds",
+    "comprehend:VpcSubnets"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTargetedSentimentDetectionJob",
+   "resources": [
+    "targeted-sentiment-detection-job"
+   ]
+  },
+  "starttopicsdetectionjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "comprehend:OutputKmsKey",
+    "comprehend:VolumeKmsKey",
+    "comprehend:VpcSecurityGroupIds",
+    "comprehend:VpcSubnets"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTopicsDetectionJob",
+   "resources": [
+    "topics-detection-job"
+   ]
+  },
+  "stopdominantlanguagedetectionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopDominantLanguageDetectionJob",
+   "resources": [
+    "dominant-language-detection-job"
+   ]
+  },
+  "stopentitiesdetectionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopEntitiesDetectionJob",
+   "resources": [
+    "entities-detection-job"
+   ]
+  },
+  "stopeventsdetectionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopEventsDetectionJob",
+   "resources": [
+    "events-detection-job"
+   ]
+  },
+  "stopkeyphrasesdetectionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopKeyPhrasesDetectionJob",
+   "resources": [
+    "key-phrases-detection-job"
+   ]
+  },
+  "stoppiientitiesdetectionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopPiiEntitiesDetectionJob",
+   "resources": [
+    "pii-entities-detection-job"
+   ]
+  },
+  "stopsentimentdetectionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopSentimentDetectionJob",
+   "resources": [
+    "sentiment-detection-job"
+   ]
+  },
+  "stoptargetedsentimentdetectionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopTargetedSentimentDetectionJob",
+   "resources": [
+    "targeted-sentiment-detection-job"
+   ]
+  },
+  "stoptrainingdocumentclassifier": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopTrainingDocumentClassifier",
+   "resources": [
+    "document-classifier"
+   ]
+  },
+  "stoptrainingentityrecognizer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopTrainingEntityRecognizer",
+   "resources": [
+    "entity-recognizer"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "document-classification-job",
+    "document-classifier",
+    "document-classifier-endpoint",
+    "dominant-language-detection-job",
+    "entities-detection-job",
+    "entity-recognizer",
+    "entity-recognizer-endpoint",
+    "events-detection-job",
+    "flywheel",
+    "flywheel-dataset",
+    "key-phrases-detection-job",
+    "pii-entities-detection-job",
+    "sentiment-detection-job",
+    "targeted-sentiment-detection-job",
+    "topics-detection-job"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "document-classification-job",
+    "document-classifier",
+    "document-classifier-endpoint",
+    "dominant-language-detection-job",
+    "entities-detection-job",
+    "entity-recognizer",
+    "entity-recognizer-endpoint",
+    "events-detection-job",
+    "flywheel",
+    "flywheel-dataset",
+    "key-phrases-detection-job",
+    "pii-entities-detection-job",
+    "sentiment-detection-job",
+    "targeted-sentiment-detection-job",
+    "topics-detection-job"
+   ]
+  },
+  "updateendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEndpoint",
+   "resources": [
+    "document-classifier-endpoint",
+    "entity-recognizer-endpoint",
+    "flywheel"
+   ]
+  },
+  "updateflywheel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFlywheel",
+   "resourceConditionKeys": {
+    "flywheel": [
+     "comprehend:ModelKmsKey",
+     "comprehend:VolumeKmsKey",
+     "comprehend:VpcSecurityGroupIds",
+     "comprehend:VpcSubnets"
+    ]
+   },
+   "resources": [
+    "document-classifier",
+    "entity-recognizer",
+    "flywheel"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "comprehend:DataLakeKmsKey": [
+   "ARN"
+  ],
+  "comprehend:FlywheelIterationId": [
+   "String"
+  ],
+  "comprehend:ModelKmsKey": [
+   "ARN"
+  ],
+  "comprehend:OutputKmsKey": [
+   "ARN"
+  ],
+  "comprehend:VolumeKmsKey": [
+   "ARN"
+  ],
+  "comprehend:VpcSecurityGroupIds": [
+   "ArrayOfString"
+  ],
+  "comprehend:VpcSubnets": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "document-classification-job": {
+   "arnFormats": [
+    "arn:${Partition}:comprehend:${Region}:${Account}:document-classification-job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "document-classifier": {
+   "arnFormats": [
+    "arn:${Partition}:comprehend:${Region}:${Account}:document-classifier/${DocumentClassifierName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "document-classifier-endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:comprehend:${Region}:${Account}:document-classifier-endpoint/${DocumentClassifierEndpointName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dominant-language-detection-job": {
+   "arnFormats": [
+    "arn:${Partition}:comprehend:${Region}:${Account}:dominant-language-detection-job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "entities-detection-job": {
+   "arnFormats": [
+    "arn:${Partition}:comprehend:${Region}:${Account}:entities-detection-job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "entity-recognizer": {
+   "arnFormats": [
+    "arn:${Partition}:comprehend:${Region}:${Account}:entity-recognizer/${EntityRecognizerName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "entity-recognizer-endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:comprehend:${Region}:${Account}:entity-recognizer-endpoint/${EntityRecognizerEndpointName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "events-detection-job": {
+   "arnFormats": [
+    "arn:${Partition}:comprehend:${Region}:${Account}:events-detection-job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "flywheel": {
+   "arnFormats": [
+    "arn:${Partition}:comprehend:${Region}:${Account}:flywheel/${FlywheelName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "flywheel-dataset": {
+   "arnFormats": [
+    "arn:${Partition}:comprehend:${Region}:${Account}:flywheel/${FlywheelName}/dataset/${DatasetName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "key-phrases-detection-job": {
+   "arnFormats": [
+    "arn:${Partition}:comprehend:${Region}:${Account}:key-phrases-detection-job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "pii-entities-detection-job": {
+   "arnFormats": [
+    "arn:${Partition}:comprehend:${Region}:${Account}:pii-entities-detection-job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "sentiment-detection-job": {
+   "arnFormats": [
+    "arn:${Partition}:comprehend:${Region}:${Account}:sentiment-detection-job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "targeted-sentiment-detection-job": {
+   "arnFormats": [
+    "arn:${Partition}:comprehend:${Region}:${Account}:targeted-sentiment-detection-job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "topics-detection-job": {
+   "arnFormats": [
+    "arn:${Partition}:comprehend:${Region}:${Account}:topics-detection-job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "comprehend",
+ "serviceName": "Comprehend",
+ "version": "v1.5"
+}

@@ -1,0 +1,731 @@
+{
+ "actions": {
+  "acceptdirectconnectgatewayassociationproposal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptDirectConnectGatewayAssociationProposal",
+   "resources": [
+    "dx-gateway"
+   ]
+  },
+  "allocateconnectiononinterconnect": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AllocateConnectionOnInterconnect",
+   "resources": [
+    "dxcon"
+   ]
+  },
+  "allocatehostedconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AllocateHostedConnection",
+   "resources": [
+    "dxcon",
+    "dxlag"
+   ]
+  },
+  "allocateprivatevirtualinterface": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AllocatePrivateVirtualInterface",
+   "resources": [
+    "dxcon",
+    "dxlag"
+   ]
+  },
+  "allocatepublicvirtualinterface": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AllocatePublicVirtualInterface",
+   "resources": [
+    "dxcon",
+    "dxlag"
+   ]
+  },
+  "allocatetransitvirtualinterface": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AllocateTransitVirtualInterface",
+   "resources": [
+    "dxcon",
+    "dxlag"
+   ]
+  },
+  "associateconnectionstoresiliencygroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateConnectionsToResiliencyGroup",
+   "resources": [
+    "dx-resiliency-group",
+    "dxcon"
+   ]
+  },
+  "associateconnectionwithlag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateConnectionWithLag",
+   "resources": [
+    "dxcon",
+    "dxlag"
+   ]
+  },
+  "associatehostedconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateHostedConnection",
+   "resources": [
+    "dxcon",
+    "dxlag"
+   ]
+  },
+  "associatemacseckey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateMacSecKey",
+   "resources": [
+    "dxcon",
+    "dxlag"
+   ]
+  },
+  "associatevirtualinterface": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateVirtualInterface",
+   "resources": [
+    "dxcon",
+    "dxlag",
+    "dxvif"
+   ]
+  },
+  "confirmconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfirmConnection",
+   "resources": [
+    "dxcon"
+   ]
+  },
+  "confirmcustomeragreement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfirmCustomerAgreement",
+   "resources": []
+  },
+  "confirmprivatevirtualinterface": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfirmPrivateVirtualInterface",
+   "resources": [
+    "dxvif"
+   ]
+  },
+  "confirmpublicvirtualinterface": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfirmPublicVirtualInterface",
+   "resources": [
+    "dxvif"
+   ]
+  },
+  "confirmtransitvirtualinterface": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfirmTransitVirtualInterface",
+   "resources": [
+    "dxvif"
+   ]
+  },
+  "createbgppeer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBGPPeer",
+   "resources": [
+    "dxvif"
+   ]
+  },
+  "createconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnection",
+   "resources": [
+    "dxlag"
+   ]
+  },
+  "createdirectconnectgateway": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDirectConnectGateway",
+   "resources": []
+  },
+  "createdirectconnectgatewayassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDirectConnectGatewayAssociation",
+   "resources": [
+    "dx-gateway"
+   ]
+  },
+  "createdirectconnectgatewayassociationproposal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDirectConnectGatewayAssociationProposal",
+   "resources": [
+    "dx-gateway"
+   ]
+  },
+  "createinterconnect": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInterconnect",
+   "resources": [
+    "dxlag"
+   ]
+  },
+  "createlag": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLag",
+   "resources": [
+    "dxcon"
+   ]
+  },
+  "createprivatevirtualinterface": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePrivateVirtualInterface",
+   "resources": [
+    "dxcon",
+    "dxlag"
+   ]
+  },
+  "createpublicvirtualinterface": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePublicVirtualInterface",
+   "resources": [
+    "dxcon",
+    "dxlag"
+   ]
+  },
+  "createresiliencygroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResiliencyGroup",
+   "resources": []
+  },
+  "createtransitvirtualinterface": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTransitVirtualInterface",
+   "resources": [
+    "dxcon",
+    "dxlag"
+   ]
+  },
+  "deletebgppeer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBGPPeer",
+   "resources": [
+    "dxvif"
+   ]
+  },
+  "deleteconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnection",
+   "resources": [
+    "dxcon"
+   ]
+  },
+  "deletedirectconnectgateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDirectConnectGateway",
+   "resources": [
+    "dx-gateway"
+   ]
+  },
+  "deletedirectconnectgatewayassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDirectConnectGatewayAssociation",
+   "resources": [
+    "dx-gateway"
+   ]
+  },
+  "deletedirectconnectgatewayassociationproposal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDirectConnectGatewayAssociationProposal",
+   "resources": []
+  },
+  "deleteinterconnect": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInterconnect",
+   "resources": [
+    "dxcon"
+   ]
+  },
+  "deletelag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLag",
+   "resources": [
+    "dxlag"
+   ]
+  },
+  "deleteresiliencygroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResiliencyGroup",
+   "resources": [
+    "dx-resiliency-group"
+   ]
+  },
+  "deletevirtualinterface": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVirtualInterface",
+   "resources": [
+    "dxvif"
+   ]
+  },
+  "describeconnectionloa": {
+   "name": "DescribeConnectionLoa",
+   "resources": [
+    "dxcon"
+   ]
+  },
+  "describeconnections": {
+   "name": "DescribeConnections",
+   "resources": [
+    "dxcon"
+   ]
+  },
+  "describeconnectionsoninterconnect": {
+   "name": "DescribeConnectionsOnInterconnect",
+   "resources": [
+    "dxcon"
+   ]
+  },
+  "describecustomermetadata": {
+   "name": "DescribeCustomerMetadata",
+   "resources": []
+  },
+  "describedirectconnectgatewayassociationproposals": {
+   "name": "DescribeDirectConnectGatewayAssociationProposals",
+   "resources": [
+    "dx-gateway"
+   ]
+  },
+  "describedirectconnectgatewayassociations": {
+   "name": "DescribeDirectConnectGatewayAssociations",
+   "resources": [
+    "dx-gateway"
+   ]
+  },
+  "describedirectconnectgatewayattachments": {
+   "name": "DescribeDirectConnectGatewayAttachments",
+   "resources": [
+    "dx-gateway"
+   ]
+  },
+  "describedirectconnectgateways": {
+   "name": "DescribeDirectConnectGateways",
+   "resources": [
+    "dx-gateway"
+   ]
+  },
+  "describehostedconnections": {
+   "name": "DescribeHostedConnections",
+   "resources": [
+    "dxcon",
+    "dxlag"
+   ]
+  },
+  "describeinterconnectloa": {
+   "name": "DescribeInterconnectLoa",
+   "resources": [
+    "dxcon"
+   ]
+  },
+  "describeinterconnects": {
+   "name": "DescribeInterconnects",
+   "resources": [
+    "dxcon"
+   ]
+  },
+  "describelags": {
+   "name": "DescribeLags",
+   "resources": [
+    "dxlag"
+   ]
+  },
+  "describeloa": {
+   "name": "DescribeLoa",
+   "resources": [
+    "dxcon",
+    "dxlag"
+   ]
+  },
+  "describelocations": {
+   "name": "DescribeLocations",
+   "resources": []
+  },
+  "describerouterconfiguration": {
+   "name": "DescribeRouterConfiguration",
+   "resources": [
+    "dxvif"
+   ]
+  },
+  "describetags": {
+   "name": "DescribeTags",
+   "resources": [
+    "dx-gateway",
+    "dx-resiliency-group",
+    "dxcon",
+    "dxlag",
+    "dxvif"
+   ]
+  },
+  "describevirtualgateways": {
+   "name": "DescribeVirtualGateways",
+   "resources": []
+  },
+  "describevirtualinterfaces": {
+   "name": "DescribeVirtualInterfaces",
+   "resources": [
+    "dxcon",
+    "dxlag",
+    "dxvif"
+   ]
+  },
+  "disassociateconnectionfromlag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateConnectionFromLag",
+   "resources": [
+    "dxcon",
+    "dxlag"
+   ]
+  },
+  "disassociateconnectionsfromresiliencygroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateConnectionsFromResiliencyGroup",
+   "resources": [
+    "dx-resiliency-group",
+    "dxcon"
+   ]
+  },
+  "disassociatemacseckey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateMacSecKey",
+   "resources": [
+    "dxcon",
+    "dxlag"
+   ]
+  },
+  "getresiliencygroup": {
+   "name": "GetResiliencyGroup",
+   "resources": [
+    "dx-resiliency-group"
+   ]
+  },
+  "listresiliencygroupassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResiliencyGroupAssociations",
+   "resources": [
+    "dx-resiliency-group"
+   ]
+  },
+  "listresiliencygroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResiliencyGroups",
+   "resources": []
+  },
+  "listvirtualinterfaceroutes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVirtualInterfaceRoutes",
+   "resources": [
+    "dxvif"
+   ]
+  },
+  "listvirtualinterfacetesthistory": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVirtualInterfaceTestHistory",
+   "resources": [
+    "dxvif"
+   ]
+  },
+  "startbgpfailovertest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartBgpFailoverTest",
+   "resources": [
+    "dxvif"
+   ]
+  },
+  "stopbgpfailovertest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopBgpFailoverTest",
+   "resources": [
+    "dxvif"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "dx-gateway",
+    "dx-resiliency-group",
+    "dxcon",
+    "dxlag",
+    "dxvif"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "dx-gateway",
+    "dx-resiliency-group",
+    "dxcon",
+    "dxlag",
+    "dxvif"
+   ]
+  },
+  "updateconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnection",
+   "resources": [
+    "dxcon"
+   ]
+  },
+  "updateconnectionsbillingmode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnectionsBillingMode",
+   "resources": [
+    "dxcon"
+   ]
+  },
+  "updatedirectconnectgateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDirectConnectGateway",
+   "resources": [
+    "dx-gateway"
+   ]
+  },
+  "updatedirectconnectgatewayassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDirectConnectGatewayAssociation",
+   "resources": []
+  },
+  "updatelag": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLag",
+   "resources": [
+    "dxlag"
+   ]
+  },
+  "updateresiliencygroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResiliencyGroup",
+   "resources": [
+    "dx-resiliency-group"
+   ]
+  },
+  "updatevirtualinterfaceattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVirtualInterfaceAttributes",
+   "resources": [
+    "dxvif"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "dx-gateway": {
+   "arnFormats": [
+    "arn:${Partition}:directconnect::${Account}:dx-gateway/${DirectConnectGatewayId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dx-resiliency-group": {
+   "arnFormats": [
+    "arn:${Partition}:directconnect::${Account}:dx-resiliency-group/${ResiliencyGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dxcon": {
+   "arnFormats": [
+    "arn:${Partition}:directconnect:${Region}:${Account}:dxcon/${ConnectionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dxlag": {
+   "arnFormats": [
+    "arn:${Partition}:directconnect:${Region}:${Account}:dxlag/${LagId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dxvif": {
+   "arnFormats": [
+    "arn:${Partition}:directconnect:${Region}:${Account}:dxvif/${VirtualInterfaceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "directconnect",
+ "serviceName": "Direct Connect",
+ "version": "v1.5"
+}

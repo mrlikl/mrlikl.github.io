@@ -1,0 +1,325 @@
+{
+ "actions": {
+  "createapplicationinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplicationInstance",
+   "resources": []
+  },
+  "createjobfordevices": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateJobForDevices",
+   "resources": []
+  },
+  "createnodefromtemplatejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNodeFromTemplateJob",
+   "resources": []
+  },
+  "createpackage": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePackage",
+   "resources": []
+  },
+  "createpackageimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePackageImportJob",
+   "resources": []
+  },
+  "deletedevice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDevice",
+   "resources": [
+    "device"
+   ]
+  },
+  "deletepackage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePackage",
+   "resources": [
+    "package"
+   ]
+  },
+  "deregisterpackageversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterPackageVersion",
+   "resources": [
+    "package"
+   ]
+  },
+  "describeapplicationinstance": {
+   "name": "DescribeApplicationInstance",
+   "resources": [
+    "applicationInstance"
+   ]
+  },
+  "describeapplicationinstancedetails": {
+   "name": "DescribeApplicationInstanceDetails",
+   "resources": [
+    "applicationInstance"
+   ]
+  },
+  "describedevice": {
+   "name": "DescribeDevice",
+   "resources": [
+    "device"
+   ]
+  },
+  "describedevicejob": {
+   "name": "DescribeDeviceJob",
+   "resources": []
+  },
+  "describenode": {
+   "name": "DescribeNode",
+   "resources": []
+  },
+  "describenodefromtemplatejob": {
+   "name": "DescribeNodeFromTemplateJob",
+   "resources": []
+  },
+  "describepackage": {
+   "name": "DescribePackage",
+   "resources": [
+    "package"
+   ]
+  },
+  "describepackageimportjob": {
+   "name": "DescribePackageImportJob",
+   "resources": []
+  },
+  "describepackageversion": {
+   "name": "DescribePackageVersion",
+   "resources": [
+    "package"
+   ]
+  },
+  "describesoftware": {
+   "name": "DescribeSoftware",
+   "resources": []
+  },
+  "getwebsocketurl": {
+   "name": "GetWebSocketURL",
+   "resources": []
+  },
+  "listapplicationinstancedependencies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationInstanceDependencies",
+   "resources": [
+    "applicationInstance"
+   ]
+  },
+  "listapplicationinstancenodeinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationInstanceNodeInstances",
+   "resources": [
+    "applicationInstance"
+   ]
+  },
+  "listapplicationinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationInstances",
+   "resources": [
+    "device"
+   ]
+  },
+  "listdevices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDevices",
+   "resources": []
+  },
+  "listdevicesjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDevicesJobs",
+   "resources": [
+    "device"
+   ]
+  },
+  "listnodefromtemplatejobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNodeFromTemplateJobs",
+   "resources": []
+  },
+  "listnodes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNodes",
+   "resources": []
+  },
+  "listpackageimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPackageImportJobs",
+   "resources": []
+  },
+  "listpackages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPackages",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "applicationInstance",
+    "device",
+    "package"
+   ]
+  },
+  "provisiondevice": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ProvisionDevice",
+   "resources": []
+  },
+  "registerpackageversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterPackageVersion",
+   "resources": [
+    "package"
+   ]
+  },
+  "removeapplicationinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveApplicationInstance",
+   "resources": [
+    "applicationInstance"
+   ]
+  },
+  "signalapplicationinstancenodeinstances": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SignalApplicationInstanceNodeInstances",
+   "resources": [
+    "applicationInstance"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "applicationInstance",
+    "device",
+    "package"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "applicationInstance",
+    "device",
+    "package"
+   ]
+  },
+  "updatedevicemetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDeviceMetadata",
+   "resources": [
+    "device"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "applicationInstance": {
+   "arnFormats": [
+    "arn:${Partition}:panorama:${Region}:${Account}:applicationInstance/${ApplicationInstanceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "device": {
+   "arnFormats": [
+    "arn:${Partition}:panorama:${Region}:${Account}:device/${DeviceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "package": {
+   "arnFormats": [
+    "arn:${Partition}:panorama:${Region}:${Account}:package/${PackageId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "panorama",
+ "serviceName": "Panorama",
+ "version": "v1.5"
+}

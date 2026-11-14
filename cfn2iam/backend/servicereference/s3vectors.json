@@ -1,0 +1,317 @@
+{
+ "actions": {
+  "createindex": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "s3vectors:VectorBucketTag/${TagKey}",
+    "s3vectors:kmsKeyArn",
+    "s3vectors:sseType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIndex",
+   "resources": [
+    "Index"
+   ]
+  },
+  "createvectorbucket": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "s3vectors:VectorBucketTag/${TagKey}",
+    "s3vectors:kmsKeyArn",
+    "s3vectors:sseType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVectorBucket",
+   "resources": [
+    "VectorBucket"
+   ]
+  },
+  "deleteindex": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIndex",
+   "resources": [
+    "Index"
+   ]
+  },
+  "deletevectorbucket": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVectorBucket",
+   "resources": [
+    "VectorBucket"
+   ]
+  },
+  "deletevectorbucketpolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteVectorBucketPolicy",
+   "resources": [
+    "VectorBucket"
+   ]
+  },
+  "deletevectors": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVectors",
+   "resources": [
+    "Index"
+   ]
+  },
+  "getindex": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "name": "GetIndex",
+   "resources": [
+    "Index"
+   ]
+  },
+  "getvectorbucket": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "name": "GetVectorBucket",
+   "resources": [
+    "VectorBucket"
+   ]
+  },
+  "getvectorbucketpolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "name": "GetVectorBucketPolicy",
+   "resources": [
+    "VectorBucket"
+   ]
+  },
+  "getvectors": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "name": "GetVectors",
+   "resources": [
+    "Index"
+   ]
+  },
+  "listindexes": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIndexes",
+   "resources": [
+    "VectorBucket"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "Index",
+    "VectorBucket"
+   ]
+  },
+  "listvectorbuckets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVectorBuckets",
+   "resources": []
+  },
+  "listvectors": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVectors",
+   "resources": [
+    "Index"
+   ]
+  },
+  "putvectorbucketdefaultindexmode": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutVectorBucketDefaultIndexMode",
+   "resources": [
+    "VectorBucket"
+   ]
+  },
+  "putvectorbucketpolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutVectorBucketPolicy",
+   "resources": [
+    "VectorBucket"
+   ]
+  },
+  "putvectors": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutVectors",
+   "resources": [
+    "Index"
+   ]
+  },
+  "queryvectors": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "name": "QueryVectors",
+   "resources": [
+    "Index"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Index",
+    "VectorBucket"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Index",
+    "VectorBucket"
+   ]
+  },
+  "updateindexmode": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIndexMode",
+   "resources": [
+    "Index"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "s3vectors:VectorBucketTag/${TagKey}": [
+   "String"
+  ],
+  "s3vectors:kmsKeyArn": [
+   "ARN"
+  ],
+  "s3vectors:sseType": [
+   "String"
+  ]
+ },
+ "resources": {
+  "Index": {
+   "arnFormats": [
+    "arn:${Partition}:s3vectors:${Region}:${Account}:bucket/${BucketName}/index/${IndexName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ]
+  },
+  "VectorBucket": {
+   "arnFormats": [
+    "arn:${Partition}:s3vectors:${Region}:${Account}:bucket/${BucketName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "s3vectors",
+ "serviceName": "S3 Vectors",
+ "version": "v1.5"
+}

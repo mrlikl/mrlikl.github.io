@@ -1,0 +1,294 @@
+{
+ "actions": {
+  "createidentitysource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIdentitySource",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "createpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePolicy",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "createpolicystore": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePolicyStore",
+   "resources": []
+  },
+  "createpolicystorealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePolicyStoreAlias",
+   "resources": [
+    "policy-store",
+    "policy-store-alias"
+   ]
+  },
+  "createpolicytemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePolicyTemplate",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "deleteidentitysource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIdentitySource",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "deletepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePolicy",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "deletepolicystore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePolicyStore",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "deletepolicystorealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePolicyStoreAlias",
+   "resources": [
+    "policy-store-alias"
+   ]
+  },
+  "deletepolicytemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePolicyTemplate",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "getidentitysource": {
+   "name": "GetIdentitySource",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "getpolicy": {
+   "name": "GetPolicy",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "getpolicystore": {
+   "name": "GetPolicyStore",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "getpolicystorealias": {
+   "name": "GetPolicyStoreAlias",
+   "resources": [
+    "policy-store-alias"
+   ]
+  },
+  "getpolicytemplate": {
+   "name": "GetPolicyTemplate",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "getschema": {
+   "name": "GetSchema",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "isauthorized": {
+   "name": "IsAuthorized",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "isauthorizedwithtoken": {
+   "name": "IsAuthorizedWithToken",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "listidentitysources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIdentitySources",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "listpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicies",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "listpolicystorealiases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicyStoreAliases",
+   "resources": []
+  },
+  "listpolicystores": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicyStores",
+   "resources": []
+  },
+  "listpolicytemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicyTemplates",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "putschema": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSchema",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "updateidentitysource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIdentitySource",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "updatepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePolicy",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "updatepolicystore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePolicyStore",
+   "resources": [
+    "policy-store"
+   ]
+  },
+  "updatepolicytemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePolicyTemplate",
+   "resources": [
+    "policy-store"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "policy-store": {
+   "arnFormats": [
+    "arn:${Partition}:verifiedpermissions::${Account}:policy-store/${PolicyStoreId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "policy-store-alias": {
+   "arnFormats": [
+    "arn:${Partition}:verifiedpermissions:${Region}:${Account}:policy-store-alias/${AliasName}"
+   ]
+  }
+ },
+ "service": "verifiedpermissions",
+ "serviceName": "Verified Permissions",
+ "version": "v1.5"
+}

@@ -1,0 +1,965 @@
+{
+ "actions": {
+  "activategateway": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivateGateway",
+   "resources": []
+  },
+  "addcache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddCache",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "addtagstoresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "AddTagsToResource",
+   "resources": [
+    "cache-report",
+    "fs-association",
+    "gateway",
+    "share",
+    "tape",
+    "tapepool",
+    "volume"
+   ]
+  },
+  "adduploadbuffer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddUploadBuffer",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "addworkingstorage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddWorkingStorage",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "assigntapepool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssignTapePool",
+   "resources": [
+    "tape",
+    "tapepool"
+   ]
+  },
+  "associatefilesystem": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateFileSystem",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "attachvolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AttachVolume",
+   "resources": [
+    "gateway",
+    "volume"
+   ]
+  },
+  "bypassgovernanceretention": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BypassGovernanceRetention",
+   "resources": [
+    "tapepool"
+   ]
+  },
+  "cancelarchival": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelArchival",
+   "resources": [
+    "gateway",
+    "tape"
+   ]
+  },
+  "cancelcachereport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelCacheReport",
+   "resources": [
+    "cache-report"
+   ]
+  },
+  "cancelretrieval": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelRetrieval",
+   "resources": [
+    "gateway",
+    "tape"
+   ]
+  },
+  "createcachediscsivolume": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCachediSCSIVolume",
+   "resources": [
+    "gateway",
+    "volume"
+   ]
+  },
+  "createnfsfileshare": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNFSFileShare",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "createsmbfileshare": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSMBFileShare",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "createsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSnapshot",
+   "resources": [
+    "volume"
+   ]
+  },
+  "createsnapshotfromvolumerecoverypoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSnapshotFromVolumeRecoveryPoint",
+   "resources": [
+    "volume"
+   ]
+  },
+  "createstorediscsivolume": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStorediSCSIVolume",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "createtapepool": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTapePool",
+   "resources": []
+  },
+  "createtapes": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTapes",
+   "resources": [
+    "gateway",
+    "tapepool"
+   ]
+  },
+  "createtapewithbarcode": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTapeWithBarcode",
+   "resources": [
+    "gateway",
+    "tapepool"
+   ]
+  },
+  "deleteautomatictapecreationpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAutomaticTapeCreationPolicy",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "deletebandwidthratelimit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBandwidthRateLimit",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "deletecachereport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCacheReport",
+   "resources": [
+    "cache-report"
+   ]
+  },
+  "deletechapcredentials": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChapCredentials",
+   "resources": [
+    "target"
+   ]
+  },
+  "deletefileshare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFileShare",
+   "resources": [
+    "share"
+   ]
+  },
+  "deletegateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGateway",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "deletesnapshotschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSnapshotSchedule",
+   "resources": [
+    "volume"
+   ]
+  },
+  "deletetape": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTape",
+   "resources": [
+    "gateway",
+    "tape"
+   ]
+  },
+  "deletetapearchive": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTapeArchive",
+   "resources": []
+  },
+  "deletetapepool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTapePool",
+   "resources": [
+    "tapepool"
+   ]
+  },
+  "deletevolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVolume",
+   "resources": [
+    "volume"
+   ]
+  },
+  "describeavailabilitymonitortest": {
+   "name": "DescribeAvailabilityMonitorTest",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "describebandwidthratelimit": {
+   "name": "DescribeBandwidthRateLimit",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "describebandwidthratelimitschedule": {
+   "name": "DescribeBandwidthRateLimitSchedule",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "describecache": {
+   "name": "DescribeCache",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "describecachediscsivolumes": {
+   "name": "DescribeCachediSCSIVolumes",
+   "resources": [
+    "volume"
+   ]
+  },
+  "describecachereport": {
+   "name": "DescribeCacheReport",
+   "resources": [
+    "cache-report"
+   ]
+  },
+  "describechapcredentials": {
+   "name": "DescribeChapCredentials",
+   "resources": [
+    "target"
+   ]
+  },
+  "describefilesystemassociations": {
+   "name": "DescribeFileSystemAssociations",
+   "resources": [
+    "fs-association"
+   ]
+  },
+  "describegatewayinformation": {
+   "name": "DescribeGatewayInformation",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "describemaintenancestarttime": {
+   "name": "DescribeMaintenanceStartTime",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "describenfsfileshares": {
+   "name": "DescribeNFSFileShares",
+   "resources": [
+    "share"
+   ]
+  },
+  "describesmbfileshares": {
+   "name": "DescribeSMBFileShares",
+   "resources": [
+    "share"
+   ]
+  },
+  "describesmbsettings": {
+   "name": "DescribeSMBSettings",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "describesnapshotschedule": {
+   "name": "DescribeSnapshotSchedule",
+   "resources": [
+    "volume"
+   ]
+  },
+  "describestorediscsivolumes": {
+   "name": "DescribeStorediSCSIVolumes",
+   "resources": [
+    "volume"
+   ]
+  },
+  "describetapearchives": {
+   "name": "DescribeTapeArchives",
+   "resources": []
+  },
+  "describetaperecoverypoints": {
+   "name": "DescribeTapeRecoveryPoints",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "describetapes": {
+   "name": "DescribeTapes",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "describeuploadbuffer": {
+   "name": "DescribeUploadBuffer",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "describevtldevices": {
+   "name": "DescribeVTLDevices",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "describeworkingstorage": {
+   "name": "DescribeWorkingStorage",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "detachvolume": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetachVolume",
+   "resources": [
+    "volume"
+   ]
+  },
+  "disablegateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableGateway",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "disassociatefilesystem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateFileSystem",
+   "resources": [
+    "fs-association"
+   ]
+  },
+  "evictfilesfailingupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EvictFilesFailingUpload",
+   "resources": [
+    "share"
+   ]
+  },
+  "joindomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "JoinDomain",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "listautomatictapecreationpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomaticTapeCreationPolicies",
+   "resources": []
+  },
+  "listcachereports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCacheReports",
+   "resources": []
+  },
+  "listfileshares": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFileShares",
+   "resources": []
+  },
+  "listfilesystemassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFileSystemAssociations",
+   "resources": []
+  },
+  "listgateways": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGateways",
+   "resources": []
+  },
+  "listlocaldisks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLocalDisks",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "gateway",
+    "share",
+    "tape",
+    "volume"
+   ]
+  },
+  "listtapepools": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTapePools",
+   "resources": []
+  },
+  "listtapes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTapes",
+   "resources": []
+  },
+  "listvolumeinitiators": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVolumeInitiators",
+   "resources": [
+    "volume"
+   ]
+  },
+  "listvolumerecoverypoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVolumeRecoveryPoints",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "listvolumes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVolumes",
+   "resources": []
+  },
+  "notifywhenuploaded": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyWhenUploaded",
+   "resources": [
+    "share"
+   ]
+  },
+  "refreshcache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RefreshCache",
+   "resources": [
+    "share"
+   ]
+  },
+  "removetagsfromresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "RemoveTagsFromResource",
+   "resources": [
+    "cache-report",
+    "fs-association",
+    "gateway",
+    "share",
+    "tape",
+    "tapepool",
+    "volume"
+   ]
+  },
+  "resetcache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetCache",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "retrievetapearchive": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RetrieveTapeArchive",
+   "resources": [
+    "gateway",
+    "tape"
+   ]
+  },
+  "retrievetaperecoverypoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RetrieveTapeRecoveryPoint",
+   "resources": [
+    "gateway",
+    "tape"
+   ]
+  },
+  "setlocalconsolepassword": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetLocalConsolePassword",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "setsmbguestpassword": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetSMBGuestPassword",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "shutdowngateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ShutdownGateway",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "startavailabilitymonitortest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAvailabilityMonitorTest",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "startcachereport": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCacheReport",
+   "resources": [
+    "share"
+   ]
+  },
+  "startgateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartGateway",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updateautomatictapecreationpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAutomaticTapeCreationPolicy",
+   "resources": [
+    "gateway",
+    "tapepool"
+   ]
+  },
+  "updatebandwidthratelimit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBandwidthRateLimit",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updatebandwidthratelimitschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBandwidthRateLimitSchedule",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updatechapcredentials": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChapCredentials",
+   "resources": [
+    "target"
+   ]
+  },
+  "updatefilesystemassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFileSystemAssociation",
+   "resources": [
+    "fs-association"
+   ]
+  },
+  "updategatewayinformation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGatewayInformation",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updategatewaysoftwarenow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGatewaySoftwareNow",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updatemaintenancestarttime": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMaintenanceStartTime",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updatenfsfileshare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNFSFileShare",
+   "resources": [
+    "share"
+   ]
+  },
+  "updatesmbfileshare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSMBFileShare",
+   "resources": [
+    "share"
+   ]
+  },
+  "updatesmbfilesharevisibility": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSMBFileShareVisibility",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updatesmblocalgroups": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSMBLocalGroups",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updatesmbsecuritystrategy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSMBSecurityStrategy",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updatesnapshotschedule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSnapshotSchedule",
+   "resources": [
+    "volume"
+   ]
+  },
+  "updatevtldevicetype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVTLDeviceType",
+   "resources": [
+    "device"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "cache-report": {
+   "arnFormats": [
+    "arn:${Partition}:storagegateway:${Region}:${Account}:share/${ShareId}/cache-report/${CacheReportId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "device": {
+   "arnFormats": [
+    "arn:${Partition}:storagegateway:${Region}:${Account}:gateway/${GatewayId}/device/${Vtldevice}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "fs-association": {
+   "arnFormats": [
+    "arn:${Partition}:storagegateway:${Region}:${Account}:fs-association/${FsaId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "gateway": {
+   "arnFormats": [
+    "arn:${Partition}:storagegateway:${Region}:${Account}:gateway/${GatewayId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "share": {
+   "arnFormats": [
+    "arn:${Partition}:storagegateway:${Region}:${Account}:share/${ShareId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "tape": {
+   "arnFormats": [
+    "arn:${Partition}:storagegateway:${Region}:${Account}:tape/${TapeBarcode}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "tapepool": {
+   "arnFormats": [
+    "arn:${Partition}:storagegateway:${Region}:${Account}:tapepool/${PoolId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "target": {
+   "arnFormats": [
+    "arn:${Partition}:storagegateway:${Region}:${Account}:gateway/${GatewayId}/target/${IscsiTarget}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "volume": {
+   "arnFormats": [
+    "arn:${Partition}:storagegateway:${Region}:${Account}:gateway/${GatewayId}/volume/${VolumeId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "storagegateway",
+ "serviceName": "Storage Gateway",
+ "version": "v1.5"
+}

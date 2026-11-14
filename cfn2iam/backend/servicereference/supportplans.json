@@ -1,0 +1,90 @@
+{
+ "actions": {
+  "acceptsupportagreement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptSupportAgreement",
+   "resources": []
+  },
+  "cancelsupportagreement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelSupportAgreement",
+   "resources": []
+  },
+  "createsupportagreement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSupportAgreement",
+   "resources": []
+  },
+  "createsupportplanschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSupportPlanSchedule",
+   "resources": []
+  },
+  "getsupportagreement": {
+   "name": "GetSupportAgreement",
+   "resources": []
+  },
+  "getsupportplan": {
+   "name": "GetSupportPlan",
+   "resources": []
+  },
+  "getsupportplanupdatestatus": {
+   "name": "GetSupportPlanUpdateStatus",
+   "resources": []
+  },
+  "listsupportagreementrevisions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSupportAgreementRevisions",
+   "resources": []
+  },
+  "listsupportagreements": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSupportAgreements",
+   "resources": []
+  },
+  "listsupportplanmodifiers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSupportPlanModifiers",
+   "resources": []
+  },
+  "rejectsupportagreement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectSupportAgreement",
+   "resources": []
+  },
+  "startsupportplanupdate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSupportPlanUpdate",
+   "resources": []
+  },
+  "updatesupportagreement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSupportAgreement",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "supportplans",
+ "serviceName": "Support Plans",
+ "version": "v1.5"
+}

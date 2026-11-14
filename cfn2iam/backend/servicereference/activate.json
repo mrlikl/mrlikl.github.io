@@ -1,0 +1,46 @@
+{
+ "actions": {
+  "createform": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateForm",
+   "resources": []
+  },
+  "getaccountcontact": {
+   "name": "GetAccountContact",
+   "resources": []
+  },
+  "getcontentinfo": {
+   "name": "GetContentInfo",
+   "resources": []
+  },
+  "getcosts": {
+   "name": "GetCosts",
+   "resources": []
+  },
+  "getcredits": {
+   "name": "GetCredits",
+   "resources": []
+  },
+  "getmemberinfo": {
+   "name": "GetMemberInfo",
+   "resources": []
+  },
+  "getprogram": {
+   "name": "GetProgram",
+   "resources": []
+  },
+  "putmemberinfo": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMemberInfo",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "activate",
+ "serviceName": "Activate",
+ "version": "v1.5"
+}

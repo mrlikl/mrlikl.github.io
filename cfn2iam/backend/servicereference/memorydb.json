@@ -1,0 +1,628 @@
+{
+ "actions": {
+  "batchupdatecluster": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "connect": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Connect",
+   "resources": [
+    "cluster",
+    "user"
+   ]
+  },
+  "copysnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopySnapshot",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "createacl": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAcl",
+   "resources": [
+    "user"
+   ]
+  },
+  "createcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "memorydb:TLSEnabled"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCluster",
+   "resources": [
+    "acl",
+    "multiregioncluster",
+    "parametergroup",
+    "snapshot",
+    "subnetgroup"
+   ]
+  },
+  "createmultiregioncluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "memorydb:TLSEnabled"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMultiRegionCluster",
+   "resources": [
+    "multiregionparametergroup"
+   ]
+  },
+  "createparametergroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateParameterGroup",
+   "resources": []
+  },
+  "createsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSnapshot",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "createsubnetgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSubnetGroup",
+   "resources": []
+  },
+  "createuser": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "memorydb:UserAuthenticationMode"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUser",
+   "resources": []
+  },
+  "deleteacl": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAcl",
+   "resources": [
+    "acl"
+   ]
+  },
+  "deletecluster": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCluster",
+   "resources": [
+    "cluster",
+    "multiregioncluster",
+    "snapshot"
+   ]
+  },
+  "deletemultiregioncluster": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMultiRegionCluster",
+   "resources": [
+    "multiregioncluster"
+   ]
+  },
+  "deleteparametergroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteParameterGroup",
+   "resources": [
+    "parametergroup"
+   ]
+  },
+  "deletesnapshot": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSnapshot",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "deletesubnetgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSubnetGroup",
+   "resources": [
+    "subnetgroup"
+   ]
+  },
+  "deleteuser": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "describeacls": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeAcls",
+   "resources": [
+    "acl"
+   ]
+  },
+  "describeclusters": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeClusters",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "describeengineversions": {
+   "name": "DescribeEngineVersions",
+   "resources": []
+  },
+  "describeevents": {
+   "name": "DescribeEvents",
+   "resources": []
+  },
+  "describemultiregionclusters": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeMultiRegionClusters",
+   "resources": [
+    "multiregioncluster"
+   ]
+  },
+  "describemultiregionparametergroups": {
+   "name": "DescribeMultiRegionParameterGroups",
+   "resources": [
+    "multiregionparametergroup"
+   ]
+  },
+  "describemultiregionparameters": {
+   "name": "DescribeMultiRegionParameters",
+   "resources": [
+    "multiregionparametergroup"
+   ]
+  },
+  "describeparametergroups": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeParameterGroups",
+   "resources": [
+    "parametergroup"
+   ]
+  },
+  "describeparameters": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeParameters",
+   "resources": [
+    "parametergroup"
+   ]
+  },
+  "describereservednodes": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeReservedNodes",
+   "resources": [
+    "reservednode"
+   ]
+  },
+  "describereservednodesofferings": {
+   "name": "DescribeReservedNodesOfferings",
+   "resources": []
+  },
+  "describeserviceupdates": {
+   "name": "DescribeServiceUpdates",
+   "resources": []
+  },
+  "describesnapshots": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeSnapshots",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "describesubnetgroups": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeSubnetGroups",
+   "resources": [
+    "subnetgroup"
+   ]
+  },
+  "describeusers": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeUsers",
+   "resources": [
+    "user"
+   ]
+  },
+  "failovershard": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "FailoverShard",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listallowedmultiregionclusterupdates": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListAllowedMultiRegionClusterUpdates",
+   "resources": [
+    "multiregioncluster"
+   ]
+  },
+  "listallowednodetypeupdates": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListAllowedNodeTypeUpdates",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listtags": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTags",
+   "resources": [
+    "acl",
+    "cluster",
+    "multiregioncluster",
+    "parametergroup",
+    "snapshot",
+    "subnetgroup",
+    "user"
+   ]
+  },
+  "pausemultiregionclusterreplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PauseMultiRegionClusterReplication",
+   "resources": [
+    "multiregioncluster"
+   ]
+  },
+  "purchasereservednodesoffering": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PurchaseReservedNodesOffering",
+   "resources": [
+    "reservednode"
+   ]
+  },
+  "resetparametergroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetParameterGroup",
+   "resources": [
+    "parametergroup"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "acl",
+    "cluster",
+    "multiregioncluster",
+    "parametergroup",
+    "reservednode",
+    "snapshot",
+    "subnetgroup",
+    "user"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "acl",
+    "cluster",
+    "multiregioncluster",
+    "parametergroup",
+    "snapshot",
+    "subnetgroup",
+    "user"
+   ]
+  },
+  "updateacl": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAcl",
+   "resources": [
+    "acl",
+    "user"
+   ]
+  },
+  "updatecluster": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCluster",
+   "resources": [
+    "acl",
+    "cluster",
+    "parametergroup"
+   ]
+  },
+  "updatemultiregioncluster": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMultiRegionCluster",
+   "resources": [
+    "multiregioncluster",
+    "multiregionparametergroup"
+   ]
+  },
+  "updateparametergroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateParameterGroup",
+   "resources": [
+    "parametergroup"
+   ]
+  },
+  "updatesubnetgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSubnetGroup",
+   "resources": [
+    "subnetgroup"
+   ]
+  },
+  "updateuser": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "memorydb:UserAuthenticationMode"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUser",
+   "resources": [
+    "user"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "memorydb:TLSEnabled": [
+   "Bool"
+  ],
+  "memorydb:UserAuthenticationMode": [
+   "String"
+  ]
+ },
+ "resources": {
+  "acl": {
+   "arnFormats": [
+    "arn:${Partition}:memorydb:${Region}:${Account}:acl/${AclName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "cluster": {
+   "arnFormats": [
+    "arn:${Partition}:memorydb:${Region}:${Account}:cluster/${ClusterName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "multiregioncluster": {
+   "arnFormats": [
+    "arn:${Partition}:memorydb::${Account}:multiregioncluster/${ClusterName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "memorydb:TLSEnabled"
+   ]
+  },
+  "multiregionparametergroup": {
+   "arnFormats": [
+    "arn:${Partition}:memorydb::${Account}:multiregionparametergroup/${MultiRegionParameterGroupName}"
+   ]
+  },
+  "parametergroup": {
+   "arnFormats": [
+    "arn:${Partition}:memorydb:${Region}:${Account}:parametergroup/${ParameterGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "reservednode": {
+   "arnFormats": [
+    "arn:${Partition}:memorydb:${Region}:${Account}:reservednode/${ReservationID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "snapshot": {
+   "arnFormats": [
+    "arn:${Partition}:memorydb:${Region}:${Account}:snapshot/${SnapshotName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "subnetgroup": {
+   "arnFormats": [
+    "arn:${Partition}:memorydb:${Region}:${Account}:subnetgroup/${SubnetGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "user": {
+   "arnFormats": [
+    "arn:${Partition}:memorydb:${Region}:${Account}:user/${UserName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "memorydb",
+ "serviceName": "MemoryDB",
+ "version": "v1.5"
+}

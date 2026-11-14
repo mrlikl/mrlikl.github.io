@@ -1,0 +1,119 @@
+{
+ "actions": {
+  "approvecommand": {
+   "name": "ApproveCommand",
+   "resources": [
+    "Environment"
+   ]
+  },
+  "createenvironment": {
+   "conditionKeys": [
+    "cloudshell:SecurityGroupIds",
+    "cloudshell:SubnetIds",
+    "cloudshell:VpcIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironment",
+   "resources": []
+  },
+  "createsession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSession",
+   "resources": [
+    "Environment"
+   ]
+  },
+  "deleteenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironment",
+   "resources": [
+    "Environment"
+   ]
+  },
+  "describeenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeEnvironments",
+   "resources": []
+  },
+  "getenvironmentstatus": {
+   "name": "GetEnvironmentStatus",
+   "resources": [
+    "Environment"
+   ]
+  },
+  "getfiledownloadurls": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetFileDownloadUrls",
+   "resources": [
+    "Environment"
+   ]
+  },
+  "getfileuploadurls": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetFileUploadUrls",
+   "resources": [
+    "Environment"
+   ]
+  },
+  "putcredentials": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutCredentials",
+   "resources": [
+    "Environment"
+   ]
+  },
+  "startenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartEnvironment",
+   "resources": [
+    "Environment"
+   ]
+  },
+  "stopenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopEnvironment",
+   "resources": [
+    "Environment"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "cloudshell:SecurityGroupIds": [
+   "ArrayOfString"
+  ],
+  "cloudshell:SubnetIds": [
+   "ArrayOfString"
+  ],
+  "cloudshell:VpcIds": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Environment": {
+   "arnFormats": [
+    "arn:${Partition}:cloudshell:${Region}:${Account}:environment/${EnvironmentId}"
+   ]
+  }
+ },
+ "service": "cloudshell",
+ "serviceName": "CloudShell",
+ "version": "v1.5"
+}

@@ -1,0 +1,598 @@
+{
+ "actions": {
+  "acceptgrant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptGrant",
+   "resources": [
+    "grant"
+   ]
+  },
+  "checkinlicense": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CheckInLicense",
+   "resources": []
+  },
+  "checkoutborrowlicense": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CheckoutBorrowLicense",
+   "resources": [
+    "license"
+   ]
+  },
+  "checkoutlicense": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CheckoutLicense",
+   "resources": []
+  },
+  "creategrant": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGrant",
+   "resources": [
+    "license"
+   ]
+  },
+  "creategrantversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGrantVersion",
+   "resources": [
+    "grant"
+   ]
+  },
+  "createlicense": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLicense",
+   "resources": []
+  },
+  "createlicenseassetgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLicenseAssetGroup",
+   "resources": [
+    "license-asset-ruleset"
+   ]
+  },
+  "createlicenseassetruleset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLicenseAssetRuleset",
+   "resources": []
+  },
+  "createlicenseconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLicenseConfiguration",
+   "resources": []
+  },
+  "createlicenseconversiontaskforresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLicenseConversionTaskForResource",
+   "resources": []
+  },
+  "createlicensemanagerreportgenerator": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLicenseManagerReportGenerator",
+   "resources": []
+  },
+  "createlicenseversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLicenseVersion",
+   "resources": [
+    "license"
+   ]
+  },
+  "createtoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateToken",
+   "resources": [
+    "license"
+   ]
+  },
+  "deletegrant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGrant",
+   "resources": [
+    "grant"
+   ]
+  },
+  "deletelicense": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLicense",
+   "resources": [
+    "license"
+   ]
+  },
+  "deletelicenseassetgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLicenseAssetGroup",
+   "resources": [
+    "license-asset-group"
+   ]
+  },
+  "deletelicenseassetruleset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLicenseAssetRuleset",
+   "resources": [
+    "license-asset-ruleset"
+   ]
+  },
+  "deletelicenseconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLicenseConfiguration",
+   "resources": [
+    "license-configuration"
+   ]
+  },
+  "deletelicensemanagerreportgenerator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLicenseManagerReportGenerator",
+   "resources": [
+    "report-generator"
+   ]
+  },
+  "deletetoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteToken",
+   "resources": []
+  },
+  "extendlicenseconsumption": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExtendLicenseConsumption",
+   "resources": []
+  },
+  "getaccesstoken": {
+   "name": "GetAccessToken",
+   "resources": []
+  },
+  "getgrant": {
+   "name": "GetGrant",
+   "resources": [
+    "grant"
+   ]
+  },
+  "getlicense": {
+   "name": "GetLicense",
+   "resources": [
+    "license"
+   ]
+  },
+  "getlicenseassetgroup": {
+   "name": "GetLicenseAssetGroup",
+   "resources": [
+    "license-asset-group"
+   ]
+  },
+  "getlicenseassetruleset": {
+   "name": "GetLicenseAssetRuleset",
+   "resources": [
+    "license-asset-ruleset"
+   ]
+  },
+  "getlicenseconfiguration": {
+   "name": "GetLicenseConfiguration",
+   "resources": [
+    "license-configuration"
+   ]
+  },
+  "getlicenseconversiontask": {
+   "name": "GetLicenseConversionTask",
+   "resources": []
+  },
+  "getlicensemanagerreportgenerator": {
+   "name": "GetLicenseManagerReportGenerator",
+   "resources": [
+    "report-generator"
+   ]
+  },
+  "getlicenseusage": {
+   "name": "GetLicenseUsage",
+   "resources": [
+    "license"
+   ]
+  },
+  "getservicesettings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetServiceSettings",
+   "resources": []
+  },
+  "listassetsforlicenseassetgroup": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssetsForLicenseAssetGroup",
+   "resources": [
+    "license-asset-group"
+   ]
+  },
+  "listassociationsforlicenseconfiguration": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssociationsForLicenseConfiguration",
+   "resources": [
+    "license-configuration"
+   ]
+  },
+  "listdistributedgrants": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDistributedGrants",
+   "resources": []
+  },
+  "listfailuresforlicenseconfigurationoperations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFailuresForLicenseConfigurationOperations",
+   "resources": [
+    "license-configuration"
+   ]
+  },
+  "listlicenseassetgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLicenseAssetGroups",
+   "resources": [
+    "license-asset-group"
+   ]
+  },
+  "listlicenseassetrulesets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLicenseAssetRulesets",
+   "resources": [
+    "license-asset-ruleset"
+   ]
+  },
+  "listlicenseconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLicenseConfigurations",
+   "resources": []
+  },
+  "listlicenseconfigurationsfororganization": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLicenseConfigurationsForOrganization",
+   "resources": []
+  },
+  "listlicenseconversiontasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLicenseConversionTasks",
+   "resources": []
+  },
+  "listlicensemanagerreportgenerators": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLicenseManagerReportGenerators",
+   "resources": [
+    "license-configuration"
+   ]
+  },
+  "listlicenses": {
+   "name": "ListLicenses",
+   "resources": []
+  },
+  "listlicensespecificationsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLicenseSpecificationsForResource",
+   "resources": []
+  },
+  "listlicenseversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLicenseVersions",
+   "resources": [
+    "license"
+   ]
+  },
+  "listreceivedgrants": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReceivedGrants",
+   "resources": []
+  },
+  "listreceivedgrantsfororganization": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReceivedGrantsForOrganization",
+   "resources": []
+  },
+  "listreceivedlicenses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReceivedLicenses",
+   "resources": []
+  },
+  "listreceivedlicensesfororganization": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReceivedLicensesForOrganization",
+   "resources": []
+  },
+  "listresourceinventory": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceInventory",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "grant",
+    "license",
+    "license-asset-group",
+    "license-asset-ruleset",
+    "license-configuration",
+    "report-generator"
+   ]
+  },
+  "listtokens": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTokens",
+   "resources": []
+  },
+  "listusageforlicenseconfiguration": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsageForLicenseConfiguration",
+   "resources": [
+    "license-configuration"
+   ]
+  },
+  "rejectgrant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectGrant",
+   "resources": [
+    "grant"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "grant",
+    "license",
+    "license-asset-group",
+    "license-asset-ruleset",
+    "license-configuration",
+    "report-generator"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "grant",
+    "license",
+    "license-asset-group",
+    "license-asset-ruleset",
+    "license-configuration",
+    "report-generator"
+   ]
+  },
+  "updatelicenseassetgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLicenseAssetGroup",
+   "resources": [
+    "license-asset-group",
+    "license-asset-ruleset"
+   ]
+  },
+  "updatelicenseassetruleset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLicenseAssetRuleset",
+   "resources": [
+    "license-asset-ruleset"
+   ]
+  },
+  "updatelicenseconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLicenseConfiguration",
+   "resources": [
+    "license-configuration"
+   ]
+  },
+  "updatelicensemanagerreportgenerator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLicenseManagerReportGenerator",
+   "resources": [
+    "report-generator"
+   ]
+  },
+  "updatelicensespecificationsforresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLicenseSpecificationsForResource",
+   "resources": [
+    "license-configuration"
+   ]
+  },
+  "updateservicesettings": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateServiceSettings",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "license-manager:ResourceTag/${TagKey}": [
+   "String"
+  ]
+ },
+ "resources": {
+  "grant": {
+   "arnFormats": [
+    "arn:${Partition}:license-manager::${Account}:grant:${GrantId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "license": {
+   "arnFormats": [
+    "arn:${Partition}:license-manager::${Account}:license:${LicenseId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "license-asset-group": {
+   "arnFormats": [
+    "arn:${Partition}:license-manager:${Region}:${Account}:license-asset-group:${LicenseAssetGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "license-asset-ruleset": {
+   "arnFormats": [
+    "arn:${Partition}:license-manager:${Region}:${Account}:license-asset-ruleset:${LicenseAssetRulesetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "license-configuration": {
+   "arnFormats": [
+    "arn:${Partition}:license-manager:${Region}:${Account}:license-configuration:${LicenseConfigurationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "license-manager:ResourceTag/${TagKey}"
+   ]
+  },
+  "report-generator": {
+   "arnFormats": [
+    "arn:${Partition}:license-manager:${Region}:${Account}:report-generator:${ReportGeneratorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "license-manager:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "license-manager",
+ "serviceName": "License Manager",
+ "version": "v1.5"
+}

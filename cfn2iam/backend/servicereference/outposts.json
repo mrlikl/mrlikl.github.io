@@ -1,0 +1,377 @@
+{
+ "actions": {
+  "cancelcapacitytask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelCapacityTask",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "cancelorder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelOrder",
+   "resources": []
+  },
+  "createorder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOrder",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "createoutpost": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOutpost",
+   "resources": [
+    "site"
+   ]
+  },
+  "createprivateconnectivityconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePrivateConnectivityConfig",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "createquote": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQuote",
+   "resources": []
+  },
+  "createrenewal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRenewal",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "createsite": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSite",
+   "resources": []
+  },
+  "deleteoutpost": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOutpost",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "deletequote": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQuote",
+   "resources": []
+  },
+  "deletesite": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSite",
+   "resources": [
+    "site"
+   ]
+  },
+  "getcapacitytask": {
+   "name": "GetCapacityTask",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "getcatalogitem": {
+   "name": "GetCatalogItem",
+   "resources": []
+  },
+  "getconnection": {
+   "name": "GetConnection",
+   "resources": []
+  },
+  "getorder": {
+   "name": "GetOrder",
+   "resources": []
+  },
+  "getoutpost": {
+   "name": "GetOutpost",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "getoutpostbillinginformation": {
+   "name": "GetOutpostBillingInformation",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "getoutpostinstancetypes": {
+   "name": "GetOutpostInstanceTypes",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "getoutpostsupportedinstancetypes": {
+   "name": "GetOutpostSupportedInstanceTypes",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "getprivateconnectivityconfig": {
+   "name": "GetPrivateConnectivityConfig",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "getquote": {
+   "name": "GetQuote",
+   "resources": []
+  },
+  "getrenewalpricing": {
+   "name": "GetRenewalPricing",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "getsite": {
+   "name": "GetSite",
+   "resources": [
+    "site"
+   ]
+  },
+  "getsiteaddress": {
+   "name": "GetSiteAddress",
+   "resources": [
+    "site"
+   ]
+  },
+  "listassetinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssetInstances",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "listassets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssets",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "listblockinginstancesforcapacitytask": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBlockingInstancesForCapacityTask",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "listcapacitytasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCapacityTasks",
+   "resources": []
+  },
+  "listcatalogitems": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCatalogItems",
+   "resources": []
+  },
+  "listorderableinstancetypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrderableInstanceTypes",
+   "resources": []
+  },
+  "listorders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrders",
+   "resources": []
+  },
+  "listoutposts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOutposts",
+   "resources": []
+  },
+  "listquotes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQuotes",
+   "resources": []
+  },
+  "listsites": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSites",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "startcapacitytask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCapacityTask",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "startconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartConnection",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "outpost",
+    "site"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "outpost",
+    "site"
+   ]
+  },
+  "updateoutpost": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOutpost",
+   "resources": [
+    "outpost"
+   ]
+  },
+  "updatequote": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQuote",
+   "resources": []
+  },
+  "updatesite": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSite",
+   "resources": [
+    "site"
+   ]
+  },
+  "updatesiteaddress": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSiteAddress",
+   "resources": [
+    "site"
+   ]
+  },
+  "updatesiterackphysicalproperties": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSiteRackPhysicalProperties",
+   "resources": [
+    "site"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "outpost": {
+   "arnFormats": [
+    "arn:${Partition}:outposts:${Region}:${Account}:outpost/${OutpostId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "site": {
+   "arnFormats": [
+    "arn:${Partition}:outposts:${Region}:${Account}:site/${SiteId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "outposts",
+ "serviceName": "Outposts",
+ "version": "v1.5"
+}

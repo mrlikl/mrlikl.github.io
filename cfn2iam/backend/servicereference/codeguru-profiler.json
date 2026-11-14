@@ -1,0 +1,228 @@
+{
+ "actions": {
+  "addnotificationchannels": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddNotificationChannels",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "batchgetframemetricdata": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "BatchGetFrameMetricData",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "configureagent": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "ConfigureAgent",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "createprofilinggroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProfilingGroup",
+   "resources": []
+  },
+  "deleteprofilinggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProfilingGroup",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "describeprofilinggroup": {
+   "name": "DescribeProfilingGroup",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "getfindingsreportaccountsummary": {
+   "name": "GetFindingsReportAccountSummary",
+   "resources": []
+  },
+  "getnotificationconfiguration": {
+   "name": "GetNotificationConfiguration",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "getpolicy": {
+   "name": "GetPolicy",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "getprofile": {
+   "name": "GetProfile",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "getrecommendations": {
+   "name": "GetRecommendations",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "listfindingsreports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFindingsReports",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "listprofiletimes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfileTimes",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "listprofilinggroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfilingGroups",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "postagentprofile": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PostAgentProfile",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "putpermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutPermission",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "removenotificationchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveNotificationChannel",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "removepermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "RemovePermission",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "submitfeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitFeedback",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  },
+  "updateprofilinggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProfilingGroup",
+   "resources": [
+    "ProfilingGroup"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "ProfilingGroup": {
+   "arnFormats": [
+    "arn:${Partition}:codeguru-profiler:${Region}:${Account}:profilingGroup/${ProfilingGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "codeguru-profiler",
+ "serviceName": "CodeGuru Profiler",
+ "version": "v1.5"
+}

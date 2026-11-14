@@ -1,0 +1,268 @@
+{
+ "actions": {
+  "alter": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Alter",
+   "resources": [
+    "keyspace",
+    "table"
+   ]
+  },
+  "altermultiregionresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AlterMultiRegionResource",
+   "resources": [
+    "keyspace",
+    "table"
+   ]
+  },
+  "create": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Create",
+   "resources": [
+    "keyspace",
+    "table"
+   ]
+  },
+  "createmultiregionresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMultiRegionResource",
+   "resources": [
+    "keyspace",
+    "table"
+   ]
+  },
+  "drop": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Drop",
+   "resources": [
+    "keyspace",
+    "table"
+   ]
+  },
+  "dropmultiregionresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DropMultiRegionResource",
+   "resources": [
+    "keyspace",
+    "table"
+   ]
+  },
+  "getrecords": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetRecords",
+   "resources": [
+    "stream"
+   ]
+  },
+  "getsharditerator": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetShardIterator",
+   "resources": [
+    "stream"
+   ]
+  },
+  "getstream": {
+   "name": "GetStream",
+   "resources": [
+    "stream"
+   ]
+  },
+  "liststreams": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStreams",
+   "resources": []
+  },
+  "modify": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Modify",
+   "resources": [
+    "table"
+   ]
+  },
+  "modifymultiregionresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyMultiRegionResource",
+   "resources": [
+    "table"
+   ]
+  },
+  "restore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Restore",
+   "resources": [
+    "table"
+   ]
+  },
+  "restoremultiregiontable": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreMultiRegionTable",
+   "resources": [
+    "table"
+   ]
+  },
+  "select": {
+   "name": "Select",
+   "resources": [
+    "table"
+   ]
+  },
+  "selectmultiregionresource": {
+   "name": "SelectMultiRegionResource",
+   "resources": [
+    "table"
+   ]
+  },
+  "tagmultiregionresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagMultiRegionResource",
+   "resources": [
+    "keyspace",
+    "table"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "keyspace",
+    "stream",
+    "table"
+   ]
+  },
+  "untagmultiregionresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UnTagMultiRegionResource",
+   "resources": [
+    "keyspace",
+    "table"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "keyspace",
+    "stream",
+    "table"
+   ]
+  },
+  "updatepartitioner": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePartitioner",
+   "resources": [
+    "table"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "keyspace": {
+   "arnFormats": [
+    "arn:${Partition}:cassandra:${Region}:${Account}:/keyspace/${KeyspaceName}/"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "stream": {
+   "arnFormats": [
+    "arn:${Partition}:cassandra:${Region}:${Account}:/keyspace/${KeyspaceName}/table/${TableName}/stream/${StreamLabel}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "table": {
+   "arnFormats": [
+    "arn:${Partition}:cassandra:${Region}:${Account}:/keyspace/${KeyspaceName}/table/${TableName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "cassandra",
+ "serviceName": "Keyspaces",
+ "version": "v1.5"
+}

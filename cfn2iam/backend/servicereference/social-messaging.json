@@ -1,0 +1,375 @@
+{
+ "actions": {
+  "associatewhatsappbusinessaccount": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateWhatsAppBusinessAccount",
+   "resources": []
+  },
+  "createwhatsappdataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWhatsAppDataset",
+   "resources": [
+    "waba"
+   ]
+  },
+  "createwhatsappflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWhatsAppFlow",
+   "resources": [
+    "waba"
+   ]
+  },
+  "createwhatsappmessagetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWhatsAppMessageTemplate",
+   "resources": [
+    "waba"
+   ]
+  },
+  "createwhatsappmessagetemplatefromlibrary": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWhatsAppMessageTemplateFromLibrary",
+   "resources": [
+    "waba"
+   ]
+  },
+  "createwhatsappmessagetemplatemedia": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWhatsAppMessageTemplateMedia",
+   "resources": [
+    "waba"
+   ]
+  },
+  "deletewhatsappflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWhatsAppFlow",
+   "resources": [
+    "waba"
+   ]
+  },
+  "deletewhatsappmessagemedia": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteWhatsAppMessageMedia",
+   "resources": [
+    "phone-number-id"
+   ]
+  },
+  "deletewhatsappmessagetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWhatsAppMessageTemplate",
+   "resources": [
+    "waba"
+   ]
+  },
+  "deprecatewhatsappflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeprecateWhatsAppFlow",
+   "resources": [
+    "waba"
+   ]
+  },
+  "disassociatewhatsappbusinessaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateWhatsAppBusinessAccount",
+   "resources": [
+    "waba"
+   ]
+  },
+  "getlinkedwhatsappbusinessaccount": {
+   "name": "GetLinkedWhatsAppBusinessAccount",
+   "resources": [
+    "waba"
+   ]
+  },
+  "getlinkedwhatsappbusinessaccountphonenumber": {
+   "name": "GetLinkedWhatsAppBusinessAccountPhoneNumber",
+   "resources": [
+    "phone-number-id"
+   ]
+  },
+  "getwhatsappbusinesspublickey": {
+   "name": "GetWhatsAppBusinessPublicKey",
+   "resources": [
+    "phone-number-id"
+   ]
+  },
+  "getwhatsappcallpermission": {
+   "name": "GetWhatsAppCallPermission",
+   "resources": [
+    "phone-number-id"
+   ]
+  },
+  "getwhatsappflow": {
+   "name": "GetWhatsAppFlow",
+   "resources": [
+    "waba"
+   ]
+  },
+  "getwhatsappflowpreview": {
+   "name": "GetWhatsAppFlowPreview",
+   "resources": [
+    "waba"
+   ]
+  },
+  "getwhatsappmessagemedia": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "GetWhatsAppMessageMedia",
+   "resources": [
+    "phone-number-id"
+   ]
+  },
+  "getwhatsappmessagetemplate": {
+   "name": "GetWhatsAppMessageTemplate",
+   "resources": [
+    "waba"
+   ]
+  },
+  "listlinkedwhatsappbusinessaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLinkedWhatsAppBusinessAccounts",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "phone-number-id",
+    "waba"
+   ]
+  },
+  "listwhatsappflowassets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWhatsAppFlowAssets",
+   "resources": [
+    "waba"
+   ]
+  },
+  "listwhatsappflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWhatsAppFlows",
+   "resources": [
+    "waba"
+   ]
+  },
+  "listwhatsappmessagetemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWhatsAppMessageTemplates",
+   "resources": [
+    "waba"
+   ]
+  },
+  "listwhatsapptemplatelibrary": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWhatsAppTemplateLibrary",
+   "resources": [
+    "waba"
+   ]
+  },
+  "postwhatsappmessagemedia": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PostWhatsAppMessageMedia",
+   "resources": [
+    "phone-number-id"
+   ]
+  },
+  "publishwhatsappflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PublishWhatsAppFlow",
+   "resources": [
+    "waba"
+   ]
+  },
+  "putwhatsappbusinessaccounteventdestinations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutWhatsAppBusinessAccountEventDestinations",
+   "resources": [
+    "waba"
+   ]
+  },
+  "putwhatsappbusinesspublickey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutWhatsAppBusinessPublicKey",
+   "resources": [
+    "phone-number-id"
+   ]
+  },
+  "sendwhatsappcallevent": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendWhatsAppCallEvent",
+   "resources": [
+    "phone-number-id"
+   ]
+  },
+  "sendwhatsappconversionevent": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendWhatsAppConversionEvent",
+   "resources": [
+    "waba"
+   ]
+  },
+  "sendwhatsappmessage": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SendWhatsAppMessage",
+   "resources": [
+    "phone-number-id"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "phone-number-id",
+    "waba"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "phone-number-id",
+    "waba"
+   ]
+  },
+  "updatelinkedwhatsappbusinessaccountphonenumber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLinkedWhatsAppBusinessAccountPhoneNumber",
+   "resources": [
+    "phone-number-id"
+   ]
+  },
+  "updatewhatsappflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWhatsAppFlow",
+   "resources": [
+    "waba"
+   ]
+  },
+  "updatewhatsappflowassets": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWhatsAppFlowAssets",
+   "resources": [
+    "waba"
+   ]
+  },
+  "updatewhatsappmessagetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWhatsAppMessageTemplate",
+   "resources": [
+    "waba"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "phone-number-id": {
+   "arnFormats": [
+    "arn:${Partition}:social-messaging:${Region}:${Account}:phone-number-id/${OriginationPhoneNumberId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "waba": {
+   "arnFormats": [
+    "arn:${Partition}:social-messaging:${Region}:${Account}:waba/${WabaId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "social-messaging",
+ "serviceName": "Social Messaging",
+ "version": "v1.5"
+}

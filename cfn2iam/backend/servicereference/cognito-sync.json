@@ -1,0 +1,166 @@
+{
+ "actions": {
+  "bulkpublish": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BulkPublish",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "deletedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "describedataset": {
+   "name": "DescribeDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "describeidentitypoolusage": {
+   "name": "DescribeIdentityPoolUsage",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "describeidentityusage": {
+   "name": "DescribeIdentityUsage",
+   "resources": [
+    "identity"
+   ]
+  },
+  "getbulkpublishdetails": {
+   "name": "GetBulkPublishDetails",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "getcognitoevents": {
+   "name": "GetCognitoEvents",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "getidentitypoolconfiguration": {
+   "name": "GetIdentityPoolConfiguration",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "listdatasets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasets",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "listidentitypoolusage": {
+   "name": "ListIdentityPoolUsage",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "listrecords": {
+   "name": "ListRecords",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "queryrecords": {
+   "name": "QueryRecords",
+   "resources": []
+  },
+  "registerdevice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterDevice",
+   "resources": [
+    "identity"
+   ]
+  },
+  "setcognitoevents": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetCognitoEvents",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "setdatasetconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetDatasetConfiguration",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "setidentitypoolconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetIdentityPoolConfiguration",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "subscribetodataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubscribeToDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "unsubscribefromdataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnsubscribeFromDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "updaterecords": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRecords",
+   "resources": [
+    "dataset"
+   ]
+  }
+ },
+ "resources": {
+  "dataset": {
+   "arnFormats": [
+    "arn:${Partition}:cognito-sync:${Region}:${Account}:identitypool/${IdentityPoolId}/identity/${IdentityId}/dataset/${DatasetName}"
+   ]
+  },
+  "identity": {
+   "arnFormats": [
+    "arn:${Partition}:cognito-sync:${Region}:${Account}:identitypool/${IdentityPoolId}/identity/${IdentityId}"
+   ]
+  },
+  "identitypool": {
+   "arnFormats": [
+    "arn:${Partition}:cognito-sync:${Region}:${Account}:identitypool/${IdentityPoolId}"
+   ]
+  }
+ },
+ "service": "cognito-sync",
+ "serviceName": "Cognito Sync",
+ "version": "v1.5"
+}

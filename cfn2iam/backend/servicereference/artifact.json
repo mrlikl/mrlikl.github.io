@@ -1,0 +1,238 @@
+{
+ "actions": {
+  "acceptagreement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptAgreement",
+   "resources": [
+    "agreement"
+   ]
+  },
+  "acceptndaforagreement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptNdaForAgreement",
+   "resources": [
+    "agreement"
+   ]
+  },
+  "createcomplianceinquiry": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateComplianceInquiry",
+   "resources": [
+    "compliance-inquiry"
+   ]
+  },
+  "exportcomplianceinquiry": {
+   "name": "ExportComplianceInquiry",
+   "resources": [
+    "compliance-inquiry"
+   ]
+  },
+  "getaccountsettings": {
+   "name": "GetAccountSettings",
+   "resources": []
+  },
+  "getagreement": {
+   "name": "GetAgreement",
+   "resources": [
+    "agreement"
+   ]
+  },
+  "getcomplianceinquirymetadata": {
+   "name": "GetComplianceInquiryMetadata",
+   "resources": [
+    "compliance-inquiry"
+   ]
+  },
+  "getcustomeragreement": {
+   "name": "GetCustomerAgreement",
+   "resources": [
+    "customer-agreement"
+   ]
+  },
+  "getndaforagreement": {
+   "name": "GetNdaForAgreement",
+   "resources": [
+    "agreement"
+   ]
+  },
+  "getreport": {
+   "name": "GetReport",
+   "resources": [
+    "report"
+   ]
+  },
+  "getreportmetadata": {
+   "name": "GetReportMetadata",
+   "resources": [
+    "report"
+   ]
+  },
+  "gettermforreport": {
+   "name": "GetTermForReport",
+   "resources": [
+    "report"
+   ]
+  },
+  "listagreements": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgreements",
+   "resources": []
+  },
+  "listcomplianceinquiries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListComplianceInquiries",
+   "resources": []
+  },
+  "listcomplianceinquiryqueries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListComplianceInquiryQueries",
+   "resources": [
+    "compliance-inquiry"
+   ]
+  },
+  "listcustomeragreements": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomerAgreements",
+   "resources": []
+  },
+  "listreports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReports",
+   "resources": []
+  },
+  "listreportversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReportVersions",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "compliance-inquiry"
+   ]
+  },
+  "putaccountsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAccountSettings",
+   "resources": []
+  },
+  "putcomplianceinquiryfeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutComplianceInquiryFeedback",
+   "resources": [
+    "compliance-inquiry"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "compliance-inquiry"
+   ]
+  },
+  "terminateagreement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TerminateAgreement",
+   "resources": [
+    "customer-agreement"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "compliance-inquiry"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "artifact:ReportCategory": [
+   "String"
+  ],
+  "artifact:ReportSeries": [
+   "String"
+  ],
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "agreement": {
+   "arnFormats": [
+    "arn:${Partition}:artifact:::agreement/*"
+   ]
+  },
+  "compliance-inquiry": {
+   "arnFormats": [
+    "arn:${Partition}:artifact:${Region}:${Account}:compliance-inquiry/*"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "customer-agreement": {
+   "arnFormats": [
+    "arn:${Partition}:artifact::${Account}:customer-agreement/*"
+   ]
+  },
+  "report": {
+   "arnFormats": [
+    "arn:${Partition}:artifact:${Region}::report/${ReportId}:${Version}"
+   ],
+   "conditionKeys": [
+    "artifact:ReportCategory",
+    "artifact:ReportSeries"
+   ]
+  }
+ },
+ "service": "artifact",
+ "serviceName": "Artifact",
+ "version": "v1.5"
+}

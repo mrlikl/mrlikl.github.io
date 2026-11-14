@@ -1,0 +1,89 @@
+{
+ "actions": {
+  "approveaccessgrant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ApproveAccessGrant",
+   "resources": [
+    "permission"
+   ]
+  },
+  "approvepermissionrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ApprovePermissionRequest",
+   "resources": [
+    "permission"
+   ]
+  },
+  "assumepermissionrole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssumePermissionRole",
+   "resources": [
+    "permission"
+   ]
+  },
+  "createpermissionrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePermissionRequest",
+   "resources": [
+    "permission"
+   ]
+  },
+  "getpermissionrequest": {
+   "name": "GetPermissionRequest",
+   "resources": [
+    "permission"
+   ]
+  },
+  "listpermissionrequests": {
+   "name": "ListPermissionRequests",
+   "resources": [
+    "permission"
+   ]
+  },
+  "rejectpermissionrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectPermissionRequest",
+   "resources": [
+    "permission"
+   ]
+  },
+  "revokepermissionrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokePermissionRequest",
+   "resources": [
+    "permission"
+   ]
+  },
+  "withdrawpermissionrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "WithdrawPermissionRequest",
+   "resources": [
+    "permission"
+   ]
+  }
+ },
+ "resources": {
+  "permission": {
+   "arnFormats": [
+    "arn:${Partition}:iq-permission:${Region}::permission/${PermissionRequestId}"
+   ]
+  }
+ },
+ "service": "iq-permission",
+ "serviceName": "IQ Permission",
+ "version": "v1.5"
+}

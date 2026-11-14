@@ -1,0 +1,637 @@
+{
+ "actions": {
+  "convertrecoverypointtosnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConvertRecoveryPointToSnapshot",
+   "resources": [
+    "recoveryPoint",
+    "snapshot"
+   ]
+  },
+  "createcustomdomainassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomDomainAssociation",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "createendpointaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEndpointAccess",
+   "resources": [
+    "endpointAccess"
+   ]
+  },
+  "createnamespace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNamespace",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "createreservation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReservation",
+   "resources": []
+  },
+  "createscheduledaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScheduledAction",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "createsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSnapshot",
+   "resources": [
+    "namespace",
+    "snapshot"
+   ]
+  },
+  "createsnapshotcopyconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSnapshotCopyConfiguration",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "createusagelimit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUsageLimit",
+   "resources": []
+  },
+  "createworkgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkgroup",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "deletecustomdomainassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomDomainAssociation",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "deleteendpointaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEndpointAccess",
+   "resources": [
+    "endpointAccess"
+   ]
+  },
+  "deletenamespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNamespace",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": []
+  },
+  "deletescheduledaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScheduledAction",
+   "resources": []
+  },
+  "deletesnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSnapshot",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "deletesnapshotcopyconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSnapshotCopyConfiguration",
+   "resources": []
+  },
+  "deleteusagelimit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUsageLimit",
+   "resources": []
+  },
+  "deleteworkgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkgroup",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "describeonetimecredit": {
+   "name": "DescribeOneTimeCredit",
+   "resources": []
+  },
+  "getcredentials": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetCredentials",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "getcustomdomainassociation": {
+   "name": "GetCustomDomainAssociation",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "getendpointaccess": {
+   "name": "GetEndpointAccess",
+   "resources": [
+    "endpointAccess"
+   ]
+  },
+  "getidentitycenterauthtoken": {
+   "name": "GetIdentityCenterAuthToken",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "getmanagedworkgroup": {
+   "name": "GetManagedWorkgroup",
+   "resources": [
+    "managed-workgroup"
+   ]
+  },
+  "getnamespace": {
+   "name": "GetNamespace",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "getrecoverypoint": {
+   "name": "GetRecoveryPoint",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "getreservation": {
+   "name": "GetReservation",
+   "resources": []
+  },
+  "getreservationoffering": {
+   "name": "GetReservationOffering",
+   "resources": []
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": []
+  },
+  "getscheduledaction": {
+   "name": "GetScheduledAction",
+   "resources": []
+  },
+  "getsnapshot": {
+   "name": "GetSnapshot",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "gettablerestorestatus": {
+   "name": "GetTableRestoreStatus",
+   "resources": []
+  },
+  "gettrack": {
+   "name": "GetTrack",
+   "resources": []
+  },
+  "getusagelimit": {
+   "name": "GetUsageLimit",
+   "resources": []
+  },
+  "getworkgroup": {
+   "name": "GetWorkgroup",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "listautonomicsdenylist": {
+   "name": "ListAutonomicsDenylist",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "listcustomdomainassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomDomainAssociations",
+   "resources": []
+  },
+  "listendpointaccess": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEndpointAccess",
+   "resources": [
+    "endpointAccess"
+   ]
+  },
+  "listmanagedworkgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedWorkgroups",
+   "resources": []
+  },
+  "listnamespaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNamespaces",
+   "resources": []
+  },
+  "listrecoverypoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecoveryPoints",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "listreservationofferings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReservationOfferings",
+   "resources": []
+  },
+  "listreservations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReservations",
+   "resources": []
+  },
+  "listscheduledactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScheduledActions",
+   "resources": []
+  },
+  "listsnapshotcopyconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSnapshotCopyConfigurations",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "listsnapshots": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSnapshots",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "listtablerestorestatus": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTableRestoreStatus",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "namespace",
+    "workgroup"
+   ]
+  },
+  "listtracks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTracks",
+   "resources": []
+  },
+  "listusagelimits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsageLimits",
+   "resources": []
+  },
+  "listworkgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkgroups",
+   "resources": []
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": []
+  },
+  "restorefromrecoverypoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreFromRecoveryPoint",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "restorefromsnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreFromSnapshot",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "restoretablefromrecoverypoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreTableFromRecoveryPoint",
+   "resources": [
+    "namespace",
+    "recoveryPoint"
+   ]
+  },
+  "restoretablefromsnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreTableFromSnapshot",
+   "resources": [
+    "namespace",
+    "snapshot"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "namespace",
+    "recoveryPoint",
+    "snapshot",
+    "workgroup"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "namespace",
+    "recoveryPoint",
+    "snapshot",
+    "workgroup"
+   ]
+  },
+  "updateautonomicsdenylist": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAutonomicsDenylist",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "updatecustomdomainassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCustomDomainAssociation",
+   "resources": [
+    "workgroup"
+   ]
+  },
+  "updateendpointaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEndpointAccess",
+   "resources": [
+    "endpointAccess"
+   ]
+  },
+  "updatelakehouseconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLakehouseConfiguration",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "updatenamespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNamespace",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "updatescheduledaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateScheduledAction",
+   "resources": []
+  },
+  "updatesnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSnapshot",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "updatesnapshotcopyconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSnapshotCopyConfiguration",
+   "resources": []
+  },
+  "updateusagelimit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUsageLimit",
+   "resources": []
+  },
+  "updateworkgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkgroup",
+   "resources": [
+    "workgroup"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "redshift-serverless:endpointAccessId": [
+   "String"
+  ],
+  "redshift-serverless:managedWorkgroupName": [
+   "String"
+  ],
+  "redshift-serverless:namespaceId": [
+   "String"
+  ],
+  "redshift-serverless:recoveryPointId": [
+   "String"
+  ],
+  "redshift-serverless:snapshotId": [
+   "String"
+  ],
+  "redshift-serverless:tableRestoreRequestId": [
+   "String"
+  ],
+  "redshift-serverless:workgroupId": [
+   "String"
+  ]
+ },
+ "resources": {
+  "endpointAccess": {
+   "arnFormats": [
+    "arn:${Partition}:redshift-serverless:${Region}:${Account}:managedvpcendpoint/${EndpointAccessId}"
+   ]
+  },
+  "managed-workgroup": {
+   "arnFormats": [
+    "arn:${Partition}:redshift-serverless:${Region}:${Account}:managed-workgroup/${ManagedWorkgroupName}"
+   ]
+  },
+  "namespace": {
+   "arnFormats": [
+    "arn:${Partition}:redshift-serverless:${Region}:${Account}:namespace/${NamespaceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "recoveryPoint": {
+   "arnFormats": [
+    "arn:${Partition}:redshift-serverless:${Region}:${Account}:recoverypoint/${RecoveryPointId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "snapshot": {
+   "arnFormats": [
+    "arn:${Partition}:redshift-serverless:${Region}:${Account}:snapshot/${SnapshotId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workgroup": {
+   "arnFormats": [
+    "arn:${Partition}:redshift-serverless:${Region}:${Account}:workgroup/${WorkgroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "redshift-serverless",
+ "serviceName": "Redshift Serverless",
+ "version": "v1.5"
+}

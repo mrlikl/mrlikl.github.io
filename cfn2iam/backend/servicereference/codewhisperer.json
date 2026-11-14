@@ -1,0 +1,253 @@
+{
+ "actions": {
+  "allowvendedlogdeliveryforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": [
+    "customization"
+   ]
+  },
+  "associatecustomizationpermission": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateCustomizationPermission",
+   "resources": [
+    "customization"
+   ]
+  },
+  "createcustomization": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomization",
+   "resources": [
+    "customization"
+   ]
+  },
+  "createprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "deletecustomization": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomization",
+   "resources": [
+    "customization"
+   ]
+  },
+  "deleteprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "disassociatecustomizationpermission": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateCustomizationPermission",
+   "resources": [
+    "customization"
+   ]
+  },
+  "generaterecommendations": {
+   "name": "GenerateRecommendations",
+   "resources": []
+  },
+  "getcustomization": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetCustomization",
+   "resources": [
+    "customization"
+   ]
+  },
+  "listcustomizationpermissions": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomizationPermissions",
+   "resources": [
+    "customization"
+   ]
+  },
+  "listcustomizations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomizations",
+   "resources": [
+    "customization"
+   ]
+  },
+  "listcustomizationversions": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomizationVersions",
+   "resources": [
+    "customization"
+   ]
+  },
+  "listprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfiles",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "customization",
+    "profile"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "customization",
+    "profile"
+   ]
+  },
+  "testotelconnection": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "TestOtelConnection",
+   "resources": [
+    "profile"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "customization",
+    "profile"
+   ]
+  },
+  "updatecustomization": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCustomization",
+   "resources": [
+    "customization"
+   ]
+  },
+  "updateprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProfile",
+   "resources": [
+    "profile"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "customization": {
+   "arnFormats": [
+    "arn:${Partition}:codewhisperer:${Region}:${Account}:customization/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "profile": {
+   "arnFormats": [
+    "arn:${Partition}:codewhisperer:${Region}:${Account}:profile/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "codewhisperer",
+ "serviceName": "CodeWhisperer",
+ "version": "v1.5"
+}

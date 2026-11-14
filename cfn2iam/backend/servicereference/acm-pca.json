@@ -1,0 +1,236 @@
+{
+ "actions": {
+  "createcertificateauthority": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCertificateAuthority",
+   "resources": []
+  },
+  "createcertificateauthorityauditreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCertificateAuthorityAuditReport",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "createpermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "CreatePermission",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "deletecertificateauthority": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCertificateAuthority",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "deletepermission": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeletePermission",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "deletepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeletePolicy",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "describecertificateauthority": {
+   "name": "DescribeCertificateAuthority",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "describecertificateauthorityauditreport": {
+   "name": "DescribeCertificateAuthorityAuditReport",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "getcertificate": {
+   "name": "GetCertificate",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "getcertificateauthoritycertificate": {
+   "name": "GetCertificateAuthorityCertificate",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "getcertificateauthoritycsr": {
+   "name": "GetCertificateAuthorityCsr",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "getpolicy": {
+   "name": "GetPolicy",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "importcertificateauthoritycertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportCertificateAuthorityCertificate",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "issuecertificate": {
+   "conditionKeys": [
+    "acm-pca:TemplateArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "IssueCertificate",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "listcertificateauthorities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCertificateAuthorities",
+   "resources": []
+  },
+  "listpermissions": {
+   "name": "ListPermissions",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "listtags": {
+   "name": "ListTags",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "putpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutPolicy",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "restorecertificateauthority": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreCertificateAuthority",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "revokecertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeCertificate",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "tagcertificateauthority": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagCertificateAuthority",
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "untagcertificateauthority": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagCertificateAuthority",
+   "resourceConditionKeys": {
+    "certificate-authority": [
+     "aws:RequestTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "certificate-authority"
+   ]
+  },
+  "updatecertificateauthority": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCertificateAuthority",
+   "resources": [
+    "certificate-authority"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "acm-pca:TemplateArn": [
+   "ARN"
+  ],
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "certificate-authority": {
+   "arnFormats": [
+    "arn:${Partition}:acm-pca:${Region}:${Account}:certificate-authority/${CertificateAuthorityId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "acm-pca",
+ "serviceName": "Private Certificate Authority",
+ "version": "v1.5"
+}

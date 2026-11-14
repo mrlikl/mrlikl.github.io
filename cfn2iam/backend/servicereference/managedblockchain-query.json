@@ -1,0 +1,76 @@
+{
+ "actions": {
+  "batchgettokenbalance": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "BatchGetTokenBalance",
+   "resources": []
+  },
+  "getassetcontract": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetAssetContract",
+   "resources": []
+  },
+  "gettokenbalance": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetTokenBalance",
+   "resources": []
+  },
+  "gettransaction": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetTransaction",
+   "resources": []
+  },
+  "listassetcontracts": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListAssetContracts",
+   "resources": []
+  },
+  "listfilteredtransactionevents": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListFilteredTransactionEvents",
+   "resources": []
+  },
+  "listtokenbalances": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListTokenBalances",
+   "resources": []
+  },
+  "listtransactionevents": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListTransactionEvents",
+   "resources": []
+  },
+  "listtransactions": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListTransactions",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "managedblockchain-query",
+ "serviceName": "Managed Blockchain Query",
+ "version": "v1.5"
+}

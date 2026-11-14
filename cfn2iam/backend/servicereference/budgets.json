@@ -1,0 +1,154 @@
+{
+ "actions": {
+  "createbudgetaction": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBudgetAction",
+   "resources": [
+    "budgetAction"
+   ]
+  },
+  "deletebudgetaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBudgetAction",
+   "resources": [
+    "budgetAction"
+   ]
+  },
+  "describebudgetaction": {
+   "name": "DescribeBudgetAction",
+   "resources": [
+    "budgetAction"
+   ]
+  },
+  "describebudgetactionhistories": {
+   "name": "DescribeBudgetActionHistories",
+   "resources": [
+    "budgetAction"
+   ]
+  },
+  "describebudgetactionsforaccount": {
+   "name": "DescribeBudgetActionsForAccount",
+   "resources": []
+  },
+  "describebudgetactionsforbudget": {
+   "name": "DescribeBudgetActionsForBudget",
+   "resources": [
+    "budget"
+   ]
+  },
+  "executebudgetaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExecuteBudgetAction",
+   "resources": [
+    "budgetAction"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "budget",
+    "budgetAction"
+   ]
+  },
+  "modifybudget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyBudget",
+   "resources": [
+    "budget"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "budget",
+    "budgetAction"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "budget",
+    "budgetAction"
+   ]
+  },
+  "updatebudgetaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBudgetAction",
+   "resources": [
+    "budgetAction"
+   ]
+  },
+  "viewbudget": {
+   "name": "ViewBudget",
+   "resources": [
+    "budget"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "budget": {
+   "arnFormats": [
+    "arn:${Partition}:budgets::${Account}:budget/${BudgetName}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  },
+  "budgetAction": {
+   "arnFormats": [
+    "arn:${Partition}:budgets::${Account}:budget/${BudgetName}/action/${ActionId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  }
+ },
+ "service": "budgets",
+ "serviceName": "Budget",
+ "version": "v1.5"
+}

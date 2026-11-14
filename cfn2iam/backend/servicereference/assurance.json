@@ -1,0 +1,748 @@
+{
+ "actions": {
+  "acceptinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptInvitation",
+   "resources": [
+    "environment"
+   ]
+  },
+  "assignpermissionset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssignPermissionSet",
+   "resources": [
+    "environment"
+   ]
+  },
+  "batchgetcomment": {
+   "name": "BatchGetComment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "batchgetcontrol": {
+   "name": "BatchGetControl",
+   "resources": [
+    "environment"
+   ]
+  },
+  "batchgettask": {
+   "name": "BatchGetTask",
+   "resources": [
+    "environment"
+   ]
+  },
+  "chat": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Chat",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createannotation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAnnotation",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createcomment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateComment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createcontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateControl",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createcontrolgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateControlGroup",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createenvironment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironment",
+   "resources": []
+  },
+  "createenvironmentconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironmentConnection",
+   "resources": []
+  },
+  "createframework": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFramework",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInvitation",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createpermissionset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePermissionSet",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProject",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTask",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deleteannotation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAnnotation",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deletecomment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteComment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deletecontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteControl",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deletecontrolgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteControlGroup",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deleteenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deleteenvironmentconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironmentConnection",
+   "resources": []
+  },
+  "deleteevidence": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEvidence",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deleteframework": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFramework",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deleteinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInvitation",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deletepermissionset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePermissionSet",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deleteproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProject",
+   "resources": [
+    "environment"
+   ]
+  },
+  "deregisterorganizationdelegatedadmin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterOrganizationDelegatedAdmin",
+   "resources": []
+  },
+  "disableframework": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableFramework",
+   "resources": [
+    "environment"
+   ]
+  },
+  "enableframework": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableFramework",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getannotation": {
+   "name": "GetAnnotation",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getassessment": {
+   "name": "GetAssessment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getassessmentreportcontent": {
+   "name": "GetAssessmentReportContent",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getassessmentreportexport": {
+   "name": "GetAssessmentReportExport",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getchatmessages": {
+   "name": "GetChatMessages",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getcomment": {
+   "name": "GetComment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getcontrol": {
+   "name": "GetControl",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getcontrolgroup": {
+   "name": "GetControlGroup",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getcontrolstatus": {
+   "name": "GetControlStatus",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getenvironment": {
+   "name": "GetEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getevidence": {
+   "name": "GetEvidence",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getevidencecontent": {
+   "name": "GetEvidenceContent",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getframework": {
+   "name": "GetFramework",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getinvitation": {
+   "name": "GetInvitation",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getpermissionset": {
+   "name": "GetPermissionSet",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getproject": {
+   "name": "GetProject",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getresourceactivitiesqueryresults": {
+   "name": "GetResourceActivitiesQueryResults",
+   "resources": [
+    "environment"
+   ]
+  },
+  "gettask": {
+   "name": "GetTask",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listassessmentannotations": {
+   "name": "ListAssessmentAnnotations",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listassessmentjournalrecords": {
+   "name": "ListAssessmentJournalRecords",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listassessmentoutcomes": {
+   "name": "ListAssessmentOutcomes",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listassessments": {
+   "name": "ListAssessments",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listchatsessions": {
+   "name": "ListChatSessions",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listcomments": {
+   "name": "ListComments",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listconnectionitems": {
+   "name": "ListConnectionItems",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listcontrolgroups": {
+   "name": "ListControlGroups",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listcontrolresources": {
+   "name": "ListControlResources",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listcontrols": {
+   "name": "ListControls",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listdiscoveredresources": {
+   "name": "ListDiscoveredResources",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listenabledframeworks": {
+   "name": "ListEnabledFrameworks",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listenvironmentconnections": {
+   "name": "ListEnvironmentConnections",
+   "resources": []
+  },
+  "listenvironments": {
+   "name": "ListEnvironments",
+   "resources": []
+  },
+  "listevidence": {
+   "name": "ListEvidence",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listevidenceannotations": {
+   "name": "ListEvidenceAnnotations",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listframeworks": {
+   "name": "ListFrameworks",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listinboundinvitations": {
+   "name": "ListInboundInvitations",
+   "resources": []
+  },
+  "listoutboundinvitations": {
+   "name": "ListOutboundInvitations",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listpermissionsetassignments": {
+   "name": "ListPermissionSetAssignments",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listpermissionsets": {
+   "name": "ListPermissionSets",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listprojects": {
+   "name": "ListProjects",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listtaskhistory": {
+   "name": "ListTaskHistory",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listtasks": {
+   "name": "ListTasks",
+   "resources": [
+    "environment"
+   ]
+  },
+  "publishframework": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PublishFramework",
+   "resources": [
+    "environment"
+   ]
+  },
+  "putcontrolstatusoverride": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutControlStatusOverride",
+   "resources": [
+    "environment"
+   ]
+  },
+  "putevidence": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutEvidence",
+   "resources": [
+    "environment"
+   ]
+  },
+  "registerorganizationdelegatedadmin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterOrganizationDelegatedAdmin",
+   "resources": []
+  },
+  "rejectinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectInvitation",
+   "resources": [
+    "environment"
+   ]
+  },
+  "revokepermissionset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokePermissionSet",
+   "resources": [
+    "environment"
+   ]
+  },
+  "startassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAssessment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "startassessmentreportexport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAssessmentReportExport",
+   "resources": [
+    "environment"
+   ]
+  },
+  "startresourceactivitiesquery": {
+   "name": "StartResourceActivitiesQuery",
+   "resources": [
+    "environment"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "environment"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "environment"
+   ]
+  },
+  "updateannotation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAnnotation",
+   "resources": [
+    "environment"
+   ]
+  },
+  "updateassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssessment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "updatecomment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateComment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "updatecontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateControl",
+   "resources": [
+    "environment"
+   ]
+  },
+  "updatecontrolgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateControlGroup",
+   "resources": [
+    "environment"
+   ]
+  },
+  "updateenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "updateevidence": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEvidence",
+   "resources": [
+    "environment"
+   ]
+  },
+  "updateframework": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFramework",
+   "resources": [
+    "environment"
+   ]
+  },
+  "updatepermissionset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePermissionSet",
+   "resources": [
+    "environment"
+   ]
+  },
+  "updateproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProject",
+   "resources": [
+    "environment"
+   ]
+  },
+  "updatetask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTask",
+   "resources": [
+    "environment"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "environment": {
+   "arnFormats": [
+    "arn:${Partition}:assurance:${Region}:${Account}:environment/${Environment}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "assurance",
+ "serviceName": "Assurance",
+ "version": "v1.5"
+}

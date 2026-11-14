@@ -1,0 +1,98 @@
+{
+ "actions": {
+  "describeaffectedaccountsfororganization": {
+   "name": "DescribeAffectedAccountsForOrganization",
+   "resources": []
+  },
+  "describeaffectedentities": {
+   "conditionKeys": [
+    "health:eventTypeCode",
+    "health:service"
+   ],
+   "name": "DescribeAffectedEntities",
+   "resources": [
+    "event"
+   ]
+  },
+  "describeaffectedentitiesfororganization": {
+   "name": "DescribeAffectedEntitiesForOrganization",
+   "resources": []
+  },
+  "describeentityaggregates": {
+   "name": "DescribeEntityAggregates",
+   "resources": []
+  },
+  "describeentityaggregatesfororganization": {
+   "name": "DescribeEntityAggregatesForOrganization",
+   "resources": []
+  },
+  "describeeventaggregates": {
+   "name": "DescribeEventAggregates",
+   "resources": []
+  },
+  "describeeventdetails": {
+   "conditionKeys": [
+    "health:eventTypeCode",
+    "health:service"
+   ],
+   "name": "DescribeEventDetails",
+   "resources": [
+    "event"
+   ]
+  },
+  "describeeventdetailsfororganization": {
+   "name": "DescribeEventDetailsForOrganization",
+   "resources": []
+  },
+  "describeevents": {
+   "name": "DescribeEvents",
+   "resources": []
+  },
+  "describeeventsfororganization": {
+   "name": "DescribeEventsForOrganization",
+   "resources": []
+  },
+  "describeeventtypes": {
+   "name": "DescribeEventTypes",
+   "resources": []
+  },
+  "describehealthservicestatusfororganization": {
+   "name": "DescribeHealthServiceStatusForOrganization",
+   "resources": []
+  },
+  "disablehealthserviceaccessfororganization": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DisableHealthServiceAccessForOrganization",
+   "resources": []
+  },
+  "enablehealthserviceaccessfororganization": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "EnableHealthServiceAccessForOrganization",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "health:eventTypeCode": [
+   "String"
+  ],
+  "health:service": [
+   "String"
+  ]
+ },
+ "resources": {
+  "event": {
+   "arnFormats": [
+    "arn:${Partition}:health:*::event/${Service}/${EventTypeCode}/*"
+   ]
+  }
+ },
+ "service": "health",
+ "serviceName": "Health",
+ "version": "v1.5"
+}

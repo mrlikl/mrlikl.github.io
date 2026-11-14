@@ -1,0 +1,324 @@
+{
+ "actions": {
+  "associatedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateDomain",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "associatewebsiteauthorizationprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateWebsiteAuthorizationProvider",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "associatewebsitecertificateauthority": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateWebsiteCertificateAuthority",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "createfleet": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFleet",
+   "resources": []
+  },
+  "deletefleet": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "describeauditstreamconfiguration": {
+   "name": "DescribeAuditStreamConfiguration",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "describecompanynetworkconfiguration": {
+   "name": "DescribeCompanyNetworkConfiguration",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "describedevice": {
+   "name": "DescribeDevice",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "describedevicepolicyconfiguration": {
+   "name": "DescribeDevicePolicyConfiguration",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "describedomain": {
+   "name": "DescribeDomain",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "describefleetmetadata": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "DescribeFleetMetadata",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "describeidentityproviderconfiguration": {
+   "name": "DescribeIdentityProviderConfiguration",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "describewebsitecertificateauthority": {
+   "name": "DescribeWebsiteCertificateAuthority",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "disassociatedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateDomain",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "disassociatewebsiteauthorizationprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateWebsiteAuthorizationProvider",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "disassociatewebsitecertificateauthority": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateWebsiteCertificateAuthority",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "listdevices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDevices",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "listdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomains",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "listfleets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFleets",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "listwebsiteauthorizationproviders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWebsiteAuthorizationProviders",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "listwebsitecertificateauthorities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWebsiteCertificateAuthorities",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "restoredomainaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreDomainAccess",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "revokedomainaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeDomainAccess",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "searchentity": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchEntity",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "signoutuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SignOutUser",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "updateauditstreamconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAuditStreamConfiguration",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "updatecompanynetworkconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCompanyNetworkConfiguration",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "updatedevicepolicyconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDevicePolicyConfiguration",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "updatedomainmetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomainMetadata",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "updatefleetmetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFleetMetadata",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "updateidentityproviderconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIdentityProviderConfiguration",
+   "resources": [
+    "fleet"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "fleet": {
+   "arnFormats": [
+    "arn:${Partition}:worklink::${Account}:fleet/${FleetName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "worklink",
+ "serviceName": "WorkLink",
+ "version": "v1.5"
+}

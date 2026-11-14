@@ -1,0 +1,167 @@
+{
+ "actions": {
+  "createsnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSnapshot",
+   "resources": [
+    "Simulation"
+   ]
+  },
+  "deleteapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApp",
+   "resources": [
+    "Simulation"
+   ]
+  },
+  "deletesimulation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSimulation",
+   "resources": [
+    "Simulation"
+   ]
+  },
+  "describeapp": {
+   "name": "DescribeApp",
+   "resources": [
+    "Simulation"
+   ]
+  },
+  "describesimulation": {
+   "name": "DescribeSimulation",
+   "resources": [
+    "Simulation"
+   ]
+  },
+  "listapps": {
+   "name": "ListApps",
+   "resources": [
+    "Simulation"
+   ]
+  },
+  "listsimulations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSimulations",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "startapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartApp",
+   "resources": [
+    "Simulation"
+   ]
+  },
+  "startclock": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartClock",
+   "resources": [
+    "Simulation"
+   ]
+  },
+  "startsimulation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSimulation",
+   "resources": []
+  },
+  "stopapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopApp",
+   "resources": [
+    "Simulation"
+   ]
+  },
+  "stopclock": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopClock",
+   "resources": [
+    "Simulation"
+   ]
+  },
+  "stopsimulation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopSimulation",
+   "resources": [
+    "Simulation"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Simulation"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Simulation"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Simulation": {
+   "arnFormats": [
+    "arn:${Partition}:simspaceweaver:${Region}:${Account}:simulation/${SimulationName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "simspaceweaver",
+ "serviceName": "SimSpace Weaver",
+ "version": "v1.5"
+}

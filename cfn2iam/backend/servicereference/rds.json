@@ -1,0 +1,2245 @@
+{
+ "actions": {
+  "addroletodbcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddRoleToDBCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "addroletodbinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddRoleToDBInstance",
+   "resources": [
+    "db"
+   ]
+  },
+  "addsourceidentifiertosubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddSourceIdentifierToSubscription",
+   "resources": [
+    "es"
+   ]
+  },
+  "addtagstoresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:TagsFromRequest",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "AddTagsToResource",
+   "resources": [
+    "auto-backup",
+    "cev",
+    "cluster",
+    "cluster-auto-backup",
+    "cluster-endpoint",
+    "cluster-pg",
+    "cluster-snapshot",
+    "db",
+    "db-capacity-reservation",
+    "deployment",
+    "es",
+    "global-cluster",
+    "integration",
+    "og",
+    "pg",
+    "proxy",
+    "proxy-endpoint",
+    "ri",
+    "secgrp",
+    "shardgrp",
+    "snapshot",
+    "snapshot-tenant-database",
+    "subgrp",
+    "target-group",
+    "tenant-database"
+   ]
+  },
+  "applypendingmaintenanceaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ApplyPendingMaintenanceAction",
+   "resources": [
+    "cluster",
+    "db"
+   ]
+  },
+  "authorizedbsecuritygroupingress": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AuthorizeDBSecurityGroupIngress",
+   "resources": [
+    "secgrp"
+   ]
+  },
+  "backtrackdbcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BacktrackDBCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "canceldbcapacityreservation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelDBCapacityReservation",
+   "resources": [
+    "db-capacity-reservation"
+   ]
+  },
+  "cancelexporttask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelExportTask",
+   "resources": []
+  },
+  "copycustomdbengineversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyCustomDBEngineVersion",
+   "resources": [
+    "cev"
+   ]
+  },
+  "copydbclusterparametergroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyDBClusterParameterGroup",
+   "resources": [
+    "cluster-pg"
+   ]
+  },
+  "copydbclustersnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyDBClusterSnapshot",
+   "resources": [
+    "cluster-snapshot"
+   ]
+  },
+  "copydbparametergroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyDBParameterGroup",
+   "resources": [
+    "pg"
+   ]
+  },
+  "copydbsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:CopyOptionGroup",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyDBSnapshot",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "copyoptiongroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyOptionGroup",
+   "resources": [
+    "og"
+   ]
+  },
+  "createbluegreendeployment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:DatabaseClass",
+    "rds:DatabaseEngine",
+    "rds:DatabaseName",
+    "rds:MultiAz",
+    "rds:Piops",
+    "rds:StorageEncrypted",
+    "rds:StorageSize",
+    "rds:Vpc",
+    "rds:cluster-pg-tag/${TagKey}",
+    "rds:cluster-tag/${TagKey}",
+    "rds:db-tag/${TagKey}",
+    "rds:pg-tag/${TagKey}",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBlueGreenDeployment",
+   "resources": [
+    "cluster",
+    "cluster-pg",
+    "db",
+    "deployment",
+    "pg"
+   ]
+  },
+  "createcustomdbengineversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomDBEngineVersion",
+   "resources": [
+    "cev"
+   ]
+  },
+  "createdbcapacityreservation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDBCapacityReservation",
+   "resources": [
+    "db-capacity-reservation"
+   ]
+  },
+  "createdbcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:DatabaseClass",
+    "rds:DatabaseEngine",
+    "rds:DatabaseName",
+    "rds:ManageMasterUserPassword",
+    "rds:Piops",
+    "rds:StorageEncrypted",
+    "rds:StorageSize",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDBCluster",
+   "resources": [
+    "cluster",
+    "cluster-pg",
+    "db",
+    "global-cluster",
+    "og",
+    "subgrp"
+   ]
+  },
+  "createdbclusterendpoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:EndpointType",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDBClusterEndpoint",
+   "resources": [
+    "cluster",
+    "cluster-endpoint"
+   ]
+  },
+  "createdbclusterparametergroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDBClusterParameterGroup",
+   "resources": [
+    "cluster-pg"
+   ]
+  },
+  "createdbclustersnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDBClusterSnapshot",
+   "resources": [
+    "cluster",
+    "cluster-snapshot"
+   ]
+  },
+  "createdbinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:BackupTarget",
+    "rds:ManageMasterUserPassword",
+    "rds:PubliclyAccessible",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDBInstance",
+   "resources": [
+    "cluster",
+    "db",
+    "db-capacity-reservation",
+    "og",
+    "pg",
+    "secgrp",
+    "subgrp"
+   ]
+  },
+  "createdbinstancereadreplica": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:PubliclyAccessible",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDBInstanceReadReplica",
+   "resources": [
+    "cluster",
+    "db",
+    "db-capacity-reservation",
+    "og",
+    "pg",
+    "subgrp"
+   ]
+  },
+  "createdbparametergroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDBParameterGroup",
+   "resources": [
+    "pg"
+   ]
+  },
+  "createdbproxy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDBProxy",
+   "resources": []
+  },
+  "createdbproxyendpoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDBProxyEndpoint",
+   "resources": [
+    "proxy",
+    "proxy-endpoint"
+   ]
+  },
+  "createdbsecuritygroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDBSecurityGroup",
+   "resources": [
+    "secgrp"
+   ]
+  },
+  "createdbshardgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:PubliclyAccessible",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDBShardGroup",
+   "resources": [
+    "cluster",
+    "shardgrp"
+   ]
+  },
+  "createdbsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:BackupTarget",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDBSnapshot",
+   "resources": [
+    "db",
+    "snapshot"
+   ]
+  },
+  "createdbsubnetgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDBSubnetGroup",
+   "resources": [
+    "subgrp"
+   ]
+  },
+  "createeventsubscription": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEventSubscription",
+   "resources": [
+    "es"
+   ]
+  },
+  "createglobalcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGlobalCluster",
+   "resources": [
+    "cluster",
+    "global-cluster"
+   ]
+  },
+  "createintegration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIntegration",
+   "resources": [
+    "cluster",
+    "db",
+    "integration"
+   ]
+  },
+  "createoptiongroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOptionGroup",
+   "resources": [
+    "og"
+   ]
+  },
+  "createtenantdatabase": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:ManageMasterUserPassword",
+    "rds:TenantDatabaseName",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTenantDatabase",
+   "resources": [
+    "db",
+    "tenant-database"
+   ]
+  },
+  "crossregioncommunication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CrossRegionCommunication",
+   "resources": [
+    "cluster-snapshot",
+    "db",
+    "snapshot"
+   ]
+  },
+  "deletebluegreendeployment": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBlueGreenDeployment",
+   "resources": [
+    "deployment"
+   ]
+  },
+  "deletecustomdbengineversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomDBEngineVersion",
+   "resources": [
+    "cev"
+   ]
+  },
+  "deletedbcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDBCluster",
+   "resources": [
+    "cluster",
+    "cluster-snapshot"
+   ]
+  },
+  "deletedbclusterautomatedbackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDBClusterAutomatedBackup",
+   "resources": [
+    "cluster-auto-backup"
+   ]
+  },
+  "deletedbclusterendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDBClusterEndpoint",
+   "resources": [
+    "cluster-endpoint"
+   ]
+  },
+  "deletedbclusterparametergroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDBClusterParameterGroup",
+   "resources": [
+    "cluster-pg"
+   ]
+  },
+  "deletedbclustersnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDBClusterSnapshot",
+   "resources": [
+    "cluster-snapshot"
+   ]
+  },
+  "deletedbinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDBInstance",
+   "resources": [
+    "db"
+   ]
+  },
+  "deletedbinstanceautomatedbackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDBInstanceAutomatedBackup",
+   "resources": [
+    "auto-backup"
+   ]
+  },
+  "deletedbparametergroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDBParameterGroup",
+   "resources": [
+    "pg"
+   ]
+  },
+  "deletedbproxy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDBProxy",
+   "resources": [
+    "proxy"
+   ]
+  },
+  "deletedbproxyendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDBProxyEndpoint",
+   "resources": [
+    "proxy-endpoint"
+   ]
+  },
+  "deletedbsecuritygroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDBSecurityGroup",
+   "resources": [
+    "secgrp"
+   ]
+  },
+  "deletedbshardgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDBShardGroup",
+   "resources": [
+    "shardgrp"
+   ]
+  },
+  "deletedbsnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDBSnapshot",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "deletedbsubnetgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDBSubnetGroup",
+   "resources": [
+    "subgrp"
+   ]
+  },
+  "deleteeventsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventSubscription",
+   "resources": [
+    "es"
+   ]
+  },
+  "deleteglobalcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGlobalCluster",
+   "resources": [
+    "global-cluster"
+   ]
+  },
+  "deleteintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIntegration",
+   "resources": [
+    "integration"
+   ]
+  },
+  "deleteoptiongroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOptionGroup",
+   "resources": [
+    "og"
+   ]
+  },
+  "deletetenantdatabase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTenantDatabase",
+   "resources": [
+    "db",
+    "tenant-database"
+   ]
+  },
+  "deregisterdbproxytargets": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterDBProxyTargets",
+   "resources": [
+    "cluster",
+    "db",
+    "proxy",
+    "target-group"
+   ]
+  },
+  "describeaccountattributes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeAccountAttributes",
+   "resources": []
+  },
+  "describebluegreendeployments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeBlueGreenDeployments",
+   "resources": [
+    "deployment"
+   ]
+  },
+  "describecertificates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeCertificates",
+   "resources": []
+  },
+  "describedbcapacityreservations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBCapacityReservations",
+   "resources": [
+    "db-capacity-reservation"
+   ]
+  },
+  "describedbclusterautomatedbackups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBClusterAutomatedBackups",
+   "resources": [
+    "cluster",
+    "cluster-auto-backup"
+   ]
+  },
+  "describedbclusterbacktracks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBClusterBacktracks",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "describedbclusterendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBClusterEndpoints",
+   "resources": [
+    "cluster",
+    "cluster-endpoint"
+   ]
+  },
+  "describedbclusterparametergroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBClusterParameterGroups",
+   "resources": [
+    "cluster-pg"
+   ]
+  },
+  "describedbclusterparameters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBClusterParameters",
+   "resources": [
+    "cluster-pg"
+   ]
+  },
+  "describedbclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBClusters",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "describedbclustersnapshotattributes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBClusterSnapshotAttributes",
+   "resources": [
+    "cluster-snapshot"
+   ]
+  },
+  "describedbclustersnapshots": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBClusterSnapshots",
+   "resources": [
+    "cluster",
+    "cluster-snapshot"
+   ]
+  },
+  "describedbengineversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBEngineVersions",
+   "resources": []
+  },
+  "describedbinstanceautomatedbackups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBInstanceAutomatedBackups",
+   "resources": [
+    "auto-backup",
+    "db"
+   ]
+  },
+  "describedbinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBInstances",
+   "resources": [
+    "db"
+   ]
+  },
+  "describedblogfiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBLogFiles",
+   "resources": [
+    "db"
+   ]
+  },
+  "describedbmajorengineversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBMajorEngineVersions",
+   "resources": []
+  },
+  "describedbparametergroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBParameterGroups",
+   "resources": [
+    "pg"
+   ]
+  },
+  "describedbparameters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBParameters",
+   "resources": [
+    "pg"
+   ]
+  },
+  "describedbproxies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBProxies",
+   "resources": [
+    "proxy"
+   ]
+  },
+  "describedbproxyendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBProxyEndpoints",
+   "resources": [
+    "proxy",
+    "proxy-endpoint"
+   ]
+  },
+  "describedbproxytargetgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBProxyTargetGroups",
+   "resources": [
+    "proxy"
+   ]
+  },
+  "describedbproxytargets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBProxyTargets",
+   "resources": [
+    "proxy",
+    "target-group"
+   ]
+  },
+  "describedbrecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBRecommendations",
+   "resources": []
+  },
+  "describedbsecuritygroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBSecurityGroups",
+   "resources": [
+    "secgrp"
+   ]
+  },
+  "describedbshardgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBShardGroups",
+   "resources": [
+    "shardgrp"
+   ]
+  },
+  "describedbsnapshotattributes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBSnapshotAttributes",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "describedbsnapshots": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBSnapshots",
+   "resources": [
+    "db",
+    "snapshot"
+   ]
+  },
+  "describedbsnapshottenantdatabases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBSnapshotTenantDatabases",
+   "resources": [
+    "db",
+    "snapshot",
+    "snapshot-tenant-database"
+   ]
+  },
+  "describedbsubnetgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDBSubnetGroups",
+   "resources": [
+    "subgrp"
+   ]
+  },
+  "describeenginedefaultclusterparameters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeEngineDefaultClusterParameters",
+   "resources": []
+  },
+  "describeenginedefaultparameters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeEngineDefaultParameters",
+   "resources": []
+  },
+  "describeeventcategories": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeEventCategories",
+   "resources": []
+  },
+  "describeevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeEvents",
+   "resources": []
+  },
+  "describeeventsubscriptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeEventSubscriptions",
+   "resources": [
+    "es"
+   ]
+  },
+  "describeexporttasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeExportTasks",
+   "resources": [
+    "cluster",
+    "cluster-snapshot",
+    "snapshot"
+   ]
+  },
+  "describeglobalclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeGlobalClusters",
+   "resources": [
+    "global-cluster"
+   ]
+  },
+  "describeintegrations": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeIntegrations",
+   "resources": [
+    "integration"
+   ]
+  },
+  "describeoptiongroupoptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeOptionGroupOptions",
+   "resources": []
+  },
+  "describeoptiongroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeOptionGroups",
+   "resources": [
+    "og"
+   ]
+  },
+  "describeorderabledbinstanceoptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeOrderableDBInstanceOptions",
+   "resources": []
+  },
+  "describependingmaintenanceactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribePendingMaintenanceActions",
+   "resources": [
+    "cluster",
+    "db"
+   ]
+  },
+  "describerecommendationgroups": {
+   "name": "DescribeRecommendationGroups",
+   "resources": []
+  },
+  "describerecommendations": {
+   "name": "DescribeRecommendations",
+   "resources": []
+  },
+  "describereserveddbinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeReservedDBInstances",
+   "resources": [
+    "ri"
+   ]
+  },
+  "describereserveddbinstancesofferings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeReservedDBInstancesOfferings",
+   "resources": []
+  },
+  "describesourceregions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeSourceRegions",
+   "resources": []
+  },
+  "describetenantdatabases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeTenantDatabases",
+   "resources": [
+    "db",
+    "tenant-database"
+   ]
+  },
+  "describevaliddbinstancemodifications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeValidDBInstanceModifications",
+   "resources": [
+    "db"
+   ]
+  },
+  "disablehttpendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableHttpEndpoint",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "downloadcompletedblogfile": {
+   "name": "DownloadCompleteDBLogFile",
+   "resources": [
+    "db"
+   ]
+  },
+  "downloaddblogfileportion": {
+   "name": "DownloadDBLogFilePortion",
+   "resources": [
+    "db"
+   ]
+  },
+  "enablehttpendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableHttpEndpoint",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "failoverdbcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "FailoverDBCluster",
+   "resources": [
+    "cluster",
+    "db"
+   ]
+  },
+  "failoverglobalcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "FailoverGlobalCluster",
+   "resources": [
+    "cluster",
+    "global-cluster"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "auto-backup",
+    "cev",
+    "cluster",
+    "cluster-auto-backup",
+    "cluster-endpoint",
+    "cluster-pg",
+    "cluster-snapshot",
+    "db",
+    "db-capacity-reservation",
+    "es",
+    "global-cluster",
+    "integration",
+    "og",
+    "pg",
+    "proxy",
+    "proxy-endpoint",
+    "ri",
+    "secgrp",
+    "shardgrp",
+    "snapshot",
+    "snapshot-tenant-database",
+    "subgrp",
+    "target-group",
+    "tenant-database"
+   ]
+  },
+  "modifyactivitystream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyActivityStream",
+   "resources": [
+    "db"
+   ]
+  },
+  "modifycertificates": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyCertificates",
+   "resources": []
+  },
+  "modifycurrentdbclustercapacity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyCurrentDBClusterCapacity",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "modifycustomdbengineversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyCustomDBEngineVersion",
+   "resources": [
+    "cev"
+   ]
+  },
+  "modifydbcapacityreservation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDBCapacityReservation",
+   "resources": [
+    "db-capacity-reservation"
+   ]
+  },
+  "modifydbcluster": {
+   "conditionKeys": [
+    "rds:DatabaseClass",
+    "rds:ManageMasterUserPassword",
+    "rds:Piops",
+    "rds:StorageSize"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDBCluster",
+   "resources": [
+    "cluster",
+    "cluster-pg",
+    "og",
+    "pg"
+   ]
+  },
+  "modifydbclusterendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDBClusterEndpoint",
+   "resources": [
+    "cluster-endpoint"
+   ]
+  },
+  "modifydbclusterparametergroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDBClusterParameterGroup",
+   "resources": [
+    "cluster-pg"
+   ]
+  },
+  "modifydbclustersnapshotattribute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDBClusterSnapshotAttribute",
+   "resources": [
+    "cluster-snapshot"
+   ]
+  },
+  "modifydbinstance": {
+   "conditionKeys": [
+    "rds:ManageMasterUserPassword"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDBInstance",
+   "resources": [
+    "db",
+    "db-capacity-reservation",
+    "og",
+    "pg",
+    "secgrp",
+    "subgrp"
+   ]
+  },
+  "modifydbparametergroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDBParameterGroup",
+   "resources": [
+    "pg"
+   ]
+  },
+  "modifydbproxy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDBProxy",
+   "resources": [
+    "proxy"
+   ]
+  },
+  "modifydbproxyendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDBProxyEndpoint",
+   "resources": [
+    "proxy-endpoint"
+   ]
+  },
+  "modifydbproxytargetgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDBProxyTargetGroup",
+   "resources": [
+    "target-group"
+   ]
+  },
+  "modifydbrecommendation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDBRecommendation",
+   "resources": []
+  },
+  "modifydbshardgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDBShardGroup",
+   "resources": [
+    "shardgrp"
+   ]
+  },
+  "modifydbsnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDBSnapshot",
+   "resources": [
+    "og",
+    "snapshot"
+   ]
+  },
+  "modifydbsnapshotattribute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDBSnapshotAttribute",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "modifydbsubnetgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyDBSubnetGroup",
+   "resources": [
+    "subgrp"
+   ]
+  },
+  "modifyeventsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyEventSubscription",
+   "resources": [
+    "es"
+   ]
+  },
+  "modifyglobalcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyGlobalCluster",
+   "resources": [
+    "global-cluster"
+   ]
+  },
+  "modifyintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyIntegration",
+   "resources": [
+    "integration"
+   ]
+  },
+  "modifyoptiongroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyOptionGroup",
+   "resources": [
+    "og"
+   ]
+  },
+  "modifyrecommendation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyRecommendation",
+   "resources": []
+  },
+  "modifytenantdatabase": {
+   "conditionKeys": [
+    "rds:ManageMasterUserPassword",
+    "rds:TenantDatabaseName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyTenantDatabase",
+   "resources": [
+    "db",
+    "tenant-database"
+   ]
+  },
+  "promotereadreplica": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PromoteReadReplica",
+   "resources": [
+    "db"
+   ]
+  },
+  "promotereadreplicadbcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PromoteReadReplicaDBCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "purchasereserveddbinstancesoffering": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PurchaseReservedDBInstancesOffering",
+   "resources": [
+    "ri"
+   ]
+  },
+  "rebootdbcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootDBCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "rebootdbinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootDBInstance",
+   "resources": [
+    "db"
+   ]
+  },
+  "rebootdbshardgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootDBShardGroup",
+   "resources": [
+    "shardgrp"
+   ]
+  },
+  "registerdbproxytargets": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterDBProxyTargets",
+   "resources": [
+    "db",
+    "target-group"
+   ]
+  },
+  "removefromglobalcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveFromGlobalCluster",
+   "resources": [
+    "cluster",
+    "global-cluster"
+   ]
+  },
+  "removerolefromdbcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveRoleFromDBCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "removerolefromdbinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveRoleFromDBInstance",
+   "resources": [
+    "db"
+   ]
+  },
+  "removesourceidentifierfromsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveSourceIdentifierFromSubscription",
+   "resources": [
+    "es"
+   ]
+  },
+  "removetagsfromresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "RemoveTagsFromResource",
+   "resources": [
+    "auto-backup",
+    "cev",
+    "cluster",
+    "cluster-auto-backup",
+    "cluster-endpoint",
+    "cluster-pg",
+    "cluster-snapshot",
+    "db",
+    "db-capacity-reservation",
+    "deployment",
+    "es",
+    "global-cluster",
+    "integration",
+    "og",
+    "pg",
+    "proxy",
+    "proxy-endpoint",
+    "ri",
+    "secgrp",
+    "shardgrp",
+    "snapshot",
+    "snapshot-tenant-database",
+    "subgrp",
+    "target-group",
+    "tenant-database"
+   ]
+  },
+  "resetdbclusterparametergroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetDBClusterParameterGroup",
+   "resources": [
+    "cluster-pg"
+   ]
+  },
+  "resetdbparametergroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetDBParameterGroup",
+   "resources": [
+    "pg"
+   ]
+  },
+  "restoredbclusterfroms3": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:DatabaseEngine",
+    "rds:DatabaseName",
+    "rds:ManageMasterUserPassword",
+    "rds:StorageEncrypted",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreDBClusterFromS3",
+   "resources": [
+    "cluster",
+    "cluster-pg",
+    "og",
+    "subgrp"
+   ]
+  },
+  "restoredbclusterfromsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:DatabaseClass",
+    "rds:Piops",
+    "rds:StorageSize",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreDBClusterFromSnapshot",
+   "resources": [
+    "cluster",
+    "cluster-pg",
+    "cluster-snapshot",
+    "og",
+    "snapshot",
+    "subgrp"
+   ]
+  },
+  "restoredbclustertopointintime": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:DatabaseClass",
+    "rds:Piops",
+    "rds:StorageSize",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreDBClusterToPointInTime",
+   "resources": [
+    "cluster",
+    "cluster-auto-backup",
+    "cluster-pg",
+    "og",
+    "subgrp"
+   ]
+  },
+  "restoredbinstancefromdbsnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:BackupTarget",
+    "rds:ManageMasterUserPassword",
+    "rds:PubliclyAccessible",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreDBInstanceFromDBSnapshot",
+   "resources": [
+    "cluster-snapshot",
+    "db",
+    "db-capacity-reservation",
+    "og",
+    "pg",
+    "snapshot",
+    "subgrp"
+   ]
+  },
+  "restoredbinstancefroms3": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:ManageMasterUserPassword",
+    "rds:PubliclyAccessible",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreDBInstanceFromS3",
+   "resources": [
+    "db",
+    "db-capacity-reservation",
+    "og",
+    "pg",
+    "secgrp",
+    "subgrp"
+   ]
+  },
+  "restoredbinstancetopointintime": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:BackupTarget",
+    "rds:ManageMasterUserPassword",
+    "rds:PubliclyAccessible",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreDBInstanceToPointInTime",
+   "resources": [
+    "auto-backup",
+    "db",
+    "db-capacity-reservation",
+    "og",
+    "pg",
+    "subgrp"
+   ]
+  },
+  "revokedbsecuritygroupingress": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeDBSecurityGroupIngress",
+   "resources": [
+    "secgrp"
+   ]
+  },
+  "startactivitystream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartActivityStream",
+   "resources": [
+    "cluster",
+    "db"
+   ]
+  },
+  "startdbcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDBCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "startdbinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDBInstance",
+   "resources": [
+    "db",
+    "db-capacity-reservation"
+   ]
+  },
+  "startdbinstanceautomatedbackupsreplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rds:req-tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDBInstanceAutomatedBackupsReplication",
+   "resources": [
+    "auto-backup",
+    "db"
+   ]
+  },
+  "startexporttask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartExportTask",
+   "resources": [
+    "cluster",
+    "cluster-snapshot",
+    "snapshot"
+   ]
+  },
+  "stopactivitystream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopActivityStream",
+   "resources": [
+    "cluster",
+    "db"
+   ]
+  },
+  "stopdbcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopDBCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "stopdbinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopDBInstance",
+   "resources": [
+    "db",
+    "snapshot"
+   ]
+  },
+  "stopdbinstanceautomatedbackupsreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopDBInstanceAutomatedBackupsReplication",
+   "resources": [
+    "db"
+   ]
+  },
+  "switchoverbluegreendeployment": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SwitchoverBlueGreenDeployment",
+   "resources": [
+    "deployment"
+   ]
+  },
+  "switchoverglobalcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SwitchoverGlobalCluster",
+   "resources": [
+    "cluster",
+    "global-cluster"
+   ]
+  },
+  "switchoverreadreplica": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SwitchoverReadReplica",
+   "resources": [
+    "db"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "rds:BackupTarget": [
+   "String"
+  ],
+  "rds:CopyOptionGroup": [
+   "Bool"
+  ],
+  "rds:DatabaseClass": [
+   "String"
+  ],
+  "rds:DatabaseEngine": [
+   "String"
+  ],
+  "rds:DatabaseName": [
+   "String"
+  ],
+  "rds:EndpointType": [
+   "String"
+  ],
+  "rds:ManageMasterUserPassword": [
+   "Bool"
+  ],
+  "rds:MultiAz": [
+   "Bool"
+  ],
+  "rds:Piops": [
+   "Numeric"
+  ],
+  "rds:PubliclyAccessible": [
+   "Bool"
+  ],
+  "rds:StorageEncrypted": [
+   "Bool"
+  ],
+  "rds:StorageSize": [
+   "Numeric"
+  ],
+  "rds:TagsFromRequest": [
+   "Bool"
+  ],
+  "rds:TenantDatabaseName": [
+   "String"
+  ],
+  "rds:Vpc": [
+   "Bool"
+  ],
+  "rds:cluster-pg-tag/${TagKey}": [
+   "String"
+  ],
+  "rds:cluster-snapshot-tag/${TagKey}": [
+   "String"
+  ],
+  "rds:cluster-tag/${TagKey}": [
+   "String"
+  ],
+  "rds:db-tag/${TagKey}": [
+   "String"
+  ],
+  "rds:es-tag/${TagKey}": [
+   "String"
+  ],
+  "rds:og-tag/${TagKey}": [
+   "String"
+  ],
+  "rds:pg-tag/${TagKey}": [
+   "String"
+  ],
+  "rds:req-tag/${TagKey}": [
+   "String"
+  ],
+  "rds:ri-tag/${TagKey}": [
+   "String"
+  ],
+  "rds:secgrp-tag/${TagKey}": [
+   "String"
+  ],
+  "rds:snapshot-tag/${TagKey}": [
+   "String"
+  ],
+  "rds:subgrp-tag/${TagKey}": [
+   "String"
+  ]
+ },
+ "resources": {
+  "auto-backup": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:auto-backup:${DbInstanceAutomatedBackupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "cev": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:cev:${Engine}/${EngineVersion}/${CustomDbEngineVersionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "cluster": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:cluster:${DbClusterInstanceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rds:cluster-tag/${TagKey}"
+   ]
+  },
+  "cluster-auto-backup": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:cluster-auto-backup:${DbClusterAutomatedBackupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "cluster-endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:cluster-endpoint:${DbClusterEndpoint}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "cluster-pg": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:cluster-pg:${ClusterParameterGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rds:cluster-pg-tag/${TagKey}"
+   ]
+  },
+  "cluster-snapshot": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:cluster-snapshot:${ClusterSnapshotName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rds:cluster-snapshot-tag/${TagKey}"
+   ]
+  },
+  "db": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:db:${DbInstanceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rds:DatabaseClass",
+    "rds:DatabaseEngine",
+    "rds:DatabaseName",
+    "rds:MultiAz",
+    "rds:Piops",
+    "rds:StorageEncrypted",
+    "rds:StorageSize",
+    "rds:Vpc",
+    "rds:db-tag/${TagKey}"
+   ]
+  },
+  "db-capacity-reservation": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:db-capacity-reservation:${DBCapacityReservationIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "deployment": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:deployment:${BlueGreenDeploymentIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "es": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:es:${SubscriptionName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rds:es-tag/${TagKey}"
+   ]
+  },
+  "global-cluster": {
+   "arnFormats": [
+    "arn:${Partition}:rds::${Account}:global-cluster:${GlobalCluster}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "integration": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:integration:${IntegrationIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "og": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:og:${OptionGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rds:og-tag/${TagKey}"
+   ]
+  },
+  "pg": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:pg:${ParameterGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rds:pg-tag/${TagKey}"
+   ]
+  },
+  "proxy": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:db-proxy:${DbProxyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "proxy-endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:db-proxy-endpoint:${DbProxyEndpointId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ri": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:ri:${ReservedDbInstanceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rds:ri-tag/${TagKey}"
+   ]
+  },
+  "secgrp": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:secgrp:${SecurityGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rds:secgrp-tag/${TagKey}"
+   ]
+  },
+  "shardgrp": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:shard-group:${DbShardGroupResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "snapshot": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:snapshot:${SnapshotName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rds:snapshot-tag/${TagKey}"
+   ]
+  },
+  "snapshot-tenant-database": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:snapshot-tenant-database:${SnapshotName}:${TenantResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "subgrp": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:subgrp:${SubnetGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rds:subgrp-tag/${TagKey}"
+   ]
+  },
+  "target-group": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:target-group:${TargetGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "tenant-database": {
+   "arnFormats": [
+    "arn:${Partition}:rds:${Region}:${Account}:tenant-database:${TenantResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "rds",
+ "serviceName": "RDS",
+ "version": "v1.5"
+}

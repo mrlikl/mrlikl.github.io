@@ -1,0 +1,991 @@
+{
+ "actions": {
+  "activatemessagetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivateMessageTemplate",
+   "resources": [
+    "MessageTemplate"
+   ]
+  },
+  "allowvendedlogdeliveryforresource": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": [
+    "Assistant"
+   ]
+  },
+  "createaiagent": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAIAgent",
+   "resources": []
+  },
+  "createaiagentversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAIAgentVersion",
+   "resources": [
+    "AIAgent"
+   ]
+  },
+  "createaiguardrail": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAIGuardrail",
+   "resources": []
+  },
+  "createaiguardrailversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAIGuardrailVersion",
+   "resources": [
+    "AIGuardrail"
+   ]
+  },
+  "createaiprompt": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAIPrompt",
+   "resources": []
+  },
+  "createaipromptversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAIPromptVersion",
+   "resources": [
+    "AIPrompt"
+   ]
+  },
+  "createassistant": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssistant",
+   "resources": []
+  },
+  "createassistantassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssistantAssociation",
+   "resources": []
+  },
+  "createcontent": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContent",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "createcontentassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContentAssociation",
+   "resources": [
+    "Content"
+   ]
+  },
+  "createknowledgebase": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKnowledgeBase",
+   "resources": []
+  },
+  "createmessagetemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMessageTemplate",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "createmessagetemplateattachment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMessageTemplateAttachment",
+   "resources": [
+    "MessageTemplate"
+   ]
+  },
+  "createmessagetemplateversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMessageTemplateVersion",
+   "resources": [
+    "MessageTemplate"
+   ]
+  },
+  "createquickresponse": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQuickResponse",
+   "resources": []
+  },
+  "createsession": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSession",
+   "resources": []
+  },
+  "deactivatemessagetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeactivateMessageTemplate",
+   "resources": [
+    "MessageTemplate"
+   ]
+  },
+  "deleteaiagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAIAgent",
+   "resources": [
+    "AIAgent"
+   ]
+  },
+  "deleteaiagentversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAIAgentVersion",
+   "resources": [
+    "AIAgent"
+   ]
+  },
+  "deleteaiguardrail": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAIGuardrail",
+   "resources": [
+    "AIGuardrail"
+   ]
+  },
+  "deleteaiguardrailversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAIGuardrailVersion",
+   "resources": [
+    "AIGuardrail"
+   ]
+  },
+  "deleteaiprompt": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAIPrompt",
+   "resources": [
+    "AIPrompt"
+   ]
+  },
+  "deleteaipromptversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAIPromptVersion",
+   "resources": [
+    "AIPrompt"
+   ]
+  },
+  "deleteassistant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssistant",
+   "resources": [
+    "Assistant"
+   ]
+  },
+  "deleteassistantassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssistantAssociation",
+   "resources": [
+    "AssistantAssociation"
+   ]
+  },
+  "deletecontent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContent",
+   "resources": [
+    "Content"
+   ]
+  },
+  "deletecontentassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContentAssociation",
+   "resources": [
+    "Content",
+    "ContentAssociation"
+   ]
+  },
+  "deleteimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteImportJob",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "deleteknowledgebase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKnowledgeBase",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "deletemessagetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMessageTemplate",
+   "resources": [
+    "MessageTemplate"
+   ]
+  },
+  "deletemessagetemplateattachment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMessageTemplateAttachment",
+   "resources": [
+    "MessageTemplate"
+   ]
+  },
+  "deletequickresponse": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQuickResponse",
+   "resources": [
+    "QuickResponse"
+   ]
+  },
+  "getaiagent": {
+   "name": "GetAIAgent",
+   "resources": [
+    "AIAgent"
+   ]
+  },
+  "getaiguardrail": {
+   "name": "GetAIGuardrail",
+   "resources": [
+    "AIGuardrail"
+   ]
+  },
+  "getaiprompt": {
+   "name": "GetAIPrompt",
+   "resources": [
+    "AIPrompt"
+   ]
+  },
+  "getassistant": {
+   "name": "GetAssistant",
+   "resources": [
+    "Assistant"
+   ]
+  },
+  "getassistantassociation": {
+   "name": "GetAssistantAssociation",
+   "resources": [
+    "AssistantAssociation"
+   ]
+  },
+  "getcontent": {
+   "name": "GetContent",
+   "resources": [
+    "Content"
+   ]
+  },
+  "getcontentassociation": {
+   "name": "GetContentAssociation",
+   "resources": [
+    "Content",
+    "ContentAssociation"
+   ]
+  },
+  "getcontentsummary": {
+   "name": "GetContentSummary",
+   "resources": [
+    "Content"
+   ]
+  },
+  "getimportjob": {
+   "name": "GetImportJob",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "getknowledgebase": {
+   "name": "GetKnowledgeBase",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "getmessagetemplate": {
+   "conditionKeys": [
+    "wisdom:MessageTemplate/RoutingProfileArn"
+   ],
+   "name": "GetMessageTemplate",
+   "resources": [
+    "MessageTemplate"
+   ]
+  },
+  "getnextmessage": {
+   "name": "GetNextMessage",
+   "resources": [
+    "Session"
+   ]
+  },
+  "getquickresponse": {
+   "name": "GetQuickResponse",
+   "resources": [
+    "QuickResponse"
+   ]
+  },
+  "getrecommendations": {
+   "name": "GetRecommendations",
+   "resources": [
+    "Session"
+   ]
+  },
+  "getsession": {
+   "name": "GetSession",
+   "resources": [
+    "Session"
+   ]
+  },
+  "listaiagents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAIAgents",
+   "resources": []
+  },
+  "listaiagentversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAIAgentVersions",
+   "resources": [
+    "AIAgent"
+   ]
+  },
+  "listaiguardrails": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAIGuardrails",
+   "resources": []
+  },
+  "listaiguardrailversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAIGuardrailVersions",
+   "resources": [
+    "AIGuardrail"
+   ]
+  },
+  "listaiprompts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAIPrompts",
+   "resources": []
+  },
+  "listaipromptversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAIPromptVersions",
+   "resources": [
+    "AIPrompt"
+   ]
+  },
+  "listassistantassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssistantAssociations",
+   "resources": []
+  },
+  "listassistants": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssistants",
+   "resources": []
+  },
+  "listcontentassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContentAssociations",
+   "resources": [
+    "Content"
+   ]
+  },
+  "listcontents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContents",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "listimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListImportJobs",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "listknowledgebases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKnowledgeBases",
+   "resources": []
+  },
+  "listmessages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMessages",
+   "resources": [
+    "Session"
+   ]
+  },
+  "listmessagetemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMessageTemplates",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "listmessagetemplateversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMessageTemplateVersions",
+   "resources": [
+    "MessageTemplate"
+   ]
+  },
+  "listmodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListModels",
+   "resources": [
+    "Assistant"
+   ]
+  },
+  "listquickresponses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQuickResponses",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "listspans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSpans",
+   "resources": [
+    "Session"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "notifyrecommendationsreceived": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyRecommendationsReceived",
+   "resources": [
+    "Session"
+   ]
+  },
+  "putfeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFeedback",
+   "resources": [
+    "Assistant"
+   ]
+  },
+  "queryassistant": {
+   "name": "QueryAssistant",
+   "resources": [
+    "Assistant"
+   ]
+  },
+  "registerassistantreplicakey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterAssistantReplicaKey",
+   "resources": [
+    "Assistant"
+   ]
+  },
+  "registerknowledgebasereplicakey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterKnowledgeBaseReplicaKey",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "removeassistantaiagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveAssistantAIAgent",
+   "resources": [
+    "Assistant"
+   ]
+  },
+  "removeknowledgebasetemplateuri": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveKnowledgeBaseTemplateUri",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "rendermessagetemplate": {
+   "conditionKeys": [
+    "wisdom:MessageTemplate/RoutingProfileArn"
+   ],
+   "name": "RenderMessageTemplate",
+   "resources": [
+    "MessageTemplate"
+   ]
+  },
+  "retrieve": {
+   "name": "Retrieve",
+   "resources": [
+    "Assistant"
+   ]
+  },
+  "searchcontent": {
+   "name": "SearchContent",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "searchmessagetemplates": {
+   "conditionKeys": [
+    "wisdom:SearchFilter/Qualifier",
+    "wisdom:SearchFilter/RoutingProfileArn"
+   ],
+   "name": "SearchMessageTemplates",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "searchquickresponses": {
+   "conditionKeys": [
+    "wisdom:SearchFilter/RoutingProfileArn"
+   ],
+   "name": "SearchQuickResponses",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "searchsessions": {
+   "name": "SearchSessions",
+   "resources": []
+  },
+  "sendmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendMessage",
+   "resources": [
+    "Session"
+   ]
+  },
+  "startcontentupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartContentUpload",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "startimportjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartImportJob",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Assistant",
+    "AssistantAssociation",
+    "Content",
+    "ContentAssociation",
+    "KnowledgeBase",
+    "MessageTemplate",
+    "QuickResponse",
+    "Session"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Assistant",
+    "AssistantAssociation",
+    "Content",
+    "ContentAssociation",
+    "KnowledgeBase",
+    "MessageTemplate",
+    "QuickResponse",
+    "Session"
+   ]
+  },
+  "updateaiagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAIAgent",
+   "resources": [
+    "AIAgent"
+   ]
+  },
+  "updateaiguardrail": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAIGuardrail",
+   "resources": [
+    "AIGuardrail"
+   ]
+  },
+  "updateaiprompt": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAIPrompt",
+   "resources": [
+    "AIPrompt"
+   ]
+  },
+  "updateassistantaiagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssistantAIAgent",
+   "resources": [
+    "Assistant"
+   ]
+  },
+  "updatecontent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContent",
+   "resources": [
+    "Content"
+   ]
+  },
+  "updateknowledgebasetemplateuri": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKnowledgeBaseTemplateUri",
+   "resources": [
+    "KnowledgeBase"
+   ]
+  },
+  "updatemessagetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMessageTemplate",
+   "resources": [
+    "MessageTemplate"
+   ]
+  },
+  "updatemessagetemplatemetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMessageTemplateMetadata",
+   "resources": [
+    "MessageTemplate"
+   ]
+  },
+  "updatequickresponse": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQuickResponse",
+   "resources": [
+    "QuickResponse"
+   ]
+  },
+  "updatesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSession",
+   "resources": [
+    "Session"
+   ]
+  },
+  "updatesessiondata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSessionData",
+   "resources": [
+    "Session"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "wisdom:MessageTemplate/RoutingProfileArn": [
+   "ArrayOfARN"
+  ],
+  "wisdom:SearchFilter/Qualifier": [
+   "ArrayOfString"
+  ],
+  "wisdom:SearchFilter/RoutingProfileArn": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "AIAgent": {
+   "arnFormats": [
+    "arn:${Partition}:wisdom:${Region}:${Account}:ai-agent/${AssistantId}/${AIAgentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "AIGuardrail": {
+   "arnFormats": [
+    "arn:${Partition}:wisdom:${Region}:${Account}:ai-guardrail/${AssistantId}/${AIGuardrailId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "AIPrompt": {
+   "arnFormats": [
+    "arn:${Partition}:wisdom:${Region}:${Account}:ai-prompt/${AssistantId}/${AIPromptId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Assistant": {
+   "arnFormats": [
+    "arn:${Partition}:wisdom:${Region}:${Account}:assistant/${AssistantId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "AssistantAssociation": {
+   "arnFormats": [
+    "arn:${Partition}:wisdom:${Region}:${Account}:association/${AssistantId}/${AssistantAssociationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Content": {
+   "arnFormats": [
+    "arn:${Partition}:wisdom:${Region}:${Account}:content/${KnowledgeBaseId}/${ContentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ContentAssociation": {
+   "arnFormats": [
+    "arn:${Partition}:wisdom:${Region}:${Account}:content-association/${KnowledgeBaseId}/${ContentId}/${ContentAssociationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "KnowledgeBase": {
+   "arnFormats": [
+    "arn:${Partition}:wisdom:${Region}:${Account}:knowledge-base/${KnowledgeBaseId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "MessageTemplate": {
+   "arnFormats": [
+    "arn:${Partition}:wisdom:${Region}:${Account}:message-template/${KnowledgeBaseId}/${MessageTemplateId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "wisdom:MessageTemplate/RoutingProfileArn"
+   ]
+  },
+  "QuickResponse": {
+   "arnFormats": [
+    "arn:${Partition}:wisdom:${Region}:${Account}:quick-response/${KnowledgeBaseId}/${QuickResponseId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Session": {
+   "arnFormats": [
+    "arn:${Partition}:wisdom:${Region}:${Account}:session/${AssistantId}/${SessionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "wisdom",
+ "serviceName": "Q in Connect",
+ "version": "v1.5"
+}

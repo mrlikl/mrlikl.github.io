@@ -1,0 +1,5321 @@
+{
+ "actions": {
+  "activateevaluationform": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivateEvaluationForm",
+   "resources": [
+    "evaluation-form"
+   ]
+  },
+  "admingetemergencyaccesstoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AdminGetEmergencyAccessToken",
+   "resources": [
+    "instance"
+   ]
+  },
+  "associateanalyticsdataset": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateAnalyticsDataSet",
+   "resources": [
+    "instance"
+   ]
+  },
+  "associateapprovedorigin": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateApprovedOrigin",
+   "resources": [
+    "instance"
+   ]
+  },
+  "associatebot": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateBot",
+   "resources": [
+    "instance"
+   ]
+  },
+  "associatecontactwithuser": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId",
+    "connect:PreferredUserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateContactWithUser",
+   "resources": [
+    "contact",
+    "instance",
+    "user"
+   ]
+  },
+  "associatecustomerprofilesdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateCustomerProfilesDomain",
+   "resources": [
+    "instance"
+   ]
+  },
+  "associatedefaultvocabulary": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateDefaultVocabulary",
+   "resources": [
+    "instance"
+   ]
+  },
+  "associateemailaddressalias": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateEmailAddressAlias",
+   "resources": [
+    "email-address"
+   ]
+  },
+  "associateflow": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateFlow",
+   "resources": [
+    "contact-flow",
+    "wildcard-phone-number"
+   ]
+  },
+  "associateinstancestorageconfig": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:StorageResourceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateInstanceStorageConfig",
+   "resources": [
+    "instance"
+   ]
+  },
+  "associatelambdafunction": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateLambdaFunction",
+   "resources": [
+    "instance"
+   ]
+  },
+  "associatelexbot": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateLexBot",
+   "resources": [
+    "instance"
+   ]
+  },
+  "associatephonenumbercontactflow": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociatePhoneNumberContactFlow",
+   "resources": [
+    "contact-flow",
+    "phone-number"
+   ]
+  },
+  "associatequeueemailaddresses": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateQueueEmailAddresses",
+   "resources": [
+    "queue"
+   ]
+  },
+  "associatequeuequickconnects": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateQueueQuickConnects",
+   "resources": [
+    "queue",
+    "quick-connect"
+   ]
+  },
+  "associateroutingprofilequeues": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateRoutingProfileQueues",
+   "resources": [
+    "queue",
+    "routing-profile"
+   ]
+  },
+  "associatesecuritykey": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSecurityKey",
+   "resources": [
+    "instance"
+   ]
+  },
+  "associatesecurityprofiles": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSecurityProfiles",
+   "resources": [
+    "ai-agent",
+    "instance",
+    "security-profile"
+   ]
+  },
+  "associatetrafficdistributiongroupuser": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateTrafficDistributionGroupUser",
+   "resources": [
+    "instance",
+    "traffic-distribution-group",
+    "user"
+   ]
+  },
+  "associateuserproficiencies": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateUserProficiencies",
+   "resources": [
+    "instance",
+    "user"
+   ]
+  },
+  "associateworkspace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateWorkspace",
+   "resources": [
+    "routing-profile",
+    "user",
+    "workspace"
+   ]
+  },
+  "batchassociateanalyticsdataset": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchAssociateAnalyticsDataSet",
+   "resources": [
+    "instance"
+   ]
+  },
+  "batchcreatedatatablevalue": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:ExpressionValue",
+    "connect:InstanceId",
+    "connect:PrimaryAttribute/${PrimaryAttribute}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateDataTableValue",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "batchdeletedatatablevalue": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId",
+    "connect:PrimaryAttribute/${PrimaryAttribute}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteDataTableValue",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "batchdescribedatatablevalue": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId",
+    "connect:PrimaryAttribute/${PrimaryAttribute}"
+   ],
+   "name": "BatchDescribeDataTableValue",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "batchdisassociateanalyticsdataset": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDisassociateAnalyticsDataSet",
+   "resources": [
+    "instance"
+   ]
+  },
+  "batchgetattachedfilemetadata": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "name": "BatchGetAttachedFileMetadata",
+   "resources": [
+    "attached-file"
+   ]
+  },
+  "batchgetflowassociation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "BatchGetFlowAssociation",
+   "resources": [
+    "wildcard-phone-number"
+   ]
+  },
+  "batchputcontact": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchPutContact",
+   "resources": [
+    "instance",
+    "queue"
+   ]
+  },
+  "batchupdatedatatablevalue": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:ExpressionValue",
+    "connect:InstanceId",
+    "connect:PrimaryAttribute/${PrimaryAttribute}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateDataTableValue",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "claimphonenumber": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ClaimPhoneNumber",
+   "resources": [
+    "instance",
+    "traffic-distribution-group",
+    "wildcard-phone-number"
+   ]
+  },
+  "completeattachedfileupload": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteAttachedFileUpload",
+   "resources": [
+    "attached-file"
+   ]
+  },
+  "createagentstatus": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgentStatus",
+   "resources": [
+    "agent-status"
+   ]
+  },
+  "createattachedfile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAttachedFile",
+   "resources": [
+    "attached-file"
+   ]
+  },
+  "createauthenticationprofile": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAuthenticationProfile",
+   "resources": [
+    "authentication-profile"
+   ]
+  },
+  "createcontact": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:ContactInitiationMethod",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContact",
+   "resources": [
+    "contact",
+    "instance",
+    "user"
+   ]
+  },
+  "createcontactflow": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:FlowType",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContactFlow",
+   "resources": [
+    "contact-flow"
+   ]
+  },
+  "createcontactflowmodule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContactFlowModule",
+   "resources": [
+    "contact-flow-module"
+   ]
+  },
+  "createcontactflowmodulealias": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContactFlowModuleAlias",
+   "resources": [
+    "contact-flow-module"
+   ]
+  },
+  "createcontactflowmoduleversion": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContactFlowModuleVersion",
+   "resources": [
+    "contact-flow-module"
+   ]
+  },
+  "createcontactflowversion": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:FlowType",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContactFlowVersion",
+   "resources": [
+    "contact-flow"
+   ]
+  },
+  "createdatatable": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataTable",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "createdatatableattribute": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataTableAttribute",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "createemailaddress": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEmailAddress",
+   "resources": [
+    "instance"
+   ]
+  },
+  "createevaluationform": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEvaluationForm",
+   "resources": [
+    "evaluation-form"
+   ]
+  },
+  "createextractiondefinition": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExtractionDefinition",
+   "resources": [
+    "extraction-definition"
+   ]
+  },
+  "createhoursofoperation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHoursOfOperation",
+   "resources": [
+    "hours-of-operation"
+   ]
+  },
+  "createhoursofoperationoverride": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHoursOfOperationOverride",
+   "resources": [
+    "hours-of-operation",
+    "instance"
+   ]
+  },
+  "createinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInstance",
+   "resources": []
+  },
+  "createintegrationassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIntegrationAssociation",
+   "resources": [
+    "instance",
+    "integration-association"
+   ]
+  },
+  "createmetric": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMetric",
+   "resources": [
+    "metric"
+   ]
+  },
+  "createnotification": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNotification",
+   "resources": [
+    "instance",
+    "user"
+   ]
+  },
+  "createparticipant": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateParticipant",
+   "resources": [
+    "contact",
+    "instance"
+   ]
+  },
+  "createpersistentcontactassociation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePersistentContactAssociation",
+   "resources": [
+    "contact",
+    "instance"
+   ]
+  },
+  "createpredefinedattribute": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePredefinedAttribute",
+   "resources": [
+    "instance"
+   ]
+  },
+  "createprompt": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePrompt",
+   "resources": [
+    "prompt"
+   ]
+  },
+  "createpushnotificationregistration": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePushNotificationRegistration",
+   "resources": [
+    "instance"
+   ]
+  },
+  "createqueue": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQueue",
+   "resources": [
+    "contact-flow",
+    "hours-of-operation",
+    "phone-number",
+    "queue",
+    "quick-connect"
+   ]
+  },
+  "createquickconnect": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQuickConnect",
+   "resources": [
+    "contact-flow",
+    "queue",
+    "quick-connect",
+    "user"
+   ]
+  },
+  "createroutingprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRoutingProfile",
+   "resources": [
+    "queue",
+    "routing-profile"
+   ]
+  },
+  "createrule": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "createsecurityprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSecurityProfile",
+   "resources": [
+    "application",
+    "contact-flow-module",
+    "hierarchy-group",
+    "security-profile"
+   ]
+  },
+  "createtasktemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTaskTemplate",
+   "resources": [
+    "task-template"
+   ]
+  },
+  "createtrafficdistributiongroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTrafficDistributionGroup",
+   "resources": [
+    "instance",
+    "traffic-distribution-group"
+   ]
+  },
+  "createusecase": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUseCase",
+   "resources": [
+    "instance",
+    "integration-association",
+    "use-case"
+   ]
+  },
+  "createuser": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUser",
+   "resources": [
+    "hierarchy-group",
+    "routing-profile",
+    "security-profile",
+    "user"
+   ]
+  },
+  "createuserhierarchygroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUserHierarchyGroup",
+   "resources": [
+    "hierarchy-group"
+   ]
+  },
+  "createview": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateView",
+   "resources": [
+    "customer-managed-view"
+   ]
+  },
+  "createviewversion": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateViewVersion",
+   "resources": [
+    "customer-managed-view"
+   ]
+  },
+  "createvocabulary": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVocabulary",
+   "resources": [
+    "vocabulary"
+   ]
+  },
+  "createworkspace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkspace",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createworkspacepage": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkspacePage",
+   "resources": [
+    "aws-managed-view",
+    "customer-managed-view",
+    "workspace"
+   ]
+  },
+  "deactivateevaluationform": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeactivateEvaluationForm",
+   "resources": [
+    "evaluation-form"
+   ]
+  },
+  "deleteattachedfile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAttachedFile",
+   "resources": [
+    "attached-file"
+   ]
+  },
+  "deletecontactevaluation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContactEvaluation",
+   "resources": [
+    "contact-evaluation"
+   ]
+  },
+  "deletecontactflow": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:FlowType",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContactFlow",
+   "resources": [
+    "contact-flow"
+   ]
+  },
+  "deletecontactflowmodule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContactFlowModule",
+   "resources": [
+    "contact-flow-module"
+   ]
+  },
+  "deletecontactflowmodulealias": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContactFlowModuleAlias",
+   "resources": [
+    "contact-flow-module"
+   ]
+  },
+  "deletecontactflowmoduleversion": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContactFlowModuleVersion",
+   "resources": [
+    "contact-flow-module"
+   ]
+  },
+  "deletecontactflowversion": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:FlowType",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContactFlowVersion",
+   "resources": [
+    "contact-flow"
+   ]
+  },
+  "deletedatatable": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataTable",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "deletedatatableattribute": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataTableAttribute",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "deleteemailaddress": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEmailAddress",
+   "resources": [
+    "email-address"
+   ]
+  },
+  "deleteevaluationform": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEvaluationForm",
+   "resources": [
+    "evaluation-form"
+   ]
+  },
+  "deleteextractiondefinition": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExtractionDefinition",
+   "resources": [
+    "extraction-definition"
+   ]
+  },
+  "deletehoursofoperation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteHoursOfOperation",
+   "resources": [
+    "hours-of-operation"
+   ]
+  },
+  "deletehoursofoperationoverride": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteHoursOfOperationOverride",
+   "resources": [
+    "hours-of-operation",
+    "instance"
+   ]
+  },
+  "deleteinstance": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInstance",
+   "resources": [
+    "instance"
+   ]
+  },
+  "deleteintegrationassociation": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIntegrationAssociation",
+   "resources": [
+    "instance",
+    "integration-association"
+   ]
+  },
+  "deletemetric": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMetric",
+   "resources": [
+    "metric"
+   ]
+  },
+  "deletenotification": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotification",
+   "resources": [
+    "notification"
+   ]
+  },
+  "deletepredefinedattribute": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePredefinedAttribute",
+   "resources": [
+    "instance"
+   ]
+  },
+  "deleteprompt": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePrompt",
+   "resources": [
+    "prompt"
+   ]
+  },
+  "deletepushnotificationregistration": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePushNotificationRegistration",
+   "resources": [
+    "instance"
+   ]
+  },
+  "deletequeue": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQueue",
+   "resources": [
+    "queue"
+   ]
+  },
+  "deletequickconnect": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQuickConnect",
+   "resources": [
+    "quick-connect"
+   ]
+  },
+  "deleteroutingprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRoutingProfile",
+   "resources": [
+    "routing-profile"
+   ]
+  },
+  "deleterule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "deletesecurityprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSecurityProfile",
+   "resources": [
+    "security-profile"
+   ]
+  },
+  "deletetasktemplate": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTaskTemplate",
+   "resources": [
+    "task-template"
+   ]
+  },
+  "deletetrafficdistributiongroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTrafficDistributionGroup",
+   "resources": [
+    "traffic-distribution-group"
+   ]
+  },
+  "deleteusecase": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUseCase",
+   "resources": [
+    "instance",
+    "use-case"
+   ]
+  },
+  "deleteuser": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "deleteuserhierarchygroup": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserHierarchyGroup",
+   "resources": [
+    "hierarchy-group"
+   ]
+  },
+  "deleteview": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteView",
+   "resources": [
+    "customer-managed-view"
+   ]
+  },
+  "deleteviewversion": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteViewVersion",
+   "resources": [
+    "customer-managed-view-version"
+   ]
+  },
+  "deletevocabulary": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVocabulary",
+   "resources": [
+    "vocabulary"
+   ]
+  },
+  "deleteworkspace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkspace",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deleteworkspacemedia": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkspaceMedia",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deleteworkspacepage": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkspacePage",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "describeagentstatus": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeAgentStatus",
+   "resources": [
+    "agent-status"
+   ]
+  },
+  "describeattachedfilesconfiguration": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "name": "DescribeAttachedFilesConfiguration",
+   "resources": [
+    "instance"
+   ]
+  },
+  "describeauthenticationprofile": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "name": "DescribeAuthenticationProfile",
+   "resources": [
+    "authentication-profile"
+   ]
+  },
+  "describecontact": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:InstanceId",
+    "connect:UserArn"
+   ],
+   "name": "DescribeContact",
+   "resources": [
+    "contact"
+   ]
+  },
+  "describecontactevaluation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeContactEvaluation",
+   "resources": [
+    "contact-evaluation"
+   ]
+  },
+  "describecontactflow": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:FlowType",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeContactFlow",
+   "resources": [
+    "contact-flow"
+   ]
+  },
+  "describecontactflowmodule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeContactFlowModule",
+   "resources": [
+    "contact-flow-module"
+   ]
+  },
+  "describecontactflowmodulealias": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeContactFlowModuleAlias",
+   "resources": [
+    "contact-flow-module"
+   ]
+  },
+  "describedatatable": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeDataTable",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "describedatatableattribute": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeDataTableAttribute",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "describeemailaddress": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeEmailAddress",
+   "resources": [
+    "email-address"
+   ]
+  },
+  "describeevaluationform": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeEvaluationForm",
+   "resources": [
+    "evaluation-form"
+   ]
+  },
+  "describeextractiondefinition": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeExtractionDefinition",
+   "resources": [
+    "extraction-definition"
+   ]
+  },
+  "describeforecastingplanningschedulingintegration": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "name": "DescribeForecastingPlanningSchedulingIntegration",
+   "resources": [
+    "instance"
+   ]
+  },
+  "describehoursofoperation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeHoursOfOperation",
+   "resources": [
+    "hours-of-operation"
+   ]
+  },
+  "describehoursofoperationoverride": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "name": "DescribeHoursOfOperationOverride",
+   "resources": [
+    "hours-of-operation",
+    "instance"
+   ]
+  },
+  "describeinstance": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeInstance",
+   "resources": [
+    "instance"
+   ]
+  },
+  "describeinstanceattribute": {
+   "conditionKeys": [
+    "connect:AttributeType",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeInstanceAttribute",
+   "resources": [
+    "instance"
+   ]
+  },
+  "describeinstancestorageconfig": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:StorageResourceType"
+   ],
+   "name": "DescribeInstanceStorageConfig",
+   "resources": [
+    "instance"
+   ]
+  },
+  "describemetric": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeMetric",
+   "resources": [
+    "metric",
+    "qualified-metric"
+   ]
+  },
+  "describenotification": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeNotification",
+   "resources": [
+    "notification"
+   ]
+  },
+  "describephonenumber": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribePhoneNumber",
+   "resources": [
+    "phone-number"
+   ]
+  },
+  "describepredefinedattribute": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "name": "DescribePredefinedAttribute",
+   "resources": [
+    "instance"
+   ]
+  },
+  "describeprompt": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribePrompt",
+   "resources": [
+    "prompt"
+   ]
+  },
+  "describequeue": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeQueue",
+   "resources": [
+    "queue"
+   ]
+  },
+  "describequickconnect": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeQuickConnect",
+   "resources": [
+    "quick-connect"
+   ]
+  },
+  "describeroutingprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeRoutingProfile",
+   "resources": [
+    "routing-profile"
+   ]
+  },
+  "describerule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "describesecurityprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeSecurityProfile",
+   "resources": [
+    "security-profile"
+   ]
+  },
+  "describetrafficdistributiongroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeTrafficDistributionGroup",
+   "resources": [
+    "traffic-distribution-group"
+   ]
+  },
+  "describeuser": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "describeuserhierarchygroup": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "name": "DescribeUserHierarchyGroup",
+   "resources": [
+    "hierarchy-group"
+   ]
+  },
+  "describeuserhierarchystructure": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "name": "DescribeUserHierarchyStructure",
+   "resources": [
+    "instance"
+   ]
+  },
+  "describeview": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeView",
+   "resources": [
+    "aws-managed-view",
+    "customer-managed-view",
+    "qualified-aws-managed-view",
+    "qualified-customer-managed-view"
+   ]
+  },
+  "describevocabulary": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeVocabulary",
+   "resources": [
+    "vocabulary"
+   ]
+  },
+  "describeworkspace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "DescribeWorkspace",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "disassociateanalyticsdataset": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateAnalyticsDataSet",
+   "resources": [
+    "instance"
+   ]
+  },
+  "disassociateapprovedorigin": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateApprovedOrigin",
+   "resources": [
+    "instance"
+   ]
+  },
+  "disassociatebot": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateBot",
+   "resources": [
+    "instance"
+   ]
+  },
+  "disassociatecustomerprofilesdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateCustomerProfilesDomain",
+   "resources": [
+    "instance"
+   ]
+  },
+  "disassociateemailaddressalias": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateEmailAddressAlias",
+   "resources": [
+    "email-address"
+   ]
+  },
+  "disassociateflow": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateFlow",
+   "resources": [
+    "wildcard-phone-number"
+   ]
+  },
+  "disassociateinstancestorageconfig": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:StorageResourceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateInstanceStorageConfig",
+   "resources": [
+    "instance"
+   ]
+  },
+  "disassociatelambdafunction": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateLambdaFunction",
+   "resources": [
+    "instance"
+   ]
+  },
+  "disassociatelexbot": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateLexBot",
+   "resources": [
+    "instance"
+   ]
+  },
+  "disassociatephonenumbercontactflow": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociatePhoneNumberContactFlow",
+   "resources": [
+    "phone-number"
+   ]
+  },
+  "disassociatequeueemailaddresses": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateQueueEmailAddresses",
+   "resources": [
+    "queue"
+   ]
+  },
+  "disassociatequeuequickconnects": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateQueueQuickConnects",
+   "resources": [
+    "queue",
+    "quick-connect"
+   ]
+  },
+  "disassociateroutingprofilequeues": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateRoutingProfileQueues",
+   "resources": [
+    "routing-profile"
+   ]
+  },
+  "disassociatesecuritykey": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateSecurityKey",
+   "resources": [
+    "instance"
+   ]
+  },
+  "disassociatesecurityprofiles": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateSecurityProfiles",
+   "resources": [
+    "ai-agent",
+    "instance",
+    "security-profile"
+   ]
+  },
+  "disassociatetrafficdistributiongroupuser": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateTrafficDistributionGroupUser",
+   "resources": [
+    "instance",
+    "traffic-distribution-group",
+    "user"
+   ]
+  },
+  "disassociateuserproficiencies": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateUserProficiencies",
+   "resources": [
+    "instance",
+    "user"
+   ]
+  },
+  "disassociateworkspace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateWorkspace",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "dismissusercontact": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DismissUserContact",
+   "resources": [
+    "user"
+   ]
+  },
+  "evaluatedatatablevalues": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId",
+    "connect:PrimaryAttribute/${PrimaryAttribute}"
+   ],
+   "name": "EvaluateDataTableValues",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "getattachedfile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "name": "GetAttachedFile",
+   "resources": [
+    "attached-file"
+   ]
+  },
+  "getcontactattributes": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:InstanceId",
+    "connect:UserArn"
+   ],
+   "name": "GetContactAttributes",
+   "resources": [
+    "contact"
+   ]
+  },
+  "getcontactmetrics": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "name": "GetContactMetrics",
+   "resources": [
+    "contact",
+    "instance"
+   ]
+  },
+  "getcrossregionrouting": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "name": "GetCrossRegionRouting",
+   "resources": [
+    "instance"
+   ]
+  },
+  "getcurrentmetricdata": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "GetCurrentMetricData",
+   "resources": [
+    "queue",
+    "routing-profile"
+   ]
+  },
+  "getcurrentuserdata": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "GetCurrentUserData",
+   "resources": [
+    "hierarchy-group",
+    "queue",
+    "routing-profile",
+    "user"
+   ]
+  },
+  "geteffectivehoursofoperations": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "name": "GetEffectiveHoursOfOperations",
+   "resources": [
+    "hours-of-operation",
+    "instance"
+   ]
+  },
+  "getevaluationformvalidation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "GetEvaluationFormValidation",
+   "resources": [
+    "evaluation-form"
+   ]
+  },
+  "getfederationtoken": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "name": "GetFederationToken",
+   "resources": [
+    "instance"
+   ]
+  },
+  "getflowassociation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "GetFlowAssociation",
+   "resources": [
+    "wildcard-phone-number"
+   ]
+  },
+  "getmetricdata": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "GetMetricData",
+   "resources": [
+    "queue"
+   ]
+  },
+  "getmetricdatav2": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "GetMetricDataV2",
+   "resources": [
+    "hierarchy-group",
+    "queue",
+    "routing-profile",
+    "user"
+   ]
+  },
+  "getpromptfile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "GetPromptFile",
+   "resources": [
+    "prompt"
+   ]
+  },
+  "gettasktemplate": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "GetTaskTemplate",
+   "resources": [
+    "task-template"
+   ]
+  },
+  "gettrafficdistribution": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetTrafficDistribution",
+   "resources": [
+    "traffic-distribution-group"
+   ]
+  },
+  "importphonenumber": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportPhoneNumber",
+   "resources": [
+    "instance",
+    "wildcard-phone-number"
+   ]
+  },
+  "importworkspacemedia": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportWorkspaceMedia",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listagentstatuses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentStatuses",
+   "resources": [
+    "wildcard-agent-status"
+   ]
+  },
+  "listanalyticsdataassociations": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnalyticsDataAssociations",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listanalyticsdatalakedatasets": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnalyticsDataLakeDataSets",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listapprovedorigins": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApprovedOrigins",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listassociatedcontacts": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssociatedContacts",
+   "resources": [
+    "contact"
+   ]
+  },
+  "listattachedfilesconfigurations": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAttachedFilesConfigurations",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listauthenticationprofiles": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAuthenticationProfiles",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listbots": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBots",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listcontactevaluations": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContactEvaluations",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listcontactflowmodulealiases": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContactFlowModuleAliases",
+   "resources": [
+    "contact-flow-module"
+   ]
+  },
+  "listcontactflowmodules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContactFlowModules",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listcontactflowmoduleversions": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContactFlowModuleVersions",
+   "resources": [
+    "contact-flow-module"
+   ]
+  },
+  "listcontactflows": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContactFlows",
+   "resources": [
+    "wildcard-contact-flow"
+   ]
+  },
+  "listcontactflowversions": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:FlowType",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContactFlowVersions",
+   "resources": [
+    "contact-flow"
+   ]
+  },
+  "listcontactreferences": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:InstanceId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContactReferences",
+   "resources": [
+    "contact"
+   ]
+  },
+  "listdatatableattributes": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataTableAttributes",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "listdatatableprimaryvalues": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId",
+    "connect:PrimaryAttribute/${PrimaryAttribute}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataTablePrimaryValues",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "listdatatables": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataTables",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listdatatablevalues": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId",
+    "connect:PrimaryAttribute/${PrimaryAttribute}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataTableValues",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "listdefaultvocabularies": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDefaultVocabularies",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listentitysecurityprofiles": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEntitySecurityProfiles",
+   "resources": [
+    "ai-agent",
+    "instance"
+   ]
+  },
+  "listevaluationformaiversions": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEvaluationFormAIVersions",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listevaluationforms": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEvaluationForms",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listevaluationformversions": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEvaluationFormVersions",
+   "resources": [
+    "evaluation-form"
+   ]
+  },
+  "listextractiondefinitions": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExtractionDefinitions",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listflowassociations": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFlowAssociations",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listhoursofoperationoverrides": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHoursOfOperationOverrides",
+   "resources": [
+    "hours-of-operation",
+    "instance"
+   ]
+  },
+  "listhoursofoperations": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHoursOfOperations",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listinstanceattributes": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInstanceAttributes",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInstances",
+   "resources": []
+  },
+  "listinstancestorageconfigs": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInstanceStorageConfigs",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listintegrationassociations": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIntegrationAssociations",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listlambdafunctions": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLambdaFunctions",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listlexbots": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLexBots",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listmetrics": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMetrics",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listnotifications": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "name": "ListNotifications",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listphonenumbers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPhoneNumbers",
+   "resources": [
+    "wildcard-legacy-phone-number"
+   ]
+  },
+  "listphonenumbersv2": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPhoneNumbersV2",
+   "resources": [
+    "wildcard-phone-number"
+   ]
+  },
+  "listpredefinedattributes": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPredefinedAttributes",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listprompts": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPrompts",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listqueueemailaddresses": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQueueEmailAddresses",
+   "resources": [
+    "queue"
+   ]
+  },
+  "listqueuequickconnects": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQueueQuickConnects",
+   "resources": [
+    "queue"
+   ]
+  },
+  "listqueues": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQueues",
+   "resources": [
+    "wildcard-queue"
+   ]
+  },
+  "listquickconnects": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQuickConnects",
+   "resources": [
+    "wildcard-quick-connect"
+   ]
+  },
+  "listrealtimecontactanalysissegments": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListRealtimeContactAnalysisSegments",
+   "resources": [
+    "contact"
+   ]
+  },
+  "listrealtimecontactanalysissegmentsv2": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:ListRealtimeContactAnalysisSegmentsByOutputType",
+    "connect:ListRealtimeContactAnalysisSegmentsBySegmentType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRealtimeContactAnalysisSegmentsV2",
+   "resources": [
+    "contact"
+   ]
+  },
+  "listroutingprofilemanualassignmentqueues": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRoutingProfileManualAssignmentQueues",
+   "resources": [
+    "routing-profile"
+   ]
+  },
+  "listroutingprofilequeues": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRoutingProfileQueues",
+   "resources": [
+    "routing-profile"
+   ]
+  },
+  "listroutingprofiles": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRoutingProfiles",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listrules": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRules",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listsecuritykeys": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityKeys",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listsecurityprofileaiagents": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityProfileAIAgents",
+   "resources": [
+    "security-profile"
+   ]
+  },
+  "listsecurityprofileapplications": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityProfileApplications",
+   "resources": [
+    "security-profile"
+   ]
+  },
+  "listsecurityprofileflowmodules": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityProfileFlowModules",
+   "resources": [
+    "instance",
+    "security-profile"
+   ]
+  },
+  "listsecurityprofilepermissions": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityProfilePermissions",
+   "resources": [
+    "security-profile"
+   ]
+  },
+  "listsecurityprofiles": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityProfiles",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "agent-status",
+    "contact-evaluation",
+    "contact-flow",
+    "contact-flow-module",
+    "evaluation-form",
+    "extraction-definition",
+    "hierarchy-group",
+    "hours-of-operation",
+    "integration-association",
+    "metric",
+    "phone-number",
+    "prompt",
+    "queue",
+    "quick-connect",
+    "routing-profile",
+    "rule",
+    "security-profile",
+    "traffic-distribution-group",
+    "use-case",
+    "user",
+    "wildcard-phone-number"
+   ]
+  },
+  "listtasktemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTaskTemplates",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listtrafficdistributiongroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrafficDistributionGroups",
+   "resources": [
+    "traffic-distribution-group"
+   ]
+  },
+  "listtrafficdistributiongroupusers": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrafficDistributionGroupUsers",
+   "resources": [
+    "traffic-distribution-group"
+   ]
+  },
+  "listusecases": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUseCases",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listuserhierarchygroups": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUserHierarchyGroups",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listusernotifications": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "ListUserNotifications",
+   "resources": [
+    "user"
+   ]
+  },
+  "listuserproficiencies": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUserProficiencies",
+   "resources": [
+    "instance",
+    "user"
+   ]
+  },
+  "listusers": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsers",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listviews": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListViews",
+   "resources": [
+    "instance"
+   ]
+  },
+  "listviewversions": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListViewVersions",
+   "resources": [
+    "aws-managed-view",
+    "customer-managed-view"
+   ]
+  },
+  "listworkspacemedia": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkspaceMedia",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listworkspacepages": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkspacePages",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listworkspaces": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkspaces",
+   "resources": [
+    "instance"
+   ]
+  },
+  "monitorcontact": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId",
+    "connect:MonitorCapabilities"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MonitorContact",
+   "resources": [
+    "contact",
+    "instance",
+    "user"
+   ]
+  },
+  "pausecontact": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PauseContact",
+   "resources": [
+    "contact",
+    "contact-flow",
+    "instance"
+   ]
+  },
+  "putuserstatus": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutUserStatus",
+   "resources": [
+    "agent-status",
+    "instance",
+    "user"
+   ]
+  },
+  "releasephonenumber": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReleasePhoneNumber",
+   "resources": [
+    "phone-number"
+   ]
+  },
+  "replicateinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReplicateInstance",
+   "resources": [
+    "instance"
+   ]
+  },
+  "resumecontact": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResumeContact",
+   "resources": [
+    "contact",
+    "contact-flow",
+    "instance"
+   ]
+  },
+  "resumecontactrecording": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResumeContactRecording",
+   "resources": [
+    "contact"
+   ]
+  },
+  "searchagentstatuses": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchAgentStatuses",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchavailablephonenumbers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchAvailablePhoneNumbers",
+   "resources": [
+    "wildcard-phone-number"
+   ]
+  },
+  "searchcontactevaluations": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchContactEvaluations",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchcontactflowmodules": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchContactFlowModules",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchcontactflows": {
+   "conditionKeys": [
+    "connect:FlowType",
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchContactFlows",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchcontacts": {
+   "conditionKeys": [
+    "connect:Channel",
+    "connect:InstanceId",
+    "connect:PreferredUserArn",
+    "connect:SearchContactsByContactAnalysis",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchContacts",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchdatatables": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchDataTables",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchemailaddresses": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchEmailAddresses",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchevaluationforms": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchEvaluationForms",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchhoursofoperationoverrides": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchHoursOfOperationOverrides",
+   "resources": [
+    "hours-of-operation",
+    "instance"
+   ]
+  },
+  "searchhoursofoperations": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchHoursOfOperations",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchmetrics": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchMetrics",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchnotifications": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchNotifications",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchpredefinedattributes": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "name": "SearchPredefinedAttributes",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchprompts": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchPrompts",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchqueues": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchQueues",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchquickconnects": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchQuickConnects",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchresourcetags": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchResourceTags",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchroutingprofiles": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchRoutingProfiles",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchrules": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchRules",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchsecurityprofiles": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchSecurityProfiles",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchuserhierarchygroups": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchUserHierarchyGroups",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchusers": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchUsers",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchviews": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchViews",
+   "resources": [
+    "instance"
+   ]
+  },
+  "searchvocabularies": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchVocabularies",
+   "resources": [
+    "vocabulary"
+   ]
+  },
+  "searchworkspaceassociations": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "SearchWorkspaceAssociations",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "searchworkspaces": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:SearchTag/${TagKey}"
+   ],
+   "name": "SearchWorkspaces",
+   "resources": [
+    "instance"
+   ]
+  },
+  "sendchatintegrationevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendChatIntegrationEvent",
+   "resources": []
+  },
+  "sendintegrationevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendIntegrationEvent",
+   "resources": []
+  },
+  "sendoutboundchatmessage": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:Subtype"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendOutboundChatMessage",
+   "resources": [
+    "instance",
+    "phone-number"
+   ]
+  },
+  "sendoutboundemail": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendOutboundEmail",
+   "resources": [
+    "instance"
+   ]
+  },
+  "sendoutboundwebnotification": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendOutboundWebNotification",
+   "resources": [
+    "instance"
+   ]
+  },
+  "startattachedfileupload": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAttachedFileUpload",
+   "resources": [
+    "attached-file"
+   ]
+  },
+  "startchatcontact": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartChatContact",
+   "resources": [
+    "contact",
+    "contact-flow"
+   ]
+  },
+  "startcontactconversationalanalyticsjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartContactConversationalAnalyticsJob",
+   "resources": [
+    "contact"
+   ]
+  },
+  "startcontactevaluation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartContactEvaluation",
+   "resources": [
+    "contact",
+    "contact-evaluation",
+    "evaluation-form"
+   ]
+  },
+  "startcontactmediaprocessing": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartContactMediaProcessing",
+   "resources": [
+    "contact",
+    "instance"
+   ]
+  },
+  "startcontactrecording": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartContactRecording",
+   "resources": [
+    "contact"
+   ]
+  },
+  "startcontactstreaming": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartContactStreaming",
+   "resources": [
+    "instance"
+   ]
+  },
+  "startemailcontact": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartEmailContact",
+   "resources": [
+    "contact-flow"
+   ]
+  },
+  "startevaluationformvalidation": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartEvaluationFormValidation",
+   "resources": [
+    "evaluation-form"
+   ]
+  },
+  "startforecastingplanningschedulingintegration": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartForecastingPlanningSchedulingIntegration",
+   "resources": [
+    "instance"
+   ]
+  },
+  "startoutboundchatcontact": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:Subtype"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartOutboundChatContact",
+   "resources": [
+    "contact",
+    "contact-flow",
+    "instance",
+    "phone-number"
+   ]
+  },
+  "startoutboundemailcontact": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartOutboundEmailContact",
+   "resources": [
+    "contact-flow"
+   ]
+  },
+  "startoutboundvoicecontact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartOutboundVoiceContact",
+   "resources": []
+  },
+  "startscreensharing": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:InstanceId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartScreenSharing",
+   "resources": [
+    "contact",
+    "instance"
+   ]
+  },
+  "starttaskcontact": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:AssignmentType",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTaskContact",
+   "resources": [
+    "contact",
+    "contact-flow",
+    "quick-connect",
+    "task-template"
+   ]
+  },
+  "startwebrtccontact": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartWebRTCContact",
+   "resources": [
+    "contact-flow"
+   ]
+  },
+  "stopcontact": {
+   "conditionKeys": [
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:InstanceId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopContact",
+   "resources": [
+    "contact"
+   ]
+  },
+  "stopcontactmediaprocessing": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopContactMediaProcessing",
+   "resources": [
+    "contact",
+    "instance"
+   ]
+  },
+  "stopcontactrecording": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopContactRecording",
+   "resources": [
+    "contact"
+   ]
+  },
+  "stopcontactstreaming": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopContactStreaming",
+   "resources": [
+    "instance"
+   ]
+  },
+  "stopforecastingplanningschedulingintegration": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopForecastingPlanningSchedulingIntegration",
+   "resources": [
+    "instance"
+   ]
+  },
+  "submitcontactevaluation": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitContactEvaluation",
+   "resources": [
+    "contact-evaluation"
+   ]
+  },
+  "suspendcontactrecording": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SuspendContactRecording",
+   "resources": [
+    "contact"
+   ]
+  },
+  "tagcontact": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:InstanceId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TagContact",
+   "resources": [
+    "contact"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "agent-status",
+    "contact-evaluation",
+    "contact-flow",
+    "contact-flow-module",
+    "customer-managed-view",
+    "email-address",
+    "evaluation-form",
+    "extraction-definition",
+    "hierarchy-group",
+    "hours-of-operation",
+    "instance",
+    "integration-association",
+    "metric",
+    "phone-number",
+    "prompt",
+    "queue",
+    "quick-connect",
+    "routing-profile",
+    "rule",
+    "security-profile",
+    "task-template",
+    "traffic-distribution-group",
+    "use-case",
+    "user",
+    "vocabulary",
+    "wildcard-phone-number"
+   ]
+  },
+  "transfercontact": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:InstanceId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TransferContact",
+   "resources": [
+    "contact",
+    "contact-flow",
+    "instance"
+   ]
+  },
+  "untagcontact": {
+   "conditionKeys": [
+    "aws:TagKeys",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:InstanceId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UntagContact",
+   "resources": [
+    "contact"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "agent-status",
+    "contact-evaluation",
+    "contact-flow",
+    "contact-flow-module",
+    "customer-managed-view",
+    "email-address",
+    "evaluation-form",
+    "extraction-definition",
+    "hierarchy-group",
+    "hours-of-operation",
+    "instance",
+    "integration-association",
+    "metric",
+    "phone-number",
+    "prompt",
+    "queue",
+    "quick-connect",
+    "routing-profile",
+    "rule",
+    "security-profile",
+    "task-template",
+    "traffic-distribution-group",
+    "use-case",
+    "user",
+    "vocabulary",
+    "wildcard-phone-number"
+   ]
+  },
+  "updateagentstatus": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentStatus",
+   "resources": [
+    "agent-status"
+   ]
+  },
+  "updateattachedfilesconfiguration": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAttachedFilesConfiguration",
+   "resources": [
+    "instance"
+   ]
+  },
+  "updateauthenticationprofile": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAuthenticationProfile",
+   "resources": [
+    "authentication-profile"
+   ]
+  },
+  "updatecontact": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:InstanceId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContact",
+   "resources": [
+    "contact"
+   ]
+  },
+  "updatecontactattributes": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:InstanceId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContactAttributes",
+   "resources": [
+    "contact"
+   ]
+  },
+  "updatecontactevaluation": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContactEvaluation",
+   "resources": [
+    "contact-evaluation"
+   ]
+  },
+  "updatecontactflowcontent": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:FlowType",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContactFlowContent",
+   "resources": [
+    "contact-flow"
+   ]
+  },
+  "updatecontactflowmetadata": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:FlowType",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContactFlowMetadata",
+   "resources": [
+    "contact-flow"
+   ]
+  },
+  "updatecontactflowmodulealias": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContactFlowModuleAlias",
+   "resources": [
+    "contact-flow-module"
+   ]
+  },
+  "updatecontactflowmodulecontent": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContactFlowModuleContent",
+   "resources": [
+    "contact-flow-module"
+   ]
+  },
+  "updatecontactflowmodulemetadata": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContactFlowModuleMetadata",
+   "resources": [
+    "contact-flow-module"
+   ]
+  },
+  "updatecontactflowname": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:FlowType",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContactFlowName",
+   "resources": [
+    "contact-flow"
+   ]
+  },
+  "updatecontactroutingdata": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:InstanceId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContactRoutingData",
+   "resources": [
+    "contact"
+   ]
+  },
+  "updatecontactschedule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:InstanceId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContactSchedule",
+   "resources": [
+    "contact"
+   ]
+  },
+  "updatecrossregionrouting": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCrossRegionRouting",
+   "resources": [
+    "instance"
+   ]
+  },
+  "updatedatatableattribute": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataTableAttribute",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "updatedatatablemetadata": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataTableMetadata",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "updatedatatableprimaryvalues": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId",
+    "connect:PrimaryAttribute/${PrimaryAttribute}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataTablePrimaryValues",
+   "resources": [
+    "data-table"
+   ]
+  },
+  "updateemailaddressmetadata": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEmailAddressMetadata",
+   "resources": [
+    "email-address"
+   ]
+  },
+  "updateevaluationform": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEvaluationForm",
+   "resources": [
+    "evaluation-form"
+   ]
+  },
+  "updateextractiondefinition": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExtractionDefinition",
+   "resources": [
+    "extraction-definition"
+   ]
+  },
+  "updatehoursofoperation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHoursOfOperation",
+   "resources": [
+    "hours-of-operation"
+   ]
+  },
+  "updatehoursofoperationoverride": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHoursOfOperationOverride",
+   "resources": [
+    "hours-of-operation",
+    "instance"
+   ]
+  },
+  "updateinstanceattribute": {
+   "conditionKeys": [
+    "connect:AttributeType",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInstanceAttribute",
+   "resources": [
+    "instance"
+   ]
+  },
+  "updateinstancestorageconfig": {
+   "conditionKeys": [
+    "connect:InstanceId",
+    "connect:StorageResourceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInstanceStorageConfig",
+   "resources": [
+    "instance"
+   ]
+  },
+  "updatemetriccontent": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMetricContent",
+   "resources": [
+    "metric",
+    "qualified-metric"
+   ]
+  },
+  "updatemetricmetadata": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMetricMetadata",
+   "resources": [
+    "metric",
+    "qualified-metric"
+   ]
+  },
+  "updatenotificationcontent": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotificationContent",
+   "resources": [
+    "notification"
+   ]
+  },
+  "updateoutboundemailcontactmessage": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:Channel",
+    "connect:ContactAssociationId",
+    "connect:InstanceId",
+    "connect:UserArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOutboundEmailContactMessage",
+   "resources": [
+    "contact"
+   ]
+  },
+  "updateparticipantauthentication": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateParticipantAuthentication",
+   "resources": [
+    "instance"
+   ]
+  },
+  "updateparticipantroleconfig": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateParticipantRoleConfig",
+   "resources": [
+    "contact",
+    "instance"
+   ]
+  },
+  "updatephonenumber": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePhoneNumber",
+   "resources": [
+    "instance",
+    "phone-number",
+    "traffic-distribution-group"
+   ]
+  },
+  "updatephonenumbermetadata": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePhoneNumberMetadata",
+   "resources": [
+    "phone-number"
+   ]
+  },
+  "updatepredefinedattribute": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePredefinedAttribute",
+   "resources": [
+    "instance"
+   ]
+  },
+  "updateprompt": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePrompt",
+   "resources": [
+    "prompt"
+   ]
+  },
+  "updatequeuehoursofoperation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueueHoursOfOperation",
+   "resources": [
+    "hours-of-operation",
+    "queue"
+   ]
+  },
+  "updatequeuemaxcontacts": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueueMaxContacts",
+   "resources": [
+    "queue"
+   ]
+  },
+  "updatequeuename": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueueName",
+   "resources": [
+    "queue"
+   ]
+  },
+  "updatequeueoutboundcallerconfig": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueueOutboundCallerConfig",
+   "resources": [
+    "contact-flow",
+    "phone-number",
+    "queue"
+   ]
+  },
+  "updatequeueoutboundemailconfig": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueueOutboundEmailConfig",
+   "resources": [
+    "queue"
+   ]
+  },
+  "updatequeuestatus": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueueStatus",
+   "resources": [
+    "queue"
+   ]
+  },
+  "updatequickconnectconfig": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQuickConnectConfig",
+   "resources": [
+    "contact-flow",
+    "queue",
+    "quick-connect",
+    "user"
+   ]
+  },
+  "updatequickconnectname": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQuickConnectName",
+   "resources": [
+    "quick-connect"
+   ]
+  },
+  "updateroutingprofileagentavailabilitytimer": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoutingProfileAgentAvailabilityTimer",
+   "resources": [
+    "routing-profile"
+   ]
+  },
+  "updateroutingprofileconcurrency": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoutingProfileConcurrency",
+   "resources": [
+    "routing-profile"
+   ]
+  },
+  "updateroutingprofiledefaultoutboundqueue": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoutingProfileDefaultOutboundQueue",
+   "resources": [
+    "queue",
+    "routing-profile"
+   ]
+  },
+  "updateroutingprofilename": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoutingProfileName",
+   "resources": [
+    "routing-profile"
+   ]
+  },
+  "updateroutingprofilequeues": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoutingProfileQueues",
+   "resources": [
+    "routing-profile"
+   ]
+  },
+  "updaterule": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "updatesecurityprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSecurityProfile",
+   "resources": [
+    "application",
+    "contact-flow-module",
+    "hierarchy-group",
+    "security-profile"
+   ]
+  },
+  "updatetasktemplate": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTaskTemplate",
+   "resources": [
+    "task-template"
+   ]
+  },
+  "updatetrafficdistribution": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTrafficDistribution",
+   "resources": [
+    "traffic-distribution-group"
+   ]
+  },
+  "updateuserhierarchy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserHierarchy",
+   "resources": [
+    "hierarchy-group",
+    "user"
+   ]
+  },
+  "updateuserhierarchygroupname": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserHierarchyGroupName",
+   "resources": [
+    "hierarchy-group"
+   ]
+  },
+  "updateuserhierarchystructure": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserHierarchyStructure",
+   "resources": [
+    "instance"
+   ]
+  },
+  "updateuseridentityinfo": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserIdentityInfo",
+   "resources": [
+    "user"
+   ]
+  },
+  "updateusernotificationstatus": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserNotificationStatus",
+   "resources": [
+    "user"
+   ]
+  },
+  "updateuserphoneconfig": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserPhoneConfig",
+   "resources": [
+    "user"
+   ]
+  },
+  "updateuserproficiencies": {
+   "conditionKeys": [
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserProficiencies",
+   "resources": [
+    "instance",
+    "user"
+   ]
+  },
+  "updateuserroutingprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserRoutingProfile",
+   "resources": [
+    "routing-profile",
+    "user"
+   ]
+  },
+  "updateusersecurityprofiles": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserSecurityProfiles",
+   "resources": [
+    "security-profile",
+    "user"
+   ]
+  },
+  "updateviewcontent": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateViewContent",
+   "resources": [
+    "customer-managed-view"
+   ]
+  },
+  "updateviewmetadata": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateViewMetadata",
+   "resources": [
+    "customer-managed-view"
+   ]
+  },
+  "updateworkspacemetadata": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkspaceMetadata",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updateworkspacepage": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkspacePage",
+   "resources": [
+    "aws-managed-view",
+    "customer-managed-view",
+    "workspace"
+   ]
+  },
+  "updateworkspacetheme": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkspaceTheme",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updateworkspacevisibility": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkspaceVisibility",
+   "resources": [
+    "workspace"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "connect:AssignmentType": [
+   "String"
+  ],
+  "connect:AttributeType": [
+   "String"
+  ],
+  "connect:Channel": [
+   "String"
+  ],
+  "connect:ContactAssociationId": [
+   "String"
+  ],
+  "connect:ContactInitiationMethod": [
+   "String"
+  ],
+  "connect:ExpressionValue": [
+   "String"
+  ],
+  "connect:FlowType": [
+   "ArrayOfString"
+  ],
+  "connect:InstanceId": [
+   "String"
+  ],
+  "connect:ListRealtimeContactAnalysisSegmentsByOutputType": [
+   "String"
+  ],
+  "connect:ListRealtimeContactAnalysisSegmentsBySegmentType": [
+   "ArrayOfString"
+  ],
+  "connect:MonitorCapabilities": [
+   "ArrayOfString"
+  ],
+  "connect:PreferredUserArn": [
+   "ARN"
+  ],
+  "connect:PrimaryAttribute/${PrimaryAttribute}": [
+   "String"
+  ],
+  "connect:SearchContactsByContactAnalysis": [
+   "ArrayOfString"
+  ],
+  "connect:SearchTag/${TagKey}": [
+   "String"
+  ],
+  "connect:StorageResourceType": [
+   "String"
+  ],
+  "connect:Subtype": [
+   "String"
+  ],
+  "connect:UserArn": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "agent-status": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/agent-state/${AgentStatusId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ai-agent": {
+   "arnFormats": [
+    "arn:${Partition}:wisdom:${Region}:${Account}:ai-agent/${AssistantId}/${AIAgentId}:${Version}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:app-integrations:${Region}:${Account}:application/${ApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "attached-file": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/file/${FileId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "authentication-profile": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/authentication-profile/${AuthenticationProfileId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "aws-managed-view": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:aws:view/${ViewId}"
+   ]
+  },
+  "contact": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/contact/${ContactId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "contact-evaluation": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/contact-evaluation/${EvaluationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "contact-flow": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/contact-flow/${ContactFlowId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "contact-flow-module": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/flow-module/${ContactFlowModuleId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "customer-managed-view": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/view/${ViewId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "customer-managed-view-version": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/view/${ViewId}:${ViewVersion}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "data-table": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/data-table/${DataTableId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "email-address": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/email-address/${EmailAddressId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "evaluation-form": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/evaluation-form/${FormId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "extraction-definition": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/extraction-definition/${ExtractionDefinitionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "hierarchy-group": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/agent-group/${HierarchyGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "hours-of-operation": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/operating-hours/${HoursOfOperationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "instance": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "integration-association": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/integration-association/${IntegrationAssociationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "legacy-phone-number": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/phone-number/${PhoneNumberId}"
+   ]
+  },
+  "metric": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/metric/${MetricId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "notification": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/notification/${NotificationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "phone-number": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:phone-number/${PhoneNumberId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "prompt": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/prompt/${PromptId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "qualified-aws-managed-view": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:aws:view/${ViewId}:${ViewQualifier}"
+   ]
+  },
+  "qualified-customer-managed-view": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/view/${ViewId}:${ViewQualifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "qualified-metric": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/metric/${MetricId}:${MetricQualifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "queue": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/queue/${QueueId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "quick-connect": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/transfer-destination/${QuickConnectId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "routing-profile": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/routing-profile/${RoutingProfileId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "rule": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/rule/${RuleId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "security-profile": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/security-profile/${SecurityProfileId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "task-template": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/task-template/${TaskTemplateId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "traffic-distribution-group": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:traffic-distribution-group/${TrafficDistributionGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "use-case": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/use-case/${UseCaseId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "user": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/agent/${UserId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "vocabulary": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/vocabulary/${VocabularyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "wildcard-agent-status": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/agent-state/*"
+   ]
+  },
+  "wildcard-contact-flow": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/contact-flow/*"
+   ]
+  },
+  "wildcard-legacy-phone-number": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/phone-number/*"
+   ]
+  },
+  "wildcard-phone-number": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:phone-number/*"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "wildcard-queue": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/queue/*"
+   ]
+  },
+  "wildcard-quick-connect": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/transfer-destination/*"
+   ]
+  },
+  "workspace": {
+   "arnFormats": [
+    "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/workspace/${WorkspaceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "connect",
+ "serviceName": "Connect",
+ "version": "v1.5"
+}

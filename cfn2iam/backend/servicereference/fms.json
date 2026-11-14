@@ -1,0 +1,391 @@
+{
+ "actions": {
+  "associateadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateAdminAccount",
+   "resources": []
+  },
+  "associatethirdpartyfirewall": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateThirdPartyFirewall",
+   "resources": []
+  },
+  "batchassociateresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchAssociateResource",
+   "resources": [
+    "resource-set"
+   ]
+  },
+  "batchdisassociateresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDisassociateResource",
+   "resources": [
+    "resource-set"
+   ]
+  },
+  "deleteappslist": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppsList",
+   "resources": [
+    "applications-list"
+   ]
+  },
+  "deletenotificationchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotificationChannel",
+   "resources": []
+  },
+  "deletepolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePolicy",
+   "resources": [
+    "policy"
+   ]
+  },
+  "deleteprotocolslist": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProtocolsList",
+   "resources": [
+    "protocols-list"
+   ]
+  },
+  "deleteresourceset": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourceSet",
+   "resources": [
+    "resource-set"
+   ]
+  },
+  "disassociateadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateAdminAccount",
+   "resources": []
+  },
+  "disassociatethirdpartyfirewall": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateThirdPartyFirewall",
+   "resources": []
+  },
+  "getadminaccount": {
+   "name": "GetAdminAccount",
+   "resources": []
+  },
+  "getadminscope": {
+   "name": "GetAdminScope",
+   "resources": []
+  },
+  "getappslist": {
+   "name": "GetAppsList",
+   "resources": [
+    "applications-list"
+   ]
+  },
+  "getcompliancedetail": {
+   "name": "GetComplianceDetail",
+   "resources": [
+    "policy"
+   ]
+  },
+  "getnotificationchannel": {
+   "name": "GetNotificationChannel",
+   "resources": []
+  },
+  "getpolicy": {
+   "name": "GetPolicy",
+   "resources": [
+    "policy"
+   ]
+  },
+  "getprotectionstatus": {
+   "name": "GetProtectionStatus",
+   "resources": [
+    "policy"
+   ]
+  },
+  "getprotocolslist": {
+   "name": "GetProtocolsList",
+   "resources": [
+    "protocols-list"
+   ]
+  },
+  "getresourceset": {
+   "name": "GetResourceSet",
+   "resources": [
+    "resource-set"
+   ]
+  },
+  "getthirdpartyfirewallassociationstatus": {
+   "name": "GetThirdPartyFirewallAssociationStatus",
+   "resources": []
+  },
+  "getviolationdetails": {
+   "name": "GetViolationDetails",
+   "resources": [
+    "policy"
+   ]
+  },
+  "listadminaccountsfororganization": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAdminAccountsForOrganization",
+   "resources": []
+  },
+  "listadminsmanagingaccount": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAdminsManagingAccount",
+   "resources": []
+  },
+  "listappslists": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppsLists",
+   "resources": []
+  },
+  "listcompliancestatus": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListComplianceStatus",
+   "resources": [
+    "policy"
+   ]
+  },
+  "listdiscoveredresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDiscoveredResources",
+   "resources": []
+  },
+  "listmemberaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMemberAccounts",
+   "resources": []
+  },
+  "listpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicies",
+   "resources": []
+  },
+  "listprotocolslists": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProtocolsLists",
+   "resources": []
+  },
+  "listresourcesetresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceSetResources",
+   "resources": [
+    "resource-set"
+   ]
+  },
+  "listresourcesets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceSets",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "policy"
+   ]
+  },
+  "listthirdpartyfirewallfirewallpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThirdPartyFirewallFirewallPolicies",
+   "resources": []
+  },
+  "putadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAdminAccount",
+   "resources": []
+  },
+  "putappslist": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAppsList",
+   "resources": [
+    "applications-list"
+   ]
+  },
+  "putnotificationchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutNotificationChannel",
+   "resources": []
+  },
+  "putpolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutPolicy",
+   "resources": [
+    "policy"
+   ]
+  },
+  "putprotocolslist": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutProtocolsList",
+   "resources": [
+    "protocols-list"
+   ]
+  },
+  "putresourceset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourceSet",
+   "resources": [
+    "resource-set"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "applications-list",
+    "policy",
+    "protocols-list",
+    "resource-set"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "applications-list",
+    "policy",
+    "protocols-list",
+    "resource-set"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "applications-list": {
+   "arnFormats": [
+    "arn:${Partition}:fms:${Region}:${Account}:applications-list/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "policy": {
+   "arnFormats": [
+    "arn:${Partition}:fms:${Region}:${Account}:policy/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "protocols-list": {
+   "arnFormats": [
+    "arn:${Partition}:fms:${Region}:${Account}:protocols-list/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "resource-set": {
+   "arnFormats": [
+    "arn:${Partition}:fms:${Region}:${Account}:resource-set/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "fms",
+ "serviceName": "Firewall Manager",
+ "version": "v1.5"
+}

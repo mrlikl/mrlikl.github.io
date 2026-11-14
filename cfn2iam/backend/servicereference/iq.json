@@ -1,0 +1,554 @@
+{
+ "actions": {
+  "acceptcall": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptCall",
+   "resources": [
+    "call"
+   ]
+  },
+  "approvepaymentrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ApprovePaymentRequest",
+   "resources": [
+    "paymentRequest"
+   ]
+  },
+  "approveproposal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ApproveProposal",
+   "resources": [
+    "proposal"
+   ]
+  },
+  "archiveconversation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ArchiveConversation",
+   "resources": [
+    "conversation"
+   ]
+  },
+  "completeproposal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteProposal",
+   "resources": [
+    "proposal"
+   ]
+  },
+  "createconversation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConversation",
+   "resources": []
+  },
+  "createexpert": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExpert",
+   "resources": []
+  },
+  "createlisting": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateListing",
+   "resources": []
+  },
+  "createmilestoneproposal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMilestoneProposal",
+   "resources": []
+  },
+  "createpaymentrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePaymentRequest",
+   "resources": []
+  },
+  "createproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProject",
+   "resources": []
+  },
+  "createrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRequest",
+   "resources": []
+  },
+  "createscheduledproposal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScheduledProposal",
+   "resources": []
+  },
+  "createseller": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSeller",
+   "resources": []
+  },
+  "createupfrontproposal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUpfrontProposal",
+   "resources": []
+  },
+  "declinecall": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeclineCall",
+   "resources": [
+    "call"
+   ]
+  },
+  "deleteattachment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAttachment",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "disableindividualpublicprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableIndividualPublicProfile",
+   "resources": [
+    "expert"
+   ]
+  },
+  "downloadattachment": {
+   "name": "DownloadAttachment",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "enableindividualpublicprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableIndividualPublicProfile",
+   "resources": [
+    "expert"
+   ]
+  },
+  "endcall": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EndCall",
+   "resources": [
+    "call"
+   ]
+  },
+  "getbuyer": {
+   "name": "GetBuyer",
+   "resources": [
+    "buyer"
+   ]
+  },
+  "getcall": {
+   "name": "GetCall",
+   "resources": [
+    "call"
+   ]
+  },
+  "getchatinfo": {
+   "name": "GetChatInfo",
+   "resources": [
+    "conversation"
+   ]
+  },
+  "getchatmessages": {
+   "name": "GetChatMessages",
+   "resources": [
+    "conversation"
+   ]
+  },
+  "getchattoken": {
+   "name": "GetChatToken",
+   "resources": [
+    "token"
+   ]
+  },
+  "getcompanychatmessages": {
+   "name": "GetCompanyChatMessages",
+   "resources": [
+    "conversation"
+   ]
+  },
+  "getcompanyprofile": {
+   "name": "GetCompanyProfile",
+   "resources": [
+    "company"
+   ]
+  },
+  "getconversation": {
+   "name": "GetConversation",
+   "resources": [
+    "conversation"
+   ]
+  },
+  "getexpert": {
+   "name": "GetExpert",
+   "resources": [
+    "expert"
+   ]
+  },
+  "getlisting": {
+   "name": "GetListing",
+   "resources": [
+    "listing"
+   ]
+  },
+  "getmarketplaceseller": {
+   "name": "GetMarketplaceSeller",
+   "resources": [
+    "seller"
+   ]
+  },
+  "getpaymentrequest": {
+   "name": "GetPaymentRequest",
+   "resources": [
+    "paymentRequest"
+   ]
+  },
+  "getproposal": {
+   "name": "GetProposal",
+   "resources": [
+    "proposal"
+   ]
+  },
+  "getrequest": {
+   "name": "GetRequest",
+   "resources": [
+    "request"
+   ]
+  },
+  "getreview": {
+   "name": "GetReview",
+   "resources": [
+    "seller"
+   ]
+  },
+  "hiderequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "HideRequest",
+   "resources": [
+    "request"
+   ]
+  },
+  "initiatecall": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitiateCall",
+   "resources": []
+  },
+  "linkawscertification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LinkAwsCertification",
+   "resources": [
+    "expert"
+   ]
+  },
+  "listattachments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAttachments",
+   "resources": [
+    "attachment"
+   ]
+  },
+  "listconversations": {
+   "name": "ListConversations",
+   "resources": [
+    "conversation"
+   ]
+  },
+  "listexpertaccesslogs": {
+   "name": "ListExpertAccessLogs",
+   "resources": [
+    "permission"
+   ]
+  },
+  "listlistings": {
+   "name": "ListListings",
+   "resources": [
+    "listing"
+   ]
+  },
+  "listpaymentrequests": {
+   "name": "ListPaymentRequests",
+   "resources": [
+    "paymentRequest",
+    "paymentSchedule"
+   ]
+  },
+  "listproposals": {
+   "name": "ListProposals",
+   "resources": [
+    "proposal"
+   ]
+  },
+  "listrequests": {
+   "name": "ListRequests",
+   "resources": [
+    "request"
+   ]
+  },
+  "listreviews": {
+   "name": "ListReviews",
+   "resources": [
+    "seller"
+   ]
+  },
+  "markchatmessageread": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MarkChatMessageRead",
+   "resources": [
+    "conversation"
+   ]
+  },
+  "rejectpaymentrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectPaymentRequest",
+   "resources": [
+    "paymentRequest"
+   ]
+  },
+  "rejectproposal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectProposal",
+   "resources": [
+    "proposal"
+   ]
+  },
+  "sendcompanychatmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendCompanyChatMessage",
+   "resources": [
+    "conversation"
+   ]
+  },
+  "sendindividualchatmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendIndividualChatMessage",
+   "resources": [
+    "conversation"
+   ]
+  },
+  "unarchiveconversation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnarchiveConversation",
+   "resources": [
+    "conversation"
+   ]
+  },
+  "unlinkawscertification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnlinkAwsCertification",
+   "resources": [
+    "expert"
+   ]
+  },
+  "updatecompanyprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCompanyProfile",
+   "resources": [
+    "company"
+   ]
+  },
+  "updateconversationmembers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConversationMembers",
+   "resources": [
+    "conversation"
+   ]
+  },
+  "updateexpert": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExpert",
+   "resources": [
+    "expert"
+   ]
+  },
+  "updatelisting": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateListing",
+   "resources": [
+    "listing"
+   ]
+  },
+  "updaterequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRequest",
+   "resources": [
+    "request"
+   ]
+  },
+  "uploadattachment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UploadAttachment",
+   "resources": []
+  },
+  "withdrawpaymentrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "WithdrawPaymentRequest",
+   "resources": [
+    "paymentRequest"
+   ]
+  },
+  "withdrawproposal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "WithdrawProposal",
+   "resources": [
+    "proposal"
+   ]
+  },
+  "writereview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "WriteReview",
+   "resources": [
+    "seller"
+   ]
+  }
+ },
+ "resources": {
+  "attachment": {
+   "arnFormats": [
+    "arn:${Partition}:iq:${Region}::attachment/${AttachmentId}"
+   ]
+  },
+  "buyer": {
+   "arnFormats": [
+    "arn:${Partition}:iq:${Region}::buyer/${BuyerId}"
+   ]
+  },
+  "call": {
+   "arnFormats": [
+    "arn:${Partition}:iq:${Region}::call/${CallId}"
+   ]
+  },
+  "company": {
+   "arnFormats": [
+    "arn:${Partition}:iq:${Region}::company/${CompanyId}"
+   ]
+  },
+  "conversation": {
+   "arnFormats": [
+    "arn:${Partition}:iq:${Region}::conversation/${ConversationId}"
+   ]
+  },
+  "expert": {
+   "arnFormats": [
+    "arn:${Partition}:iq:${Region}::expert/${ExpertId}"
+   ]
+  },
+  "listing": {
+   "arnFormats": [
+    "arn:${Partition}:iq:${Region}::listing/${ListingId}"
+   ]
+  },
+  "paymentRequest": {
+   "arnFormats": [
+    "arn:${Partition}:iq:${Region}::paymentRequest/${ConversationId}/${ProposalId}/${PaymentRequestId}"
+   ]
+  },
+  "paymentSchedule": {
+   "arnFormats": [
+    "arn:${Partition}:iq:${Region}::paymentSchedule/${ConversationId}/${ProposalId}/${VersionId}"
+   ]
+  },
+  "permission": {
+   "arnFormats": [
+    "arn:${Partition}:iq-permission:${Region}::permission/${PermissionRequestId}"
+   ]
+  },
+  "proposal": {
+   "arnFormats": [
+    "arn:${Partition}:iq:${Region}::proposal/${ConversationId}/${ProposalId}"
+   ]
+  },
+  "request": {
+   "arnFormats": [
+    "arn:${Partition}:iq:${Region}::request/${RequestId}"
+   ]
+  },
+  "seller": {
+   "arnFormats": [
+    "arn:${Partition}:iq:${Region}::seller/${SellerAwsAccountId}"
+   ]
+  },
+  "token": {
+   "arnFormats": [
+    "arn:${Partition}:iq:${Region}::token/${TokenId}"
+   ]
+  }
+ },
+ "service": "iq",
+ "serviceName": "IQ",
+ "version": "v1.5"
+}

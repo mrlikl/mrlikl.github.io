@@ -1,0 +1,306 @@
+{
+ "actions": {
+  "canceljobrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelJobRun",
+   "resources": [
+    "jobRun"
+   ]
+  },
+  "createcertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCertificate",
+   "resources": []
+  },
+  "createjobtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateJobTemplate",
+   "resources": []
+  },
+  "createmanagedendpoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "emr-containers:ExecutionRoleArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateManagedEndpoint",
+   "resources": [
+    "virtualCluster"
+   ]
+  },
+  "createsecurityconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSecurityConfiguration",
+   "resources": []
+  },
+  "createvirtualcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVirtualCluster",
+   "resources": []
+  },
+  "deletejobtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteJobTemplate",
+   "resources": [
+    "jobTemplate"
+   ]
+  },
+  "deletemanagedendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteManagedEndpoint",
+   "resources": [
+    "managedEndpoint"
+   ]
+  },
+  "deletesecurityconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSecurityConfiguration",
+   "resources": [
+    "securityConfiguration"
+   ]
+  },
+  "deletevirtualcluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVirtualCluster",
+   "resources": [
+    "virtualCluster"
+   ]
+  },
+  "describejobrun": {
+   "name": "DescribeJobRun",
+   "resources": [
+    "jobRun"
+   ]
+  },
+  "describejobtemplate": {
+   "name": "DescribeJobTemplate",
+   "resources": [
+    "jobTemplate"
+   ]
+  },
+  "describemanagedendpoint": {
+   "name": "DescribeManagedEndpoint",
+   "resources": [
+    "managedEndpoint"
+   ]
+  },
+  "describesecurityconfiguration": {
+   "name": "DescribeSecurityConfiguration",
+   "resources": [
+    "securityConfiguration"
+   ]
+  },
+  "describevirtualcluster": {
+   "name": "DescribeVirtualCluster",
+   "resources": [
+    "virtualCluster"
+   ]
+  },
+  "getmanagedendpointsessioncredentials": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetManagedEndpointSessionCredentials",
+   "resources": [
+    "managedEndpoint"
+   ]
+  },
+  "listjobruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobRuns",
+   "resources": [
+    "virtualCluster"
+   ]
+  },
+  "listjobtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobTemplates",
+   "resources": []
+  },
+  "listmanagedendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedEndpoints",
+   "resources": [
+    "virtualCluster"
+   ]
+  },
+  "listsecurityconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityConfigurations",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "jobRun",
+    "jobTemplate",
+    "managedEndpoint",
+    "securityConfiguration",
+    "virtualCluster"
+   ]
+  },
+  "listvirtualclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVirtualClusters",
+   "resources": []
+  },
+  "startjobrun": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "emr-containers:ExecutionRoleArn",
+    "emr-containers:JobTemplateArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartJobRun",
+   "resources": [
+    "virtualCluster"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "jobRun",
+    "jobTemplate",
+    "managedEndpoint",
+    "securityConfiguration",
+    "virtualCluster"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "jobRun",
+    "jobTemplate",
+    "managedEndpoint",
+    "securityConfiguration",
+    "virtualCluster"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "emr-containers:ExecutionRoleArn": [
+   "ARN"
+  ],
+  "emr-containers:JobTemplateArn": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "jobRun": {
+   "arnFormats": [
+    "arn:${Partition}:emr-containers:${Region}:${Account}:/virtualclusters/${VirtualClusterId}/jobruns/${JobRunId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "jobTemplate": {
+   "arnFormats": [
+    "arn:${Partition}:emr-containers:${Region}:${Account}:/jobtemplates/${JobTemplateId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "managedEndpoint": {
+   "arnFormats": [
+    "arn:${Partition}:emr-containers:${Region}:${Account}:/virtualclusters/${VirtualClusterId}/endpoints/${EndpointId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "securityConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:emr-containers:${Region}:${Account}:/securityconfigurations/${SecurityConfigurationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "virtualCluster": {
+   "arnFormats": [
+    "arn:${Partition}:emr-containers:${Region}:${Account}:/virtualclusters/${VirtualClusterId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "emr-containers",
+ "serviceName": "EMR Containers",
+ "version": "v1.5"
+}

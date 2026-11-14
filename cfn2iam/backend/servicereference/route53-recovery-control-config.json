@@ -1,0 +1,285 @@
+{
+ "actions": {
+  "createcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCluster",
+   "resources": []
+  },
+  "createcontrolpanel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateControlPanel",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "createroutingcontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRoutingControl",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "createsafetyrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSafetyRule",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "deletecluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "deletecontrolpanel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteControlPanel",
+   "resources": [
+    "controlpanel"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "deleteroutingcontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRoutingControl",
+   "resources": [
+    "routingcontrol"
+   ]
+  },
+  "deletesafetyrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSafetyRule",
+   "resources": [
+    "safetyrule"
+   ]
+  },
+  "describecluster": {
+   "name": "DescribeCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "describecontrolpanel": {
+   "name": "DescribeControlPanel",
+   "resources": [
+    "controlpanel"
+   ]
+  },
+  "describeroutingcontrol": {
+   "name": "DescribeRoutingControl",
+   "resources": [
+    "routingcontrol"
+   ]
+  },
+  "describesafetyrule": {
+   "name": "DescribeSafetyRule",
+   "resources": [
+    "safetyrule"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listassociatedroute53healthchecks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssociatedRoute53HealthChecks",
+   "resources": [
+    "routingcontrol"
+   ]
+  },
+  "listclusters": {
+   "name": "ListClusters",
+   "resources": []
+  },
+  "listcontrolpanels": {
+   "name": "ListControlPanels",
+   "resources": []
+  },
+  "listroutingcontrols": {
+   "name": "ListRoutingControls",
+   "resources": [
+    "controlpanel"
+   ]
+  },
+  "listsafetyrules": {
+   "name": "ListSafetyRules",
+   "resources": [
+    "controlpanel"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "cluster",
+    "controlpanel",
+    "safetyrule"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "cluster",
+    "controlpanel",
+    "safetyrule"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "cluster",
+    "controlpanel",
+    "safetyrule"
+   ]
+  },
+  "updatecluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "updatecontrolpanel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateControlPanel",
+   "resources": [
+    "controlpanel"
+   ]
+  },
+  "updateroutingcontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoutingControl",
+   "resources": [
+    "routingcontrol"
+   ]
+  },
+  "updatesafetyrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSafetyRule",
+   "resources": [
+    "safetyrule"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "cluster": {
+   "arnFormats": [
+    "arn:${Partition}:route53-recovery-control::${Account}:cluster/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "controlpanel": {
+   "arnFormats": [
+    "arn:${Partition}:route53-recovery-control::${Account}:controlpanel/${ControlPanelId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "routingcontrol": {
+   "arnFormats": [
+    "arn:${Partition}:route53-recovery-control::${Account}:controlpanel/${ControlPanelId}/routingcontrol/${RoutingControlId}"
+   ]
+  },
+  "safetyrule": {
+   "arnFormats": [
+    "arn:${Partition}:route53-recovery-control::${Account}:controlpanel/${ControlPanelId}/safetyrule/${SafetyRuleId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "route53-recovery-control-config",
+ "serviceName": "Route 53 Recovery Controls",
+ "version": "v1.5"
+}

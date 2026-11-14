@@ -1,0 +1,1212 @@
+{
+ "actions": {
+  "acceptadministratorinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptAdministratorInvitation",
+   "resources": [
+    "hub"
+   ]
+  },
+  "acceptinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptInvitation",
+   "resources": [
+    "hub"
+   ]
+  },
+  "allowvendedlogdeliveryforresource": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": [
+    "hub",
+    "hubv2"
+   ]
+  },
+  "batchdeleteautomationrules": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteAutomationRules",
+   "resources": [
+    "automation-rule"
+   ]
+  },
+  "batchdisablestandards": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDisableStandards",
+   "resources": [
+    "hub"
+   ]
+  },
+  "batchenablestandards": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchEnableStandards",
+   "resources": [
+    "hub"
+   ]
+  },
+  "batchgetautomationrules": {
+   "name": "BatchGetAutomationRules",
+   "resources": [
+    "automation-rule"
+   ]
+  },
+  "batchgetconfigurationpolicyassociations": {
+   "name": "BatchGetConfigurationPolicyAssociations",
+   "resources": []
+  },
+  "batchgetcontrolevaluations": {
+   "name": "BatchGetControlEvaluations",
+   "resources": [
+    "hub"
+   ]
+  },
+  "batchgetenabledregionsv2": {
+   "name": "BatchGetEnabledRegionsV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "batchgetsecuritycontrols": {
+   "name": "BatchGetSecurityControls",
+   "resources": []
+  },
+  "batchgetstandardscontrolassociations": {
+   "name": "BatchGetStandardsControlAssociations",
+   "resources": []
+  },
+  "batchimportfindings": {
+   "conditionKeys": [
+    "securityhub:TargetAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchImportFindings",
+   "resources": [
+    "product"
+   ]
+  },
+  "batchupdateautomationrules": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateAutomationRules",
+   "resources": [
+    "automation-rule"
+   ]
+  },
+  "batchupdatefindings": {
+   "conditionKeys": [
+    "securityhub:ASFFSyntaxPath/${ASFFSyntaxPath}",
+    "securityhub:OCSFSyntaxPath/${OCSFSyntaxPath}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateFindings",
+   "resources": [
+    "hub",
+    "hubv2"
+   ]
+  },
+  "batchupdatestandardscontrolassociations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateStandardsControlAssociations",
+   "resources": []
+  },
+  "cancelexportjobv2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelExportJobV2",
+   "resources": []
+  },
+  "connectorregistrationsv2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConnectorRegistrationsV2",
+   "resources": []
+  },
+  "createactiontarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateActionTarget",
+   "resources": [
+    "hub"
+   ]
+  },
+  "createaggregatorv2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAggregatorV2",
+   "resources": []
+  },
+  "createautomationrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAutomationRule",
+   "resources": []
+  },
+  "createautomationrulev2": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAutomationRuleV2",
+   "resources": []
+  },
+  "createconfigurationpolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConfigurationPolicy",
+   "resources": []
+  },
+  "createconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnector",
+   "resources": []
+  },
+  "createconnectorv2": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnectorV2",
+   "resources": []
+  },
+  "createfindingaggregator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFindingAggregator",
+   "resources": []
+  },
+  "createinsight": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInsight",
+   "resources": [
+    "hub"
+   ]
+  },
+  "createmembers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMembers",
+   "resources": [
+    "hub"
+   ]
+  },
+  "createticketv2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTicketV2",
+   "resources": [
+    "connectorv2"
+   ]
+  },
+  "declineinvitations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeclineInvitations",
+   "resources": [
+    "hub"
+   ]
+  },
+  "deleteactiontarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteActionTarget",
+   "resources": [
+    "hub"
+   ]
+  },
+  "deleteaggregatorv2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAggregatorV2",
+   "resources": [
+    "aggregatorv2"
+   ]
+  },
+  "deleteautomationrulev2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAutomationRuleV2",
+   "resources": [
+    "automation-rulev2"
+   ]
+  },
+  "deleteconfigurationpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfigurationPolicy",
+   "resources": [
+    "configuration-policy"
+   ]
+  },
+  "deleteconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "deleteconnectorv2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnectorV2",
+   "resources": [
+    "connectorv2"
+   ]
+  },
+  "deletefindingaggregator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFindingAggregator",
+   "resources": [
+    "finding-aggregator"
+   ]
+  },
+  "deleteinsight": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInsight",
+   "resources": [
+    "hub"
+   ]
+  },
+  "deleteinvitations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInvitations",
+   "resources": [
+    "hub"
+   ]
+  },
+  "deletemembers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMembers",
+   "resources": [
+    "hub"
+   ]
+  },
+  "describeactiontargets": {
+   "name": "DescribeActionTargets",
+   "resources": [
+    "hub"
+   ]
+  },
+  "describehub": {
+   "name": "DescribeHub",
+   "resources": [
+    "hub"
+   ]
+  },
+  "describeorganizationconfiguration": {
+   "name": "DescribeOrganizationConfiguration",
+   "resources": [
+    "hub"
+   ]
+  },
+  "describeproducts": {
+   "name": "DescribeProducts",
+   "resources": [
+    "hub"
+   ]
+  },
+  "describeproductsv2": {
+   "name": "DescribeProductsV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "describesecurityhubv2": {
+   "name": "DescribeSecurityHubV2",
+   "resources": []
+  },
+  "describestandards": {
+   "name": "DescribeStandards",
+   "resources": [
+    "hub"
+   ]
+  },
+  "describestandardscontrols": {
+   "name": "DescribeStandardsControls",
+   "resources": [
+    "hub"
+   ]
+  },
+  "disableimportfindingsforproduct": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableImportFindingsForProduct",
+   "resources": [
+    "hub"
+   ]
+  },
+  "disableorganizationadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableOrganizationAdminAccount",
+   "resources": [
+    "hub"
+   ]
+  },
+  "disablesecurityhub": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableSecurityHub",
+   "resources": [
+    "hub"
+   ]
+  },
+  "disablesecurityhubfeaturev2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableSecurityHubFeatureV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "disablesecurityhubv2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableSecurityHubV2",
+   "resources": []
+  },
+  "disassociatefromadministratoraccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateFromAdministratorAccount",
+   "resources": [
+    "hub"
+   ]
+  },
+  "disassociatefrommasteraccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateFromMasterAccount",
+   "resources": [
+    "hub"
+   ]
+  },
+  "disassociatemembers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateMembers",
+   "resources": [
+    "hub"
+   ]
+  },
+  "enableimportfindingsforproduct": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableImportFindingsForProduct",
+   "resources": [
+    "hub"
+   ]
+  },
+  "enableorganizationadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableOrganizationAdminAccount",
+   "resources": [
+    "hub"
+   ]
+  },
+  "enablesecurityhub": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableSecurityHub",
+   "resources": [
+    "hub"
+   ]
+  },
+  "enablesecurityhubfeaturev2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableSecurityHubFeatureV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "enablesecurityhubv2": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableSecurityHubV2",
+   "resources": []
+  },
+  "generaterecommendedpolicyv2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateRecommendedPolicyV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "getadhocinsightresults": {
+   "name": "GetAdhocInsightResults",
+   "resources": [
+    "hub",
+    "hubv2"
+   ]
+  },
+  "getadministratoraccount": {
+   "name": "GetAdministratorAccount",
+   "resources": [
+    "hub"
+   ]
+  },
+  "getaggregatorv2": {
+   "name": "GetAggregatorV2",
+   "resources": [
+    "aggregatorv2"
+   ]
+  },
+  "getautomationrulev2": {
+   "name": "GetAutomationRuleV2",
+   "resources": [
+    "automation-rulev2"
+   ]
+  },
+  "getconfigurationpolicy": {
+   "name": "GetConfigurationPolicy",
+   "resources": [
+    "configuration-policy"
+   ]
+  },
+  "getconfigurationpolicyassociation": {
+   "name": "GetConfigurationPolicyAssociation",
+   "resources": []
+  },
+  "getconnector": {
+   "name": "GetConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "getconnectorv2": {
+   "name": "GetConnectorV2",
+   "resources": [
+    "connectorv2"
+   ]
+  },
+  "getcontrolfindingsummary": {
+   "name": "GetControlFindingSummary",
+   "resources": [
+    "hub"
+   ]
+  },
+  "getcoveragestatisticsv2": {
+   "name": "GetCoverageStatisticsV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "getcspmorganizationsimportstatus": {
+   "name": "GetCSPMOrganizationsImportStatus",
+   "resources": [
+    "hub"
+   ]
+  },
+  "getenabledstandards": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetEnabledStandards",
+   "resources": [
+    "hub"
+   ]
+  },
+  "getexportjobv2": {
+   "name": "GetExportJobV2",
+   "resources": []
+  },
+  "getfindingaggregator": {
+   "name": "GetFindingAggregator",
+   "resources": [
+    "finding-aggregator"
+   ]
+  },
+  "getfindinghistory": {
+   "name": "GetFindingHistory",
+   "resources": [
+    "hub"
+   ]
+  },
+  "getfindings": {
+   "name": "GetFindings",
+   "resources": [
+    "hub",
+    "hubv2"
+   ]
+  },
+  "getfindingstrendsv2": {
+   "name": "GetFindingsTrendsV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "getfreetrialenddate": {
+   "name": "GetFreeTrialEndDate",
+   "resources": [
+    "hub"
+   ]
+  },
+  "getfreetrialusage": {
+   "name": "GetFreeTrialUsage",
+   "resources": [
+    "hub"
+   ]
+  },
+  "getinsightfindingtrend": {
+   "name": "GetInsightFindingTrend",
+   "resources": [
+    "hub"
+   ]
+  },
+  "getinsightresults": {
+   "name": "GetInsightResults",
+   "resources": [
+    "hub"
+   ]
+  },
+  "getinsights": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetInsights",
+   "resources": [
+    "hub"
+   ]
+  },
+  "getinvitationscount": {
+   "name": "GetInvitationsCount",
+   "resources": [
+    "hub"
+   ]
+  },
+  "getmasteraccount": {
+   "name": "GetMasterAccount",
+   "resources": [
+    "hub"
+   ]
+  },
+  "getmembers": {
+   "name": "GetMembers",
+   "resources": [
+    "hub"
+   ]
+  },
+  "getrecommendedpolicyv2": {
+   "name": "GetRecommendedPolicyV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "getremediationsv2": {
+   "name": "GetRemediationsV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "getresourcesstatisticsv2": {
+   "name": "GetResourcesStatisticsV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "getresourcestrendsv2": {
+   "name": "GetResourcesTrendsV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "getresourcesv2": {
+   "name": "GetResourcesV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "getsecuritycontroldefinition": {
+   "name": "GetSecurityControlDefinition",
+   "resources": []
+  },
+  "getsoftwareresourcesv2": {
+   "name": "GetSoftwareResourcesV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "getsoftwarestatisticsv2": {
+   "name": "GetSoftwareStatisticsV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "getsoftwarev2": {
+   "name": "GetSoftwareV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "getusage": {
+   "name": "GetUsage",
+   "resources": [
+    "hub"
+   ]
+  },
+  "getusagev2": {
+   "name": "GetUsageV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "invitemembers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InviteMembers",
+   "resources": [
+    "hub"
+   ]
+  },
+  "listaccountusagev2": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountUsageV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "listaggregatorsv2": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAggregatorsV2",
+   "resources": []
+  },
+  "listautomationrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomationRules",
+   "resources": []
+  },
+  "listautomationrulesv2": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomationRulesV2",
+   "resources": []
+  },
+  "listconfigurationpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigurationPolicies",
+   "resources": []
+  },
+  "listconfigurationpolicyassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigurationPolicyAssociations",
+   "resources": []
+  },
+  "listconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectors",
+   "resources": []
+  },
+  "listconnectorsv2": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectorsV2",
+   "resources": []
+  },
+  "listcontrolevaluationsummaries": {
+   "name": "ListControlEvaluationSummaries",
+   "resources": [
+    "hub"
+   ]
+  },
+  "listenabledproductsforimport": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnabledProductsForImport",
+   "resources": [
+    "hub"
+   ]
+  },
+  "listexportjobsv2": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExportJobsV2",
+   "resources": []
+  },
+  "listexposuresbyremediationv2": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExposuresByRemediationV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "listfindingaggregators": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFindingAggregators",
+   "resources": []
+  },
+  "listfreetrialstatusesv2": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFreeTrialStatusesV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "listinvitations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInvitations",
+   "resources": [
+    "hub"
+   ]
+  },
+  "listmembers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMembers",
+   "resources": [
+    "hub"
+   ]
+  },
+  "listorganizationadminaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrganizationAdminAccounts",
+   "resources": [
+    "hub"
+   ]
+  },
+  "listsecuritycontroldefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityControlDefinitions",
+   "resources": []
+  },
+  "liststandardscontrolassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStandardsControlAssociations",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "automation-rule",
+    "configuration-policy",
+    "hub"
+   ]
+  },
+  "putcspmorganizationsimportstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutCSPMOrganizationsImportStatus",
+   "resources": [
+    "hub"
+   ]
+  },
+  "sendfindingevents": {
+   "name": "SendFindingEvents",
+   "resources": [
+    "hub"
+   ]
+  },
+  "sendinsightevents": {
+   "name": "SendInsightEvents",
+   "resources": [
+    "hub"
+   ]
+  },
+  "startconfigurationpolicyassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartConfigurationPolicyAssociation",
+   "resources": [
+    "hub"
+   ]
+  },
+  "startconfigurationpolicydisassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartConfigurationPolicyDisassociation",
+   "resources": [
+    "hub"
+   ]
+  },
+  "startexportjobv2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartExportJobV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "tagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "aggregatorv2",
+    "automation-rule",
+    "automation-rulev2",
+    "configuration-policy",
+    "connector",
+    "connectorv2",
+    "hub",
+    "hubv2"
+   ]
+  },
+  "untagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "aggregatorv2",
+    "automation-rule",
+    "automation-rulev2",
+    "configuration-policy",
+    "connector",
+    "connectorv2",
+    "hub",
+    "hubv2"
+   ]
+  },
+  "updateactiontarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateActionTarget",
+   "resources": [
+    "hub"
+   ]
+  },
+  "updateaggregatorv2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAggregatorV2",
+   "resources": [
+    "aggregatorv2"
+   ]
+  },
+  "updateautomationrulev2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAutomationRuleV2",
+   "resources": [
+    "automation-rulev2"
+   ]
+  },
+  "updateconfigurationpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConfigurationPolicy",
+   "resources": [
+    "configuration-policy"
+   ]
+  },
+  "updateconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "updateconnectorv2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnectorV2",
+   "resources": [
+    "connectorv2"
+   ]
+  },
+  "updatefindingaggregator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFindingAggregator",
+   "resources": [
+    "finding-aggregator"
+   ]
+  },
+  "updatefindings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFindings",
+   "resources": [
+    "hub"
+   ]
+  },
+  "updateinsight": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInsight",
+   "resources": [
+    "hub"
+   ]
+  },
+  "updateorganizationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOrganizationConfiguration",
+   "resources": [
+    "hub"
+   ]
+  },
+  "updatesecuritycontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSecurityControl",
+   "resources": []
+  },
+  "updatesecurityhubconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSecurityHubConfiguration",
+   "resources": [
+    "hub"
+   ]
+  },
+  "updatesecurityhubv2": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSecurityHubV2",
+   "resources": [
+    "hubv2"
+   ]
+  },
+  "updatestandardscontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStandardsControl",
+   "resources": [
+    "hub"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "securityhub:ASFFSyntaxPath/${ASFFSyntaxPath}": [
+   "String"
+  ],
+  "securityhub:OCSFSyntaxPath/${OCSFSyntaxPath}": [
+   "String"
+  ],
+  "securityhub:TargetAccount": [
+   "String"
+  ]
+ },
+ "resources": {
+  "aggregatorv2": {
+   "arnFormats": [
+    "arn:${Partition}:securityhub:${Region}:${Account}:aggregatorv2/${AggregatorV2Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "automation-rule": {
+   "arnFormats": [
+    "arn:${Partition}:securityhub:${Region}:${Account}:automation-rule/${AutomationRuleId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "automation-rulev2": {
+   "arnFormats": [
+    "arn:${Partition}:securityhub:${Region}:${Account}:automation-rulev2/${AutomationRuleV2Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "configuration-policy": {
+   "arnFormats": [
+    "arn:${Partition}:securityhub:${Region}:${Account}:configuration-policy/${ConfigurationPolicyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "connector": {
+   "arnFormats": [
+    "arn:${Partition}:securityhub:${Region}:${Account}:connector/${ConnectorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "connectorv2": {
+   "arnFormats": [
+    "arn:${Partition}:securityhub:${Region}:${Account}:connectorv2/${ConnectorV2Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "finding-aggregator": {
+   "arnFormats": [
+    "arn:${Partition}:securityhub:${Region}:${Account}:finding-aggregator/${FindingAggregatorId}"
+   ]
+  },
+  "hub": {
+   "arnFormats": [
+    "arn:${Partition}:securityhub:${Region}:${Account}:hub/default"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "hubv2": {
+   "arnFormats": [
+    "arn:${Partition}:securityhub:${Region}:${Account}:hubv2/${HubV2Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "product": {
+   "arnFormats": [
+    "arn:${Partition}:securityhub:${Region}:${Account}:product/${Company}/${ProductId}"
+   ]
+  }
+ },
+ "service": "securityhub",
+ "serviceName": "SecurityHub",
+ "version": "v1.5"
+}

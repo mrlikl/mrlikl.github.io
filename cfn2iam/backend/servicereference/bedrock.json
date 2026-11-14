@@ -1,0 +1,2818 @@
+{
+ "actions": {
+  "agenticretrievestream": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "AgenticRetrieveStream",
+   "resources": []
+  },
+  "allowvendedlogdeliveryforresource": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "applyguardrail": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "ApplyGuardrail",
+   "resources": [
+    "guardrail",
+    "guardrail-profile"
+   ]
+  },
+  "associateagentcollaborator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateAgentCollaborator",
+   "resources": [
+    "agent"
+   ]
+  },
+  "associateagentknowledgebase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateAgentKnowledgeBase",
+   "resources": [
+    "agent",
+    "knowledge-base"
+   ]
+  },
+  "associatethirdpartyknowledgebase": {
+   "conditionKeys": [
+    "bedrock:ThirdPartyKnowledgeBaseCredentialsSecretArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateThirdPartyKnowledgeBase",
+   "resources": []
+  },
+  "batchdeleteadvancedpromptoptimizationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteAdvancedPromptOptimizationJob",
+   "resources": [
+    "advanced-prompt-optimization-job"
+   ]
+  },
+  "batchdeleteevaluationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteEvaluationJob",
+   "resources": [
+    "evaluation-job"
+   ]
+  },
+  "callwithbearertoken": {
+   "conditionKeys": [
+    "bedrock:BearerTokenType"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "CallWithBearerToken",
+   "resources": []
+  },
+  "cancelautomatedreasoningpolicybuildworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelAutomatedReasoningPolicyBuildWorkflow",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "cancelinvoke": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelInvoke",
+   "resources": [
+    "project"
+   ]
+  },
+  "checkingesteddocumentacl": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "CheckIngestedDocumentAcl",
+   "resources": []
+  },
+  "copyblueprintstage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyBlueprintStage",
+   "resources": [
+    "blueprint"
+   ]
+  },
+  "counttokens": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "CountTokens",
+   "resources": [
+    "foundation-model"
+   ]
+  },
+  "createadvancedpromptoptimizationjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAdvancedPromptOptimizationJob",
+   "resources": [
+    "application-inference-profile",
+    "foundation-model",
+    "inference-profile"
+   ]
+  },
+  "createagent": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgent",
+   "resources": []
+  },
+  "createagentactiongroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgentActionGroup",
+   "resources": [
+    "agent"
+   ]
+  },
+  "createagentalias": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgentAlias",
+   "resources": [
+    "agent"
+   ]
+  },
+  "createautomatedreasoningpolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAutomatedReasoningPolicy",
+   "resources": []
+  },
+  "createautomatedreasoningpolicytestcase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAutomatedReasoningPolicyTestCase",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "createautomatedreasoningpolicyversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAutomatedReasoningPolicyVersion",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "createblueprint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBlueprint",
+   "resources": []
+  },
+  "createblueprintversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBlueprintVersion",
+   "resources": [
+    "blueprint"
+   ]
+  },
+  "createcustommodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomModel",
+   "resources": []
+  },
+  "createcustommodeldeployment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomModelDeployment",
+   "resources": [
+    "custom-model"
+   ]
+  },
+  "createdataautomationlibrary": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataAutomationLibrary",
+   "resources": []
+  },
+  "createdataautomationproject": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataAutomationProject",
+   "resources": [
+    "blueprint",
+    "data-automation-library"
+   ]
+  },
+  "createdatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataSource",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "createdatasourcetoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataSourceToken",
+   "resources": []
+  },
+  "createevaluationjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEvaluationJob",
+   "resources": [
+    "custom-model",
+    "default-prompt-router",
+    "foundation-model",
+    "prompt-router"
+   ]
+  },
+  "createflow": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFlow",
+   "resources": []
+  },
+  "createflowalias": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFlowAlias",
+   "resources": [
+    "flow"
+   ]
+  },
+  "createflowversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFlowVersion",
+   "resources": [
+    "flow"
+   ]
+  },
+  "createfoundationmodelagreement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFoundationModelAgreement",
+   "resources": []
+  },
+  "createguardrail": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGuardrail",
+   "resources": [
+    "automated-reasoning-policy",
+    "automated-reasoning-policy-version",
+    "guardrail-profile"
+   ]
+  },
+  "createguardrailversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGuardrailVersion",
+   "resources": [
+    "guardrail"
+   ]
+  },
+  "createinferenceprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInferenceProfile",
+   "resources": [
+    "application-inference-profile",
+    "foundation-model",
+    "inference-profile"
+   ]
+  },
+  "createinvocation": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateInvocation",
+   "resources": [
+    "session"
+   ]
+  },
+  "createknowledgebase": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKnowledgeBase",
+   "resources": []
+  },
+  "createmarketplacemodelendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMarketplaceModelEndpoint",
+   "resources": []
+  },
+  "createmodelcopyjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateModelCopyJob",
+   "resources": [
+    "custom-model"
+   ]
+  },
+  "createmodelcustomizationjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateModelCustomizationJob",
+   "resources": [
+    "custom-model",
+    "foundation-model"
+   ]
+  },
+  "createmodelevaluationjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateModelEvaluationJob",
+   "resources": [
+    "custom-model",
+    "foundation-model"
+   ]
+  },
+  "createmodelimportjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateModelImportJob",
+   "resources": []
+  },
+  "createmodelinvocationjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateModelInvocationJob",
+   "resources": [
+    "custom-model",
+    "foundation-model",
+    "model-invocation-job"
+   ]
+  },
+  "createprompt": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePrompt",
+   "resources": []
+  },
+  "createpromptrouter": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePromptRouter",
+   "resources": [
+    "application-inference-profile",
+    "foundation-model",
+    "inference-profile"
+   ]
+  },
+  "createpromptversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePromptVersion",
+   "resources": [
+    "prompt"
+   ]
+  },
+  "createprovisionedmodelthroughput": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProvisionedModelThroughput",
+   "resources": [
+    "custom-model",
+    "foundation-model"
+   ]
+  },
+  "createretrievalinstruction": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRetrievalInstruction",
+   "resources": []
+  },
+  "createretrievalinstructionversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRetrievalInstructionVersion",
+   "resources": [
+    "retrieval-instruction"
+   ]
+  },
+  "createsession": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateSession",
+   "resources": []
+  },
+  "deleteagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgent",
+   "resources": [
+    "agent"
+   ]
+  },
+  "deleteagentactiongroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentActionGroup",
+   "resources": [
+    "agent"
+   ]
+  },
+  "deleteagentalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentAlias",
+   "resources": [
+    "agent-alias"
+   ]
+  },
+  "deleteagentmemory": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteAgentMemory",
+   "resources": [
+    "agent-alias"
+   ]
+  },
+  "deleteagentversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentVersion",
+   "resources": [
+    "agent"
+   ]
+  },
+  "deleteautomatedreasoningpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAutomatedReasoningPolicy",
+   "resources": [
+    "automated-reasoning-policy",
+    "automated-reasoning-policy-version"
+   ]
+  },
+  "deleteautomatedreasoningpolicybuildworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAutomatedReasoningPolicyBuildWorkflow",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "deleteautomatedreasoningpolicytestcase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAutomatedReasoningPolicyTestCase",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "deleteblueprint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBlueprint",
+   "resources": [
+    "blueprint"
+   ]
+  },
+  "deletecustommodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomModel",
+   "resources": [
+    "custom-model"
+   ]
+  },
+  "deletecustommodeldeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomModelDeployment",
+   "resources": [
+    "custom-model-deployment"
+   ]
+  },
+  "deletedataautomationlibrary": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataAutomationLibrary",
+   "resources": [
+    "data-automation-library"
+   ]
+  },
+  "deletedataautomationproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataAutomationProject",
+   "resources": [
+    "data-automation-project"
+   ]
+  },
+  "deletedatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataSource",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "deleteenforcedguardrailconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnforcedGuardrailConfiguration",
+   "resources": []
+  },
+  "deleteflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFlow",
+   "resources": [
+    "flow"
+   ]
+  },
+  "deleteflowalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFlowAlias",
+   "resources": [
+    "flow-alias"
+   ]
+  },
+  "deleteflowversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFlowVersion",
+   "resources": [
+    "flow"
+   ]
+  },
+  "deletefoundationmodelagreement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFoundationModelAgreement",
+   "resources": []
+  },
+  "deleteguardrail": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGuardrail",
+   "resources": [
+    "guardrail"
+   ]
+  },
+  "deleteimportedmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteImportedModel",
+   "resources": [
+    "imported-model"
+   ]
+  },
+  "deleteinferenceprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInferenceProfile",
+   "resources": [
+    "application-inference-profile"
+   ]
+  },
+  "deleteinvoke": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInvoke",
+   "resources": [
+    "project"
+   ]
+  },
+  "deleteknowledgebase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKnowledgeBase",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "deleteknowledgebasedocuments": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKnowledgeBaseDocuments",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "deletemarketplacemodelagreement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMarketplaceModelAgreement",
+   "resources": []
+  },
+  "deletemarketplacemodelendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMarketplaceModelEndpoint",
+   "resources": [
+    "bedrock-marketplace-model-endpoint"
+   ]
+  },
+  "deletemodelinvocationloggingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteModelInvocationLoggingConfiguration",
+   "resources": []
+  },
+  "deleteprompt": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePrompt",
+   "resources": [
+    "prompt",
+    "prompt-version"
+   ]
+  },
+  "deletepromptrouter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePromptRouter",
+   "resources": [
+    "prompt-router"
+   ]
+  },
+  "deleteprovisionedmodelthroughput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProvisionedModelThroughput",
+   "resources": [
+    "provisioned-model"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "custom-model",
+    "guardrail",
+    "guardrail-profile",
+    "knowledge-base"
+   ]
+  },
+  "deleteretrievalinstruction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRetrievalInstruction",
+   "resources": [
+    "retrieval-instruction"
+   ]
+  },
+  "deletesession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteSession",
+   "resources": [
+    "session"
+   ]
+  },
+  "deregistermarketplacemodelendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterMarketplaceModelEndpoint",
+   "resources": [
+    "bedrock-marketplace-model-endpoint"
+   ]
+  },
+  "detectgeneratedcontent": {
+   "name": "DetectGeneratedContent",
+   "resources": [
+    "foundation-model"
+   ]
+  },
+  "disassociateagentcollaborator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateAgentCollaborator",
+   "resources": [
+    "agent"
+   ]
+  },
+  "disassociateagentknowledgebase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateAgentKnowledgeBase",
+   "resources": [
+    "agent",
+    "knowledge-base"
+   ]
+  },
+  "endsession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "EndSession",
+   "resources": [
+    "session"
+   ]
+  },
+  "exportautomatedreasoningpolicyversion": {
+   "name": "ExportAutomatedReasoningPolicyVersion",
+   "resources": [
+    "automated-reasoning-policy",
+    "automated-reasoning-policy-version"
+   ]
+  },
+  "generatequery": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GenerateQuery",
+   "resources": []
+  },
+  "getaccountdataretention": {
+   "name": "GetAccountDataRetention",
+   "resources": []
+  },
+  "getadvancedpromptoptimizationjob": {
+   "name": "GetAdvancedPromptOptimizationJob",
+   "resources": [
+    "advanced-prompt-optimization-job"
+   ]
+  },
+  "getagent": {
+   "name": "GetAgent",
+   "resources": [
+    "agent"
+   ]
+  },
+  "getagentactiongroup": {
+   "name": "GetAgentActionGroup",
+   "resources": [
+    "agent"
+   ]
+  },
+  "getagentalias": {
+   "name": "GetAgentAlias",
+   "resources": [
+    "agent-alias"
+   ]
+  },
+  "getagentcollaborator": {
+   "name": "GetAgentCollaborator",
+   "resources": [
+    "agent"
+   ]
+  },
+  "getagentknowledgebase": {
+   "name": "GetAgentKnowledgeBase",
+   "resources": [
+    "agent",
+    "knowledge-base"
+   ]
+  },
+  "getagentmemory": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetAgentMemory",
+   "resources": [
+    "agent-alias"
+   ]
+  },
+  "getagentversion": {
+   "name": "GetAgentVersion",
+   "resources": [
+    "agent"
+   ]
+  },
+  "getasyncinvoke": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetAsyncInvoke",
+   "resources": [
+    "async-invoke"
+   ]
+  },
+  "getautomatedreasoningpolicy": {
+   "name": "GetAutomatedReasoningPolicy",
+   "resources": [
+    "automated-reasoning-policy",
+    "automated-reasoning-policy-version"
+   ]
+  },
+  "getautomatedreasoningpolicyannotations": {
+   "name": "GetAutomatedReasoningPolicyAnnotations",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "getautomatedreasoningpolicybuildworkflow": {
+   "name": "GetAutomatedReasoningPolicyBuildWorkflow",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "getautomatedreasoningpolicybuildworkflowresultassets": {
+   "name": "GetAutomatedReasoningPolicyBuildWorkflowResultAssets",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "getautomatedreasoningpolicynextscenario": {
+   "name": "GetAutomatedReasoningPolicyNextScenario",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "getautomatedreasoningpolicytestcase": {
+   "name": "GetAutomatedReasoningPolicyTestCase",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "getautomatedreasoningpolicytestresult": {
+   "name": "GetAutomatedReasoningPolicyTestResult",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "getblueprint": {
+   "name": "GetBlueprint",
+   "resources": [
+    "blueprint"
+   ]
+  },
+  "getblueprintoptimizationstatus": {
+   "name": "GetBlueprintOptimizationStatus",
+   "resources": [
+    "blueprint-optimization-invocation"
+   ]
+  },
+  "getblueprintrecommendation": {
+   "name": "GetBlueprintRecommendation",
+   "resources": []
+  },
+  "getcustommodel": {
+   "name": "GetCustomModel",
+   "resources": [
+    "custom-model"
+   ]
+  },
+  "getcustommodeldeployment": {
+   "name": "GetCustomModelDeployment",
+   "resources": [
+    "custom-model-deployment"
+   ]
+  },
+  "getdataautomationlibrary": {
+   "name": "GetDataAutomationLibrary",
+   "resources": [
+    "data-automation-library"
+   ]
+  },
+  "getdataautomationlibraryentity": {
+   "name": "GetDataAutomationLibraryEntity",
+   "resources": [
+    "data-automation-library"
+   ]
+  },
+  "getdataautomationlibraryingestionjob": {
+   "name": "GetDataAutomationLibraryIngestionJob",
+   "resources": [
+    "data-automation-library",
+    "data-automation-library-ingestion-job"
+   ]
+  },
+  "getdataautomationproject": {
+   "name": "GetDataAutomationProject",
+   "resources": [
+    "data-automation-project"
+   ]
+  },
+  "getdataautomationstatus": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetDataAutomationStatus",
+   "resources": [
+    "data-automation-invocation-job"
+   ]
+  },
+  "getdatasource": {
+   "name": "GetDataSource",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "getdatasourceauthorizationurl": {
+   "name": "GetDataSourceAuthorizationUrl",
+   "resources": []
+  },
+  "getdocumentcontent": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetDocumentContent",
+   "resources": []
+  },
+  "getevaluationjob": {
+   "name": "GetEvaluationJob",
+   "resources": [
+    "evaluation-job"
+   ]
+  },
+  "getexecutionflowsnapshot": {
+   "name": "GetExecutionFlowSnapshot",
+   "resources": [
+    "flow",
+    "flow-alias",
+    "flow-execution"
+   ]
+  },
+  "getflow": {
+   "name": "GetFlow",
+   "resources": [
+    "flow"
+   ]
+  },
+  "getflowalias": {
+   "name": "GetFlowAlias",
+   "resources": [
+    "flow-alias"
+   ]
+  },
+  "getflowexecution": {
+   "name": "GetFlowExecution",
+   "resources": [
+    "flow",
+    "flow-alias",
+    "flow-execution"
+   ]
+  },
+  "getflowversion": {
+   "name": "GetFlowVersion",
+   "resources": [
+    "flow"
+   ]
+  },
+  "getfoundationmodel": {
+   "name": "GetFoundationModel",
+   "resources": [
+    "foundation-model"
+   ]
+  },
+  "getfoundationmodelavailability": {
+   "name": "GetFoundationModelAvailability",
+   "resources": []
+  },
+  "getguardrail": {
+   "name": "GetGuardrail",
+   "resources": [
+    "guardrail"
+   ]
+  },
+  "getimportedmodel": {
+   "name": "GetImportedModel",
+   "resources": [
+    "imported-model"
+   ]
+  },
+  "getinferenceprofile": {
+   "name": "GetInferenceProfile",
+   "resources": [
+    "application-inference-profile",
+    "inference-profile"
+   ]
+  },
+  "getingesteddocumentacl": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetIngestedDocumentAcl",
+   "resources": []
+  },
+  "getingestionjob": {
+   "name": "GetIngestionJob",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "getinvocationstep": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetInvocationStep",
+   "resources": [
+    "session"
+   ]
+  },
+  "getinvoke": {
+   "name": "GetInvoke",
+   "resources": [
+    "project"
+   ]
+  },
+  "getknowledgebase": {
+   "name": "GetKnowledgeBase",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "getknowledgebasedocuments": {
+   "name": "GetKnowledgeBaseDocuments",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "getmarketplacemodelendpoint": {
+   "name": "GetMarketplaceModelEndpoint",
+   "resources": [
+    "bedrock-marketplace-model-endpoint"
+   ]
+  },
+  "getmodelcopyjob": {
+   "name": "GetModelCopyJob",
+   "resources": [
+    "model-copy-job"
+   ]
+  },
+  "getmodelcustomizationjob": {
+   "name": "GetModelCustomizationJob",
+   "resources": [
+    "model-customization-job"
+   ]
+  },
+  "getmodelevaluationjob": {
+   "name": "GetModelEvaluationJob",
+   "resources": [
+    "model-evaluation-job"
+   ]
+  },
+  "getmodelimportjob": {
+   "name": "GetModelImportJob",
+   "resources": [
+    "model-import-job"
+   ]
+  },
+  "getmodelinvocationjob": {
+   "name": "GetModelInvocationJob",
+   "resources": [
+    "model-invocation-job"
+   ]
+  },
+  "getmodelinvocationloggingconfiguration": {
+   "name": "GetModelInvocationLoggingConfiguration",
+   "resources": []
+  },
+  "getprompt": {
+   "name": "GetPrompt",
+   "resources": [
+    "prompt",
+    "prompt-version"
+   ]
+  },
+  "getpromptrouter": {
+   "name": "GetPromptRouter",
+   "resources": [
+    "default-prompt-router",
+    "prompt-router"
+   ]
+  },
+  "getprovisionedmodelthroughput": {
+   "name": "GetProvisionedModelThroughput",
+   "resources": [
+    "provisioned-model"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "custom-model",
+    "guardrail",
+    "guardrail-profile",
+    "knowledge-base"
+   ]
+  },
+  "getretrievalinstruction": {
+   "name": "GetRetrievalInstruction",
+   "resources": [
+    "retrieval-instruction"
+   ]
+  },
+  "getsession": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetSession",
+   "resources": [
+    "session"
+   ]
+  },
+  "getusecaseformodelaccess": {
+   "name": "GetUseCaseForModelAccess",
+   "resources": []
+  },
+  "ingestknowledgebasedocuments": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "IngestKnowledgeBaseDocuments",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "invokeagent": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "InvokeAgent",
+   "resources": [
+    "agent-alias"
+   ]
+  },
+  "invokeautomatedreasoningpolicy": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "InvokeAutomatedReasoningPolicy",
+   "resources": [
+    "automated-reasoning-policy",
+    "automated-reasoning-policy-version"
+   ]
+  },
+  "invokeblueprintoptimizationasync": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeBlueprintOptimizationAsync",
+   "resources": [
+    "blueprint",
+    "data-automation-profile"
+   ]
+  },
+  "invokeblueprintrecommendationasync": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeBlueprintRecommendationAsync",
+   "resources": [
+    "data-automation-profile"
+   ]
+  },
+  "invokebuilder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeBuilder",
+   "resources": []
+  },
+  "invokedataautomation": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "InvokeDataAutomation",
+   "resources": [
+    "blueprint",
+    "data-automation-profile",
+    "data-automation-project"
+   ]
+  },
+  "invokedataautomationasync": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "InvokeDataAutomationAsync",
+   "resources": [
+    "blueprint",
+    "data-automation-profile",
+    "data-automation-project"
+   ]
+  },
+  "invokedataautomationlibraryingestionjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeDataAutomationLibraryIngestionJob",
+   "resources": [
+    "data-automation-library"
+   ]
+  },
+  "invokeflow": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "InvokeFlow",
+   "resources": [
+    "flow-alias"
+   ]
+  },
+  "invokeguardrailchecks": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "InvokeGuardrailChecks",
+   "resources": []
+  },
+  "invokeinlineagent": {
+   "conditionKeys": [
+    "bedrock:InlineAgentName"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "InvokeInlineAgent",
+   "resources": []
+  },
+  "invokemodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "bedrock:GuardrailIdentifier",
+    "bedrock:InferenceProfileArn",
+    "bedrock:ModelArn",
+    "bedrock:ProjectArn",
+    "bedrock:PromptRouterArn",
+    "bedrock:ServiceTier"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "InvokeModel",
+   "resources": [
+    "application-inference-profile",
+    "async-invoke",
+    "bedrock-marketplace-model-endpoint",
+    "custom-model-deployment",
+    "default-prompt-router",
+    "foundation-model",
+    "imported-model",
+    "inference-profile",
+    "project",
+    "prompt-router",
+    "provisioned-model",
+    "system-tool"
+   ]
+  },
+  "invokemodelwithresponsestream": {
+   "conditionKeys": [
+    "bedrock:GuardrailIdentifier",
+    "bedrock:InferenceProfileArn",
+    "bedrock:PromptRouterArn",
+    "bedrock:ServiceTier"
+   ],
+   "name": "InvokeModelWithResponseStream",
+   "resources": [
+    "application-inference-profile",
+    "bedrock-marketplace-model-endpoint",
+    "custom-model-deployment",
+    "default-prompt-router",
+    "foundation-model",
+    "imported-model",
+    "inference-profile",
+    "prompt-router",
+    "provisioned-model",
+    "system-tool"
+   ]
+  },
+  "invoketool": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "InvokeTool",
+   "resources": [
+    "system-tool"
+   ]
+  },
+  "listadvancedpromptoptimizationjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAdvancedPromptOptimizationJobs",
+   "resources": []
+  },
+  "listagentactiongroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentActionGroups",
+   "resources": [
+    "agent"
+   ]
+  },
+  "listagentaliases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentAliases",
+   "resources": [
+    "agent"
+   ]
+  },
+  "listagentcollaborators": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentCollaborators",
+   "resources": [
+    "agent"
+   ]
+  },
+  "listagentknowledgebases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentKnowledgeBases",
+   "resources": [
+    "agent"
+   ]
+  },
+  "listagents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgents",
+   "resources": []
+  },
+  "listagentversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentVersions",
+   "resources": [
+    "agent"
+   ]
+  },
+  "listasyncinvokes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAsyncInvokes",
+   "resources": []
+  },
+  "listautomatedreasoningpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomatedReasoningPolicies",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "listautomatedreasoningpolicybuildworkflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomatedReasoningPolicyBuildWorkflows",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "listautomatedreasoningpolicytestcases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomatedReasoningPolicyTestCases",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "listautomatedreasoningpolicytestresults": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomatedReasoningPolicyTestResults",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "listblueprints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBlueprints",
+   "resources": [
+    "data-automation-project"
+   ]
+  },
+  "listcustommodeldeployments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomModelDeployments",
+   "resources": []
+  },
+  "listcustommodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomModels",
+   "resources": []
+  },
+  "listdataautomationlibraries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataAutomationLibraries",
+   "resources": [
+    "data-automation-project"
+   ]
+  },
+  "listdataautomationlibraryentities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataAutomationLibraryEntities",
+   "resources": [
+    "data-automation-library"
+   ]
+  },
+  "listdataautomationlibraryingestionjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataAutomationLibraryIngestionJobs",
+   "resources": [
+    "data-automation-library"
+   ]
+  },
+  "listdataautomationprojects": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataAutomationProjects",
+   "resources": [
+    "blueprint",
+    "data-automation-project"
+   ]
+  },
+  "listdatasources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSources",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "listenforcedguardrailsconfiguration": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnforcedGuardrailsConfiguration",
+   "resources": []
+  },
+  "listevaluationjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEvaluationJobs",
+   "resources": []
+  },
+  "listflowaliases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFlowAliases",
+   "resources": [
+    "flow"
+   ]
+  },
+  "listflowexecutionevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFlowExecutionEvents",
+   "resources": [
+    "flow",
+    "flow-alias",
+    "flow-execution"
+   ]
+  },
+  "listflowexecutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFlowExecutions",
+   "resources": [
+    "flow",
+    "flow-alias"
+   ]
+  },
+  "listflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFlows",
+   "resources": []
+  },
+  "listflowversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFlowVersions",
+   "resources": [
+    "flow"
+   ]
+  },
+  "listfoundationmodelagreementoffers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFoundationModelAgreementOffers",
+   "resources": []
+  },
+  "listfoundationmodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFoundationModels",
+   "resources": []
+  },
+  "listguardrails": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGuardrails",
+   "resources": [
+    "guardrail"
+   ]
+  },
+  "listimportedmodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListImportedModels",
+   "resources": []
+  },
+  "listinferenceprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInferenceProfiles",
+   "resources": []
+  },
+  "listingestionjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIngestionJobs",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "listinvocations": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListInvocations",
+   "resources": [
+    "session"
+   ]
+  },
+  "listinvocationsteps": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListInvocationSteps",
+   "resources": [
+    "session"
+   ]
+  },
+  "listknowledgebasedocuments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKnowledgeBaseDocuments",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "listknowledgebases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKnowledgeBases",
+   "resources": []
+  },
+  "listmarketplacemodelendpoints": {
+   "name": "ListMarketplaceModelEndpoints",
+   "resources": []
+  },
+  "listmodelcopyjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListModelCopyJobs",
+   "resources": []
+  },
+  "listmodelcustomizationjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListModelCustomizationJobs",
+   "resources": []
+  },
+  "listmodelevaluationjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListModelEvaluationJobs",
+   "resources": []
+  },
+  "listmodelimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListModelImportJobs",
+   "resources": []
+  },
+  "listmodelinvocationjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListModelInvocationJobs",
+   "resources": []
+  },
+  "listpromptrouters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPromptRouters",
+   "resources": []
+  },
+  "listprompts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPrompts",
+   "resources": [
+    "prompt"
+   ]
+  },
+  "listprovisionedmodelthroughputs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProvisionedModelThroughputs",
+   "resources": []
+  },
+  "listretrievalinstructions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRetrievalInstructions",
+   "resources": []
+  },
+  "listretrievalinstructionversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRetrievalInstructionVersions",
+   "resources": [
+    "retrieval-instruction"
+   ]
+  },
+  "listsessions": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListSessions",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "advanced-prompt-optimization-job",
+    "agent",
+    "agent-alias",
+    "application-inference-profile",
+    "async-invoke",
+    "automated-reasoning-policy",
+    "automated-reasoning-policy-version",
+    "blueprint",
+    "blueprint-optimization-invocation",
+    "custom-model",
+    "custom-model-deployment",
+    "data-automation-invocation-job",
+    "data-automation-library",
+    "data-automation-library-ingestion-job",
+    "data-automation-project",
+    "evaluation-job",
+    "flow",
+    "flow-alias",
+    "guardrail",
+    "imported-model",
+    "knowledge-base",
+    "model-copy-job",
+    "model-customization-job",
+    "model-evaluation-job",
+    "model-import-job",
+    "model-invocation-job",
+    "prompt",
+    "prompt-router",
+    "prompt-version",
+    "provisioned-model",
+    "retrieval-instruction",
+    "session"
+   ]
+  },
+  "optimizeprompt": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "OptimizePrompt",
+   "resources": []
+  },
+  "prepareagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PrepareAgent",
+   "resources": [
+    "agent"
+   ]
+  },
+  "prepareflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PrepareFlow",
+   "resources": [
+    "flow"
+   ]
+  },
+  "putaccountdataretention": {
+   "conditionKeys": [
+    "bedrock:DataRetentionMode"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAccountDataRetention",
+   "resources": []
+  },
+  "putenforcedguardrailconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutEnforcedGuardrailConfiguration",
+   "resources": []
+  },
+  "putfoundationmodelentitlement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFoundationModelEntitlement",
+   "resources": []
+  },
+  "putinvocationstep": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutInvocationStep",
+   "resources": [
+    "session"
+   ]
+  },
+  "putmodelinvocationloggingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutModelInvocationLoggingConfiguration",
+   "resources": []
+  },
+  "putresourcepolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "custom-model",
+    "guardrail",
+    "guardrail-profile",
+    "knowledge-base"
+   ]
+  },
+  "putusecaseformodelaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutUseCaseForModelAccess",
+   "resources": []
+  },
+  "registermarketplacemodelendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterMarketplaceModelEndpoint",
+   "resources": [
+    "bedrock-marketplace-model-endpoint"
+   ]
+  },
+  "renderprompt": {
+   "name": "RenderPrompt",
+   "resources": [
+    "prompt",
+    "prompt-version"
+   ]
+  },
+  "rerank": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "Rerank",
+   "resources": []
+  },
+  "retrieve": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "Retrieve",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "retrieveandgenerate": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "RetrieveAndGenerate",
+   "resources": []
+  },
+  "startautomatedreasoningpolicybuildworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAutomatedReasoningPolicyBuildWorkflow",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "startautomatedreasoningpolicytestworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAutomatedReasoningPolicyTestWorkflow",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "startflowexecution": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartFlowExecution",
+   "resources": [
+    "flow",
+    "flow-alias"
+   ]
+  },
+  "startingestionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartIngestionJob",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "stopadvancedpromptoptimizationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopAdvancedPromptOptimizationJob",
+   "resources": [
+    "advanced-prompt-optimization-job"
+   ]
+  },
+  "stopevaluationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopEvaluationJob",
+   "resources": [
+    "evaluation-job"
+   ]
+  },
+  "stopflowexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopFlowExecution",
+   "resources": [
+    "flow",
+    "flow-alias",
+    "flow-execution"
+   ]
+  },
+  "stopingestionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopIngestionJob",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "stopmodelcustomizationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopModelCustomizationJob",
+   "resources": [
+    "model-customization-job"
+   ]
+  },
+  "stopmodelinvocationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopModelInvocationJob",
+   "resources": [
+    "model-invocation-job"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "advanced-prompt-optimization-job",
+    "agent",
+    "agent-alias",
+    "application-inference-profile",
+    "async-invoke",
+    "automated-reasoning-policy",
+    "automated-reasoning-policy-version",
+    "blueprint",
+    "blueprint-optimization-invocation",
+    "custom-model",
+    "custom-model-deployment",
+    "data-automation-invocation-job",
+    "data-automation-library",
+    "data-automation-library-ingestion-job",
+    "data-automation-project",
+    "evaluation-job",
+    "flow",
+    "flow-alias",
+    "guardrail",
+    "imported-model",
+    "knowledge-base",
+    "model-copy-job",
+    "model-customization-job",
+    "model-evaluation-job",
+    "model-import-job",
+    "model-invocation-job",
+    "prompt",
+    "prompt-router",
+    "prompt-version",
+    "provisioned-model",
+    "retrieval-instruction",
+    "session"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "advanced-prompt-optimization-job",
+    "agent",
+    "agent-alias",
+    "application-inference-profile",
+    "async-invoke",
+    "automated-reasoning-policy",
+    "automated-reasoning-policy-version",
+    "blueprint",
+    "blueprint-optimization-invocation",
+    "custom-model",
+    "custom-model-deployment",
+    "data-automation-invocation-job",
+    "data-automation-library",
+    "data-automation-library-ingestion-job",
+    "data-automation-project",
+    "evaluation-job",
+    "flow",
+    "flow-alias",
+    "guardrail",
+    "imported-model",
+    "knowledge-base",
+    "model-copy-job",
+    "model-customization-job",
+    "model-evaluation-job",
+    "model-import-job",
+    "model-invocation-job",
+    "prompt",
+    "prompt-router",
+    "prompt-version",
+    "provisioned-model",
+    "retrieval-instruction",
+    "session"
+   ]
+  },
+  "updateagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgent",
+   "resources": [
+    "agent"
+   ]
+  },
+  "updateagentactiongroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentActionGroup",
+   "resources": [
+    "agent"
+   ]
+  },
+  "updateagentalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentAlias",
+   "resources": [
+    "agent-alias"
+   ]
+  },
+  "updateagentcollaborator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentCollaborator",
+   "resources": [
+    "agent"
+   ]
+  },
+  "updateagentknowledgebase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentKnowledgeBase",
+   "resources": [
+    "agent",
+    "knowledge-base"
+   ]
+  },
+  "updateautomatedreasoningpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAutomatedReasoningPolicy",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "updateautomatedreasoningpolicyannotations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAutomatedReasoningPolicyAnnotations",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "updateautomatedreasoningpolicytestcase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAutomatedReasoningPolicyTestCase",
+   "resources": [
+    "automated-reasoning-policy"
+   ]
+  },
+  "updateblueprint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBlueprint",
+   "resources": [
+    "blueprint"
+   ]
+  },
+  "updatecustommodeldeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCustomModelDeployment",
+   "resources": [
+    "custom-model",
+    "custom-model-deployment"
+   ]
+  },
+  "updatedataautomationlibrary": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataAutomationLibrary",
+   "resources": [
+    "data-automation-library"
+   ]
+  },
+  "updatedataautomationproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataAutomationProject",
+   "resources": [
+    "blueprint",
+    "data-automation-project"
+   ]
+  },
+  "updatedatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataSource",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "updateflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFlow",
+   "resources": [
+    "flow"
+   ]
+  },
+  "updateflowalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFlowAlias",
+   "resources": [
+    "flow-alias"
+   ]
+  },
+  "updateguardrail": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGuardrail",
+   "resources": [
+    "automated-reasoning-policy",
+    "automated-reasoning-policy-version",
+    "guardrail",
+    "guardrail-profile"
+   ]
+  },
+  "updateknowledgebase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKnowledgeBase",
+   "resources": [
+    "knowledge-base"
+   ]
+  },
+  "updatemarketplacemodelendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMarketplaceModelEndpoint",
+   "resources": [
+    "bedrock-marketplace-model-endpoint"
+   ]
+  },
+  "updateprompt": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePrompt",
+   "resources": [
+    "prompt"
+   ]
+  },
+  "updateprovisionedmodelthroughput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProvisionedModelThroughput",
+   "resources": [
+    "custom-model",
+    "foundation-model",
+    "provisioned-model"
+   ]
+  },
+  "updateretrievalinstruction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRetrievalInstruction",
+   "resources": [
+    "retrieval-instruction"
+   ]
+  },
+  "updatesession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateSession",
+   "resources": [
+    "session"
+   ]
+  },
+  "validateflowdefinition": {
+   "name": "ValidateFlowDefinition",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "bedrock:BearerTokenType": [
+   "String"
+  ],
+  "bedrock:DataRetentionMode": [
+   "String"
+  ],
+  "bedrock:GuardrailIdentifier": [
+   "ARN"
+  ],
+  "bedrock:InferenceProfileArn": [
+   "ARN"
+  ],
+  "bedrock:InlineAgentName": [
+   "String"
+  ],
+  "bedrock:ModelArn": [
+   "ARN"
+  ],
+  "bedrock:ProjectArn": [
+   "ARN"
+  ],
+  "bedrock:PromptRouterArn": [
+   "ARN"
+  ],
+  "bedrock:ServiceTier": [
+   "String"
+  ],
+  "bedrock:ThirdPartyKnowledgeBaseCredentialsSecretArn": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "advanced-prompt-optimization-job": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:advanced-prompt-optimization-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "agent": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:agent/${AgentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "agent-alias": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:agent-alias/${AgentId}/${AgentAliasId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "application-inference-profile": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:application-inference-profile/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "async-invoke": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:async-invoke/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "automated-reasoning-policy": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:automated-reasoning-policy/${AutomatedReasoningPolicyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "automated-reasoning-policy-version": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:automated-reasoning-policy/${AutomatedReasoningPolicyId}:${AutomatedReasoningPolicyVersion}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "bedrock-marketplace-model-endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:marketplace/model-endpoint/all-access"
+   ]
+  },
+  "blueprint": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:blueprint/${BlueprintId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "blueprint-optimization-invocation": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:blueprint-optimization-invocation/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "custom-model": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:custom-model/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "custom-model-deployment": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:custom-model-deployment/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "data-automation-invocation-job": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:data-automation-invocation/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "data-automation-library": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:data-automation-library/${DataAutomationLibraryId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "data-automation-library-ingestion-job": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:data-automation-library-ingestion-job/${IngestionJobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "data-automation-profile": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:data-automation-profile/${ProfileId}"
+   ]
+  },
+  "data-automation-project": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:data-automation-project/${ProjectId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "default-prompt-router": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:default-prompt-router/${ResourceId}"
+   ]
+  },
+  "evaluation-job": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:evaluation-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "flow": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:flow/${FlowId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "flow-alias": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:flow/${FlowId}/alias/${FlowAliasId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "flow-execution": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:flow/${FlowId}/alias/${FlowAliasId}/execution/${FlowExecutionId}"
+   ]
+  },
+  "foundation-model": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}::foundation-model/${ResourceId}"
+   ]
+  },
+  "guardrail": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:guardrail/${GuardrailId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "guardrail-profile": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:guardrail-profile/${ResourceId}"
+   ]
+  },
+  "imported-model": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:imported-model/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "inference-profile": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:inference-profile/${ResourceId}"
+   ]
+  },
+  "knowledge-base": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:knowledge-base/${KnowledgeBaseId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "model-copy-job": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:model-copy-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "model-customization-job": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:model-customization-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "model-evaluation-job": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:model-evaluation-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "model-import-job": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:model-import-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "model-invocation-job": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:model-invocation-job/${JobIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "project": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:project/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "prompt": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:prompt/${PromptId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "prompt-router": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:prompt-router/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "prompt-version": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:prompt/${PromptId}:${PromptVersion}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "provisioned-model": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:provisioned-model/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "retrieval-instruction": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:retrieval-instruction/${RetrievalInstructionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "session": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock:${Region}:${Account}:session/${SessionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "system-tool": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock::${Account}:system-tool/${ResourceId}"
+   ]
+  }
+ },
+ "service": "bedrock",
+ "serviceName": "Bedrock",
+ "version": "v1.5"
+}

@@ -1,0 +1,432 @@
+{
+ "actions": {
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "createapplicationassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplicationAssociation",
+   "resources": [
+    "application"
+   ]
+  },
+  "createdataintegration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataIntegration",
+   "resources": [
+    "data-integration"
+   ]
+  },
+  "createdataintegrationassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataIntegrationAssociation",
+   "resources": [
+    "data-integration"
+   ]
+  },
+  "createdataintegrationschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataIntegrationSchedule",
+   "resources": [
+    "data-integration"
+   ]
+  },
+  "createeventintegration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEventIntegration",
+   "resources": [
+    "event-integration"
+   ]
+  },
+  "createeventintegrationassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEventIntegrationAssociation",
+   "resources": [
+    "event-integration"
+   ]
+  },
+  "deleteapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteapplicationassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplicationAssociation",
+   "resources": [
+    "application-association"
+   ]
+  },
+  "deletedataintegration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataIntegration",
+   "resources": [
+    "data-integration"
+   ]
+  },
+  "deletedataintegrationassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataIntegrationAssociation",
+   "resources": [
+    "data-integration-association"
+   ]
+  },
+  "deleteeventintegration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventIntegration",
+   "resources": [
+    "event-integration"
+   ]
+  },
+  "deleteeventintegrationassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventIntegrationAssociation",
+   "resources": [
+    "event-integration-association"
+   ]
+  },
+  "getapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "getdataintegration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetDataIntegration",
+   "resources": [
+    "data-integration"
+   ]
+  },
+  "getdataintegrationexecution": {
+   "name": "GetDataIntegrationExecution",
+   "resources": [
+    "data-integration"
+   ]
+  },
+  "getdataintegrationschedule": {
+   "name": "GetDataIntegrationSchedule",
+   "resources": [
+    "data-integration"
+   ]
+  },
+  "geteventintegration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetEventIntegration",
+   "resources": [
+    "event-integration"
+   ]
+  },
+  "listapplicationassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationAssociations",
+   "resources": []
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listdataintegrationassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataIntegrationAssociations",
+   "resources": []
+  },
+  "listdataintegrationexecutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataIntegrationExecutions",
+   "resources": [
+    "data-integration"
+   ]
+  },
+  "listdataintegrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataIntegrations",
+   "resources": []
+  },
+  "listdataintegrationschedules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataIntegrationSchedules",
+   "resources": [
+    "data-integration"
+   ]
+  },
+  "listeventintegrationassociations": {
+   "name": "ListEventIntegrationAssociations",
+   "resources": []
+  },
+  "listeventintegrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEventIntegrations",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "application",
+    "data-integration",
+    "data-integration-association",
+    "event-integration",
+    "event-integration-association"
+   ]
+  },
+  "startdataintegrationexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDataIntegrationExecution",
+   "resources": [
+    "data-integration"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "application",
+    "application-association",
+    "data-integration",
+    "data-integration-association",
+    "event-integration",
+    "event-integration-association"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "application",
+    "application-association",
+    "data-integration",
+    "data-integration-association",
+    "event-integration",
+    "event-integration-association"
+   ]
+  },
+  "updateapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "updatedataintegration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataIntegration",
+   "resources": [
+    "data-integration"
+   ]
+  },
+  "updatedataintegrationassociation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataIntegrationAssociation",
+   "resources": [
+    "data-integration-association"
+   ]
+  },
+  "updatedataintegrationschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataIntegrationSchedule",
+   "resources": [
+    "data-integration"
+   ]
+  },
+  "updateeventintegration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEventIntegration",
+   "resources": [
+    "event-integration"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:app-integrations:${Region}:${Account}:application/${ApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "application-association": {
+   "arnFormats": [
+    "arn:${Partition}:app-integrations:${Region}:${Account}:application-association/${ApplicationId}/${ApplicationAssociationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "data-integration": {
+   "arnFormats": [
+    "arn:${Partition}:app-integrations:${Region}:${Account}:data-integration/${DataIntegrationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "data-integration-association": {
+   "arnFormats": [
+    "arn:${Partition}:app-integrations:${Region}:${Account}:data-integration-association/${DataIntegrationId}/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "event-integration": {
+   "arnFormats": [
+    "arn:${Partition}:app-integrations:${Region}:${Account}:event-integration/${EventIntegrationName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "event-integration-association": {
+   "arnFormats": [
+    "arn:${Partition}:app-integrations:${Region}:${Account}:event-integration-association/${EventIntegrationName}/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "app-integrations",
+ "serviceName": "AppIntegrations",
+ "version": "v1.5"
+}

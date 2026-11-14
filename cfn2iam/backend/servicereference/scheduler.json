@@ -1,0 +1,171 @@
+{
+ "actions": {
+  "createschedule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSchedule",
+   "resources": [
+    "schedule"
+   ]
+  },
+  "createschedulegroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScheduleGroup",
+   "resources": [
+    "schedule-group"
+   ]
+  },
+  "deleteschedule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSchedule",
+   "resources": [
+    "schedule"
+   ]
+  },
+  "deleteschedulegroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScheduleGroup",
+   "resources": [
+    "schedule-group"
+   ]
+  },
+  "getschedule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSchedule",
+   "resources": [
+    "schedule"
+   ]
+  },
+  "getschedulegroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetScheduleGroup",
+   "resources": [
+    "schedule-group"
+   ]
+  },
+  "listschedulegroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScheduleGroups",
+   "resources": []
+  },
+  "listschedules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSchedules",
+   "resources": []
+  },
+  "listschedulesbytarget": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSchedulesByTarget",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "schedule-group"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "schedule-group"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "schedule-group"
+   ]
+  },
+  "updateschedule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSchedule",
+   "resources": [
+    "schedule"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "schedule": {
+   "arnFormats": [
+    "arn:${Partition}:scheduler:${Region}:${Account}:schedule/${GroupName}/${ScheduleName}"
+   ]
+  },
+  "schedule-group": {
+   "arnFormats": [
+    "arn:${Partition}:scheduler:${Region}:${Account}:schedule-group/${GroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "scheduler",
+ "serviceName": "EventBridge Scheduler",
+ "version": "v1.5"
+}

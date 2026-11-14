@@ -1,0 +1,151 @@
+{
+ "actions": {
+  "createmonitor": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMonitor",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "createprobe": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProbe",
+   "resources": []
+  },
+  "deletemonitor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMonitor",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "deleteprobe": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProbe",
+   "resources": [
+    "probe"
+   ]
+  },
+  "getmonitor": {
+   "name": "GetMonitor",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "getprobe": {
+   "name": "GetProbe",
+   "resources": [
+    "probe"
+   ]
+  },
+  "listmonitors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMonitors",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "monitor",
+    "probe"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "monitor",
+    "probe"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "monitor",
+    "probe"
+   ]
+  },
+  "updatemonitor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMonitor",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "updateprobe": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProbe",
+   "resources": [
+    "probe"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "monitor": {
+   "arnFormats": [
+    "arn:${Partition}:networkmonitor:${Region}:${Account}:monitor/${MonitorName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "probe": {
+   "arnFormats": [
+    "arn:${Partition}:networkmonitor:${Region}:${Account}:probe/${ProbeId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "networkmonitor",
+ "serviceName": "Network Synthetic Monitor",
+ "version": "v1.5"
+}

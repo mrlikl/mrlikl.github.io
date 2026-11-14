@@ -1,0 +1,1081 @@
+{
+ "actions": {
+  "archiveagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ArchiveAgent",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "archivedeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ArchiveDeployment",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "archiveenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ArchiveEnvironment",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "archivememorystore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ArchiveMemoryStore",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "archivesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ArchiveSession",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "archivevault": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ArchiveVault",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "archiveworkspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ArchiveWorkspace",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "assumeconsole": {
+   "conditionKeys": [
+    "aws-external-anthropic:Capability"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssumeConsole",
+   "resources": []
+  },
+  "callwithbearertoken": {
+   "conditionKeys": [
+    "aws-external-anthropic:BearerTokenType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "CallWithBearerToken",
+   "resources": []
+  },
+  "cancelbatchinference": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelBatchInference",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "counttokens": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CountTokens",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgent",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createbatchinference": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBatchInference",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeployment",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironment",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createfile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFile",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createinference": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInference",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "creatememorystore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMemoryStore",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createsession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSession",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createskill": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSkill",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createuserprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUserProfile",
+   "resources": []
+  },
+  "createuserprofileenrollmenturl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUserProfileEnrollmentUrl",
+   "resources": []
+  },
+  "createvault": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVault",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createwebhook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWebhook",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createworkspace": {
+   "conditionKeys": [
+    "aws-external-anthropic:KeyArn",
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkspace",
+   "resources": []
+  },
+  "deletebatchinference": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBatchInference",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deleteenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironment",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deletefile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFile",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deletememorystore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMemoryStore",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deletesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSession",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deleteskill": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSkill",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deletevault": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVault",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deletewebhook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWebhook",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "disablekey": {
+   "conditionKeys": [
+    "aws-external-anthropic:KeyArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableKey",
+   "resources": []
+  },
+  "getaccountstatus": {
+   "name": "GetAccountStatus",
+   "resources": []
+  },
+  "getagent": {
+   "name": "GetAgent",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getbatchinference": {
+   "name": "GetBatchInference",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getdeployment": {
+   "name": "GetDeployment",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getenvironment": {
+   "name": "GetEnvironment",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getfile": {
+   "name": "GetFile",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getkey": {
+   "conditionKeys": [
+    "aws-external-anthropic:KeyArn"
+   ],
+   "name": "GetKey",
+   "resources": []
+  },
+  "getmemorystore": {
+   "name": "GetMemoryStore",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getmodel": {
+   "name": "GetModel",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getsession": {
+   "name": "GetSession",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getskill": {
+   "name": "GetSkill",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getuserprofile": {
+   "name": "GetUserProfile",
+   "resources": []
+  },
+  "getvault": {
+   "name": "GetVault",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getwebhook": {
+   "name": "GetWebhook",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getworkspace": {
+   "name": "GetWorkspace",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listagents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgents",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listbatchinferences": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBatchInferences",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listdeployments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeployments",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironments",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listfiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFiles",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listkeys": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKeys",
+   "resources": []
+  },
+  "listmemorystores": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMemoryStores",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listmodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListModels",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listsessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSessions",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listskills": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSkills",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listuserprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUserProfiles",
+   "resources": []
+  },
+  "listvaults": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVaults",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listwebhooks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWebhooks",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listworkspaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkspaces",
+   "resources": []
+  },
+  "pausedeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PauseDeployment",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "processenvironmentwork": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ProcessEnvironmentWork",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "registerkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterKey",
+   "resources": []
+  },
+  "rotatewebhooksecret": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RotateWebhookSecret",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "rundeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RunDeployment",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "unpausedeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnpauseDeployment",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updateagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgent",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updatedeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDeployment",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updateenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironment",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updatekey": {
+   "conditionKeys": [
+    "aws-external-anthropic:KeyArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKey",
+   "resources": []
+  },
+  "updatememorystore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMemoryStore",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updatesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSession",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updateskill": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSkill",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updateuserprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserProfile",
+   "resources": []
+  },
+  "updatevault": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVault",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updatewebhook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWebhook",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updateworkspace": {
+   "conditionKeys": [
+    "aws-external-anthropic:KeyArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkspace",
+   "resourceConditionKeys": {
+    "workspace": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "workspace"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws-external-anthropic:BearerTokenType": [
+   "String"
+  ],
+  "aws-external-anthropic:CalledViaConsole": [
+   "Bool"
+  ],
+  "aws-external-anthropic:Capability": [
+   "String"
+  ],
+  "aws-external-anthropic:KeyArn": [
+   "ARN"
+  ],
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "workspace": {
+   "arnFormats": [
+    "arn:${Partition}:aws-external-anthropic:${Region}:${Account}:workspace/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "aws-external-anthropic",
+ "serviceName": "Claude Platform on AWS",
+ "version": "v1.5"
+}

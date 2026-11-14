@@ -1,0 +1,93 @@
+{
+ "actions": {
+  "connect": {
+   "conditionKeys": [
+    "vpc-lattice-svcs:Port",
+    "vpc-lattice-svcs:ServiceArn",
+    "vpc-lattice-svcs:ServiceNetworkArn",
+    "vpc-lattice-svcs:SourceVpc",
+    "vpc-lattice-svcs:SourceVpcOwnerAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Connect",
+   "resources": [
+    "TCP Service"
+   ]
+  },
+  "invoke": {
+   "conditionKeys": [
+    "vpc-lattice-svcs:Port",
+    "vpc-lattice-svcs:RequestHeader/${HeaderName}",
+    "vpc-lattice-svcs:RequestMethod",
+    "vpc-lattice-svcs:RequestPath",
+    "vpc-lattice-svcs:RequestQueryString/${QueryStringKey}",
+    "vpc-lattice-svcs:ServiceArn",
+    "vpc-lattice-svcs:ServiceNetworkArn",
+    "vpc-lattice-svcs:SourceVpc",
+    "vpc-lattice-svcs:SourceVpcOwnerAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Invoke",
+   "resources": [
+    "Service"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "vpc-lattice-svcs:Port": [
+   "Numeric"
+  ],
+  "vpc-lattice-svcs:RequestHeader/${HeaderName}": [
+   "String"
+  ],
+  "vpc-lattice-svcs:RequestMethod": [
+   "String"
+  ],
+  "vpc-lattice-svcs:RequestPath": [
+   "String"
+  ],
+  "vpc-lattice-svcs:RequestQueryString/${QueryStringKey}": [
+   "ArrayOfString"
+  ],
+  "vpc-lattice-svcs:ServiceArn": [
+   "ARN"
+  ],
+  "vpc-lattice-svcs:ServiceNetworkArn": [
+   "ARN"
+  ],
+  "vpc-lattice-svcs:SourceVpc": [
+   "String"
+  ],
+  "vpc-lattice-svcs:SourceVpcOwnerAccount": [
+   "String"
+  ]
+ },
+ "resources": {
+  "Service": {
+   "arnFormats": [
+    "arn:${Partition}:vpc-lattice:${Region}:${Account}:service/${ServiceId}/${RequestPath}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "TCP Service": {
+   "arnFormats": [
+    "arn:${Partition}:vpc-lattice:${Region}:${Account}:service/${ServiceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "vpc-lattice-svcs",
+ "serviceName": "VPC Lattice Services",
+ "version": "v1.5"
+}

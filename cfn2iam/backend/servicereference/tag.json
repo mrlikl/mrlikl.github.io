@@ -1,0 +1,58 @@
+{
+ "actions": {
+  "describereportcreation": {
+   "name": "DescribeReportCreation",
+   "resources": []
+  },
+  "getcompliancesummary": {
+   "name": "GetComplianceSummary",
+   "resources": []
+  },
+  "getresources": {
+   "name": "GetResources",
+   "resources": []
+  },
+  "gettagkeys": {
+   "name": "GetTagKeys",
+   "resources": []
+  },
+  "gettagvalues": {
+   "name": "GetTagValues",
+   "resources": []
+  },
+  "listrequiredtags": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRequiredTags",
+   "resources": []
+  },
+  "startreportcreation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartReportCreation",
+   "resources": []
+  },
+  "tagresources": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResources",
+   "resources": []
+  },
+  "untagresources": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResources",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "tag",
+ "serviceName": "Resource Group Tagging",
+ "version": "v1.5"
+}

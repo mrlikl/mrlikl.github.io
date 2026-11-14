@@ -1,0 +1,72 @@
+{
+ "actions": {
+  "checksubscription": {
+   "name": "CheckSubscription",
+   "resources": []
+  },
+  "createcasedraft": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCaseDraft",
+   "resources": []
+  },
+  "createcontact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContact",
+   "resources": []
+  },
+  "deletecasedraft": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCaseDraft",
+   "resources": []
+  },
+  "describedynamichelp": {
+   "name": "DescribeDynamicHelp",
+   "resources": []
+  },
+  "getaccountgovcloudenabled": {
+   "name": "GetAccountGovCloudEnabled",
+   "resources": []
+  },
+  "getaccountstate": {
+   "name": "GetAccountState",
+   "resources": []
+  },
+  "getbanner": {
+   "name": "GetBanner",
+   "resources": []
+  },
+  "getcasedraft": {
+   "name": "GetCaseDraft",
+   "resources": []
+  },
+  "getissueclassificationpredictions": {
+   "name": "GetIssueClassificationPredictions",
+   "resources": []
+  },
+  "getissuetextsummary": {
+   "name": "GetIssueTextSummary",
+   "resources": []
+  },
+  "getquestionnaire": {
+   "name": "GetQuestionnaire",
+   "resources": []
+  },
+  "savefeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SaveFeedback",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "support-console",
+ "serviceName": "Support Console",
+ "version": "v1.5"
+}

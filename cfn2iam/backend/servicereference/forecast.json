@@ -1,0 +1,775 @@
+{
+ "actions": {
+  "createautopredictor": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAutoPredictor",
+   "resources": []
+  },
+  "createdataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "createdatasetgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDatasetGroup",
+   "resources": [
+    "datasetGroup"
+   ]
+  },
+  "createdatasetimportjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDatasetImportJob",
+   "resources": [
+    "datasetImportJob"
+   ]
+  },
+  "createexplainability": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExplainability",
+   "resources": [
+    "forecast"
+   ]
+  },
+  "createexplainabilityexport": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExplainabilityExport",
+   "resources": [
+    "explainability"
+   ]
+  },
+  "createforecast": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateForecast",
+   "resources": [
+    "predictor"
+   ]
+  },
+  "createforecastendpoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateForecastEndpoint",
+   "resources": [
+    "predictor"
+   ]
+  },
+  "createforecastexportjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateForecastExportJob",
+   "resources": [
+    "forecast"
+   ]
+  },
+  "createmonitor": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMonitor",
+   "resources": [
+    "predictor"
+   ]
+  },
+  "createpredictor": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePredictor",
+   "resources": [
+    "datasetGroup"
+   ]
+  },
+  "createpredictorbacktestexportjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePredictorBacktestExportJob",
+   "resources": [
+    "predictor"
+   ]
+  },
+  "createwhatifanalysis": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWhatIfAnalysis",
+   "resources": [
+    "forecast"
+   ]
+  },
+  "createwhatifforecast": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWhatIfForecast",
+   "resources": [
+    "whatIfAnalysis"
+   ]
+  },
+  "createwhatifforecastexport": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWhatIfForecastExport",
+   "resources": [
+    "whatIfForecast"
+   ]
+  },
+  "deletedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "deletedatasetgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDatasetGroup",
+   "resources": [
+    "datasetGroup"
+   ]
+  },
+  "deletedatasetimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDatasetImportJob",
+   "resources": [
+    "datasetImportJob"
+   ]
+  },
+  "deleteexplainability": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExplainability",
+   "resources": [
+    "explainability"
+   ]
+  },
+  "deleteexplainabilityexport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExplainabilityExport",
+   "resources": [
+    "explainabilityExport"
+   ]
+  },
+  "deleteforecast": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteForecast",
+   "resources": [
+    "forecast"
+   ]
+  },
+  "deleteforecastendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteForecastEndpoint",
+   "resources": [
+    "endpoint"
+   ]
+  },
+  "deleteforecastexportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteForecastExportJob",
+   "resources": [
+    "forecastExport"
+   ]
+  },
+  "deletemonitor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMonitor",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "deletepredictor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePredictor",
+   "resources": [
+    "predictor"
+   ]
+  },
+  "deletepredictorbacktestexportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePredictorBacktestExportJob",
+   "resources": [
+    "predictorBacktestExportJob"
+   ]
+  },
+  "deleteresourcetree": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourceTree",
+   "resources": [
+    "dataset",
+    "datasetGroup",
+    "datasetImportJob",
+    "endpoint",
+    "explainability",
+    "explainabilityExport",
+    "forecast",
+    "forecastExport",
+    "monitor",
+    "predictor",
+    "predictorBacktestExportJob",
+    "whatIfAnalysis",
+    "whatIfForecast",
+    "whatIfForecastExport"
+   ]
+  },
+  "deletewhatifanalysis": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWhatIfAnalysis",
+   "resources": [
+    "whatIfAnalysis"
+   ]
+  },
+  "deletewhatifforecast": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWhatIfForecast",
+   "resources": [
+    "whatIfForecast"
+   ]
+  },
+  "deletewhatifforecastexport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWhatIfForecastExport",
+   "resources": [
+    "whatIfForecastExport"
+   ]
+  },
+  "describeautopredictor": {
+   "name": "DescribeAutoPredictor",
+   "resources": [
+    "predictor"
+   ]
+  },
+  "describedataset": {
+   "name": "DescribeDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "describedatasetgroup": {
+   "name": "DescribeDatasetGroup",
+   "resources": [
+    "datasetGroup"
+   ]
+  },
+  "describedatasetimportjob": {
+   "name": "DescribeDatasetImportJob",
+   "resources": [
+    "datasetImportJob"
+   ]
+  },
+  "describeexplainability": {
+   "name": "DescribeExplainability",
+   "resources": [
+    "explainability"
+   ]
+  },
+  "describeexplainabilityexport": {
+   "name": "DescribeExplainabilityExport",
+   "resources": [
+    "explainabilityExport"
+   ]
+  },
+  "describeforecast": {
+   "name": "DescribeForecast",
+   "resources": [
+    "forecast"
+   ]
+  },
+  "describeforecastendpoint": {
+   "name": "DescribeForecastEndpoint",
+   "resources": [
+    "endpoint"
+   ]
+  },
+  "describeforecastexportjob": {
+   "name": "DescribeForecastExportJob",
+   "resources": [
+    "forecastExport"
+   ]
+  },
+  "describemonitor": {
+   "name": "DescribeMonitor",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "describepredictor": {
+   "name": "DescribePredictor",
+   "resources": [
+    "predictor"
+   ]
+  },
+  "describepredictorbacktestexportjob": {
+   "name": "DescribePredictorBacktestExportJob",
+   "resources": [
+    "predictorBacktestExportJob"
+   ]
+  },
+  "describewhatifanalysis": {
+   "name": "DescribeWhatIfAnalysis",
+   "resources": [
+    "whatIfAnalysis"
+   ]
+  },
+  "describewhatifforecast": {
+   "name": "DescribeWhatIfForecast",
+   "resources": [
+    "whatIfForecast"
+   ]
+  },
+  "describewhatifforecastexport": {
+   "name": "DescribeWhatIfForecastExport",
+   "resources": [
+    "whatIfForecastExport"
+   ]
+  },
+  "getaccuracymetrics": {
+   "name": "GetAccuracyMetrics",
+   "resources": [
+    "predictor"
+   ]
+  },
+  "getrecentforecastcontext": {
+   "name": "GetRecentForecastContext",
+   "resources": [
+    "endpoint"
+   ]
+  },
+  "invokeforecastendpoint": {
+   "name": "InvokeForecastEndpoint",
+   "resources": [
+    "endpoint"
+   ]
+  },
+  "listdatasetgroups": {
+   "name": "ListDatasetGroups",
+   "resources": []
+  },
+  "listdatasetimportjobs": {
+   "name": "ListDatasetImportJobs",
+   "resources": []
+  },
+  "listdatasets": {
+   "name": "ListDatasets",
+   "resources": []
+  },
+  "listexplainabilities": {
+   "name": "ListExplainabilities",
+   "resources": []
+  },
+  "listexplainabilityexports": {
+   "name": "ListExplainabilityExports",
+   "resources": []
+  },
+  "listforecastexportjobs": {
+   "name": "ListForecastExportJobs",
+   "resources": []
+  },
+  "listforecasts": {
+   "name": "ListForecasts",
+   "resources": []
+  },
+  "listmonitorevaluations": {
+   "name": "ListMonitorEvaluations",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "listmonitors": {
+   "name": "ListMonitors",
+   "resources": []
+  },
+  "listpredictorbacktestexportjobs": {
+   "name": "ListPredictorBacktestExportJobs",
+   "resources": []
+  },
+  "listpredictors": {
+   "name": "ListPredictors",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "dataset",
+    "datasetGroup",
+    "datasetImportJob",
+    "endpoint",
+    "explainability",
+    "explainabilityExport",
+    "forecast",
+    "forecastExport",
+    "monitor",
+    "predictor",
+    "predictorBacktestExportJob",
+    "whatIfAnalysis",
+    "whatIfForecast",
+    "whatIfForecastExport"
+   ]
+  },
+  "listwhatifanalyses": {
+   "name": "ListWhatIfAnalyses",
+   "resources": []
+  },
+  "listwhatifforecastexports": {
+   "name": "ListWhatIfForecastExports",
+   "resources": []
+  },
+  "listwhatifforecasts": {
+   "name": "ListWhatIfForecasts",
+   "resources": []
+  },
+  "queryforecast": {
+   "name": "QueryForecast",
+   "resources": [
+    "forecast"
+   ]
+  },
+  "querywhatifforecast": {
+   "name": "QueryWhatIfForecast",
+   "resources": [
+    "whatIfForecast"
+   ]
+  },
+  "resumeresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResumeResource",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "stopresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopResource",
+   "resources": [
+    "datasetImportJob",
+    "endpoint",
+    "explainability",
+    "explainabilityExport",
+    "forecast",
+    "forecastExport",
+    "monitor",
+    "predictor",
+    "predictorBacktestExportJob",
+    "whatIfAnalysis",
+    "whatIfForecast",
+    "whatIfForecastExport"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "dataset",
+    "datasetGroup",
+    "datasetImportJob",
+    "endpoint",
+    "explainability",
+    "explainabilityExport",
+    "forecast",
+    "forecastExport",
+    "monitor",
+    "predictor",
+    "predictorBacktestExportJob",
+    "whatIfAnalysis",
+    "whatIfForecast",
+    "whatIfForecastExport"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "dataset",
+    "datasetGroup",
+    "datasetImportJob",
+    "endpoint",
+    "explainability",
+    "explainabilityExport",
+    "forecast",
+    "forecastExport",
+    "monitor",
+    "predictor",
+    "predictorBacktestExportJob",
+    "whatIfAnalysis",
+    "whatIfForecast",
+    "whatIfForecastExport"
+   ]
+  },
+  "updatedatasetgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDatasetGroup",
+   "resources": [
+    "dataset",
+    "datasetGroup"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "algorithm": {
+   "arnFormats": [
+    "arn:${Partition}:forecast:::algorithm/${ResourceId}"
+   ]
+  },
+  "dataset": {
+   "arnFormats": [
+    "arn:${Partition}:forecast:${Region}:${Account}:dataset/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "datasetGroup": {
+   "arnFormats": [
+    "arn:${Partition}:forecast:${Region}:${Account}:dataset-group/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "datasetImportJob": {
+   "arnFormats": [
+    "arn:${Partition}:forecast:${Region}:${Account}:dataset-import-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:forecast:${Region}:${Account}:forecast-endpoint/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "explainability": {
+   "arnFormats": [
+    "arn:${Partition}:forecast:${Region}:${Account}:explainability/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "explainabilityExport": {
+   "arnFormats": [
+    "arn:${Partition}:forecast:${Region}:${Account}:explainability-export/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "forecast": {
+   "arnFormats": [
+    "arn:${Partition}:forecast:${Region}:${Account}:forecast/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "forecastExport": {
+   "arnFormats": [
+    "arn:${Partition}:forecast:${Region}:${Account}:forecast-export-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "monitor": {
+   "arnFormats": [
+    "arn:${Partition}:forecast:${Region}:${Account}:monitor/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "predictor": {
+   "arnFormats": [
+    "arn:${Partition}:forecast:${Region}:${Account}:predictor/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "predictorBacktestExportJob": {
+   "arnFormats": [
+    "arn:${Partition}:forecast:${Region}:${Account}:predictor-backtest-export-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "whatIfAnalysis": {
+   "arnFormats": [
+    "arn:${Partition}:forecast:${Region}:${Account}:what-if-analysis/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "whatIfForecast": {
+   "arnFormats": [
+    "arn:${Partition}:forecast:${Region}:${Account}:what-if-forecast/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "whatIfForecastExport": {
+   "arnFormats": [
+    "arn:${Partition}:forecast:${Region}:${Account}:what-if-forecast-export/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "forecast",
+ "serviceName": "Forecast",
+ "version": "v1.5"
+}

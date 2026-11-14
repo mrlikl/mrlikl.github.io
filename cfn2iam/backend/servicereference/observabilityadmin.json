@@ -1,0 +1,509 @@
+{
+ "actions": {
+  "createcentralizationrulefororganization": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "observabilityadmin:CentralizationBackupRegion",
+    "observabilityadmin:CentralizationDestinationAccount",
+    "observabilityadmin:CentralizationDestinationRegion",
+    "observabilityadmin:CentralizationRuleName",
+    "observabilityadmin:CentralizationSourceId",
+    "observabilityadmin:CentralizationSourceRegions"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCentralizationRuleForOrganization",
+   "resources": [
+    "organization-centralization-rule"
+   ]
+  },
+  "createdatasetintegration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDatasetIntegration",
+   "resources": [
+    "dataset-integration"
+   ]
+  },
+  "creates3tableintegration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateS3TableIntegration",
+   "resources": [
+    "s3tableintegration"
+   ]
+  },
+  "createtelemetrypipeline": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "observabilityadmin:SourceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTelemetryPipeline",
+   "resources": [
+    "telemetry-pipeline"
+   ]
+  },
+  "createtelemetryrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "observabilityadmin:TargetRegions"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTelemetryRule",
+   "resources": [
+    "telemetry-rule"
+   ]
+  },
+  "createtelemetryrulefororganization": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "observabilityadmin:TargetRegions"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTelemetryRuleForOrganization",
+   "resources": [
+    "organization-telemetry-rule"
+   ]
+  },
+  "deletecentralizationrulefororganization": {
+   "conditionKeys": [
+    "observabilityadmin:CentralizationRuleName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCentralizationRuleForOrganization",
+   "resources": [
+    "organization-centralization-rule"
+   ]
+  },
+  "deletedatasetintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDatasetIntegration",
+   "resources": [
+    "dataset-integration"
+   ]
+  },
+  "deletes3tableintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteS3TableIntegration",
+   "resources": [
+    "s3tableintegration"
+   ]
+  },
+  "deletetelemetrypipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTelemetryPipeline",
+   "resources": [
+    "telemetry-pipeline"
+   ]
+  },
+  "deletetelemetryrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTelemetryRule",
+   "resources": [
+    "telemetry-rule"
+   ]
+  },
+  "deletetelemetryrulefororganization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTelemetryRuleForOrganization",
+   "resources": [
+    "organization-telemetry-rule"
+   ]
+  },
+  "getcentralizationrulefororganization": {
+   "conditionKeys": [
+    "observabilityadmin:CentralizationRuleName"
+   ],
+   "name": "GetCentralizationRuleForOrganization",
+   "resources": [
+    "organization-centralization-rule"
+   ]
+  },
+  "getdatasetintegration": {
+   "name": "GetDatasetIntegration",
+   "resources": [
+    "dataset-integration"
+   ]
+  },
+  "gets3tableintegration": {
+   "name": "GetS3TableIntegration",
+   "resources": [
+    "s3tableintegration"
+   ]
+  },
+  "gettelemetryenrichmentstatus": {
+   "name": "GetTelemetryEnrichmentStatus",
+   "resources": []
+  },
+  "gettelemetryevaluationstatus": {
+   "name": "GetTelemetryEvaluationStatus",
+   "resources": []
+  },
+  "gettelemetryevaluationstatusfororganization": {
+   "name": "GetTelemetryEvaluationStatusForOrganization",
+   "resources": []
+  },
+  "gettelemetrypipeline": {
+   "name": "GetTelemetryPipeline",
+   "resources": [
+    "telemetry-pipeline"
+   ]
+  },
+  "gettelemetryrule": {
+   "name": "GetTelemetryRule",
+   "resources": [
+    "telemetry-rule"
+   ]
+  },
+  "gettelemetryrulefororganization": {
+   "name": "GetTelemetryRuleForOrganization",
+   "resources": [
+    "organization-telemetry-rule"
+   ]
+  },
+  "listcentralizationrulesfororganization": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCentralizationRulesForOrganization",
+   "resources": []
+  },
+  "listdatasetintegrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasetIntegrations",
+   "resources": []
+  },
+  "listresourcetelemetry": {
+   "conditionKeys": [
+    "observabilityadmin:TargetRegions"
+   ],
+   "name": "ListResourceTelemetry",
+   "resources": []
+  },
+  "listresourcetelemetryfororganization": {
+   "conditionKeys": [
+    "observabilityadmin:TargetRegions"
+   ],
+   "name": "ListResourceTelemetryForOrganization",
+   "resources": []
+  },
+  "lists3tableintegrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListS3TableIntegrations",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "dataset-integration",
+    "organization-centralization-rule",
+    "organization-telemetry-rule",
+    "s3tableintegration",
+    "telemetry-pipeline",
+    "telemetry-rule"
+   ]
+  },
+  "listtelemetrypipelines": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTelemetryPipelines",
+   "resources": []
+  },
+  "listtelemetryrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTelemetryRules",
+   "resources": []
+  },
+  "listtelemetryrulesfororganization": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTelemetryRulesForOrganization",
+   "resources": []
+  },
+  "starttelemetryenrichment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTelemetryEnrichment",
+   "resources": []
+  },
+  "starttelemetryevaluation": {
+   "conditionKeys": [
+    "observabilityadmin:TargetRegions"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTelemetryEvaluation",
+   "resources": []
+  },
+  "starttelemetryevaluationfororganization": {
+   "conditionKeys": [
+    "observabilityadmin:TargetRegions"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTelemetryEvaluationForOrganization",
+   "resources": []
+  },
+  "stoptelemetryenrichment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopTelemetryEnrichment",
+   "resources": []
+  },
+  "stoptelemetryevaluation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopTelemetryEvaluation",
+   "resources": []
+  },
+  "stoptelemetryevaluationfororganization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopTelemetryEvaluationForOrganization",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "dataset-integration",
+    "organization-centralization-rule",
+    "organization-telemetry-rule",
+    "s3tableintegration",
+    "telemetry-pipeline",
+    "telemetry-rule"
+   ]
+  },
+  "testtelemetrypipeline": {
+   "name": "TestTelemetryPipeline",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "dataset-integration",
+    "organization-centralization-rule",
+    "organization-telemetry-rule",
+    "s3tableintegration",
+    "telemetry-pipeline",
+    "telemetry-rule"
+   ]
+  },
+  "updatecentralizationrulefororganization": {
+   "conditionKeys": [
+    "observabilityadmin:CentralizationBackupRegion",
+    "observabilityadmin:CentralizationDestinationAccount",
+    "observabilityadmin:CentralizationDestinationRegion",
+    "observabilityadmin:CentralizationRuleName",
+    "observabilityadmin:CentralizationSourceId",
+    "observabilityadmin:CentralizationSourceRegions"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCentralizationRuleForOrganization",
+   "resources": [
+    "organization-centralization-rule"
+   ]
+  },
+  "updatedatasetintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDatasetIntegration",
+   "resources": [
+    "dataset-integration"
+   ]
+  },
+  "updatetelemetrypipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTelemetryPipeline",
+   "resources": [
+    "telemetry-pipeline"
+   ]
+  },
+  "updatetelemetryrule": {
+   "conditionKeys": [
+    "observabilityadmin:TargetRegions"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTelemetryRule",
+   "resources": [
+    "telemetry-rule"
+   ]
+  },
+  "updatetelemetryrulefororganization": {
+   "conditionKeys": [
+    "observabilityadmin:TargetRegions"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTelemetryRuleForOrganization",
+   "resources": [
+    "organization-telemetry-rule"
+   ]
+  },
+  "validatetelemetrypipelineconfiguration": {
+   "name": "ValidateTelemetryPipelineConfiguration",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "observabilityadmin:CentralizationBackupRegion": [
+   "String"
+  ],
+  "observabilityadmin:CentralizationDestinationAccount": [
+   "String"
+  ],
+  "observabilityadmin:CentralizationDestinationRegion": [
+   "String"
+  ],
+  "observabilityadmin:CentralizationRuleName": [
+   "String"
+  ],
+  "observabilityadmin:CentralizationSourceId": [
+   "ArrayOfString"
+  ],
+  "observabilityadmin:CentralizationSourceRegions": [
+   "ArrayOfString"
+  ],
+  "observabilityadmin:SourceType": [
+   "String"
+  ],
+  "observabilityadmin:TargetRegions": [
+   "String"
+  ]
+ },
+ "resources": {
+  "dataset-integration": {
+   "arnFormats": [
+    "arn:${Partition}:observabilityadmin:${Region}:${Account}:dataset-integration/${DatasetIntegrationIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "organization-centralization-rule": {
+   "arnFormats": [
+    "arn:${Partition}:observabilityadmin:${Region}:${Account}:organization-centralization-rule/${CentralizationRuleName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "organization-telemetry-rule": {
+   "arnFormats": [
+    "arn:${Partition}:observabilityadmin:${Region}:${Account}:organization-telemetry-rule/${TelemetryRuleName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "s3tableintegration": {
+   "arnFormats": [
+    "arn:${Partition}:observabilityadmin:${Region}:${Account}:s3tableintegration/${S3TableIntegrationIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "telemetry-pipeline": {
+   "arnFormats": [
+    "arn:${Partition}:observabilityadmin:${Region}:${Account}:telemetry-pipeline/${TelemetryPipelineIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "telemetry-rule": {
+   "arnFormats": [
+    "arn:${Partition}:observabilityadmin:${Region}:${Account}:telemetry-rule/${TelemetryRuleName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "observabilityadmin",
+ "serviceName": "CloudWatch Observability Admin",
+ "version": "v1.5"
+}

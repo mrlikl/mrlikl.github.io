@@ -1,0 +1,226 @@
+{
+ "actions": {
+  "associateprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "route53profiles:ResourceIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateProfile",
+   "resources": []
+  },
+  "associateresourcetoprofile": {
+   "conditionKeys": [
+    "route53profiles:FirewallRuleGroupPriority",
+    "route53profiles:HostedZoneDomains",
+    "route53profiles:ResolverRuleDomains",
+    "route53profiles:ResourceArns",
+    "route53profiles:ResourceTypes"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateResourceToProfile",
+   "resources": []
+  },
+  "createprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProfile",
+   "resources": []
+  },
+  "deleteprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProfile",
+   "resources": []
+  },
+  "disassociateprofile": {
+   "conditionKeys": [
+    "route53profiles:ResourceIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateProfile",
+   "resources": []
+  },
+  "disassociateresourcefromprofile": {
+   "conditionKeys": [
+    "route53profiles:FirewallRuleGroupPriority",
+    "route53profiles:HostedZoneDomains",
+    "route53profiles:ResolverRuleDomains",
+    "route53profiles:ResourceArns",
+    "route53profiles:ResourceTypes"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateResourceFromProfile",
+   "resources": []
+  },
+  "getprofile": {
+   "name": "GetProfile",
+   "resources": []
+  },
+  "getprofileassociation": {
+   "name": "GetProfileAssociation",
+   "resources": []
+  },
+  "getprofilepolicy": {
+   "name": "GetProfilePolicy",
+   "resources": [
+    "profile"
+   ]
+  },
+  "getprofileresourceassociation": {
+   "name": "GetProfileResourceAssociation",
+   "resources": []
+  },
+  "listprofileassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfileAssociations",
+   "resources": []
+  },
+  "listprofileresourceassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfileResourceAssociations",
+   "resources": []
+  },
+  "listprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfiles",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "putprofilepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutProfilePolicy",
+   "resources": [
+    "profile"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "profile",
+    "profile-association"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "profile",
+    "profile-association"
+   ]
+  },
+  "updateprofileassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProfileAssociation",
+   "resources": []
+  },
+  "updateprofileresourceassociation": {
+   "conditionKeys": [
+    "route53profiles:FirewallRuleGroupPriority",
+    "route53profiles:HostedZoneDomains",
+    "route53profiles:ResolverRuleDomains",
+    "route53profiles:ResourceTypes"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProfileResourceAssociation",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "route53profiles:FirewallRuleGroupPriority": [
+   "Numeric"
+  ],
+  "route53profiles:HostedZoneDomains": [
+   "String"
+  ],
+  "route53profiles:ResolverRuleDomains": [
+   "String"
+  ],
+  "route53profiles:ResourceArns": [
+   "ARN"
+  ],
+  "route53profiles:ResourceIds": [
+   "String"
+  ],
+  "route53profiles:ResourceTypes": [
+   "String"
+  ]
+ },
+ "resources": {
+  "profile": {
+   "arnFormats": [
+    "arn:${Partition}:route53profiles:${Region}:${Account}:profile/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "profile-association": {
+   "arnFormats": [
+    "arn:${Partition}:route53profiles:${Region}:${Account}:profile-association/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "route53profiles",
+ "serviceName": "Route 53 Profiles",
+ "version": "v1.5"
+}

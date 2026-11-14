@@ -1,0 +1,321 @@
+{
+ "actions": {
+  "addpeercluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddPeerCluster",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "createcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "dsql:WitnessRegion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCluster",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "createstream": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStream",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "dbconnect": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DbConnect",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "dbconnectadmin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DbConnectAdmin",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "deletecluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCluster",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "deleteclusterpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteClusterPolicy",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "deletestream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStream",
+   "resources": [
+    "Stream"
+   ]
+  },
+  "getbackupjob": {
+   "name": "GetBackupJob",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "getcluster": {
+   "name": "GetCluster",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "getclusterpolicy": {
+   "name": "GetClusterPolicy",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "getrestorejob": {
+   "name": "GetRestoreJob",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "getstream": {
+   "name": "GetStream",
+   "resources": [
+    "Stream"
+   ]
+  },
+  "getvpcendpointservicename": {
+   "name": "GetVpcEndpointServiceName",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "injecterror": {
+   "conditionKeys": [
+    "dsql:FisActionId",
+    "dsql:FisTargetArns"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InjectError",
+   "resources": []
+  },
+  "listclusters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClusters",
+   "resources": []
+  },
+  "liststreams": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStreams",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "Cluster",
+    "Stream"
+   ]
+  },
+  "putclusterpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutClusterPolicy",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "putmultiregionproperties": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMultiRegionProperties",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "putwitnessregion": {
+   "conditionKeys": [
+    "dsql:WitnessRegion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutWitnessRegion",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "removepeercluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemovePeerCluster",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "startbackupjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartBackupJob",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "startrestorejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRestoreJob",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "stopbackupjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopBackupJob",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "stoprestorejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopRestoreJob",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Cluster",
+    "Stream"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Cluster",
+    "Stream"
+   ]
+  },
+  "updatecluster": {
+   "conditionKeys": [
+    "dsql:WitnessRegion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCluster",
+   "resources": [
+    "Cluster"
+   ]
+  },
+  "updatestream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStream",
+   "resources": [
+    "Stream"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "dsql:FisActionId": [
+   "String"
+  ],
+  "dsql:FisTargetArns": [
+   "ArrayOfARN"
+  ],
+  "dsql:WitnessRegion": [
+   "String"
+  ]
+ },
+ "resources": {
+  "Cluster": {
+   "arnFormats": [
+    "arn:${Partition}:dsql:${Region}:${Account}:cluster/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Stream": {
+   "arnFormats": [
+    "arn:${Partition}:dsql:${Region}:${Account}:cluster/${ClusterId}/stream/${StreamId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "dsql",
+ "serviceName": "Aurora DSQL",
+ "version": "v1.5"
+}

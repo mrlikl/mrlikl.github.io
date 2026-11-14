@@ -1,0 +1,359 @@
+{
+ "actions": {
+  "associateaccounts": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateAccounts",
+   "resources": [
+    "billinggroup"
+   ]
+  },
+  "associatepricingrules": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociatePricingRules",
+   "resources": [
+    "pricingplan",
+    "pricingrule"
+   ]
+  },
+  "batchassociateresourcestocustomlineitem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchAssociateResourcesToCustomLineItem",
+   "resources": [
+    "customlineitem"
+   ]
+  },
+  "batchdisassociateresourcesfromcustomlineitem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDisassociateResourcesFromCustomLineItem",
+   "resources": [
+    "customlineitem"
+   ]
+  },
+  "createbillinggroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBillingGroup",
+   "resources": [
+    "pricingplan"
+   ]
+  },
+  "createcustomlineitem": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomLineItem",
+   "resources": [
+    "billinggroup"
+   ]
+  },
+  "createpricingplan": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePricingPlan",
+   "resources": [
+    "pricingrule"
+   ]
+  },
+  "createpricingrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePricingRule",
+   "resources": []
+  },
+  "deletebillinggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBillingGroup",
+   "resources": [
+    "billinggroup"
+   ]
+  },
+  "deletecustomlineitem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomLineItem",
+   "resources": [
+    "customlineitem"
+   ]
+  },
+  "deletepricingplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePricingPlan",
+   "resources": [
+    "pricingplan"
+   ]
+  },
+  "deletepricingrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePricingRule",
+   "resources": [
+    "pricingrule"
+   ]
+  },
+  "disassociateaccounts": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateAccounts",
+   "resources": [
+    "billinggroup"
+   ]
+  },
+  "disassociatepricingrules": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociatePricingRules",
+   "resources": [
+    "pricingplan",
+    "pricingrule"
+   ]
+  },
+  "getbillinggroupcostreport": {
+   "name": "GetBillingGroupCostReport",
+   "resources": [
+    "billinggroup"
+   ]
+  },
+  "getbillingtransferpreference": {
+   "name": "GetBillingTransferPreference",
+   "resources": []
+  },
+  "listaccountassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountAssociations",
+   "resources": []
+  },
+  "listbillinggroupcostreports": {
+   "name": "ListBillingGroupCostReports",
+   "resources": []
+  },
+  "listbillinggroups": {
+   "name": "ListBillingGroups",
+   "resources": []
+  },
+  "listcustomlineitems": {
+   "name": "ListCustomLineItems",
+   "resources": []
+  },
+  "listcustomlineitemversions": {
+   "name": "ListCustomLineItemVersions",
+   "resources": [
+    "customlineitem"
+   ]
+  },
+  "listpricingplans": {
+   "name": "ListPricingPlans",
+   "resources": []
+  },
+  "listpricingplansassociatedwithpricingrule": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPricingPlansAssociatedWithPricingRule",
+   "resources": [
+    "pricingrule"
+   ]
+  },
+  "listpricingrules": {
+   "name": "ListPricingRules",
+   "resources": []
+  },
+  "listpricingrulesassociatedtopricingplan": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPricingRulesAssociatedToPricingPlan",
+   "resources": [
+    "pricingplan"
+   ]
+  },
+  "listresourcesassociatedtocustomlineitem": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourcesAssociatedToCustomLineItem",
+   "resources": [
+    "customlineitem"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "billinggroup",
+    "customlineitem",
+    "pricingplan",
+    "pricingrule"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "billinggroup",
+    "customlineitem",
+    "pricingplan",
+    "pricingrule"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "billinggroup",
+    "customlineitem",
+    "pricingplan",
+    "pricingrule"
+   ]
+  },
+  "updatebillinggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBillingGroup",
+   "resources": [
+    "billinggroup"
+   ]
+  },
+  "updatebillingtransferpreference": {
+   "conditionKeys": [
+    "billingconductor:PricingPlanArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBillingTransferPreference",
+   "resources": []
+  },
+  "updatecustomlineitem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCustomLineItem",
+   "resources": [
+    "customlineitem"
+   ]
+  },
+  "updatepricingplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePricingPlan",
+   "resources": [
+    "pricingplan"
+   ]
+  },
+  "updatepricingrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePricingRule",
+   "resources": [
+    "pricingrule"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "billingconductor:PricingPlanArn": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "billinggroup": {
+   "arnFormats": [
+    "arn:${Partition}:billingconductor::${Account}:billinggroup/${BillingGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "customlineitem": {
+   "arnFormats": [
+    "arn:${Partition}:billingconductor::${Account}:customlineitem/${CustomLineItemId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "pricingplan": {
+   "arnFormats": [
+    "arn:${Partition}:billingconductor::${Account}:pricingplan/${PricingPlanId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "pricingrule": {
+   "arnFormats": [
+    "arn:${Partition}:billingconductor::${Account}:pricingrule/${PricingRuleId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "billingconductor",
+ "serviceName": "Billing Conductor",
+ "version": "v1.5"
+}

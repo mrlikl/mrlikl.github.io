@@ -1,0 +1,246 @@
+{
+ "actions": {
+  "deleteearthobservationjob": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEarthObservationJob",
+   "resources": [
+    "EarthObservationJob"
+   ]
+  },
+  "deletevectorenrichmentjob": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVectorEnrichmentJob",
+   "resources": [
+    "VectorEnrichmentJob"
+   ]
+  },
+  "exportearthobservationjob": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportEarthObservationJob",
+   "resources": [
+    "EarthObservationJob"
+   ]
+  },
+  "exportvectorenrichmentjob": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportVectorEnrichmentJob",
+   "resources": [
+    "VectorEnrichmentJob"
+   ]
+  },
+  "getearthobservationjob": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetEarthObservationJob",
+   "resources": [
+    "EarthObservationJob"
+   ]
+  },
+  "getrasterdatacollection": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetRasterDataCollection",
+   "resources": [
+    "RasterDataCollection"
+   ]
+  },
+  "gettile": {
+   "name": "GetTile",
+   "resources": [
+    "EarthObservationJob"
+   ]
+  },
+  "getvectorenrichmentjob": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetVectorEnrichmentJob",
+   "resources": [
+    "VectorEnrichmentJob"
+   ]
+  },
+  "listearthobservationjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEarthObservationJobs",
+   "resources": []
+  },
+  "listrasterdatacollections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRasterDataCollections",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "EarthObservationJob",
+    "RasterDataCollection",
+    "VectorEnrichmentJob"
+   ]
+  },
+  "listvectorenrichmentjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVectorEnrichmentJobs",
+   "resources": []
+  },
+  "searchrasterdatacollection": {
+   "name": "SearchRasterDataCollection",
+   "resources": []
+  },
+  "startearthobservationjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartEarthObservationJob",
+   "resources": [
+    "EarthObservationJob"
+   ]
+  },
+  "startvectorenrichmentjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartVectorEnrichmentJob",
+   "resources": [
+    "VectorEnrichmentJob"
+   ]
+  },
+  "stopearthobservationjob": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopEarthObservationJob",
+   "resources": [
+    "EarthObservationJob"
+   ]
+  },
+  "stopvectorenrichmentjob": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopVectorEnrichmentJob",
+   "resources": [
+    "VectorEnrichmentJob"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "EarthObservationJob",
+    "RasterDataCollection",
+    "VectorEnrichmentJob"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "EarthObservationJob",
+    "RasterDataCollection",
+    "VectorEnrichmentJob"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "EarthObservationJob": {
+   "arnFormats": [
+    "arn:${Partition}:sagemaker-geospatial:${Region}:${Account}:earth-observation-job/${JobID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "RasterDataCollection": {
+   "arnFormats": [
+    "arn:${Partition}:sagemaker-geospatial:${Region}:${Account}:raster-data-collection/${CollectionID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "VectorEnrichmentJob": {
+   "arnFormats": [
+    "arn:${Partition}:sagemaker-geospatial:${Region}:${Account}:vector-enrichment-job/${JobID}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "sagemaker-geospatial",
+ "serviceName": "SageMaker geospatial capabilities",
+ "version": "v1.5"
+}

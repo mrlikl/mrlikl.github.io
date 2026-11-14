@@ -1,0 +1,731 @@
+{
+ "actions": {
+  "createalertmanageralerts": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAlertManagerAlerts",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createalertmanagerdefinition": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAlertManagerDefinition",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createanomalydetector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAnomalyDetector",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createloggingconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLoggingConfiguration",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createqueryloggingconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQueryLoggingConfiguration",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createrulegroupsnamespace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRuleGroupsNamespace",
+   "resources": [
+    "rulegroupsnamespace"
+   ]
+  },
+  "createscraper": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScraper",
+   "resources": [
+    "cluster",
+    "workspace"
+   ]
+  },
+  "createworkspace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkspace",
+   "resources": []
+  },
+  "deletealertmanagerdefinition": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAlertManagerDefinition",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deletealertmanagersilence": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAlertManagerSilence",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deleteanomalydetector": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAnomalyDetector",
+   "resources": [
+    "anomalydetector",
+    "workspace"
+   ]
+  },
+  "deleteloggingconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLoggingConfiguration",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deletequeryloggingconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQueryLoggingConfiguration",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "deleterulegroupsnamespace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRuleGroupsNamespace",
+   "resources": [
+    "rulegroupsnamespace"
+   ]
+  },
+  "deletescraper": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScraper",
+   "resources": [
+    "scraper"
+   ]
+  },
+  "deletescraperloggingconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScraperLoggingConfiguration",
+   "resources": [
+    "scraper"
+   ]
+  },
+  "deleteworkspace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkspace",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "describealertmanagerdefinition": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeAlertManagerDefinition",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "describeanomalydetector": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeAnomalyDetector",
+   "resources": [
+    "anomalydetector",
+    "workspace"
+   ]
+  },
+  "describeloggingconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeLoggingConfiguration",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "describequeryloggingconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeQueryLoggingConfiguration",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "describeresourcepolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeResourcePolicy",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "describerulegroupsnamespace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeRuleGroupsNamespace",
+   "resources": [
+    "rulegroupsnamespace"
+   ]
+  },
+  "describescraper": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeScraper",
+   "resources": [
+    "scraper"
+   ]
+  },
+  "describescraperloggingconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeScraperLoggingConfiguration",
+   "resources": [
+    "scraper"
+   ]
+  },
+  "describeworkspace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeWorkspace",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "describeworkspaceconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeWorkspaceConfiguration",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getalertmanagersilence": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAlertManagerSilence",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getalertmanagerstatus": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAlertManagerStatus",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getdefaultscraperconfiguration": {
+   "name": "GetDefaultScraperConfiguration",
+   "resources": []
+  },
+  "getlabels": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetLabels",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getmetricmetadata": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetMetricMetadata",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getseries": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSeries",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listalertmanageralertgroups": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListAlertManagerAlertGroups",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listalertmanageralerts": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListAlertManagerAlerts",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listalertmanagerreceivers": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListAlertManagerReceivers",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listalertmanagersilences": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListAlertManagerSilences",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listalerts": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListAlerts",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listanomalydetectors": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnomalyDetectors",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listrulegroupsnamespaces": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRuleGroupsNamespaces",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listrules": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListRules",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listscrapers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScrapers",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "anomalydetector",
+    "rulegroupsnamespace",
+    "scraper",
+    "workspace"
+   ]
+  },
+  "listworkspaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkspaces",
+   "resources": []
+  },
+  "previewanomalydetector": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "PreviewAnomalyDetector",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "putalertmanagerdefinition": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAlertManagerDefinition",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "putalertmanagersilences": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAlertManagerSilences",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "putanomalydetector": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAnomalyDetector",
+   "resources": [
+    "anomalydetector",
+    "workspace"
+   ]
+  },
+  "putresourcepolicy": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "putrulegroupsnamespace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRuleGroupsNamespace",
+   "resources": [
+    "rulegroupsnamespace"
+   ]
+  },
+  "querymetrics": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "QueryMetrics",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "remotewrite": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoteWrite",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "anomalydetector",
+    "rulegroupsnamespace",
+    "scraper",
+    "workspace"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "anomalydetector",
+    "rulegroupsnamespace",
+    "scraper",
+    "workspace"
+   ]
+  },
+  "updateloggingconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLoggingConfiguration",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updatequeryloggingconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueryLoggingConfiguration",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updatescraper": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateScraper",
+   "resources": [
+    "scraper",
+    "workspace"
+   ]
+  },
+  "updatescraperloggingconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateScraperLoggingConfiguration",
+   "resources": [
+    "scraper"
+   ]
+  },
+  "updateworkspacealias": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkspaceAlias",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "updateworkspaceconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkspaceConfiguration",
+   "resources": [
+    "workspace"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "anomalydetector": {
+   "arnFormats": [
+    "arn:${Partition}:aps:${Region}:${Account}:anomalydetector/${WorkspaceId}/${AnomalyDetectorId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  },
+  "cluster": {
+   "arnFormats": [
+    "arn:${Partition}:eks:${Region}:${Account}:cluster/${ClusterName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "rulegroupsnamespace": {
+   "arnFormats": [
+    "arn:${Partition}:aps:${Region}:${Account}:rulegroupsnamespace/${WorkspaceId}/${Namespace}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  },
+  "scraper": {
+   "arnFormats": [
+    "arn:${Partition}:aps:${Region}:${Account}:scraper/${ScraperId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  },
+  "workspace": {
+   "arnFormats": [
+    "arn:${Partition}:aps:${Region}:${Account}:workspace/${WorkspaceId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  }
+ },
+ "service": "aps",
+ "serviceName": "AMP",
+ "version": "v1.5"
+}

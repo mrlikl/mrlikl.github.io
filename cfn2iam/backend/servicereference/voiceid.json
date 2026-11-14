@@ -1,0 +1,288 @@
+{
+ "actions": {
+  "associatefraudster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateFraudster",
+   "resources": [
+    "domain"
+   ]
+  },
+  "createdomain": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomain",
+   "resources": []
+  },
+  "createwatchlist": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWatchlist",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deletedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deletefraudster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFraudster",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deletespeaker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSpeaker",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deletewatchlist": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWatchlist",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describecomplianceconsent": {
+   "name": "DescribeComplianceConsent",
+   "resources": []
+  },
+  "describedomain": {
+   "name": "DescribeDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describefraudster": {
+   "name": "DescribeFraudster",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describefraudsterregistrationjob": {
+   "name": "DescribeFraudsterRegistrationJob",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describespeaker": {
+   "name": "DescribeSpeaker",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describespeakerenrollmentjob": {
+   "name": "DescribeSpeakerEnrollmentJob",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describewatchlist": {
+   "name": "DescribeWatchlist",
+   "resources": [
+    "domain"
+   ]
+  },
+  "disassociatefraudster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateFraudster",
+   "resources": [
+    "domain"
+   ]
+  },
+  "evaluatesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EvaluateSession",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomains",
+   "resources": []
+  },
+  "listfraudsterregistrationjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFraudsterRegistrationJobs",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listfraudsters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFraudsters",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listspeakerenrollmentjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSpeakerEnrollmentJobs",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listspeakers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSpeakers",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listwatchlists": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWatchlists",
+   "resources": [
+    "domain"
+   ]
+  },
+  "optoutspeaker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "OptOutSpeaker",
+   "resources": [
+    "domain"
+   ]
+  },
+  "registercomplianceconsent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterComplianceConsent",
+   "resources": []
+  },
+  "startfraudsterregistrationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFraudsterRegistrationJob",
+   "resources": [
+    "domain"
+   ]
+  },
+  "startspeakerenrollmentjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSpeakerEnrollmentJob",
+   "resources": [
+    "domain"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "domain"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updatedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updatewatchlist": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWatchlist",
+   "resources": [
+    "domain"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "domain": {
+   "arnFormats": [
+    "arn:${Partition}:voiceid:${Region}:${Account}:domain/${DomainId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "voiceid",
+ "serviceName": "Voice ID",
+ "version": "v1.5"
+}

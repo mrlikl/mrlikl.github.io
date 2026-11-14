@@ -1,0 +1,292 @@
+{
+ "actions": {
+  "activatesecurityprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivateSecurityProfile",
+   "resources": [
+    "SecurityProfile"
+   ]
+  },
+  "associatedatasource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateDataSource",
+   "resources": [
+    "SecurityProfile"
+   ]
+  },
+  "createdatasource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataSource",
+   "resources": []
+  },
+  "createsecurityprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSecurityProfile",
+   "resources": []
+  },
+  "deactivatesecurityprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeactivateSecurityProfile",
+   "resources": [
+    "SecurityProfile"
+   ]
+  },
+  "deletedatasource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataSource",
+   "resources": [
+    "DataSource"
+   ]
+  },
+  "disassociatedatasource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateDataSource",
+   "resources": [
+    "SecurityProfile"
+   ]
+  },
+  "getdatasource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetDataSource",
+   "resources": [
+    "DataSource"
+   ]
+  },
+  "getentitledsecurityprofilesnapshot": {
+   "name": "GetEntitledSecurityProfileSnapshot",
+   "resources": [
+    "SecurityProfile"
+   ]
+  },
+  "getprofileaccessterms": {
+   "name": "GetProfileAccessTerms",
+   "resources": []
+  },
+  "getsecurityprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSecurityProfile",
+   "resources": [
+    "SecurityProfile"
+   ]
+  },
+  "getsecurityprofilesnapshot": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSecurityProfileSnapshot",
+   "resources": [
+    "SecurityProfile"
+   ]
+  },
+  "listdatasources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSources",
+   "resources": []
+  },
+  "listentitledsecurityprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEntitledSecurityProfiles",
+   "resources": []
+  },
+  "listentitledsecurityprofilesnapshots": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEntitledSecurityProfileSnapshots",
+   "resources": [
+    "SecurityProfile"
+   ]
+  },
+  "listsecurityprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityProfiles",
+   "resources": []
+  },
+  "listsecurityprofilesnapshots": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityProfileSnapshots",
+   "resources": [
+    "SecurityProfile"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "DataSource",
+    "SecurityProfile"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "DataSource",
+    "SecurityProfile"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "DataSource",
+    "SecurityProfile"
+   ]
+  },
+  "updatedatasource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataSource",
+   "resources": [
+    "DataSource"
+   ]
+  },
+  "updatesecurityprofile": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSecurityProfile",
+   "resources": [
+    "SecurityProfile"
+   ]
+  },
+  "updatesecurityprofilesnapshotcreationconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSecurityProfileSnapshotCreationConfiguration",
+   "resources": [
+    "SecurityProfile"
+   ]
+  },
+  "updatesecurityprofilesnapshotreleaseconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSecurityProfileSnapshotReleaseConfiguration",
+   "resources": [
+    "SecurityProfile"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "DataSource": {
+   "arnFormats": [
+    "arn:${Partition}:vendor-insights:::data-source:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  },
+  "SecurityProfile": {
+   "arnFormats": [
+    "arn:${Partition}:vendor-insights:::security-profile:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  }
+ },
+ "service": "vendor-insights",
+ "serviceName": "Vendor Insights",
+ "version": "v1.5"
+}

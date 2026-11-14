@@ -1,0 +1,634 @@
+{
+ "actions": {
+  "acceptinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptInvitation",
+   "resources": []
+  },
+  "batchgetcustomdataidentifiers": {
+   "name": "BatchGetCustomDataIdentifiers",
+   "resources": [
+    "CustomDataIdentifier"
+   ]
+  },
+  "batchupdateautomateddiscoveryaccounts": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateAutomatedDiscoveryAccounts",
+   "resources": []
+  },
+  "createallowlist": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAllowList",
+   "resources": []
+  },
+  "createclassificationjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateClassificationJob",
+   "resources": [
+    "ClassificationJob"
+   ]
+  },
+  "createcustomdataidentifier": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomDataIdentifier",
+   "resources": [
+    "CustomDataIdentifier"
+   ]
+  },
+  "createfindingsfilter": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFindingsFilter",
+   "resources": [
+    "FindingsFilter"
+   ]
+  },
+  "createinvitations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInvitations",
+   "resources": []
+  },
+  "createmember": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMember",
+   "resources": [
+    "Member"
+   ]
+  },
+  "createsamplefindings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSampleFindings",
+   "resources": []
+  },
+  "declineinvitations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeclineInvitations",
+   "resources": []
+  },
+  "deleteallowlist": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAllowList",
+   "resources": [
+    "AllowList"
+   ]
+  },
+  "deletecustomdataidentifier": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomDataIdentifier",
+   "resources": [
+    "CustomDataIdentifier"
+   ]
+  },
+  "deletefindingsfilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFindingsFilter",
+   "resources": [
+    "FindingsFilter"
+   ]
+  },
+  "deleteinvitations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInvitations",
+   "resources": []
+  },
+  "deletemember": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMember",
+   "resources": [
+    "Member"
+   ]
+  },
+  "describebuckets": {
+   "name": "DescribeBuckets",
+   "resources": []
+  },
+  "describeclassificationjob": {
+   "name": "DescribeClassificationJob",
+   "resources": [
+    "ClassificationJob"
+   ]
+  },
+  "describeorganizationconfiguration": {
+   "name": "DescribeOrganizationConfiguration",
+   "resources": []
+  },
+  "disablemacie": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableMacie",
+   "resources": []
+  },
+  "disableorganizationadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableOrganizationAdminAccount",
+   "resources": []
+  },
+  "disassociatefromadministratoraccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateFromAdministratorAccount",
+   "resources": []
+  },
+  "disassociatefrommasteraccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateFromMasterAccount",
+   "resources": []
+  },
+  "disassociatemember": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateMember",
+   "resources": [
+    "Member"
+   ]
+  },
+  "enablemacie": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableMacie",
+   "resources": []
+  },
+  "enableorganizationadminaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableOrganizationAdminAccount",
+   "resources": []
+  },
+  "getadministratoraccount": {
+   "name": "GetAdministratorAccount",
+   "resources": []
+  },
+  "getallowlist": {
+   "name": "GetAllowList",
+   "resources": [
+    "AllowList"
+   ]
+  },
+  "getautomateddiscoveryconfiguration": {
+   "name": "GetAutomatedDiscoveryConfiguration",
+   "resources": []
+  },
+  "getbucketstatistics": {
+   "name": "GetBucketStatistics",
+   "resources": []
+  },
+  "getclassificationexportconfiguration": {
+   "name": "GetClassificationExportConfiguration",
+   "resources": []
+  },
+  "getclassificationscope": {
+   "name": "GetClassificationScope",
+   "resources": []
+  },
+  "getcustomdataidentifier": {
+   "name": "GetCustomDataIdentifier",
+   "resources": [
+    "CustomDataIdentifier"
+   ]
+  },
+  "getfindings": {
+   "name": "GetFindings",
+   "resources": []
+  },
+  "getfindingsfilter": {
+   "name": "GetFindingsFilter",
+   "resources": [
+    "FindingsFilter"
+   ]
+  },
+  "getfindingspublicationconfiguration": {
+   "name": "GetFindingsPublicationConfiguration",
+   "resources": []
+  },
+  "getfindingstatistics": {
+   "name": "GetFindingStatistics",
+   "resources": []
+  },
+  "getinvitationscount": {
+   "name": "GetInvitationsCount",
+   "resources": []
+  },
+  "getmaciesession": {
+   "name": "GetMacieSession",
+   "resources": []
+  },
+  "getmasteraccount": {
+   "name": "GetMasterAccount",
+   "resources": []
+  },
+  "getmember": {
+   "name": "GetMember",
+   "resources": [
+    "Member"
+   ]
+  },
+  "getresourceprofile": {
+   "name": "GetResourceProfile",
+   "resources": []
+  },
+  "getrevealconfiguration": {
+   "name": "GetRevealConfiguration",
+   "resources": []
+  },
+  "getsensitivedataoccurrences": {
+   "name": "GetSensitiveDataOccurrences",
+   "resources": []
+  },
+  "getsensitivedataoccurrencesavailability": {
+   "name": "GetSensitiveDataOccurrencesAvailability",
+   "resources": []
+  },
+  "getsensitivityinspectiontemplate": {
+   "name": "GetSensitivityInspectionTemplate",
+   "resources": []
+  },
+  "getusagestatistics": {
+   "name": "GetUsageStatistics",
+   "resources": []
+  },
+  "getusagetotals": {
+   "name": "GetUsageTotals",
+   "resources": []
+  },
+  "listallowlists": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAllowLists",
+   "resources": []
+  },
+  "listautomateddiscoveryaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomatedDiscoveryAccounts",
+   "resources": []
+  },
+  "listclassificationjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClassificationJobs",
+   "resources": []
+  },
+  "listclassificationscopes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClassificationScopes",
+   "resources": []
+  },
+  "listcustomdataidentifiers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomDataIdentifiers",
+   "resources": []
+  },
+  "listfindings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFindings",
+   "resources": []
+  },
+  "listfindingsfilters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFindingsFilters",
+   "resources": []
+  },
+  "listinvitations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInvitations",
+   "resources": []
+  },
+  "listmanageddataidentifiers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedDataIdentifiers",
+   "resources": []
+  },
+  "listmembers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMembers",
+   "resources": []
+  },
+  "listorganizationadminaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrganizationAdminAccounts",
+   "resources": []
+  },
+  "listresourceprofileartifacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceProfileArtifacts",
+   "resources": []
+  },
+  "listresourceprofiledetections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceProfileDetections",
+   "resources": []
+  },
+  "listsensitivityinspectiontemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSensitivityInspectionTemplates",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "AllowList",
+    "ClassificationJob",
+    "CustomDataIdentifier",
+    "FindingsFilter",
+    "Member"
+   ]
+  },
+  "putclassificationexportconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutClassificationExportConfiguration",
+   "resources": []
+  },
+  "putfindingspublicationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFindingsPublicationConfiguration",
+   "resources": []
+  },
+  "searchresources": {
+   "name": "SearchResources",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "AllowList",
+    "ClassificationJob",
+    "CustomDataIdentifier",
+    "FindingsFilter",
+    "Member"
+   ]
+  },
+  "testcustomdataidentifier": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TestCustomDataIdentifier",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "AllowList",
+    "ClassificationJob",
+    "CustomDataIdentifier",
+    "FindingsFilter",
+    "Member"
+   ]
+  },
+  "updateallowlist": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAllowList",
+   "resources": [
+    "AllowList"
+   ]
+  },
+  "updateautomateddiscoveryconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAutomatedDiscoveryConfiguration",
+   "resources": []
+  },
+  "updateclassificationjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateClassificationJob",
+   "resources": [
+    "ClassificationJob"
+   ]
+  },
+  "updateclassificationscope": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateClassificationScope",
+   "resources": []
+  },
+  "updatefindingsfilter": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFindingsFilter",
+   "resources": [
+    "FindingsFilter"
+   ]
+  },
+  "updatemaciesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMacieSession",
+   "resources": []
+  },
+  "updatemembersession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMemberSession",
+   "resources": []
+  },
+  "updateorganizationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOrganizationConfiguration",
+   "resources": []
+  },
+  "updateresourceprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResourceProfile",
+   "resources": []
+  },
+  "updateresourceprofiledetections": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResourceProfileDetections",
+   "resources": []
+  },
+  "updaterevealconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRevealConfiguration",
+   "resources": []
+  },
+  "updatesensitivityinspectiontemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSensitivityInspectionTemplate",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "AllowList": {
+   "arnFormats": [
+    "arn:${Partition}:macie2:${Region}:${Account}:allow-list/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ClassificationJob": {
+   "arnFormats": [
+    "arn:${Partition}:macie2:${Region}:${Account}:classification-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "CustomDataIdentifier": {
+   "arnFormats": [
+    "arn:${Partition}:macie2:${Region}:${Account}:custom-data-identifier/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "FindingsFilter": {
+   "arnFormats": [
+    "arn:${Partition}:macie2:${Region}:${Account}:findings-filter/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Member": {
+   "arnFormats": [
+    "arn:${Partition}:macie2:${Region}:${Account}:member/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "macie2",
+ "serviceName": "Macie",
+ "version": "v1.5"
+}

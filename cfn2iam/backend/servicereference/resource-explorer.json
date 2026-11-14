@@ -1,0 +1,26 @@
+{
+ "actions": {
+  "listresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResources",
+   "resources": []
+  },
+  "listresourcetypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceTypes",
+   "resources": []
+  },
+  "listtags": {
+   "name": "ListTags",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "resource-explorer",
+ "serviceName": "Tag Editor",
+ "version": "v1.5"
+}

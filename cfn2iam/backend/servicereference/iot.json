@@ -1,0 +1,2828 @@
+{
+ "actions": {
+  "acceptcertificatetransfer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptCertificateTransfer",
+   "resources": [
+    "cert"
+   ]
+  },
+  "addthingtobillinggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddThingToBillingGroup",
+   "resources": [
+    "billinggroup",
+    "thing"
+   ]
+  },
+  "addthingtothinggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddThingToThingGroup",
+   "resources": [
+    "thing",
+    "thinggroup"
+   ]
+  },
+  "associatesbomwithpackageversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSbomWithPackageVersion",
+   "resources": [
+    "packageversion"
+   ]
+  },
+  "associatetargetswithjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateTargetsWithJob",
+   "resources": [
+    "job",
+    "thing",
+    "thinggroup"
+   ]
+  },
+  "attachpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AttachPolicy",
+   "resources": [
+    "cert",
+    "thinggroup"
+   ]
+  },
+  "attachprincipalpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AttachPrincipalPolicy",
+   "resources": [
+    "cert"
+   ]
+  },
+  "attachsecurityprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AttachSecurityProfile",
+   "resources": [
+    "custommetric",
+    "dimension",
+    "securityprofile",
+    "thinggroup"
+   ]
+  },
+  "attachthingprincipal": {
+   "conditionKeys": [
+    "iot:thingArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AttachThingPrincipal",
+   "resources": [
+    "cert"
+   ]
+  },
+  "cancelauditmitigationactionstask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelAuditMitigationActionsTask",
+   "resources": []
+  },
+  "cancelaudittask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelAuditTask",
+   "resources": []
+  },
+  "cancelcertificatetransfer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelCertificateTransfer",
+   "resources": [
+    "cert"
+   ]
+  },
+  "canceldetectmitigationactionstask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelDetectMitigationActionsTask",
+   "resources": []
+  },
+  "canceljob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "canceljobexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelJobExecution",
+   "resources": [
+    "job",
+    "thing"
+   ]
+  },
+  "cleardefaultauthorizer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ClearDefaultAuthorizer",
+   "resources": []
+  },
+  "closetunnel": {
+   "conditionKeys": [
+    "iot:Delete"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CloseTunnel",
+   "resources": [
+    "tunnel"
+   ]
+  },
+  "confirmtopicruledestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfirmTopicRuleDestination",
+   "resources": [
+    "destination"
+   ]
+  },
+  "connect": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Connect",
+   "resources": [
+    "client"
+   ]
+  },
+  "createauditsuppression": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAuditSuppression",
+   "resources": []
+  },
+  "createauthorizer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAuthorizer",
+   "resources": [
+    "authorizer"
+   ]
+  },
+  "createbillinggroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBillingGroup",
+   "resources": [
+    "billinggroup"
+   ]
+  },
+  "createcertificatefromcsr": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCertificateFromCsr",
+   "resources": []
+  },
+  "createcertificateprovider": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCertificateProvider",
+   "resources": [
+    "certificateprovider"
+   ]
+  },
+  "createcommand": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCommand",
+   "resources": [
+    "command"
+   ]
+  },
+  "createcustommetric": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomMetric",
+   "resources": [
+    "custommetric"
+   ]
+  },
+  "createdimension": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDimension",
+   "resources": [
+    "dimension"
+   ]
+  },
+  "createdomainconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "iot:DomainName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomainConfiguration",
+   "resources": [
+    "domainconfiguration"
+   ]
+  },
+  "createdynamicthinggroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDynamicThingGroup",
+   "resources": [
+    "dynamicthinggroup"
+   ]
+  },
+  "createfleetmetric": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFleetMetric",
+   "resources": [
+    "fleetmetric",
+    "index"
+   ]
+  },
+  "createjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateJob",
+   "resources": [
+    "job",
+    "jobtemplate",
+    "package",
+    "packageversion",
+    "thing",
+    "thinggroup"
+   ]
+  },
+  "createjobtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateJobTemplate",
+   "resources": [
+    "job",
+    "jobtemplate",
+    "package",
+    "packageversion"
+   ]
+  },
+  "createkeysandcertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKeysAndCertificate",
+   "resources": []
+  },
+  "createmitigationaction": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMitigationAction",
+   "resources": [
+    "mitigationaction"
+   ]
+  },
+  "createotaupdate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOTAUpdate",
+   "resources": [
+    "otaupdate"
+   ]
+  },
+  "createpackage": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePackage",
+   "resources": [
+    "package"
+   ]
+  },
+  "createpackageversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePackageVersion",
+   "resources": [
+    "package",
+    "packageversion"
+   ]
+  },
+  "createpolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "CreatePolicy",
+   "resources": [
+    "policy"
+   ]
+  },
+  "createpolicyversion": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "CreatePolicyVersion",
+   "resources": [
+    "policy"
+   ]
+  },
+  "createprovisioningclaim": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProvisioningClaim",
+   "resources": [
+    "provisioningtemplate"
+   ]
+  },
+  "createprovisioningtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProvisioningTemplate",
+   "resources": [
+    "provisioningtemplate"
+   ]
+  },
+  "createprovisioningtemplateversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProvisioningTemplateVersion",
+   "resources": [
+    "provisioningtemplate"
+   ]
+  },
+  "createrolealias": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRoleAlias",
+   "resources": [
+    "rolealias"
+   ]
+  },
+  "createscheduledaudit": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScheduledAudit",
+   "resources": [
+    "scheduledaudit"
+   ]
+  },
+  "createsecurityprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSecurityProfile",
+   "resources": [
+    "custommetric",
+    "dimension",
+    "securityprofile"
+   ]
+  },
+  "createstream": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStream",
+   "resources": [
+    "stream"
+   ]
+  },
+  "creatething": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateThing",
+   "resources": [
+    "billinggroup",
+    "thing"
+   ]
+  },
+  "createthinggroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateThingGroup",
+   "resources": [
+    "thinggroup"
+   ]
+  },
+  "createthingtype": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateThingType",
+   "resources": [
+    "thingtype"
+   ]
+  },
+  "createtopicrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTopicRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "createtopicruledestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTopicRuleDestination",
+   "resources": []
+  },
+  "deleteaccountauditconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccountAuditConfiguration",
+   "resources": []
+  },
+  "deleteauditsuppression": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAuditSuppression",
+   "resources": []
+  },
+  "deleteauthorizer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAuthorizer",
+   "resources": [
+    "authorizer"
+   ]
+  },
+  "deletebillinggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBillingGroup",
+   "resources": [
+    "billinggroup"
+   ]
+  },
+  "deletecacertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCACertificate",
+   "resources": [
+    "cacert"
+   ]
+  },
+  "deletecertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCertificate",
+   "resources": [
+    "cert"
+   ]
+  },
+  "deletecertificateprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCertificateProvider",
+   "resources": [
+    "certificateprovider"
+   ]
+  },
+  "deletecommand": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCommand",
+   "resources": [
+    "command"
+   ]
+  },
+  "deletecommandexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCommandExecution",
+   "resources": [
+    "client",
+    "thing"
+   ]
+  },
+  "deleteconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnection",
+   "resources": [
+    "client"
+   ]
+  },
+  "deletecustommetric": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomMetric",
+   "resources": [
+    "custommetric"
+   ]
+  },
+  "deletedimension": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDimension",
+   "resources": [
+    "dimension"
+   ]
+  },
+  "deletedomainconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomainConfiguration",
+   "resources": [
+    "domainconfiguration"
+   ]
+  },
+  "deletedynamicthinggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDynamicThingGroup",
+   "resources": [
+    "dynamicthinggroup"
+   ]
+  },
+  "deletefleetmetric": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFleetMetric",
+   "resources": [
+    "fleetmetric"
+   ]
+  },
+  "deletejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "deletejobexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteJobExecution",
+   "resources": [
+    "job",
+    "thing"
+   ]
+  },
+  "deletejobtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteJobTemplate",
+   "resources": [
+    "jobtemplate"
+   ]
+  },
+  "deletemitigationaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMitigationAction",
+   "resources": [
+    "mitigationaction"
+   ]
+  },
+  "deleteotaupdate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOTAUpdate",
+   "resources": [
+    "otaupdate"
+   ]
+  },
+  "deletepackage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePackage",
+   "resources": [
+    "package"
+   ]
+  },
+  "deletepackageversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePackageVersion",
+   "resources": [
+    "package",
+    "packageversion"
+   ]
+  },
+  "deletepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeletePolicy",
+   "resources": [
+    "policy"
+   ]
+  },
+  "deletepolicyversion": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeletePolicyVersion",
+   "resources": [
+    "policy"
+   ]
+  },
+  "deleteprovisioningtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProvisioningTemplate",
+   "resources": [
+    "provisioningtemplate"
+   ]
+  },
+  "deleteprovisioningtemplateversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProvisioningTemplateVersion",
+   "resources": [
+    "provisioningtemplate"
+   ]
+  },
+  "deleteregistrationcode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRegistrationCode",
+   "resources": []
+  },
+  "deleterolealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRoleAlias",
+   "resources": [
+    "rolealias"
+   ]
+  },
+  "deletescheduledaudit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScheduledAudit",
+   "resources": [
+    "scheduledaudit"
+   ]
+  },
+  "deletesecurityprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSecurityProfile",
+   "resources": [
+    "custommetric",
+    "dimension",
+    "securityprofile"
+   ]
+  },
+  "deletestream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStream",
+   "resources": [
+    "stream"
+   ]
+  },
+  "deletething": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteThing",
+   "resources": [
+    "thing"
+   ]
+  },
+  "deletethinggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteThingGroup",
+   "resources": [
+    "thinggroup"
+   ]
+  },
+  "deletethingshadow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteThingShadow",
+   "resources": [
+    "thing"
+   ]
+  },
+  "deletethingtype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteThingType",
+   "resources": [
+    "thingtype"
+   ]
+  },
+  "deletetopicrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTopicRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "deletetopicruledestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTopicRuleDestination",
+   "resources": [
+    "destination"
+   ]
+  },
+  "deletev2logginglevel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteV2LoggingLevel",
+   "resources": []
+  },
+  "deprecatethingtype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeprecateThingType",
+   "resources": [
+    "thingtype"
+   ]
+  },
+  "describeaccountauditconfiguration": {
+   "name": "DescribeAccountAuditConfiguration",
+   "resources": []
+  },
+  "describeauditfinding": {
+   "name": "DescribeAuditFinding",
+   "resources": []
+  },
+  "describeauditmitigationactionstask": {
+   "name": "DescribeAuditMitigationActionsTask",
+   "resources": []
+  },
+  "describeauditsuppression": {
+   "name": "DescribeAuditSuppression",
+   "resources": []
+  },
+  "describeaudittask": {
+   "name": "DescribeAuditTask",
+   "resources": []
+  },
+  "describeauthorizer": {
+   "name": "DescribeAuthorizer",
+   "resources": [
+    "authorizer"
+   ]
+  },
+  "describebillinggroup": {
+   "name": "DescribeBillingGroup",
+   "resources": [
+    "billinggroup"
+   ]
+  },
+  "describecacertificate": {
+   "name": "DescribeCACertificate",
+   "resources": [
+    "cacert"
+   ]
+  },
+  "describecertificate": {
+   "name": "DescribeCertificate",
+   "resources": [
+    "cert"
+   ]
+  },
+  "describecertificateprovider": {
+   "name": "DescribeCertificateProvider",
+   "resources": [
+    "certificateprovider"
+   ]
+  },
+  "describecustommetric": {
+   "name": "DescribeCustomMetric",
+   "resources": [
+    "custommetric"
+   ]
+  },
+  "describedefaultauthorizer": {
+   "name": "DescribeDefaultAuthorizer",
+   "resources": []
+  },
+  "describedetectmitigationactionstask": {
+   "name": "DescribeDetectMitigationActionsTask",
+   "resources": []
+  },
+  "describedimension": {
+   "name": "DescribeDimension",
+   "resources": [
+    "dimension"
+   ]
+  },
+  "describedomainconfiguration": {
+   "name": "DescribeDomainConfiguration",
+   "resources": [
+    "domainconfiguration"
+   ]
+  },
+  "describeencryptionconfiguration": {
+   "name": "DescribeEncryptionConfiguration",
+   "resources": []
+  },
+  "describeendpoint": {
+   "name": "DescribeEndpoint",
+   "resources": []
+  },
+  "describeeventconfigurations": {
+   "name": "DescribeEventConfigurations",
+   "resources": []
+  },
+  "describefleetmetric": {
+   "name": "DescribeFleetMetric",
+   "resources": [
+    "fleetmetric"
+   ]
+  },
+  "describeindex": {
+   "name": "DescribeIndex",
+   "resources": [
+    "index"
+   ]
+  },
+  "describejob": {
+   "name": "DescribeJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "describejobexecution": {
+   "name": "DescribeJobExecution",
+   "resources": [
+    "job",
+    "thing"
+   ]
+  },
+  "describejobtemplate": {
+   "name": "DescribeJobTemplate",
+   "resources": [
+    "jobtemplate"
+   ]
+  },
+  "describemanagedjobtemplate": {
+   "name": "DescribeManagedJobTemplate",
+   "resources": [
+    "jobtemplate"
+   ]
+  },
+  "describemitigationaction": {
+   "name": "DescribeMitigationAction",
+   "resources": [
+    "mitigationaction"
+   ]
+  },
+  "describeprovisioningtemplate": {
+   "name": "DescribeProvisioningTemplate",
+   "resources": [
+    "provisioningtemplate"
+   ]
+  },
+  "describeprovisioningtemplateversion": {
+   "name": "DescribeProvisioningTemplateVersion",
+   "resources": [
+    "provisioningtemplate"
+   ]
+  },
+  "describerolealias": {
+   "name": "DescribeRoleAlias",
+   "resources": [
+    "rolealias"
+   ]
+  },
+  "describescheduledaudit": {
+   "name": "DescribeScheduledAudit",
+   "resources": [
+    "scheduledaudit"
+   ]
+  },
+  "describesecurityprofile": {
+   "name": "DescribeSecurityProfile",
+   "resources": [
+    "securityprofile"
+   ]
+  },
+  "describestream": {
+   "name": "DescribeStream",
+   "resources": [
+    "stream"
+   ]
+  },
+  "describething": {
+   "name": "DescribeThing",
+   "resources": [
+    "thing"
+   ]
+  },
+  "describethinggroup": {
+   "name": "DescribeThingGroup",
+   "resources": [
+    "thinggroup"
+   ]
+  },
+  "describethingregistrationtask": {
+   "name": "DescribeThingRegistrationTask",
+   "resources": []
+  },
+  "describethingtype": {
+   "name": "DescribeThingType",
+   "resources": [
+    "thingtype"
+   ]
+  },
+  "describetunnel": {
+   "name": "DescribeTunnel",
+   "resources": [
+    "tunnel"
+   ]
+  },
+  "detachpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DetachPolicy",
+   "resources": [
+    "cert",
+    "thinggroup"
+   ]
+  },
+  "detachprincipalpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DetachPrincipalPolicy",
+   "resources": [
+    "cert"
+   ]
+  },
+  "detachsecurityprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetachSecurityProfile",
+   "resources": [
+    "custommetric",
+    "dimension",
+    "securityprofile",
+    "thinggroup"
+   ]
+  },
+  "detachthingprincipal": {
+   "conditionKeys": [
+    "iot:thingArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetachThingPrincipal",
+   "resources": [
+    "cert"
+   ]
+  },
+  "disabletopicrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableTopicRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "disassociatesbomfrompackageversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateSbomFromPackageVersion",
+   "resources": [
+    "packageversion"
+   ]
+  },
+  "enabletopicrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableTopicRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "getbehaviormodeltrainingsummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetBehaviorModelTrainingSummaries",
+   "resources": [
+    "securityprofile"
+   ]
+  },
+  "getbucketsaggregation": {
+   "name": "GetBucketsAggregation",
+   "resources": [
+    "index"
+   ]
+  },
+  "getcardinality": {
+   "name": "GetCardinality",
+   "resources": [
+    "index"
+   ]
+  },
+  "getcommand": {
+   "name": "GetCommand",
+   "resources": [
+    "command"
+   ]
+  },
+  "getcommandexecution": {
+   "name": "GetCommandExecution",
+   "resources": [
+    "client",
+    "thing"
+   ]
+  },
+  "getconnection": {
+   "conditionKeys": [
+    "iot:IncludeSocketInformation"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetConnection",
+   "resources": [
+    "client"
+   ]
+  },
+  "geteffectivepolicies": {
+   "name": "GetEffectivePolicies",
+   "resources": [
+    "cert"
+   ]
+  },
+  "getindexingconfiguration": {
+   "name": "GetIndexingConfiguration",
+   "resources": []
+  },
+  "getjobdocument": {
+   "name": "GetJobDocument",
+   "resources": [
+    "job"
+   ]
+  },
+  "getloggingoptions": {
+   "name": "GetLoggingOptions",
+   "resources": []
+  },
+  "getotaupdate": {
+   "name": "GetOTAUpdate",
+   "resources": [
+    "otaupdate"
+   ]
+  },
+  "getpackage": {
+   "name": "GetPackage",
+   "resources": [
+    "package"
+   ]
+  },
+  "getpackageconfiguration": {
+   "name": "GetPackageConfiguration",
+   "resources": []
+  },
+  "getpackageversion": {
+   "name": "GetPackageVersion",
+   "resources": [
+    "package",
+    "packageversion"
+   ]
+  },
+  "getpercentiles": {
+   "name": "GetPercentiles",
+   "resources": [
+    "index"
+   ]
+  },
+  "getpolicy": {
+   "name": "GetPolicy",
+   "resources": [
+    "policy"
+   ]
+  },
+  "getpolicyversion": {
+   "name": "GetPolicyVersion",
+   "resources": [
+    "policy"
+   ]
+  },
+  "getregistrationcode": {
+   "name": "GetRegistrationCode",
+   "resources": []
+  },
+  "getretainedmessage": {
+   "name": "GetRetainedMessage",
+   "resources": [
+    "topic"
+   ]
+  },
+  "getstatistics": {
+   "name": "GetStatistics",
+   "resources": [
+    "index"
+   ]
+  },
+  "getthingconnectivitydata": {
+   "conditionKeys": [
+    "iot:IncludeSocketInformation"
+   ],
+   "name": "GetThingConnectivityData",
+   "resources": [
+    "thing"
+   ]
+  },
+  "getthingshadow": {
+   "name": "GetThingShadow",
+   "resources": [
+    "thing"
+   ]
+  },
+  "gettopicrule": {
+   "name": "GetTopicRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "gettopicruledestination": {
+   "name": "GetTopicRuleDestination",
+   "resources": [
+    "destination"
+   ]
+  },
+  "getv2loggingoptions": {
+   "name": "GetV2LoggingOptions",
+   "resources": []
+  },
+  "listactiveviolations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListActiveViolations",
+   "resources": [
+    "securityprofile",
+    "thing"
+   ]
+  },
+  "listattachedpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAttachedPolicies",
+   "resources": []
+  },
+  "listauditfindings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAuditFindings",
+   "resources": []
+  },
+  "listauditmitigationactionsexecutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAuditMitigationActionsExecutions",
+   "resources": []
+  },
+  "listauditmitigationactionstasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAuditMitigationActionsTasks",
+   "resources": []
+  },
+  "listauditsuppressions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAuditSuppressions",
+   "resources": []
+  },
+  "listaudittasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAuditTasks",
+   "resources": []
+  },
+  "listauthorizers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAuthorizers",
+   "resources": []
+  },
+  "listbillinggroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBillingGroups",
+   "resources": []
+  },
+  "listcacertificates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCACertificates",
+   "resources": []
+  },
+  "listcertificateproviders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCertificateProviders",
+   "resources": []
+  },
+  "listcertificates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCertificates",
+   "resources": []
+  },
+  "listcertificatesbyca": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCertificatesByCA",
+   "resources": []
+  },
+  "listcommandexecutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCommandExecutions",
+   "resources": [
+    "client",
+    "command",
+    "thing"
+   ]
+  },
+  "listcommands": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCommands",
+   "resources": []
+  },
+  "listcustommetrics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomMetrics",
+   "resources": []
+  },
+  "listdetectmitigationactionsexecutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDetectMitigationActionsExecutions",
+   "resources": [
+    "thing"
+   ]
+  },
+  "listdetectmitigationactionstasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDetectMitigationActionsTasks",
+   "resources": []
+  },
+  "listdimensions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDimensions",
+   "resources": []
+  },
+  "listdomainconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomainConfigurations",
+   "resources": []
+  },
+  "listfleetmetrics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFleetMetrics",
+   "resources": []
+  },
+  "listindices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIndices",
+   "resources": []
+  },
+  "listjobexecutionsforjob": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobExecutionsForJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "listjobexecutionsforthing": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobExecutionsForThing",
+   "resources": [
+    "thing"
+   ]
+  },
+  "listjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobs",
+   "resources": []
+  },
+  "listjobtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobTemplates",
+   "resources": []
+  },
+  "listmanagedjobtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedJobTemplates",
+   "resources": []
+  },
+  "listmetricvalues": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMetricValues",
+   "resources": [
+    "thing"
+   ]
+  },
+  "listmitigationactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMitigationActions",
+   "resources": []
+  },
+  "listnamedshadowsforthing": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNamedShadowsForThing",
+   "resources": [
+    "thing"
+   ]
+  },
+  "listotaupdates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOTAUpdates",
+   "resources": []
+  },
+  "listoutgoingcertificates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOutgoingCertificates",
+   "resources": []
+  },
+  "listpackages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPackages",
+   "resources": []
+  },
+  "listpackageversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPackageVersions",
+   "resources": []
+  },
+  "listpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicies",
+   "resources": []
+  },
+  "listpolicyprincipals": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicyPrincipals",
+   "resources": []
+  },
+  "listpolicyversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicyVersions",
+   "resources": [
+    "policy"
+   ]
+  },
+  "listprincipalpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPrincipalPolicies",
+   "resources": []
+  },
+  "listprincipalthings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPrincipalThings",
+   "resources": [
+    "cert"
+   ]
+  },
+  "listprincipalthingsv2": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPrincipalThingsV2",
+   "resources": [
+    "cert"
+   ]
+  },
+  "listprovisioningtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProvisioningTemplates",
+   "resources": []
+  },
+  "listprovisioningtemplateversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProvisioningTemplateVersions",
+   "resources": [
+    "provisioningtemplate"
+   ]
+  },
+  "listrelatedresourcesforauditfinding": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRelatedResourcesForAuditFinding",
+   "resources": []
+  },
+  "listretainedmessages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRetainedMessages",
+   "resources": []
+  },
+  "listrolealiases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRoleAliases",
+   "resources": []
+  },
+  "listsbomvalidationresults": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSbomValidationResults",
+   "resources": [
+    "packageversion"
+   ]
+  },
+  "listscheduledaudits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScheduledAudits",
+   "resources": []
+  },
+  "listsecurityprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityProfiles",
+   "resources": [
+    "custommetric",
+    "dimension"
+   ]
+  },
+  "listsecurityprofilesfortarget": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityProfilesForTarget",
+   "resources": [
+    "thinggroup"
+   ]
+  },
+  "liststreams": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStreams",
+   "resources": []
+  },
+  "listsubscriptions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ListSubscriptions",
+   "resources": [
+    "client"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "authorizer",
+    "billinggroup",
+    "cacert",
+    "certificateprovider",
+    "command",
+    "custommetric",
+    "dimension",
+    "domainconfiguration",
+    "dynamicthinggroup",
+    "fleetmetric",
+    "job",
+    "jobtemplate",
+    "mitigationaction",
+    "otaupdate",
+    "policy",
+    "provisioningtemplate",
+    "rolealias",
+    "rule",
+    "scheduledaudit",
+    "securityprofile",
+    "stream",
+    "thinggroup",
+    "thingtype"
+   ]
+  },
+  "listtargetsforpolicy": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTargetsForPolicy",
+   "resources": [
+    "policy"
+   ]
+  },
+  "listtargetsforsecurityprofile": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTargetsForSecurityProfile",
+   "resources": [
+    "securityprofile"
+   ]
+  },
+  "listthinggroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThingGroups",
+   "resources": []
+  },
+  "listthinggroupsforthing": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThingGroupsForThing",
+   "resources": [
+    "thing"
+   ]
+  },
+  "listthingprincipals": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThingPrincipals",
+   "resources": [
+    "thing"
+   ]
+  },
+  "listthingprincipalsv2": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThingPrincipalsV2",
+   "resources": [
+    "thing"
+   ]
+  },
+  "listthingregistrationtaskreports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThingRegistrationTaskReports",
+   "resources": []
+  },
+  "listthingregistrationtasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThingRegistrationTasks",
+   "resources": []
+  },
+  "listthings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThings",
+   "resources": []
+  },
+  "listthingsinbillinggroup": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThingsInBillingGroup",
+   "resources": [
+    "billinggroup"
+   ]
+  },
+  "listthingsinthinggroup": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThingsInThingGroup",
+   "resources": [
+    "thinggroup"
+   ]
+  },
+  "listthingtypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThingTypes",
+   "resources": []
+  },
+  "listtopicruledestinations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTopicRuleDestinations",
+   "resources": []
+  },
+  "listtopicrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTopicRules",
+   "resources": []
+  },
+  "listtunnels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTunnels",
+   "resources": []
+  },
+  "listv2logginglevels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListV2LoggingLevels",
+   "resources": []
+  },
+  "listviolationevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListViolationEvents",
+   "resources": [
+    "securityprofile",
+    "thing"
+   ]
+  },
+  "opentunnel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "iot:ThingGroupArn",
+    "iot:TunnelDestinationService"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "OpenTunnel",
+   "resources": []
+  },
+  "publish": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Publish",
+   "resources": [
+    "topic"
+   ]
+  },
+  "putverificationstateonviolation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutVerificationStateOnViolation",
+   "resources": []
+  },
+  "receive": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Receive",
+   "resources": [
+    "topic"
+   ]
+  },
+  "registercacertificate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterCACertificate",
+   "resources": []
+  },
+  "registercertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterCertificate",
+   "resources": []
+  },
+  "registercertificatewithoutca": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterCertificateWithoutCA",
+   "resources": []
+  },
+  "registerthing": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterThing",
+   "resources": []
+  },
+  "rejectcertificatetransfer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectCertificateTransfer",
+   "resources": [
+    "cert"
+   ]
+  },
+  "removethingfrombillinggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveThingFromBillingGroup",
+   "resources": [
+    "billinggroup",
+    "thing"
+   ]
+  },
+  "removethingfromthinggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveThingFromThingGroup",
+   "resources": [
+    "thing",
+    "thinggroup"
+   ]
+  },
+  "replacetopicrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReplaceTopicRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "retainpublish": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RetainPublish",
+   "resources": [
+    "topic"
+   ]
+  },
+  "rotatetunnelaccesstoken": {
+   "conditionKeys": [
+    "iot:ClientMode",
+    "iot:ThingGroupArn",
+    "iot:TunnelDestinationService"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RotateTunnelAccessToken",
+   "resources": [
+    "tunnel"
+   ]
+  },
+  "searchindex": {
+   "name": "SearchIndex",
+   "resources": [
+    "index"
+   ]
+  },
+  "senddirectmessage": {
+   "conditionKeys": [
+    "iot:Topic"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendDirectMessage",
+   "resources": [
+    "client"
+   ]
+  },
+  "setdefaultauthorizer": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "SetDefaultAuthorizer",
+   "resources": [
+    "authorizer"
+   ]
+  },
+  "setdefaultpolicyversion": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "SetDefaultPolicyVersion",
+   "resources": [
+    "policy"
+   ]
+  },
+  "setloggingoptions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetLoggingOptions",
+   "resources": []
+  },
+  "setv2logginglevel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetV2LoggingLevel",
+   "resources": []
+  },
+  "setv2loggingoptions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetV2LoggingOptions",
+   "resources": []
+  },
+  "startauditmitigationactionstask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAuditMitigationActionsTask",
+   "resources": []
+  },
+  "startcommandexecution": {
+   "conditionKeys": [
+    "iot:CommandExecutionParameterBoolean/${CommandParameterName}",
+    "iot:CommandExecutionParameterNumber/${CommandParameterName}",
+    "iot:CommandExecutionParameterString/${CommandParameterName}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCommandExecution",
+   "resources": [
+    "client",
+    "command",
+    "thing"
+   ]
+  },
+  "startdetectmitigationactionstask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDetectMitigationActionsTask",
+   "resources": [
+    "securityprofile"
+   ]
+  },
+  "startondemandaudittask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartOnDemandAuditTask",
+   "resources": []
+  },
+  "startthingregistrationtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartThingRegistrationTask",
+   "resources": []
+  },
+  "stopthingregistrationtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopThingRegistrationTask",
+   "resources": []
+  },
+  "subscribe": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Subscribe",
+   "resources": [
+    "topicfilter"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "authorizer",
+    "billinggroup",
+    "cacert",
+    "certificateprovider",
+    "command",
+    "custommetric",
+    "dimension",
+    "domainconfiguration",
+    "dynamicthinggroup",
+    "fleetmetric",
+    "job",
+    "jobtemplate",
+    "mitigationaction",
+    "otaupdate",
+    "package",
+    "packageversion",
+    "policy",
+    "provisioningtemplate",
+    "rolealias",
+    "rule",
+    "scheduledaudit",
+    "securityprofile",
+    "stream",
+    "thinggroup",
+    "thingtype"
+   ]
+  },
+  "testauthorization": {
+   "name": "TestAuthorization",
+   "resources": [
+    "cert"
+   ]
+  },
+  "testinvokeauthorizer": {
+   "name": "TestInvokeAuthorizer",
+   "resources": [
+    "authorizer"
+   ]
+  },
+  "transfercertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TransferCertificate",
+   "resources": [
+    "cert"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "authorizer",
+    "billinggroup",
+    "cacert",
+    "certificateprovider",
+    "command",
+    "custommetric",
+    "dimension",
+    "domainconfiguration",
+    "dynamicthinggroup",
+    "fleetmetric",
+    "job",
+    "jobtemplate",
+    "mitigationaction",
+    "otaupdate",
+    "package",
+    "packageversion",
+    "policy",
+    "provisioningtemplate",
+    "rolealias",
+    "rule",
+    "scheduledaudit",
+    "securityprofile",
+    "stream",
+    "thinggroup",
+    "thingtype"
+   ]
+  },
+  "updateaccountauditconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountAuditConfiguration",
+   "resources": []
+  },
+  "updateauditsuppression": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAuditSuppression",
+   "resources": []
+  },
+  "updateauthorizer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAuthorizer",
+   "resources": [
+    "authorizer"
+   ]
+  },
+  "updatebillinggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBillingGroup",
+   "resources": [
+    "billinggroup"
+   ]
+  },
+  "updatecacertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCACertificate",
+   "resources": [
+    "cacert"
+   ]
+  },
+  "updatecertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCertificate",
+   "resources": [
+    "cert"
+   ]
+  },
+  "updatecertificateprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCertificateProvider",
+   "resources": [
+    "certificateprovider"
+   ]
+  },
+  "updatecommand": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCommand",
+   "resources": [
+    "command"
+   ]
+  },
+  "updatecustommetric": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCustomMetric",
+   "resources": [
+    "custommetric"
+   ]
+  },
+  "updatedimension": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDimension",
+   "resources": [
+    "dimension"
+   ]
+  },
+  "updatedomainconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomainConfiguration",
+   "resources": [
+    "domainconfiguration"
+   ]
+  },
+  "updatedynamicthinggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDynamicThingGroup",
+   "resources": [
+    "dynamicthinggroup"
+   ]
+  },
+  "updateencryptionconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEncryptionConfiguration",
+   "resources": []
+  },
+  "updateeventconfigurations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEventConfigurations",
+   "resources": []
+  },
+  "updatefleetmetric": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFleetMetric",
+   "resources": [
+    "fleetmetric",
+    "index"
+   ]
+  },
+  "updateindexingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIndexingConfiguration",
+   "resources": []
+  },
+  "updatejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "updatemitigationaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMitigationAction",
+   "resources": [
+    "mitigationaction"
+   ]
+  },
+  "updatepackage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePackage",
+   "resources": [
+    "package"
+   ]
+  },
+  "updatepackageconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePackageConfiguration",
+   "resources": []
+  },
+  "updatepackageversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePackageVersion",
+   "resources": [
+    "package",
+    "packageversion"
+   ]
+  },
+  "updateprovisioningtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProvisioningTemplate",
+   "resources": [
+    "provisioningtemplate"
+   ]
+  },
+  "updaterolealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoleAlias",
+   "resources": [
+    "rolealias"
+   ]
+  },
+  "updatescheduledaudit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateScheduledAudit",
+   "resources": [
+    "scheduledaudit"
+   ]
+  },
+  "updatesecurityprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSecurityProfile",
+   "resources": [
+    "custommetric",
+    "dimension",
+    "securityprofile"
+   ]
+  },
+  "updatestream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStream",
+   "resources": [
+    "stream"
+   ]
+  },
+  "updatething": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateThing",
+   "resources": [
+    "thing"
+   ]
+  },
+  "updatethinggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateThingGroup",
+   "resources": [
+    "thinggroup"
+   ]
+  },
+  "updatethinggroupsforthing": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateThingGroupsForThing",
+   "resources": [
+    "thing",
+    "thinggroup"
+   ]
+  },
+  "updatethingshadow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateThingShadow",
+   "resources": [
+    "thing"
+   ]
+  },
+  "updatethingtype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateThingType",
+   "resources": [
+    "thingtype"
+   ]
+  },
+  "updatetopicruledestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTopicRuleDestination",
+   "resources": [
+    "destination"
+   ]
+  },
+  "validatesecurityprofilebehaviors": {
+   "name": "ValidateSecurityProfileBehaviors",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "iot:ClientMode": [
+   "String"
+  ],
+  "iot:CommandExecutionParameterBoolean/${CommandParameterName}": [
+   "Bool"
+  ],
+  "iot:CommandExecutionParameterNumber/${CommandParameterName}": [
+   "Numeric"
+  ],
+  "iot:CommandExecutionParameterString/${CommandParameterName}": [
+   "String"
+  ],
+  "iot:Delete": [
+   "Bool"
+  ],
+  "iot:DomainName": [
+   "String"
+  ],
+  "iot:IncludeSocketInformation": [
+   "Bool"
+  ],
+  "iot:ThingGroupArn": [
+   "ArrayOfARN"
+  ],
+  "iot:Topic": [
+   "String"
+  ],
+  "iot:TunnelDestinationService": [
+   "ArrayOfString"
+  ],
+  "iot:thingArn": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "authorizer": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:authorizer/${AuthorizerName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "billinggroup": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:billinggroup/${BillingGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "cacert": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:cacert/${CACertificate}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "cert": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:cert/${Certificate}"
+   ]
+  },
+  "certificateprovider": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:certificateprovider/${CertificateProviderName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "client": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:client/${ClientId}"
+   ]
+  },
+  "command": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:command/${CommandId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "custommetric": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:custommetric/${MetricName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "destination": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:ruledestination/${DestinationType}/${Uuid}"
+   ]
+  },
+  "dimension": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:dimension/${DimensionName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "domainconfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:domainconfiguration/${DomainConfigurationName}/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dynamicthinggroup": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:thinggroup/${ThingGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "fleetmetric": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:fleetmetric/${FleetMetricName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "index": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:index/${IndexName}"
+   ]
+  },
+  "job": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "jobtemplate": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:jobtemplate/${JobTemplateId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "mitigationaction": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:mitigationaction/${MitigationActionName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "otaupdate": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:otaupdate/${OtaUpdateId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "package": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:package/${PackageName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "packageversion": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:package/${PackageName}/version/${VersionName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "policy": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:policy/${PolicyName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "provisioningtemplate": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:provisioningtemplate/${ProvisioningTemplate}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "rolealias": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:rolealias/${RoleAlias}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "rule": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:rule/${RuleName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "scheduledaudit": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:scheduledaudit/${ScheduleName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "securityprofile": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:securityprofile/${SecurityProfileName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "stream": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:stream/${StreamId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "thing": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:thing/${ThingName}"
+   ]
+  },
+  "thinggroup": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:thinggroup/${ThingGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "thingtype": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:thingtype/${ThingTypeName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "topic": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:topic/${TopicName}"
+   ]
+  },
+  "topicfilter": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:topicfilter/${TopicFilter}"
+   ]
+  },
+  "tunnel": {
+   "arnFormats": [
+    "arn:${Partition}:iot:${Region}:${Account}:tunnel/${TunnelId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "iot",
+ "serviceName": "IoT",
+ "version": "v1.5"
+}

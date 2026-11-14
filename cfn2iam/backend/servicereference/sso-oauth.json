@@ -1,0 +1,41 @@
+{
+ "actions": {
+  "createtokenwithiam": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTokenWithIAM",
+   "resources": [
+    "Application"
+   ]
+  },
+  "introspecttokenwithiam": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "IntrospectTokenWithIAM",
+   "resources": [
+    "Application"
+   ]
+  },
+  "revoketokenwithiam": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeTokenWithIAM",
+   "resources": [
+    "Application"
+   ]
+  }
+ },
+ "resources": {
+  "Application": {
+   "arnFormats": [
+    "arn:${Partition}:sso::${AccountId}:application/${InstanceId}/${ApplicationId}"
+   ]
+  }
+ },
+ "service": "sso-oauth",
+ "serviceName": "OIDC service",
+ "version": "v1.5"
+}

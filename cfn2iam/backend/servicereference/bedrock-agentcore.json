@@ -1,0 +1,2850 @@
+{
+ "actions": {
+  "adddatasetexamples": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddDatasetExamples",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "allowvendedlogdeliveryforresource": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": [
+    "memory",
+    "payment-manager"
+   ]
+  },
+  "authorizeaction": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AuthorizeAction",
+   "resources": [
+    "gateway",
+    "policy-engine"
+   ]
+  },
+  "batchcreatememoryrecords": {
+   "conditionKeys": [
+    "bedrock-agentcore:namespace"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "BatchCreateMemoryRecords",
+   "resources": [
+    "memory"
+   ]
+  },
+  "batchdeletememoryrecords": {
+   "conditionKeys": [
+    "bedrock-agentcore:namespace"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "BatchDeleteMemoryRecords",
+   "resources": [
+    "memory"
+   ]
+  },
+  "batchputgatewayratelimits": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchPutGatewayRateLimits",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "batchupdatememoryrecords": {
+   "conditionKeys": [
+    "bedrock-agentcore:namespace",
+    "bedrock-agentcore:sourceNamespace"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "BatchUpdateMemoryRecords",
+   "resources": [
+    "memory"
+   ]
+  },
+  "completeresourcetokenauth": {
+   "conditionKeys": [
+    "bedrock-agentcore:InboundJwtClaim/aud",
+    "bedrock-agentcore:InboundJwtClaim/client_id",
+    "bedrock-agentcore:InboundJwtClaim/iss",
+    "bedrock-agentcore:InboundJwtClaim/scope",
+    "bedrock-agentcore:InboundJwtClaim/sub",
+    "bedrock-agentcore:userid"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "CompleteResourceTokenAuth",
+   "resources": [
+    "oauth2credentialprovider",
+    "token-vault",
+    "workload-identity",
+    "workload-identity-directory"
+   ]
+  },
+  "connectbrowserautomationstream": {
+   "name": "ConnectBrowserAutomationStream",
+   "resources": []
+  },
+  "connectbrowserliveviewstream": {
+   "name": "ConnectBrowserLiveViewStream",
+   "resources": []
+  },
+  "createabtest": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateABTest",
+   "resources": []
+  },
+  "createagentruntime": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "bedrock-agentcore:RuntimeAuthorizerType",
+    "bedrock-agentcore:securityGroups",
+    "bedrock-agentcore:subnets"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgentRuntime",
+   "resources": []
+  },
+  "createagentruntimeendpoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgentRuntimeEndpoint",
+   "resources": [
+    "runtime"
+   ]
+  },
+  "createapikeycredentialprovider": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApiKeyCredentialProvider",
+   "resources": [
+    "apikeycredentialprovider",
+    "token-vault"
+   ]
+  },
+  "createbrowser": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "bedrock-agentcore:securityGroups",
+    "bedrock-agentcore:subnets"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBrowser",
+   "resources": []
+  },
+  "createbrowserprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBrowserProfile",
+   "resources": []
+  },
+  "createcapacityprovider": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCapacityProvider",
+   "resources": []
+  },
+  "createcodeinterpreter": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "bedrock-agentcore:securityGroups",
+    "bedrock-agentcore:subnets"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCodeInterpreter",
+   "resources": []
+  },
+  "createconfigurationbundle": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConfigurationBundle",
+   "resources": []
+  },
+  "createconsentportal": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConsentPortal",
+   "resources": [
+    "consent-portal"
+   ]
+  },
+  "createdataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataset",
+   "resources": []
+  },
+  "createdatasetversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDatasetVersion",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "createevaluator": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEvaluator",
+   "resources": []
+  },
+  "createevent": {
+   "conditionKeys": [
+    "bedrock-agentcore:actorId",
+    "bedrock-agentcore:namespaceVariable/${VariableName}",
+    "bedrock-agentcore:sessionId"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateEvent",
+   "resources": [
+    "memory"
+   ]
+  },
+  "creategateway": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGateway",
+   "resources": []
+  },
+  "creategatewayratelimit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGatewayRateLimit",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "creategatewayrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGatewayRule",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "creategatewaytarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGatewayTarget",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "createharness": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHarness",
+   "resources": []
+  },
+  "createharnessendpoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHarnessEndpoint",
+   "resources": [
+    "harness"
+   ]
+  },
+  "creatememory": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "bedrock-agentcore:KmsKeyArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMemory",
+   "resources": []
+  },
+  "createoauth2credentialprovider": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOauth2CredentialProvider",
+   "resources": [
+    "oauth2credentialprovider",
+    "token-vault"
+   ]
+  },
+  "createonlineevaluationconfig": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOnlineEvaluationConfig",
+   "resources": []
+  },
+  "createpaymentconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePaymentConnector",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "createpaymentcredentialprovider": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePaymentCredentialProvider",
+   "resources": [
+    "paymentcredentialprovider",
+    "token-vault"
+   ]
+  },
+  "createpaymentinstrument": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreatePaymentInstrument",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "createpaymentmanager": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "bedrock-agentcore:DiscoveryUrl"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePaymentManager",
+   "resources": []
+  },
+  "createpaymentsession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreatePaymentSession",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "createpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePolicy",
+   "resources": [
+    "policy-engine"
+   ]
+  },
+  "createpolicyengine": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePolicyEngine",
+   "resources": []
+  },
+  "createregistry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRegistry",
+   "resources": []
+  },
+  "createregistryrecord": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRegistryRecord",
+   "resources": [
+    "registry"
+   ]
+  },
+  "createworkloadidentity": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkloadIdentity",
+   "resources": [
+    "workload-identity",
+    "workload-identity-directory"
+   ]
+  },
+  "deleteabtest": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteABTest",
+   "resources": [
+    "ab-test"
+   ]
+  },
+  "deleteagentruntime": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentRuntime",
+   "resources": [
+    "runtime"
+   ]
+  },
+  "deleteagentruntimeendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentRuntimeEndpoint",
+   "resources": [
+    "runtime",
+    "runtime-endpoint"
+   ]
+  },
+  "deleteapikeycredentialprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApiKeyCredentialProvider",
+   "resources": [
+    "apikeycredentialprovider",
+    "token-vault"
+   ]
+  },
+  "deletebatchevaluation": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteBatchEvaluation",
+   "resources": [
+    "batch-evaluate"
+   ]
+  },
+  "deletebrowser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBrowser",
+   "resources": [
+    "browser-custom"
+   ]
+  },
+  "deletebrowserprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBrowserProfile",
+   "resources": [
+    "browser-profile"
+   ]
+  },
+  "deletecapacityprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCapacityProvider",
+   "resources": [
+    "capacity-provider"
+   ]
+  },
+  "deletecapacityprovidersession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteCapacityProviderSession",
+   "resources": [
+    "capacity-provider"
+   ]
+  },
+  "deletecodeinterpreter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCodeInterpreter",
+   "resources": [
+    "code-interpreter-custom"
+   ]
+  },
+  "deleteconfigurationbundle": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConfigurationBundle",
+   "resources": [
+    "configuration-bundle"
+   ]
+  },
+  "deleteconsentportal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConsentPortal",
+   "resources": [
+    "consent-portal"
+   ]
+  },
+  "deletedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "deletedatasetexamples": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDatasetExamples",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "deleteevaluator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEvaluator",
+   "resources": [
+    "evaluator"
+   ]
+  },
+  "deleteevent": {
+   "conditionKeys": [
+    "bedrock-agentcore:actorId",
+    "bedrock-agentcore:sessionId"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteEvent",
+   "resources": [
+    "memory"
+   ]
+  },
+  "deletegateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGateway",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "deletegatewayratelimit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGatewayRateLimit",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "deletegatewayrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGatewayRule",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "deletegatewaytarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGatewayTarget",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "deleteharness": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteHarness",
+   "resources": [
+    "harness"
+   ]
+  },
+  "deleteharnessendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteHarnessEndpoint",
+   "resources": [
+    "harness",
+    "harness-endpoint"
+   ]
+  },
+  "deletememory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMemory",
+   "resources": [
+    "memory"
+   ]
+  },
+  "deletememoryrecord": {
+   "conditionKeys": [
+    "bedrock-agentcore:namespace"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteMemoryRecord",
+   "resources": [
+    "memory"
+   ]
+  },
+  "deleteoauth2credentialprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOauth2CredentialProvider",
+   "resources": [
+    "oauth2credentialprovider",
+    "token-vault"
+   ]
+  },
+  "deleteonlineevaluationconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOnlineEvaluationConfig",
+   "resources": [
+    "online-evaluation-config"
+   ]
+  },
+  "deletepaymentconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePaymentConnector",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "deletepaymentcredentialprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePaymentCredentialProvider",
+   "resources": [
+    "paymentcredentialprovider",
+    "token-vault"
+   ]
+  },
+  "deletepaymentinstrument": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeletePaymentInstrument",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "deletepaymentmanager": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePaymentManager",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "deletepaymentsession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeletePaymentSession",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "deletepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePolicy",
+   "resources": [
+    "policy",
+    "policy-engine"
+   ]
+  },
+  "deletepolicyengine": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePolicyEngine",
+   "resources": [
+    "policy-engine"
+   ]
+  },
+  "deleterecommendation": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteRecommendation",
+   "resources": [
+    "recommendation"
+   ]
+  },
+  "deleteregistry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRegistry",
+   "resources": [
+    "registry"
+   ]
+  },
+  "deleteregistryrecord": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRegistryRecord",
+   "resources": [
+    "registry-record"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "gateway",
+    "runtime",
+    "runtime-endpoint"
+   ]
+  },
+  "deleteworkloadidentity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkloadIdentity",
+   "resources": [
+    "workload-identity",
+    "workload-identity-directory"
+   ]
+  },
+  "evaluate": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "Evaluate",
+   "resources": [
+    "evaluator"
+   ]
+  },
+  "gatewayassociatewebacl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GatewayAssociateWebACL",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "gatewaydisassociatewebacl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GatewayDisassociateWebACL",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "gatewaygetwebaclforresource": {
+   "name": "GatewayGetWebACLForResource",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "gatewaylistresourcesforwebacl": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GatewayListResourcesForWebACL",
+   "resources": []
+  },
+  "getabtest": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetABTest",
+   "resources": [
+    "ab-test"
+   ]
+  },
+  "getagentcard": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetAgentCard",
+   "resources": [
+    "runtime",
+    "runtime-endpoint"
+   ]
+  },
+  "getagentruntime": {
+   "name": "GetAgentRuntime",
+   "resources": [
+    "runtime"
+   ]
+  },
+  "getagentruntimeendpoint": {
+   "name": "GetAgentRuntimeEndpoint",
+   "resources": [
+    "runtime",
+    "runtime-endpoint"
+   ]
+  },
+  "getapikeycredentialprovider": {
+   "name": "GetApiKeyCredentialProvider",
+   "resources": [
+    "apikeycredentialprovider",
+    "token-vault"
+   ]
+  },
+  "getbatchevaluation": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetBatchEvaluation",
+   "resources": [
+    "batch-evaluate"
+   ]
+  },
+  "getbrowser": {
+   "name": "GetBrowser",
+   "resources": [
+    "browser-custom"
+   ]
+  },
+  "getbrowserprofile": {
+   "name": "GetBrowserProfile",
+   "resources": [
+    "browser-profile"
+   ]
+  },
+  "getbrowsersession": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetBrowserSession",
+   "resources": [
+    "browser",
+    "browser-custom"
+   ]
+  },
+  "getcapacityprovider": {
+   "name": "GetCapacityProvider",
+   "resources": [
+    "capacity-provider"
+   ]
+  },
+  "getcodeinterpreter": {
+   "name": "GetCodeInterpreter",
+   "resources": [
+    "code-interpreter-custom"
+   ]
+  },
+  "getcodeinterpretersession": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetCodeInterpreterSession",
+   "resources": [
+    "code-interpreter",
+    "code-interpreter-custom"
+   ]
+  },
+  "getconfigurationbundle": {
+   "name": "GetConfigurationBundle",
+   "resources": [
+    "configuration-bundle"
+   ]
+  },
+  "getconfigurationbundleversion": {
+   "name": "GetConfigurationBundleVersion",
+   "resources": [
+    "configuration-bundle"
+   ]
+  },
+  "getconsentportal": {
+   "name": "GetConsentPortal",
+   "resources": [
+    "consent-portal"
+   ]
+  },
+  "getdataset": {
+   "name": "GetDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "getevaluator": {
+   "name": "GetEvaluator",
+   "resources": [
+    "evaluator"
+   ]
+  },
+  "getevent": {
+   "conditionKeys": [
+    "bedrock-agentcore:actorId",
+    "bedrock-agentcore:sessionId"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetEvent",
+   "resources": [
+    "memory"
+   ]
+  },
+  "getgateway": {
+   "name": "GetGateway",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "getgatewayratelimit": {
+   "name": "GetGatewayRateLimit",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "getgatewayrule": {
+   "name": "GetGatewayRule",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "getgatewaytarget": {
+   "name": "GetGatewayTarget",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "getharness": {
+   "name": "GetHarness",
+   "resources": [
+    "harness"
+   ]
+  },
+  "getharnessendpoint": {
+   "name": "GetHarnessEndpoint",
+   "resources": [
+    "harness",
+    "harness-endpoint"
+   ]
+  },
+  "getmemory": {
+   "name": "GetMemory",
+   "resources": [
+    "memory"
+   ]
+  },
+  "getmemoryrecord": {
+   "conditionKeys": [
+    "bedrock-agentcore:namespace"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetMemoryRecord",
+   "resources": [
+    "memory"
+   ]
+  },
+  "getoauth2credentialprovider": {
+   "name": "GetOauth2CredentialProvider",
+   "resources": [
+    "oauth2credentialprovider",
+    "token-vault"
+   ]
+  },
+  "getonlineevaluationconfig": {
+   "name": "GetOnlineEvaluationConfig",
+   "resources": [
+    "online-evaluation-config"
+   ]
+  },
+  "getpaymentconnector": {
+   "name": "GetPaymentConnector",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "getpaymentcredentialprovider": {
+   "name": "GetPaymentCredentialProvider",
+   "resources": [
+    "paymentcredentialprovider",
+    "token-vault"
+   ]
+  },
+  "getpaymentinstrument": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetPaymentInstrument",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "getpaymentinstrumentbalance": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetPaymentInstrumentBalance",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "getpaymentmanager": {
+   "name": "GetPaymentManager",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "getpaymentsession": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetPaymentSession",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "getpolicy": {
+   "name": "GetPolicy",
+   "resources": [
+    "policy",
+    "policy-engine"
+   ]
+  },
+  "getpolicyengine": {
+   "name": "GetPolicyEngine",
+   "resources": [
+    "policy-engine"
+   ]
+  },
+  "getpolicyenginesummary": {
+   "name": "GetPolicyEngineSummary",
+   "resources": [
+    "policy-engine"
+   ]
+  },
+  "getpolicygeneration": {
+   "name": "GetPolicyGeneration",
+   "resources": [
+    "policy-engine",
+    "policy-generation"
+   ]
+  },
+  "getpolicygenerationsummary": {
+   "name": "GetPolicyGenerationSummary",
+   "resources": [
+    "policy-engine",
+    "policy-generation"
+   ]
+  },
+  "getpolicysummary": {
+   "name": "GetPolicySummary",
+   "resources": [
+    "policy",
+    "policy-engine"
+   ]
+  },
+  "getrecommendation": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetRecommendation",
+   "resources": [
+    "recommendation"
+   ]
+  },
+  "getregistry": {
+   "name": "GetRegistry",
+   "resources": [
+    "registry"
+   ]
+  },
+  "getregistryrecord": {
+   "name": "GetRegistryRecord",
+   "resources": [
+    "registry-record"
+   ]
+  },
+  "getresourceapikey": {
+   "name": "GetResourceApiKey",
+   "resources": [
+    "apikeycredentialprovider",
+    "token-vault",
+    "workload-identity",
+    "workload-identity-directory"
+   ]
+  },
+  "getresourceoauth2token": {
+   "name": "GetResourceOauth2Token",
+   "resources": [
+    "oauth2credentialprovider",
+    "token-vault",
+    "workload-identity",
+    "workload-identity-directory"
+   ]
+  },
+  "getresourcepaymenttoken": {
+   "name": "GetResourcePaymentToken",
+   "resources": [
+    "paymentcredentialprovider",
+    "token-vault",
+    "workload-identity",
+    "workload-identity-directory"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "gateway",
+    "runtime",
+    "runtime-endpoint"
+   ]
+  },
+  "gettokenvault": {
+   "name": "GetTokenVault",
+   "resources": [
+    "token-vault"
+   ]
+  },
+  "getworkloadaccesstoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetWorkloadAccessToken",
+   "resources": [
+    "workload-identity",
+    "workload-identity-directory"
+   ]
+  },
+  "getworkloadaccesstokenforjwt": {
+   "conditionKeys": [
+    "bedrock-agentcore:InboundJwtClaim/aud",
+    "bedrock-agentcore:InboundJwtClaim/client_id",
+    "bedrock-agentcore:InboundJwtClaim/iss",
+    "bedrock-agentcore:InboundJwtClaim/scope",
+    "bedrock-agentcore:InboundJwtClaim/sub"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetWorkloadAccessTokenForJWT",
+   "resources": [
+    "workload-identity",
+    "workload-identity-directory"
+   ]
+  },
+  "getworkloadaccesstokenforuserid": {
+   "conditionKeys": [
+    "bedrock-agentcore:userid"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetWorkloadAccessTokenForUserId",
+   "resources": [
+    "workload-identity",
+    "workload-identity-directory"
+   ]
+  },
+  "getworkloadidentity": {
+   "name": "GetWorkloadIdentity",
+   "resources": [
+    "workload-identity",
+    "workload-identity-directory"
+   ]
+  },
+  "ingestdata": {
+   "conditionKeys": [
+    "bedrock-agentcore:actorId",
+    "bedrock-agentcore:namespaceVariable/${VariableName}",
+    "bedrock-agentcore:sessionId"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "IngestData",
+   "resources": [
+    "memory"
+   ]
+  },
+  "invokeagentruntime": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "InvokeAgentRuntime",
+   "resources": [
+    "runtime",
+    "runtime-endpoint"
+   ]
+  },
+  "invokeagentruntimecommand": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "InvokeAgentRuntimeCommand",
+   "resources": [
+    "runtime",
+    "runtime-endpoint"
+   ]
+  },
+  "invokeagentruntimecommandshell": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeAgentRuntimeCommandShell",
+   "resources": [
+    "runtime",
+    "runtime-endpoint"
+   ]
+  },
+  "invokeagentruntimeforuser": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "InvokeAgentRuntimeForUser",
+   "resources": [
+    "runtime",
+    "runtime-endpoint"
+   ]
+  },
+  "invokeagentruntimewithwebsocketstream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeAgentRuntimeWithWebSocketStream",
+   "resources": [
+    "runtime",
+    "runtime-endpoint"
+   ]
+  },
+  "invokeagentruntimewithwebsocketstreamforuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeAgentRuntimeWithWebSocketStreamForUser",
+   "resources": [
+    "runtime",
+    "runtime-endpoint"
+   ]
+  },
+  "invokecodeinterpreter": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "InvokeCodeInterpreter",
+   "resources": [
+    "code-interpreter",
+    "code-interpreter-custom"
+   ]
+  },
+  "invokegateway": {
+   "conditionKeys": [
+    "bedrock-agentcore:InboundJwtClaim/aud",
+    "bedrock-agentcore:InboundJwtClaim/client_id",
+    "bedrock-agentcore:InboundJwtClaim/iss",
+    "bedrock-agentcore:InboundJwtClaim/scope",
+    "bedrock-agentcore:InboundJwtClaim/sub"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "InvokeGateway",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "invokeharness": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "InvokeHarness",
+   "resources": [
+    "harness",
+    "harness-endpoint"
+   ]
+  },
+  "invokeregistrymcp": {
+   "name": "InvokeRegistryMcp",
+   "resources": [
+    "registry"
+   ]
+  },
+  "invokewebanswer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InvokeWebAnswer",
+   "resources": [
+    "web-answer"
+   ]
+  },
+  "invokewebsearch": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "InvokeWebSearch",
+   "resources": [
+    "web-search"
+   ]
+  },
+  "listabtests": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListABTests",
+   "resources": []
+  },
+  "listactors": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListActors",
+   "resources": [
+    "memory"
+   ]
+  },
+  "listagentruntimeendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentRuntimeEndpoints",
+   "resources": []
+  },
+  "listagentruntimes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentRuntimes",
+   "resources": []
+  },
+  "listagentruntimeversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentRuntimeVersions",
+   "resources": []
+  },
+  "listagentruntimeversionsbycapacityprovider": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentRuntimeVersionsByCapacityProvider",
+   "resources": []
+  },
+  "listapikeycredentialproviders": {
+   "name": "ListApiKeyCredentialProviders",
+   "resources": [
+    "apikeycredentialprovider",
+    "token-vault"
+   ]
+  },
+  "listbatchevaluations": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListBatchEvaluations",
+   "resources": []
+  },
+  "listbrowserprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBrowserProfiles",
+   "resources": []
+  },
+  "listbrowsers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBrowsers",
+   "resources": []
+  },
+  "listbrowsersessions": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListBrowserSessions",
+   "resources": []
+  },
+  "listcapacityproviders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCapacityProviders",
+   "resources": []
+  },
+  "listcodeinterpreters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCodeInterpreters",
+   "resources": []
+  },
+  "listcodeinterpretersessions": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListCodeInterpreterSessions",
+   "resources": [
+    "code-interpreter",
+    "code-interpreter-custom"
+   ]
+  },
+  "listconfigurationbundles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigurationBundles",
+   "resources": []
+  },
+  "listconfigurationbundleversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConfigurationBundleVersions",
+   "resources": [
+    "configuration-bundle"
+   ]
+  },
+  "listconsentportals": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConsentPortals",
+   "resources": []
+  },
+  "listdatasetexamples": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasetExamples",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "listdatasets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasets",
+   "resources": []
+  },
+  "listdatasetversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasetVersions",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "listevaluators": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEvaluators",
+   "resources": []
+  },
+  "listevents": {
+   "conditionKeys": [
+    "bedrock-agentcore:actorId",
+    "bedrock-agentcore:sessionId"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListEvents",
+   "resources": [
+    "memory"
+   ]
+  },
+  "listgatewayratelimits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGatewayRateLimits",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "listgatewayrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGatewayRules",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "listgateways": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGateways",
+   "resources": []
+  },
+  "listgatewaytargets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGatewayTargets",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "listharnessendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHarnessEndpoints",
+   "resources": []
+  },
+  "listharnesses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHarnesses",
+   "resources": []
+  },
+  "listharnessversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHarnessVersions",
+   "resources": []
+  },
+  "listmemories": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMemories",
+   "resources": []
+  },
+  "listmemoryextractionjobs": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListMemoryExtractionJobs",
+   "resources": [
+    "memory"
+   ]
+  },
+  "listmemoryrecords": {
+   "conditionKeys": [
+    "bedrock-agentcore:namespace",
+    "bedrock-agentcore:namespacePath",
+    "bedrock-agentcore:strategyId"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListMemoryRecords",
+   "resources": [
+    "memory"
+   ]
+  },
+  "listoauth2credentialproviders": {
+   "name": "ListOauth2CredentialProviders",
+   "resources": [
+    "oauth2credentialprovider",
+    "token-vault"
+   ]
+  },
+  "listonlineevaluationconfigs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOnlineEvaluationConfigs",
+   "resources": []
+  },
+  "listpaymentconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPaymentConnectors",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "listpaymentcredentialproviders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPaymentCredentialProviders",
+   "resources": [
+    "paymentcredentialprovider",
+    "token-vault"
+   ]
+  },
+  "listpaymentinstruments": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListPaymentInstruments",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "listpaymentmanagers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPaymentManagers",
+   "resources": []
+  },
+  "listpaymentsessions": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListPaymentSessions",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "listpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicies",
+   "resources": [
+    "policy-engine"
+   ]
+  },
+  "listpolicyengines": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicyEngines",
+   "resources": []
+  },
+  "listpolicyenginesummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicyEngineSummaries",
+   "resources": []
+  },
+  "listpolicygenerationassets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicyGenerationAssets",
+   "resources": [
+    "policy-engine",
+    "policy-generation"
+   ]
+  },
+  "listpolicygenerations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicyGenerations",
+   "resources": [
+    "policy-engine"
+   ]
+  },
+  "listpolicygenerationsummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicyGenerationSummaries",
+   "resources": [
+    "policy-engine"
+   ]
+  },
+  "listpolicysummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicySummaries",
+   "resources": [
+    "policy-engine"
+   ]
+  },
+  "listrecommendations": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListRecommendations",
+   "resources": []
+  },
+  "listregistries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRegistries",
+   "resources": []
+  },
+  "listregistryrecords": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRegistryRecords",
+   "resources": [
+    "registry"
+   ]
+  },
+  "listsessions": {
+   "conditionKeys": [
+    "bedrock-agentcore:actorId"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListSessions",
+   "resources": [
+    "memory"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "apikeycredentialprovider",
+    "browser-custom",
+    "browser-profile",
+    "capacity-provider",
+    "code-interpreter-custom",
+    "evaluator",
+    "gateway",
+    "harness",
+    "memory",
+    "oauth2credentialprovider",
+    "online-evaluation-config",
+    "payment-manager",
+    "paymentcredentialprovider",
+    "policy-engine",
+    "runtime",
+    "runtime-endpoint",
+    "token-vault",
+    "workload-identity",
+    "workload-identity-directory"
+   ]
+  },
+  "listworkloadidentities": {
+   "name": "ListWorkloadIdentities",
+   "resources": [
+    "workload-identity",
+    "workload-identity-directory"
+   ]
+  },
+  "manageadminpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "ManageAdminPolicy",
+   "resources": []
+  },
+  "manageresourcescopedpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "ManageResourceScopedPolicy",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "partiallyauthorizeactions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PartiallyAuthorizeActions",
+   "resources": [
+    "gateway",
+    "policy-engine"
+   ]
+  },
+  "passcapacityprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PassCapacityProvider",
+   "resources": [
+    "capacity-provider"
+   ]
+  },
+  "processpayment": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "ProcessPayment",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "gateway",
+    "runtime",
+    "runtime-endpoint"
+   ]
+  },
+  "putsystemlogevents": {
+   "conditionKeys": [
+    "bedrock-agentcore:runtimeSessionId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSystemLogEvents",
+   "resources": [
+    "capacity-provider"
+   ]
+  },
+  "resettokenvaultkeymaterial": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetTokenVaultKeyMaterial",
+   "resources": [
+    "token-vault"
+   ]
+  },
+  "retrievememoryrecords": {
+   "conditionKeys": [
+    "bedrock-agentcore:namespace",
+    "bedrock-agentcore:namespacePath",
+    "bedrock-agentcore:strategyId"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "RetrieveMemoryRecords",
+   "resources": [
+    "memory"
+   ]
+  },
+  "savebrowsersessionprofile": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SaveBrowserSessionProfile",
+   "resources": [
+    "browser",
+    "browser-custom",
+    "browser-profile"
+   ]
+  },
+  "searchregistryrecords": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "SearchRegistryRecords",
+   "resources": [
+    "registry"
+   ]
+  },
+  "settokenvaultcmk": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetTokenVaultCMK",
+   "resources": [
+    "token-vault"
+   ]
+  },
+  "startbatchevaluation": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartBatchEvaluation",
+   "resources": []
+  },
+  "startbrowsersession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartBrowserSession",
+   "resources": [
+    "browser",
+    "browser-custom",
+    "browser-profile"
+   ]
+  },
+  "startcodeinterpretersession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartCodeInterpreterSession",
+   "resources": [
+    "code-interpreter",
+    "code-interpreter-custom"
+   ]
+  },
+  "startmemoryextractionjob": {
+   "conditionKeys": [
+    "bedrock-agentcore:actorId",
+    "bedrock-agentcore:sessionId",
+    "bedrock-agentcore:strategyId"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartMemoryExtractionJob",
+   "resources": [
+    "memory"
+   ]
+  },
+  "startpolicygeneration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartPolicyGeneration",
+   "resources": [
+    "policy-engine"
+   ]
+  },
+  "startrecommendation": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartRecommendation",
+   "resources": []
+  },
+  "stopbatchevaluation": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StopBatchEvaluation",
+   "resources": [
+    "batch-evaluate"
+   ]
+  },
+  "stopbrowsersession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StopBrowserSession",
+   "resources": [
+    "browser",
+    "browser-custom"
+   ]
+  },
+  "stopcodeinterpretersession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StopCodeInterpreterSession",
+   "resources": [
+    "code-interpreter",
+    "code-interpreter-custom"
+   ]
+  },
+  "stopruntimesession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StopRuntimeSession",
+   "resources": [
+    "runtime",
+    "runtime-endpoint"
+   ]
+  },
+  "submitregistryrecordforapproval": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitRegistryRecordForApproval",
+   "resources": [
+    "registry-record"
+   ]
+  },
+  "synchronizegatewaytargets": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "SynchronizeGatewayTargets",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "apikeycredentialprovider",
+    "browser-custom",
+    "browser-profile",
+    "capacity-provider",
+    "code-interpreter-custom",
+    "evaluator",
+    "gateway",
+    "harness",
+    "memory",
+    "oauth2credentialprovider",
+    "online-evaluation-config",
+    "payment-manager",
+    "paymentcredentialprovider",
+    "policy-engine",
+    "runtime",
+    "runtime-endpoint",
+    "token-vault",
+    "workload-identity",
+    "workload-identity-directory"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "apikeycredentialprovider",
+    "browser-custom",
+    "browser-profile",
+    "capacity-provider",
+    "code-interpreter-custom",
+    "evaluator",
+    "gateway",
+    "harness",
+    "memory",
+    "oauth2credentialprovider",
+    "online-evaluation-config",
+    "payment-manager",
+    "paymentcredentialprovider",
+    "policy-engine",
+    "runtime",
+    "runtime-endpoint",
+    "token-vault",
+    "workload-identity",
+    "workload-identity-directory"
+   ]
+  },
+  "updateabtest": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateABTest",
+   "resources": [
+    "ab-test"
+   ]
+  },
+  "updateagentruntime": {
+   "conditionKeys": [
+    "bedrock-agentcore:RuntimeAuthorizerType",
+    "bedrock-agentcore:securityGroups",
+    "bedrock-agentcore:subnets"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentRuntime",
+   "resources": [
+    "runtime"
+   ]
+  },
+  "updateagentruntimeendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentRuntimeEndpoint",
+   "resources": [
+    "runtime",
+    "runtime-endpoint"
+   ]
+  },
+  "updateapikeycredentialprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApiKeyCredentialProvider",
+   "resources": [
+    "apikeycredentialprovider",
+    "token-vault"
+   ]
+  },
+  "updatebrowserstream": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateBrowserStream",
+   "resources": [
+    "browser",
+    "browser-custom"
+   ]
+  },
+  "updatecapacityprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCapacityProvider",
+   "resources": [
+    "capacity-provider"
+   ]
+  },
+  "updateconfigurationbundle": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConfigurationBundle",
+   "resources": [
+    "configuration-bundle"
+   ]
+  },
+  "updateconsentportal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConsentPortal",
+   "resources": [
+    "consent-portal"
+   ]
+  },
+  "updatedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "updatedatasetexamples": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDatasetExamples",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "updateevaluator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEvaluator",
+   "resources": [
+    "evaluator"
+   ]
+  },
+  "updategateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGateway",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updategatewayratelimit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGatewayRateLimit",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updategatewayrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGatewayRule",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updategatewaytarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGatewayTarget",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updateharness": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHarness",
+   "resources": [
+    "harness"
+   ]
+  },
+  "updateharnessendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHarnessEndpoint",
+   "resources": [
+    "harness",
+    "harness-endpoint"
+   ]
+  },
+  "updatememory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMemory",
+   "resources": [
+    "memory"
+   ]
+  },
+  "updatememoryrecordexpiryspecification": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateMemoryRecordExpirySpecification",
+   "resources": [
+    "memory"
+   ]
+  },
+  "updateoauth2credentialprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOauth2CredentialProvider",
+   "resources": [
+    "oauth2credentialprovider",
+    "token-vault"
+   ]
+  },
+  "updateonlineevaluationconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOnlineEvaluationConfig",
+   "resources": [
+    "online-evaluation-config"
+   ]
+  },
+  "updatepaymentconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePaymentConnector",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "updatepaymentcredentialprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePaymentCredentialProvider",
+   "resources": [
+    "paymentcredentialprovider",
+    "token-vault"
+   ]
+  },
+  "updatepaymentmanager": {
+   "conditionKeys": [
+    "bedrock-agentcore:DiscoveryUrl"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePaymentManager",
+   "resources": [
+    "payment-manager"
+   ]
+  },
+  "updatepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePolicy",
+   "resources": [
+    "policy",
+    "policy-engine"
+   ]
+  },
+  "updatepolicyengine": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePolicyEngine",
+   "resources": [
+    "policy-engine"
+   ]
+  },
+  "updateregistry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRegistry",
+   "resources": [
+    "registry"
+   ]
+  },
+  "updateregistryrecord": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRegistryRecord",
+   "resources": [
+    "registry-record"
+   ]
+  },
+  "updateregistryrecordstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRegistryRecordStatus",
+   "resources": [
+    "registry-record"
+   ]
+  },
+  "updateworkloadidentity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkloadIdentity",
+   "resources": [
+    "workload-identity",
+    "workload-identity-directory"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "bedrock-agentcore:AllowedQueryParameters": [
+   "ArrayOfString"
+  ],
+  "bedrock-agentcore:AllowedRequestHeaders": [
+   "ArrayOfString"
+  ],
+  "bedrock-agentcore:AllowedResponseHeaders": [
+   "ArrayOfString"
+  ],
+  "bedrock-agentcore:CredentialProviderScope": [
+   "ArrayOfString"
+  ],
+  "bedrock-agentcore:CredentialProviderType": [
+   "String"
+  ],
+  "bedrock-agentcore:DiscoveryUrl": [
+   "String"
+  ],
+  "bedrock-agentcore:GatewayAuthorizerType": [
+   "String"
+  ],
+  "bedrock-agentcore:HttpTargetConfigurationType": [
+   "String"
+  ],
+  "bedrock-agentcore:InboundJwtClaim/aud": [
+   "ArrayOfString"
+  ],
+  "bedrock-agentcore:InboundJwtClaim/client_id": [
+   "String"
+  ],
+  "bedrock-agentcore:InboundJwtClaim/iss": [
+   "String"
+  ],
+  "bedrock-agentcore:InboundJwtClaim/scope": [
+   "ArrayOfString"
+  ],
+  "bedrock-agentcore:InboundJwtClaim/sub": [
+   "String"
+  ],
+  "bedrock-agentcore:InferenceTargetConfigurationType": [
+   "String"
+  ],
+  "bedrock-agentcore:KmsKeyArn": [
+   "String"
+  ],
+  "bedrock-agentcore:McpTargetConfigurationType": [
+   "String"
+  ],
+  "bedrock-agentcore:PolicyEngineArn": [
+   "String"
+  ],
+  "bedrock-agentcore:PolicyEngineMode": [
+   "String"
+  ],
+  "bedrock-agentcore:PrivateEndpointType": [
+   "String"
+  ],
+  "bedrock-agentcore:ProtocolType": [
+   "String"
+  ],
+  "bedrock-agentcore:ResourceConfigurationIdentifier": [
+   "String"
+  ],
+  "bedrock-agentcore:RuntimeAuthorizerType": [
+   "String"
+  ],
+  "bedrock-agentcore:actorId": [
+   "String"
+  ],
+  "bedrock-agentcore:namespace": [
+   "String"
+  ],
+  "bedrock-agentcore:namespacePath": [
+   "String"
+  ],
+  "bedrock-agentcore:namespaceVariable/${VariableName}": [
+   "String"
+  ],
+  "bedrock-agentcore:runtimeSessionId": [
+   "String"
+  ],
+  "bedrock-agentcore:securityGroups": [
+   "ArrayOfString"
+  ],
+  "bedrock-agentcore:sessionId": [
+   "String"
+  ],
+  "bedrock-agentcore:sourceNamespace": [
+   "String"
+  ],
+  "bedrock-agentcore:strategyId": [
+   "String"
+  ],
+  "bedrock-agentcore:subnets": [
+   "ArrayOfString"
+  ],
+  "bedrock-agentcore:userid": [
+   "String"
+  ]
+ },
+ "resources": {
+  "ab-test": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:ab-test/${ABTestId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "apikeycredentialprovider": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:token-vault/${TokenVaultId}/apikeycredentialprovider/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "batch-evaluate": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:batch-evaluate/${BatchEvaluationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "browser": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:aws:browser/${BrowserId}"
+   ]
+  },
+  "browser-custom": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:browser-custom/${BrowserId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "browser-profile": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:browser-profile/${BrowserProfileId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "capacity-provider": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:capacity-provider/${CapacityProviderId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "code-interpreter": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:aws:code-interpreter/${CodeInterpreterId}"
+   ]
+  },
+  "code-interpreter-custom": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:code-interpreter-custom/${CodeInterpreterId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "configuration-bundle": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:configuration-bundle/${ConfigurationBundleId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "consent-portal": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:consent-portal/${ConsentPortalId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dataset": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:dataset/${DatasetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "evaluator": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:evaluator/${EvaluatorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "gateway": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:gateway/${GatewayId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "harness": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:harness/${HarnessId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "harness-endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:harness/${HarnessId}/harness-endpoint/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "memory": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:memory/${MemoryId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "oauth2credentialprovider": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:token-vault/${TokenVaultId}/oauth2credentialprovider/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "online-evaluation-config": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:online-evaluation-config/${OnlineEvaluationConfigId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "payment-manager": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:payment-manager/${PaymentManagerId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "paymentcredentialprovider": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:token-vault/${TokenVaultId}/paymentcredentialprovider/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "policy": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:policy-engine/${PolicyEngineId}/policy/${PolicyId}"
+   ]
+  },
+  "policy-engine": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:policy-engine/${PolicyEngineId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "policy-generation": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:policy-engine/${PolicyEngineId}/policy-generation/${PolicyGenerationId}"
+   ]
+  },
+  "recommendation": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:recommendation/${RecommendationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "registry": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:registry/${RegistryId}"
+   ]
+  },
+  "registry-record": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:registry/${RegistryId}/record/${RecordId}"
+   ]
+  },
+  "runtime": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:runtime/${RuntimeId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "runtime-endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:runtime/${RuntimeId}/runtime-endpoint/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "token-vault": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:token-vault/${TokenVaultId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "web-answer": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:aws:tool/web-answer.v1"
+   ]
+  },
+  "web-search": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:tool/web-search.v1"
+   ]
+  },
+  "workload-identity": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:workload-identity-directory/${DirectoryId}/workload-identity/${WorkloadIdentityName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workload-identity-directory": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:workload-identity-directory/${DirectoryId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "bedrock-agentcore",
+ "serviceName": "Bedrock-Agentcore",
+ "version": "v1.5"
+}

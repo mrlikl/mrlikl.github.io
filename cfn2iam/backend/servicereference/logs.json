@@ -1,0 +1,1200 @@
+{
+ "actions": {
+  "associatekmskey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateKmsKey",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "associatesourcetos3tableintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSourceToS3TableIntegration",
+   "resources": []
+  },
+  "callwithbearertoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CallWithBearerToken",
+   "resources": []
+  },
+  "cancelexporttask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelExportTask",
+   "resources": []
+  },
+  "cancelimporttask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelImportTask",
+   "resources": []
+  },
+  "createdelivery": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDelivery",
+   "resources": [
+    "delivery",
+    "delivery-destination",
+    "delivery-source"
+   ]
+  },
+  "createexporttask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExportTask",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "createimporttask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateImportTask",
+   "resources": []
+  },
+  "createloganomalydetector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLogAnomalyDetector",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "createlogdelivery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLogDelivery",
+   "resources": []
+  },
+  "createloggroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLogGroup",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "createlogstream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLogStream",
+   "resources": [
+    "log-stream"
+   ]
+  },
+  "createlookuptable": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLookupTable",
+   "resources": [
+    "lookup-table"
+   ]
+  },
+  "createscheduledquery": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScheduledQuery",
+   "resources": [
+    "scheduled-query"
+   ]
+  },
+  "deleteaccountpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccountPolicy",
+   "resources": []
+  },
+  "deletedataprotectionpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataProtectionPolicy",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "deletedelivery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDelivery",
+   "resources": [
+    "delivery"
+   ]
+  },
+  "deletedeliverydestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDeliveryDestination",
+   "resources": [
+    "delivery-destination"
+   ]
+  },
+  "deletedeliverydestinationpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDeliveryDestinationPolicy",
+   "resources": [
+    "delivery-destination"
+   ]
+  },
+  "deletedeliverysource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDeliverySource",
+   "resources": [
+    "delivery-destination"
+   ]
+  },
+  "deletedestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDestination",
+   "resources": [
+    "destination"
+   ]
+  },
+  "deleteindexpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIndexPolicy",
+   "resources": []
+  },
+  "deleteintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIntegration",
+   "resources": []
+  },
+  "deleteloganomalydetector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLogAnomalyDetector",
+   "resources": [
+    "anomaly-detector"
+   ]
+  },
+  "deletelogdelivery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLogDelivery",
+   "resources": []
+  },
+  "deleteloggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLogGroup",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "deletelogstream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLogStream",
+   "resources": [
+    "log-stream"
+   ]
+  },
+  "deletelookuptable": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLookupTable",
+   "resources": [
+    "lookup-table"
+   ]
+  },
+  "deletemetricfilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMetricFilter",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "deletepipelinerule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePipelineRule",
+   "resources": []
+  },
+  "deletequerydefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQueryDefinition",
+   "resources": []
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": []
+  },
+  "deleteretentionpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRetentionPolicy",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "deletescheduledquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScheduledQuery",
+   "resources": [
+    "scheduled-query"
+   ]
+  },
+  "deletesubscriptionfilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSubscriptionFilter",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "deletesyslogconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSyslogConfiguration",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "deletetransformer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTransformer",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "describeaccountpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeAccountPolicies",
+   "resources": []
+  },
+  "describeconfigurationtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeConfigurationTemplates",
+   "resources": []
+  },
+  "describedeliveries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDeliveries",
+   "resources": []
+  },
+  "describedeliverydestinations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDeliveryDestinations",
+   "resources": []
+  },
+  "describedeliverysources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDeliverySources",
+   "resources": []
+  },
+  "describedestinations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDestinations",
+   "resources": []
+  },
+  "describeexporttasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeExportTasks",
+   "resources": []
+  },
+  "describefieldindexes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeFieldIndexes",
+   "resources": []
+  },
+  "describeimporttaskbatches": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeImportTaskBatches",
+   "resources": []
+  },
+  "describeimporttasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeImportTasks",
+   "resources": []
+  },
+  "describeindexpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeIndexPolicies",
+   "resources": []
+  },
+  "describeloggroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeLogGroups",
+   "resources": []
+  },
+  "describelogstreams": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeLogStreams",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "describelookuptables": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeLookupTables",
+   "resources": []
+  },
+  "describemetricfilters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeMetricFilters",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "describequeries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeQueries",
+   "resources": []
+  },
+  "describequerydefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeQueryDefinitions",
+   "resources": []
+  },
+  "describeresourcepolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeResourcePolicies",
+   "resources": []
+  },
+  "describesubscriptionfilters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeSubscriptionFilters",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "disassociatekmskey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateKmsKey",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "disassociatesourcefroms3tableintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateSourceFromS3TableIntegration",
+   "resources": []
+  },
+  "filterlogevents": {
+   "name": "FilterLogEvents",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "getdataprotectionpolicy": {
+   "name": "GetDataProtectionPolicy",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "getdelivery": {
+   "name": "GetDelivery",
+   "resources": [
+    "delivery"
+   ]
+  },
+  "getdeliverydestination": {
+   "name": "GetDeliveryDestination",
+   "resources": [
+    "delivery-destination"
+   ]
+  },
+  "getdeliverydestinationpolicy": {
+   "name": "GetDeliveryDestinationPolicy",
+   "resources": [
+    "delivery-destination"
+   ]
+  },
+  "getdeliverysource": {
+   "name": "GetDeliverySource",
+   "resources": [
+    "delivery-source"
+   ]
+  },
+  "getintegration": {
+   "name": "GetIntegration",
+   "resources": []
+  },
+  "getloganomalydetector": {
+   "name": "GetLogAnomalyDetector",
+   "resources": [
+    "anomaly-detector"
+   ]
+  },
+  "getlogdelivery": {
+   "name": "GetLogDelivery",
+   "resources": []
+  },
+  "getlogevents": {
+   "name": "GetLogEvents",
+   "resources": [
+    "log-stream"
+   ]
+  },
+  "getlogfields": {
+   "name": "GetLogFields",
+   "resources": []
+  },
+  "getloggroupfields": {
+   "name": "GetLogGroupFields",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "getlogrecord": {
+   "name": "GetLogRecord",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "getlookuptable": {
+   "name": "GetLookupTable",
+   "resources": [
+    "lookup-table"
+   ]
+  },
+  "getqueryresults": {
+   "name": "GetQueryResults",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "getscheduledquery": {
+   "name": "GetScheduledQuery",
+   "resources": [
+    "scheduled-query"
+   ]
+  },
+  "getscheduledqueryhistory": {
+   "name": "GetScheduledQueryHistory",
+   "resources": [
+    "scheduled-query"
+   ]
+  },
+  "getstoragetierpolicy": {
+   "name": "GetStorageTierPolicy",
+   "resources": []
+  },
+  "gettransformer": {
+   "name": "GetTransformer",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "integratewithdataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "IntegrateWithDataset",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "integratewiths3table": {
+   "conditionKeys": [
+    "logs:data_source_name",
+    "logs:data_source_type"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "IntegrateWithS3Table",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "link": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Link",
+   "resources": []
+  },
+  "listaggregateloggroupsummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAggregateLogGroupSummaries",
+   "resources": []
+  },
+  "listanomalies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnomalies",
+   "resources": [
+    "anomaly-detector"
+   ]
+  },
+  "listentitiesforloggroup": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEntitiesForLogGroup",
+   "resources": []
+  },
+  "listintegrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIntegrations",
+   "resources": []
+  },
+  "listloganomalydetectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLogAnomalyDetectors",
+   "resources": [
+    "anomaly-detector"
+   ]
+  },
+  "listlogdeliveries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLogDeliveries",
+   "resources": []
+  },
+  "listloggroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLogGroups",
+   "resources": []
+  },
+  "listloggroupsforentity": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLogGroupsForEntity",
+   "resources": []
+  },
+  "listloggroupsforquery": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLogGroupsForQuery",
+   "resources": []
+  },
+  "listscheduledqueries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScheduledQueries",
+   "resources": []
+  },
+  "listsourcesfors3tableintegration": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSourcesForS3TableIntegration",
+   "resources": []
+  },
+  "listsyslogconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSyslogConfigurations",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "anomaly-detector",
+    "delivery",
+    "delivery-destination",
+    "delivery-source",
+    "destination",
+    "log-group",
+    "lookup-table"
+   ]
+  },
+  "listtagsloggroup": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsLogGroup",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "processwithpipeline": {
+   "conditionKeys": [
+    "logs:data_source_name",
+    "logs:data_source_type"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ProcessWithPipeline",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "putaccountpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAccountPolicy",
+   "resources": []
+  },
+  "putbearertokenauthentication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutBearerTokenAuthentication",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "putdataprotectionpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDataProtectionPolicy",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "putdeliverydestination": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "logs:DeliveryDestinationResourceArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDeliveryDestination",
+   "resources": [
+    "delivery-destination"
+   ]
+  },
+  "putdeliverydestinationpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDeliveryDestinationPolicy",
+   "resources": [
+    "delivery-destination"
+   ]
+  },
+  "putdeliverysource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "logs:LogGeneratingResourceArns"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDeliverySource",
+   "resources": [
+    "delivery-source"
+   ]
+  },
+  "putdestination": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDestination",
+   "resources": [
+    "destination"
+   ]
+  },
+  "putdestinationpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDestinationPolicy",
+   "resources": [
+    "destination"
+   ]
+  },
+  "putindexpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutIndexPolicy",
+   "resources": []
+  },
+  "putintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutIntegration",
+   "resources": []
+  },
+  "putlogevents": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLogEvents",
+   "resources": [
+    "log-stream"
+   ]
+  },
+  "putloggroupdeletionprotection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLogGroupDeletionProtection",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "putmetricfilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMetricFilter",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "putpipelinerule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutPipelineRule",
+   "resources": []
+  },
+  "putquerydefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutQueryDefinition",
+   "resources": []
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": []
+  },
+  "putretentionpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRetentionPolicy",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "putstoragetierpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutStorageTierPolicy",
+   "resources": []
+  },
+  "putsubscriptionfilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSubscriptionFilter",
+   "resources": [
+    "destination",
+    "log-group"
+   ]
+  },
+  "putsyslogconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSyslogConfiguration",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "puttransformer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTransformer",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "startlivetail": {
+   "name": "StartLiveTail",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "startquery": {
+   "name": "StartQuery",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "stoplivetail": {
+   "name": "StopLiveTail",
+   "resources": []
+  },
+  "stopquery": {
+   "name": "StopQuery",
+   "resources": []
+  },
+  "tagloggroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagLogGroup",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "anomaly-detector",
+    "delivery",
+    "delivery-destination",
+    "delivery-source",
+    "destination",
+    "log-group",
+    "lookup-table",
+    "scheduled-query"
+   ]
+  },
+  "testmetricfilter": {
+   "name": "TestMetricFilter",
+   "resources": []
+  },
+  "testtransformer": {
+   "name": "TestTransformer",
+   "resources": []
+  },
+  "unmask": {
+   "name": "Unmask",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "untagloggroup": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagLogGroup",
+   "resources": [
+    "log-group"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "anomaly-detector",
+    "delivery",
+    "delivery-destination",
+    "delivery-source",
+    "destination",
+    "log-group",
+    "lookup-table",
+    "scheduled-query"
+   ]
+  },
+  "updateanomaly": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAnomaly",
+   "resources": [
+    "anomaly-detector"
+   ]
+  },
+  "updatedeliveryconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDeliveryConfiguration",
+   "resources": [
+    "delivery",
+    "delivery-destination",
+    "delivery-source"
+   ]
+  },
+  "updateloganomalydetector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLogAnomalyDetector",
+   "resources": [
+    "anomaly-detector"
+   ]
+  },
+  "updatelogdelivery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLogDelivery",
+   "resources": []
+  },
+  "updatelookuptable": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLookupTable",
+   "resources": [
+    "lookup-table"
+   ]
+  },
+  "updatescheduledquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateScheduledQuery",
+   "resources": [
+    "scheduled-query"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "logs:DeliveryDestinationResourceArn": [
+   "ARN"
+  ],
+  "logs:LogGeneratingResourceArns": [
+   "ArrayOfARN"
+  ],
+  "logs:data_source_name": [
+   "String"
+  ],
+  "logs:data_source_type": [
+   "String"
+  ]
+ },
+ "resources": {
+  "anomaly-detector": {
+   "arnFormats": [
+    "arn:${Partition}:logs:${Region}:${Account}:anomaly-detector:${DetectorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "delivery": {
+   "arnFormats": [
+    "arn:${Partition}:logs:${Region}:${Account}:delivery:${DeliveryName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "delivery-destination": {
+   "arnFormats": [
+    "arn:${Partition}:logs:${Region}:${Account}:delivery-destination:${DeliveryDestinationName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "delivery-source": {
+   "arnFormats": [
+    "arn:${Partition}:logs:${Region}:${Account}:delivery-source:${DeliverySourceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "destination": {
+   "arnFormats": [
+    "arn:${Partition}:logs:${Region}:${Account}:destination:${DestinationName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "log-group": {
+   "arnFormats": [
+    "arn:${Partition}:logs:${Region}:${Account}:log-group:${LogGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "log-stream": {
+   "arnFormats": [
+    "arn:${Partition}:logs:${Region}:${Account}:log-group:${LogGroupName}:log-stream:${LogStreamName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "lookup-table": {
+   "arnFormats": [
+    "arn:${Partition}:logs:${Region}:${Account}:lookup-table:${LookupTableName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "scheduled-query": {
+   "arnFormats": [
+    "arn:${Partition}:logs:${Region}:${Account}:scheduled-query:${ScheduledQueryId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "logs",
+ "serviceName": "CloudWatch Logs",
+ "version": "v1.5"
+}

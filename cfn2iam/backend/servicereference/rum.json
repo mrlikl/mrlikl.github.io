@@ -1,0 +1,200 @@
+{
+ "actions": {
+  "batchcreaterummetricdefinitions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateRumMetricDefinitions",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "batchdeleterummetricdefinitions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteRumMetricDefinitions",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "batchgetrummetricdefinitions": {
+   "name": "BatchGetRumMetricDefinitions",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "createappmonitor": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAppMonitor",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "deleteappmonitor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppMonitor",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "deleterummetricsdestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRumMetricsDestination",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "getappmonitor": {
+   "name": "GetAppMonitor",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "getappmonitordata": {
+   "name": "GetAppMonitorData",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "listappmonitors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppMonitors",
+   "resources": []
+  },
+  "listrummetricsdestinations": {
+   "name": "ListRumMetricsDestinations",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "putrumevents": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutRumEvents",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "putrummetricsdestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRumMetricsDestination",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "updateappmonitor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAppMonitor",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  },
+  "updaterummetricdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRumMetricDefinition",
+   "resources": [
+    "AppMonitorResource"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "AppMonitorResource": {
+   "arnFormats": [
+    "arn:${Partition}:rum:${Region}:${Account}:appmonitor/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "rum",
+ "serviceName": "CloudWatch RUM",
+ "version": "v1.5"
+}

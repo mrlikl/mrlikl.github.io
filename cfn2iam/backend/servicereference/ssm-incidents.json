@@ -1,0 +1,331 @@
+{
+ "actions": {
+  "batchgetincidentfindings": {
+   "name": "BatchGetIncidentFindings",
+   "resources": [
+    "incident-record",
+    "response-plan"
+   ]
+  },
+  "createreplicationset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReplicationSet",
+   "resources": []
+  },
+  "createresponseplan": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResponsePlan",
+   "resources": []
+  },
+  "createtimelineevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTimelineEvent",
+   "resources": [
+    "incident-record",
+    "response-plan"
+   ]
+  },
+  "deleteincidentrecord": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIncidentRecord",
+   "resources": [
+    "incident-record"
+   ]
+  },
+  "deletereplicationset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReplicationSet",
+   "resources": [
+    "replication-set"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "response-plan"
+   ]
+  },
+  "deleteresponseplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResponsePlan",
+   "resources": [
+    "response-plan"
+   ]
+  },
+  "deletetimelineevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTimelineEvent",
+   "resources": [
+    "incident-record"
+   ]
+  },
+  "getincidentrecord": {
+   "name": "GetIncidentRecord",
+   "resources": [
+    "incident-record",
+    "response-plan"
+   ]
+  },
+  "getreplicationset": {
+   "name": "GetReplicationSet",
+   "resources": [
+    "replication-set"
+   ]
+  },
+  "getresourcepolicies": {
+   "name": "GetResourcePolicies",
+   "resources": [
+    "response-plan"
+   ]
+  },
+  "getresponseplan": {
+   "name": "GetResponsePlan",
+   "resources": [
+    "response-plan"
+   ]
+  },
+  "gettimelineevent": {
+   "name": "GetTimelineEvent",
+   "resources": [
+    "incident-record",
+    "response-plan"
+   ]
+  },
+  "listincidentfindings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIncidentFindings",
+   "resources": [
+    "incident-record",
+    "response-plan"
+   ]
+  },
+  "listincidentrecords": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIncidentRecords",
+   "resources": []
+  },
+  "listrelateditems": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRelatedItems",
+   "resources": [
+    "incident-record",
+    "response-plan"
+   ]
+  },
+  "listreplicationsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReplicationSets",
+   "resources": []
+  },
+  "listresponseplans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResponsePlans",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "incident-record",
+    "replication-set",
+    "response-plan"
+   ]
+  },
+  "listtimelineevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTimelineEvents",
+   "resources": [
+    "incident-record",
+    "response-plan"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "response-plan"
+   ]
+  },
+  "startincident": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartIncident",
+   "resources": [
+    "response-plan"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "incident-record",
+    "replication-set",
+    "response-plan"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "incident-record",
+    "replication-set",
+    "response-plan"
+   ]
+  },
+  "updatedeletionprotection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDeletionProtection",
+   "resources": [
+    "replication-set"
+   ]
+  },
+  "updateincidentrecord": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIncidentRecord",
+   "resources": [
+    "incident-record",
+    "response-plan"
+   ]
+  },
+  "updaterelateditems": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRelatedItems",
+   "resources": [
+    "incident-record",
+    "response-plan"
+   ]
+  },
+  "updatereplicationset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReplicationSet",
+   "resources": [
+    "replication-set"
+   ]
+  },
+  "updateresponseplan": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResponsePlan",
+   "resources": [
+    "response-plan"
+   ]
+  },
+  "updatetimelineevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTimelineEvent",
+   "resources": [
+    "incident-record",
+    "response-plan"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "incident-record": {
+   "arnFormats": [
+    "arn:${Partition}:ssm-incidents::${Account}:incident-record/${ResponsePlan}/${IncidentRecord}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "replication-set": {
+   "arnFormats": [
+    "arn:${Partition}:ssm-incidents::${Account}:replication-set/${ReplicationSet}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "response-plan": {
+   "arnFormats": [
+    "arn:${Partition}:ssm-incidents::${Account}:response-plan/${ResponsePlan}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "ssm-incidents",
+ "serviceName": "Incident Manager",
+ "version": "v1.5"
+}

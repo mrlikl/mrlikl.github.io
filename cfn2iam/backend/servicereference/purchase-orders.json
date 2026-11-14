@@ -1,0 +1,179 @@
+{
+ "actions": {
+  "addpurchaseorder": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddPurchaseOrder",
+   "resources": [
+    "purchase-order"
+   ]
+  },
+  "deletepurchaseorder": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePurchaseOrder",
+   "resources": [
+    "purchase-order"
+   ]
+  },
+  "getconsoleactionsetenforced": {
+   "name": "GetConsoleActionSetEnforced",
+   "resources": []
+  },
+  "getpurchaseorder": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetPurchaseOrder",
+   "resources": [
+    "purchase-order"
+   ]
+  },
+  "listpurchaseorderinvoices": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPurchaseOrderInvoices",
+   "resources": [
+    "purchase-order"
+   ]
+  },
+  "listpurchaseorders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPurchaseOrders",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "purchase-order"
+   ]
+  },
+  "modifypurchaseorders": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyPurchaseOrders",
+   "resources": [
+    "purchase-order"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "purchase-order"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "purchase-order"
+   ]
+  },
+  "updateconsoleactionsetenforced": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConsoleActionSetEnforced",
+   "resources": []
+  },
+  "updatepurchaseorder": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePurchaseOrder",
+   "resources": [
+    "purchase-order"
+   ]
+  },
+  "updatepurchaseorderstatus": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePurchaseOrderStatus",
+   "resources": [
+    "purchase-order"
+   ]
+  },
+  "viewpurchaseorders": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ViewPurchaseOrders",
+   "resources": [
+    "purchase-order"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "purchase-order": {
+   "arnFormats": [
+    "arn:${Partition}:purchase-orders::${Account}:purchase-order/${ResourceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "purchase-orders",
+ "serviceName": "Purchase Orders",
+ "version": "v1.5"
+}

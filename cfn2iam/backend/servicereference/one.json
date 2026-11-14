@@ -1,0 +1,350 @@
+{
+ "actions": {
+  "createdeviceactivationqrcode": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeviceActivationQrCode",
+   "resources": [
+    "device-instance"
+   ]
+  },
+  "createdeviceconfigurationtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeviceConfigurationTemplate",
+   "resources": []
+  },
+  "createdeviceinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeviceInstance",
+   "resources": []
+  },
+  "createdeviceinstanceconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeviceInstanceConfiguration",
+   "resources": [
+    "device-instance"
+   ]
+  },
+  "createsite": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSite",
+   "resources": []
+  },
+  "deleteassociateddevice": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssociatedDevice",
+   "resources": [
+    "device-instance"
+   ]
+  },
+  "deletedeviceconfigurationtemplate": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDeviceConfigurationTemplate",
+   "resources": [
+    "device-configuration-template"
+   ]
+  },
+  "deletedeviceinstance": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDeviceInstance",
+   "resources": [
+    "device-instance"
+   ]
+  },
+  "deletesite": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSite",
+   "resources": [
+    "site"
+   ]
+  },
+  "deleteuserv1": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserV1",
+   "resources": [
+    "user"
+   ]
+  },
+  "getdeviceconfigurationtemplate": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetDeviceConfigurationTemplate",
+   "resources": [
+    "device-configuration-template"
+   ]
+  },
+  "getdeviceinstance": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetDeviceInstance",
+   "resources": [
+    "device-instance"
+   ]
+  },
+  "getdeviceinstanceconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetDeviceInstanceConfiguration",
+   "resources": [
+    "configuration"
+   ]
+  },
+  "getsite": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSite",
+   "resources": [
+    "site"
+   ]
+  },
+  "getsiteaddress": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSiteAddress",
+   "resources": [
+    "site"
+   ]
+  },
+  "listdeviceconfigurationtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeviceConfigurationTemplates",
+   "resources": []
+  },
+  "listdeviceinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeviceInstances",
+   "resources": []
+  },
+  "listsites": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSites",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "device-configuration-template",
+    "device-instance",
+    "site"
+   ]
+  },
+  "listusers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsers",
+   "resources": []
+  },
+  "listusersv1": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsersV1",
+   "resources": []
+  },
+  "rebootdevice": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootDevice",
+   "resources": [
+    "device-instance"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "device-configuration-template",
+    "device-instance",
+    "site"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "device-configuration-template",
+    "device-instance",
+    "site"
+   ]
+  },
+  "updatedeviceconfigurationtemplate": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDeviceConfigurationTemplate",
+   "resources": [
+    "device-configuration-template"
+   ]
+  },
+  "updatedeviceinstance": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDeviceInstance",
+   "resources": [
+    "device-instance"
+   ]
+  },
+  "updatesite": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSite",
+   "resources": [
+    "site"
+   ]
+  },
+  "updatesiteaddress": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSiteAddress",
+   "resources": [
+    "site"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "configuration": {
+   "arnFormats": [
+    "arn:${Partition}:one:${Region}:${Account}:device-instance/${DeviceInstanceId}/configuration/${Version}"
+   ]
+  },
+  "device-configuration-template": {
+   "arnFormats": [
+    "arn:${Partition}:one:${Region}:${Account}:device-configuration-template/${TemplateId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "device-instance": {
+   "arnFormats": [
+    "arn:${Partition}:one:${Region}:${Account}:device-instance/${DeviceInstanceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "site": {
+   "arnFormats": [
+    "arn:${Partition}:one:${Region}:${Account}:site/${SiteId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "user": {
+   "arnFormats": [
+    "arn:${Partition}:one:${Region}:${Account}:user/${UserId}"
+   ]
+  }
+ },
+ "service": "one",
+ "serviceName": "One",
+ "version": "v1.5"
+}

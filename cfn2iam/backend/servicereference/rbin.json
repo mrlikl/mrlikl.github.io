@@ -1,0 +1,158 @@
+{
+ "actions": {
+  "createrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "rbin:Request/ResourceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "deleterule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rbin:Attribute/ResourceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "getrule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rbin:Attribute/ResourceType"
+   ],
+   "name": "GetRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "listrules": {
+   "conditionKeys": [
+    "rbin:Request/ResourceType"
+   ],
+   "name": "ListRules",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rbin:Attribute/ResourceType"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "rule"
+   ]
+  },
+  "lockrule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rbin:Attribute/ResourceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LockRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "rbin:Attribute/ResourceType"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "rule"
+   ]
+  },
+  "unlockrule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rbin:Attribute/ResourceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnlockRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "rbin:Attribute/ResourceType"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "rule"
+   ]
+  },
+  "updaterule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "rbin:Attribute/ResourceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRule",
+   "resources": [
+    "rule"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "rbin:Attribute/ResourceType": [
+   "String"
+  ],
+  "rbin:Request/ResourceType": [
+   "String"
+  ]
+ },
+ "resources": {
+  "rule": {
+   "arnFormats": [
+    "arn:${Partition}:rbin:${Region}:${Account}:rule/${ResourceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "rbin",
+ "serviceName": "Recycle Bin",
+ "version": "v1.5"
+}

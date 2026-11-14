@@ -1,0 +1,1001 @@
+{
+ "actions": {
+  "acceptagreementapprovalrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptAgreementApprovalRequest",
+   "resources": []
+  },
+  "acceptagreementcancellationrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptAgreementCancellationRequest",
+   "resources": []
+  },
+  "acceptagreementpaymentrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptAgreementPaymentRequest",
+   "resources": []
+  },
+  "acceptagreementrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:ProductId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptAgreementRequest",
+   "resources": []
+  },
+  "associateproductswithprivatemarketplace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateProductsWithPrivateMarketplace",
+   "resources": []
+  },
+  "batchcreatebillingadjustmentrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateBillingAdjustmentRequest",
+   "resources": []
+  },
+  "batchmeterusage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchMeterUsage",
+   "resources": []
+  },
+  "cancelagreement": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelAgreement",
+   "resources": []
+  },
+  "cancelagreementcancellationrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelAgreementCancellationRequest",
+   "resources": []
+  },
+  "cancelagreementpaymentrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelAgreementPaymentRequest",
+   "resources": []
+  },
+  "cancelagreementrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelAgreementRequest",
+   "resources": []
+  },
+  "cancelchangeset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelChangeSet",
+   "resources": [
+    "ChangeSet"
+   ]
+  },
+  "createagreementrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:ProductId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgreementRequest",
+   "resources": []
+  },
+  "createprivatemarketplacerequests": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePrivateMarketplaceRequests",
+   "resources": []
+  },
+  "createverificationevidence": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVerificationEvidence",
+   "resources": [
+    "VerificationEvidence"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "Entity"
+   ]
+  },
+  "describeagreement": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "name": "DescribeAgreement",
+   "resources": []
+  },
+  "describeassessment": {
+   "name": "DescribeAssessment",
+   "resources": [
+    "Assessment"
+   ]
+  },
+  "describebuilds": {
+   "name": "DescribeBuilds",
+   "resources": []
+  },
+  "describechangeset": {
+   "name": "DescribeChangeSet",
+   "resources": [
+    "ChangeSet"
+   ]
+  },
+  "describeentity": {
+   "name": "DescribeEntity",
+   "resources": [
+    "Entity"
+   ]
+  },
+  "describeprivatemarketplacerequests": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribePrivateMarketplaceRequests",
+   "resources": []
+  },
+  "describeprocurementsystemconfiguration": {
+   "name": "DescribeProcurementSystemConfiguration",
+   "resources": []
+  },
+  "disassociateproductsfromprivatemarketplace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateProductsFromPrivateMarketplace",
+   "resources": []
+  },
+  "getagreementapprovalrequest": {
+   "name": "GetAgreementApprovalRequest",
+   "resources": []
+  },
+  "getagreementcancellationrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "name": "GetAgreementCancellationRequest",
+   "resources": []
+  },
+  "getagreemententitlements": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType"
+   ],
+   "name": "GetAgreementEntitlements",
+   "resources": []
+  },
+  "getagreementpaymentrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "name": "GetAgreementPaymentRequest",
+   "resources": []
+  },
+  "getagreementrequest": {
+   "name": "GetAgreementRequest",
+   "resources": []
+  },
+  "getagreementterms": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetAgreementTerms",
+   "resources": []
+  },
+  "getbillingadjustmentrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "name": "GetBillingAdjustmentRequest",
+   "resources": []
+  },
+  "getbuyerdashboard": {
+   "name": "GetBuyerDashboard",
+   "resources": [
+    "Dashboard"
+   ]
+  },
+  "getentitlements": {
+   "name": "GetEntitlements",
+   "resources": []
+  },
+  "getinvoicesubmissiontask": {
+   "name": "GetInvoiceSubmissionTask",
+   "resources": [
+    "InvoiceSubmissionTask"
+   ]
+  },
+  "getissuedtaxinvoice": {
+   "name": "GetIssuedTaxInvoice",
+   "resources": [
+    "IssuedTaxInvoice"
+   ]
+  },
+  "getlisting": {
+   "name": "GetListing",
+   "resources": [
+    "Listing"
+   ]
+  },
+  "getoffer": {
+   "name": "GetOffer",
+   "resources": [
+    "Offer"
+   ]
+  },
+  "getofferset": {
+   "name": "GetOfferSet",
+   "resources": [
+    "OfferSet"
+   ]
+  },
+  "getofferterms": {
+   "name": "GetOfferTerms",
+   "resources": [
+    "Offer"
+   ]
+  },
+  "getproduct": {
+   "name": "GetProduct",
+   "resources": [
+    "Product"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "Entity"
+   ]
+  },
+  "getsellerdashboard": {
+   "name": "GetSellerDashboard",
+   "resources": [
+    "SellerDashboard"
+   ]
+  },
+  "getsellerreportingdata": {
+   "name": "GetSellerReportingData",
+   "resources": [
+    "SellerDataset"
+   ]
+  },
+  "gettaxcomplianceprofile": {
+   "name": "GetTaxComplianceProfile",
+   "resources": [
+    "TaxComplianceProfile"
+   ]
+  },
+  "getverification": {
+   "conditionKeys": [
+    "aws-marketplace:VerificationType"
+   ],
+   "name": "GetVerification",
+   "resources": []
+  },
+  "getverificationevidence": {
+   "name": "GetVerificationEvidence",
+   "resources": [
+    "VerificationEvidence"
+   ]
+  },
+  "listagreementapprovalrequests": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgreementApprovalRequests",
+   "resources": []
+  },
+  "listagreementcancellationrequests": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgreementCancellationRequests",
+   "resources": []
+  },
+  "listagreementcharges": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgreementCharges",
+   "resources": []
+  },
+  "listagreementinvoicelineitems": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgreementInvoiceLineItems",
+   "resources": []
+  },
+  "listagreementpaymentrequests": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgreementPaymentRequests",
+   "resources": []
+  },
+  "listagreementrequests": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgreementRequests",
+   "resources": []
+  },
+  "listassessments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssessments",
+   "resources": []
+  },
+  "listbillingadjustmentrequests": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBillingAdjustmentRequests",
+   "resources": []
+  },
+  "listbuilds": {
+   "name": "ListBuilds",
+   "resources": []
+  },
+  "listchangesets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChangeSets",
+   "resources": []
+  },
+  "listentities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEntities",
+   "resources": []
+  },
+  "listentitlementdetails": {
+   "name": "ListEntitlementDetails",
+   "resources": []
+  },
+  "listfulfillmentoptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFulfillmentOptions",
+   "resources": [
+    "Product"
+   ]
+  },
+  "listinvoicesubmissiontasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInvoiceSubmissionTasks",
+   "resources": []
+  },
+  "listissuedtaxinvoices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIssuedTaxInvoices",
+   "resources": []
+  },
+  "listpayables": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPayables",
+   "resources": []
+  },
+  "listprivatelistings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPrivateListings",
+   "resources": []
+  },
+  "listprivatemarketplacerequests": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPrivateMarketplaceRequests",
+   "resources": []
+  },
+  "listpurchaseoptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPurchaseOptions",
+   "resources": [
+    "AllPurchaseOptions"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "ChangeSet",
+    "DeploymentParameter",
+    "Entity",
+    "InvoiceSubmissionTask",
+    "IssuedTaxInvoice",
+    "TaxComplianceProfile",
+    "TaxComplianceProfileChangeTask",
+    "VerificationEvidence"
+   ]
+  },
+  "listtaxcomplianceprofilechangetasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTaxComplianceProfileChangeTasks",
+   "resources": []
+  },
+  "listtaxcomplianceprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTaxComplianceProfiles",
+   "resources": []
+  },
+  "listverificationevidence": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVerificationEvidence",
+   "resources": []
+  },
+  "listverifications": {
+   "conditionKeys": [
+    "aws-marketplace:VerificationType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVerifications",
+   "resources": []
+  },
+  "meterusage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MeterUsage",
+   "resources": []
+  },
+  "putdeploymentparameter": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDeploymentParameter",
+   "resourceConditionKeys": {
+    "DeploymentParameter": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "DeploymentParameter"
+   ]
+  },
+  "putprocurementsystemconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutProcurementSystemConfiguration",
+   "resources": []
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "Entity"
+   ]
+  },
+  "registerusage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterUsage",
+   "resources": []
+  },
+  "rejectagreementapprovalrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectAgreementApprovalRequest",
+   "resources": []
+  },
+  "rejectagreementcancellationrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectAgreementCancellationRequest",
+   "resources": []
+  },
+  "rejectagreementpaymentrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectAgreementPaymentRequest",
+   "resources": []
+  },
+  "resolvecustomer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResolveCustomer",
+   "resources": []
+  },
+  "searchagreements": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchAgreements",
+   "resources": []
+  },
+  "searchfacets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchFacets",
+   "resources": [
+    "AllListings"
+   ]
+  },
+  "searchlistings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchListings",
+   "resources": [
+    "AllListings"
+   ]
+  },
+  "sendagreementcancellationrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendAgreementCancellationRequest",
+   "resources": []
+  },
+  "sendagreementpaymentrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType",
+    "aws-marketplace:PartyType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendAgreementPaymentRequest",
+   "resources": []
+  },
+  "startbuild": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartBuild",
+   "resources": []
+  },
+  "startchangeset": {
+   "conditionKeys": [
+    "aws-marketplace:Intent",
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "catalog:ChangeType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartChangeSet",
+   "resources": [
+    "Entity"
+   ]
+  },
+  "startinvoicesubmissiontask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartInvoiceSubmissionTask",
+   "resources": [
+    "InvoiceSubmissionTask"
+   ]
+  },
+  "starttaxcomplianceprofilechangetask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTaxComplianceProfileChangeTask",
+   "resources": [
+    "TaxComplianceProfileChangeTask"
+   ]
+  },
+  "startverification": {
+   "conditionKeys": [
+    "aws-marketplace:VerificationType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartVerification",
+   "resources": [
+    "VerificationEvidence"
+   ]
+  },
+  "subscribe": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Subscribe",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "DeploymentParameter": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "ChangeSet",
+    "DeploymentParameter",
+    "Entity",
+    "InvoiceSubmissionTask",
+    "IssuedTaxInvoice",
+    "TaxComplianceProfile",
+    "TaxComplianceProfileChangeTask",
+    "VerificationEvidence"
+   ]
+  },
+  "unsubscribe": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Unsubscribe",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "DeploymentParameter": [
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "ChangeSet",
+    "DeploymentParameter",
+    "Entity",
+    "InvoiceSubmissionTask",
+    "IssuedTaxInvoice",
+    "TaxComplianceProfile",
+    "TaxComplianceProfileChangeTask",
+    "VerificationEvidence"
+   ]
+  },
+  "updateagreementapprovalrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgreementApprovalRequest",
+   "resources": []
+  },
+  "updatepurchaseorders": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePurchaseOrders",
+   "resources": []
+  },
+  "updateverificationevidence": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVerificationEvidence",
+   "resources": [
+    "VerificationEvidence"
+   ]
+  },
+  "viewsubscriptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ViewSubscriptions",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws-marketplace:AgreementType": [
+   "ArrayOfString"
+  ],
+  "aws-marketplace:Intent": [
+   "String"
+  ],
+  "aws-marketplace:PartyType": [
+   "String"
+  ],
+  "aws-marketplace:ProductId": [
+   "ArrayOfString"
+  ],
+  "aws-marketplace:VerificationType": [
+   "String"
+  ],
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "catalog:ChangeType": [
+   "String"
+  ]
+ },
+ "resources": {
+  "AllListings": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:::catalog/${CatalogName}/listing/*"
+   ]
+  },
+  "AllPurchaseOptions": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:::catalog/${CatalogName}/purchaseOption/*"
+   ]
+  },
+  "Assessment": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:${Region}::${Catalog}/Assessment/${ResourceId}"
+   ]
+  },
+  "ChangeSet": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:${Region}:${Account}:${Catalog}/ChangeSet/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "catalog:ChangeType"
+   ]
+  },
+  "Dashboard": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace::${Account}:${Catalog}/ReportingData/${FactTable}/Dashboard/${DashboardName}"
+   ]
+  },
+  "DeploymentParameter": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:${Region}:${Account}:DeploymentParameter:catalogs/${CatalogName}/products/${ProductId}/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  },
+  "Entity": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:${Region}:${Account}:${Catalog}/${EntityType}/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "catalog:ChangeType"
+   ]
+  },
+  "InvoiceSubmissionTask": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:${Region}:${Account}:catalog/${Catalog}/invoice-submission-task/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "IssuedTaxInvoice": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:${Region}:${Account}:catalog/${Catalog}/issued-tax-invoice/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Listing": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:::catalog/${CatalogName}/listing/${ListingId}"
+   ]
+  },
+  "Offer": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:::catalog/${CatalogName}/offer/${OfferId}"
+   ]
+  },
+  "OfferSet": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:::catalog/${CatalogName}/offerSet/${OfferSetId}"
+   ]
+  },
+  "Product": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:::catalog/${CatalogName}/product/${ProductId}"
+   ]
+  },
+  "PurchaseOption": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:::catalog/${CatalogName}/purchaseOption/${PurchaseOptionId}"
+   ]
+  },
+  "SellerDashboard": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace::${Account}:${Catalog}/ReportingData/${FactTable}/Dashboard/${DashboardName}"
+   ]
+  },
+  "SellerDataset": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace::${Account}:${Catalog}/ReportingData/${FactTable}/Dataset/${DatasetName}"
+   ]
+  },
+  "TaxComplianceProfile": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:${Region}:${Account}:tax-compliance-profile/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "TaxComplianceProfileChangeTask": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:${Region}:${Account}:tax-compliance-profile-change-task/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "VerificationEvidence": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:${Region}:${Account}:verification-type/${VerificationType}/verification-evidence/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "aws-marketplace",
+ "serviceName": "Marketplace",
+ "version": "v1.5"
+}

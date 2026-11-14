@@ -1,0 +1,305 @@
+{
+ "actions": {
+  "copyimageset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyImageSet",
+   "resources": [
+    "datastore",
+    "imageset"
+   ]
+  },
+  "createdatastore": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDatastore",
+   "resources": []
+  },
+  "deletedatastore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDatastore",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "deleteimageset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteImageSet",
+   "resources": [
+    "datastore",
+    "imageset"
+   ]
+  },
+  "getdatastore": {
+   "name": "GetDatastore",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "getdicombulkdata": {
+   "conditionKeys": [
+    "medical-imaging:SeriesInstanceUID",
+    "medical-imaging:StudyInstanceUID"
+   ],
+   "name": "GetDICOMBulkdata",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "getdicomimportjob": {
+   "name": "GetDICOMImportJob",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "getdicominstance": {
+   "conditionKeys": [
+    "medical-imaging:SeriesInstanceUID",
+    "medical-imaging:StudyInstanceUID"
+   ],
+   "name": "GetDICOMInstance",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "getdicominstanceframes": {
+   "conditionKeys": [
+    "medical-imaging:SeriesInstanceUID",
+    "medical-imaging:StudyInstanceUID"
+   ],
+   "name": "GetDICOMInstanceFrames",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "getdicominstancemetadata": {
+   "conditionKeys": [
+    "medical-imaging:SeriesInstanceUID",
+    "medical-imaging:StudyInstanceUID"
+   ],
+   "name": "GetDICOMInstanceMetadata",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "getdicomseriesmetadata": {
+   "conditionKeys": [
+    "medical-imaging:SeriesInstanceUID",
+    "medical-imaging:StudyInstanceUID"
+   ],
+   "name": "GetDICOMSeriesMetadata",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "getimageframe": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetImageFrame",
+   "resources": [
+    "datastore",
+    "imageset"
+   ]
+  },
+  "getimageset": {
+   "name": "GetImageSet",
+   "resources": [
+    "datastore",
+    "imageset"
+   ]
+  },
+  "getimagesetmetadata": {
+   "name": "GetImageSetMetadata",
+   "resources": [
+    "datastore",
+    "imageset"
+   ]
+  },
+  "listdatastores": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatastores",
+   "resources": []
+  },
+  "listdicomimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDICOMImportJobs",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "listimagesetversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListImageSetVersions",
+   "resources": [
+    "datastore",
+    "imageset"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "datastore",
+    "imageset"
+   ]
+  },
+  "searchdicominstances": {
+   "conditionKeys": [
+    "medical-imaging:SeriesInstanceUID",
+    "medical-imaging:StudyInstanceUID"
+   ],
+   "name": "SearchDICOMInstances",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "searchdicomseries": {
+   "conditionKeys": [
+    "medical-imaging:StudyInstanceUID"
+   ],
+   "name": "SearchDICOMSeries",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "searchdicomstudies": {
+   "name": "SearchDICOMStudies",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "searchimagesets": {
+   "name": "SearchImageSets",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "startdicomimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDICOMImportJob",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "storedicom": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StoreDICOM",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "storedicomstudy": {
+   "conditionKeys": [
+    "medical-imaging:StudyInstanceUID"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StoreDICOMStudy",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "datastore",
+    "imageset"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "datastore",
+    "imageset"
+   ]
+  },
+  "updateimagesetmetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateImageSetMetadata",
+   "resources": [
+    "datastore",
+    "imageset"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "medical-imaging:SeriesInstanceUID": [
+   "String"
+  ],
+  "medical-imaging:StudyInstanceUID": [
+   "String"
+  ]
+ },
+ "resources": {
+  "datastore": {
+   "arnFormats": [
+    "arn:${Partition}:medical-imaging:${Region}:${Account}:datastore/${DatastoreId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "imageset": {
+   "arnFormats": [
+    "arn:${Partition}:medical-imaging:${Region}:${Account}:datastore/${DatastoreId}/imageset/${ImageSetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "medical-imaging",
+ "serviceName": "HealthImaging",
+ "version": "v1.5"
+}

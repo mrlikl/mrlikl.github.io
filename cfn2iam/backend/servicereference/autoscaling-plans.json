@@ -1,0 +1,41 @@
+{
+ "actions": {
+  "createscalingplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScalingPlan",
+   "resources": []
+  },
+  "deletescalingplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScalingPlan",
+   "resources": []
+  },
+  "describescalingplanresources": {
+   "name": "DescribeScalingPlanResources",
+   "resources": []
+  },
+  "describescalingplans": {
+   "name": "DescribeScalingPlans",
+   "resources": []
+  },
+  "getscalingplanresourceforecastdata": {
+   "name": "GetScalingPlanResourceForecastData",
+   "resources": []
+  },
+  "updatescalingplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateScalingPlan",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "autoscaling-plans",
+ "serviceName": "Auto Scaling",
+ "version": "v1.5"
+}

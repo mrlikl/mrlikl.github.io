@@ -1,0 +1,180 @@
+{
+ "actions": {
+  "deletelexicon": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLexicon",
+   "resourceConditionKeys": {
+    "lexicon": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "lexicon"
+   ]
+  },
+  "describevoices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeVoices",
+   "resources": []
+  },
+  "getlexicon": {
+   "name": "GetLexicon",
+   "resourceConditionKeys": {
+    "lexicon": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "lexicon"
+   ]
+  },
+  "getspeechsynthesistask": {
+   "name": "GetSpeechSynthesisTask",
+   "resources": []
+  },
+  "listlexicons": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLexicons",
+   "resources": []
+  },
+  "listspeechsynthesistasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSpeechSynthesisTasks",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resourceConditionKeys": {
+    "lexicon": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "lexicon"
+   ]
+  },
+  "putlexicon": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLexicon",
+   "resourceConditionKeys": {
+    "lexicon": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "lexicon"
+   ]
+  },
+  "startspeechsynthesisstream": {
+   "name": "StartSpeechSynthesisStream",
+   "resourceConditionKeys": {
+    "lexicon": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "lexicon"
+   ]
+  },
+  "startspeechsynthesistask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSpeechSynthesisTask",
+   "resourceConditionKeys": {
+    "lexicon": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "lexicon"
+   ]
+  },
+  "synthesizespeech": {
+   "name": "SynthesizeSpeech",
+   "resourceConditionKeys": {
+    "lexicon": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "lexicon"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "lexicon": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "lexicon"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "lexicon": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "lexicon"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "lexicon": {
+   "arnFormats": [
+    "arn:${Partition}:polly:${Region}:${Account}:lexicon/${LexiconName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "polly",
+ "serviceName": "Polly",
+ "version": "v1.5"
+}

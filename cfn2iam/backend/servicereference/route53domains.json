@@ -1,0 +1,235 @@
+{
+ "actions": {
+  "acceptdomaintransferfromanotherawsaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptDomainTransferFromAnotherAwsAccount",
+   "resources": []
+  },
+  "associatedelegationsignertodomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateDelegationSignerToDomain",
+   "resources": []
+  },
+  "canceldomaintransfertoanotherawsaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelDomainTransferToAnotherAwsAccount",
+   "resources": []
+  },
+  "checkdomainavailability": {
+   "name": "CheckDomainAvailability",
+   "resources": []
+  },
+  "checkdomaintransferability": {
+   "name": "CheckDomainTransferability",
+   "resources": []
+  },
+  "deletedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomain",
+   "resources": []
+  },
+  "deletetagsfordomain": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "DeleteTagsForDomain",
+   "resources": []
+  },
+  "disabledomainautorenew": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableDomainAutoRenew",
+   "resources": []
+  },
+  "disabledomaintransferlock": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableDomainTransferLock",
+   "resources": []
+  },
+  "disassociatedelegationsignerfromdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateDelegationSignerFromDomain",
+   "resources": []
+  },
+  "enabledomainautorenew": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableDomainAutoRenew",
+   "resources": []
+  },
+  "enabledomaintransferlock": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableDomainTransferLock",
+   "resources": []
+  },
+  "getcontactreachabilitystatus": {
+   "name": "GetContactReachabilityStatus",
+   "resources": []
+  },
+  "getdomaindetail": {
+   "name": "GetDomainDetail",
+   "resources": []
+  },
+  "getdomainprices": {
+   "name": "GetDomainPrices",
+   "resources": []
+  },
+  "getdomainsuggestions": {
+   "name": "GetDomainSuggestions",
+   "resources": []
+  },
+  "getoperationdetail": {
+   "name": "GetOperationDetail",
+   "resources": []
+  },
+  "listdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomains",
+   "resources": []
+  },
+  "listoperations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOperations",
+   "resources": []
+  },
+  "listprices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPrices",
+   "resources": []
+  },
+  "listtagsfordomain": {
+   "name": "ListTagsForDomain",
+   "resources": []
+  },
+  "pushdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PushDomain",
+   "resources": []
+  },
+  "registerdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterDomain",
+   "resources": []
+  },
+  "rejectdomaintransferfromanotherawsaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectDomainTransferFromAnotherAwsAccount",
+   "resources": []
+  },
+  "renewdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RenewDomain",
+   "resources": []
+  },
+  "resendcontactreachabilityemail": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResendContactReachabilityEmail",
+   "resources": []
+  },
+  "resendoperationauthorization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResendOperationAuthorization",
+   "resources": []
+  },
+  "restoredomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreDomain",
+   "resources": []
+  },
+  "retrievedomainauthcode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RetrieveDomainAuthCode",
+   "resources": []
+  },
+  "transferdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TransferDomain",
+   "resources": []
+  },
+  "transferdomaintoanotherawsaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TransferDomainToAnotherAwsAccount",
+   "resources": []
+  },
+  "updatedomaincontact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomainContact",
+   "resources": []
+  },
+  "updatedomaincontactprivacy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomainContactPrivacy",
+   "resources": []
+  },
+  "updatedomainnameservers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomainNameservers",
+   "resources": []
+  },
+  "updatetagsfordomain": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UpdateTagsForDomain",
+   "resources": []
+  },
+  "viewbilling": {
+   "name": "ViewBilling",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "route53domains",
+ "serviceName": "Route 53 Domains",
+ "version": "v1.5"
+}

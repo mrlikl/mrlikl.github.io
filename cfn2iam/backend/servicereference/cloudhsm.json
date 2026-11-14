@@ -1,0 +1,202 @@
+{
+ "actions": {
+  "copybackuptoregion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyBackupToRegion",
+   "resources": [
+    "backup"
+   ]
+  },
+  "createcluster": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCluster",
+   "resources": [
+    "backup"
+   ]
+  },
+  "createhsm": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHsm",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "deletebackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBackup",
+   "resources": [
+    "backup"
+   ]
+  },
+  "deletecluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "deletehsm": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteHsm",
+   "resources": []
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "backup"
+   ]
+  },
+  "describebackups": {
+   "name": "DescribeBackups",
+   "resources": []
+  },
+  "describeclusters": {
+   "name": "DescribeClusters",
+   "resources": []
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "backup"
+   ]
+  },
+  "initializecluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitializeCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listtags": {
+   "name": "ListTags",
+   "resources": [
+    "backup",
+    "cluster"
+   ]
+  },
+  "modifybackupattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyBackupAttributes",
+   "resources": [
+    "backup"
+   ]
+  },
+  "modifycluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "backup"
+   ]
+  },
+  "restorebackup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreBackup",
+   "resources": [
+    "backup"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "backup",
+    "cluster"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "backup",
+    "cluster"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "backup": {
+   "arnFormats": [
+    "arn:${Partition}:cloudhsm:${Region}:${Account}:backup/${CloudHsmBackupInstanceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "cluster": {
+   "arnFormats": [
+    "arn:${Partition}:cloudhsm:${Region}:${Account}:cluster/${CloudHsmClusterInstanceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "cloudhsm",
+ "serviceName": "CloudHSM",
+ "version": "v1.5"
+}

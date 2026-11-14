@@ -1,0 +1,308 @@
+{
+ "actions": {
+  "addapplicationcloudwatchloggingoption": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddApplicationCloudWatchLoggingOption",
+   "resources": [
+    "application"
+   ]
+  },
+  "addapplicationinput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddApplicationInput",
+   "resources": [
+    "application"
+   ]
+  },
+  "addapplicationinputprocessingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddApplicationInputProcessingConfiguration",
+   "resources": [
+    "application"
+   ]
+  },
+  "addapplicationoutput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddApplicationOutput",
+   "resources": [
+    "application"
+   ]
+  },
+  "addapplicationreferencedatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddApplicationReferenceDataSource",
+   "resources": [
+    "application"
+   ]
+  },
+  "addapplicationvpcconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddApplicationVpcConfiguration",
+   "resources": [
+    "application"
+   ]
+  },
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "createapplicationpresignedurl": {
+   "name": "CreateApplicationPresignedUrl",
+   "resources": [
+    "application"
+   ]
+  },
+  "createapplicationsnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplicationSnapshot",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteapplicationcloudwatchloggingoption": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplicationCloudWatchLoggingOption",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteapplicationinputprocessingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplicationInputProcessingConfiguration",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteapplicationoutput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplicationOutput",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteapplicationreferencedatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplicationReferenceDataSource",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteapplicationsnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplicationSnapshot",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteapplicationvpcconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplicationVpcConfiguration",
+   "resources": [
+    "application"
+   ]
+  },
+  "describeapplication": {
+   "name": "DescribeApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "describeapplicationoperation": {
+   "name": "DescribeApplicationOperation",
+   "resources": [
+    "application"
+   ]
+  },
+  "describeapplicationsnapshot": {
+   "name": "DescribeApplicationSnapshot",
+   "resources": [
+    "application"
+   ]
+  },
+  "describeapplicationversion": {
+   "name": "DescribeApplicationVersion",
+   "resources": [
+    "application"
+   ]
+  },
+  "discoverinputschema": {
+   "name": "DiscoverInputSchema",
+   "resources": []
+  },
+  "getapplicationstate": {
+   "name": "GetApplicationState",
+   "resources": [
+    "application"
+   ]
+  },
+  "listapplicationoperations": {
+   "name": "ListApplicationOperations",
+   "resources": [
+    "application"
+   ]
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listapplicationsnapshots": {
+   "name": "ListApplicationSnapshots",
+   "resources": [
+    "application"
+   ]
+  },
+  "listapplicationversions": {
+   "name": "ListApplicationVersions",
+   "resources": [
+    "application"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "application"
+   ]
+  },
+  "rollbackapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RollbackApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "startapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "stopapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "application"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "application"
+   ]
+  },
+  "updateapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "updateapplicationmaintenanceconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplicationMaintenanceConfiguration",
+   "resources": [
+    "application"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:kinesisanalytics:${Region}:${Account}:application/${ApplicationName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "kinesisanalytics",
+ "serviceName": "Kinesis Analytics",
+ "version": "v1.5"
+}

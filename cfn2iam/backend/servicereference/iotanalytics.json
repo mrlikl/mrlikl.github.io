@@ -1,0 +1,360 @@
+{
+ "actions": {
+  "batchputmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchPutMessage",
+   "resources": [
+    "channel"
+   ]
+  },
+  "cancelpipelinereprocessing": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelPipelineReprocessing",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "createchannel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "createdataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "createdatasetcontent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDatasetContent",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "createdatastore": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDatastore",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "createpipeline": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "deletechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deletedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "deletedatasetcontent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDatasetContent",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "deletedatastore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDatastore",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "deletepipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "describechannel": {
+   "name": "DescribeChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "describedataset": {
+   "name": "DescribeDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "describedatastore": {
+   "name": "DescribeDatastore",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "describeloggingoptions": {
+   "name": "DescribeLoggingOptions",
+   "resources": []
+  },
+  "describepipeline": {
+   "name": "DescribePipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "getdatasetcontent": {
+   "name": "GetDatasetContent",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "listchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannels",
+   "resources": []
+  },
+  "listdatasetcontents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasetContents",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "listdatasets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasets",
+   "resources": []
+  },
+  "listdatastores": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatastores",
+   "resources": []
+  },
+  "listpipelines": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPipelines",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "channel",
+    "dataset",
+    "datastore",
+    "pipeline"
+   ]
+  },
+  "putloggingoptions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLoggingOptions",
+   "resources": []
+  },
+  "runpipelineactivity": {
+   "name": "RunPipelineActivity",
+   "resources": []
+  },
+  "samplechanneldata": {
+   "name": "SampleChannelData",
+   "resources": [
+    "channel"
+   ]
+  },
+  "startpipelinereprocessing": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartPipelineReprocessing",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "channel",
+    "dataset",
+    "datastore",
+    "pipeline"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "channel",
+    "dataset",
+    "datastore",
+    "pipeline"
+   ]
+  },
+  "updatechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updatedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "updatedatastore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDatastore",
+   "resources": [
+    "datastore"
+   ]
+  },
+  "updatepipeline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePipeline",
+   "resources": [
+    "pipeline"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "iotanalytics:ResourceTag/${TagKey}": [
+   "String"
+  ]
+ },
+ "resources": {
+  "channel": {
+   "arnFormats": [
+    "arn:${Partition}:iotanalytics:${Region}:${Account}:channel/${ChannelName}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "iotanalytics:ResourceTag/${TagKey}"
+   ]
+  },
+  "dataset": {
+   "arnFormats": [
+    "arn:${Partition}:iotanalytics:${Region}:${Account}:dataset/${DatasetName}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "iotanalytics:ResourceTag/${TagKey}"
+   ]
+  },
+  "datastore": {
+   "arnFormats": [
+    "arn:${Partition}:iotanalytics:${Region}:${Account}:datastore/${DatastoreName}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "iotanalytics:ResourceTag/${TagKey}"
+   ]
+  },
+  "pipeline": {
+   "arnFormats": [
+    "arn:${Partition}:iotanalytics:${Region}:${Account}:pipeline/${PipelineName}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "iotanalytics:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "iotanalytics",
+ "serviceName": "IoT Analytics",
+ "version": "v1.5"
+}

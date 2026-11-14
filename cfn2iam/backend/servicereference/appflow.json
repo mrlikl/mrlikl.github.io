@@ -1,0 +1,302 @@
+{
+ "actions": {
+  "cancelflowexecutions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelFlowExecutions",
+   "resources": [
+    "flow"
+   ]
+  },
+  "createconnectorprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnectorProfile",
+   "resources": []
+  },
+  "createflow": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFlow",
+   "resources": []
+  },
+  "deleteconnectorprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnectorProfile",
+   "resources": [
+    "connectorprofile"
+   ]
+  },
+  "deleteflow": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFlow",
+   "resources": [
+    "flow"
+   ]
+  },
+  "describeconnector": {
+   "name": "DescribeConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "describeconnectorentity": {
+   "name": "DescribeConnectorEntity",
+   "resources": [
+    "connectorprofile"
+   ]
+  },
+  "describeconnectorfields": {
+   "name": "DescribeConnectorFields",
+   "resources": [
+    "connectorprofile"
+   ]
+  },
+  "describeconnectorprofiles": {
+   "name": "DescribeConnectorProfiles",
+   "resources": []
+  },
+  "describeconnectors": {
+   "name": "DescribeConnectors",
+   "resources": []
+  },
+  "describeflow": {
+   "name": "DescribeFlow",
+   "resources": [
+    "flow"
+   ]
+  },
+  "describeflowexecution": {
+   "name": "DescribeFlowExecution",
+   "resources": [
+    "flow"
+   ]
+  },
+  "describeflowexecutionrecords": {
+   "name": "DescribeFlowExecutionRecords",
+   "resources": [
+    "flow"
+   ]
+  },
+  "describeflows": {
+   "name": "DescribeFlows",
+   "resources": []
+  },
+  "listconnectorentities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectorEntities",
+   "resources": [
+    "connectorprofile"
+   ]
+  },
+  "listconnectorfields": {
+   "name": "ListConnectorFields",
+   "resources": [
+    "connectorprofile"
+   ]
+  },
+  "listconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectors",
+   "resources": [
+    "connector"
+   ]
+  },
+  "listflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFlows",
+   "resources": [
+    "flow"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "flow"
+   ]
+  },
+  "registerconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterConnector",
+   "resources": []
+  },
+  "resetconnectormetadatacache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetConnectorMetadataCache",
+   "resources": [
+    "connectorprofile"
+   ]
+  },
+  "runflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RunFlow",
+   "resources": [
+    "flow"
+   ]
+  },
+  "startflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFlow",
+   "resources": [
+    "flow"
+   ]
+  },
+  "stopflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopFlow",
+   "resources": [
+    "flow"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "connector",
+    "flow"
+   ]
+  },
+  "unregisterconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnRegisterConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "connector",
+    "flow"
+   ]
+  },
+  "updateconnectorprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnectorProfile",
+   "resources": [
+    "connectorprofile"
+   ]
+  },
+  "updateconnectorregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnectorRegistration",
+   "resources": [
+    "connector"
+   ]
+  },
+  "updateflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFlow",
+   "resources": [
+    "flow"
+   ]
+  },
+  "useconnectorprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UseConnectorProfile",
+   "resources": [
+    "connectorprofile"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "connector": {
+   "arnFormats": [
+    "arn:${Partition}:appflow:${Region}:${Account}:connector/${ConnectorLabel}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "connectorprofile": {
+   "arnFormats": [
+    "arn:${Partition}:appflow:${Region}:${Account}:connectorprofile/${ProfileName}"
+   ]
+  },
+  "flow": {
+   "arnFormats": [
+    "arn:${Partition}:appflow:${Region}:${Account}:flow/${FlowName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "appflow",
+ "serviceName": "AppFlow",
+ "version": "v1.5"
+}

@@ -1,0 +1,26 @@
+{
+ "actions": {
+  "batchdeletesession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteSession",
+   "resources": []
+  },
+  "batchgetsession": {
+   "name": "BatchGetSession",
+   "resources": []
+  },
+  "listsessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSessions",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "identitystore-auth",
+ "serviceName": "Identity Store Auth",
+ "version": "v1.5"
+}

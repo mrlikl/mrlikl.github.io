@@ -1,0 +1,704 @@
+{
+ "actions": {
+  "activatekeysigningkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivateKeySigningKey",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "associatevpcwithhostedzone": {
+   "conditionKeys": [
+    "route53:VPCs"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateVPCWithHostedZone",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "changecidrcollection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ChangeCidrCollection",
+   "resources": [
+    "cidrcollection"
+   ]
+  },
+  "changeresourcerecordsets": {
+   "conditionKeys": [
+    "route53:ChangeResourceRecordSetsActions",
+    "route53:ChangeResourceRecordSetsNormalizedRecordNames",
+    "route53:ChangeResourceRecordSetsRecordTypes"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ChangeResourceRecordSets",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "changetagsforresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "ChangeTagsForResource",
+   "resources": [
+    "healthcheck",
+    "hostedzone"
+   ]
+  },
+  "createcidrcollection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCidrCollection",
+   "resources": []
+  },
+  "createhealthcheck": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHealthCheck",
+   "resources": []
+  },
+  "createhostedzone": {
+   "conditionKeys": [
+    "route53:VPCs"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHostedZone",
+   "resources": []
+  },
+  "createipguardrailpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIpGuardrailPolicy",
+   "resources": []
+  },
+  "createkeysigningkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKeySigningKey",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "createqueryloggingconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQueryLoggingConfig",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "createresourcerecordsetprotections": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResourceRecordSetProtections",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "createreusabledelegationset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReusableDelegationSet",
+   "resources": []
+  },
+  "createtrafficpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTrafficPolicy",
+   "resources": []
+  },
+  "createtrafficpolicyinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTrafficPolicyInstance",
+   "resources": [
+    "hostedzone",
+    "trafficpolicy"
+   ]
+  },
+  "createtrafficpolicyversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTrafficPolicyVersion",
+   "resources": [
+    "trafficpolicy"
+   ]
+  },
+  "createvpcassociationauthorization": {
+   "conditionKeys": [
+    "route53:VPCs"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVPCAssociationAuthorization",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "deactivatekeysigningkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeactivateKeySigningKey",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "deletecidrcollection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCidrCollection",
+   "resources": [
+    "cidrcollection"
+   ]
+  },
+  "deletehealthcheck": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteHealthCheck",
+   "resources": [
+    "healthcheck"
+   ]
+  },
+  "deletehostedzone": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteHostedZone",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "deleteipguardrailpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIpGuardrailPolicy",
+   "resources": []
+  },
+  "deletekeysigningkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKeySigningKey",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "deletequeryloggingconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQueryLoggingConfig",
+   "resources": [
+    "queryloggingconfig"
+   ]
+  },
+  "deleteresourcerecordsetprotections": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourceRecordSetProtections",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "deletereusabledelegationset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReusableDelegationSet",
+   "resources": [
+    "delegationset"
+   ]
+  },
+  "deletetrafficpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTrafficPolicy",
+   "resources": [
+    "trafficpolicy"
+   ]
+  },
+  "deletetrafficpolicyinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTrafficPolicyInstance",
+   "resources": [
+    "trafficpolicyinstance"
+   ]
+  },
+  "deletevpcassociationauthorization": {
+   "conditionKeys": [
+    "route53:VPCs"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVPCAssociationAuthorization",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "disablehostedzonednssec": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableHostedZoneDNSSEC",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "disassociatevpcfromhostedzone": {
+   "conditionKeys": [
+    "route53:VPCs"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateVPCFromHostedZone",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "enablehostedzonednssec": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableHostedZoneDNSSEC",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "getaccountlimit": {
+   "name": "GetAccountLimit",
+   "resources": []
+  },
+  "getchange": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetChange",
+   "resources": [
+    "change"
+   ]
+  },
+  "getcheckeripranges": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetCheckerIpRanges",
+   "resources": []
+  },
+  "getdnssec": {
+   "name": "GetDNSSEC",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "getgeolocation": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetGeoLocation",
+   "resources": []
+  },
+  "gethealthcheck": {
+   "name": "GetHealthCheck",
+   "resources": [
+    "healthcheck"
+   ]
+  },
+  "gethealthcheckcount": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetHealthCheckCount",
+   "resources": []
+  },
+  "gethealthchecklastfailurereason": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetHealthCheckLastFailureReason",
+   "resources": [
+    "healthcheck"
+   ]
+  },
+  "gethealthcheckstatus": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetHealthCheckStatus",
+   "resources": [
+    "healthcheck"
+   ]
+  },
+  "gethostedzone": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetHostedZone",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "gethostedzonecount": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetHostedZoneCount",
+   "resources": []
+  },
+  "gethostedzonelimit": {
+   "name": "GetHostedZoneLimit",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "getipguardrailpolicy": {
+   "name": "GetIpGuardrailPolicy",
+   "resources": []
+  },
+  "getqueryloggingconfig": {
+   "name": "GetQueryLoggingConfig",
+   "resources": [
+    "queryloggingconfig"
+   ]
+  },
+  "getreusabledelegationset": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetReusableDelegationSet",
+   "resources": [
+    "delegationset"
+   ]
+  },
+  "getreusabledelegationsetlimit": {
+   "name": "GetReusableDelegationSetLimit",
+   "resources": [
+    "delegationset"
+   ]
+  },
+  "gettrafficpolicy": {
+   "name": "GetTrafficPolicy",
+   "resources": [
+    "trafficpolicy"
+   ]
+  },
+  "gettrafficpolicyinstance": {
+   "name": "GetTrafficPolicyInstance",
+   "resources": [
+    "trafficpolicyinstance"
+   ]
+  },
+  "gettrafficpolicyinstancecount": {
+   "name": "GetTrafficPolicyInstanceCount",
+   "resources": []
+  },
+  "listcidrblocks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCidrBlocks",
+   "resources": [
+    "cidrcollection"
+   ]
+  },
+  "listcidrcollections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCidrCollections",
+   "resources": []
+  },
+  "listcidrlocations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCidrLocations",
+   "resources": [
+    "cidrcollection"
+   ]
+  },
+  "listgeolocations": {
+   "name": "ListGeoLocations",
+   "resources": []
+  },
+  "listhealthchecks": {
+   "name": "ListHealthChecks",
+   "resources": []
+  },
+  "listhostedzones": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHostedZones",
+   "resources": []
+  },
+  "listhostedzonesbyname": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHostedZonesByName",
+   "resources": []
+  },
+  "listhostedzonesbyvpc": {
+   "conditionKeys": [
+    "route53:VPCs"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHostedZonesByVPC",
+   "resources": []
+  },
+  "listipguardrailpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIpGuardrailPolicies",
+   "resources": []
+  },
+  "listqueryloggingconfigs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQueryLoggingConfigs",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "listresourcerecordsetprotections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceRecordSetProtections",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "listresourcerecordsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourceRecordSets",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "listreusabledelegationsets": {
+   "name": "ListReusableDelegationSets",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "healthcheck",
+    "hostedzone"
+   ]
+  },
+  "listtagsforresources": {
+   "name": "ListTagsForResources",
+   "resources": [
+    "healthcheck",
+    "hostedzone"
+   ]
+  },
+  "listtrafficpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrafficPolicies",
+   "resources": []
+  },
+  "listtrafficpolicyinstances": {
+   "name": "ListTrafficPolicyInstances",
+   "resources": []
+  },
+  "listtrafficpolicyinstancesbyhostedzone": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrafficPolicyInstancesByHostedZone",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "listtrafficpolicyinstancesbypolicy": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrafficPolicyInstancesByPolicy",
+   "resources": [
+    "trafficpolicy"
+   ]
+  },
+  "listtrafficpolicyversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrafficPolicyVersions",
+   "resources": [
+    "trafficpolicy"
+   ]
+  },
+  "listvpcassociationauthorizations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVPCAssociationAuthorizations",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "testdnsanswer": {
+   "name": "TestDNSAnswer",
+   "resources": []
+  },
+  "updatehealthcheck": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHealthCheck",
+   "resources": [
+    "healthcheck"
+   ]
+  },
+  "updatehostedzonecomment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHostedZoneComment",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "updatehostedzonefeatures": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHostedZoneFeatures",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "updateipguardrailpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIpGuardrailPolicy",
+   "resources": []
+  },
+  "updatetrafficpolicycomment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTrafficPolicyComment",
+   "resources": [
+    "trafficpolicy"
+   ]
+  },
+  "updatetrafficpolicyinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTrafficPolicyInstance",
+   "resources": [
+    "trafficpolicyinstance"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "route53:ChangeResourceRecordSetsActions": [
+   "ArrayOfString"
+  ],
+  "route53:ChangeResourceRecordSetsNormalizedRecordNames": [
+   "ArrayOfString"
+  ],
+  "route53:ChangeResourceRecordSetsRecordTypes": [
+   "ArrayOfString"
+  ],
+  "route53:VPCs": [
+   "String"
+  ]
+ },
+ "resources": {
+  "change": {
+   "arnFormats": [
+    "arn:${Partition}:route53:::change/${Id}"
+   ]
+  },
+  "cidrcollection": {
+   "arnFormats": [
+    "arn:${Partition}:route53:::cidrcollection/${Id}"
+   ]
+  },
+  "delegationset": {
+   "arnFormats": [
+    "arn:${Partition}:route53:::delegationset/${Id}"
+   ]
+  },
+  "healthcheck": {
+   "arnFormats": [
+    "arn:${Partition}:route53:::healthcheck/${Id}"
+   ]
+  },
+  "hostedzone": {
+   "arnFormats": [
+    "arn:${Partition}:route53:::hostedzone/${Id}"
+   ]
+  },
+  "queryloggingconfig": {
+   "arnFormats": [
+    "arn:${Partition}:route53:::queryloggingconfig/${Id}"
+   ]
+  },
+  "trafficpolicy": {
+   "arnFormats": [
+    "arn:${Partition}:route53:::trafficpolicy/${Id}"
+   ]
+  },
+  "trafficpolicyinstance": {
+   "arnFormats": [
+    "arn:${Partition}:route53:::trafficpolicyinstance/${Id}"
+   ]
+  },
+  "vpc": {
+   "arnFormats": [
+    "arn:${Partition}:ec2:${Region}:${Account}:vpc/${VpcId}"
+   ]
+  }
+ },
+ "service": "route53",
+ "serviceName": "Route 53",
+ "version": "v1.5"
+}

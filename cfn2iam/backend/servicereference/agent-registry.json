@@ -1,0 +1,245 @@
+{
+ "actions": {
+  "createregistry": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRegistry",
+   "resources": []
+  },
+  "createregistryrecord": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRegistryRecord",
+   "resources": [
+    "registry"
+   ]
+  },
+  "deleteregistry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRegistry",
+   "resources": [
+    "registry"
+   ]
+  },
+  "deleteregistryrecord": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRegistryRecord",
+   "resources": [
+    "registry-record"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "registry"
+   ]
+  },
+  "getdiscoverableregistryrecord": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetDiscoverableRegistryRecord",
+   "resources": [
+    "registry-record"
+   ]
+  },
+  "getregistry": {
+   "name": "GetRegistry",
+   "resources": [
+    "registry"
+   ]
+  },
+  "getregistryrecord": {
+   "name": "GetRegistryRecord",
+   "resources": [
+    "registry-record"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "registry"
+   ]
+  },
+  "invokeregistrymcp": {
+   "name": "InvokeRegistryMcp",
+   "resources": [
+    "registry"
+   ]
+  },
+  "listdiscoverableregistryrecords": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListDiscoverableRegistryRecords",
+   "resources": [
+    "registry"
+   ]
+  },
+  "listregistries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRegistries",
+   "resources": []
+  },
+  "listregistryrecords": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRegistryRecords",
+   "resources": [
+    "registry"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "registry",
+    "registry-record"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "registry"
+   ]
+  },
+  "searchdiscoverableregistryrecords": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "SearchDiscoverableRegistryRecords",
+   "resources": [
+    "registry"
+   ]
+  },
+  "submitregistryrecordforapproval": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubmitRegistryRecordForApproval",
+   "resources": [
+    "registry-record"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "registry",
+    "registry-record"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "registry",
+    "registry-record"
+   ]
+  },
+  "updateregistry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRegistry",
+   "resources": [
+    "registry"
+   ]
+  },
+  "updateregistryrecord": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRegistryRecord",
+   "resources": [
+    "registry-record"
+   ]
+  },
+  "updateregistryrecordstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRegistryRecordStatus",
+   "resources": [
+    "registry-record"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "agent-registry:RecordCreatorAccount": [
+   "String"
+  ],
+  "agent-registry:RecordSourceAccount": [
+   "String"
+  ],
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "registry": {
+   "arnFormats": [
+    "arn:${Partition}:agent-registry:${Region}:${Account}:registry/${RegistryId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "registry-record": {
+   "arnFormats": [
+    "arn:${Partition}:agent-registry:${Region}:${Account}:registry/${RegistryId}/record/${RecordId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "agent-registry",
+ "serviceName": "Agent Registry",
+ "version": "v1.5"
+}

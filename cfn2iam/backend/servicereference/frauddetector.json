@@ -1,0 +1,905 @@
+{
+ "actions": {
+  "batchcreatevariable": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateVariable",
+   "resources": []
+  },
+  "batchgetvariable": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "BatchGetVariable",
+   "resources": [
+    "variable"
+   ]
+  },
+  "cancelbatchimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelBatchImportJob",
+   "resources": [
+    "batch-import"
+   ]
+  },
+  "cancelbatchpredictionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelBatchPredictionJob",
+   "resources": [
+    "batch-prediction"
+   ]
+  },
+  "createbatchimportjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBatchImportJob",
+   "resources": [
+    "batch-import",
+    "event-type"
+   ]
+  },
+  "createbatchpredictionjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBatchPredictionJob",
+   "resources": [
+    "batch-prediction",
+    "detector",
+    "detector-version",
+    "event-type"
+   ]
+  },
+  "createdetectorversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDetectorVersion",
+   "resources": [
+    "detector",
+    "external-model",
+    "model-version"
+   ]
+  },
+  "createlist": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateList",
+   "resources": []
+  },
+  "createmodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateModel",
+   "resources": [
+    "event-type",
+    "model"
+   ]
+  },
+  "createmodelversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateModelVersion",
+   "resources": [
+    "model"
+   ]
+  },
+  "createrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRule",
+   "resources": [
+    "detector"
+   ]
+  },
+  "createvariable": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVariable",
+   "resources": []
+  },
+  "deletebatchimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBatchImportJob",
+   "resources": [
+    "batch-import"
+   ]
+  },
+  "deletebatchpredictionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBatchPredictionJob",
+   "resources": [
+    "batch-prediction"
+   ]
+  },
+  "deletedetector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDetector",
+   "resources": [
+    "detector"
+   ]
+  },
+  "deletedetectorversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDetectorVersion",
+   "resources": [
+    "detector-version"
+   ]
+  },
+  "deleteentitytype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEntityType",
+   "resources": [
+    "entity-type"
+   ]
+  },
+  "deleteevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEvent",
+   "resources": [
+    "event-type"
+   ]
+  },
+  "deleteeventsbyeventtype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventsByEventType",
+   "resources": [
+    "event-type"
+   ]
+  },
+  "deleteeventtype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventType",
+   "resources": [
+    "event-type"
+   ]
+  },
+  "deleteexternalmodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExternalModel",
+   "resources": [
+    "external-model"
+   ]
+  },
+  "deletelabel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLabel",
+   "resources": [
+    "label"
+   ]
+  },
+  "deletelist": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteList",
+   "resources": [
+    "list"
+   ]
+  },
+  "deletemodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteModel",
+   "resources": [
+    "model"
+   ]
+  },
+  "deletemodelversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteModelVersion",
+   "resources": [
+    "model-version"
+   ]
+  },
+  "deleteoutcome": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOutcome",
+   "resources": [
+    "outcome"
+   ]
+  },
+  "deleterule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRule",
+   "resources": [
+    "rule"
+   ]
+  },
+  "deletevariable": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVariable",
+   "resources": [
+    "variable"
+   ]
+  },
+  "describedetector": {
+   "name": "DescribeDetector",
+   "resources": [
+    "detector"
+   ]
+  },
+  "describemodelversions": {
+   "name": "DescribeModelVersions",
+   "resources": [
+    "model-version"
+   ]
+  },
+  "getbatchimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetBatchImportJobs",
+   "resources": [
+    "batch-import"
+   ]
+  },
+  "getbatchimportjobvalidationreport": {
+   "name": "GetBatchImportJobValidationReport",
+   "resources": [
+    "batch-import"
+   ]
+  },
+  "getbatchpredictionjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetBatchPredictionJobs",
+   "resources": [
+    "batch-prediction"
+   ]
+  },
+  "getdeleteeventsbyeventtypestatus": {
+   "name": "GetDeleteEventsByEventTypeStatus",
+   "resources": [
+    "event-type"
+   ]
+  },
+  "getdetectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetDetectors",
+   "resources": [
+    "detector"
+   ]
+  },
+  "getdetectorversion": {
+   "name": "GetDetectorVersion",
+   "resources": [
+    "detector-version"
+   ]
+  },
+  "getentitytypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetEntityTypes",
+   "resources": [
+    "entity-type"
+   ]
+  },
+  "getevent": {
+   "name": "GetEvent",
+   "resources": [
+    "event-type"
+   ]
+  },
+  "geteventprediction": {
+   "name": "GetEventPrediction",
+   "resources": [
+    "detector",
+    "detector-version",
+    "event-type"
+   ]
+  },
+  "geteventpredictionmetadata": {
+   "name": "GetEventPredictionMetadata",
+   "resources": [
+    "detector",
+    "detector-version",
+    "event-type"
+   ]
+  },
+  "geteventtypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetEventTypes",
+   "resources": [
+    "event-type"
+   ]
+  },
+  "getexternalmodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetExternalModels",
+   "resources": [
+    "external-model"
+   ]
+  },
+  "getkmsencryptionkey": {
+   "name": "GetKMSEncryptionKey",
+   "resources": []
+  },
+  "getlabels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetLabels",
+   "resources": [
+    "label"
+   ]
+  },
+  "getlistelements": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetListElements",
+   "resources": [
+    "list"
+   ]
+  },
+  "getlistsmetadata": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetListsMetadata",
+   "resources": [
+    "list"
+   ]
+  },
+  "getmodels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetModels",
+   "resources": [
+    "model"
+   ]
+  },
+  "getmodelversion": {
+   "name": "GetModelVersion",
+   "resources": [
+    "model-version"
+   ]
+  },
+  "getoutcomes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetOutcomes",
+   "resources": [
+    "outcome"
+   ]
+  },
+  "getrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetRules",
+   "resources": [
+    "rule"
+   ]
+  },
+  "getvariables": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetVariables",
+   "resources": [
+    "variable"
+   ]
+  },
+  "listeventpredictions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEventPredictions",
+   "resources": [
+    "detector",
+    "detector-version",
+    "event-type"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "batch-import",
+    "batch-prediction",
+    "detector",
+    "detector-version",
+    "entity-type",
+    "event-type",
+    "external-model",
+    "label",
+    "list",
+    "model",
+    "model-version",
+    "outcome",
+    "rule",
+    "variable"
+   ]
+  },
+  "putdetector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDetector",
+   "resources": [
+    "detector",
+    "event-type"
+   ]
+  },
+  "putentitytype": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutEntityType",
+   "resources": [
+    "entity-type"
+   ]
+  },
+  "puteventtype": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutEventType",
+   "resources": [
+    "event-type"
+   ]
+  },
+  "putexternalmodel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutExternalModel",
+   "resources": [
+    "event-type",
+    "external-model"
+   ]
+  },
+  "putkmsencryptionkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutKMSEncryptionKey",
+   "resources": []
+  },
+  "putlabel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLabel",
+   "resources": [
+    "label"
+   ]
+  },
+  "putoutcome": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutOutcome",
+   "resources": [
+    "outcome"
+   ]
+  },
+  "sendevent": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendEvent",
+   "resources": [
+    "event-type"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "batch-import",
+    "batch-prediction",
+    "detector",
+    "detector-version",
+    "entity-type",
+    "event-type",
+    "external-model",
+    "label",
+    "list",
+    "model",
+    "model-version",
+    "outcome",
+    "rule",
+    "variable"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "batch-import",
+    "batch-prediction",
+    "detector",
+    "detector-version",
+    "entity-type",
+    "event-type",
+    "external-model",
+    "label",
+    "list",
+    "model",
+    "model-version",
+    "outcome",
+    "rule",
+    "variable"
+   ]
+  },
+  "updatedetectorversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDetectorVersion",
+   "resources": [
+    "detector",
+    "external-model",
+    "model-version"
+   ]
+  },
+  "updatedetectorversionmetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDetectorVersionMetadata",
+   "resources": [
+    "detector-version"
+   ]
+  },
+  "updatedetectorversionstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDetectorVersionStatus",
+   "resources": [
+    "detector-version"
+   ]
+  },
+  "updateeventlabel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEventLabel",
+   "resources": [
+    "event-type"
+   ]
+  },
+  "updatelist": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateList",
+   "resources": [
+    "list"
+   ]
+  },
+  "updatemodel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateModel",
+   "resources": [
+    "model"
+   ]
+  },
+  "updatemodelversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateModelVersion",
+   "resources": [
+    "model"
+   ]
+  },
+  "updatemodelversionstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateModelVersionStatus",
+   "resources": [
+    "model-version"
+   ]
+  },
+  "updaterulemetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRuleMetadata",
+   "resources": [
+    "rule"
+   ]
+  },
+  "updateruleversion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRuleVersion",
+   "resources": [
+    "rule"
+   ]
+  },
+  "updatevariable": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVariable",
+   "resources": [
+    "variable"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "batch-import": {
+   "arnFormats": [
+    "arn:${Partition}:frauddetector:${Region}:${Account}:batch-import/${ResourcePath}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "batch-prediction": {
+   "arnFormats": [
+    "arn:${Partition}:frauddetector:${Region}:${Account}:batch-prediction/${ResourcePath}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "detector": {
+   "arnFormats": [
+    "arn:${Partition}:frauddetector:${Region}:${Account}:detector/${ResourcePath}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "detector-version": {
+   "arnFormats": [
+    "arn:${Partition}:frauddetector:${Region}:${Account}:detector-version/${ResourcePath}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "entity-type": {
+   "arnFormats": [
+    "arn:${Partition}:frauddetector:${Region}:${Account}:entity-type/${ResourcePath}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "event-type": {
+   "arnFormats": [
+    "arn:${Partition}:frauddetector:${Region}:${Account}:event-type/${ResourcePath}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "external-model": {
+   "arnFormats": [
+    "arn:${Partition}:frauddetector:${Region}:${Account}:external-model/${ResourcePath}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "label": {
+   "arnFormats": [
+    "arn:${Partition}:frauddetector:${Region}:${Account}:label/${ResourcePath}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "list": {
+   "arnFormats": [
+    "arn:${Partition}:frauddetector:${Region}:${Account}:list/${ResourcePath}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "model": {
+   "arnFormats": [
+    "arn:${Partition}:frauddetector:${Region}:${Account}:model/${ResourcePath}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "model-version": {
+   "arnFormats": [
+    "arn:${Partition}:frauddetector:${Region}:${Account}:model-version/${ResourcePath}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "outcome": {
+   "arnFormats": [
+    "arn:${Partition}:frauddetector:${Region}:${Account}:outcome/${ResourcePath}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "rule": {
+   "arnFormats": [
+    "arn:${Partition}:frauddetector:${Region}:${Account}:rule/${ResourcePath}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "variable": {
+   "arnFormats": [
+    "arn:${Partition}:frauddetector:${Region}:${Account}:variable/${ResourcePath}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "frauddetector",
+ "serviceName": "Fraud Detector",
+ "version": "v1.5"
+}

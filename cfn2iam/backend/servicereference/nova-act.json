@@ -1,0 +1,156 @@
+{
+ "actions": {
+  "createact": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateAct",
+   "resources": [
+    "workflow-definition",
+    "workflow-run"
+   ]
+  },
+  "createsession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateSession",
+   "resources": [
+    "workflow-definition",
+    "workflow-run"
+   ]
+  },
+  "createworkflowdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkflowDefinition",
+   "resources": [
+    "workflow-definition"
+   ]
+  },
+  "createworkflowrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkflowRun",
+   "resources": [
+    "workflow-definition"
+   ]
+  },
+  "deleteworkflowdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkflowDefinition",
+   "resources": [
+    "workflow-definition"
+   ]
+  },
+  "deleteworkflowrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkflowRun",
+   "resources": [
+    "workflow-definition",
+    "workflow-run"
+   ]
+  },
+  "getworkflowdefinition": {
+   "name": "GetWorkflowDefinition",
+   "resources": [
+    "workflow-definition"
+   ]
+  },
+  "getworkflowrun": {
+   "name": "GetWorkflowRun",
+   "resources": [
+    "workflow-definition",
+    "workflow-run"
+   ]
+  },
+  "invokeactstep": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "InvokeActStep",
+   "resources": [
+    "workflow-definition",
+    "workflow-run"
+   ]
+  },
+  "listacts": {
+   "name": "ListActs",
+   "resources": [
+    "workflow-definition"
+   ]
+  },
+  "listmodels": {
+   "name": "ListModels",
+   "resources": []
+  },
+  "listsessions": {
+   "name": "ListSessions",
+   "resources": [
+    "workflow-definition",
+    "workflow-run"
+   ]
+  },
+  "listworkflowdefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkflowDefinitions",
+   "resources": []
+  },
+  "listworkflowruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkflowRuns",
+   "resources": [
+    "workflow-definition"
+   ]
+  },
+  "updateact": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateAct",
+   "resources": [
+    "workflow-definition",
+    "workflow-run"
+   ]
+  },
+  "updateworkflowrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkflowRun",
+   "resources": [
+    "workflow-definition",
+    "workflow-run"
+   ]
+  }
+ },
+ "resources": {
+  "workflow-definition": {
+   "arnFormats": [
+    "arn:${Partition}:nova-act:${Region}:${Account}:workflow-definition/${WorkflowDefinitionName}"
+   ]
+  },
+  "workflow-run": {
+   "arnFormats": [
+    "arn:${Partition}:nova-act:${Region}:${Account}:workflow-definition/${WorkflowDefinitionName}/workflow-run/${WorkflowRunId}"
+   ]
+  }
+ },
+ "service": "nova-act",
+ "serviceName": "Nova Act",
+ "version": "v1.5"
+}

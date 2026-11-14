@@ -1,0 +1,410 @@
+{
+ "actions": {
+  "cancelharvestjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelHarvestJob",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "HarvestJob",
+    "OriginEndpoint"
+   ]
+  },
+  "createchannel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannel",
+   "resources": [
+    "Channel",
+    "ChannelGroup"
+   ]
+  },
+  "createchannelgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannelGroup",
+   "resources": [
+    "ChannelGroup"
+   ]
+  },
+  "createharvestjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHarvestJob",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "HarvestJob",
+    "OriginEndpoint"
+   ]
+  },
+  "createoriginendpoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOriginEndpoint",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "OriginEndpoint"
+   ]
+  },
+  "deletechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannel",
+   "resources": [
+    "Channel",
+    "ChannelGroup"
+   ]
+  },
+  "deletechannelgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannelGroup",
+   "resources": [
+    "ChannelGroup"
+   ]
+  },
+  "deletechannelpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannelPolicy",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "ChannelPolicy"
+   ]
+  },
+  "deleteoriginendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOriginEndpoint",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "OriginEndpoint"
+   ]
+  },
+  "deleteoriginendpointpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOriginEndpointPolicy",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "OriginEndpoint",
+    "OriginEndpointPolicy"
+   ]
+  },
+  "getchannel": {
+   "name": "GetChannel",
+   "resources": [
+    "Channel",
+    "ChannelGroup"
+   ]
+  },
+  "getchannelgroup": {
+   "name": "GetChannelGroup",
+   "resources": [
+    "ChannelGroup"
+   ]
+  },
+  "getchannelpolicy": {
+   "name": "GetChannelPolicy",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "ChannelPolicy"
+   ]
+  },
+  "getharvestjob": {
+   "name": "GetHarvestJob",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "HarvestJob",
+    "OriginEndpoint"
+   ]
+  },
+  "getheadobject": {
+   "name": "GetHeadObject",
+   "resources": [
+    "OriginEndpoint"
+   ]
+  },
+  "getobject": {
+   "name": "GetObject",
+   "resources": [
+    "OriginEndpoint"
+   ]
+  },
+  "getoriginendpoint": {
+   "name": "GetOriginEndpoint",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "OriginEndpoint"
+   ]
+  },
+  "getoriginendpointpolicy": {
+   "name": "GetOriginEndpointPolicy",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "OriginEndpoint",
+    "OriginEndpointPolicy"
+   ]
+  },
+  "harvestobject": {
+   "name": "HarvestObject",
+   "resources": [
+    "OriginEndpoint"
+   ]
+  },
+  "listchannelgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannelGroups",
+   "resources": []
+  },
+  "listchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannels",
+   "resources": [
+    "ChannelGroup"
+   ]
+  },
+  "listharvestjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHarvestJobs",
+   "resources": [
+    "ChannelGroup"
+   ]
+  },
+  "listoriginendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOriginEndpoints",
+   "resources": [
+    "Channel",
+    "ChannelGroup"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "HarvestJob",
+    "OriginEndpoint"
+   ]
+  },
+  "putchannelpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutChannelPolicy",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "ChannelPolicy"
+   ]
+  },
+  "putobject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutObject",
+   "resources": [
+    "Channel"
+   ]
+  },
+  "putoriginendpointpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutOriginEndpointPolicy",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "OriginEndpoint",
+    "OriginEndpointPolicy"
+   ]
+  },
+  "resetchannelstate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetChannelState",
+   "resources": [
+    "Channel",
+    "ChannelGroup"
+   ]
+  },
+  "resetoriginendpointstate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetOriginEndpointState",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "OriginEndpoint"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "HarvestJob",
+    "OriginEndpoint"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "HarvestJob",
+    "OriginEndpoint"
+   ]
+  },
+  "updatechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChannel",
+   "resources": [
+    "Channel",
+    "ChannelGroup"
+   ]
+  },
+  "updatechannelgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChannelGroup",
+   "resources": [
+    "ChannelGroup"
+   ]
+  },
+  "updateoriginendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOriginEndpoint",
+   "resources": [
+    "Channel",
+    "ChannelGroup",
+    "OriginEndpoint"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Channel": {
+   "arnFormats": [
+    "arn:${Partition}:mediapackagev2:${Region}:${Account}:channelGroup/${ChannelGroupName}/channel/${ChannelName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ChannelGroup": {
+   "arnFormats": [
+    "arn:${Partition}:mediapackagev2:${Region}:${Account}:channelGroup/${ChannelGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ChannelPolicy": {
+   "arnFormats": [
+    "arn:${Partition}:mediapackagev2:${Region}:${Account}:channelGroup/${ChannelGroupName}/channel/${ChannelName}"
+   ]
+  },
+  "HarvestJob": {
+   "arnFormats": [
+    "arn:${Partition}:mediapackagev2:${Region}:${Account}:channelGroup/${ChannelGroupName}/channel/${ChannelName}/originEndpoint/${OriginEndpointName}/harvestJob/${HarvestJobName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "OriginEndpoint": {
+   "arnFormats": [
+    "arn:${Partition}:mediapackagev2:${Region}:${Account}:channelGroup/${ChannelGroupName}/channel/${ChannelName}/originEndpoint/${OriginEndpointName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "OriginEndpointPolicy": {
+   "arnFormats": [
+    "arn:${Partition}:mediapackagev2:${Region}:${Account}:channelGroup/${ChannelGroupName}/channel/${ChannelName}/originEndpoint/${OriginEndpointName}"
+   ]
+  }
+ },
+ "service": "mediapackagev2",
+ "serviceName": "MediaPackage v2",
+ "version": "v1.5"
+}

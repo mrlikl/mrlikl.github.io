@@ -1,0 +1,1164 @@
+{
+ "actions": {
+  "acceptinboundconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptInboundConnection",
+   "resources": []
+  },
+  "acceptinboundcrossclustersearchconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptInboundCrossClusterSearchConnection",
+   "resources": []
+  },
+  "adddatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddDataSource",
+   "resources": [
+    "domain"
+   ]
+  },
+  "adddirectquerydatasource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddDirectQueryDataSource",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "addreplicationpeer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddReplicationPeer",
+   "resources": [
+    "domain"
+   ]
+  },
+  "addtags": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "AddTags",
+   "resources": [
+    "application",
+    "datasource",
+    "domain"
+   ]
+  },
+  "associatepackage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociatePackage",
+   "resources": [
+    "domain"
+   ]
+  },
+  "associatepackages": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociatePackages",
+   "resources": [
+    "domain"
+   ]
+  },
+  "attachdatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AttachDataSource",
+   "resources": [
+    "application"
+   ]
+  },
+  "authorizevpcendpointaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AuthorizeVpcEndpointAccess",
+   "resources": []
+  },
+  "canceldomainconfigchange": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelDomainConfigChange",
+   "resources": [
+    "domain"
+   ]
+  },
+  "cancelelasticsearchservicesoftwareupdate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelElasticsearchServiceSoftwareUpdate",
+   "resources": [
+    "domain"
+   ]
+  },
+  "cancelservicesoftwareupdate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelServiceSoftwareUpdate",
+   "resources": [
+    "domain"
+   ]
+  },
+  "comparedomainconfiguration": {
+   "name": "CompareDomainConfiguration",
+   "resources": [
+    "domain"
+   ]
+  },
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "createdomain": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "es:SecurityGroupIds",
+    "es:SubnetIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "createelasticsearchdomain": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "es:SecurityGroupIds",
+    "es:SubnetIds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateElasticsearchDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "createelasticsearchservicerole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateElasticsearchServiceRole",
+   "resources": []
+  },
+  "createindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIndex",
+   "resources": [
+    "domain"
+   ]
+  },
+  "createoutboundconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOutboundConnection",
+   "resources": [
+    "domain"
+   ]
+  },
+  "createoutboundcrossclustersearchconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOutboundCrossClusterSearchConnection",
+   "resources": [
+    "domain"
+   ]
+  },
+  "createpackage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePackage",
+   "resources": []
+  },
+  "createservicerole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceRole",
+   "resources": []
+  },
+  "createvpcendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVpcEndpoint",
+   "resources": []
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "deletedatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataSource",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deletedirectquerydatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDirectQueryDataSource",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "deletedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deleteelasticsearchdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteElasticsearchDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deleteelasticsearchservicerole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteElasticsearchServiceRole",
+   "resources": []
+  },
+  "deleteinboundconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInboundConnection",
+   "resources": []
+  },
+  "deleteinboundcrossclustersearchconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInboundCrossClusterSearchConnection",
+   "resources": []
+  },
+  "deleteindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIndex",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deleteoutboundconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOutboundConnection",
+   "resources": []
+  },
+  "deleteoutboundcrossclustersearchconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOutboundCrossClusterSearchConnection",
+   "resources": []
+  },
+  "deletepackage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePackage",
+   "resources": []
+  },
+  "deletevpcendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVpcEndpoint",
+   "resources": []
+  },
+  "deregistercapability": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterCapability",
+   "resources": [
+    "application"
+   ]
+  },
+  "describedatasourceattachment": {
+   "name": "DescribeDataSourceAttachment",
+   "resources": [
+    "application"
+   ]
+  },
+  "describedomain": {
+   "name": "DescribeDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describedomainautotunes": {
+   "name": "DescribeDomainAutoTunes",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describedomainchangeprogress": {
+   "name": "DescribeDomainChangeProgress",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describedomainconfig": {
+   "name": "DescribeDomainConfig",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describedomainhealth": {
+   "name": "DescribeDomainHealth",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describedomainnodes": {
+   "name": "DescribeDomainNodes",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describedomainreplication": {
+   "name": "DescribeDomainReplication",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describedomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDomains",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describedryrunprogress": {
+   "name": "DescribeDryRunProgress",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describeelasticsearchdomain": {
+   "name": "DescribeElasticsearchDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describeelasticsearchdomainconfig": {
+   "name": "DescribeElasticsearchDomainConfig",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describeelasticsearchdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeElasticsearchDomains",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describeelasticsearchinstancetypelimits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeElasticsearchInstanceTypeLimits",
+   "resources": []
+  },
+  "describeinboundconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeInboundConnections",
+   "resources": []
+  },
+  "describeinboundcrossclustersearchconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeInboundCrossClusterSearchConnections",
+   "resources": []
+  },
+  "describeinsightdetails": {
+   "name": "DescribeInsightDetails",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describeinstancetypelimits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeInstanceTypeLimits",
+   "resources": []
+  },
+  "describeoutboundconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeOutboundConnections",
+   "resources": []
+  },
+  "describeoutboundcrossclustersearchconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeOutboundCrossClusterSearchConnections",
+   "resources": []
+  },
+  "describepackages": {
+   "name": "DescribePackages",
+   "resources": []
+  },
+  "describereservedelasticsearchinstanceofferings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeReservedElasticsearchInstanceOfferings",
+   "resources": []
+  },
+  "describereservedelasticsearchinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeReservedElasticsearchInstances",
+   "resources": []
+  },
+  "describereservedinstanceofferings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeReservedInstanceOfferings",
+   "resources": []
+  },
+  "describereservedinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeReservedInstances",
+   "resources": []
+  },
+  "describevpcendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeVpcEndpoints",
+   "resources": []
+  },
+  "detachdatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetachDataSource",
+   "resources": [
+    "application"
+   ]
+  },
+  "dissociatepackage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DissociatePackage",
+   "resources": [
+    "domain"
+   ]
+  },
+  "dissociatepackages": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DissociatePackages",
+   "resources": [
+    "domain"
+   ]
+  },
+  "escrossclusterget": {
+   "name": "ESCrossClusterGet",
+   "resources": [
+    "domain"
+   ]
+  },
+  "eshttpdelete": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ESHttpDelete",
+   "resources": [
+    "domain"
+   ]
+  },
+  "eshttpget": {
+   "name": "ESHttpGet",
+   "resources": [
+    "domain"
+   ]
+  },
+  "eshttphead": {
+   "name": "ESHttpHead",
+   "resources": [
+    "domain"
+   ]
+  },
+  "eshttppatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ESHttpPatch",
+   "resources": [
+    "domain"
+   ]
+  },
+  "eshttppost": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ESHttpPost",
+   "resources": [
+    "domain"
+   ]
+  },
+  "eshttpput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ESHttpPut",
+   "resources": [
+    "domain"
+   ]
+  },
+  "failoverreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "FailoverReplication",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getapplication": {
+   "name": "GetApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "getcapability": {
+   "name": "GetCapability",
+   "resources": [
+    "application"
+   ]
+  },
+  "getcompatibleelasticsearchversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetCompatibleElasticsearchVersions",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getcompatibleversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetCompatibleVersions",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getdatasource": {
+   "name": "GetDataSource",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getdefaultapplicationsetting": {
+   "name": "GetDefaultApplicationSetting",
+   "resources": [
+    "application"
+   ]
+  },
+  "getdirectquerydatasource": {
+   "name": "GetDirectQueryDataSource",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "getdomainmaintenancestatus": {
+   "name": "GetDomainMaintenanceStatus",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getindex": {
+   "name": "GetIndex",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getmigration": {
+   "name": "GetMigration",
+   "resources": [
+    "application"
+   ]
+  },
+  "getpackageversionhistory": {
+   "name": "GetPackageVersionHistory",
+   "resources": []
+  },
+  "getupgradehistory": {
+   "name": "GetUpgradeHistory",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getupgradestatus": {
+   "name": "GetUpgradeStatus",
+   "resources": [
+    "domain"
+   ]
+  },
+  "insightfeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InsightFeedback",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": [
+    "application"
+   ]
+  },
+  "listdatasourceattachments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSourceAttachments",
+   "resources": [
+    "application"
+   ]
+  },
+  "listdatasources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSources",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listdirectquerydatasources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDirectQueryDataSources",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "listdomainmaintenances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomainMaintenances",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listdomainnames": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomainNames",
+   "resources": []
+  },
+  "listdomainsforpackage": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomainsForPackage",
+   "resources": []
+  },
+  "listelasticsearchinstancetypedetails": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListElasticsearchInstanceTypeDetails",
+   "resources": []
+  },
+  "listelasticsearchinstancetypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListElasticsearchInstanceTypes",
+   "resources": []
+  },
+  "listelasticsearchversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListElasticsearchVersions",
+   "resources": []
+  },
+  "listinsights": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInsights",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listinstancetypedetails": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInstanceTypeDetails",
+   "resources": []
+  },
+  "listmigrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMigrations",
+   "resources": [
+    "application"
+   ]
+  },
+  "listpackagesfordomain": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPackagesForDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listscheduledactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScheduledActions",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listtags": {
+   "name": "ListTags",
+   "resources": [
+    "application",
+    "datasource",
+    "domain"
+   ]
+  },
+  "listversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVersions",
+   "resources": []
+  },
+  "listvpcendpointaccess": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVpcEndpointAccess",
+   "resources": []
+  },
+  "listvpcendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVpcEndpoints",
+   "resources": []
+  },
+  "listvpcendpointsfordomain": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVpcEndpointsForDomain",
+   "resources": []
+  },
+  "purchasereservedelasticsearchinstanceoffering": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PurchaseReservedElasticsearchInstanceOffering",
+   "resources": []
+  },
+  "purchasereservedinstanceoffering": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PurchaseReservedInstanceOffering",
+   "resources": []
+  },
+  "putdefaultapplicationsetting": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDefaultApplicationSetting",
+   "resources": [
+    "application"
+   ]
+  },
+  "registercapability": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterCapability",
+   "resources": [
+    "application"
+   ]
+  },
+  "rejectinboundconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectInboundConnection",
+   "resources": []
+  },
+  "rejectinboundcrossclustersearchconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectInboundCrossClusterSearchConnection",
+   "resources": []
+  },
+  "removereplicationpeer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveReplicationPeer",
+   "resources": [
+    "domain"
+   ]
+  },
+  "removetags": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "RemoveTags",
+   "resources": [
+    "application",
+    "datasource",
+    "domain"
+   ]
+  },
+  "revokevpcendpointaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeVpcEndpointAccess",
+   "resources": []
+  },
+  "rollbackelasticsearchservicesoftwareupdate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RollbackElasticsearchServiceSoftwareUpdate",
+   "resources": [
+    "domain"
+   ]
+  },
+  "rollbackservicesoftwareupdate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RollbackServiceSoftwareUpdate",
+   "resources": [
+    "domain"
+   ]
+  },
+  "startdomainmaintenance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDomainMaintenance",
+   "resources": [
+    "domain"
+   ]
+  },
+  "startelasticsearchservicesoftwareupdate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartElasticsearchServiceSoftwareUpdate",
+   "resources": [
+    "domain"
+   ]
+  },
+  "startmigration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMigration",
+   "resources": [
+    "application"
+   ]
+  },
+  "startservicesoftwareupdate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartServiceSoftwareUpdate",
+   "resources": [
+    "domain"
+   ]
+  },
+  "switchoverreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SwitchoverReplication",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updateapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "updateclone": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateClone",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updatedatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataSource",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updatedirectquerydatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDirectQueryDataSource",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "updatedomainconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomainConfig",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updateelasticsearchdomainconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateElasticsearchDomainConfig",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updateindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIndex",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updatepackage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePackage",
+   "resources": []
+  },
+  "updatepackagescope": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePackageScope",
+   "resources": []
+  },
+  "updatescheduledaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateScheduledAction",
+   "resources": [
+    "domain"
+   ]
+  },
+  "updatevpcendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVpcEndpoint",
+   "resources": []
+  },
+  "upgradedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpgradeDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "upgradeelasticsearchdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpgradeElasticsearchDomain",
+   "resources": [
+    "domain"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "es:SecurityGroupIds": [
+   "ArrayOfString"
+  ],
+  "es:SubnetIds": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:opensearch:${Region}:${Account}:application/${AppId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "datasource": {
+   "arnFormats": [
+    "arn:${Partition}:opensearch:${Region}:${Account}:datasource/${DataSourceName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "domain": {
+   "arnFormats": [
+    "arn:${Partition}:es:${Region}:${Account}:domain/${DomainName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "es_role": {
+   "arnFormats": [
+    "arn:${Partition}:iam::${Account}:role/aws-service-role/es.amazonaws.com/AWSServiceRoleForAmazonOpenSearchService"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "opensearchservice_role": {
+   "arnFormats": [
+    "arn:${Partition}:iam::${Account}:role/aws-service-role/opensearchservice.amazonaws.com/AWSServiceRoleForAmazonOpenSearchService"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "es",
+ "serviceName": "OpenSearch Service",
+ "version": "v1.5"
+}

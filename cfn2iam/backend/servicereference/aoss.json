@@ -1,0 +1,561 @@
+{
+ "actions": {
+  "addcollectiontocollectiongroup": {
+   "conditionKeys": [
+    "aoss:collection-group"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddCollectionToCollectionGroup",
+   "resources": [
+    "CollectionGroup"
+   ]
+  },
+  "apiaccessall": {
+   "conditionKeys": [
+    "aoss:CollectionId",
+    "aoss:collection"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "APIAccessAll",
+   "resources": [
+    "Collection"
+   ]
+  },
+  "batchgetcollection": {
+   "conditionKeys": [
+    "aoss:collection"
+   ],
+   "name": "BatchGetCollection",
+   "resources": []
+  },
+  "batchgetcollectiongroup": {
+   "conditionKeys": [
+    "aoss:collection-group"
+   ],
+   "name": "BatchGetCollectionGroup",
+   "resources": []
+  },
+  "batchgeteffectivelifecyclepolicy": {
+   "name": "BatchGetEffectiveLifecyclePolicy",
+   "resources": []
+  },
+  "batchgetlifecyclepolicy": {
+   "name": "BatchGetLifecyclePolicy",
+   "resources": []
+  },
+  "batchgetvpcendpoint": {
+   "name": "BatchGetVpcEndpoint",
+   "resources": []
+  },
+  "cancelingestionjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelIngestionJob",
+   "resources": [
+    "IngestionJob"
+   ]
+  },
+  "createaccesspolicy": {
+   "conditionKeys": [
+    "aoss:collection",
+    "aoss:index"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessPolicy",
+   "resources": []
+  },
+  "createcollection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCollection",
+   "resources": []
+  },
+  "createcollectiongroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCollectionGroup",
+   "resources": []
+  },
+  "createindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIndex",
+   "resources": []
+  },
+  "createingestionjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIngestionJob",
+   "resources": [
+    "Collection"
+   ]
+  },
+  "createingestionstream": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIngestionStream",
+   "resources": [
+    "Collection"
+   ]
+  },
+  "createlifecyclepolicy": {
+   "conditionKeys": [
+    "aoss:index"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLifecyclePolicy",
+   "resources": []
+  },
+  "createsecurityconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSecurityConfig",
+   "resources": []
+  },
+  "createsecuritypolicy": {
+   "conditionKeys": [
+    "aoss:collection"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSecurityPolicy",
+   "resources": []
+  },
+  "createvpcendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVpcEndpoint",
+   "resources": []
+  },
+  "dashboardsaccessall": {
+   "conditionKeys": [
+    "aoss:CollectionId",
+    "aoss:collection"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DashboardsAccessAll",
+   "resources": [
+    "Dashboards"
+   ]
+  },
+  "deleteaccesspolicy": {
+   "conditionKeys": [
+    "aoss:collection",
+    "aoss:index"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccessPolicy",
+   "resources": []
+  },
+  "deletecollection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCollection",
+   "resources": [
+    "Collection"
+   ]
+  },
+  "deletecollectiongroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCollectionGroup",
+   "resources": [
+    "CollectionGroup"
+   ]
+  },
+  "deleteindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIndex",
+   "resources": []
+  },
+  "deleteingestionstream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIngestionStream",
+   "resources": [
+    "IngestionStream"
+   ]
+  },
+  "deletelifecyclepolicy": {
+   "conditionKeys": [
+    "aoss:index"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLifecyclePolicy",
+   "resources": []
+  },
+  "deletesecurityconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSecurityConfig",
+   "resources": []
+  },
+  "deletesecuritypolicy": {
+   "conditionKeys": [
+    "aoss:collection"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSecurityPolicy",
+   "resources": []
+  },
+  "deletevpcendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVpcEndpoint",
+   "resources": []
+  },
+  "getaccesspolicy": {
+   "conditionKeys": [
+    "aoss:collection",
+    "aoss:index"
+   ],
+   "name": "GetAccessPolicy",
+   "resources": []
+  },
+  "getaccountsettings": {
+   "name": "GetAccountSettings",
+   "resources": []
+  },
+  "getindex": {
+   "name": "GetIndex",
+   "resources": []
+  },
+  "getingestionjob": {
+   "name": "GetIngestionJob",
+   "resources": [
+    "IngestionJob"
+   ]
+  },
+  "getingestionstream": {
+   "name": "GetIngestionStream",
+   "resources": [
+    "IngestionStream"
+   ]
+  },
+  "getpoliciesstats": {
+   "name": "GetPoliciesStats",
+   "resources": []
+  },
+  "getsecurityconfig": {
+   "name": "GetSecurityConfig",
+   "resources": []
+  },
+  "getsecuritypolicy": {
+   "conditionKeys": [
+    "aoss:collection"
+   ],
+   "name": "GetSecurityPolicy",
+   "resources": []
+  },
+  "listaccesspolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessPolicies",
+   "resources": []
+  },
+  "listcollectiongroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCollectionGroups",
+   "resources": []
+  },
+  "listcollections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCollections",
+   "resources": []
+  },
+  "listingestionjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIngestionJobs",
+   "resources": [
+    "Collection"
+   ]
+  },
+  "listingestionstreams": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIngestionStreams",
+   "resources": [
+    "Collection"
+   ]
+  },
+  "listlifecyclepolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLifecyclePolicies",
+   "resources": []
+  },
+  "listsecurityconfigs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityConfigs",
+   "resources": []
+  },
+  "listsecuritypolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSecurityPolicies",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "Collection",
+    "CollectionGroup",
+    "IngestionJob",
+    "IngestionStream"
+   ]
+  },
+  "listvpcendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVpcEndpoints",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Collection",
+    "CollectionGroup",
+    "IngestionJob",
+    "IngestionStream"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Collection",
+    "CollectionGroup",
+    "IngestionJob",
+    "IngestionStream"
+   ]
+  },
+  "updateaccesspolicy": {
+   "conditionKeys": [
+    "aoss:collection",
+    "aoss:index"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccessPolicy",
+   "resources": []
+  },
+  "updateaccountsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountSettings",
+   "resources": []
+  },
+  "updatecollection": {
+   "conditionKeys": [
+    "aoss:DeletionProtection"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCollection",
+   "resources": [
+    "Collection"
+   ]
+  },
+  "updatecollectiongroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCollectionGroup",
+   "resources": [
+    "CollectionGroup"
+   ]
+  },
+  "updateindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIndex",
+   "resources": []
+  },
+  "updatelifecyclepolicy": {
+   "conditionKeys": [
+    "aoss:index"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLifecyclePolicy",
+   "resources": []
+  },
+  "updatesecurityconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSecurityConfig",
+   "resources": []
+  },
+  "updatesecuritypolicy": {
+   "conditionKeys": [
+    "aoss:collection"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSecurityPolicy",
+   "resources": []
+  },
+  "updatevpcendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVpcEndpoint",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aoss:CollectionId": [
+   "String"
+  ],
+  "aoss:DeletionProtection": [
+   "String"
+  ],
+  "aoss:collection": [
+   "String"
+  ],
+  "aoss:collection-group": [
+   "String"
+  ],
+  "aoss:index": [
+   "String"
+  ],
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Collection": {
+   "arnFormats": [
+    "arn:${Partition}:aoss:${Region}:${Account}:collection/${CollectionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "CollectionGroup": {
+   "arnFormats": [
+    "arn:${Partition}:aoss:${Region}:${Account}:collection-group/${CollectionGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Dashboards": {
+   "arnFormats": [
+    "arn:${Partition}:aoss:${Region}:${Account}:dashboards/default"
+   ]
+  },
+  "IngestionJob": {
+   "arnFormats": [
+    "arn:${Partition}:aoss:${Region}:${Account}:collection/${CollectionId}/ingestion-job/${IngestionJobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "IngestionStream": {
+   "arnFormats": [
+    "arn:${Partition}:aoss:${Region}:${Account}:collection/${CollectionId}/ingestion-stream/${IngestionStreamId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "aoss",
+ "serviceName": "OpenSearch Serverless",
+ "version": "v1.5"
+}

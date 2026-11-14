@@ -1,0 +1,224 @@
+{
+ "actions": {
+  "acceptuseragreement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptUserAgreement",
+   "resources": []
+  },
+  "canceljob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "cancelquantumtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelQuantumTask",
+   "resources": [
+    "quantum-task"
+   ]
+  },
+  "createjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateJob",
+   "resources": [
+    "device",
+    "job"
+   ]
+  },
+  "createquantumtask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQuantumTask",
+   "resources": [
+    "device",
+    "quantum-task"
+   ]
+  },
+  "createspendinglimit": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSpendingLimit",
+   "resources": [
+    "device",
+    "spending-limit"
+   ]
+  },
+  "deletespendinglimit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSpendingLimit",
+   "resources": [
+    "spending-limit"
+   ]
+  },
+  "getdevice": {
+   "name": "GetDevice",
+   "resources": [
+    "device"
+   ]
+  },
+  "getjob": {
+   "name": "GetJob",
+   "resources": [
+    "job"
+   ]
+  },
+  "getquantumtask": {
+   "name": "GetQuantumTask",
+   "resources": [
+    "quantum-task"
+   ]
+  },
+  "getservicelinkedrolestatus": {
+   "name": "GetServiceLinkedRoleStatus",
+   "resources": []
+  },
+  "getuseragreementstatus": {
+   "name": "GetUserAgreementStatus",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "job",
+    "quantum-task",
+    "spending-limit"
+   ]
+  },
+  "searchdevices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchDevices",
+   "resources": []
+  },
+  "searchjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchJobs",
+   "resources": []
+  },
+  "searchquantumtasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchQuantumTasks",
+   "resources": []
+  },
+  "searchspendinglimits": {
+   "name": "SearchSpendingLimits",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "job",
+    "quantum-task",
+    "spending-limit"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "job",
+    "quantum-task",
+    "spending-limit"
+   ]
+  },
+  "updatespendinglimit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSpendingLimit",
+   "resources": [
+    "spending-limit"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "device": {
+   "arnFormats": [
+    "arn:${Partition}:braket:*:*:device/${DeviceType}/${Provider}/${DeviceId}"
+   ]
+  },
+  "job": {
+   "arnFormats": [
+    "arn:${Partition}:braket:${Region}:${Account}:job/${RandomId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "quantum-task": {
+   "arnFormats": [
+    "arn:${Partition}:braket:${Region}:${Account}:quantum-task/${RandomId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "spending-limit": {
+   "arnFormats": [
+    "arn:${Partition}:braket:${Region}:${Account}:spending-limit/${RandomId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "braket",
+ "serviceName": "Braket",
+ "version": "v1.5"
+}

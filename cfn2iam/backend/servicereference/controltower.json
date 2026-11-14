@@ -1,0 +1,487 @@
+{
+ "actions": {
+  "createlandingzone": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLandingZone",
+   "resources": []
+  },
+  "createmanagedaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateManagedAccount",
+   "resources": []
+  },
+  "deletelandingzone": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLandingZone",
+   "resources": [
+    "LandingZone"
+   ]
+  },
+  "deregistermanagedaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterManagedAccount",
+   "resources": []
+  },
+  "deregisterorganizationalunit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterOrganizationalUnit",
+   "resources": []
+  },
+  "describeaccountfactoryconfig": {
+   "name": "DescribeAccountFactoryConfig",
+   "resources": []
+  },
+  "describecoreservice": {
+   "name": "DescribeCoreService",
+   "resources": []
+  },
+  "describeguardrail": {
+   "name": "DescribeGuardrail",
+   "resources": []
+  },
+  "describeguardrailfortarget": {
+   "name": "DescribeGuardrailForTarget",
+   "resources": []
+  },
+  "describelandingzoneconfiguration": {
+   "name": "DescribeLandingZoneConfiguration",
+   "resources": []
+  },
+  "describemanagedaccount": {
+   "name": "DescribeManagedAccount",
+   "resources": []
+  },
+  "describemanagedorganizationalunit": {
+   "name": "DescribeManagedOrganizationalUnit",
+   "resources": []
+  },
+  "describeregisterorganizationalunitoperation": {
+   "name": "DescribeRegisterOrganizationalUnitOperation",
+   "resources": []
+  },
+  "describesinglesignon": {
+   "name": "DescribeSingleSignOn",
+   "resources": []
+  },
+  "disablebaseline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableBaseline",
+   "resources": [
+    "EnabledBaseline"
+   ]
+  },
+  "disablecontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableControl",
+   "resources": [
+    "EnabledControl"
+   ]
+  },
+  "disableguardrail": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableGuardrail",
+   "resources": []
+  },
+  "enablebaseline": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableBaseline",
+   "resources": []
+  },
+  "enablecontrol": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableControl",
+   "resources": [
+    "EnabledControl"
+   ]
+  },
+  "enableguardrail": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableGuardrail",
+   "resources": []
+  },
+  "getaccountinfo": {
+   "name": "GetAccountInfo",
+   "resources": []
+  },
+  "getavailableupdates": {
+   "name": "GetAvailableUpdates",
+   "resources": []
+  },
+  "getbaseline": {
+   "name": "GetBaseline",
+   "resources": [
+    "Baseline"
+   ]
+  },
+  "getbaselineoperation": {
+   "name": "GetBaselineOperation",
+   "resources": []
+  },
+  "getcontroloperation": {
+   "name": "GetControlOperation",
+   "resources": []
+  },
+  "getenabledbaseline": {
+   "name": "GetEnabledBaseline",
+   "resources": [
+    "EnabledBaseline"
+   ]
+  },
+  "getenabledcontrol": {
+   "name": "GetEnabledControl",
+   "resources": [
+    "EnabledControl"
+   ]
+  },
+  "getguardrailcompliancestatus": {
+   "name": "GetGuardrailComplianceStatus",
+   "resources": []
+  },
+  "gethomeregion": {
+   "name": "GetHomeRegion",
+   "resources": []
+  },
+  "getlandingzone": {
+   "name": "GetLandingZone",
+   "resources": [
+    "LandingZone"
+   ]
+  },
+  "getlandingzonedriftstatus": {
+   "name": "GetLandingZoneDriftStatus",
+   "resources": []
+  },
+  "getlandingzoneoperation": {
+   "name": "GetLandingZoneOperation",
+   "resources": []
+  },
+  "getlandingzonestatus": {
+   "name": "GetLandingZoneStatus",
+   "resources": []
+  },
+  "listbaselines": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBaselines",
+   "resources": []
+  },
+  "listcontroloperations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListControlOperations",
+   "resources": []
+  },
+  "listdirectorygroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDirectoryGroups",
+   "resources": []
+  },
+  "listdriftdetails": {
+   "name": "ListDriftDetails",
+   "resources": []
+  },
+  "listenabledbaselines": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnabledBaselines",
+   "resources": []
+  },
+  "listenabledcontrols": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnabledControls",
+   "resources": []
+  },
+  "listenabledguardrails": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnabledGuardrails",
+   "resources": []
+  },
+  "listextendgovernanceprecheckdetails": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExtendGovernancePrecheckDetails",
+   "resources": []
+  },
+  "listexternalconfigrulecompliance": {
+   "name": "ListExternalConfigRuleCompliance",
+   "resources": []
+  },
+  "listguardrails": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGuardrails",
+   "resources": []
+  },
+  "listguardrailsfortarget": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGuardrailsForTarget",
+   "resources": []
+  },
+  "listguardrailviolations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGuardrailViolations",
+   "resources": []
+  },
+  "listlandingzoneoperations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLandingZoneOperations",
+   "resources": []
+  },
+  "listlandingzones": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLandingZones",
+   "resources": []
+  },
+  "listmanagedaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedAccounts",
+   "resources": []
+  },
+  "listmanagedaccountsforguardrail": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedAccountsForGuardrail",
+   "resources": []
+  },
+  "listmanagedaccountsforparent": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedAccountsForParent",
+   "resources": []
+  },
+  "listmanagedorganizationalunits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedOrganizationalUnits",
+   "resources": []
+  },
+  "listmanagedorganizationalunitsforguardrail": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedOrganizationalUnitsForGuardrail",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "EnabledBaseline",
+    "EnabledControl",
+    "LandingZone"
+   ]
+  },
+  "manageorganizationalunit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ManageOrganizationalUnit",
+   "resources": []
+  },
+  "performprelaunchchecks": {
+   "name": "PerformPreLaunchChecks",
+   "resources": []
+  },
+  "resetenabledbaseline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetEnabledBaseline",
+   "resources": [
+    "EnabledBaseline"
+   ]
+  },
+  "resetenabledcontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetEnabledControl",
+   "resources": [
+    "EnabledControl"
+   ]
+  },
+  "resetlandingzone": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetLandingZone",
+   "resources": [
+    "LandingZone"
+   ]
+  },
+  "setuplandingzone": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetupLandingZone",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "EnabledBaseline",
+    "EnabledControl",
+    "LandingZone"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "EnabledBaseline",
+    "EnabledControl",
+    "LandingZone"
+   ]
+  },
+  "updateaccountfactoryconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountFactoryConfig",
+   "resources": []
+  },
+  "updateenabledbaseline": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnabledBaseline",
+   "resources": [
+    "EnabledBaseline"
+   ]
+  },
+  "updateenabledcontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnabledControl",
+   "resources": [
+    "EnabledControl"
+   ]
+  },
+  "updatelandingzone": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLandingZone",
+   "resources": [
+    "LandingZone"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Baseline": {
+   "arnFormats": [
+    "arn:${Partition}:controltower:${Region}::baseline/${BaselineId}"
+   ]
+  },
+  "EnabledBaseline": {
+   "arnFormats": [
+    "arn:${Partition}:controltower:${Region}:${Account}:enabledbaseline/${EnabledBaselineId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "EnabledControl": {
+   "arnFormats": [
+    "arn:${Partition}:controltower:${Region}:${Account}:enabledcontrol/${EnabledControlId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "LandingZone": {
+   "arnFormats": [
+    "arn:${Partition}:controltower:${Region}:${Account}:landingzone/${LandingZoneId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "controltower",
+ "serviceName": "Control Tower",
+ "version": "v1.5"
+}

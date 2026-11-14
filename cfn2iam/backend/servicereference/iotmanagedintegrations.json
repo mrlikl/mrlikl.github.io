@@ -1,0 +1,679 @@
+{
+ "actions": {
+  "createaccountassociation": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "iotmanagedintegrations:connectorDestinationId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccountAssociation",
+   "resources": []
+  },
+  "createcloudconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCloudConnector",
+   "resources": []
+  },
+  "createconnectordestination": {
+   "conditionKeys": [
+    "iotmanagedintegrations:cloudConnectorId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnectorDestination",
+   "resources": []
+  },
+  "createcredentiallocker": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCredentialLocker",
+   "resources": []
+  },
+  "createdestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDestination",
+   "resources": []
+  },
+  "createeventlogconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEventLogConfiguration",
+   "resources": []
+  },
+  "createmanagedthing": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateManagedThing",
+   "resources": [
+    "credential-locker"
+   ]
+  },
+  "createnotificationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNotificationConfiguration",
+   "resources": []
+  },
+  "createotatask": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOtaTask",
+   "resources": []
+  },
+  "createotataskconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOtaTaskConfiguration",
+   "resources": []
+  },
+  "createprovisioningprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProvisioningProfile",
+   "resources": []
+  },
+  "deleteaccountassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccountAssociation",
+   "resources": [
+    "account-association"
+   ]
+  },
+  "deletecloudconnector": {
+   "conditionKeys": [
+    "iotmanagedintegrations:cloudConnectorId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCloudConnector",
+   "resources": []
+  },
+  "deleteconnectordestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnectorDestination",
+   "resources": []
+  },
+  "deletecredentiallocker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCredentialLocker",
+   "resources": [
+    "credential-locker"
+   ]
+  },
+  "deletedestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDestination",
+   "resources": []
+  },
+  "deleteeventlogconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventLogConfiguration",
+   "resources": []
+  },
+  "deletemanagedthing": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteManagedThing",
+   "resources": [
+    "managed-thing"
+   ]
+  },
+  "deletenotificationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotificationConfiguration",
+   "resources": []
+  },
+  "deleteotatask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOtaTask",
+   "resources": [
+    "ota-task"
+   ]
+  },
+  "deleteotataskconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOtaTaskConfiguration",
+   "resources": []
+  },
+  "deleteprovisioningprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProvisioningProfile",
+   "resources": [
+    "provisioning-profile"
+   ]
+  },
+  "deregisteraccountassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterAccountAssociation",
+   "resources": [
+    "account-association",
+    "managed-thing"
+   ]
+  },
+  "getaccountassociation": {
+   "name": "GetAccountAssociation",
+   "resources": [
+    "account-association"
+   ]
+  },
+  "getcloudconnector": {
+   "name": "GetCloudConnector",
+   "resources": []
+  },
+  "getconnectordestination": {
+   "name": "GetConnectorDestination",
+   "resources": []
+  },
+  "getcredentiallocker": {
+   "name": "GetCredentialLocker",
+   "resources": [
+    "credential-locker"
+   ]
+  },
+  "getcustomendpoint": {
+   "name": "GetCustomEndpoint",
+   "resources": []
+  },
+  "getdefaultencryptionconfiguration": {
+   "name": "GetDefaultEncryptionConfiguration",
+   "resources": []
+  },
+  "getdestination": {
+   "name": "GetDestination",
+   "resources": []
+  },
+  "getdevicediscovery": {
+   "name": "GetDeviceDiscovery",
+   "resources": []
+  },
+  "geteventlogconfiguration": {
+   "name": "GetEventLogConfiguration",
+   "resources": []
+  },
+  "gethubconfiguration": {
+   "name": "GetHubConfiguration",
+   "resources": []
+  },
+  "getmanagedthing": {
+   "name": "GetManagedThing",
+   "resources": [
+    "managed-thing"
+   ]
+  },
+  "getmanagedthingcapabilities": {
+   "name": "GetManagedThingCapabilities",
+   "resources": [
+    "managed-thing"
+   ]
+  },
+  "getmanagedthingcertificate": {
+   "name": "GetManagedThingCertificate",
+   "resources": [
+    "managed-thing"
+   ]
+  },
+  "getmanagedthingconnectivitydata": {
+   "name": "GetManagedThingConnectivityData",
+   "resources": [
+    "managed-thing"
+   ]
+  },
+  "getmanagedthingmetadata": {
+   "name": "GetManagedThingMetaData",
+   "resources": [
+    "managed-thing"
+   ]
+  },
+  "getmanagedthingstate": {
+   "name": "GetManagedThingState",
+   "resources": [
+    "managed-thing"
+   ]
+  },
+  "getnotificationconfiguration": {
+   "name": "GetNotificationConfiguration",
+   "resources": []
+  },
+  "getotatask": {
+   "name": "GetOtaTask",
+   "resources": [
+    "ota-task"
+   ]
+  },
+  "getotataskconfiguration": {
+   "name": "GetOtaTaskConfiguration",
+   "resources": []
+  },
+  "getprovisioningprofile": {
+   "name": "GetProvisioningProfile",
+   "resources": [
+    "provisioning-profile"
+   ]
+  },
+  "getruntimelogconfiguration": {
+   "name": "GetRuntimeLogConfiguration",
+   "resources": []
+  },
+  "getschemaversion": {
+   "name": "GetSchemaVersion",
+   "resources": []
+  },
+  "listaccountassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountAssociations",
+   "resources": []
+  },
+  "listcloudconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCloudConnectors",
+   "resources": []
+  },
+  "listconnectordestinations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectorDestinations",
+   "resources": []
+  },
+  "listcredentiallockers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCredentialLockers",
+   "resources": []
+  },
+  "listdestinations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDestinations",
+   "resources": []
+  },
+  "listdevicediscoveries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeviceDiscoveries",
+   "resources": []
+  },
+  "listdiscovereddevices": {
+   "name": "ListDiscoveredDevices",
+   "resources": []
+  },
+  "listeventlogconfigurations": {
+   "name": "ListEventLogConfigurations",
+   "resources": []
+  },
+  "listmanagedthingaccountassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedThingAccountAssociations",
+   "resources": []
+  },
+  "listmanagedthings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedThings",
+   "resources": []
+  },
+  "listmanagedthingschemas": {
+   "name": "ListManagedThingSchemas",
+   "resources": [
+    "managed-thing"
+   ]
+  },
+  "listnotificationconfigurations": {
+   "name": "ListNotificationConfigurations",
+   "resources": []
+  },
+  "listotataskconfigurations": {
+   "name": "ListOtaTaskConfigurations",
+   "resources": []
+  },
+  "listotataskexecutions": {
+   "name": "ListOtaTaskExecutions",
+   "resources": [
+    "ota-task"
+   ]
+  },
+  "listotatasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOtaTasks",
+   "resources": []
+  },
+  "listprovisioningprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProvisioningProfiles",
+   "resources": []
+  },
+  "listschemaversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSchemaVersions",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "account-association",
+    "credential-locker",
+    "managed-thing",
+    "ota-task",
+    "provisioning-profile"
+   ]
+  },
+  "putdefaultencryptionconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDefaultEncryptionConfiguration",
+   "resources": []
+  },
+  "puthubconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutHubConfiguration",
+   "resources": []
+  },
+  "putruntimelogconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRuntimeLogConfiguration",
+   "resources": []
+  },
+  "registeraccountassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterAccountAssociation",
+   "resources": [
+    "account-association",
+    "managed-thing"
+   ]
+  },
+  "registercustomendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterCustomEndpoint",
+   "resources": []
+  },
+  "resetruntimelogconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetRuntimeLogConfiguration",
+   "resources": []
+  },
+  "sendconnectorevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendConnectorEvent",
+   "resources": []
+  },
+  "sendmanagedthingcommand": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendManagedThingCommand",
+   "resources": [
+    "account-association",
+    "managed-thing"
+   ]
+  },
+  "startaccountassociationrefresh": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAccountAssociationRefresh",
+   "resources": [
+    "account-association"
+   ]
+  },
+  "startdevicediscovery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDeviceDiscovery",
+   "resources": [
+    "account-association",
+    "managed-thing"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "account-association",
+    "credential-locker",
+    "managed-thing",
+    "ota-task",
+    "provisioning-profile"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "account-association",
+    "credential-locker",
+    "managed-thing",
+    "ota-task",
+    "provisioning-profile"
+   ]
+  },
+  "updateaccountassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountAssociation",
+   "resources": [
+    "account-association"
+   ]
+  },
+  "updatecloudconnector": {
+   "conditionKeys": [
+    "iotmanagedintegrations:cloudConnectorId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCloudConnector",
+   "resources": []
+  },
+  "updateconnectordestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnectorDestination",
+   "resources": []
+  },
+  "updatedestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDestination",
+   "resources": []
+  },
+  "updateeventlogconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEventLogConfiguration",
+   "resources": []
+  },
+  "updatemanagedthing": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateManagedThing",
+   "resources": [
+    "credential-locker",
+    "managed-thing"
+   ]
+  },
+  "updatenotificationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotificationConfiguration",
+   "resources": []
+  },
+  "updateotatask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOtaTask",
+   "resources": [
+    "ota-task"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "iotmanagedintegrations:cloudConnectorId": [
+   "String"
+  ],
+  "iotmanagedintegrations:connectorDestinationId": [
+   "String"
+  ]
+ },
+ "resources": {
+  "account-association": {
+   "arnFormats": [
+    "arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:account-association/${AccountAssociationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "credential-locker": {
+   "arnFormats": [
+    "arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:credential-locker/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "managed-thing": {
+   "arnFormats": [
+    "arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:managed-thing/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ota-task": {
+   "arnFormats": [
+    "arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:ota-task/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "provisioning-profile": {
+   "arnFormats": [
+    "arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:provisioning-profile/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "iotmanagedintegrations",
+ "serviceName": "IoT Managed Integrations",
+ "version": "v1.5"
+}

@@ -1,0 +1,1135 @@
+{
+ "actions": {
+  "associatebackupvaultmpaapprovalteam": {
+   "conditionKeys": [
+    "backup:MpaApprovalTeamArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateBackupVaultMpaApprovalTeam",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "cancellegalhold": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelLegalHold",
+   "resources": [
+    "legalHold"
+   ]
+  },
+  "copyfrombackupvault": {
+   "conditionKeys": [
+    "backup:CopyTargetOrgPaths",
+    "backup:CopyTargets"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyFromBackupVault",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "copyintobackupvault": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyIntoBackupVault",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "createbackupaccesspoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBackupAccessPoint",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "createbackupplan": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBackupPlan",
+   "resources": [
+    "backupPlan"
+   ]
+  },
+  "createbackupselection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBackupSelection",
+   "resources": [
+    "backupPlan"
+   ]
+  },
+  "createbackupvault": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBackupVault",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "createframework": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFramework",
+   "resources": [
+    "framework"
+   ]
+  },
+  "createlegalhold": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLegalHold",
+   "resources": [
+    "legalHold"
+   ]
+  },
+  "createlogicallyairgappedbackupvault": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "backup:MaxRetentionDays",
+    "backup:MinRetentionDays"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLogicallyAirGappedBackupVault",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "createreportplan": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "backup:FrameworkArns"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReportPlan",
+   "resources": [
+    "reportPlan"
+   ]
+  },
+  "createrestoreaccessbackupvault": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRestoreAccessBackupVault",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "createrestoretestingplan": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRestoreTestingPlan",
+   "resources": [
+    "restoreTestingPlan"
+   ]
+  },
+  "createrestoretestingselection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRestoreTestingSelection",
+   "resources": [
+    "restoreTestingPlan"
+   ]
+  },
+  "createtieringconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTieringConfiguration",
+   "resources": [
+    "tieringConfiguration"
+   ]
+  },
+  "deletebackupaccesspoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBackupAccessPoint",
+   "resources": [
+    "backupAccessPoint"
+   ]
+  },
+  "deletebackupplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBackupPlan",
+   "resources": [
+    "backupPlan"
+   ]
+  },
+  "deletebackupselection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBackupSelection",
+   "resources": [
+    "backupPlan"
+   ]
+  },
+  "deletebackupvault": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBackupVault",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "deletebackupvaultaccesspolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteBackupVaultAccessPolicy",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "deletebackupvaultlockconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBackupVaultLockConfiguration",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "deletebackupvaultnotifications": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBackupVaultNotifications",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "deletebackupvaultsharingpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteBackupVaultSharingPolicy",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "deleteframework": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFramework",
+   "resources": [
+    "framework"
+   ]
+  },
+  "deleterecoverypoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRecoveryPoint",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "deletereportplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReportPlan",
+   "resources": [
+    "reportPlan"
+   ]
+  },
+  "deleterestoretestingplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRestoreTestingPlan",
+   "resources": [
+    "restoreTestingPlan"
+   ]
+  },
+  "deleterestoretestingselection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRestoreTestingSelection",
+   "resources": [
+    "restoreTestingPlan"
+   ]
+  },
+  "deletetieringconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTieringConfiguration",
+   "resources": [
+    "tieringConfiguration"
+   ]
+  },
+  "describebackupaccesspoint": {
+   "name": "DescribeBackupAccessPoint",
+   "resources": [
+    "backupAccessPoint"
+   ]
+  },
+  "describebackupjob": {
+   "name": "DescribeBackupJob",
+   "resources": []
+  },
+  "describebackupvault": {
+   "name": "DescribeBackupVault",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "describecopyjob": {
+   "name": "DescribeCopyJob",
+   "resources": []
+  },
+  "describeframework": {
+   "name": "DescribeFramework",
+   "resources": [
+    "framework"
+   ]
+  },
+  "describeglobalsettings": {
+   "name": "DescribeGlobalSettings",
+   "resources": []
+  },
+  "describeprotectedresource": {
+   "name": "DescribeProtectedResource",
+   "resources": []
+  },
+  "describerecoverypoint": {
+   "name": "DescribeRecoveryPoint",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "describeregionsettings": {
+   "name": "DescribeRegionSettings",
+   "resources": []
+  },
+  "describereportjob": {
+   "name": "DescribeReportJob",
+   "resources": []
+  },
+  "describereportplan": {
+   "name": "DescribeReportPlan",
+   "resources": [
+    "reportPlan"
+   ]
+  },
+  "describerestorejob": {
+   "name": "DescribeRestoreJob",
+   "resources": []
+  },
+  "describescanjob": {
+   "name": "DescribeScanJob",
+   "resources": []
+  },
+  "disassociatebackupvaultmpaapprovalteam": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateBackupVaultMpaApprovalTeam",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "disassociaterecoverypoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateRecoveryPoint",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "disassociaterecoverypointfromparent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateRecoveryPointFromParent",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "exportbackupplantemplate": {
+   "name": "ExportBackupPlanTemplate",
+   "resources": []
+  },
+  "getbackupplan": {
+   "name": "GetBackupPlan",
+   "resources": [
+    "backupPlan"
+   ]
+  },
+  "getbackupplanfromjson": {
+   "name": "GetBackupPlanFromJSON",
+   "resources": []
+  },
+  "getbackupplanfromtemplate": {
+   "name": "GetBackupPlanFromTemplate",
+   "resources": []
+  },
+  "getbackupselection": {
+   "name": "GetBackupSelection",
+   "resources": [
+    "backupPlan"
+   ]
+  },
+  "getbackupvaultaccesspolicy": {
+   "name": "GetBackupVaultAccessPolicy",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "getbackupvaultnotifications": {
+   "name": "GetBackupVaultNotifications",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "getbackupvaultsharingpolicy": {
+   "name": "GetBackupVaultSharingPolicy",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "getlegalhold": {
+   "name": "GetLegalHold",
+   "resources": [
+    "legalHold"
+   ]
+  },
+  "getpitrmalwarescanresults": {
+   "name": "GetPITRMalwareScanResults",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "getrecoverypointindexdetails": {
+   "name": "GetRecoveryPointIndexDetails",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "getrecoverypointrestoremetadata": {
+   "name": "GetRecoveryPointRestoreMetadata",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "getrestorejobmetadata": {
+   "name": "GetRestoreJobMetadata",
+   "resources": []
+  },
+  "getrestoretestinginferredmetadata": {
+   "name": "GetRestoreTestingInferredMetadata",
+   "resources": []
+  },
+  "getrestoretestingplan": {
+   "name": "GetRestoreTestingPlan",
+   "resources": [
+    "restoreTestingPlan"
+   ]
+  },
+  "getrestoretestingselection": {
+   "name": "GetRestoreTestingSelection",
+   "resources": [
+    "restoreTestingPlan"
+   ]
+  },
+  "getsupportedresourcetypes": {
+   "name": "GetSupportedResourceTypes",
+   "resources": []
+  },
+  "gettieringconfiguration": {
+   "name": "GetTieringConfiguration",
+   "resources": [
+    "tieringConfiguration"
+   ]
+  },
+  "listbackupaccesspoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBackupAccessPoints",
+   "resources": []
+  },
+  "listbackupaccesspointsbyrecoverypoint": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBackupAccessPointsByRecoveryPoint",
+   "resources": []
+  },
+  "listbackupaccesspointsbyresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBackupAccessPointsByResource",
+   "resources": []
+  },
+  "listbackupjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBackupJobs",
+   "resources": []
+  },
+  "listbackupjobsummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBackupJobSummaries",
+   "resources": []
+  },
+  "listbackupplans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBackupPlans",
+   "resources": []
+  },
+  "listbackupplantemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBackupPlanTemplates",
+   "resources": []
+  },
+  "listbackupplanversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBackupPlanVersions",
+   "resources": [
+    "backupPlan"
+   ]
+  },
+  "listbackupselections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBackupSelections",
+   "resources": [
+    "backupPlan"
+   ]
+  },
+  "listbackupvaults": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBackupVaults",
+   "resources": []
+  },
+  "listcopyjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCopyJobs",
+   "resources": []
+  },
+  "listcopyjobsummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCopyJobSummaries",
+   "resources": []
+  },
+  "listframeworks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFrameworks",
+   "resources": []
+  },
+  "listindexedrecoverypoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIndexedRecoveryPoints",
+   "resources": []
+  },
+  "listindexedrecoverypointsforsearch": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "ListIndexedRecoveryPointsForSearch",
+   "resources": []
+  },
+  "listlegalholds": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLegalHolds",
+   "resources": []
+  },
+  "listprotectedresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProtectedResources",
+   "resources": []
+  },
+  "listprotectedresourcesbybackupvault": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProtectedResourcesByBackupVault",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "listrecoverypointsbybackupvault": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecoveryPointsByBackupVault",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "listrecoverypointsbylegalhold": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecoveryPointsByLegalHold",
+   "resources": [
+    "legalHold"
+   ]
+  },
+  "listrecoverypointsbyresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecoveryPointsByResource",
+   "resources": []
+  },
+  "listreportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReportJobs",
+   "resources": []
+  },
+  "listreportplans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListReportPlans",
+   "resources": []
+  },
+  "listrestoreaccessbackupvaults": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRestoreAccessBackupVaults",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "listrestorejobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRestoreJobs",
+   "resources": []
+  },
+  "listrestorejobsbyprotectedresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRestoreJobsByProtectedResource",
+   "resources": []
+  },
+  "listrestorejobsummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRestoreJobSummaries",
+   "resources": []
+  },
+  "listrestoretestingplans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRestoreTestingPlans",
+   "resources": []
+  },
+  "listrestoretestingselections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRestoreTestingSelections",
+   "resources": [
+    "restoreTestingPlan"
+   ]
+  },
+  "listscanjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScanJobs",
+   "resources": []
+  },
+  "listscanjobsummaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScanJobSummaries",
+   "resources": []
+  },
+  "listtags": {
+   "name": "ListTags",
+   "resources": [
+    "backupAccessPoint",
+    "backupPlan",
+    "backupVault",
+    "framework",
+    "legalHold",
+    "recoveryPoint",
+    "reportPlan",
+    "restoreTestingPlan",
+    "tieringConfiguration"
+   ]
+  },
+  "listtieringconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTieringConfigurations",
+   "resources": []
+  },
+  "putbackupvaultaccesspolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutBackupVaultAccessPolicy",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "putbackupvaultlockconfiguration": {
+   "conditionKeys": [
+    "backup:ChangeableForDays",
+    "backup:MaxRetentionDays",
+    "backup:MinRetentionDays"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutBackupVaultLockConfiguration",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "putbackupvaultnotifications": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutBackupVaultNotifications",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "putbackupvaultsharingpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutBackupVaultSharingPolicy",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "putrestorevalidationresult": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRestoreValidationResult",
+   "resources": []
+  },
+  "revokerestoreaccessbackupvault": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeRestoreAccessBackupVault",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "searchrecoverypoint": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "SearchRecoveryPoint",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "startbackupjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartBackupJob",
+   "resources": [
+    "backupVault"
+   ]
+  },
+  "startcopyjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCopyJob",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "startreportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartReportJob",
+   "resources": [
+    "reportPlan"
+   ]
+  },
+  "startrestorejob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRestoreJob",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "startscanjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartScanJob",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "stopbackupjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopBackupJob",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "backupAccessPoint",
+    "backupPlan",
+    "backupVault",
+    "framework",
+    "legalHold",
+    "recoveryPoint",
+    "reportPlan",
+    "restoreTestingPlan",
+    "tieringConfiguration"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "backupAccessPoint",
+    "backupPlan",
+    "backupVault",
+    "framework",
+    "legalHold",
+    "recoveryPoint",
+    "reportPlan",
+    "restoreTestingPlan",
+    "tieringConfiguration"
+   ]
+  },
+  "updatebackupplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBackupPlan",
+   "resources": [
+    "backupPlan"
+   ]
+  },
+  "updateframework": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFramework",
+   "resources": [
+    "framework"
+   ]
+  },
+  "updateglobalsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGlobalSettings",
+   "resources": []
+  },
+  "updaterecoverypointindexsettings": {
+   "conditionKeys": [
+    "backup:Index"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRecoveryPointIndexSettings",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "updaterecoverypointlifecycle": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRecoveryPointLifecycle",
+   "resources": [
+    "recoveryPoint"
+   ]
+  },
+  "updateregionsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRegionSettings",
+   "resources": []
+  },
+  "updatereportplan": {
+   "conditionKeys": [
+    "backup:FrameworkArns"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReportPlan",
+   "resources": [
+    "reportPlan"
+   ]
+  },
+  "updaterestoretestingplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRestoreTestingPlan",
+   "resources": [
+    "restoreTestingPlan"
+   ]
+  },
+  "updaterestoretestingselection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRestoreTestingSelection",
+   "resources": [
+    "restoreTestingPlan"
+   ]
+  },
+  "updatetieringconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTieringConfiguration",
+   "resources": [
+    "tieringConfiguration"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "backup:ChangeableForDays": [
+   "Numeric"
+  ],
+  "backup:CopyTargetOrgPaths": [
+   "ArrayOfString"
+  ],
+  "backup:CopyTargets": [
+   "ArrayOfARN"
+  ],
+  "backup:FrameworkArns": [
+   "ArrayOfARN"
+  ],
+  "backup:Index": [
+   "String"
+  ],
+  "backup:MaxRetentionDays": [
+   "Numeric"
+  ],
+  "backup:MinRetentionDays": [
+   "Numeric"
+  ],
+  "backup:MpaApprovalTeamArn": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "backupAccessPoint": {
+   "arnFormats": [
+    "arn:${Partition}:backup:${Region}:${Account}:accesspoint/${AccessPointName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "backupPlan": {
+   "arnFormats": [
+    "arn:${Partition}:backup:${Region}:${Account}:backup-plan:${BackupPlanId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "backupVault": {
+   "arnFormats": [
+    "arn:${Partition}:backup:${Region}:${Account}:backup-vault:${BackupVaultName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "framework": {
+   "arnFormats": [
+    "arn:${Partition}:backup:${Region}:${Account}:framework:${FrameworkName}-${FrameworkId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "legalHold": {
+   "arnFormats": [
+    "arn:${Partition}:backup:${Region}:${Account}:legal-hold:${LegalHoldId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "recoveryPoint": {
+   "arnFormats": [
+    "arn:${Partition}:${Vendor}:${Region}:*:${ResourceType}:${RecoveryPointId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "reportPlan": {
+   "arnFormats": [
+    "arn:${Partition}:backup:${Region}:${Account}:report-plan:${ReportPlanName}-${ReportPlanId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "restoreTestingPlan": {
+   "arnFormats": [
+    "arn:${Partition}:backup:${Region}:${Account}:restore-testing-plan:${RestoreTestingPlanName}-${RestoreTestingPlanId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "tieringConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:backup:${Region}:${Account}:tiering-configuration:${TieringConfigurationName}-${TieringConfigurationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "backup",
+ "serviceName": "Backup",
+ "version": "v1.5"
+}

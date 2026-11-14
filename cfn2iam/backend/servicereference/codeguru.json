@@ -1,0 +1,12 @@
+{
+ "actions": {
+  "getcodegurufreetrialsummary": {
+   "name": "GetCodeGuruFreeTrialSummary",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "codeguru",
+ "serviceName": "CodeGuru",
+ "version": "v1.5"
+}

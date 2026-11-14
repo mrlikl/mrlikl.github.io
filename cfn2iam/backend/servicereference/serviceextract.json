@@ -1,0 +1,12 @@
+{
+ "actions": {
+  "getconfig": {
+   "name": "GetConfig",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "serviceextract",
+ "serviceName": "Microservice Extractor for .NET",
+ "version": "v1.5"
+}

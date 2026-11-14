@@ -1,0 +1,209 @@
+{
+ "actions": {
+  "configurelogs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfigureLogs",
+   "resources": [
+    "channels"
+   ]
+  },
+  "createchannel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannel",
+   "resources": []
+  },
+  "createharvestjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHarvestJob",
+   "resources": []
+  },
+  "createoriginendpoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOriginEndpoint",
+   "resources": []
+  },
+  "deletechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannel",
+   "resources": [
+    "channels"
+   ]
+  },
+  "deleteoriginendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOriginEndpoint",
+   "resources": [
+    "origin_endpoints"
+   ]
+  },
+  "describechannel": {
+   "name": "DescribeChannel",
+   "resources": [
+    "channels"
+   ]
+  },
+  "describeharvestjob": {
+   "name": "DescribeHarvestJob",
+   "resources": [
+    "harvest_jobs"
+   ]
+  },
+  "describeoriginendpoint": {
+   "name": "DescribeOriginEndpoint",
+   "resources": [
+    "origin_endpoints"
+   ]
+  },
+  "listchannels": {
+   "name": "ListChannels",
+   "resources": []
+  },
+  "listharvestjobs": {
+   "name": "ListHarvestJobs",
+   "resources": []
+  },
+  "listoriginendpoints": {
+   "name": "ListOriginEndpoints",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "channels",
+    "harvest_jobs",
+    "origin_endpoints"
+   ]
+  },
+  "rotatechannelcredentials": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RotateChannelCredentials",
+   "resources": [
+    "channels"
+   ]
+  },
+  "rotateingestendpointcredentials": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RotateIngestEndpointCredentials",
+   "resources": [
+    "channels"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "channels",
+    "harvest_jobs",
+    "origin_endpoints"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "channels",
+    "harvest_jobs",
+    "origin_endpoints"
+   ]
+  },
+  "updatechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChannel",
+   "resources": [
+    "channels"
+   ]
+  },
+  "updateoriginendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOriginEndpoint",
+   "resources": [
+    "origin_endpoints"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "channels": {
+   "arnFormats": [
+    "arn:${Partition}:mediapackage:${Region}:${Account}:channels/${ChannelIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "harvest_jobs": {
+   "arnFormats": [
+    "arn:${Partition}:mediapackage:${Region}:${Account}:harvest_jobs/${HarvestJobIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "origin_endpoints": {
+   "arnFormats": [
+    "arn:${Partition}:mediapackage:${Region}:${Account}:origin_endpoints/${OriginEndpointIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "mediapackage",
+ "serviceName": "MediaPackage",
+ "version": "v1.5"
+}

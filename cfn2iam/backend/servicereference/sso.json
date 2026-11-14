@@ -1,0 +1,1583 @@
+{
+ "actions": {
+  "addregion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddRegion",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "associatedirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateDirectory",
+   "resources": []
+  },
+  "associateprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateProfile",
+   "resources": []
+  },
+  "attachcustomermanagedpolicyreferencetopermissionset": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AttachCustomerManagedPolicyReferenceToPermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "attachmanagedpolicytopermissionset": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AttachManagedPolicyToPermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "createaccountassignment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccountAssignment",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Account",
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ],
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application",
+    "ApplicationProvider",
+    "Instance"
+   ]
+  },
+  "createapplicationassignment": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplicationAssignment",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "createapplicationinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplicationInstance",
+   "resources": []
+  },
+  "createapplicationinstancecertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplicationInstanceCertificate",
+   "resources": []
+  },
+  "createinstance": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInstance",
+   "resources": [
+    "Instance"
+   ]
+  },
+  "createinstanceaccesscontrolattributeconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInstanceAccessControlAttributeConfiguration",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "createmanagedapplicationinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateManagedApplicationInstance",
+   "resources": []
+  },
+  "createpermissionset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "createprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProfile",
+   "resources": []
+  },
+  "createtrust": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTrust",
+   "resources": []
+  },
+  "createtrustedtokenissuer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTrustedTokenIssuer",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "TrustedTokenIssuer": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "TrustedTokenIssuer"
+   ]
+  },
+  "deleteaccountassignment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccountAssignment",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Account",
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "deleteapplication": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "deleteapplicationaccessscope": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplicationAccessScope",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "deleteapplicationassignment": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplicationAssignment",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "deleteapplicationauthenticationmethod": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplicationAuthenticationMethod",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "deleteapplicationgrant": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplicationGrant",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "deleteapplicationinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplicationInstance",
+   "resources": []
+  },
+  "deleteapplicationinstancecertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplicationInstanceCertificate",
+   "resources": []
+  },
+  "deleteinlinepolicyfrompermissionset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInlinePolicyFromPermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "deleteinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInstance",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "deleteinstanceaccesscontrolattributeconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInstanceAccessControlAttributeConfiguration",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "deletemanagedapplicationinstance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteManagedApplicationInstance",
+   "resources": []
+  },
+  "deletepermissionsboundaryfrompermissionset": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeletePermissionsBoundaryFromPermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "deletepermissionset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "deleteprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProfile",
+   "resources": []
+  },
+  "deletetrustedtokenissuer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTrustedTokenIssuer",
+   "resourceConditionKeys": {
+    "TrustedTokenIssuer": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "TrustedTokenIssuer"
+   ]
+  },
+  "describeaccountassignmentcreationstatus": {
+   "name": "DescribeAccountAssignmentCreationStatus",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "describeaccountassignmentdeletionstatus": {
+   "name": "DescribeAccountAssignmentDeletionStatus",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "describeapplication": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "name": "DescribeApplication",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "describeapplicationassignment": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "name": "DescribeApplicationAssignment",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "describeapplicationprovider": {
+   "name": "DescribeApplicationProvider",
+   "resources": [
+    "ApplicationProvider"
+   ]
+  },
+  "describeinstance": {
+   "name": "DescribeInstance",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "describeinstanceaccesscontrolattributeconfiguration": {
+   "name": "DescribeInstanceAccessControlAttributeConfiguration",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "describepermissionset": {
+   "name": "DescribePermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "describepermissionsetprovisioningstatus": {
+   "name": "DescribePermissionSetProvisioningStatus",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "describeregion": {
+   "name": "DescribeRegion",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "describeregisteredregions": {
+   "name": "DescribeRegisteredRegions",
+   "resources": []
+  },
+  "describetrustedtokenissuer": {
+   "name": "DescribeTrustedTokenIssuer",
+   "resourceConditionKeys": {
+    "TrustedTokenIssuer": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "TrustedTokenIssuer"
+   ]
+  },
+  "detachcustomermanagedpolicyreferencefrompermissionset": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DetachCustomerManagedPolicyReferenceFromPermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "detachmanagedpolicyfrompermissionset": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DetachManagedPolicyFromPermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "disassociatedirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateDirectory",
+   "resources": []
+  },
+  "disassociateprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateProfile",
+   "resources": []
+  },
+  "getapplicationaccessscope": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "name": "GetApplicationAccessScope",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "getapplicationassignmentconfiguration": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "name": "GetApplicationAssignmentConfiguration",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "getapplicationauthenticationmethod": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "name": "GetApplicationAuthenticationMethod",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "getapplicationgrant": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "name": "GetApplicationGrant",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "getapplicationinstance": {
+   "name": "GetApplicationInstance",
+   "resources": []
+  },
+  "getapplicationsessionconfiguration": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "name": "GetApplicationSessionConfiguration",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "getapplicationtemplate": {
+   "name": "GetApplicationTemplate",
+   "resources": []
+  },
+  "getinlinepolicyforpermissionset": {
+   "name": "GetInlinePolicyForPermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "getmanagedapplicationinstance": {
+   "name": "GetManagedApplicationInstance",
+   "resources": []
+  },
+  "getmfadevicemanagementfordirectory": {
+   "name": "GetMfaDeviceManagementForDirectory",
+   "resources": []
+  },
+  "getpermissionsboundaryforpermissionset": {
+   "name": "GetPermissionsBoundaryForPermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "getpermissionset": {
+   "name": "GetPermissionSet",
+   "resources": []
+  },
+  "getprofile": {
+   "name": "GetProfile",
+   "resources": []
+  },
+  "getsharedssoconfiguration": {
+   "name": "GetSharedSsoConfiguration",
+   "resources": []
+  },
+  "getssoconfiguration": {
+   "name": "GetSsoConfiguration",
+   "resources": []
+  },
+  "getssostatus": {
+   "name": "GetSSOStatus",
+   "resources": []
+  },
+  "gettrust": {
+   "name": "GetTrust",
+   "resources": []
+  },
+  "importapplicationinstanceserviceprovidermetadata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportApplicationInstanceServiceProviderMetadata",
+   "resources": []
+  },
+  "listaccountassignmentcreationstatus": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountAssignmentCreationStatus",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "listaccountassignmentdeletionstatus": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountAssignmentDeletionStatus",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "listaccountassignments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountAssignments",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Account",
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "listaccountassignmentsforprincipal": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountAssignmentsForPrincipal",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "listaccountsforprovisionedpermissionset": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountsForProvisionedPermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "listapplicationaccessscopes": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationAccessScopes",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "listapplicationassignments": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationAssignments",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "listapplicationassignmentsforprincipal": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationAssignmentsForPrincipal",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "listapplicationauthenticationmethods": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationAuthenticationMethods",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "listapplicationgrants": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationGrants",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "listapplicationinstancecertificates": {
+   "name": "ListApplicationInstanceCertificates",
+   "resources": []
+  },
+  "listapplicationinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationInstances",
+   "resources": []
+  },
+  "listapplicationproviders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationProviders",
+   "resources": [
+    "ApplicationProvider"
+   ]
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listapplicationtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationTemplates",
+   "resources": []
+  },
+  "listcustomermanagedpolicyreferencesinpermissionset": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomerManagedPolicyReferencesInPermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "listdirectoryassociations": {
+   "name": "ListDirectoryAssociations",
+   "resources": []
+  },
+  "listinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInstances",
+   "resources": []
+  },
+  "listmanagedpoliciesinpermissionset": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedPoliciesInPermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "listpermissionsetprovisioningstatus": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPermissionSetProvisioningStatus",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "listpermissionsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPermissionSets",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "listpermissionsetsprovisionedtoaccount": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPermissionSetsProvisionedToAccount",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Account",
+    "Instance"
+   ]
+  },
+  "listprofileassociations": {
+   "name": "ListProfileAssociations",
+   "resources": []
+  },
+  "listprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfiles",
+   "resources": []
+  },
+  "listregions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRegions",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "Application",
+    "Instance",
+    "PermissionSet",
+    "TrustedTokenIssuer"
+   ]
+  },
+  "listtrustedtokenissuers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrustedTokenIssuers",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "provisionpermissionset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ProvisionPermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Account",
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "putapplicationaccessscope": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutApplicationAccessScope",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "putapplicationassignmentconfiguration": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutApplicationAssignmentConfiguration",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "putapplicationauthenticationmethod": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutApplicationAuthenticationMethod",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "putapplicationgrant": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutApplicationGrant",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "putapplicationsessionconfiguration": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutApplicationSessionConfiguration",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "putinlinepolicytopermissionset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutInlinePolicyToPermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "putmfadevicemanagementfordirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMfaDeviceManagementForDirectory",
+   "resources": []
+  },
+  "putpermissionsboundarytopermissionset": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutPermissionsBoundaryToPermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "putpermissionspolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutPermissionsPolicy",
+   "resources": []
+  },
+  "removeregion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveRegion",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "searchgroups": {
+   "name": "SearchGroups",
+   "resources": []
+  },
+  "searchusers": {
+   "name": "SearchUsers",
+   "resources": []
+  },
+  "startsso": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSSO",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Application",
+    "Instance",
+    "PermissionSet",
+    "TrustedTokenIssuer"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Application",
+    "Instance",
+    "PermissionSet",
+    "TrustedTokenIssuer"
+   ]
+  },
+  "updateapplication": {
+   "conditionKeys": [
+    "sso:ApplicationAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resourceConditionKeys": {
+    "Application": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Application"
+   ]
+  },
+  "updateapplicationinstanceactivecertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplicationInstanceActiveCertificate",
+   "resources": []
+  },
+  "updateapplicationinstancedisplaydata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplicationInstanceDisplayData",
+   "resources": []
+  },
+  "updateapplicationinstanceresponseconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplicationInstanceResponseConfiguration",
+   "resources": []
+  },
+  "updateapplicationinstanceresponseschemaconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplicationInstanceResponseSchemaConfiguration",
+   "resources": []
+  },
+  "updateapplicationinstancesecurityconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplicationInstanceSecurityConfiguration",
+   "resources": []
+  },
+  "updateapplicationinstanceserviceproviderconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplicationInstanceServiceProviderConfiguration",
+   "resources": []
+  },
+  "updateapplicationinstancestatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplicationInstanceStatus",
+   "resources": []
+  },
+  "updateinstance": {
+   "conditionKeys": [
+    "sso:VpceAccessRequired"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInstance",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "updateinstanceaccesscontrolattributeconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInstanceAccessControlAttributeConfiguration",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance"
+   ]
+  },
+  "updatemanagedapplicationinstancestatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateManagedApplicationInstanceStatus",
+   "resources": []
+  },
+  "updatepermissionset": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdatePermissionSet",
+   "resourceConditionKeys": {
+    "Instance": [
+     "sso:PrimaryRegion"
+    ],
+    "PermissionSet": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "Instance",
+    "PermissionSet"
+   ]
+  },
+  "updateprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProfile",
+   "resources": []
+  },
+  "updatessoconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSSOConfiguration",
+   "resources": []
+  },
+  "updatetrust": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTrust",
+   "resources": []
+  },
+  "updatetrustedtokenissuer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTrustedTokenIssuer",
+   "resourceConditionKeys": {
+    "TrustedTokenIssuer": [
+     "sso:PrimaryRegion"
+    ]
+   },
+   "resources": [
+    "TrustedTokenIssuer"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "identitycenter:ApplicationArn": [
+   "ARN"
+  ],
+  "identitycenter:InstanceArn": [
+   "ARN"
+  ],
+  "sso:ApplicationAccount": [
+   "String"
+  ],
+  "sso:PrimaryRegion": [
+   "String"
+  ],
+  "sso:VpceAccessRequired": [
+   "Bool"
+  ]
+ },
+ "resources": {
+  "Account": {
+   "arnFormats": [
+    "arn:${Partition}:sso:::account/${AccountId}"
+   ]
+  },
+  "Application": {
+   "arnFormats": [
+    "arn:${Partition}:sso::${AccountId}:application/${InstanceId}/${ApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "sso:ApplicationAccount",
+    "sso:PrimaryRegion"
+   ]
+  },
+  "ApplicationProvider": {
+   "arnFormats": [
+    "arn:${Partition}:sso::aws:applicationProvider/${ApplicationProviderId}"
+   ]
+  },
+  "Instance": {
+   "arnFormats": [
+    "arn:${Partition}:sso:::instance/${InstanceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "sso:PrimaryRegion"
+   ]
+  },
+  "PermissionSet": {
+   "arnFormats": [
+    "arn:${Partition}:sso:::permissionSet/${InstanceId}/${PermissionSetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "sso:PrimaryRegion"
+   ]
+  },
+  "TrustedTokenIssuer": {
+   "arnFormats": [
+    "arn:${Partition}:sso::${AccountId}:trustedTokenIssuer/${InstanceId}/${TrustedTokenIssuerId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "sso:PrimaryRegion"
+   ]
+  }
+ },
+ "service": "sso",
+ "serviceName": "IAM Identity Center",
+ "version": "v1.5"
+}

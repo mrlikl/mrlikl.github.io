@@ -1,0 +1,326 @@
+{
+ "actions": {
+  "applyarchiverule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ApplyArchiveRule",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "cancelpolicygeneration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelPolicyGeneration",
+   "resources": []
+  },
+  "checkaccessnotgranted": {
+   "name": "CheckAccessNotGranted",
+   "resources": []
+  },
+  "checknonewaccess": {
+   "name": "CheckNoNewAccess",
+   "resources": []
+  },
+  "checknopublicaccess": {
+   "name": "CheckNoPublicAccess",
+   "resources": []
+  },
+  "createaccesspreview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessPreview",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "createanalyzer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAnalyzer",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "createarchiverule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateArchiveRule",
+   "resources": [
+    "ArchiveRule"
+   ]
+  },
+  "createservicelinkedanalyzer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceLinkedAnalyzer",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "deleteanalyzer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAnalyzer",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "deletearchiverule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteArchiveRule",
+   "resources": [
+    "ArchiveRule"
+   ]
+  },
+  "deleteservicelinkedanalyzer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceLinkedAnalyzer",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "generatefindingrecommendation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateFindingRecommendation",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "getaccesspreview": {
+   "name": "GetAccessPreview",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "getanalyzedresource": {
+   "name": "GetAnalyzedResource",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "getanalyzer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetAnalyzer",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "getarchiverule": {
+   "name": "GetArchiveRule",
+   "resources": [
+    "ArchiveRule"
+   ]
+  },
+  "getfinding": {
+   "name": "GetFinding",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "getfindingrecommendation": {
+   "name": "GetFindingRecommendation",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "getfindingsstatistics": {
+   "name": "GetFindingsStatistics",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "getgeneratedpolicy": {
+   "name": "GetGeneratedPolicy",
+   "resources": []
+  },
+  "listaccesspreviewfindings": {
+   "name": "ListAccessPreviewFindings",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "listaccesspreviews": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessPreviews",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "listanalyzedresources": {
+   "name": "ListAnalyzedResources",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "listanalyzers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnalyzers",
+   "resources": []
+  },
+  "listarchiverules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListArchiveRules",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "listfindings": {
+   "name": "ListFindings",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "listpolicygenerations": {
+   "name": "ListPolicyGenerations",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "startpolicygeneration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartPolicyGeneration",
+   "resources": []
+  },
+  "startresourcescan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartResourceScan",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "updateanalyzer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAnalyzer",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "updatearchiverule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateArchiveRule",
+   "resources": [
+    "ArchiveRule"
+   ]
+  },
+  "updatefindings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFindings",
+   "resources": [
+    "Analyzer"
+   ]
+  },
+  "validatepolicy": {
+   "name": "ValidatePolicy",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Analyzer": {
+   "arnFormats": [
+    "arn:${Partition}:access-analyzer:${Region}:${Account}:analyzer/${AnalyzerName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ArchiveRule": {
+   "arnFormats": [
+    "arn:${Partition}:access-analyzer:${Region}:${Account}:analyzer/${AnalyzerName}/archive-rule/${RuleName}"
+   ]
+  }
+ },
+ "service": "access-analyzer",
+ "serviceName": "Access Analyzer",
+ "version": "v1.5"
+}

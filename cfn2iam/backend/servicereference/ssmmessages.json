@@ -1,0 +1,66 @@
+{
+ "actions": {
+  "createcontrolchannel": {
+   "conditionKeys": [
+    "ec2:SourceInstanceARN",
+    "ssm:SourceInstanceARN"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateControlChannel",
+   "resources": []
+  },
+  "createdatachannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataChannel",
+   "resources": []
+  },
+  "opencontrolchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "OpenControlChannel",
+   "resources": []
+  },
+  "opendatachannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "OpenDataChannel",
+   "resources": [
+    "session"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "ec2:SourceInstanceARN": [
+   "ARN"
+  ],
+  "ssm:SourceInstanceARN": [
+   "ARN"
+  ],
+  "ssm:resourceTag/aws:ssmmessages:session-id": [
+   "String"
+  ],
+  "ssm:resourceTag/aws:ssmmessages:target-id": [
+   "String"
+  ]
+ },
+ "resources": {
+  "session": {
+   "arnFormats": [
+    "arn:${Partition}:ssm:${Region}:${Account}:session/${SessionId}"
+   ],
+   "conditionKeys": [
+    "ssm:resourceTag/aws:ssmmessages:session-id",
+    "ssm:resourceTag/aws:ssmmessages:target-id"
+   ]
+  }
+ },
+ "service": "ssmmessages",
+ "serviceName": "SSM Messages",
+ "version": "v1.5"
+}

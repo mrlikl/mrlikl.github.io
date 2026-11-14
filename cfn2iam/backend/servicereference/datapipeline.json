@@ -1,0 +1,267 @@
+{
+ "actions": {
+  "activatepipeline": {
+   "conditionKeys": [
+    "datapipeline:PipelineCreator",
+    "datapipeline:Tag/${TagKey}",
+    "datapipeline:workerGroup"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ActivatePipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "addtags": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "datapipeline:PipelineCreator",
+    "datapipeline:Tag/${TagKey}"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "AddTags",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "createpipeline": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "datapipeline:Tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePipeline",
+   "resources": []
+  },
+  "deactivatepipeline": {
+   "conditionKeys": [
+    "datapipeline:PipelineCreator",
+    "datapipeline:Tag/${TagKey}",
+    "datapipeline:workerGroup"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeactivatePipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "deletepipeline": {
+   "conditionKeys": [
+    "datapipeline:PipelineCreator",
+    "datapipeline:Tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePipeline",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "describeobjects": {
+   "conditionKeys": [
+    "datapipeline:PipelineCreator",
+    "datapipeline:Tag/${TagKey}"
+   ],
+   "name": "DescribeObjects",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "describepipelines": {
+   "conditionKeys": [
+    "datapipeline:PipelineCreator",
+    "datapipeline:Tag/${TagKey}"
+   ],
+   "name": "DescribePipelines",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "evaluateexpression": {
+   "conditionKeys": [
+    "datapipeline:PipelineCreator",
+    "datapipeline:Tag/${TagKey}"
+   ],
+   "name": "EvaluateExpression",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "getaccountlimits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetAccountLimits",
+   "resources": []
+  },
+  "getpipelinedefinition": {
+   "conditionKeys": [
+    "datapipeline:PipelineCreator",
+    "datapipeline:Tag/${TagKey}",
+    "datapipeline:workerGroup"
+   ],
+   "name": "GetPipelineDefinition",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "listpipelines": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPipelines",
+   "resources": []
+  },
+  "pollfortask": {
+   "conditionKeys": [
+    "datapipeline:workerGroup"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PollForTask",
+   "resources": []
+  },
+  "putaccountlimits": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAccountLimits",
+   "resources": []
+  },
+  "putpipelinedefinition": {
+   "conditionKeys": [
+    "datapipeline:PipelineCreator",
+    "datapipeline:Tag/${TagKey}",
+    "datapipeline:workerGroup"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutPipelineDefinition",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "queryobjects": {
+   "conditionKeys": [
+    "datapipeline:PipelineCreator",
+    "datapipeline:Tag/${TagKey}"
+   ],
+   "name": "QueryObjects",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "removetags": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "datapipeline:PipelineCreator",
+    "datapipeline:Tag/${TagKey}"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "RemoveTags",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "reporttaskprogress": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReportTaskProgress",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "reporttaskrunnerheartbeat": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReportTaskRunnerHeartbeat",
+   "resources": []
+  },
+  "setstatus": {
+   "conditionKeys": [
+    "datapipeline:PipelineCreator",
+    "datapipeline:Tag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetStatus",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "settaskstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetTaskStatus",
+   "resources": [
+    "pipeline"
+   ]
+  },
+  "validatepipelinedefinition": {
+   "conditionKeys": [
+    "datapipeline:PipelineCreator",
+    "datapipeline:Tag/${TagKey}",
+    "datapipeline:workerGroup"
+   ],
+   "name": "ValidatePipelineDefinition",
+   "resources": [
+    "pipeline"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "datapipeline:PipelineCreator": [
+   "ArrayOfString"
+  ],
+  "datapipeline:Tag/${TagKey}": [
+   "String"
+  ],
+  "datapipeline:workerGroup": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "pipeline": {
+   "arnFormats": [
+    "arn:${Partition}:datapipeline:${Region}:${Account}:pipeline/${PipelineId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "datapipeline",
+ "serviceName": "Data Pipeline",
+ "version": "v1.5"
+}

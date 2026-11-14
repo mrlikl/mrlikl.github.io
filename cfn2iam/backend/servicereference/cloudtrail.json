@@ -1,0 +1,596 @@
+{
+ "actions": {
+  "addtags": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "AddTags",
+   "resources": [
+    "channel",
+    "dashboard",
+    "eventdatastore",
+    "trail"
+   ]
+  },
+  "cancelquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelQuery",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "createchannel": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannel",
+   "resources": [
+    "channel",
+    "eventdatastore"
+   ]
+  },
+  "createdashboard": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDashboard",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "createeventdatastore": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEventDataStore",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "createservicelinkedchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceLinkedChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "createtrail": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTrail",
+   "resources": [
+    "trail"
+   ]
+  },
+  "deletechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deletedashboard": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDashboard",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "deleteeventdatastore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventDataStore",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "channel",
+    "dashboard",
+    "eventdatastore"
+   ]
+  },
+  "deleteservicelinkedchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceLinkedChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deletetrail": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTrail",
+   "resources": [
+    "trail"
+   ]
+  },
+  "deregisterorganizationdelegatedadmin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterOrganizationDelegatedAdmin",
+   "resources": []
+  },
+  "describequery": {
+   "name": "DescribeQuery",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "describetrails": {
+   "name": "DescribeTrails",
+   "resources": []
+  },
+  "disablefederation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableFederation",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "enablefederation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableFederation",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "generatequery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateQuery",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "generatequeryresultssummary": {
+   "name": "GenerateQueryResultsSummary",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "getchannel": {
+   "name": "GetChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getdashboard": {
+   "name": "GetDashboard",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "geteventconfiguration": {
+   "name": "GetEventConfiguration",
+   "resources": [
+    "eventdatastore",
+    "trail"
+   ]
+  },
+  "geteventdatastore": {
+   "name": "GetEventDataStore",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "geteventdatastoredata": {
+   "name": "GetEventDataStoreData",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "geteventselectors": {
+   "name": "GetEventSelectors",
+   "resources": [
+    "trail"
+   ]
+  },
+  "getimport": {
+   "name": "GetImport",
+   "resources": []
+  },
+  "getinsightselectors": {
+   "name": "GetInsightSelectors",
+   "resources": [
+    "eventdatastore",
+    "trail"
+   ]
+  },
+  "getqueryresults": {
+   "name": "GetQueryResults",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "channel",
+    "dashboard",
+    "eventdatastore"
+   ]
+  },
+  "getservicelinkedchannel": {
+   "name": "GetServiceLinkedChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "gettrail": {
+   "name": "GetTrail",
+   "resources": [
+    "trail"
+   ]
+  },
+  "gettrailstatus": {
+   "name": "GetTrailStatus",
+   "resources": [
+    "trail"
+   ]
+  },
+  "listchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannels",
+   "resources": []
+  },
+  "listdashboards": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDashboards",
+   "resources": []
+  },
+  "listeventdatastores": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEventDataStores",
+   "resources": []
+  },
+  "listimportfailures": {
+   "name": "ListImportFailures",
+   "resources": []
+  },
+  "listimports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListImports",
+   "resources": []
+  },
+  "listinsightsdata": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInsightsData",
+   "resources": [
+    "trail"
+   ]
+  },
+  "listpublickeys": {
+   "name": "ListPublicKeys",
+   "resources": []
+  },
+  "listqueries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQueries",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "listservicelinkedchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceLinkedChannels",
+   "resources": []
+  },
+  "listtags": {
+   "name": "ListTags",
+   "resources": [
+    "channel",
+    "dashboard",
+    "eventdatastore",
+    "trail"
+   ]
+  },
+  "listtrails": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTrails",
+   "resources": []
+  },
+  "lookupevents": {
+   "name": "LookupEvents",
+   "resources": []
+  },
+  "puteventconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutEventConfiguration",
+   "resources": [
+    "eventdatastore",
+    "trail"
+   ]
+  },
+  "puteventselectors": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutEventSelectors",
+   "resources": [
+    "trail"
+   ]
+  },
+  "putinsightselectors": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutInsightSelectors",
+   "resources": [
+    "eventdatastore",
+    "trail"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "channel",
+    "dashboard",
+    "eventdatastore"
+   ]
+  },
+  "registerorganizationdelegatedadmin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterOrganizationDelegatedAdmin",
+   "resources": []
+  },
+  "removetags": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "RemoveTags",
+   "resources": [
+    "channel",
+    "dashboard",
+    "eventdatastore",
+    "trail"
+   ]
+  },
+  "restoreeventdatastore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreEventDataStore",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "searchsamplequeries": {
+   "name": "SearchSampleQueries",
+   "resources": []
+  },
+  "startdashboardrefresh": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDashboardRefresh",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "starteventdatastoreingestion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartEventDataStoreIngestion",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "startimport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartImport",
+   "resources": []
+  },
+  "startlogging": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartLogging",
+   "resources": [
+    "trail"
+   ]
+  },
+  "startquery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartQuery",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "stopeventdatastoreingestion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopEventDataStoreIngestion",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "stopimport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopImport",
+   "resources": []
+  },
+  "stoplogging": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopLogging",
+   "resources": [
+    "trail"
+   ]
+  },
+  "updatechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updatedashboard": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDashboard",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "updateeventdatastore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEventDataStore",
+   "resources": [
+    "eventdatastore"
+   ]
+  },
+  "updateservicelinkedchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceLinkedChannel",
+   "resources": [
+    "channel"
+   ]
+  },
+  "updatetrail": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTrail",
+   "resources": [
+    "trail"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "channel": {
+   "arnFormats": [
+    "arn:${Partition}:cloudtrail:${Region}:${Account}:channel/${ChannelId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dashboard": {
+   "arnFormats": [
+    "arn:${Partition}:cloudtrail:${Region}:${Account}:dashboard/${DashboardName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "eventdatastore": {
+   "arnFormats": [
+    "arn:${Partition}:cloudtrail:${Region}:${Account}:eventdatastore/${EventDataStoreId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "trail": {
+   "arnFormats": [
+    "arn:${Partition}:cloudtrail:${Region}:${Account}:trail/${TrailName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "cloudtrail",
+ "serviceName": "CloudTrail",
+ "version": "v1.5"
+}

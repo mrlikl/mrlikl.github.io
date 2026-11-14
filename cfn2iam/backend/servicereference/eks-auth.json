@@ -1,0 +1,28 @@
+{
+ "actions": {
+  "assumeroleforpodidentity": {
+   "name": "AssumeRoleForPodIdentity",
+   "resources": [
+    "cluster"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ]
+ },
+ "resources": {
+  "cluster": {
+   "arnFormats": [
+    "arn:${Partition}:eks:${Region}:${Account}:cluster/${ClusterName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "eks-auth",
+ "serviceName": "EKS Auth",
+ "version": "v1.5"
+}

@@ -1,0 +1,462 @@
+{
+ "actions": {
+  "batchputpropertyvalues": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "BatchPutPropertyValues",
+   "resources": [
+    "entity",
+    "workspace"
+   ]
+  },
+  "cancelmetadatatransferjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelMetadataTransferJob",
+   "resources": [
+    "metadataTransferJob"
+   ]
+  },
+  "createcomponenttype": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateComponentType",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createentity": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEntity",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createmetadatatransferjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMetadataTransferJob",
+   "resources": []
+  },
+  "createscene": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScene",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createsyncjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSyncJob",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "createworkspace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkspace",
+   "resources": []
+  },
+  "deletecomponenttype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteComponentType",
+   "resources": [
+    "componentType",
+    "workspace"
+   ]
+  },
+  "deleteentity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEntity",
+   "resources": [
+    "entity",
+    "workspace"
+   ]
+  },
+  "deletescene": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScene",
+   "resources": [
+    "scene",
+    "workspace"
+   ]
+  },
+  "deletesyncjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSyncJob",
+   "resources": [
+    "syncJob",
+    "workspace"
+   ]
+  },
+  "deleteworkspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkspace",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "executequery": {
+   "name": "ExecuteQuery",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "getcomponenttype": {
+   "name": "GetComponentType",
+   "resources": [
+    "componentType",
+    "workspace"
+   ]
+  },
+  "getentity": {
+   "name": "GetEntity",
+   "resources": [
+    "entity",
+    "workspace"
+   ]
+  },
+  "getmetadatatransferjob": {
+   "name": "GetMetadataTransferJob",
+   "resources": [
+    "metadataTransferJob"
+   ]
+  },
+  "getpricingplan": {
+   "name": "GetPricingPlan",
+   "resources": []
+  },
+  "getpropertyvalue": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetPropertyValue",
+   "resources": [
+    "componentType",
+    "entity",
+    "workspace"
+   ]
+  },
+  "getpropertyvaluehistory": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetPropertyValueHistory",
+   "resources": [
+    "componentType",
+    "entity",
+    "workspace"
+   ]
+  },
+  "getscene": {
+   "name": "GetScene",
+   "resources": [
+    "scene",
+    "workspace"
+   ]
+  },
+  "getsyncjob": {
+   "name": "GetSyncJob",
+   "resources": [
+    "syncJob",
+    "workspace"
+   ]
+  },
+  "getworkspace": {
+   "name": "GetWorkspace",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listcomponents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListComponents",
+   "resources": [
+    "entity",
+    "workspace"
+   ]
+  },
+  "listcomponenttypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListComponentTypes",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listentities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEntities",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listmetadatatransferjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMetadataTransferJobs",
+   "resources": []
+  },
+  "listproperties": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProperties",
+   "resources": [
+    "entity",
+    "workspace"
+   ]
+  },
+  "listscenes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScenes",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listsyncjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSyncJobs",
+   "resources": [
+    "workspace"
+   ]
+  },
+  "listsyncresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSyncResources",
+   "resources": [
+    "syncJob",
+    "workspace"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "componentType",
+    "entity",
+    "scene",
+    "syncJob",
+    "workspace"
+   ]
+  },
+  "listworkspaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkspaces",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "componentType",
+    "entity",
+    "scene",
+    "syncJob",
+    "workspace"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "componentType",
+    "entity",
+    "scene",
+    "syncJob",
+    "workspace"
+   ]
+  },
+  "updatecomponenttype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateComponentType",
+   "resources": [
+    "componentType",
+    "workspace"
+   ]
+  },
+  "updateentity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEntity",
+   "resources": [
+    "entity",
+    "workspace"
+   ]
+  },
+  "updatepricingplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePricingPlan",
+   "resources": []
+  },
+  "updatescene": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateScene",
+   "resources": [
+    "scene",
+    "workspace"
+   ]
+  },
+  "updateworkspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkspace",
+   "resources": [
+    "workspace"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "iottwinmaker:destinationType": [
+   "String"
+  ],
+  "iottwinmaker:linkedServices": [
+   "ArrayOfString"
+  ],
+  "iottwinmaker:sourceType": [
+   "String"
+  ]
+ },
+ "resources": {
+  "componentType": {
+   "arnFormats": [
+    "arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}/component-type/${ComponentTypeId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "entity": {
+   "arnFormats": [
+    "arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}/entity/${EntityId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "metadataTransferJob": {
+   "arnFormats": [
+    "arn:${Partition}:iottwinmaker:${Region}:${Account}:metadata-transfer-job/${MetadataTransferJobId}"
+   ]
+  },
+  "scene": {
+   "arnFormats": [
+    "arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}/scene/${SceneId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "syncJob": {
+   "arnFormats": [
+    "arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}/sync-job/${SyncJobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workspace": {
+   "arnFormats": [
+    "arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "iottwinmaker",
+ "serviceName": "IoT TwinMaker",
+ "version": "v1.5"
+}

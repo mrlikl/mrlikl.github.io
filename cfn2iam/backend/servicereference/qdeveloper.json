@@ -1,0 +1,102 @@
+{
+ "actions": {
+  "exportartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportArtifact",
+   "resources": [
+    "codeTransformation"
+   ]
+  },
+  "importartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportArtifact",
+   "resources": [
+    "codeTransformation"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "codeTransformation"
+   ]
+  },
+  "startagentsession": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAgentSession",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "codeTransformation"
+   ]
+  },
+  "transformcode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TransformCode",
+   "resources": [
+    "codeTransformation"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "codeTransformation"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "codeTransformation": {
+   "arnFormats": [
+    "arn:${Partition}:qdeveloper:${Region}:${Account}:codeTransformation/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "qdeveloper",
+ "serviceName": "Q Developer",
+ "version": "v1.5"
+}

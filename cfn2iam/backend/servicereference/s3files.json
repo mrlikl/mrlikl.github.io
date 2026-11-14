@@ -1,0 +1,267 @@
+{
+ "actions": {
+  "clientmount": {
+   "conditionKeys": [
+    "s3files:AccessPointArn"
+   ],
+   "name": "ClientMount",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "clientrootaccess": {
+   "conditionKeys": [
+    "s3files:AccessPointArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ClientRootAccess",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "clientwrite": {
+   "conditionKeys": [
+    "s3files:AccessPointArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ClientWrite",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "createaccesspoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessPoint",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "createfilesystem": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFileSystem",
+   "resources": []
+  },
+  "createmounttarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMountTarget",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "deleteaccesspoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccessPoint",
+   "resources": [
+    "access-point"
+   ]
+  },
+  "deletefilesystem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFileSystem",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "deletefilesystempolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteFileSystemPolicy",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "deletemounttarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMountTarget",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "getaccesspoint": {
+   "name": "GetAccessPoint",
+   "resources": [
+    "access-point"
+   ]
+  },
+  "getfilesystem": {
+   "name": "GetFileSystem",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "getfilesystempolicy": {
+   "name": "GetFileSystemPolicy",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "getmounttarget": {
+   "name": "GetMountTarget",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "getsynchronizationconfiguration": {
+   "name": "GetSynchronizationConfiguration",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "listaccesspoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessPoints",
+   "resources": [
+    "access-point"
+   ]
+  },
+  "listfilesystems": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFileSystems",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "listmounttargets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMountTargets",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "access-point",
+    "file-system"
+   ]
+  },
+  "putfilesystempolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutFileSystemPolicy",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "putsynchronizationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSynchronizationConfiguration",
+   "resources": [
+    "file-system"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "s3files:CreateAction"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "access-point",
+    "file-system"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "access-point",
+    "file-system"
+   ]
+  },
+  "updatemounttarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMountTarget",
+   "resources": [
+    "file-system"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "s3files:AccessPointArn": [
+   "ARN"
+  ],
+  "s3files:CreateAction": [
+   "String"
+  ]
+ },
+ "resources": {
+  "access-point": {
+   "arnFormats": [
+    "arn:${Partition}:s3files:${Region}:${Account}:file-system/${FileSystemId}/access-point/${AccessPointId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "file-system": {
+   "arnFormats": [
+    "arn:${Partition}:s3files:${Region}:${Account}:file-system/${FileSystemId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "s3files",
+ "serviceName": "S3 Files",
+ "version": "v1.5"
+}

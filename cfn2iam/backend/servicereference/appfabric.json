@@ -1,0 +1,336 @@
+{
+ "actions": {
+  "batchgetuseraccesstasks": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchGetUserAccessTasks",
+   "resources": [
+    "appbundle"
+   ]
+  },
+  "connectappauthorization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConnectAppAuthorization",
+   "resources": [
+    "appauthorization",
+    "appbundle"
+   ]
+  },
+  "createappauthorization": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAppAuthorization",
+   "resources": [
+    "appbundle"
+   ]
+  },
+  "createappbundle": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAppBundle",
+   "resources": []
+  },
+  "createingestion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIngestion",
+   "resources": [
+    "appbundle"
+   ]
+  },
+  "createingestiondestination": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIngestionDestination",
+   "resources": [
+    "appbundle",
+    "ingestion"
+   ]
+  },
+  "deleteappauthorization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppAuthorization",
+   "resources": [
+    "appauthorization",
+    "appbundle"
+   ]
+  },
+  "deleteappbundle": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppBundle",
+   "resources": [
+    "appbundle"
+   ]
+  },
+  "deleteingestion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIngestion",
+   "resources": [
+    "appbundle",
+    "ingestion"
+   ]
+  },
+  "deleteingestiondestination": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIngestionDestination",
+   "resources": [
+    "appbundle",
+    "ingestion",
+    "ingestiondestination"
+   ]
+  },
+  "getappauthorization": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAppAuthorization",
+   "resources": [
+    "appauthorization",
+    "appbundle"
+   ]
+  },
+  "getappbundle": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAppBundle",
+   "resources": [
+    "appbundle"
+   ]
+  },
+  "getingestion": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetIngestion",
+   "resources": [
+    "appbundle",
+    "ingestion"
+   ]
+  },
+  "getingestiondestination": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetIngestionDestination",
+   "resources": [
+    "appbundle",
+    "ingestion",
+    "ingestiondestination"
+   ]
+  },
+  "listappauthorizations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppAuthorizations",
+   "resources": [
+    "appbundle"
+   ]
+  },
+  "listappbundles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppBundles",
+   "resources": []
+  },
+  "listingestiondestinations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIngestionDestinations",
+   "resources": [
+    "appbundle",
+    "ingestion"
+   ]
+  },
+  "listingestions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIngestions",
+   "resources": [
+    "appbundle"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "appauthorization",
+    "appbundle",
+    "ingestion",
+    "ingestiondestination"
+   ]
+  },
+  "startingestion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartIngestion",
+   "resources": [
+    "appbundle",
+    "ingestion"
+   ]
+  },
+  "startuseraccesstasks": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartUserAccessTasks",
+   "resources": [
+    "appbundle"
+   ]
+  },
+  "stopingestion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopIngestion",
+   "resources": [
+    "appbundle",
+    "ingestion"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "appauthorization",
+    "appbundle",
+    "ingestion",
+    "ingestiondestination"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "appauthorization",
+    "appbundle",
+    "ingestion",
+    "ingestiondestination"
+   ]
+  },
+  "updateappauthorization": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAppAuthorization",
+   "resources": [
+    "appauthorization",
+    "appbundle"
+   ]
+  },
+  "updateingestiondestination": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIngestionDestination",
+   "resources": [
+    "appbundle",
+    "ingestion",
+    "ingestiondestination"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "appauthorization": {
+   "arnFormats": [
+    "arn:${Partition}:appfabric:${Region}:${Account}:appbundle/${AppbundleId}/appauthorization/${AppAuthorizationIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "appbundle": {
+   "arnFormats": [
+    "arn:${Partition}:appfabric:${Region}:${Account}:appbundle/${AppBundleIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ingestion": {
+   "arnFormats": [
+    "arn:${Partition}:appfabric:${Region}:${Account}:appbundle/${AppbundleId}/ingestion/${IngestionIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ingestiondestination": {
+   "arnFormats": [
+    "arn:${Partition}:appfabric:${Region}:${Account}:appbundle/${AppbundleId}/ingestion/${IngestionIdentifier}/ingestiondestination/${IngestionDestinationIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "appfabric",
+ "serviceName": "AppFabric",
+ "version": "v1.5"
+}

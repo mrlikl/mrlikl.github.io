@@ -1,0 +1,169 @@
+{
+ "actions": {
+  "createexport": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExport",
+   "resources": [
+    "billingview",
+    "table"
+   ]
+  },
+  "deleteexport": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExport",
+   "resources": [
+    "export"
+   ]
+  },
+  "getexecution": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetExecution",
+   "resources": [
+    "export"
+   ]
+  },
+  "getexport": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetExport",
+   "resources": [
+    "export"
+   ]
+  },
+  "gettable": {
+   "name": "GetTable",
+   "resources": [
+    "table"
+   ]
+  },
+  "listexecutions": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExecutions",
+   "resources": [
+    "export"
+   ]
+  },
+  "listexports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExports",
+   "resources": []
+  },
+  "listtables": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTables",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "export"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "export"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "export"
+   ]
+  },
+  "updateexport": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExport",
+   "resources": [
+    "billingview",
+    "export",
+    "table"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "billingview": {
+   "arnFormats": [
+    "arn:${Partition}:billing::${Account}:billingview/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "export": {
+   "arnFormats": [
+    "arn:${Partition}:bcm-data-exports:${Region}:${Account}:export/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "table": {
+   "arnFormats": [
+    "arn:${Partition}:bcm-data-exports:${Region}:${Account}:table/${Identifier}"
+   ]
+  }
+ },
+ "service": "bcm-data-exports",
+ "serviceName": "BillingAndCostManagementDataExports",
+ "version": "v1.5"
+}

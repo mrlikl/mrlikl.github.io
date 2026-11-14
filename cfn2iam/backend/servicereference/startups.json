@@ -1,0 +1,12 @@
+{
+ "actions": {
+  "getspendsummary": {
+   "name": "GetSpendSummary",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "startups",
+ "serviceName": "Startups",
+ "version": "v1.5"
+}

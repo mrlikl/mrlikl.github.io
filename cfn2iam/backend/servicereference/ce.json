@@ -1,0 +1,511 @@
+{
+ "actions": {
+  "createanomalymonitor": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAnomalyMonitor",
+   "resources": []
+  },
+  "createanomalysubscription": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAnomalySubscription",
+   "resources": []
+  },
+  "createcostcategorydefinition": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCostCategoryDefinition",
+   "resources": []
+  },
+  "createnotificationsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNotificationSubscription",
+   "resources": []
+  },
+  "createreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReport",
+   "resources": []
+  },
+  "deleteanomalymonitor": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAnomalyMonitor",
+   "resources": [
+    "anomalymonitor"
+   ]
+  },
+  "deleteanomalysubscription": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAnomalySubscription",
+   "resources": [
+    "anomalysubscription"
+   ]
+  },
+  "deletecostcategorydefinition": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCostCategoryDefinition",
+   "resources": [
+    "costcategory"
+   ]
+  },
+  "deletenotificationsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotificationSubscription",
+   "resources": []
+  },
+  "deletereport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReport",
+   "resources": []
+  },
+  "describecostcategorydefinition": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeCostCategoryDefinition",
+   "resources": [
+    "costcategory"
+   ]
+  },
+  "describenotificationsubscription": {
+   "name": "DescribeNotificationSubscription",
+   "resources": []
+  },
+  "describereport": {
+   "name": "DescribeReport",
+   "resources": []
+  },
+  "getanomalies": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAnomalies",
+   "resources": [
+    "anomalymonitor"
+   ]
+  },
+  "getanomalymonitors": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAnomalyMonitors",
+   "resources": [
+    "anomalymonitor"
+   ]
+  },
+  "getanomalysubscriptions": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAnomalySubscriptions",
+   "resources": [
+    "anomalysubscription"
+   ]
+  },
+  "getapproximateusagerecords": {
+   "name": "GetApproximateUsageRecords",
+   "resources": []
+  },
+  "getcommitmentpurchaseanalysis": {
+   "name": "GetCommitmentPurchaseAnalysis",
+   "resources": []
+  },
+  "getconsoleactionsetenforced": {
+   "name": "GetConsoleActionSetEnforced",
+   "resources": []
+  },
+  "getcostandusage": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetCostAndUsage",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "getcostandusagecomparisons": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetCostAndUsageComparisons",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "getcostandusagewithresources": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetCostAndUsageWithResources",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "getcostcategories": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetCostCategories",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "getcostcomparisondrivers": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetCostComparisonDrivers",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "getcostforecast": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetCostForecast",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "getdimensionvalues": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetDimensionValues",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "getpreferences": {
+   "name": "GetPreferences",
+   "resources": []
+  },
+  "getreservationcoverage": {
+   "name": "GetReservationCoverage",
+   "resources": []
+  },
+  "getreservationpurchaserecommendation": {
+   "name": "GetReservationPurchaseRecommendation",
+   "resources": []
+  },
+  "getreservationutilization": {
+   "name": "GetReservationUtilization",
+   "resources": []
+  },
+  "getrightsizingrecommendation": {
+   "name": "GetRightsizingRecommendation",
+   "resources": []
+  },
+  "getsavingsplanpurchaserecommendationdetails": {
+   "name": "GetSavingsPlanPurchaseRecommendationDetails",
+   "resources": []
+  },
+  "getsavingsplanscoverage": {
+   "name": "GetSavingsPlansCoverage",
+   "resources": []
+  },
+  "getsavingsplanspurchaserecommendation": {
+   "name": "GetSavingsPlansPurchaseRecommendation",
+   "resources": []
+  },
+  "getsavingsplansutilization": {
+   "name": "GetSavingsPlansUtilization",
+   "resources": []
+  },
+  "getsavingsplansutilizationdetails": {
+   "name": "GetSavingsPlansUtilizationDetails",
+   "resources": []
+  },
+  "gettags": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetTags",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "getusageforecast": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetUsageForecast",
+   "resources": [
+    "billingview"
+   ]
+  },
+  "listcommitmentpurchaseanalyses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCommitmentPurchaseAnalyses",
+   "resources": []
+  },
+  "listcostallocationtagbackfillhistory": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCostAllocationTagBackfillHistory",
+   "resources": []
+  },
+  "listcostallocationtags": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCostAllocationTags",
+   "resources": []
+  },
+  "listcostcategorydefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCostCategoryDefinitions",
+   "resources": []
+  },
+  "listcostcategoryresourceassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCostCategoryResourceAssociations",
+   "resources": []
+  },
+  "listsavingsplanspurchaserecommendationgeneration": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSavingsPlansPurchaseRecommendationGeneration",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "anomalymonitor",
+    "anomalysubscription",
+    "costcategory"
+   ]
+  },
+  "provideanomalyfeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ProvideAnomalyFeedback",
+   "resources": []
+  },
+  "startcommitmentpurchaseanalysis": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCommitmentPurchaseAnalysis",
+   "resources": []
+  },
+  "startcostallocationtagbackfill": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCostAllocationTagBackfill",
+   "resources": []
+  },
+  "startsavingsplanspurchaserecommendationgeneration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSavingsPlansPurchaseRecommendationGeneration",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "anomalymonitor",
+    "anomalysubscription",
+    "costcategory"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "anomalymonitor",
+    "anomalysubscription",
+    "costcategory"
+   ]
+  },
+  "updateanomalymonitor": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAnomalyMonitor",
+   "resources": [
+    "anomalymonitor"
+   ]
+  },
+  "updateanomalysubscription": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAnomalySubscription",
+   "resources": [
+    "anomalysubscription"
+   ]
+  },
+  "updateconsoleactionsetenforced": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConsoleActionSetEnforced",
+   "resources": []
+  },
+  "updatecostallocationtagsstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCostAllocationTagsStatus",
+   "resources": []
+  },
+  "updatecostcategorydefinition": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCostCategoryDefinition",
+   "resources": [
+    "costcategory"
+   ]
+  },
+  "updatenotificationsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotificationSubscription",
+   "resources": []
+  },
+  "updatepreferences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePreferences",
+   "resources": []
+  },
+  "updatereport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReport",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "anomalymonitor": {
+   "arnFormats": [
+    "arn:${Partition}:ce::${Account}:anomalymonitor/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "anomalysubscription": {
+   "arnFormats": [
+    "arn:${Partition}:ce::${Account}:anomalysubscription/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "billingview": {
+   "arnFormats": [
+    "arn:${Partition}:billing::${Account}:billingview/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "costcategory": {
+   "arnFormats": [
+    "arn:${Partition}:ce::${Account}:costcategory/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "ce",
+ "serviceName": "Cost Explorer Service",
+ "version": "v1.5"
+}

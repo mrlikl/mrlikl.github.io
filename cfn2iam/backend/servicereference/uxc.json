@@ -1,0 +1,47 @@
+{
+ "actions": {
+  "deleteaccountcolor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccountColor",
+   "resources": []
+  },
+  "getaccountcolor": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetAccountColor",
+   "resources": []
+  },
+  "getaccountcustomizations": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetAccountCustomizations",
+   "resources": []
+  },
+  "listservices": {
+   "name": "ListServices",
+   "resources": []
+  },
+  "putaccountcolor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAccountColor",
+   "resources": []
+  },
+  "updateaccountcustomizations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountCustomizations",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "uxc",
+ "serviceName": "User Experience Customization (UXC)",
+ "version": "v1.5"
+}

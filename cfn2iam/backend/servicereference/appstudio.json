@@ -1,0 +1,53 @@
+{
+ "actions": {
+  "getaccountstatus": {
+   "name": "GetAccountStatus",
+   "resources": []
+  },
+  "getenablementjobstatus": {
+   "name": "GetEnablementJobStatus",
+   "resources": []
+  },
+  "startenablementjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartEnablementJob",
+   "resources": []
+  },
+  "startrollbackenablementjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRollbackEnablementJob",
+   "resources": []
+  },
+  "startteamdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTeamDeployment",
+   "resources": []
+  }
+ },
+ "resources": {
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:appstudio:${Region}:${Account}:application/${ApplicationId}"
+   ]
+  },
+  "connector": {
+   "arnFormats": [
+    "arn:${Partition}:appstudio:${Region}:${Account}:connector/${ConnectionId}"
+   ]
+  },
+  "instance": {
+   "arnFormats": [
+    "arn:${Partition}:appstudio:${Region}:${Account}:instance/${InstanceId}"
+   ]
+  }
+ },
+ "service": "appstudio",
+ "serviceName": "App Studio",
+ "version": "v1.5"
+}

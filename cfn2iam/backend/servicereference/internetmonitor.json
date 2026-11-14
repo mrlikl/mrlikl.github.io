@@ -1,0 +1,177 @@
+{
+ "actions": {
+  "createmonitor": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMonitor",
+   "resources": [
+    "Monitor"
+   ]
+  },
+  "deletemonitor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMonitor",
+   "resources": [
+    "Monitor"
+   ]
+  },
+  "gethealthevent": {
+   "name": "GetHealthEvent",
+   "resources": [
+    "Monitor"
+   ]
+  },
+  "getinternetevent": {
+   "name": "GetInternetEvent",
+   "resources": [
+    "InternetEvent"
+   ]
+  },
+  "getmonitor": {
+   "name": "GetMonitor",
+   "resources": [
+    "Monitor"
+   ]
+  },
+  "getqueryresults": {
+   "name": "GetQueryResults",
+   "resources": [
+    "Monitor"
+   ]
+  },
+  "getquerystatus": {
+   "name": "GetQueryStatus",
+   "resources": [
+    "Monitor"
+   ]
+  },
+  "link": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Link",
+   "resources": []
+  },
+  "listhealthevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHealthEvents",
+   "resources": [
+    "Monitor"
+   ]
+  },
+  "listinternetevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInternetEvents",
+   "resources": []
+  },
+  "listmonitors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMonitors",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "Monitor"
+   ]
+  },
+  "startquery": {
+   "name": "StartQuery",
+   "resources": [
+    "Monitor"
+   ]
+  },
+  "stopquery": {
+   "name": "StopQuery",
+   "resources": [
+    "Monitor"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Monitor"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Monitor"
+   ]
+  },
+  "updatemonitor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMonitor",
+   "resources": [
+    "Monitor"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "HealthEvent": {
+   "arnFormats": [
+    "arn:${Partition}:internetmonitor:${Region}:${Account}:monitor/${MonitorName}/health-event/${EventId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "InternetEvent": {
+   "arnFormats": [
+    "arn:${Partition}:internetmonitor::${Account}:internet-event/${InternetEventId}"
+   ]
+  },
+  "Monitor": {
+   "arnFormats": [
+    "arn:${Partition}:internetmonitor:${Region}:${Account}:monitor/${MonitorName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "internetmonitor",
+ "serviceName": "Internet Monitor",
+ "version": "v1.5"
+}

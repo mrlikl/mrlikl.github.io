@@ -1,0 +1,1426 @@
+{
+ "actions": {
+  "addtagstoresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "AddTagsToResource",
+   "resources": [
+    "cluster",
+    "globalreplicationgroup",
+    "parametergroup",
+    "replicationgroup",
+    "reserved-instance",
+    "securitygroup",
+    "serverlesscache",
+    "serverlesscachesnapshot",
+    "snapshot",
+    "subnetgroup",
+    "user",
+    "usergroup"
+   ]
+  },
+  "authorizecachesecuritygroupingress": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AuthorizeCacheSecurityGroupIngress",
+   "resources": [
+    "securitygroup"
+   ]
+  },
+  "batchapplyupdateaction": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchApplyUpdateAction",
+   "resources": [
+    "cluster",
+    "replicationgroup"
+   ]
+  },
+  "batchstopupdateaction": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchStopUpdateAction",
+   "resources": [
+    "cluster",
+    "replicationgroup"
+   ]
+  },
+  "completemigration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteMigration",
+   "resources": [
+    "cluster",
+    "replicationgroup"
+   ]
+  },
+  "connect": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Connect",
+   "resources": [
+    "replicationgroup",
+    "serverlesscache",
+    "user"
+   ]
+  },
+  "copyserverlesscachesnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyServerlessCacheSnapshot",
+   "resourceConditionKeys": {
+    "serverlesscachesnapshot": [
+     "aws:ResourceTag/${TagKey}",
+     "elasticache:KmsKeyId"
+    ]
+   },
+   "resources": [
+    "serverlesscachesnapshot"
+   ]
+  },
+  "copysnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "elasticache:KmsKeyId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopySnapshot",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "createcachecluster": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCacheCluster",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys",
+     "elasticache:AuthTokenEnabled",
+     "elasticache:CacheNodeType",
+     "elasticache:CacheParameterGroupName",
+     "elasticache:EngineType",
+     "elasticache:EngineVersion",
+     "elasticache:MultiAZEnabled",
+     "elasticache:SnapshotRetentionLimit"
+    ],
+    "replicationgroup": [
+     "elasticache:AuthTokenEnabled",
+     "elasticache:CacheNodeType",
+     "elasticache:CacheParameterGroupName",
+     "elasticache:EngineType",
+     "elasticache:EngineVersion",
+     "elasticache:MultiAZEnabled",
+     "elasticache:SnapshotRetentionLimit"
+    ]
+   },
+   "resources": [
+    "cluster",
+    "parametergroup",
+    "replicationgroup",
+    "securitygroup",
+    "snapshot",
+    "subnetgroup"
+   ]
+  },
+  "createcacheparametergroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "elasticache:CacheParameterGroupName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCacheParameterGroup",
+   "resources": [
+    "parametergroup"
+   ]
+  },
+  "createcachesecuritygroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCacheSecurityGroup",
+   "resources": [
+    "securitygroup"
+   ]
+  },
+  "createcachesubnetgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCacheSubnetGroup",
+   "resources": [
+    "subnetgroup"
+   ]
+  },
+  "createglobalreplicationgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGlobalReplicationGroup",
+   "resourceConditionKeys": {
+    "globalreplicationgroup": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "globalreplicationgroup",
+    "replicationgroup"
+   ]
+  },
+  "createreplicationgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReplicationGroup",
+   "resourceConditionKeys": {
+    "globalreplicationgroup": [
+     "elasticache:AtRestEncryptionEnabled",
+     "elasticache:AuthTokenEnabled",
+     "elasticache:AutomaticFailoverEnabled",
+     "elasticache:CacheNodeType",
+     "elasticache:CacheParameterGroupName",
+     "elasticache:ClusterModeEnabled",
+     "elasticache:EngineType",
+     "elasticache:EngineVersion",
+     "elasticache:KmsKeyId",
+     "elasticache:MultiAZEnabled",
+     "elasticache:NumNodeGroups",
+     "elasticache:ReplicasPerNodeGroup",
+     "elasticache:SnapshotRetentionLimit",
+     "elasticache:TransitEncryptionEnabled"
+    ],
+    "replicationgroup": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys",
+     "elasticache:AtRestEncryptionEnabled",
+     "elasticache:AuthTokenEnabled",
+     "elasticache:AutomaticFailoverEnabled",
+     "elasticache:CacheNodeType",
+     "elasticache:CacheParameterGroupName",
+     "elasticache:ClusterModeEnabled",
+     "elasticache:Durability",
+     "elasticache:EngineType",
+     "elasticache:EngineVersion",
+     "elasticache:KmsKeyId",
+     "elasticache:MultiAZEnabled",
+     "elasticache:NumNodeGroups",
+     "elasticache:ReplicasPerNodeGroup",
+     "elasticache:SnapshotRetentionLimit",
+     "elasticache:TransitEncryptionEnabled"
+    ]
+   },
+   "resources": [
+    "cluster",
+    "globalreplicationgroup",
+    "parametergroup",
+    "replicationgroup",
+    "securitygroup",
+    "snapshot",
+    "subnetgroup",
+    "usergroup"
+   ]
+  },
+  "createserverlesscache": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServerlessCache",
+   "resourceConditionKeys": {
+    "serverlesscache": [
+     "aws:ResourceTag/${TagKey}",
+     "elasticache:ConnectionType",
+     "elasticache:DataStorageUnit",
+     "elasticache:EngineType",
+     "elasticache:EngineVersion",
+     "elasticache:KmsKeyId",
+     "elasticache:MaximumDataStorage",
+     "elasticache:MaximumECPUPerSecond",
+     "elasticache:MinimumDataStorage",
+     "elasticache:MinimumECPUPerSecond",
+     "elasticache:SnapshotRetentionLimit"
+    ],
+    "serverlesscachesnapshot": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "snapshot": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "usergroup": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "serverlesscache",
+    "serverlesscachesnapshot",
+    "snapshot",
+    "usergroup"
+   ]
+  },
+  "createserverlesscachesnapshot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServerlessCacheSnapshot",
+   "resourceConditionKeys": {
+    "serverlesscache": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "serverlesscachesnapshot": [
+     "aws:ResourceTag/${TagKey}",
+     "elasticache:KmsKeyId"
+    ]
+   },
+   "resources": [
+    "serverlesscache",
+    "serverlesscachesnapshot"
+   ]
+  },
+  "createsnapshot": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSnapshot",
+   "resourceConditionKeys": {
+    "snapshot": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys",
+     "elasticache:KmsKeyId"
+    ]
+   },
+   "resources": [
+    "cluster",
+    "replicationgroup",
+    "snapshot"
+   ]
+  },
+  "createuser": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "elasticache:UserAuthenticationMode"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "createusergroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUserGroup",
+   "resourceConditionKeys": {
+    "usergroup": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "user",
+    "usergroup"
+   ]
+  },
+  "decreasenodegroupsinglobalreplicationgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "elasticache:NumNodeGroups"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DecreaseNodeGroupsInGlobalReplicationGroup",
+   "resources": [
+    "globalreplicationgroup"
+   ]
+  },
+  "decreasereplicacount": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "elasticache:ReplicasPerNodeGroup"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DecreaseReplicaCount",
+   "resources": [
+    "replicationgroup"
+   ]
+  },
+  "deletecachecluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCacheCluster",
+   "resourceConditionKeys": {
+    "cluster": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "cluster",
+    "snapshot"
+   ]
+  },
+  "deletecacheparametergroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "elasticache:CacheParameterGroupName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCacheParameterGroup",
+   "resources": [
+    "parametergroup"
+   ]
+  },
+  "deletecachesecuritygroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCacheSecurityGroup",
+   "resources": [
+    "securitygroup"
+   ]
+  },
+  "deletecachesubnetgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCacheSubnetGroup",
+   "resources": [
+    "subnetgroup"
+   ]
+  },
+  "deleteglobalreplicationgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGlobalReplicationGroup",
+   "resources": [
+    "globalreplicationgroup"
+   ]
+  },
+  "deletereplicationgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReplicationGroup",
+   "resourceConditionKeys": {
+    "replicationgroup": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "replicationgroup",
+    "snapshot"
+   ]
+  },
+  "deleteserverlesscache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServerlessCache",
+   "resourceConditionKeys": {
+    "serverlesscache": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "serverlesscache",
+    "serverlesscachesnapshot"
+   ]
+  },
+  "deleteserverlesscachesnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServerlessCacheSnapshot",
+   "resourceConditionKeys": {
+    "serverlesscachesnapshot": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "serverlesscachesnapshot"
+   ]
+  },
+  "deletesnapshot": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSnapshot",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "deleteuser": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "deleteusergroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserGroup",
+   "resources": [
+    "usergroup"
+   ]
+  },
+  "describecacheclusters": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeCacheClusters",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "describecacheengineversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeCacheEngineVersions",
+   "resources": []
+  },
+  "describecacheparametergroups": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeCacheParameterGroups",
+   "resources": [
+    "parametergroup"
+   ]
+  },
+  "describecacheparameters": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeCacheParameters",
+   "resources": [
+    "parametergroup"
+   ]
+  },
+  "describecachesecuritygroups": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeCacheSecurityGroups",
+   "resources": [
+    "securitygroup"
+   ]
+  },
+  "describecachesubnetgroups": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeCacheSubnetGroups",
+   "resources": [
+    "subnetgroup"
+   ]
+  },
+  "describeenginedefaultparameters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeEngineDefaultParameters",
+   "resources": []
+  },
+  "describeevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeEvents",
+   "resources": []
+  },
+  "describeglobalreplicationgroups": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeGlobalReplicationGroups",
+   "resources": [
+    "globalreplicationgroup"
+   ]
+  },
+  "describereplicationgroups": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeReplicationGroups",
+   "resources": [
+    "replicationgroup"
+   ]
+  },
+  "describereservedcachenodes": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeReservedCacheNodes",
+   "resources": [
+    "reserved-instance"
+   ]
+  },
+  "describereservedcachenodesofferings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeReservedCacheNodesOfferings",
+   "resources": []
+  },
+  "describeserverlesscaches": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeServerlessCaches",
+   "resourceConditionKeys": {
+    "serverlesscache": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "serverlesscache"
+   ]
+  },
+  "describeserverlesscachesnapshots": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeServerlessCacheSnapshots",
+   "resourceConditionKeys": {
+    "serverlesscache": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "serverlesscachesnapshot": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "serverlesscache",
+    "serverlesscachesnapshot"
+   ]
+  },
+  "describeserviceupdates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeServiceUpdates",
+   "resources": []
+  },
+  "describesnapshots": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeSnapshots",
+   "resources": [
+    "snapshot"
+   ]
+  },
+  "describeupdateactions": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeUpdateActions",
+   "resources": [
+    "cluster",
+    "replicationgroup"
+   ]
+  },
+  "describeusergroups": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeUserGroups",
+   "resources": [
+    "usergroup"
+   ]
+  },
+  "describeusers": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeUsers",
+   "resources": [
+    "user"
+   ]
+  },
+  "disassociateglobalreplicationgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateGlobalReplicationGroup",
+   "resources": [
+    "globalreplicationgroup"
+   ]
+  },
+  "exportserverlesscachesnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportServerlessCacheSnapshot",
+   "resourceConditionKeys": {
+    "serverlesscachesnapshot": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "serverlesscachesnapshot"
+   ]
+  },
+  "failoverglobalreplicationgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "FailoverGlobalReplicationGroup",
+   "resources": [
+    "globalreplicationgroup"
+   ]
+  },
+  "increasenodegroupsinglobalreplicationgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "elasticache:NumNodeGroups"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "IncreaseNodeGroupsInGlobalReplicationGroup",
+   "resources": [
+    "globalreplicationgroup"
+   ]
+  },
+  "increasereplicacount": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "elasticache:ReplicasPerNodeGroup"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "IncreaseReplicaCount",
+   "resources": [
+    "replicationgroup"
+   ]
+  },
+  "interruptclusterazpower": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InterruptClusterAzPower",
+   "resources": [
+    "replicationgroup"
+   ]
+  },
+  "listallowednodetypemodifications": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAllowedNodeTypeModifications",
+   "resources": [
+    "cluster",
+    "replicationgroup"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "cluster",
+    "parametergroup",
+    "replicationgroup",
+    "reserved-instance",
+    "securitygroup",
+    "serverlesscache",
+    "serverlesscachesnapshot",
+    "snapshot",
+    "subnetgroup",
+    "user",
+    "usergroup"
+   ]
+  },
+  "modifycachecluster": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyCacheCluster",
+   "resourceConditionKeys": {
+    "cluster": [
+     "elasticache:AuthTokenEnabled",
+     "elasticache:CacheNodeType",
+     "elasticache:CacheParameterGroupName",
+     "elasticache:EngineVersion",
+     "elasticache:MultiAZEnabled",
+     "elasticache:SnapshotRetentionLimit"
+    ]
+   },
+   "resources": [
+    "cluster",
+    "parametergroup",
+    "securitygroup"
+   ]
+  },
+  "modifycacheparametergroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "elasticache:CacheParameterGroupName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyCacheParameterGroup",
+   "resources": [
+    "parametergroup"
+   ]
+  },
+  "modifycachesubnetgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyCacheSubnetGroup",
+   "resources": [
+    "subnetgroup"
+   ]
+  },
+  "modifyglobalreplicationgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "elasticache:AutomaticFailoverEnabled",
+    "elasticache:CacheNodeType",
+    "elasticache:EngineVersion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyGlobalReplicationGroup",
+   "resources": [
+    "globalreplicationgroup"
+   ]
+  },
+  "modifyreplicationgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyReplicationGroup",
+   "resourceConditionKeys": {
+    "replicationgroup": [
+     "elasticache:AuthTokenEnabled",
+     "elasticache:AutomaticFailoverEnabled",
+     "elasticache:CacheNodeType",
+     "elasticache:CacheParameterGroupName",
+     "elasticache:ClusterModeEnabled",
+     "elasticache:Durability",
+     "elasticache:EngineVersion",
+     "elasticache:MultiAZEnabled",
+     "elasticache:SnapshotRetentionLimit",
+     "elasticache:TransitEncryptionEnabled"
+    ]
+   },
+   "resources": [
+    "parametergroup",
+    "replicationgroup",
+    "securitygroup",
+    "usergroup"
+   ]
+  },
+  "modifyreplicationgroupshardconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "elasticache:NumNodeGroups"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyReplicationGroupShardConfiguration",
+   "resources": [
+    "replicationgroup"
+   ]
+  },
+  "modifyserverlesscache": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyServerlessCache",
+   "resourceConditionKeys": {
+    "serverlesscache": [
+     "aws:ResourceTag/${TagKey}",
+     "elasticache:DataStorageUnit",
+     "elasticache:EngineVersion",
+     "elasticache:MaximumDataStorage",
+     "elasticache:MaximumECPUPerSecond",
+     "elasticache:MinimumDataStorage",
+     "elasticache:MinimumECPUPerSecond",
+     "elasticache:SnapshotRetentionLimit"
+    ],
+    "usergroup": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "serverlesscache",
+    "usergroup"
+   ]
+  },
+  "modifyuser": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "elasticache:UserAuthenticationMode"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "modifyusergroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyUserGroup",
+   "resources": [
+    "user",
+    "usergroup"
+   ]
+  },
+  "purchasereservedcachenodesoffering": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PurchaseReservedCacheNodesOffering",
+   "resources": [
+    "reserved-instance"
+   ]
+  },
+  "rebalanceslotsinglobalreplicationgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebalanceSlotsInGlobalReplicationGroup",
+   "resources": [
+    "globalreplicationgroup"
+   ]
+  },
+  "rebootcachecluster": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RebootCacheCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "removetagsfromresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "RemoveTagsFromResource",
+   "resources": [
+    "cluster",
+    "globalreplicationgroup",
+    "parametergroup",
+    "replicationgroup",
+    "reserved-instance",
+    "securitygroup",
+    "serverlesscache",
+    "serverlesscachesnapshot",
+    "snapshot",
+    "subnetgroup",
+    "user",
+    "usergroup"
+   ]
+  },
+  "resetcacheparametergroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "elasticache:CacheParameterGroupName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResetCacheParameterGroup",
+   "resources": [
+    "parametergroup"
+   ]
+  },
+  "revokecachesecuritygroupingress": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeCacheSecurityGroupIngress",
+   "resources": [
+    "securitygroup"
+   ]
+  },
+  "startmigration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMigration",
+   "resources": [
+    "replicationgroup"
+   ]
+  },
+  "testfailover": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TestFailover",
+   "resources": [
+    "replicationgroup"
+   ]
+  },
+  "testmigration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TestMigration",
+   "resources": [
+    "replicationgroup"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "elasticache:AtRestEncryptionEnabled": [
+   "Bool"
+  ],
+  "elasticache:AuthTokenEnabled": [
+   "Bool"
+  ],
+  "elasticache:AutomaticFailoverEnabled": [
+   "Bool"
+  ],
+  "elasticache:CacheNodeType": [
+   "String"
+  ],
+  "elasticache:CacheParameterGroupName": [
+   "String"
+  ],
+  "elasticache:ClusterModeEnabled": [
+   "Bool"
+  ],
+  "elasticache:ConnectionType": [
+   "String"
+  ],
+  "elasticache:DataStorageUnit": [
+   "String"
+  ],
+  "elasticache:Durability": [
+   "String"
+  ],
+  "elasticache:EngineType": [
+   "String"
+  ],
+  "elasticache:EngineVersion": [
+   "String"
+  ],
+  "elasticache:KmsKeyId": [
+   "String"
+  ],
+  "elasticache:MaximumDataStorage": [
+   "Numeric"
+  ],
+  "elasticache:MaximumECPUPerSecond": [
+   "Numeric"
+  ],
+  "elasticache:MinimumDataStorage": [
+   "Numeric"
+  ],
+  "elasticache:MinimumECPUPerSecond": [
+   "Numeric"
+  ],
+  "elasticache:MultiAZEnabled": [
+   "Bool"
+  ],
+  "elasticache:NumNodeGroups": [
+   "Numeric"
+  ],
+  "elasticache:ReplicasPerNodeGroup": [
+   "Numeric"
+  ],
+  "elasticache:SnapshotRetentionLimit": [
+   "Numeric"
+  ],
+  "elasticache:TransitEncryptionEnabled": [
+   "Bool"
+  ],
+  "elasticache:UserAuthenticationMode": [
+   "String"
+  ]
+ },
+ "resources": {
+  "cluster": {
+   "arnFormats": [
+    "arn:${Partition}:elasticache:${Region}:${Account}:cluster:${CacheClusterId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "elasticache:AuthTokenEnabled",
+    "elasticache:CacheNodeType",
+    "elasticache:CacheParameterGroupName",
+    "elasticache:EngineType",
+    "elasticache:EngineVersion",
+    "elasticache:MultiAZEnabled",
+    "elasticache:SnapshotRetentionLimit"
+   ]
+  },
+  "globalreplicationgroup": {
+   "arnFormats": [
+    "arn:${Partition}:elasticache::${Account}:globalreplicationgroup:${GlobalReplicationGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "elasticache:AtRestEncryptionEnabled",
+    "elasticache:AuthTokenEnabled",
+    "elasticache:AutomaticFailoverEnabled",
+    "elasticache:CacheNodeType",
+    "elasticache:CacheParameterGroupName",
+    "elasticache:ClusterModeEnabled",
+    "elasticache:EngineType",
+    "elasticache:EngineVersion",
+    "elasticache:KmsKeyId",
+    "elasticache:MultiAZEnabled",
+    "elasticache:NumNodeGroups",
+    "elasticache:ReplicasPerNodeGroup",
+    "elasticache:SnapshotRetentionLimit",
+    "elasticache:TransitEncryptionEnabled"
+   ]
+  },
+  "parametergroup": {
+   "arnFormats": [
+    "arn:${Partition}:elasticache:${Region}:${Account}:parametergroup:${CacheParameterGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "elasticache:CacheParameterGroupName"
+   ]
+  },
+  "replicationgroup": {
+   "arnFormats": [
+    "arn:${Partition}:elasticache:${Region}:${Account}:replicationgroup:${ReplicationGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "elasticache:AtRestEncryptionEnabled",
+    "elasticache:AuthTokenEnabled",
+    "elasticache:AutomaticFailoverEnabled",
+    "elasticache:CacheNodeType",
+    "elasticache:CacheParameterGroupName",
+    "elasticache:ClusterModeEnabled",
+    "elasticache:Durability",
+    "elasticache:EngineType",
+    "elasticache:EngineVersion",
+    "elasticache:KmsKeyId",
+    "elasticache:MultiAZEnabled",
+    "elasticache:NumNodeGroups",
+    "elasticache:ReplicasPerNodeGroup",
+    "elasticache:SnapshotRetentionLimit",
+    "elasticache:TransitEncryptionEnabled"
+   ]
+  },
+  "reserved-instance": {
+   "arnFormats": [
+    "arn:${Partition}:elasticache:${Region}:${Account}:reserved-instance:${ReservedCacheNodeId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  },
+  "securitygroup": {
+   "arnFormats": [
+    "arn:${Partition}:elasticache:${Region}:${Account}:securitygroup:${CacheSecurityGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  },
+  "serverlesscache": {
+   "arnFormats": [
+    "arn:${Partition}:elasticache:${Region}:${Account}:serverlesscache:${ServerlessCacheName}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "elasticache:DataStorageUnit",
+    "elasticache:EngineType",
+    "elasticache:EngineVersion",
+    "elasticache:KmsKeyId",
+    "elasticache:MaximumDataStorage",
+    "elasticache:MaximumECPUPerSecond",
+    "elasticache:MinimumDataStorage",
+    "elasticache:MinimumECPUPerSecond",
+    "elasticache:SnapshotRetentionLimit"
+   ]
+  },
+  "serverlesscachesnapshot": {
+   "arnFormats": [
+    "arn:${Partition}:elasticache:${Region}:${Account}:serverlesscachesnapshot:${ServerlessCacheSnapshotName}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "elasticache:KmsKeyId"
+   ]
+  },
+  "snapshot": {
+   "arnFormats": [
+    "arn:${Partition}:elasticache:${Region}:${Account}:snapshot:${SnapshotName}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "elasticache:KmsKeyId"
+   ]
+  },
+  "subnetgroup": {
+   "arnFormats": [
+    "arn:${Partition}:elasticache:${Region}:${Account}:subnetgroup:${CacheSubnetGroupName}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  },
+  "user": {
+   "arnFormats": [
+    "arn:${Partition}:elasticache:${Region}:${Account}:user:${UserId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "elasticache:UserAuthenticationMode"
+   ]
+  },
+  "usergroup": {
+   "arnFormats": [
+    "arn:${Partition}:elasticache:${Region}:${Account}:usergroup:${UserGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ]
+  }
+ },
+ "service": "elasticache",
+ "serviceName": "ElastiCache",
+ "version": "v1.5"
+}

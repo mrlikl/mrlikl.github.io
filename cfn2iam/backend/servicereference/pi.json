@@ -1,0 +1,167 @@
+{
+ "actions": {
+  "createperformanceanalysisreport": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePerformanceAnalysisReport",
+   "resources": [
+    "perf-reports-resource"
+   ]
+  },
+  "deleteperformanceanalysisreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePerformanceAnalysisReport",
+   "resources": [
+    "perf-reports-resource"
+   ]
+  },
+  "describedimensionkeys": {
+   "conditionKeys": [
+    "pi:Dimensions"
+   ],
+   "name": "DescribeDimensionKeys",
+   "resources": [
+    "metric-resource"
+   ]
+  },
+  "getdimensionkeydetails": {
+   "conditionKeys": [
+    "pi:Dimensions"
+   ],
+   "name": "GetDimensionKeyDetails",
+   "resources": [
+    "metric-resource"
+   ]
+  },
+  "getperformanceanalysisreport": {
+   "name": "GetPerformanceAnalysisReport",
+   "resources": [
+    "perf-reports-resource"
+   ]
+  },
+  "getresourcemetadata": {
+   "name": "GetResourceMetadata",
+   "resources": [
+    "metric-resource"
+   ]
+  },
+  "getresourcemetrics": {
+   "conditionKeys": [
+    "pi:Dimensions"
+   ],
+   "name": "GetResourceMetrics",
+   "resources": [
+    "metric-resource"
+   ]
+  },
+  "listavailableresourcedimensions": {
+   "name": "ListAvailableResourceDimensions",
+   "resources": [
+    "metric-resource"
+   ]
+  },
+  "listavailableresourcemetrics": {
+   "name": "ListAvailableResourceMetrics",
+   "resources": [
+    "metric-resource"
+   ]
+  },
+  "listperformanceanalysisreportrecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPerformanceAnalysisReportRecommendations",
+   "resources": [
+    "perf-reports-resource"
+   ]
+  },
+  "listperformanceanalysisreports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPerformanceAnalysisReports",
+   "resources": [
+    "perf-reports-resource"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "metric-resource",
+    "perf-reports-resource"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "perf-reports-resource"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "perf-reports-resource"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "pi:Dimensions": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "metric-resource": {
+   "arnFormats": [
+    "arn:${Partition}:pi:${Region}:${Account}:metrics/${ServiceType}/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "perf-reports-resource": {
+   "arnFormats": [
+    "arn:${Partition}:pi:${Region}:${Account}:perf-reports/${ServiceType}/${Identifier}/${ReportId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "pi",
+ "serviceName": "Performance Insights",
+ "version": "v1.5"
+}

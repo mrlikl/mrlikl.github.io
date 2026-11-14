@@ -1,0 +1,124 @@
+{
+ "actions": {
+  "deletereportdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReportDefinition",
+   "resources": [
+    "cur"
+   ]
+  },
+  "describereportdefinitions": {
+   "name": "DescribeReportDefinitions",
+   "resources": []
+  },
+  "getclassicreport": {
+   "name": "GetClassicReport",
+   "resources": []
+  },
+  "getclassicreportpreferences": {
+   "name": "GetClassicReportPreferences",
+   "resources": []
+  },
+  "getusagereport": {
+   "name": "GetUsageReport",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "cur"
+   ]
+  },
+  "modifyreportdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ModifyReportDefinition",
+   "resources": [
+    "cur"
+   ]
+  },
+  "putclassicreportpreferences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutClassicReportPreferences",
+   "resources": []
+  },
+  "putreportdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutReportDefinition",
+   "resourceConditionKeys": {
+    "cur": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "cur"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "cur"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "cur"
+   ]
+  },
+  "validatereportdestination": {
+   "name": "ValidateReportDestination",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "cur": {
+   "arnFormats": [
+    "arn:${Partition}:cur:${Region}:${Account}:definition/${ReportName}"
+   ]
+  }
+ },
+ "service": "cur",
+ "serviceName": "Cost and Usage Report",
+ "version": "v1.5"
+}

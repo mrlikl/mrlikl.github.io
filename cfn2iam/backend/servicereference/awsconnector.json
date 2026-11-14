@@ -1,0 +1,23 @@
+{
+ "actions": {
+  "getconnectorhealth": {
+   "name": "GetConnectorHealth",
+   "resources": []
+  },
+  "registerconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterConnector",
+   "resources": []
+  },
+  "validateconnectorid": {
+   "name": "ValidateConnectorId",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "awsconnector",
+ "serviceName": "Connector Service",
+ "version": "v1.5"
+}

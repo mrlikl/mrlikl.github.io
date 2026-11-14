@@ -1,0 +1,302 @@
+{
+ "actions": {
+  "abortmultipartupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AbortMultipartUpload",
+   "resources": [
+    "vault"
+   ]
+  },
+  "abortvaultlock": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AbortVaultLock",
+   "resources": [
+    "vault"
+   ]
+  },
+  "addtagstovault": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "AddTagsToVault",
+   "resources": [
+    "vault"
+   ]
+  },
+  "completemultipartupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteMultipartUpload",
+   "resources": [
+    "vault"
+   ]
+  },
+  "completevaultlock": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "CompleteVaultLock",
+   "resources": [
+    "vault"
+   ]
+  },
+  "createvault": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVault",
+   "resources": [
+    "vault"
+   ]
+  },
+  "deletearchive": {
+   "conditionKeys": [
+    "glacier:ArchiveAgeInDays"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteArchive",
+   "resources": [
+    "vault"
+   ]
+  },
+  "deletevault": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVault",
+   "resources": [
+    "vault"
+   ]
+  },
+  "deletevaultaccesspolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteVaultAccessPolicy",
+   "resources": [
+    "vault"
+   ]
+  },
+  "deletevaultnotifications": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVaultNotifications",
+   "resources": [
+    "vault"
+   ]
+  },
+  "describejob": {
+   "name": "DescribeJob",
+   "resources": [
+    "vault"
+   ]
+  },
+  "describevault": {
+   "name": "DescribeVault",
+   "resources": [
+    "vault"
+   ]
+  },
+  "getdataretrievalpolicy": {
+   "name": "GetDataRetrievalPolicy",
+   "resources": []
+  },
+  "getjoboutput": {
+   "name": "GetJobOutput",
+   "resources": [
+    "vault"
+   ]
+  },
+  "getvaultaccesspolicy": {
+   "name": "GetVaultAccessPolicy",
+   "resources": [
+    "vault"
+   ]
+  },
+  "getvaultlock": {
+   "name": "GetVaultLock",
+   "resources": [
+    "vault"
+   ]
+  },
+  "getvaultnotifications": {
+   "name": "GetVaultNotifications",
+   "resources": [
+    "vault"
+   ]
+  },
+  "initiatejob": {
+   "conditionKeys": [
+    "glacier:ArchiveAgeInDays"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitiateJob",
+   "resources": [
+    "vault"
+   ]
+  },
+  "initiatemultipartupload": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitiateMultipartUpload",
+   "resources": [
+    "vault"
+   ]
+  },
+  "initiatevaultlock": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "InitiateVaultLock",
+   "resources": [
+    "vault"
+   ]
+  },
+  "listjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJobs",
+   "resources": [
+    "vault"
+   ]
+  },
+  "listmultipartuploads": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMultipartUploads",
+   "resources": [
+    "vault"
+   ]
+  },
+  "listparts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListParts",
+   "resources": [
+    "vault"
+   ]
+  },
+  "listprovisionedcapacity": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProvisionedCapacity",
+   "resources": []
+  },
+  "listtagsforvault": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForVault",
+   "resources": [
+    "vault"
+   ]
+  },
+  "listvaults": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVaults",
+   "resources": []
+  },
+  "purchaseprovisionedcapacity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PurchaseProvisionedCapacity",
+   "resources": []
+  },
+  "removetagsfromvault": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "RemoveTagsFromVault",
+   "resources": [
+    "vault"
+   ]
+  },
+  "setdataretrievalpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "SetDataRetrievalPolicy",
+   "resources": []
+  },
+  "setvaultaccesspolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "SetVaultAccessPolicy",
+   "resources": [
+    "vault"
+   ]
+  },
+  "setvaultnotifications": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetVaultNotifications",
+   "resources": [
+    "vault"
+   ]
+  },
+  "uploadarchive": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UploadArchive",
+   "resources": [
+    "vault"
+   ]
+  },
+  "uploadmultipartpart": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UploadMultipartPart",
+   "resources": [
+    "vault"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "glacier:ArchiveAgeInDays": [
+   "String"
+  ],
+  "glacier:ResourceTag/": [
+   "String"
+  ]
+ },
+ "resources": {
+  "vault": {
+   "arnFormats": [
+    "arn:${Partition}:glacier:${Region}:${Account}:vaults/${VaultName}"
+   ]
+  }
+ },
+ "service": "glacier",
+ "serviceName": "Glacier",
+ "version": "v1.5"
+}

@@ -1,0 +1,1173 @@
+{
+ "actions": {
+  "addprofilekey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddProfileKey",
+   "resources": [
+    "domains"
+   ]
+  },
+  "associatestreamforsegments": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateStreamForSegments",
+   "resources": [
+    "domains"
+   ]
+  },
+  "batchgetcalculatedattributeforprofile": {
+   "name": "BatchGetCalculatedAttributeForProfile",
+   "resources": [
+    "calculated-attributes"
+   ]
+  },
+  "batchgetprofile": {
+   "name": "BatchGetProfile",
+   "resources": [
+    "domains"
+   ]
+  },
+  "createcalculatedattributedefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCalculatedAttributeDefinition",
+   "resourceConditionKeys": {
+    "calculated-attributes": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "calculated-attributes"
+   ]
+  },
+  "createdomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomain",
+   "resourceConditionKeys": {
+    "domains": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "domains"
+   ]
+  },
+  "createdomainlayout": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDomainLayout",
+   "resourceConditionKeys": {
+    "layouts": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "layouts"
+   ]
+  },
+  "createeventstream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEventStream",
+   "resourceConditionKeys": {
+    "event-streams": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "event-streams"
+   ]
+  },
+  "createeventtrigger": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEventTrigger",
+   "resourceConditionKeys": {
+    "event-triggers": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "event-triggers"
+   ]
+  },
+  "createintegrationworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIntegrationWorkflow",
+   "resourceConditionKeys": {
+    "integrations": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "domains",
+    "integrations"
+   ]
+  },
+  "createprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProfile",
+   "resources": [
+    "domains"
+   ]
+  },
+  "createrecommender": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRecommender",
+   "resourceConditionKeys": {
+    "recommenders": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "recommenders"
+   ]
+  },
+  "createrecommenderfilter": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRecommenderFilter",
+   "resources": [
+    "recommender-filters"
+   ]
+  },
+  "createrecommenderschema": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRecommenderSchema",
+   "resources": [
+    "recommender-schemas"
+   ]
+  },
+  "createsegmentdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSegmentDefinition",
+   "resourceConditionKeys": {
+    "segment-definitions": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "segment-definitions"
+   ]
+  },
+  "createsegmentestimate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSegmentEstimate",
+   "resources": [
+    "domains"
+   ]
+  },
+  "createsegmentsnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSegmentSnapshot",
+   "resources": [
+    "segment-definitions"
+   ]
+  },
+  "createsnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSnapshot",
+   "resources": [
+    "domains"
+   ]
+  },
+  "createuploadjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUploadJob",
+   "resources": [
+    "domains"
+   ]
+  },
+  "deletecalculatedattributedefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCalculatedAttributeDefinition",
+   "resources": [
+    "calculated-attributes"
+   ]
+  },
+  "deletedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomain",
+   "resources": [
+    "domains"
+   ]
+  },
+  "deletedomainlayout": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomainLayout",
+   "resources": [
+    "layouts"
+   ]
+  },
+  "deletedomainobjecttype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDomainObjectType",
+   "resources": [
+    "domain-object-types"
+   ]
+  },
+  "deleteeventstream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventStream",
+   "resources": [
+    "event-streams"
+   ]
+  },
+  "deleteeventtrigger": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEventTrigger",
+   "resources": [
+    "event-triggers"
+   ]
+  },
+  "deleteintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIntegration",
+   "resources": [
+    "integrations"
+   ]
+  },
+  "deleteprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProfile",
+   "resources": [
+    "domains"
+   ]
+  },
+  "deleteprofilekey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProfileKey",
+   "resources": [
+    "domains"
+   ]
+  },
+  "deleteprofileobject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProfileObject",
+   "resources": [
+    "object-types"
+   ]
+  },
+  "deleteprofileobjecttype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProfileObjectType",
+   "resources": [
+    "object-types"
+   ]
+  },
+  "deleterecommender": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRecommender",
+   "resources": [
+    "recommenders"
+   ]
+  },
+  "deleterecommenderfilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRecommenderFilter",
+   "resources": [
+    "recommender-filters"
+   ]
+  },
+  "deleterecommenderschema": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRecommenderSchema",
+   "resources": [
+    "recommender-schemas"
+   ]
+  },
+  "deletesegmentdefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSegmentDefinition",
+   "resources": [
+    "segment-definitions"
+   ]
+  },
+  "deletesegmentsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSegmentSubscription",
+   "resources": [
+    "domains",
+    "segment-definitions"
+   ]
+  },
+  "deleteworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkflow",
+   "resources": [
+    "domains"
+   ]
+  },
+  "detectprofileobjecttype": {
+   "name": "DetectProfileObjectType",
+   "resources": [
+    "domains"
+   ]
+  },
+  "disassociatestreamforsegments": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateStreamForSegments",
+   "resources": [
+    "domains"
+   ]
+  },
+  "getautomergingpreview": {
+   "name": "GetAutoMergingPreview",
+   "resources": [
+    "domains"
+   ]
+  },
+  "getcalculatedattributedefinition": {
+   "name": "GetCalculatedAttributeDefinition",
+   "resources": [
+    "calculated-attributes"
+   ]
+  },
+  "getcalculatedattributeforprofile": {
+   "name": "GetCalculatedAttributeForProfile",
+   "resources": [
+    "calculated-attributes"
+   ]
+  },
+  "getdomain": {
+   "name": "GetDomain",
+   "resources": [
+    "domains"
+   ]
+  },
+  "getdomainlayout": {
+   "name": "GetDomainLayout",
+   "resources": [
+    "layouts"
+   ]
+  },
+  "getdomainobjecttype": {
+   "name": "GetDomainObjectType",
+   "resources": [
+    "domain-object-types"
+   ]
+  },
+  "geteventstream": {
+   "name": "GetEventStream",
+   "resources": [
+    "event-streams"
+   ]
+  },
+  "geteventtrigger": {
+   "name": "GetEventTrigger",
+   "resources": [
+    "event-triggers"
+   ]
+  },
+  "getidentityresolutionjob": {
+   "name": "GetIdentityResolutionJob",
+   "resources": [
+    "domains"
+   ]
+  },
+  "getintegration": {
+   "name": "GetIntegration",
+   "resources": [
+    "integrations"
+   ]
+  },
+  "getmatches": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetMatches",
+   "resources": [
+    "domains"
+   ]
+  },
+  "getobjecttypeattributestatistics": {
+   "name": "GetObjectTypeAttributeStatistics",
+   "resources": [
+    "object-types"
+   ]
+  },
+  "getprofilehistoryrecord": {
+   "name": "GetProfileHistoryRecord",
+   "resources": [
+    "domains"
+   ]
+  },
+  "getprofileinsights": {
+   "name": "GetProfileInsights",
+   "resources": [
+    "domains"
+   ]
+  },
+  "getprofileobjecttype": {
+   "name": "GetProfileObjectType",
+   "resources": [
+    "object-types"
+   ]
+  },
+  "getprofileobjecttypetemplate": {
+   "name": "GetProfileObjectTypeTemplate",
+   "resources": []
+  },
+  "getprofilerecommendations": {
+   "name": "GetProfileRecommendations",
+   "resources": [
+    "recommenders"
+   ]
+  },
+  "getrecommender": {
+   "name": "GetRecommender",
+   "resources": [
+    "recommenders"
+   ]
+  },
+  "getrecommenderfilter": {
+   "name": "GetRecommenderFilter",
+   "resources": [
+    "recommender-filters"
+   ]
+  },
+  "getrecommenderschema": {
+   "name": "GetRecommenderSchema",
+   "resources": [
+    "recommender-schemas"
+   ]
+  },
+  "getsegmentdefinition": {
+   "name": "GetSegmentDefinition",
+   "resources": [
+    "segment-definitions"
+   ]
+  },
+  "getsegmentestimate": {
+   "name": "GetSegmentEstimate",
+   "resources": [
+    "domains"
+   ]
+  },
+  "getsegmentmembership": {
+   "name": "GetSegmentMembership",
+   "resources": [
+    "domains",
+    "segment-definitions"
+   ]
+  },
+  "getsegmentsnapshot": {
+   "name": "GetSegmentSnapshot",
+   "resources": [
+    "segment-definitions"
+   ]
+  },
+  "getsegmentsubscription": {
+   "name": "GetSegmentSubscription",
+   "resources": [
+    "domains",
+    "segment-definitions"
+   ]
+  },
+  "getsimilarprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetSimilarProfiles",
+   "resources": [
+    "domains"
+   ]
+  },
+  "getsnapshot": {
+   "name": "GetSnapshot",
+   "resources": [
+    "domains"
+   ]
+  },
+  "getstreamforsegments": {
+   "name": "GetStreamForSegments",
+   "resources": [
+    "domains"
+   ]
+  },
+  "getuploadjob": {
+   "name": "GetUploadJob",
+   "resources": [
+    "domains"
+   ]
+  },
+  "getuploadjobpath": {
+   "name": "GetUploadJobPath",
+   "resources": [
+    "domains"
+   ]
+  },
+  "getworkflow": {
+   "name": "GetWorkflow",
+   "resources": [
+    "domains"
+   ]
+  },
+  "getworkflowsteps": {
+   "name": "GetWorkflowSteps",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listaccountintegrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccountIntegrations",
+   "resources": []
+  },
+  "listcalculatedattributedefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCalculatedAttributeDefinitions",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listcalculatedattributesforprofile": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCalculatedAttributesForProfile",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listdomainlayouts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomainLayouts",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listdomainobjects": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomainObjects",
+   "resources": [
+    "domain-object-types"
+   ]
+  },
+  "listdomainobjecttypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomainObjectTypes",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomains",
+   "resources": []
+  },
+  "listeventstreams": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEventStreams",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listeventtriggers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEventTriggers",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listidentityresolutionjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIdentityResolutionJobs",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listintegrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIntegrations",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listobjecttypeattributes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListObjectTypeAttributes",
+   "resources": [
+    "object-types"
+   ]
+  },
+  "listobjecttypeattributevalues": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListObjectTypeAttributeValues",
+   "resources": [
+    "object-types"
+   ]
+  },
+  "listprofileattributevalues": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfileAttributeValues",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listprofilehistoryrecords": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfileHistoryRecords",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listprofileobjects": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfileObjects",
+   "resources": [
+    "object-types"
+   ]
+  },
+  "listprofileobjecttypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfileObjectTypes",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listprofileobjecttypetemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProfileObjectTypeTemplates",
+   "resources": []
+  },
+  "listrecommenderfilters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommenderFilters",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listrecommenderrecipes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommenderRecipes",
+   "resources": []
+  },
+  "listrecommenders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommenders",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listrecommenderschemas": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommenderSchemas",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listrulebasedmatches": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRuleBasedMatches",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listsegmentdefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSegmentDefinitions",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listsegmentsubscriptionevents": {
+   "name": "ListSegmentSubscriptionEvents",
+   "resources": [
+    "domains",
+    "segment-definitions"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "calculated-attributes",
+    "domain-object-types",
+    "domains",
+    "event-streams",
+    "event-triggers",
+    "integrations",
+    "layouts",
+    "object-types",
+    "recommender-filters",
+    "recommender-schemas",
+    "recommenders",
+    "segment-definitions"
+   ]
+  },
+  "listuploadjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUploadJobs",
+   "resources": [
+    "domains"
+   ]
+  },
+  "listworkflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkflows",
+   "resources": [
+    "domains"
+   ]
+  },
+  "mergeprofiles": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MergeProfiles",
+   "resources": [
+    "domains"
+   ]
+  },
+  "putdomainobjecttype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDomainObjectType",
+   "resourceConditionKeys": {
+    "domain-object-types": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "domain-object-types"
+   ]
+  },
+  "putintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutIntegration",
+   "resourceConditionKeys": {
+    "integrations": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "integrations"
+   ]
+  },
+  "putprofileobject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutProfileObject",
+   "resources": [
+    "object-types"
+   ]
+  },
+  "putprofileobjecttype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutProfileObjectType",
+   "resourceConditionKeys": {
+    "object-types": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "object-types"
+   ]
+  },
+  "putsegmentsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSegmentSubscription",
+   "resources": [
+    "domains",
+    "segment-definitions"
+   ]
+  },
+  "searchprofiles": {
+   "name": "SearchProfiles",
+   "resources": [
+    "domains"
+   ]
+  },
+  "startrecommender": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartRecommender",
+   "resources": [
+    "recommenders"
+   ]
+  },
+  "startuploadjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartUploadJob",
+   "resources": [
+    "domains"
+   ]
+  },
+  "stoprecommender": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopRecommender",
+   "resources": [
+    "recommenders"
+   ]
+  },
+  "stopuploadjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopUploadJob",
+   "resources": [
+    "domains"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "calculated-attributes",
+    "domain-object-types",
+    "domains",
+    "event-streams",
+    "event-triggers",
+    "integrations",
+    "layouts",
+    "object-types",
+    "recommender-filters",
+    "recommender-schemas",
+    "recommenders",
+    "segment-definitions"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "calculated-attributes",
+    "domain-object-types",
+    "domains",
+    "event-streams",
+    "event-triggers",
+    "integrations",
+    "layouts",
+    "object-types",
+    "recommender-filters",
+    "recommender-schemas",
+    "recommenders",
+    "segment-definitions"
+   ]
+  },
+  "updatecalculatedattributedefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCalculatedAttributeDefinition",
+   "resources": [
+    "calculated-attributes"
+   ]
+  },
+  "updatedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomain",
+   "resources": [
+    "domains"
+   ]
+  },
+  "updatedomainlayout": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDomainLayout",
+   "resources": [
+    "layouts"
+   ]
+  },
+  "updateeventtrigger": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEventTrigger",
+   "resources": [
+    "event-triggers"
+   ]
+  },
+  "updateprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProfile",
+   "resources": [
+    "domains"
+   ]
+  },
+  "updaterecommender": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRecommender",
+   "resources": [
+    "recommenders"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "calculated-attributes": {
+   "arnFormats": [
+    "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/calculated-attributes/${CalculatedAttributeName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "domain-object-types": {
+   "arnFormats": [
+    "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/domain-object-types/${ObjectTypeName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "domains": {
+   "arnFormats": [
+    "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "event-streams": {
+   "arnFormats": [
+    "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/event-streams/${EventStreamName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "event-triggers": {
+   "arnFormats": [
+    "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/event-triggers/${EventTriggerName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "integrations": {
+   "arnFormats": [
+    "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/integrations/${Uri}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "layouts": {
+   "arnFormats": [
+    "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/layouts/${LayoutDefinitionName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "object-types": {
+   "arnFormats": [
+    "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/object-types/${ObjectTypeName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "recommender-filters": {
+   "arnFormats": [
+    "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/recommender-filters/${RecommenderFilterName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "recommender-schemas": {
+   "arnFormats": [
+    "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/recommender-schemas/${RecommenderSchemaName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "recommenders": {
+   "arnFormats": [
+    "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/recommenders/${RecommenderTypeName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "segment-definitions": {
+   "arnFormats": [
+    "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/segment-definitions/${SegmentDefinitionName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "profile",
+ "serviceName": "Profile",
+ "version": "v1.5"
+}

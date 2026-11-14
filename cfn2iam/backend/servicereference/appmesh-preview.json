@@ -1,0 +1,376 @@
+{
+ "actions": {
+  "creategatewayroute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGatewayRoute",
+   "resources": [
+    "gatewayRoute",
+    "virtualService"
+   ]
+  },
+  "createmesh": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMesh",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "createroute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRoute",
+   "resources": [
+    "route",
+    "virtualNode"
+   ]
+  },
+  "createvirtualgateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVirtualGateway",
+   "resources": [
+    "virtualGateway"
+   ]
+  },
+  "createvirtualnode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVirtualNode",
+   "resources": [
+    "virtualNode",
+    "virtualService"
+   ]
+  },
+  "createvirtualrouter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVirtualRouter",
+   "resources": [
+    "virtualRouter"
+   ]
+  },
+  "createvirtualservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVirtualService",
+   "resources": [
+    "virtualNode",
+    "virtualRouter",
+    "virtualService"
+   ]
+  },
+  "deletegatewayroute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGatewayRoute",
+   "resources": [
+    "gatewayRoute"
+   ]
+  },
+  "deletemesh": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMesh",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "deletemeshpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMeshPolicy",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "deleteroute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRoute",
+   "resources": [
+    "route"
+   ]
+  },
+  "deletevirtualgateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVirtualGateway",
+   "resources": [
+    "virtualGateway"
+   ]
+  },
+  "deletevirtualnode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVirtualNode",
+   "resources": [
+    "virtualNode"
+   ]
+  },
+  "deletevirtualrouter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVirtualRouter",
+   "resources": [
+    "virtualRouter"
+   ]
+  },
+  "deletevirtualservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVirtualService",
+   "resources": [
+    "virtualService"
+   ]
+  },
+  "describegatewayroute": {
+   "name": "DescribeGatewayRoute",
+   "resources": [
+    "gatewayRoute"
+   ]
+  },
+  "describemesh": {
+   "name": "DescribeMesh",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "describeroute": {
+   "name": "DescribeRoute",
+   "resources": [
+    "route"
+   ]
+  },
+  "describevirtualgateway": {
+   "name": "DescribeVirtualGateway",
+   "resources": [
+    "virtualGateway"
+   ]
+  },
+  "describevirtualnode": {
+   "name": "DescribeVirtualNode",
+   "resources": [
+    "virtualNode"
+   ]
+  },
+  "describevirtualrouter": {
+   "name": "DescribeVirtualRouter",
+   "resources": [
+    "virtualRouter"
+   ]
+  },
+  "describevirtualservice": {
+   "name": "DescribeVirtualService",
+   "resources": [
+    "virtualService"
+   ]
+  },
+  "getmeshpolicy": {
+   "name": "GetMeshPolicy",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "listgatewayroutes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGatewayRoutes",
+   "resources": [
+    "virtualGateway"
+   ]
+  },
+  "listmeshes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMeshes",
+   "resources": []
+  },
+  "listroutes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRoutes",
+   "resources": [
+    "virtualRouter"
+   ]
+  },
+  "listvirtualgateways": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVirtualGateways",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "listvirtualnodes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVirtualNodes",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "listvirtualrouters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVirtualRouters",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "listvirtualservices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVirtualServices",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "putmeshpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMeshPolicy",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "streamaggregatedresources": {
+   "name": "StreamAggregatedResources",
+   "resources": [
+    "virtualGateway",
+    "virtualNode"
+   ]
+  },
+  "updategatewayroute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGatewayRoute",
+   "resources": [
+    "gatewayRoute",
+    "virtualService"
+   ]
+  },
+  "updatemesh": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMesh",
+   "resources": [
+    "mesh"
+   ]
+  },
+  "updateroute": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoute",
+   "resources": [
+    "route",
+    "virtualNode"
+   ]
+  },
+  "updatevirtualgateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVirtualGateway",
+   "resources": [
+    "virtualGateway"
+   ]
+  },
+  "updatevirtualnode": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVirtualNode",
+   "resources": [
+    "virtualNode"
+   ]
+  },
+  "updatevirtualrouter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVirtualRouter",
+   "resources": [
+    "virtualRouter"
+   ]
+  },
+  "updatevirtualservice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVirtualService",
+   "resources": [
+    "virtualNode",
+    "virtualRouter",
+    "virtualService"
+   ]
+  }
+ },
+ "resources": {
+  "gatewayRoute": {
+   "arnFormats": [
+    "arn:${Partition}:appmesh-preview:${Region}:${Account}:mesh/${MeshName}/virtualGateway/${VirtualGatewayName}/gatewayRoute/${GatewayRouteName}"
+   ]
+  },
+  "mesh": {
+   "arnFormats": [
+    "arn:${Partition}:appmesh-preview:${Region}:${Account}:mesh/${MeshName}"
+   ]
+  },
+  "route": {
+   "arnFormats": [
+    "arn:${Partition}:appmesh-preview:${Region}:${Account}:mesh/${MeshName}/virtualRouter/${VirtualRouterName}/route/${RouteName}"
+   ]
+  },
+  "virtualGateway": {
+   "arnFormats": [
+    "arn:${Partition}:appmesh-preview:${Region}:${Account}:mesh/${MeshName}/virtualGateway/${VirtualGatewayName}"
+   ]
+  },
+  "virtualNode": {
+   "arnFormats": [
+    "arn:${Partition}:appmesh-preview:${Region}:${Account}:mesh/${MeshName}/virtualNode/${VirtualNodeName}"
+   ]
+  },
+  "virtualRouter": {
+   "arnFormats": [
+    "arn:${Partition}:appmesh-preview:${Region}:${Account}:mesh/${MeshName}/virtualRouter/${VirtualRouterName}"
+   ]
+  },
+  "virtualService": {
+   "arnFormats": [
+    "arn:${Partition}:appmesh-preview:${Region}:${Account}:mesh/${MeshName}/virtualService/${VirtualServiceName}"
+   ]
+  }
+ },
+ "service": "appmesh-preview",
+ "serviceName": "App Mesh Preview",
+ "version": "v1.5"
+}

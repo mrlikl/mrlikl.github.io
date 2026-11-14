@@ -1,0 +1,204 @@
+{
+ "actions": {
+  "addnotificationchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddNotificationChannel",
+   "resources": [
+    "topic"
+   ]
+  },
+  "deleteinsight": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInsight",
+   "resources": []
+  },
+  "describeaccounthealth": {
+   "name": "DescribeAccountHealth",
+   "resources": []
+  },
+  "describeaccountoverview": {
+   "name": "DescribeAccountOverview",
+   "resources": []
+  },
+  "describeanomaly": {
+   "name": "DescribeAnomaly",
+   "resources": []
+  },
+  "describeeventsourcesconfig": {
+   "name": "DescribeEventSourcesConfig",
+   "resources": []
+  },
+  "describefeedback": {
+   "name": "DescribeFeedback",
+   "resources": []
+  },
+  "describeinsight": {
+   "name": "DescribeInsight",
+   "resources": []
+  },
+  "describeorganizationhealth": {
+   "name": "DescribeOrganizationHealth",
+   "resources": []
+  },
+  "describeorganizationoverview": {
+   "name": "DescribeOrganizationOverview",
+   "resources": []
+  },
+  "describeorganizationresourcecollectionhealth": {
+   "name": "DescribeOrganizationResourceCollectionHealth",
+   "resources": []
+  },
+  "describeresourcecollectionhealth": {
+   "name": "DescribeResourceCollectionHealth",
+   "resources": []
+  },
+  "describeserviceintegration": {
+   "name": "DescribeServiceIntegration",
+   "resources": []
+  },
+  "getcostestimation": {
+   "name": "GetCostEstimation",
+   "resources": []
+  },
+  "getresourcecollection": {
+   "name": "GetResourceCollection",
+   "resources": []
+  },
+  "listanomaliesforinsight": {
+   "conditionKeys": [
+    "devops-guru:ServiceNames"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnomaliesForInsight",
+   "resources": []
+  },
+  "listanomalousloggroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnomalousLogGroups",
+   "resources": []
+  },
+  "listevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEvents",
+   "resources": []
+  },
+  "listinsights": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInsights",
+   "resources": []
+  },
+  "listmonitoredresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMonitoredResources",
+   "resources": []
+  },
+  "listnotificationchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNotificationChannels",
+   "resources": []
+  },
+  "listorganizationinsights": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrganizationInsights",
+   "resources": []
+  },
+  "listrecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommendations",
+   "resources": []
+  },
+  "putfeedback": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFeedback",
+   "resources": []
+  },
+  "removenotificationchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveNotificationChannel",
+   "resources": [
+    "topic"
+   ]
+  },
+  "searchinsights": {
+   "conditionKeys": [
+    "devops-guru:ServiceNames"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchInsights",
+   "resources": []
+  },
+  "searchorganizationinsights": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchOrganizationInsights",
+   "resources": []
+  },
+  "startcostestimation": {
+   "name": "StartCostEstimation",
+   "resources": []
+  },
+  "updateeventsourcesconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEventSourcesConfig",
+   "resources": []
+  },
+  "updateresourcecollection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResourceCollection",
+   "resources": []
+  },
+  "updateserviceintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceIntegration",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "devops-guru:ServiceNames": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "topic": {
+   "arnFormats": [
+    "arn:${Partition}:sns:${Region}:${Account}:${TopicName}"
+   ]
+  }
+ },
+ "service": "devops-guru",
+ "serviceName": "DevOps Guru",
+ "version": "v1.5"
+}

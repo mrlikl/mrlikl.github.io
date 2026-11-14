@@ -1,0 +1,229 @@
+{
+ "actions": {
+  "addattributestofindings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddAttributesToFindings",
+   "resources": []
+  },
+  "createassessmenttarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssessmentTarget",
+   "resources": []
+  },
+  "createassessmenttemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssessmentTemplate",
+   "resources": []
+  },
+  "createexclusionspreview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExclusionsPreview",
+   "resources": []
+  },
+  "createresourcegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResourceGroup",
+   "resources": []
+  },
+  "deleteassessmentrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssessmentRun",
+   "resources": []
+  },
+  "deleteassessmenttarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssessmentTarget",
+   "resources": []
+  },
+  "deleteassessmenttemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssessmentTemplate",
+   "resources": []
+  },
+  "describeassessmentruns": {
+   "name": "DescribeAssessmentRuns",
+   "resources": []
+  },
+  "describeassessmenttargets": {
+   "name": "DescribeAssessmentTargets",
+   "resources": []
+  },
+  "describeassessmenttemplates": {
+   "name": "DescribeAssessmentTemplates",
+   "resources": []
+  },
+  "describecrossaccountaccessrole": {
+   "name": "DescribeCrossAccountAccessRole",
+   "resources": []
+  },
+  "describeexclusions": {
+   "name": "DescribeExclusions",
+   "resources": []
+  },
+  "describefindings": {
+   "name": "DescribeFindings",
+   "resources": []
+  },
+  "describeresourcegroups": {
+   "name": "DescribeResourceGroups",
+   "resources": []
+  },
+  "describerulespackages": {
+   "name": "DescribeRulesPackages",
+   "resources": []
+  },
+  "getassessmentreport": {
+   "name": "GetAssessmentReport",
+   "resources": []
+  },
+  "getexclusionspreview": {
+   "name": "GetExclusionsPreview",
+   "resources": []
+  },
+  "gettelemetrymetadata": {
+   "name": "GetTelemetryMetadata",
+   "resources": []
+  },
+  "listassessmentrunagents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssessmentRunAgents",
+   "resources": []
+  },
+  "listassessmentruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssessmentRuns",
+   "resources": []
+  },
+  "listassessmenttargets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssessmentTargets",
+   "resources": []
+  },
+  "listassessmenttemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssessmentTemplates",
+   "resources": []
+  },
+  "listeventsubscriptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEventSubscriptions",
+   "resources": []
+  },
+  "listexclusions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExclusions",
+   "resources": []
+  },
+  "listfindings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFindings",
+   "resources": []
+  },
+  "listrulespackages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRulesPackages",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "previewagents": {
+   "name": "PreviewAgents",
+   "resources": []
+  },
+  "registercrossaccountaccessrole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterCrossAccountAccessRole",
+   "resources": []
+  },
+  "removeattributesfromfindings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveAttributesFromFindings",
+   "resources": []
+  },
+  "settagsforresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "SetTagsForResource",
+   "resources": []
+  },
+  "startassessmentrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAssessmentRun",
+   "resources": []
+  },
+  "stopassessmentrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopAssessmentRun",
+   "resources": []
+  },
+  "subscribetoevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SubscribeToEvent",
+   "resources": []
+  },
+  "unsubscribefromevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnsubscribeFromEvent",
+   "resources": []
+  },
+  "updateassessmenttarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssessmentTarget",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "inspector",
+ "serviceName": "Inspector",
+ "version": "v1.5"
+}

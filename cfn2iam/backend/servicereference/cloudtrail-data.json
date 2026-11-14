@@ -1,0 +1,38 @@
+{
+ "actions": {
+  "putauditevents": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutAuditEvents",
+   "resources": [
+    "channel"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "channel": {
+   "arnFormats": [
+    "arn:${Partition}:cloudtrail:${Region}:${Account}:channel/${ChannelId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "cloudtrail-data",
+ "serviceName": "CloudTrail-Data",
+ "version": "v1.5"
+}

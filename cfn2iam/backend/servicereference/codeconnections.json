@@ -1,0 +1,421 @@
+{
+ "actions": {
+  "createconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "codeconnections:ProviderType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnection",
+   "resources": []
+  },
+  "createhost": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "codeconnections:ProviderType",
+    "codeconnections:VpcId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHost",
+   "resources": []
+  },
+  "createrepositorylink": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRepositoryLink",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "createsyncconfiguration": {
+   "conditionKeys": [
+    "codeconnections:Branch"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSyncConfiguration",
+   "resources": [
+    "RepositoryLink"
+   ]
+  },
+  "deleteconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnection",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "deletehost": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteHost",
+   "resources": [
+    "Host"
+   ]
+  },
+  "deleterepositorylink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRepositoryLink",
+   "resources": [
+    "RepositoryLink"
+   ]
+  },
+  "deletesyncconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSyncConfiguration",
+   "resources": []
+  },
+  "getconnection": {
+   "name": "GetConnection",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "getconnectiontoken": {
+   "name": "GetConnectionToken",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "gethost": {
+   "name": "GetHost",
+   "resources": [
+    "Host"
+   ]
+  },
+  "getindividualaccesstoken": {
+   "conditionKeys": [
+    "codeconnections:ProviderType"
+   ],
+   "name": "GetIndividualAccessToken",
+   "resources": []
+  },
+  "getinstallationurl": {
+   "conditionKeys": [
+    "codeconnections:ProviderType"
+   ],
+   "name": "GetInstallationUrl",
+   "resources": []
+  },
+  "getrepositorylink": {
+   "name": "GetRepositoryLink",
+   "resources": [
+    "RepositoryLink"
+   ]
+  },
+  "getrepositorysyncstatus": {
+   "conditionKeys": [
+    "codeconnections:Branch"
+   ],
+   "name": "GetRepositorySyncStatus",
+   "resources": [
+    "RepositoryLink"
+   ]
+  },
+  "getresourcesyncstatus": {
+   "name": "GetResourceSyncStatus",
+   "resources": []
+  },
+  "getsyncblockersummary": {
+   "name": "GetSyncBlockerSummary",
+   "resources": []
+  },
+  "getsyncconfiguration": {
+   "name": "GetSyncConfiguration",
+   "resources": []
+  },
+  "listconnections": {
+   "conditionKeys": [
+    "codeconnections:ProviderTypeFilter"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnections",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "listhosts": {
+   "conditionKeys": [
+    "codeconnections:ProviderTypeFilter"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHosts",
+   "resources": []
+  },
+  "listinstallationtargets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInstallationTargets",
+   "resources": []
+  },
+  "listrepositorylinks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRepositoryLinks",
+   "resources": []
+  },
+  "listrepositorysyncdefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRepositorySyncDefinitions",
+   "resources": []
+  },
+  "listsyncconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSyncConfigurations",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "Connection",
+    "Host",
+    "RepositoryLink"
+   ]
+  },
+  "passconnection": {
+   "conditionKeys": [
+    "codeconnections:PassedToService"
+   ],
+   "name": "PassConnection",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "passrepository": {
+   "conditionKeys": [
+    "codeconnections:PassedToService"
+   ],
+   "name": "PassRepository",
+   "resources": [
+    "RepositoryLink"
+   ]
+  },
+  "registerappcode": {
+   "conditionKeys": [
+    "codeconnections:HostArn"
+   ],
+   "name": "RegisterAppCode",
+   "resources": []
+  },
+  "startappregistrationhandshake": {
+   "conditionKeys": [
+    "codeconnections:HostArn"
+   ],
+   "name": "StartAppRegistrationHandshake",
+   "resources": []
+  },
+  "startoauthhandshake": {
+   "conditionKeys": [
+    "codeconnections:ProviderType"
+   ],
+   "name": "StartOAuthHandshake",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Connection",
+    "Host",
+    "RepositoryLink"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Connection",
+    "Host",
+    "RepositoryLink"
+   ]
+  },
+  "updateconnectioninstallation": {
+   "conditionKeys": [
+    "codeconnections:InstallationId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnectionInstallation",
+   "resources": [
+    "Connection"
+   ]
+  },
+  "updatehost": {
+   "conditionKeys": [
+    "codeconnections:VpcId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHost",
+   "resources": [
+    "Host"
+   ]
+  },
+  "updaterepositorylink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRepositoryLink",
+   "resources": [
+    "RepositoryLink"
+   ]
+  },
+  "updatesyncblocker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSyncBlocker",
+   "resources": []
+  },
+  "updatesyncconfiguration": {
+   "conditionKeys": [
+    "codeconnections:Branch"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSyncConfiguration",
+   "resources": []
+  },
+  "useconnection": {
+   "conditionKeys": [
+    "codeconnections:BranchName",
+    "codeconnections:FullRepositoryId",
+    "codeconnections:OwnerId",
+    "codeconnections:ProviderAction",
+    "codeconnections:ProviderPermissionsRequired",
+    "codeconnections:RepositoryName"
+   ],
+   "name": "UseConnection",
+   "resources": [
+    "Connection"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "codeconnections:Branch": [
+   "String"
+  ],
+  "codeconnections:BranchName": [
+   "String"
+  ],
+  "codeconnections:FullRepositoryId": [
+   "String"
+  ],
+  "codeconnections:HostArn": [
+   "ARN"
+  ],
+  "codeconnections:InstallationId": [
+   "String"
+  ],
+  "codeconnections:OwnerId": [
+   "String"
+  ],
+  "codeconnections:PassedToService": [
+   "String"
+  ],
+  "codeconnections:ProviderAction": [
+   "String"
+  ],
+  "codeconnections:ProviderPermissionsRequired": [
+   "String"
+  ],
+  "codeconnections:ProviderType": [
+   "String"
+  ],
+  "codeconnections:ProviderTypeFilter": [
+   "String"
+  ],
+  "codeconnections:RepositoryName": [
+   "String"
+  ],
+  "codeconnections:VpcId": [
+   "String"
+  ]
+ },
+ "resources": {
+  "Connection": {
+   "arnFormats": [
+    "arn:${Partition}:codeconnections:${Region}:${Account}:connection/${ConnectionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Host": {
+   "arnFormats": [
+    "arn:${Partition}:codeconnections:${Region}:${Account}:host/${HostId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "RepositoryLink": {
+   "arnFormats": [
+    "arn:${Partition}:codeconnections:${Region}:${Account}:repository-link/${RepositoryLinkId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "codeconnections",
+ "serviceName": "CodeConnections",
+ "version": "v1.5"
+}

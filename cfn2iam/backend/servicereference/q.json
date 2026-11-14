@@ -1,0 +1,468 @@
+{
+ "actions": {
+  "associateconnectorresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateConnectorResource",
+   "resources": []
+  },
+  "associatelogindomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateLoginDomain",
+   "resources": [
+    "profile"
+   ]
+  },
+  "batchdescribegroups": {
+   "name": "BatchDescribeGroups",
+   "resources": [
+    "profile"
+   ]
+  },
+  "batchdescribeusers": {
+   "name": "BatchDescribeUsers",
+   "resources": [
+    "profile"
+   ]
+  },
+  "batchgetgroups": {
+   "name": "BatchGetGroups",
+   "resources": [
+    "profile"
+   ]
+  },
+  "batchgetusers": {
+   "name": "BatchGetUsers",
+   "resources": [
+    "profile"
+   ]
+  },
+  "createartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateArtifact",
+   "resources": []
+  },
+  "createassignment": {
+   "conditionKeys": [
+    "identitystore:GroupId",
+    "identitystore:UserId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssignment",
+   "resources": [
+    "profile"
+   ]
+  },
+  "createauthgrant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAuthGrant",
+   "resources": []
+  },
+  "createoauthappconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOAuthAppConnection",
+   "resources": []
+  },
+  "createplugin": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePlugin",
+   "resources": [
+    "plugin"
+   ]
+  },
+  "createscimaccesstoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScimAccessToken",
+   "resources": [
+    "profile"
+   ]
+  },
+  "deleteassignment": {
+   "conditionKeys": [
+    "identitystore:GroupId",
+    "identitystore:UserId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssignment",
+   "resources": [
+    "profile"
+   ]
+  },
+  "deleteconversation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConversation",
+   "resources": []
+  },
+  "deleteoauthappconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOAuthAppConnection",
+   "resources": []
+  },
+  "deleteplugin": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePlugin",
+   "resources": [
+    "plugin"
+   ]
+  },
+  "deletescimaccesstoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScimAccessToken",
+   "resources": [
+    "profile"
+   ]
+  },
+  "disassociatelogindomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateLoginDomain",
+   "resources": [
+    "profile"
+   ]
+  },
+  "generatecodefromcommands": {
+   "name": "GenerateCodeFromCommands",
+   "resources": []
+  },
+  "generatecoderecommendations": {
+   "name": "GenerateCodeRecommendations",
+   "resources": []
+  },
+  "getartifact": {
+   "name": "GetArtifact",
+   "resources": []
+  },
+  "getartifactactionresult": {
+   "name": "GetArtifactActionResult",
+   "resources": []
+  },
+  "getconnector": {
+   "name": "GetConnector",
+   "resources": []
+  },
+  "getconversation": {
+   "name": "GetConversation",
+   "resources": []
+  },
+  "getidentitymetadata": {
+   "name": "GetIdentityMetadata",
+   "resources": []
+  },
+  "getplugin": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetPlugin",
+   "resources": [
+    "plugin"
+   ]
+  },
+  "gettroubleshootingresults": {
+   "name": "GetTroubleshootingResults",
+   "resources": []
+  },
+  "listconversations": {
+   "name": "ListConversations",
+   "resources": []
+  },
+  "listdashboardmetrics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDashboardMetrics",
+   "resources": []
+  },
+  "listgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroups",
+   "resources": [
+    "profile"
+   ]
+  },
+  "listlogindomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLoginDomains",
+   "resources": [
+    "profile"
+   ]
+  },
+  "listpluginproviders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPluginProviders",
+   "resources": []
+  },
+  "listplugins": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPlugins",
+   "resources": [
+    "plugin"
+   ]
+  },
+  "listscimaccesstokens": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScimAccessTokens",
+   "resources": [
+    "profile"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "plugin"
+   ]
+  },
+  "listusers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsers",
+   "resources": [
+    "profile"
+   ]
+  },
+  "passrequest": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PassRequest",
+   "resources": []
+  },
+  "performartifactaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PerformArtifactAction",
+   "resources": []
+  },
+  "rejectconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectConnector",
+   "resources": []
+  },
+  "sendevent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendEvent",
+   "resources": []
+  },
+  "sendmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendMessage",
+   "resources": []
+  },
+  "startconversation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartConversation",
+   "resources": []
+  },
+  "starttroubleshootinganalysis": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTroubleshootingAnalysis",
+   "resources": []
+  },
+  "starttroubleshootingresolutionexplanation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTroubleshootingResolutionExplanation",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "plugin",
+    "profile"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "plugin",
+    "profile"
+   ]
+  },
+  "updateassignment": {
+   "conditionKeys": [
+    "identitystore:GroupId",
+    "identitystore:UserId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssignment",
+   "resources": [
+    "profile"
+   ]
+  },
+  "updateauthgrant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAuthGrant",
+   "resources": []
+  },
+  "updateconversation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConversation",
+   "resources": []
+  },
+  "updateoauthappconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOAuthAppConnection",
+   "resources": []
+  },
+  "updateplugin": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePlugin",
+   "resources": [
+    "plugin"
+   ]
+  },
+  "updatetroubleshootingcommandresult": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTroubleshootingCommandResult",
+   "resources": []
+  },
+  "useplugin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UsePlugin",
+   "resources": [
+    "plugin"
+   ]
+  },
+  "verifyoauthappconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VerifyOAuthAppConnection",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "identitystore:GroupId": [
+   "ArrayOfString"
+  ],
+  "identitystore:UserId": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "plugin": {
+   "arnFormats": [
+    "arn:${Partition}:qdeveloper:${Region}:${Account}:plugin/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "profile": {
+   "arnFormats": [
+    "arn:${Partition}:codewhisperer:${Region}:${Account}:profile/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "q",
+ "serviceName": "Q",
+ "version": "v1.5"
+}

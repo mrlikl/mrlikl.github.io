@@ -1,0 +1,279 @@
+{
+ "actions": {
+  "createmonitor": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMonitor",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "createscope": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScope",
+   "resources": []
+  },
+  "deletemonitor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMonitor",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "deletescope": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScope",
+   "resources": [
+    "scope"
+   ]
+  },
+  "getmonitor": {
+   "name": "GetMonitor",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "getqueryresultsmonitortopcontributors": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetQueryResultsMonitorTopContributors",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "getqueryresultsworkloadinsightstopcontributors": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetQueryResultsWorkloadInsightsTopContributors",
+   "resources": [
+    "scope"
+   ]
+  },
+  "getqueryresultsworkloadinsightstopcontributorsdata": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetQueryResultsWorkloadInsightsTopContributorsData",
+   "resources": [
+    "scope"
+   ]
+  },
+  "getquerystatusmonitortopcontributors": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetQueryStatusMonitorTopContributors",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "getquerystatusworkloadinsightstopcontributors": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetQueryStatusWorkloadInsightsTopContributors",
+   "resources": [
+    "scope"
+   ]
+  },
+  "getquerystatusworkloadinsightstopcontributorsdata": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetQueryStatusWorkloadInsightsTopContributorsData",
+   "resources": [
+    "scope"
+   ]
+  },
+  "getscope": {
+   "name": "GetScope",
+   "resources": [
+    "scope"
+   ]
+  },
+  "listmonitors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMonitors",
+   "resources": []
+  },
+  "listscopes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListScopes",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "monitor",
+    "scope"
+   ]
+  },
+  "publish": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Publish",
+   "resources": []
+  },
+  "startquerymonitortopcontributors": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartQueryMonitorTopContributors",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "startqueryworkloadinsightstopcontributors": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartQueryWorkloadInsightsTopContributors",
+   "resources": [
+    "scope"
+   ]
+  },
+  "startqueryworkloadinsightstopcontributorsdata": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartQueryWorkloadInsightsTopContributorsData",
+   "resources": [
+    "scope"
+   ]
+  },
+  "stopquerymonitortopcontributors": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StopQueryMonitorTopContributors",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "stopqueryworkloadinsightstopcontributors": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StopQueryWorkloadInsightsTopContributors",
+   "resources": [
+    "scope"
+   ]
+  },
+  "stopqueryworkloadinsightstopcontributorsdata": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StopQueryWorkloadInsightsTopContributorsData",
+   "resources": [
+    "scope"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "monitor",
+    "scope"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "monitor",
+    "scope"
+   ]
+  },
+  "updatemonitor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMonitor",
+   "resources": [
+    "monitor"
+   ]
+  },
+  "updatescope": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateScope",
+   "resources": [
+    "scope"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "monitor": {
+   "arnFormats": [
+    "arn:${Partition}:networkflowmonitor:${Region}:${Account}:monitor/${MonitorName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "scope": {
+   "arnFormats": [
+    "arn:${Partition}:networkflowmonitor:${Region}:${Account}:scope/${ScopeId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "networkflowmonitor",
+ "serviceName": "Network Flow Monitor",
+ "version": "v1.5"
+}

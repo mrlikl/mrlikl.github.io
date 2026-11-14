@@ -1,0 +1,318 @@
+{
+ "actions": {
+  "cancelbatchjobexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelBatchJobExecution",
+   "resources": [
+    "Application"
+   ]
+  },
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "createdatasetexporttask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataSetExportTask",
+   "resources": [
+    "Application"
+   ]
+  },
+  "createdatasetimporttask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataSetImportTask",
+   "resources": [
+    "Application"
+   ]
+  },
+  "createdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDeployment",
+   "resources": [
+    "Application",
+    "Environment"
+   ]
+  },
+  "createenvironment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironment",
+   "resources": []
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "Application"
+   ]
+  },
+  "deleteapplicationfromenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplicationFromEnvironment",
+   "resources": [
+    "Application"
+   ]
+  },
+  "deleteenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironment",
+   "resources": [
+    "Environment"
+   ]
+  },
+  "getapplication": {
+   "name": "GetApplication",
+   "resources": [
+    "Application"
+   ]
+  },
+  "getapplicationversion": {
+   "name": "GetApplicationVersion",
+   "resources": [
+    "Application"
+   ]
+  },
+  "getbatchjobexecution": {
+   "name": "GetBatchJobExecution",
+   "resources": [
+    "Application"
+   ]
+  },
+  "getdatasetdetails": {
+   "name": "GetDataSetDetails",
+   "resources": [
+    "Application"
+   ]
+  },
+  "getdatasetexporttask": {
+   "name": "GetDataSetExportTask",
+   "resources": [
+    "Application"
+   ]
+  },
+  "getdatasetimporttask": {
+   "name": "GetDataSetImportTask",
+   "resources": [
+    "Application"
+   ]
+  },
+  "getdeployment": {
+   "name": "GetDeployment",
+   "resources": [
+    "Application"
+   ]
+  },
+  "getenvironment": {
+   "name": "GetEnvironment",
+   "resources": [
+    "Environment"
+   ]
+  },
+  "getsignedbluinsightsurl": {
+   "name": "GetSignedBluinsightsUrl",
+   "resources": []
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listapplicationversions": {
+   "name": "ListApplicationVersions",
+   "resources": [
+    "Application"
+   ]
+  },
+  "listbatchjobdefinitions": {
+   "name": "ListBatchJobDefinitions",
+   "resources": [
+    "Application"
+   ]
+  },
+  "listbatchjobexecutions": {
+   "name": "ListBatchJobExecutions",
+   "resources": [
+    "Application"
+   ]
+  },
+  "listbatchjobrestartpoints": {
+   "name": "ListBatchJobRestartPoints",
+   "resources": [
+    "Application"
+   ]
+  },
+  "listdatasetexporthistory": {
+   "name": "ListDataSetExportHistory",
+   "resources": [
+    "Application"
+   ]
+  },
+  "listdatasetimporthistory": {
+   "name": "ListDataSetImportHistory",
+   "resources": [
+    "Application"
+   ]
+  },
+  "listdatasets": {
+   "name": "ListDataSets",
+   "resources": [
+    "Application"
+   ]
+  },
+  "listdeployments": {
+   "name": "ListDeployments",
+   "resources": [
+    "Application"
+   ]
+  },
+  "listengineversions": {
+   "name": "ListEngineVersions",
+   "resources": []
+  },
+  "listenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironments",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "startapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartApplication",
+   "resources": [
+    "Application"
+   ]
+  },
+  "startbatchjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartBatchJob",
+   "resources": [
+    "Application"
+   ]
+  },
+  "stopapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopApplication",
+   "resources": [
+    "Application"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Application",
+    "Environment"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Application",
+    "Environment"
+   ]
+  },
+  "updateapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": [
+    "Application"
+   ]
+  },
+  "updateenvironment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironment",
+   "resources": [
+    "Environment"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Application": {
+   "arnFormats": [
+    "arn:${Partition}:m2:${Region}:${Account}:app/${ApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Environment": {
+   "arnFormats": [
+    "arn:${Partition}:m2:${Region}:${Account}:env/${EnvironmentId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "m2",
+ "serviceName": "Mainframe Modernization",
+ "version": "v1.5"
+}

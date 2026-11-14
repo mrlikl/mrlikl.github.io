@@ -1,0 +1,72 @@
+{
+ "actions": {
+  "deletekey": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteKey",
+   "resources": [
+    "key-value-store"
+   ]
+  },
+  "describekeyvaluestore": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "DescribeKeyValueStore",
+   "resources": [
+    "key-value-store"
+   ]
+  },
+  "getkey": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetKey",
+   "resources": [
+    "key-value-store"
+   ]
+  },
+  "listkeys": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListKeys",
+   "resources": [
+    "key-value-store"
+   ]
+  },
+  "putkey": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutKey",
+   "resources": [
+    "key-value-store"
+   ]
+  },
+  "updatekeys": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateKeys",
+   "resources": [
+    "key-value-store"
+   ]
+  }
+ },
+ "resources": {
+  "key-value-store": {
+   "arnFormats": [
+    "arn:${Partition}:cloudfront::${Account}:key-value-store/${ResourceId}"
+   ]
+  }
+ },
+ "service": "cloudfront-keyvaluestore",
+ "serviceName": "CloudFront KeyValueStore",
+ "version": "v1.5"
+}

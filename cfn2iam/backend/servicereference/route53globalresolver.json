@@ -1,0 +1,477 @@
+{
+ "actions": {
+  "allowvendedlogdeliveryforresource": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resourceConditionKeys": {
+    "global-resolver": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "global-resolver"
+   ]
+  },
+  "associatehostedzone": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateHostedZone",
+   "resources": []
+  },
+  "batchcreatefirewallrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateFirewallRule",
+   "resources": []
+  },
+  "batchdeletefirewallrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteFirewallRule",
+   "resources": []
+  },
+  "batchupdatefirewallrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateFirewallRule",
+   "resources": []
+  },
+  "createaccesssource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessSource",
+   "resources": [
+    "dns-view"
+   ]
+  },
+  "createaccesstoken": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessToken",
+   "resources": [
+    "access-token"
+   ]
+  },
+  "creatednsview": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDNSView",
+   "resources": [
+    "dns-view"
+   ]
+  },
+  "createfirewalldomainlist": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFirewallDomainList",
+   "resources": [
+    "firewall-domain-list"
+   ]
+  },
+  "createfirewallrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFirewallRule",
+   "resources": [
+    "dns-view",
+    "firewall-domain-list"
+   ]
+  },
+  "createglobalresolver": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGlobalResolver",
+   "resources": [
+    "global-resolver"
+   ]
+  },
+  "deleteaccesssource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccessSource",
+   "resources": [
+    "access-source"
+   ]
+  },
+  "deleteaccesstoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccessToken",
+   "resources": [
+    "access-token"
+   ]
+  },
+  "deletednsview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDNSView",
+   "resources": [
+    "dns-view"
+   ]
+  },
+  "deletefirewalldomainlist": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFirewallDomainList",
+   "resources": [
+    "firewall-domain-list"
+   ]
+  },
+  "deletefirewallrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFirewallRule",
+   "resources": []
+  },
+  "deleteglobalresolver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGlobalResolver",
+   "resources": [
+    "global-resolver"
+   ]
+  },
+  "disablednsview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableDNSView",
+   "resources": [
+    "dns-view"
+   ]
+  },
+  "disassociatehostedzone": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateHostedZone",
+   "resources": []
+  },
+  "enablednsview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableDNSView",
+   "resources": [
+    "dns-view"
+   ]
+  },
+  "getaccesssource": {
+   "name": "GetAccessSource",
+   "resources": [
+    "access-source"
+   ]
+  },
+  "getaccesstoken": {
+   "name": "GetAccessToken",
+   "resources": [
+    "access-token"
+   ]
+  },
+  "getdnsview": {
+   "name": "GetDNSView",
+   "resources": [
+    "dns-view"
+   ]
+  },
+  "getfirewalldomainlist": {
+   "name": "GetFirewallDomainList",
+   "resources": [
+    "firewall-domain-list"
+   ]
+  },
+  "getfirewallrule": {
+   "name": "GetFirewallRule",
+   "resources": []
+  },
+  "getglobalresolver": {
+   "name": "GetGlobalResolver",
+   "resources": [
+    "global-resolver"
+   ]
+  },
+  "gethostedzoneassociation": {
+   "name": "GetHostedZoneAssociation",
+   "resources": []
+  },
+  "getmanagedfirewalldomainlist": {
+   "name": "GetManagedFirewallDomainList",
+   "resources": []
+  },
+  "importfirewalldomains": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportFirewallDomains",
+   "resources": [
+    "firewall-domain-list"
+   ]
+  },
+  "listaccesssources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessSources",
+   "resources": []
+  },
+  "listaccesstokens": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessTokens",
+   "resources": []
+  },
+  "listdnsviews": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDNSViews",
+   "resources": []
+  },
+  "listfirewalldomainlists": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFirewallDomainLists",
+   "resources": []
+  },
+  "listfirewalldomains": {
+   "name": "ListFirewallDomains",
+   "resources": [
+    "firewall-domain-list"
+   ]
+  },
+  "listfirewallrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFirewallRules",
+   "resources": [
+    "dns-view"
+   ]
+  },
+  "listglobalresolvers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGlobalResolvers",
+   "resources": []
+  },
+  "listhostedzoneassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHostedZoneAssociations",
+   "resources": []
+  },
+  "listmanagedfirewalldomainlists": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedFirewallDomainLists",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "access-source",
+    "access-token",
+    "dns-view",
+    "firewall-domain-list",
+    "global-resolver"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "access-source",
+    "access-token",
+    "dns-view",
+    "firewall-domain-list",
+    "global-resolver"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "access-source",
+    "access-token",
+    "dns-view",
+    "firewall-domain-list",
+    "global-resolver"
+   ]
+  },
+  "updateaccesssource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccessSource",
+   "resources": [
+    "access-source"
+   ]
+  },
+  "updateaccesstoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccessToken",
+   "resources": [
+    "access-token"
+   ]
+  },
+  "updatednsview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDNSView",
+   "resources": [
+    "dns-view"
+   ]
+  },
+  "updatefirewalldomains": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFirewallDomains",
+   "resources": [
+    "firewall-domain-list"
+   ]
+  },
+  "updatefirewallrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFirewallRule",
+   "resources": []
+  },
+  "updateglobalresolver": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGlobalResolver",
+   "resources": [
+    "global-resolver"
+   ]
+  },
+  "updatehostedzoneassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHostedZoneAssociation",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "access-source": {
+   "arnFormats": [
+    "arn:${Partition}:route53globalresolver::${Account}:access-source/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "access-token": {
+   "arnFormats": [
+    "arn:${Partition}:route53globalresolver::${Account}:access-token/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dns-view": {
+   "arnFormats": [
+    "arn:${Partition}:route53globalresolver::${Account}:dns-view/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "firewall-domain-list": {
+   "arnFormats": [
+    "arn:${Partition}:route53globalresolver::${Account}:firewall-domain-list/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "global-resolver": {
+   "arnFormats": [
+    "arn:${Partition}:route53globalresolver::${Account}:global-resolver/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "route53globalresolver",
+ "serviceName": "Route 53 Global Resolver",
+ "version": "v1.5"
+}

@@ -1,0 +1,205 @@
+{
+ "actions": {
+  "altercluster": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AlterCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "alterclusterdynamicconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AlterClusterDynamicConfiguration",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "altergroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AlterGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "altertopic": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AlterTopic",
+   "resources": [
+    "topic"
+   ]
+  },
+  "altertopicdynamicconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AlterTopicDynamicConfiguration",
+   "resources": [
+    "topic"
+   ]
+  },
+  "altertransactionalid": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AlterTransactionalId",
+   "resources": [
+    "transactional-id"
+   ]
+  },
+  "connect": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Connect",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "createtopic": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTopic",
+   "resources": [
+    "topic"
+   ]
+  },
+  "deletegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "deletetopic": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTopic",
+   "resources": [
+    "topic"
+   ]
+  },
+  "describecluster": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeCluster",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "describeclusterdynamicconfiguration": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeClusterDynamicConfiguration",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "describegroup": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "describetopic": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeTopic",
+   "resources": [
+    "topic"
+   ]
+  },
+  "describetopicdynamicconfiguration": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeTopicDynamicConfiguration",
+   "resources": [
+    "topic"
+   ]
+  },
+  "describetransactionalid": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeTransactionalId",
+   "resources": [
+    "transactional-id"
+   ]
+  },
+  "readdata": {
+   "name": "ReadData",
+   "resources": [
+    "topic"
+   ]
+  },
+  "writedata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "WriteData",
+   "resources": [
+    "topic"
+   ]
+  },
+  "writedataidempotently": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "WriteDataIdempotently",
+   "resources": [
+    "cluster"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ]
+ },
+ "resources": {
+  "cluster": {
+   "arnFormats": [
+    "arn:${Partition}:kafka:${Region}:${Account}:cluster/${ClusterName}/${ClusterUuid}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "group": {
+   "arnFormats": [
+    "arn:${Partition}:kafka:${Region}:${Account}:group/${ClusterName}/${ClusterUuid}/${GroupName}"
+   ]
+  },
+  "topic": {
+   "arnFormats": [
+    "arn:${Partition}:kafka:${Region}:${Account}:topic/${ClusterName}/${ClusterUuid}/${TopicName}"
+   ]
+  },
+  "transactional-id": {
+   "arnFormats": [
+    "arn:${Partition}:kafka:${Region}:${Account}:transactional-id/${ClusterName}/${ClusterUuid}/${TransactionalId}"
+   ]
+  }
+ },
+ "service": "kafka-cluster",
+ "serviceName": "Apache Kafka APIs for MSK",
+ "version": "v1.5"
+}

@@ -1,0 +1,332 @@
+{
+ "actions": {
+  "addmembertogroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddMemberToGroup",
+   "resources": []
+  },
+  "completevirtualmfadeviceregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteVirtualMfaDeviceRegistration",
+   "resources": []
+  },
+  "completewebauthndeviceregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteWebAuthnDeviceRegistration",
+   "resources": []
+  },
+  "createalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAlias",
+   "resources": []
+  },
+  "createbearertoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBearerToken",
+   "resources": []
+  },
+  "createexternalidpconfigurationfordirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExternalIdPConfigurationForDirectory",
+   "resources": []
+  },
+  "creategroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGroup",
+   "resources": []
+  },
+  "createprovisioningtenant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProvisioningTenant",
+   "resources": []
+  },
+  "createuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUser",
+   "resources": []
+  },
+  "deletebearertoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBearerToken",
+   "resources": []
+  },
+  "deleteexternalidpcertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExternalIdPCertificate",
+   "resources": []
+  },
+  "deleteexternalidpconfigurationfordirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExternalIdPConfigurationForDirectory",
+   "resources": []
+  },
+  "deletegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGroup",
+   "resources": []
+  },
+  "deletemfadeviceforuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMfaDeviceForUser",
+   "resources": []
+  },
+  "deleteprovisioningtenant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProvisioningTenant",
+   "resources": []
+  },
+  "deleteuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUser",
+   "resources": []
+  },
+  "describedirectory": {
+   "name": "DescribeDirectory",
+   "resources": []
+  },
+  "describegroup": {
+   "name": "DescribeGroup",
+   "resources": []
+  },
+  "describegroups": {
+   "name": "DescribeGroups",
+   "resources": []
+  },
+  "describeprovisioningtenant": {
+   "name": "DescribeProvisioningTenant",
+   "resources": []
+  },
+  "describeuser": {
+   "name": "DescribeUser",
+   "resources": []
+  },
+  "describeuserbyuniqueattribute": {
+   "name": "DescribeUserByUniqueAttribute",
+   "resources": []
+  },
+  "describeusers": {
+   "name": "DescribeUsers",
+   "resources": []
+  },
+  "disableexternalidpconfigurationfordirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableExternalIdPConfigurationForDirectory",
+   "resources": []
+  },
+  "disableuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableUser",
+   "resources": []
+  },
+  "enableexternalidpconfigurationfordirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableExternalIdPConfigurationForDirectory",
+   "resources": []
+  },
+  "enableuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableUser",
+   "resources": []
+  },
+  "getawsspconfigurationfordirectory": {
+   "name": "GetAWSSPConfigurationForDirectory",
+   "resources": []
+  },
+  "getgroupid": {
+   "name": "GetGroupId",
+   "resources": []
+  },
+  "getuserid": {
+   "name": "GetUserId",
+   "resources": []
+  },
+  "getuserpoolinfo": {
+   "name": "GetUserPoolInfo",
+   "resources": []
+  },
+  "importexternalidpcertificate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportExternalIdPCertificate",
+   "resources": []
+  },
+  "ismemberingroup": {
+   "name": "IsMemberInGroup",
+   "resources": []
+  },
+  "ismemberingroups": {
+   "name": "IsMemberInGroups",
+   "resources": []
+  },
+  "listbearertokens": {
+   "name": "ListBearerTokens",
+   "resources": []
+  },
+  "listexternalidpcertificates": {
+   "name": "ListExternalIdPCertificates",
+   "resources": []
+  },
+  "listexternalidpconfigurationsfordirectory": {
+   "name": "ListExternalIdPConfigurationsForDirectory",
+   "resources": []
+  },
+  "listgroups": {
+   "name": "ListGroups",
+   "resources": []
+  },
+  "listgroupsformember": {
+   "name": "ListGroupsForMember",
+   "resources": []
+  },
+  "listgroupsforuser": {
+   "name": "ListGroupsForUser",
+   "resources": []
+  },
+  "listmembersingroup": {
+   "name": "ListMembersInGroup",
+   "resources": []
+  },
+  "listmfadevicesforuser": {
+   "name": "ListMfaDevicesForUser",
+   "resources": []
+  },
+  "listprovisioningtenants": {
+   "name": "ListProvisioningTenants",
+   "resources": []
+  },
+  "listusers": {
+   "name": "ListUsers",
+   "resources": []
+  },
+  "removememberfromgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveMemberFromGroup",
+   "resources": []
+  },
+  "searchgroups": {
+   "name": "SearchGroups",
+   "resources": []
+  },
+  "searchusers": {
+   "name": "SearchUsers",
+   "resources": []
+  },
+  "startvirtualmfadeviceregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartVirtualMfaDeviceRegistration",
+   "resources": []
+  },
+  "startwebauthndeviceregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartWebAuthnDeviceRegistration",
+   "resources": []
+  },
+  "updateexternalidpconfigurationfordirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExternalIdPConfigurationForDirectory",
+   "resources": []
+  },
+  "updategroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGroup",
+   "resources": []
+  },
+  "updategroupdisplayname": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGroupDisplayName",
+   "resources": []
+  },
+  "updatemfadeviceforuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMfaDeviceForUser",
+   "resources": []
+  },
+  "updatepassword": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePassword",
+   "resources": []
+  },
+  "updateuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUser",
+   "resources": []
+  },
+  "updateusername": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserName",
+   "resources": []
+  },
+  "verifyemail": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VerifyEmail",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "sso-directory",
+ "serviceName": "IAM Identity Center directory",
+ "version": "v1.5"
+}

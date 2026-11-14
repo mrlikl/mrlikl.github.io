@@ -1,0 +1,389 @@
+{
+ "actions": {
+  "batchgettraces": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "BatchGetTraces",
+   "resources": []
+  },
+  "batchgettracesummarybyid": {
+   "name": "BatchGetTraceSummaryById",
+   "resources": []
+  },
+  "callwithbearertoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CallWithBearerToken",
+   "resources": []
+  },
+  "canceltraceretrieval": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "CancelTraceRetrieval",
+   "resources": []
+  },
+  "creategroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "createsamplingrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSamplingRule",
+   "resources": [
+    "sampling-rule"
+   ]
+  },
+  "deletegroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "conditionKeys": [
+    "xray:ResourcePolicyName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": []
+  },
+  "deletesamplingrule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSamplingRule",
+   "resources": [
+    "sampling-rule"
+   ]
+  },
+  "getdistincttracegraphs": {
+   "name": "GetDistinctTraceGraphs",
+   "resources": []
+  },
+  "getencryptionconfig": {
+   "name": "GetEncryptionConfig",
+   "resources": []
+  },
+  "getgroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "getgroups": {
+   "name": "GetGroups",
+   "resources": []
+  },
+  "getindexingrules": {
+   "name": "GetIndexingRules",
+   "resources": []
+  },
+  "getinsight": {
+   "name": "GetInsight",
+   "resources": []
+  },
+  "getinsightevents": {
+   "name": "GetInsightEvents",
+   "resources": []
+  },
+  "getinsightimpactgraph": {
+   "name": "GetInsightImpactGraph",
+   "resources": []
+  },
+  "getinsightsummaries": {
+   "name": "GetInsightSummaries",
+   "resources": []
+  },
+  "getretrievedtracesgraph": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetRetrievedTracesGraph",
+   "resources": []
+  },
+  "getsamplingrules": {
+   "name": "GetSamplingRules",
+   "resources": []
+  },
+  "getsamplingstatisticsummaries": {
+   "name": "GetSamplingStatisticSummaries",
+   "resources": []
+  },
+  "getsamplingtargets": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetSamplingTargets",
+   "resources": []
+  },
+  "getservicegraph": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetServiceGraph",
+   "resources": []
+  },
+  "gettimeseriesservicestatistics": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetTimeSeriesServiceStatistics",
+   "resources": []
+  },
+  "gettracegraph": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetTraceGraph",
+   "resources": []
+  },
+  "gettracesegmentdestination": {
+   "name": "GetTraceSegmentDestination",
+   "resources": []
+  },
+  "gettracesummaries": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetTraceSummaries",
+   "resources": []
+  },
+  "link": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Link",
+   "resources": []
+  },
+  "listresourcepolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourcePolicies",
+   "resources": []
+  },
+  "listretrievedtraces": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListRetrievedTraces",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "group",
+    "sampling-rule"
+   ]
+  },
+  "putencryptionconfig": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutEncryptionConfig",
+   "resources": []
+  },
+  "putresourcepolicy": {
+   "conditionKeys": [
+    "xray:ResourcePolicyName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": []
+  },
+  "putspans": {
+   "conditionKeys": [
+    "logs:LogGeneratingResourceArns"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSpans",
+   "resources": []
+  },
+  "putspansforindexing": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSpansForIndexing",
+   "resources": []
+  },
+  "puttelemetryrecords": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutTelemetryRecords",
+   "resources": []
+  },
+  "puttracesegments": {
+   "conditionKeys": [
+    "logs:LogGeneratingResourceArns"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutTraceSegments",
+   "resources": []
+  },
+  "starttraceretrieval": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "StartTraceRetrieval",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "group",
+    "sampling-rule"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "group",
+    "sampling-rule"
+   ]
+  },
+  "updategroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "updateindexingrule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIndexingRule",
+   "resources": []
+  },
+  "updatesamplingrule": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSamplingRule",
+   "resources": [
+    "sampling-rule"
+   ]
+  },
+  "updatetracesegmentdestination": {
+   "conditionKeys": [
+    "xray:TraceSegmentDestination"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTraceSegmentDestination",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "logs:LogGeneratingResourceArns": [
+   "ArrayOfARN"
+  ],
+  "xray:ResourcePolicyName": [
+   "String"
+  ],
+  "xray:TraceSegmentDestination": [
+   "String"
+  ]
+ },
+ "resources": {
+  "group": {
+   "arnFormats": [
+    "arn:${Partition}:xray:${Region}:${Account}:group/${GroupName}/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "sampling-rule": {
+   "arnFormats": [
+    "arn:${Partition}:xray:${Region}:${Account}:sampling-rule/${SamplingRuleName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "xray",
+ "serviceName": "X-Ray",
+ "version": "v1.5"
+}

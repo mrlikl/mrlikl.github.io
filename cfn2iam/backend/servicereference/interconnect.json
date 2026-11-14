@@ -1,0 +1,144 @@
+{
+ "actions": {
+  "acceptconnectionproposal": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptConnectionProposal",
+   "resources": []
+  },
+  "createconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "interconnect:RemoteAccount"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnection",
+   "resources": [
+    "connection"
+   ]
+  },
+  "deleteconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnection",
+   "resources": [
+    "connection"
+   ]
+  },
+  "describeconnectionproposal": {
+   "name": "DescribeConnectionProposal",
+   "resources": []
+  },
+  "getconnection": {
+   "name": "GetConnection",
+   "resources": [
+    "connection"
+   ]
+  },
+  "getenvironment": {
+   "name": "GetEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "listattachpoints": {
+   "name": "ListAttachPoints",
+   "resources": []
+  },
+  "listconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnections",
+   "resources": []
+  },
+  "listenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironments",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "connection"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "connection"
+   ]
+  },
+  "updateconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnection",
+   "resources": [
+    "connection"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "interconnect:RemoteAccount": [
+   "String"
+  ]
+ },
+ "resources": {
+  "connection": {
+   "arnFormats": [
+    "arn:${Partition}:interconnect:${Region}:${Account}:connection/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "environment": {
+   "arnFormats": [
+    "arn:${Partition}:interconnect:${Region}:${Account}:environment/${Id}"
+   ]
+  }
+ },
+ "service": "interconnect",
+ "serviceName": "Interconnect",
+ "version": "v1.5"
+}

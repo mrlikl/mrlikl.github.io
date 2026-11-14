@@ -1,0 +1,57 @@
+{
+ "actions": {
+  "cancelmessageresponse": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelMessageResponse",
+   "resources": []
+  },
+  "createconversation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConversation",
+   "resources": []
+  },
+  "deleteconversation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConversation",
+   "resources": []
+  },
+  "listconversationmessages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConversationMessages",
+   "resources": []
+  },
+  "listconversations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConversations",
+   "resources": []
+  },
+  "notifyconversationisactive": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyConversationIsActive",
+   "resources": []
+  },
+  "sendconversationmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendConversationMessage",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "networkmanager-chat",
+ "serviceName": "Network Manager Chat",
+ "version": "v1.5"
+}

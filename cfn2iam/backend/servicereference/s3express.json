@@ -1,0 +1,572 @@
+{
+ "actions": {
+  "createaccesspoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "s3express:AccessPointNetworkOrigin",
+    "s3express:DataAccessPointAccount",
+    "s3express:DataAccessPointArn",
+    "s3express:LocationName",
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessPoint",
+   "resources": [
+    "accesspoint"
+   ]
+  },
+  "createbucket": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "s3express:LocationName",
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBucket",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "createsession": {
+   "conditionKeys": [
+    "s3express:AllAccessRestrictedToLocalZoneGroup",
+    "s3express:Permissions",
+    "s3express:ResourceAccount",
+    "s3express:SessionMode",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureAge",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256",
+    "s3express:x-amz-server-side-encryption",
+    "s3express:x-amz-server-side-encryption-aws-kms-key-id"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSession",
+   "resourceConditionKeys": {
+    "accesspoint": [
+     "s3express:Permissions"
+    ]
+   },
+   "resources": [
+    "accesspoint",
+    "bucket"
+   ]
+  },
+  "deleteaccesspoint": {
+   "conditionKeys": [
+    "s3express:AccessPointNetworkOrigin",
+    "s3express:DataAccessPointAccount",
+    "s3express:DataAccessPointArn",
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccessPoint",
+   "resources": [
+    "accesspoint"
+   ]
+  },
+  "deleteaccesspointpolicy": {
+   "conditionKeys": [
+    "s3express:AccessPointNetworkOrigin",
+    "s3express:DataAccessPointAccount",
+    "s3express:DataAccessPointArn",
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteAccessPointPolicy",
+   "resources": [
+    "accesspoint"
+   ]
+  },
+  "deleteaccesspointscope": {
+   "conditionKeys": [
+    "s3express:AccessPointNetworkOrigin",
+    "s3express:DataAccessPointAccount",
+    "s3express:DataAccessPointArn",
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteAccessPointScope",
+   "resources": [
+    "accesspoint"
+   ]
+  },
+  "deletebucket": {
+   "conditionKeys": [
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBucket",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "deletebucketpolicy": {
+   "conditionKeys": [
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteBucketPolicy",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "getaccesspoint": {
+   "conditionKeys": [
+    "s3express:AccessPointNetworkOrigin",
+    "s3express:DataAccessPointAccount",
+    "s3express:DataAccessPointArn",
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "name": "GetAccessPoint",
+   "resources": [
+    "accesspoint"
+   ]
+  },
+  "getaccesspointpolicy": {
+   "conditionKeys": [
+    "s3express:AccessPointNetworkOrigin",
+    "s3express:DataAccessPointAccount",
+    "s3express:DataAccessPointArn",
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "name": "GetAccessPointPolicy",
+   "resources": [
+    "accesspoint"
+   ]
+  },
+  "getaccesspointscope": {
+   "conditionKeys": [
+    "s3express:AccessPointNetworkOrigin",
+    "s3express:DataAccessPointAccount",
+    "s3express:DataAccessPointArn",
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "name": "GetAccessPointScope",
+   "resources": [
+    "accesspoint"
+   ]
+  },
+  "getbucketpolicy": {
+   "conditionKeys": [
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "name": "GetBucketPolicy",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "getencryptionconfiguration": {
+   "conditionKeys": [
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "name": "GetEncryptionConfiguration",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "getinventoryconfiguration": {
+   "conditionKeys": [
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "name": "GetInventoryConfiguration",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "getlifecycleconfiguration": {
+   "conditionKeys": [
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "name": "GetLifecycleConfiguration",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "getmetricsconfiguration": {
+   "conditionKeys": [
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "name": "GetMetricsConfiguration",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "listaccesspointsfordirectorybuckets": {
+   "conditionKeys": [
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessPointsForDirectoryBuckets",
+   "resources": []
+  },
+  "listallmydirectorybuckets": {
+   "conditionKeys": [
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAllMyDirectoryBuckets",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "accesspoint",
+    "bucket"
+   ]
+  },
+  "putaccesspointpolicy": {
+   "conditionKeys": [
+    "s3express:AccessPointNetworkOrigin",
+    "s3express:DataAccessPointAccount",
+    "s3express:DataAccessPointArn",
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutAccessPointPolicy",
+   "resources": [
+    "accesspoint"
+   ]
+  },
+  "putaccesspointscope": {
+   "conditionKeys": [
+    "s3express:AccessPointNetworkOrigin",
+    "s3express:DataAccessPointAccount",
+    "s3express:DataAccessPointArn",
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutAccessPointScope",
+   "resources": [
+    "accesspoint"
+   ]
+  },
+  "putbucketpolicy": {
+   "conditionKeys": [
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutBucketPolicy",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "putencryptionconfiguration": {
+   "conditionKeys": [
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutEncryptionConfiguration",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "putinventoryconfiguration": {
+   "conditionKeys": [
+    "s3express:InventoryAccessibleOptionalFields",
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutInventoryConfiguration",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "putlifecycleconfiguration": {
+   "conditionKeys": [
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLifecycleConfiguration",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "putmetricsconfiguration": {
+   "conditionKeys": [
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMetricsConfiguration",
+   "resources": [
+    "bucket"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "accesspoint",
+    "bucket"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys",
+    "s3express:ResourceAccount",
+    "s3express:TlsVersion",
+    "s3express:authType",
+    "s3express:signatureversion",
+    "s3express:x-amz-content-sha256"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "accesspoint",
+    "bucket"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "s3express:AccessPointNetworkOrigin": [
+   "String"
+  ],
+  "s3express:AccessPointTag/${TagKey}": [
+   "String"
+  ],
+  "s3express:AllAccessRestrictedToLocalZoneGroup": [
+   "String"
+  ],
+  "s3express:BucketTag/${TagKey}": [
+   "String"
+  ],
+  "s3express:DataAccessPointAccount": [
+   "String"
+  ],
+  "s3express:DataAccessPointArn": [
+   "ARN"
+  ],
+  "s3express:InventoryAccessibleOptionalFields": [
+   "ArrayOfString"
+  ],
+  "s3express:LocationName": [
+   "String"
+  ],
+  "s3express:Permissions": [
+   "ArrayOfString"
+  ],
+  "s3express:ResourceAccount": [
+   "String"
+  ],
+  "s3express:SessionMode": [
+   "String"
+  ],
+  "s3express:TlsVersion": [
+   "Numeric"
+  ],
+  "s3express:authType": [
+   "String"
+  ],
+  "s3express:signatureAge": [
+   "Numeric"
+  ],
+  "s3express:signatureversion": [
+   "String"
+  ],
+  "s3express:x-amz-content-sha256": [
+   "String"
+  ],
+  "s3express:x-amz-server-side-encryption": [
+   "String"
+  ],
+  "s3express:x-amz-server-side-encryption-aws-kms-key-id": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "accesspoint": {
+   "arnFormats": [
+    "arn:${Partition}:s3express:${Region}:${Account}:accesspoint/${AccessPointName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3express:AccessPointTag/${TagKey}"
+   ]
+  },
+  "bucket": {
+   "arnFormats": [
+    "arn:${Partition}:s3express:${Region}:${Account}:bucket/${BucketName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3express:BucketTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "s3express",
+ "serviceName": "S3 Express",
+ "version": "v1.5"
+}

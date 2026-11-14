@@ -1,0 +1,196 @@
+{
+ "actions": {
+  "associaterepository": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateRepository",
+   "resources": []
+  },
+  "createcodereview": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCodeReview",
+   "resources": [
+    "association"
+   ]
+  },
+  "createconnectiontoken": {
+   "name": "CreateConnectionToken",
+   "resources": []
+  },
+  "describecodereview": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeCodeReview",
+   "resources": [
+    "association"
+   ]
+  },
+  "describerecommendationfeedback": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeRecommendationFeedback",
+   "resources": [
+    "association"
+   ]
+  },
+  "describerepositoryassociation": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeRepositoryAssociation",
+   "resources": [
+    "association"
+   ]
+  },
+  "disassociaterepository": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateRepository",
+   "resources": [
+    "association"
+   ]
+  },
+  "getmetricsdata": {
+   "name": "GetMetricsData",
+   "resources": []
+  },
+  "listcodereviews": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCodeReviews",
+   "resources": []
+  },
+  "listrecommendationfeedback": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommendationFeedback",
+   "resources": [
+    "association"
+   ]
+  },
+  "listrecommendations": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommendations",
+   "resources": [
+    "association"
+   ]
+  },
+  "listrepositoryassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRepositoryAssociations",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "association"
+   ]
+  },
+  "listthirdpartyrepositories": {
+   "name": "ListThirdPartyRepositories",
+   "resources": []
+  },
+  "putrecommendationfeedback": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRecommendationFeedback",
+   "resources": [
+    "association"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "association"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UnTagResource",
+   "resources": [
+    "association"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "association": {
+   "arnFormats": [
+    "arn:${Partition}:codeguru-reviewer:${Region}:${Account}:association:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "codereview": {
+   "arnFormats": [
+    "arn:${Partition}:codeguru-reviewer:${Region}:${Account}:association:${ResourceId}:codereview:${CodeReviewId}"
+   ]
+  }
+ },
+ "service": "codeguru-reviewer",
+ "serviceName": "CodeGuru Reviewer",
+ "version": "v1.5"
+}

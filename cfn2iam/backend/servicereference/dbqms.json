@@ -1,0 +1,96 @@
+{
+ "actions": {
+  "createfavoritequery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFavoriteQuery",
+   "resources": []
+  },
+  "createqueryhistory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQueryHistory",
+   "resources": []
+  },
+  "createtab": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTab",
+   "resources": []
+  },
+  "deletefavoritequeries": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFavoriteQueries",
+   "resources": []
+  },
+  "deletequeryhistory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQueryHistory",
+   "resources": []
+  },
+  "deletetab": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTab",
+   "resources": []
+  },
+  "describefavoritequeries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeFavoriteQueries",
+   "resources": []
+  },
+  "describequeryhistory": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeQueryHistory",
+   "resources": []
+  },
+  "describetabs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeTabs",
+   "resources": []
+  },
+  "getquerystring": {
+   "name": "GetQueryString",
+   "resources": []
+  },
+  "updatefavoritequery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFavoriteQuery",
+   "resources": []
+  },
+  "updatequeryhistory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueryHistory",
+   "resources": []
+  },
+  "updatetab": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTab",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "dbqms",
+ "serviceName": "DBQMS",
+ "version": "v1.5"
+}

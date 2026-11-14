@@ -1,0 +1,47 @@
+{
+ "actions": {
+  "assignprincipal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssignPrincipal",
+   "resources": []
+  },
+  "createapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": []
+  },
+  "deleteprincipal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePrincipal",
+   "resources": []
+  },
+  "getapplication": {
+   "name": "GetApplication",
+   "resources": []
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "researchstudio",
+ "serviceName": "Bio Discovery",
+ "version": "v1.5"
+}

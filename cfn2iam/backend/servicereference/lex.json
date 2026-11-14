@@ -1,0 +1,1371 @@
+{
+ "actions": {
+  "batchcreatecustomvocabularyitem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateCustomVocabularyItem",
+   "resources": [
+    "bot"
+   ]
+  },
+  "batchdeletecustomvocabularyitem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteCustomVocabularyItem",
+   "resources": [
+    "bot"
+   ]
+  },
+  "batchupdatecustomvocabularyitem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateCustomVocabularyItem",
+   "resources": [
+    "bot"
+   ]
+  },
+  "buildbotlocale": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BuildBotLocale",
+   "resources": [
+    "bot"
+   ]
+  },
+  "createbot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBot",
+   "resources": [
+    "bot",
+    "bot alias"
+   ]
+  },
+  "createbotalias": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBotAlias",
+   "resources": [
+    "bot alias"
+   ]
+  },
+  "createbotchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBotChannel",
+   "resources": [
+    "bot"
+   ]
+  },
+  "createbotlocale": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBotLocale",
+   "resources": [
+    "bot"
+   ]
+  },
+  "createbotreplica": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBotReplica",
+   "resources": [
+    "bot"
+   ]
+  },
+  "createbotversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBotVersion",
+   "resources": [
+    "bot",
+    "bot version"
+   ]
+  },
+  "createcustomvocabulary": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomVocabulary",
+   "resources": [
+    "bot"
+   ]
+  },
+  "createexport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExport",
+   "resources": [
+    "bot",
+    "test set"
+   ]
+  },
+  "createintent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIntent",
+   "resources": [
+    "bot"
+   ]
+  },
+  "createintentversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIntentVersion",
+   "resources": [
+    "intent version"
+   ]
+  },
+  "createresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResourcePolicy",
+   "resources": [
+    "bot",
+    "bot alias"
+   ]
+  },
+  "createresourcepolicystatement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateResourcePolicyStatement",
+   "resources": [
+    "bot",
+    "bot alias"
+   ]
+  },
+  "createslot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSlot",
+   "resources": [
+    "bot"
+   ]
+  },
+  "createslottype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSlotType",
+   "resources": [
+    "bot"
+   ]
+  },
+  "createslottypeversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSlotTypeVersion",
+   "resources": [
+    "slottype version"
+   ]
+  },
+  "createtestset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTestSet",
+   "resources": []
+  },
+  "createtestsetdiscrepancyreport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTestSetDiscrepancyReport",
+   "resources": [
+    "test set"
+   ]
+  },
+  "createuploadurl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUploadUrl",
+   "resources": []
+  },
+  "deletebot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBot",
+   "resources": [
+    "bot",
+    "bot alias",
+    "bot version"
+   ]
+  },
+  "deletebotalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBotAlias",
+   "resources": [
+    "bot alias"
+   ]
+  },
+  "deletebotanalyzerrecommendation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBotAnalyzerRecommendation",
+   "resources": [
+    "bot"
+   ]
+  },
+  "deletebotchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBotChannel",
+   "resources": [
+    "bot"
+   ]
+  },
+  "deletebotchannelassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBotChannelAssociation",
+   "resources": [
+    "channel"
+   ]
+  },
+  "deletebotlocale": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBotLocale",
+   "resources": [
+    "bot"
+   ]
+  },
+  "deletebotreplica": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBotReplica",
+   "resources": [
+    "bot"
+   ]
+  },
+  "deletebotversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBotVersion",
+   "resources": [
+    "bot",
+    "bot version"
+   ]
+  },
+  "deletecustomvocabulary": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomVocabulary",
+   "resources": [
+    "bot"
+   ]
+  },
+  "deleteexport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExport",
+   "resources": [
+    "bot",
+    "test set"
+   ]
+  },
+  "deleteimport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteImport",
+   "resources": [
+    "bot",
+    "test set"
+   ]
+  },
+  "deleteintent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIntent",
+   "resources": [
+    "bot",
+    "intent version"
+   ]
+  },
+  "deleteintentversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIntentVersion",
+   "resources": [
+    "intent version"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "bot",
+    "bot alias"
+   ]
+  },
+  "deleteresourcepolicystatement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicyStatement",
+   "resources": [
+    "bot",
+    "bot alias"
+   ]
+  },
+  "deletesession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteSession",
+   "resources": [
+    "bot alias",
+    "bot version"
+   ]
+  },
+  "deleteslot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSlot",
+   "resources": [
+    "bot"
+   ]
+  },
+  "deleteslottype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSlotType",
+   "resources": [
+    "bot",
+    "slottype version"
+   ]
+  },
+  "deleteslottypeversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSlotTypeVersion",
+   "resources": [
+    "slottype version"
+   ]
+  },
+  "deletetestset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTestSet",
+   "resources": [
+    "test set"
+   ]
+  },
+  "deleteutterances": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUtterances",
+   "resources": [
+    "bot",
+    "bot version"
+   ]
+  },
+  "describebot": {
+   "name": "DescribeBot",
+   "resources": [
+    "bot"
+   ]
+  },
+  "describebotalias": {
+   "name": "DescribeBotAlias",
+   "resources": [
+    "bot alias"
+   ]
+  },
+  "describebotanalyzerrecommendation": {
+   "name": "DescribeBotAnalyzerRecommendation",
+   "resources": [
+    "bot"
+   ]
+  },
+  "describebotchannel": {
+   "name": "DescribeBotChannel",
+   "resources": [
+    "bot"
+   ]
+  },
+  "describebotlocale": {
+   "name": "DescribeBotLocale",
+   "resources": [
+    "bot"
+   ]
+  },
+  "describebotrecommendation": {
+   "name": "DescribeBotRecommendation",
+   "resources": [
+    "bot"
+   ]
+  },
+  "describebotreplica": {
+   "name": "DescribeBotReplica",
+   "resources": [
+    "bot"
+   ]
+  },
+  "describebotresourcegeneration": {
+   "name": "DescribeBotResourceGeneration",
+   "resources": [
+    "bot"
+   ]
+  },
+  "describebotversion": {
+   "name": "DescribeBotVersion",
+   "resources": [
+    "bot"
+   ]
+  },
+  "describecustomvocabulary": {
+   "name": "DescribeCustomVocabulary",
+   "resources": [
+    "bot"
+   ]
+  },
+  "describecustomvocabularymetadata": {
+   "name": "DescribeCustomVocabularyMetadata",
+   "resources": [
+    "bot"
+   ]
+  },
+  "describeexport": {
+   "name": "DescribeExport",
+   "resources": [
+    "bot",
+    "test set"
+   ]
+  },
+  "describeimport": {
+   "name": "DescribeImport",
+   "resources": [
+    "bot",
+    "test set"
+   ]
+  },
+  "describeintent": {
+   "name": "DescribeIntent",
+   "resources": [
+    "bot"
+   ]
+  },
+  "describeresourcepolicy": {
+   "name": "DescribeResourcePolicy",
+   "resources": [
+    "bot",
+    "bot alias"
+   ]
+  },
+  "describeslot": {
+   "name": "DescribeSlot",
+   "resources": [
+    "bot"
+   ]
+  },
+  "describeslottype": {
+   "name": "DescribeSlotType",
+   "resources": [
+    "bot"
+   ]
+  },
+  "describetestexecution": {
+   "name": "DescribeTestExecution",
+   "resources": [
+    "test set"
+   ]
+  },
+  "describetestset": {
+   "name": "DescribeTestSet",
+   "resources": [
+    "test set"
+   ]
+  },
+  "describetestsetdiscrepancyreport": {
+   "name": "DescribeTestSetDiscrepancyReport",
+   "resources": [
+    "test set"
+   ]
+  },
+  "describetestsetgeneration": {
+   "name": "DescribeTestSetGeneration",
+   "resources": [
+    "test set"
+   ]
+  },
+  "generatebotelement": {
+   "name": "GenerateBotElement",
+   "resources": [
+    "bot"
+   ]
+  },
+  "getbot": {
+   "name": "GetBot",
+   "resources": [
+    "bot alias",
+    "bot version"
+   ]
+  },
+  "getbotalias": {
+   "name": "GetBotAlias",
+   "resources": [
+    "bot alias"
+   ]
+  },
+  "getbotaliases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetBotAliases",
+   "resources": []
+  },
+  "getbotchannelassociation": {
+   "name": "GetBotChannelAssociation",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getbotchannelassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetBotChannelAssociations",
+   "resources": [
+    "channel"
+   ]
+  },
+  "getbots": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetBots",
+   "resources": []
+  },
+  "getbotversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetBotVersions",
+   "resources": [
+    "bot version"
+   ]
+  },
+  "getbuiltinintent": {
+   "name": "GetBuiltinIntent",
+   "resources": []
+  },
+  "getbuiltinintents": {
+   "name": "GetBuiltinIntents",
+   "resources": []
+  },
+  "getbuiltinslottypes": {
+   "name": "GetBuiltinSlotTypes",
+   "resources": []
+  },
+  "getexport": {
+   "name": "GetExport",
+   "resources": [
+    "bot version"
+   ]
+  },
+  "getimport": {
+   "name": "GetImport",
+   "resources": []
+  },
+  "getintent": {
+   "name": "GetIntent",
+   "resources": [
+    "intent version"
+   ]
+  },
+  "getintents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetIntents",
+   "resources": []
+  },
+  "getintentversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetIntentVersions",
+   "resources": [
+    "intent version"
+   ]
+  },
+  "getmigration": {
+   "name": "GetMigration",
+   "resources": []
+  },
+  "getmigrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetMigrations",
+   "resources": []
+  },
+  "getsession": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetSession",
+   "resources": [
+    "bot alias",
+    "bot version"
+   ]
+  },
+  "getslottype": {
+   "name": "GetSlotType",
+   "resources": [
+    "slottype version"
+   ]
+  },
+  "getslottypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetSlotTypes",
+   "resources": []
+  },
+  "getslottypeversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetSlotTypeVersions",
+   "resources": [
+    "slottype version"
+   ]
+  },
+  "gettestexecutionartifactsurl": {
+   "name": "GetTestExecutionArtifactsUrl",
+   "resources": [
+    "test set"
+   ]
+  },
+  "getutterancesview": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetUtterancesView",
+   "resources": [
+    "bot version"
+   ]
+  },
+  "listaggregatedutterances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAggregatedUtterances",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listbotaliases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBotAliases",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listbotaliasreplicas": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBotAliasReplicas",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listbotanalyzerrecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBotAnalyzerRecommendations",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listbotchannels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBotChannels",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listbotlocales": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBotLocales",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listbotrecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBotRecommendations",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listbotreplicas": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBotReplicas",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listbotresourcegenerations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBotResourceGenerations",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listbots": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBots",
+   "resources": []
+  },
+  "listbotversionreplicas": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBotVersionReplicas",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listbotversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBotVersions",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listbuiltinintents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBuiltInIntents",
+   "resources": []
+  },
+  "listbuiltinslottypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBuiltInSlotTypes",
+   "resources": []
+  },
+  "listcustomvocabularyitems": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomVocabularyItems",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listexports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExports",
+   "resources": []
+  },
+  "listimports": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListImports",
+   "resources": []
+  },
+  "listintentmetrics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIntentMetrics",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listintentpaths": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIntentPaths",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listintents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIntents",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listintentstagemetrics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIntentStageMetrics",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listrecommendedintents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommendedIntents",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listsessionanalyticsdata": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSessionAnalyticsData",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listsessionmetrics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSessionMetrics",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listslots": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSlots",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listslottypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSlotTypes",
+   "resources": [
+    "bot"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "bot",
+    "bot alias",
+    "channel",
+    "test set"
+   ]
+  },
+  "listtestexecutionresultitems": {
+   "name": "ListTestExecutionResultItems",
+   "resources": [
+    "test set"
+   ]
+  },
+  "listtestexecutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTestExecutions",
+   "resources": []
+  },
+  "listtestsetrecords": {
+   "name": "ListTestSetRecords",
+   "resources": [
+    "test set"
+   ]
+  },
+  "listtestsets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTestSets",
+   "resources": []
+  },
+  "postcontent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PostContent",
+   "resources": [
+    "bot alias",
+    "bot version"
+   ]
+  },
+  "posttext": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PostText",
+   "resources": [
+    "bot alias",
+    "bot version"
+   ]
+  },
+  "putbot": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutBot",
+   "resources": [
+    "bot version"
+   ]
+  },
+  "putbotalias": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutBotAlias",
+   "resources": [
+    "bot alias"
+   ]
+  },
+  "putintent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutIntent",
+   "resources": [
+    "intent version"
+   ]
+  },
+  "putsession": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutSession",
+   "resources": [
+    "bot alias",
+    "bot version"
+   ]
+  },
+  "putslottype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSlotType",
+   "resources": [
+    "slottype version"
+   ]
+  },
+  "recognizetext": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "RecognizeText",
+   "resources": [
+    "bot alias"
+   ]
+  },
+  "recognizeutterance": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "RecognizeUtterance",
+   "resources": [
+    "bot alias"
+   ]
+  },
+  "searchassociatedtranscripts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchAssociatedTranscripts",
+   "resources": [
+    "bot"
+   ]
+  },
+  "startbotanalyzer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartBotAnalyzer",
+   "resources": [
+    "bot"
+   ]
+  },
+  "startbotrecommendation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartBotRecommendation",
+   "resources": [
+    "bot"
+   ]
+  },
+  "startbotresourcegeneration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartBotResourceGeneration",
+   "resources": [
+    "bot"
+   ]
+  },
+  "startconversation": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartConversation",
+   "resources": [
+    "bot alias"
+   ]
+  },
+  "startimport": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartImport",
+   "resources": [
+    "bot",
+    "bot alias",
+    "test set"
+   ]
+  },
+  "startmigration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartMigration",
+   "resources": [
+    "bot version"
+   ]
+  },
+  "starttestexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTestExecution",
+   "resources": [
+    "test set"
+   ]
+  },
+  "starttestsetgeneration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTestSetGeneration",
+   "resources": [
+    "test set"
+   ]
+  },
+  "stopbotanalyzer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopBotAnalyzer",
+   "resources": [
+    "bot"
+   ]
+  },
+  "stopbotrecommendation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopBotRecommendation",
+   "resources": [
+    "bot"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "bot",
+    "bot alias",
+    "channel",
+    "test set"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "bot",
+    "bot alias",
+    "channel",
+    "test set"
+   ]
+  },
+  "updatebot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBot",
+   "resources": [
+    "bot"
+   ]
+  },
+  "updatebotalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBotAlias",
+   "resources": [
+    "bot alias"
+   ]
+  },
+  "updatebotlocale": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBotLocale",
+   "resources": [
+    "bot"
+   ]
+  },
+  "updatebotrecommendation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBotRecommendation",
+   "resources": [
+    "bot"
+   ]
+  },
+  "updatecustomvocabulary": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCustomVocabulary",
+   "resources": [
+    "bot"
+   ]
+  },
+  "updateexport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExport",
+   "resources": [
+    "bot"
+   ]
+  },
+  "updateintent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIntent",
+   "resources": [
+    "bot"
+   ]
+  },
+  "updateresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResourcePolicy",
+   "resources": [
+    "bot",
+    "bot alias"
+   ]
+  },
+  "updateslot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSlot",
+   "resources": [
+    "bot"
+   ]
+  },
+  "updateslottype": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSlotType",
+   "resources": [
+    "bot"
+   ]
+  },
+  "updatetestset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTestSet",
+   "resources": [
+    "test set"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "lex:associatedIntents": [
+   "ArrayOfString"
+  ],
+  "lex:associatedSlotTypes": [
+   "ArrayOfString"
+  ],
+  "lex:channelType": [
+   "String"
+  ]
+ },
+ "resources": {
+  "bot": {
+   "arnFormats": [
+    "arn:${Partition}:lex:${Region}:${Account}:bot/${BotId}",
+    "arn:${Partition}:lex:${Region}:${Account}:bot:${BotName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "bot alias": {
+   "arnFormats": [
+    "arn:${Partition}:lex:${Region}:${Account}:bot-alias/${BotId}/${BotAliasId}",
+    "arn:${Partition}:lex:${Region}:${Account}:bot:${BotName}:${BotAlias}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "bot version": {
+   "arnFormats": [
+    "arn:${Partition}:lex:${Region}:${Account}:bot:${BotName}:${BotVersion}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "channel": {
+   "arnFormats": [
+    "arn:${Partition}:lex:${Region}:${Account}:bot-channel:${BotName}:${BotAlias}:${ChannelName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "intent version": {
+   "arnFormats": [
+    "arn:${Partition}:lex:${Region}:${Account}:intent:${IntentName}:${IntentVersion}"
+   ]
+  },
+  "slottype version": {
+   "arnFormats": [
+    "arn:${Partition}:lex:${Region}:${Account}:slottype:${SlotName}:${SlotVersion}"
+   ]
+  },
+  "test set": {
+   "arnFormats": [
+    "arn:${Partition}:lex:${Region}:${Account}:test-set/${TestSetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "lex",
+ "serviceName": "Lex",
+ "version": "v1.5"
+}

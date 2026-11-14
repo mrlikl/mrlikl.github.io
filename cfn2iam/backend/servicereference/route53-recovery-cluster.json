@@ -1,0 +1,53 @@
+{
+ "actions": {
+  "getroutingcontrolstate": {
+   "name": "GetRoutingControlState",
+   "resources": [
+    "routingcontrol"
+   ]
+  },
+  "listroutingcontrols": {
+   "name": "ListRoutingControls",
+   "resources": []
+  },
+  "updateroutingcontrolstate": {
+   "conditionKeys": [
+    "route53-recovery-cluster:AllowSafetyRulesOverrides"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoutingControlState",
+   "resources": [
+    "routingcontrol"
+   ]
+  },
+  "updateroutingcontrolstates": {
+   "conditionKeys": [
+    "route53-recovery-cluster:AllowSafetyRulesOverrides"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoutingControlStates",
+   "resources": [
+    "routingcontrol"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "route53-recovery-cluster:AllowSafetyRulesOverrides": [
+   "Bool"
+  ]
+ },
+ "resources": {
+  "routingcontrol": {
+   "arnFormats": [
+    "arn:${Partition}:route53-recovery-control::${Account}:controlpanel/${ControlPanelId}/routingcontrol/${RoutingControlId}"
+   ]
+  }
+ },
+ "service": "route53-recovery-cluster",
+ "serviceName": "Route 53 Recovery Cluster",
+ "version": "v1.5"
+}

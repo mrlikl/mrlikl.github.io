@@ -1,0 +1,256 @@
+{
+ "actions": {
+  "batchupdaterecommendationresourceexclusion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdateRecommendationResourceExclusion",
+   "resources": []
+  },
+  "deletenotificationconfigurationfordelegatedadmin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotificationConfigurationForDelegatedAdmin",
+   "resources": []
+  },
+  "describeaccount": {
+   "name": "DescribeAccount",
+   "resources": []
+  },
+  "describeaccountaccess": {
+   "name": "DescribeAccountAccess",
+   "resources": []
+  },
+  "describecheckitems": {
+   "name": "DescribeCheckItems",
+   "resources": [
+    "checks"
+   ]
+  },
+  "describecheckrefreshstatuses": {
+   "name": "DescribeCheckRefreshStatuses",
+   "resources": [
+    "checks"
+   ]
+  },
+  "describechecks": {
+   "name": "DescribeChecks",
+   "resources": []
+  },
+  "describecheckstatushistorychanges": {
+   "name": "DescribeCheckStatusHistoryChanges",
+   "resources": [
+    "checks"
+   ]
+  },
+  "describechecksummaries": {
+   "name": "DescribeCheckSummaries",
+   "resources": [
+    "checks"
+   ]
+  },
+  "describenotificationconfigurations": {
+   "name": "DescribeNotificationConfigurations",
+   "resources": []
+  },
+  "describenotificationpreferences": {
+   "name": "DescribeNotificationPreferences",
+   "resources": []
+  },
+  "describeorganization": {
+   "name": "DescribeOrganization",
+   "resources": []
+  },
+  "describeorganizationaccounts": {
+   "name": "DescribeOrganizationAccounts",
+   "resources": []
+  },
+  "describereports": {
+   "name": "DescribeReports",
+   "resources": []
+  },
+  "describerisk": {
+   "name": "DescribeRisk",
+   "resources": []
+  },
+  "describeriskresources": {
+   "name": "DescribeRiskResources",
+   "resources": []
+  },
+  "describerisks": {
+   "name": "DescribeRisks",
+   "resources": []
+  },
+  "describeservicemetadata": {
+   "name": "DescribeServiceMetadata",
+   "resources": []
+  },
+  "downloadrisk": {
+   "name": "DownloadRisk",
+   "resources": []
+  },
+  "excludecheckitems": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExcludeCheckItems",
+   "resources": [
+    "checks"
+   ]
+  },
+  "generatereport": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateReport",
+   "resources": []
+  },
+  "getorganizationrecommendation": {
+   "name": "GetOrganizationRecommendation",
+   "resources": []
+  },
+  "getrecommendation": {
+   "name": "GetRecommendation",
+   "resources": []
+  },
+  "includecheckitems": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "IncludeCheckItems",
+   "resources": [
+    "checks"
+   ]
+  },
+  "listaccountsforparent": {
+   "name": "ListAccountsForParent",
+   "resources": []
+  },
+  "listchecks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChecks",
+   "resources": []
+  },
+  "listorganizationalunitsforparent": {
+   "name": "ListOrganizationalUnitsForParent",
+   "resources": []
+  },
+  "listorganizationrecommendationaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrganizationRecommendationAccounts",
+   "resources": []
+  },
+  "listorganizationrecommendationresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrganizationRecommendationResources",
+   "resources": []
+  },
+  "listorganizationrecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrganizationRecommendations",
+   "resources": []
+  },
+  "listrecommendationresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommendationResources",
+   "resources": []
+  },
+  "listrecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommendations",
+   "resources": []
+  },
+  "listrecommendationsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommendationsForResource",
+   "resources": []
+  },
+  "listroots": {
+   "name": "ListRoots",
+   "resources": []
+  },
+  "refreshcheck": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RefreshCheck",
+   "resources": [
+    "checks"
+   ]
+  },
+  "setaccountaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetAccountAccess",
+   "resources": []
+  },
+  "setorganizationaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetOrganizationAccess",
+   "resources": []
+  },
+  "updatenotificationconfigurations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotificationConfigurations",
+   "resources": []
+  },
+  "updatenotificationpreferences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotificationPreferences",
+   "resources": []
+  },
+  "updateorganizationrecommendationlifecycle": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOrganizationRecommendationLifecycle",
+   "resources": []
+  },
+  "updaterecommendationlifecycle": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRecommendationLifecycle",
+   "resources": []
+  },
+  "updateriskstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRiskStatus",
+   "resources": []
+  }
+ },
+ "resources": {
+  "checks": {
+   "arnFormats": [
+    "arn:${Partition}:trustedadvisor:${Region}:${Account}:checks/${CategoryCode}/${CheckId}"
+   ]
+  }
+ },
+ "service": "trustedadvisor",
+ "serviceName": "Trusted Advisor",
+ "version": "v1.5"
+}

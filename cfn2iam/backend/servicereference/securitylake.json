@@ -1,0 +1,305 @@
+{
+ "actions": {
+  "createawslogsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAwsLogSource",
+   "resources": [
+    "data-lake"
+   ]
+  },
+  "createcustomlogsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomLogSource",
+   "resources": [
+    "data-lake"
+   ]
+  },
+  "createdatalake": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataLake",
+   "resources": [
+    "data-lake"
+   ]
+  },
+  "createdatalakeexceptionsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataLakeExceptionSubscription",
+   "resources": []
+  },
+  "createdatalakeorganizationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataLakeOrganizationConfiguration",
+   "resources": [
+    "data-lake"
+   ]
+  },
+  "createsubscriber": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSubscriber",
+   "resources": []
+  },
+  "createsubscribernotification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSubscriberNotification",
+   "resources": [
+    "subscriber"
+   ]
+  },
+  "deleteawslogsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAwsLogSource",
+   "resources": [
+    "data-lake"
+   ]
+  },
+  "deletecustomlogsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomLogSource",
+   "resources": [
+    "data-lake"
+   ]
+  },
+  "deletedatalake": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataLake",
+   "resources": [
+    "data-lake"
+   ]
+  },
+  "deletedatalakeexceptionsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataLakeExceptionSubscription",
+   "resources": []
+  },
+  "deletedatalakeorganizationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataLakeOrganizationConfiguration",
+   "resources": [
+    "data-lake"
+   ]
+  },
+  "deletesubscriber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSubscriber",
+   "resources": [
+    "subscriber"
+   ]
+  },
+  "deletesubscribernotification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSubscriberNotification",
+   "resources": [
+    "subscriber"
+   ]
+  },
+  "deregisterdatalakedelegatedadministrator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterDataLakeDelegatedAdministrator",
+   "resources": []
+  },
+  "getdatalakeexceptionsubscription": {
+   "name": "GetDataLakeExceptionSubscription",
+   "resources": []
+  },
+  "getdatalakeorganizationconfiguration": {
+   "name": "GetDataLakeOrganizationConfiguration",
+   "resources": [
+    "data-lake"
+   ]
+  },
+  "getdatalakesources": {
+   "name": "GetDataLakeSources",
+   "resources": [
+    "data-lake"
+   ]
+  },
+  "getsubscriber": {
+   "name": "GetSubscriber",
+   "resources": [
+    "subscriber"
+   ]
+  },
+  "listdatalakeexceptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataLakeExceptions",
+   "resources": []
+  },
+  "listdatalakes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataLakes",
+   "resources": []
+  },
+  "listlogsources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLogSources",
+   "resources": []
+  },
+  "listsubscribers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubscribers",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "data-lake",
+    "subscriber"
+   ]
+  },
+  "registerdatalakedelegatedadministrator": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterDataLakeDelegatedAdministrator",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "data-lake",
+    "subscriber"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "data-lake",
+    "subscriber"
+   ]
+  },
+  "updatedatalake": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataLake",
+   "resources": [
+    "data-lake"
+   ]
+  },
+  "updatedatalakeexceptionsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataLakeExceptionSubscription",
+   "resources": []
+  },
+  "updatesubscriber": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSubscriber",
+   "resources": [
+    "subscriber"
+   ]
+  },
+  "updatesubscribernotification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSubscriberNotification",
+   "resources": [
+    "subscriber"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "data-lake": {
+   "arnFormats": [
+    "arn:${Partition}:securitylake:${Region}:${Account}:data-lake/default"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "subscriber": {
+   "arnFormats": [
+    "arn:${Partition}:securitylake:${Region}:${Account}:subscriber/${SubscriberId}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "securitylake",
+ "serviceName": "SecurityLake",
+ "version": "v1.5"
+}

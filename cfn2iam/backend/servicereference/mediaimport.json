@@ -1,0 +1,15 @@
+{
+ "actions": {
+  "createdatabasebinarysnapshot": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDatabaseBinarySnapshot",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "mediaimport",
+ "serviceName": "mediaimport",
+ "version": "v1.5"
+}

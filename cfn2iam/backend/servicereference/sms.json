@@ -1,0 +1,237 @@
+{
+ "actions": {
+  "createapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApp",
+   "resources": []
+  },
+  "createreplicationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReplicationJob",
+   "resources": []
+  },
+  "deleteapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApp",
+   "resources": []
+  },
+  "deleteapplaunchconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppLaunchConfiguration",
+   "resources": []
+  },
+  "deleteappreplicationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppReplicationConfiguration",
+   "resources": []
+  },
+  "deleteappvalidationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppValidationConfiguration",
+   "resources": []
+  },
+  "deletereplicationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteReplicationJob",
+   "resources": []
+  },
+  "deleteservercatalog": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServerCatalog",
+   "resources": []
+  },
+  "disassociateconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateConnector",
+   "resources": []
+  },
+  "generatechangeset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateChangeSet",
+   "resources": []
+  },
+  "generatetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateTemplate",
+   "resources": []
+  },
+  "getapp": {
+   "name": "GetApp",
+   "resources": []
+  },
+  "getapplaunchconfiguration": {
+   "name": "GetAppLaunchConfiguration",
+   "resources": []
+  },
+  "getappreplicationconfiguration": {
+   "name": "GetAppReplicationConfiguration",
+   "resources": []
+  },
+  "getappvalidationconfiguration": {
+   "name": "GetAppValidationConfiguration",
+   "resources": []
+  },
+  "getappvalidationoutput": {
+   "name": "GetAppValidationOutput",
+   "resources": []
+  },
+  "getconnectors": {
+   "name": "GetConnectors",
+   "resources": []
+  },
+  "getmessages": {
+   "name": "GetMessages",
+   "resources": []
+  },
+  "getreplicationjobs": {
+   "name": "GetReplicationJobs",
+   "resources": []
+  },
+  "getreplicationruns": {
+   "name": "GetReplicationRuns",
+   "resources": []
+  },
+  "getservers": {
+   "name": "GetServers",
+   "resources": []
+  },
+  "importappcatalog": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportAppCatalog",
+   "resources": []
+  },
+  "importservercatalog": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportServerCatalog",
+   "resources": []
+  },
+  "launchapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "LaunchApp",
+   "resources": []
+  },
+  "listapps": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApps",
+   "resources": []
+  },
+  "notifyappvalidationoutput": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyAppValidationOutput",
+   "resources": []
+  },
+  "putapplaunchconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAppLaunchConfiguration",
+   "resources": []
+  },
+  "putappreplicationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAppReplicationConfiguration",
+   "resources": []
+  },
+  "putappvalidationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAppValidationConfiguration",
+   "resources": []
+  },
+  "sendmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendMessage",
+   "resources": []
+  },
+  "startappreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAppReplication",
+   "resources": []
+  },
+  "startondemandappreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartOnDemandAppReplication",
+   "resources": []
+  },
+  "startondemandreplicationrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartOnDemandReplicationRun",
+   "resources": []
+  },
+  "stopappreplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopAppReplication",
+   "resources": []
+  },
+  "terminateapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TerminateApp",
+   "resources": []
+  },
+  "updateapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApp",
+   "resources": []
+  },
+  "updatereplicationjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateReplicationJob",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "sms",
+ "serviceName": "ServerMigrationService",
+ "version": "v1.5"
+}

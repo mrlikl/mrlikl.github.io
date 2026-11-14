@@ -1,0 +1,154 @@
+{
+ "actions": {
+  "createapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "createapplicationversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplicationVersion",
+   "resources": [
+    "applications"
+   ]
+  },
+  "createcloudformationchangeset": {
+   "conditionKeys": [
+    "serverlessrepo:applicationType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCloudFormationChangeSet",
+   "resources": [
+    "applications"
+   ]
+  },
+  "createcloudformationtemplate": {
+   "conditionKeys": [
+    "serverlessrepo:applicationType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCloudFormationTemplate",
+   "resources": [
+    "applications"
+   ]
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "applications"
+   ]
+  },
+  "getapplication": {
+   "conditionKeys": [
+    "serverlessrepo:applicationType"
+   ],
+   "name": "GetApplication",
+   "resources": [
+    "applications"
+   ]
+  },
+  "getapplicationpolicy": {
+   "name": "GetApplicationPolicy",
+   "resources": [
+    "applications"
+   ]
+  },
+  "getcloudformationtemplate": {
+   "name": "GetCloudFormationTemplate",
+   "resources": [
+    "applications"
+   ]
+  },
+  "listapplicationdependencies": {
+   "conditionKeys": [
+    "serverlessrepo:applicationType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationDependencies",
+   "resources": [
+    "applications"
+   ]
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listapplicationversions": {
+   "conditionKeys": [
+    "serverlessrepo:applicationType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationVersions",
+   "resources": [
+    "applications"
+   ]
+  },
+  "putapplicationpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutApplicationPolicy",
+   "resources": [
+    "applications"
+   ]
+  },
+  "searchapplications": {
+   "conditionKeys": [
+    "serverlessrepo:applicationType"
+   ],
+   "name": "SearchApplications",
+   "resources": []
+  },
+  "unshareapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnshareApplication",
+   "resources": [
+    "applications"
+   ]
+  },
+  "updateapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": [
+    "applications"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "serverlessrepo:applicationType": [
+   "String"
+  ]
+ },
+ "resources": {
+  "applications": {
+   "arnFormats": [
+    "arn:${Partition}:serverlessrepo:${Region}:${Account}:applications/${ResourceId}"
+   ]
+  }
+ },
+ "service": "serverlessrepo",
+ "serviceName": "Serverless Application Repository",
+ "version": "v1.5"
+}

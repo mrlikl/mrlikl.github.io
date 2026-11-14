@@ -1,0 +1,901 @@
+{
+ "actions": {
+  "approveskill": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ApproveSkill",
+   "resources": []
+  },
+  "associatecontactwithaddressbook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateContactWithAddressBook",
+   "resources": [
+    "addressbook",
+    "contact"
+   ]
+  },
+  "associatedevicewithnetworkprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateDeviceWithNetworkProfile",
+   "resources": [
+    "device",
+    "networkprofile"
+   ]
+  },
+  "associatedevicewithroom": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateDeviceWithRoom",
+   "resources": [
+    "device",
+    "room"
+   ]
+  },
+  "associateskillgroupwithroom": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSkillGroupWithRoom",
+   "resources": [
+    "room",
+    "skillgroup"
+   ]
+  },
+  "associateskillwithskillgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSkillWithSkillGroup",
+   "resources": [
+    "skillgroup"
+   ]
+  },
+  "associateskillwithusers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSkillWithUsers",
+   "resources": []
+  },
+  "completeregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteRegistration",
+   "resources": []
+  },
+  "createaddressbook": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAddressBook",
+   "resources": []
+  },
+  "createbusinessreportschedule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBusinessReportSchedule",
+   "resources": []
+  },
+  "createconferenceprovider": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConferenceProvider",
+   "resources": []
+  },
+  "createcontact": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContact",
+   "resources": []
+  },
+  "creategatewaygroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGatewayGroup",
+   "resources": []
+  },
+  "createnetworkprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNetworkProfile",
+   "resources": []
+  },
+  "createprofile": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProfile",
+   "resources": []
+  },
+  "createroom": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRoom",
+   "resources": [
+    "profile"
+   ]
+  },
+  "createskillgroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSkillGroup",
+   "resources": []
+  },
+  "createuser": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "deleteaddressbook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAddressBook",
+   "resources": [
+    "addressbook"
+   ]
+  },
+  "deletebusinessreportschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBusinessReportSchedule",
+   "resources": [
+    "schedule"
+   ]
+  },
+  "deleteconferenceprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConferenceProvider",
+   "resources": [
+    "conferenceprovider"
+   ]
+  },
+  "deletecontact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContact",
+   "resources": [
+    "contact"
+   ]
+  },
+  "deletedevice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDevice",
+   "resources": [
+    "device"
+   ]
+  },
+  "deletedeviceusagedata": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDeviceUsageData",
+   "resources": [
+    "device"
+   ]
+  },
+  "deletegatewaygroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGatewayGroup",
+   "resources": [
+    "gatewaygroup"
+   ]
+  },
+  "deletenetworkprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNetworkProfile",
+   "resources": [
+    "networkprofile"
+   ]
+  },
+  "deleteprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "deleteroom": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRoom",
+   "resources": [
+    "room"
+   ]
+  },
+  "deleteroomskillparameter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRoomSkillParameter",
+   "resources": [
+    "room"
+   ]
+  },
+  "deleteskillauthorization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSkillAuthorization",
+   "resources": [
+    "room"
+   ]
+  },
+  "deleteskillgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSkillGroup",
+   "resources": [
+    "skillgroup"
+   ]
+  },
+  "deleteuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "disassociatecontactfromaddressbook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateContactFromAddressBook",
+   "resources": [
+    "addressbook",
+    "contact"
+   ]
+  },
+  "disassociatedevicefromroom": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateDeviceFromRoom",
+   "resources": [
+    "device"
+   ]
+  },
+  "disassociateskillfromskillgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateSkillFromSkillGroup",
+   "resources": [
+    "skillgroup"
+   ]
+  },
+  "disassociateskillfromusers": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateSkillFromUsers",
+   "resources": [
+    "user"
+   ]
+  },
+  "disassociateskillgroupfromroom": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateSkillGroupFromRoom",
+   "resources": [
+    "room",
+    "skillgroup"
+   ]
+  },
+  "forgetsmarthomeappliances": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ForgetSmartHomeAppliances",
+   "resources": [
+    "room"
+   ]
+  },
+  "getaddressbook": {
+   "name": "GetAddressBook",
+   "resources": [
+    "addressbook"
+   ]
+  },
+  "getconferencepreference": {
+   "name": "GetConferencePreference",
+   "resources": []
+  },
+  "getconferenceprovider": {
+   "name": "GetConferenceProvider",
+   "resources": [
+    "conferenceprovider"
+   ]
+  },
+  "getcontact": {
+   "name": "GetContact",
+   "resources": [
+    "contact"
+   ]
+  },
+  "getdevice": {
+   "name": "GetDevice",
+   "resources": [
+    "device"
+   ]
+  },
+  "getgateway": {
+   "name": "GetGateway",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "getgatewaygroup": {
+   "name": "GetGatewayGroup",
+   "resources": [
+    "gatewaygroup"
+   ]
+  },
+  "getinvitationconfiguration": {
+   "name": "GetInvitationConfiguration",
+   "resources": []
+  },
+  "getnetworkprofile": {
+   "name": "GetNetworkProfile",
+   "resources": [
+    "networkprofile"
+   ]
+  },
+  "getprofile": {
+   "name": "GetProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "getroom": {
+   "name": "GetRoom",
+   "resources": [
+    "room"
+   ]
+  },
+  "getroomskillparameter": {
+   "name": "GetRoomSkillParameter",
+   "resources": [
+    "room"
+   ]
+  },
+  "getskillgroup": {
+   "name": "GetSkillGroup",
+   "resources": [
+    "skillgroup"
+   ]
+  },
+  "listbusinessreportschedules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBusinessReportSchedules",
+   "resources": []
+  },
+  "listconferenceproviders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConferenceProviders",
+   "resources": []
+  },
+  "listdeviceevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeviceEvents",
+   "resources": [
+    "device"
+   ]
+  },
+  "listgatewaygroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGatewayGroups",
+   "resources": []
+  },
+  "listgateways": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGateways",
+   "resources": [
+    "gatewaygroup"
+   ]
+  },
+  "listskills": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSkills",
+   "resources": []
+  },
+  "listskillsstorecategories": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSkillsStoreCategories",
+   "resources": []
+  },
+  "listskillsstoreskillsbycategory": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSkillsStoreSkillsByCategory",
+   "resources": []
+  },
+  "listsmarthomeappliances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSmartHomeAppliances",
+   "resources": [
+    "room"
+   ]
+  },
+  "listtags": {
+   "name": "ListTags",
+   "resources": [
+    "device",
+    "room",
+    "user"
+   ]
+  },
+  "putconferencepreference": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutConferencePreference",
+   "resources": []
+  },
+  "putdevicesetupevents": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDeviceSetupEvents",
+   "resources": []
+  },
+  "putinvitationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutInvitationConfiguration",
+   "resources": []
+  },
+  "putroomskillparameter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutRoomSkillParameter",
+   "resources": [
+    "room"
+   ]
+  },
+  "putskillauthorization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSkillAuthorization",
+   "resources": [
+    "room"
+   ]
+  },
+  "registeravsdevice": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterAVSDevice",
+   "resources": []
+  },
+  "registerdevice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterDevice",
+   "resources": []
+  },
+  "rejectskill": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectSkill",
+   "resources": []
+  },
+  "resolveroom": {
+   "name": "ResolveRoom",
+   "resources": []
+  },
+  "revokeinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeInvitation",
+   "resources": [
+    "user"
+   ]
+  },
+  "searchaddressbooks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchAddressBooks",
+   "resources": []
+  },
+  "searchcontacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchContacts",
+   "resources": []
+  },
+  "searchdevices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchDevices",
+   "resources": []
+  },
+  "searchnetworkprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchNetworkProfiles",
+   "resources": []
+  },
+  "searchprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchProfiles",
+   "resources": []
+  },
+  "searchrooms": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchRooms",
+   "resources": []
+  },
+  "searchskillgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchSkillGroups",
+   "resources": []
+  },
+  "searchusers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchUsers",
+   "resources": []
+  },
+  "sendannouncement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendAnnouncement",
+   "resources": []
+  },
+  "sendinvitation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendInvitation",
+   "resources": [
+    "user"
+   ]
+  },
+  "startdevicesync": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDeviceSync",
+   "resources": []
+  },
+  "startsmarthomeappliancediscovery": {
+   "name": "StartSmartHomeApplianceDiscovery",
+   "resources": [
+    "room"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "device",
+    "room",
+    "user"
+   ]
+  },
+  "untagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "device",
+    "room",
+    "user"
+   ]
+  },
+  "updateaddressbook": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAddressBook",
+   "resources": [
+    "addressbook"
+   ]
+  },
+  "updatebusinessreportschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBusinessReportSchedule",
+   "resources": [
+    "schedule"
+   ]
+  },
+  "updateconferenceprovider": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConferenceProvider",
+   "resources": [
+    "conferenceprovider"
+   ]
+  },
+  "updatecontact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateContact",
+   "resources": [
+    "contact"
+   ]
+  },
+  "updatedevice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDevice",
+   "resources": [
+    "device"
+   ]
+  },
+  "updategateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGateway",
+   "resources": [
+    "gateway"
+   ]
+  },
+  "updategatewaygroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGatewayGroup",
+   "resources": [
+    "gatewaygroup"
+   ]
+  },
+  "updatenetworkprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNetworkProfile",
+   "resources": [
+    "networkprofile"
+   ]
+  },
+  "updateprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProfile",
+   "resources": [
+    "profile"
+   ]
+  },
+  "updateroom": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoom",
+   "resources": [
+    "room"
+   ]
+  },
+  "updateskillgroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSkillGroup",
+   "resources": [
+    "skillgroup"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "a4b:amazonId": [
+   "String"
+  ],
+  "a4b:filters_deviceType": [
+   "ArrayOfString"
+  ],
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "addressbook": {
+   "arnFormats": [
+    "arn:${Partition}:a4b:${Region}:${Account}:address-book/${ResourceId}"
+   ]
+  },
+  "conferenceprovider": {
+   "arnFormats": [
+    "arn:${Partition}:a4b:${Region}:${Account}:conference-provider/${ResourceId}"
+   ]
+  },
+  "contact": {
+   "arnFormats": [
+    "arn:${Partition}:a4b:${Region}:${Account}:contact/${ResourceId}"
+   ]
+  },
+  "device": {
+   "arnFormats": [
+    "arn:${Partition}:a4b:${Region}:${Account}:device/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "gateway": {
+   "arnFormats": [
+    "arn:${Partition}:a4b:${Region}:${Account}:gateway/${ResourceId}"
+   ]
+  },
+  "gatewaygroup": {
+   "arnFormats": [
+    "arn:${Partition}:a4b:${Region}:${Account}:gateway-group/${ResourceId}"
+   ]
+  },
+  "networkprofile": {
+   "arnFormats": [
+    "arn:${Partition}:a4b:${Region}:${Account}:network-profile/${ResourceId}"
+   ]
+  },
+  "profile": {
+   "arnFormats": [
+    "arn:${Partition}:a4b:${Region}:${Account}:profile/${ResourceId}"
+   ]
+  },
+  "room": {
+   "arnFormats": [
+    "arn:${Partition}:a4b:${Region}:${Account}:room/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "schedule": {
+   "arnFormats": [
+    "arn:${Partition}:a4b:${Region}:${Account}:schedule/${ResourceId}"
+   ]
+  },
+  "skillgroup": {
+   "arnFormats": [
+    "arn:${Partition}:a4b:${Region}:${Account}:skill-group/${ResourceId}"
+   ]
+  },
+  "user": {
+   "arnFormats": [
+    "arn:${Partition}:a4b:${Region}:${Account}:user/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "a4b",
+ "serviceName": "Alexa for Business",
+ "version": "v1.5"
+}

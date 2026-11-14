@@ -1,0 +1,60 @@
+{
+ "actions": {
+  "acknowledgemessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcknowledgeMessage",
+   "resources": []
+  },
+  "deletemessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMessage",
+   "resources": []
+  },
+  "failmessage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "FailMessage",
+   "resources": []
+  },
+  "getendpoint": {
+   "name": "GetEndpoint",
+   "resources": []
+  },
+  "getmessages": {
+   "conditionKeys": [
+    "ec2:SourceInstanceARN",
+    "ssm:SourceInstanceARN"
+   ],
+   "name": "GetMessages",
+   "resources": []
+  },
+  "sendreply": {
+   "conditionKeys": [
+    "ec2:SourceInstanceARN",
+    "ssm:SourceInstanceARN"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendReply",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "ec2:SourceInstanceARN": [
+   "ARN"
+  ],
+  "ssm:SourceInstanceARN": [
+   "ARN"
+  ]
+ },
+ "resources": {},
+ "service": "ec2messages",
+ "serviceName": "EC2 Messages",
+ "version": "v1.5"
+}

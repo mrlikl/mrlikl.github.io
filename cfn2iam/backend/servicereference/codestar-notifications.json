@@ -1,0 +1,196 @@
+{
+ "actions": {
+  "createnotificationrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "codestar-notifications:NotificationsForResource"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNotificationRule",
+   "resources": [
+    "notificationrule"
+   ]
+  },
+  "deletenotificationrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "codestar-notifications:NotificationsForResource"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNotificationRule",
+   "resources": [
+    "notificationrule"
+   ]
+  },
+  "deletetarget": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTarget",
+   "resources": []
+  },
+  "describenotificationrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "codestar-notifications:NotificationsForResource"
+   ],
+   "name": "DescribeNotificationRule",
+   "resources": [
+    "notificationrule"
+   ]
+  },
+  "listeventtypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEventTypes",
+   "resources": []
+  },
+  "listnotificationrules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNotificationRules",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "notificationrule"
+   ]
+  },
+  "listtargets": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTargets",
+   "resources": []
+  },
+  "subscribe": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "codestar-notifications:NotificationsForResource"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Subscribe",
+   "resources": [
+    "notificationrule"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "notificationrule"
+   ]
+  },
+  "unsubscribe": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "codestar-notifications:NotificationsForResource"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Unsubscribe",
+   "resources": [
+    "notificationrule"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "notificationrule"
+   ]
+  },
+  "updatenotificationrule": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "codestar-notifications:NotificationsForResource"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateNotificationRule",
+   "resources": [
+    "notificationrule"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "codestar-notifications:NotificationsForResource": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "notificationrule": {
+   "arnFormats": [
+    "arn:${Partition}:codestar-notifications:${Region}:${Account}:notificationrule/${NotificationRuleId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "codestar-notifications",
+ "serviceName": "CodeStar Notifications",
+ "version": "v1.5"
+}

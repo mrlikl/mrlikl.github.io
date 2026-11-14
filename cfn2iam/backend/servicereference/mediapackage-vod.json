@@ -1,0 +1,200 @@
+{
+ "actions": {
+  "configurelogs": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfigureLogs",
+   "resources": [
+    "packaging-groups"
+   ]
+  },
+  "createasset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAsset",
+   "resources": []
+  },
+  "createpackagingconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePackagingConfiguration",
+   "resources": []
+  },
+  "createpackaginggroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePackagingGroup",
+   "resources": []
+  },
+  "deleteasset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAsset",
+   "resources": [
+    "assets"
+   ]
+  },
+  "deletepackagingconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePackagingConfiguration",
+   "resources": [
+    "packaging-configurations"
+   ]
+  },
+  "deletepackaginggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePackagingGroup",
+   "resources": [
+    "packaging-groups"
+   ]
+  },
+  "describeasset": {
+   "name": "DescribeAsset",
+   "resources": [
+    "assets"
+   ]
+  },
+  "describepackagingconfiguration": {
+   "name": "DescribePackagingConfiguration",
+   "resources": [
+    "packaging-configurations"
+   ]
+  },
+  "describepackaginggroup": {
+   "name": "DescribePackagingGroup",
+   "resources": [
+    "packaging-groups"
+   ]
+  },
+  "listassets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssets",
+   "resources": []
+  },
+  "listpackagingconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPackagingConfigurations",
+   "resources": []
+  },
+  "listpackaginggroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPackagingGroups",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "assets",
+    "packaging-configurations",
+    "packaging-groups"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "assets",
+    "packaging-configurations",
+    "packaging-groups"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "assets",
+    "packaging-configurations",
+    "packaging-groups"
+   ]
+  },
+  "updatepackaginggroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePackagingGroup",
+   "resources": [
+    "packaging-groups"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "assets": {
+   "arnFormats": [
+    "arn:${Partition}:mediapackage-vod:${Region}:${Account}:assets/${AssetIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "packaging-configurations": {
+   "arnFormats": [
+    "arn:${Partition}:mediapackage-vod:${Region}:${Account}:packaging-configurations/${PackagingConfigurationIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "packaging-groups": {
+   "arnFormats": [
+    "arn:${Partition}:mediapackage-vod:${Region}:${Account}:packaging-groups/${PackagingGroupIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "mediapackage-vod",
+ "serviceName": "MediaPackage VOD",
+ "version": "v1.5"
+}

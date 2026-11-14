@@ -1,0 +1,159 @@
+{
+ "actions": {
+  "createsuitedefinition": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSuiteDefinition",
+   "resources": []
+  },
+  "deletesuitedefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSuiteDefinition",
+   "resources": [
+    "Suitedefinition"
+   ]
+  },
+  "getendpoint": {
+   "name": "GetEndpoint",
+   "resources": []
+  },
+  "getsuitedefinition": {
+   "name": "GetSuiteDefinition",
+   "resources": [
+    "Suitedefinition"
+   ]
+  },
+  "getsuiterun": {
+   "name": "GetSuiteRun",
+   "resources": [
+    "Suiterun"
+   ]
+  },
+  "getsuiterunreport": {
+   "name": "GetSuiteRunReport",
+   "resources": [
+    "Suiterun"
+   ]
+  },
+  "listsuitedefinitions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSuiteDefinitions",
+   "resources": []
+  },
+  "listsuiteruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSuiteRuns",
+   "resources": [
+    "Suitedefinition"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "Suitedefinition",
+    "Suiterun"
+   ]
+  },
+  "startsuiterun": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSuiteRun",
+   "resources": []
+  },
+  "stopsuiterun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopSuiteRun",
+   "resources": [
+    "Suiterun"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Suitedefinition",
+    "Suiterun"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Suitedefinition",
+    "Suiterun"
+   ]
+  },
+  "updatesuitedefinition": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSuiteDefinition",
+   "resources": [
+    "Suitedefinition"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Suitedefinition": {
+   "arnFormats": [
+    "arn:${Partition}:iotdeviceadvisor:${Region}:${Account}:suitedefinition/${SuiteDefinitionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Suiterun": {
+   "arnFormats": [
+    "arn:${Partition}:iotdeviceadvisor:${Region}:${Account}:suiterun/${SuiteDefinitionId}/${SuiteRunId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "iotdeviceadvisor",
+ "serviceName": "IoT Device Advisor",
+ "version": "v1.5"
+}

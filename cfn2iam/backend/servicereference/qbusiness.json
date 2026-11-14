@@ -1,0 +1,1034 @@
+{
+ "actions": {
+  "allowvendedlogdeliveryforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": [
+    "application"
+   ]
+  },
+  "associatepermission": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociatePermission",
+   "resources": [
+    "application"
+   ]
+  },
+  "batchdeletedocument": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "BatchDeleteDocument",
+   "resources": [
+    "application",
+    "index"
+   ]
+  },
+  "batchputdocument": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "BatchPutDocument",
+   "resources": [
+    "application",
+    "index"
+   ]
+  },
+  "cancelsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelSubscription",
+   "resources": [
+    "application",
+    "subscription"
+   ]
+  },
+  "chat": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "Chat",
+   "resources": [
+    "application"
+   ]
+  },
+  "chatsync": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "ChatSync",
+   "resources": [
+    "application"
+   ]
+  },
+  "checkdocumentaccess": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "CheckDocumentAccess",
+   "resources": [
+    "application",
+    "index"
+   ]
+  },
+  "createanonymouswebexperienceurl": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAnonymousWebExperienceUrl",
+   "resources": [
+    "application",
+    "web-experience"
+   ]
+  },
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": []
+  },
+  "createchatresponseconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChatResponseConfiguration",
+   "resources": [
+    "application"
+   ]
+  },
+  "createdataaccessor": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataAccessor",
+   "resources": [
+    "application"
+   ]
+  },
+  "createdataaccessorwithtti": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataAccessorWithTti",
+   "resources": [
+    "application"
+   ]
+  },
+  "createdatasource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataSource",
+   "resources": [
+    "application",
+    "index"
+   ]
+  },
+  "createindex": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIndex",
+   "resources": [
+    "application"
+   ]
+  },
+  "createintegration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIntegration",
+   "resources": [
+    "application"
+   ]
+  },
+  "createplugin": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePlugin",
+   "resources": [
+    "application"
+   ]
+  },
+  "createretriever": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRetriever",
+   "resources": [
+    "application"
+   ]
+  },
+  "createsubscription": {
+   "conditionKeys": [
+    "identitystore:GroupId",
+    "identitystore:UserId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSubscription",
+   "resources": [
+    "application"
+   ]
+  },
+  "createuser": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateUser",
+   "resources": [
+    "application"
+   ]
+  },
+  "createwebexperience": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWebExperience",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "deleteattachment": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteAttachment",
+   "resources": [
+    "application"
+   ]
+  },
+  "deletechatcontrolsconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChatControlsConfiguration",
+   "resources": [
+    "application"
+   ]
+  },
+  "deletechatresponseconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteChatResponseConfiguration",
+   "resources": [
+    "application",
+    "chat-response-configuration"
+   ]
+  },
+  "deleteconversation": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteConversation",
+   "resources": [
+    "application"
+   ]
+  },
+  "deletedataaccessor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataAccessor",
+   "resources": [
+    "application",
+    "data-accessor"
+   ]
+  },
+  "deletedatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataSource",
+   "resources": [
+    "application",
+    "data-source",
+    "index"
+   ]
+  },
+  "deletegroup": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteGroup",
+   "resources": [
+    "application",
+    "index"
+   ]
+  },
+  "deleteindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIndex",
+   "resources": [
+    "application",
+    "index"
+   ]
+  },
+  "deleteintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIntegration",
+   "resources": [
+    "application",
+    "integration"
+   ]
+  },
+  "deleteplugin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePlugin",
+   "resources": [
+    "application",
+    "plugin"
+   ]
+  },
+  "deleteretriever": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRetriever",
+   "resources": [
+    "application",
+    "retriever"
+   ]
+  },
+  "deleteuser": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteUser",
+   "resources": [
+    "application"
+   ]
+  },
+  "deletewebexperience": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWebExperience",
+   "resources": [
+    "application",
+    "web-experience"
+   ]
+  },
+  "disableaclondatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableAclOnDataSource",
+   "resources": [
+    "application"
+   ]
+  },
+  "disassociatepermission": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociatePermission",
+   "resources": [
+    "application"
+   ]
+  },
+  "getapplication": {
+   "name": "GetApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "getchatcontrolsconfiguration": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetChatControlsConfiguration",
+   "resources": [
+    "application"
+   ]
+  },
+  "getchatresponseconfiguration": {
+   "name": "GetChatResponseConfiguration",
+   "resources": [
+    "application",
+    "chat-response-configuration"
+   ]
+  },
+  "getdataaccessor": {
+   "name": "GetDataAccessor",
+   "resources": [
+    "application",
+    "data-accessor"
+   ]
+  },
+  "getdatasource": {
+   "name": "GetDataSource",
+   "resources": [
+    "application",
+    "data-source",
+    "index"
+   ]
+  },
+  "getdocumentcontent": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetDocumentContent",
+   "resources": [
+    "application",
+    "index"
+   ]
+  },
+  "getgroup": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetGroup",
+   "resources": [
+    "application",
+    "index"
+   ]
+  },
+  "getindex": {
+   "name": "GetIndex",
+   "resources": [
+    "application",
+    "index"
+   ]
+  },
+  "getintegration": {
+   "name": "GetIntegration",
+   "resources": [
+    "application",
+    "integration"
+   ]
+  },
+  "getmedia": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetMedia",
+   "resources": [
+    "application"
+   ]
+  },
+  "getplugin": {
+   "name": "GetPlugin",
+   "resources": [
+    "application",
+    "plugin"
+   ]
+  },
+  "getpolicy": {
+   "name": "GetPolicy",
+   "resources": [
+    "application"
+   ]
+  },
+  "getretriever": {
+   "name": "GetRetriever",
+   "resources": [
+    "application",
+    "retriever"
+   ]
+  },
+  "getuser": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetUser",
+   "resources": [
+    "application"
+   ]
+  },
+  "getwebexperience": {
+   "name": "GetWebExperience",
+   "resources": [
+    "application",
+    "web-experience"
+   ]
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listattachments": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListAttachments",
+   "resources": [
+    "application"
+   ]
+  },
+  "listchatresponseconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChatResponseConfigurations",
+   "resources": [
+    "application"
+   ]
+  },
+  "listconversations": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListConversations",
+   "resources": [
+    "application"
+   ]
+  },
+  "listdataaccessors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataAccessors",
+   "resources": [
+    "application"
+   ]
+  },
+  "listdatasources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSources",
+   "resources": [
+    "application",
+    "index"
+   ]
+  },
+  "listdatasourcesyncjobs": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListDataSourceSyncJobs",
+   "resources": [
+    "application",
+    "data-source",
+    "index"
+   ]
+  },
+  "listdocuments": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListDocuments",
+   "resources": [
+    "application",
+    "index"
+   ]
+  },
+  "listgroups": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListGroups",
+   "resources": [
+    "application",
+    "index"
+   ]
+  },
+  "listindices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIndices",
+   "resources": [
+    "application"
+   ]
+  },
+  "listintegrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIntegrations",
+   "resources": [
+    "application"
+   ]
+  },
+  "listmessages": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListMessages",
+   "resources": [
+    "application"
+   ]
+  },
+  "listpluginactions": {
+   "name": "ListPluginActions",
+   "resources": [
+    "application",
+    "plugin"
+   ]
+  },
+  "listplugins": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPlugins",
+   "resources": [
+    "application"
+   ]
+  },
+  "listplugintypeactions": {
+   "name": "ListPluginTypeActions",
+   "resources": []
+  },
+  "listplugintypemetadata": {
+   "name": "ListPluginTypeMetadata",
+   "resources": []
+  },
+  "listretrievers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRetrievers",
+   "resources": [
+    "application"
+   ]
+  },
+  "listsubscriptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSubscriptions",
+   "resources": [
+    "application"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "application",
+    "chat-response-configuration",
+    "data-accessor",
+    "data-source",
+    "index",
+    "integration",
+    "plugin",
+    "retriever",
+    "web-experience"
+   ]
+  },
+  "listwebexperiences": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWebExperiences",
+   "resources": [
+    "application"
+   ]
+  },
+  "putfeedback": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutFeedback",
+   "resources": [
+    "application"
+   ]
+  },
+  "putgroup": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PutGroup",
+   "resources": [
+    "application",
+    "index"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "application"
+   ]
+  },
+  "searchrelevantcontent": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "SearchRelevantContent",
+   "resources": [
+    "application"
+   ]
+  },
+  "startdatasourcesyncjob": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartDataSourceSyncJob",
+   "resources": [
+    "application",
+    "data-source",
+    "index"
+   ]
+  },
+  "startdeployment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDeployment",
+   "resources": [
+    "application",
+    "integration"
+   ]
+  },
+  "stopdatasourcesyncjob": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StopDataSourceSyncJob",
+   "resources": [
+    "application",
+    "data-source",
+    "index"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "application",
+    "chat-response-configuration",
+    "data-accessor",
+    "data-source",
+    "index",
+    "integration",
+    "plugin",
+    "retriever",
+    "web-experience"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "application",
+    "chat-response-configuration",
+    "data-accessor",
+    "data-source",
+    "index",
+    "integration",
+    "plugin",
+    "retriever",
+    "web-experience"
+   ]
+  },
+  "updateapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "updatechatcontrolsconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChatControlsConfiguration",
+   "resources": [
+    "application"
+   ]
+  },
+  "updatechatresponseconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChatResponseConfiguration",
+   "resources": [
+    "application",
+    "chat-response-configuration"
+   ]
+  },
+  "updatedataaccessor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataAccessor",
+   "resources": [
+    "application",
+    "data-accessor"
+   ]
+  },
+  "updatedatasource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataSource",
+   "resources": [
+    "application",
+    "data-source",
+    "index"
+   ]
+  },
+  "updateindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIndex",
+   "resources": [
+    "application",
+    "index"
+   ]
+  },
+  "updateintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIntegration",
+   "resources": [
+    "application",
+    "integration"
+   ]
+  },
+  "updateplugin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePlugin",
+   "resources": [
+    "application",
+    "plugin"
+   ]
+  },
+  "updateretriever": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRetriever",
+   "resources": [
+    "application",
+    "retriever"
+   ]
+  },
+  "updatesubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSubscription",
+   "resources": [
+    "application",
+    "subscription"
+   ]
+  },
+  "updateuser": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateUser",
+   "resources": [
+    "application"
+   ]
+  },
+  "updatewebexperience": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWebExperience",
+   "resources": [
+    "application",
+    "web-experience"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "identitystore:GroupId": [
+   "ArrayOfString"
+  ],
+  "identitystore:UserId": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "chat-response-configuration": {
+   "arnFormats": [
+    "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/chat-response-configuration/${ChatResponseConfigurationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "data-accessor": {
+   "arnFormats": [
+    "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/data-accessor/${DataAccessorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "data-source": {
+   "arnFormats": [
+    "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/index/${IndexId}/data-source/${DataSourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "index": {
+   "arnFormats": [
+    "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/index/${IndexId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "integration": {
+   "arnFormats": [
+    "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/integration/${IntegrationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "plugin": {
+   "arnFormats": [
+    "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/plugin/${PluginId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "retriever": {
+   "arnFormats": [
+    "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/retriever/${RetrieverId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "subscription": {
+   "arnFormats": [
+    "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/subscription/${SubscriptionId}"
+   ]
+  },
+  "web-experience": {
+   "arnFormats": [
+    "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/web-experience/${WebExperienceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "qbusiness",
+ "serviceName": "Q Business",
+ "version": "v1.5"
+}

@@ -1,0 +1,274 @@
+{
+ "actions": {
+  "createidentitypool": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIdentityPool",
+   "resources": []
+  },
+  "deleteidentities": {
+   "conditionKeys": [
+    "cognito-identity:IdentityPoolArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIdentities",
+   "resources": []
+  },
+  "deleteidentitypool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIdentityPool",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "describeidentity": {
+   "conditionKeys": [
+    "cognito-identity:IdentityPoolArn"
+   ],
+   "name": "DescribeIdentity",
+   "resources": []
+  },
+  "describeidentitypool": {
+   "name": "DescribeIdentityPool",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "getcredentialsforidentity": {
+   "conditionKeys": [
+    "cognito-identity-auth:AccountId",
+    "cognito-identity-auth:IdentityPoolArn",
+    "cognito-identity-unauth:AccountId",
+    "cognito-identity-unauth:IdentityPoolArn"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetCredentialsForIdentity",
+   "resources": []
+  },
+  "getid": {
+   "conditionKeys": [
+    "cognito-identity-auth:AccountId",
+    "cognito-identity-auth:IdentityPoolArn",
+    "cognito-identity-unauth:AccountId",
+    "cognito-identity-unauth:IdentityPoolArn"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "GetId",
+   "resources": []
+  },
+  "getidentitypoolanalytics": {
+   "name": "GetIdentityPoolAnalytics",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "getidentitypooldailyanalytics": {
+   "name": "GetIdentityPoolDailyAnalytics",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "getidentitypoolroles": {
+   "name": "GetIdentityPoolRoles",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "getidentityproviderdailyanalytics": {
+   "name": "GetIdentityProviderDailyAnalytics",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "getopenidtoken": {
+   "conditionKeys": [
+    "cognito-identity-auth:AccountId",
+    "cognito-identity-auth:IdentityPoolArn",
+    "cognito-identity-unauth:AccountId",
+    "cognito-identity-unauth:IdentityPoolArn"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetOpenIdToken",
+   "resources": []
+  },
+  "getopenidtokenfordeveloperidentity": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetOpenIdTokenForDeveloperIdentity",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "getprincipaltagattributemap": {
+   "name": "GetPrincipalTagAttributeMap",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "listidentities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIdentities",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "listidentitypools": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIdentityPools",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "lookupdeveloperidentity": {
+   "name": "LookupDeveloperIdentity",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "mergedeveloperidentities": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MergeDeveloperIdentities",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "setidentitypoolroles": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetIdentityPoolRoles",
+   "resources": []
+  },
+  "setprincipaltagattributemap": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetPrincipalTagAttributeMap",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "unlinkdeveloperidentity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnlinkDeveloperIdentity",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "unlinkidentity": {
+   "conditionKeys": [
+    "cognito-identity-auth:AccountId",
+    "cognito-identity-auth:IdentityPoolArn"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UnlinkIdentity",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "identitypool"
+   ]
+  },
+  "updateidentitypool": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIdentityPool",
+   "resources": [
+    "identitypool"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "cognito-identity-auth:AccountId": [
+   "String"
+  ],
+  "cognito-identity-auth:IdentityPoolArn": [
+   "ARN"
+  ],
+  "cognito-identity-unauth:AccountId": [
+   "String"
+  ],
+  "cognito-identity-unauth:IdentityPoolArn": [
+   "ARN"
+  ],
+  "cognito-identity:IdentityPoolArn": [
+   "ARN"
+  ]
+ },
+ "resources": {
+  "identitypool": {
+   "arnFormats": [
+    "arn:${Partition}:cognito-identity:${Region}:${Account}:identitypool/${IdentityPoolId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "cognito-identity",
+ "serviceName": "Cognito Identity",
+ "version": "v1.5"
+}

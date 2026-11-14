@@ -1,0 +1,30 @@
+{
+ "actions": {
+  "getdeploymentspecification": {
+   "name": "GetDeploymentSpecification",
+   "resources": []
+  },
+  "pollhostcommand": {
+   "name": "PollHostCommand",
+   "resources": []
+  },
+  "puthostcommandacknowledgement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutHostCommandAcknowledgement",
+   "resources": []
+  },
+  "puthostcommandcomplete": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutHostCommandComplete",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "codedeploy-commands-secure",
+ "serviceName": "CodeDeploy Commands Secure",
+ "version": "v1.5"
+}

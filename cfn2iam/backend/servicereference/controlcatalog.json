@@ -1,0 +1,72 @@
+{
+ "actions": {
+  "getcontrol": {
+   "name": "GetControl",
+   "resources": [
+    "control"
+   ]
+  },
+  "listcommoncontrols": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCommonControls",
+   "resources": []
+  },
+  "listcontrolmappings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListControlMappings",
+   "resources": []
+  },
+  "listcontrols": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListControls",
+   "resources": [
+    "control"
+   ]
+  },
+  "listdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomains",
+   "resources": []
+  },
+  "listobjectives": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListObjectives",
+   "resources": []
+  }
+ },
+ "resources": {
+  "common-control": {
+   "arnFormats": [
+    "arn:${Partition}:controlcatalog:::common-control/${CommonControlId}"
+   ]
+  },
+  "control": {
+   "arnFormats": [
+    "arn:${Partition}:controlcatalog:::control/${ControlId}"
+   ]
+  },
+  "domain": {
+   "arnFormats": [
+    "arn:${Partition}:controlcatalog:::domain/${DomainId}"
+   ]
+  },
+  "objective": {
+   "arnFormats": [
+    "arn:${Partition}:controlcatalog:::objective/${ObjectiveId}"
+   ]
+  }
+ },
+ "service": "controlcatalog",
+ "serviceName": "Control Catalog",
+ "version": "v1.5"
+}

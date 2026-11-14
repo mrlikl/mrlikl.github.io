@@ -1,0 +1,439 @@
+{
+ "actions": {
+  "acceptconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptConnection",
+   "resources": [
+    "ConnectionResource"
+   ]
+  },
+  "associateautomationunitrole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateAutomationUnitRole",
+   "resources": [
+    "AutomationUnitResource"
+   ]
+  },
+  "associatecreatedartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateCreatedArtifact",
+   "resources": [
+    "migrationTask"
+   ]
+  },
+  "associatediscoveredresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateDiscoveredResource",
+   "resources": [
+    "migrationTask"
+   ]
+  },
+  "associatesourceresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSourceResource",
+   "resources": [
+    "migrationTask"
+   ]
+  },
+  "batchassociateiamrolewithconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchAssociateIamRoleWithConnection",
+   "resources": [
+    "ConnectionResource"
+   ]
+  },
+  "batchdisassociateiamrolefromconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDisassociateIamRoleFromConnection",
+   "resources": [
+    "ConnectionResource"
+   ]
+  },
+  "createautomationrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAutomationRun",
+   "resources": []
+  },
+  "createautomationunit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAutomationUnit",
+   "resources": []
+  },
+  "createhomeregioncontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHomeRegionControl",
+   "resources": []
+  },
+  "createprogressupdatestream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProgressUpdateStream",
+   "resources": [
+    "progressUpdateStream"
+   ]
+  },
+  "deleteautomationrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAutomationRun",
+   "resources": [
+    "AutomationRunResource"
+   ]
+  },
+  "deleteautomationunit": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAutomationUnit",
+   "resources": [
+    "AutomationUnitResource"
+   ]
+  },
+  "deleteconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnection",
+   "resources": [
+    "ConnectionResource"
+   ]
+  },
+  "deletehomeregioncontrol": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteHomeRegionControl",
+   "resources": []
+  },
+  "deleteprogressupdatestream": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProgressUpdateStream",
+   "resources": [
+    "progressUpdateStream"
+   ]
+  },
+  "describeapplicationstate": {
+   "name": "DescribeApplicationState",
+   "resources": []
+  },
+  "describeautomationrun": {
+   "name": "DescribeAutomationRun",
+   "resources": [
+    "AutomationRunResource"
+   ]
+  },
+  "describeautomationunit": {
+   "name": "DescribeAutomationUnit",
+   "resources": [
+    "AutomationUnitResource"
+   ]
+  },
+  "describehomeregioncontrols": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeHomeRegionControls",
+   "resources": []
+  },
+  "describemigrationtask": {
+   "name": "DescribeMigrationTask",
+   "resources": [
+    "migrationTask"
+   ]
+  },
+  "disassociateautomationunitrole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateAutomationUnitRole",
+   "resources": [
+    "AutomationUnitResource"
+   ]
+  },
+  "disassociatecreatedartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateCreatedArtifact",
+   "resources": [
+    "migrationTask"
+   ]
+  },
+  "disassociatediscoveredresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateDiscoveredResource",
+   "resources": [
+    "migrationTask"
+   ]
+  },
+  "disassociatesourceresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateSourceResource",
+   "resources": [
+    "migrationTask"
+   ]
+  },
+  "getconnection": {
+   "name": "GetConnection",
+   "resources": [
+    "ConnectionResource"
+   ]
+  },
+  "gethomeregion": {
+   "name": "GetHomeRegion",
+   "resources": []
+  },
+  "importmigrationtask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportMigrationTask",
+   "resources": [
+    "migrationTask"
+   ]
+  },
+  "listapplicationstates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplicationStates",
+   "resources": []
+  },
+  "listautomationruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomationRuns",
+   "resources": []
+  },
+  "listautomationunits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAutomationUnits",
+   "resources": []
+  },
+  "listconnectionroles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectionRoles",
+   "resources": [
+    "ConnectionResource"
+   ]
+  },
+  "listconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnections",
+   "resources": []
+  },
+  "listcreatedartifacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCreatedArtifacts",
+   "resources": [
+    "migrationTask"
+   ]
+  },
+  "listdiscoveredresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDiscoveredResources",
+   "resources": [
+    "migrationTask"
+   ]
+  },
+  "listmigrationtasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMigrationTasks",
+   "resources": []
+  },
+  "listmigrationtaskupdates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMigrationTaskUpdates",
+   "resources": [
+    "migrationTask"
+   ]
+  },
+  "listprogressupdatestreams": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProgressUpdateStreams",
+   "resources": []
+  },
+  "listsourceresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSourceResources",
+   "resources": [
+    "migrationTask"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "notifyapplicationstate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyApplicationState",
+   "resources": []
+  },
+  "notifymigrationtaskstate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyMigrationTaskState",
+   "resources": [
+    "migrationTask"
+   ]
+  },
+  "putresourceattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourceAttributes",
+   "resources": [
+    "migrationTask"
+   ]
+  },
+  "rejectconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectConnection",
+   "resources": [
+    "ConnectionResource"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "mgh:AutomationRunResourceRunID": [
+   "String"
+  ],
+  "mgh:AutomationUnitResourceAutomationUnitArn": [
+   "ARN"
+  ],
+  "mgh:ConnectionResourceConnectionArn": [
+   "String"
+  ]
+ },
+ "resources": {
+  "AutomationRunResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgh:${Region}:${Account}:automation-run/${RunID}"
+   ],
+   "conditionKeys": [
+    "mgh:AutomationRunResourceRunID"
+   ]
+  },
+  "AutomationUnitResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgh:${Region}:${Account}:automation-unit/${AutomationUnitId}"
+   ],
+   "conditionKeys": [
+    "mgh:AutomationUnitResourceAutomationUnitArn"
+   ]
+  },
+  "ConnectionResource": {
+   "arnFormats": [
+    "arn:${Partition}:mgh:${Region}:${Account}:${ConnectionArn}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "mgh:ConnectionResourceConnectionArn"
+   ]
+  },
+  "migrationTask": {
+   "arnFormats": [
+    "arn:${Partition}:mgh:${Region}:${Account}:progressUpdateStream/${Stream}/migrationTask/${Task}"
+   ]
+  },
+  "progressUpdateStream": {
+   "arnFormats": [
+    "arn:${Partition}:mgh:${Region}:${Account}:progressUpdateStream/${Stream}"
+   ]
+  }
+ },
+ "service": "mgh",
+ "serviceName": "Migration Hub",
+ "version": "v1.5"
+}

@@ -1,0 +1,197 @@
+{
+ "actions": {
+  "batchaddchannelroletoaccessors": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchAddChannelRoleToAccessors",
+   "resources": [
+    "space"
+   ]
+  },
+  "batchaddrole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchAddRole",
+   "resources": [
+    "space"
+   ]
+  },
+  "batchremovechannelrolefromaccessors": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchRemoveChannelRoleFromAccessors",
+   "resources": [
+    "space"
+   ]
+  },
+  "batchremoverole": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchRemoveRole",
+   "resources": [
+    "space"
+   ]
+  },
+  "createchannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannel",
+   "resources": [
+    "space"
+   ]
+  },
+  "createspace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSpace",
+   "resources": []
+  },
+  "deletespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSpace",
+   "resources": [
+    "space"
+   ]
+  },
+  "deregisteradmin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterAdmin",
+   "resources": [
+    "space"
+   ]
+  },
+  "getchannel": {
+   "name": "GetChannel",
+   "resources": [
+    "space"
+   ]
+  },
+  "getspace": {
+   "name": "GetSpace",
+   "resources": [
+    "space"
+   ]
+  },
+  "listchannels": {
+   "name": "ListChannels",
+   "resources": [
+    "space"
+   ]
+  },
+  "listspaces": {
+   "name": "ListSpaces",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "space"
+   ]
+  },
+  "registeradmin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterAdmin",
+   "resources": [
+    "space"
+   ]
+  },
+  "sendinvites": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendInvites",
+   "resources": [
+    "space"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "space"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "space"
+   ]
+  },
+  "updatechannel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChannel",
+   "resources": [
+    "space"
+   ]
+  },
+  "updatespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSpace",
+   "resources": [
+    "space"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "space": {
+   "arnFormats": [
+    "arn:${Partition}:repostspace:${Region}:${Account}:space/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "repostspace",
+ "serviceName": "re:Post Private",
+ "version": "v1.5"
+}

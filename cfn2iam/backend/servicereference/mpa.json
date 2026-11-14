@@ -1,0 +1,293 @@
+{
+ "actions": {
+  "cancelsession": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "mpa:ProtectedResourceAccount",
+    "mpa:RequestedOperation"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelSession",
+   "resources": [
+    "session"
+   ]
+  },
+  "createapprovalteam": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApprovalTeam",
+   "resources": [
+    "approval-team"
+   ]
+  },
+  "createidentitysource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIdentitySource",
+   "resources": [
+    "identity-source"
+   ]
+  },
+  "deleteidentitysource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIdentitySource",
+   "resources": [
+    "identity-source"
+   ]
+  },
+  "deleteinactiveapprovalteamversion": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInactiveApprovalTeamVersion",
+   "resources": [
+    "approval-team"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": []
+  },
+  "getapprovalteam": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetApprovalTeam",
+   "resources": [
+    "approval-team"
+   ]
+  },
+  "getidentitysource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetIdentitySource",
+   "resources": [
+    "identity-source"
+   ]
+  },
+  "getpolicyversion": {
+   "name": "GetPolicyVersion",
+   "resources": []
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": []
+  },
+  "getsession": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "mpa:ProtectedResourceAccount",
+    "mpa:RequestedOperation"
+   ],
+   "name": "GetSession",
+   "resources": [
+    "session"
+   ]
+  },
+  "listapprovalteams": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApprovalTeams",
+   "resources": []
+  },
+  "listidentitysources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIdentitySources",
+   "resources": []
+  },
+  "listpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicies",
+   "resources": []
+  },
+  "listpolicyversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPolicyVersions",
+   "resources": []
+  },
+  "listresourcepolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourcePolicies",
+   "resources": []
+  },
+  "listsessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSessions",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": []
+  },
+  "startactiveapprovalteamdeletion": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartActiveApprovalTeamDeletion",
+   "resources": [
+    "approval-team"
+   ]
+  },
+  "startapprovalteambaseline": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartApprovalTeamBaseline",
+   "resources": [
+    "approval-team"
+   ]
+  },
+  "startsession": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "mpa:ProtectedResourceAccount",
+    "mpa:RequestedOperation"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSession",
+   "resources": [
+    "session"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": []
+  },
+  "updateapprovalteam": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApprovalTeam",
+   "resources": [
+    "approval-team"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "mpa:ProtectedResourceAccount": [
+   "String"
+  ],
+  "mpa:RequestedOperation": [
+   "String"
+  ]
+ },
+ "resources": {
+  "approval-team": {
+   "arnFormats": [
+    "arn:${Partition}:mpa:${Region}:${Account}:approval-team/${ApprovalTeamId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "identity-source": {
+   "arnFormats": [
+    "arn:${Partition}:mpa:${Region}:${Account}:identity-source/${IdentitySourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "session": {
+   "arnFormats": [
+    "arn:${Partition}:mpa:${Region}:${Account}:session/${SessionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "mpa",
+ "serviceName": "Multi-party approval",
+ "version": "v1.5"
+}

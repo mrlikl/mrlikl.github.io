@@ -1,0 +1,125 @@
+{
+ "actions": {
+  "createsavingsplan": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSavingsPlan",
+   "resources": []
+  },
+  "deletequeuedsavingsplan": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQueuedSavingsPlan",
+   "resources": [
+    "savingsplan"
+   ]
+  },
+  "describesavingsplanrates": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeSavingsPlanRates",
+   "resources": [
+    "savingsplan"
+   ]
+  },
+  "describesavingsplans": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribeSavingsPlans",
+   "resources": [
+    "savingsplan"
+   ]
+  },
+  "describesavingsplansofferingrates": {
+   "name": "DescribeSavingsPlansOfferingRates",
+   "resources": []
+  },
+  "describesavingsplansofferings": {
+   "name": "DescribeSavingsPlansOfferings",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "savingsplan"
+   ]
+  },
+  "returnsavingsplan": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReturnSavingsPlan",
+   "resources": [
+    "savingsplan"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "savingsplan"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "savingsplan"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "savingsplan": {
+   "arnFormats": [
+    "arn:${Partition}:savingsplans::${Account}:savingsplan/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "savingsplans",
+ "serviceName": "Savings Plans",
+ "version": "v1.5"
+}

@@ -1,0 +1,3486 @@
+{
+ "actions": {
+  "accountconfigurations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AccountConfigurations",
+   "resources": []
+  },
+  "allowvendedlogdeliveryforresource": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": []
+  },
+  "authorizeoauthaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AuthorizeOAuthAccess",
+   "resources": []
+  },
+  "batchcreatetopicreviewedanswer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateTopicReviewedAnswer",
+   "resources": [
+    "topic"
+   ]
+  },
+  "batchdeleteknowledgebase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteKnowledgeBase",
+   "resources": [
+    "knowledgeBase"
+   ]
+  },
+  "batchdeletetopicreviewedanswer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteTopicReviewedAnswer",
+   "resources": [
+    "topic"
+   ]
+  },
+  "batchdescribeuserlimits": {
+   "name": "BatchDescribeUserLimits",
+   "resources": [
+    "limitsProfile"
+   ]
+  },
+  "batchgetpreferences": {
+   "name": "BatchGetPreferences",
+   "resources": []
+  },
+  "batchupdatepreferences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchUpdatePreferences",
+   "resources": []
+  },
+  "cancelingestion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelIngestion",
+   "resources": [
+    "ingestion"
+   ]
+  },
+  "createaccesscontrolapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessControlApplication",
+   "resources": [
+    "accessControlApplication"
+   ]
+  },
+  "createaccesscontrolapplicationsecret": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessControlApplicationSecret",
+   "resources": [
+    "accessControlApplication"
+   ]
+  },
+  "createaccountcustomization": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccountCustomization",
+   "resources": []
+  },
+  "createaccountsubscription": {
+   "conditionKeys": [
+    "quicksight:DirectoryType",
+    "quicksight:Edition"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccountSubscription",
+   "resources": []
+  },
+  "createactionconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateActionConnector",
+   "resources": [
+    "actionconnector"
+   ]
+  },
+  "createadmin": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAdmin",
+   "resources": [
+    "user"
+   ]
+  },
+  "createagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgent",
+   "resources": [
+    "agent"
+   ]
+  },
+  "createanalysis": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAnalysis",
+   "resources": [
+    "analysis"
+   ]
+  },
+  "createapprovalpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApprovalPolicy",
+   "resources": [
+    "approvalPolicy"
+   ]
+  },
+  "createbrand": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBrand",
+   "resources": [
+    "brand"
+   ]
+  },
+  "createcustompermissions": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomPermissions",
+   "resources": [
+    "custompermissions"
+   ]
+  },
+  "createdashboard": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDashboard",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "createdataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataSet",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "createdatasource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataSource",
+   "resources": []
+  },
+  "createdlpsetting": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDlpSetting",
+   "resources": [
+    "dlpSetting"
+   ]
+  },
+  "createemailcustomizationtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEmailCustomizationTemplate",
+   "resources": [
+    "emailCustomizationTemplate"
+   ]
+  },
+  "createextension": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExtension",
+   "resources": [
+    "extension"
+   ]
+  },
+  "createextensionaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExtensionAccess",
+   "resources": [
+    "extensionaccess"
+   ]
+  },
+  "createflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFlow",
+   "resources": [
+    "flow"
+   ]
+  },
+  "createfolder": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFolder",
+   "resources": [
+    "folder"
+   ]
+  },
+  "createfoldermembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFolderMembership",
+   "resources": [
+    "analysis",
+    "dashboard",
+    "dataset",
+    "folder"
+   ]
+  },
+  "creategroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "creategroupmembership": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGroupMembership",
+   "resourceConditionKeys": {
+    "group": [
+     "quicksight:UserName"
+    ]
+   },
+   "resources": [
+    "group"
+   ]
+  },
+  "createiampolicyassignment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIAMPolicyAssignment",
+   "resources": [
+    "assignment"
+   ]
+  },
+  "createinboundconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInboundConnector",
+   "resources": [
+    "inboundConnector"
+   ]
+  },
+  "createingestion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIngestion",
+   "resources": [
+    "ingestion"
+   ]
+  },
+  "createknowledgebase": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKnowledgeBase",
+   "resources": [
+    "datasource",
+    "knowledgeBase"
+   ]
+  },
+  "createlimitsprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateLimitsProfile",
+   "resources": [
+    "limitsProfile"
+   ]
+  },
+  "createnamespace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateNamespace",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "createoauthclientapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOAuthClientApplication",
+   "resources": []
+  },
+  "createoauthtoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOAuthToken",
+   "resources": []
+  },
+  "createreader": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateReader",
+   "resources": [
+    "user"
+   ]
+  },
+  "createrefreshschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRefreshSchedule",
+   "resources": [
+    "refreshschedule"
+   ]
+  },
+  "createrolemembership": {
+   "conditionKeys": [
+    "quicksight:Group"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRoleMembership",
+   "resources": []
+  },
+  "createspace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSpace",
+   "resources": [
+    "space"
+   ]
+  },
+  "createtemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "createtemplatealias": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTemplateAlias",
+   "resources": [
+    "template"
+   ]
+  },
+  "createtheme": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTheme",
+   "resources": [
+    "theme"
+   ]
+  },
+  "createthemealias": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateThemeAlias",
+   "resources": [
+    "theme"
+   ]
+  },
+  "createtopic": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTopic",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "createtopicrefreshschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTopicRefreshSchedule",
+   "resources": [
+    "topic"
+   ]
+  },
+  "createuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "createvpcconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVPCConnection",
+   "resources": []
+  },
+  "deleteaccesscontrolapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccessControlApplication",
+   "resources": [
+    "accessControlApplication"
+   ]
+  },
+  "deleteaccesscontrolapplicationsecret": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccessControlApplicationSecret",
+   "resources": [
+    "accessControlApplication"
+   ]
+  },
+  "deleteaccountcustomization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccountCustomization",
+   "resources": [
+    "customization"
+   ]
+  },
+  "deleteaccountcustompermission": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccountCustomPermission",
+   "resources": []
+  },
+  "deleteaccountsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccountSubscription",
+   "resources": [
+    "account"
+   ]
+  },
+  "deleteactionconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteActionConnector",
+   "resources": [
+    "actionconnector"
+   ]
+  },
+  "deleteagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgent",
+   "resources": [
+    "agent"
+   ]
+  },
+  "deleteanalysis": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAnalysis",
+   "resources": [
+    "analysis"
+   ]
+  },
+  "deleteapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApp",
+   "resources": [
+    "app"
+   ]
+  },
+  "deleteapprovalpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApprovalPolicy",
+   "resources": [
+    "approvalPolicy"
+   ]
+  },
+  "deletebrand": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBrand",
+   "resources": [
+    "brand"
+   ]
+  },
+  "deletebrandassignment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBrandAssignment",
+   "resources": []
+  },
+  "deletecustompermissions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomPermissions",
+   "resources": []
+  },
+  "deletedashboard": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDashboard",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "deletedataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataSet",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "deletedatasetrefreshproperties": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataSetRefreshProperties",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "deletedatasource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataSource",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "deletedefaultqbusinessapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDefaultQBusinessApplication",
+   "resources": []
+  },
+  "deletedlpsetting": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDlpSetting",
+   "resources": [
+    "dlpSetting"
+   ]
+  },
+  "deleteemailcustomizationtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEmailCustomizationTemplate",
+   "resources": [
+    "emailCustomizationTemplate"
+   ]
+  },
+  "deleteextension": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExtension",
+   "resources": [
+    "extension"
+   ]
+  },
+  "deleteextensionaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExtensionAccess",
+   "resources": [
+    "extensionaccess"
+   ]
+  },
+  "deleteflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFlow",
+   "resources": [
+    "flow"
+   ]
+  },
+  "deletefolder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFolder",
+   "resources": [
+    "folder"
+   ]
+  },
+  "deletefoldermembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFolderMembership",
+   "resources": [
+    "analysis",
+    "dashboard",
+    "dataset",
+    "folder"
+   ]
+  },
+  "deletegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "deletegroupmembership": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGroupMembership",
+   "resourceConditionKeys": {
+    "group": [
+     "quicksight:UserName"
+    ]
+   },
+   "resources": [
+    "group"
+   ]
+  },
+  "deleteiampolicyassignment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIAMPolicyAssignment",
+   "resources": [
+    "assignment"
+   ]
+  },
+  "deleteidentitypropagationconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteIdentityPropagationConfig",
+   "resources": []
+  },
+  "deleteinboundconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInboundConnector",
+   "resources": [
+    "inboundConnector"
+   ]
+  },
+  "deleteknowledgebase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKnowledgeBase",
+   "resources": [
+    "knowledgeBase"
+   ]
+  },
+  "deletelimitsprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLimitsProfile",
+   "resources": [
+    "limitsProfile"
+   ]
+  },
+  "deletenamespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteNamespace",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "deleteoauthclientapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOAuthClientApplication",
+   "resources": [
+    "oauthClientApplication"
+   ]
+  },
+  "deleterefreshschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRefreshSchedule",
+   "resources": [
+    "refreshschedule"
+   ]
+  },
+  "deleterolecustompermission": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRoleCustomPermission",
+   "resources": []
+  },
+  "deleterolemembership": {
+   "conditionKeys": [
+    "quicksight:Group"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRoleMembership",
+   "resources": []
+  },
+  "deletespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSpace",
+   "resources": [
+    "space"
+   ]
+  },
+  "deletetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "deletetemplatealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTemplateAlias",
+   "resources": [
+    "template"
+   ]
+  },
+  "deletetheme": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTheme",
+   "resources": [
+    "theme"
+   ]
+  },
+  "deletethemealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteThemeAlias",
+   "resources": [
+    "theme"
+   ]
+  },
+  "deletetopic": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTopic",
+   "resources": [
+    "topic"
+   ]
+  },
+  "deletetopicrefreshschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTopicRefreshSchedule",
+   "resources": [
+    "topic"
+   ]
+  },
+  "deleteuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "deleteuserbyprincipalid": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserByPrincipalId",
+   "resources": [
+    "user"
+   ]
+  },
+  "deleteusercustompermission": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUserCustomPermission",
+   "resources": [
+    "user"
+   ]
+  },
+  "deletevpcconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVPCConnection",
+   "resources": [
+    "vpcconnection"
+   ]
+  },
+  "describeaccesscontrolapplication": {
+   "name": "DescribeAccessControlApplication",
+   "resources": [
+    "accessControlApplication"
+   ]
+  },
+  "describeaccountcustomization": {
+   "name": "DescribeAccountCustomization",
+   "resources": [
+    "customization"
+   ]
+  },
+  "describeaccountcustompermission": {
+   "name": "DescribeAccountCustomPermission",
+   "resources": []
+  },
+  "describeaccountsettings": {
+   "name": "DescribeAccountSettings",
+   "resources": []
+  },
+  "describeaccountsubscription": {
+   "name": "DescribeAccountSubscription",
+   "resources": [
+    "account"
+   ]
+  },
+  "describeactionconnector": {
+   "name": "DescribeActionConnector",
+   "resources": [
+    "actionconnector"
+   ]
+  },
+  "describeactionconnectorpermissions": {
+   "name": "DescribeActionConnectorPermissions",
+   "resources": [
+    "actionconnector"
+   ]
+  },
+  "describeagent": {
+   "name": "DescribeAgent",
+   "resources": [
+    "agent"
+   ]
+  },
+  "describeagentpermissions": {
+   "name": "DescribeAgentPermissions",
+   "resources": [
+    "agent"
+   ]
+  },
+  "describeanalysis": {
+   "name": "DescribeAnalysis",
+   "resources": [
+    "analysis"
+   ]
+  },
+  "describeanalysispermissions": {
+   "name": "DescribeAnalysisPermissions",
+   "resources": [
+    "analysis"
+   ]
+  },
+  "describeapp": {
+   "name": "DescribeApp",
+   "resources": [
+    "app"
+   ]
+  },
+  "describeapppermissions": {
+   "name": "DescribeAppPermissions",
+   "resources": [
+    "app"
+   ]
+  },
+  "describeapprovalpolicy": {
+   "name": "DescribeApprovalPolicy",
+   "resources": [
+    "approvalPolicy"
+   ]
+  },
+  "describeassetbundleexportjob": {
+   "name": "DescribeAssetBundleExportJob",
+   "resources": [
+    "assetBundleExportJob"
+   ]
+  },
+  "describeassetbundleimportjob": {
+   "name": "DescribeAssetBundleImportJob",
+   "resources": [
+    "assetBundleImportJob"
+   ]
+  },
+  "describeautomationjob": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "DescribeAutomationJob",
+   "resources": [
+    "automationJob"
+   ]
+  },
+  "describebrand": {
+   "name": "DescribeBrand",
+   "resources": [
+    "brand"
+   ]
+  },
+  "describebrandassignment": {
+   "name": "DescribeBrandAssignment",
+   "resources": []
+  },
+  "describebrandpublishedversion": {
+   "name": "DescribeBrandPublishedVersion",
+   "resources": [
+    "brand"
+   ]
+  },
+  "describechatconfiguration": {
+   "name": "DescribeChatConfiguration",
+   "resources": []
+  },
+  "describecustompermissions": {
+   "name": "DescribeCustomPermissions",
+   "resources": [
+    "custompermissions"
+   ]
+  },
+  "describedashboard": {
+   "name": "DescribeDashboard",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "describedashboardpermissions": {
+   "name": "DescribeDashboardPermissions",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "describedashboardsnapshotjob": {
+   "name": "DescribeDashboardSnapshotJob",
+   "resources": [
+    "dashboardSnapshotJob"
+   ]
+  },
+  "describedashboardsnapshotjobresult": {
+   "name": "DescribeDashboardSnapshotJobResult",
+   "resources": [
+    "dashboardSnapshotJob"
+   ]
+  },
+  "describedashboardsqaconfiguration": {
+   "name": "DescribeDashboardsQAConfiguration",
+   "resources": []
+  },
+  "describedataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "DescribeDataSet",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "describedatasetpermissions": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "DescribeDataSetPermissions",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "describedatasetrefreshproperties": {
+   "name": "DescribeDataSetRefreshProperties",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "describedatasource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "DescribeDataSource",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "describedatasourcepermissions": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "DescribeDataSourcePermissions",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "describedefaultqbusinessapplication": {
+   "name": "DescribeDefaultQBusinessApplication",
+   "resources": []
+  },
+  "describedlpjob": {
+   "name": "DescribeDlpJob",
+   "resources": [
+    "dlpSetting"
+   ]
+  },
+  "describedlpsetting": {
+   "name": "DescribeDlpSetting",
+   "resources": [
+    "dlpSetting"
+   ]
+  },
+  "describeemailcustomizationtemplate": {
+   "name": "DescribeEmailCustomizationTemplate",
+   "resources": [
+    "emailCustomizationTemplate"
+   ]
+  },
+  "describeextension": {
+   "name": "DescribeExtension",
+   "resources": [
+    "extension"
+   ]
+  },
+  "describeextensionaccess": {
+   "name": "DescribeExtensionAccess",
+   "resources": [
+    "extensionaccess"
+   ]
+  },
+  "describeextensionpermissions": {
+   "name": "DescribeExtensionPermissions",
+   "resources": [
+    "extension"
+   ]
+  },
+  "describeflow": {
+   "name": "DescribeFlow",
+   "resources": [
+    "flow"
+   ]
+  },
+  "describefolder": {
+   "name": "DescribeFolder",
+   "resources": [
+    "folder"
+   ]
+  },
+  "describefolderpermissions": {
+   "name": "DescribeFolderPermissions",
+   "resources": [
+    "folder"
+   ]
+  },
+  "describefolderresolvedpermissions": {
+   "name": "DescribeFolderResolvedPermissions",
+   "resources": [
+    "folder"
+   ]
+  },
+  "describegroup": {
+   "name": "DescribeGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "describegroupmembership": {
+   "name": "DescribeGroupMembership",
+   "resourceConditionKeys": {
+    "group": [
+     "quicksight:UserName"
+    ]
+   },
+   "resources": [
+    "group"
+   ]
+  },
+  "describeiampolicyassignment": {
+   "name": "DescribeIAMPolicyAssignment",
+   "resources": [
+    "assignment"
+   ]
+  },
+  "describeinboundconnector": {
+   "name": "DescribeInboundConnector",
+   "resources": [
+    "inboundConnector"
+   ]
+  },
+  "describeingestion": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "DescribeIngestion",
+   "resources": [
+    "ingestion"
+   ]
+  },
+  "describeiprestriction": {
+   "name": "DescribeIpRestriction",
+   "resources": []
+  },
+  "describekeyregistration": {
+   "name": "DescribeKeyRegistration",
+   "resources": []
+  },
+  "describeknowledgebase": {
+   "name": "DescribeKnowledgeBase",
+   "resources": [
+    "knowledgeBase"
+   ]
+  },
+  "describeknowledgebasepermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DescribeKnowledgeBasePermissions",
+   "resources": [
+    "knowledgeBase"
+   ]
+  },
+  "describelimitsprofile": {
+   "name": "DescribeLimitsProfile",
+   "resources": [
+    "limitsProfile"
+   ]
+  },
+  "describenamespace": {
+   "name": "DescribeNamespace",
+   "resources": [
+    "namespace"
+   ]
+  },
+  "describeoauthclientapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "DescribeOAuthClientApplication",
+   "resources": [
+    "oauthClientApplication"
+   ]
+  },
+  "describeqpersonalizationconfiguration": {
+   "name": "DescribeQPersonalizationConfiguration",
+   "resources": []
+  },
+  "describequickindexcapacity": {
+   "name": "DescribeQuickIndexCapacity",
+   "resources": []
+  },
+  "describequicksightqsearchconfiguration": {
+   "name": "DescribeQuickSightQSearchConfiguration",
+   "resources": []
+  },
+  "describerefreshschedule": {
+   "name": "DescribeRefreshSchedule",
+   "resources": [
+    "refreshschedule"
+   ]
+  },
+  "describeresourcepermissions": {
+   "name": "DescribeResourcePermissions",
+   "resources": []
+  },
+  "describerolecustompermission": {
+   "name": "DescribeRoleCustomPermission",
+   "resources": []
+  },
+  "describeselfupgradeconfiguration": {
+   "name": "DescribeSelfUpgradeConfiguration",
+   "resources": []
+  },
+  "describespace": {
+   "name": "DescribeSpace",
+   "resources": [
+    "space"
+   ]
+  },
+  "describespacepermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DescribeSpacePermissions",
+   "resources": [
+    "space"
+   ]
+  },
+  "describetemplate": {
+   "name": "DescribeTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "describetemplatealias": {
+   "name": "DescribeTemplateAlias",
+   "resources": [
+    "template"
+   ]
+  },
+  "describetemplatepermissions": {
+   "name": "DescribeTemplatePermissions",
+   "resources": [
+    "template"
+   ]
+  },
+  "describetheme": {
+   "name": "DescribeTheme",
+   "resources": [
+    "theme"
+   ]
+  },
+  "describethemealias": {
+   "name": "DescribeThemeAlias",
+   "resources": [
+    "theme"
+   ]
+  },
+  "describethemepermissions": {
+   "name": "DescribeThemePermissions",
+   "resources": [
+    "theme"
+   ]
+  },
+  "describetopic": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "DescribeTopic",
+   "resources": [
+    "topic"
+   ]
+  },
+  "describetopicpermissions": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DescribeTopicPermissions",
+   "resources": [
+    "topic"
+   ]
+  },
+  "describetopicrefresh": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "DescribeTopicRefresh",
+   "resources": [
+    "topic"
+   ]
+  },
+  "describetopicrefreshschedule": {
+   "name": "DescribeTopicRefreshSchedule",
+   "resources": [
+    "topic"
+   ]
+  },
+  "describeuser": {
+   "name": "DescribeUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "describevpcconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "DescribeVPCConnection",
+   "resources": [
+    "vpcconnection"
+   ]
+  },
+  "generateembedurlforanonymoususer": {
+   "conditionKeys": [
+    "quicksight:AllowedEmbeddingDomains"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateEmbedUrlForAnonymousUser",
+   "resources": [
+    "dashboard",
+    "namespace",
+    "theme",
+    "topic"
+   ]
+  },
+  "generateembedurlforregistereduser": {
+   "conditionKeys": [
+    "quicksight:AllowedEmbeddingDomains"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateEmbedUrlForRegisteredUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "generateembedurlforregistereduserwithidentity": {
+   "conditionKeys": [
+    "quicksight:AllowedEmbeddingDomains"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateEmbedUrlForRegisteredUserWithIdentity",
+   "resources": []
+  },
+  "getanonymoususerembedurl": {
+   "name": "GetAnonymousUserEmbedUrl",
+   "resources": []
+  },
+  "getauthcode": {
+   "name": "GetAuthCode",
+   "resources": [
+    "user"
+   ]
+  },
+  "getcustompermissionssummary": {
+   "name": "GetCustomPermissionsSummary",
+   "resources": []
+  },
+  "getdashboardembedurl": {
+   "name": "GetDashboardEmbedUrl",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "getflowmetadata": {
+   "name": "GetFlowMetadata",
+   "resources": [
+    "flow"
+   ]
+  },
+  "getflowpermissions": {
+   "name": "GetFlowPermissions",
+   "resources": [
+    "flow"
+   ]
+  },
+  "getgroupmapping": {
+   "name": "GetGroupMapping",
+   "resources": []
+  },
+  "getidentitycontext": {
+   "name": "GetIdentityContext",
+   "resources": [
+    "user"
+   ]
+  },
+  "getsessionembedurl": {
+   "name": "GetSessionEmbedUrl",
+   "resources": []
+  },
+  "listaccesscontrolapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessControlApplications",
+   "resources": []
+  },
+  "listactionconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListActionConnectors",
+   "resources": []
+  },
+  "listagents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgents",
+   "resources": [
+    "agent"
+   ]
+  },
+  "listanalyses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAnalyses",
+   "resources": [
+    "analysis"
+   ]
+  },
+  "listapprovalpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApprovalPolicies",
+   "resources": [
+    "approvalPolicy"
+   ]
+  },
+  "listapps": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApps",
+   "resources": [
+    "app"
+   ]
+  },
+  "listassetbundleexportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssetBundleExportJobs",
+   "resources": [
+    "assetBundleExportJob"
+   ]
+  },
+  "listassetbundleimportjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssetBundleImportJobs",
+   "resources": [
+    "assetBundleImportJob"
+   ]
+  },
+  "listbrands": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBrands",
+   "resources": []
+  },
+  "listcustomermanagedkeys": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomerManagedKeys",
+   "resources": []
+  },
+  "listcustompermissionassignments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomPermissionAssignments",
+   "resources": []
+  },
+  "listcustompermissions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomPermissions",
+   "resources": []
+  },
+  "listdashboards": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDashboards",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "listdashboardversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDashboardVersions",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "listdatasets": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSets",
+   "resources": []
+  },
+  "listdatasources": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSources",
+   "resources": []
+  },
+  "listdlplabels": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDlpLabels",
+   "resources": []
+  },
+  "listdlpsettings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDlpSettings",
+   "resources": [
+    "dlpSetting"
+   ]
+  },
+  "listextensionaccesses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExtensionAccesses",
+   "resources": []
+  },
+  "listextensions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExtensions",
+   "resources": []
+  },
+  "listflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFlows",
+   "resources": []
+  },
+  "listfoldermembers": {
+   "name": "ListFolderMembers",
+   "resources": [
+    "folder"
+   ]
+  },
+  "listfolders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFolders",
+   "resources": [
+    "folder"
+   ]
+  },
+  "listfoldersforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFoldersForResource",
+   "resources": [
+    "analysis",
+    "dashboard",
+    "dataset",
+    "datasource",
+    "topic"
+   ]
+  },
+  "listgroupmemberships": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroupMemberships",
+   "resources": [
+    "group"
+   ]
+  },
+  "listgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGroups",
+   "resources": [
+    "group"
+   ]
+  },
+  "listiampolicyassignments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIAMPolicyAssignments",
+   "resources": [
+    "assignment"
+   ]
+  },
+  "listiampolicyassignmentsforuser": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIAMPolicyAssignmentsForUser",
+   "resources": [
+    "assignment"
+   ]
+  },
+  "listidentitypropagationconfigs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIdentityPropagationConfigs",
+   "resources": []
+  },
+  "listinboundconnectorapplicationassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInboundConnectorApplicationAssociations",
+   "resources": [
+    "inboundConnector"
+   ]
+  },
+  "listinboundconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInboundConnectors",
+   "resources": []
+  },
+  "listingestions": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIngestions",
+   "resources": []
+  },
+  "listkmskeysforuser": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKMSKeysForUser",
+   "resources": []
+  },
+  "listknowledgebases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKnowledgeBases",
+   "resources": []
+  },
+  "listlimitsprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLimitsProfiles",
+   "resources": [
+    "limitsProfile"
+   ]
+  },
+  "listnamespaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListNamespaces",
+   "resources": []
+  },
+  "listoauthclientapplications": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOAuthClientApplications",
+   "resources": []
+  },
+  "listrefreshschedules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRefreshSchedules",
+   "resources": []
+  },
+  "listrolememberships": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRoleMemberships",
+   "resources": []
+  },
+  "listselfupgrades": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSelfUpgrades",
+   "resources": [
+    "user"
+   ]
+  },
+  "listspaceresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSpaceResources",
+   "resources": [
+    "space"
+   ]
+  },
+  "listspaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSpaces",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "accessControlApplication",
+    "actionconnector",
+    "analysis",
+    "app",
+    "brand",
+    "customization",
+    "custompermissions",
+    "dashboard",
+    "dataset",
+    "datasource",
+    "dlpSetting",
+    "emailCustomizationTemplate",
+    "flow",
+    "folder",
+    "inboundConnector",
+    "namespace",
+    "oauthClientApplication",
+    "template",
+    "theme",
+    "topic",
+    "user",
+    "vpcconnection"
+   ]
+  },
+  "listtemplatealiases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTemplateAliases",
+   "resources": [
+    "template"
+   ]
+  },
+  "listtemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTemplates",
+   "resources": [
+    "template"
+   ]
+  },
+  "listtemplateversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTemplateVersions",
+   "resources": [
+    "template"
+   ]
+  },
+  "listthemealiases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThemeAliases",
+   "resources": [
+    "theme"
+   ]
+  },
+  "listthemes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThemes",
+   "resources": [
+    "theme"
+   ]
+  },
+  "listthemeversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThemeVersions",
+   "resources": [
+    "theme"
+   ]
+  },
+  "listtopicrefreshschedules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTopicRefreshSchedules",
+   "resources": []
+  },
+  "listtopicreviewedanswers": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTopicReviewedAnswers",
+   "resources": []
+  },
+  "listtopics": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTopics",
+   "resources": []
+  },
+  "listusergroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUserGroups",
+   "resources": [
+    "user"
+   ]
+  },
+  "listusers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsers",
+   "resources": [
+    "user"
+   ]
+  },
+  "listusersindexcapacity": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUsersIndexCapacity",
+   "resources": []
+  },
+  "listvpcconnections": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListVPCConnections",
+   "resources": []
+  },
+  "passdataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "PassDataSet",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "passdatasource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "PassDataSource",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "passtopic": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "PassTopic",
+   "resources": [
+    "topic"
+   ]
+  },
+  "predictqaresults": {
+   "name": "PredictQAResults",
+   "resources": [
+    "dashboard",
+    "topic"
+   ]
+  },
+  "putdatasetrefreshproperties": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDataSetRefreshProperties",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "quicksuiteusagemetrics": {
+   "name": "QuickSuiteUsageMetrics",
+   "resources": []
+  },
+  "registercustomermanagedkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterCustomerManagedKey",
+   "resources": []
+  },
+  "registeruser": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterUser",
+   "resourceConditionKeys": {
+    "user": [
+     "quicksight:IamArn",
+     "quicksight:SessionName"
+    ]
+   },
+   "resources": [
+    "user"
+   ]
+  },
+  "removecustomermanagedkey": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveCustomerManagedKey",
+   "resources": []
+  },
+  "restoreanalysis": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreAnalysis",
+   "resources": [
+    "analysis"
+   ]
+  },
+  "revokeoauthtoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeOAuthToken",
+   "resources": []
+  },
+  "scopedownpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ScopeDownPolicy",
+   "resources": []
+  },
+  "searchactionconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchActionConnectors",
+   "resources": [
+    "actionconnector"
+   ]
+  },
+  "searchagents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchAgents",
+   "resources": [
+    "agent"
+   ]
+  },
+  "searchanalyses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchAnalyses",
+   "resources": [
+    "analysis"
+   ]
+  },
+  "searchapps": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchApps",
+   "resources": [
+    "app"
+   ]
+  },
+  "searchdashboards": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchDashboards",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "searchdatasets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchDataSets",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "searchdatasources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchDataSources",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "searchdirectorygroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchDirectoryGroups",
+   "resources": []
+  },
+  "searchflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchFlows",
+   "resources": []
+  },
+  "searchfolders": {
+   "name": "SearchFolders",
+   "resources": [
+    "folder"
+   ]
+  },
+  "searchgroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchGroups",
+   "resources": [
+    "group"
+   ]
+  },
+  "searchknowledgebases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchKnowledgeBases",
+   "resources": [
+    "knowledgeBase"
+   ]
+  },
+  "searchspaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchSpaces",
+   "resources": []
+  },
+  "searchtopics": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchTopics",
+   "resources": [
+    "topic"
+   ]
+  },
+  "searchusers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchUsers",
+   "resources": [
+    "user"
+   ]
+  },
+  "setgroupmapping": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetGroupMapping",
+   "resources": []
+  },
+  "startassetbundleexportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAssetBundleExportJob",
+   "resources": [
+    "assetBundleExportJob"
+   ]
+  },
+  "startassetbundleimportjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAssetBundleImportJob",
+   "resources": [
+    "assetBundleImportJob"
+   ]
+  },
+  "startautomationjob": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartAutomationJob",
+   "resources": [
+    "automation"
+   ]
+  },
+  "startdashboardsnapshotjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDashboardSnapshotJob",
+   "resources": [
+    "dashboardSnapshotJob"
+   ]
+  },
+  "startdashboardsnapshotjobschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDashboardSnapshotJobSchedule",
+   "resources": []
+  },
+  "startdlpjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDlpJob",
+   "resources": [
+    "dlpSetting"
+   ]
+  },
+  "startextensioninstallation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartExtensionInstallation",
+   "resources": [
+    "extension"
+   ]
+  },
+  "subscribe": {
+   "conditionKeys": [
+    "quicksight:DirectoryType",
+    "quicksight:Edition"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Subscribe",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "accessControlApplication",
+    "actionconnector",
+    "analysis",
+    "app",
+    "brand",
+    "customization",
+    "custompermissions",
+    "dashboard",
+    "dataset",
+    "datasource",
+    "dlpSetting",
+    "emailCustomizationTemplate",
+    "flow",
+    "folder",
+    "inboundConnector",
+    "ingestion",
+    "namespace",
+    "oauthClientApplication",
+    "template",
+    "theme",
+    "topic",
+    "user",
+    "vpcconnection"
+   ]
+  },
+  "unpublishflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UnpublishFlow",
+   "resources": [
+    "flow"
+   ]
+  },
+  "unsubscribe": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Unsubscribe",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "accessControlApplication",
+    "actionconnector",
+    "analysis",
+    "app",
+    "brand",
+    "customization",
+    "custompermissions",
+    "dashboard",
+    "dataset",
+    "datasource",
+    "dlpSetting",
+    "emailCustomizationTemplate",
+    "flow",
+    "folder",
+    "inboundConnector",
+    "ingestion",
+    "namespace",
+    "oauthClientApplication",
+    "template",
+    "theme",
+    "topic",
+    "user",
+    "vpcconnection"
+   ]
+  },
+  "updateaccesscontrolapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccessControlApplication",
+   "resources": [
+    "accessControlApplication"
+   ]
+  },
+  "updateaccesscontrolapplicationsecret": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccessControlApplicationSecret",
+   "resources": [
+    "accessControlApplication"
+   ]
+  },
+  "updateaccountcustomization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountCustomization",
+   "resources": [
+    "customization"
+   ]
+  },
+  "updateaccountcustompermission": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountCustomPermission",
+   "resources": []
+  },
+  "updateaccountsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccountSettings",
+   "resources": []
+  },
+  "updateactionconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateActionConnector",
+   "resources": [
+    "actionconnector"
+   ]
+  },
+  "updateactionconnectorpermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateActionConnectorPermissions",
+   "resources": [
+    "actionconnector"
+   ]
+  },
+  "updateagent": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgent",
+   "resources": [
+    "agent"
+   ]
+  },
+  "updateagentpermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateAgentPermissions",
+   "resources": [
+    "agent"
+   ]
+  },
+  "updateanalysis": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAnalysis",
+   "resources": [
+    "analysis"
+   ]
+  },
+  "updateanalysispermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateAnalysisPermissions",
+   "resources": [
+    "analysis"
+   ]
+  },
+  "updateapplicationwithtokenexchangegrant": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplicationWithTokenExchangeGrant",
+   "resources": []
+  },
+  "updateapppermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateAppPermissions",
+   "resources": [
+    "app"
+   ]
+  },
+  "updateapprovalpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApprovalPolicy",
+   "resources": [
+    "approvalPolicy"
+   ]
+  },
+  "updatebrand": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBrand",
+   "resources": [
+    "brand"
+   ]
+  },
+  "updatebrandassignment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBrandAssignment",
+   "resources": []
+  },
+  "updatebrandpublishedversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBrandPublishedVersion",
+   "resources": [
+    "brand"
+   ]
+  },
+  "updatechatconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChatConfiguration",
+   "resources": []
+  },
+  "updatecustompermissions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCustomPermissions",
+   "resources": [
+    "custompermissions"
+   ]
+  },
+  "updatedashboard": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDashboard",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "updatedashboardlinks": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDashboardLinks",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "updatedashboardpermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateDashboardPermissions",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "updatedashboardpublishedversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDashboardPublishedVersion",
+   "resources": [
+    "dashboard"
+   ]
+  },
+  "updatedashboardsqaconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDashboardsQAConfiguration",
+   "resources": []
+  },
+  "updatedataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataSet",
+   "resources": [
+    "dataset",
+    "datasource"
+   ]
+  },
+  "updatedatasetpermissions": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateDataSetPermissions",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "updatedatasource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataSource",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "updatedatasourcepermissions": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateDataSourcePermissions",
+   "resources": [
+    "datasource"
+   ]
+  },
+  "updatedefaultqbusinessapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDefaultQBusinessApplication",
+   "resources": []
+  },
+  "updatedlpsetting": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDlpSetting",
+   "resources": [
+    "dlpSetting"
+   ]
+  },
+  "updateemailcustomizationtemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEmailCustomizationTemplate",
+   "resources": [
+    "emailCustomizationTemplate"
+   ]
+  },
+  "updateextension": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExtension",
+   "resources": [
+    "extension"
+   ]
+  },
+  "updateextensionaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExtensionAccess",
+   "resources": [
+    "extensionaccess"
+   ]
+  },
+  "updateextensionpermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateExtensionPermissions",
+   "resources": [
+    "extension"
+   ]
+  },
+  "updateflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFlow",
+   "resources": [
+    "flow"
+   ]
+  },
+  "updateflowpermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateFlowPermissions",
+   "resources": [
+    "flow"
+   ]
+  },
+  "updatefolder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFolder",
+   "resources": [
+    "folder"
+   ]
+  },
+  "updatefolderpermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateFolderPermissions",
+   "resources": [
+    "folder"
+   ]
+  },
+  "updategroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGroup",
+   "resources": [
+    "group"
+   ]
+  },
+  "updateiampolicyassignment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIAMPolicyAssignment",
+   "resources": [
+    "assignment"
+   ]
+  },
+  "updateidentitypropagationconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIdentityPropagationConfig",
+   "resources": []
+  },
+  "updateinboundconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInboundConnector",
+   "resources": [
+    "inboundConnector"
+   ]
+  },
+  "updateinboundconnectorapplicationassociations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInboundConnectorApplicationAssociations",
+   "resources": [
+    "inboundConnector"
+   ]
+  },
+  "updateiprestriction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIpRestriction",
+   "resources": []
+  },
+  "updatekeyregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKeyRegistration",
+   "resources": []
+  },
+  "updateknowledgebase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKnowledgeBase",
+   "resources": [
+    "knowledgeBase"
+   ]
+  },
+  "updateknowledgebasepermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateKnowledgeBasePermissions",
+   "resources": [
+    "knowledgeBase"
+   ]
+  },
+  "updatelimitsprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLimitsProfile",
+   "resources": [
+    "limitsProfile"
+   ]
+  },
+  "updateoauthclientapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOAuthClientApplication",
+   "resources": [
+    "oauthClientApplication"
+   ]
+  },
+  "updatepublicsharingsettings": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePublicSharingSettings",
+   "resources": []
+  },
+  "updateqpersonalizationconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQPersonalizationConfiguration",
+   "resources": []
+  },
+  "updatequickindexcapacity": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQuickIndexCapacity",
+   "resources": []
+  },
+  "updatequicksightqsearchconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQuickSightQSearchConfiguration",
+   "resources": []
+  },
+  "updaterefreshschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRefreshSchedule",
+   "resources": [
+    "refreshschedule"
+   ]
+  },
+  "updateresourcepermissions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateResourcePermissions",
+   "resources": []
+  },
+  "updaterolecustompermission": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRoleCustomPermission",
+   "resources": []
+  },
+  "updateselfupgrade": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSelfUpgrade",
+   "resources": [
+    "user"
+   ]
+  },
+  "updateselfupgradeconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSelfUpgradeConfiguration",
+   "resources": []
+  },
+  "updatespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSpace",
+   "resources": [
+    "space"
+   ]
+  },
+  "updatespacepermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateSpacePermissions",
+   "resources": [
+    "space"
+   ]
+  },
+  "updatespaceresources": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSpaceResources",
+   "resources": [
+    "space"
+   ]
+  },
+  "updatespicecapacityconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSPICECapacityConfiguration",
+   "resources": []
+  },
+  "updatetemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTemplate",
+   "resources": [
+    "template"
+   ]
+  },
+  "updatetemplatealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTemplateAlias",
+   "resources": [
+    "template"
+   ]
+  },
+  "updatetemplatepermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateTemplatePermissions",
+   "resources": [
+    "template"
+   ]
+  },
+  "updatetheme": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTheme",
+   "resources": [
+    "theme"
+   ]
+  },
+  "updatethemealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateThemeAlias",
+   "resources": [
+    "theme"
+   ]
+  },
+  "updatethemepermissions": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateThemePermissions",
+   "resources": [
+    "theme"
+   ]
+  },
+  "updatetopic": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTopic",
+   "resources": [
+    "dataset",
+    "topic"
+   ]
+  },
+  "updatetopicpermissions": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdateTopicPermissions",
+   "resources": [
+    "topic"
+   ]
+  },
+  "updatetopicrefreshschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTopicRefreshSchedule",
+   "resources": [
+    "topic"
+   ]
+  },
+  "updateuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUser",
+   "resources": [
+    "user"
+   ]
+  },
+  "updateusercustompermission": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateUserCustomPermission",
+   "resources": [
+    "user"
+   ]
+  },
+  "updatevpcconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateVPCConnection",
+   "resources": [
+    "vpcconnection"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "quicksight:AllowedEmbeddingDomains": [
+   "ArrayOfString"
+  ],
+  "quicksight:DirectoryType": [
+   "String"
+  ],
+  "quicksight:Edition": [
+   "String"
+  ],
+  "quicksight:Group": [
+   "ARN"
+  ],
+  "quicksight:IamArn": [
+   "ARN"
+  ],
+  "quicksight:KmsKeyArns": [
+   "ArrayOfARN"
+  ],
+  "quicksight:SessionName": [
+   "String"
+  ],
+  "quicksight:UserName": [
+   "String"
+  ]
+ },
+ "resources": {
+  "accessControlApplication": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:access-control-application/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "account": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:account/${ResourceId}"
+   ]
+  },
+  "actionconnector": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:action-connector/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "agent": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:agent/${ResourceId}"
+   ]
+  },
+  "analysis": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:analysis/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "app": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:app/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "approvalPolicy": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:approval-policy/${ResourceId}"
+   ]
+  },
+  "assetBundleExportJob": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:asset-bundle-export-job/${ResourceId}"
+   ]
+  },
+  "assetBundleImportJob": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:asset-bundle-import-job/${ResourceId}"
+   ]
+  },
+  "assignment": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight::${Account}:assignment/${ResourceId}"
+   ]
+  },
+  "automation": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:automation-group/${AutomationGroupId}/automation/${ResourceId}"
+   ]
+  },
+  "automationGroup": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:automation-group/${ResourceId}"
+   ]
+  },
+  "automationJob": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:automation-group/${AutomationGroupId}/automation/${AutomationId}/job/${ResourceId}"
+   ]
+  },
+  "brand": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:brand/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "customization": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:customization/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "custompermissions": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:custompermissions/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dashboard": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:dashboard/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dashboardSnapshotJob": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:dashboard/${DashboardId}/snapshot-job/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dataset": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:dataset/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "datasource": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:datasource/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dlpSetting": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:dlpsetting/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "emailCustomizationTemplate": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:email-customization-template/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "extension": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:extension/${ResourceId}"
+   ]
+  },
+  "extensionaccess": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:extension-access/${ResourceId}"
+   ]
+  },
+  "flow": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:flow/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "folder": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:folder/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "group": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:group/${ResourceId}"
+   ]
+  },
+  "inboundConnector": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:inbound-connector/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ingestion": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:dataset/${DatasetId}/ingestion/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "knowledgeBase": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:knowledge-base/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "limitsProfile": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:limits-profile/${ResourceId}"
+   ]
+  },
+  "namespace": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:namespace/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "oauthClientApplication": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:oauthClientApplication/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "refreshschedule": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:dataset/${DatasetId}/refresh-schedule/${ResourceId}"
+   ]
+  },
+  "space": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:space/${ResourceId}"
+   ]
+  },
+  "template": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:template/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "theme": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:theme/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "topic": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:topic/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "user": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:user/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "vpcconnection": {
+   "arnFormats": [
+    "arn:${Partition}:quicksight:${Region}:${Account}:vpcConnection/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "quicksight",
+ "serviceName": "QuickSight",
+ "version": "v1.5"
+}

@@ -1,0 +1,57 @@
+{
+ "actions": {
+  "approve": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "approve",
+   "resources": []
+  },
+  "info": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "info",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "approve": {
+   "arnFormats": [
+    "arn:${Partition}:eventsbilltoaws:${Region}:${Account}:${RelativeId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "info": {
+   "arnFormats": [
+    "arn:${Partition}:eventsbilltoaws:${Region}:${Account}:${RelativeId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "eventsbilltoaws",
+ "serviceName": "eventsbilltoaws",
+ "version": "v1.5"
+}

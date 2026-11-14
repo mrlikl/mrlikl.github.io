@@ -1,0 +1,132 @@
+{
+ "actions": {
+  "allowvendedlogdeliveryforresource": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": [
+    "SyncProfileResource"
+   ]
+  },
+  "createsyncfilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSyncFilter",
+   "resources": [
+    "SyncProfileResource"
+   ]
+  },
+  "createsyncprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSyncProfile",
+   "resources": []
+  },
+  "createsynctarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSyncTarget",
+   "resources": [
+    "SyncProfileResource"
+   ]
+  },
+  "deletesyncfilter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSyncFilter",
+   "resources": [
+    "SyncProfileResource"
+   ]
+  },
+  "deletesyncprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSyncProfile",
+   "resources": [
+    "SyncProfileResource"
+   ]
+  },
+  "deletesynctarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSyncTarget",
+   "resources": [
+    "SyncProfileResource",
+    "SyncTargetResource"
+   ]
+  },
+  "getsyncprofile": {
+   "name": "GetSyncProfile",
+   "resources": [
+    "SyncProfileResource"
+   ]
+  },
+  "getsynctarget": {
+   "name": "GetSyncTarget",
+   "resources": [
+    "SyncProfileResource",
+    "SyncTargetResource"
+   ]
+  },
+  "listsyncfilters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSyncFilters",
+   "resources": [
+    "SyncProfileResource"
+   ]
+  },
+  "startsync": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSync",
+   "resources": [
+    "SyncProfileResource"
+   ]
+  },
+  "stopsync": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopSync",
+   "resources": [
+    "SyncProfileResource"
+   ]
+  },
+  "updatesynctarget": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSyncTarget",
+   "resources": [
+    "SyncProfileResource",
+    "SyncTargetResource"
+   ]
+  }
+ },
+ "resources": {
+  "SyncProfileResource": {
+   "arnFormats": [
+    "arn:${Partition}:identity-sync:${Region}:${Account}:profile/${SyncProfileName}"
+   ]
+  },
+  "SyncTargetResource": {
+   "arnFormats": [
+    "arn:${Partition}:identity-sync:${Region}:${Account}:target/${SyncProfileName}/${SyncTargetName}"
+   ]
+  }
+ },
+ "service": "identity-sync",
+ "serviceName": "Identity Sync",
+ "version": "v1.5"
+}

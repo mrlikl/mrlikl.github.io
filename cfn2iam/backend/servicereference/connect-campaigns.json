@@ -1,0 +1,373 @@
+{
+ "actions": {
+  "createcampaign": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "deletecampaign": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "deletecampaignchannelsubtypeconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCampaignChannelSubtypeConfig",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "deletecampaigncommunicationlimits": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCampaignCommunicationLimits",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "deletecampaigncommunicationtime": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCampaignCommunicationTime",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "deletecampaignentrylimits": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCampaignEntryLimits",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "deleteconnectinstanceconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnectInstanceConfig",
+   "resources": []
+  },
+  "deleteconnectinstanceintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnectInstanceIntegration",
+   "resources": []
+  },
+  "deleteinstanceonboardingjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInstanceOnboardingJob",
+   "resources": []
+  },
+  "describecampaign": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}"
+   ],
+   "name": "DescribeCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "getcampaignstate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}"
+   ],
+   "name": "GetCampaignState",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "getcampaignstatebatch": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}"
+   ],
+   "name": "GetCampaignStateBatch",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "getconnectinstanceconfig": {
+   "name": "GetConnectInstanceConfig",
+   "resources": []
+  },
+  "getinstancecommunicationlimits": {
+   "name": "GetInstanceCommunicationLimits",
+   "resources": []
+  },
+  "getinstanceonboardingjobstatus": {
+   "name": "GetInstanceOnboardingJobStatus",
+   "resources": []
+  },
+  "listcampaigns": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCampaigns",
+   "resources": []
+  },
+  "listconnectinstanceintegrations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectInstanceIntegrations",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "pausecampaign": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PauseCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "putconnectinstanceintegration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutConnectInstanceIntegration",
+   "resources": []
+  },
+  "putdialrequestbatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDialRequestBatch",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "putinstancecommunicationlimits": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutInstanceCommunicationLimits",
+   "resources": []
+  },
+  "putoutboundrequestbatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutOutboundRequestBatch",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "putprofileoutboundrequestbatch": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutProfileOutboundRequestBatch",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "resumecampaign": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResumeCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "startcampaign": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "startinstanceonboardingjob": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartInstanceOnboardingJob",
+   "resources": []
+  },
+  "stopcampaign": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopCampaign",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "updatecampaignchannelsubtypeconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaignChannelSubtypeConfig",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "updatecampaigncommunicationlimits": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaignCommunicationLimits",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "updatecampaigncommunicationtime": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaignCommunicationTime",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "updatecampaigndialerconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaignDialerConfig",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "updatecampaignentrylimits": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaignEntryLimits",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "updatecampaignflowassociation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaignFlowAssociation",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "updatecampaignname": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaignName",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "updatecampaignoutboundcallconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaignOutboundCallConfig",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "updatecampaignschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaignSchedule",
+   "resources": [
+    "campaign"
+   ]
+  },
+  "updatecampaignsource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaignSource",
+   "resources": [
+    "campaign"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "campaign": {
+   "arnFormats": [
+    "arn:${Partition}:connect-campaigns:${Region}:${Account}:campaign/${CampaignId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "connect-campaigns",
+ "serviceName": "Connect Outbound Campaigns",
+ "version": "v1.5"
+}

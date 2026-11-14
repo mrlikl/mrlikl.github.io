@@ -1,0 +1,240 @@
+{
+ "actions": {
+  "associatefeed": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateFeed",
+   "resources": [
+    "feed"
+   ]
+  },
+  "createdictionary": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDictionary",
+   "resources": []
+  },
+  "createfeed": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFeed",
+   "resources": []
+  },
+  "createscheduleaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateScheduleAction",
+   "resources": [
+    "feed"
+   ]
+  },
+  "deletedictionary": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDictionary",
+   "resources": [
+    "dictionary"
+   ]
+  },
+  "deletefeed": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFeed",
+   "resources": [
+    "feed"
+   ]
+  },
+  "deletefeedpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFeedPolicy",
+   "resources": [
+    "feed"
+   ]
+  },
+  "deletescheduleaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScheduleAction",
+   "resources": [
+    "feed"
+   ]
+  },
+  "disassociatefeed": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateFeed",
+   "resources": [
+    "feed"
+   ]
+  },
+  "exportdictionaryentries": {
+   "name": "ExportDictionaryEntries",
+   "resources": [
+    "dictionary"
+   ]
+  },
+  "getdictionary": {
+   "name": "GetDictionary",
+   "resources": [
+    "dictionary"
+   ]
+  },
+  "getfeed": {
+   "name": "GetFeed",
+   "resources": [
+    "feed"
+   ]
+  },
+  "getfeedpolicy": {
+   "name": "GetFeedPolicy",
+   "resources": [
+    "feed"
+   ]
+  },
+  "getmetadata": {
+   "name": "GetMetadata",
+   "resources": [
+    "feed"
+   ]
+  },
+  "listdictionaries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDictionaries",
+   "resources": []
+  },
+  "listfeeds": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFeeds",
+   "resources": []
+  },
+  "listscheduleactions": {
+   "name": "ListScheduleActions",
+   "resources": [
+    "feed"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "putfeedpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutFeedPolicy",
+   "resources": [
+    "feed"
+   ]
+  },
+  "putmedia": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMedia",
+   "resources": [
+    "feed"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "dictionary",
+    "feed"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "dictionary",
+    "feed"
+   ]
+  },
+  "updatedictionary": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDictionary",
+   "resources": [
+    "dictionary"
+   ]
+  },
+  "updatefeed": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFeed",
+   "resources": [
+    "feed"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "dictionary": {
+   "arnFormats": [
+    "arn:${Partition}:elemental-inference:${Region}:${Account}:dictionary/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "feed": {
+   "arnFormats": [
+    "arn:${Partition}:elemental-inference:${Region}:${Account}:feed/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "elemental-inference",
+ "serviceName": "Elemental Inference",
+ "version": "v1.5"
+}

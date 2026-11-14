@@ -1,0 +1,133 @@
+{
+ "actions": {
+  "batchdeletetaxregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteTaxRegistration",
+   "resources": []
+  },
+  "batchputtaxregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchPutTaxRegistration",
+   "resources": []
+  },
+  "canceldocument": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelDocument",
+   "resources": []
+  },
+  "createdocument": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDocument",
+   "resources": []
+  },
+  "deletesupplementaltaxregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSupplementalTaxRegistration",
+   "resources": []
+  },
+  "deletetaxregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTaxRegistration",
+   "resources": []
+  },
+  "getdocument": {
+   "name": "GetDocument",
+   "resources": []
+  },
+  "getdocumentuploadurl": {
+   "name": "GetDocumentUploadUrl",
+   "resources": []
+  },
+  "getexemptions": {
+   "name": "GetExemptions",
+   "resources": []
+  },
+  "gettaxinforeportingdocument": {
+   "name": "GetTaxInfoReportingDocument",
+   "resources": []
+  },
+  "gettaxinheritance": {
+   "name": "GetTaxInheritance",
+   "resources": []
+  },
+  "gettaxinterview": {
+   "name": "GetTaxInterview",
+   "resources": []
+  },
+  "gettaxregistration": {
+   "name": "GetTaxRegistration",
+   "resources": []
+  },
+  "gettaxregistrationdocument": {
+   "name": "GetTaxRegistrationDocument",
+   "resources": []
+  },
+  "listdocuments": {
+   "name": "ListDocuments",
+   "resources": []
+  },
+  "listsupplementaltaxregistrations": {
+   "name": "ListSupplementalTaxRegistrations",
+   "resources": []
+  },
+  "listtaxregistrations": {
+   "name": "ListTaxRegistrations",
+   "resources": []
+  },
+  "listwithholdingeligibleinvoices": {
+   "name": "ListWithholdingEligibleInvoices",
+   "resources": []
+  },
+  "putsupplementaltaxregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSupplementalTaxRegistration",
+   "resources": []
+  },
+  "puttaxinheritance": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTaxInheritance",
+   "resources": []
+  },
+  "puttaxinterview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTaxInterview",
+   "resources": []
+  },
+  "puttaxregistration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTaxRegistration",
+   "resources": []
+  },
+  "updateexemptions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExemptions",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "tax",
+ "serviceName": "Tax Settings",
+ "version": "v1.5"
+}

@@ -1,0 +1,1069 @@
+{
+ "actions": {
+  "acceptportfolioshare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptPortfolioShare",
+   "resources": [
+    "Portfolio"
+   ]
+  },
+  "associateattributegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateAttributeGroup",
+   "resources": [
+    "Application",
+    "AttributeGroup"
+   ]
+  },
+  "associatebudgetwithresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateBudgetWithResource",
+   "resources": []
+  },
+  "associateprincipalwithportfolio": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociatePrincipalWithPortfolio",
+   "resources": [
+    "Portfolio"
+   ]
+  },
+  "associateproductwithportfolio": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateProductWithPortfolio",
+   "resources": []
+  },
+  "associateresource": {
+   "conditionKeys": [
+    "servicecatalog:Resource",
+    "servicecatalog:ResourceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateResource",
+   "resources": [
+    "Application"
+   ]
+  },
+  "associateserviceactionwithprovisioningartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateServiceActionWithProvisioningArtifact",
+   "resources": [
+    "Product"
+   ]
+  },
+  "associatetagoptionwithresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateTagOptionWithResource",
+   "resources": [
+    "Portfolio",
+    "Product"
+   ]
+  },
+  "batchassociateserviceactionwithprovisioningartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchAssociateServiceActionWithProvisioningArtifact",
+   "resources": []
+  },
+  "batchdisassociateserviceactionfromprovisioningartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDisassociateServiceActionFromProvisioningArtifact",
+   "resources": []
+  },
+  "copyproduct": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyProduct",
+   "resources": []
+  },
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": [
+    "Application"
+   ]
+  },
+  "createattributegroup": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAttributeGroup",
+   "resources": [
+    "AttributeGroup"
+   ]
+  },
+  "createconstraint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConstraint",
+   "resources": [
+    "Product"
+   ]
+  },
+  "createportfolio": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePortfolio",
+   "resources": [
+    "Portfolio"
+   ]
+  },
+  "createportfolioshare": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "CreatePortfolioShare",
+   "resources": [
+    "Portfolio"
+   ]
+  },
+  "createproduct": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProduct",
+   "resources": [
+    "Product"
+   ]
+  },
+  "createprovisionedproductplan": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProvisionedProductPlan",
+   "resources": []
+  },
+  "createprovisioningartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProvisioningArtifact",
+   "resources": [
+    "Product"
+   ]
+  },
+  "createserviceaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateServiceAction",
+   "resources": []
+  },
+  "createtagoption": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTagOption",
+   "resources": []
+  },
+  "deleteapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "Application"
+   ]
+  },
+  "deleteattributegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAttributeGroup",
+   "resources": [
+    "AttributeGroup"
+   ]
+  },
+  "deleteconstraint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConstraint",
+   "resources": []
+  },
+  "deleteportfolio": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePortfolio",
+   "resources": [
+    "Portfolio"
+   ]
+  },
+  "deleteportfolioshare": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeletePortfolioShare",
+   "resources": [
+    "Portfolio"
+   ]
+  },
+  "deleteproduct": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProduct",
+   "resources": [
+    "Product"
+   ]
+  },
+  "deleteprovisionedproductplan": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProvisionedProductPlan",
+   "resources": []
+  },
+  "deleteprovisioningartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProvisioningArtifact",
+   "resources": [
+    "Product"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "Application",
+    "AttributeGroup"
+   ]
+  },
+  "deleteserviceaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteServiceAction",
+   "resources": []
+  },
+  "deletetagoption": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTagOption",
+   "resources": []
+  },
+  "describeconstraint": {
+   "name": "DescribeConstraint",
+   "resources": []
+  },
+  "describecopyproductstatus": {
+   "name": "DescribeCopyProductStatus",
+   "resources": []
+  },
+  "describeportfolio": {
+   "name": "DescribePortfolio",
+   "resources": [
+    "Portfolio"
+   ]
+  },
+  "describeportfolioshares": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribePortfolioShares",
+   "resources": [
+    "Portfolio"
+   ]
+  },
+  "describeportfoliosharestatus": {
+   "name": "DescribePortfolioShareStatus",
+   "resources": []
+  },
+  "describeproduct": {
+   "name": "DescribeProduct",
+   "resources": [
+    "Product"
+   ]
+  },
+  "describeproductasadmin": {
+   "name": "DescribeProductAsAdmin",
+   "resources": [
+    "Product"
+   ]
+  },
+  "describeproductview": {
+   "name": "DescribeProductView",
+   "resources": []
+  },
+  "describeprovisionedproduct": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "name": "DescribeProvisionedProduct",
+   "resources": []
+  },
+  "describeprovisionedproductplan": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "name": "DescribeProvisionedProductPlan",
+   "resources": []
+  },
+  "describeprovisioningartifact": {
+   "name": "DescribeProvisioningArtifact",
+   "resources": [
+    "Product"
+   ]
+  },
+  "describeprovisioningparameters": {
+   "name": "DescribeProvisioningParameters",
+   "resources": [
+    "Product"
+   ]
+  },
+  "describerecord": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "name": "DescribeRecord",
+   "resources": []
+  },
+  "describeserviceaction": {
+   "name": "DescribeServiceAction",
+   "resources": []
+  },
+  "describeserviceactionexecutionparameters": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "name": "DescribeServiceActionExecutionParameters",
+   "resources": []
+  },
+  "describetagoption": {
+   "name": "DescribeTagOption",
+   "resources": []
+  },
+  "disableawsorganizationsaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableAWSOrganizationsAccess",
+   "resources": []
+  },
+  "disassociateattributegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateAttributeGroup",
+   "resources": [
+    "Application",
+    "AttributeGroup"
+   ]
+  },
+  "disassociatebudgetfromresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateBudgetFromResource",
+   "resources": []
+  },
+  "disassociateprincipalfromportfolio": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociatePrincipalFromPortfolio",
+   "resources": [
+    "Portfolio"
+   ]
+  },
+  "disassociateproductfromportfolio": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateProductFromPortfolio",
+   "resources": []
+  },
+  "disassociateresource": {
+   "conditionKeys": [
+    "servicecatalog:Resource",
+    "servicecatalog:ResourceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateResource",
+   "resources": [
+    "Application"
+   ]
+  },
+  "disassociateserviceactionfromprovisioningartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateServiceActionFromProvisioningArtifact",
+   "resources": [
+    "Product"
+   ]
+  },
+  "disassociatetagoptionfromresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateTagOptionFromResource",
+   "resources": [
+    "Portfolio",
+    "Product"
+   ]
+  },
+  "enableawsorganizationsaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableAWSOrganizationsAccess",
+   "resources": []
+  },
+  "executeprovisionedproductplan": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExecuteProvisionedProductPlan",
+   "resources": []
+  },
+  "executeprovisionedproductserviceaction": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExecuteProvisionedProductServiceAction",
+   "resources": []
+  },
+  "getapplication": {
+   "name": "GetApplication",
+   "resources": [
+    "Application"
+   ]
+  },
+  "getassociatedresource": {
+   "conditionKeys": [
+    "servicecatalog:Resource",
+    "servicecatalog:ResourceType"
+   ],
+   "name": "GetAssociatedResource",
+   "resources": [
+    "Application"
+   ]
+  },
+  "getattributegroup": {
+   "name": "GetAttributeGroup",
+   "resources": [
+    "AttributeGroup"
+   ]
+  },
+  "getawsorganizationsaccessstatus": {
+   "name": "GetAWSOrganizationsAccessStatus",
+   "resources": []
+  },
+  "getconfiguration": {
+   "name": "GetConfiguration",
+   "resources": []
+  },
+  "getprovisionedproductoutputs": {
+   "name": "GetProvisionedProductOutputs",
+   "resources": []
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "Application",
+    "AttributeGroup"
+   ]
+  },
+  "importasprovisionedproduct": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportAsProvisionedProduct",
+   "resources": [
+    "Product"
+   ]
+  },
+  "listacceptedportfolioshares": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAcceptedPortfolioShares",
+   "resources": []
+  },
+  "listapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApplications",
+   "resources": []
+  },
+  "listassociatedattributegroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssociatedAttributeGroups",
+   "resources": [
+    "Application"
+   ]
+  },
+  "listassociatedresources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssociatedResources",
+   "resources": [
+    "Application"
+   ]
+  },
+  "listattributegroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAttributeGroups",
+   "resources": []
+  },
+  "listattributegroupsforapplication": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAttributeGroupsForApplication",
+   "resources": [
+    "Application"
+   ]
+  },
+  "listbudgetsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBudgetsForResource",
+   "resources": []
+  },
+  "listconstraintsforportfolio": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConstraintsForPortfolio",
+   "resources": []
+  },
+  "listlaunchpaths": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListLaunchPaths",
+   "resources": [
+    "Product"
+   ]
+  },
+  "listorganizationportfolioaccess": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrganizationPortfolioAccess",
+   "resources": []
+  },
+  "listportfolioaccess": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPortfolioAccess",
+   "resources": [
+    "Portfolio"
+   ]
+  },
+  "listportfolios": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPortfolios",
+   "resources": []
+  },
+  "listportfoliosforproduct": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPortfoliosForProduct",
+   "resources": [
+    "Product"
+   ]
+  },
+  "listprincipalsforportfolio": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPrincipalsForPortfolio",
+   "resources": [
+    "Portfolio"
+   ]
+  },
+  "listprovisionedproductplans": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProvisionedProductPlans",
+   "resources": []
+  },
+  "listprovisioningartifacts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProvisioningArtifacts",
+   "resources": [
+    "Product"
+   ]
+  },
+  "listprovisioningartifactsforserviceaction": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProvisioningArtifactsForServiceAction",
+   "resources": []
+  },
+  "listrecordhistory": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecordHistory",
+   "resources": []
+  },
+  "listresourcesfortagoption": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourcesForTagOption",
+   "resources": []
+  },
+  "listserviceactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceActions",
+   "resources": []
+  },
+  "listserviceactionsforprovisioningartifact": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServiceActionsForProvisioningArtifact",
+   "resources": [
+    "Product"
+   ]
+  },
+  "liststackinstancesforprovisionedproduct": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListStackInstancesForProvisionedProduct",
+   "resources": []
+  },
+  "listtagoptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagOptions",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "Application",
+    "AttributeGroup"
+   ]
+  },
+  "notifyprovisionproductengineworkflowresult": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyProvisionProductEngineWorkflowResult",
+   "resources": []
+  },
+  "notifyterminateprovisionedproductengineworkflowresult": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyTerminateProvisionedProductEngineWorkflowResult",
+   "resources": []
+  },
+  "notifyupdateprovisionedproductengineworkflowresult": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "NotifyUpdateProvisionedProductEngineWorkflowResult",
+   "resources": []
+  },
+  "provisionproduct": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ProvisionProduct",
+   "resources": [
+    "Product"
+   ]
+  },
+  "putconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutConfiguration",
+   "resources": []
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "Application",
+    "AttributeGroup"
+   ]
+  },
+  "rejectportfolioshare": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectPortfolioShare",
+   "resources": [
+    "Portfolio"
+   ]
+  },
+  "scanprovisionedproducts": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ScanProvisionedProducts",
+   "resources": []
+  },
+  "searchproducts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchProducts",
+   "resources": []
+  },
+  "searchproductsasadmin": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchProductsAsAdmin",
+   "resources": []
+  },
+  "searchprovisionedproducts": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchProvisionedProducts",
+   "resources": []
+  },
+  "syncresource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SyncResource",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Application",
+    "AttributeGroup"
+   ]
+  },
+  "terminateprovisionedproduct": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TerminateProvisionedProduct",
+   "resources": []
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Application",
+    "AttributeGroup"
+   ]
+  },
+  "updateapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": [
+    "Application"
+   ]
+  },
+  "updateattributegroup": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAttributeGroup",
+   "resources": [
+    "AttributeGroup"
+   ]
+  },
+  "updateconstraint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConstraint",
+   "resources": []
+  },
+  "updateportfolio": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePortfolio",
+   "resources": [
+    "Portfolio"
+   ]
+  },
+  "updateportfolioshare": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "UpdatePortfolioShare",
+   "resources": [
+    "Portfolio"
+   ]
+  },
+  "updateproduct": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProduct",
+   "resources": [
+    "Product"
+   ]
+  },
+  "updateprovisionedproduct": {
+   "conditionKeys": [
+    "servicecatalog:accountLevel",
+    "servicecatalog:roleLevel",
+    "servicecatalog:userLevel"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProvisionedProduct",
+   "resources": []
+  },
+  "updateprovisionedproductproperties": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProvisionedProductProperties",
+   "resources": []
+  },
+  "updateprovisioningartifact": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProvisioningArtifact",
+   "resources": [
+    "Product"
+   ]
+  },
+  "updateserviceaction": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateServiceAction",
+   "resources": []
+  },
+  "updatetagoption": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTagOption",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "servicecatalog:Resource": [
+   "String"
+  ],
+  "servicecatalog:ResourceType": [
+   "String"
+  ],
+  "servicecatalog:accountLevel": [
+   "String"
+  ],
+  "servicecatalog:roleLevel": [
+   "String"
+  ],
+  "servicecatalog:userLevel": [
+   "String"
+  ]
+ },
+ "resources": {
+  "Application": {
+   "arnFormats": [
+    "arn:${Partition}:servicecatalog:${Region}:${Account}:/applications/${ApplicationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "AttributeGroup": {
+   "arnFormats": [
+    "arn:${Partition}:servicecatalog:${Region}:${Account}:/attribute-groups/${AttributeGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Portfolio": {
+   "arnFormats": [
+    "arn:${Partition}:catalog:${Region}:${Account}:portfolio/${PortfolioId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Product": {
+   "arnFormats": [
+    "arn:${Partition}:catalog:${Region}:${Account}:product/${ProductId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "servicecatalog",
+ "serviceName": "Service Catalog",
+ "version": "v1.5"
+}

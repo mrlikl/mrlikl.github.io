@@ -1,0 +1,170 @@
+{
+ "actions": {
+  "deletescalingpolicy": {
+   "conditionKeys": [
+    "application-autoscaling:scalable-dimension",
+    "application-autoscaling:service-namespace"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScalingPolicy",
+   "resources": [
+    "ScalableTarget"
+   ]
+  },
+  "deletescheduledaction": {
+   "conditionKeys": [
+    "application-autoscaling:scalable-dimension",
+    "application-autoscaling:service-namespace"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteScheduledAction",
+   "resources": [
+    "ScalableTarget"
+   ]
+  },
+  "deregisterscalabletarget": {
+   "conditionKeys": [
+    "application-autoscaling:scalable-dimension",
+    "application-autoscaling:service-namespace"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterScalableTarget",
+   "resources": [
+    "ScalableTarget"
+   ]
+  },
+  "describescalabletargets": {
+   "name": "DescribeScalableTargets",
+   "resources": []
+  },
+  "describescalingactivities": {
+   "name": "DescribeScalingActivities",
+   "resources": []
+  },
+  "describescalingpolicies": {
+   "name": "DescribeScalingPolicies",
+   "resources": []
+  },
+  "describescheduledactions": {
+   "name": "DescribeScheduledActions",
+   "resources": []
+  },
+  "getpredictivescalingforecast": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetPredictiveScalingForecast",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "ScalableTarget"
+   ]
+  },
+  "putscalingpolicy": {
+   "conditionKeys": [
+    "application-autoscaling:scalable-dimension",
+    "application-autoscaling:service-namespace"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutScalingPolicy",
+   "resources": [
+    "ScalableTarget"
+   ]
+  },
+  "putscheduledaction": {
+   "conditionKeys": [
+    "application-autoscaling:scalable-dimension",
+    "application-autoscaling:service-namespace"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutScheduledAction",
+   "resources": [
+    "ScalableTarget"
+   ]
+  },
+  "registerscalabletarget": {
+   "conditionKeys": [
+    "application-autoscaling:scalable-dimension",
+    "application-autoscaling:service-namespace",
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterScalableTarget",
+   "resources": [
+    "ScalableTarget"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "ScalableTarget"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "ScalableTarget"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "application-autoscaling:scalable-dimension": [
+   "String"
+  ],
+  "application-autoscaling:service-namespace": [
+   "String"
+  ],
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "ScalableTarget": {
+   "arnFormats": [
+    "arn:${Partition}:application-autoscaling:${Region}:${Account}:scalable-target/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "application-autoscaling",
+ "serviceName": "Application Auto Scaling",
+ "version": "v1.5"
+}

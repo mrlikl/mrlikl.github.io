@@ -1,0 +1,373 @@
+{
+ "actions": {
+  "createbillestimate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBillEstimate",
+   "resources": [
+    "bill-scenario"
+   ]
+  },
+  "createbillscenario": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBillScenario",
+   "resources": []
+  },
+  "createbillscenariocommitmentmodification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBillScenarioCommitmentModification",
+   "resources": [
+    "bill-scenario"
+   ]
+  },
+  "createbillscenariousagemodification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBillScenarioUsageModification",
+   "resources": [
+    "bill-scenario"
+   ]
+  },
+  "createworkloadestimate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkloadEstimate",
+   "resources": []
+  },
+  "createworkloadestimateusage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkloadEstimateUsage",
+   "resources": [
+    "workload-estimate"
+   ]
+  },
+  "deletebillestimate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBillEstimate",
+   "resources": [
+    "bill-estimate"
+   ]
+  },
+  "deletebillscenario": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBillScenario",
+   "resources": [
+    "bill-scenario"
+   ]
+  },
+  "deletebillscenariocommitmentmodification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBillScenarioCommitmentModification",
+   "resources": [
+    "bill-scenario"
+   ]
+  },
+  "deletebillscenariousagemodification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBillScenarioUsageModification",
+   "resources": [
+    "bill-scenario"
+   ]
+  },
+  "deleteworkloadestimate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkloadEstimate",
+   "resources": [
+    "workload-estimate"
+   ]
+  },
+  "deleteworkloadestimateusage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkloadEstimateUsage",
+   "resources": [
+    "workload-estimate"
+   ]
+  },
+  "getbillestimate": {
+   "name": "GetBillEstimate",
+   "resources": [
+    "bill-estimate"
+   ]
+  },
+  "getbillscenario": {
+   "name": "GetBillScenario",
+   "resources": [
+    "bill-scenario"
+   ]
+  },
+  "getpreferences": {
+   "name": "GetPreferences",
+   "resources": []
+  },
+  "getworkloadestimate": {
+   "name": "GetWorkloadEstimate",
+   "resources": [
+    "workload-estimate"
+   ]
+  },
+  "listbillestimatecommitments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBillEstimateCommitments",
+   "resources": [
+    "bill-estimate"
+   ]
+  },
+  "listbillestimateinputcommitmentmodifications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBillEstimateInputCommitmentModifications",
+   "resources": [
+    "bill-estimate"
+   ]
+  },
+  "listbillestimateinputusagemodifications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBillEstimateInputUsageModifications",
+   "resources": [
+    "bill-estimate"
+   ]
+  },
+  "listbillestimatelineitems": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBillEstimateLineItems",
+   "resources": [
+    "bill-estimate"
+   ]
+  },
+  "listbillestimates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBillEstimates",
+   "resources": []
+  },
+  "listbillscenariocommitmentmodifications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBillScenarioCommitmentModifications",
+   "resources": [
+    "bill-scenario"
+   ]
+  },
+  "listbillscenarios": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBillScenarios",
+   "resources": []
+  },
+  "listbillscenariousagemodifications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBillScenarioUsageModifications",
+   "resources": [
+    "bill-scenario"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "listworkloadestimates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkloadEstimates",
+   "resources": []
+  },
+  "listworkloadestimateusage": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkloadEstimateUsage",
+   "resources": [
+    "workload-estimate"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "bill-scenario": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workload-estimate": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "bill-scenario",
+    "workload-estimate"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "bill-scenario": [
+     "aws:ResourceTag/${TagKey}"
+    ],
+    "workload-estimate": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "bill-scenario",
+    "workload-estimate"
+   ]
+  },
+  "updatebillestimate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBillEstimate",
+   "resources": [
+    "bill-estimate"
+   ]
+  },
+  "updatebillscenario": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBillScenario",
+   "resources": [
+    "bill-scenario"
+   ]
+  },
+  "updatebillscenariocommitmentmodification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBillScenarioCommitmentModification",
+   "resources": [
+    "bill-scenario"
+   ]
+  },
+  "updatebillscenariousagemodification": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBillScenarioUsageModification",
+   "resources": [
+    "bill-scenario"
+   ]
+  },
+  "updatepreferences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePreferences",
+   "resources": []
+  },
+  "updateworkloadestimate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkloadEstimate",
+   "resources": [
+    "workload-estimate"
+   ]
+  },
+  "updateworkloadestimateusage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkloadEstimateUsage",
+   "resources": [
+    "workload-estimate"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "bill-estimate": {
+   "arnFormats": [
+    "arn:${Partition}:bcm-pricing-calculator::${Account}:bill-estimate/${BillEstimateId}"
+   ]
+  },
+  "bill-scenario": {
+   "arnFormats": [
+    "arn:${Partition}:bcm-pricing-calculator::${Account}:bill-scenario/${BillScenarioId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "workload-estimate": {
+   "arnFormats": [
+    "arn:${Partition}:bcm-pricing-calculator::${Account}:workload-estimate/${WorkloadEstimateId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "bcm-pricing-calculator",
+ "serviceName": "Pricing Calculator",
+ "version": "v1.5"
+}

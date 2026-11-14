@@ -1,0 +1,559 @@
+{
+ "actions": {
+  "addfacettoobject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddFacetToObject",
+   "resources": [
+    "directory"
+   ]
+  },
+  "applyschema": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ApplySchema",
+   "resources": [
+    "directory",
+    "publishedSchema"
+   ]
+  },
+  "attachobject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AttachObject",
+   "resources": [
+    "directory"
+   ]
+  },
+  "attachpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AttachPolicy",
+   "resources": [
+    "directory"
+   ]
+  },
+  "attachtoindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AttachToIndex",
+   "resources": [
+    "directory"
+   ]
+  },
+  "attachtypedlink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AttachTypedLink",
+   "resources": [
+    "directory"
+   ]
+  },
+  "batchread": {
+   "name": "BatchRead",
+   "resources": [
+    "directory"
+   ]
+  },
+  "batchwrite": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchWrite",
+   "resources": [
+    "directory"
+   ]
+  },
+  "createdirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDirectory",
+   "resources": [
+    "publishedSchema"
+   ]
+  },
+  "createfacet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFacet",
+   "resources": [
+    "appliedSchema",
+    "developmentSchema"
+   ]
+  },
+  "createindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateIndex",
+   "resources": [
+    "directory"
+   ]
+  },
+  "createobject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateObject",
+   "resources": [
+    "directory"
+   ]
+  },
+  "createschema": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSchema",
+   "resources": []
+  },
+  "createtypedlinkfacet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTypedLinkFacet",
+   "resources": [
+    "appliedSchema",
+    "developmentSchema"
+   ]
+  },
+  "deletedirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDirectory",
+   "resources": [
+    "directory"
+   ]
+  },
+  "deletefacet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFacet",
+   "resources": [
+    "developmentSchema"
+   ]
+  },
+  "deleteobject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteObject",
+   "resources": [
+    "directory"
+   ]
+  },
+  "deleteschema": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSchema",
+   "resources": [
+    "developmentSchema",
+    "publishedSchema"
+   ]
+  },
+  "deletetypedlinkfacet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTypedLinkFacet",
+   "resources": [
+    "developmentSchema"
+   ]
+  },
+  "detachfromindex": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetachFromIndex",
+   "resources": [
+    "directory"
+   ]
+  },
+  "detachobject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetachObject",
+   "resources": [
+    "directory"
+   ]
+  },
+  "detachpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetachPolicy",
+   "resources": [
+    "directory"
+   ]
+  },
+  "detachtypedlink": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DetachTypedLink",
+   "resources": [
+    "directory"
+   ]
+  },
+  "disabledirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableDirectory",
+   "resources": [
+    "directory"
+   ]
+  },
+  "enabledirectory": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableDirectory",
+   "resources": [
+    "directory"
+   ]
+  },
+  "getappliedschemaversion": {
+   "name": "GetAppliedSchemaVersion",
+   "resources": [
+    "appliedSchema"
+   ]
+  },
+  "getdirectory": {
+   "name": "GetDirectory",
+   "resources": [
+    "directory"
+   ]
+  },
+  "getfacet": {
+   "name": "GetFacet",
+   "resources": [
+    "appliedSchema",
+    "developmentSchema",
+    "publishedSchema"
+   ]
+  },
+  "getlinkattributes": {
+   "name": "GetLinkAttributes",
+   "resources": [
+    "directory"
+   ]
+  },
+  "getobjectattributes": {
+   "name": "GetObjectAttributes",
+   "resources": [
+    "directory"
+   ]
+  },
+  "getobjectinformation": {
+   "name": "GetObjectInformation",
+   "resources": [
+    "directory"
+   ]
+  },
+  "getschemaasjson": {
+   "name": "GetSchemaAsJson",
+   "resources": [
+    "appliedSchema",
+    "developmentSchema",
+    "publishedSchema"
+   ]
+  },
+  "gettypedlinkfacetinformation": {
+   "name": "GetTypedLinkFacetInformation",
+   "resources": [
+    "appliedSchema",
+    "developmentSchema",
+    "publishedSchema"
+   ]
+  },
+  "listappliedschemaarns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAppliedSchemaArns",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listattachedindices": {
+   "name": "ListAttachedIndices",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listdevelopmentschemaarns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDevelopmentSchemaArns",
+   "resources": []
+  },
+  "listdirectories": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDirectories",
+   "resources": []
+  },
+  "listfacetattributes": {
+   "name": "ListFacetAttributes",
+   "resources": [
+    "appliedSchema",
+    "developmentSchema",
+    "publishedSchema"
+   ]
+  },
+  "listfacetnames": {
+   "name": "ListFacetNames",
+   "resources": [
+    "appliedSchema",
+    "developmentSchema",
+    "publishedSchema"
+   ]
+  },
+  "listincomingtypedlinks": {
+   "name": "ListIncomingTypedLinks",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listindex": {
+   "name": "ListIndex",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listmanagedschemaarns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedSchemaArns",
+   "resources": []
+  },
+  "listobjectattributes": {
+   "name": "ListObjectAttributes",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listobjectchildren": {
+   "name": "ListObjectChildren",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listobjectparentpaths": {
+   "name": "ListObjectParentPaths",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listobjectparents": {
+   "name": "ListObjectParents",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listobjectpolicies": {
+   "name": "ListObjectPolicies",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listoutgoingtypedlinks": {
+   "name": "ListOutgoingTypedLinks",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listpolicyattachments": {
+   "name": "ListPolicyAttachments",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listpublishedschemaarns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPublishedSchemaArns",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "directory"
+   ]
+  },
+  "listtypedlinkfacetattributes": {
+   "name": "ListTypedLinkFacetAttributes",
+   "resources": [
+    "appliedSchema",
+    "developmentSchema",
+    "publishedSchema"
+   ]
+  },
+  "listtypedlinkfacetnames": {
+   "name": "ListTypedLinkFacetNames",
+   "resources": [
+    "appliedSchema",
+    "developmentSchema",
+    "publishedSchema"
+   ]
+  },
+  "lookuppolicy": {
+   "name": "LookupPolicy",
+   "resources": [
+    "directory"
+   ]
+  },
+  "publishschema": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PublishSchema",
+   "resources": [
+    "developmentSchema"
+   ]
+  },
+  "putschemafromjson": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutSchemaFromJson",
+   "resources": []
+  },
+  "removefacetfromobject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveFacetFromObject",
+   "resources": [
+    "directory"
+   ]
+  },
+  "tagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "directory"
+   ]
+  },
+  "untagresource": {
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "directory"
+   ]
+  },
+  "updatefacet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFacet",
+   "resources": [
+    "appliedSchema",
+    "developmentSchema"
+   ]
+  },
+  "updatelinkattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateLinkAttributes",
+   "resources": [
+    "directory"
+   ]
+  },
+  "updateobjectattributes": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateObjectAttributes",
+   "resources": [
+    "directory"
+   ]
+  },
+  "updateschema": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSchema",
+   "resources": [
+    "developmentSchema"
+   ]
+  },
+  "updatetypedlinkfacet": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTypedLinkFacet",
+   "resources": [
+    "developmentSchema"
+   ]
+  },
+  "upgradeappliedschema": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpgradeAppliedSchema",
+   "resources": [
+    "directory",
+    "publishedSchema"
+   ]
+  },
+  "upgradepublishedschema": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpgradePublishedSchema",
+   "resources": [
+    "developmentSchema",
+    "publishedSchema"
+   ]
+  }
+ },
+ "resources": {
+  "appliedSchema": {
+   "arnFormats": [
+    "arn:${Partition}:clouddirectory:${Region}:${Account}:directory/${DirectoryId}/schema/${SchemaName}/${Version}"
+   ]
+  },
+  "developmentSchema": {
+   "arnFormats": [
+    "arn:${Partition}:clouddirectory:${Region}:${Account}:schema/development/${SchemaName}"
+   ]
+  },
+  "directory": {
+   "arnFormats": [
+    "arn:${Partition}:clouddirectory:${Region}:${Account}:directory/${DirectoryId}"
+   ]
+  },
+  "publishedSchema": {
+   "arnFormats": [
+    "arn:${Partition}:clouddirectory:${Region}:${Account}:schema/published/${SchemaName}/${Version}"
+   ]
+  }
+ },
+ "service": "clouddirectory",
+ "serviceName": "Cloud Directory",
+ "version": "v1.5"
+}

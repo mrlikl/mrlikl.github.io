@@ -1,0 +1,1028 @@
+{
+ "actions": {
+  "allowvendedlogdeliveryforresource": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": []
+  },
+  "associateservice": {
+   "conditionKeys": [
+    "aidevops:ServiceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateService",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "createaccesstoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessToken",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "createagentspace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAgentSpace",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "createasset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAsset",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "createassetfile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssetFile",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "createbacklogtask": {
+   "conditionKeys": [
+    "aidevops:SourceAgentSpaceArn",
+    "aidevops:TargetAgentSpaceArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBacklogTask",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "createchat": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChat",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "createknowledgeitem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKnowledgeItem",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "createonetimeloginsession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOneTimeLoginSession",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "createprivateconnection": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePrivateConnection",
+   "resources": [
+    "private-connection"
+   ]
+  },
+  "createtrigger": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTrigger",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "deleteagentspace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAgentSpace",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "deleteasset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAsset",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "deleteassetfile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssetFile",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "deleteknowledgeitem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKnowledgeItem",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "deleteprivateconnection": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePrivateConnection",
+   "resources": [
+    "private-connection"
+   ]
+  },
+  "deletetrigger": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTrigger",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "deregisterservice": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeregisterService",
+   "resources": [
+    "service"
+   ]
+  },
+  "describeprivateconnection": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "DescribePrivateConnection",
+   "resources": [
+    "private-connection"
+   ]
+  },
+  "describeservices": {
+   "name": "DescribeServices",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "describesupportlevel": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DescribeSupportLevel",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "disableoperatorapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableOperatorApp",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "disassociateservice": {
+   "conditionKeys": [
+    "aidevops:ServiceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateService",
+   "resources": [
+    "agentspace",
+    "associations"
+   ]
+  },
+  "discovertopology": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DiscoverTopology",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "enableoperatorapp": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableOperatorApp",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "endchatforcase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EndChatForCase",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "getaccesstoken": {
+   "name": "GetAccessToken",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "getaccountusage": {
+   "name": "GetAccountUsage",
+   "resources": []
+  },
+  "getagentspace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetAgentSpace",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "getasset": {
+   "conditionKeys": [
+    "aidevops:SourceAgentSpaceArn",
+    "aidevops:TargetAgentSpaceArn"
+   ],
+   "name": "GetAsset",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "getassetcontent": {
+   "conditionKeys": [
+    "aidevops:SourceAgentSpaceArn",
+    "aidevops:TargetAgentSpaceArn"
+   ],
+   "name": "GetAssetContent",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "getassetfile": {
+   "conditionKeys": [
+    "aidevops:SourceAgentSpaceArn",
+    "aidevops:TargetAgentSpaceArn"
+   ],
+   "name": "GetAssetFile",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "getassociation": {
+   "conditionKeys": [
+    "aidevops:ServiceType"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetAssociation",
+   "resources": [
+    "agentspace",
+    "associations"
+   ]
+  },
+  "getbacklogtask": {
+   "conditionKeys": [
+    "aidevops:SourceAgentSpaceArn",
+    "aidevops:TargetAgentSpaceArn"
+   ],
+   "name": "GetBacklogTask",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "getcatalogcapability": {
+   "name": "GetCatalogCapability",
+   "resources": []
+  },
+  "getchat": {
+   "name": "GetChat",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "getknowledgegraph": {
+   "conditionKeys": [
+    "aidevops:SourceAgentSpaceArn",
+    "aidevops:TargetAgentSpaceArn"
+   ],
+   "name": "GetKnowledgeGraph",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "getknowledgeitem": {
+   "name": "GetKnowledgeItem",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "getoperatorapp": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetOperatorApp",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "getplan": {
+   "name": "GetPlan",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "getrecommendation": {
+   "name": "GetRecommendation",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "getservice": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetService",
+   "resources": [
+    "service"
+   ]
+  },
+  "gettrigger": {
+   "name": "GetTrigger",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "initiatechatforcase": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitiateChatForCase",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listaccesstokens": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessTokens",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listagentspacemetrics": {
+   "name": "ListAgentSpaceMetrics",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listagentspaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentSpaces",
+   "resources": []
+  },
+  "listassetchanges": {
+   "conditionKeys": [
+    "aidevops:SourceAgentSpaceArn",
+    "aidevops:TargetAgentSpaceArn"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssetChanges",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listassetfiles": {
+   "conditionKeys": [
+    "aidevops:SourceAgentSpaceArn",
+    "aidevops:TargetAgentSpaceArn"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssetFiles",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listassets": {
+   "conditionKeys": [
+    "aidevops:SourceAgentSpaceArn",
+    "aidevops:TargetAgentSpaceArn"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssets",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listassettypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssetTypes",
+   "resources": []
+  },
+  "listassetversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssetVersions",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssociations",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listbacklogtasks": {
+   "conditionKeys": [
+    "aidevops:SourceAgentSpaceArn",
+    "aidevops:TargetAgentSpaceArn"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBacklogTasks",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listcatalogcapabilities": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCatalogCapabilities",
+   "resources": []
+  },
+  "listcatalogcapabilityfiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCatalogCapabilityFiles",
+   "resources": []
+  },
+  "listcatalogcapabilitytypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCatalogCapabilityTypes",
+   "resources": []
+  },
+  "listchats": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChats",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listexecutions": {
+   "conditionKeys": [
+    "aidevops:SourceAgentSpaceArn",
+    "aidevops:TargetAgentSpaceArn"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExecutions",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listgoals": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGoals",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listjournalrecords": {
+   "conditionKeys": [
+    "aidevops:SourceAgentSpaceArn",
+    "aidevops:TargetAgentSpaceArn"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListJournalRecords",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listknowledgeitems": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKnowledgeItems",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listknowledgeitemversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKnowledgeItemVersions",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listpendingmessages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPendingMessages",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listprivateconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPrivateConnections",
+   "resources": []
+  },
+  "listrecommendations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRecommendations",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listservices": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListServices",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resourceConditionKeys": {
+    "agentspace": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "private-connection": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "service": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "agentspace",
+    "private-connection",
+    "service"
+   ]
+  },
+  "listtriggers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTriggers",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listwebhooks": {
+   "conditionKeys": [
+    "aidevops:ServiceType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWebhooks",
+   "resources": [
+    "agentspace",
+    "associations"
+   ]
+  },
+  "registerservice": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterService",
+   "resources": [
+    "service"
+   ]
+  },
+  "revokeaccesstoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RevokeAccessToken",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "rotateaccesstoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RotateAccessToken",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "searchassets": {
+   "conditionKeys": [
+    "aidevops:SourceAgentSpaceArn",
+    "aidevops:TargetAgentSpaceArn"
+   ],
+   "name": "SearchAssets",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "searchserviceaccessibleresource": {
+   "name": "SearchServiceAccessibleResource",
+   "resources": []
+  },
+  "sendmessage": {
+   "conditionKeys": [
+    "aidevops:SourceAgentSpaceArn",
+    "aidevops:TargetAgentSpaceArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SendMessage",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "stopplan": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopPlan",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resourceConditionKeys": {
+    "agentspace": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "private-connection": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "service": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "agentspace",
+    "private-connection",
+    "service"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resourceConditionKeys": {
+    "agentspace": [
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "private-connection": [
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
+    "service": [
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "agentspace",
+    "private-connection",
+    "service"
+   ]
+  },
+  "updateagentspace": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentSpace",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "updateapprovalaction": {
+   "conditionKeys": [
+    "aidevops:ApprovalTarget"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApprovalAction",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "updateasset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAsset",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "updateassetfile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssetFile",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "updateassociation": {
+   "conditionKeys": [
+    "aidevops:ServiceType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAssociation",
+   "resources": [
+    "agentspace",
+    "associations"
+   ]
+  },
+  "updatebacklogtask": {
+   "conditionKeys": [
+    "aidevops:SourceAgentSpaceArn",
+    "aidevops:TargetAgentSpaceArn"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBacklogTask",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "updatechat": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateChat",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "updategoal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGoal",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "updateknowledgeitem": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKnowledgeItem",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "updateoperatorappidpconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOperatorAppIdpConfig",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "updateprivateconnectioncertificate": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePrivateConnectionCertificate",
+   "resources": [
+    "private-connection"
+   ]
+  },
+  "updaterecommendation": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRecommendation",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "updatetrigger": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTrigger",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "validateawsassociations": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ValidateAwsAssociations",
+   "resources": [
+    "agentspace"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aidevops:ApprovalTarget": [
+   "String"
+  ],
+  "aidevops:ServiceType": [
+   "String"
+  ],
+  "aidevops:SourceAgentSpaceArn": [
+   "ARN"
+  ],
+  "aidevops:TargetAgentSpaceArn": [
+   "ARN"
+  ],
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "agentspace": {
+   "arnFormats": [
+    "arn:${Partition}:aidevops:${Region}:${Account}:agentspace/${AgentSpaceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "asset": {
+   "arnFormats": [
+    "arn:${Partition}:aidevops:${Region}:${Account}:agentspace/${AgentSpaceId}/asset/${AssetId}"
+   ]
+  },
+  "associations": {
+   "arnFormats": [
+    "arn:${Partition}:aidevops:${Region}:${Account}:agentspace/${AgentSpaceId}/association/${AssociationId}"
+   ]
+  },
+  "private-connection": {
+   "arnFormats": [
+    "arn:${Partition}:aidevops:${Region}:${Account}:private-connection/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "service": {
+   "arnFormats": [
+    "arn:${Partition}:aidevops:${Region}:${Account}:service/${ServiceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "trigger": {
+   "arnFormats": [
+    "arn:${Partition}:aidevops:${Region}:${Account}:agentspace/${AgentSpaceId}/trigger/${TriggerId}"
+   ]
+  }
+ },
+ "service": "aidevops",
+ "serviceName": "DevOps Agent",
+ "version": "v1.5"
+}

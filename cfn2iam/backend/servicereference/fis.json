@@ -1,0 +1,345 @@
+{
+ "actions": {
+  "createexperimenttemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExperimentTemplate",
+   "resources": [
+    "action",
+    "experiment-template"
+   ]
+  },
+  "createtargetaccountconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTargetAccountConfiguration",
+   "resources": [
+    "experiment-template"
+   ]
+  },
+  "deleteexperimenttemplate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteExperimentTemplate",
+   "resources": [
+    "experiment-template"
+   ]
+  },
+  "deletetargetaccountconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteTargetAccountConfiguration",
+   "resources": [
+    "experiment-template"
+   ]
+  },
+  "getaction": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetAction",
+   "resources": [
+    "action"
+   ]
+  },
+  "getexperiment": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetExperiment",
+   "resources": [
+    "experiment"
+   ]
+  },
+  "getexperimenttargetaccountconfiguration": {
+   "name": "GetExperimentTargetAccountConfiguration",
+   "resources": [
+    "experiment"
+   ]
+  },
+  "getexperimenttemplate": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetExperimentTemplate",
+   "resources": [
+    "experiment-template"
+   ]
+  },
+  "getsafetylever": {
+   "name": "GetSafetyLever",
+   "resources": [
+    "safety-lever"
+   ]
+  },
+  "gettargetaccountconfiguration": {
+   "name": "GetTargetAccountConfiguration",
+   "resources": [
+    "experiment-template"
+   ]
+  },
+  "gettargetresourcetype": {
+   "name": "GetTargetResourceType",
+   "resources": []
+  },
+  "injectapiinternalerror": {
+   "conditionKeys": [
+    "fis:Operations",
+    "fis:Percentage",
+    "fis:Service",
+    "fis:Targets"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InjectApiInternalError",
+   "resources": [
+    "experiment"
+   ]
+  },
+  "injectapithrottleerror": {
+   "conditionKeys": [
+    "fis:Operations",
+    "fis:Percentage",
+    "fis:Service",
+    "fis:Targets"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InjectApiThrottleError",
+   "resources": [
+    "experiment"
+   ]
+  },
+  "injectapiunavailableerror": {
+   "conditionKeys": [
+    "fis:Operations",
+    "fis:Percentage",
+    "fis:Service",
+    "fis:Targets"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InjectApiUnavailableError",
+   "resources": [
+    "experiment"
+   ]
+  },
+  "listactions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListActions",
+   "resources": []
+  },
+  "listexperimentresolvedtargets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExperimentResolvedTargets",
+   "resources": [
+    "experiment"
+   ]
+  },
+  "listexperiments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExperiments",
+   "resources": []
+  },
+  "listexperimenttargetaccountconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExperimentTargetAccountConfigurations",
+   "resources": [
+    "experiment"
+   ]
+  },
+  "listexperimenttemplates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExperimentTemplates",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "action",
+    "experiment",
+    "experiment-template"
+   ]
+  },
+  "listtargetaccountconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTargetAccountConfigurations",
+   "resources": [
+    "experiment-template"
+   ]
+  },
+  "listtargetresourcetypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTargetResourceTypes",
+   "resources": []
+  },
+  "startexperiment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartExperiment",
+   "resources": [
+    "experiment",
+    "experiment-template"
+   ]
+  },
+  "stopexperiment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopExperiment",
+   "resources": [
+    "experiment"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "action",
+    "experiment",
+    "experiment-template"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "action",
+    "experiment",
+    "experiment-template"
+   ]
+  },
+  "updateexperimenttemplate": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateExperimentTemplate",
+   "resources": [
+    "action",
+    "experiment-template"
+   ]
+  },
+  "updatesafetyleverstate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSafetyLeverState",
+   "resources": [
+    "safety-lever"
+   ]
+  },
+  "updatetargetaccountconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateTargetAccountConfiguration",
+   "resources": [
+    "experiment-template"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "fis:Operations": [
+   "ArrayOfString"
+  ],
+  "fis:Percentage": [
+   "Numeric"
+  ],
+  "fis:Service": [
+   "String"
+  ],
+  "fis:Targets": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "action": {
+   "arnFormats": [
+    "arn:${Partition}:fis:${Region}:${Account}:action/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "experiment": {
+   "arnFormats": [
+    "arn:${Partition}:fis:${Region}:${Account}:experiment/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "experiment-template": {
+   "arnFormats": [
+    "arn:${Partition}:fis:${Region}:${Account}:experiment-template/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "safety-lever": {
+   "arnFormats": [
+    "arn:${Partition}:fis:${Region}:${Account}:safety-lever/${Id}"
+   ]
+  }
+ },
+ "service": "fis",
+ "serviceName": "FIS",
+ "version": "v1.5"
+}

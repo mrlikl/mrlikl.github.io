@@ -1,0 +1,644 @@
+{
+ "actions": {
+  "canceltimer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelTimer",
+   "resources": [
+    "domain"
+   ]
+  },
+  "cancelworkflowexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelWorkflowExecution",
+   "resources": [
+    "domain"
+   ]
+  },
+  "completeworkflowexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteWorkflowExecution",
+   "resources": [
+    "domain"
+   ]
+  },
+  "continueasnewworkflowexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ContinueAsNewWorkflowExecution",
+   "resources": [
+    "domain"
+   ]
+  },
+  "countclosedworkflowexecutions": {
+   "conditionKeys": [
+    "swf:tagFilter.tag",
+    "swf:typeFilter.name",
+    "swf:typeFilter.version"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "CountClosedWorkflowExecutions",
+   "resources": [
+    "domain"
+   ]
+  },
+  "countopenworkflowexecutions": {
+   "conditionKeys": [
+    "swf:tagFilter.tag",
+    "swf:typeFilter.name",
+    "swf:typeFilter.version"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "CountOpenWorkflowExecutions",
+   "resources": [
+    "domain"
+   ]
+  },
+  "countpendingactivitytasks": {
+   "conditionKeys": [
+    "swf:taskList.name"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "CountPendingActivityTasks",
+   "resources": [
+    "domain"
+   ]
+  },
+  "countpendingdecisiontasks": {
+   "conditionKeys": [
+    "swf:taskList.name"
+   ],
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "CountPendingDecisionTasks",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deleteactivitytype": {
+   "conditionKeys": [
+    "swf:activityType.name",
+    "swf:activityType.version"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteActivityType",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deleteworkflowtype": {
+   "conditionKeys": [
+    "swf:workflowType.name",
+    "swf:workflowType.version"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkflowType",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deprecateactivitytype": {
+   "conditionKeys": [
+    "swf:activityType.name",
+    "swf:activityType.version"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeprecateActivityType",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deprecatedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeprecateDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "deprecateworkflowtype": {
+   "conditionKeys": [
+    "swf:workflowType.name",
+    "swf:workflowType.version"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeprecateWorkflowType",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describeactivitytype": {
+   "conditionKeys": [
+    "swf:activityType.name",
+    "swf:activityType.version"
+   ],
+   "name": "DescribeActivityType",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describedomain": {
+   "name": "DescribeDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describeworkflowexecution": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "DescribeWorkflowExecution",
+   "resources": [
+    "domain"
+   ]
+  },
+  "describeworkflowtype": {
+   "conditionKeys": [
+    "swf:workflowType.name",
+    "swf:workflowType.version"
+   ],
+   "name": "DescribeWorkflowType",
+   "resources": [
+    "domain"
+   ]
+  },
+  "failworkflowexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "FailWorkflowExecution",
+   "resources": [
+    "domain"
+   ]
+  },
+  "getworkflowexecutionhistory": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetWorkflowExecutionHistory",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listactivitytypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListActivityTypes",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listclosedworkflowexecutions": {
+   "conditionKeys": [
+    "swf:tagFilter.tag",
+    "swf:typeFilter.name",
+    "swf:typeFilter.version"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListClosedWorkflowExecutions",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listdomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDomains",
+   "resources": []
+  },
+  "listopenworkflowexecutions": {
+   "conditionKeys": [
+    "swf:tagFilter.tag",
+    "swf:typeFilter.name",
+    "swf:typeFilter.version"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListOpenWorkflowExecutions",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "domain"
+   ]
+  },
+  "listworkflowtypes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkflowTypes",
+   "resources": [
+    "domain"
+   ]
+  },
+  "pollforactivitytask": {
+   "conditionKeys": [
+    "swf:taskList.name"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PollForActivityTask",
+   "resources": [
+    "domain"
+   ]
+  },
+  "pollfordecisiontask": {
+   "conditionKeys": [
+    "swf:taskList.name"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "PollForDecisionTask",
+   "resources": [
+    "domain"
+   ]
+  },
+  "recordactivitytaskheartbeat": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "RecordActivityTaskHeartbeat",
+   "resources": [
+    "domain"
+   ]
+  },
+  "recordmarker": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RecordMarker",
+   "resources": [
+    "domain"
+   ]
+  },
+  "registeractivitytype": {
+   "conditionKeys": [
+    "swf:defaultTaskList.name",
+    "swf:name",
+    "swf:version"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterActivityType",
+   "resources": [
+    "domain"
+   ]
+  },
+  "registerdomain": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterDomain",
+   "resources": []
+  },
+  "registerworkflowtype": {
+   "conditionKeys": [
+    "swf:defaultTaskList.name",
+    "swf:name",
+    "swf:version"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RegisterWorkflowType",
+   "resources": [
+    "domain"
+   ]
+  },
+  "requestcancelactivitytask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RequestCancelActivityTask",
+   "resources": [
+    "domain"
+   ]
+  },
+  "requestcancelexternalworkflowexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RequestCancelExternalWorkflowExecution",
+   "resources": [
+    "domain"
+   ]
+  },
+  "requestcancelworkflowexecution": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "RequestCancelWorkflowExecution",
+   "resources": [
+    "domain"
+   ]
+  },
+  "respondactivitytaskcanceled": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "RespondActivityTaskCanceled",
+   "resources": [
+    "domain"
+   ]
+  },
+  "respondactivitytaskcompleted": {
+   "conditionKeys": [
+    "swf:activityType.name",
+    "swf:activityType.version",
+    "swf:tagList.member.0",
+    "swf:tagList.member.1",
+    "swf:tagList.member.2",
+    "swf:tagList.member.3",
+    "swf:tagList.member.4",
+    "swf:taskList.name",
+    "swf:workflowType.name",
+    "swf:workflowType.version"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "RespondActivityTaskCompleted",
+   "resources": [
+    "domain"
+   ]
+  },
+  "respondactivitytaskfailed": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "RespondActivityTaskFailed",
+   "resources": [
+    "domain"
+   ]
+  },
+  "responddecisiontaskcompleted": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "RespondDecisionTaskCompleted",
+   "resources": [
+    "domain"
+   ]
+  },
+  "scheduleactivitytask": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ScheduleActivityTask",
+   "resources": [
+    "domain"
+   ]
+  },
+  "signalexternalworkflowexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SignalExternalWorkflowExecution",
+   "resources": [
+    "domain"
+   ]
+  },
+  "signalworkflowexecution": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SignalWorkflowExecution",
+   "resources": [
+    "domain"
+   ]
+  },
+  "startchildworkflowexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartChildWorkflowExecution",
+   "resources": [
+    "domain"
+   ]
+  },
+  "starttimer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTimer",
+   "resources": [
+    "domain"
+   ]
+  },
+  "startworkflowexecution": {
+   "conditionKeys": [
+    "swf:tagList.member.0",
+    "swf:tagList.member.1",
+    "swf:tagList.member.2",
+    "swf:tagList.member.3",
+    "swf:tagList.member.4",
+    "swf:taskList.name",
+    "swf:workflowType.name",
+    "swf:workflowType.version"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartWorkflowExecution",
+   "resources": [
+    "domain"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "domain"
+   ]
+  },
+  "terminateworkflowexecution": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "TerminateWorkflowExecution",
+   "resources": [
+    "domain"
+   ]
+  },
+  "undeprecateactivitytype": {
+   "conditionKeys": [
+    "swf:activityType.name",
+    "swf:activityType.version"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UndeprecateActivityType",
+   "resources": [
+    "domain"
+   ]
+  },
+  "undeprecatedomain": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UndeprecateDomain",
+   "resources": [
+    "domain"
+   ]
+  },
+  "undeprecateworkflowtype": {
+   "conditionKeys": [
+    "swf:workflowType.name",
+    "swf:workflowType.version"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UndeprecateWorkflowType",
+   "resources": [
+    "domain"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "domain"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "swf:activityType.name": [
+   "String"
+  ],
+  "swf:activityType.version": [
+   "String"
+  ],
+  "swf:defaultTaskList.name": [
+   "String"
+  ],
+  "swf:name": [
+   "String"
+  ],
+  "swf:tagFilter.tag": [
+   "String"
+  ],
+  "swf:tagList.member.0": [
+   "String"
+  ],
+  "swf:tagList.member.1": [
+   "String"
+  ],
+  "swf:tagList.member.2": [
+   "String"
+  ],
+  "swf:tagList.member.3": [
+   "String"
+  ],
+  "swf:tagList.member.4": [
+   "String"
+  ],
+  "swf:taskList.name": [
+   "String"
+  ],
+  "swf:typeFilter.name": [
+   "String"
+  ],
+  "swf:typeFilter.version": [
+   "String"
+  ],
+  "swf:version": [
+   "String"
+  ],
+  "swf:workflowType.name": [
+   "String"
+  ],
+  "swf:workflowType.version": [
+   "String"
+  ]
+ },
+ "resources": {
+  "domain": {
+   "arnFormats": [
+    "arn:${Partition}:swf::${Account}:/domain/${DomainName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "swf",
+ "serviceName": "SWF",
+ "version": "v1.5"
+}

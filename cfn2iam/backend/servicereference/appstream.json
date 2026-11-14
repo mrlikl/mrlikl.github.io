@@ -1,0 +1,992 @@
+{
+ "actions": {
+  "associateappblockbuilderappblock": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateAppBlockBuilderAppBlock",
+   "resources": [
+    "app-block",
+    "app-block-builder"
+   ]
+  },
+  "associateapplicationfleet": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateApplicationFleet",
+   "resources": [
+    "application",
+    "fleet"
+   ]
+  },
+  "associateapplicationtoentitlement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateApplicationToEntitlement",
+   "resources": [
+    "stack"
+   ]
+  },
+  "associatefleet": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateFleet",
+   "resources": [
+    "fleet",
+    "stack"
+   ]
+  },
+  "associatesoftwaretoimagebuilder": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateSoftwareToImageBuilder",
+   "resources": [
+    "image-builder"
+   ]
+  },
+  "batchassociateuserstack": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchAssociateUserStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "batchdisassociateuserstack": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDisassociateUserStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "copyimage": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CopyImage",
+   "resources": [
+    "image"
+   ]
+  },
+  "createappblock": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAppBlock",
+   "resources": []
+  },
+  "createappblockbuilder": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAppBlockBuilder",
+   "resources": [
+    "app-block-builder"
+   ]
+  },
+  "createappblockbuilderstreamingurl": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAppBlockBuilderStreamingURL",
+   "resources": [
+    "app-block-builder"
+   ]
+  },
+  "createapplication": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateApplication",
+   "resources": [
+    "app-block"
+   ]
+  },
+  "createdirectoryconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDirectoryConfig",
+   "resources": []
+  },
+  "createentitlement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEntitlement",
+   "resources": [
+    "stack"
+   ]
+  },
+  "createexportimagetask": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateExportImageTask",
+   "resources": []
+  },
+  "createfleet": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFleet",
+   "resources": [
+    "fleet",
+    "image"
+   ]
+  },
+  "createimagebuilder": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateImageBuilder",
+   "resources": [
+    "image",
+    "image-builder"
+   ]
+  },
+  "createimagebuilderstreamingurl": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateImageBuilderStreamingURL",
+   "resources": [
+    "image-builder"
+   ]
+  },
+  "createimportedimage": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateImportedImage",
+   "resources": []
+  },
+  "createstack": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "createstreamingurl": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStreamingURL",
+   "resources": [
+    "fleet",
+    "stack"
+   ]
+  },
+  "createthemeforstack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateThemeForStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "createupdatedimage": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUpdatedImage",
+   "resources": [
+    "image"
+   ]
+  },
+  "createusagereportsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUsageReportSubscription",
+   "resources": []
+  },
+  "createuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateUser",
+   "resources": []
+  },
+  "deleteappblock": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppBlock",
+   "resources": [
+    "app-block"
+   ]
+  },
+  "deleteappblockbuilder": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAppBlockBuilder",
+   "resources": [
+    "app-block-builder"
+   ]
+  },
+  "deleteapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteApplication",
+   "resources": [
+    "application"
+   ]
+  },
+  "deletedirectoryconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDirectoryConfig",
+   "resources": []
+  },
+  "deleteentitlement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEntitlement",
+   "resources": [
+    "stack"
+   ]
+  },
+  "deletefleet": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "deleteimage": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteImage",
+   "resources": [
+    "image"
+   ]
+  },
+  "deleteimagebuilder": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteImageBuilder",
+   "resources": [
+    "image-builder"
+   ]
+  },
+  "deleteimagepermissions": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteImagePermissions",
+   "resources": [
+    "image"
+   ]
+  },
+  "deletestack": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "deletethemeforstack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteThemeForStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "deleteusagereportsubscription": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUsageReportSubscription",
+   "resources": []
+  },
+  "deleteuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteUser",
+   "resources": []
+  },
+  "describeappblockbuilderappblockassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeAppBlockBuilderAppBlockAssociations",
+   "resources": []
+  },
+  "describeappblockbuilders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeAppBlockBuilders",
+   "resources": []
+  },
+  "describeappblocks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeAppBlocks",
+   "resources": []
+  },
+  "describeapplicationfleetassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeApplicationFleetAssociations",
+   "resources": []
+  },
+  "describeapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeApplications",
+   "resources": []
+  },
+  "describeapplicenseusage": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeAppLicenseUsage",
+   "resources": []
+  },
+  "describedirectoryconfigs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeDirectoryConfigs",
+   "resources": []
+  },
+  "describeentitlements": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeEntitlements",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describefleets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeFleets",
+   "resources": []
+  },
+  "describeimagebuilders": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeImageBuilders",
+   "resources": []
+  },
+  "describeimagepermissions": {
+   "name": "DescribeImagePermissions",
+   "resources": [
+    "image"
+   ]
+  },
+  "describeimages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeImages",
+   "resources": []
+  },
+  "describesessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeSessions",
+   "resources": [
+    "fleet",
+    "stack"
+   ]
+  },
+  "describesoftwareassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeSoftwareAssociations",
+   "resources": [
+    "image",
+    "image-builder"
+   ]
+  },
+  "describestacks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeStacks",
+   "resources": []
+  },
+  "describethemeforstack": {
+   "name": "DescribeThemeForStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "describeusagereportsubscriptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeUsageReportSubscriptions",
+   "resources": []
+  },
+  "describeusers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeUsers",
+   "resources": []
+  },
+  "describeuserstackassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeUserStackAssociations",
+   "resources": []
+  },
+  "disableuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableUser",
+   "resources": []
+  },
+  "disassociateappblockbuilderappblock": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateAppBlockBuilderAppBlock",
+   "resources": [
+    "app-block",
+    "app-block-builder"
+   ]
+  },
+  "disassociateapplicationfleet": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateApplicationFleet",
+   "resources": [
+    "application",
+    "fleet"
+   ]
+  },
+  "disassociateapplicationfromentitlement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateApplicationFromEntitlement",
+   "resources": [
+    "stack"
+   ]
+  },
+  "disassociatefleet": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateFleet",
+   "resources": [
+    "fleet",
+    "stack"
+   ]
+  },
+  "disassociatesoftwarefromimagebuilder": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateSoftwareFromImageBuilder",
+   "resources": [
+    "image-builder"
+   ]
+  },
+  "enableuser": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableUser",
+   "resources": []
+  },
+  "expiresession": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExpireSession",
+   "resources": []
+  },
+  "getexportimagetask": {
+   "name": "GetExportImageTask",
+   "resources": []
+  },
+  "listassociatedfleets": {
+   "name": "ListAssociatedFleets",
+   "resources": [
+    "stack"
+   ]
+  },
+  "listassociatedstacks": {
+   "name": "ListAssociatedStacks",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "listentitledapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEntitledApplications",
+   "resources": [
+    "stack"
+   ]
+  },
+  "listexportimagetasks": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListExportImageTasks",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": []
+  },
+  "startappblockbuilder": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAppBlockBuilder",
+   "resources": [
+    "app-block-builder"
+   ]
+  },
+  "startfleet": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "startimagebuilder": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartImageBuilder",
+   "resources": [
+    "image-builder"
+   ]
+  },
+  "startsoftwaredeploymenttoimagebuilder": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSoftwareDeploymentToImageBuilder",
+   "resources": [
+    "image-builder"
+   ]
+  },
+  "stopappblockbuilder": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopAppBlockBuilder",
+   "resources": [
+    "app-block-builder"
+   ]
+  },
+  "stopfleet": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopFleet",
+   "resources": [
+    "fleet"
+   ]
+  },
+  "stopimagebuilder": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopImageBuilder",
+   "resources": [
+    "image-builder"
+   ]
+  },
+  "stream": {
+   "conditionKeys": [
+    "appstream:userId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "Stream",
+   "resources": [
+    "stack"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "app-block",
+    "app-block-builder",
+    "application",
+    "fleet",
+    "image",
+    "image-builder",
+    "stack"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "app-block",
+    "app-block-builder",
+    "application",
+    "fleet",
+    "image",
+    "image-builder",
+    "stack"
+   ]
+  },
+  "updateappblockbuilder": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAppBlockBuilder",
+   "resources": [
+    "app-block-builder"
+   ]
+  },
+  "updateapplication": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": [
+    "app-block",
+    "application"
+   ]
+  },
+  "updatedirectoryconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDirectoryConfig",
+   "resources": []
+  },
+  "updateentitlement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEntitlement",
+   "resources": [
+    "stack"
+   ]
+  },
+  "updatefleet": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFleet",
+   "resources": [
+    "fleet",
+    "image"
+   ]
+  },
+  "updateimagebuilder": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateImageBuilder",
+   "resources": [
+    "image-builder"
+   ]
+  },
+  "updateimagepermissions": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateImagePermissions",
+   "resources": [
+    "image"
+   ]
+  },
+  "updatestack": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStack",
+   "resources": [
+    "stack"
+   ]
+  },
+  "updatethemeforstack": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateThemeForStack",
+   "resources": [
+    "stack"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "appstream:userId": [
+   "String"
+  ],
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "app-block": {
+   "arnFormats": [
+    "arn:${Partition}:appstream:${Region}:${Account}:app-block/${AppBlockName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "app-block-builder": {
+   "arnFormats": [
+    "arn:${Partition}:appstream:${Region}:${Account}:app-block-builder/${AppBlockBuilderName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "application": {
+   "arnFormats": [
+    "arn:${Partition}:appstream:${Region}:${Account}:application/${ApplicationName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "fleet": {
+   "arnFormats": [
+    "arn:${Partition}:appstream:${Region}:${Account}:fleet/${FleetName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "image": {
+   "arnFormats": [
+    "arn:${Partition}:appstream:${Region}:${Account}:image/${ImageName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "image-builder": {
+   "arnFormats": [
+    "arn:${Partition}:appstream:${Region}:${Account}:image-builder/${ImageBuilderName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "stack": {
+   "arnFormats": [
+    "arn:${Partition}:appstream:${Region}:${Account}:stack/${StackName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "appstream",
+ "serviceName": "AppStream 2.0",
+ "version": "v1.5"
+}

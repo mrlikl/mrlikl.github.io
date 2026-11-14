@@ -1,0 +1,51 @@
+{
+ "actions": {
+  "cancelconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelConnection",
+   "resources": []
+  },
+  "deleteconnectionrecordingpreferences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnectionRecordingPreferences",
+   "resources": []
+  },
+  "getconnection": {
+   "name": "GetConnection",
+   "resources": []
+  },
+  "getconnectionrecordingpreferences": {
+   "name": "GetConnectionRecordingPreferences",
+   "resources": []
+  },
+  "listconnections": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnections",
+   "resources": []
+  },
+  "startconnection": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartConnection",
+   "resources": []
+  },
+  "updateconnectionrecordingpreferences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateConnectionRecordingPreferences",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "ssm-guiconnect",
+ "serviceName": "GUI Connect",
+ "version": "v1.5"
+}

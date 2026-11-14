@@ -1,0 +1,265 @@
+{
+ "actions": {
+  "createcontainer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateContainer",
+   "resources": []
+  },
+  "deletecontainer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteContainer",
+   "resources": [
+    "container"
+   ]
+  },
+  "deletecontainerpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteContainerPolicy",
+   "resources": [
+    "container"
+   ]
+  },
+  "deletecorspolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCorsPolicy",
+   "resources": [
+    "container"
+   ]
+  },
+  "deletelifecyclepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteLifecyclePolicy",
+   "resources": [
+    "container"
+   ]
+  },
+  "deletemetricpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMetricPolicy",
+   "resources": [
+    "container"
+   ]
+  },
+  "deleteobject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteObject",
+   "resources": [
+    "object"
+   ]
+  },
+  "describecontainer": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeContainer",
+   "resources": [
+    "container"
+   ]
+  },
+  "describeobject": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "DescribeObject",
+   "resources": [
+    "object"
+   ]
+  },
+  "getcontainerpolicy": {
+   "name": "GetContainerPolicy",
+   "resources": [
+    "container"
+   ]
+  },
+  "getcorspolicy": {
+   "name": "GetCorsPolicy",
+   "resources": [
+    "container"
+   ]
+  },
+  "getlifecyclepolicy": {
+   "name": "GetLifecyclePolicy",
+   "resources": [
+    "container"
+   ]
+  },
+  "getmetricpolicy": {
+   "name": "GetMetricPolicy",
+   "resources": [
+    "container"
+   ]
+  },
+  "getobject": {
+   "name": "GetObject",
+   "resources": [
+    "object"
+   ]
+  },
+  "listcontainers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContainers",
+   "resources": []
+  },
+  "listitems": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListItems",
+   "resources": [
+    "folder"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "container"
+   ]
+  },
+  "putcontainerpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutContainerPolicy",
+   "resources": [
+    "container"
+   ]
+  },
+  "putcorspolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutCorsPolicy",
+   "resources": [
+    "container"
+   ]
+  },
+  "putlifecyclepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLifecyclePolicy",
+   "resources": [
+    "container"
+   ]
+  },
+  "putmetricpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutMetricPolicy",
+   "resources": [
+    "container"
+   ]
+  },
+  "putobject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutObject",
+   "resources": [
+    "object"
+   ]
+  },
+  "startaccesslogging": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAccessLogging",
+   "resources": [
+    "container"
+   ]
+  },
+  "stopaccesslogging": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopAccessLogging",
+   "resources": [
+    "container"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "container"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "container"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "container": {
+   "arnFormats": [
+    "arn:${Partition}:mediastore:${Region}:${Account}:container/${ContainerName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "folder": {
+   "arnFormats": [
+    "arn:${Partition}:mediastore:${Region}:${Account}:container/${ContainerName}/${FolderPath}"
+   ]
+  },
+  "object": {
+   "arnFormats": [
+    "arn:${Partition}:mediastore:${Region}:${Account}:container/${ContainerName}/${ObjectPath}"
+   ]
+  }
+ },
+ "service": "mediastore",
+ "serviceName": "MediaStore",
+ "version": "v1.5"
+}

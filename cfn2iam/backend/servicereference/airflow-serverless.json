@@ -1,0 +1,169 @@
+{
+ "actions": {
+  "createairflowuiurl": {
+   "name": "CreateAirflowUiUrl",
+   "resources": []
+  },
+  "createworkflow": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWorkflow",
+   "resources": []
+  },
+  "deleteworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteWorkflow",
+   "resources": [
+    "Workflow"
+   ]
+  },
+  "gettaskinstance": {
+   "name": "GetTaskInstance",
+   "resources": [
+    "Workflow"
+   ]
+  },
+  "getworkflow": {
+   "name": "GetWorkflow",
+   "resources": [
+    "Workflow"
+   ]
+  },
+  "getworkflowrun": {
+   "name": "GetWorkflowRun",
+   "resources": [
+    "Workflow"
+   ]
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "Workflow"
+   ]
+  },
+  "listtaskinstances": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTaskInstances",
+   "resources": [
+    "Workflow"
+   ]
+  },
+  "listworkflowruns": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkflowRuns",
+   "resources": [
+    "Workflow"
+   ]
+  },
+  "listworkflows": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkflows",
+   "resources": []
+  },
+  "listworkflowversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListWorkflowVersions",
+   "resources": [
+    "Workflow"
+   ]
+  },
+  "startworkflowrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartWorkflowRun",
+   "resources": [
+    "Workflow"
+   ]
+  },
+  "stopworkflowrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopWorkflowRun",
+   "resources": [
+    "Workflow"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "Workflow"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "Workflow"
+   ]
+  },
+  "updateworkflow": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateWorkflow",
+   "resources": [
+    "Workflow"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "Workflow": {
+   "arnFormats": [
+    "arn:${Partition}:airflow-serverless:${Region}:${Account}:workflow/${WorkflowId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "airflow-serverless",
+ "serviceName": "MWAA Serverless",
+ "version": "v1.5"
+}

@@ -1,0 +1,196 @@
+{
+ "actions": {
+  "accessairflowresource": {
+   "conditionKeys": [
+    "airflow:DagAccessEntity",
+    "airflow:ResourceAction",
+    "airflow:ResourceId",
+    "airflow:ResourceType",
+    "airflow:TeamNames"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AccessAirflowResource",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createclitoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCliToken",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createenvironment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "createweblogintoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateWebLoginToken",
+   "resources": [
+    "rbac-role"
+   ]
+  },
+  "deleteenvironment": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "getenvironment": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetEnvironment",
+   "resources": [
+    "environment"
+   ]
+  },
+  "invokerestapi": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "InvokeRestApi",
+   "resources": [
+    "rbac-role"
+   ]
+  },
+  "listenvironments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEnvironments",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "environment"
+   ]
+  },
+  "publishmetrics": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PublishMetrics",
+   "resources": [
+    "environment"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "environment"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "environment"
+   ]
+  },
+  "updateenvironment": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateEnvironment",
+   "resources": [
+    "environment"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "airflow:DagAccessEntity": [
+   "String"
+  ],
+  "airflow:ResourceAction": [
+   "String"
+  ],
+  "airflow:ResourceId": [
+   "String"
+  ],
+  "airflow:ResourceType": [
+   "String"
+  ],
+  "airflow:TeamNames": [
+   "ArrayOfString"
+  ],
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "environment": {
+   "arnFormats": [
+    "arn:${Partition}:airflow:${Region}:${Account}:environment/${EnvironmentName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "rbac-role": {
+   "arnFormats": [
+    "arn:${Partition}:airflow:${Region}:${Account}:role/${EnvironmentName}/${RoleName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "airflow",
+ "serviceName": "MWAA",
+ "version": "v1.5"
+}

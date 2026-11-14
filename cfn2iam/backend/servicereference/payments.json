@@ -1,0 +1,246 @@
+{
+ "actions": {
+  "acceptfinancingapplicationterms": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptFinancingApplicationTerms",
+   "resources": []
+  },
+  "createconnectedaccount": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnectedAccount",
+   "resources": []
+  },
+  "createfinancingapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateFinancingApplication",
+   "resources": []
+  },
+  "createpaymentinstrument": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePaymentInstrument",
+   "resources": []
+  },
+  "deleteconnectedaccount": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnectedAccount",
+   "resources": [
+    "connectedaccount"
+   ]
+  },
+  "deletepaymentinstrument": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePaymentInstrument",
+   "resources": []
+  },
+  "getconnectedaccount": {
+   "name": "GetConnectedAccount",
+   "resources": [
+    "connectedaccount"
+   ]
+  },
+  "getfinancingapplication": {
+   "name": "GetFinancingApplication",
+   "resources": []
+  },
+  "getfinancingline": {
+   "name": "GetFinancingLine",
+   "resources": []
+  },
+  "getfinancinglinewithdrawal": {
+   "name": "GetFinancingLineWithdrawal",
+   "resources": []
+  },
+  "getfinancingoption": {
+   "name": "GetFinancingOption",
+   "resources": []
+  },
+  "getpaymentinstrument": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetPaymentInstrument",
+   "resources": [
+    "payment-instrument"
+   ]
+  },
+  "getpaymentstatus": {
+   "name": "GetPaymentStatus",
+   "resources": []
+  },
+  "listconnectedaccounts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectedAccounts",
+   "resources": []
+  },
+  "listfinancingapplications": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFinancingApplications",
+   "resources": []
+  },
+  "listfinancinglines": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFinancingLines",
+   "resources": []
+  },
+  "listfinancinglinewithdrawals": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFinancingLineWithdrawals",
+   "resources": []
+  },
+  "listpaymentinstruments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPaymentInstruments",
+   "resources": []
+  },
+  "listpaymentpreferences": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPaymentPreferences",
+   "resources": []
+  },
+  "listpaymentprogramoptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPaymentProgramOptions",
+   "resources": []
+  },
+  "listpaymentprogramstatus": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPaymentProgramStatus",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTagsForResource",
+   "resources": [
+    "connectedaccount",
+    "payment-instrument"
+   ]
+  },
+  "makepayment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "MakePayment",
+   "resources": []
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "connectedaccount",
+    "payment-instrument"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "connectedaccount",
+    "payment-instrument"
+   ]
+  },
+  "updatefinancingapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateFinancingApplication",
+   "resources": []
+  },
+  "updatepaymentinstrument": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePaymentInstrument",
+   "resources": []
+  },
+  "updatepaymentpreferences": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePaymentPreferences",
+   "resources": []
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "connectedaccount": {
+   "arnFormats": [
+    "arn:${Partition}:payments::${Account}:connectedaccount/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "payment-instrument": {
+   "arnFormats": [
+    "arn:${Partition}:payments::${Account}:payment-instrument:${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "payments",
+ "serviceName": "Payments",
+ "version": "v1.5"
+}

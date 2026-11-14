@@ -1,0 +1,600 @@
+{
+ "actions": {
+  "addkeyreplicationregions": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddKeyReplicationRegions",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "associatempateam": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateMpaTeam",
+   "resources": [
+    "approval-team"
+   ]
+  },
+  "createalias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAlias",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "createkey": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "payment-cryptography:DeriveKeyUsage",
+    "payment-cryptography:KeyAlgorithm",
+    "payment-cryptography:KeyClass",
+    "payment-cryptography:KeyUsage"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKey",
+   "resources": []
+  },
+  "decryptdata": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DecryptData",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "deletealias": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAlias",
+   "resources": [
+    "alias"
+   ]
+  },
+  "deletekey": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKey",
+   "resources": [
+    "key"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "key"
+   ]
+  },
+  "disabledefaultkeyreplicationregions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableDefaultKeyReplicationRegions",
+   "resources": []
+  },
+  "disassociatempateam": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateMpaTeam",
+   "resources": [
+    "approval-team"
+   ]
+  },
+  "enabledefaultkeyreplicationregions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableDefaultKeyReplicationRegions",
+   "resources": []
+  },
+  "encryptdata": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EncryptData",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "exportkey": {
+   "conditionKeys": [
+    "payment-cryptography:CertificateAuthorityPublicKeyIdentifier",
+    "payment-cryptography:ExportDukptInitialKey",
+    "payment-cryptography:ExportKeyMaterial",
+    "payment-cryptography:PrivateKeyIdentifier",
+    "payment-cryptography:RequestAlias",
+    "payment-cryptography:SigningKeyIdentifier",
+    "payment-cryptography:WrappingKeyIdentifier"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ExportKey",
+   "resources": [
+    "key"
+   ]
+  },
+  "generateas2805kekvalidation": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateAs2805KekValidation",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "generateauthrequestcryptogram": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateAuthRequestCryptogram",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "generatecardvalidationdata": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateCardValidationData",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "generatemac": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateMac",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "generatemacemvpinchange": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GenerateMacEmvPinChange",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "generatepindata": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GeneratePinData",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "getalias": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "name": "GetAlias",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "getcertificatesigningrequest": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "name": "GetCertificateSigningRequest",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "getdefaultkeyreplicationregions": {
+   "name": "GetDefaultKeyReplicationRegions",
+   "resources": []
+  },
+  "getkey": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "name": "GetKey",
+   "resources": [
+    "key"
+   ]
+  },
+  "getmpateamassociation": {
+   "name": "GetMpaTeamAssociation",
+   "resources": [
+    "approval-team"
+   ]
+  },
+  "getparametersforexport": {
+   "name": "GetParametersForExport",
+   "resources": []
+  },
+  "getparametersforimport": {
+   "name": "GetParametersForImport",
+   "resources": []
+  },
+  "getpublickeycertificate": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "name": "GetPublicKeyCertificate",
+   "resources": [
+    "key"
+   ]
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "key"
+   ]
+  },
+  "importkey": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "payment-cryptography:CertificateAuthorityPublicKeyIdentifier",
+    "payment-cryptography:ImportKeyMaterial",
+    "payment-cryptography:PrivateKeyIdentifier",
+    "payment-cryptography:WrappingKeyIdentifier"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ImportKey",
+   "resources": []
+  },
+  "listaliases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAliases",
+   "resources": []
+  },
+  "listkeys": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKeys",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "key"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "key"
+   ]
+  },
+  "reencryptdata": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReEncryptData",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "removekeyreplicationregions": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveKeyReplicationRegions",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "restorekey": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreKey",
+   "resources": [
+    "key"
+   ]
+  },
+  "startkeyusage": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartKeyUsage",
+   "resources": [
+    "key"
+   ]
+  },
+  "stopkeyusage": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopKeyUsage",
+   "resources": [
+    "key"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "key"
+   ]
+  },
+  "translatekeymaterial": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TranslateKeyMaterial",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "translatepindata": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TranslatePinData",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "key"
+   ]
+  },
+  "updatealias": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAlias",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "verifyauthrequestcryptogram": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VerifyAuthRequestCryptogram",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "verifycardvalidationdata": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VerifyCardValidationData",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "verifymac": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VerifyMac",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  },
+  "verifypindata": {
+   "conditionKeys": [
+    "payment-cryptography:RequestAlias"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "VerifyPinData",
+   "resources": [
+    "alias",
+    "key"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "payment-cryptography:CertificateAuthorityPublicKeyIdentifier": [
+   "String"
+  ],
+  "payment-cryptography:DeriveKeyUsage": [
+   "String"
+  ],
+  "payment-cryptography:ExportDukptInitialKey": [
+   "Bool"
+  ],
+  "payment-cryptography:ExportKeyMaterial": [
+   "String"
+  ],
+  "payment-cryptography:ImportKeyMaterial": [
+   "String"
+  ],
+  "payment-cryptography:KeyAlgorithm": [
+   "String"
+  ],
+  "payment-cryptography:KeyClass": [
+   "String"
+  ],
+  "payment-cryptography:KeyUsage": [
+   "String"
+  ],
+  "payment-cryptography:PrivateKeyIdentifier": [
+   "String"
+  ],
+  "payment-cryptography:RequestAlias": [
+   "String"
+  ],
+  "payment-cryptography:ResourceAliases": [
+   "ArrayOfString"
+  ],
+  "payment-cryptography:SigningKeyIdentifier": [
+   "String"
+  ],
+  "payment-cryptography:WrappingKeyIdentifier": [
+   "String"
+  ]
+ },
+ "resources": {
+  "alias": {
+   "arnFormats": [
+    "arn:${Partition}:payment-cryptography:${Region}:${Account}:alias/${Alias}"
+   ],
+   "conditionKeys": [
+    "payment-cryptography:ResourceAliases"
+   ]
+  },
+  "approval-team": {
+   "arnFormats": [
+    "arn:${Partition}:mpa:${Region}:${Account}:approval-team/${ApprovalTeamId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "key": {
+   "arnFormats": [
+    "arn:${Partition}:payment-cryptography:${Region}:${Account}:key/${KeyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "payment-cryptography:ResourceAliases"
+   ]
+  }
+ },
+ "service": "payment-cryptography",
+ "serviceName": "Payment Cryptography",
+ "version": "v1.5"
+}

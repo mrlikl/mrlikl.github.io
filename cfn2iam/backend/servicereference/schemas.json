@@ -1,0 +1,320 @@
+{
+ "actions": {
+  "creatediscoverer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDiscoverer",
+   "resources": []
+  },
+  "createregistry": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRegistry",
+   "resources": [
+    "registry"
+   ]
+  },
+  "createschema": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSchema",
+   "resources": [
+    "schema"
+   ]
+  },
+  "deletediscoverer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDiscoverer",
+   "resources": [
+    "discoverer"
+   ]
+  },
+  "deleteregistry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRegistry",
+   "resources": [
+    "registry"
+   ]
+  },
+  "deleteresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteResourcePolicy",
+   "resources": [
+    "registry"
+   ]
+  },
+  "deleteschema": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSchema",
+   "resources": [
+    "schema"
+   ]
+  },
+  "deleteschemaversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSchemaVersion",
+   "resources": [
+    "schema"
+   ]
+  },
+  "describecodebinding": {
+   "name": "DescribeCodeBinding",
+   "resources": [
+    "schema"
+   ]
+  },
+  "describediscoverer": {
+   "name": "DescribeDiscoverer",
+   "resources": [
+    "discoverer"
+   ]
+  },
+  "describeregistry": {
+   "name": "DescribeRegistry",
+   "resources": [
+    "registry"
+   ]
+  },
+  "describeschema": {
+   "name": "DescribeSchema",
+   "resources": [
+    "schema"
+   ]
+  },
+  "exportschema": {
+   "name": "ExportSchema",
+   "resources": [
+    "registry",
+    "schema"
+   ]
+  },
+  "getcodebindingsource": {
+   "name": "GetCodeBindingSource",
+   "resources": [
+    "schema"
+   ]
+  },
+  "getdiscoveredschema": {
+   "name": "GetDiscoveredSchema",
+   "resources": []
+  },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "registry"
+   ]
+  },
+  "listdiscoverers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDiscoverers",
+   "resources": [
+    "discoverer"
+   ]
+  },
+  "listregistries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRegistries",
+   "resources": [
+    "registry"
+   ]
+  },
+  "listschemas": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSchemas",
+   "resources": [
+    "schema"
+   ]
+  },
+  "listschemaversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSchemaVersions",
+   "resources": [
+    "schema"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "discoverer",
+    "registry",
+    "schema"
+   ]
+  },
+  "putcodebinding": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutCodeBinding",
+   "resources": [
+    "schema"
+   ]
+  },
+  "putresourcepolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutResourcePolicy",
+   "resources": [
+    "registry"
+   ]
+  },
+  "searchschemas": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchSchemas",
+   "resources": [
+    "schema"
+   ]
+  },
+  "startdiscoverer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDiscoverer",
+   "resources": [
+    "discoverer"
+   ]
+  },
+  "stopdiscoverer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopDiscoverer",
+   "resources": [
+    "discoverer"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "discoverer",
+    "registry",
+    "schema"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "discoverer",
+    "registry",
+    "schema"
+   ]
+  },
+  "updatediscoverer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDiscoverer",
+   "resources": [
+    "discoverer"
+   ]
+  },
+  "updateregistry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRegistry",
+   "resources": [
+    "registry"
+   ]
+  },
+  "updateschema": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSchema",
+   "resources": [
+    "schema"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "discoverer": {
+   "arnFormats": [
+    "arn:${Partition}:schemas:${Region}:${Account}:discoverer/${DiscovererId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "registry": {
+   "arnFormats": [
+    "arn:${Partition}:schemas:${Region}:${Account}:registry/${RegistryName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "schema": {
+   "arnFormats": [
+    "arn:${Partition}:schemas:${Region}:${Account}:schema/${RegistryName}/${SchemaName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "schemas",
+ "serviceName": "EventBridge Schemas",
+ "version": "v1.5"
+}
