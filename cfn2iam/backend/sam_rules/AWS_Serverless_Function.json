@@ -72,6 +72,8 @@
       "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "Api"},
       "resources": [
         "AWS::ApiGateway::RestApi",
+        "AWS::ApiGateway::Deployment",
+        "AWS::ApiGateway::Stage",
         "AWS::Lambda::Permission"
       ]
     },
@@ -79,6 +81,7 @@
       "condition": {"path": "properties.Events.*.Type", "op": "any_eq", "value": "HttpApi"},
       "resources": [
         "AWS::ApiGatewayV2::Api",
+        "AWS::ApiGatewayV2::Stage",
         "AWS::Lambda::Permission"
       ]
     },
