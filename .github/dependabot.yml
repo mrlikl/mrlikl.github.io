@@ -31,5 +31,9 @@ updates:
     directory: "/cfn2iam"
     schedule:
       interval: "daily"
+    # Without this, Dependabot's default cooldown skips releases for several days
+    # (it ignored 0.3.0 to 0.4.1 on their release day). One day is the minimum allowed.
+    cooldown:
+      default-days: 1
     allow:
       - dependency-name: "cfn2iam"
