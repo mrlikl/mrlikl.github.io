@@ -255,6 +255,12 @@
     "g6f.4xlarge": 1.05482,
     "g6f.large": 0.22429,
     "g6f.xlarge": 0.26371,
+    "g7e.12xlarge": 12.51043,
+    "g7e.24xlarge": 25.02085,
+    "g7e.2xlarge": 5.07768,
+    "g7e.48xlarge": 50.0417,
+    "g7e.4xlarge": 6.03647,
+    "g7e.8xlarge": 7.95405,
     "gr6.4xlarge": 1.709,
     "gr6.8xlarge": 2.71628,
     "gr6f.4xlarge": 1.1836,
@@ -547,6 +553,7 @@
     "p3.8xlarge": 13.464,
     "p4d.24xlarge": 25.25174,
     "p5.48xlarge": 63.296,
+    "p5en.48xlarge": 72.7904,
     "r4.16xlarge": 4.672,
     "r4.2xlarge": 0.584,
     "r4.4xlarge": 1.168,
@@ -820,5 +827,5 @@
     "x2iedn.xlarge": 0.917
   },
   "region": "ca-central-1",
-  "updated": "2026-10-18T03:02:28Z"
+  "updated": "2026-11-15T04:49:36Z"
 }

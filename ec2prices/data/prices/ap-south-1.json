@@ -247,6 +247,12 @@
     "g6f.4xlarge": 1.14076,
     "g6f.large": 0.24256,
     "g6f.xlarge": 0.28519,
+    "g7.12xlarge": 8.55964,
+    "g7.24xlarge": 17.11928,
+    "g7.2xlarge": 3.026,
+    "g7.48xlarge": 34.23857,
+    "g7.4xlarge": 3.65291,
+    "g7.8xlarge": 4.90673,
     "g7e.12xlarge": 13.53377,
     "g7e.24xlarge": 27.06754,
     "g7e.2xlarge": 5.49303,
@@ -851,5 +857,5 @@
     "z1d.xlarge": 0.392
   },
   "region": "ap-south-1",
-  "updated": "2026-10-10T18:24:30Z"
+  "updated": "2026-11-15T04:49:36Z"
 }
