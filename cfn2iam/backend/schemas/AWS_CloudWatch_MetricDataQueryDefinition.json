@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudwatch:PutMetricDataQueryDefinition",
+        "cloudwatch:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudwatch:DeleteMetricDataQueryDefinition",
+        "cloudwatch:GetMetricDataQueryDefinition",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudwatch:ListMetricDataQueryDefinitions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudwatch:GetMetricDataQueryDefinition",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudwatch:PutMetricDataQueryDefinition",
+        "cloudwatch:GetMetricDataQueryDefinition",
+        "cloudwatch:TagResource",
+        "cloudwatch:UntagResource",
+        "cloudwatch:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudWatch::MetricDataQueryDefinition"
+}

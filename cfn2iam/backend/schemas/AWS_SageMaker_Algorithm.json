@@ -3,8 +3,10 @@
     "create": {
       "permissions": [
         "sagemaker:CreateAlgorithm",
+        "ecr:BatchGetImage",
         "sagemaker:DescribeAlgorithm",
-        "sagemaker:AddTags"
+        "sagemaker:AddTags",
+        "sagemaker:ListTags"
       ]
     },
     "delete": {

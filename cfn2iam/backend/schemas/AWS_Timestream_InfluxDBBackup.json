@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "timestream-influxdb:CreateDbBackup",
+        "timestream-influxdb:GetDbBackup",
+        "timestream-influxdb:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "timestream-influxdb:DeleteDbBackup",
+        "timestream-influxdb:GetDbBackup",
+        "timestream-influxdb:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "timestream-influxdb:ListDbBackups"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "timestream-influxdb:GetDbBackup",
+        "timestream-influxdb:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "timestream-influxdb:GetDbBackup",
+        "timestream-influxdb:ListTagsForResource",
+        "timestream-influxdb:TagResource",
+        "timestream-influxdb:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Timestream::InfluxDBBackup"
+}

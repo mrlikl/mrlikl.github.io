@@ -1,0 +1,33 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53:CreateTrafficPolicyInstance",
+        "route53:GetTrafficPolicyInstance"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53:DeleteTrafficPolicyInstance",
+        "route53:GetTrafficPolicyInstance"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "route53:ListTrafficPolicyInstances"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53:GetTrafficPolicyInstance"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "route53:UpdateTrafficPolicyInstance",
+        "route53:GetTrafficPolicyInstance"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53::TrafficPolicyInstance"
+}

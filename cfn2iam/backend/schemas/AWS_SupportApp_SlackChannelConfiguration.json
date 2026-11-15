@@ -3,7 +3,8 @@
     "create": {
       "permissions": [
         "supportapp:CreateSlackChannelConfiguration",
-        "supportapp:ListSlackChannelConfigurations"
+        "supportapp:ListSlackChannelConfigurations",
+        "iam:PassRole"
       ]
     },
     "delete": {
@@ -25,7 +26,8 @@
     "update": {
       "permissions": [
         "supportapp:UpdateSlackChannelConfiguration",
-        "supportapp:ListSlackChannelConfigurations"
+        "supportapp:ListSlackChannelConfigurations",
+        "iam:PassRole"
       ]
     }
   },

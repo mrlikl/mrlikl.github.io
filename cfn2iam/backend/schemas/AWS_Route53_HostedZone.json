@@ -45,6 +45,7 @@
         "route53:ListQueryLoggingConfigs",
         "route53:UpdateHostedZoneComment",
         "route53:UpdateHostedZoneFeatures",
+        "route53:UpdateHostedZoneTier",
         "route53:ChangeTagsForResource",
         "route53:AssociateVPCWithHostedZone",
         "route53:DisassociateVPCFromHostedZone",

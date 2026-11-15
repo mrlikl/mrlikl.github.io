@@ -32,6 +32,7 @@
         "ram:ReplacePermissionAssociations",
         "ram:ListReplacePermissionAssociationsWork",
         "ram:ListPermissionVersions",
+        "ram:UpdatePermission",
         "ram:UntagResource",
         "ram:TagResource"
       ]

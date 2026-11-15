@@ -7,7 +7,8 @@
         "sagemaker:AddTags",
         "sagemaker:ListTags",
         "iam:PassRole"
-      ]
+      ],
+      "timeoutInMinutes": 190
     },
     "delete": {
       "permissions": [

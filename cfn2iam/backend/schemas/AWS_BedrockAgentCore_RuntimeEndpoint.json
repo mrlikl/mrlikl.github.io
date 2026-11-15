@@ -14,7 +14,8 @@
         "bedrock-agentcore:DeleteAgentRuntimeEndpoint",
         "bedrock-agentcore:GetAgentRuntime",
         "bedrock-agentcore:GetAgentRuntimeEndpoint"
-      ]
+      ],
+      "timeoutInMinutes": 130
     },
     "list": {
       "handlerSchema": {

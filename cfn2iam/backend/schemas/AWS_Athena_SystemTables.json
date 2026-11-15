@@ -1,0 +1,41 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "athena:CreateSystemTableConfiguration",
+        "athena:GetSystemTableConfiguration",
+        "athena:TagResource",
+        "athena:ListTagsForResource",
+        "kms:DescribeKey",
+        "s3tables:CreateTableBucket",
+        "s3tables:PutTableBucketPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "athena:DeleteSystemTableConfiguration",
+        "athena:GetSystemTableConfiguration"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "athena:GetSystemTableConfiguration"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "athena:GetSystemTableConfiguration",
+        "athena:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "athena:GetSystemTableConfiguration",
+        "athena:TagResource",
+        "athena:UntagResource",
+        "athena:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Athena::SystemTables"
+}

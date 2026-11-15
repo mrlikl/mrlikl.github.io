@@ -40,7 +40,8 @@
         "sso:PutApplicationAuthenticationMethod",
         "sso:PutApplicationAssignmentConfiguration",
         "sso:PutApplicationGrant",
-        "sso:PutApplicationAccessScope"
+        "sso:PutApplicationAccessScope",
+        "sso:PutApplicationSessionConfiguration"
       ]
     },
     "delete": {
@@ -93,7 +94,15 @@
         "kms:GenerateDataKey",
         "kms:TagResource",
         "kms:UntagResource",
-        "kms:Decrypt"
+        "kms:Decrypt",
+        "sso:DescribeInstance",
+        "sso:CreateApplication",
+        "sso:DeleteApplication",
+        "sso:PutApplicationAuthenticationMethod",
+        "sso:PutApplicationAssignmentConfiguration",
+        "sso:PutApplicationGrant",
+        "sso:PutApplicationAccessScope",
+        "sso:PutApplicationSessionConfiguration"
       ]
     }
   },

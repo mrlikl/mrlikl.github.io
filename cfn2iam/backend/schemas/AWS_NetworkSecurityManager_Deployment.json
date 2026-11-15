@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "network-security-manager:CreateDeployment",
+        "network-security-manager:GetDeployment",
+        "network-security-manager:TagResource",
+        "network-security-manager:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "network-security-manager:DeleteDeployment",
+        "network-security-manager:GetDeployment",
+        "network-security-manager:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "network-security-manager:ListDeployments"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "network-security-manager:GetDeployment",
+        "network-security-manager:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "network-security-manager:UpdateDeployment",
+        "network-security-manager:GetDeployment",
+        "network-security-manager:TagResource",
+        "network-security-manager:UntagResource",
+        "network-security-manager:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkSecurityManager::Deployment"
+}

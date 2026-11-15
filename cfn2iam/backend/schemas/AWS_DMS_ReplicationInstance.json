@@ -1,4 +1,42 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "dms:DescribeReplicationInstances",
+        "dms:CreateReplicationInstance",
+        "dms:AddTagsToResource",
+        "dms:ListTagsForResource"
+      ],
+      "timeoutInMinutes": 70
+    },
+    "delete": {
+      "permissions": [
+        "dms:DescribeReplicationInstances",
+        "dms:DeleteReplicationInstance"
+      ],
+      "timeoutInMinutes": 70
+    },
+    "list": {
+      "permissions": [
+        "dms:DescribeReplicationInstances"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "dms:DescribeReplicationInstances",
+        "dms:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "dms:DescribeReplicationInstances",
+        "dms:ModifyReplicationInstance",
+        "dms:ListTagsForResource",
+        "dms:AddTagsToResource",
+        "dms:RemoveTagsFromResource"
+      ],
+      "timeoutInMinutes": 490
+    }
+  },
   "typeName": "AWS::DMS::ReplicationInstance"
 }

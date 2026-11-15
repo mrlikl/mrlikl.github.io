@@ -1,0 +1,52 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudwatch:AssumeAccessProfile",
+        "cloudwatch:CreateAlert",
+        "cloudwatch:InvokeIntegration",
+        "cloudwatch:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudwatch:DeleteAlert",
+        "cloudwatch:GetAlert",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "SpaceId": {
+            "description": "The ID of the space the alert belongs to.",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "SpaceId"
+        ]
+      },
+      "permissions": [
+        "cloudwatch:ListAlerts"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudwatch:GetAlert",
+        "cloudwatch:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudwatch:AssumeAccessProfile",
+        "cloudwatch:InvokeIntegration",
+        "cloudwatch:TagResource",
+        "cloudwatch:UntagResource",
+        "cloudwatch:UpdateAlert"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudWatch::Alert"
+}

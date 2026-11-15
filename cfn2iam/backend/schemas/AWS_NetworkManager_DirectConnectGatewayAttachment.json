@@ -6,7 +6,9 @@
         "networkmanager:GetDirectConnectGatewayAttachment",
         "networkmanager:TagResource",
         "ec2:DescribeRegions",
-        "iam:CreateServiceLinkedRole"
+        "iam:CreateServiceLinkedRole",
+        "networkmanager:UpdateAttachmentNatConfiguration",
+        "networkmanager:ListAttachmentNatConfigurations"
       ],
       "timeoutInMinutes": 60
     },
@@ -39,7 +41,9 @@
         "networkmanager:PutAttachmentRoutingPolicyLabel",
         "networkmanager:RemoveAttachmentRoutingPolicyLabel",
         "networkmanager:ListAttachmentRoutingPolicyAssociations",
-        "ec2:DescribeRegions"
+        "ec2:DescribeRegions",
+        "networkmanager:UpdateAttachmentNatConfiguration",
+        "networkmanager:ListAttachmentNatConfigurations"
       ],
       "timeoutInMinutes": 60
     }

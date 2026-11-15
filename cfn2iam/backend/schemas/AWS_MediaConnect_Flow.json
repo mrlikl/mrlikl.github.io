@@ -46,7 +46,8 @@
         "mediaconnect:RemoveFlowVpcInterface",
         "mediaconnect:TagResource",
         "mediaconnect:UntagResource",
-        "mediaconnect:ListTagsForResource"
+        "mediaconnect:ListTagsForResource",
+        "iam:PassRole"
       ]
     }
   },
