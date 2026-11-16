@@ -18,6 +18,15 @@
         "bedrock-agentcore:TagResource",
         "bedrock-agentcore:UpdateAgentRuntime",
         "bedrock-agentcore:UpdateAgentRuntimeEndpoint",
+        "ec2:AssignIpv6Addresses",
+        "ec2:CreateNetworkInterface",
+        "ec2:CreateNetworkInterfacePermission",
+        "ec2:DescribeNetworkInterfaces",
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:CreateServiceNetworkResourceAssociation",
+        "vpc-lattice:GetServiceNetworkResourceAssociation",
+        "vpc-lattice:ListServiceNetworkResourceAssociations",
+        "vpc-lattice:AssociateViaAWSService",
         "iam:CreateServiceLinkedRole",
         "iam:PassRole"
       ]
@@ -72,6 +81,15 @@
         "bedrock-agentcore:UpdateAgentRuntime",
         "bedrock-agentcore:UpdateAgentRuntimeEndpoint",
         "bedrock-agentcore:UpdateHarness",
+        "ec2:AssignIpv6Addresses",
+        "ec2:CreateNetworkInterface",
+        "ec2:CreateNetworkInterfacePermission",
+        "ec2:DescribeNetworkInterfaces",
+        "vpc-lattice:GetResourceConfiguration",
+        "vpc-lattice:CreateServiceNetworkResourceAssociation",
+        "vpc-lattice:GetServiceNetworkResourceAssociation",
+        "vpc-lattice:ListServiceNetworkResourceAssociations",
+        "vpc-lattice:AssociateViaAWSService",
         "iam:CreateServiceLinkedRole",
         "iam:PassRole"
       ]

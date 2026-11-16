@@ -1,4 +1,37 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "rds:CreateDBInstance",
+        "rds:AddTagsToResource",
+        "rds:DescribeDBInstances"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "rds:DeleteDBInstance",
+        "rds:DescribeDBInstances"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "rds:DescribeDBInstances"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "rds:DescribeDBInstances"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "rds:ModifyDBInstance",
+        "rds:ListTagsForResource",
+        "rds:DescribeDBInstances",
+        "rds:AddTagsToResource",
+        "rds:RemoveTagsFromResource"
+      ]
+    }
+  },
   "typeName": "AWS::DocDB::DBInstance"
 }

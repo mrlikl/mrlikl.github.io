@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateTransitGatewayNetworkFunctionAttachment",
+        "ec2:DescribeTransitGatewayNetworkFunctionAttachments",
+        "ec2:DescribeVpcEndpointServices",
+        "ec2:CreateTags",
+        "ec2:DescribeTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DeleteTransitGatewayNetworkFunctionAttachment",
+        "ec2:DescribeTransitGatewayNetworkFunctionAttachments",
+        "ec2:DeleteTags",
+        "ec2:DescribeTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeTransitGatewayNetworkFunctionAttachments",
+        "ec2:DescribeTags"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeTransitGatewayNetworkFunctionAttachments",
+        "ec2:DescribeTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:ModifyTransitGatewayNetworkFunctionAttachment",
+        "ec2:DescribeTransitGatewayNetworkFunctionAttachments",
+        "ec2:DeleteTags",
+        "ec2:CreateTags",
+        "ec2:DescribeTags"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::TransitGatewayNetworkFunctionAttachment"
+}

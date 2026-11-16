@@ -1,0 +1,48 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "networkmanager:CreateContextStore",
+        "networkmanager:GetContextStore",
+        "networkmanager:ListContextStores",
+        "networkmanager:TagResource",
+        "networkmanager:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "networkmanager:DeleteContextStore",
+        "networkmanager:GetContextStore"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "GlobalNetworkId": {
+            "$ref": "resource-schema.json#/properties/GlobalNetworkId"
+          }
+        }
+      },
+      "permissions": [
+        "networkmanager:ListContextStores",
+        "networkmanager:ListTagsForResource"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "networkmanager:GetContextStore",
+        "networkmanager:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "networkmanager:UpdateContextStore",
+        "networkmanager:GetContextStore",
+        "networkmanager:TagResource",
+        "networkmanager:UntagResource",
+        "networkmanager:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkManager::ContextStore"
+}

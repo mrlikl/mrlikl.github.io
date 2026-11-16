@@ -15,6 +15,8 @@
         "logs:GetLogDelivery",
         "logs:ListLogDeliveries",
         "logs:PutResourcePolicy",
+        "logs:DescribeResourcePolicies",
+        "logs:DescribeLogGroups",
         "kms:CreateGrant",
         "kms:Decrypt",
         "kms:GenerateDataKey"
@@ -71,7 +73,9 @@
         "logs:UpdateLogDelivery",
         "logs:ListLogDeliveries",
         "logs:DeleteLogDelivery",
-        "logs:PutResourcePolicy"
+        "logs:PutResourcePolicy",
+        "logs:DescribeResourcePolicies",
+        "logs:DescribeLogGroups"
       ]
     }
   },

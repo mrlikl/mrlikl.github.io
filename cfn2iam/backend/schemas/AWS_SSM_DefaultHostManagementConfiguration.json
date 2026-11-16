@@ -1,0 +1,50 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ssm:RegisterDefaultHostManagementConfiguration",
+        "ssm:GetServiceSetting",
+        "ssm:UpdateServiceSetting",
+        "iam:CreateRole",
+        "iam:AttachRolePolicy",
+        "iam:DetachRolePolicy",
+        "iam:DeleteRole",
+        "iam:GetRole",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ssm:DeregisterDefaultHostManagementConfiguration",
+        "ssm:GetServiceSetting",
+        "ssm:ResetServiceSetting",
+        "iam:DetachRolePolicy",
+        "iam:DeleteRole"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ssm:GetServiceSetting"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ssm:GetServiceSetting"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ssm:RegisterDefaultHostManagementConfiguration",
+        "ssm:GetServiceSetting",
+        "ssm:UpdateServiceSetting",
+        "iam:CreateRole",
+        "iam:AttachRolePolicy",
+        "iam:DetachRolePolicy",
+        "iam:DeleteRole",
+        "iam:GetRole",
+        "iam:PassRole"
+      ]
+    }
+  },
+  "typeName": "AWS::SSM::DefaultHostManagementConfiguration"
+}

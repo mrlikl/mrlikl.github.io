@@ -1,0 +1,44 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "kinesisanalytics:CreateSnapshot",
+        "kinesisanalytics:ImportSnapshot",
+        "kinesisanalytics:DescribeSnapshot",
+        "kinesisanalytics:TagResource",
+        "kinesisanalytics:ListTagsForResource",
+        "kms:DescribeKey",
+        "kms:Decrypt",
+        "kms:GenerateDataKey",
+        "iam:PassRole"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "kinesisanalytics:DescribeSnapshot",
+        "kinesisanalytics:DeleteSnapshot",
+        "kinesisanalytics:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "kinesisanalytics:ListSnapshots"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "kinesisanalytics:DescribeSnapshot",
+        "kinesisanalytics:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "kinesisanalytics:DescribeSnapshot",
+        "kinesisanalytics:TagResource",
+        "kinesisanalytics:UntagResource",
+        "kinesisanalytics:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::KinesisAnalyticsV2::Snapshot"
+}

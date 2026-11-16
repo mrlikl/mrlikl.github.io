@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-08T07:01:01.212111Z",
+  "lastUpdated": "2026-11-15T07:40:22.510932Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -665,6 +665,11 @@
       "filename": "AWS_Athena_PreparedStatement.json",
       "hasHandlers": true,
       "typeName": "AWS::Athena::PreparedStatement"
+    },
+    {
+      "filename": "AWS_Athena_SystemTables.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Athena::SystemTables"
     },
     {
       "filename": "AWS_Athena_WorkGroup.json",
@@ -1542,6 +1547,11 @@
       "typeName": "AWS::CloudWatch::AlarmMuteRule"
     },
     {
+      "filename": "AWS_CloudWatch_Alert.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudWatch::Alert"
+    },
+    {
       "filename": "AWS_CloudWatch_AnomalyDetector.json",
       "hasHandlers": false,
       "typeName": "AWS::CloudWatch::AnomalyDetector"
@@ -1585,6 +1595,11 @@
       "filename": "AWS_CloudWatch_LogAlarm.json",
       "hasHandlers": true,
       "typeName": "AWS::CloudWatch::LogAlarm"
+    },
+    {
+      "filename": "AWS_CloudWatch_MetricDataQueryDefinition.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudWatch::MetricDataQueryDefinition"
     },
     {
       "filename": "AWS_CloudWatch_MetricStream.json",
@@ -2243,7 +2258,7 @@
     },
     {
       "filename": "AWS_DMS_ReplicationInstance.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::DMS::ReplicationInstance"
     },
     {
@@ -2673,7 +2688,7 @@
     },
     {
       "filename": "AWS_DocDB_DBInstance.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::DocDB::DBInstance"
     },
     {
@@ -3082,6 +3097,11 @@
       "typeName": "AWS::EC2::SubnetCidrBlock"
     },
     {
+      "filename": "AWS_EC2_SubnetCidrReservation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::SubnetCidrReservation"
+    },
+    {
       "filename": "AWS_EC2_SubnetNetworkAclAssociation.json",
       "hasHandlers": true,
       "typeName": "AWS::EC2::SubnetNetworkAclAssociation"
@@ -3165,6 +3185,11 @@
       "filename": "AWS_EC2_TransitGatewayMulticastGroupSource.json",
       "hasHandlers": true,
       "typeName": "AWS::EC2::TransitGatewayMulticastGroupSource"
+    },
+    {
+      "filename": "AWS_EC2_TransitGatewayNetworkFunctionAttachment.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::TransitGatewayNetworkFunctionAttachment"
     },
     {
       "filename": "AWS_EC2_TransitGatewayPeeringAttachment.json",
@@ -4932,6 +4957,11 @@
       "typeName": "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource"
     },
     {
+      "filename": "AWS_KinesisAnalyticsV2_Snapshot.json",
+      "hasHandlers": true,
+      "typeName": "AWS::KinesisAnalyticsV2::Snapshot"
+    },
+    {
       "filename": "AWS_KinesisAnalytics_Application.json",
       "hasHandlers": false,
       "typeName": "AWS::KinesisAnalytics::Application"
@@ -5897,6 +5927,16 @@
       "typeName": "AWS::NetworkManager::ConnectPeer"
     },
     {
+      "filename": "AWS_NetworkManager_ContextStore.json",
+      "hasHandlers": true,
+      "typeName": "AWS::NetworkManager::ContextStore"
+    },
+    {
+      "filename": "AWS_NetworkManager_ContextStoreAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::NetworkManager::ContextStoreAssociation"
+    },
+    {
       "filename": "AWS_NetworkManager_CoreNetwork.json",
       "hasHandlers": true,
       "typeName": "AWS::NetworkManager::CoreNetwork"
@@ -5975,6 +6015,11 @@
       "filename": "AWS_NetworkMonitor_Probe.json",
       "hasHandlers": true,
       "typeName": "AWS::NetworkMonitor::Probe"
+    },
+    {
+      "filename": "AWS_NetworkSecurityManager_Deployment.json",
+      "hasHandlers": true,
+      "typeName": "AWS::NetworkSecurityManager::Deployment"
     },
     {
       "filename": "AWS_NetworkSecurityManager_Policy.json",
@@ -7132,6 +7177,11 @@
       "typeName": "AWS::Route53::KeySigningKey"
     },
     {
+      "filename": "AWS_Route53_QueryLoggingConfig.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Route53::QueryLoggingConfig"
+    },
+    {
       "filename": "AWS_Route53_RecordSet.json",
       "hasHandlers": true,
       "typeName": "AWS::Route53::RecordSet"
@@ -7145,6 +7195,11 @@
       "filename": "AWS_Route53_TrafficPolicy.json",
       "hasHandlers": true,
       "typeName": "AWS::Route53::TrafficPolicy"
+    },
+    {
+      "filename": "AWS_Route53_TrafficPolicyInstance.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Route53::TrafficPolicyInstance"
     },
     {
       "filename": "AWS_S3Express_AccessPoint.json",
@@ -7565,6 +7620,11 @@
       "filename": "AWS_SSM_CloudConnector.json",
       "hasHandlers": true,
       "typeName": "AWS::SSM::CloudConnector"
+    },
+    {
+      "filename": "AWS_SSM_DefaultHostManagementConfiguration.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SSM::DefaultHostManagementConfiguration"
     },
     {
       "filename": "AWS_SSM_Document.json",
@@ -8317,6 +8377,11 @@
       "typeName": "AWS::Timestream::Database"
     },
     {
+      "filename": "AWS_Timestream_InfluxDBBackup.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Timestream::InfluxDBBackup"
+    },
+    {
       "filename": "AWS_Timestream_InfluxDBCluster.json",
       "hasHandlers": true,
       "typeName": "AWS::Timestream::InfluxDBCluster"
@@ -8642,9 +8707,19 @@
       "typeName": "AWS::WellArchitected::AgentGoal"
     },
     {
+      "filename": "AWS_WellArchitected_AgentOrganizationalProfile.json",
+      "hasHandlers": true,
+      "typeName": "AWS::WellArchitected::AgentOrganizationalProfile"
+    },
+    {
       "filename": "AWS_WellArchitected_AgentProfile.json",
       "hasHandlers": true,
       "typeName": "AWS::WellArchitected::AgentProfile"
+    },
+    {
+      "filename": "AWS_WellArchitected_AgentProfilePolicy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::WellArchitected::AgentProfilePolicy"
     },
     {
       "filename": "AWS_WellArchitected_Lens.json",
@@ -8857,5 +8932,5 @@
       "typeName": "AWS::XRay::TransactionSearchConfig"
     }
   ],
-  "totalSchemas": 1771
+  "totalSchemas": 1786
 }

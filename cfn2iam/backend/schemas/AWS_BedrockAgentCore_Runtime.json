@@ -24,7 +24,8 @@
         "ec2:DescribeSubnets",
         "ec2:DescribeSecurityGroups",
         "ec2:CreateNetworkInterface"
-      ]
+      ],
+      "timeoutInMinutes": 35
     },
     "delete": {
       "permissions": [
@@ -34,7 +35,7 @@
         "bedrock-agentcore:GetAgentRuntime",
         "bedrock-agentcore:GetAgentRuntimeEndpoint"
       ],
-      "timeoutInMinutes": 60
+      "timeoutInMinutes": 130
     },
     "list": {
       "permissions": [
@@ -73,7 +74,8 @@
         "ec2:DescribeSubnets",
         "ec2:DescribeSecurityGroups",
         "ec2:CreateNetworkInterface"
-      ]
+      ],
+      "timeoutInMinutes": 35
     }
   },
   "typeName": "AWS::BedrockAgentCore::Runtime"

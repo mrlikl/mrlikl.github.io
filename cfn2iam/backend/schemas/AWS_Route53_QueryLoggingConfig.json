@@ -1,0 +1,25 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53:CreateQueryLoggingConfig"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53:DeleteQueryLoggingConfig"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "route53:ListQueryLoggingConfigs"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53:GetQueryLoggingConfig"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53::QueryLoggingConfig"
+}

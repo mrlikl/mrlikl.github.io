@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "networkmanager:AssociateContextStore",
+        "networkmanager:GetContextStoreAssociation"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "networkmanager:DisassociateContextStore",
+        "networkmanager:GetContextStoreAssociation"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "ContextStoreId": {
+            "$ref": "resource-schema.json#/properties/ContextStoreId"
+          }
+        },
+        "required": [
+          "ContextStoreId"
+        ]
+      },
+      "permissions": [
+        "networkmanager:ListContextStoreAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "networkmanager:GetContextStoreAssociation"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkManager::ContextStoreAssociation"
+}

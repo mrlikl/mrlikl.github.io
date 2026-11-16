@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "wellarchitected:CreateAgentOrganizationalProfile",
+        "wellarchitected:GetAgentProfile",
+        "wellarchitected:TagResource",
+        "wellarchitected:ListTagsForResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "wellarchitected:DeleteAgentProfile",
+        "wellarchitected:GetAgentProfile"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "wellarchitected:ListAgentProfiles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "wellarchitected:GetAgentProfile",
+        "wellarchitected:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "wellarchitected:UpdateAgentOrganizationalProfile",
+        "wellarchitected:GetAgentProfile",
+        "wellarchitected:TagResource",
+        "wellarchitected:UntagResource",
+        "wellarchitected:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::WellArchitected::AgentOrganizationalProfile"
+}
