@@ -293,6 +293,12 @@
     "g6f.4xlarge": 1.23517,
     "g6f.large": 0.26264,
     "g6f.xlarge": 0.30879,
+    "g7.12xlarge": 9.26823,
+    "g7.24xlarge": 18.53646,
+    "g7.2xlarge": 3.2765,
+    "g7.48xlarge": 37.07292,
+    "g7.4xlarge": 3.95531,
+    "g7.8xlarge": 5.31292,
     "gr6.4xlarge": 2.0012,
     "gr6.8xlarge": 3.1807,
     "gr6f.4xlarge": 1.38597,
@@ -982,5 +988,5 @@
     "z1d.xlarge": 0.452
   },
   "region": "ap-southeast-2",
-  "updated": "2026-11-01T04:26:03Z"
+  "updated": "2026-11-15T04:49:36Z"
 }
