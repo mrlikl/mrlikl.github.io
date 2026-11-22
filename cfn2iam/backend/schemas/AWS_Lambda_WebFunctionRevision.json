@@ -11,7 +11,8 @@
         "kms:CreateGrant",
         "kms:Decrypt",
         "kms:DescribeKey",
-        "kms:GenerateDataKey"
+        "kms:GenerateDataKey",
+        "lambda:AssociateRuntimeAlias"
       ]
     },
     "delete": {

@@ -1,4 +1,44 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "acm:DescribeCertificate",
+        "es:CreateElasticsearchDomain",
+        "es:DescribeElasticsearchDomain",
+        "es:AddTags",
+        "es:ListTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "es:DeleteElasticsearchDomain",
+        "es:DescribeElasticsearchDomain"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "es:ListDomainNames",
+        "es:DescribeElasticsearchDomains"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "es:DescribeElasticsearchDomain",
+        "es:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "acm:DescribeCertificate",
+        "es:UpgradeElasticsearchDomain",
+        "es:UpdateElasticsearchDomainConfig",
+        "es:DescribeElasticsearchDomain",
+        "es:AddTags",
+        "es:RemoveTags",
+        "es:ListTags"
+      ],
+      "timeoutInMinutes": 270
+    }
+  },
   "typeName": "AWS::Elasticsearch::Domain"
 }

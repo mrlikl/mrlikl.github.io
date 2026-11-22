@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "kms:CreateGrant",
+        "osm:CreateSpace",
+        "osm:GetSpace",
+        "osm:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "osm:DeleteSpace",
+        "osm:GetSpace"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "osm:ListSpaces"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "osm:GetSpace",
+        "osm:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "osm:GetSpace",
+        "osm:ListTagsForResource",
+        "osm:TagResource",
+        "osm:UntagResource",
+        "osm:UpdateSpace"
+      ]
+    }
+  },
+  "typeName": "AWS::OpenSearchMemory::Space"
+}

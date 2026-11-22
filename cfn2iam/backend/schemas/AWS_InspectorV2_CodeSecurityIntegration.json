@@ -11,7 +11,8 @@
       "permissions": [
         "inspector2:DeleteCodeSecurityIntegration",
         "inspector2:GetCodeSecurityIntegration"
-      ]
+      ],
+      "timeoutInMinutes": 15
     },
     "list": {
       "permissions": [

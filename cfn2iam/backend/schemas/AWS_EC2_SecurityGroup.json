@@ -36,6 +36,8 @@
         "ec2:AuthorizeSecurityGroupIngress",
         "ec2:UpdateSecurityGroupRuleDescriptionsIngress",
         "ec2:UpdateSecurityGroupRuleDescriptionsEgress",
+        "ec2:ModifySecurityGroupAttribute",
+        "ec2:ResetSecurityGroupAttribute",
         "ec2:CreateTags",
         "ec2:DeleteTags"
       ]

@@ -4,7 +4,8 @@
       "permissions": [
         "bedrock-agentcore:CreatePaymentConnector",
         "bedrock-agentcore:GetPaymentConnector",
-        "bedrock-agentcore:GetPaymentCredentialProvider"
+        "bedrock-agentcore:GetPaymentCredentialProvider",
+        "iam:GetRole"
       ]
     },
     "delete": {

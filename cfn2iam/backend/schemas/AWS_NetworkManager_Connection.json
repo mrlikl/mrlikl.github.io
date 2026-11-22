@@ -1,0 +1,47 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "networkmanager:CreateConnection",
+        "networkmanager:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "networkmanager:DeleteConnection"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "GlobalNetworkId": {
+            "maxLength": 50,
+            "minLength": 1,
+            "pattern": "^global-network-[a-z0-9-]*$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "GlobalNetworkId"
+        ]
+      },
+      "permissions": [
+        "networkmanager:GetConnections"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "networkmanager:GetConnections",
+        "networkmanager:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "networkmanager:UpdateConnection",
+        "networkmanager:TagResource",
+        "networkmanager:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::NetworkManager::Connection"
+}

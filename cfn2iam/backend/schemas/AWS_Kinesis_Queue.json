@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "kinesis:CreateQueue",
+        "kinesis:AssociateStreamsWithQueue",
+        "kinesis:DescribeQueue",
+        "kinesis:TagResource",
+        "kinesis:ListTagsForResource"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "delete": {
+      "permissions": [
+        "kinesis:DeleteQueue",
+        "kinesis:DescribeQueue"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "list": {
+      "permissions": [
+        "kinesis:ListQueues"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "kinesis:DescribeQueue",
+        "kinesis:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "kinesis:UpdateQueue",
+        "kinesis:DescribeQueue",
+        "kinesis:TagResource",
+        "kinesis:UntagResource",
+        "kinesis:ListTagsForResource"
+      ],
+      "timeoutInMinutes": 60
+    }
+  },
+  "typeName": "AWS::Kinesis::Queue"
+}

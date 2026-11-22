@@ -1,0 +1,43 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53globalresolver:CreateCoreNetworkEndpoint",
+        "route53globalresolver:GetCoreNetworkEndpoint",
+        "route53globalresolver:TagResource",
+        "route53globalresolver:ListTagsForResource",
+        "networkmanager:GetCoreNetwork"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "delete": {
+      "permissions": [
+        "route53globalresolver:DeleteCoreNetworkEndpoint",
+        "route53globalresolver:GetCoreNetworkEndpoint"
+      ],
+      "timeoutInMinutes": 70
+    },
+    "list": {
+      "permissions": [
+        "route53globalresolver:ListCoreNetworkEndpoints"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53globalresolver:GetCoreNetworkEndpoint",
+        "route53globalresolver:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "route53globalresolver:UpdateCoreNetworkEndpoint",
+        "route53globalresolver:GetCoreNetworkEndpoint",
+        "route53globalresolver:TagResource",
+        "route53globalresolver:UntagResource",
+        "route53globalresolver:ListTagsForResource"
+      ],
+      "timeoutInMinutes": 120
+    }
+  },
+  "typeName": "AWS::Route53GlobalResolver::CoreNetworkEndpoint"
+}

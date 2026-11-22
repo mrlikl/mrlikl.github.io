@@ -22,7 +22,6 @@
         "ec2:DescribeTags",
         "kms:DescribeKey",
         "kms:RetireGrant",
-        "kms:CreateGrant",
         "kms:GenerateDataKey",
         "kms:Decrypt"
       ]
@@ -32,7 +31,6 @@
         "ec2:DescribeVerifiedAccessTrustProviders",
         "ec2:DescribeTags",
         "kms:DescribeKey",
-        "kms:GenerateDataKey",
         "kms:Decrypt"
       ]
     },
@@ -41,7 +39,6 @@
         "ec2:DescribeVerifiedAccessTrustProviders",
         "ec2:DescribeTags",
         "kms:DescribeKey",
-        "kms:GenerateDataKey",
         "kms:Decrypt"
       ]
     },

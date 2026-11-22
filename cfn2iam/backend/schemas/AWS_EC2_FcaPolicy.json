@@ -1,0 +1,34 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:CreateNetworkingFlexCostAllocationPolicy",
+        "ec2:CreateTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DeleteNetworkingFlexCostAllocationPolicies"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeNetworkingFlexCostAllocationPolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeNetworkingFlexCostAllocationPolicies"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "ec2:ModifyNetworkingFlexCostAllocationPolicy",
+        "ec2:DescribeNetworkingFlexCostAllocationPolicies",
+        "ec2:CreateTags",
+        "ec2:DeleteTags"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::FcaPolicy"
+}

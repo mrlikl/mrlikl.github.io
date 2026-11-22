@@ -10,7 +10,8 @@
         "bedrock-agentcore:GetWorkloadAccessToken",
         "bedrock-agentcore:GetResourceOauth2Token",
         "secretsmanager:GetSecretValue",
-        "kms:Decrypt"
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
       ]
     },
     "delete": {
@@ -57,7 +58,8 @@
         "bedrock-agentcore:GetWorkloadAccessToken",
         "bedrock-agentcore:GetResourceOauth2Token",
         "secretsmanager:GetSecretValue",
-        "kms:Decrypt"
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
       ]
     }
   },

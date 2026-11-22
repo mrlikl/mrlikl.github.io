@@ -46,6 +46,21 @@
         "iam:DeleteServiceLinkedRole",
         "iam:GetServiceLinkedRoleDeletionStatus"
       ]
+    },
+    "update": {
+      "permissions": [
+        "appstream:CreateImageBuilderStreamingURL",
+        "appstream:DescribeImageBuilders",
+        "appstream:ListTagsForResource",
+        "appstream:StartImageBuilder",
+        "appstream:StopImageBuilder",
+        "appstream:TagResource",
+        "appstream:UntagResource",
+        "appstream:UpdateImageBuilder",
+        "iam:CreateServiceLinkedRole",
+        "iam:DeleteServiceLinkedRole",
+        "iam:GetServiceLinkedRoleDeletionStatus"
+      ]
     }
   },
   "typeName": "AWS::AppStream::ImageBuilder"

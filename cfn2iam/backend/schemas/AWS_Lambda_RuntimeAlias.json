@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lambda:CreateRuntimeAlias",
+        "lambda:GetRuntimeAlias"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lambda:DeleteRuntimeAlias",
+        "lambda:GetRuntimeAlias"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "RuntimeName": {
+            "maxLength": 128,
+            "minLength": 2,
+            "pattern": "^[a-z0-9]([a-z0-9_.-]{0,126})?[a-z0-9]$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "RuntimeName"
+        ]
+      },
+      "permissions": [
+        "lambda:ListRuntimeAliases"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lambda:GetRuntimeAlias"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lambda:UpdateRuntimeAlias",
+        "lambda:GetRuntimeAlias"
+      ]
+    }
+  },
+  "typeName": "AWS::Lambda::RuntimeAlias"
+}

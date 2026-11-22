@@ -1,0 +1,32 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cloudfront:CreateFieldLevelEncryptionProfile"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "cloudfront:GetFieldLevelEncryptionProfile",
+        "cloudfront:DeleteFieldLevelEncryptionProfile"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "cloudfront:ListFieldLevelEncryptionProfiles"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cloudfront:GetFieldLevelEncryptionProfile"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cloudfront:GetFieldLevelEncryptionProfile",
+        "cloudfront:UpdateFieldLevelEncryptionProfile"
+      ]
+    }
+  },
+  "typeName": "AWS::CloudFront::FieldLevelEncryptionProfile"
+}

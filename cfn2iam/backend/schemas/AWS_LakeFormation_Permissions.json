@@ -1,4 +1,32 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lakeformation:GrantPermissions",
+        "lakeformation:GetDataLakeSettings",
+        "lakeformation:ListPermissions",
+        "glue:GetTable",
+        "glue:GetDatabase"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lakeformation:RevokePermissions",
+        "lakeformation:GetDataLakeSettings",
+        "lakeformation:ListPermissions",
+        "glue:GetTable",
+        "glue:GetDatabase"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lakeformation:GrantPermissions",
+        "lakeformation:GetDataLakeSettings",
+        "lakeformation:ListPermissions",
+        "glue:GetTable",
+        "glue:GetDatabase"
+      ]
+    }
+  },
   "typeName": "AWS::LakeFormation::Permissions"
 }

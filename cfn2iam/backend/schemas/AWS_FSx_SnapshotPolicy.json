@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "fsx:CreateSnapshotPolicy",
+        "fsx:DescribeSnapshotPolicies",
+        "fsx:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "fsx:DeleteSnapshotPolicy",
+        "fsx:DescribeSnapshotPolicies"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "fsx:DescribeSnapshotPolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "fsx:DescribeSnapshotPolicies",
+        "fsx:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "fsx:DescribeSnapshotPolicies",
+        "fsx:UpdateSnapshotPolicy",
+        "fsx:TagResource",
+        "fsx:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::FSx::SnapshotPolicy"
+}

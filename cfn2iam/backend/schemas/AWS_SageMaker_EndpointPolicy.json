@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:GetEndpointPolicy",
+        "sagemaker:PutEndpointPolicy"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:GetEndpointPolicy",
+        "sagemaker:DeleteEndpointPolicy"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "EndpointArn": {
+            "maxLength": 2048,
+            "minLength": 20,
+            "pattern": "^arn:aws[a-z\\-]*:sagemaker:[a-z0-9\\-]*:[0-9]{12}:endpoint/",
+            "type": "string"
+          }
+        },
+        "required": [
+          "EndpointArn"
+        ]
+      },
+      "permissions": [
+        "sagemaker:GetEndpointPolicy"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:GetEndpointPolicy"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:GetEndpointPolicy",
+        "sagemaker:PutEndpointPolicy"
+      ]
+    }
+  },
+  "typeName": "AWS::SageMaker::EndpointPolicy"
+}

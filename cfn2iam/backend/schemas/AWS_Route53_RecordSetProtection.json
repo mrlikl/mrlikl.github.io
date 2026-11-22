@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "route53:CreateResourceRecordSetProtections",
+        "route53:ListResourceRecordSetProtections",
+        "route53:ListResourceRecordSets"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "route53:DeleteResourceRecordSetProtections",
+        "route53:ListResourceRecordSetProtections"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "HostedZoneId": {
+            "$ref": "resource-schema.json#/properties/HostedZoneId"
+          }
+        },
+        "required": [
+          "HostedZoneId"
+        ]
+      },
+      "permissions": [
+        "route53:ListResourceRecordSetProtections"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53:ListResourceRecordSetProtections"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53::RecordSetProtection"
+}

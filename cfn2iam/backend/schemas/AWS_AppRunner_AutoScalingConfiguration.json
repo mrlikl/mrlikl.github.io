@@ -19,7 +19,8 @@
     },
     "read": {
       "permissions": [
-        "apprunner:DescribeAutoScalingConfiguration"
+        "apprunner:DescribeAutoScalingConfiguration",
+        "apprunner:ListTagsForResource"
       ]
     }
   },

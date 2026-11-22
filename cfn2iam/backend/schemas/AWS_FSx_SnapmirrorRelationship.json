@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "fsx:CreateSnapmirrorRelationship",
+        "fsx:DescribeSnapmirrorRelationships",
+        "fsx:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "fsx:DeleteSnapmirrorRelationship",
+        "fsx:DescribeSnapmirrorRelationships"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "fsx:DescribeSnapmirrorRelationships"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "fsx:DescribeSnapmirrorRelationships",
+        "fsx:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "fsx:DescribeSnapmirrorRelationships",
+        "fsx:UpdateSnapmirrorRelationship",
+        "fsx:TagResource",
+        "fsx:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::FSx::SnapmirrorRelationship"
+}

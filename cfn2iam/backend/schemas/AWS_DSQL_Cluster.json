@@ -3,16 +3,20 @@
     "create": {
       "permissions": [
         "dsql:CreateCluster",
+        "dsql:CreateClusterFromSource",
         "dsql:UpdateCluster",
+        "dsql:UpdateClusterRecoveryConfiguration",
         "dsql:GetCluster",
         "dsql:GetClusterPolicy",
         "dsql:TagResource",
+        "dsql:UntagResource",
         "dsql:GetVpcEndpointServiceName",
         "dsql:ListTagsForResource",
         "iam:CreateServiceLinkedRole",
         "dsql:PutMultiRegionProperties",
         "dsql:AddPeerCluster",
         "dsql:PutClusterPolicy",
+        "dsql:DeleteClusterPolicy",
         "dsql:PutWitnessRegion",
         "kms:Decrypt",
         "kms:Encrypt",
@@ -44,6 +48,7 @@
     "update": {
       "permissions": [
         "dsql:UpdateCluster",
+        "dsql:UpdateClusterRecoveryConfiguration",
         "dsql:GetCluster",
         "dsql:GetClusterPolicy",
         "dsql:UntagResource",

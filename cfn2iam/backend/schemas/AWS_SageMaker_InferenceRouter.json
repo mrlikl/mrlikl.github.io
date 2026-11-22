@@ -1,0 +1,42 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "sagemaker:CreateInferenceRouter",
+        "sagemaker:DescribeInferenceRouter",
+        "sagemaker:AddTags",
+        "sagemaker:ListTags"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "delete": {
+      "permissions": [
+        "sagemaker:DeleteInferenceRouter",
+        "sagemaker:DescribeInferenceRouter"
+      ],
+      "timeoutInMinutes": 60
+    },
+    "list": {
+      "permissions": [
+        "sagemaker:ListInferenceRouters"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "sagemaker:DescribeInferenceRouter",
+        "sagemaker:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "sagemaker:UpdateInferenceRouter",
+        "sagemaker:DescribeInferenceRouter",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteTags",
+        "sagemaker:ListTags"
+      ],
+      "timeoutInMinutes": 60
+    }
+  },
+  "typeName": "AWS::SageMaker::InferenceRouter"
+}
