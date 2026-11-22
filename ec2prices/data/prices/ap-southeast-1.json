@@ -896,6 +896,10 @@
     "t8i.micro": 0.01584,
     "t8i.nano": 0.00792,
     "t8i.small": 0.03168,
+    "t9g.medium": 0.05258,
+    "t9g.micro": 0.01314,
+    "t9g.nano": 0.00657,
+    "t9g.small": 0.02629,
     "u-12tb1.112xlarge": 131.733,
     "u-3tb1.56xlarge": 32.93,
     "u-6tb1.112xlarge": 65.867,
@@ -948,5 +952,5 @@
     "z1d.xlarge": 0.452
   },
   "region": "ap-southeast-1",
-  "updated": "2026-10-18T03:02:28Z"
+  "updated": "2026-11-22T05:05:12Z"
 }
