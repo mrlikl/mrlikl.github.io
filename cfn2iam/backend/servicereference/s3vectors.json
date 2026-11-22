@@ -269,6 +269,19 @@
    "resources": [
     "Index"
    ]
+  },
+  "updatemetadataconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "s3vectors:VectorBucketTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMetadataConfiguration",
+   "resources": [
+    "Index"
+   ]
   }
  },
  "conditionKeys": {

@@ -388,6 +388,16 @@
    "name": "TagResource",
    "resources": []
   },
+  "transcribeaudio": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "TranscribeAudio",
+   "resources": [
+    "vocabulary",
+    "vocabularyfilter"
+   ]
+  },
   "untagresource": {
    "conditionKeys": [
     "aws:TagKeys"

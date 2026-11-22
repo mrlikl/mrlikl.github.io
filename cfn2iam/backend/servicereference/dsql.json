@@ -9,6 +9,16 @@
     "Cluster"
    ]
   },
+  "allowvendedlogdeliveryforresource": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": [
+    "Cluster"
+   ]
+  },
   "createcluster": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",

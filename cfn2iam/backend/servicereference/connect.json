@@ -21,6 +21,19 @@
     "instance"
    ]
   },
+  "approvetimeoff": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ApproveTimeOff",
+   "resources": [
+    "user"
+   ]
+  },
   "associateanalyticsdataset": {
    "conditionKeys": [
     "connect:InstanceId"
@@ -399,6 +412,19 @@
    "name": "BatchUpdateDataTableValue",
    "resources": [
     "data-table"
+   ]
+  },
+  "canceltimeoff": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelTimeOff",
+   "resources": [
+    "user"
    ]
   },
   "claimphonenumber": {
@@ -858,6 +884,19 @@
    "name": "CreateTaskTemplate",
    "resources": [
     "task-template"
+   ]
+  },
+  "createtimeoff": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateTimeOff",
+   "resources": [
+    "user"
    ]
   },
   "createtrafficdistributiongroup": {
@@ -2248,6 +2287,16 @@
     "task-template"
    ]
   },
+  "gettimeoff": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "name": "GetTimeOff",
+   "resources": [
+    "user"
+   ]
+  },
   "gettrafficdistribution": {
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"
@@ -3172,6 +3221,19 @@
     "instance"
    ]
   },
+  "puttimeoffbalance": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutTimeOffBalance",
+   "resources": [
+    "user"
+   ]
+  },
   "putuserstatus": {
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}",
@@ -3184,6 +3246,19 @@
    "resources": [
     "agent-status",
     "instance",
+    "user"
+   ]
+  },
+  "rejecttimeoff": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "connect:InstanceId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectTimeOff",
+   "resources": [
     "user"
    ]
   },

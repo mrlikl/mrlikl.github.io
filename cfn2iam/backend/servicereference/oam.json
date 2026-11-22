@@ -11,6 +11,7 @@
    ],
    "name": "CreateLink",
    "resources": [
+    "Link",
     "Sink"
    ]
   },
@@ -151,7 +152,8 @@
    ],
    "name": "UpdateLink",
    "resources": [
-    "Link"
+    "Link",
+    "Sink"
    ]
   }
  },

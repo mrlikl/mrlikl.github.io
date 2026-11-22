@@ -40,6 +40,16 @@
     "Domain"
    ]
   },
+  "createdataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataset",
+   "resources": [
+    "Dataset",
+    "Domain"
+   ]
+  },
   "createdomain": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -102,6 +112,16 @@
     "Domain"
    ]
   },
+  "deletedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataset",
+   "resources": [
+    "Dataset",
+    "Domain"
+   ]
+  },
   "deletedomain": {
    "flags": [
     "IsWrite"
@@ -135,6 +155,13 @@
     "Integration"
    ]
   },
+  "getdataset": {
+   "name": "GetDataset",
+   "resources": [
+    "Dataset",
+    "Domain"
+   ]
+  },
   "getdomain": {
    "name": "GetDomain",
    "resources": [
@@ -152,6 +179,16 @@
    "resources": [
     "Domain",
     "Integration"
+   ]
+  },
+  "getmedicalcodingjob": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetMedicalCodingJob",
+   "resources": [
+    "Domain",
+    "MedicalCodingJob"
    ]
   },
   "getmedicalscribelisteningsession": {
@@ -226,6 +263,15 @@
    "resources": [
     "Domain",
     "Integration"
+   ]
+  },
+  "listdatasets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasets",
+   "resources": [
+    "Domain"
    ]
   },
   "listdomains": {
@@ -353,6 +399,17 @@
     "Integration"
    ]
   },
+  "startmedicalcodingjob": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartMedicalCodingJob",
+   "resources": [
+    "Domain",
+    "MedicalCodingJob"
+   ]
+  },
   "startmedicalscribelisteningsession": {
    "flags": [
     "IsDataPlane",
@@ -373,6 +430,16 @@
    "resources": [
     "Domain",
     "PatientInsightsJob"
+   ]
+  },
+  "submitfeedback": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "SubmitFeedback",
+   "resources": [
+    "Domain"
    ]
   },
   "submitmedicationrenewal": {
@@ -468,6 +535,14 @@
     "aws:ResourceTag/${TagKey}"
    ]
   },
+  "Dataset": {
+   "arnFormats": [
+    "arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}/dataset/${DatasetId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
   "Domain": {
    "arnFormats": [
     "arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}"
@@ -479,6 +554,14 @@
   "Integration": {
    "arnFormats": [
     "arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}/integration/${IntegrationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "MedicalCodingJob": {
+   "arnFormats": [
+    "arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}/medical-coding-job/${JobId}"
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"

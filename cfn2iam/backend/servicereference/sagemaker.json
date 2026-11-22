@@ -19,6 +19,15 @@
     "experiment-trial-component"
    ]
   },
+  "addinferencegateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AddInferenceGateway",
+   "resources": [
+    "global-inference-gateway"
+   ]
+  },
   "addtags": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -64,8 +73,10 @@
     "experiment",
     "experiment-trial",
     "experiment-trial-component",
+    "extension",
     "feature-group",
     "flow-definition",
+    "global-inference-gateway",
     "hub",
     "hub-content",
     "human-task-ui",
@@ -73,6 +84,7 @@
     "image",
     "inference-component",
     "inference-recommendations-job",
+    "inference-router",
     "job",
     "labeling-job",
     "mlflow-app",
@@ -93,6 +105,7 @@
     "processing-job",
     "project",
     "reserved-capacity",
+    "sm-capacity-reservation",
     "space",
     "studio-lifecycle-config",
     "training-job",
@@ -417,6 +430,20 @@
     "training-plan"
    ]
   },
+  "createclusterextension": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateClusterExtension",
+   "resources": [
+    "cluster",
+    "extension"
+   ]
+  },
   "createclusterschedulerconfig": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -663,6 +690,19 @@
     "flow-definition"
    ]
   },
+  "createglobalinferencegateway": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateGlobalInferenceGateway",
+   "resources": [
+    "global-inference-gateway"
+   ]
+  },
   "createhub": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -796,6 +836,19 @@
    "name": "CreateInferenceRecommendationsJob",
    "resources": [
     "inference-recommendations-job"
+   ]
+  },
+  "createinferencerouter": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateInferenceRouter",
+   "resources": [
+    "inference-router"
    ]
   },
   "createjob": {
@@ -1490,6 +1543,16 @@
     "cluster"
    ]
   },
+  "deleteclusterextension": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteClusterExtension",
+   "resources": [
+    "cluster",
+    "extension"
+   ]
+  },
   "deleteclusterschedulerconfig": {
    "flags": [
     "IsWrite"
@@ -1598,6 +1661,16 @@
     "endpoint-config"
    ]
   },
+  "deleteendpointpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteEndpointPolicy",
+   "resources": [
+    "endpoint"
+   ]
+  },
   "deleteexperiment": {
    "flags": [
     "IsWrite"
@@ -1623,6 +1696,15 @@
    "name": "DeleteFlowDefinition",
    "resources": [
     "flow-definition"
+   ]
+  },
+  "deleteglobalinferencegateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteGlobalInferenceGateway",
+   "resources": [
+    "global-inference-gateway"
    ]
   },
   "deletehub": {
@@ -1715,6 +1797,15 @@
    "name": "DeleteInferenceExperiment",
    "resources": [
     "inference-experiment"
+   ]
+  },
+  "deleteinferencerouter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteInferenceRouter",
+   "resources": [
+    "inference-router"
    ]
   },
   "deletejob": {
@@ -1990,8 +2081,10 @@
     "experiment",
     "experiment-trial",
     "experiment-trial-component",
+    "extension",
     "feature-group",
     "flow-definition",
+    "global-inference-gateway",
     "hub",
     "hub-content",
     "human-task-ui",
@@ -1999,6 +2092,7 @@
     "image",
     "inference-component",
     "inference-recommendations-job",
+    "inference-router",
     "job",
     "labeling-job",
     "mlflow-app",
@@ -2019,6 +2113,7 @@
     "processing-job",
     "project",
     "reserved-capacity",
+    "sm-capacity-reservation",
     "space",
     "studio-lifecycle-config",
     "training-job",
@@ -2170,6 +2265,12 @@
     "automl-job"
    ]
   },
+  "describecapacityreservation": {
+   "name": "DescribeCapacityReservation",
+   "resources": [
+    "sm-capacity-reservation"
+   ]
+  },
   "describecluster": {
    "name": "DescribeCluster",
    "resources": [
@@ -2180,6 +2281,13 @@
    "name": "DescribeClusterEvent",
    "resources": [
     "cluster"
+   ]
+  },
+  "describeclusterextension": {
+   "name": "DescribeClusterExtension",
+   "resources": [
+    "cluster",
+    "extension"
    ]
   },
   "describeclusterinference": {
@@ -2296,6 +2404,12 @@
     "flow-definition"
    ]
   },
+  "describeglobalinferencegateway": {
+   "name": "DescribeGlobalInferenceGateway",
+   "resources": [
+    "global-inference-gateway"
+   ]
+  },
   "describehub": {
    "name": "DescribeHub",
    "resources": [
@@ -2355,6 +2469,12 @@
    "name": "DescribeInferenceRecommendationsJob",
    "resources": [
     "inference-recommendations-job"
+   ]
+  },
+  "describeinferencerouter": {
+   "name": "DescribeInferenceRouter",
+   "resources": [
+    "inference-router"
    ]
   },
   "describejob": {
@@ -2482,6 +2602,7 @@
   },
   "describepipeline": {
    "conditionKeys": [
+    "sagemaker:PipelineVersionAlias",
     "sagemaker:PipelineVersionId"
    ],
    "name": "DescribePipeline",
@@ -2490,6 +2611,10 @@
    ]
   },
   "describepipelinedefinitionforexecution": {
+   "conditionKeys": [
+    "sagemaker:PipelineVersionAlias",
+    "sagemaker:PipelineVersionId"
+   ],
    "name": "DescribePipelineDefinitionForExecution",
    "resources": [
     "pipeline-execution"
@@ -2517,6 +2642,12 @@
    "name": "DescribeReservedCapacity",
    "resources": [
     "reserved-capacity"
+   ]
+  },
+  "describeresourceassociations": {
+   "name": "DescribeResourceAssociations",
+   "resources": [
+    "sm-capacity-reservation"
    ]
   },
   "describesharedmodel": {
@@ -2664,6 +2795,12 @@
    "name": "ExtendTrainingPlan",
    "resources": []
   },
+  "getcapacityreservationusage": {
+   "name": "GetCapacityReservationUsage",
+   "resources": [
+    "sm-capacity-reservation"
+   ]
+  },
   "getdeployments": {
    "name": "GetDeployments",
    "resources": [
@@ -2680,6 +2817,12 @@
    "name": "GetDeviceRegistration",
    "resources": [
     "device"
+   ]
+  },
+  "getendpointpolicy": {
+   "name": "GetEndpointPolicy",
+   "resources": [
+    "endpoint"
    ]
   },
   "getlineagegrouppolicy": {
@@ -2753,6 +2896,7 @@
   },
   "invokeendpoint": {
    "conditionKeys": [
+    "sagemaker:SourceInferenceRouterArn",
     "sagemaker:TargetModel"
    ],
    "flags": [
@@ -2765,6 +2909,9 @@
    ]
   },
   "invokeendpointasync": {
+   "conditionKeys": [
+    "sagemaker:SourceInferenceRouterArn"
+   ],
    "flags": [
     "IsDataPlane"
    ],
@@ -2778,6 +2925,30 @@
    "resources": [
     "endpoint",
     "inference-component"
+   ]
+  },
+  "invokeglobalinferencegateway": {
+   "name": "InvokeGlobalInferenceGateway",
+   "resources": [
+    "global-inference-gateway"
+   ]
+  },
+  "invokeglobalinferencegatewaywithresponsestream": {
+   "name": "InvokeGlobalInferenceGatewayWithResponseStream",
+   "resources": [
+    "global-inference-gateway"
+   ]
+  },
+  "invokeinferencerouter": {
+   "name": "InvokeInferenceRouter",
+   "resources": [
+    "inference-router"
+   ]
+  },
+  "invokeinferencerouterasync": {
+   "name": "InvokeInferenceRouterAsync",
+   "resources": [
+    "inference-router"
    ]
   },
   "listactions": {
@@ -2867,6 +3038,13 @@
    "name": "ListCandidatesForAutoMLJob",
    "resources": []
   },
+  "listcapacityreservations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCapacityReservations",
+   "resources": []
+  },
   "listclusterevents": {
    "flags": [
     "IsList"
@@ -2875,6 +3053,22 @@
    "resources": [
     "cluster"
    ]
+  },
+  "listclusterextensions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClusterExtensions",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "listclusterextensionversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClusterExtensionVersions",
+   "resources": []
   },
   "listclusternodes": {
    "flags": [
@@ -3004,6 +3198,13 @@
    "name": "ListFlowDefinitions",
    "resources": []
   },
+  "listglobalinferencegateways": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListGlobalInferenceGateways",
+   "resources": []
+  },
   "listhubcontents": {
    "flags": [
     "IsList"
@@ -3081,6 +3282,15 @@
    "name": "ListInferenceExperiments",
    "resources": []
   },
+  "listinferencegateways": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInferenceGateways",
+   "resources": [
+    "global-inference-gateway"
+   ]
+  },
   "listinferencerecommendationsjobs": {
    "flags": [
     "IsList"
@@ -3093,6 +3303,13 @@
     "IsList"
    ],
    "name": "ListInferenceRecommendationsJobSteps",
+   "resources": []
+  },
+  "listinferencerouters": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListInferenceRouters",
    "resources": []
   },
   "listjobs": {
@@ -3279,6 +3496,10 @@
    "resources": []
   },
   "listpipelineexecutions": {
+   "conditionKeys": [
+    "sagemaker:PipelineVersionAlias",
+    "sagemaker:PipelineVersionId"
+   ],
    "flags": [
     "IsList"
    ],
@@ -3442,8 +3663,10 @@
     "experiment",
     "experiment-trial",
     "experiment-trial-component",
+    "extension",
     "feature-group",
     "flow-definition",
+    "global-inference-gateway",
     "hub",
     "hub-content",
     "human-task-ui",
@@ -3451,6 +3674,7 @@
     "image",
     "inference-component",
     "inference-recommendations-job",
+    "inference-router",
     "job",
     "labeling-job",
     "mlflow-app",
@@ -3472,6 +3696,7 @@
     "processing-job",
     "project",
     "reserved-capacity",
+    "sm-capacity-reservation",
     "space",
     "studio-lifecycle-config",
     "training-job",
@@ -3562,6 +3787,16 @@
    "name": "ListWorkteams",
    "resources": []
   },
+  "putendpointpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutEndpointPolicy",
+   "resources": [
+    "endpoint"
+   ]
+  },
   "putlineagegrouppolicy": {
    "flags": [
     "IsWrite"
@@ -3617,6 +3852,15 @@
    "name": "RegisterDevices",
    "resources": [
     "device"
+   ]
+  },
+  "removeinferencegateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemoveInferenceGateway",
+   "resources": [
+    "global-inference-gateway"
    ]
   },
   "renderuitemplate": {
@@ -3790,6 +4034,7 @@
   },
   "startpipelineexecution": {
    "conditionKeys": [
+    "sagemaker:PipelineVersionAlias",
     "sagemaker:PipelineVersionId"
    ],
    "flags": [
@@ -3960,6 +4205,10 @@
    ]
   },
   "stoppipelineexecution": {
+   "conditionKeys": [
+    "sagemaker:PipelineVersionAlias",
+    "sagemaker:PipelineVersionId"
+   ],
    "flags": [
     "IsWrite"
    ],
@@ -4055,6 +4304,16 @@
     "cluster",
     "reserved-capacity",
     "training-plan"
+   ]
+  },
+  "updateclusterextension": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateClusterExtension",
+   "resources": [
+    "cluster",
+    "extension"
    ]
   },
   "updateclusterinference": {
@@ -4194,6 +4453,15 @@
     "feature-group"
    ]
   },
+  "updateglobalinferencegateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateGlobalInferenceGateway",
+   "resources": [
+    "global-inference-gateway"
+   ]
+  },
   "updatehub": {
    "flags": [
     "IsWrite"
@@ -4266,6 +4534,15 @@
    "name": "UpdateInferenceExperiment",
    "resources": [
     "inference-experiment"
+   ]
+  },
+  "updateinferencerouter": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateInferenceRouter",
+   "resources": [
+    "inference-router"
    ]
   },
   "updatemlflowapp": {
@@ -4409,6 +4686,7 @@
   },
   "updatepipelineversion": {
    "conditionKeys": [
+    "sagemaker:PipelineVersionAlias",
     "sagemaker:PipelineVersionId"
    ],
    "flags": [
@@ -4682,6 +4960,9 @@
   "sagemaker:OwnerUserProfileArn": [
    "ARN"
   ],
+  "sagemaker:PipelineVersionAlias": [
+   "String"
+  ],
   "sagemaker:PipelineVersionId": [
    "String"
   ],
@@ -4705,6 +4986,9 @@
   ],
   "sagemaker:ServerlessMemorySize": [
    "Numeric"
+  ],
+  "sagemaker:SourceInferenceRouterArn": [
+   "ARN"
   ],
   "sagemaker:SpaceSharingType": [
    "String"
@@ -4978,6 +5262,15 @@
     "sagemaker:ResourceTag/${TagKey}"
    ]
   },
+  "extension": {
+   "arnFormats": [
+    "arn:${Partition}:sagemaker:${Region}:${Account}:extension/${ClusterIdentifier}/${ExtensionName}/${ExtensionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "sagemaker:ResourceTag/${TagKey}"
+   ]
+  },
   "feature-group": {
    "arnFormats": [
     "arn:${Partition}:sagemaker:${Region}:${Account}:feature-group/${FeatureGroupName}"
@@ -4990,6 +5283,15 @@
   "flow-definition": {
    "arnFormats": [
     "arn:${Partition}:sagemaker:${Region}:${Account}:flow-definition/${FlowDefinitionName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "sagemaker:ResourceTag/${TagKey}"
+   ]
+  },
+  "global-inference-gateway": {
+   "arnFormats": [
+    "arn:${Partition}:sagemaker:${Region}:${Account}:global-inference-gateway/${GlobalInferenceGatewayId}"
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}",
@@ -5076,6 +5378,15 @@
   "inference-recommendations-job": {
    "arnFormats": [
     "arn:${Partition}:sagemaker:${Region}:${Account}:inference-recommendations-job/${InferenceRecommendationsJobName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "sagemaker:ResourceTag/${TagKey}"
+   ]
+  },
+  "inference-router": {
+   "arnFormats": [
+    "arn:${Partition}:sagemaker:${Region}:${Account}:inference-router/${InferenceRouterName}"
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}",
@@ -5306,6 +5617,15 @@
   "shared-model-event": {
    "arnFormats": [
     "arn:${Partition}:sagemaker:${Region}:${Account}:shared-model-event/${EventId}"
+   ]
+  },
+  "sm-capacity-reservation": {
+   "arnFormats": [
+    "arn:${Partition}:sagemaker:${Region}:${Account}:sm-capacity-reservation/${CapacityReservationId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "sagemaker:ResourceTag/${TagKey}"
    ]
   },
   "space": {

@@ -1481,6 +1481,9 @@
     "bedrock:PromptRouterArn",
     "bedrock:ServiceTier"
    ],
+   "flags": [
+    "IsDataPlane"
+   ],
    "name": "InvokeModelWithResponseStream",
    "resources": [
     "application-inference-profile",

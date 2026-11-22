@@ -20,6 +20,55 @@
     "agentspace"
    ]
   },
+  "batchcreateaccessprofileassignment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateAccessProfileAssignment",
+   "resources": [
+    "access-profile",
+    "agentspace"
+   ]
+  },
+  "batchdeleteaccessprofileassignment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteAccessProfileAssignment",
+   "resources": [
+    "access-profile",
+    "agentspace"
+   ]
+  },
+  "batchdeleteaccessprofileentitlement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeleteAccessProfileEntitlement",
+   "resources": [
+    "access-profile",
+    "agentspace"
+   ]
+  },
+  "batchputaccessprofileentitlement": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchPutAccessProfileEntitlement",
+   "resources": [
+    "access-profile",
+    "agentspace"
+   ]
+  },
+  "createaccessprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAccessProfile",
+   "resources": [
+    "agentspace"
+   ]
+  },
   "createaccesstoken": {
    "flags": [
     "IsWrite"
@@ -121,6 +170,16 @@
    ],
    "name": "CreateTrigger",
    "resources": [
+    "agentspace"
+   ]
+  },
+  "deleteaccessprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAccessProfile",
+   "resources": [
+    "access-profile",
     "agentspace"
    ]
   },
@@ -269,6 +328,13 @@
     "agentspace"
    ]
   },
+  "getaccessprofile": {
+   "name": "GetAccessProfile",
+   "resources": [
+    "access-profile",
+    "agentspace"
+   ]
+  },
   "getaccesstoken": {
    "name": "GetAccessToken",
    "resources": [
@@ -414,6 +480,35 @@
     "IsWrite"
    ],
    "name": "InitiateChatForCase",
+   "resources": [
+    "agentspace"
+   ]
+  },
+  "listaccessprofileassignments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessProfileAssignments",
+   "resources": [
+    "access-profile",
+    "agentspace"
+   ]
+  },
+  "listaccessprofileentitlements": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessProfileEntitlements",
+   "resources": [
+    "access-profile",
+    "agentspace"
+   ]
+  },
+  "listaccessprofiles": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAccessProfiles",
    "resources": [
     "agentspace"
    ]
@@ -814,6 +909,25 @@
     "service"
    ]
   },
+  "updateaccessprofile": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccessProfile",
+   "resources": [
+    "access-profile",
+    "agentspace"
+   ]
+  },
+  "updateaccessprofilesorder": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAccessProfilesOrder",
+   "resources": [
+    "agentspace"
+   ]
+  },
   "updateagentspace": {
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"
@@ -982,6 +1096,11 @@
   ]
  },
  "resources": {
+  "access-profile": {
+   "arnFormats": [
+    "arn:${Partition}:aidevops:${Region}:${Account}:agentspace/${AgentSpaceId}/access-profile/${AccessProfileId}"
+   ]
+  },
   "agentspace": {
    "arnFormats": [
     "arn:${Partition}:aidevops:${Region}:${Account}:agentspace/${AgentSpaceId}"

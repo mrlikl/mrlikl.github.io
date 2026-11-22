@@ -504,6 +504,13 @@
    "name": "ListContainerAssociations",
    "resources": []
   },
+  "listcontextstores": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListContextStores",
+   "resources": []
+  },
   "listfirewallpolicies": {
    "flags": [
     "IsList"
@@ -572,6 +579,13 @@
    "resources": [
     "ProxyRuleGroup"
    ]
+  },
+  "listresourcesincontextstore": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListResourcesInContextStore",
+   "resources": []
   },
   "listrulegroups": {
    "flags": [

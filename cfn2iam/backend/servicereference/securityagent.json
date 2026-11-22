@@ -449,6 +449,12 @@
     "Integration"
    ]
   },
+  "getpentestestimate": {
+   "name": "GetPentestEstimate",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
   "getproviderregistrationmanifest": {
    "name": "GetProviderRegistrationManifest",
    "resources": []
@@ -773,6 +779,15 @@
     "AgentSpace"
    ]
   },
+  "startpentestestimationrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartPentestEstimationRun",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
   "startpentestjob": {
    "flags": [
     "IsWrite"
@@ -805,6 +820,15 @@
     "IsWrite"
    ],
    "name": "StopCodeReviewJob",
+   "resources": [
+    "AgentSpace"
+   ]
+  },
+  "stoppentestestimationrun": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopPentestEstimationRun",
    "resources": [
     "AgentSpace"
    ]

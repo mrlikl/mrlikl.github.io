@@ -16,6 +16,8 @@
     "saml:sub",
     "saml:sub_type",
     "sts:ExternalId",
+    "sts:RequestContext/${ContextKey}",
+    "sts:RequestContextProviders",
     "sts:RoleSessionName",
     "sts:SourceIdentity",
     "sts:TransitiveTagKeys",
@@ -66,6 +68,7 @@
     "saml:surname",
     "saml:uid",
     "saml:x500UniqueIdentifier",
+    "sts:RequestContextProviders",
     "sts:RoleSessionName",
     "sts:SourceIdentity",
     "sts:TransitiveTagKeys"
@@ -133,6 +136,7 @@
     "graph.facebook.com:id",
     "idcs-${OciUniqueIdentifier}.identity.oraclecloud.com:rpst_id",
     "oidc.circleci.com/org/${OrgId}:oidc.circleci.com/project-id",
+    "sts:RequestContextProviders",
     "sts:RoleAuthorizedByIdp",
     "sts:RoleSessionName",
     "sts:SourceIdentity",
@@ -225,6 +229,16 @@
     "federated-user"
    ]
   },
+  "getscopedcredentials": {
+   "conditionKeys": [
+    "sts:DurationSeconds"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetScopedCredentials",
+   "resources": []
+  },
   "getservicebearertoken": {
    "conditionKeys": [
     "sts:AWSServiceName",
@@ -243,7 +257,9 @@
     "aws:TagKeys",
     "sts:DurationSeconds",
     "sts:IdentityTokenAudience",
-    "sts:SigningAlgorithm"
+    "sts:IdentityTokenScope",
+    "sts:SigningAlgorithm",
+    "sts:SubjectMode"
    ],
    "flags": [
     "IsWrite"
@@ -267,6 +283,8 @@
   },
   "setsourceidentity": {
    "conditionKeys": [
+    "sts:RequestContext/${ContextKey}",
+    "sts:RequestContextProviders",
     "sts:SourceIdentity"
    ],
    "flags": [
@@ -276,6 +294,22 @@
    "resources": [
     "role"
    ]
+  },
+  "setwebidentitytokenscope": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "sts:DurationSeconds",
+    "sts:IdentityTokenAudience",
+    "sts:IdentityTokenScope",
+    "sts:SigningAlgorithm",
+    "sts:SubjectMode"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "SetWebIdentityTokenScope",
+   "resources": []
   },
   "taggetwebidentitytoken": {
    "conditionKeys": [
@@ -294,6 +328,8 @@
     "aws:RequestTag/${TagKey}",
     "aws:TagKeys",
     "saml:aud",
+    "sts:RequestContext/${ContextKey}",
+    "sts:RequestContextProviders",
     "sts:TransitiveTagKeys"
    ],
    "flags": [
@@ -580,6 +616,9 @@
   "sts:IdentityTokenAudience": [
    "ArrayOfString"
   ],
+  "sts:IdentityTokenScope": [
+   "ArrayOfString"
+  ],
   "sts:RequestContext/${ContextKey}": [
    "String"
   ],
@@ -596,6 +635,9 @@
    "String"
   ],
   "sts:SourceIdentity": [
+   "String"
+  ],
+  "sts:SubjectMode": [
    "String"
   ],
   "sts:TaskPolicyArn": [

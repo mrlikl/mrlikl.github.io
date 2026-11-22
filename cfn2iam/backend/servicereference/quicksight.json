@@ -44,6 +44,16 @@
     "knowledgeBase"
    ]
   },
+  "batchdeletepolicyassignmentbypolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchDeletePolicyAssignmentByPolicy",
+   "resources": [
+    "custompermissions",
+    "limitsProfile"
+   ]
+  },
   "batchdeletetopicreviewedanswer": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -66,6 +76,16 @@
   "batchgetpreferences": {
    "name": "BatchGetPreferences",
    "resources": []
+  },
+  "batchputpolicyassignmentbypolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchPutPolicyAssignmentByPolicy",
+   "resources": [
+    "custompermissions",
+    "limitsProfile"
+   ]
   },
   "batchupdatepreferences": {
    "flags": [
@@ -398,6 +418,15 @@
    "name": "CreateKnowledgeBase",
    "resources": [
     "datasource",
+    "knowledgeBase"
+   ]
+  },
+  "createknowledgebaserefreshschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateKnowledgeBaseRefreshSchedule",
+   "resources": [
     "knowledgeBase"
    ]
   },
@@ -857,6 +886,15 @@
     "knowledgeBase"
    ]
   },
+  "deleteknowledgebaserefreshschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteKnowledgeBaseRefreshSchedule",
+   "resources": [
+    "knowledgeBase"
+   ]
+  },
   "deletelimitsprofile": {
    "flags": [
     "IsWrite"
@@ -886,6 +924,16 @@
    "name": "DeleteOAuthClientApplication",
    "resources": [
     "oauthClientApplication"
+   ]
+  },
+  "deletepolicyassignment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePolicyAssignment",
+   "resources": [
+    "custompermissions",
+    "limitsProfile"
    ]
   },
   "deleterefreshschedule": {
@@ -1349,6 +1397,12 @@
     "knowledgeBase"
    ]
   },
+  "describeknowledgebaserefreshschedule": {
+   "name": "DescribeKnowledgeBaseRefreshSchedule",
+   "resources": [
+    "knowledgeBase"
+   ]
+  },
   "describelimitsprofile": {
    "name": "DescribeLimitsProfile",
    "resources": [
@@ -1566,6 +1620,10 @@
     "dashboard"
    ]
   },
+  "geteffectivecustompermissions": {
+   "name": "GetEffectiveCustomPermissions",
+   "resources": []
+  },
   "getflowmetadata": {
    "name": "GetFlowMetadata",
    "resources": [
@@ -1586,6 +1644,13 @@
    "name": "GetIdentityContext",
    "resources": [
     "user"
+   ]
+  },
+  "getpolicyassignment": {
+   "name": "GetPolicyAssignment",
+   "resources": [
+    "custompermissions",
+    "limitsProfile"
    ]
   },
   "getsessionembedurl": {
@@ -1870,6 +1935,15 @@
    "name": "ListKMSKeysForUser",
    "resources": []
   },
+  "listknowledgebaserefreshschedules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListKnowledgeBaseRefreshSchedules",
+   "resources": [
+    "knowledgeBase"
+   ]
+  },
   "listknowledgebases": {
    "flags": [
     "IsList"
@@ -1903,6 +1977,16 @@
    ],
    "name": "ListOAuthClientApplications",
    "resources": []
+  },
+  "listprincipalsforpolicy": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPrincipalsForPolicy",
+   "resources": [
+    "custompermissions",
+    "limitsProfile"
+   ]
   },
   "listrefreshschedules": {
    "flags": [
@@ -1961,6 +2045,7 @@
     "flow",
     "folder",
     "inboundConnector",
+    "knowledgeBase",
     "namespace",
     "oauthClientApplication",
     "template",
@@ -2135,6 +2220,16 @@
     "dataset"
    ]
   },
+  "putpolicyassignment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutPolicyAssignment",
+   "resources": [
+    "custompermissions",
+    "limitsProfile"
+   ]
+  },
   "quicksuiteusagemetrics": {
    "name": "QuickSuiteUsageMetrics",
    "resources": []
@@ -2292,9 +2387,7 @@
     "IsList"
    ],
    "name": "SearchKnowledgeBases",
-   "resources": [
-    "knowledgeBase"
-   ]
+   "resources": []
   },
   "searchspaces": {
    "flags": [
@@ -2428,6 +2521,7 @@
     "folder",
     "inboundConnector",
     "ingestion",
+    "knowledgeBase",
     "namespace",
     "oauthClientApplication",
     "template",
@@ -2479,6 +2573,7 @@
     "folder",
     "inboundConnector",
     "ingestion",
+    "knowledgeBase",
     "namespace",
     "oauthClientApplication",
     "template",
@@ -2915,6 +3010,15 @@
     "IsWrite"
    ],
    "name": "UpdateKnowledgeBasePermissions",
+   "resources": [
+    "knowledgeBase"
+   ]
+  },
+  "updateknowledgebaserefreshschedule": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateKnowledgeBaseRefreshSchedule",
    "resources": [
     "knowledgeBase"
    ]

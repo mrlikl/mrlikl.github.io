@@ -1,5 +1,23 @@
 {
  "actions": {
+  "createvoice": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateVoice",
+   "resourceConditionKeys": {
+    "voice": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "voice"
+   ]
+  },
   "deletelexicon": {
    "flags": [
     "IsWrite"
@@ -12,6 +30,20 @@
    },
    "resources": [
     "lexicon"
+   ]
+  },
+  "deletevoice": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteVoice",
+   "resourceConditionKeys": {
+    "voice": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "voice"
    ]
   },
   "describevoices": {
@@ -36,6 +68,17 @@
    "name": "GetSpeechSynthesisTask",
    "resources": []
   },
+  "getvoice": {
+   "name": "GetVoice",
+   "resourceConditionKeys": {
+    "voice": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "voice"
+   ]
+  },
   "listlexicons": {
    "flags": [
     "IsList"
@@ -55,10 +98,14 @@
    "resourceConditionKeys": {
     "lexicon": [
      "aws:ResourceTag/${TagKey}"
+    ],
+    "voice": [
+     "aws:ResourceTag/${TagKey}"
     ]
    },
    "resources": [
-    "lexicon"
+    "lexicon",
+    "voice"
    ]
   },
   "putlexicon": {
@@ -84,10 +131,14 @@
    "resourceConditionKeys": {
     "lexicon": [
      "aws:ResourceTag/${TagKey}"
+    ],
+    "voice": [
+     "aws:ResourceTag/${TagKey}"
     ]
    },
    "resources": [
-    "lexicon"
+    "lexicon",
+    "voice"
    ]
   },
   "startspeechsynthesistask": {
@@ -98,10 +149,14 @@
    "resourceConditionKeys": {
     "lexicon": [
      "aws:ResourceTag/${TagKey}"
+    ],
+    "voice": [
+     "aws:ResourceTag/${TagKey}"
     ]
    },
    "resources": [
-    "lexicon"
+    "lexicon",
+    "voice"
    ]
   },
   "synthesizespeech": {
@@ -109,10 +164,14 @@
    "resourceConditionKeys": {
     "lexicon": [
      "aws:ResourceTag/${TagKey}"
+    ],
+    "voice": [
+     "aws:ResourceTag/${TagKey}"
     ]
    },
    "resources": [
-    "lexicon"
+    "lexicon",
+    "voice"
    ]
   },
   "tagresource": {
@@ -128,10 +187,14 @@
    "resourceConditionKeys": {
     "lexicon": [
      "aws:ResourceTag/${TagKey}"
+    ],
+    "voice": [
+     "aws:ResourceTag/${TagKey}"
     ]
    },
    "resources": [
-    "lexicon"
+    "lexicon",
+    "voice"
    ]
   },
   "untagresource": {
@@ -146,10 +209,14 @@
    "resourceConditionKeys": {
     "lexicon": [
      "aws:ResourceTag/${TagKey}"
+    ],
+    "voice": [
+     "aws:ResourceTag/${TagKey}"
     ]
    },
    "resources": [
-    "lexicon"
+    "lexicon",
+    "voice"
    ]
   }
  },
@@ -168,6 +235,14 @@
   "lexicon": {
    "arnFormats": [
     "arn:${Partition}:polly:${Region}:${Account}:lexicon/${LexiconName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "voice": {
+   "arnFormats": [
+    "arn:${Partition}:polly:${Region}:${Account}:voice/${VoiceId}"
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"

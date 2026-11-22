@@ -69,6 +69,19 @@
     "access-token"
    ]
   },
+  "createcorenetworkendpoint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCoreNetworkEndpoint",
+   "resources": [
+    "core-network-endpoint"
+   ]
+  },
   "creatednsview": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -134,6 +147,15 @@
    "name": "DeleteAccessToken",
    "resources": [
     "access-token"
+   ]
+  },
+  "deletecorenetworkendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCoreNetworkEndpoint",
+   "resources": [
+    "core-network-endpoint"
    ]
   },
   "deletednsview": {
@@ -207,6 +229,12 @@
     "access-token"
    ]
   },
+  "getcorenetworkendpoint": {
+   "name": "GetCoreNetworkEndpoint",
+   "resources": [
+    "core-network-endpoint"
+   ]
+  },
   "getdnsview": {
    "name": "GetDNSView",
    "resources": [
@@ -260,6 +288,13 @@
    "name": "ListAccessTokens",
    "resources": []
   },
+  "listcorenetworkendpoints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCoreNetworkEndpoints",
+   "resources": []
+  },
   "listdnsviews": {
    "flags": [
     "IsList"
@@ -310,6 +345,13 @@
    "name": "ListManagedFirewallDomainLists",
    "resources": []
   },
+  "listshareddnsviews": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSharedDNSViews",
+   "resources": []
+  },
   "listtagsforresource": {
    "flags": [
     "IsWrite"
@@ -318,6 +360,7 @@
    "resources": [
     "access-source",
     "access-token",
+    "core-network-endpoint",
     "dns-view",
     "firewall-domain-list",
     "global-resolver"
@@ -336,6 +379,7 @@
    "resources": [
     "access-source",
     "access-token",
+    "core-network-endpoint",
     "dns-view",
     "firewall-domain-list",
     "global-resolver"
@@ -353,6 +397,7 @@
    "resources": [
     "access-source",
     "access-token",
+    "core-network-endpoint",
     "dns-view",
     "firewall-domain-list",
     "global-resolver"
@@ -374,6 +419,15 @@
    "name": "UpdateAccessToken",
    "resources": [
     "access-token"
+   ]
+  },
+  "updatecorenetworkendpoint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCoreNetworkEndpoint",
+   "resources": [
+    "core-network-endpoint"
    ]
   },
   "updatednsview": {
@@ -441,6 +495,14 @@
   "access-token": {
    "arnFormats": [
     "arn:${Partition}:route53globalresolver::${Account}:access-token/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "core-network-endpoint": {
+   "arnFormats": [
+    "arn:${Partition}:route53globalresolver::${Account}:core-network-endpoint/${Id}"
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"

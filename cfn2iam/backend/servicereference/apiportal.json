@@ -1,0 +1,522 @@
+{
+ "actions": {
+  "associatemanagedapis": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateManagedApis",
+   "resources": [
+    "Product"
+   ]
+  },
+  "createmanagedapi": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateManagedApi",
+   "resources": [
+    "ManagedApi"
+   ]
+  },
+  "createportal": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePortal",
+   "resources": [
+    "Portal"
+   ]
+  },
+  "createportalpreview": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePortalPreview",
+   "resources": [
+    "Portal"
+   ]
+  },
+  "createproduct": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProduct",
+   "resources": [
+    "Product"
+   ]
+  },
+  "createproductapipage": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProductApiPage",
+   "resources": [
+    "ProductApiPage"
+   ]
+  },
+  "createproductpage": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProductPage",
+   "resources": [
+    "ProductPage"
+   ]
+  },
+  "deletediscoveryconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDiscoveryConfiguration",
+   "resources": [
+    "DiscoveryConfiguration"
+   ]
+  },
+  "deletemanagedapi": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteManagedApi",
+   "resources": [
+    "ManagedApi"
+   ]
+  },
+  "deleteorganizationdiscoveryconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOrganizationDiscoveryConfiguration",
+   "resources": [
+    "OrganizationDiscoveryConfiguration"
+   ]
+  },
+  "deleteportal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePortal",
+   "resources": [
+    "Portal"
+   ]
+  },
+  "deleteproduct": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProduct",
+   "resources": [
+    "Product"
+   ]
+  },
+  "deleteproductapipage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProductApiPage",
+   "resources": [
+    "ProductApiPage"
+   ]
+  },
+  "deleteproductpage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProductPage",
+   "resources": [
+    "ProductPage"
+   ]
+  },
+  "deleteproductsharingpolicy": {
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "DeleteProductSharingPolicy",
+   "resources": [
+    "ProductSharingPolicy"
+   ]
+  },
+  "disassociatemanagedapis": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateManagedApis",
+   "resources": [
+    "Product"
+   ]
+  },
+  "getapiinventoryitem": {
+   "name": "GetApiInventoryItem",
+   "resources": []
+  },
+  "getdiscoveryconfiguration": {
+   "name": "GetDiscoveryConfiguration",
+   "resources": [
+    "DiscoveryConfiguration"
+   ]
+  },
+  "getmanagedapi": {
+   "name": "GetManagedApi",
+   "resources": [
+    "ManagedApi"
+   ]
+  },
+  "getorganizationdiscoveryconfiguration": {
+   "name": "GetOrganizationDiscoveryConfiguration",
+   "resources": [
+    "OrganizationDiscoveryConfiguration"
+   ]
+  },
+  "getportal": {
+   "name": "GetPortal",
+   "resources": [
+    "Portal"
+   ]
+  },
+  "getproduct": {
+   "name": "GetProduct",
+   "resources": [
+    "Product"
+   ]
+  },
+  "getproductapipage": {
+   "name": "GetProductApiPage",
+   "resources": [
+    "ProductApiPage"
+   ]
+  },
+  "getproductpage": {
+   "name": "GetProductPage",
+   "resources": [
+    "ProductPage"
+   ]
+  },
+  "getproductsharingpolicy": {
+   "name": "GetProductSharingPolicy",
+   "resources": [
+    "ProductSharingPolicy"
+   ]
+  },
+  "listapiinventoryitems": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListApiInventoryItems",
+   "resources": []
+  },
+  "listdiscoverystatuses": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDiscoveryStatuses",
+   "resources": []
+  },
+  "listmanagedapievents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedApiEvents",
+   "resources": [
+    "ManagedApi"
+   ]
+  },
+  "listmanagedapis": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListManagedApis",
+   "resources": []
+  },
+  "listportals": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPortals",
+   "resources": []
+  },
+  "listproductapipages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProductApiPages",
+   "resources": [
+    "Product"
+   ]
+  },
+  "listproductpages": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProductPages",
+   "resources": [
+    "Product"
+   ]
+  },
+  "listproducts": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProducts",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "DiscoveryConfiguration",
+    "ManagedApi",
+    "OrganizationDiscoveryConfiguration",
+    "Portal",
+    "Product",
+    "ProductApiPage",
+    "ProductPage",
+    "ProductSharingPolicy"
+   ]
+  },
+  "putdiscoveryconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutDiscoveryConfiguration",
+   "resources": [
+    "DiscoveryConfiguration"
+   ]
+  },
+  "putorganizationdiscoveryconfiguration": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutOrganizationDiscoveryConfiguration",
+   "resources": [
+    "OrganizationDiscoveryConfiguration"
+   ]
+  },
+  "putproductsharingpolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "PutProductSharingPolicy",
+   "resources": [
+    "ProductSharingPolicy"
+   ]
+  },
+  "startdiscovery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDiscovery",
+   "resources": [
+    "DiscoveryConfiguration",
+    "OrganizationDiscoveryConfiguration"
+   ]
+  },
+  "stopdiscovery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopDiscovery",
+   "resources": [
+    "DiscoveryConfiguration",
+    "OrganizationDiscoveryConfiguration"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "DiscoveryConfiguration",
+    "ManagedApi",
+    "OrganizationDiscoveryConfiguration",
+    "Portal",
+    "Product",
+    "ProductApiPage",
+    "ProductPage",
+    "ProductSharingPolicy"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "DiscoveryConfiguration",
+    "ManagedApi",
+    "OrganizationDiscoveryConfiguration",
+    "Portal",
+    "Product",
+    "ProductApiPage",
+    "ProductPage",
+    "ProductSharingPolicy"
+   ]
+  },
+  "updateportal": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePortal",
+   "resources": [
+    "Portal"
+   ]
+  },
+  "updateportalpublishstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePortalPublishStatus",
+   "resources": [
+    "Portal"
+   ]
+  },
+  "updateproduct": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProduct",
+   "resources": [
+    "Product"
+   ]
+  },
+  "updateproductapipage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProductApiPage",
+   "resources": [
+    "ProductApiPage"
+   ]
+  },
+  "updateproductpage": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProductPage",
+   "resources": [
+    "ProductPage"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "DiscoveryConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:apiportal:${Region}:${Account}:discoveryconfiguration"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ManagedApi": {
+   "arnFormats": [
+    "arn:${Partition}:apiportal:${Region}:${Account}:managedapis/${ManagedApiId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "OrganizationDiscoveryConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:apiportal:${Region}:${Account}:orgdiscoveryconfiguration"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Portal": {
+   "arnFormats": [
+    "arn:${Partition}:apiportal:${Region}:${Account}:portals/${PortalId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "Product": {
+   "arnFormats": [
+    "arn:${Partition}:apiportal:${Region}:${Account}:products/${ProductId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ProductApiPage": {
+   "arnFormats": [
+    "arn:${Partition}:apiportal:${Region}:${Account}:products/${ProductId}/apipages/${ProductApiPageId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ProductPage": {
+   "arnFormats": [
+    "arn:${Partition}:apiportal:${Region}:${Account}:products/${ProductId}/productpages/${ProductPageId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ProductSharingPolicy": {
+   "arnFormats": [
+    "arn:${Partition}:apiportal:${Region}:${Account}:products/${ProductId}/sharingpolicy"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "apiportal",
+ "serviceName": "API Portal",
+ "version": "v1.5"
+}

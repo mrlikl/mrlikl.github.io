@@ -1,5 +1,18 @@
 {
  "actions": {
+  "allowvendedlogdeliveryforresource": {
+   "conditionKeys": [
+    "config:ConfigurationRecorderServicePrincipal"
+   ],
+   "flags": [
+    "IsPermissionManagement",
+    "IsWrite"
+   ],
+   "name": "AllowVendedLogDeliveryForResource",
+   "resources": [
+    "ConfigurationRecorder"
+   ]
+  },
   "associateresourcetypes": {
    "flags": [
     "IsWrite"
@@ -56,10 +69,18 @@
    ]
   },
   "deleteconformancepack": {
+   "conditionKeys": [
+    "config:ConformancePackType"
+   ],
    "flags": [
     "IsWrite"
    ],
    "name": "DeleteConformancePack",
+   "resourceConditionKeys": {
+    "ConformancePack": [
+     "config:ConformancePackType"
+    ]
+   },
    "resources": [
     "ConformancePack"
    ]
@@ -559,10 +580,18 @@
    ]
   },
   "putconformancepack": {
+   "conditionKeys": [
+    "config:ConformancePackType"
+   ],
    "flags": [
     "IsWrite"
    ],
    "name": "PutConformancePack",
+   "resourceConditionKeys": {
+    "ConformancePack": [
+     "config:ConformancePackType"
+    ]
+   },
    "resources": [
     "ConformancePack"
    ]
@@ -796,6 +825,9 @@
    "ArrayOfString"
   ],
   "config:ConfigurationRecorderServicePrincipal": [
+   "String"
+  ],
+  "config:ConformancePackType": [
    "String"
   ]
  },

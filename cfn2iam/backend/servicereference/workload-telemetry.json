@@ -1,0 +1,15 @@
+{
+ "actions": {
+  "putcertificatetelemetry": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutCertificateTelemetry",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "workload-telemetry",
+ "serviceName": "Workload Telemetry",
+ "version": "v1.5"
+}

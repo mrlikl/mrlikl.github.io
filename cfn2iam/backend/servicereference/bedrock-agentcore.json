@@ -610,6 +610,16 @@
     "dataset"
    ]
   },
+  "deletedatasetgeneration": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "DeleteDatasetGeneration",
+   "resources": [
+    "dataset"
+   ]
+  },
   "deleteevaluator": {
    "flags": [
     "IsWrite"
@@ -905,6 +915,19 @@
     "runtime-endpoint"
    ]
   },
+  "getagentinsight": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetAgentInsight",
+   "resources": []
+  },
+  "getagentinsightstore": {
+   "name": "GetAgentInsightStore",
+   "resources": [
+    "agent-insight-store"
+   ]
+  },
   "getagentruntime": {
    "name": "GetAgentRuntime",
    "resources": [
@@ -998,6 +1021,15 @@
   },
   "getdataset": {
    "name": "GetDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "getdatasetgeneration": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetDatasetGeneration",
    "resources": [
     "dataset"
    ]
@@ -1444,6 +1476,21 @@
     "memory"
    ]
   },
+  "listagentinsights": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListAgentInsights",
+   "resources": []
+  },
+  "listagentinsightstores": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgentInsightStores",
+   "resources": []
+  },
   "listagentruntimeendpoints": {
    "flags": [
     "IsList"
@@ -1562,6 +1609,16 @@
     "IsList"
    ],
    "name": "ListDatasetExamples",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "listdatasetgenerations": {
+   "flags": [
+    "IsDataPlane",
+    "IsList"
+   ],
+   "name": "ListDatasetGenerations",
    "resources": [
     "dataset"
    ]
@@ -2037,6 +2094,15 @@
     "code-interpreter-custom"
    ]
   },
+  "startdatasetgeneration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDatasetGeneration",
+   "resources": [
+    "dataset"
+   ]
+  },
   "startmemoryextractionjob": {
    "conditionKeys": [
     "bedrock-agentcore:actorId",
@@ -2202,6 +2268,23 @@
    "name": "UpdateABTest",
    "resources": [
     "ab-test"
+   ]
+  },
+  "updateagentinsight": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "UpdateAgentInsight",
+   "resources": []
+  },
+  "updateagentinsightstore": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateAgentInsightStore",
+   "resources": [
+    "agent-insight-store"
    ]
   },
   "updateagentruntime": {
@@ -2601,6 +2684,11 @@
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "agent-insight-store": {
+   "arnFormats": [
+    "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:agent-insight-store/${AgentInsightStoreId}"
    ]
   },
   "apikeycredentialprovider": {

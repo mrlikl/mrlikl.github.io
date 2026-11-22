@@ -102,6 +102,16 @@
    "name": "CreateIntegration",
    "resources": []
   },
+  "createomniagentasset": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateOmniAgentAsset",
+   "resources": []
+  },
   "createomnidashboard": {
    "conditionKeys": [
     "cloudwatch:HasAccessGrant"
@@ -316,6 +326,18 @@
    "name": "DeleteMetricStream",
    "resources": [
     "metric-stream"
+   ]
+  },
+  "deleteomniagentasset": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOmniAgentAsset",
+   "resources": [
+    "omni-agent-asset"
    ]
   },
   "deleteomnidashboard": {
@@ -622,6 +644,19 @@
    "name": "GetMetricWidgetImage",
    "resources": []
   },
+  "getmonitoringassessment": {
+   "name": "GetMonitoringAssessment",
+   "resources": []
+  },
+  "getomniagentasset": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "name": "GetOmniAgentAsset",
+   "resources": [
+    "omni-agent-asset"
+   ]
+  },
   "getomnidashboard": {
    "conditionKeys": [
     "cloudwatch:HasAccessGrant"
@@ -896,6 +931,30 @@
     "IsList"
    ],
    "name": "ListMetricStreams",
+   "resources": []
+  },
+  "listmonitoringassessmentresults": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMonitoringAssessmentResults",
+   "resources": []
+  },
+  "listmonitoringassessments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMonitoringAssessments",
+   "resources": []
+  },
+  "listomniagentassets": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOmniAgentAssets",
    "resources": []
   },
   "listomnidashboards": {
@@ -1274,6 +1333,10 @@
     "metric-stream"
    ]
   },
+  "startmonitoringassessment": {
+   "name": "StartMonitoringAssessment",
+   "resources": []
+  },
   "startomnithreadsession": {
    "conditionKeys": [
     "cloudwatch:HasAccessGrant"
@@ -1531,6 +1594,18 @@
     "integration"
    ]
   },
+  "updateomniagentasset": {
+   "conditionKeys": [
+    "cloudwatch:HasAccessGrant"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOmniAgentAsset",
+   "resources": [
+    "omni-agent-asset"
+   ]
+  },
   "updateomnidashboard": {
    "conditionKeys": [
     "cloudwatch:HasAccessGrant"
@@ -1746,6 +1821,14 @@
   "metric-stream": {
    "arnFormats": [
     "arn:${Partition}:cloudwatch:${Region}:${Account}:metric-stream/${MetricStreamName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "omni-agent-asset": {
+   "arnFormats": [
+    "arn:${Partition}:cloudwatch:${Region}:${Account}:omni-agent-asset/${AssetId}"
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"

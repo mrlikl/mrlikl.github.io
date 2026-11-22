@@ -7,6 +7,10 @@
    "name": "AcceptFinancingApplicationTerms",
    "resources": []
   },
+  "batchgetfinancialrecord": {
+   "name": "BatchGetFinancialRecord",
+   "resources": []
+  },
   "createconnectedaccount": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -52,11 +56,19 @@
    "name": "DeletePaymentInstrument",
    "resources": []
   },
+  "getaccountbalance": {
+   "name": "GetAccountBalance",
+   "resources": []
+  },
   "getconnectedaccount": {
    "name": "GetConnectedAccount",
    "resources": [
     "connectedaccount"
    ]
+  },
+  "getfinancialrecord": {
+   "name": "GetFinancialRecord",
+   "resources": []
   },
   "getfinancingapplication": {
    "name": "GetFinancingApplication",
@@ -75,9 +87,6 @@
    "resources": []
   },
   "getpaymentinstrument": {
-   "flags": [
-    "IsList"
-   ],
    "name": "GetPaymentInstrument",
    "resources": [
     "payment-instrument"
@@ -92,6 +101,13 @@
     "IsList"
    ],
    "name": "ListConnectedAccounts",
+   "resources": []
+  },
+  "listfinancialrecords": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFinancialRecords",
    "resources": []
   },
   "listfinancingapplications": {

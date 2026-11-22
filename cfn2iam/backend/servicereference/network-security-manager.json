@@ -260,6 +260,12 @@
     "deployment"
    ]
   },
+  "listentitycoverages": {
+   "name": "ListEntityCoverages",
+   "resources": [
+    "policy"
+   ]
+  },
   "listpolicies": {
    "flags": [
     "IsList"
@@ -272,6 +278,13 @@
    "resources": [
     "policy"
    ]
+  },
+  "listprotectedresourcecoverages": {
+   "conditionKeys": [
+    "network-security-manager:ProtectedResourceArn"
+   ],
+   "name": "ListProtectedResourceCoverages",
+   "resources": []
   },
   "listresourceassociations": {
    "conditionKeys": [
@@ -477,6 +490,9 @@
   ],
   "aws:TagKeys": [
    "ArrayOfString"
+  ],
+  "network-security-manager:ProtectedResourceArn": [
+   "ARN"
   ]
  },
  "resources": {

@@ -1,0 +1,146 @@
+{
+ "actions": {
+  "cancelqueryexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelQueryExecution",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "createdataset": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "deletedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "getdataset": {
+   "name": "GetDataset",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "getdatasetschema": {
+   "name": "GetDatasetSchema",
+   "resources": []
+  },
+  "getqueryexecution": {
+   "name": "GetQueryExecution",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "getqueryexecutionresults": {
+   "name": "GetQueryExecutionResults",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "listdatasets": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDatasets",
+   "resources": []
+  },
+  "listqueryexecutions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQueryExecutions",
+   "resources": []
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "startqueryexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartQueryExecution",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "dataset"
+   ]
+  },
+  "updatedataset": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataset",
+   "resources": [
+    "dataset"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "dataset": {
+   "arnFormats": [
+    "arn:${Partition}:bcm-data-hub:${Region}:${Account}:dataset/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "bcm-data-hub",
+ "serviceName": "Billing and Cost Management Data Hub",
+ "version": "v1.5"
+}

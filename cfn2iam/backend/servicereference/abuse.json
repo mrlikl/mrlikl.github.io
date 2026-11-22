@@ -1,0 +1,27 @@
+{
+ "actions": {
+  "createabusereport": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "CreateAbuseReport",
+   "resources": []
+  },
+  "getabusereportstatus": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetAbuseReportStatus",
+   "resources": []
+  },
+  "listabusereportstatuses": {
+   "name": "ListAbuseReportStatuses",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "abuse",
+ "serviceName": "Abuse Signal API",
+ "version": "v1.5"
+}

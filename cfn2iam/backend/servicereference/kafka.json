@@ -18,6 +18,20 @@
     "cluster"
    ]
   },
+  "createassessment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateAssessment",
+   "resources": [
+    "assessment",
+    "cluster"
+   ]
+  },
   "createchannel": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -104,6 +118,15 @@
     "vpc-connection"
    ]
   },
+  "deleteassessment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteAssessment",
+   "resources": [
+    "assessment"
+   ]
+  },
   "deletechannel": {
    "flags": [
     "IsWrite"
@@ -168,6 +191,12 @@
     "vpc-connection"
    ]
   },
+  "describeassessment": {
+   "name": "DescribeAssessment",
+   "resources": [
+    "assessment"
+   ]
+  },
   "describechannel": {
    "name": "DescribeChannel",
    "resources": [
@@ -225,6 +254,13 @@
     "topic"
    ]
   },
+  "describetopicreassignment": {
+   "name": "DescribeTopicReassignment",
+   "resources": [
+    "cluster",
+    "topic-reassignment"
+   ]
+  },
   "describevpcconnection": {
    "name": "DescribeVpcConnection",
    "resources": [
@@ -247,6 +283,24 @@
    ],
    "name": "GetCompatibleKafkaVersions",
    "resources": []
+  },
+  "listassessmentfindings": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssessmentFindings",
+   "resources": [
+    "assessment"
+   ]
+  },
+  "listassessments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAssessments",
+   "resources": [
+    "cluster"
+   ]
   },
   "listchannels": {
    "flags": [
@@ -349,6 +403,16 @@
   "listtagsforresource": {
    "name": "ListTagsForResource",
    "resources": [
+    "assessment",
+    "cluster"
+   ]
+  },
+  "listtopicreassignments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListTopicReassignments",
+   "resources": [
     "cluster"
    ]
   },
@@ -396,6 +460,26 @@
     "vpc-connection"
    ]
   },
+  "starttopicreassignment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTopicReassignment",
+   "resources": [
+    "cluster",
+    "topic-reassignment"
+   ]
+  },
+  "stoptopicreassignment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopTopicReassignment",
+   "resources": [
+    "cluster",
+    "topic-reassignment"
+   ]
+  },
   "tagresource": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -407,6 +491,7 @@
    ],
    "name": "TagResource",
    "resources": [
+    "assessment",
     "cluster",
     "vpc-connection"
    ]
@@ -421,6 +506,7 @@
    ],
    "name": "UntagResource",
    "resources": [
+    "assessment",
     "cluster",
     "vpc-connection"
    ]
@@ -572,6 +658,14 @@
   ]
  },
  "resources": {
+  "assessment": {
+   "arnFormats": [
+    "arn:${Partition}:kafka:${Region}:${Account}:assessment/${ClusterUuid}/${Uuid}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
   "channel": {
    "arnFormats": [
     "arn:${Partition}:kafka:${Region}:${Account}:channel/${ClusterName}/${ClusterUuid}/${ChannelName}/${Uuid}"
@@ -609,6 +703,11 @@
   "topic": {
    "arnFormats": [
     "arn:${Partition}:kafka:${Region}:${Account}:topic/${ClusterName}/${ClusterUuid}/${TopicName}"
+   ]
+  },
+  "topic-reassignment": {
+   "arnFormats": [
+    "arn:${Partition}:kafka:${Region}:${Account}:topic-reassignment/${ClusterName}/${ClusterUuid}/${Uuid}"
    ]
   },
   "transactional-id": {

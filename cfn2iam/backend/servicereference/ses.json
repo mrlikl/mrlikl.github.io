@@ -1758,6 +1758,16 @@
    "name": "PutAccountDedicatedIpWarmupAttributes",
    "resources": []
   },
+  "putaccountdeliveryattributes": {
+   "conditionKeys": [
+    "ses:ApiVersion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutAccountDeliveryAttributes",
+   "resources": []
+  },
   "putaccountdetails": {
    "conditionKeys": [
     "ses:ApiVersion"
@@ -2126,6 +2136,7 @@
     "ses:Recipients"
    ],
    "flags": [
+    "IsDataPlane",
     "IsWrite"
    ],
    "name": "SendBulkTemplatedEmail",
@@ -2163,6 +2174,7 @@
     "ses:TenantName"
    ],
    "flags": [
+    "IsDataPlane",
     "IsWrite"
    ],
    "name": "SendEmail",
@@ -2181,6 +2193,7 @@
     "ses:Recipients"
    ],
    "flags": [
+    "IsDataPlane",
     "IsWrite"
    ],
    "name": "SendRawEmail",

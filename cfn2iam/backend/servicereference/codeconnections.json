@@ -131,6 +131,12 @@
     "RepositoryLink"
    ]
   },
+  "getresourcepolicy": {
+   "name": "GetResourcePolicy",
+   "resources": [
+    "Connection"
+   ]
+  },
   "getresourcesyncstatus": {
    "name": "GetResourceSyncStatus",
    "resources": []

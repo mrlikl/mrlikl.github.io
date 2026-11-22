@@ -3,6 +3,7 @@
   "createhttpnamespace": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
     "aws:TagKeys"
    ],
    "flags": [
@@ -14,6 +15,7 @@
   "createprivatednsnamespace": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
     "aws:TagKeys"
    ],
    "flags": [
@@ -25,6 +27,7 @@
   "createpublicdnsnamespace": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
     "aws:TagKeys"
    ],
    "flags": [

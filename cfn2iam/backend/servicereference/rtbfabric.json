@@ -156,6 +156,14 @@
     "ResponderGateway"
    ]
   },
+  "getavailablemodule": {
+   "name": "GetAvailableModule",
+   "resources": []
+  },
+  "getavailablemoduleversion": {
+   "name": "GetAvailableModuleVersion",
+   "resources": []
+  },
   "getcertificateassociation": {
    "name": "GetCertificateAssociation",
    "resources": [
@@ -200,6 +208,24 @@
    "resources": [
     "ResponderGateway"
    ]
+  },
+  "getupdate": {
+   "name": "GetUpdate",
+   "resources": []
+  },
+  "listavailablemodules": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAvailableModules",
+   "resources": []
+  },
+  "listavailablemoduleversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAvailableModuleVersions",
+   "resources": []
   },
   "listcertificateassociations": {
    "flags": [
@@ -249,6 +275,22 @@
     "OutboundExternalLink",
     "RequesterGateway",
     "ResponderGateway"
+   ]
+  },
+  "listupdates": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListUpdates",
+   "resources": []
+  },
+  "putlinkflows": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutLinkFlows",
+   "resources": [
+    "Link"
    ]
   },
   "rejectlink": {

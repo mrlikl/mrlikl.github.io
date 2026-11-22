@@ -1,5 +1,37 @@
 {
  "actions": {
+  "associatepublisher": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociatePublisher",
+   "resources": [
+    "publisher",
+    "registry-record"
+   ]
+  },
+  "completeregistryrecordtokenauth": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CompleteRegistryRecordTokenAuth",
+   "resources": [
+    "registry"
+   ]
+  },
+  "createpublisher": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePublisher",
+   "resources": [
+    "publisher"
+   ]
+  },
   "createregistry": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -22,6 +54,15 @@
    "name": "CreateRegistryRecord",
    "resources": [
     "registry"
+   ]
+  },
+  "deletepublisher": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePublisher",
+   "resources": [
+    "publisher"
    ]
   },
   "deleteregistry": {
@@ -48,7 +89,17 @@
    ],
    "name": "DeleteResourcePolicy",
    "resources": [
+    "publisher",
     "registry"
+   ]
+  },
+  "disassociatepublisher": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociatePublisher",
+   "resources": [
+    "registry-record"
    ]
   },
   "getdiscoverableregistryrecord": {
@@ -58,6 +109,12 @@
    "name": "GetDiscoverableRegistryRecord",
    "resources": [
     "registry-record"
+   ]
+  },
+  "getpublisher": {
+   "name": "GetPublisher",
+   "resources": [
+    "publisher"
    ]
   },
   "getregistry": {
@@ -75,6 +132,7 @@
   "getresourcepolicy": {
    "name": "GetResourcePolicy",
    "resources": [
+    "publisher",
     "registry"
    ]
   },
@@ -93,6 +151,22 @@
    "resources": [
     "registry"
    ]
+  },
+  "listpublisherassociations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPublisherAssociations",
+   "resources": [
+    "publisher"
+   ]
+  },
+  "listpublishers": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPublishers",
+   "resources": []
   },
   "listregistries": {
    "flags": [
@@ -116,6 +190,7 @@
    ],
    "name": "ListTagsForResource",
    "resources": [
+    "publisher",
     "registry",
     "registry-record"
    ]
@@ -126,6 +201,7 @@
    ],
    "name": "PutResourcePolicy",
    "resources": [
+    "publisher",
     "registry"
    ]
   },
@@ -158,6 +234,7 @@
    ],
    "name": "TagResource",
    "resources": [
+    "publisher",
     "registry",
     "registry-record"
    ]
@@ -172,7 +249,17 @@
    ],
    "name": "UntagResource",
    "resources": [
+    "publisher",
     "registry",
+    "registry-record"
+   ]
+  },
+  "updatepublisherassociationapprovalstatus": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePublisherAssociationApprovalStatus",
+   "resources": [
     "registry-record"
    ]
   },
@@ -202,6 +289,15 @@
    "resources": [
     "registry-record"
    ]
+  },
+  "validatepublisher": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ValidatePublisher",
+   "resources": [
+    "publisher"
+   ]
   }
  },
  "conditionKeys": {
@@ -222,6 +318,14 @@
   ]
  },
  "resources": {
+  "publisher": {
+   "arnFormats": [
+    "arn:${Partition}:agent-registry::${Account}:publisher/${PublisherType}/${PublisherValue}/${PublisherId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
   "registry": {
    "arnFormats": [
     "arn:${Partition}:agent-registry:${Region}:${Account}:registry/${RegistryId}"

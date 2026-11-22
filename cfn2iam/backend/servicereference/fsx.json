@@ -84,6 +84,20 @@
     "volume"
    ]
   },
+  "createclusterpeer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateClusterPeer",
+   "resources": [
+    "cluster-peer",
+    "file-system"
+   ]
+  },
   "createdatarepositoryassociation": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -165,6 +179,41 @@
     "file-system"
    ]
   },
+  "createsnapmirrorpolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSnapmirrorPolicy",
+   "resources": [
+    "file-system",
+    "snapmirror-policy",
+    "storage-virtual-machine"
+   ]
+  },
+  "createsnapmirrorrelationship": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSnapmirrorRelationship",
+   "resourceConditionKeys": {
+    "snapmirror-relationship": [
+     "fsx:SnapmirrorSourcePath"
+    ]
+   },
+   "resources": [
+    "snapmirror-policy",
+    "snapmirror-relationship",
+    "volume"
+   ]
+  },
   "createsnapshot": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -179,6 +228,21 @@
     "volume"
    ]
   },
+  "createsnapshotpolicy": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSnapshotPolicy",
+   "resources": [
+    "file-system",
+    "snapshot-policy",
+    "storage-virtual-machine"
+   ]
+  },
   "createstoragevirtualmachine": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -191,6 +255,20 @@
    "resources": [
     "file-system",
     "storage-virtual-machine"
+   ]
+  },
+  "createstoragevirtualmachinepeer": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateStorageVirtualMachinePeer",
+   "resources": [
+    "storage-virtual-machine",
+    "svm-peer"
    ]
   },
   "createvolume": {
@@ -235,6 +313,15 @@
    "name": "DeleteBackup",
    "resources": [
     "backup"
+   ]
+  },
+  "deleteclusterpeer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteClusterPeer",
+   "resources": [
+    "cluster-peer"
    ]
   },
   "deletedatarepositoryassociation": {
@@ -282,6 +369,24 @@
     "volume"
    ]
   },
+  "deletesnapmirrorpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSnapmirrorPolicy",
+   "resources": [
+    "snapmirror-policy"
+   ]
+  },
+  "deletesnapmirrorrelationship": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSnapmirrorRelationship",
+   "resources": [
+    "snapmirror-relationship"
+   ]
+  },
   "deletesnapshot": {
    "flags": [
     "IsWrite"
@@ -291,6 +396,15 @@
     "snapshot"
    ]
   },
+  "deletesnapshotpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSnapshotPolicy",
+   "resources": [
+    "snapshot-policy"
+   ]
+  },
   "deletestoragevirtualmachine": {
    "flags": [
     "IsWrite"
@@ -298,6 +412,15 @@
    "name": "DeleteStorageVirtualMachine",
    "resources": [
     "storage-virtual-machine"
+   ]
+  },
+  "deletestoragevirtualmachinepeer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteStorageVirtualMachinePeer",
+   "resources": [
+    "svm-peer"
    ]
   },
   "deletevolume": {
@@ -330,6 +453,10 @@
    "name": "DescribeBackups",
    "resources": []
   },
+  "describeclusterpeers": {
+   "name": "DescribeClusterPeers",
+   "resources": []
+  },
   "describedatarepositoryassociations": {
    "name": "DescribeDataRepositoryAssociations",
    "resources": []
@@ -360,8 +487,24 @@
    "name": "DescribeSharedVpcConfiguration",
    "resources": []
   },
+  "describesnapmirrorpolicies": {
+   "name": "DescribeSnapmirrorPolicies",
+   "resources": []
+  },
+  "describesnapmirrorrelationships": {
+   "name": "DescribeSnapmirrorRelationships",
+   "resources": []
+  },
+  "describesnapshotpolicies": {
+   "name": "DescribeSnapshotPolicies",
+   "resources": []
+  },
   "describesnapshots": {
    "name": "DescribeSnapshots",
+   "resources": []
+  },
+  "describestoragevirtualmachinepeers": {
+   "name": "DescribeStorageVirtualMachinePeers",
    "resources": []
   },
   "describestoragevirtualmachines": {
@@ -414,10 +557,15 @@
    "resources": [
     "association",
     "backup",
+    "cluster-peer",
     "file-cache",
     "file-system",
+    "snapmirror-policy",
+    "snapmirror-relationship",
     "snapshot",
+    "snapshot-policy",
     "storage-virtual-machine",
+    "svm-peer",
     "task",
     "volume"
    ]
@@ -493,10 +641,15 @@
    "resources": [
     "association",
     "backup",
+    "cluster-peer",
     "file-cache",
     "file-system",
+    "snapmirror-policy",
+    "snapmirror-relationship",
     "snapshot",
+    "snapshot-policy",
     "storage-virtual-machine",
+    "svm-peer",
     "task",
     "volume"
    ]
@@ -513,12 +666,26 @@
    "resources": [
     "association",
     "backup",
+    "cluster-peer",
     "file-cache",
     "file-system",
+    "snapmirror-policy",
+    "snapmirror-relationship",
     "snapshot",
+    "snapshot-policy",
     "storage-virtual-machine",
+    "svm-peer",
     "task",
     "volume"
+   ]
+  },
+  "updateclusterpeer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateClusterPeer",
+   "resources": [
+    "cluster-peer"
    ]
   },
   "updatedatarepositoryassociation": {
@@ -555,6 +722,25 @@
    "name": "UpdateSharedVpcConfiguration",
    "resources": []
   },
+  "updatesnapmirrorpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSnapmirrorPolicy",
+   "resources": [
+    "snapmirror-policy"
+   ]
+  },
+  "updatesnapmirrorrelationship": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSnapmirrorRelationship",
+   "resources": [
+    "snapmirror-policy",
+    "snapmirror-relationship"
+   ]
+  },
   "updatesnapshot": {
    "flags": [
     "IsWrite"
@@ -564,6 +750,15 @@
     "snapshot"
    ]
   },
+  "updatesnapshotpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSnapshotPolicy",
+   "resources": [
+    "snapshot-policy"
+   ]
+  },
   "updatestoragevirtualmachine": {
    "flags": [
     "IsWrite"
@@ -571,6 +766,15 @@
    "name": "UpdateStorageVirtualMachine",
    "resources": [
     "storage-virtual-machine"
+   ]
+  },
+  "updatestoragevirtualmachinepeer": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateStorageVirtualMachinePeer",
+   "resources": [
+    "svm-peer"
    ]
   },
   "updatevolume": {
@@ -612,6 +816,9 @@
   "fsx:ParentVolumeId": [
    "String"
   ],
+  "fsx:SnapmirrorSourcePath": [
+   "String"
+  ],
   "fsx:StorageVirtualMachineId": [
    "String"
   ]
@@ -633,6 +840,14 @@
     "aws:ResourceTag/${TagKey}"
    ]
   },
+  "cluster-peer": {
+   "arnFormats": [
+    "arn:${Partition}:fsx:${Region}:${Account}:cluster-peer/${FileSystemId}/${ClusterPeerId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
   "file-cache": {
    "arnFormats": [
     "arn:${Partition}:fsx:${Region}:${Account}:file-cache/${FileCacheId}"
@@ -649,6 +864,22 @@
     "aws:ResourceTag/${TagKey}"
    ]
   },
+  "snapmirror-policy": {
+   "arnFormats": [
+    "arn:${Partition}:fsx:${Region}:${Account}:snapmirror-policy/${FileSystemIdOrStorageVirtualMachineId}/${SnapmirrorPolicyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "snapmirror-relationship": {
+   "arnFormats": [
+    "arn:${Partition}:fsx:${Region}:${Account}:snapmirror-relationship/${FileSystemId}/${VolumeId}/${SnapmirrorRelationshipId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
   "snapshot": {
    "arnFormats": [
     "arn:${Partition}:fsx:${Region}:${Account}:snapshot/${VolumeId}/${SnapshotId}"
@@ -657,9 +888,25 @@
     "aws:ResourceTag/${TagKey}"
    ]
   },
+  "snapshot-policy": {
+   "arnFormats": [
+    "arn:${Partition}:fsx:${Region}:${Account}:snapshot-policy/${FileSystemIdOrStorageVirtualMachineId}/${SnapshotPolicyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
   "storage-virtual-machine": {
    "arnFormats": [
     "arn:${Partition}:fsx:${Region}:${Account}:storage-virtual-machine/${FileSystemId}/${StorageVirtualMachineId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "svm-peer": {
+   "arnFormats": [
+    "arn:${Partition}:fsx:${Region}:${Account}:svm-peer/${FileSystemId}/${StorageVirtualMachineId}/${StorageVirtualMachinePeerId}"
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"

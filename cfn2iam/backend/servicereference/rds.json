@@ -262,6 +262,7 @@
     "rds:Piops",
     "rds:StorageEncrypted",
     "rds:StorageSize",
+    "rds:VpcNetworkingEnabled",
     "rds:req-tag/${TagKey}"
    ],
    "flags": [
@@ -1187,6 +1188,24 @@
     "cluster"
    ]
   },
+  "disableinternetaccessgateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableInternetAccessGateway",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "disablevpcnetworking": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableVpcNetworking",
+   "resources": [
+    "cluster"
+   ]
+  },
   "downloadcompletedblogfile": {
    "name": "DownloadCompleteDBLogFile",
    "resources": [
@@ -1204,6 +1223,24 @@
     "IsWrite"
    ],
    "name": "EnableHttpEndpoint",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "enableinternetaccessgateway": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableInternetAccessGateway",
+   "resources": [
+    "cluster"
+   ]
+  },
+  "enablevpcnetworking": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableVpcNetworking",
    "resources": [
     "cluster"
    ]
@@ -1315,7 +1352,8 @@
     "cluster",
     "cluster-pg",
     "og",
-    "pg"
+    "pg",
+    "subgrp"
    ]
   },
   "modifydbclusterendpoint": {
@@ -1670,6 +1708,7 @@
     "rds:DatabaseName",
     "rds:ManageMasterUserPassword",
     "rds:StorageEncrypted",
+    "rds:VpcNetworkingEnabled",
     "rds:req-tag/${TagKey}"
    ],
    "flags": [
@@ -1690,6 +1729,7 @@
     "rds:DatabaseClass",
     "rds:Piops",
     "rds:StorageSize",
+    "rds:VpcNetworkingEnabled",
     "rds:req-tag/${TagKey}"
    ],
    "flags": [
@@ -1712,6 +1752,7 @@
     "rds:DatabaseClass",
     "rds:Piops",
     "rds:StorageSize",
+    "rds:VpcNetworkingEnabled",
     "rds:req-tag/${TagKey}"
    ],
    "flags": [
@@ -1979,6 +2020,9 @@
    "String"
   ],
   "rds:Vpc": [
+   "Bool"
+  ],
+  "rds:VpcNetworkingEnabled": [
    "Bool"
   ],
   "rds:cluster-pg-tag/${TagKey}": [

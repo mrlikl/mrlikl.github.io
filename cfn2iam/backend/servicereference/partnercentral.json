@@ -120,6 +120,18 @@
     "Opportunity"
    ]
   },
+  "batchcreatecampaignasset": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchCreateCampaignAsset",
+   "resources": [
+    "Campaign"
+   ]
+  },
   "cancelbenefitapplication": {
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}",
@@ -161,6 +173,20 @@
    "name": "CancelBusinessPlanSubmissionTask",
    "resources": [
     "BusinessPlan"
+   ]
+  },
+  "cancelchannelcontract": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog",
+    "partnercentral:ChannelContractType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelChannelContract",
+   "resources": [
+    "ChannelContract"
    ]
   },
   "cancelchannelhandshake": {
@@ -259,6 +285,36 @@
     "BusinessPlan"
    ]
   },
+  "createcampaign": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCampaign",
+   "resources": [
+    "Campaign"
+   ]
+  },
+  "createchannelcontract": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog",
+    "partnercentral:ChannelContractType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateChannelContract",
+   "resources": [
+    "ChannelContract"
+   ]
+  },
   "createchannelhandshake": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -299,6 +355,34 @@
    ],
    "name": "CreateConnectionInvitation",
    "resources": []
+  },
+  "createcustomeraccount": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCustomerAccount",
+   "resources": [
+    "CustomerAccount"
+   ]
+  },
+  "createdatasubscription": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataSubscription",
+   "resources": [
+    "DataSubscription"
+   ]
   },
   "createengagement": {
    "conditionKeys": [
@@ -453,6 +537,28 @@
    "name": "CreateRevenueAttribution",
    "resources": []
   },
+  "createsocialconnectionauthorizationurl": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSocialConnectionAuthorizationUrl",
+   "resources": []
+  },
+  "deactivatecampaignasset": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeactivateCampaignAsset",
+   "resources": [
+    "Campaign"
+   ]
+  },
   "deletebusinessplanattachment": {
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}",
@@ -481,6 +587,55 @@
    "name": "DeleteBusinessPlanItem",
    "resources": [
     "BusinessPlan"
+   ]
+  },
+  "deletecampaign": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCampaign",
+   "resources": [
+    "Campaign"
+   ]
+  },
+  "deletecampaignasset": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCampaignAsset",
+   "resources": [
+    "Campaign"
+   ]
+  },
+  "deletecustomeraccount": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCustomerAccount",
+   "resources": [
+    "CustomerAccount"
+   ]
+  },
+  "deletedatasubscription": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataSubscription",
+   "resources": [
+    "DataSubscription"
    ]
   },
   "deleteprogrammanagementaccount": {
@@ -519,6 +674,18 @@
    "name": "DeleteResourceSnapshotJob",
    "resources": [
     "resource-snapshot-job"
+   ]
+  },
+  "deletesocialconnection": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSocialConnection",
+   "resources": [
+    "SocialConnection"
    ]
   },
   "disassociateawstrainingcertificationemaildomain": {
@@ -704,6 +871,60 @@
     "BusinessPlan"
    ]
   },
+  "getcampaign": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetCampaign",
+   "resources": [
+    "Campaign"
+   ]
+  },
+  "getcampaignasset": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetCampaignAsset",
+   "resources": [
+    "Campaign"
+   ]
+  },
+  "getcampaignassetactivationtask": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetCampaignAssetActivationTask",
+   "resources": [
+    "Campaign"
+   ]
+  },
+  "getcampaignassetexporttask": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetCampaignAssetExportTask",
+   "resources": [
+    "Campaign"
+   ]
+  },
+  "getcampaigntemplate": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetCampaignTemplate",
+   "resources": []
+  },
+  "getchannelcontract": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog",
+    "partnercentral:ChannelContractType"
+   ],
+   "name": "GetChannelContract",
+   "resources": [
+    "ChannelContract"
+   ]
+  },
   "getcollaborationchannel": {
    "name": "GetCollaborationChannel",
    "resources": []
@@ -732,6 +953,50 @@
    ],
    "name": "GetConnectionPreferences",
    "resources": []
+  },
+  "getcustomeraccount": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetCustomerAccount",
+   "resources": [
+    "CustomerAccount"
+   ]
+  },
+  "getcustomeraccountbulkjob": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetCustomerAccountBulkJob",
+   "resources": [
+    "CustomerAccountBulkJob"
+   ]
+  },
+  "getcustomeraccountbulkjobreporturl": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetCustomerAccountBulkJobReportUrl",
+   "resources": [
+    "CustomerAccountBulkJob"
+   ]
+  },
+  "getcustomeraccountstatistics": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetCustomerAccountStatistics",
+   "resources": []
+  },
+  "getdatasubscription": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}",
+    "partnercentral:Catalog"
+   ],
+   "name": "GetDataSubscription",
+   "resources": [
+    "DataSubscription"
+   ]
   },
   "getengagement": {
    "conditionKeys": [
@@ -776,6 +1041,15 @@
    "name": "GetOpportunity",
    "resources": [
     "Opportunity"
+   ]
+  },
+  "getopportunitybulkjobreporturl": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "name": "GetOpportunityBulkJobReportUrl",
+   "resources": [
+    "OpportunityBulkJob"
    ]
   },
   "getpartner": {
@@ -1083,6 +1357,39 @@
     "BusinessPlan"
    ]
   },
+  "listcampaignassets": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCampaignAssets",
+   "resources": [
+    "Campaign"
+   ]
+  },
+  "listcampaigns": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCampaigns",
+   "resources": []
+  },
+  "listchannelcontracts": {
+   "conditionKeys": [
+    "partnercentral:Catalog",
+    "partnercentral:ChannelContractType"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListChannelContracts",
+   "resources": []
+  },
   "listchannelhandshakes": {
    "conditionKeys": [
     "partnercentral:Catalog",
@@ -1123,6 +1430,38 @@
    "name": "ListConnections",
    "resources": []
   },
+  "listcustomeraccountbulkjobresults": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomerAccountBulkJobResults",
+   "resources": [
+    "CustomerAccountBulkJob"
+   ]
+  },
+  "listcustomeraccountbulkjobs": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCustomerAccountBulkJobs",
+   "resources": []
+  },
+  "listdatasubscriptions": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSubscriptions",
+   "resources": []
+  },
   "listengagementbyacceptinginvitationtasks": {
    "conditionKeys": [
     "partnercentral:Catalog"
@@ -1141,6 +1480,16 @@
     "IsList"
    ],
    "name": "ListEngagementFromOpportunityTasks",
+   "resources": []
+  },
+  "listengagementgroups": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEngagementGroups",
    "resources": []
   },
   "listengagementinvitations": {
@@ -1211,6 +1560,28 @@
     "IsList"
    ],
    "name": "ListOpportunities",
+   "resources": []
+  },
+  "listopportunitybulkjobresults": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOpportunityBulkJobResults",
+   "resources": [
+    "OpportunityBulkJob"
+   ]
+  },
+  "listopportunitybulkjobs": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOpportunityBulkJobs",
    "resources": []
   },
   "listopportunityfromengagementtasks": {
@@ -1326,6 +1697,16 @@
     "IsList"
    ],
    "name": "ListRevenueAttributions",
+   "resources": []
+  },
+  "listsocialconnections": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSocialConnections",
    "resources": []
   },
   "listsolutions": {
@@ -1454,6 +1835,36 @@
     "engagement-invitation"
    ]
   },
+  "searchcampaigntemplates": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchCampaignTemplates",
+   "resources": []
+  },
+  "searchcustomeraccounts": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchCustomerAccounts",
+   "resources": []
+  },
+  "searchengagements": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "SearchEngagements",
+   "resources": []
+  },
   "searchopportunities": {
    "conditionKeys": [
     "partnercentral:Catalog"
@@ -1519,6 +1930,40 @@
     "BusinessPlan"
    ]
   },
+  "startcampaignassetactivationtask": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCampaignAssetActivationTask",
+   "resources": [
+    "Campaign"
+   ]
+  },
+  "startcampaignassetexporttask": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCampaignAssetExportTask",
+   "resources": [
+    "Campaign"
+   ]
+  },
+  "startcustomeraccountbulkjob": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartCustomerAccountBulkJob",
+   "resources": []
+  },
   "startengagementbyacceptinginvitationtask": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -1548,6 +1993,16 @@
    "resources": [
     "engagement-from-opportunity-task"
    ]
+  },
+  "startopportunitybulkjob": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartOpportunityBulkJob",
+   "resources": []
   },
   "startopportunityfromengagementtask": {
    "conditionKeys": [
@@ -1706,7 +2161,11 @@
    "resources": [
     "BenefitApplication",
     "BusinessPlan",
+    "Campaign",
+    "ChannelContract",
     "ChannelHandshake",
+    "CustomerAccount",
+    "DataSubscription",
     "MarketplaceRevenueShare",
     "Opportunity",
     "Partner",
@@ -1732,7 +2191,11 @@
    "resources": [
     "BenefitApplication",
     "BusinessPlan",
+    "Campaign",
+    "ChannelContract",
     "ChannelHandshake",
+    "CustomerAccount",
+    "DataSubscription",
     "MarketplaceRevenueShare",
     "Opportunity",
     "Partner",
@@ -1787,6 +2250,30 @@
     "BusinessPlan"
    ]
   },
+  "updatecampaign": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaign",
+   "resources": [
+    "Campaign"
+   ]
+  },
+  "updatecampaignasset": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCampaignAsset",
+   "resources": [
+    "Campaign"
+   ]
+  },
   "updateconnectionpreferences": {
    "conditionKeys": [
     "partnercentral:Catalog"
@@ -1796,6 +2283,18 @@
    ],
    "name": "UpdateConnectionPreferences",
    "resources": []
+  },
+  "updatecustomeraccount": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCustomerAccount",
+   "resources": [
+    "CustomerAccount"
+   ]
   },
   "updateengagementcontext": {
    "conditionKeys": [
@@ -1807,6 +2306,18 @@
    "name": "UpdateEngagementContext",
    "resources": [
     "Engagement"
+   ]
+  },
+  "updatemarketplacerevenueshare": {
+   "conditionKeys": [
+    "partnercentral:Catalog"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMarketplaceRevenueShare",
+   "resources": [
+    "MarketplaceRevenueShare"
    ]
   },
   "updatemarketplacerevenueshareallocation": {
@@ -1904,6 +2415,9 @@
   "partnercentral:Catalog": [
    "String"
   ],
+  "partnercentral:ChannelContractType": [
+   "String"
+  ],
   "partnercentral:ChannelHandshakeType": [
    "String"
   ],
@@ -1947,6 +2461,22 @@
     "aws:ResourceTag/${TagKey}"
    ]
   },
+  "Campaign": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/campaign/${CampaignId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "ChannelContract": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/channel-contract/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
   "ChannelHandshake": {
    "arnFormats": [
     "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/channel-handshake/${Identifier}"
@@ -1970,9 +2500,30 @@
     "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/connection-preferences"
    ]
   },
+  "CustomerAccount": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/customer-account/${Identifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "CustomerAccountBulkJob": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/customer-account-bulk-job/${Identifier}"
+   ]
+  },
   "Dashboard": {
    "arnFormats": [
     "arn:${Partition}:partnercentral::${Account}:catalog/${Catalog}/ReportingData/${TableId}/Dashboard/${DashboardId}"
+   ]
+  },
+  "DataSubscription": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral::${Account}:catalog/${Catalog}/ReportingData/${Domain}/DataSubscription/${DataSubscriptionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
    ]
   },
   "Dataset": {
@@ -1985,9 +2536,14 @@
     "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/engagement/${Identifier}"
    ]
   },
+  "EngagementGroup": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/engagement-group/${Identifier}"
+   ]
+  },
   "MarketplaceRevenueShare": {
    "arnFormats": [
-    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/marketplace-revenue-share/${MarketplaceProductId}"
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/marketplace-revenue-share/${MarketplaceRevenueShareId}"
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"
@@ -1999,6 +2555,11 @@
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "OpportunityBulkJob": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/opportunity-bulk-job/${Identifier}"
    ]
   },
   "OpportunityFromEngagementTask": {
@@ -2046,6 +2607,11 @@
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "SocialConnection": {
+   "arnFormats": [
+    "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/social-connection/${SocialConnectionId}"
    ]
   },
   "Solution": {

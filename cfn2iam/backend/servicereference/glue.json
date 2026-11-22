@@ -322,6 +322,19 @@
     "rootcatalog"
    ]
   },
+  "createdataqualityevaluationconfig": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataQualityEvaluationConfig",
+   "resources": [
+    "dataQualityEvaluationConfig"
+   ]
+  },
   "createdataqualityruleset": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -719,6 +732,15 @@
     "rootcatalog",
     "table",
     "userdefinedfunction"
+   ]
+  },
+  "deletedataqualityevaluationconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataQualityEvaluationConfig",
+   "resources": [
+    "dataQualityEvaluationConfig"
    ]
   },
   "deletedataqualityruleset": {
@@ -1221,6 +1243,12 @@
    "name": "GetDataPreviewStatement",
    "resources": []
   },
+  "getdataqualityevaluationconfig": {
+   "name": "GetDataQualityEvaluationConfig",
+   "resources": [
+    "dataQualityEvaluationConfig"
+   ]
+  },
   "getdataqualitymodel": {
    "name": "GetDataQualityModel",
    "resources": [
@@ -1690,6 +1718,7 @@
     "connectionType",
     "crawler",
     "customEntityType",
+    "dataQualityEvaluationConfig",
     "database",
     "devendpoint",
     "job",
@@ -1833,6 +1862,15 @@
    "name": "ListCustomEntityTypes",
    "resources": []
   },
+  "listdataqualityevaluationconfigs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataQualityEvaluationConfigs",
+   "resources": [
+    "dataQualityEvaluationConfig"
+   ]
+  },
   "listdataqualityresults": {
    "flags": [
     "IsList"
@@ -1899,6 +1937,13 @@
     "database",
     "integrationResourceProperty"
    ]
+  },
+  "listintegrationtableproperties": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIntegrationTableProperties",
+   "resources": []
   },
   "listjobs": {
    "flags": [
@@ -2491,6 +2536,7 @@
     "connectionType",
     "crawler",
     "customEntityType",
+    "dataQualityEvaluationConfig",
     "dataQualityRuleset",
     "database",
     "devendpoint",
@@ -2542,6 +2588,7 @@
     "connectionType",
     "crawler",
     "customEntityType",
+    "dataQualityEvaluationConfig",
     "dataQualityRuleset",
     "database",
     "devendpoint",
@@ -2674,6 +2721,15 @@
     "catalog",
     "database",
     "rootcatalog"
+   ]
+  },
+  "updatedataqualityevaluationconfig": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDataQualityEvaluationConfig",
+   "resources": [
+    "dataQualityEvaluationConfig"
    ]
   },
   "updatedataqualityruleset": {
@@ -2988,6 +3044,14 @@
   "customEntityType": {
    "arnFormats": [
     "arn:${Partition}:glue:${Region}:${Account}:customEntityType/${CustomEntityTypeId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "dataQualityEvaluationConfig": {
+   "arnFormats": [
+    "arn:${Partition}:glue:${Region}:${Account}:dataQualityEvaluationConfig/${EvaluationConfigName}"
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"

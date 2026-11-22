@@ -160,7 +160,13 @@
   "createopenidconnectprovider": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
-    "aws:TagKeys"
+    "aws:TagKeys",
+    "iam:EnableIdentityCenterAssociation",
+    "iam:EnableIdentityPropagation",
+    "iam:RequestIdentityCenterInstanceArn",
+    "iam:RequestIdentityProviderIssuers",
+    "iam:ResourceIdentityCenterInstanceArn",
+    "iam:ResourceIdentityProviderIssuers"
    ],
    "flags": [
     "IsWrite"
@@ -212,7 +218,13 @@
   "createsamlprovider": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
-    "aws:TagKeys"
+    "aws:TagKeys",
+    "iam:EnableIdentityCenterAssociation",
+    "iam:EnableIdentityPropagation",
+    "iam:RequestIdentityCenterInstanceArn",
+    "iam:RequestIdentityProviderIssuers",
+    "iam:ResourceIdentityCenterInstanceArn",
+    "iam:ResourceIdentityProviderIssuers"
    ],
    "flags": [
     "IsWrite"
@@ -766,6 +778,14 @@
    "resources": [
     "policy"
    ]
+  },
+  "getrequestauthorizationdetails": {
+   "name": "GetRequestAuthorizationDetails",
+   "resources": []
+  },
+  "getrequestauthorizationpolicy": {
+   "name": "GetRequestAuthorizationPolicy",
+   "resources": []
   },
   "getrole": {
    "conditionKeys": [
@@ -1626,6 +1646,22 @@
     "user"
    ]
   },
+  "updateopenidconnectprovider": {
+   "conditionKeys": [
+    "iam:EnableIdentityCenterAssociation",
+    "iam:EnableIdentityPropagation",
+    "iam:RequestIdentityCenterInstanceArn",
+    "iam:ResourceIdentityCenterInstanceArn",
+    "iam:ResourceIdentityProviderIssuers"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOpenIDConnectProvider",
+   "resources": [
+    "oidc-provider"
+   ]
+  },
   "updateopenidconnectproviderthumbprint": {
    "flags": [
     "IsWrite"
@@ -1660,6 +1696,14 @@
    ]
   },
   "updatesamlprovider": {
+   "conditionKeys": [
+    "iam:EnableIdentityCenterAssociation",
+    "iam:EnableIdentityPropagation",
+    "iam:RequestIdentityCenterInstanceArn",
+    "iam:RequestIdentityProviderIssuers",
+    "iam:ResourceIdentityCenterInstanceArn",
+    "iam:ResourceIdentityProviderIssuers"
+   ],
    "flags": [
     "IsWrite"
    ],
@@ -1780,6 +1824,12 @@
   "iam:DelegationRequestOwner": [
    "ARN"
   ],
+  "iam:EnableIdentityCenterAssociation": [
+   "Bool"
+  ],
+  "iam:EnableIdentityPropagation": [
+   "Bool"
+  ],
   "iam:FIDO-FIPS-140-2-certification": [
    "String"
   ],
@@ -1806,6 +1856,18 @@
   ],
   "iam:RegisterSecurityKey": [
    "String"
+  ],
+  "iam:RequestIdentityCenterInstanceArn": [
+   "ARN"
+  ],
+  "iam:RequestIdentityProviderIssuers": [
+   "ArrayOfString"
+  ],
+  "iam:ResourceIdentityCenterInstanceArn": [
+   "ARN"
+  ],
+  "iam:ResourceIdentityProviderIssuers": [
+   "ArrayOfString"
   ],
   "iam:ResourceTag/${TagKey}": [
    "String"

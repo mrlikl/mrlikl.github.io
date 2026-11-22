@@ -387,8 +387,7 @@
   "getreadset": {
    "name": "GetReadSet",
    "resources": [
-    "readSet",
-    "sequenceStore"
+    "readSet"
    ]
   },
   "getreadsetactivationjob": {
@@ -412,15 +411,13 @@
   "getreadsetmetadata": {
    "name": "GetReadSetMetadata",
    "resources": [
-    "readSet",
-    "sequenceStore"
+    "readSet"
    ]
   },
   "getreference": {
    "name": "GetReference",
    "resources": [
-    "reference",
-    "referenceStore"
+    "reference"
    ]
   },
   "getreferenceimportjob": {
@@ -432,8 +429,7 @@
   "getreferencemetadata": {
    "name": "GetReferenceMetadata",
    "resources": [
-    "reference",
-    "referenceStore"
+    "reference"
    ]
   },
   "getreferencestore": {
