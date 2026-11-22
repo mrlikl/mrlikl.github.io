@@ -7,7 +7,8 @@
         "s3vectors:TagResource",
         "kms:GenerateDataKey",
         "kms:Decrypt"
-      ]
+      ],
+      "timeoutInMinutes": 2160
     },
     "delete": {
       "permissions": [
@@ -51,10 +52,12 @@
     "update": {
       "permissions": [
         "s3vectors:GetIndex",
+        "s3vectors:UpdateMetadataConfiguration",
         "s3vectors:TagResource",
         "s3vectors:UntagResource",
         "s3vectors:ListTagsForResource"
-      ]
+      ],
+      "timeoutInMinutes": 2160
     }
   },
   "typeName": "AWS::S3Vectors::Index"

@@ -1,0 +1,38 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "iam:CreateServiceLinkedRole",
+        "route53:ChangeTagsForResource",
+        "route53:CreateHealthCheckSource",
+        "route53:GetHealthCheckSource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "iam:CreateServiceLinkedRole",
+        "route53:DeleteHealthCheckSource",
+        "route53:GetHealthCheckSource"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "route53:ListHealthCheckSources"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "route53:GetHealthCheckSource",
+        "route53:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "route53:ChangeTagsForResource",
+        "route53:GetHealthCheckSource",
+        "route53:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::Route53::HealthCheckSource"
+}

@@ -3,7 +3,9 @@
     "create": {
       "permissions": [
         "cloudformation:CreateGeneratedTemplate",
-        "cloudformation:DescribeGeneratedTemplate"
+        "cloudformation:DescribeGeneratedTemplate",
+        "cloudformation:DescribeStacks",
+        "cloudformation:GetTemplate"
       ]
     },
     "delete": {

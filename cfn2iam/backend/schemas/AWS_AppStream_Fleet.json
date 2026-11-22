@@ -42,7 +42,8 @@
         "iam:PassRole",
         "s3:ListBucket",
         "s3:GetObject"
-      ]
+      ],
+      "timeoutInMinutes": 190
     }
   },
   "typeName": "AWS::AppStream::Fleet"

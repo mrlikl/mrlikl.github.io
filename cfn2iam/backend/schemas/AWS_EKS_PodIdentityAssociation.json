@@ -6,7 +6,11 @@
         "eks:DescribePodIdentityAssociation",
         "eks:TagResource",
         "iam:PassRole",
-        "iam:GetRole"
+        "iam:GetRole",
+        "iam:PassWorkloadIdentityTemplate",
+        "iam:GetWorkloadIdentityTemplate",
+        "iam:GetWorkloadIdentityTemplateAttestationPolicy",
+        "iam:GetWorkloadIdentityProvider"
       ]
     },
     "delete": {
@@ -42,7 +46,11 @@
         "eks:TagResource",
         "eks:UntagResource",
         "iam:PassRole",
-        "iam:GetRole"
+        "iam:GetRole",
+        "iam:PassWorkloadIdentityTemplate",
+        "iam:GetWorkloadIdentityTemplate",
+        "iam:GetWorkloadIdentityTemplateAttestationPolicy",
+        "iam:GetWorkloadIdentityProvider"
       ]
     }
   },

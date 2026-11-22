@@ -1,0 +1,72 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "chime:CreateChannel",
+        "chime:CreateChannelMembership",
+        "chime:CreateChannelModerator",
+        "chime:PutChannelExpirationSettings",
+        "chime:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "chime:DeleteChannel",
+        "chime:DescribeChannel",
+        "chime:ListTagsForResource"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "AppInstanceArn": {
+            "description": "The ARN of the AppInstance whose channels are listed.",
+            "maxLength": 1600,
+            "minLength": 5,
+            "pattern": "^arn:[a-z0-9-\\.]{1,63}:[a-z0-9-\\.]{0,63}:[a-z0-9-\\.]{0,63}:[a-z0-9-\\.]{0,63}:[^/].{0,1023}$",
+            "type": "string"
+          },
+          "ChimeBearer": {
+            "description": "The AppInstanceUser or AppInstanceBot ARN to enumerate as. ListChannels returns the channels this bearer is authorised to see: an AppInstanceAdmin enumerates every channel in the AppInstance, while a plain bearer enumerates public channels and its own memberships but not a private channel it created itself. Use an AppInstanceAdmin bearer for complete enumeration. Every returned identifier pairs a channel with this bearer and resolves through READ, because READ asks the service the same authorisation question this listing did.",
+            "maxLength": 1600,
+            "minLength": 5,
+            "pattern": "^arn:[a-z0-9-\\.]{1,63}:[a-z0-9-\\.]{0,63}:[a-z0-9-\\.]{0,63}:[a-z0-9-\\.]{0,63}:[^/].{0,1023}$",
+            "type": "string"
+          },
+          "Privacy": {
+            "description": "Optional filter restricting the listing to public or private channels; omitted, the listing covers whatever the bearer may see. Filtering on PRIVATE requires an AppInstanceAdmin bearer, and the service refuses it for a plain bearer.",
+            "enum": [
+              "PUBLIC",
+              "PRIVATE"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "AppInstanceArn",
+          "ChimeBearer"
+        ]
+      },
+      "permissions": [
+        "chime:ListChannels"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "chime:DescribeChannel",
+        "chime:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "chime:UpdateChannel",
+        "chime:PutChannelExpirationSettings",
+        "chime:TagResource",
+        "chime:UntagResource",
+        "chime:ListTagsForResource",
+        "chime:DescribeChannel"
+      ]
+    }
+  },
+  "typeName": "AWS::Chime::Channel"
+}

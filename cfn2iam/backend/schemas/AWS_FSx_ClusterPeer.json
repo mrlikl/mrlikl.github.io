@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "fsx:CreateClusterPeer",
+        "fsx:DescribeClusterPeers",
+        "fsx:TagResource",
+        "secretsmanager:GetSecretValue",
+        "secretsmanager:DescribeSecret",
+        "kms:Decrypt"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "fsx:DeleteClusterPeer",
+        "fsx:DescribeClusterPeers"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "fsx:DescribeClusterPeers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "fsx:DescribeClusterPeers",
+        "fsx:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "fsx:DescribeClusterPeers",
+        "fsx:UpdateClusterPeer",
+        "fsx:TagResource",
+        "fsx:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::FSx::ClusterPeer"
+}

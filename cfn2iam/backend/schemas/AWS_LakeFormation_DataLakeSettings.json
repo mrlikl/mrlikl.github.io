@@ -1,4 +1,28 @@
 {
-  "handlers": {},
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lakeformation:PutDataLakeSettings",
+        "lakeformation:GetDataLakeSettings"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lakeformation:PutDataLakeSettings",
+        "lakeformation:GetDataLakeSettings"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lakeformation:GetDataLakeSettings"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lakeformation:PutDataLakeSettings",
+        "lakeformation:GetDataLakeSettings"
+      ]
+    }
+  },
   "typeName": "AWS::LakeFormation::DataLakeSettings"
 }

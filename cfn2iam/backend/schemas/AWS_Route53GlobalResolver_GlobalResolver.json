@@ -34,7 +34,8 @@
         "route53globalresolver:GetGlobalResolver",
         "route53globalresolver:TagResource",
         "route53globalresolver:UntagResource",
-        "route53globalresolver:ListTagsForResource"
+        "route53globalresolver:ListTagsForResource",
+        "networkmanager:GetCoreNetwork"
       ],
       "timeoutInMinutes": 120
     }

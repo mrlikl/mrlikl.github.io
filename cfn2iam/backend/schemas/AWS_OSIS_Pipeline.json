@@ -11,6 +11,9 @@
         "iam:PassRole",
         "iam:CreateServiceLinkedRole",
         "logs:CreateLogDelivery",
+        "logs:PutResourcePolicy",
+        "logs:DescribeResourcePolicies",
+        "logs:DescribeLogGroups",
         "kms:DescribeKey"
       ]
     },
@@ -46,9 +49,14 @@
         "osis:PutResourcePolicy",
         "osis:DeleteResourcePolicy",
         "iam:PassRole",
+        "logs:CreateLogDelivery",
         "logs:GetLogDelivery",
         "logs:UpdateLogDelivery",
+        "logs:DeleteLogDelivery",
         "logs:ListLogDeliveries",
+        "logs:PutResourcePolicy",
+        "logs:DescribeResourcePolicies",
+        "logs:DescribeLogGroups",
         "kms:DescribeKey"
       ]
     }

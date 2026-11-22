@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-15T07:40:22.510932Z",
+  "lastUpdated": "2026-11-22T07:52:09.169767Z",
   "schemas": [
     {
       "filename": "AWS_ACMPCA_Certificate.json",
@@ -90,6 +90,11 @@
       "filename": "AWS_AccountAccess_Entitlement.json",
       "hasHandlers": true,
       "typeName": "AWS::AccountAccess::Entitlement"
+    },
+    {
+      "filename": "AWS_AgentRegistry_Publisher.json",
+      "hasHandlers": true,
+      "typeName": "AWS::AgentRegistry::Publisher"
     },
     {
       "filename": "AWS_AgentRegistry_Registry.json",
@@ -1207,6 +1212,11 @@
       "typeName": "AWS::Chime::AppInstanceUser"
     },
     {
+      "filename": "AWS_Chime_Channel.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Chime::Channel"
+    },
+    {
       "filename": "AWS_Chime_ChannelFlow.json",
       "hasHandlers": true,
       "typeName": "AWS::Chime::ChannelFlow"
@@ -1435,6 +1445,16 @@
       "filename": "AWS_CloudFront_DistributionTenant.json",
       "hasHandlers": true,
       "typeName": "AWS::CloudFront::DistributionTenant"
+    },
+    {
+      "filename": "AWS_CloudFront_FieldLevelEncryptionConfig.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudFront::FieldLevelEncryptionConfig"
+    },
+    {
+      "filename": "AWS_CloudFront_FieldLevelEncryptionProfile.json",
+      "hasHandlers": true,
+      "typeName": "AWS::CloudFront::FieldLevelEncryptionProfile"
     },
     {
       "filename": "AWS_CloudFront_Function.json",
@@ -1747,6 +1767,11 @@
       "typeName": "AWS::CodeStar::GitHubRepository"
     },
     {
+      "filename": "AWS_Cognito_CIMDPolicy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Cognito::CIMDPolicy"
+    },
+    {
       "filename": "AWS_Cognito_IdentityPool.json",
       "hasHandlers": true,
       "typeName": "AWS::Cognito::IdentityPool"
@@ -1787,6 +1812,11 @@
       "typeName": "AWS::Cognito::UserPoolClient"
     },
     {
+      "filename": "AWS_Cognito_UserPoolClientSessionConfigurationAttachment.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Cognito::UserPoolClientSessionConfigurationAttachment"
+    },
+    {
       "filename": "AWS_Cognito_UserPoolDomain.json",
       "hasHandlers": true,
       "typeName": "AWS::Cognito::UserPoolDomain"
@@ -1820,6 +1850,11 @@
       "filename": "AWS_Cognito_UserPoolRiskConfigurationAttachment.json",
       "hasHandlers": true,
       "typeName": "AWS::Cognito::UserPoolRiskConfigurationAttachment"
+    },
+    {
+      "filename": "AWS_Cognito_UserPoolSessionConfigurationAttachment.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Cognito::UserPoolSessionConfigurationAttachment"
     },
     {
       "filename": "AWS_Cognito_UserPoolUICustomizationAttachment.json",
@@ -2802,6 +2837,16 @@
       "typeName": "AWS::EC2::EnclaveCertificateIamRoleAssociation"
     },
     {
+      "filename": "AWS_EC2_FcaPolicy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::FcaPolicy"
+    },
+    {
+      "filename": "AWS_EC2_FcaPolicyAssociation.json",
+      "hasHandlers": true,
+      "typeName": "AWS::EC2::FcaPolicyAssociation"
+    },
+    {
       "filename": "AWS_EC2_FlowLog.json",
       "hasHandlers": true,
       "typeName": "AWS::EC2::FlowLog"
@@ -3703,7 +3748,7 @@
     },
     {
       "filename": "AWS_Elasticsearch_Domain.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::Elasticsearch::Domain"
     },
     {
@@ -3872,6 +3917,11 @@
       "typeName": "AWS::FSx::Backup"
     },
     {
+      "filename": "AWS_FSx_ClusterPeer.json",
+      "hasHandlers": true,
+      "typeName": "AWS::FSx::ClusterPeer"
+    },
+    {
       "filename": "AWS_FSx_DataRepositoryAssociation.json",
       "hasHandlers": true,
       "typeName": "AWS::FSx::DataRepositoryAssociation"
@@ -3892,9 +3942,24 @@
       "typeName": "AWS::FSx::S3AccessPointAttachment"
     },
     {
+      "filename": "AWS_FSx_SnapmirrorPolicy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::FSx::SnapmirrorPolicy"
+    },
+    {
+      "filename": "AWS_FSx_SnapmirrorRelationship.json",
+      "hasHandlers": true,
+      "typeName": "AWS::FSx::SnapmirrorRelationship"
+    },
+    {
       "filename": "AWS_FSx_Snapshot.json",
       "hasHandlers": true,
       "typeName": "AWS::FSx::Snapshot"
+    },
+    {
+      "filename": "AWS_FSx_SnapshotPolicy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::FSx::SnapshotPolicy"
     },
     {
       "filename": "AWS_FSx_StorageVirtualMachine.json",
@@ -4997,6 +5062,11 @@
       "typeName": "AWS::Kinesis::Channel"
     },
     {
+      "filename": "AWS_Kinesis_Queue.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Kinesis::Queue"
+    },
+    {
       "filename": "AWS_Kinesis_ResourcePolicy.json",
       "hasHandlers": true,
       "typeName": "AWS::Kinesis::ResourcePolicy"
@@ -5018,12 +5088,12 @@
     },
     {
       "filename": "AWS_LakeFormation_DataLakeSettings.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::LakeFormation::DataLakeSettings"
     },
     {
       "filename": "AWS_LakeFormation_Permissions.json",
-      "hasHandlers": false,
+      "hasHandlers": true,
       "typeName": "AWS::LakeFormation::Permissions"
     },
     {
@@ -5105,6 +5175,21 @@
       "filename": "AWS_Lambda_ResourcePolicy.json",
       "hasHandlers": true,
       "typeName": "AWS::Lambda::ResourcePolicy"
+    },
+    {
+      "filename": "AWS_Lambda_Runtime.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Lambda::Runtime"
+    },
+    {
+      "filename": "AWS_Lambda_RuntimeAlias.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Lambda::RuntimeAlias"
+    },
+    {
+      "filename": "AWS_Lambda_RuntimeVersion.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Lambda::RuntimeVersion"
     },
     {
       "filename": "AWS_Lambda_Url.json",
@@ -5190,6 +5275,11 @@
       "filename": "AWS_LicenseManager_LicenseConfiguration.json",
       "hasHandlers": true,
       "typeName": "AWS::LicenseManager::LicenseConfiguration"
+    },
+    {
+      "filename": "AWS_LicenseManager_ReportGenerator.json",
+      "hasHandlers": true,
+      "typeName": "AWS::LicenseManager::ReportGenerator"
     },
     {
       "filename": "AWS_Lightsail_Alarm.json",
@@ -5912,6 +6002,11 @@
       "typeName": "AWS::NetworkFlowMonitor::Monitor"
     },
     {
+      "filename": "AWS_NetworkFlowMonitor_PerformanceMonitor.json",
+      "hasHandlers": true,
+      "typeName": "AWS::NetworkFlowMonitor::PerformanceMonitor"
+    },
+    {
       "filename": "AWS_NetworkFlowMonitor_Scope.json",
       "hasHandlers": true,
       "typeName": "AWS::NetworkFlowMonitor::Scope"
@@ -5925,6 +6020,11 @@
       "filename": "AWS_NetworkManager_ConnectPeer.json",
       "hasHandlers": true,
       "typeName": "AWS::NetworkManager::ConnectPeer"
+    },
+    {
+      "filename": "AWS_NetworkManager_Connection.json",
+      "hasHandlers": true,
+      "typeName": "AWS::NetworkManager::Connection"
     },
     {
       "filename": "AWS_NetworkManager_ContextStore.json",
@@ -6172,6 +6272,11 @@
       "typeName": "AWS::Omics::WorkflowVersion"
     },
     {
+      "filename": "AWS_OpenSearchMemory_Space.json",
+      "hasHandlers": true,
+      "typeName": "AWS::OpenSearchMemory::Space"
+    },
+    {
       "filename": "AWS_OpenSearchServerless_AccessPolicy.json",
       "hasHandlers": true,
       "typeName": "AWS::OpenSearchServerless::AccessPolicy"
@@ -6225,6 +6330,11 @@
       "filename": "AWS_OpenSearchService_Domain.json",
       "hasHandlers": true,
       "typeName": "AWS::OpenSearchService::Domain"
+    },
+    {
+      "filename": "AWS_OpenSearchService_ReplicationPeer.json",
+      "hasHandlers": true,
+      "typeName": "AWS::OpenSearchService::ReplicationPeer"
     },
     {
       "filename": "AWS_OpenSearch_DataSource.json",
@@ -7047,6 +7157,11 @@
       "typeName": "AWS::Route53GlobalResolver::AccessToken"
     },
     {
+      "filename": "AWS_Route53GlobalResolver_CoreNetworkEndpoint.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Route53GlobalResolver::CoreNetworkEndpoint"
+    },
+    {
       "filename": "AWS_Route53GlobalResolver_DnsView.json",
       "hasHandlers": true,
       "typeName": "AWS::Route53GlobalResolver::DnsView"
@@ -7167,6 +7282,11 @@
       "typeName": "AWS::Route53::HealthCheck"
     },
     {
+      "filename": "AWS_Route53_HealthCheckSource.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Route53::HealthCheckSource"
+    },
+    {
       "filename": "AWS_Route53_HostedZone.json",
       "hasHandlers": true,
       "typeName": "AWS::Route53::HostedZone"
@@ -7190,6 +7310,11 @@
       "filename": "AWS_Route53_RecordSetGroup.json",
       "hasHandlers": false,
       "typeName": "AWS::Route53::RecordSetGroup"
+    },
+    {
+      "filename": "AWS_Route53_RecordSetProtection.json",
+      "hasHandlers": true,
+      "typeName": "AWS::Route53::RecordSetProtection"
     },
     {
       "filename": "AWS_Route53_TrafficPolicy.json",
@@ -7792,6 +7917,11 @@
       "typeName": "AWS::SageMaker::EndpointConfig"
     },
     {
+      "filename": "AWS_SageMaker_EndpointPolicy.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::EndpointPolicy"
+    },
+    {
       "filename": "AWS_SageMaker_Experiment.json",
       "hasHandlers": true,
       "typeName": "AWS::SageMaker::Experiment"
@@ -7800,6 +7930,11 @@
       "filename": "AWS_SageMaker_ExperimentTrialComponent.json",
       "hasHandlers": false,
       "typeName": "AWS::SageMaker::ExperimentTrialComponent"
+    },
+    {
+      "filename": "AWS_SageMaker_Extension.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::Extension"
     },
     {
       "filename": "AWS_SageMaker_FeatureGroup.json",
@@ -7835,6 +7970,11 @@
       "filename": "AWS_SageMaker_InferenceExperiment.json",
       "hasHandlers": true,
       "typeName": "AWS::SageMaker::InferenceExperiment"
+    },
+    {
+      "filename": "AWS_SageMaker_InferenceRouter.json",
+      "hasHandlers": true,
+      "typeName": "AWS::SageMaker::InferenceRouter"
     },
     {
       "filename": "AWS_SageMaker_MlflowApp.json",
@@ -8932,5 +9072,5 @@
       "typeName": "AWS::XRay::TransactionSearchConfig"
     }
   ],
-  "totalSchemas": 1786
+  "totalSchemas": 1814
 }

@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "agent-registry:CreatePublisher",
+        "agent-registry:GetPublisher",
+        "agent-registry:TagResource",
+        "agent-registry:ListTagsForResource"
+      ],
+      "timeoutInMinutes": 2160
+    },
+    "delete": {
+      "permissions": [
+        "agent-registry:DeletePublisher",
+        "agent-registry:GetPublisher"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "agent-registry:ListPublishers"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "agent-registry:GetPublisher",
+        "agent-registry:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "agent-registry:TagResource",
+        "agent-registry:UntagResource",
+        "agent-registry:GetPublisher",
+        "agent-registry:ListTagsForResource"
+      ]
+    }
+  },
+  "typeName": "AWS::AgentRegistry::Publisher"
+}

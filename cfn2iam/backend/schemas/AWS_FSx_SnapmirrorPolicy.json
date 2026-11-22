@@ -1,0 +1,37 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "fsx:CreateSnapmirrorPolicy",
+        "fsx:DescribeSnapmirrorPolicies",
+        "fsx:TagResource"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "fsx:DeleteSnapmirrorPolicy",
+        "fsx:DescribeSnapmirrorPolicies"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "fsx:DescribeSnapmirrorPolicies"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "fsx:DescribeSnapmirrorPolicies",
+        "fsx:ListTagsForResource"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "fsx:DescribeSnapmirrorPolicies",
+        "fsx:UpdateSnapmirrorPolicy",
+        "fsx:TagResource",
+        "fsx:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::FSx::SnapmirrorPolicy"
+}

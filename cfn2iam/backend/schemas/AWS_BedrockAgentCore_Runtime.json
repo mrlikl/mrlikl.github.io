@@ -20,10 +20,12 @@
         "vpc-lattice:GetServiceNetworkResourceAssociation",
         "vpc-lattice:ListServiceNetworkResourceAssociations",
         "vpc-lattice:AssociateViaAWSService",
+        "vpc-lattice:DeleteServiceNetworkResourceAssociation",
         "ec2:DescribeVpcs",
         "ec2:DescribeSubnets",
         "ec2:DescribeSecurityGroups",
-        "ec2:CreateNetworkInterface"
+        "ec2:CreateNetworkInterface",
+        "secretsmanager:GetSecretValue"
       ],
       "timeoutInMinutes": 35
     },
@@ -33,7 +35,8 @@
         "bedrock-agentcore:DeleteAgentRuntimeEndpoint",
         "bedrock-agentcore:DeleteWorkloadIdentity",
         "bedrock-agentcore:GetAgentRuntime",
-        "bedrock-agentcore:GetAgentRuntimeEndpoint"
+        "bedrock-agentcore:GetAgentRuntimeEndpoint",
+        "vpc-lattice:DeleteServiceNetworkResourceAssociation"
       ],
       "timeoutInMinutes": 130
     },
@@ -70,10 +73,12 @@
         "vpc-lattice:GetServiceNetworkResourceAssociation",
         "vpc-lattice:ListServiceNetworkResourceAssociations",
         "vpc-lattice:AssociateViaAWSService",
+        "vpc-lattice:DeleteServiceNetworkResourceAssociation",
         "ec2:DescribeVpcs",
         "ec2:DescribeSubnets",
         "ec2:DescribeSecurityGroups",
-        "ec2:CreateNetworkInterface"
+        "ec2:CreateNetworkInterface",
+        "secretsmanager:GetSecretValue"
       ],
       "timeoutInMinutes": 35
     }

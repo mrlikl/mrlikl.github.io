@@ -14,7 +14,8 @@
     },
     "delete": {
       "permissions": [
-        "ssm:DeleteAssociation"
+        "ssm:DeleteAssociation",
+        "ssm:DescribeAssociation"
       ]
     },
     "list": {

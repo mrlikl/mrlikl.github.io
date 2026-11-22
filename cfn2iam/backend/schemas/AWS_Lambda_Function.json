@@ -28,7 +28,9 @@
         "lambda:GetFunctionRecursionConfig",
         "lambda:PutFunctionScalingConfig",
         "lambda:PassCapacityProvider",
-        "lambda:AssociateRuntimeAlias"
+        "lambda:AssociateRuntimeAlias",
+        "ecr:BatchGetImage",
+        "ecr:GetDownloadUrlForLayer"
       ]
     },
     "delete": {
@@ -85,7 +87,9 @@
         "lambda:PutFunctionScalingConfig",
         "lambda:PublishVersion",
         "lambda:PassCapacityProvider",
-        "lambda:AssociateRuntimeAlias"
+        "lambda:AssociateRuntimeAlias",
+        "ecr:BatchGetImage",
+        "ecr:GetDownloadUrlForLayer"
       ],
       "timeoutInMinutes": 180
     }

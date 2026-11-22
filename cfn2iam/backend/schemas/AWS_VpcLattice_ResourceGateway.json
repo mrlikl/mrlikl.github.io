@@ -39,7 +39,8 @@
         "ec2:DescribeVpcs",
         "ec2:DescribeSubnets",
         "ec2:DescribeSecurityGroups"
-      ]
+      ],
+      "timeoutInMinutes": 720
     }
   },
   "typeName": "AWS::VpcLattice::ResourceGateway"

@@ -13,7 +13,9 @@
         "pcs:CreateCluster",
         "pcs:GetCluster",
         "pcs:ListTagsForResource",
-        "pcs:TagResource"
+        "pcs:TagResource",
+        "s3:GetObject",
+        "s3:GetObjectVersion"
       ],
       "timeoutInMinutes": 130
     },
@@ -41,7 +43,9 @@
         "pcs:UpdateCluster",
         "pcs:ListTagsForResource",
         "pcs:TagResource",
-        "pcs:UntagResource"
+        "pcs:UntagResource",
+        "s3:GetObject",
+        "s3:GetObjectVersion"
       ],
       "timeoutInMinutes": 130
     }

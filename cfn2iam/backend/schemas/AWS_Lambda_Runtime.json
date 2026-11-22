@@ -1,0 +1,40 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lambda:CreateRuntime",
+        "lambda:GetRuntime",
+        "lambda:TagResource",
+        "lambda:ListTags"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lambda:DeleteRuntime",
+        "lambda:GetRuntime",
+        "lambda:ListTags"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "lambda:ListRuntimes"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lambda:GetRuntime",
+        "lambda:ListTags"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lambda:UpdateRuntime",
+        "lambda:GetRuntime",
+        "lambda:TagResource",
+        "lambda:UntagResource",
+        "lambda:ListTags"
+      ]
+    }
+  },
+  "typeName": "AWS::Lambda::Runtime"
+}

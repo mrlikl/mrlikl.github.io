@@ -1,0 +1,28 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "es:AddReplicationPeer",
+        "es:DescribeDomainReplication"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "es:RemoveReplicationPeer",
+        "es:DescribeDomainReplication"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "es:ListDomainNames",
+        "es:DescribeDomainReplication"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "es:DescribeDomainReplication"
+      ]
+    }
+  },
+  "typeName": "AWS::OpenSearchService::ReplicationPeer"
+}

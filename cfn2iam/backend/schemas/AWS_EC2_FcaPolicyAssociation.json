@@ -1,0 +1,30 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "ec2:AssociateNetworkingFlexCostAllocationPolicy",
+        "ec2:DescribeInstances",
+        "ec2:DescribeNatGateways",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcPeeringConnections",
+        "ec2:DescribeVpcs"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "ec2:DisassociateNetworkingFlexCostAllocationPolicy"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "ec2:DescribeNetworkingFlexCostAllocationPolicyAssociations"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "ec2:DescribeNetworkingFlexCostAllocationPolicyAssociations"
+      ]
+    }
+  },
+  "typeName": "AWS::EC2::FcaPolicyAssociation"
+}

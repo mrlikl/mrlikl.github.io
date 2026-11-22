@@ -1,0 +1,49 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "lambda:CreateRuntimeVersion",
+        "lambda:GetRuntimeVersion",
+        "ecr:BatchGetImage",
+        "ecr:GetDownloadUrlForLayer",
+        "ecr:BatchCheckLayerAvailability"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "lambda:DeleteRuntimeVersion",
+        "lambda:GetRuntimeVersion"
+      ]
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "RuntimeName": {
+            "maxLength": 128,
+            "minLength": 2,
+            "pattern": "^[a-z0-9]([a-z0-9_.-]{0,126})?[a-z0-9]$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "RuntimeName"
+        ]
+      },
+      "permissions": [
+        "lambda:ListRuntimeVersions"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "lambda:GetRuntimeVersion"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "lambda:UpdateRuntimeVersion",
+        "lambda:GetRuntimeVersion"
+      ]
+    }
+  },
+  "typeName": "AWS::Lambda::RuntimeVersion"
+}

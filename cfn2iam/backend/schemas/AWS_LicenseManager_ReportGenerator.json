@@ -1,0 +1,39 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "license-manager:CreateLicenseManagerReportGenerator",
+        "license-manager:GetLicenseConfiguration",
+        "license-manager:GetServiceSettings",
+        "license-manager:TagResource",
+        "license-manager:UpdateServiceSettings",
+        "s3:CreateBucket"
+      ]
+    },
+    "delete": {
+      "permissions": [
+        "license-manager:DeleteLicenseManagerReportGenerator"
+      ]
+    },
+    "list": {
+      "permissions": [
+        "license-manager:ListLicenseManagerReportGenerators"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "license-manager:GetLicenseManagerReportGenerator"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "license-manager:UpdateLicenseManagerReportGenerator",
+        "license-manager:GetLicenseConfiguration",
+        "license-manager:GetServiceSettings",
+        "license-manager:TagResource",
+        "license-manager:UntagResource"
+      ]
+    }
+  },
+  "typeName": "AWS::LicenseManager::ReportGenerator"
+}

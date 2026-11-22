@@ -1,0 +1,46 @@
+{
+  "handlers": {
+    "create": {
+      "permissions": [
+        "cognito-idp:SetUserPoolSessionConfiguration",
+        "cognito-idp:GetUserPoolSessionConfiguration"
+      ],
+      "timeoutInMinutes": 5
+    },
+    "delete": {
+      "permissions": [
+        "cognito-idp:SetUserPoolSessionConfiguration",
+        "cognito-idp:GetUserPoolSessionConfiguration"
+      ],
+      "timeoutInMinutes": 5
+    },
+    "list": {
+      "handlerSchema": {
+        "properties": {
+          "UserPoolId": {
+            "$ref": "resource-schema.json#/properties/UserPoolId"
+          }
+        },
+        "required": [
+          "UserPoolId"
+        ]
+      },
+      "permissions": [
+        "cognito-idp:GetUserPoolSessionConfiguration"
+      ]
+    },
+    "read": {
+      "permissions": [
+        "cognito-idp:GetUserPoolSessionConfiguration"
+      ]
+    },
+    "update": {
+      "permissions": [
+        "cognito-idp:SetUserPoolSessionConfiguration",
+        "cognito-idp:GetUserPoolSessionConfiguration"
+      ],
+      "timeoutInMinutes": 5
+    }
+  },
+  "typeName": "AWS::Cognito::UserPoolSessionConfigurationAttachment"
+}
