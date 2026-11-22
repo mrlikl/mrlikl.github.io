@@ -1317,6 +1317,10 @@
     "t8i.micro": ["General purpose", 2, 1, "x86_64", "Intel Xeon Scalable (Granite Rapids)", "3.9 GHz", "Up to 6.25 Gigabit", "EBS only", 0, null, true],
     "t8i.nano": ["General purpose", 2, 0.5, "x86_64", "Intel Xeon Scalable (Granite Rapids)", "3.9 GHz", "Up to 6.25 Gigabit", "EBS only", 0, null, true],
     "t8i.small": ["General purpose", 2, 2, "x86_64", "Intel Xeon Scalable (Granite Rapids)", "3.9 GHz", "Up to 6.25 Gigabit", "EBS only", 0, null, true],
+    "t9g.medium": ["General purpose", 2, 4, "arm64", "AWS Graviton5 Processor", "3.3 GHz", "Up to 7.5 Gigabit", "EBS only", 0, null, true],
+    "t9g.micro": ["General purpose", 2, 1, "arm64", "AWS Graviton5 Processor", "3.3 GHz", "Up to 7.5 Gigabit", "EBS only", 0, null, true],
+    "t9g.nano": ["General purpose", 2, 0.5, "arm64", "AWS Graviton5 Processor", "3.3 GHz", "Up to 7.5 Gigabit", "EBS only", 0, null, true],
+    "t9g.small": ["General purpose", 2, 2, "arm64", "AWS Graviton5 Processor", "3.3 GHz", "Up to 7.5 Gigabit", "EBS only", 0, null, true],
     "trn1.2xlarge": ["Machine Learning ASIC Instances", 8, 32, "x86_64", "Intel Xeon Scalable (Icelake)", "Up to 3.5 GHz", "12500 Megabit", "1 x 475 NVMe SSD", 1, 32, true],
     "trn1.32xlarge": ["Machine Learning ASIC Instances", 128, 512, "x86_64", "Intel Xeon Scalable (Icelake)", "Up to 3.5 GHz", "800 Gigabit", "4 x 1900 NVMe SSD", 16, 512, true],
     "trn1n.32xlarge": ["Machine Learning ASIC Instances", 128, 512, "x86_64", "Intel Xeon Scalable (Icelake)", "3.5 GHz", "1600 Gigabit", "4 x 1900 NVMe SSD", 16, 512, true],
@@ -1413,5 +1417,5 @@
     "z1d.metal": ["Memory optimized", 48, 384, "x86_64", "Intel Xeon Platinum 8151", "4 GHz", "25 Gigabit", "2 x 900 NVMe SSD", 0, null, true],
     "z1d.xlarge": ["Memory optimized", 4, 32, "x86_64", "Intel Xeon Platinum 8151", "4 GHz", "Up to 10 Gigabit", "1 x 150 NVMe SSD", 0, null, true]
   },
-  "updated": "2026-11-01T04:26:03Z"
+  "updated": "2026-11-22T05:05:12Z"
 }

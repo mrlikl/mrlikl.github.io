@@ -240,6 +240,17 @@
     "c8in.96xlarge": 34.11072,
     "c8in.large": 0.17766,
     "c8in.xlarge": 0.35532,
+    "c9g.12xlarge": 2.71536,
+    "c9g.16xlarge": 3.62048,
+    "c9g.24xlarge": 5.43072,
+    "c9g.2xlarge": 0.45256,
+    "c9g.48xlarge": 10.86144,
+    "c9g.4xlarge": 0.90512,
+    "c9g.8xlarge": 1.81024,
+    "c9g.large": 0.11314,
+    "c9g.medium": 0.05657,
+    "c9g.metal-48xl": 10.86144,
+    "c9g.xlarge": 0.22628,
     "d2.2xlarge": 1.74,
     "d2.4xlarge": 3.48,
     "d2.8xlarge": 6.96,
@@ -926,6 +937,10 @@
     "t8i.micro": 0.01584,
     "t8i.nano": 0.00792,
     "t8i.small": 0.03168,
+    "t9g.medium": 0.05258,
+    "t9g.micro": 0.01314,
+    "t9g.nano": 0.00657,
+    "t9g.small": 0.02629,
     "u-12tb1.112xlarge": 130.867,
     "u-3tb1.56xlarge": 32.715,
     "u-6tb1.112xlarge": 65.433,
@@ -988,5 +1003,5 @@
     "z1d.xlarge": 0.452
   },
   "region": "ap-southeast-2",
-  "updated": "2026-11-15T04:49:36Z"
+  "updated": "2026-11-22T05:05:12Z"
 }
