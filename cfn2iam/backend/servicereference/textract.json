@@ -36,6 +36,42 @@
     "adapter"
    ]
   },
+  "createblueprint": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBlueprint",
+   "resources": [
+    "blueprint"
+   ]
+  },
+  "createblueprintversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateBlueprintVersion",
+   "resources": [
+    "blueprint"
+   ]
+  },
+  "createproject": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateProject",
+   "resources": [
+    "blueprint",
+    "project"
+   ]
+  },
   "deleteadapter": {
    "flags": [
     "IsWrite"
@@ -54,6 +90,24 @@
     "adapterversion"
    ]
   },
+  "deleteblueprint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteBlueprint",
+   "resources": [
+    "blueprint"
+   ]
+  },
+  "deleteproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteProject",
+   "resources": [
+    "project"
+   ]
+  },
   "detectdocumenttext": {
    "name": "DetectDocumentText",
    "resources": []
@@ -70,9 +124,24 @@
     "adapterversion"
    ]
   },
+  "getblueprint": {
+   "name": "GetBlueprint",
+   "resources": [
+    "blueprint"
+   ]
+  },
   "getdocumentanalysis": {
    "name": "GetDocumentAnalysis",
    "resources": []
+  },
+  "getdocumentinsights": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetDocumentInsights",
+   "resources": [
+    "job"
+   ]
   },
   "getdocumenttextdetection": {
    "name": "GetDocumentTextDetection",
@@ -90,6 +159,12 @@
    "name": "GetLendingAnalysisSummary",
    "resources": []
   },
+  "getproject": {
+   "name": "GetProject",
+   "resources": [
+    "project"
+   ]
+  },
   "listadapters": {
    "name": "ListAdapters",
    "resources": []
@@ -98,11 +173,34 @@
    "name": "ListAdapterVersions",
    "resources": []
   },
+  "listblueprints": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListBlueprints",
+   "resources": [
+    "blueprint",
+    "project"
+   ]
+  },
+  "listprojects": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListProjects",
+   "resources": [
+    "blueprint",
+    "project"
+   ]
+  },
   "listtagsforresource": {
    "name": "ListTagsForResource",
    "resources": [
     "adapter",
-    "adapterversion"
+    "adapterversion",
+    "blueprint",
+    "job",
+    "project"
    ]
   },
   "startdocumentanalysis": {
@@ -111,6 +209,22 @@
    ],
    "name": "StartDocumentAnalysis",
    "resources": []
+  },
+  "startdocumentinsights": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartDocumentInsights",
+   "resources": [
+    "blueprint",
+    "job",
+    "project"
+   ]
   },
   "startdocumenttextdetection": {
    "flags": [
@@ -145,7 +259,10 @@
    "name": "TagResource",
    "resources": [
     "adapter",
-    "adapterversion"
+    "adapterversion",
+    "blueprint",
+    "job",
+    "project"
    ]
   },
   "untagresource": {
@@ -159,7 +276,10 @@
    "name": "UntagResource",
    "resources": [
     "adapter",
-    "adapterversion"
+    "adapterversion",
+    "blueprint",
+    "job",
+    "project"
    ]
   },
   "updateadapter": {
@@ -169,6 +289,25 @@
    "name": "UpdateAdapter",
    "resources": [
     "adapter"
+   ]
+  },
+  "updateblueprint": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateBlueprint",
+   "resources": [
+    "blueprint"
+   ]
+  },
+  "updateproject": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateProject",
+   "resources": [
+    "blueprint",
+    "project"
    ]
   }
  },
@@ -195,6 +334,30 @@
   "adapterversion": {
    "arnFormats": [
     "arn:${Partition}:textract:${Region}:${Account}:/adapters/${AdapterId}/versions/${AdapterVersion}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "blueprint": {
+   "arnFormats": [
+    "arn:${Partition}:textract:${Region}:${Account}:blueprint/${BlueprintId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "job": {
+   "arnFormats": [
+    "arn:${Partition}:textract:${Region}:${Account}:job/${JobId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "project": {
+   "arnFormats": [
+    "arn:${Partition}:textract:${Region}:${Account}:project/${ProjectId}"
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"

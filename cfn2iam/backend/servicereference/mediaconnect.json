@@ -87,7 +87,8 @@
    ],
    "name": "ConnectEndpoints",
    "resources": [
-    "DestinationEndpoint"
+    "DestinationEndpoint",
+    "SourceEndpoint"
    ]
   },
   "createbridge": {
@@ -303,7 +304,8 @@
    ],
    "name": "DisconnectEndpoints",
    "resources": [
-    "DestinationEndpoint"
+    "DestinationEndpoint",
+    "SourceEndpoint"
    ]
   },
   "discovergatewaypollendpoint": {
@@ -474,7 +476,7 @@
    ],
    "name": "PurchaseOffering",
    "resources": [
-    "Reservation"
+    "Offering"
    ]
   },
   "putresourcepolicy": {
@@ -768,6 +770,7 @@
    ],
    "name": "UpdateFlowEntitlement",
    "resources": [
+    "Entitlement",
     "Flow"
    ]
   },

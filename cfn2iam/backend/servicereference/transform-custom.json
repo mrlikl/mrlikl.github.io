@@ -19,6 +19,18 @@
    "name": "BatchUpdateFindings",
    "resources": []
   },
+  "cancelskillcreationjob": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelSkillCreationJob",
+   "resources": [
+    "skill-creation-job"
+   ]
+  },
   "completetransformationpackageupload": {
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"
@@ -29,6 +41,18 @@
    "name": "CompleteTransformationPackageUpload",
    "resources": [
     "package"
+   ]
+  },
+  "connectsource": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConnectSource",
+   "resources": [
+    "source"
    ]
   },
   "contributeknowledgeitems": {
@@ -90,6 +114,20 @@
    "name": "CreateRemediation",
    "resources": [
     "remediation"
+   ]
+  },
+  "createremediationplan": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRemediationPlan",
+   "resources": [
+    "remediation-plan"
    ]
   },
   "createrepository": {
@@ -194,6 +232,18 @@
     "remediation"
    ]
   },
+  "deleteremediationplan": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRemediationPlan",
+   "resources": [
+    "remediation-plan"
+   ]
+  },
   "deleterepository": {
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"
@@ -295,6 +345,15 @@
    "name": "GetFindingGroups",
    "resources": []
   },
+  "getissuegroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetIssueGroup",
+   "resources": [
+    "issue-group"
+   ]
+  },
   "getknowledgeitem": {
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"
@@ -313,6 +372,15 @@
     "remediation"
    ]
   },
+  "getremediationplan": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetRemediationPlan",
+   "resources": [
+    "remediation-plan"
+   ]
+  },
   "getrepository": {
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"
@@ -329,6 +397,15 @@
    "name": "GetResourcePolicy",
    "resources": [
     "package"
+   ]
+  },
+  "getskillcreationjob": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetSkillCreationJob",
+   "resources": [
+    "skill-creation-job"
    ]
   },
   "getsource": {
@@ -388,11 +465,25 @@
    "name": "ListFindings",
    "resources": []
   },
+  "listissuegroups": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListIssueGroups",
+   "resources": []
+  },
   "listknowledgeitems": {
    "flags": [
     "IsList"
    ],
    "name": "ListKnowledgeItems",
+   "resources": []
+  },
+  "listremediationplans": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRemediationPlans",
    "resources": []
   },
   "listremediations": {
@@ -407,6 +498,13 @@
     "IsList"
    ],
    "name": "ListRepositories",
+   "resources": []
+  },
+  "listskillcreationjobs": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSkillCreationJobs",
    "resources": []
   },
   "listsources": {
@@ -449,6 +547,18 @@
     "package"
    ]
   },
+  "readrepositorycontent": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ReadRepositoryContent",
+   "resources": [
+    "repository"
+   ]
+  },
   "sendtelemetryevent": {
    "flags": [
     "IsWrite"
@@ -468,6 +578,20 @@
     "package"
    ]
   },
+  "startskillcreationjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartSkillCreationJob",
+   "resources": [
+    "skill-creation-job"
+   ]
+  },
   "tagresource": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -483,10 +607,13 @@
     "analysis",
     "campaign",
     "finding",
+    "issue-group",
     "knowledge-item",
     "package",
     "remediation",
+    "remediation-plan",
     "repository",
+    "skill-creation-job",
     "source"
    ]
   },
@@ -515,10 +642,13 @@
     "analysis",
     "campaign",
     "finding",
+    "issue-group",
     "knowledge-item",
     "package",
     "remediation",
+    "remediation-plan",
     "repository",
+    "skill-creation-job",
     "source"
    ]
   },
@@ -558,6 +688,18 @@
     "campaign"
    ]
   },
+  "updateissuegroup": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateIssueGroup",
+   "resources": [
+    "issue-group"
+   ]
+  },
   "updateknowledgeitemconfiguration": {
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"
@@ -594,6 +736,18 @@
     "remediation"
    ]
   },
+  "updateremediationplan": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRemediationPlan",
+   "resources": [
+    "remediation-plan"
+   ]
+  },
   "updaterepository": {
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"
@@ -606,6 +760,18 @@
     "repository"
    ]
   },
+  "updateskillcreationjob": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSkillCreationJob",
+   "resources": [
+    "skill-creation-job"
+   ]
+  },
   "updatesource": {
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"
@@ -616,6 +782,18 @@
    "name": "UpdateSource",
    "resources": [
     "source"
+   ]
+  },
+  "writerepositorycontent": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "WriteRepositoryContent",
+   "resources": [
+    "repository"
    ]
   }
  },
@@ -655,6 +833,14 @@
     "aws:ResourceTag/${TagKey}"
    ]
   },
+  "issue-group": {
+   "arnFormats": [
+    "arn:${Partition}:transform-custom:${Region}:${Account}:issue-group/${IssueGroupId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
   "knowledge-item": {
    "arnFormats": [
     "arn:${Partition}:transform-custom:${Region}:${Account}:package/${TransformationPackageName}/knowledge-item/${Id}"
@@ -679,9 +865,25 @@
     "aws:ResourceTag/${TagKey}"
    ]
   },
+  "remediation-plan": {
+   "arnFormats": [
+    "arn:${Partition}:transform-custom:${Region}:${Account}:remediation-plan/${RemediationPlanId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
   "repository": {
    "arnFormats": [
     "arn:${Partition}:transform-custom:${Region}:${Account}:repository/${RepositoryId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "skill-creation-job": {
+   "arnFormats": [
+    "arn:${Partition}:transform-custom:${Region}:${Account}:skill-creation-job/${SkillCreationJobId}"
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"

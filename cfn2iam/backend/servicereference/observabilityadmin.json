@@ -9,6 +9,7 @@
     "observabilityadmin:CentralizationDestinationRegion",
     "observabilityadmin:CentralizationRuleName",
     "observabilityadmin:CentralizationSourceId",
+    "observabilityadmin:CentralizationSourceOrganizationalUnitId",
     "observabilityadmin:CentralizationSourceRegions"
    ],
    "flags": [
@@ -17,6 +18,19 @@
    "name": "CreateCentralizationRuleForOrganization",
    "resources": [
     "organization-centralization-rule"
+   ]
+  },
+  "createconnector": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateConnector",
+   "resources": [
+    "connector"
    ]
   },
   "createdatasetintegration": {
@@ -99,6 +113,15 @@
     "organization-centralization-rule"
    ]
   },
+  "deleteconnector": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteConnector",
+   "resources": [
+    "connector"
+   ]
+  },
   "deletedatasetintegration": {
    "flags": [
     "IsWrite"
@@ -153,6 +176,24 @@
     "organization-centralization-rule"
    ]
   },
+  "getconnector": {
+   "name": "GetConnector",
+   "resources": [
+    "connector"
+   ]
+  },
+  "getconnectortelemetrymanifest": {
+   "name": "GetConnectorTelemetryManifest",
+   "resources": [
+    "connector"
+   ]
+  },
+  "getconnectortelemetrysetup": {
+   "name": "GetConnectorTelemetrySetup",
+   "resources": [
+    "connector"
+   ]
+  },
   "getdatasetintegration": {
    "name": "GetDatasetIntegration",
    "resources": [
@@ -195,11 +236,24 @@
     "organization-telemetry-rule"
    ]
   },
+  "getthirdpartytelemetryenrichment": {
+   "name": "GetThirdPartyTelemetryEnrichment",
+   "resources": [
+    "telemetry-enrichment"
+   ]
+  },
   "listcentralizationrulesfororganization": {
    "flags": [
     "IsList"
    ],
    "name": "ListCentralizationRulesForOrganization",
+   "resources": []
+  },
+  "listconnectors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListConnectors",
    "resources": []
   },
   "listdatasetintegrations": {
@@ -208,6 +262,12 @@
    ],
    "name": "ListDatasetIntegrations",
    "resources": []
+  },
+  "listresourcesbyconnector": {
+   "name": "ListResourcesByConnector",
+   "resources": [
+    "connector"
+   ]
   },
   "listresourcetelemetry": {
    "conditionKeys": [
@@ -236,10 +296,12 @@
    ],
    "name": "ListTagsForResource",
    "resources": [
+    "connector",
     "dataset-integration",
     "organization-centralization-rule",
     "organization-telemetry-rule",
     "s3tableintegration",
+    "telemetry-enrichment",
     "telemetry-pipeline",
     "telemetry-rule"
    ]
@@ -264,6 +326,25 @@
    ],
    "name": "ListTelemetryRulesForOrganization",
    "resources": []
+  },
+  "listthirdpartytelemetryenrichments": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListThirdPartyTelemetryEnrichments",
+   "resources": []
+  },
+  "putconnectortelemetrymanifest": {
+   "conditionKeys": [
+    "observabilityadmin:AzureTelemetryRegion"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutConnectorTelemetryManifest",
+   "resources": [
+    "connector"
+   ]
   },
   "starttelemetryenrichment": {
    "flags": [
@@ -292,6 +373,28 @@
    "name": "StartTelemetryEvaluationForOrganization",
    "resources": []
   },
+  "starttelemetrypipelinerefresh": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartTelemetryPipelineRefresh",
+   "resources": [
+    "telemetry-pipeline"
+   ]
+  },
+  "startthirdpartytelemetryenrichment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartThirdPartyTelemetryEnrichment",
+   "resources": [
+    "telemetry-enrichment"
+   ]
+  },
   "stoptelemetryenrichment": {
    "flags": [
     "IsWrite"
@@ -313,6 +416,15 @@
    "name": "StopTelemetryEvaluationForOrganization",
    "resources": []
   },
+  "stopthirdpartytelemetryenrichment": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StopThirdPartyTelemetryEnrichment",
+   "resources": [
+    "telemetry-enrichment"
+   ]
+  },
   "tagresource": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -324,10 +436,12 @@
    ],
    "name": "TagResource",
    "resources": [
+    "connector",
     "dataset-integration",
     "organization-centralization-rule",
     "organization-telemetry-rule",
     "s3tableintegration",
+    "telemetry-enrichment",
     "telemetry-pipeline",
     "telemetry-rule"
    ]
@@ -346,10 +460,12 @@
    ],
    "name": "UntagResource",
    "resources": [
+    "connector",
     "dataset-integration",
     "organization-centralization-rule",
     "organization-telemetry-rule",
     "s3tableintegration",
+    "telemetry-enrichment",
     "telemetry-pipeline",
     "telemetry-rule"
    ]
@@ -361,6 +477,7 @@
     "observabilityadmin:CentralizationDestinationRegion",
     "observabilityadmin:CentralizationRuleName",
     "observabilityadmin:CentralizationSourceId",
+    "observabilityadmin:CentralizationSourceOrganizationalUnitId",
     "observabilityadmin:CentralizationSourceRegions"
    ],
    "flags": [
@@ -428,6 +545,9 @@
   "aws:TagKeys": [
    "ArrayOfString"
   ],
+  "observabilityadmin:AzureTelemetryRegion": [
+   "ArrayOfString"
+  ],
   "observabilityadmin:CentralizationBackupRegion": [
    "String"
   ],
@@ -443,6 +563,9 @@
   "observabilityadmin:CentralizationSourceId": [
    "ArrayOfString"
   ],
+  "observabilityadmin:CentralizationSourceOrganizationalUnitId": [
+   "ArrayOfString"
+  ],
   "observabilityadmin:CentralizationSourceRegions": [
    "ArrayOfString"
   ],
@@ -454,6 +577,14 @@
   ]
  },
  "resources": {
+  "connector": {
+   "arnFormats": [
+    "arn:${Partition}:observabilityadmin:${Region}:${Account}:connector/${ConnectorProvider}/${ConnectorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
   "dataset-integration": {
    "arnFormats": [
     "arn:${Partition}:observabilityadmin:${Region}:${Account}:dataset-integration/${DatasetIntegrationIdentifier}"
@@ -481,6 +612,14 @@
   "s3tableintegration": {
    "arnFormats": [
     "arn:${Partition}:observabilityadmin:${Region}:${Account}:s3tableintegration/${S3TableIntegrationIdentifier}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "telemetry-enrichment": {
+   "arnFormats": [
+    "arn:${Partition}:observabilityadmin:${Region}:${Account}:telemetry-enrichments/${TelemetryEnrichmentId}"
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"

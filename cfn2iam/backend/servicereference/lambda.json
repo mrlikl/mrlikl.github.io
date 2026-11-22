@@ -24,6 +24,24 @@
     "function"
    ]
   },
+  "associateruntimealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateRuntimeAlias",
+   "resources": [
+    "runtimeAlias"
+   ]
+  },
+  "associateruntimeversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateRuntimeVersion",
+   "resources": [
+    "runtimeVersion"
+   ]
+  },
   "checkpointdurableexecution": {
    "flags": [
     "IsDataPlane",
@@ -165,6 +183,37 @@
     "networkConnector"
    ]
   },
+  "createruntime": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRuntime",
+   "resources": [
+    "runtime"
+   ]
+  },
+  "createruntimealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRuntimeAlias",
+   "resources": [
+    "runtimeAlias"
+   ]
+  },
+  "createruntimeversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateRuntimeVersion",
+   "resources": [
+    "runtimeVersion"
+   ]
+  },
   "createwebfunction": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -225,6 +274,15 @@
    "name": "DeleteCodeSigningConfig",
    "resources": [
     "code signing config"
+   ]
+  },
+  "deletedurableexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDurableExecution",
+   "resources": [
+    "durable execution"
    ]
   },
   "deleteeventsourcemapping": {
@@ -345,7 +403,35 @@
    "name": "DeleteResourcePolicy",
    "resources": [
     "function",
+    "runtime",
     "webFunction"
+   ]
+  },
+  "deleteruntime": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRuntime",
+   "resources": [
+    "runtime"
+   ]
+  },
+  "deleteruntimealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRuntimeAlias",
+   "resources": [
+    "runtimeAlias"
+   ]
+  },
+  "deleteruntimeversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteRuntimeVersion",
+   "resources": [
+    "runtimeVersion"
    ]
   },
   "deletewebfunction": {
@@ -561,13 +647,32 @@
    "name": "GetResourcePolicy",
    "resources": [
     "function",
+    "runtime",
     "webFunction"
+   ]
+  },
+  "getruntime": {
+   "name": "GetRuntime",
+   "resources": [
+    "runtime"
+   ]
+  },
+  "getruntimealias": {
+   "name": "GetRuntimeAlias",
+   "resources": [
+    "runtimeAlias"
    ]
   },
   "getruntimemanagementconfig": {
    "name": "GetRuntimeManagementConfig",
    "resources": [
     "function"
+   ]
+  },
+  "getruntimeversion": {
+   "name": "GetRuntimeVersion",
+   "resources": [
+    "runtimeVersion"
    ]
   },
   "getwebaccountsettings": {
@@ -816,6 +921,31 @@
     "function"
    ]
   },
+  "listruntimealiases": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRuntimeAliases",
+   "resources": [
+    "runtime"
+   ]
+  },
+  "listruntimes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRuntimes",
+   "resources": []
+  },
+  "listruntimeversions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListRuntimeVersions",
+   "resources": [
+    "runtime"
+   ]
+  },
   "listtags": {
    "name": "ListTags",
    "resources": [
@@ -825,6 +955,7 @@
     "function",
     "microvmImage",
     "networkConnector",
+    "runtime",
     "webFunction"
    ]
   },
@@ -878,6 +1009,15 @@
    ],
    "name": "PassNetworkConnector",
    "resources": []
+  },
+  "pausedurableexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PauseDurableExecution",
+   "resources": [
+    "durable execution"
+   ]
   },
   "publishlayerversion": {
    "flags": [
@@ -967,6 +1107,7 @@
    "name": "PutResourcePolicy",
    "resources": [
     "function",
+    "runtime",
     "webFunction"
    ]
   },
@@ -1001,6 +1142,24 @@
    "name": "RemovePermission",
    "resources": [
     "function"
+   ]
+  },
+  "restoreruntime": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreRuntime",
+   "resources": [
+    "runtime"
+   ]
+  },
+  "resumedurableexecution": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ResumeDurableExecution",
+   "resources": [
+    "durable execution"
    ]
   },
   "resumemicrovm": {
@@ -1090,6 +1249,7 @@
     "function",
     "microvmImage",
     "networkConnector",
+    "runtime",
     "webFunction"
    ]
   },
@@ -1119,6 +1279,7 @@
     "function",
     "microvmImage",
     "networkConnector",
+    "runtime",
     "webFunction"
    ]
   },
@@ -1242,6 +1403,33 @@
    "name": "UpdateNetworkConnector",
    "resources": [
     "networkConnector"
+   ]
+  },
+  "updateruntime": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRuntime",
+   "resources": [
+    "runtime"
+   ]
+  },
+  "updateruntimealias": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRuntimeAlias",
+   "resources": [
+    "runtimeAlias"
+   ]
+  },
+  "updateruntimeversion": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateRuntimeVersion",
+   "resources": [
+    "runtimeVersion"
    ]
   },
   "updatewebfunctionendpoint": {
@@ -1386,6 +1574,30 @@
   "networkConnector": {
    "arnFormats": [
     "arn:${Partition}:lambda:${Region}:${Account}:network-connector:${NetworkConnectorId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "runtime": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:runtime/${RuntimeName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "runtimeAlias": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:runtime/${RuntimeName}/alias/${Name}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "runtimeVersion": {
+   "arnFormats": [
+    "arn:${Partition}:lambda:${Region}:${Account}:runtime/${RuntimeName}/version/${Name}"
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"

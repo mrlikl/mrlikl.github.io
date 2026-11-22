@@ -359,6 +359,15 @@
     "firewall-domain-list"
    ]
   },
+  "listfirewallruledomains": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListFirewallRuleDomains",
+   "resources": [
+    "firewall-rule-group"
+   ]
+  },
   "listfirewallrulegroupassociations": {
    "flags": [
     "IsList"

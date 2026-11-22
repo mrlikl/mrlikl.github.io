@@ -89,6 +89,7 @@
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
     "aws:TagKeys",
+    "events:EventSourceType",
     "events:source"
    ],
    "flags": [
@@ -583,6 +584,19 @@
     "rule-on-default-event-bus"
    ]
   },
+  "putwebhookevents": {
+   "conditionKeys": [
+    "events:Metadata/${MetadataKey}",
+    "events:SystemMetadata/ContentType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutWebhookEvents",
+   "resources": [
+    "event-busv2"
+   ]
+  },
   "removepermission": {
    "flags": [
     "IsPermissionManagement",
@@ -621,6 +635,15 @@
    "name": "RevokeResource",
    "resources": [
     "event-busv2"
+   ]
+  },
+  "rotatewebhookcredentials": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RotateWebhookCredentials",
+   "resources": [
+    "event-sourcev2"
    ]
   },
   "startreplay": {
@@ -730,6 +753,7 @@
   },
   "updateeventsource": {
    "conditionKeys": [
+    "events:EventSourceType",
     "events:source"
    ],
    "flags": [
@@ -772,6 +796,9 @@
   ],
   "events:EventBusArn": [
    "ArrayOfARN"
+  ],
+  "events:EventSourceType": [
+   "String"
   ],
   "events:ManagedBy": [
    "String"

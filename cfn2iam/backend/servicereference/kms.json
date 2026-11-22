@@ -687,6 +687,7 @@
   "getkeypolicy": {
    "conditionKeys": [
     "kms:CallerAccount",
+    "kms:PolicyName",
     "kms:ViaService"
    ],
    "name": "GetKeyPolicy",
@@ -828,6 +829,7 @@
    "conditionKeys": [
     "kms:BypassPolicyLockoutSafetyCheck",
     "kms:CallerAccount",
+    "kms:PolicyName",
     "kms:ViaService"
    ],
    "flags": [
@@ -1168,6 +1170,9 @@
    "Bool"
   ],
   "kms:MultiRegionKeyType": [
+   "String"
+  ],
+  "kms:PolicyName": [
    "String"
   ],
   "kms:PrimaryRegion": [

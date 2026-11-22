@@ -1,0 +1,20 @@
+{
+ "actions": {
+  "getstatistics": {
+   "name": "GetStatistics",
+   "resources": []
+  },
+  "getstatisticstimeseries": {
+   "name": "GetStatisticsTimeSeries",
+   "resources": []
+  },
+  "search": {
+   "name": "Search",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "apex",
+ "serviceName": "Edge Analytics Platform",
+ "version": "v1.5"
+}

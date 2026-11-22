@@ -162,6 +162,10 @@
    "name": "GetIntegration",
    "resources": []
   },
+  "getorganizationaccess": {
+   "name": "GetOrganizationAccess",
+   "resources": []
+  },
   "gettask": {
    "name": "GetTask",
    "resources": []
@@ -287,6 +291,13 @@
     "IsWrite"
    ],
    "name": "UpdateDocument",
+   "resources": []
+  },
+  "updateorganizationaccess": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateOrganizationAccess",
    "resources": []
   }
  },

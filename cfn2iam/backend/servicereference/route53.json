@@ -50,8 +50,15 @@
     "IsWrite"
    ],
    "name": "ChangeTagsForResource",
+   "resourceConditionKeys": {
+    "healthchecksource": [
+     "aws:RequestTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
    "resources": [
     "healthcheck",
+    "healthchecksource",
     "hostedzone"
    ]
   },
@@ -68,6 +75,19 @@
    ],
    "name": "CreateHealthCheck",
    "resources": []
+  },
+  "createhealthchecksource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateHealthCheckSource",
+   "resources": [
+    "healthchecksource"
+   ]
   },
   "createhostedzone": {
    "conditionKeys": [
@@ -183,6 +203,15 @@
    "name": "DeleteHealthCheck",
    "resources": [
     "healthcheck"
+   ]
+  },
+  "deletehealthchecksource": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteHealthCheckSource",
+   "resources": [
+    "healthchecksource"
    ]
   },
   "deletehostedzone": {
@@ -352,6 +381,12 @@
     "healthcheck"
    ]
   },
+  "gethealthchecksource": {
+   "name": "GetHealthCheckSource",
+   "resources": [
+    "healthchecksource"
+   ]
+  },
   "gethealthcheckstatus": {
    "flags": [
     "IsList"
@@ -366,6 +401,15 @@
     "IsList"
    ],
    "name": "GetHostedZone",
+   "resources": [
+    "hostedzone"
+   ]
+  },
+  "gethostedzonechangebatch": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "GetHostedZoneChangeBatch",
    "resources": [
     "hostedzone"
    ]
@@ -457,6 +501,31 @@
    "name": "ListHealthChecks",
    "resources": []
   },
+  "listhealthchecksbysource": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHealthChecksBySource",
+   "resources": [
+    "healthchecksource"
+   ]
+  },
+  "listhealthchecksources": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHealthCheckSources",
+   "resources": []
+  },
+  "listhostedzonechangebatches": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListHostedZoneChangeBatches",
+   "resources": [
+    "hostedzone"
+   ]
+  },
   "listhostedzones": {
    "flags": [
     "IsList"
@@ -523,6 +592,7 @@
    "name": "ListTagsForResource",
    "resources": [
     "healthcheck",
+    "healthchecksource",
     "hostedzone"
    ]
   },
@@ -530,6 +600,7 @@
    "name": "ListTagsForResources",
    "resources": [
     "healthcheck",
+    "healthchecksource",
     "hostedzone"
    ]
   },
@@ -611,6 +682,15 @@
     "hostedzone"
    ]
   },
+  "updatehostedzonetier": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateHostedZoneTier",
+   "resources": [
+    "hostedzone"
+   ]
+  },
   "updateipguardrailpolicy": {
    "flags": [
     "IsWrite"
@@ -638,6 +718,15 @@
   }
  },
  "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
   "route53:ChangeResourceRecordSetsActions": [
    "ArrayOfString"
   ],
@@ -670,6 +759,14 @@
   "healthcheck": {
    "arnFormats": [
     "arn:${Partition}:route53:::healthcheck/${Id}"
+   ]
+  },
+  "healthchecksource": {
+   "arnFormats": [
+    "arn:${Partition}:route53:::healthchecksource/${Id}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
    ]
   },
   "hostedzone": {

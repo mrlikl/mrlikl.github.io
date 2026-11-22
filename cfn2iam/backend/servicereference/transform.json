@@ -79,6 +79,18 @@
     "connector"
    ]
   },
+  "getpartner": {
+   "name": "GetPartner",
+   "resources": []
+  },
+  "getpartnerbyaccountid": {
+   "name": "GetPartnerByAccountId",
+   "resources": []
+  },
+  "getpartnerbyarn": {
+   "name": "GetPartnerByArn",
+   "resources": []
+  },
   "getwebappurl": {
    "name": "GetWebAppUrl",
    "resources": []
@@ -117,6 +129,13 @@
    "name": "PutAgentRuntimeConfiguration",
    "resources": []
   },
+  "putpartner": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutPartner",
+   "resources": []
+  },
   "rejectconnector": {
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"
@@ -128,6 +147,13 @@
    "resources": [
     "connector"
    ]
+  },
+  "removepartner": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RemovePartner",
+   "resources": []
   },
   "tagresource": {
    "conditionKeys": [

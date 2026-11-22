@@ -32,6 +32,13 @@
     "oauth2-resource-service-principal"
    ]
   },
+  "batchrevokesessions": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "BatchRevokeSessions",
+   "resources": []
+  },
   "createaccount": {
    "flags": [
     "IsWrite"
@@ -66,6 +73,9 @@
    ]
   },
   "createoauth2token": {
+   "conditionKeys": [
+    "signin:PutSignInDurationBlock"
+   ],
    "name": "CreateOAuth2Token",
    "resourceConditionKeys": {
     "oauth2-public-client-localhost": [
@@ -123,6 +133,10 @@
    "name": "GetResourcePolicy",
    "resources": []
   },
+  "getsession": {
+   "name": "GetSession",
+   "resources": []
+  },
   "introspectoauth2token": {
    "conditionKeys": [
     "signin:OAuthClientId",
@@ -140,6 +154,13 @@
     "IsList"
    ],
    "name": "ListResourcePermissionStatements",
+   "resources": []
+  },
+  "listsessions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSessions",
    "resources": []
   },
   "listtrustedidentitypropagationapplicationsforconsole": {
@@ -196,6 +217,9 @@
   ],
   "signin:PrincipalArn": [
    "ARN"
+  ],
+  "signin:PutSignInDurationBlock": [
+   "Bool"
   ]
  },
  "resources": {

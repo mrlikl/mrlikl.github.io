@@ -32,6 +32,13 @@
     "AutomationRule"
    ]
   },
+  "deleteorganizationenrollmentconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteOrganizationEnrollmentConfiguration",
+   "resources": []
+  },
   "disassociateaccounts": {
    "flags": [
     "IsWrite"
@@ -107,6 +114,20 @@
    "name": "ListAutomationRules",
    "resources": []
   },
+  "listorganizationalunits": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrganizationalUnits",
+   "resources": []
+  },
+  "listorganizationenrollmentconfigurations": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListOrganizationEnrollmentConfigurations",
+   "resources": []
+  },
   "listrecommendedactions": {
    "flags": [
     "IsList"
@@ -134,6 +155,13 @@
    "resources": [
     "AutomationRule"
    ]
+  },
+  "putorganizationenrollmentconfiguration": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "PutOrganizationEnrollmentConfiguration",
+   "resources": []
   },
   "rollbackautomationevent": {
    "flags": [

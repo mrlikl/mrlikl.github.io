@@ -572,6 +572,10 @@
     "workspaceid"
    ]
   },
+  "getworkspaceproactiverecommendation": {
+   "name": "GetWorkspaceProactiveRecommendation",
+   "resources": []
+  },
   "importclientbranding": {
    "flags": [
     "IsWrite"
@@ -635,6 +639,14 @@
    "resources": [
     "workspaceid"
    ]
+  },
+  "listworkspaceproactiverecommendationresources": {
+   "name": "ListWorkspaceProactiveRecommendationResources",
+   "resources": []
+  },
+  "listworkspaceproactiverecommendations": {
+   "name": "ListWorkspaceProactiveRecommendations",
+   "resources": []
   },
   "migrateworkspace": {
    "flags": [

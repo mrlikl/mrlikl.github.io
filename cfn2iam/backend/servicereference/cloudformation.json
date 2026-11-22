@@ -51,6 +51,7 @@
     "aws:RequestTag/${TagKey}",
     "aws:TagKeys",
     "cloudformation:ChangeSetName",
+    "cloudformation:DisableValidation",
     "cloudformation:ImportResourceTypes",
     "cloudformation:ResourceTypes",
     "cloudformation:RoleArn",
@@ -83,6 +84,7 @@
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
     "aws:TagKeys",
+    "cloudformation:DisableValidation",
     "cloudformation:ResourceTypes",
     "cloudformation:RoleArn",
     "cloudformation:StackPolicyUrl",
@@ -790,6 +792,7 @@
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
     "aws:TagKeys",
+    "cloudformation:DisableValidation",
     "cloudformation:ResourceTypes",
     "cloudformation:RoleArn",
     "cloudformation:StackPolicyUrl",
@@ -867,6 +870,9 @@
   ],
   "cloudformation:CreateAction": [
    "String"
+  ],
+  "cloudformation:DisableValidation": [
+   "Bool"
   ],
   "cloudformation:ImportResourceTypes": [
    "String"

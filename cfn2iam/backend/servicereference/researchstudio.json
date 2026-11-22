@@ -38,6 +38,13 @@
    ],
    "name": "ListApplications",
    "resources": []
+  },
+  "updateapplication": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateApplication",
+   "resources": []
   }
  },
  "resources": {},

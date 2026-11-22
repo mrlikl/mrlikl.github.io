@@ -1,0 +1,12 @@
+{
+ "actions": {
+  "searchpublicrecords": {
+   "name": "SearchPublicRecords",
+   "resources": []
+  }
+ },
+ "resources": {},
+ "service": "agent-discovery",
+ "serviceName": "Agent Discovery",
+ "version": "v1.5"
+}

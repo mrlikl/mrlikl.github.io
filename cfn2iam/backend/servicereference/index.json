@@ -8,6 +8,10 @@
    "filename": "a4b.json",
    "serviceName": "Alexa for Business"
   },
+  "abuse": {
+   "filename": "abuse.json",
+   "serviceName": "Abuse Signal API"
+  },
   "access-analyzer": {
    "filename": "access-analyzer.json",
    "serviceName": "Access Analyzer"
@@ -39,6 +43,10 @@
   "activate": {
    "filename": "activate.json",
    "serviceName": "Activate"
+  },
+  "agent-discovery": {
+   "filename": "agent-discovery.json",
+   "serviceName": "Agent Discovery"
   },
   "agent-registry": {
    "filename": "agent-registry.json",
@@ -80,9 +88,17 @@
    "filename": "aoss.json",
    "serviceName": "OpenSearch Serverless"
   },
+  "apex": {
+   "filename": "apex.json",
+   "serviceName": "Edge Analytics Platform"
+  },
   "apigateway": {
    "filename": "apigateway.json",
    "serviceName": "API Gateway"
+  },
+  "apiportal": {
+   "filename": "apiportal.json",
+   "serviceName": "API Portal"
   },
   "app-integrations": {
    "filename": "app-integrations.json",
@@ -239,6 +255,10 @@
   "bcm-data-exports": {
    "filename": "bcm-data-exports.json",
    "serviceName": "BillingAndCostManagementDataExports"
+  },
+  "bcm-data-hub": {
+   "filename": "bcm-data-hub.json",
+   "serviceName": "Billing and Cost Management Data Hub"
   },
   "bcm-pricing-calculator": {
    "filename": "bcm-pricing-calculator.json",
@@ -1208,6 +1228,10 @@
    "filename": "osis.json",
    "serviceName": "OpenSearch Ingestion"
   },
+  "osm": {
+   "filename": "osm.json",
+   "serviceName": "OpenSearch Memory"
+  },
   "outposts": {
    "filename": "outposts.json",
    "serviceName": "Outposts"
@@ -1804,6 +1828,10 @@
    "filename": "worklink.json",
    "serviceName": "WorkLink"
   },
+  "workload-telemetry": {
+   "filename": "workload-telemetry.json",
+   "serviceName": "Workload Telemetry"
+  },
   "workmail": {
    "filename": "workmail.json",
    "serviceName": "WorkMail"
@@ -1829,5 +1857,5 @@
    "serviceName": "X-Ray"
   }
  },
- "totalServices": 457
+ "totalServices": 464
 }

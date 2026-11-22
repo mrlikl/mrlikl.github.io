@@ -13,6 +13,19 @@
     "monitor"
    ]
   },
+  "createperformancemonitor": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreatePerformanceMonitor",
+   "resources": [
+    "performancemonitor"
+   ]
+  },
   "createscope": {
    "conditionKeys": [
     "aws:RequestTag/${TagKey}",
@@ -33,6 +46,15 @@
     "monitor"
    ]
   },
+  "deleteperformancemonitor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeletePerformanceMonitor",
+   "resources": [
+    "performancemonitor"
+   ]
+  },
   "deletescope": {
    "flags": [
     "IsWrite"
@@ -48,6 +70,18 @@
     "monitor"
    ]
   },
+  "getmonitorscopesuggestions": {
+   "name": "GetMonitorScopeSuggestions",
+   "resources": [
+    "performancemonitor"
+   ]
+  },
+  "getperformancemonitor": {
+   "name": "GetPerformanceMonitor",
+   "resources": [
+    "performancemonitor"
+   ]
+  },
   "getqueryresultsmonitortopcontributors": {
    "flags": [
     "IsDataPlane"
@@ -55,6 +89,15 @@
    "name": "GetQueryResultsMonitorTopContributors",
    "resources": [
     "monitor"
+   ]
+  },
+  "getqueryresultsperformancemonitor": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetQueryResultsPerformanceMonitor",
+   "resources": [
+    "performancemonitor"
    ]
   },
   "getqueryresultsworkloadinsightstopcontributors": {
@@ -82,6 +125,15 @@
    "name": "GetQueryStatusMonitorTopContributors",
    "resources": [
     "monitor"
+   ]
+  },
+  "getquerystatusperformancemonitor": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "GetQueryStatusPerformanceMonitor",
+   "resources": [
+    "performancemonitor"
    ]
   },
   "getquerystatusworkloadinsightstopcontributors": {
@@ -115,6 +167,13 @@
    "name": "ListMonitors",
    "resources": []
   },
+  "listperformancemonitors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPerformanceMonitors",
+   "resources": []
+  },
   "listscopes": {
    "flags": [
     "IsList"
@@ -126,6 +185,7 @@
    "name": "ListTagsForResource",
    "resources": [
     "monitor",
+    "performancemonitor",
     "scope"
    ]
   },
@@ -144,6 +204,16 @@
    "name": "StartQueryMonitorTopContributors",
    "resources": [
     "monitor"
+   ]
+  },
+  "startqueryperformancemonitor": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StartQueryPerformanceMonitor",
+   "resources": [
+    "performancemonitor"
    ]
   },
   "startqueryworkloadinsightstopcontributors": {
@@ -174,6 +244,16 @@
    "name": "StopQueryMonitorTopContributors",
    "resources": [
     "monitor"
+   ]
+  },
+  "stopqueryperformancemonitor": {
+   "flags": [
+    "IsDataPlane",
+    "IsWrite"
+   ],
+   "name": "StopQueryPerformanceMonitor",
+   "resources": [
+    "performancemonitor"
    ]
   },
   "stopqueryworkloadinsightstopcontributors": {
@@ -208,6 +288,7 @@
    "name": "TagResource",
    "resources": [
     "monitor",
+    "performancemonitor",
     "scope"
    ]
   },
@@ -222,6 +303,7 @@
    "name": "UntagResource",
    "resources": [
     "monitor",
+    "performancemonitor",
     "scope"
    ]
   },
@@ -232,6 +314,15 @@
    "name": "UpdateMonitor",
    "resources": [
     "monitor"
+   ]
+  },
+  "updateperformancemonitor": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdatePerformanceMonitor",
+   "resources": [
+    "performancemonitor"
    ]
   },
   "updatescope": {
@@ -259,6 +350,14 @@
   "monitor": {
    "arnFormats": [
     "arn:${Partition}:networkflowmonitor:${Region}:${Account}:monitor/${MonitorName}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "performancemonitor": {
+   "arnFormats": [
+    "arn:${Partition}:networkflowmonitor:${Region}:${Account}:performancemonitor/${MonitorName}"
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"

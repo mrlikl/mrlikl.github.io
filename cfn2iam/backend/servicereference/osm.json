@@ -1,0 +1,257 @@
+{
+ "actions": {
+  "batchgetevent": {
+   "conditionKeys": [
+    "osm:actorId",
+    "osm:sessionId"
+   ],
+   "name": "BatchGetEvent",
+   "resources": [
+    "space"
+   ]
+  },
+  "createevent": {
+   "conditionKeys": [
+    "osm:actorId",
+    "osm:sessionId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateEvent",
+   "resources": [
+    "space"
+   ]
+  },
+  "creatememory": {
+   "conditionKeys": [
+    "osm:actorId",
+    "osm:strategyName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateMemory",
+   "resources": [
+    "space"
+   ]
+  },
+  "createspace": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateSpace",
+   "resources": [
+    "space"
+   ]
+  },
+  "deleteevent": {
+   "conditionKeys": [
+    "osm:actorId",
+    "osm:sessionId"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteEvent",
+   "resources": [
+    "space"
+   ]
+  },
+  "deletememory": {
+   "conditionKeys": [
+    "osm:actorId",
+    "osm:strategyName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteMemory",
+   "resources": [
+    "space"
+   ]
+  },
+  "deletespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteSpace",
+   "resources": [
+    "space"
+   ]
+  },
+  "getevent": {
+   "conditionKeys": [
+    "osm:actorId",
+    "osm:sessionId"
+   ],
+   "name": "GetEvent",
+   "resources": [
+    "space"
+   ]
+  },
+  "getmemory": {
+   "conditionKeys": [
+    "osm:actorId",
+    "osm:strategyName"
+   ],
+   "name": "GetMemory",
+   "resources": [
+    "space"
+   ]
+  },
+  "getspace": {
+   "name": "GetSpace",
+   "resources": [
+    "space"
+   ]
+  },
+  "listevents": {
+   "conditionKeys": [
+    "osm:actorId",
+    "osm:sessionId"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEvents",
+   "resources": [
+    "space"
+   ]
+  },
+  "listmemories": {
+   "conditionKeys": [
+    "osm:actorId",
+    "osm:strategyName"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListMemories",
+   "resources": [
+    "space"
+   ]
+  },
+  "listspaces": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListSpaces",
+   "resources": [
+    "space"
+   ]
+  },
+  "listtagsforresource": {
+   "name": "ListTagsForResource",
+   "resources": [
+    "space"
+   ]
+  },
+  "searchevents": {
+   "conditionKeys": [
+    "osm:actorId",
+    "osm:sessionId"
+   ],
+   "name": "SearchEvents",
+   "resources": [
+    "space"
+   ]
+  },
+  "searchmemories": {
+   "conditionKeys": [
+    "osm:actorId",
+    "osm:strategyName"
+   ],
+   "name": "SearchMemories",
+   "resources": [
+    "space"
+   ]
+  },
+  "tagresource": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "TagResource",
+   "resources": [
+    "space"
+   ]
+  },
+  "untagresource": {
+   "conditionKeys": [
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsTaggingOnly",
+    "IsWrite"
+   ],
+   "name": "UntagResource",
+   "resources": [
+    "space"
+   ]
+  },
+  "updatememory": {
+   "conditionKeys": [
+    "osm:actorId",
+    "osm:strategyName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateMemory",
+   "resources": [
+    "space"
+   ]
+  },
+  "updatespace": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateSpace",
+   "resources": [
+    "space"
+   ]
+  }
+ },
+ "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:ResourceTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "osm:actorId": [
+   "ArrayOfString"
+  ],
+  "osm:sessionId": [
+   "ArrayOfString"
+  ],
+  "osm:strategyName": [
+   "ArrayOfString"
+  ]
+ },
+ "resources": {
+  "space": {
+   "arnFormats": [
+    "arn:${Partition}:osm:${Region}:${Account}:space/${SpaceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  }
+ },
+ "service": "osm",
+ "serviceName": "OpenSearch Memory",
+ "version": "v1.5"
+}

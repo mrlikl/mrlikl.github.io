@@ -293,6 +293,15 @@
     "webacl"
    ]
   },
+  "cancelpointintimerecovery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CancelPointInTimeRecovery",
+   "resources": [
+    "userpool"
+   ]
+  },
   "changepassword": {
    "flags": [
     "IsWrite"
@@ -320,6 +329,15 @@
    ],
    "name": "ConfirmSignUp",
    "resources": []
+  },
+  "createcimdpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateCIMDPolicy",
+   "resources": [
+    "userpool"
+   ]
   },
   "creategroup": {
    "flags": [
@@ -410,6 +428,15 @@
     "IsWrite"
    ],
    "name": "CreateUserPoolReplica",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "deletecimdpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteCIMDPolicy",
    "resources": [
     "userpool"
    ]
@@ -518,6 +545,12 @@
     "userpool"
    ]
   },
+  "describecimdpolicy": {
+   "name": "DescribeCIMDPolicy",
+   "resources": [
+    "userpool"
+   ]
+  },
   "describeidentityprovider": {
    "name": "DescribeIdentityProvider",
    "resources": [
@@ -532,6 +565,12 @@
   },
   "describemanagedloginbrandingbyclient": {
    "name": "DescribeManagedLoginBrandingByClient",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "describepointintimerecovery": {
+   "name": "DescribePointInTimeRecovery",
    "resources": [
     "userpool"
    ]
@@ -617,6 +656,13 @@
    "resources": [
     "userpool"
    ]
+  },
+  "getderivedtoken": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "GetDerivedToken",
+   "resources": []
   },
   "getdevice": {
    "name": "GetDevice",
@@ -709,6 +755,33 @@
    "name": "InitiateAuth",
    "resources": []
   },
+  "initiatepointintimerecovery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "InitiatePointInTimeRecovery",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "listcimdpolicies": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListCIMDPolicies",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "listclientmetadataurls": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListClientMetadataURLs",
+   "resources": [
+    "userpool"
+   ]
+  },
   "listdevices": {
    "flags": [
     "IsList"
@@ -730,6 +803,15 @@
     "IsList"
    ],
    "name": "ListIdentityProviders",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "listpointintimerecoveries": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListPointInTimeRecoveries",
    "resources": [
     "userpool"
    ]
@@ -941,6 +1023,15 @@
    "name": "SignUp",
    "resources": []
   },
+  "startpointintimerecovery": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartPointInTimeRecovery",
+   "resources": [
+    "userpool"
+   ]
+  },
   "startuserimportjob": {
    "flags": [
     "IsWrite"
@@ -991,6 +1082,24 @@
     "IsWrite"
    ],
    "name": "UpdateAuthEventFeedback",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "updatecimdpolicy": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateCIMDPolicy",
+   "resources": [
+    "userpool"
+   ]
+  },
+  "updateclientmetadataurlstate": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateClientMetadataURLState",
    "resources": [
     "userpool"
    ]

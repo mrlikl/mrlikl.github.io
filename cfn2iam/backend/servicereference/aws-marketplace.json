@@ -1,5 +1,15 @@
 {
  "actions": {
+  "acceptagreementapproval": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcceptAgreementApproval",
+   "resources": []
+  },
   "acceptagreementapprovalrequest": {
    "flags": [
     "IsWrite"
@@ -98,6 +108,9 @@
    "resources": []
   },
   "cancelagreementrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType"
+   ],
    "flags": [
     "IsWrite"
    ],
@@ -124,6 +137,19 @@
    "name": "CreateAgreementRequest",
    "resources": []
   },
+  "createdatasubscription": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateDataSubscription",
+   "resources": [
+    "DataSubscription"
+   ]
+  },
   "createprivatemarketplacerequests": {
    "flags": [
     "IsWrite"
@@ -142,6 +168,18 @@
    "name": "CreateVerificationEvidence",
    "resources": [
     "VerificationEvidence"
+   ]
+  },
+  "deletedatasubscription": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteDataSubscription",
+   "resources": [
+    "DataSubscription"
    ]
   },
   "deleteresourcepolicy": {
@@ -202,6 +240,13 @@
    "name": "DisassociateProductsFromPrivateMarketplace",
    "resources": []
   },
+  "getagreementapproval": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType"
+   ],
+   "name": "GetAgreementApproval",
+   "resources": []
+  },
   "getagreementapprovalrequest": {
    "name": "GetAgreementApprovalRequest",
    "resources": []
@@ -212,6 +257,13 @@
     "aws-marketplace:PartyType"
    ],
    "name": "GetAgreementCancellationRequest",
+   "resources": []
+  },
+  "getagreementcontacts": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType"
+   ],
+   "name": "GetAgreementContacts",
    "resources": []
   },
   "getagreemententitlements": {
@@ -230,7 +282,24 @@
    "resources": []
   },
   "getagreementrequest": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType"
+   ],
    "name": "GetAgreementRequest",
+   "resources": []
+  },
+  "getagreementrequestapprovalplans": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType"
+   ],
+   "name": "GetAgreementRequestApprovalPlans",
+   "resources": []
+  },
+  "getagreementrequestterms": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType"
+   ],
+   "name": "GetAgreementRequestTerms",
    "resources": []
   },
   "getagreementterms": {
@@ -256,6 +325,43 @@
    "name": "GetBuyerDashboard",
    "resources": [
     "Dashboard"
+   ]
+  },
+  "getdatasubscription": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetDataSubscription",
+   "resources": [
+    "DataSubscription"
+   ]
+  },
+  "getdeploymentconfiguration": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetDeploymentConfiguration",
+   "resourceConditionKeys": {
+    "DeploymentConfiguration": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "DeploymentConfiguration"
+   ]
+  },
+  "getdeploymentconfigurationjob": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "name": "GetDeploymentConfigurationJob",
+   "resourceConditionKeys": {
+    "DeploymentConfiguration": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "DeploymentConfiguration"
    ]
   },
   "getentitlements": {
@@ -348,6 +454,13 @@
    "name": "ListAgreementApprovalRequests",
    "resources": []
   },
+  "listagreementapprovals": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListAgreementApprovals",
+   "resources": []
+  },
   "listagreementcancellationrequests": {
    "conditionKeys": [
     "aws-marketplace:AgreementType",
@@ -427,6 +540,30 @@
    "name": "ListChangeSets",
    "resources": []
   },
+  "listdatasubscriptions": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDataSubscriptions",
+   "resources": []
+  },
+  "listdeploymentconfigurationjobs": {
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ],
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListDeploymentConfigurationJobs",
+   "resourceConditionKeys": {
+    "DeploymentConfiguration": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "DeploymentConfiguration"
+   ]
+  },
   "listentities": {
    "flags": [
     "IsList"
@@ -460,6 +597,15 @@
    ],
    "name": "ListIssuedTaxInvoices",
    "resources": []
+  },
+  "listlistingattributes": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListListingAttributes",
+   "resources": [
+    "Listing"
+   ]
   },
   "listpayables": {
    "flags": [
@@ -497,7 +643,10 @@
    ],
    "name": "ListTagsForResource",
    "resources": [
+    "Assessment",
     "ChangeSet",
+    "DataSubscription",
+    "DeploymentConfiguration",
     "DeploymentParameter",
     "Entity",
     "InvoiceSubmissionTask",
@@ -590,6 +739,16 @@
    "name": "RegisterUsage",
    "resources": []
   },
+  "rejectagreementapproval": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RejectAgreementApproval",
+   "resources": []
+  },
   "rejectagreementapprovalrequest": {
    "flags": [
     "IsWrite"
@@ -677,6 +836,29 @@
    "name": "SendAgreementPaymentRequest",
    "resources": []
   },
+  "startagreementapprovals": {
+   "conditionKeys": [
+    "aws-marketplace:AgreementType"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAgreementApprovals",
+   "resources": []
+  },
+  "startassessment": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartAssessment",
+   "resources": [
+    "Entity"
+   ]
+  },
   "startbuild": {
    "flags": [
     "IsWrite"
@@ -697,6 +879,27 @@
    "name": "StartChangeSet",
    "resources": [
     "Entity"
+   ]
+  },
+  "startdeploymentconfigurationjob": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "StartDeploymentConfigurationJob",
+   "resourceConditionKeys": {
+    "DeploymentConfiguration": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "DeploymentConfiguration"
    ]
   },
   "startinvoicesubmissiontask": {
@@ -756,6 +959,11 @@
    ],
    "name": "TagResource",
    "resourceConditionKeys": {
+    "DeploymentConfiguration": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
     "DeploymentParameter": [
      "aws:RequestTag/${TagKey}",
      "aws:ResourceTag/${TagKey}",
@@ -763,7 +971,10 @@
     ]
    },
    "resources": [
+    "Assessment",
     "ChangeSet",
+    "DataSubscription",
+    "DeploymentConfiguration",
     "DeploymentParameter",
     "Entity",
     "InvoiceSubmissionTask",
@@ -791,13 +1002,20 @@
    ],
    "name": "UntagResource",
    "resourceConditionKeys": {
+    "DeploymentConfiguration": [
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
     "DeploymentParameter": [
      "aws:ResourceTag/${TagKey}",
      "aws:TagKeys"
     ]
    },
    "resources": [
+    "Assessment",
     "ChangeSet",
+    "DataSubscription",
+    "DeploymentConfiguration",
     "DeploymentParameter",
     "Entity",
     "InvoiceSubmissionTask",
@@ -884,6 +1102,9 @@
   "Assessment": {
    "arnFormats": [
     "arn:${Partition}:aws-marketplace:${Region}::${Catalog}/Assessment/${ResourceId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
    ]
   },
   "ChangeSet": {
@@ -898,6 +1119,24 @@
   "Dashboard": {
    "arnFormats": [
     "arn:${Partition}:aws-marketplace::${Account}:${Catalog}/ReportingData/${FactTable}/Dashboard/${DashboardName}"
+   ]
+  },
+  "DataSubscription": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace::${Account}:${Catalog}/ReportingData/${FactTable}/DataSubscription/${DataSubscriptionId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "DeploymentConfiguration": {
+   "arnFormats": [
+    "arn:${Partition}:aws-marketplace:${Region}:${Account}:DeploymentConfiguration:catalogs/${CatalogName}/products/${ProductId}/delivery-options/${DeliveryOptionType}"
+   ],
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:ResourceTag/${TagKey}",
+    "aws:TagKeys"
    ]
   },
   "DeploymentParameter": {

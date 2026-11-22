@@ -1,11 +1,39 @@
 {
  "actions": {
+  "configuretags": {
+   "conditionKeys": [
+    "health:TagChannel",
+    "health:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfigureTags",
+   "resources": []
+  },
+  "configuretagsfororganization": {
+   "conditionKeys": [
+    "health:TagChannel",
+    "health:TagKeys"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "ConfigureTagsForOrganization",
+   "resources": []
+  },
   "describeaffectedaccountsfororganization": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
    "name": "DescribeAffectedAccountsForOrganization",
    "resources": []
   },
   "describeaffectedentities": {
    "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys",
     "health:eventTypeCode",
     "health:service"
    ],
@@ -15,18 +43,34 @@
    ]
   },
   "describeaffectedentitiesfororganization": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
    "name": "DescribeAffectedEntitiesForOrganization",
    "resources": []
   },
   "describeentityaggregates": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
    "name": "DescribeEntityAggregates",
    "resources": []
   },
   "describeentityaggregatesfororganization": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
    "name": "DescribeEntityAggregatesForOrganization",
    "resources": []
   },
   "describeeventaggregates": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
    "name": "DescribeEventAggregates",
    "resources": []
   },
@@ -45,10 +89,18 @@
    "resources": []
   },
   "describeevents": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
    "name": "DescribeEvents",
    "resources": []
   },
   "describeeventsfororganization": {
+   "conditionKeys": [
+    "aws:RequestTag/${TagKey}",
+    "aws:TagKeys"
+   ],
    "name": "DescribeEventsForOrganization",
    "resources": []
   },
@@ -60,12 +112,50 @@
    "name": "DescribeHealthServiceStatusForOrganization",
    "resources": []
   },
+  "describetagkeys": {
+   "name": "DescribeTagKeys",
+   "resources": []
+  },
+  "describetagkeysfororganization": {
+   "name": "DescribeTagKeysForOrganization",
+   "resources": []
+  },
+  "describetags": {
+   "name": "DescribeTags",
+   "resources": []
+  },
+  "describetagsfororganization": {
+   "name": "DescribeTagsForOrganization",
+   "resources": []
+  },
+  "describetagsonboardingstatus": {
+   "name": "DescribeTagsOnboardingStatus",
+   "resources": []
+  },
+  "describetagsonboardingstatusfororganization": {
+   "name": "DescribeTagsOnboardingStatusForOrganization",
+   "resources": []
+  },
   "disablehealthserviceaccessfororganization": {
    "flags": [
     "IsPermissionManagement",
     "IsWrite"
    ],
    "name": "DisableHealthServiceAccessForOrganization",
+   "resources": []
+  },
+  "disabletags": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableTags",
+   "resources": []
+  },
+  "disabletagsfororganization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisableTagsForOrganization",
    "resources": []
   },
   "enablehealthserviceaccessfororganization": {
@@ -75,9 +165,35 @@
    ],
    "name": "EnableHealthServiceAccessForOrganization",
    "resources": []
+  },
+  "enabletags": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableTags",
+   "resources": []
+  },
+  "enabletagsfororganization": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "EnableTagsForOrganization",
+   "resources": []
   }
  },
  "conditionKeys": {
+  "aws:RequestTag/${TagKey}": [
+   "String"
+  ],
+  "aws:TagKeys": [
+   "ArrayOfString"
+  ],
+  "health:TagChannel": [
+   "ArrayOfString"
+  ],
+  "health:TagKeys": [
+   "ArrayOfString"
+  ],
   "health:eventTypeCode": [
    "String"
   ],

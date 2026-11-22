@@ -1,5 +1,33 @@
 {
  "actions": {
+  "acknowledgedeadletterqueuerecords": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcknowledgeDeadLetterQueueRecords",
+   "resourceConditionKeys": {
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "queue"
+   ]
+  },
+  "acknowledgequeuerecords": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AcknowledgeQueueRecords",
+   "resourceConditionKeys": {
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "queue"
+   ]
+  },
   "addtagstostream": {
    "flags": [
     "IsTaggingOnly",
@@ -35,9 +63,22 @@
     "stream"
    ]
   },
+  "associatestreamswithqueue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "AssociateStreamsWithQueue",
+   "resourceConditionKeys": {
+    "stream": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "stream"
+   ]
+  },
   "createchannel": {
    "flags": [
-    "IsTaggingOnly",
     "IsWrite"
    ],
    "name": "CreateChannel",
@@ -50,6 +91,22 @@
    },
    "resources": [
     "channel"
+   ]
+  },
+  "createqueue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "CreateQueue",
+   "resourceConditionKeys": {
+    "queue": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ]
+   },
+   "resources": [
+    "queue"
    ]
   },
   "createstream": {
@@ -96,6 +153,20 @@
     "channel"
    ]
   },
+  "deletequeue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DeleteQueue",
+   "resourceConditionKeys": {
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "queue"
+   ]
+  },
   "deleteresourcepolicy": {
    "flags": [
     "IsWrite"
@@ -105,12 +176,16 @@
     "consumer": [
      "aws:ResourceTag/${TagKey}"
     ],
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ],
     "stream": [
      "aws:ResourceTag/${TagKey}"
     ]
    },
    "resources": [
     "consumer",
+    "queue",
     "stream"
    ]
   },
@@ -160,6 +235,17 @@
   "describelimits": {
    "name": "DescribeLimits",
    "resources": []
+  },
+  "describequeue": {
+   "name": "DescribeQueue",
+   "resourceConditionKeys": {
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "queue"
+   ]
   },
   "describestream": {
    "name": "DescribeStream",
@@ -228,12 +314,16 @@
     "consumer": [
      "aws:ResourceTag/${TagKey}"
     ],
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ],
     "stream": [
      "aws:ResourceTag/${TagKey}"
     ]
    },
    "resources": [
     "consumer",
+    "queue",
     "stream"
    ]
   },
@@ -284,6 +374,13 @@
    "name": "ListChannels",
    "resources": []
   },
+  "listqueues": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListQueues",
+   "resources": []
+  },
   "listshards": {
    "flags": [
     "IsList"
@@ -328,6 +425,9 @@
     "consumer": [
      "aws:ResourceTag/${TagKey}"
     ],
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ],
     "stream": [
      "aws:ResourceTag/${TagKey}"
     ]
@@ -335,6 +435,7 @@
    "resources": [
     "channel",
     "consumer",
+    "queue",
     "stream"
    ]
   },
@@ -402,13 +503,42 @@
     "consumer": [
      "aws:ResourceTag/${TagKey}"
     ],
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ],
     "stream": [
      "aws:ResourceTag/${TagKey}"
     ]
    },
    "resources": [
     "consumer",
+    "queue",
     "stream"
+   ]
+  },
+  "receivedeadletterqueuerecords": {
+   "name": "ReceiveDeadLetterQueueRecords",
+   "resourceConditionKeys": {
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "queue"
+   ]
+  },
+  "receivequeuerecords": {
+   "flags": [
+    "IsDataPlane"
+   ],
+   "name": "ReceiveQueueRecords",
+   "resourceConditionKeys": {
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "queue"
    ]
   },
   "registerstreamconsumer": {
@@ -441,6 +571,20 @@
    },
    "resources": [
     "stream"
+   ]
+  },
+  "restoredeadletterqueuerecords": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "RestoreDeadLetterQueueRecords",
+   "resourceConditionKeys": {
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "queue"
    ]
   },
   "splitshard": {
@@ -518,6 +662,11 @@
      "aws:ResourceTag/${TagKey}",
      "aws:TagKeys"
     ],
+    "queue": [
+     "aws:RequestTag/${TagKey}",
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
     "stream": [
      "aws:RequestTag/${TagKey}",
      "aws:ResourceTag/${TagKey}",
@@ -527,6 +676,7 @@
    "resources": [
     "channel",
     "consumer",
+    "queue",
     "stream"
    ]
   },
@@ -545,6 +695,10 @@
      "aws:ResourceTag/${TagKey}",
      "aws:TagKeys"
     ],
+    "queue": [
+     "aws:ResourceTag/${TagKey}",
+     "aws:TagKeys"
+    ],
     "stream": [
      "aws:ResourceTag/${TagKey}",
      "aws:TagKeys"
@@ -553,6 +707,7 @@
    "resources": [
     "channel",
     "consumer",
+    "queue",
     "stream"
    ]
   },
@@ -577,6 +732,20 @@
     "channel"
    ]
   },
+  "updatedeadletterqueuerecordsvisibility": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateDeadLetterQueueRecordsVisibility",
+   "resourceConditionKeys": {
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "queue"
+   ]
+  },
   "updatemaxrecordsize": {
    "flags": [
     "IsWrite"
@@ -589,6 +758,34 @@
    },
    "resources": [
     "stream"
+   ]
+  },
+  "updatequeue": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueue",
+   "resourceConditionKeys": {
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "queue"
+   ]
+  },
+  "updatequeuerecordsvisibility": {
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "UpdateQueueRecordsVisibility",
+   "resourceConditionKeys": {
+    "queue": [
+     "aws:ResourceTag/${TagKey}"
+    ]
+   },
+   "resources": [
+    "queue"
    ]
   },
   "updateshardcount": {
@@ -674,6 +871,14 @@
   "kmsKey": {
    "arnFormats": [
     "arn:${Partition}:kms:${Region}:${Account}:key/${KeyId}"
+   ],
+   "conditionKeys": [
+    "aws:ResourceTag/${TagKey}"
+   ]
+  },
+  "queue": {
+   "arnFormats": [
+    "arn:${Partition}:kinesis:${Region}:${Account}:queue/${QueueId}"
    ],
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"

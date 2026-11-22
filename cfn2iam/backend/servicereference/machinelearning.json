@@ -194,7 +194,7 @@
   "getevaluation": {
    "name": "GetEvaluation",
    "resources": [
-    "datasource"
+    "evaluation"
    ]
   },
   "getmlmodel": {

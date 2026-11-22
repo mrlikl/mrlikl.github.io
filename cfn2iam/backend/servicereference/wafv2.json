@@ -209,6 +209,16 @@
    "name": "GetDecryptedAPIKey",
    "resources": []
   },
+  "getevent": {
+   "name": "GetEvent",
+   "resources": [
+    "webacl"
+   ]
+  },
+  "geteventactor": {
+   "name": "GetEventActor",
+   "resources": []
+  },
   "getipset": {
    "conditionKeys": [
     "aws:ResourceTag/${TagKey}"
@@ -338,6 +348,29 @@
    ],
    "name": "ListAvailableManagedRuleGroupVersions",
    "resources": []
+  },
+  "listeventactors": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEventActors",
+   "resources": []
+  },
+  "listevents": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEvents",
+   "resources": []
+  },
+  "listeventsbywebacl": {
+   "flags": [
+    "IsList"
+   ],
+   "name": "ListEventsByWebACL",
+   "resources": [
+    "webacl"
+   ]
   },
   "listipsets": {
    "flags": [

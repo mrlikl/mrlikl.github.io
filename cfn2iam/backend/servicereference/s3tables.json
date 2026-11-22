@@ -157,6 +157,19 @@
     "Table"
    ]
   },
+  "disassociatetablereplication": {
+   "conditionKeys": [
+    "s3tables:namespace",
+    "s3tables:tableName"
+   ],
+   "flags": [
+    "IsWrite"
+   ],
+   "name": "DisassociateTableReplication",
+   "resources": [
+    "Table"
+   ]
+  },
   "getnamespace": {
    "conditionKeys": [
     "s3tables:namespace"
